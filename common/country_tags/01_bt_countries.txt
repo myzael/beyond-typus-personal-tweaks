@@ -237,11 +237,7 @@ MSE = "countries/Moosonee.txt" #BT
 MSL = "countries/Mosalsk.txt" #BT
 MSM = "countries/MassaMarittima.txt" #BT
 MSS = "countries/Massa.txt" #BT
-<<<<<<< Updated upstream
 #MST = "countries/Munsterberg.txt" #BT, cut
-=======
-#MST = "countries/Munsterberg.txt" #BT
->>>>>>> Stashed changes
 MTA = "countries/Matera.txt" #BT
 MTS = "countries/Malatesta.txt" #BT
 MTZ = "countries/Metz.txt" #BT
