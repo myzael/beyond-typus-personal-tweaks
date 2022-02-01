@@ -1,0 +1,5 @@
+# vanilla removed by BT
+southern_africa_superregion
+
+# BT
+libya_region

@@ -1,0 +1,35 @@
+government = monarchy
+add_government_reform = principality
+government_rank = 1
+technology_group = eastern
+religion = orthodox
+primary_culture = russian
+capital = 4255
+fixed_capital = 4255
+historical_rival = RYA
+
+#No information found, EU4 should auto generate appropriate name from culture list
+1427.1.1 = {
+	monarch = {
+		name = "Semen"
+		dynasty = "Rurikovich"
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1437.1.1 = {
+	heir = {
+		name = "Oleg"
+		monarch_name = "Oleg"
+		dynasty = "Rurikovich"
+		birth_date = 1437.1.1
+		death_date = 1483.1.1
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+#Annexed in 1483

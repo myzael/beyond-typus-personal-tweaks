@@ -1,0 +1,40 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = romagnan
+religion = catholic
+capital = 7060
+fixed_capital = 7060
+
+#historical_friend = XXX
+#historical_rival = XXX
+
+
+#History, currently empty.
+1409.1.1 = {
+	monarch = {
+		name = "Luigi"
+		dynasty = "dal Verme"
+		birth_date = 1390.1.1
+		adm = 2
+		dip = 3
+		mil = 5# long line of conquistadors and helped Sforza conquer Milan
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = inspiring_leader_personality
+}
+1444.1.1 = {
+	heir = {
+		name = "Pietro"
+		monarch_name ="Pietro II"
+		dynasty = "dal Verme"
+		birth_date = 1442.1.1
+		death_Date = 1485.1.1
+		claim = 95
+		adm = 5# raised Bobbio to one of the wealthiest cities in Italy
+		dip = 1 #kept getting involved into wars and was poisoned by his wife
+		mil = 4#pretty good soldier too
+	}
+}

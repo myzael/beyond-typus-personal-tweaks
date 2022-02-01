@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = austrian
+add_accepted_culture = croatian
+religion = catholic
+technology_group = western
+capital = 4752
+fixed_capital = 4752
+
+
+#Incomplete
+1408.1.1 = {
+	monarch = {
+		name = "Karl"#random
+		dynasty = "Valza"
+		birth_date = 1400.1.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+
+}

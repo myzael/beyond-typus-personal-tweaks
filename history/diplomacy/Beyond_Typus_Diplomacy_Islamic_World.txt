@@ -1,0 +1,42 @@
+vassal = {
+	first = KAR
+	second = ALI
+	start_date = 1444.1.1
+	end_date = 1471.1.1
+}
+
+#Going to try Paradox's way. Independent Ayyubids
+#vassal = {
+#	first = MAM
+#	second = HSN
+#	start_date = 1444.1.1
+#	end_date = 1461.12.31
+#}	#From start date until rise of Aq Qoyunlu
+
+vassal = {
+	first = MAM
+	second = HWA # changed from HAW
+	start_date = 1444.1.1
+	end_date = 1517.1.1
+}
+
+vassal = {
+	first = MAM
+	second = BEJ
+	start_date = 1444.1.1
+	end_date = 1517.1.1
+}
+
+vassal = {
+	first = MOR
+	second = DBD
+	start_date = 1444.1.1
+	end_date = 1563.12.31
+}
+
+vassal = {
+	first = QAR
+	second = BHT
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}

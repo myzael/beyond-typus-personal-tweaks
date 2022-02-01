@@ -1,0 +1,37 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = picard_culture
+religion = catholic
+technology_group = western
+capital = 7973
+
+
+#History not yet done
+1441.1.1 = {
+	monarch = {
+		name = "Louis"
+		dynasty = "von Luxemburg"
+		birth_date = 1418.1.1
+		adm = 4#constable of France
+		dip = 5#constant plotting to undermine the king
+		mil = 5#constable, led the vanguard in the battle of Monlhery
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = intricate_web_weaver_personality
+	add_ruler_personality = strict_personality
+	add_queen_personality = malevolent_personality
+}
+1440.1.1 = {
+	heir = {
+		name = "Peter"
+		monarch_name ="Peter II"
+		dynasty = "von Luxemburg"
+		birth_date = 1440.1.1
+		death_Date = 1482.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+}
