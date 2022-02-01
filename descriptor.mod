@@ -2,7 +2,6 @@ version="14.1"
 tags={
 	"Balance"
 	"Expansion"
-	"Fixes"
 	"Gameplay"
 	"Historical"
 	"Trade"
