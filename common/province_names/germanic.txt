@@ -161,7 +161,7 @@
 69 = { "Ravensburg" "Ravensburg" }
 70 = { "Stuttgart" "Stuttgart" }
 71 = { "Ansbach" "Ansbach" }
-72 = { "Sundgau" "Freiburg" }
+72 = { "Breisgau" "Freiburg" }
 73 = { "Innsbruck" "Innsbruck" }
 74 = { "Baden" "Baden" }
 75 = { "Straﬂburg" "Straﬂburg" }
