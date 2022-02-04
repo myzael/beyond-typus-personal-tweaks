@@ -1,11 +1,10 @@
- 
-#381 - Ajlun
+#381 - Ajloun
 
 owner = MAM
 controller = MAM
 culture = al_suryah_arabic
 religion = sunni
-capital = "Ajlun"			#Vanilla capital is fine, was going to go with Bosra, but whatever
+capital = "Ajloun"			#Vanilla capital is fine, was going to go with Bosra, but whatever
 trade_goods = bt_trade_good_fruit #(JP) Mix of fruits and grapes, mostly Muslims so this not wine
 hre = no
 base_tax = 4 
