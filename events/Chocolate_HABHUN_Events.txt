@@ -689,11 +689,11 @@ country_event = { #ridiculous
 			has_heir = no
 			has_heir_flag = AlbrechtBrother
 			}
-		GAU = { ai = no }
+		VOR = { ai = no }
 	}
 	
 	immediate = {
-		GAU = { 
+		VOR = { 
 			clr_country_flag = CHO_albrecht_friedrich_brothers 
 			country_event {
 				id = Chocolate_hab_hun.99
@@ -709,7 +709,7 @@ country_event = { #ridiculous
 
 
 
-country_event = { #Swap GAU with STY
+country_event = { #Swap VOR with STY
 	id = Chocolate_hab_hun.99
 	desc = Chocolate_hab_hun.99.desc
 	title = Chocolate_hab_hun.99.t
@@ -735,6 +735,7 @@ country_event = { #Swap GAU with STY
 	option = {
 		name = Chocolate_hab_hun.99.a
 		ai_chance = { factor = 1 }
+		add_legitimacy = 5
 	}
 }
 
@@ -755,7 +756,7 @@ country_event = { #
 	option = {
 		name = Chocolate_hab_hun.999.a
 		ai_chance = { factor = 99 }
-		GAU = {
+		VOR = {
 			every_owned_province {
 				cede_province = STY
 			}
