@@ -1,9 +1,9 @@
-#6082 - Jabal Al Arab/Jabal Al Druze
+#6082 - Jabal al-Arab/later Jabal al-Druze
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Suwayda"
+capital = "As-Suwayda"
 is_city = yes
 owner = MAM
 controller = MAM

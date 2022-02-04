@@ -1,9 +1,9 @@
-#6083 - Jaydur/Al Sanamayn
+#6083 - Jaydur/Al-Sanamayn
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Al Sanamayn"
+capital = "Al-Sanamayn"
 is_city = yes
 owner = MAM
 controller = MAM

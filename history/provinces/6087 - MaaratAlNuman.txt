@@ -1,9 +1,9 @@
-#6087 - Maarat Al-Numan
+#6087 - Maarat al-Numan
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Maarat Al-Numan"
+capital = "Maarat al-Numan"
 is_city = yes
 owner = MAM
 controller = MAM

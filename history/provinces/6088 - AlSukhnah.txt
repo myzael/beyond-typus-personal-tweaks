@@ -1,9 +1,9 @@
-#6088 - Al Sukhnah
+#6088 - Al-Sukhnah
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Al Sukhnah"
+capital = "Al-Sukhnah"
 is_city = yes
 owner = MAM
 controller = MAM
