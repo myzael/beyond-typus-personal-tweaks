@@ -16,7 +16,7 @@ religion = sunni
 base_tax = 3
 base_production = 2
 base_manpower = 1
-trade_goods = grain
+trade_goods = bt_trade_good_fruit #(JP) Famed for its quality Olive Oil across the Med
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MAM

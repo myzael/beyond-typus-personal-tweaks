@@ -3,7 +3,7 @@
 #Region - 
 
 #Core Details
-capital = "St Catherine"
+capital = "St. Katrine"
 is_city = yes
 owner = MAM
 controller = MAM
@@ -16,7 +16,7 @@ religion = sunni
 base_tax = 2
 base_production = 2
 base_manpower = 1
-trade_goods = grain
+trade_goods = bt_trade_good_books #(JP) Oldest continously operating library in the world at St Catherine's Monastery
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MAM

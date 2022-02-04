@@ -16,7 +16,7 @@ religion = orthodox
 base_tax = 1
 base_production = 2
 base_manpower = 1
-trade_goods = wine
+trade_goods = wine #(JP) Famed for its wine production
 
 #Cores and Occupation (Alphabetical after current)
 add_core = GEN
