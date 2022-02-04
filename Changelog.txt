@@ -42,7 +42,7 @@ BT14.1
  - New image for the Ise Grand Shrine added
  - Tweaked modifiers for Solovetsky Monastery and Pyramids of Meroë
  - Allowed use of Schonbrünn Castle even if Vienna is not the capital as long as country is still Emperor
- - Renamed the new "tionontate" (a name from.. AC Valhalla....) to Eire, one of the dominant western Iroquioan tribes
+ - Renamed the new "tionontate" (a name from.. AC Valhalla it seems...?) to Eire, one of the dominant western Iroquioan tribes
  - Tweaked events relating to Austrian Succession (thanks to Pieter / Pbhuh)
  - Added Austrian as accepted culture for PSS
  - Added Romansch as accepted culture for GHB
@@ -76,7 +76,7 @@ BT14.1
  - Tweaked a few names in carpathian.txt (Hungarian) in Carpathia and the Balkans
  
 #GFX
- - Updated flags of POL
+ - Updated flags of ARM, CIL, EFR, KUR, LIT, POL, TRE
  
 
 

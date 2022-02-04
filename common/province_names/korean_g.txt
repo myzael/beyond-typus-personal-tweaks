@@ -224,6 +224,20 @@
 1025 = { "Ujeon" "Sanhyeong" } #Uzen
 1026 = { "Yukjeon" "Hoejin" } #Rikuzen
 
+703 = { "Yeolha" "Yeolha" } #Vanilla
+4194 = { "Yeoungpyeong" "Yeongpyeong" } #Vanilla
+1816 = { "Bukgyeong" "Bukgyeong" } #Vanilla
+696 = { "Bojeong" "Bojeong" } #Vanilla
+695 = { "Hagan" "Hagan" } #Vanilla
+4195 = { "Jeonjeong" "Jeonjeong" } #Vanilla
+2137 = { "Daemyeong" "Daemyeong" } #Vanilla
+
+2138 = { "Mujeong" "Mujeong" } #Vanilla
+691 = { "Jenam" "Jenam" } #Vanilla
+2140 = { "Yeonju" "Yeonju" } #Vanilla
+690 = { "Ikdo" "Ikdo" } #Vanilla, Qingzhou's other name
+2139 = { "Naeju" "Naeju" } #Vanilla
+
 
 
 #Unsorted and Uncapitalised
@@ -233,19 +247,5 @@
 707 = "Wimeon"
 708 = "Jang-ye"
 2747 = "Langsan"
-2187 = "Ssa"
-1053 = "Sing-an"
-725 = "Chichiha"
-4187 = "Sesseu"
-4185 = "Dango"
-1023 = "Echijen"
 1837 = "Eschu"
-1030 = "Owali"
-1839 = "Seuluga"
-4188 = "Sinano"
-1028 = "Musasi"
-1843 = "Gojeuke"
-4190 = "Simosa"
-1026 = "Likujen"
-4131 = "Musseu"
 4193 = "Osima"
