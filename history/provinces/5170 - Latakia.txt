@@ -1,11 +1,8 @@
- 
-# No previous file for Beyond Typus or Beyond the Pale Legacy province
-
 owner = MAM
 controller = MAM
 add_core = MAM
-culture = syriac_culture
-religion = orthodox				#As far as I can tell, during this period realigion was really split 25-25-25-25 ER orthodox, Sunni, Shia or Druze, and Marionite Catholic... going with orthodox, for now
+culture = al_suryah_arabic
+religion = shiite				#Alawites
 capital = "Ladhiqiyyah"
 trade_goods = naval_supplies #(JP) Major port plus forests
 hre = no

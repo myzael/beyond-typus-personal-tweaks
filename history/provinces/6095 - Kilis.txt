@@ -9,8 +9,8 @@ owner = MAM
 controller = MAM
 
 #Demographics
-culture = al_suryah_arabic
-religion = sunni
+culture = kurdish
+religion = zoroastrian
 
 #Development and Trade
 base_tax = 2

@@ -9,8 +9,8 @@ owner = CYP
 controller = CYP
 
 #Demographics
-culture = al_suryah_arabic
-religion = sunni
+culture = syriac_culture
+religion = catholic						#Maronites
 
 #Development and Trade
 base_tax = 5

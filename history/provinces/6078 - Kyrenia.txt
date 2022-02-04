@@ -9,8 +9,8 @@ owner = CYP
 controller = CYP
 
 #Demographics
-culture = al_suryah_arabic
-religion = sunni
+culture = cypriot
+religion = orthodox
 
 #Development and Trade
 base_tax = 2

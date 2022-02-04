@@ -4,8 +4,8 @@
 owner = MAM
 controller = MAM
 add_core = MAM
-culture = syriac_culture
-religion = orthodox				#As far as I can tell, during this period realigion was really split 25-25-25-25 ER orthodox, Sunni, Shia or Druze, and Marionite Catholic... going with orthodox, for now
+culture = al_suryah_arabic
+religion = sunni	
 capital = "Trablos" #Tripoli in the East.
 trade_goods = silk #(JP) End of Silk Road plus lots of high industry and silk production
 hre = no

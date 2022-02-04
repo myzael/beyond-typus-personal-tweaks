@@ -3,7 +3,7 @@
 
 owner = AKK
 controller = AKK
-culture = al_suryah_arabic
+culture = al_iraqiya_arabic
 religion = sunni
 capital = "Deir ez-Zor"
 trade_goods = cotton #(JP) Cotton produced along the middle Euphrates

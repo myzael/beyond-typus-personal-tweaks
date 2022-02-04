@@ -3,7 +3,7 @@
 
 owner = AKK
 controller = AKK
-culture = al_suryah_arabic
+culture = al_iraqiya_arabic
 religion = sunni				#The city retained an active Christian community well into the Middle Ages
 capital = "Raqqah"			#Many versions in latin alphabet, just going with this one for fun, plus I have no idea what the differences are.
 trade_goods = livestock #(JP) Pretty abandoned area, tribal and rural

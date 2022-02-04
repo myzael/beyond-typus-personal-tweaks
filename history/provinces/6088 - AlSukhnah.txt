@@ -9,8 +9,8 @@ owner = FAD
 controller = FAD
 
 #Demographics
-culture = al_suryah_arabic
-religion = sunni
+culture = syriac_culture
+religion = orthodox				#Church of the East/Nestorianism
 
 #Development and Trade
 base_tax = 1
