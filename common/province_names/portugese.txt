@@ -2028,7 +2028,7 @@
 3113 = { "Esperança de Ferrão" "Esperança de Ferrão" } #Frederick's Hope 
 5588 = { "Solidade" "Solidade" } #Literally nothing, probably some polar bears
 5589 = { "Cabo Ibéria" "Cabo Ibéria" } #Kap Dan 
-5590 = { "Terra de Segóvia" "Casas Grandes" } #Ittoqqortoormiit
+5590 = { "Terra de Dávila" "Casas Grandes" } #Ittoqqortoormiit
 
 ##########Uncapitalised##########				
 
