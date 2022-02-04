@@ -5,21 +5,21 @@
 #Core Details
 capital = "Kyrenia"
 is_city = yes
-owner = MAM
-controller = MAM
+owner = CYP
+controller = CYP
 
 #Demographics
 culture = al_suryah_arabic
 religion = sunni
 
 #Development and Trade
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 3
 base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = MAM
+add_core = CYP
 
 #Other Political
 hre = no

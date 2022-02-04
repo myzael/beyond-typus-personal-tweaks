@@ -5,8 +5,8 @@
 #Core Details
 capital = "Salamiyah"
 is_city = yes
-owner = MAM
-controller = MAM
+owner = FAD
+controller = FAD
 
 #Demographics
 culture = al_suryah_arabic
@@ -15,11 +15,11 @@ religion = sunni
 #Development and Trade
 base_tax = 1
 base_production = 1
-base_manpower = 1
+base_manpower = 2
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = MAM
+add_core = FAD
 
 #Other Political
 hre = no

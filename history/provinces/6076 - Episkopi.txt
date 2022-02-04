@@ -5,21 +5,21 @@
 #Core Details
 capital = "Episkopi"
 is_city = yes
-owner = MAM
-controller = MAM
+owner = VEN
+controller = VEN
 
 #Demographics
 culture = al_suryah_arabic
 religion = sunni
 
 #Development and Trade
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 2
+base_production = 5
+base_manpower = 2
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = MAM
+add_core = VEN
 
 #Other Political
 hre = no

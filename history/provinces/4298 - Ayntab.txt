@@ -1,19 +1,19 @@
  
 #4398 - Ayntab
 
-owner = DUL
-controller = DUL
+owner = MAM
+controller = MAM
+add_core = MAM
 add_core = DUL
 culture = syriac_culture		#Armenians still in the majority in most of the region, and would continue to be until circa 1915, but populations moved around so much and records are so bad (and political) that who was where seems impossible to answer. Syriac looks good, border wise, going with that.
 religion = sunni			
 capital = "Antep"
 trade_goods = spices			#Olive groves, vineyards, and Pistachio orchards, going with spices for pistachios
 hre = no
-base_tax = 6
-base_production = 6
+base_tax = 7
+base_production = 7
 base_manpower = 4
 is_city = yes
-add_core = CIL
 
 discovered_by = muslim
 discovered_by = ottoman

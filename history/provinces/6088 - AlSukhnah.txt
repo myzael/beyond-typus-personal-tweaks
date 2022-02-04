@@ -5,8 +5,8 @@
 #Core Details
 capital = "Al-Sukhnah"
 is_city = yes
-owner = MAM
-controller = MAM
+owner = FAD
+controller = FAD
 
 #Demographics
 culture = al_suryah_arabic
@@ -19,7 +19,7 @@ base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = MAM
+add_core = FAD
 
 #Other Political
 hre = no
