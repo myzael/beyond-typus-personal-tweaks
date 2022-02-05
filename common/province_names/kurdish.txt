@@ -378,3 +378,7 @@
 7112 = { "Inebahti" "Inebahti" } #
 7134 = { "Enez" "Enez" } #
 7278 = { "Akkerman" "Akkerman" } #
+
+#BT15
+6093 = { "Ezaz" "Ezaz" } #
+6095 = { "Kilîs" "Kilîs" } #
