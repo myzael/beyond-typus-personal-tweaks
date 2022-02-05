@@ -1,3 +1,4 @@
 #Egyptian Arabic, as opposed to Standard Arabic
 358 = { "El-Eskendereya" "El-Eskendereya" }
+361 = { "El-Qaherah" "El-Qaherah" }
 6094 = { "El-Eskenderun" "El-Eskenderun" }

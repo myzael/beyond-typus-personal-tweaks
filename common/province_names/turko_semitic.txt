@@ -293,7 +293,7 @@
 357 = "Darnah"
 359 = "El-Fayyum"
 360 = "Qus"			#Or Qina, or Qift
-361 = "El-Qahirah"
+361 = "Al-Qahirah"
 362 = "Rashid"
 363 = "El-Farama"
 1231 = "Aswan"
