@@ -1,9 +1,9 @@
-#6069 - Umm el-Jimal
+#6069 - Al-Mafraq
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Umm el-Jimal"
+capital = "Al-Mafraq"
 is_city = yes
 owner = MAM
 controller = MAM
