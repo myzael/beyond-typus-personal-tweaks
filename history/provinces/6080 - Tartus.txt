@@ -10,7 +10,7 @@ controller = MAM
 
 #Demographics
 culture = syriac_culture
-religion = orthodox				Antiochian Orthodox
+religion = orthodox				#Antiochian Orthodox
 
 #Development and Trade
 base_tax = 2
