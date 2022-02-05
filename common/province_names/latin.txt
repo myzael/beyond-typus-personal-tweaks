@@ -673,6 +673,7 @@
 5180 = { "Gazza" "Gazza" }
 5203 = { "Monreale" "Monreale" }
 5205 = { "Berito" "Berito" } #(JP) Latin "Berytus", or "Baruti"
+6076 = { "La Piscopia" "La Piscopia da Cornaro" }
 
 #Arabia
 384 = { "Medina" "Medina" }
