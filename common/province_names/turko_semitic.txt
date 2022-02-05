@@ -2230,3 +2230,14 @@
 
 #BT 15
 6065 = { "Sant Katrin" "Sant Katrin" }
+6066 = { "Tafilah" "Tafilah" }
+6071 = { "Bir as-Sab" "Bir as-Sab" }
+6072 = { "Ramlah" "Ramlah" }
+6074 = { "Sur" "Sur" }
+6075 = { "Sayda" "Sayda" }
+6079 = { "Marqab" "Marqab" }
+6080 = { "Tartus" "Tartus" }
+6082 = { "Jabal al-Arab" "As-Suwayda" }
+6083 = { "Jaydur" "Al-Sanamayn" }
+6084 = { "Maalula" "Maalula" }
+6094 = { "al-Iskandarun" "al-Iskandarun" }
