@@ -116,7 +116,6 @@
 
 
 #Beyond Typus 4.0 Overhaul of the Levant
-364 = "el-Arish"
 377 = "Halab" 
 378 = "Tarabulus"
 379 = "Al-Quds"
@@ -2228,6 +2227,7 @@
 #BT 15
 358 = { "Al-Iskandariyah" "Al-Iskandariyah" }
 365 = { "Al-Tur" "Al-Tur" }
+364 = { "Al-Arish" "Al-Arish" }
 381 = { "Ajlun" "Ajlun" }
 6065 = { "Sant Katrin" "Sant Katrin" }
 6066 = { "Tafilah" "Tafilah" }
