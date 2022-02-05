@@ -2227,3 +2227,6 @@
 7163 = { "Munimfasiaan" "Munimfasiaan" } #
 7937 = { "Qasr Al-Rawul" "Qast Al-Rawul" } #
 7998 = { "Uzah" "Uzah" } #
+
+#BT 15
+6065 = { "Sant Katrin" "Sant Katrin" }
