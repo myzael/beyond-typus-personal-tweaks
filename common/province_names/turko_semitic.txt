@@ -121,7 +121,6 @@
 378 = "Tarabulus"
 379 = "Al-Quds"
 380 = "Al-Karak"
-381 = "Hawran"	
 382 = "Dimashq"
 407 = "Ar-Raqqah"		
 2308 = "Ar-Ruha"
@@ -130,7 +129,7 @@
 1855 = "Safad"
 2313 = "Antakiyyah"
 2314 = "Ar-Rahbah"
-2315 = "as-Suways"
+2315 = "As-Suways"
 4271 = "Idlib"
 5170 = "Ladhiqiyah"
 5171 = "Mihalich"
@@ -2229,6 +2228,7 @@
 #BT 15
 358 = { "Al-Iskandariyah" "Al-Iskandariyah" }
 365 = { "Al-Tur" "Al-Tur" }
+381 = { "Ajlun" "Ajlun" }
 6065 = { "Sant Katrin" "Sant Katrin" }
 6066 = { "Tafilah" "Tafilah" }
 6071 = { "Bir as-Sab" "Bir as-Sab" }
