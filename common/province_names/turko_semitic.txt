@@ -291,7 +291,6 @@
 #Beyond Typus 7.0 Overhaul of Egypt
 356 = "Banghazi"
 357 = "Darnah"
-358 = "El-Eskendereya"
 359 = "El-Fayyum"
 360 = "Qus"			#Or Qina, or Qift
 361 = "El-Qahirah"
@@ -2229,6 +2228,7 @@
 7998 = { "Uzah" "Uzah" } #
 
 #BT 15
+358 = { "Al-Iskandariyah" "Al-Iskandariyah" }
 6065 = { "Sant Katrin" "Sant Katrin" }
 6066 = { "Tafilah" "Tafilah" }
 6071 = { "Bir as-Sab" "Bir as-Sab" }
@@ -2240,4 +2240,4 @@
 6082 = { "Jabal al-Arab" "As-Suwayda" }
 6083 = { "Jaydur" "Al-Sanamayn" }
 6084 = { "Maalula" "Maalula" }
-6094 = { "al-Iskandarun" "al-Iskandarun" }
+6094 = { "Al-Iskandarun" "Al-Iskandarun" }

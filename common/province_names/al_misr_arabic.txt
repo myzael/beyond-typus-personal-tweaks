@@ -1,0 +1,3 @@
+#Egyptian Arabic, as opposed to Standard Arabic
+358 = { "El-Eskendereya" "El-Eskendereya" }
+6094 = { "El-Eskenderun" "El-Eskenderun" }
