@@ -1,5 +1,3 @@
-#Arga's Work
-
 #Levant
 364 = { "Jorsha" "Jorsha" }
 365 = { "Ta Mefkat" "Ta Mefkat" }
@@ -17,6 +15,8 @@
 6073 = { "Makedo" "Makedo" }
 6074 = { "Surru" "Surru" }
 6075 = { "Djedouna" "Djedouna" }
+
+#Arga's Work
 
 377 = "Chalba"
 
