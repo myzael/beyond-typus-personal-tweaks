@@ -1,6 +1,13 @@
 BT14.1.1
 #Bugfixes
  - Fixed a bug with a wrong reference to GAU rather than VOR causing Austria to see the world
+ - Fixed a bug with positions in the US with a port in the wrong province
+ - Fixed a bug with positions in Neumark
+ 
+#Localised Naming
+ - Fixed a bug where 5306 was 5309 in byzantine.txt
+
+
 
 BT14.1
 #New Additions
