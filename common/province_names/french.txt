@@ -56,7 +56,7 @@
 5180 = { "Gazze" "Gazze" }
 5181 = { "Nechel" "Nechel" }
 5203 = { "Montréal" "Montréal" } #(JP) "Shoubak"
-5205 = { "Barut" "Barut" }
+5205 = { "Beyrouth" "Beyrouth" }
 6065 = { "Sinaï" "Sainte-Catherine du Sinaï" }
 6066 = { "Tafile" "Tafile" }
 6067 = { "Philadelphie" "Philadelphie" } #(JP) "Amman"
