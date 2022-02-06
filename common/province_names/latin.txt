@@ -693,7 +693,7 @@
 6075 = { "Sidone" "Sidone" }
 6076 = { "La Piscopia" "La Piscopia da Cornaro" }
 6077 = { "Cormacite" "Cormacite" } #(JP) "Kormakitis"
-6078 = { "Cirenia" "Cirenia" }
+6078 = { "Cerine" "Cerine" } #(JP) Found "Cerine" on German wiki
 6079 = { "Margatto" "Margatto" } 
 6080 = { "Tartosso" "Tartosso" }
 6081 = { "Adria" "Adria" } #(JP) Modern "Daraa"
