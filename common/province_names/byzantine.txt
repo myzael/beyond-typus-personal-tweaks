@@ -874,7 +874,7 @@
 2452 = { "Pisida" "Pisida" } #Zuwarah
 5309 = { "Thenteos" "Thenteos" } #Gharyan
 2449 = { "Gholaia" "Gholaia" } #Waddan
-5309 = { "Misda" "Misda" } #Mizda
+5306 = { "Misda" "Misda" } #Mizda
 5310 = { "Tabuinati" "Tabuinati" } #Nalut
 4567 = { "Kydamos" "Kydamos" } #Ghadames
 353 = { "Gigthis" "Gigthis" } #Medenine

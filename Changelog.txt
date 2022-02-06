@@ -1,3 +1,18 @@
+BT14.1.1
+#Bugfixes
+ - Fixed a bug with a wrong reference to GAU rather than VOR causing Austria to see the world
+ - Fixed a bug with positions in the US with a port in the wrong province
+ - Fixed a bug with positions in Neumark
+ - Fixed a bug where excess " led to German localisation not functioning correctly
+ 
+#Tweaks and Balance
+ - Updated German Localisation slightly
+ 
+#Localised Naming
+ - Fixed a bug where 5306 was 5309 in byzantine.txt
+
+
+
 BT14.1
 #New Additions
  - North American 1444 Political set up now updated to the new vanilla tags and tribal territory set up
