@@ -482,7 +482,7 @@
 364 = { "Arixe" "Arixe" }
 365 = { "Raia" "Raia" }
 379 = { "Jerusalém" "Jerusalém" }
-378 = { "Trípoles" "Trípoles do Ocidente" }
+378 = { "Trípoles" "Trípoles do Oriente" }
 381 = { "Aslum" "Aslum" }
 1849 = { "Camela" "Camela" } #From Crusader name of "La Chamelle"
 1855 = { "Safé" "Safé" }

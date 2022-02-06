@@ -635,7 +635,7 @@
 364 = { "Ariz" "Ariz" }
 365 = { "Raya" "Raya" }
 377 = { "Alepo" "Alepo" }
-378 = { "Trípoles" "Trípoles del Occidente" }
+378 = { "Trípoles" "Trípoles del Oriente" }
 379 = { "Jerusalén" "Jerusalén" }
 380 = { "Alcaraque" "Alcaraque" }
 381 = { "Ajlún" "Ajlún" }
