@@ -406,7 +406,7 @@
 379 = { "Kudüs" "Kudüs" }
 380 = { "Kerek" "Kerek" }
 381 = { "Aclun" "Aclun" }
-382 = { "Sham" "Sham" }
+382 = { "Dimeshk" "Dimeshk" }
 405 = { "Palmira" "Palmira" }
 1849 = { "Humus" "Humus" }
 1854 = { "Nablus" "Nablus" } #(JP) Base Names
