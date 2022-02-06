@@ -46,22 +46,26 @@
 1854 = { "Naplouse" "Naplouse" }
 1855 = { "Saphet" "Saphet" } #(JP) Used by Crusaders, despite not owning the town
 2313 = { "Antioche" "Antioche" }
-4268 = { "Alyn" "Alyn" } #(JP) "Aqaba", "Elyn" to Crusaders, feels like "Alyn" fits better for French?
+4268 = { "Élyn" "Élyn" } #(JP) "Aqaba", "Elyn" to Crusaders
 4270 = { "Mane" "Mane" }
 4271 = { "Idleb" "Idleb" }
 4297 = { "Baalbec" "Baalbec" } #(JP) Or Ancient transliterated as "Héliopolis"
 5139 = { "Nicosie" "Nicosie" }
 5145 = { "Famagouste" "Famagouste" }
-5170 = { "Lattaquié" "Lattaquié" }
+5170 = { "Lattaquie" "Lattaquie" }
 5180 = { "Gazze" "Gazze" }
 5181 = { "Nechel" "Nechel" }
 5203 = { "Montréal" "Montréal" } #(JP) "Shoubak"
 5205 = { "Beyrouth" "Beyrouth" }
+<<<<<<< Updated upstream
 6065 = { "Sinaï" "Sainte-Catherine du Sinaï" }
+=======
+6065 = { "Sainte-Catherine" "Sainte-Catherine du Sinaï" }
+>>>>>>> Stashed changes
 6066 = { "Tafile" "Tafile" }
 6067 = { "Philadelphie" "Philadelphie" } #(JP) "Amman"
-6068 = { "Azraqe" "Azraqe" }
-6069 = { "Mafraqe" "Mafraqe" } #(JP) "Al-Mafraq"
+6068 = { "Azrac" "Azrac" }
+6069 = { "Mafrac" "Mafrac" } #(JP) "Al-Mafraq"
 6070 = { "Arbelle" "Arbelle" }
 6071 = { "Bersabée" "Bersabée" }
 6072 = { "Remle" "Remle" }
@@ -69,15 +73,15 @@
 6074 = { "Tyr" "Tyr" }
 6075 = { "Saete" "Saete" } #(JP) Or "Sayette" or "Sagette"
 6076 = { "Episcopé" "Episcopé" }
-6077 = { "Kormakítis" "Kormakítis" }
-6078 = { "Kyrenie" "Kyrenie" }
+6077 = { "Kormakitis" "Kormakitis" }
+6078 = { "Cyrenie" "Cyrenie" }
 6079 = { "Margatte" "Margatte" } #(JP) "Margat"
 6080 = { "Tartous" "Tartous" }
 6081 = { "Adrée" "Adrée" } #(JP) Modern "Daraa"
 6082 = { "Soueïda" "Soueïda" } #(JP) "As-Suwayda"
 6083 = { "Sanamein" "Sanamein" } #(JP) "Al-Sanamayn"
 6084 = { "Maaloule" "Maaloule" }
-6085 = { "Salamyeh" "Salamyeh" }
+6085 = { "Salamié" "Salamié" }
 6086 = { "Hamath" "Hamath" }
 6087 = { "Marre" "Marre" } #(JP) Crusader name of "Maarat al-Numan"
 6088 = { "Soukhna" "Soukhna" }
