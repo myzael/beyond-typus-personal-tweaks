@@ -57,11 +57,7 @@
 5181 = { "Nechel" "Nechel" }
 5203 = { "Montréal" "Montréal" } #(JP) "Shoubak"
 5205 = { "Beyrouth" "Beyrouth" }
-<<<<<<< Updated upstream
 6065 = { "Sinaï" "Sainte-Catherine du Sinaï" }
-=======
-6065 = { "Sainte-Catherine" "Sainte-Catherine du Sinaï" }
->>>>>>> Stashed changes
 6066 = { "Tafile" "Tafile" }
 6067 = { "Philadelphie" "Philadelphie" } #(JP) "Amman"
 6068 = { "Azrac" "Azrac" }

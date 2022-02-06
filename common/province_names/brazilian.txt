@@ -495,7 +495,7 @@
 5170 = { "Latáquia" "Latáquia" }
 5181 = { "Nequel" "Nequel" }
 5205 = { "Beirute" "Beirute" }
-6065 = { "Santa Catarina" "Santa Catarina do Sinai" }
+6065 = { "Sinai" "Santa Catarina do Sinai" }
 6067 = { "Filadélfia" "Filadélfia" } #(JP) "Amman"
 6068 = { "Asraque" "Asraque" }
 6070 = { "Arbela" "Arbela" }

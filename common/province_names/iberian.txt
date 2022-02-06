@@ -656,7 +656,7 @@
 5181 = { "Nejel" "Nejel" }
 5203 = { "Montreal" "Montreal" }
 5205 = { "Beirud" "Beirud" }
-6065 = { "Santa Catalina" "Santa Catalina del Sinaí" }
+6065 = { "Sinaí" "Santa Catalina del Sinaí" }
 6066 = { "Táfila" "Táfila" }
 6067 = { "Filadelfia" "Filadelfia" } #(JP) "Amman"
 6068 = { "Azraque" "Azraque" }

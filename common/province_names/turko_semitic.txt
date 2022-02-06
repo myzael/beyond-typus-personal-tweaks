@@ -2229,7 +2229,7 @@
 365 = { "Al-Tur" "Al-Tur" }
 364 = { "Al-Arish" "Al-Arish" }
 381 = { "Ajlun" "Ajlun" }
-6065 = { "Sant Katrin" "Sant Katrin" }
+6065 = { "Sina" "Sant Katrin" }
 6066 = { "Tafilah" "Tafilah" }
 6071 = { "Bir as-Sab" "Bir as-Sab" }
 6072 = { "Ramlah" "Ramlah" }
