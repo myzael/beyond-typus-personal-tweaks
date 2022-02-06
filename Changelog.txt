@@ -1,3 +1,41 @@
+BT15
+#New Additions
+ - Total Overhaul to the Levant region in game, as well as the Middle Euphrates area in Mesopotamia.
+ - New Druze Religion and mechanics, and culture*
+ - New Yazidi Religion and mechanics*
+ - New Alawite Religion and mechanics*
+ - New Nestorian Religion and mechanics*
+ - New Kilis tag as a Yazidi Kurdish vassal of the Mamluks in northern Levant*
+ - New Great Projects in the Levant*
+  *
+  *
+ 
+
+#Bugfixes
+
+#Tweaks and Balance
+ - Cultural set up of the Levant and the Middle Euphrates updated 
+ - Religious set up of the Levant and the Middle Euphrates updated
+ - Renamed Mashriqi (Arabic Group) to Mesopotamian
+ - Updated (though no new) Trade Nodes and Companies in the Levant to correspond to new borders
+ - Updated Trade Goods throughout the Levant and Middle Euphrates to better represent the local industries and agriculture
+ - Renamed Rakka Area to Middle Euphrates
+ - Renamed Kerak Area to Transjordan
+ - Added Hawran and Bargylus Areas in the Levant
+ - Updated the terrain set up of the Levant to be more accurate
+
+#Localised Naming
+
+#GFX
+
+
+
+
+
+
+*Not yet implemented
+
+
 BT14.1.1
 #Bugfixes
  - Fixed a bug with a wrong reference to GAU rather than VOR causing Austria to see the world
