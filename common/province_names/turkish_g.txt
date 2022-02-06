@@ -304,6 +304,7 @@
 4292 = { "Mardin" "Mardin" }
 4295 = { "Hasankeyf" "Hasankeyf" }
 4296 = { "Bitlis" "Bitlis" }
+4298 = { "Aintab" "Aintab" }
 4302 = { "Alashkerd" "Alashkerd" }
 4310 = { "Kharput" "Kharput" }
 5151 = { "Bayburt" "Bayburt" }
@@ -313,6 +314,10 @@
 5330 = { "Meyafarikîn" "Meyafarikîn" }
 5331 = { "Siirt" "Siirt" }
 5332 = { "Ercish" "Ercish" }
+6089 = { "Rahba" "Rahba" }
+6090 = { "Suluk" "Suluk" }
+6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
+6092 = { "Menbic" "Menbic" }
 
 #Arabia
 383 = { "Tebük" "Tebük" }
@@ -395,30 +400,56 @@
 #Levant
 321 = { "Leymosun" "Leymosun" }
 364 = { "Arish" "Arish" }
-365 = { "Sina" "Tur" }
+365 = { "Tur" "Tur" }
 377 = { "Halep" "Halep" }
 378 = { "Trablus" "Trablus" }
 379 = { "Kudüs" "Kudüs" }
 380 = { "Kerek" "Kerek" }
-381 = { "Houran" "Ajloun" }
+381 = { "Ajloun" "Ajloun" }
 382 = { "Sham" "Sham" }
 405 = { "Palmira" "Palmira" }
 1849 = { "Humus" "Humus" }
-1854 = { "Yafa" "Yafa" } #(JP) Base name, cannot find an Ottoman or Turkish name for the city  #(VL)Yaffa is true but some say its Yafa with a single f
-1855 = { "Sayda" "Sayda" }
+1854 = { "Nablus" "Nablus" } #(JP) Base Names
+1855 = { "Safed" "Safed" }
 2313 = { "Antakya" "Antakya" }
 4268 = { "Akabe" "Akabe" }
+4270 = { "Munha" "Munha" }
 4271 = { "Idlib" "Idlib" }
-4270 = { "Munha" "Munha" } #(JP) Base name, cannot find an Ottoman or Turkish name for the city  #(VL)Munha
-4297 = { "Balabak Vadi" "Balabak Vadi" } #(JP) Base name, cannot find an Ottoman or Turkish name for the city  #(VL)Balabak Vadi or Kizil Vadi as locals called it.
-4298 = { "Aintab" "Aintab" }
-5205 = { "Beyrut" "Beyrut" }
+4297 = { "Balabak Vadi" "Balabak Vadi" }
 5139 = { "Lefkosha" "Lefkosha" }
 5145 = { "Magusa" "Magusa" }
-5181 = { "Hücran" "Hücran" } #(JP) Base name, cannot find an Ottoman or Turkish name for the city #(VL)Hücran
 5170 = { "Lazkiyye" "Lazkiyye" }
 5180 = { "Gazze" "Gazze" }
-5203 = { "Shubak" "Shubak" } 
+5181 = { "Hücran" "Hücran" }
+5203 = { "Shubak" "Shubak" }
+5205 = { "Beyrut" "Beyrut" }
+6065 = { "Sina" "Azize Katerina" }
+6066 = { "Tafile" "Tafile" }
+6067 = { "Amman" "Amman" } #(JP) Base Names, was Roman Philadelphia
+6068 = { "Ezrak" "Ezrak" }
+6069 = { "Mefrak" "Mefrak" }
+6070 = { "Irbid" "Irbid" }
+6071 = { "Birüsseb" "Birüsseb" }
+6072 = { "Remle" "Remle" }
+6073 = { "Lejyon" "Lejyon" } #(Chrys) Seems "Lajjun Sanjak" is translated as "Lejyon Sancagi"?
+6074 = { "Sur" "Sur" }
+6075 = { "Sayda" "Sayda" }
+6076 = { "Piskobu" "Piskobu" }
+6077 = { "Kormacit" "Kormacit" } #(JP) "Koruçam" is a post-1974 development
+6078 = { "Girne" "Girne" }
+6079 = { "Markab" "Markab" } #(JP) "Marqab"/"Margat", or "Baniyas" are base names
+6080 = { "Tartus" "Tartus" } #(JP) Base Names
+6081 = { "Dera" "Dera" } 
+6082 = { "Sawda" "Sawda" }
+6083 = { "Sanamayn" "Sanamayn" }
+6084 = { "Malule" "Malule" }
+6085 = { "Salamieh" "Salamieh" }
+6086 = { "Hama" "Hama" } #(JP) Base Names
+6087 = { "Ma'arretü'n-Nu'man" "Ma'arretü'n-Nu'man" } #(JP) This is what Wiki has given me, what the actual hell? VL Halp
+6088 = { "Sukhnah" "Sukhnah" } #(JP) Base Names
+6093 = { "Azez" "Azez" }
+6094 = { "Iskenderun" "Iskenderun" }
+6095 = { "Kilis" "Kilis" }
 
 #Egypt
 358 = { "Iskenderiyye" "Iskenderiyye" } 
