@@ -261,7 +261,7 @@
 5181 = { "Nekhel" "Nekhel" }
 5203 = { "Montreal" "Montreal" } #(JP) "Shoubak"
 5205 = { "Baruth" "Baruth" }
-6065 = { "Saint Catherine" "Saint Catherine" }
+6065 = { "Sinai" "Saint Catherine" }
 6066 = { "Tafila" "Tafila" }
 6067 = { "Philadelphia" "Philadelphia" } #(JP) "Amman"
 6068 = { "Azraq" "Azraq" }
