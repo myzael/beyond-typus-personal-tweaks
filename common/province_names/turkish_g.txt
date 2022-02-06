@@ -405,7 +405,7 @@
 378 = { "Trablus" "Trablus" }
 379 = { "Kudüs" "Kudüs" }
 380 = { "Kerek" "Kerek" }
-381 = { "Ajloun" "Ajloun" }
+381 = { "Aclun" "Aclun" }
 382 = { "Sham" "Sham" }
 405 = { "Palmira" "Palmira" }
 1849 = { "Humus" "Humus" }
