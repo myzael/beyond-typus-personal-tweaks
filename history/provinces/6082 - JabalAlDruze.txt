@@ -3,7 +3,7 @@
 #Region - 
 
 #Core Details
-capital = "As-Suwayda"
+capital = "Suwayda"
 is_city = yes
 owner = MAM
 controller = MAM

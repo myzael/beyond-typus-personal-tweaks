@@ -3,7 +3,7 @@
 #Region - 
 
 #Core Details
-capital = "Al-Sanamayn"
+capital = "Sanamayn"
 is_city = yes
 owner = MAM
 controller = MAM

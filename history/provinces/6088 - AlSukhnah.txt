@@ -1,9 +1,9 @@
-#6088 - Al-Sukhnah
+#6088 - Sukhnah
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Al-Sukhnah"
+capital = "Sukhnah"
 is_city = yes
 owner = FAD
 controller = FAD
