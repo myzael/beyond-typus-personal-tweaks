@@ -26,6 +26,7 @@ BT15
 
 #Localised Naming
  - Full naming in british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish) for the Levant and Middle Euphrates
+ - Some naming in old_egyptian.txt (Ancient Egyptian) and phoenician.txt (Phoenician) in the Levant
 
 #GFX
 
