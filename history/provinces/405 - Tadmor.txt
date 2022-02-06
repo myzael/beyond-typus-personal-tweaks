@@ -4,7 +4,7 @@
 owner = FAD
 controller = FAD
 add_core = FAD
-culture = bedouin_arabic
+culture = al_suryah_arabic
 religion = sunni
 capital = "Tadmur"
 trade_goods = bt_trade_good_fruit #(JP) Surrounded, literally surrounded in Orchards

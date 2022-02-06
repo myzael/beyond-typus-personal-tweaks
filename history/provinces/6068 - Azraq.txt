@@ -9,7 +9,7 @@ owner = MAM
 controller = MAM
 
 #Demographics
-culture = bedouin_arabic
+culture = al_suryah_arabic
 religion = sunni
 
 #Development and Trade
