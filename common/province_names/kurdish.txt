@@ -1,3 +1,35 @@
+#Mesopotamia
+407 = { "Reqa" "Reqa" }
+2314 = { "Deyrizor" "Deyrizor" }
+4298 = { "Êntab" "Êntab" }
+6089 = { "Reba" "Reba" }
+6090 = { "Suluk" "Suluk" }
+6091 = { "Meskene" "Meskene" }
+6092 = { "Minbic" "Minbic" }
+
+#Levant
+377 = { "Heleb" "Heleb" }
+378 = { "Trablussam" "Trablussam" }
+379 = { "Orselîm" "Orselîm" }
+382 = { "Damaskus" "Damaskus" }
+405 = { "Palmira" "Palmira" }
+1849 = { "Humus" "Humus" }
+1854 = { "Napoli" "Napoli" }
+1855 = { "Safad" "Safad" } 
+2313 = { "Antîoxeia" "Antîoxeia" }
+4268 = { "Akabe" "Akabe" }
+4297 = { "Balbik" "Balbik" }
+5180 = { "Xeze" "Xeze" }
+5205 = { "Bêrût" "Bêrût" }
+6065 = { "Sîna" "Sêx Katherine" } #(JP) "Sêx" is Kurdish for Sheikh, the name given to Kurdish religious rulers, better than nowt for "Saint"right?
+6067 = { "Emman" "Emman" }
+6074 = { "Tir" "Tir" }
+6075 = { "Sidun" "Sidun" }
+6079 = { "Markab" "Markab" }
+6080 = { "Dardus" "Dardus" }
+6093 = { "Ezaz" "Ezaz" } #(JP) "Aziz"
+6094 = { "Mûrawanda" "Mûrawanda" }
+6095 = { "Kilîs" "Kilîs" }
 
 #Beyond Typus 7.0 revisit of Van area
 4296 = "Bidlis"
@@ -18,8 +50,6 @@
 331 = "Erzirom"
 358 = "Iskenderiye"
 361 = "Qahire"
-405 = "Reqa"
-407 = "Riha"
 410 = "Bexda"			#Or "Bexdayê"
 411 = "Mûsil"
 414 = "Hemedan"
@@ -37,9 +67,6 @@
 #2017 Jul 25
 
 #middle east
-377 = "Helep"
-379 = "Orshelîm"
-382 = "Sham"
 395 = "Qeter"
 396 = "Behreyn" #could remain Awal since that is it's older name, but behreyn would be the modern name in kurdish
 408 = "Besre"
@@ -62,13 +89,8 @@
 2219 = "Bender Lengeh"
 2221 = "Meshed"
 2311 = "Necef" #or "Musena" (rather Necef between the two)
-2313 = "Antakya"
 2340 = "Kuweyt"
 3257 = "Lenkeran"
-5183 = "Dîlok" #or "Entep" (funnily enough wikipedia has both a german and Kurdish page, the kurdish one uses the first name while the german page claims the latter was the kurdish name...)
-5205 = "Bêrût"
-
-
 
 #2017 Aug 23
 
@@ -103,19 +125,14 @@
 #Arga Feb 2019
 
 #adjustment for mismatched ID
-405 = "Palmira"
-407 = "Reqa"
 2308 = "Riha"
 
 #middle east
-378 = "Trablussam"
 3254 = "Agirî"
 4292 = "Mêrdîn"
 4295 = "Heskîf"
-4298 = "Entep" #Dîlok
 4302 = "Gharakilisa" #seljuk
 4304 = "Xoy"
-5180 = "Xeze"
 5293 = "Serê Kaniyê"
 5295 = "Cizîr"
 
@@ -124,10 +141,8 @@
 2331 = "Jeddah"
 2338 = "El-Batin" #turkish
 2347 = "Hüfuf"
-4268 = "Akabe" #turkish
 
 #egypt
-365 = "Sîna"
 2315 = "Süveys"
 
 #anatolia
@@ -280,17 +295,10 @@
 358 = { "Iskenderiye" "Iskenderiye" } #
 361 = { "Qahire" "Qahire" } #
 362 = { "Reshid" "Reshid" } #
-365 = { "Sîna" "Al-Tur" } #
-377 = { "Helep" "Helep" } #
-378 = { "Trablussam" "Trablussam" } #
-379 = { "Orshelîm" "Orshelîm" } #
-382 = { "Sham" "Sham" } #
 384 = { "Yesrîb" "Yesrîb" } #
 385 = { "Meke" "Meke" } #
 397 = { "Abû Zebî" "Abû Zebî" } #
-405 = { "Palmira" "Palmira" } #
 406 = { "Enbar" "Enbar" } #
-407 = { "Reqa" "Reqa" } #
 408 = { "Besre" "Besre" } #
 410 = { "Bexda" "Bexda" } #
 411 = { "Mûsil" "Mûsil" } #
@@ -309,8 +317,6 @@
 436 = { "Bîrcend" "Bîrcend" } #
 463 = { "Çerkessk" "Çerkessk" } #
 1231 = { "Eswan" "Eswan" } #
-1854 = { "Yaffa" "Yaffa" } #
-1855 = { "Safad" "Safad" } #
 2201 = { "Alanistanê" "" } #
 2204 = { "Qers" "Qers" } #
 2205 = { "Naxçivan" "Naxçivan" } #
@@ -333,8 +339,6 @@
 2309 = { "Shengal" "Shengal" } #
 2310 = { "Tikrît" "Tikrît" } #
 2311 = { "Necef" "Necef" } #
-2313 = { "Antakya" "Antakya" } #
-2314 = { "Deyrizor" "Deyrizor" } #
 2315 = { "Süveys" "Süveys" } #
 2327 = { "Makna" "Makna" } #
 2331 = { "Jeddah" "Jeddah" } #
@@ -345,14 +349,12 @@
 3177 = { "Tebai" "Tebai" } #
 3254 = { "Agirî" "Bazîd" } #
 3262 = { "Karaçay" "Karaçay" } #
-4268 = { "Akabe" "Akabe" } #
 4282 = { "Kalet Bisha" "Kalet Bisha" } #
 4288 = { "Shetelereb" "Shetelereb" } #
 4292 = { "Mêrdîn" "Mêrdîn" } #
 4293 = { "Hewlêr" "Hewlêr" } #
 4294 = { "Silêmanî" "Silêmanî" } #
 4295 = { "Heskîf" "Heskîf" } #
-4298 = { "Entep" "Entep" } #
 4301 = { "Bashûrê Alanistanê" "Shinval" } #
 4302 = { "Zêdikan" "Zêdikan" } #
 4304 = { "Xoy" "Xoy" } #
@@ -364,8 +366,6 @@
 4779 = { "Gelibolu" "Gelibolu" } #
 5135 = { "Mêrsîn" "Mêrsîn" } #
 5158 = { "Dîvîrgî" "Dîvîrgî" } #
-5180 = { "Xeze" "Xeze" } #
-5205 = { "Bêrût" "Bêrût" } #
 5224 = { "Nebîl" "Nebîl" } #
 5264 = { "Gize" "Gize" } #
 5293 = { "Serê Kaniyê" "Serê Kaniyê" } #
@@ -378,7 +378,3 @@
 7112 = { "Inebahti" "Inebahti" } #
 7134 = { "Enez" "Enez" } #
 7278 = { "Akkerman" "Akkerman" } #
-
-#BT15
-6093 = { "Ezaz" "Ezaz" } #
-6095 = { "Kilîs" "Kilîs" } #
