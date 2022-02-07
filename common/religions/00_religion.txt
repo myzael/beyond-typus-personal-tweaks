@@ -847,7 +847,7 @@ christian = {
 		flag_emblem_index_range = { 1 4 }
 
 		color = { 204 76 127 }
-		icon = 14	#PH
+		icon = 31
 		country = {
 			stability_cost_modifier = -0.1
 			tolerance_own = 1
@@ -1232,7 +1232,7 @@ muslim = {
 	#BT Added
 	druze = {
 		color = { 0 229 102 }
-		icon = 6 	#PH
+		icon = 33
 		country = {
 			heir_chance = 1.0
 			dip_tech_cost_modifier = -0.1 # Promoted intellectualism
@@ -1252,7 +1252,7 @@ muslim = {
 	#BT Added
 	alawite = {
 		color = { 101 148 70 }
-		icon = 6	#PH
+		icon = 32
 		country = {
 			heir_chance = 1.0
 			merchants = 1
@@ -2385,7 +2385,7 @@ zoroastrian_group = {
 	
 	#BT Added
 	yazidi = {
-		icon = 26 	#PH
+		icon = 34
 		color = { 51 51 178 }
 		country = {
 			tolerance_own = 3 # Preoccupation with religious purity
