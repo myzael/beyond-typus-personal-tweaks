@@ -26,7 +26,18 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1517.1.1
 }
-
+vassal = {
+	first = MAM
+	second = KIL
+	start_date = 1444.1.1
+	end_date = 1516.8.24		#(JP) Battle of Marj Dabiq led to the fall of the Levant to the Ottomans. Can no find direct date when Kilis flipped
+}
+vassal = {
+	first = TUR
+	second = KIL
+	start_date = 1516.8.24
+	end_date = 1610.1.1			#(JP) Ottomans sent an army to settle conflict between the Sheikhs of Kilis and local Pasha based in Aleppo. Last Sheikh went on a rampage in return of the death of his uncle at the hands of this Pasha.
+}
 vassal = {
 	first = MOR
 	second = DBD
