@@ -6,6 +6,7 @@ BT15
  - New Alawite Religion and mechanics*
  - New Nestorian Religion and mechanics*
  - New Kilis tag as a Yazidi Kurdish vassal of the Mamluks in northern Levant
+ - New Palestine and Transjordan tags as releasable, along side Lebanon and Syria
  - New Great Projects in the Levant*
   *
   *
