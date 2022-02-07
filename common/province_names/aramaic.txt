@@ -1,3 +1,38 @@
+#Levant
+365 = { "Raithu" "Raithu" }
+377 = { "Halba" "Halba" }
+378 = { "Tra'ara" "Tra'ara" }
+379 = { "Urislem" "Urislem" }
+382 = { "Darmsûq" "Darmsûq" }
+405 = { "Tadmur" "Tadmur" } #(JP) Palmyrene "TDMR"
+1849 = { "Hamath" "Hamath" }
+2313 = { "Antioch" "Antioch" }
+4297 = { "Balabakk" "Balabakk" }
+5180 = { "Gaza" "Gaza" }
+5205 = { "Biruta" "Biruta" }
+6065 = { "Sinay" "Mar Katrine" }
+6067 = { "Piladelpia" "Piladelpia" } #(JP) "Amman"
+6070 = { "Saliq" "Saliq" }
+6071 = { "Beersheba" "Beersheba" }
+6074 = { "Sur" "Sur" }
+6075 = { "Saydun" "Saydun" }
+6077 = { "Kurmajit" "Kurmajit" }
+6082 = { "Suada" "Suada" } #(JP) "As-Suwayda"
+6084 = { "Malula" "Malula" }
+6086 = { "Hamat" "Hamat" }
+6088 = { "Sikne" "Sikne" }
+6093 = { "Hazazu" "Hazazu" } #(JP) "Aziz"
+6094 = { "Aleksandrette" "Aleksandrette" }
+6095 = { "Kilizi" "Kilizi" }
+
+#Mesopotamia
+407 = { "Rakka" "Rakka" }
+2314 = { "Dira Zeurta" "Dira Zeurta" } #(JP) "Deir ez-Zor"
+4298 = { "Ayindab" "Ayindab" }
+6089 = { "Audattha" "Audattha" }
+6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
+6092 = { "Mabog" "Mabog" }
+
 #By Arga
 
 #2017 Sep 7
@@ -17,11 +52,6 @@
 2308 = "Bet Zabdai" #or "Gazarta"
 
 #levant
-365 = "Sinay"
-377 = "Halba" #apparently also "Beroia"
-378 = "Saydan"
-379 = "Jerushalem" #"yrwshlm"
-382 = "Darmsuq" #"Dammashq"
 1855 = "Glila"
 5182 = "Tedmurta"
 5205 = "Sur"
@@ -45,9 +75,6 @@
 
 #2018 May 29 (new work based on Itineraria Phoenicia
 
-#levant
-378 = "Tra'ar'a"
-
 #Arga Feb 2019
 
 #middle east
@@ -60,10 +87,6 @@
 
 #By Arga Dec 2020
 #1.30
-377 = { "Halba" "Halba" } #
-378 = { "Tra'ara" "Tra'ara" } #
-382 = { "Darmsuq" "Darmsuq" } #
-407 = { "Rakka" "Rakka" } #
 411 = { "Ninwe" "Ninwe" } #
 418 = { "Amedu" "Amedu" } #
 2308 = { "Urhoy" "Urhoy" } #
