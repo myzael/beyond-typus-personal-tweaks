@@ -9,7 +9,7 @@
 379 = { "Al-Quds" "Al-Quds" }
 380 = { "Al-Karak" "Al-Karak" }
 381 = { "Ajlun" "Ajlun" }
-382 = { "Ghouta" "Dimashq" }
+382 = { "Dimashq" "Dimashq" }
 405 = { "Tadmur" "Tadmur" }
 1849 = { "Hims" "Hims" }
 1854 = { "Nabulus" "Nabulus" }
