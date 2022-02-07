@@ -1,5 +1,13 @@
 ﻿l_english:
  # New stuff and/or things here:
+ alawite:0 "Alawite"
+ alawite_religion_desc:1 "Alawites belong to a secretive esoteric faith with its origins in Shia Islam. Outside of the Quran, aspects of the Alawi faith include the different manifestations of god through Ali and Joshua, Reincarnation and that all beings were stars cast out of heaven who must now re-earn their place by living successive good and faithful lives.\nIn the game the Alawite faith can be initially found in Syria."
+ druze:0 "Druze"
+ druze_religion_desc:0 "Hailing from the Mountain of Druze, the Druze faith follows many of the principles of Isma'ilism, but also includes gnostic beliefs in an esoteric theology focused on the Truth of existence."
+ nestorian:0 "Nestorian"
+ nestorian_religion_desc:0 "In teaching that Jesus Christ has two natures, one divine and one human, Nestorianism has been declared as heretical by most Christian faiths. Despite this, its unique outlook has garnered followers in places as far east as China, India, and even Mongolia."
+ yazidi:0 "Yazidi"
+ yazidi_religion_desc:0 "The Yazidi believe that God created the world and placed it under the protection of seven angels, foremost among them Tawûsê Melek, the Peacock Angel. The Peacock Angel at first fell from God's grace, but his tears of remorse extinguished the fires of his prison, and he was reunited with God. In the same manner, we all seek to reunite with God at the end of many long lifetimes."
  
  #Areas (Need to be localised because otherwise they cause error log spam)
  unused_sea_area:0 "unused_sea_area"
