@@ -11,7 +11,7 @@ add_government_reform = iqta
 
 #Demographics
 primary_culture = kurdish
-religion = zoroastrianism #Yazidi
+religion = zoroastrian #Yazidi
 
 #Tech and Military
 technology_group = muslim
