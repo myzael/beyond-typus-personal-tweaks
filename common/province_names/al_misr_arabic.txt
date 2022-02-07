@@ -1,7 +1,8 @@
+#(JP) I've temporarily disabled this due to general naming rules - a non-standard variety which stands out compared to standard Al/As etc...
 #Egyptian Arabic, as opposed to Standard Arabic
-358 = { "El-Eskendereya" "El-Eskendereya" }
-361 = { "El-Qaherah" "El-Qaherah" }
-365 = { "El-Tur" "El-Tur" }
-364 = { "El-Arish" "El-Arish" }
-2315 = { "Es-Suweis" "Es-Suweis" }
-6094 = { "El-Eskenderun" "El-Eskenderun" }
+#358 = { "El-Eskendereya" "El-Eskendereya" }
+#361 = { "El-Qaherah" "El-Qaherah" }
+#365 = { "El-Tur" "El-Tur" }
+#364 = { "El-Arish" "El-Arish" }
+#2315 = { "Es-Suweis" "Es-Suweis" }
+#6094 = { "El-Eskenderun" "El-Eskenderun" }
