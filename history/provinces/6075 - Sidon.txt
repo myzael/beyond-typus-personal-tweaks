@@ -20,6 +20,7 @@ trade_goods = cotton
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MAM
+add_core = LEB
 
 #Other Political
 hre = no

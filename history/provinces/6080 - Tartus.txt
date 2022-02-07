@@ -20,6 +20,7 @@ trade_goods = naval_supplies #(JP) Port and forests
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MAM
+add_core = SYR
 
 #Other Political
 hre = no

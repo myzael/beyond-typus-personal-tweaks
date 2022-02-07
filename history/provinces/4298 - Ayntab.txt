@@ -4,6 +4,7 @@
 owner = MAM
 controller = MAM
 add_core = MAM
+add_core = SYR
 add_core = DUL
 culture = al_iraqiya_arabic
 religion = sunni			
