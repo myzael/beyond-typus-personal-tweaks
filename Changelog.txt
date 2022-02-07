@@ -5,7 +5,7 @@ BT15
  - New Yazidi Religion and mechanics*
  - New Alawite Religion and mechanics*
  - New Nestorian Religion and mechanics*
- - New Kilis tag as a Yazidi Kurdish vassal of the Mamluks in northern Levant*
+ - New Kilis tag as a Yazidi Kurdish vassal of the Mamluks in northern Levant
  - New Great Projects in the Levant*
   *
   *
