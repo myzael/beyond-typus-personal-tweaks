@@ -6,7 +6,7 @@ controller = MAM
 add_core = MAM
 culture = al_suryah_arabic
 religion = sunni	
-capital = "Trablos" #Tripoli in the East.
+capital = "Tripoli" #Tripoli in the East.
 trade_goods = silk #(JP) End of Silk Road plus lots of high industry and silk production
 hre = no
 base_tax = 7
@@ -14,7 +14,6 @@ base_production = 7
 base_manpower = 4
 is_city = yes
 add_core = LEB
-add_core = SYR
 
 extra_cost = 10
 

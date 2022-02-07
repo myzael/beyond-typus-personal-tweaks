@@ -20,6 +20,7 @@ trade_goods = silk #(JP) Not giving it dyes since Tyrian Purple gone (introduce 
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MAM
+add_core = LEB
 
 #Other Political
 hre = no

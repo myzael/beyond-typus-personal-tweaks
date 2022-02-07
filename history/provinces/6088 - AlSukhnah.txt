@@ -1,9 +1,9 @@
-#6088 - Al-Sukhnah
+#6088 - Sukhnah
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Al-Sukhnah"
+capital = "Sukhnah"
 is_city = yes
 owner = FAD
 controller = FAD
@@ -20,6 +20,7 @@ trade_goods = livestock #(JP) Tribal Bedouin areas
 
 #Cores and Occupation (Alphabetical after current)
 add_core = FAD
+add_core = SYR
 
 #Other Political
 hre = no

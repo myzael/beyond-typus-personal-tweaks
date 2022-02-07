@@ -3,7 +3,7 @@
 #Region - 
 
 #Core Details
-capital = "St. Katrine"
+capital = "Saint Catherine"
 is_city = yes
 owner = MAM
 controller = MAM

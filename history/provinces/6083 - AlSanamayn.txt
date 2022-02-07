@@ -3,7 +3,7 @@
 #Region - 
 
 #Core Details
-capital = "Al-Sanamayn"
+capital = "Sanamayn"
 is_city = yes
 owner = MAM
 controller = MAM
@@ -20,6 +20,7 @@ trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MAM
+add_core = SYR
 
 #Other Political
 hre = no

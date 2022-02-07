@@ -5,15 +5,15 @@ owner = MAM
 controller = MAM
 culture = al_suryah_arabic
 religion = sunni
-capital = "Halab"
+capital = "Aleppo"
 trade_goods = bt_trade_good_fruit #(JP) especially Olives and Pistachios
 hre = no
 base_tax = 8
 base_production = 8
 base_manpower = 7
 is_city = yes
-add_core = SYR
 add_core = MAM
+add_core = SYR
 fort_15th = yes
 
 discovered_by = east_african
