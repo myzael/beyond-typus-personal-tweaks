@@ -22,6 +22,7 @@ BT15
  - Updated Trade Goods throughout the Levant and Middle Euphrates to better represent the local industries and agriculture
  - Renamed Rakka Area to Middle Euphrates
  - Renamed Kerak Area to Transjordan
+ - Renamed Tripoli Area to Lebanon
  - Added Hawran and Bargylus Areas in the Levant
  - Updated the terrain set up of the Levant to be more accurate
 
