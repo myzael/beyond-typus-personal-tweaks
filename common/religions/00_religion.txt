@@ -889,6 +889,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = sunni }
@@ -930,6 +931,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = sunni }
@@ -970,6 +972,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = sunni }
@@ -1010,6 +1013,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = sunni }
@@ -1051,6 +1055,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = shiite }
@@ -1094,6 +1099,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = shiite }
@@ -1134,6 +1140,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = shiite }
@@ -1175,13 +1182,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
-				if = {
-					limit = {
-						NOT = { religion = shiite }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
+				religion = alawite
 				reverse_has_opinion = { who = FROM value = 150 }
 				OR = {
 					alliance_with = FROM
@@ -1215,13 +1216,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
-				if = {
-					limit = {
-						NOT = { religion = shiite }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
+				religion = alawite
 				reverse_has_opinion = { who = FROM value = 150 }
 				OR = {
 					alliance_with = FROM
@@ -1255,13 +1250,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
-				if = {
-					limit = {
-						NOT = { religion = shiite }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
+				religion = alawite
 				reverse_has_opinion = { who = FROM value = 150 }
 				OR = {
 					alliance_with = FROM
@@ -1295,13 +1284,7 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
-				if = {
-					limit = {
-						NOT = { religion = shiite }
-						NOT = { religion = ibadi }
-					}
-					NOT = { piety = -0.5 }
-				}
+				religion = alawite
 				reverse_has_opinion = { who = FROM value = 150 }
 				OR = {
 					alliance_with = FROM
