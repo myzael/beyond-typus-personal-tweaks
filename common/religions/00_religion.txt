@@ -894,6 +894,7 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -936,6 +937,7 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -977,6 +979,7 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1018,6 +1021,7 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1060,6 +1064,7 @@ muslim = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1104,6 +1109,7 @@ muslim = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1145,6 +1151,7 @@ muslim = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
