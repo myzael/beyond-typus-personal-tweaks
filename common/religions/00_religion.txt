@@ -2554,6 +2554,8 @@ zoroastrian_group = {
 			advisor_pool = 1
 		}
 		
+		personal_deity = yes
+		
 		heretic = { YAZDANIST }	
 	}
 	
