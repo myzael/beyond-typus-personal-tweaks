@@ -1391,6 +1391,8 @@ muslim = {
 		}
 		
 		heretic = { SECTARIST }	
+		
+		uses_piety = yes				# Uses piety mechanics
 	}
 	
 	#BT Added
