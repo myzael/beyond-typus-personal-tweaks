@@ -1341,7 +1341,7 @@ muslim = {
 			local_missionary_strength = -0.02
 		}
 		
-		heretic = { DRUZE HURUFI ZAIDI }
+		heretic = { HURUFI ZAIDI }
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
@@ -1402,7 +1402,22 @@ muslim = {
 			local_missionary_strength = -0.03
 		}
 		
-		heretic = { HANBALI HURUFI ZAIDI JAFARI }
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		aspects = {
+			followers_of_ali_aspect
+			manifestations_of_god_aspect
+			philosophical_thought_aspect
+			pillars_of_islam_aspect
+			taqiyya_aspect
+			reincarnation_aspect
+			mass_aspect
+			fortified_coasts_aspect
+			unite_tribes_aspect
+			feast_days_aspect
+		}
+		aspects_name = ALAWITE_ASPECTS
+		
+		heretic = { HANBALI JAFARI }
 		
 	}
 	
