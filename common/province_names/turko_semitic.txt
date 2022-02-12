@@ -23,7 +23,7 @@
 5145 = { "Al-Maghousa" "Al-Maghousa" }
 5170 = { "Al-Ladhiqiyah" "Al-Ladhiqiyah" }
 5180 = { "Gazzah" "Gazzah" }
-5181 = { "Nekhel" "Nekhel" }
+5181 = { "Nakhl" "Nakhl" }
 5203 = { "Shoubak" "Shoubak" }
 5205 = { "Bayrut" "Bayrut" }
 6065 = { "Sina" "Sant Katrin" }

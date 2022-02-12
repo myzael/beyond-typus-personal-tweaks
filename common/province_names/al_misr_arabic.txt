@@ -5,4 +5,5 @@
 #365 = { "El-Tur" "El-Tur" }
 #364 = { "El-Arish" "El-Arish" }
 #2315 = { "Es-Suweis" "Es-Suweis" }
+#5181 = { "Nekhel" "Nekhel" }
 #6094 = { "El-Eskenderun" "El-Eskenderun" }
