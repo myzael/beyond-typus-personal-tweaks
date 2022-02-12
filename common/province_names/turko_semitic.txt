@@ -86,7 +86,7 @@
 4318 = { "Atfihiyah" "Atfih" }
 4319 = { "Al-Uqsur" "Al-Uqsur" }
 4320 = { "Jirja" "Jirja" }
-4321 = { "As-Sahra as-Sharqiyah" "Madinat al-Gibali" }
+4321 = { "As-Sahra ash-Sharqiyah" "Madinat al-Gibali" }
 4323 = { "Ad-Dakhla" "Al-Qasr" }
 5261 = { "Dumyat" "Dumyat" }
 5264 = { "Al-Jizah" "Al-Jizah" }
