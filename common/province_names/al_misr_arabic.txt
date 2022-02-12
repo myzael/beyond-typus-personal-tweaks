@@ -4,7 +4,7 @@
 ##Egypt
 #358 = { "El-Eskendereya" "El-Eskendereya" }
 #359 = { "El-Fayyum" "El-Fayyum" }
-#361 = { "El-Qaherah" "El-Qaherah" }
+#361 = { "El-Qahera" "El-Qahera" }
 #363 = { "El-Farama" "El-Farama" }
 #1233 = { "El-Kharga" "El-Kharga" }
 #2315 = { "Es-Suweis" "Es-Suweis" }
