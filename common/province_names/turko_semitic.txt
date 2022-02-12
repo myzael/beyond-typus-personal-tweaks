@@ -22,7 +22,7 @@
 5139 = { "Niqusia" "Niqusia" } #(JP) Maronite "Nikusiya"
 5145 = { "Al-Maghousa" "Al-Maghousa" }
 5170 = { "Al-Ladhiqiyah" "Al-Ladhiqiyah" }
-5180 = { "Gazzah" "Gazzah" }
+5180 = { "Ghazzah" "Ghazzah" }
 5181 = { "Nakhl" "Nakhl" }
 5203 = { "Shoubak" "Shoubak" }
 5205 = { "Bayrut" "Bayrut" }
@@ -62,6 +62,45 @@
 6090 = { "Suluk" "Suluk" }
 6091 = { "Maskanah" "Maskanah" }
 6092 = { "Manbig" "Manbig" }
+
+#Egypt
+358 = { "Al-Iskandariyah" "Al-Iskandariyah" }
+359 = { "Al-Fayyum" "Al-Fayyum" }
+360 = { "Qus" "Qus" }			#Or Qina, or Qift
+361 = { "Al-Qahirah" "Al-Qahirah" }
+362 = { "Rashid" "Rashid" }
+363 = { "Al-Farama" "Al-Farama" }
+1231 = { "Aswan" "Aswan" }
+1233 = { "Al-Kharja" "Al-Kharja" }
+2315 = { "As-Suways" "As-Suways" }
+2316 = { "Al-Gharbiyah" "Tanta" }
+2317 = { "Al-Minya" "Al-Minya" }
+2318 = { "Al-Wahat al-Bahnasa" "Al-Bawiti" }			#modern Bahariya
+2319 = { "Asyut" "Asyut" }
+2320 = { "Ras Gharib" "Ras Gharib" }
+2321 = { "Al-Qusayr" "Al-Qusayr" }
+2324 = { "Halayib" "Halayib" }
+2325 = { "Al-Alamayn" "Al-Alamayn" }			#doubt this dates back to the 15th cenutry, but oh well, couldn't find better.
+4316 = { "Ash-Sharqiyah" "Al-Mansura" }
+4317 = { "Damanhur" "Damanhur" }
+4318 = { "Atfihiyah" "Atfih" }
+4319 = { "Al-Uqsur" "Al-Uqsur" }
+4320 = { "Jirja" "Jirja" }
+4321 = { "As-Sahra as-Sharqiyah" "Madinat al-Gibali" }
+4323 = { "Ad-Dakhla" "Al-Qasr" }
+5261 = { "Dumyat" "Dumyat" }
+5264 = { "Al-Jizah" "Al-Jizah" }
+5267 = { "Bani Suwayf" "Bani Suwayf" }
+5271 = { "Al-Haras" "Madinat al-Haras" }
+5272 = { "Al-Baritun" "Al-Baritun" }
+
+#Maghreb
+356 = { "Banghazi" "Banghazi" }
+357 = { "Darnah" "Darnah" }
+
+#Arabia
+384 = { "Al-Madinah" "Al-Madinah" }
+385 = { "Makkah" "Makkah" }
 
 #Unsorted and Unorganised
 214 = "Qal'at Ayyub"
@@ -176,7 +215,6 @@
 407 = "Ar-Raqqah"		
 2308 = "Ar-Ruha"
 2314 = "Ar-Rahbah"
-2315 = "As-Suways"
 5171 = "Mihalich"
 
 #Beyond Typus 4.0 Overhaul of Anatolia
@@ -247,8 +285,6 @@
 
 #Beyond Typus 7.0 Overhaul of Arabia
 #4269 = "Duba"			#unchanged
-384 = "Al-Madinah"
-385 = "Makkah"
 #386 = "Asir"			#unchanged
 387 = "Al-Mukha"
 388 = "Adin"
@@ -322,40 +358,13 @@
 4273 = "Al-Ghazalah"
 
 #Beyond Typus 7.0 Overhaul of Egypt
-356 = "Banghazi"
-357 = "Darnah"
-359 = "El-Fayyum"
-360 = "Qus"			#Or Qina, or Qift
-361 = "Al-Qahirah"
-362 = "Rashid"
-363 = "El-Farama"
 1231 = "Aswan"
-1233 = "El-Kharga"
 1234 = "Qasr Ibrim"
-2316 = "El-Gharbeya"
-2317 = "El-Minya"
-2318 = "El-Wahat el-Bahnasa"			#modern Bahariya
-2319 = "Asyut"
-2320 = "Ras Gareb"
-2321 = "El Oser"
 #2322 = "Faras"
 #2324 = "Hala'ib"
-2325 = "El-Alamein"			#doubt this dates back to the 15th cenutry, but oh well, couldn't find better.
 2326 = "Tubruq"
-5261 = "Dumyat"
-4316 = "El-Sharqia"
-4317 = "Damanhur"
-5264 = "El-Giza"
-4318 = "Atfihia"
-5267 = "Beni Suef"
-4320 = "Girga"
-4319 = "Luxor"
-4321 = "Es-Sahra es-Sarqia"
-5271 = "El-Haras"
-5272 = "Matruh"
 5273 = "Siwah"
 5274 = "Agdabiya"
-4323 = "Dakhla"
 4322 = "Wadi Allaqi"
 5278 = "Fila"
 
@@ -2243,4 +2252,3 @@
 7163 = { "Munimfasiaan" "Munimfasiaan" } #
 7937 = { "Qasr Al-Rawul" "Qast Al-Rawul" } #
 7998 = { "Uzah" "Uzah" } #
-358 = { "Al-Iskandariyah" "Al-Iskandariyah" }
