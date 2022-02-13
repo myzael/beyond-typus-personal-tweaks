@@ -75,7 +75,7 @@
 2315 = { "As-Suways" "As-Suways" }
 2316 = { "Al-Gharbiyah" "Tanta" }
 2317 = { "Al-Minya" "Al-Minya" }
-2318 = { "Al-Wahat al-Bahnasa" "Al-Bawiti" }			#modern Bahariya
+2318 = { "Al-Bahnasa" "Al-Bawiti" }			#modern Bahariya
 2319 = { "Asyut" "Asyut" }
 2320 = { "Ras Gharib" "Ras Gharib" }
 2321 = { "Al-Qusayr" "Al-Qusayr" }

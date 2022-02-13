@@ -9,7 +9,7 @@
 #2315 = { "Es-Suweis" "Es-Suweis" }
 #2316 = { "El-Gharbeya" "Tanta" }
 #2317 = { "El-Menya" "El-Menya" }
-#2318 = { "El-Wahet el-Bahnasa" "El-Bawiti" }			#modern Bahariya
+#2318 = { "El-Bahnasa" "El-Bawiti" }			#modern Bahariya
 #2320 = { "Ras Ghareb" "Ras Ghareb" }
 #2321 = { "El-Qoseir" "El-Qoseir" }
 #2324 = { "Halayeb" "Halayeb" }
