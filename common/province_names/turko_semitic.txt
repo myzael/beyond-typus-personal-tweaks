@@ -18,8 +18,8 @@
 4268 = { "Al-Aqaba" "Al-Aqaba" }
 4270 = { "Maan" "Maan" }
 4271 = { "Idlib" "Idlib" }
-4297 = { "Balabekk" "Balabekk" }
-5139 = { "Niqusia" "Niqusia" } #(JP) Maronite "Nikusiya"
+4297 = { "Balabakk" "Balabakk" }
+5139 = { "Niqusiyah" "Niqusiyah" } #(JP) Maronite "Nikusiya"
 5145 = { "Al-Maghousa" "Al-Maghousa" }
 5170 = { "Al-Ladhiqiyah" "Al-Ladhiqiyah" }
 5180 = { "Ghazzah" "Ghazzah" }
