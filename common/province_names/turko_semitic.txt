@@ -61,7 +61,7 @@
 6089 = { "Al-Rahba" "Al-Rahba" }
 6090 = { "Suluk" "Suluk" }
 6091 = { "Maskanah" "Maskanah" }
-6092 = { "Manbig" "Manbig" }
+6092 = { "Manbij" "Manbij" }
 
 #Egypt
 358 = { "Al-Iskandariyah" "Al-Iskandariyah" }
