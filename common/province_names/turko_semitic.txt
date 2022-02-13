@@ -69,7 +69,7 @@
 360 = { "Qus" "Qus" }			#Or Qina, or Qift
 361 = { "Al-Qahirah" "Al-Qahirah" }
 362 = { "Rashid" "Rashid" }
-363 = { "Al-Farama" "Al-Farama" }
+363 = { "Qatiya" "Qatiya" }
 1231 = { "Aswan" "Aswan" }
 1233 = { "Al-Kharja" "Al-Kharja" }
 2315 = { "As-Suways" "As-Suways" }
