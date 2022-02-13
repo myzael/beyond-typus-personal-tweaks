@@ -16,6 +16,7 @@
 #2324 = { "Halayeb" "Halayeb" }
 #2325 = { "El-Alamein" "El-Alamein" }			#doubt this dates back to the 15th cenutry, but oh well, couldn't find better.
 #4316 = { "Esh-Sharqeya" "El-Mansura" }
+#4317 = { "Beheira" "Damanhur" }
 #4318 = { "Atfiheya" "Atfih" }
 #4319 = { "El-Uqsor" "El-Uqsor" }
 #4320 = { "Gerga" "Gerga" }

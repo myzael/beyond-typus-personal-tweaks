@@ -82,7 +82,7 @@
 2324 = { "Halayib" "Halayib" }
 2325 = { "Al-Alamayn" "Al-Alamayn" }			#doubt this dates back to the 15th cenutry, but oh well, couldn't find better.
 4316 = { "Ash-Sharqiyah" "Al-Mansura" }
-4317 = { "Damanhur" "Damanhur" }
+4317 = { "Buhayra" "Damanhur" }
 4318 = { "Atfihiyah" "Atfih" }
 4319 = { "Al-Uqsur" "Al-Uqsur" }
 4320 = { "Jirja" "Jirja" }
