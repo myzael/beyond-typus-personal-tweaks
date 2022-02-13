@@ -25,6 +25,7 @@
 #5267 = { "Beni Suef" "Beni Suef" }
 #5271 = { "El-Haras" "Medinet el-Haras" }
 #5272 = { "El-Baretun" "El-Baretun" }
+#5273 = { "Es-Siwah" "Es-Siwah" }
 
 ##Levant
 #365 = { "El-Tur" "El-Tur" }

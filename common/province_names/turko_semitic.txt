@@ -93,6 +93,7 @@
 5267 = { "Bani Suwayf" "Bani Suwayf" }
 5271 = { "Al-Haras" "Madinat al-Haras" }
 5272 = { "Al-Baritun" "Al-Baritun" }
+5273 = { "As-Siwah" "As-Siwah" }
 
 #Maghreb
 356 = { "Banghazi" "Banghazi" }
@@ -363,7 +364,6 @@
 #2322 = "Faras"
 #2324 = "Hala'ib"
 2326 = "Tubruq"
-5273 = "Siwah"
 5274 = "Agdabiya"
 4322 = "Wadi Allaqi"
 5278 = "Fila"
