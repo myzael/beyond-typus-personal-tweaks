@@ -4,6 +4,7 @@ BT14.1.2
  
 #Tweaks and Balance
  - Removed Carpathian German culture from Tirgoviste and Campulung after further looking at the extent of Germans in Wallachia
+ - Changed the primary tag of Walloon from Hainaut to Liege since Hainaut is not a Picard tag
 
 
 BT14.1.1
