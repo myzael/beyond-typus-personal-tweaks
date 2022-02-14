@@ -1,6 +1,9 @@
 BT14.1.2
 #Bugfixes
  - Fixed a bug where the Bavaria formation decision was impossible due to vassals being too large
+ 
+#Tweaks and Balance
+ - Removed Carpathian German culture from Tirgoviste and Campulung after further looking at the extent of Germans in Wallachia
 
 
 BT14.1.1
