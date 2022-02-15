@@ -1,3 +1,46 @@
+BT15
+#New Additions
+ - Total Overhaul to the Levant region in game, as well as the Middle Euphrates area in Mesopotamia.
+ - New Druze Religion and mechanics, and culture*
+ - New Yazidi Religion and mechanics*
+ - New Alawite Religion and mechanics*
+ - New Nestorian Religion and mechanics*
+ - New Kilis tag as a Yazidi Kurdish vassal of the Mamluks in northern Levant
+ - New Palestine and Transjordan tags as releasable, along side Lebanon and Syria
+ - New Great Projects in the Levant*
+  *
+  *
+ 
+
+#Bugfixes
+
+#Tweaks and Balance
+ - Cultural set up of the Levant and the Middle Euphrates updated 
+ - Religious set up of the Levant and the Middle Euphrates updated
+ - Renamed Mashriqi (Arabic Group) to Mesopotamian
+ - Updated (though no new) Trade Nodes and Companies in the Levant to correspond to new borders
+ - Updated Trade Goods throughout the Levant and Middle Euphrates to better represent the local industries and agriculture
+ - Renamed Rakka Area to Middle Euphrates
+ - Renamed Kerak Area to Transjordan
+ - Renamed Tripoli Area to Lebanon
+ - Added Hawran and Bargylus Areas in the Levant
+ - Updated the terrain set up of the Levant to be more accurate
+
+#Localised Naming
+ - Full naming in british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish), turko_semitic.txt (Arabic) for the Levant and Middle Euphrates
+ - Some naming in old_egyptian.txt (Ancient Egyptian), phoenician.txt (Phoenician), egyptian_group.txt (Coptic Egyptian), kurdish.txt (Kurdish), aramaic.txt (Aramean), armenian.txt and cilician.txt (Armenian) in the Levant
+
+#GFX
+
+
+
+
+
+
+*Not yet implemented
+
+
+
 BT14.1.2
 #Bugfixes
  - Fixed a bug where the Bavaria formation decision was impossible due to vassals being too large
@@ -14,6 +57,7 @@ BT14.1.2
  - Added albanian.txt as a dummy file so that vanilla naming does not overwrite BT illyrian.txt
  - Added naming in dutch.txt and flemish.txt for Low Countries and North Germany (thanks to gijs)
  - Updated byzantine.txt with contributions from Andreas Cynicus
+
 
 
 
@@ -74,8 +118,8 @@ BT14.1
 #Tweaks and Balance
  - Nerfed the Torre del Oro again
  - New image for the Ise Grand Shrine added
- - Tweaked modifiers for Solovetsky Monastery and Pyramids of Meroë
- - Allowed use of Schonbrünn Castle even if Vienna is not the capital as long as country is still Emperor
+ - Tweaked modifiers for Solovetsky Monastery and Pyramids of MeroÃ«
+ - Allowed use of SchonbrÃ¼nn Castle even if Vienna is not the capital as long as country is still Emperor
  - Renamed the new "tionontate" (a name from.. AC Valhalla it seems...?) to Eire, one of the dominant western Iroquioan tribes
  - Tweaked events relating to Austrian Succession (thanks to Pieter / Pbhuh)
  - Added Austrian as accepted culture for PSS
@@ -95,8 +139,8 @@ BT14.1
  - Added full naming in latin.txt (Italian) for Anatolia (thanks to Alexious and Fatharitan)
  - Added full naming in east_slavic.txt (Russian) for Russia, Urals, Pontic Steppe and Caucasia (thanks to Alexious)
  - Added full naming in germanic.txt (German) for all of historic German Empire borders (thanks to Arga)
- - Removed broken "š" character from a number of files
- - Donauwörth is now called Donauwörth for Donauwörth. Donauwörception
+ - Removed broken "Å¡" character from a number of files
+ - DonauwÃ¶rth is now called DonauwÃ¶rth for DonauwÃ¶rth. DonauwÃ¶rception
  - Added a French name for Corycus province which Cyprus owns at the start date
  - Added naming in west_slavic.txt (Polish) for Carpathia so it is now 100% complete (thanks to McLurr)
  - Added lots of naming in korean_g.txt in multiple regions (thanks to Flandre Scarlet)
@@ -149,14 +193,14 @@ BT14.0.6
  - Added modifiers for the following monuments:
 	* Santiago de Compostela Cathedral
 	* Segovia Alcazar
-	* Mosque-Cathedral of Córdoba
+	* Mosque-Cathedral of CÃ³rdoba
 	* Torre del Oro
 	* Mont-Saint-Michel
 	* Palace of the Popes
 	* Aula Palatina
 	* Herrenhausen Gardens
 	* Sanssouci
-	* Schönbrunn Palace
+	* SchÃ¶nbrunn Palace
 	* Solovetsky Monastery
 	* Saint Basil's Cathedral
  - Added IST tag for Istrian culture, representing the March of Istria (thanks to Donlad)
@@ -300,7 +344,7 @@ BT14.0.3
  
 #Tweaks and Balance
  - Removed the Sultan Ahmed Mosque at the start date; the monument now is added after the Ottomans take the "Make Constantinople Capital" decision.
- - Changed Giessen's capital to Gießen
+ - Changed Giessen's capital to GieÃŸen
  - Changed the Colosseum monument to now give Cavalry Combat Ability in addition to the existing Army Morale bonus at tier 3
  - Adjusted some concentrate development defines to fit with BT's dev doubling
  - Nerfed the Globe Theatre monument's modifiers
