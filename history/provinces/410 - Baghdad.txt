@@ -1,8 +1,7 @@
- 
 #410 - Iraq-i-Arab
 
-owner = QAR
-controller = QAR
+owner = IRQ
+controller = IRQ
 culture = al_iraqiya_arabic
 religion = sunni
 capital = "Baghdad"
@@ -13,8 +12,8 @@ base_production = 8
 base_manpower = 8
 is_city = yes
 fort_15th = yes
-add_core = IRQ
 add_core = QAR
+add_core = IRQ
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman

@@ -1,9 +1,8 @@
- 
 #4302 - Bayazid
 
-owner = QAR
-controller = QAR
-add_core = QAR
+owner = GEO
+controller = GEO
+add_core = GEO
 add_core = ARM
 capital = "Alashkert"
 culture = armenian

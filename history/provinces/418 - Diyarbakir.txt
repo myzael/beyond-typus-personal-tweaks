@@ -1,8 +1,7 @@
- 
 #418 - Diyarbakir
 
-owner = QAR
-controller = QAR
+owner = AKK
+controller = AKK
 culture = armenian			#Coptic Armenian or Orthodox Syriac both good choices. Unless I'm missing something, though, sunni kurdish from vanilla is not
 religion = apostolic
 capital = "Diyar Bekir"
@@ -12,7 +11,7 @@ base_tax = 5			#Dev so low because of matching dev with vanilla levels, might ha
 base_production = 5
 base_manpower = 4 
 is_city = yes
-add_core = QAR
+add_core = AKK
 
 
 discovered_by = east_african
@@ -23,13 +22,6 @@ discovered_by = eastern
 discovered_by = nomad_group
 
 fort_15th = yes #Fortress City of Amed/Diyarbakir as well as the Citadel of Mardin which withstood repeated sieges by Timur and was frequently seiged in Ottoman-Safavid conflicts.
-
-
-1402.1.1 = {
-	owner = AKK
-	controller = AKK
-	add_core = AKK
-} #Aq Qoyunlu granted land in 1402 by Tamerlane
 
 1507.1.1 = {
 	owner = PER

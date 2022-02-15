@@ -5,8 +5,8 @@
 #Core Details
 capital = "Rabha"
 is_city = yes
-owner = QAR
-controller = QAR
+owner = IRQ
+controller = IRQ
 
 #Demographics
 culture = al_iraqiya_arabic
@@ -20,6 +20,7 @@ trade_goods = livestock #(JP) site used to protect semi-nomadic herders
 
 #Cores and Occupation (Alphabetical after current)
 add_core = QAR
+add_core = IRQ
 add_core = SYR
 
 #Other Political

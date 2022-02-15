@@ -5,7 +5,6 @@ owner = AKK
 controller = AKK
 add_core = AKK
 add_core = ERE
-add_core = QAR
 culture = armenian
 religion = apostolic
 capital = "Kharput"

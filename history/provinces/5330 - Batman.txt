@@ -1,9 +1,8 @@
- 
 #4395 - Hisn Kayfa
 
-owner = BTL
-controller = BTL
-add_core = BTL
+owner = ZIR
+controller = ZIR
+add_core = ZIR
 capital = "Farqin"			#Kurdish name for Silvan
 culture = armenian			#Borderline between armenian, syriac, kurdish, turkish, or arab, but going with Armenian for now.
 religion = apostolic

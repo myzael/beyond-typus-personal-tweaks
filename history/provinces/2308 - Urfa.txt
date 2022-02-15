@@ -1,8 +1,7 @@
- 
 #2308 - Cizre
 
-owner = MAM
-controller = MAM
+owner = AKK
+controller = AKK
 culture = syriac_culture			#Syriac was the local accent of Aramaic in Edessa, should culture be Armenian, though
 religion = sunni			# In 1144, the Crusader state fell to the Turkish Abassid general Zengui, who had most of the Christian inhabitants slaughtered together with the Latin archbishop.
 capital = "Urfa"			#Edessa is the Greek version, Turkish form is Urfa until the 20th century, Arabic version is Al-Ruha and Urhay is the Syriac version. Might change this later, but going with Turkish version for now because a Turkish culture is probably the most likely
@@ -12,9 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = MAM
-add_core = SYR
-add_core = QAR
+add_core = AKK
 
 discovered_by = east_african
 discovered_by = muslim
@@ -28,8 +25,6 @@ discovered_by = indian
 #In 1031 Edessa was given up to the Byzantines under George Maniakes by its Arab governor. It was retaken by the Arabs, and then successively held by the Greeks, the Armenians, the Seljuk Turks, the Crusaders, who established there the County of Edessa and kept the city until 1144, 
 #when it was again captured by the Turk Zengi, and most of its inhabitants were allegedly slaughtered together with the Latin archbishop (see Siege of Edessa).[20] These events are known to us chiefly through the Armenian historian Matthew, who had been born at Edessa. 
 #In 1144 the city had an Armenian population of 47,000. In 1890, the population of Edessa consisted of 55,000, of which the Muslim population made up 40,835.
-
-1402.1.1 = { owner = AKK controller = AKK add_core = AKK remove_core = MAM } # The Ak Koyunlu
 
 #2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins

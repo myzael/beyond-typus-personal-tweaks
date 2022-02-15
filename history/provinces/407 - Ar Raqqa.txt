@@ -1,4 +1,3 @@
- 
 #407 - Ar-Raqqah
 
 owner = AKK

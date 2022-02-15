@@ -1,4 +1,3 @@
- 
 #4392 - Mardin
 
 owner = AKK

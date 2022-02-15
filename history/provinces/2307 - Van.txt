@@ -1,8 +1,7 @@
- 
 #2307 - Van
 
-owner = TIM
-controller = TIM
+owner = QAR
+controller = QAR
 culture = armenian
 religion = apostolic
 capital = "Van"
@@ -12,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2 
 is_city = yes
-add_core = TIM
+add_core = QAR
 add_core = ARM
 
 

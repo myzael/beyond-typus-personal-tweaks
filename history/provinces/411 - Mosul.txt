@@ -1,4 +1,3 @@
- 
 #411 - Mosul
 
 owner = QAR
@@ -13,9 +12,7 @@ base_production = 8
 base_manpower = 8
 is_city = yes
 fort_15th = yes
-add_core = IRQ
 add_core = QAR
-add_core = BHT
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = indian

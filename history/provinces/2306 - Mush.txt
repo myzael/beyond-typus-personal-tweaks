@@ -1,8 +1,7 @@
- 
 #2306 - Mush
 
-owner = QAR
-controller = QAR
+owner = BTL
+controller = BTL
 culture = armenian			#Probably? Best bet I could find. Wiki says -Predominantly Armenian and Arab before, Kurdish immigration combined with Armenian and Assyrian Genocide has shifted the ethnic balance. Kurdish people form the majority of the city centre today. Kurdish in vanilla tsk tsk
 religion = apostolic
 capital = "Mus"
@@ -12,7 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 2 
 is_city = yes
-add_core = QAR
+add_core = BTL
 add_core = ARM
 
 extra_cost = 8

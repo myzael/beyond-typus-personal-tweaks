@@ -1,8 +1,7 @@
- 
 #408 - Basra
 
-owner = MSY
-controller = MSY
+owner = BSR
+controller = BSR
 culture = al_iraqiya_arabic
 religion = shiite
 capital = "Basra"

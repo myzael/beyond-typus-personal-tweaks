@@ -5,8 +5,8 @@
 #Core Details
 capital = "Khozat"
 is_city = yes
-owner = QAR
-controller = QAR
+owner = AKK
+controller = AKK
 
 #Demographics
 culture = al_iraqiya_arabic
@@ -19,7 +19,7 @@ base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = QAR
+add_core = AKK
 
 #Other Political
 hre = no

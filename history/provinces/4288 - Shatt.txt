@@ -1,4 +1,3 @@
- 
 # - Cezair i-Arab -> al-Qurna, Zihiya, Rahmaniya
 
 owner = MSY
@@ -12,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 6
 is_city = yes
-add_core = BSR
+add_core = IRQ
 add_core = MSY
 discovered_by = east_african
 discovered_by = muslim
