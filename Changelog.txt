@@ -25,6 +25,7 @@ BT15
  - Renamed Tripoli Area to Lebanon
  - Added Hawran and Bargylus Areas in the Levant
  - Updated the terrain set up of the Levant to be more accurate
+ - Added Latin Empire tags and some Shattered Europe tags to no longer be revoltable
 
 #Localised Naming
  - Full naming in british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish), turko_semitic.txt (Arabic) for the Levant and Middle Euphrates
