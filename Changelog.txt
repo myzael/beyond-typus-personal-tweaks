@@ -40,6 +40,27 @@ BT15
 *Not yet implemented
 
 
+
+BT14.1.2
+#Bugfixes
+ - Fixed a bug where the Bavaria formation decision was impossible due to vassals being too large
+ - Fixed a bug with the Jerusalem formable decision
+ - Fixed a bug with the BT pretender.txt file
+ - Fixed a bug with happy Clergy causing unrest
+ - Fixed a bug where some code had accidentally been removed from 00_on_actions.txt
+ 
+#Tweaks and Balance
+ - Removed Carpathian German culture from Tirgoviste and Campulung after further looking at the extent of Germans in Wallachia
+ - Changed the primary tag of Walloon from Hainaut to Liege since Hainaut is not a Picard tag
+ 
+#Localised Naming
+ - Added albanian.txt as a dummy file so that vanilla naming does not overwrite BT illyrian.txt
+ - Added naming in dutch.txt and flemish.txt for Low Countries and North Germany (thanks to gijs)
+ - Updated byzantine.txt with contributions from Andreas Cynicus
+
+
+
+
 BT14.1.1
 #Bugfixes
  - Fixed a bug with a wrong reference to GAU rather than VOR causing Austria to see the world
@@ -97,8 +118,8 @@ BT14.1
 #Tweaks and Balance
  - Nerfed the Torre del Oro again
  - New image for the Ise Grand Shrine added
- - Tweaked modifiers for Solovetsky Monastery and Pyramids of Meroë
- - Allowed use of Schonbrünn Castle even if Vienna is not the capital as long as country is still Emperor
+ - Tweaked modifiers for Solovetsky Monastery and Pyramids of MeroÃ«
+ - Allowed use of SchonbrÃ¼nn Castle even if Vienna is not the capital as long as country is still Emperor
  - Renamed the new "tionontate" (a name from.. AC Valhalla it seems...?) to Eire, one of the dominant western Iroquioan tribes
  - Tweaked events relating to Austrian Succession (thanks to Pieter / Pbhuh)
  - Added Austrian as accepted culture for PSS
@@ -118,8 +139,8 @@ BT14.1
  - Added full naming in latin.txt (Italian) for Anatolia (thanks to Alexious and Fatharitan)
  - Added full naming in east_slavic.txt (Russian) for Russia, Urals, Pontic Steppe and Caucasia (thanks to Alexious)
  - Added full naming in germanic.txt (German) for all of historic German Empire borders (thanks to Arga)
- - Removed broken "š" character from a number of files
- - Donauwörth is now called Donauwörth for Donauwörth. Donauwörception
+ - Removed broken "Å¡" character from a number of files
+ - DonauwÃ¶rth is now called DonauwÃ¶rth for DonauwÃ¶rth. DonauwÃ¶rception
  - Added a French name for Corycus province which Cyprus owns at the start date
  - Added naming in west_slavic.txt (Polish) for Carpathia so it is now 100% complete (thanks to McLurr)
  - Added lots of naming in korean_g.txt in multiple regions (thanks to Flandre Scarlet)
@@ -172,14 +193,14 @@ BT14.0.6
  - Added modifiers for the following monuments:
 	* Santiago de Compostela Cathedral
 	* Segovia Alcazar
-	* Mosque-Cathedral of Córdoba
+	* Mosque-Cathedral of CÃ³rdoba
 	* Torre del Oro
 	* Mont-Saint-Michel
 	* Palace of the Popes
 	* Aula Palatina
 	* Herrenhausen Gardens
 	* Sanssouci
-	* Schönbrunn Palace
+	* SchÃ¶nbrunn Palace
 	* Solovetsky Monastery
 	* Saint Basil's Cathedral
  - Added IST tag for Istrian culture, representing the March of Istria (thanks to Donlad)
@@ -323,7 +344,7 @@ BT14.0.3
  
 #Tweaks and Balance
  - Removed the Sultan Ahmed Mosque at the start date; the monument now is added after the Ottomans take the "Make Constantinople Capital" decision.
- - Changed Giessen's capital to Gießen
+ - Changed Giessen's capital to GieÃŸen
  - Changed the Colosseum monument to now give Cavalry Combat Ability in addition to the existing Army Morale bonus at tier 3
  - Adjusted some concentrate development defines to fit with BT's dev doubling
  - Nerfed the Globe Theatre monument's modifiers

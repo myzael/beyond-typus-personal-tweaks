@@ -1695,7 +1695,7 @@ french = {
 		primary = TOU
 	}
 	wallonian = {
-		primary = HAI
+		primary = LIE
 	}
 	#Beyond the Pale Culture
 	arpitan = {

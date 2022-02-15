@@ -7,6 +7,8 @@
  are_legend_of_the_true_cross:1 "Legend of the True Cross"
  ABSOLUTISM_IMPACT_TT:1 "Absolutism is how ruthless and efficient the government is. The higher it is, the greater benefits we gain in efficiency and stable government, but we pay for this in greater Unrest."
  ABSOLUTISM_NOT_YET_TOOLTIP:1 "§YAbsolutism§!\nAbsolutism is how ruthless and efficient the government is. It is a concept that appears in the Age of Absolutism. The higher it is, the greater benefits we gain in efficiency and stable government, but we pay for this in greater Unrest."
+ ada_turkish_alliance_ct:0 "Any §Y[Root.GetAdjective]§! regiment is located in a port of the region §YEgypt§! or the region §YLevant§!, which borders the §YMediterranean Sea§!, or in a province hold by a §YTurkish§! country."
+ ada_push_further_north_ct:1 "Every province in the areas §YWhite Nile§!, §YUpper Nubia§!, §YLower Nubia§! and §YBlueNile§! is owned by a §Y[Root.Religion.GetName]§! country or by a subject of §Y[Root.GetName]§!."
  ATJ_ideas:0 "Acehnese Ideas"
  ATJ_ideas_bonus:0 "Acehnese Ambition"
  ATJ_ideas_start:0 "Acehnese Traditions"
