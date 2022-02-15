@@ -605,7 +605,7 @@ country_decisions = {
 				OR = {
 					NOT = { exists = UBV }
 					UBV = {
-						NOT = { num_of_cities = 5 }
+						NOT = { num_of_cities = 8 }
 						is_subject_of = ROOT
 					}
 				}
@@ -615,7 +615,7 @@ country_decisions = {
 				OR = {
 					NOT = { exists = LBV }
 					LBV = {
-						NOT = { num_of_cities = 5 }
+						NOT = { num_of_cities = 8 }
 						is_subject_of = ROOT
 					}
 				}
@@ -625,7 +625,7 @@ country_decisions = {
 				OR = {
 					NOT = { exists = ING }
 					ING = {
-						NOT = { num_of_cities = 5 }
+						NOT = { num_of_cities = 8 }
 						is_subject_of = ROOT
 					}
 				}
@@ -2007,7 +2007,6 @@ country_decisions = {
 		major = yes
 		potential = {
 			OR = {
-				bt_generic_can_form_potential_check = yes
 				owns = 379
 				AND = {
 					ai = no
