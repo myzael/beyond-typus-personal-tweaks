@@ -2007,7 +2007,6 @@ country_decisions = {
 		major = yes
 		potential = {
 			OR = {
-				bt_generic_can_form_potential_check = yes
 				owns = 379
 				AND = {
 					ai = no
