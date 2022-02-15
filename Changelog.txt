@@ -3,6 +3,7 @@ BT14.1.2
  - Fixed a bug where the Bavaria formation decision was impossible due to vassals being too large
  - Fixed a bug with the Jerusalem formable decision
  - Fixed a bug with the BT pretender.txt file
+ - Fixed a bug with happy Clergy causing unrest
  
 #Tweaks and Balance
  - Removed Carpathian German culture from Tirgoviste and Campulung after further looking at the extent of Germans in Wallachia
