@@ -1,10 +1,12 @@
 BT15
 #New Additions
- - Total Overhaul to the Levant region in game, as well as the Middle Euphrates area in Mesopotamia.
- - New Druze Religion and mechanics, and culture*
+ - Total Overhaul to the Levant region in game, as well as the Mesopotamia area in Mesopotamia.
+ - New Druze Religion and mechanics*
  - New Yazidi Religion and mechanics*
  - New Alawite Religion and mechanics*
+ - New Mandaean Religion and mechanics*
  - New Nestorian Religion and mechanics*
+ - New Assyrian, Aramean and Mandaean Cultures in a new Syriac culture group, replacing the old Syriac culture
  - New Kilis tag as a Yazidi Kurdish vassal of the Mamluks in northern Levant
  - New Palestine and Transjordan tags as releasable, along side Lebanon and Syria
  - New Great Projects in the Levant*
@@ -15,20 +17,20 @@ BT15
 #Bugfixes
 
 #Tweaks and Balance
- - Cultural set up of the Levant and the Middle Euphrates updated 
- - Religious set up of the Levant and the Middle Euphrates updated
+ - Cultural set up of the Levant and the Mesopotamia updated 
+ - Religious set up of the Levant and the Mesopotamia updated
  - Renamed Mashriqi (Arabic Group) to Mesopotamian
  - Updated (though no new) Trade Nodes and Companies in the Levant to correspond to new borders
- - Updated Trade Goods throughout the Levant and Middle Euphrates to better represent the local industries and agriculture
- - Renamed Rakka Area to Middle Euphrates
+ - Updated Trade Goods throughout the Levant and Mesopotamia to better represent the local industries and agriculture
+ - Renamed Rakka Area to Middle Mesopotamia
  - Renamed Kerak Area to Transjordan
  - Renamed Tripoli Area to Lebanon
  - Added Hawran and Bargylus Areas in the Levant
- - Updated the terrain set up of the Levant to be more accurate
+ - Updated the terrain set up of the Levant and Mesopotamia to be more accurate
  - Added Latin Empire tags and some Shattered Europe tags to no longer be revoltable
 
 #Localised Naming
- - Full naming in british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish), turko_semitic.txt (Arabic) for the Levant and Middle Euphrates
+ - Full naming in british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish), turko_semitic.txt (Arabic) for the Levant and Mesopotamia
  - Some naming in old_egyptian.txt (Ancient Egyptian), phoenician.txt (Phoenician), egyptian_group.txt (Coptic Egyptian), kurdish.txt (Kurdish), aramaic.txt (Aramean), armenian.txt and cilician.txt (Armenian) in the Levant
 
 #GFX
