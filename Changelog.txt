@@ -11,6 +11,8 @@ BT14.1.2
  
 #Localised Naming
  - Added albanian.txt as a dummy file so that vanilla naming does not overwrite BT illyrian.txt
+ - Added naming in dutch.txt and flemish.txt for Low Countries and North Germany (thanks to gijs)
+
 
 
 BT14.1.1
