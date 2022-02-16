@@ -9,8 +9,8 @@ owner = IRQ
 controller = IRQ
 
 #Demographics
-culture = orthodox
-religion = assyrian_culture
+culture = assyrian_culture
+religion = orthodox
 
 #Development and Trade
 base_tax = 1
