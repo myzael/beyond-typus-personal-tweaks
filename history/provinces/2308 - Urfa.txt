@@ -2,8 +2,8 @@
 
 owner = AKK
 controller = AKK
-culture = syriac_culture			#Syriac was the local accent of Aramaic in Edessa, should culture be Armenian, though
-religion = sunni			# In 1144, the Crusader state fell to the Turkish Abassid general Zengui, who had most of the Christian inhabitants slaughtered together with the Latin archbishop.
+culture = kurdish
+religion = sunni
 capital = "Urfa"			#Edessa is the Greek version, Turkish form is Urfa until the 20th century, Arabic version is Al-Ruha and Urhay is the Syriac version. Might change this later, but going with Turkish version for now because a Turkish culture is probably the most likely
 trade_goods = spices #(JP) Urfa Pepper
 hre = no

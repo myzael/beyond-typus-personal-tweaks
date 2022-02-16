@@ -1,4 +1,3 @@
- 
 #2305 - Erzincan
 
 owner = AKK

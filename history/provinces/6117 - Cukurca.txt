@@ -9,8 +9,8 @@ owner = HAK
 controller = HAK
 
 #Demographics
-culture = al_iraqiya_arabic
-religion = sunni
+culture = assyrian_culture
+religion = orthodox #Nestorian
 
 #Development and Trade
 base_tax = 1

@@ -1,4 +1,3 @@
- 
 #4308 - Divrigi
 
 owner = AKK

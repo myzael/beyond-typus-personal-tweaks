@@ -2,8 +2,8 @@
 
 owner = AKK
 controller = AKK
-culture = armenian
-religion = apostolic
+culture = kurdish
+religion = sunni
 capital = "Arjesh"
 trade_goods = grain
 hre = no

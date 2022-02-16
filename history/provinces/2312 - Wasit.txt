@@ -3,8 +3,8 @@
 
 owner = IRQ
 controller = IRQ
-culture = al_iraqiya_arabic
-religion = sunni
+culture = mandaean_culture
+religion = orthodox #(JP) Mandaean
 capital = "Wasit"
 trade_goods = bt_trade_good_fruit
 hre = no

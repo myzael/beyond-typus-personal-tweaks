@@ -10,7 +10,7 @@ controller = IRQ
 
 #Demographics
 culture = al_iraqiya_arabic
-religion = sunni
+religion = shiite
 
 #Development and Trade
 base_tax = 1

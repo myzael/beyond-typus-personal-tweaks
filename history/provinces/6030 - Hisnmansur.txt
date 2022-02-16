@@ -9,7 +9,7 @@ owner = DUL
 controller = DUL
 
 #Demographics
-culture = syriac_culture
+culture = turkoman
 religion = sunni
 
 #Development and Trade

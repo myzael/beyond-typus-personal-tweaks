@@ -2,7 +2,7 @@
 
 owner = QAR
 controller = QAR
-culture = kurdish
+culture = al_iraqiya_arabic
 religion = sunni
 capital = "Al Mawsil"
 trade_goods = glass

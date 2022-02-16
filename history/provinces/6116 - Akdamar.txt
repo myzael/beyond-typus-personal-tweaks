@@ -9,8 +9,8 @@ owner = BTL
 controller = BTL
 
 #Demographics
-culture = al_iraqiya_arabic
-religion = sunni
+culture = armenian
+religion = apostolic
 
 #Development and Trade
 base_tax = 1

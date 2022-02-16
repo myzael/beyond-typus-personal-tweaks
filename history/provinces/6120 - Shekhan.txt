@@ -9,8 +9,8 @@ owner = QAR
 controller = QAR
 
 #Demographics
-culture = al_iraqiya_arabic
-religion = sunni
+culture = kurdish
+religion = zoroastrian	#Yazidi
 
 #Development and Trade
 base_tax = 3

@@ -9,7 +9,7 @@ owner = BDI
 controller = BDI
 
 #Demographics
-culture = al_iraqiya_arabic
+culture = kurdish
 religion = sunni
 
 #Development and Trade

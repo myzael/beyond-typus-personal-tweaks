@@ -3,7 +3,7 @@
 owner = MSY
 controller = MSY
 culture = al_iraqiya_arabic
-religion = sunni
+religion = shiite
 capital = "al-Qurna"
 trade_goods = bt_trade_good_fruit #(JP) Dates, plus where Muslims think the Garden of Eden is
 hre = no
