@@ -1,10 +1,10 @@
-#4391 - Qazaniya
+#4391 - Mandali
 
 owner = IRQ
 controller = IRQ
 culture = al_iraqiya_arabic
 religion = sunni
-capital = "Qazaniya"
+capital = "Mandali"
 trade_goods = cotton
 hre = no
 base_tax = 4
