@@ -92,8 +92,8 @@
 5295 = { "Jazirat Ibn Umar" "Madinat al-Jazira" }
 5296 = { "Al-Hasakah" "Al-Hasakah" }
 5330 = { "Mayyafaraqin" "Mayyafaraqin" }
+5331 = { "Siird" "Siird" }
 5332 = { "Arjish" "Arjish" }
-5333 = { "Siird" "Siird" }
 6030 = { "Hisn-Mansur" "Hisn-Mansur" }
 6089 = { "Al-Rahba" "Al-Rahba" }
 6090 = { "Suluk" "Suluk" }
