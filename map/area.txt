@@ -1229,7 +1229,7 @@ erzurum_area = { #Lesser Armenia
 	331 2305 5151 5158 6106 6149
 }
 iraq_arabi_area = { #Lower Euphrates
-	409 2311 2312 4141 6142 6143 6144
+	409 2311 2312 6141 6142 6143 6144
 }
 basra_area = { #Lower Mesopotamia
 	408 2340 4288 6145
@@ -1252,7 +1252,7 @@ lower_tigris_area = { #Lower Tigris
 	410 4291 6137 6138 6139 6140
 }
 middle_euphrates_area = { #Middle Euphrates
-	506 2314 6089 6099 6135 6136
+	406 2314 6089 6099 6135 6136
 }
 sophene_area = { #Sophene
 	418 4310 5330 6103 6104 6105 6107 6108
@@ -1264,7 +1264,7 @@ corduene_area = { #Corduene
 	4179 4295 5295 5331 6114 6117 6119 6121
 }
 adiabene_area = { #Adiabene
-	411 2309 4293 5296 6118 6120 612 6123 6125
+	411 2309 4293 5296 6118 6120 6122 6123 6125
 }
 
 ###
