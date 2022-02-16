@@ -20,6 +20,7 @@ trade_goods = grain #(JP) Wheat and Barley
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MSY
+add_core = IRQ
 
 #Other Political
 hre = no
