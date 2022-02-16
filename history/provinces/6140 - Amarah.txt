@@ -10,7 +10,7 @@ controller = MSY
 
 #Demographics
 culture = mandaean_culture
-religion = orthodox #Mandaeans
+religion = mandaean
 
 #Development and Trade
 base_tax = 1

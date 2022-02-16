@@ -10,7 +10,7 @@ controller = BDI
 
 #Demographics
 culture = kurdish
-religion = zoroastrian #Yazidi
+religion = yazidi
 
 #Development and Trade
 base_tax = 1

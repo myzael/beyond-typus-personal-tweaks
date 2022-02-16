@@ -3,7 +3,7 @@
 owner = SIN
 controller = SIN
 culture = kurdish
-religion = zoroastrian #Yazidi
+religion = yazidi
 capital = "Sinjar"
 trade_goods = livestock
 hre = no

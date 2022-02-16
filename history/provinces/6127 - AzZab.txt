@@ -10,7 +10,7 @@ controller = IRQ
 
 #Demographics
 culture = assyrian_culture
-religion = orthodox #Nestorian
+religion = nestorian
 
 #Development and Trade
 base_tax = 2
