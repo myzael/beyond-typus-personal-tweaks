@@ -3,10 +3,10 @@
 owner = QAR
 controller = QAR
 add_core = QAR
-capital = "Nusaybin"
+capital = "Hasakah"
 culture = syriac_culture
 religion = apostolic
-trade_goods = wool
+trade_goods = livestock
 hre = no
 base_tax = 1 
 base_production = 1 

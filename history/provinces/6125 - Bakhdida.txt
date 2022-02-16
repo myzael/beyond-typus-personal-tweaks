@@ -16,7 +16,7 @@ religion = sunni
 base_tax = 4
 base_production = 4
 base_manpower = 2
-trade_goods = grain
+trade_goods = bt_trade_good_books #(JP) Religions centre of the Assyrians in Mar Mattai here
 
 #Cores and Occupation (Alphabetical after current)
 add_core = QAR

@@ -16,7 +16,7 @@ religion = sunni
 base_tax = 3
 base_production = 3
 base_manpower = 3
-trade_goods = grain
+trade_goods = bt_trade_good_books #(JP) Shia Religious Centre
 
 #Cores and Occupation (Alphabetical after current)
 add_core = QAR

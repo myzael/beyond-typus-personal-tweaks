@@ -16,7 +16,7 @@ religion = sunni
 base_tax = 1
 base_production = 1
 base_manpower = 2
-trade_goods = grain
+trade_goods = glass #(JP) Site of Akdamar Cathedral, a wealth of Armenian pottery, coloured glass and other fancies
 
 #Cores and Occupation (Alphabetical after current)
 add_core = BTL

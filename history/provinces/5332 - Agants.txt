@@ -1,11 +1,11 @@
-#2307 - Van
+#2307 - Arjesh
 
 owner = AKK
 controller = AKK
 culture = armenian
 religion = apostolic
 capital = "Arjesh"
-trade_goods = wool
+trade_goods = grain
 hre = no
 base_tax = 2
 base_production = 2
