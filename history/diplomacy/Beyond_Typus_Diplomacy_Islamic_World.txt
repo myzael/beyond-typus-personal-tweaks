@@ -61,13 +61,6 @@ guarantee = {
 
 guarantee = {
 	first = QAR
-	second = MAH
-	start_date = 1435.1.1
-	end_date = 1469.2.4
-}
-
-guarantee = {
-	first = QAR
 	second = HAK
 	start_date = 1435.1.1
 	end_date = 1469.2.4
