@@ -30,12 +30,13 @@ religious_school = ismaili_school
 1431.1.1 = {
 	heir = {
 		name = "Alvand Mirza"
+		monarch_name = "Alvand Mirza"
 		dynasty = "Qara Qoyunlu"
 		birth_date = 1420.1.1
 		culture = turkoman
+		claim = 40
 		adm = 2
 		dip = 0
 		mil = 3
-		claim = 40
 	}
 }
