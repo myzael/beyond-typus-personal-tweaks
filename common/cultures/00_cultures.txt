@@ -10939,6 +10939,67 @@ berber_group = {
 		}
 	}
 }
+syriac_group = {	#(JP) The names in here are ones I literally copied from the old syriac_culture. 
+		graphical_culture = muslimgfx
+		syriac_culture = {	#Aramaean
+			#primary = 
+		}
+		assyrian_culture = {
+			#primary = 
+		}
+		mandaean_culture = {
+			#primary = 
+		}
+	dynasty_names = {
+		"Mirdasid" "Maanid" "al-Shihab"  Yakubid Hassanid
+		Katkhuda Abaza Qasimiyya Qitas al-Qazdughli
+		Bukhtishu Qatwa Nimreh Gazarta Salamas Zakho
+		Arbilaya Nisan Somikka Simele Sulaqa Samiyah
+		Thomasina Tamasine Sameah 
+	}
+	male_names = {
+		al-Nasr al-Mu'azzam al-Salih al-'Adil al-Kamil al-Ashraf al-Afdal Tadj Mujir ud-Din Djamal ud-Din 
+		ud-Din Shams Saif 'Abbas 'Abd al-Rahman Anwar Atuf Bakr Fahd Hakim Harun Hikmat Hisham Husayn 
+		Jamaal Karim Malîk Mirza Muhammad Rashîd Rusul Shimun Tarîq Usama Yasir Yusuf Zaid Zîyad Isma'il 	
+		Jafar Shihab
+		Aaron Abanoub Abderahman Abderrahman Abdul-Aziz Abdul-Haq Abdul-Madjid Abdul-Salaam Abdullah 
+		Abianos Abijah Abisalom Ablarion Abraam Abraham Abu-Bakr Adnan Agathon 
+		Agathonikos Agathos Ahmad Akbar Alam Ali Amr Androus Andrew 	
+		Anthinos Anthimos Arsenios Ashraf Asim Athanasios Athanasius Badr Bashir Biktor 
+		Victor Binyamin Benjamin Bishoi Bishara Boutros Peter Danyal Daniel Dawlat Da’oud David Ezra 
+		Farhan Firuz Gabri’el Gabriel Georgios George Ghiyasaddin Habil Abel Hakam Hammud Hanri Henry 
+		Haroun Hussayn Ibrahim Ilyas Elijah Is'mail Ismail Izzaddin 
+		Jalaaladdin Jawdat Jerjer Gregory Kemaladdin Khalil Krystafer Christopher Latif Lot Lothair Malik 
+		Matta Matthew Mehtar Mikail Michael Mikhael Milad Menas Muammar 
+		Mukhtar Murad Murshid Moses Muzaffaraddin Nabil Nasir Nassib Nuraddin Pamin Qadir 
+		Ra'uf Rafiq Ridwan Sabah Salim Sha'ban Sharif Suhail Tadros Theodore Tajaddin Tayyib Touma Thomas 	
+		Walid Yahya Yared Yassir Youkhanna Youssef Joseph Zaia Isaiah Zakariyah Zachary
+		Abdul-Azeem Abdul-Hamid Abdul-Lateef Abdul-Razzaq Abdul-Wahad Adhid Adil Akab 
+		Ala'i Amir Aziz Bashar Da'ud Faisal
+		Fayiz Ghazi Hamdan Hashmaddin Imamaddin Isa 
+		Ismat Jahan Jamil Kamran Khalid Khudayar Majid Mas'ud
+		Muaddam Muhsin Musa Muzaffar Nasraddin 
+		Nuri Radhi Rasul Sa'ud Salahaddin Seyfullah Sharaf
+		Sirhan Taimur Tawfiq Umaya Wahid Ya'qub Jacob Yasar John Zahir
+		Aba Abba Abahu Abaya Abaye Abayi Abdima Abdisho Abgar Abimalek Abris Abrisius Acacius Achan Achina Addai Adlai Aggai Ahai Ahadabui Ahha "Akha d'abuh'" Akh-es-Samain Aqib-Alaha Asa Asher Avahu Avda Avdima Avdimi Avina Avira Azai
+		Babaeus Babai Babowai Babwahi Bar Bar-Abba Barbashimin Bar-Nabha Bar-Talmai Bar-Timai Bar-Tolmai Bustan Caiaphas Cephas Cephus Chadlai Chama Chanin Chaninai Chinena
+		Chozai Chuma Chunya Clopas Dadisho Denha Dimi Dinkha Dunanu Elisha Eliya Emmanuel Enosh Ezekiel Farbokht Foma Giwargis Grwgari Hanina Hnanisho Hozai Idan Idra Ila Isaac Isho Ishoyahb Israel Kaiapha Karna Katsiu Kelaya Laszio Lazar
+		Lazare Lazaro Lazaros Lazarus Lazarz Lazer Lebbaeus Maadai Maccabee Magna Makkikha Maluch Ma'na Marabokht Maremmeh Mari Mikha'il Moqli Muna Nahir Nahor Nahur Narsai Nazuk Nechunya
+		Nehor Nehorai Niv Nun Nur Oran Pappa Paul Pethion Petros Petuel Qaligh Qayyoma Raca Rachim Rahim Raka Raz Raziel Rubil Saad Sabbae Sabrisho Sabr-Ishu Salu Samal Sami Samiy Sagi Sargis Sawma
+		Shafer Shahdost Shahlufa Shai Shalmai Shama Shamir Shammai Shemaiah Shemon Sheraga Shila Shovai Shraga Sliba-zkha Surin Tabbai Taddai Talmai Tam
+		Tamas Tamhas Targhal Tauma Tavi Tavish Tevis Thamhais Timai Tiv Toba Todos Tolmai Tomarsa Tamuza Tulmay Ukba Yahballaha Yanai Yaqob Yeshua Yohannan Yosip Yousef Yunanis Zerika
+	}
+	female_names = {
+		Ihsan Marwa Aisha Aziza Duha Farida Golbahar Gulnar Gulnaz Gulpari Hafsa Hasti Huma Ibtisam Jalila Kamala 
+		Karima Khandan Khaterah Khatira Kinah Lala Madiha Mahdokht Nazy Neelab Negar Niki Nikoo Noushin Rabiya
+		Mahsa Mahwash Marwa Mastana Mehri Mina Minoo Munawwar Muzhdah Nahal Najela Nasiba Nastaran Nazaneen 
+		Rajiya Sadiya Salma Sitara Thana Zahra Zahra Zuhayra
+		Adva Alya Anena Chanina Chasina Chayuta Chiyuta Dikla Diklah Diklit Duvsha Hanina Hasna Hayuta Hina Ketina Kitra
+		Magdala Mahalia Mahalie Marfa Mariam Marta Marte Martha Marthe Marti Martita Mehalia Meiriona Meirona Morta
+		Nahara Nura Reuma Saba Sabah Samantha Sameea Samiya Samiyah Samiyya Sava Shapira Sima Tabatha Tabetha
+		Tabitha Tadea Talia Taliah Talya Talitha Tam Tamasin Tami Tamsin Tamsyn Tamzin Thaddea Thomasa Zeita Zeta
+	}
+}
 
 turkish_g = {
 	graphical_culture = muslimgfx
@@ -12494,66 +12555,5 @@ septrional_creoles = {
 			Rhonda Rodina Ronalda Ragnhild Ros Saundra Alexandra Sheena Shona Joan Sholto Slaine Sorcha
 			Una
 		}
-	}
-}
-syriac_group = {	#(JP) The names in here are ones I literally copied from the old syriac_culture. 
-		graphical_culture = muslimgfx
-		syriac_culture = {	#Aramaean
-			#primary = 
-		}
-		assyrian_culture = {
-			#primary = 
-		}
-		mandaean_culture = {
-			#primary = 
-		}
-	dynasty_names = {
-		"Mirdasid" "Maanid" "al-Shihab"  Yakubid Hassanid
-		Katkhuda Abaza Qasimiyya Qitas al-Qazdughli
-		Bukhtishu Qatwa Nimreh Gazarta Salamas Zakho
-		Arbilaya Nisan Somikka Simele Sulaqa Samiyah
-		Thomasina Tamasine Sameah 
-	}
-	male_names = {
-		al-Nasr al-Mu'azzam al-Salih al-'Adil al-Kamil al-Ashraf al-Afdal Tadj Mujir ud-Din Djamal ud-Din 
-		ud-Din Shams Saif 'Abbas 'Abd al-Rahman Anwar Atuf Bakr Fahd Hakim Harun Hikmat Hisham Husayn 
-		Jamaal Karim Malîk Mirza Muhammad Rashîd Rusul Shimun Tarîq Usama Yasir Yusuf Zaid Zîyad Isma'il 	
-		Jafar Shihab
-		Aaron Abanoub Abderahman Abderrahman Abdul-Aziz Abdul-Haq Abdul-Madjid Abdul-Salaam Abdullah 
-		Abianos Abijah Abisalom Ablarion Abraam Abraham Abu-Bakr Adnan Agathon 
-		Agathonikos Agathos Ahmad Akbar Alam Ali Amr Androus Andrew 	
-		Anthinos Anthimos Arsenios Ashraf Asim Athanasios Athanasius Badr Bashir Biktor 
-		Victor Binyamin Benjamin Bishoi Bishara Boutros Peter Danyal Daniel Dawlat Da’oud David Ezra 
-		Farhan Firuz Gabri’el Gabriel Georgios George Ghiyasaddin Habil Abel Hakam Hammud Hanri Henry 
-		Haroun Hussayn Ibrahim Ilyas Elijah Is'mail Ismail Izzaddin 
-		Jalaaladdin Jawdat Jerjer Gregory Kemaladdin Khalil Krystafer Christopher Latif Lot Lothair Malik 
-		Matta Matthew Mehtar Mikail Michael Mikhael Milad Menas Muammar 
-		Mukhtar Murad Murshid Moses Muzaffaraddin Nabil Nasir Nassib Nuraddin Pamin Qadir 
-		Ra'uf Rafiq Ridwan Sabah Salim Sha'ban Sharif Suhail Tadros Theodore Tajaddin Tayyib Touma Thomas 	
-		Walid Yahya Yared Yassir Youkhanna Youssef Joseph Zaia Isaiah Zakariyah Zachary
-		Abdul-Azeem Abdul-Hamid Abdul-Lateef Abdul-Razzaq Abdul-Wahad Adhid Adil Akab 
-		Ala'i Amir Aziz Bashar Da'ud Faisal
-		Fayiz Ghazi Hamdan Hashmaddin Imamaddin Isa 
-		Ismat Jahan Jamil Kamran Khalid Khudayar Majid Mas'ud
-		Muaddam Muhsin Musa Muzaffar Nasraddin 
-		Nuri Radhi Rasul Sa'ud Salahaddin Seyfullah Sharaf
-		Sirhan Taimur Tawfiq Umaya Wahid Ya'qub Jacob Yasar John Zahir
-		Aba Abba Abahu Abaya Abaye Abayi Abdima Abdisho Abgar Abimalek Abris Abrisius Acacius Achan Achina Addai Adlai Aggai Ahai Ahadabui Ahha "Akha d'abuh'" Akh-es-Samain Aqib-Alaha Asa Asher Avahu Avda Avdima Avdimi Avina Avira Azai
-		Babaeus Babai Babowai Babwahi Bar Bar-Abba Barbashimin Bar-Nabha Bar-Talmai Bar-Timai Bar-Tolmai Bustan Caiaphas Cephas Cephus Chadlai Chama Chanin Chaninai Chinena
-		Chozai Chuma Chunya Clopas Dadisho Denha Dimi Dinkha Dunanu Elisha Eliya Emmanuel Enosh Ezekiel Farbokht Foma Giwargis Grwgari Hanina Hnanisho Hozai Idan Idra Ila Isaac Isho Ishoyahb Israel Kaiapha Karna Katsiu Kelaya Laszio Lazar
-		Lazare Lazaro Lazaros Lazarus Lazarz Lazer Lebbaeus Maadai Maccabee Magna Makkikha Maluch Ma'na Marabokht Maremmeh Mari Mikha'il Moqli Muna Nahir Nahor Nahur Narsai Nazuk Nechunya
-		Nehor Nehorai Niv Nun Nur Oran Pappa Paul Pethion Petros Petuel Qaligh Qayyoma Raca Rachim Rahim Raka Raz Raziel Rubil Saad Sabbae Sabrisho Sabr-Ishu Salu Samal Sami Samiy Sagi Sargis Sawma
-		Shafer Shahdost Shahlufa Shai Shalmai Shama Shamir Shammai Shemaiah Shemon Sheraga Shila Shovai Shraga Sliba-zkha Surin Tabbai Taddai Talmai Tam
-		Tamas Tamhas Targhal Tauma Tavi Tavish Tevis Thamhais Timai Tiv Toba Todos Tolmai Tomarsa Tamuza Tulmay Ukba Yahballaha Yanai Yaqob Yeshua Yohannan Yosip Yousef Yunanis Zerika
-	}
-	female_names = {
-		Ihsan Marwa Aisha Aziza Duha Farida Golbahar Gulnar Gulnaz Gulpari Hafsa Hasti Huma Ibtisam Jalila Kamala 
-		Karima Khandan Khaterah Khatira Kinah Lala Madiha Mahdokht Nazy Neelab Negar Niki Nikoo Noushin Rabiya
-		Mahsa Mahwash Marwa Mastana Mehri Mina Minoo Munawwar Muzhdah Nahal Najela Nasiba Nastaran Nazaneen 
-		Rajiya Sadiya Salma Sitara Thana Zahra Zahra Zuhayra
-		Adva Alya Anena Chanina Chasina Chayuta Chiyuta Dikla Diklah Diklit Duvsha Hanina Hasna Hayuta Hina Ketina Kitra
-		Magdala Mahalia Mahalie Marfa Mariam Marta Marte Martha Marthe Marti Martita Mehalia Meiriona Meirona Morta
-		Nahara Nura Reuma Saba Sabah Samantha Sameea Samiya Samiyah Samiyya Sava Shapira Sima Tabatha Tabetha
-		Tabitha Tadea Talia Taliah Talya Talitha Tam Tamasin Tami Tamsin Tamsyn Tamzin Thaddea Thomasa Zeita Zeta
 	}
 }
