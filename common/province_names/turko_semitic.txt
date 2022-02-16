@@ -286,7 +286,6 @@
 3108 = "Shetúbar"
 
 #Beyond Typus 4.0 Overhaul of the Levant
-2314 = "Ar-Rahbah"
 5171 = "Mihalich"
 
 #Beyond Typus 4.0 Overhaul of Anatolia

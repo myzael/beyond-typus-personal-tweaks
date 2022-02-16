@@ -30,10 +30,10 @@ BT15
  - Added Latin Empire tags and some Shattered Europe tags to no longer be revoltable
 
 #Localised Naming
- - Full naming in british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish), turko_semitic.txt (Arabic) for the Levant
- - Full naming in turko_semitic (Arabic) in Mesopotamia
- - Some naming in old_egyptian.txt (Ancient Egyptian), phoenician.txt (Phoenician), egyptian_group.txt (Coptic Egyptian), kurdish.txt (Kurdish), aramaic.txt (Aramean), armenian.txt and cilician.txt (Armenian) in the Levant
-
+ - Full naming in the Levant for british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish), turko_semitic.txt (Arabic)
+ - Some naming in the Levant for old_egyptian.txt (Ancient Egyptian), phoenician.txt (Phoenician), egyptian_group.txt (Coptic Egyptian), kurdish.txt (Kurdish), aramaic.txt (Aramean), armenian.txt and cilician.txt (Armenian)
+ - Full naming in Mesopotamia for turko_semitic (Arabic), turkish_g.txt (Turkish) in Mesopotamia
+ - Some naming in Mesopotamia for turkoman.txt (Turkoman) in Mesopotamia
 #GFX
  - New flags for new tags in Mesopotamia
  - Updated flags for prior Kurdish states, plus the repurposed Baghdad and Basra
