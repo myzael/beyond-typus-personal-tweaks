@@ -88,6 +88,13 @@ guarantee = {
 }
 
 guarantee = {
+	first = QAR
+	second = MHM
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+guarantee = {
 	first = AKK
 	second = EGL
 	start_date = 1435.1.1
