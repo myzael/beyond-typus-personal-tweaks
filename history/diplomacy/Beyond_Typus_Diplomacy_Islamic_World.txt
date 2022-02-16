@@ -115,7 +115,7 @@ guarantee = {
 	end_date = 1503.1.1
 }
 
-vassal = 
+vassal = {
 	first = QAR
 	second = IRQ
 	start_date = 1433.4.9
