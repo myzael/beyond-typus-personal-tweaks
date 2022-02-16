@@ -20,6 +20,7 @@ trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)
 add_core = BIN
+add_core = ARM
 
 #Other Political
 hre = no

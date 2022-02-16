@@ -20,6 +20,7 @@ trade_goods = glass #(JP) Site of Akdamar Cathedral, a wealth of Armenian potter
 
 #Cores and Occupation (Alphabetical after current)
 add_core = BTL
+add_core = ARM
 
 #Other Political
 hre = no
