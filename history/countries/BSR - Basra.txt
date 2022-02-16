@@ -1,11 +1,23 @@
 government = monarchy
 add_government_reform = iqta
-primary_culture = al_iraqiya_arabic
-religion = shiite
+add_accepted_culture = al_iraqiya_arabic
+primary_culture = bedouin_arabic
+religion = sunni
 technology_group = muslim
 capital = 408	# Basra
 fixed_capital = 408	# Basra
 government_rank = 1
+religious_school = shafii_school
+
+1444.1.1 = {
+	monarch = {
+		name = "Suhari"				#Made up
+		dynasty = "al-Muntafiq" 
+		adm = 2
+		dip = 4
+		mil = 3
+	}
+}
 
 1534.1.1 = {
 	monarch = {
