@@ -1,25 +1,26 @@
-#6145 - Az-Zubayr
+#6116 - Aghtamar
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Az-Zubayr"
+capital = "Aghtamar"
 is_city = yes
-owner = BSR
-controller = BSR
+owner = BTL
+controller = BTL
 
 #Demographics
-culture = bedouin_arabic
-religion = shiite
+culture = armenian
+religion = apostolic
 
 #Development and Trade
 base_tax = 1
 base_production = 1
 base_manpower = 2
-trade_goods = livestock
+trade_goods = glass #(JP) Site of Aghtamar Cathedral, a wealth of Armenian pottery, coloured glass and other fancies
 
 #Cores and Occupation (Alphabetical after current)
-add_core = BSR
+add_core = BTL
+add_core = ARM
 
 #Other Political
 hre = no

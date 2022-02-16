@@ -1,10 +1,10 @@
-#4393 - Arbil
+#4393 - Erbil
 
 owner = IRQ
 controller = IRQ
 culture = kurdish
 religion = sunni
-capital = "Arbil"
+capital = "Erbil"
 trade_goods = bt_trade_good_books
 hre = no
 base_tax = 4 

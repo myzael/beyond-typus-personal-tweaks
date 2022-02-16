@@ -1,9 +1,9 @@
-#6111 - Agri
+#6111 - Karakilise
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Agri"
+capital = "Karakilise"
 is_city = yes
 owner = QAR
 controller = QAR

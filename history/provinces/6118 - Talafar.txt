@@ -1,9 +1,9 @@
-#6118 - Telafar
+#6118 - Talafar
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Telafar"
+capital = "Talafar"
 is_city = yes
 owner = QAR
 controller = QAR

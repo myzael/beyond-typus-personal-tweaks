@@ -1,9 +1,9 @@
-#6117 - Cukurca
+#6117 - Tyare
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Cukurca"
+capital = "Tyare"
 is_city = yes
 owner = HAK
 controller = HAK

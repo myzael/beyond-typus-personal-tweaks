@@ -1,9 +1,9 @@
-#6127 - Az-Zab
+#6127 - Zab
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Az-Zab"
+capital = "Zab"
 is_city = yes
 owner = IRQ
 controller = IRQ

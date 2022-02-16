@@ -1,26 +1,25 @@
-#6116 - Akdamar
+#6145 - Zubayr
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Akdamar"
+capital = "Zubayr"
 is_city = yes
-owner = BTL
-controller = BTL
+owner = BSR
+controller = BSR
 
 #Demographics
-culture = armenian
-religion = apostolic
+culture = bedouin_arabic
+religion = shiite
 
 #Development and Trade
 base_tax = 1
 base_production = 1
 base_manpower = 2
-trade_goods = glass #(JP) Site of Akdamar Cathedral, a wealth of Armenian pottery, coloured glass and other fancies
+trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)
-add_core = BTL
-add_core = ARM
+add_core = BSR
 
 #Other Political
 hre = no

@@ -3,7 +3,7 @@
 owner = ZIR
 controller = ZIR
 add_core = ZIR
-capital = "Farqin"			#Kurdish name for Silvan
+capital = "Silvan"	
 culture = kurdish
 religion = sunni
 trade_goods = wheat
