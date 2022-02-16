@@ -12496,7 +12496,7 @@ septrional_creoles = {
 		}
 	}
 }
-syriac_culture = {	#(JP) The names in here are ones I literally copied from the old syriac_culture. 
+syriac_group = {	#(JP) The names in here are ones I literally copied from the old syriac_culture. 
 		graphical_culture = muslimgfx
 		syriac_culture = {	#Aramaean
 			#primary = 
