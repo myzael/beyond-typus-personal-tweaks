@@ -11027,6 +11027,7 @@ turkish_g = {
 			Aaliyah Aamina Aamira Aaqila Aarifa Aazzi Adelah Adela Adiba Adilah Adilia Adiva Adjan Aeesha
 			Adila Ikram
 		}
+	}
 }
 
 egyptian_group = {
