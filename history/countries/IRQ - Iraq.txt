@@ -36,5 +36,6 @@ religious_school = ismaili_school
 		adm = 2
 		dip = 0
 		mil = 3
+		claim = 40
 	}
 }
