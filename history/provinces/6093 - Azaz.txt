@@ -9,8 +9,8 @@ owner = KIL
 controller = KIL
 
 #Demographics
-culture = kurdish
-religion = zoroastrian		#Yazidi
+culture = turkoman
+religion = sunni
 
 #Development and Trade
 base_tax = 1
