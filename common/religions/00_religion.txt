@@ -2580,3 +2580,32 @@ zoroastrian_group = {
 	crusade_name = HOLY_WAR
 	
 }
+
+#BT Added
+dualist_group = {
+
+	flag_emblem_index_range = { 110 110 }
+	
+	mandaean = {
+		icon = 35
+		color = { 188 191 170 }
+		province = {
+			local_missionary_strength = -0.03
+		}
+		country = {
+			tolerance_own = 3
+			advisor_cost = -0.2
+		}
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			tolerance_own = 1
+		}
+		
+		heretic = { ELCESAITE }	
+	}
+	
+	harmonized_modifier = harmonized_dualist_group
+	
+	crusade_name = HOLY_WAR
+
+}
