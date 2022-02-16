@@ -445,11 +445,10 @@ arabia_region = { # 18 areas
 		persian_gulf_islands_area
 	}
 }
-persia_region = { # 12 areas
+persia_region = { # 11 areas
 	areas = {
 		luristan_area
 		khuzestan_area
-		shahrizor_area
 		farsistan_area
 		iraq_e_ajam_area
 		azerbaijan_area
