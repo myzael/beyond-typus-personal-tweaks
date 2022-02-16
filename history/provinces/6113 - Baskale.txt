@@ -20,7 +20,7 @@ trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MHM
-add_core = HKK
+add_core = HAK
 
 #Other Political
 hre = no
