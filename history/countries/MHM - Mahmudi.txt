@@ -11,8 +11,7 @@ add_government_reform = iqta
 
 #Demographics
 primary_culture = kurdish
-religion = sunni
-religious_school = shafii_school
+religion = zoroastrian #Yazidi
 #add_accepted_culture
 
 #Tech and Military
