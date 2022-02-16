@@ -26,6 +26,8 @@ religious_school = ismaili_school
 		dip = 1
 		mil = 5
 	}
+}
+1431.1.1 = {
 	heir = {
 		name = "Alvand Mirza"
 		dynasty = "Qara Qoyunlu"
