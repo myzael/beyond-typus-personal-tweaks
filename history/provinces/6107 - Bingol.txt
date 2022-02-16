@@ -1,9 +1,9 @@
-#6107 - BingÃ¶l
+#6107 - Bingöl
 #Area - 
 #Region - 
 
 #Core Details
-capital = "BingÃ¶l"
+capital = "Bingöl"
 is_city = yes
 owner = BIN
 controller = BIN
