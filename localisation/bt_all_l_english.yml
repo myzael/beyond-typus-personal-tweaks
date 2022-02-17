@@ -90,8 +90,6 @@
  yazidi_rebels_name:0 "$RELIGION$ Zealots"
  yazidi_religion_desc:0 "The Yazidi believe that God created the world and placed it under the protection of seven angels, foremost among them Tawûsê Melek, the Peacock Angel. The Peacock Angel at first fell from God's grace, but his tears of remorse extinguished the fires of his prison, and he was reunited with God. In the same manner, we all seek to reunite with God at the end of many long lifetimes."
 
-
- 
  #Areas (Need to be localised because otherwise they cause error log spam)
  unused_sea_area:0 "unused_sea_area"
  unused_lake_area:0 "unused_lake_area"
