@@ -3,6 +3,8 @@
  
  # BT15 Religious
  alawite:0 "Alawite"
+ ALAWITE_ASPECTS_LONG:0 "Theological Aspects"
+ ALAWITE_ASPECTS_SHORT:0 "aspect"
  alawite_rebels_demand:0 "Convert $COUNTRYNAME$"
  alawite_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  alawite_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
