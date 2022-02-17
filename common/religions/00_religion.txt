@@ -2582,7 +2582,7 @@ zoroastrian_group = {
 }
 
 #BT Added
-mandeaean_group = {
+mandaean_group = {
 
 	flag_emblem_index_range = { 110 110 }
 	
@@ -2604,7 +2604,7 @@ mandeaean_group = {
 		heretic = { ELCESAITE }	
 	}
 	
-	harmonized_modifier = harmonized_mandeaean_group
+	harmonized_modifier = harmonized_mandaean_group
 	
 	crusade_name = HOLY_WAR
 

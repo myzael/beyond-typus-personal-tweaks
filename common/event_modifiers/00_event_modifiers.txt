@@ -9015,7 +9015,7 @@ harmonized_christian = {
 }
 
 #BT Added
-harmonized_mandeaean_group = {
+harmonized_mandaean_group = {
 	diplomatic_reputation = 1
 	religion = yes
 }
