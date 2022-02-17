@@ -14,6 +14,7 @@ is_city = yes
 add_core = BTL
 add_core = ARM
 center_of_trade = 1
+fort_15th = yes
 
 discovered_by = east_african
 discovered_by = muslim
