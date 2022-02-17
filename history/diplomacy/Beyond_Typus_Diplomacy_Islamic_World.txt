@@ -98,7 +98,7 @@ guarantee = {
 	first = AKK
 	second = BIN
 	start_date = 1435.1.1
-	send_date = 1503.1.1
+	end_date = 1503.1.1
 }
 
 guarantee = { 
