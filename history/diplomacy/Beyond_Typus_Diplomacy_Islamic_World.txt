@@ -101,13 +101,6 @@ guarantee = {
 	end_date = 1503.1.1
 }
 
-guarantee = { 
-	first = AKK
-	second = QUL
-	start_date = 1435.1.1
-	end_date = 1503.1.1
-}
-
 guarantee = {
 	first = AKK
 	second = ZIR
