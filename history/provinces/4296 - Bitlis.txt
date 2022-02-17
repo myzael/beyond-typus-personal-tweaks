@@ -1,5 +1,4 @@
- 
-#4396 - Bitlis and Hakkari
+#4396 - Bitlis
 
 owner = BTL
 controller = BTL
@@ -14,6 +13,7 @@ base_manpower = 2
 is_city = yes
 add_core = BTL
 add_core = ARM
+center_of_trade = 1
 
 discovered_by = east_african
 discovered_by = muslim

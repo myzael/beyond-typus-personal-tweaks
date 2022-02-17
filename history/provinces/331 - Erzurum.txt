@@ -14,6 +14,7 @@ base_production = 4
 base_manpower = 4 
 is_city = yes
 fort_15th = yes			#the chief military stronghold along the eastern border of the Roman empire, fiercely contested in wars between the Byzantines and Persians. Emperors Anastasius I and Justinian I both refortified the city and built new defenses during their reigns.
+center_of_trade = 1
 
 
 discovered_by = western
