@@ -308,7 +308,7 @@
 4296 = { "Bitlis" "Bitlis" }
 4298 = { "Aintab" "Aintab" }
 4302 = { "Alashkerd" "Alashkerd" }
-4310 = { "Kharput" "Kharput" }
+4310 = { "Harput" "Harput" }
 5151 = { "Bayburt" "Bayburt" }
 5158 = { "Divrigi" "Divrigi" }
 5293 = { "Resülayn" "Resülayn" }
