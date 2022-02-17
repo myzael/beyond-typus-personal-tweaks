@@ -1335,7 +1335,7 @@ muslim = {
 			local_missionary_strength = -0.02
 		}
 		
-		heretic = { BEKTASHI AHMADI ZIKRI YAZIDI }
+		heretic = { BEKTASHI AHMADI ZIKRI }
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
