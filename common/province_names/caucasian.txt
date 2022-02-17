@@ -1,3 +1,4 @@
+4302 = { "Alashkert" "Alashkert" }
 
 #Beyond Typus 4.0 Overhaul of Anatolia, incomplete, obviously
 331 = "Karin"			#Karnu-Kalaki in Georgian
