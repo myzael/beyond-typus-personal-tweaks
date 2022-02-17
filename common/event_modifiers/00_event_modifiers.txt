@@ -9014,6 +9014,12 @@ harmonized_christian = {
 	religion = yes
 }
 
+#BT Added
+harmonized_mandeaean_group = {
+	diplomatic_reputation = 1
+	religion = yes
+}
+
 #On the route to Harmonization:
 
 harmonization_classics_translated = {
