@@ -20,6 +20,7 @@ trade_goods = copper
 
 #Cores and Occupation (Alphabetical after current)
 add_core = HAK
+add_core = ARM
 
 #Other Political
 hre = no

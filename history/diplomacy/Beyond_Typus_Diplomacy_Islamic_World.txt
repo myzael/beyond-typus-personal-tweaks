@@ -61,13 +61,6 @@ guarantee = {
 
 guarantee = {
 	first = QAR
-	second = MAH
-	start_date = 1435.1.1
-	end_date = 1469.2.4
-}
-
-guarantee = {
-	first = QAR
 	second = HAK
 	start_date = 1435.1.1
 	end_date = 1469.2.4
@@ -88,6 +81,13 @@ guarantee = {
 }
 
 guarantee = {
+	first = QAR
+	second = MHM
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+guarantee = {
 	first = AKK
 	second = EGL
 	start_date = 1435.1.1
@@ -97,13 +97,6 @@ guarantee = {
 guarantee = {
 	first = AKK
 	second = BIN
-	start_date = 1435.1.1
-	send_date = 1503.1.1
-}
-
-guarantee = { 
-	first = AKK
-	second = QUL
 	start_date = 1435.1.1
 	end_date = 1503.1.1
 }

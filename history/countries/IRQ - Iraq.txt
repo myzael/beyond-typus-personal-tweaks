@@ -12,7 +12,7 @@ religious_school = ismaili_school
 #Ispend allows refugees from Qara itself to settle in Baghdad after the death of Qara Iskander from 1435. 
 #Ispend tries and fails to invade Anatolia in 1437, defeated by Qara Osman's son, Hamza. 
 
-#Ispend died 8th March 1945, and bequeaths his "kingdom" to his nephew, Alvand Mirza - local nobles prefer to enthrone Fulad Mirza, Ispend's son. 
+#Ispend died 8th March 1445, and bequeaths his "kingdom" to his nephew, Alvand Mirza - local nobles prefer to enthrone Fulad Mirza, Ispend's son. 
 #Jahan Shah, backing Fulad alongside these local nobles, invades and conquers the city on the 9th June 1446 after a 7 month siege. 
 #Fulad Mirza is appointed ruler in Jahan Shah's name, with Alvand Mirza given Mosul as governor in return.
 
@@ -27,15 +27,29 @@ religious_school = ismaili_school
 		mil = 5
 	}
 }
-1431.1.1 = {
+1440.1.1 = {
 	heir = {
-		name = "Alvand Mirza"
+		name = "Fulad Mirza"
+		monarch_name = "Alvand Mirza"
 		dynasty = "Qara Qoyunlu"
-		birth_date = 1420.1.1
+		birth_date = 1440.1.1
+		death_date = 1450.1.1
 		culture = turkoman
-		adm = 2
+		claim = 60
+		adm = 1
 		dip = 0
-		mil = 3
-		claim = 40
+		mil = 2
+	}
+}
+1445.3.8 = {
+	monarch = {
+		name = "Fulad Mirza"
+		dynasty = "Qara Qoyunlu"
+		birth_date = 1440.1.1
+		culture = turkoman
+		claim = 60
+		adm = 1
+		dip = 0
+		mil = 2
 	}
 }

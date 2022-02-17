@@ -1,22 +1,22 @@
-#6111 - Agri
+#6118 - Talafar
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Agri"
+capital = "Talafar"
 is_city = yes
 owner = QAR
 controller = QAR
 
 #Demographics
-culture = armenian
-religion = apostolic
+culture = turkoman
+religion = shiite
 
 #Development and Trade
 base_tax = 1
 base_production = 2
-base_manpower = 1
-trade_goods = livestock
+base_manpower = 2
+trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
 add_core = QAR

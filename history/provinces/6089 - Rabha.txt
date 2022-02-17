@@ -27,6 +27,7 @@ add_core = SYR
 hre = no
 
 #Fort/Other Buildings
+fort_15th = yes
 
 #Special Modifiers
 

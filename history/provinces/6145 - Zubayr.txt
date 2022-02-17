@@ -1,25 +1,25 @@
-#6117 - Cukurca
+#6145 - Zubayr
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Cukurca"
+capital = "Zubayr"
 is_city = yes
-owner = HAK
-controller = HAK
+owner = BSR
+controller = BSR
 
 #Demographics
-culture = assyrian_culture
-religion = nestorian
+culture = bedouin_arabic
+religion = shiite
 
 #Development and Trade
 base_tax = 1
-base_production = 2
+base_production = 1
 base_manpower = 2
 trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)
-add_core = HAK
+add_core = BSR
 
 #Other Political
 hre = no

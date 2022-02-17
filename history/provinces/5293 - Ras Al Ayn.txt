@@ -3,7 +3,7 @@
 owner = QAR
 controller = QAR
 add_core = QAR
-capital = "Res Ayna"			#Syriac version
+capital = "Ras al-Ayn"
 culture = assyrian_culture
 religion = orthodox
 trade_goods = livestock

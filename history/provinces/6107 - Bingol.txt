@@ -1,9 +1,9 @@
-#6107 - Bingol
+#6107 - Bingöl
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Bingol"
+capital = "Bingöl"
 is_city = yes
 owner = BIN
 controller = BIN
@@ -20,6 +20,7 @@ trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)
 add_core = BIN
+add_core = ARM
 
 #Other Political
 hre = no

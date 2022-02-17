@@ -3,7 +3,7 @@
 owner = HSN
 controller = HSN
 add_core = HSN
-capital = "Hesn Kayfa"			#Syriac version
+capital = "Hisn Kayfa"	
 culture = assyrian_culture
 religion = orthodox
 trade_goods = cloth			#No particular reason, but rich-ish area
@@ -12,6 +12,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
+fort_15th = yes
 
 
 discovered_by = east_african
