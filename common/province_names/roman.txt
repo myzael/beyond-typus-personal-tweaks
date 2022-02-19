@@ -2,12 +2,34 @@
 
 #Mesopotamia
 407 = { "Nicephorium" "Nicephorium" } #(JP) "Raqqa"
-2314 = { "Circesium" "Circesium" } #(JP) "Deir ez-Zor"
+2314 = { "Azdra" "Azdra" } #(Chrys) "When Syria came under the Roman Empire in 64 BC, Deir Ez-Zor was a small, marginal village known as Azdra, which the Romans made the center of the region and founded a strong military garrison."
 4298 = { "Doliche" "Doliche" }
 6089 = { "Audattha" "Audattha" }
 6090 = { "Dabana" "Dabana" } #(JP) It's in the province okay, "Suluk"
 6091 = { "Barbalissus" "Barbalissus" } #(JP) "Maskanah" developed over "Balis" which was abandoned
 6092 = { "Hierapolis" "Hierapolis" }
+6099 = { "Circesium" "Circesium" } #(Chrys) "Busayrah"
+6100 = { "Constantina" "Constantina" }
+6101 = { "Samosata" "Samosata" }
+6102 = { "Chasavara" "Chasavara" } #(Chrys) from Medieval Greek "Χασαυαρa", of Arabic origin though
+6103 = { "Arghana" "Arghana" }
+6104 = { "Artagigarta" "Artagigarta" }
+6105 = { "Balisbiga" "Balisbiga" } #(Chrys) Ancient nearby city, later called "Baioulous" by the Byzantines
+6106 = { "Chozanum" "Chozanum" } #(Chrys) derived from Greek "Chozanon"
+6107 = { "Romanopolis" "Romanopolis" } #(Chrys) derived from Greek "Romanoupolis"
+6108 = { "Mambre" "Mambre" } #(Chrys) closest settlement I could find
+6109 = { "Barzanissa" "Barzanissa" } #(Chrys) derived from Greek "Barzanissa"
+6110 = { "Manzicertum" "Manzicertum" }
+6111 = { "Colchium" "Colchium" } #(Chrys) derived from Greek "Colchion"
+6112 = { "Percri" "Percri" } #(Chrys) derived from Medieval Greek "Perkri"
+6113 = { "Aluaca" "Aluaca" } #(Chrys) derived from Greek "Alouaka"
+6114 = { "Haccarium" "Haccarium" } #(Chrys) Nothing Here at all, nullam rem natam
+6115 = { "Calata" "Calata" }
+6116 = { "Vastauna" "Vastauna" } #(Chrys) closest Roman settlement to the island
+6117 = { "Autiara" "Autiara" } #(Chrys) considering the Tyare are descended from the ancient "Autiyara"
+6118 = { "Ad Pontem" "Ad Pontem" }
+6119 = { "Dasinia" "Dasinia" } #(Chrys) originally called "Dohuk-e Dasinya" after the native Dasini tribe
+6120 = { "Gaugamela" "Gaugamela" } #(Chrys) closest Roman settlement I could find, apparently the city is mentioned in 576 AD but I could not find the original attestation.
 
 #Levant
 321 = { "Neapolis" "Neapolis" }
@@ -35,7 +57,7 @@
 5181 = { "Nechelia" "Nechelia" }
 5203 = { "Mons Regalis" "Mons Regalis" } #(JP) "Shoubak"
 5205 = { "Berytus" "Berytus" }
-6065 = { "Sinai" "Sanctae Catharinae" }
+6065 = { "Sinai" "Sancta Catharina" }
 6066 = { "Thornla" "Thornla" } #(JP) In the area
 6067 = { "Philadelphia" "Philadelphia" } #(JP) "Amman"
 6068 = { "Basie" "Basie" }
