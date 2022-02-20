@@ -19,7 +19,7 @@
 2309 = { "Shingal" "Shingal" } #Sinjar
 2310 = { "Tikrît" "Tikrît" } #Tikrit
 2311 = { "Necef" "Necef" } #Najaf (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
-#2312 = { "" "" } #Wasit (Chrys) no Kurdish wiki
+2312 = { "Wasit" "Wasit" } #Wasit (Chrys) no Kurdish wiki, found on the Kurdish wiki for Wasit Province
 2314 = { "Dêrazorê" "Dêrazorê" } #Deir-ez-Zor (Chrys) no Kurdish wiki, found online
 3254 = { "Bazîd" "Bazîd" } #Bayazit
 4179 = { "Oremar" "Oremar" } #Oramar
@@ -75,24 +75,24 @@
 6125 = { "Qereqûsh" "Qereqûsh" } #Bakhdida (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
 6126 = { "Qeyare" "Qeyare" } #Qayyarah (Chrys) no Kurdish wiki itself, but mentioned on the Kurdish page for the Qayyarah-Jad'ah IDP Camp
 6127 = { "Zê" "Zê" } #Zab (Chrys) no Kurdish wiki, labeled as "Zê (Zab)" in the Turkish book "Kürtler, Türkler ve Araplar"
-6128 = { "Sherqat" "Sherqat" } #Shirqat (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
+6128 = { "Sharqat" "Sharqat" } #Shirqat (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for, plus it's mentioned on the Kurdish wiki for the Little Zab River
 6129 = { "Çemçemal" "Çemçemal" } #Chamchamal
 6130 = { "Kifrî" "Kifrî" } #Kifri
 6131 = { "Daquk" "Daquk" } #Daquq
 6132 = { "Semara" "Semara" } #Samarra
 6133 = { "Shareban" "Shareban" } #Miqdadiyah
 6134 = { "Beqûbe" "Beqûbe" } #Baqubah (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
-6135 = { "Ene" "Ene" } #Anah (Chrys) no Kurdish wiki, found three formsin the following Kurdish newspapers, taking their average for now:	Ene: https://arsiv.rojnameyawelat2.com/wp-content/uploads/Ar%C5%9F%C3%AEv/RojevaMedya2017/06-01-2017-rojevamedya.pdf.pdf	Ane: https://www.rudaw.net/kurmanci/middleeast/iraq/300420145, https://www.rudaw.net/kurmanci/middleeast/iraq/29092017		Enê: https://kurmanci.sahartv.ir/news/iraq-i255952
+6135 = { "Enê" "Enê" } #Anah (Chrys) no Kurdish wiki, found three formsin the following Kurdish newspapers, using Enê for now:	Ene: https://arsiv.rojnameyawelat2.com/wp-content/uploads/Ar%C5%9F%C3%AEv/RojevaMedya2017/06-01-2017-rojevamedya.pdf.pdf	Ane: https://www.rudaw.net/kurmanci/middleeast/iraq/300420145, https://www.rudaw.net/kurmanci/middleeast/iraq/29092017		Enê: https://kurmanci.sahartv.ir/news/iraq-i255952
 6136 = { "Felûce" "Felûce" } #Fallujah (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
 6137 = { "Bedre" "Bedre" } #Badra
 #6138 = { "" "" } #Numaniyah (Chrys) no Kurdish wiki
 6139 = { "Kût" "Kût" } #Kut (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
 6140 = { "Emare" "Emare" } #Amarah (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
-#6141 = { "" "" } #Hillah (Chrys) no Kurdish wiki
+6141 = { "Hille" "Hille" } #Hillah (Chrys) no Kurdish wiki, found on the Kurdish wiki for the Babil Province
 6142 = { "Kufe" "Kufe" } #Kufa
-#6143 = { "" "" } #Samawah (Chrys) no Kurdish wiki
+6143 = { "Semawe" "Semawe" } #Samawah (Chrys) no Kurdish wiki, found on the page of the Musena Province
 6144 = { "Zîqar" "Zîqar" } #Dhi Qar (JP) Modern Nasiriyah
-#6145 = { "" "" } #Zubayr (Chrys) no Kurdish wiki
+6145 = { "Zubêr" "Zubêr" } #Zubayr (Chrys) no Kurdish wiki, found on this Kurdish newspaper: http://ontwikkel2.mvanlaar.net/Portals/0/adam/Blog%20App/6IjQX8SBJEyByvb7AvPjsQ/File/bas_29.pdf
 #6149 = { "" "" } #Kelkit (Chrys) no Kurdish wiki
 
 #Levant
