@@ -39,8 +39,8 @@
 5295 = { "Cizîr" "Cizîr" } #Cizre
 5296 = { "Hesekê" "Hesekê" } #Hasakah
 5330 = { "Farqîn" "Farqîn" } #Silvan
+5331 = { "Sêrt" "Sêrt" } #Siirt
 5332 = { "Erdish" "Erdish" } #Arjesh
-5333 = { "Sêrt" "Sêrt" } #Siirt
 6030 = { "Semsûr" "Semsûr" } #Hisnmansur
 6089 = { "Reba" "Reba" } #(Chrys) "Rabha"
 6090 = { "Suluk" "Suluk" } #(Chrys) "Suluk" 
