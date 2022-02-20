@@ -370,7 +370,6 @@
 384 = { "Yesrîb" "Yesrîb" } #
 385 = { "Meke" "Meke" } #
 397 = { "Abû Zebî" "Abû Zebî" } #
-406 = { "Enbar" "Enbar" } #
 412 = { "Xûzistan" "Ehvaz" } #
 414 = { "Hemedan" "Hemedan" } #
 416 = { "Tewrêz" "Tewrêz" } #
@@ -399,11 +398,6 @@
 2218 = { "Shîraz" "Shîraz" } #
 2219 = { "Bender Lengeh" "Bender Lengeh" } #
 2301 = { "Kaisariyah" "Kaisariyah" } #
-2303 = { "Meletî" "Meletî" } #
-2306 = { "Mûshê" "Mûshê" } #
-2308 = { "Riha" "Riha" } #
-2310 = { "Tikrît" "Tikrît" } #
-2311 = { "Necef" "Necef" } #
 2315 = { "Süveys" "Süveys" } #
 2327 = { "Makna" "Makna" } #
 2331 = { "Jeddah" "Jeddah" } #
@@ -415,7 +409,6 @@
 3254 = { "Agirî" "Bazîd" } #
 3262 = { "Karaçay" "Karaçay" } #
 4282 = { "Kalet Bisha" "Kalet Bisha" } #
-4288 = { "Shetelereb" "Shetelereb" } #
 4301 = { "Bashûrê Alanistanê" "Shinval" } #
 4304 = { "Xoy" "Xoy" } #
 4315 = { "Gümüshane" "Gümüshane" } #
@@ -426,9 +419,7 @@
 4779 = { "Gelibolu" "Gelibolu" } #
 5224 = { "Nebîl" "Nebîl" } #
 5264 = { "Gize" "Gize" } #
-5296 = { "Nisêbîn" "Nisêbîn" } #
 5314 = { "Bêca" "Bêca" } #
-5332 = { "Erdis" "Erdis" } #
 7112 = { "Inebahti" "Inebahti" } #
 7134 = { "Enez" "Enez" } #
 7278 = { "Akkerman" "Akkerman" } #
