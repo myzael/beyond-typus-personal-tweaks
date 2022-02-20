@@ -82,7 +82,7 @@
 6132 = { "Semara" "Semara" } #Samarra
 6133 = { "Shareban" "Shareban" } #Miqdadiyah
 6134 = { "Beqûbe" "Beqûbe" } #Baqubah (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
-6135 = { "Ene" "Ene" } #Anah (Chrys) no Kurdish wiki, found in this Kurdish newspaper: https://arsiv.rojnameyawelat2.com/wp-content/uploads/Ar%C5%9F%C3%AEv/RojevaMedya2017/06-01-2017-rojevamedya.pdf.pdf
+6135 = { "Ene" "Ene" } #Anah (Chrys) no Kurdish wiki, found three formsin the following Kurdish newspapers, taking their average for now:	Ene: https://arsiv.rojnameyawelat2.com/wp-content/uploads/Ar%C5%9F%C3%AEv/RojevaMedya2017/06-01-2017-rojevamedya.pdf.pdf	Ane: https://www.rudaw.net/kurmanci/middleeast/iraq/300420145, https://www.rudaw.net/kurmanci/middleeast/iraq/29092017		Enê: https://kurmanci.sahartv.ir/news/iraq-i255952
 6136 = { "Felûce" "Felûce" } #Fallujah (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
 6137 = { "Bedre" "Bedre" } #Badra
 #6138 = { "" "" } #Numaniyah (Chrys) no Kurdish wiki
