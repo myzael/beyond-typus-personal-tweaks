@@ -74,7 +74,7 @@
 6124 = { "Ranye" "Ranye" } #Ranya
 6125 = { "Qereqûsh" "Qereqûsh" } #Bakhdida (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
 6126 = { "Qeyare" "Qeyare" } #Qayyarah (Chrys) no Kurdish wiki itself, but mentioned on the Kurdish page for the Qayyarah-Jad'ah IDP Camp
-6127 = { "Sharqat" "Sharqat" } #Zab (Chrys) no Kurdish wiki, probably the city referred to as Sharqat on the Kurdish page for the Little Zab River (not Shirqat)
+6127 = { "Zê" "Zê" } #Zab (Chrys) no Kurdish wiki, labeled as "Zê (Zab)" in the Turkish book "Kürtler, Türkler ve Araplar"
 6128 = { "Sherqat" "Sherqat" } #Shirqat (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
 6129 = { "Çemçemal" "Çemçemal" } #Chamchamal
 6130 = { "Kifrî" "Kifrî" } #Kifri
