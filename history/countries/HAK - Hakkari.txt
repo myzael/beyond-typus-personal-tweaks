@@ -13,7 +13,7 @@ add_government_reform = iqta
 primary_culture = kurdish
 religion = sunni
 religious_school = shafii_school
-#add_accepted_culture
+add_accepted_culture = assyrian_culture #If the assyrians called them back to power, they should be accepted pops
 
 #Tech and Military
 technology_group = muslim
