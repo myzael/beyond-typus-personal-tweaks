@@ -64,7 +64,7 @@
 6114 = { "Colemêrg" "Colemêrg" } #Hakkari
 6115 = { "Xelat" "Xelat" } #Ahlat
 6116 = { "Axtamar" "Axtamar" } #Aghtamar
-#6117 = { "" "" } #Tyare (Chrys) no Kurdish wiki
+6117 = { "Tiyare" "Tiyare" } #Tyare (Chrys) Kurdish wiki claims Tiyare was a village in the Hakkari area that was evacuated to the Makhmour refugee camp, likely to be equivalent to Tyare
 #6118 = { "" "" } #Tal Afar (Chrys) no Kurdish wiki, there is a Central Kurdish wiki but it is written in Arabic script and I can't read it
 6119 = { "Dihok" "Dihok" } #Duhok
 6120 = { "Shêxan" "Shêxan" } #Shekhan
