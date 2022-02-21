@@ -144,7 +144,7 @@
 6141 = { "Hillah" "Hillah" }
 6142 = { "Kufah" "Kufah" }
 6143 = { "As-Samawah" "As-Samawah" }
-6144 = { "An-Nasiriyah" "An-Nasiriyah" }
+6144 = { "Dhi Qar" "Dhi Qar" }
 6145 = { "Az-Zubayr" "Az-Zubayr" }
 6149 = { "Qalqit" "Qalqit" }
 
