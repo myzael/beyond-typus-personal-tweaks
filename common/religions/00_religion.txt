@@ -1408,7 +1408,7 @@ muslim = {
 		icon = 32
 		country = {
 			heir_chance = 1.0
-			merchants = 1
+			global_spy_defence = 0.1
 		}
 		country_as_secondary = {
 			land_morale = 0.05
