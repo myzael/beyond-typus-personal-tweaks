@@ -7979,7 +7979,7 @@ castle_rock = {		#includes and mainly is Edinburgh Castle
 	}
 }
 
-york_minster = {
+#york_minster = {
 	# province it starts in
 	start = 245		#York
 	
