@@ -7830,7 +7830,6 @@ castle_rock = {		#includes and mainly is Edinburgh Castle
 				has_owner_culture = yes
 				has_owner_accepted_culture = yes
 			}
-		}}
 		}
 	}
 
