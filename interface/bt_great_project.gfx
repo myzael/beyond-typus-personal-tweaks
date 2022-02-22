@@ -136,6 +136,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_pelourinho"	
+		texturefile = "gfx//interface//great_projects//great_project_pelourinho.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_pompeii"	
 		texturefile = "gfx//interface//great_projects//great_project_pompeii.dds"
 	}
