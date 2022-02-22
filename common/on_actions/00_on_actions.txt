@@ -1061,7 +1061,6 @@ on_monarch_death = {
 		majapahit.8 # Majapahit pretenders
 		flavor_mal.11 # Mali pretenders
 		flavor_mal.47 # Pilgrimage ends prematurely
-		Chocolate_hab_hun.98 # continue Habsburg deaths
 	}
 }
 
@@ -1583,7 +1582,6 @@ on_integrate = {
 	events = {
 		610
 	}
-	clear_chocolate_flags = yes		# BT Added
 }
 
 # Nation annexed.
@@ -1610,7 +1608,6 @@ on_annexed = {
 			set_global_flag = no_primas_germaniae
 		}
 	}
-	clear_chocolate_flags = yes		# BT Added
 }
 
 # When the chinese empire gets dismantled (e.g. when the emperor is annexed)
@@ -4724,7 +4721,6 @@ on_country_released = {
 			change_religion = FROM
 		}
 	}
-	clear_chocolate_flags = yes		# BT Added
 }
 
 # ROOT = province, FROM = country
