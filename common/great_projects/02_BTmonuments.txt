@@ -865,6 +865,7 @@ great_lighthouse = {
 		country_modifiers = {
 			light_ship_cost = -0.1
 			global_ship_trade_power = 0.1
+			own_coast_naval_combat_bonus = 1.0
 		}
 
 		#what effects happen when this tier is achieved
@@ -897,6 +898,7 @@ great_lighthouse = {
 		country_modifiers = {
 			light_ship_cost = -0.15
 			global_ship_trade_power = 0.15
+			own_coast_naval_combat_bonus = 1.0
 		}
 
 		#what effects happen when this tier is achieved
@@ -929,6 +931,7 @@ great_lighthouse = {
 		country_modifiers = {
 			light_ship_cost = -0.2
 			global_ship_trade_power = 0.25
+			own_coast_naval_combat_bonus = 1.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -1652,7 +1655,7 @@ lindisfarne = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			establish_order_cost = -0.1
+			stability_cost_modifier = -0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -1683,7 +1686,6 @@ lindisfarne = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			stability_cost_modifier = -0.05
-			establish_order_cost = -0.2
 			missionary_maintenance_cost = -0.1
 		}
 
@@ -1715,7 +1717,6 @@ lindisfarne = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			stability_cost_modifier = -0.10
-			establish_order_cost = -0.2
 			missionary_maintenance_cost = -0.1
 			own_coast_naval_combat_bonus = 1.0
 		}

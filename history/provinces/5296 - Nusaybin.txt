@@ -1,13 +1,12 @@
- 
 #New Province
 
 owner = QAR
 controller = QAR
 add_core = QAR
-capital = "Nusaybin"
-culture = syriac_culture
-religion = apostolic
-trade_goods = wool
+capital = "Hasakah"
+culture = assyrian_culture
+religion = orthodox
+trade_goods = livestock
 hre = no
 base_tax = 1 
 base_production = 1 

@@ -1420,15 +1420,70 @@
 5171 = { "Milletopol" "Milletopol" }
 6033 = { "Ionopol" "Ionopol" }
 
-#Mesopotamia
-4310 = { "Harput" "Harput" }
-5295 = { "Zisen" "Zisen" }
-
 #Levant
+321 = { "Limassol" "Limassol" }
+364 = { "Arisch" "Arisch" }
+365 = { "Raya" "Raya" } #(JP) "Al-Tur"
+377 = { "Aleppo" "Aleppo" }
+378 = { "Tripolis" "Tripolis" }
+379 = { "Jerusalem" "Jerusalem" }
+380 = { "Wüstenstein" "Burg Wüstenstein" }
+381 = { "Ajlun" "Ajlun" }
+382 = { "Damaskus" "Damaskus" }
 405 = { "Palmyra" "Palmyra" }
 1849 = { "Homs" "Homs" }
-4271 = { "Idlib" "Idlib" }
+1854 = { "Neapel" "Neapel" } #(JP) "Nablus"
+1855 = { "Safet" "Safet" } #(JP) "Safed"
+2313 = { "Antiochia" "Antiochia" }
+4268 = { "Elyn" "Elyn" } #(JP) "Aqaba"
+4270 = { "Mannen" "Man" } #(JP) "Maan"
+4271 = { "Idlip" "Idlip" } #(JP) "Idlib"
 4297 = { "Baalbek" "Baalbek" }
+5139 = { "Nikosien" "Nikosien" }
+5145 = { "Famagusta" "Famagusta" }
+5170 = { "Latakien" "Latakien" }
+5180 = { "Gasa" "Gasa" }
+5181 = { "Nekel" "Nekel" }
+5203 = { "Schubak" "Schubak" } #(JP) "Shoubak"
+5205 = { "Türien" "Türien" } #(JP) "Beirut"
+6065 = { "Sinai" "Katharinenkloster" }
+6066 = { "Tafila" "Tafila" }
+6067 = { "Ammanen" "Ammanen" } #(JP) "Amman"
+6068 = { "Azrak" "Azrak" } #(JP) "Azraq" means blue, akin to Azure I suppose?
+6069 = { "Mafrak" "Mafrak" } #(JP) "Al-Mafraq"
+6070 = { "Irbit" "Irbit" } #(JP) "Irbid"
+6071 = { "Siebenbrünnen" "Siebenbrünnen" } #(JP) "Beersheeba", alternatively "Berscheba" or "Bir As-Sab"
+6072 = { "Rama" "Rama" }
+6073 = { "Ladschun" "Ladschun" } #(JP) "Lajjun"
+6074 = { "Tiros" "Tiros" }
+6075 = { "Sidon" "Sidon" }
+6076 = { "Episkopien" "Episkopien" }
+6077 = { "Kormakitis" "Kormakitis" }
+6078 = { "Schernis" "Schernis" } #(JP) "Kyrenia", Wilbrand von Oldenburg 
+6079 = { "Margad" "Burg Margad" }
+6080 = { "Tortosa" "Tortosa" } #(JP) "Tartus", same as given for Spanish "Tortosa"
+6081 = { "Adratien" "Adratien" } #(JP) Modern "Daraa", in period "Adratum" or "Adhri'at"
+6082 = { "Suweida" "Suweida" } #(JP) "As-Suwayda"
+6083 = { "Sanamein" "Sanamein" } #(JP) "Al-Sanamayn"
+6084 = { "Maalula" "Maalula" }
+6085 = { "Salamieh" "Salamieh" }
+6086 = { "Hama" "Hama" }
+6087 = { "Marre" "Marre" } #(JP) Crusader name of "Maarat al-Numan"
+6088 = { "Suchna" "Suchna" }
+6093 = { "Hasart" "Hasart" } #(JP) "Aziz", Crusader "Hazart"
+6094 = { "Alexandrette" "Alexandrette" }
+6095 = { "Kilis" "Kilis" }
+
+#Mesopotamia
+407 = { "Rakka" "Rakka" } #(JP) "Raqqa"
+2314 = { "Deir as-Sur" "Deir as-Sur" } #(JP) "Deir ez-Zor"
+4298 = { "Antep" "Antep" }
+4310 = { "Harput" "Harput" }
+5295 = { "Zisen" "Zisen" }
+6089 = { "Rahba" "Rahba" }
+6090 = { "Suluk" "Suluk" }
+6091 = { "Maskanah" "Maskanah" }
+6092 = { "Manbidsch" "Manbidsch" }
 
 #Persia
 
@@ -1759,14 +1814,7 @@
 1974 = "Khersen"
 288 = "Niederdon"
 1971 = "Wolgenau"			#Or "Tsarenburg"
-5180 = "Gasa"
-1854 = "Jaffa"
-4270 = "Mannen"
-381 = "Hauran"
-364 = "Balduinsgrab"			#Or "Arisch"
-4268 = "Eila"			#Or "Akaba"
 363 = "Matarei"			#Or "Paschenbrück"
-5205 = "Türien"			#Or "Türen", "Beirut"
 5162 = "Lykien"
 5130 = "Grossmysien"
 5131 = "Kydonien"
@@ -2225,8 +2273,6 @@
 5045 = "Andersonshof"
 976 = "Wrangell"			#Or "Hydaburg"
 2613 = "Sitka"			#Or "Baranofsinsel"
-365 = "Sinai"
-5181 = "Nekel"
 2327 = "Tabuck"
 2316 = "Buheira"
 2319 = "Sautien"
@@ -2404,7 +2450,6 @@
 1197 = "Daressalam" #Dar is the short form, but the full form might be more accurate afterall
 666 = "Haikou"			#Or "Heuhau"
 2160 = "Sania"
-5139 = "Nikosia"			#Or "Lefkosa"
 865 = "Löwenwasser"			#Or "Schildkrötenbucht"
 867 = "Indio"			#Or "Bertram"
 1095 = "Falklandinseln"			#Or "Malwinen"
@@ -2484,7 +2529,6 @@
 5301 = "Selima Oase"
 5135 = "Hadrianopel" #or "Mersin"
 4295 = "Cefa"
-#5203 = "Montreal" #changing from translation of the entire area to a single crusader castle
 2321 = "Kleinbürgen" #change due to map alterations
 145 = "Lakonien"
 3164 = "Konstanza" #or "Konstantinien" AH
@@ -2595,7 +2639,6 @@
 2839 = "Atakama"
 803 = "Mochus"
 2832 = "Joachim"
-5203 = "Aravatal" #Probably the third time I look at the name now and see sth that may be better fitting than the last name
 138 = "Schwarzenberg"
 306 = "Unter-Naugard"
 311 = "Cholm"
@@ -2981,7 +3024,6 @@
 282 = { "Odessa" "Odessa" } #
 7279 = { "Transnistrien" "Dubasari" } #
 7133 = { "Metzowon" "Metzowon" } #
-1855 = { "Kastorien" "Kastorien" } #
 4312 = { "Ostbithynien" "Claudiusstadt" } #
 5165 = { "Bruchburg" "Bruchburg" } #
 5167 = { "Korum" "Korum" } #
@@ -3016,12 +3058,6 @@
 5321 = { "Dschidschal" "Dschidschal" } #
 354 = { "Trabbeln" "Trabbeln" } #
 5274 = { "Aschdabia" "Aschdabia" } #
-382 = { "Damaskus" "Damaskus" } #
-378 = { "Tripolis" "Tripolis" } #
-5170 = { "Latakia" "latakia" } #
-377 = { "Aleppo" "Aleppo" } #
-2313 = { "Antiochia" "Antiochia" } #
-407 = { "Rakka" "Rakka" } #
 149 = { "Adrianopel" "Adrianopel" } #
 411 = { "Mossul" "Mossul" } #
 2298 = { "Attalia" "Attalia" } #
@@ -3255,8 +3291,6 @@
 349 = { "Feigen" "Feigen" } #
 356 = { "Bengasi" "Bengasi" } #
 357 = { "Derna" "Derna" } #
-379 = { "Jerusalem" "Jerusalem" } #
-380 = { "Wüstenstein" "Burg Wüstenstein" } #
 464 = { "Astrachan" "Astrachan" } #
 466 = { "Sarepta" "Sarepta" } #
 469 = { "Östlich-Rhein" "Rhein" } #
@@ -3347,8 +3381,6 @@
 4113 = { "Uleoburg" "Uleoburg" } #
 4122 = { "Salzar" "Salzar" } #
 4142 = { "Arenhusen" "Arenhusen" } #
-4268 = { "Eila" "Akaba" } #
-4270 = { "Mannen" "Man" } #
 4305 = { "Schaken" "Schaken" }
 4563 = { "Salen" "Salen" } #
 4592 = { "Ülva" "Blaufelden" } #
@@ -3359,8 +3391,6 @@
 4959 = { "Östliche Grassländer" "Aurora" } #
 5037 = { "Midhurst" "Midhurst" } #
 5138 = { "Osmanien" "Osmanien" } #
-5180 = { "Gasa" "Gasa" } #
-5203 = { "Aravatal" "Schubak" } #
 5225 = { "Mahdia" "Mahdia" } #
 5311 = { "Choms" "Choms" } #
 5332 = { "Arissa" "Arissa" } #
@@ -3381,7 +3411,6 @@
 7113 = { "Phthiotes" "Zethunien" } #
 4361 = { "Roxburg" "Roxburg" } #
 8146 = { "Grenzland" "Grünlau" } #
-364 = { "El Arisch" "Balduinsgrab" } #
 387 = { "Mokka" "Mokka" } #
 388 = { "Aden" "Aden" } #
 391 = { "Nagren" "Nagren" } #

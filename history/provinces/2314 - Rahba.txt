@@ -1,18 +1,17 @@
- 
 #2314 - Rahba
 
-owner = MAM
-controller = MAM
-culture = al_suryah_arabic
+owner = AKK
+controller = AKK
+culture = al_iraqiya_arabic
 religion = sunni
-capital = "Deir ez-Zor"
-trade_goods = livestock		#Mostly poor nomadic inhabitants since at least the destruction caused by the Mongols, if not earlier than that
+capital = "Deyrizor"
+trade_goods = cotton #(JP) Cotton produced along the middle Euphrates
 hre = no
 base_tax = 1 
-base_production = 1 
+base_production = 2 
 base_manpower = 1 
 is_city = yes
-add_core = MAM
+add_core = AKK
 add_core = SYR
 
 discovered_by = muslim
@@ -21,19 +20,6 @@ discovered_by = indian
 discovered_by = nomad_group
 discovered_by = east_african
 
-1411.1.1 = {
-	owner = QAR
-	controller = QAR
-	add_core = QAR
-	remove_core = MAM
-	add_claim = MAM
-} # The Qara Koyunlu
-1469.2.4 = {
-	owner = AKK
-	controller = AKK
-	add_core = AKK
-	remove_core = QAR
-}
 1501.1.1 = {
 	owner = MAM
 	controller = MAM

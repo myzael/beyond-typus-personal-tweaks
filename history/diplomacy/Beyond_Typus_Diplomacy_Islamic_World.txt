@@ -26,7 +26,18 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1517.1.1
 }
-
+vassal = {
+	first = MAM
+	second = KIL
+	start_date = 1444.1.1
+	end_date = 1516.8.24		#(JP) Battle of Marj Dabiq led to the fall of the Levant to the Ottomans. Can no find direct date when Kilis flipped
+}
+vassal = {
+	first = TUR
+	second = KIL
+	start_date = 1516.8.24
+	end_date = 1610.1.1			#(JP) Ottomans sent an army to settle conflict between the Sheikhs of Kilis and local Pasha based in Aleppo. Last Sheikh went on a rampage in return of the death of his uncle at the hands of this Pasha.
+}
 vassal = {
 	first = MOR
 	second = DBD
@@ -34,9 +45,72 @@ vassal = {
 	end_date = 1563.12.31
 }
 
-vassal = {
+guarantee = {	#(JP) Switched from vassal to Guarantee
 	first = QAR
 	second = BHT
 	start_date = 1435.1.1
 	end_date = 1469.2.4
+}
+
+guarantee = {
+	first = QAR
+	second = SIN
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+guarantee = {
+	first = QAR
+	second = HAK
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+guarantee = {
+	first = QAR
+	second = BDI
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+guarantee = {
+	first = QAR
+	second = SRN
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+guarantee = {
+	first = QAR
+	second = MHM
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+guarantee = {
+	first = AKK
+	second = EGL
+	start_date = 1435.1.1
+	end_date = 1503.1.1
+}
+
+guarantee = {
+	first = AKK
+	second = BIN
+	start_date = 1435.1.1
+	end_date = 1503.1.1
+}
+
+guarantee = {
+	first = AKK
+	second = ZIR
+	start_date = 1435.1.1
+	end_date = 1503.1.1
+}
+
+vassal = {
+	first = QAR
+	second = IRQ
+	start_date = 1433.4.9
+	end_date = 1445.3.8
 }

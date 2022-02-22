@@ -1,7 +1,6 @@
 #Reorganised by Chairman Meow (JP), names mostly by Dub and Andreas Cynicus
 
 #Balkans
-
 131 = { "Agranon" "Zagrabia" } # Transliteration of Latin Agranum ???a???, Zagrabia ?a??aﬂ?a.
 136 = { "Aspalathos" "Aspalathos" } # Alternative city name(s): Spalaton, Spalathos, Spalathon, Aspalathon.
 137 = { "Rhaousin" "Rhaousin" }
