@@ -16,6 +16,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_castle_rock"	
+		texturefile = "gfx//interface//great_projects//great_project_castle_rock.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_chillon_castle"	
 		texturefile = "gfx//interface//great_projects//great_project_chillon_castle.dds"
 	}
