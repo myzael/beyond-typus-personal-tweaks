@@ -206,6 +206,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_st_catherines"	
+		texturefile = "gfx//interface//great_projects//great_project_st_catherines.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_teotihuacan"	
 		texturefile = "gfx//interface//great_projects//great_project_teotihuacan.dds"
 	}
