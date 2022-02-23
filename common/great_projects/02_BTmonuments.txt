@@ -854,18 +854,19 @@ great_lighthouse = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			block_slave_raid = yes
+			province_trade_power_modifier = 0.10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			block_slave_raid = yes
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			light_ship_cost = -0.1
 			global_ship_trade_power = 0.1
-			own_coast_naval_combat_bonus = 1.0
+			own_coast_naval_combat_bonus = 0.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -886,11 +887,11 @@ great_lighthouse = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_modifier = 0.10
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			province_trade_power_modifier = 0.10
 			block_slave_raid = yes
 		}
 
@@ -919,11 +920,11 @@ great_lighthouse = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_modifier = 0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			province_trade_power_modifier = 0.25
 			block_slave_raid = yes
 		}
 
@@ -7979,7 +7980,7 @@ castle_rock = {		#includes and mainly is Edinburgh Castle
 	}
 }
 
-#york_minster = {
+york_minster = {
 	# province it starts in
 	start = 245		#York
 	
@@ -8123,25 +8124,25 @@ castle_rock = {		#includes and mainly is Edinburgh Castle
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			custom_tooltip = bt_monument_spawns_reform_center
 			if = {
 				limit = {
-					AND = {
-						has_owner_religion = yes
-						owner = {
-							OR = {
-								religion = anglican
-								religion = hussite
-								religion = protestant
-								religion = reformed
-							}
-						}
+					has_owner_religion = yes
+					NOT = {
+						current_age = age_of_revolutions
+						current_age = age_of_absolutism
 					}
 				}
-				add_reform_center = ???
+				trigger_switch = {
+					on_trigger = religion
+					anglican = { add_reform_center = anglican }
+					hussite = { add_reform_center = hussite }
+					protestant = { add_reform_center = protestant }
+					reformed = { add_reform_center = reformed }
+				}
 			}
 		}
 	}
-
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
@@ -8163,6 +8164,10 @@ castle_rock = {		#includes and mainly is Edinburgh Castle
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			establish_order_cost = -0.25
+			institution_spread_from_true_faith = 0.15
+			innovativeness_gain = 0.5
+			tolerance_heretic = 1
 		}
 
 		#what effects happen when this tier is achieved

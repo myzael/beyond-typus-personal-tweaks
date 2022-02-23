@@ -215,4 +215,9 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//great_project_torre_del_oro.dds"
 	}
 
+		spriteType = {
+		name = "GFX_great_project_york_minster"	
+		texturefile = "gfx//interface//great_projects//great_project_york_minster.dds"
+	}
+
 }
