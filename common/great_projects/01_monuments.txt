@@ -13350,6 +13350,8 @@ kashi_vishwanath = {
 	}
 
 	can_use_modifiers_trigger = {
+		religion_group = dharmic
+		has_owner_religion = yes
 	}
 
 	can_upgrade_trigger = {
@@ -13358,8 +13360,6 @@ kashi_vishwanath = {
 	}
 
 	keep_trigger = {
-		religion_group = dharmic
-		has_owner_religion = yes
 	}
 
 	tier_0 = {

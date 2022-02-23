@@ -16,6 +16,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_castle_rock"	
+		texturefile = "gfx//interface//great_projects//great_project_castle_rock.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_chillon_castle"	
 		texturefile = "gfx//interface//great_projects//great_project_chillon_castle.dds"
 	}
@@ -133,6 +138,11 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_great_project_palace_of_the_popes"	
 		texturefile = "gfx//interface//great_projects//great_project_palace_of_the_popes.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_pelourinho"	
+		texturefile = "gfx//interface//great_projects//great_project_pelourinho.dds"
 	}
 
 		spriteType = {
