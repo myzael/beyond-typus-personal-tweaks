@@ -2601,6 +2601,9 @@ mandaean_group = {
 			tolerance_own = 1
 		}
 		
+		religious_reforms = yes
+		reform_tooltip = MANDAEAN_REFORM_TOOLTIP
+		
 		heretic = { ELCESAITE }	
 	}
 	
