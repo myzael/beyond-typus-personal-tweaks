@@ -171,6 +171,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_pont_du_gard"	
+		texturefile = "gfx//interface//great_projects//great_project_pont_du_gard.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_red_fort"
 		texturefile = "gfx//interface//great_projects//great_project_red_fort.dds"
 	}
