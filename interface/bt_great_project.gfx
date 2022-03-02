@@ -16,6 +16,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_beaune_hospices"	
+		texturefile = "gfx//interface//great_projects//great_project_beaune_hospices.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_burkhan_khaldun"	
 		texturefile = "gfx//interface//great_projects//great_project_burkhan_khaldun.dds"
 	}
