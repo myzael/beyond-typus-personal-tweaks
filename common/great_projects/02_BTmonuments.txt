@@ -9439,6 +9439,7 @@ pont_du_gard = {		#Pont du Gard
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			center_of_trade = 1
 		}
 	}
 }
