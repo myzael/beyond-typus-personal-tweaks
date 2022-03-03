@@ -11,6 +11,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_aleppo_mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_aleppo_mosque.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_aula_palatina"	
 		texturefile = "gfx//interface//great_projects//great_project_aula_palatina.dds"
 	}
@@ -156,6 +161,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_painted_churches"	
+		texturefile = "gfx//interface//great_projects//great_project_painted_churches.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_palace_of_the_popes"	
 		texturefile = "gfx//interface//great_projects//great_project_palace_of_the_popes.dds"
 	}
@@ -248,6 +258,11 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_great_project_torre_del_oro"	
 		texturefile = "gfx//interface//great_projects//great_project_torre_del_oro.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_umayyad_mosque"	
+		texturefile = "gfx//interface//great_projects//great_project_umayyad_mosque.dds"
 	}
 
 		spriteType = {
