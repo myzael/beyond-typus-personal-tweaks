@@ -1,4 +1,4 @@
-version="14.1"
+version="15"
 tags={
 	"Balance"
 	"Expansion"
@@ -15,4 +15,4 @@ tags={
 }
 replace_path="common/bookmarks"
 name="BeyondTypusInternal"
-supported_version="1.32.*"
+supported_version="1.33.*"
