@@ -967,7 +967,7 @@
  byzantium_holds_the_line_desc:0 "For generations the Turks have been pushing west. Despite occasional Roman victories, the advance of the Sultans and Beys has marched inexorably on, pushing our once great empire to the very gates of our great capital. It is now time to make a stand and turn the tide! If we are to stave off our certain destruction, we must hold the line here, push back the Turkish advance, and stabilise the capital region, lest all be lost."
  byzantium_holds_the_line_title:0 "Turn the Tide"
  cahita:0 "Cahita"
- canadien:0 "Canadian"
+ #canadien:0 "Canadian"         #Superseded and replaced by vanilla's 1.33 'quebecois' culture 
  canterbury_cathedral:0 "Canterbury Cathedral"
  canterbury_cathedral_title:0 "Canterbury Cathedral"
  cappadocian:0 "Cappadocian"

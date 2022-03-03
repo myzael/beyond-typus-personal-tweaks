@@ -664,3 +664,6 @@
  demanded_unlawful_tooltip:0 "§RYou may not have demanded unlawful territory from this prince in the last 3 years§!"
  demand_unlawful_at_war_tooltip:0 "§RYou can't demand unlawful territory while you or the recipient are at war§!"
  demand_sold_tooltip:0 "§RYou can't demand territory that the previous owner has voluntarily sold, or revoked their core in§!"
+
+ #1.33 update
+ quebecois:0 "Canadian"

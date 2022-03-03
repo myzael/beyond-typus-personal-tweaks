@@ -1,16 +1,16 @@
 government = tribal
-add_government_reform = stateless_society
+add_government_reform = tribal_federation
 primary_culture = degar
 religion = animism
 technology_group = chinese
-capital = 2375	# Lach
+capital = 8629	# Lach
 
-1444.1.1 = {
+1291.1.1 = {
 	monarch = {
-		name = "Tribal Council"
-		adm = 3
-		dip = 3
-		mil = 3
+		name = "Degar Council"
+		adm = 2
+		dip = 2
+		mil = 2
 		regent = yes
 	}
 }

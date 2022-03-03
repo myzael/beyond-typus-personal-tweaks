@@ -8,7 +8,7 @@ historical_friend = TEU
 capital = 42
 
 
-1424.4.14 = {
+1424.4.14  = {
 	monarch = {
 		name = "Franz"
 		dynasty = "Kuhschmalz"

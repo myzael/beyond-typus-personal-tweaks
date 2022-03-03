@@ -454,6 +454,10 @@ colonial_eastern_america = {
 		trigger = { culture_group = turkish_g }
 		name = "COLONIAL_EASTERN_AMERICA_TU"
 	}
+	names = {
+		trigger = { OR = { tag = KOR primary_culture = korean primary_culture = korean_new } }
+		name = "COLONIAL_EASTERN_AMERICA_Miju"
+	}
 	# Generic
 	names = {
 		name = "COLONIAL_REGION_New_Root_GetName"
@@ -1695,6 +1699,10 @@ colonial_australia = {
 	names = {
 		trigger = { culture_group = turkish_g }
 		name = "COLONIAL_AUSTRALIA_TU"
+	}
+	names = {
+		trigger = { OR = { tag = KOR primary_culture = korean primary_culture = korean_new } }
+		name = "COLONIAL_AUSTRALIA_Hoju"
 	}
 	# Generic
 	names = {

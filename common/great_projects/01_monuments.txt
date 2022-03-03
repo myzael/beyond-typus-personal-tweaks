@@ -517,8 +517,25 @@ tower_of_london = {
 	#can we build it?
 	build_trigger = {
 		OR = {
+<<<<<<< Updated upstream
 			culture = normand
 			culture_group = british
+=======
+			AND = {
+				culture = normand
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+			AND = {
+				culture_group = british
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+>>>>>>> Stashed changes
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -536,8 +553,25 @@ tower_of_london = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
+<<<<<<< Updated upstream
 			culture = normand
 			culture_group = british
+=======
+			AND = {
+				culture = normand
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+			AND = {
+				culture_group = british
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+>>>>>>> Stashed changes
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -545,8 +579,25 @@ tower_of_london = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
+<<<<<<< Updated upstream
 			culture = normand
 			culture_group = british
+=======
+			AND = {
+				culture = normand
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+			AND = {
+				culture_group = british
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+>>>>>>> Stashed changes
 		}
 		province_is_or_accepts_culture = yes
 	}
@@ -899,6 +950,13 @@ parthenon = {
 					culture = athenian
 				}
 			}
+			AND = {
+				culture = athenian
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
 		}	
 	}
 
@@ -935,7 +993,18 @@ parthenon = {
 					culture = athenian
 				}
 			}
+<<<<<<< Updated upstream
 		}	
+=======
+			AND = {
+				culture = athenian
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+		}
+>>>>>>> Stashed changes
 	}
 
 	#can our country upgrade it?
@@ -952,7 +1021,18 @@ parthenon = {
 					culture = athenian
 				}
 			}
+<<<<<<< Updated upstream
 		}	
+=======
+			AND = {
+				culture = athenian
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+		}
+>>>>>>> Stashed changes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -5914,7 +5994,28 @@ borobudur_temple = {
 			}
 			AND = {
 				culture_group = malay
+<<<<<<< Updated upstream
 				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				religion = hinduism
+				has_owner_religion = yes
+				owner = {
+					has_personal_deity = buddha	
+				}						
+			}
+			AND = {
+				religion = shamanism
+				has_owner_religion = yes
+				owner = {
+					has_unlocked_cult = buddhism_cult	
+				}				
+=======
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+>>>>>>> Stashed changes
 			}
 			AND = {
 				religion = hinduism
@@ -5960,7 +6061,28 @@ borobudur_temple = {
 			}
 			AND = {
 				culture_group = malay
+<<<<<<< Updated upstream
 				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				religion = hinduism
+				has_owner_religion = yes
+				owner = {
+					has_personal_deity = buddha	
+				}						
+			}
+			AND = {
+				religion = shamanism
+				has_owner_religion = yes
+				owner = {
+					has_unlocked_cult = buddhism_cult	
+				}				
+=======
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+>>>>>>> Stashed changes
 			}
 			AND = {
 				religion = hinduism
@@ -5996,7 +6118,28 @@ borobudur_temple = {
 			}
 			AND = {
 				culture_group = malay
+<<<<<<< Updated upstream
 				province_is_or_accepts_culture = yes
+			}
+			AND = {
+				religion = hinduism
+				has_owner_religion = yes
+				owner = {
+					has_personal_deity = buddha	
+				}						
+			}
+			AND = {
+				religion = shamanism
+				has_owner_religion = yes
+				owner = {
+					has_unlocked_cult = buddhism_cult	
+				}				
+=======
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+>>>>>>> Stashed changes
 			}
 			AND = {
 				religion = hinduism

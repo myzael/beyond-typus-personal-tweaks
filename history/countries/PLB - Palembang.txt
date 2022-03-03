@@ -1,10 +1,9 @@
 government = monarchy
-add_government_reform = autocracy_reform
+add_government_reform = mandala_reform
 primary_culture = musi
 religion = hinduism
 technology_group = chinese
 capital = 622	# Palembang
-religious_school = shafii_school
 
 1399.1.1 = {
 	add_piety = -0.1
@@ -14,7 +13,7 @@ religious_school = shafii_school
 	monarch = {
 		name = "Arya" #Ario Abdillah upon conversion to Islam
 		dynasty = "Damar"
-		culture = javanese #Chinese ruler of Palembang from Majapahit
+                culture = javanese #Chinese ruler of Palembang from Majapahit
 		adm = 3
 		dip = 4
 		mil = 2

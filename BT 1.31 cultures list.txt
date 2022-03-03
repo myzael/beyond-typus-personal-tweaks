@@ -85,7 +85,7 @@ butonese
 byelorussian
 caddo
 cahita
-canadien
+#canadien			#Replaced in 1.33 by vanilla quebecois
 cantonese
 cappadocian
 cara
@@ -557,3 +557,7 @@ zapotek
 zhongyuan
 zhuang
 zuni
+
+#New in 1.33
+platinean
+quebecois

@@ -10,12 +10,3 @@ mercantilism = 25
 
 
 #History not yet done
-1399.1.1 = {
-	monarch = {
-		name = "Le Conseil"
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}

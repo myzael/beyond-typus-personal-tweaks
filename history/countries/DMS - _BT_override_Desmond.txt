@@ -1,0 +1,4 @@
+
+add_government_reform = bt_reform_tier_one_norman_lordship
+primary_culture = anglo_irish
+add_accepted_culture = irish

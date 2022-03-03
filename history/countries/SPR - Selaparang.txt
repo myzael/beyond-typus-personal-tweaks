@@ -42,9 +42,9 @@ capital = 2693	#Lombok
 		adm = 2
 		dip = 3
 		mil = 1
-	}
-	religion = sunni
-	religious_school = shafii_school
+        }
+        religion = sunni
+        religious_school = shafii_school
 	add_piety = 0.1
 }
 

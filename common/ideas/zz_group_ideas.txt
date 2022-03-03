@@ -1389,8 +1389,13 @@ TIB_ideas = {
 		OR = {
 			tag = TIB
 			AND = {
-		primary_culture = tibetan
-		religion = vajrayana 
+				OR = {
+					primary_culture = tibetan
+					primary_culture = tibetan_new
+				}
+				religion = vajrayana 
+			}
+		}
 	}
 		}
 	}

@@ -40,7 +40,7 @@ historical_friend = BUR			#Brittany allied several times with Burgundy, often se
 		name = "Arthur II"
 		dynasty = "de Dreux"
 		birth_date = 1261.7.25
-		adm = 2			#Nothing in particular but he doesn't deserve only 1.
+		adm = 2			#Nothing in  particular but he doesn't deserve only 1.
 		dip = 3			#A peaceful reign.
 		mil = 1			#Probably fearful to engage any war.
 	}
@@ -51,7 +51,7 @@ historical_friend = BUR			#Brittany allied several times with Burgundy, often se
 		birth_date = 1269.1.1		#Exact date of her birth is unknown.
 		death_date = 1322.8.2
 		female = yes
-		adm = 3			#Sovereign countess of Montfort and queen consort of Scotland.
+		adm = 3			#Sovereign  countess of Montfort and queen consort of Scotland.
 		dip = 2			#Nothing in particular.
 		mil = 2			#Nothing in particular.
 	}
@@ -350,7 +350,7 @@ historical_friend = BUR			#Brittany allied several times with Burgundy, often se
 		dip = 2			#Nothing in particular.
 		mil = 2			#Nothing in particular.
 	}
-	add_ruler_personality = intricate_web_weaver_personality 
+	add_ruler_personality = intricate_web_weaver_personality  
 }
 
 1458.12.27 = { capital = 172 } 		#Nantes

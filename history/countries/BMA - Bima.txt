@@ -148,7 +148,7 @@ capital = 8630	# Bima
 		adm = 0
 		dip = 1
 		mil = 0
-	}
+        }
 }
 
 1640.6.1 = {
@@ -208,7 +208,7 @@ capital = 8630	# Bima
 		adm = 1
 		dip = 2
 		mil = 1
-		female = yes
+                female = yes
 	}
 }
 

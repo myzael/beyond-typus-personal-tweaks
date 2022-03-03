@@ -3,7 +3,7 @@ government_rank = 1
 primary_culture = piman
 religion = totemism
 technology_group = north_american
-capital = 4650
+capital = 862
 
 
 1444.11.11 = {

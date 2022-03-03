@@ -374,7 +374,7 @@ capital = 607	# Vijaya
 		adm = 2
 		dip = 1
 		mil = 4
-		religion = sunni
+                religion = sunni
 	}
 }
 
@@ -391,7 +391,7 @@ capital = 607	# Vijaya
 		adm = 2
 		dip = 2
 		mil = 3
-		culture = degar
+                culture = degar
 	}
 }
 
@@ -432,7 +432,7 @@ capital = 607	# Vijaya
 		adm = 1
 		dip = 2
 		mil = 1
-		culture = degar
+                culture = degar
 	}
 }
 
@@ -443,7 +443,7 @@ capital = 607	# Vijaya
 		adm = 1
 		dip = 2
 		mil = 2
-		culture = degar
+                culture = degar
 	}
 }
 
