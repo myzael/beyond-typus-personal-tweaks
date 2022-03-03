@@ -240,10 +240,7 @@ globe_theatre = {
 	#can we build it?
 	build_trigger = {		#famous for Shakespeare plays, this limitation represents that
 		culture = english
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#what to do when it's built
@@ -257,19 +254,13 @@ globe_theatre = {
 	#can our country use it?
 	can_use_modifiers_trigger = {		#famous for Shakespeare plays, this limitation represents that
 		culture = english
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {		#famous for Shakespeare plays, this limitation represents that
 		culture = english
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -1941,10 +1932,7 @@ sanssouci = {
 	#can we build it?
 	build_trigger = {
 		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#what to do when it's built
@@ -1958,19 +1946,13 @@ sanssouci = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		culture_group = germanic
-		OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -2702,10 +2684,7 @@ shibam_hadramawt = {
 	#can we build it?
 	build_trigger = {
 		culture_group = turko_semitic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#what to do when it's built
@@ -2719,19 +2698,13 @@ shibam_hadramawt = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		culture_group = turko_semitic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		culture_group = turko_semitic
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -3067,28 +3040,11 @@ rock_cashel = {
 	#can we build it?
 	build_trigger = {
 		OR = {
-			AND = {
-				culture_group = gaelic
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture = anglo_irish
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture_group = unified_celtic_group
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
+			culture_group = gaelic
+			culture = anglo_irish
+			culture_group = unified_celtic_group
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#what to do when it's built
@@ -3097,62 +3053,26 @@ rock_cashel = {
 	
 	#what to do when it's destroyed
 	on_destroyed = {
-		#hide_ambient_object = hagia_sophia_minarets
-		#hide_ambient_object = hagia_sophia
 	}
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-			AND = {
-				culture_group = gaelic
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture = anglo_irish
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture_group = unified_celtic_group
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
+			culture_group = gaelic
+			culture = anglo_irish
+			culture_group = unified_celtic_group
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			AND = {
-				culture_group = gaelic
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture = anglo_irish
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture_group = unified_celtic_group
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
+			culture_group = gaelic
+			culture = anglo_irish
+			culture_group = unified_celtic_group
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -7799,18 +7719,13 @@ castle_rock = {		#includes and mainly is Edinburgh Castle
 
 	#can we build it?
 	build_trigger = {
-		AND = {
-			OR = {
-				culture_group = british
-				culture_group = brythonic
-				culture_group = gaelic
-				culture_group = unified_celtic_group
-			}
-			OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+		OR = {
+			culture_group = british
+			culture_group = brythonic
+			culture_group = gaelic
+			culture_group = unified_celtic_group
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#what to do when it's built
@@ -7823,34 +7738,24 @@ castle_rock = {		#includes and mainly is Edinburgh Castle
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		AND = {
-			OR = {
-				culture_group = british
-				culture_group = brythonic
-				culture_group = gaelic
-				culture_group = unified_celtic_group
-			}
-			OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+		OR = {
+			culture_group = british
+			culture_group = brythonic
+			culture_group = gaelic
+			culture_group = unified_celtic_group
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		AND = {
-			OR = {
-				culture_group = british
-				culture_group = brythonic
-				culture_group = gaelic
-				culture_group = unified_celtic_group
-			}
-			OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
+		OR = {
+			culture_group = british
+			culture_group = brythonic
+			culture_group = gaelic
+			culture_group = unified_celtic_group
 		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -8791,7 +8696,7 @@ temple_valley = {	#Valley of the Temples (Valle dei Templi)
 	move_days_per_unit_distance = 10
 	
 	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
-	starting_tier = 1
+	starting_tier = 0
 	
 	#project type
 	type = monument
@@ -8808,10 +8713,7 @@ temple_valley = {	#Valley of the Temples (Valle dei Templi)
 					culture = roman
 					culture = griko
 				}
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
+				province_is_or_accepts_culture = yes
 			}
 			tag = BYZ
 			tag = ROM
@@ -8838,10 +8740,7 @@ temple_valley = {	#Valley of the Temples (Valle dei Templi)
 					culture = roman
 					culture = griko
 				}
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
+				province_is_or_accepts_culture = yes
 			}
 			tag = BYZ
 			tag = ROM
@@ -8860,10 +8759,7 @@ temple_valley = {	#Valley of the Temples (Valle dei Templi)
 					culture = roman
 					culture = griko
 				}
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
+				province_is_or_accepts_culture = yes
 			}
 			tag = BYZ
 			tag = ROM
@@ -9031,10 +8927,7 @@ burkhan_khaldun = {	#Burial Site of Genghis Khan
 			culture = mongol
 			culture = khalkha
 		}
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#what to do when it's built
@@ -9051,10 +8944,7 @@ burkhan_khaldun = {	#Burial Site of Genghis Khan
 			culture = mongol
 			culture = khalkha
 		}
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country upgrade it?
@@ -9063,10 +8953,7 @@ burkhan_khaldun = {	#Burial Site of Genghis Khan
 			culture = mongol
 			culture = khalkha
 		}
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}
+		province_is_or_accepts_culture = yes
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -9193,6 +9080,366 @@ burkhan_khaldun = {	#Burial Site of Genghis Khan
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+		}
+	}
+}
+
+beaune_hospices = {		#Hospices de Beaune
+	# province it starts in
+	start = 192		#Dijon
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1443.08.04	#Founding of the Hôtel-Dieu
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 1
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {		#trademark of Burgundian architecture and culture
+		culture = burgundian
+		province_is_or_accepts_culture = yes
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {		#trademark of Burgundian architecture and culture
+		culture = burgundian
+		province_is_or_accepts_culture = yes
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {		#trademark of Burgundian architecture and culture
+		culture = burgundian
+		province_is_or_accepts_culture = yes
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_development_cost = -0.1
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			recover_army_morale_speed = 0.025
+			manpower_recovery_speed = 0.05
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			trade_goods_size_modifier = 0.1
+			local_development_cost = -0.05
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.05
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			recover_army_morale_speed = 0.05
+			manpower_recovery_speed = 0.10
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			trade_goods_size_modifier = 0.2
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.1
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			recover_army_morale_speed = 0.10
+			manpower_recovery_speed = 0.15
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+}
+
+
+pont_du_gard = {		#Pont du Gard
+	# province it starts in
+	start = 3085		#Nîmes, although on the border with Uzès
+	
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1443.08.04	#
+	
+	#time to build
+	time = {
+		months = 0
+	}
+	
+	#how much to build one
+	build_cost = 0
+	
+	#can we move it?
+	can_be_moved = no
+	
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 10
+	
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+	
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+	
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_development_cost = -0.15
+			local_build_cost = -0.15
+			local_production_efficiency = 0.5
+			province_trade_power_modifier = 0.1
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_build_cost = -0.25
+			province_trade_power_modifier = 0.3
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.15
+			local_production_efficiency = 0.75
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			province_trade_power_modifier = 0.5
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+			local_development_cost = -0.2
+			local_build_cost = -0.25
+			local_production_efficiency = 1
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+			center_of_trade = 1
 		}
 	}
 }
