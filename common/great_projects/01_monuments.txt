@@ -1595,7 +1595,6 @@ petra = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		OR = {
 		province_is_or_accepts_culture = yes
 		OR = {
 			culture = al_suryah_arabic
@@ -1605,7 +1604,6 @@ petra = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
 		province_is_or_accepts_culture = yes
 		OR = {
 			culture = al_suryah_arabic
