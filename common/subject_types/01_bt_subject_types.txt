@@ -182,7 +182,6 @@ viceroyalty_bt = {
 	has_power_projection = no
 	gets_help_with_rebels = yes
 	press_sailors = yes
-	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
 
 	liberty_desire_development_ratio = 0.10

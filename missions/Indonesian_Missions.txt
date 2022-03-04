@@ -788,20 +788,20 @@ indonesians_5 = {
 		required_missions = { }
 		provinces_to_highlight = {
 			has_discovered = ROOT
-			province_id = 8965
+			province_id = 8695
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				NOT = { has_building = tradecompany }
 			}
 		}
 		trigger = {
-			8965 = {
+			8695 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				has_building = tradecompany
 			}
 		}
 		effect = {
-			8965 = {
+			8695 = {
 				add_permanent_province_modifier = {
 					name = lampung_pepper
 					duration = -1

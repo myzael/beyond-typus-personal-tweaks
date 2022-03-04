@@ -44,10 +44,17 @@ emp_burgundy_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			205 = {
-				add_permanent_claim = ROOT
-			}
-			4719 = {
+			#205 = {
+			#	add_permanent_claim = ROOT
+			#}
+			#4719 = {
+			#	add_permanent_claim = ROOT
+			#}
+			savoy_dauphine_area = { # bt
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -58,28 +65,63 @@ emp_burgundy_1 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = romandie_area
-				province_id = 205
-				province_id = 4719
+				AND = {
+					area = romandie_area
+					NOT = {
+						ROOT = {
+							num_of_owned_provinces_with = {
+								value = 6 #out of 7 
+								area = romandie_area
+							}
+						}
+					}
+				}
+				#province_id = 205
+				#province_id = 4719
+				area = savoy_dauphine_area # bt
 			}
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			romandie_area = {
+			#romandie_area = {
+			#	type = all
+			#	owned_by = ROOT
+			#}
+			ROOT = {
+				num_of_owned_provinces_with = {
+					value = 6 #out of 7 
+					area = romandie_area
+				}
+			}
+			#205 = {
+			#	owned_by = ROOT
+			#}
+			#4719 = {
+			#	owned_by = ROOT
+			#}
+			savoy_dauphine_area = { # bt
 				type = all
-				owned_by = ROOT
-			}
-			205 = {
-				owned_by = ROOT
-			}
-			4719 = {
 				owned_by = ROOT
 			}
 		}
 		
 		effect = {
-			savoy_dauphine_area = {
+			#savoy_dauphine_area = {
+			#	limit = {
+			#		NOT = { is_core = ROOT }
+			#		NOT = { is_permanent_claim = ROOT }
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			dauphine_area = { # bt
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lyonnais_area = { # bt
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -93,7 +135,7 @@ emp_burgundy_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			102 = {
+			102 = { # nizza
 				add_permanent_claim = ROOT
 			}
 		}
@@ -106,32 +148,53 @@ emp_burgundy_1 = {
 		provinces_to_highlight = {
 			OR = {
 				area = provence_area
-				area = savoy_dauphine_area
-				province_id = 102
+				#area = savoy_dauphine_area
+				area = dauphine_area # bt
+				# i will not demand the whole lyonnais area, as the county of Forez does not belong to the old Burgundian lands. if you want to have the needed provinces here be the same as the claims given earlier, remove the claims for forez aswell, do not add it to the needed provinces for this mission. --schockocraft
+				province_id = 7911 # bt - Beaujolais
+				province_id = 203 # bt - Lyon
+				province_id = 102 # nizza
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			NOT = {
-				ROOT = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 8 #out of 9 (so you can leave out Avignon)
-						OR = {
-							area = provence_area
-							area = savoy_dauphine_area
-							province_id = 102
-						}
-					}
-				}
+				#ROOT = {
+				#	num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				#		value = 8 #out of 9 (so you can leave out Avignon)
+				#		OR = {
+				#			area = provence_area
+				#			area = savoy_dauphine_area
+				#			province_id = 102
+				#		}
+				#	}
+				#}
+				
+				# just hard code no not need avignon wtf
+				province_id = 202 # avignon
 			}
 		}
 		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 8 #out of 9 (so you can leave out Avignon)
+			provence_area = {
+				type = all
 				OR = {
-					area = provence_area
-					area = savoy_dauphine_area
-					province_id = 102
+					province_id = 202 # avignon
+					country_or_non_sovereign_subject_holds = ROOT
 				}
+			}
+			ROOT = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 5 #out of 6
+					area = dauphine_area
+				}
+			}
+			102 = { # nizza
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			7911 = { # bt - Beaujolais
+				owned_by = ROOT
+			}
+			203 = { # bt - Lyon
+				owned_by = ROOT
 			}
 		}
 		
@@ -141,9 +204,9 @@ emp_burgundy_1 = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
-				else = {
-					add_adm_power = 100
-				}
+			}
+			else = { # this never fired because it was in the wrong position - i fixed it --schockocraft
+				add_adm_power = 100
 			}
 			add_country_modifier = {
 				name = "bur_arles_mod"
@@ -170,6 +233,35 @@ emp_burgundy_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			north_piedmont_area = { # bt
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_piedmont_area = { # bt
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_emilia_area = { # bt
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			# give claims for liguria already in here, the borders of the mission area are strange in vanilla
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	emp_bur_lombardy = {
@@ -181,22 +273,41 @@ emp_burgundy_1 = {
 					OR = {
 						area = piedmont_area
 						area = lombardy_area
-						area = po_valley_area
+						area = po_valley_area # east lombardy
+						area = north_piedmont_area # bt
+						area = south_piedmont_area # bt
+						area = upper_emilia_area # bt
+						
+						# added for better mission area borders:
+						area = liguria_area
 					}
 					NOT = {
 						ROOT = {
 							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								value = 10 #out of 12
+								#value = 10 #out of 12
+								
+								# BT:
+								value = 30
+									#out of 37
+									#22 in piedmont areas
+									#5 in west lombardy
+									
 								OR = {
 									area = piedmont_area
 									area = lombardy_area
 									area = po_valley_area
+									area = north_piedmont_area # bt
+									area = south_piedmont_area # bt
+									area = upper_emilia_area # bt
+									
+									# added for better mission area borders:
+									area = liguria_area
 								}
 							}
 						}
 					}
 				}
-				province_id = 104
+				province_id = 104 # milano
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -204,23 +315,29 @@ emp_burgundy_1 = {
 		trigger = {
 			owns_or_non_sovereign_subject_of = 104
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 10 #out of 12
+				value = 30
 				OR = {
 					area = piedmont_area
 					area = lombardy_area
 					area = po_valley_area
+					area = north_piedmont_area # bt
+					area = south_piedmont_area # bt
+					area = upper_emilia_area # bt
+					
+					# added for better mission area borders:
+					area = liguria_area
 				}
 			}
 		}
 		effect = {
-			add_adm_power = 100
-			liguria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_adm_power = 200 # doubled due to how much harder the mission is in bt
+			#liguria_area = {
+			#	limit = {
+			#		NOT = { is_core = ROOT }
+			#		NOT = { is_permanent_claim = ROOT }
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
 			venetia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -235,7 +352,21 @@ emp_burgundy_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			emilia_area = { # bt
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_tuscany_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -254,7 +385,11 @@ emp_lotharingia_1 = {
 		has_dlc = "Emperor"
 	}
 	potential = {
-		tag = LOT
+		#tag = LOT # i don't see why burgundy should not see this mission, instead i will add emp_bur_crown_of_lothair as a prerequisite mission
+		OR = {
+			tag = BUR
+			tag = LOT
+		}
 		NOT = { map_setup = map_setup_random }
 		has_dlc = "Emperor"
 	}
@@ -263,33 +398,37 @@ emp_lotharingia_1 = {
 	emp_bur_italy = {
 		icon = establish_client_states
 		position = 6
-		required_missions = { emp_bur_lombardy }
+		required_missions = { emp_bur_lombardy emp_bur_crown_of_lothair }
 		provinces_to_highlight = {
 			OR = {
 				AND = {
 					OR = {
-						area = liguria_area
+						#area = liguria_area
 						area = venetia_area
 						area = emilia_romagna_area
+						area = emilia_area # bt
 						area = tuscany_area
+						area = south_tuscany_area # bt
 					}
 					NOT = {
 						ROOT = {
 							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								value = 15 #out of 18
+								value = 30 # out of 38
 								OR = {
-									area = liguria_area
+									#area = liguria_area
 									area = venetia_area
 									area = emilia_romagna_area
+									area = emilia_area # bt
 									area = tuscany_area
+									area = south_tuscany_area # bt
 								}
 							}
 						}
 					}
 				}
-				province_id = 101
-				province_id = 112
-				province_id = 116
+				province_id = 101 # genoa
+				province_id = 112 # venice
+				province_id = 116 # florence
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -298,12 +437,14 @@ emp_lotharingia_1 = {
 			owns_or_non_sovereign_subject_of = 112
 			owns_or_non_sovereign_subject_of = 116
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 15 #out of 18
+				value = 30
 				OR = {
-					area = liguria_area
+					#area = liguria_area
 					area = venetia_area
 					area = emilia_romagna_area
+					area = emilia_area # bt
 					area = tuscany_area
+					area = south_tuscany_area # bt
 				}
 			}
 		}
@@ -343,23 +484,33 @@ emp_burgundy_2 = {
 				owned_by = BRB
 				owned_by = FLA
 				owned_by = HOL
+				owned_by = PIC
+				owned_by = ATS
+				owned_by = HAI
+				owned_by = LUX
 				AND = {
 					OR = {
 						area = flanders_area
 						area = brabant_area
-						area = north_brabant_area
+						#area = north_brabant_area
 						area = holland_area
+						area = picardy_area
+						area = wallonia_area
+						area = luxembourg_area
 					}
 					NOT = { owned_by = ROOT }
 					NOT = {
 						ROOT = {
 							num_of_owned_provinces_with = {
-								value = 10
+								value = 32 # of 36 hold by subjects in the areas at game start
 								OR = {
 									area = flanders_area
 									area = brabant_area
-									area = north_brabant_area
+									#area = north_brabant_area
 									area = holland_area
+									area = picardy_area
+									area = wallonia_area
+									area = luxembourg_area
 								}
 							}
 						}
@@ -371,19 +522,34 @@ emp_burgundy_2 = {
 			NOT = { exists = BRB }
 			NOT = { exists = FLA }
 			NOT = { exists = HOL }
+			NOT = { exists = PIC }
+			NOT = { exists = ATS }
+			NOT = { exists = HAI }
+			NOT = { exists = LUX }
+			 
 			num_of_owned_provinces_with = {
-				value = 10 #the number owned by BRB, FLA and HOL at start
+				value = 32
 				OR = {
 					area = flanders_area
 					area = brabant_area
-					area = north_brabant_area
+					#area = north_brabant_area
 					area = holland_area
+					area = picardy_area
+					area = wallonia_area
+					area = luxembourg_area
 				}
 			}
 		}
 		effect = {
-			add_dip_power = 50
+			add_dip_power = 125 # x2.5 because of increased number of subjects
 			low_countries_region = {
+				limit = { owned_by = root }
+				add_province_modifier = {
+					name = bur_realm_united_mod
+					duration = 7300
+				}
+			}
+			picardy_area = {
 				limit = { owned_by = root }
 				add_province_modifier = {
 					name = bur_realm_united_mod
@@ -402,6 +568,10 @@ emp_burgundy_2 = {
 				NOT = { owned_by = root }
 				NOT = { is_core = root }
 			}
+			NOT = {
+				area = frisia_area
+				area = oversticht_area
+			}
 		}
 		trigger = {
 			OR = {
@@ -414,10 +584,19 @@ emp_burgundy_2 = {
 					has_country_flag = had_dutch_revolt
 				}
 			}
-			low_countries_region = {
-				type = all
-				owned_by = root
-				is_core = root
+			custom_trigger_tooltip = { # make frisian conquest mission not neccessary for this mission, as it is in the same row
+				tooltip = bt_sc_mission_emp_bur_secure_the_lowlands_tooltip
+				low_countries_region = {
+					type = all
+					OR = {
+						AND = {
+							owned_by = root
+							is_core = root
+						}
+						area = frisia_area
+						area = oversticht_area
+					}
+				}
 			}
 		}
 		effect = {
@@ -567,6 +746,24 @@ emp_burgundy_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			barrois_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			# also for more beautiful borders:
+			7950 = { # Langres
+				add_permanent_claim = ROOT 
+			}
+			#7964 = { # Grandpre
+			#	add_permanent_claim = ROOT 
+			#}
+			7942 = { # Mömpelgard
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -575,28 +772,79 @@ emp_burgundy_3 = {
 		required_missions = { emp_bur_subjects }
 		
 		provinces_to_highlight = {
-			area = lorraine_area
-			NOT = { owned_by = ROOT }
+			OR = {
+				area = lorraine_area
+				area = barrois_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			lorraine_area = {
-				type = all
-				owned_by = ROOT
+			if = {
+				limit = {
+					any_subject_country = {
+						capital_scope = {
+							region = low_countries_region
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = bt_sc_mission_emp_bur_lorraine_connect_lowlands_tooltip
+					any_owned_province = {
+						is_in_capital_area = yes # connected by own land to capital
+						any_neighbor_province = {
+							owner = {
+								is_subject_of = ROOT
+								capital_scope = {
+									region = low_countries_region
+								}
+							}
+						}
+					}
+				}
 			}
+			else = { # alternative requirement if Burgundy loses all subjects in low lands
+				94 = { # Luxembourg
+					owned_by = ROOT
+					is_in_capital_area = yes
+				}
+				181 = { # Rethel
+					owned_by = ROOT
+					is_in_capital_area = yes
+				}
+			}
+			
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8 #out of 12 
+				OR = {
+					area = lorraine_area
+					area = barrois_area
+				}
+			}
+			
+			#lorraine_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
+			#barrois_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
 		}
 		
 		effect = {
-			93 = {
+			luxemburg_liege_area = { # Liege
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
-			1878 = {
-				add_permanent_claim = ROOT
-			}
-			2974 = {
-				add_permanent_claim = ROOT
-			}
-			1742 = {
+			north_brabant_area = { # Guelders
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -608,25 +856,20 @@ emp_burgundy_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 93
-				province_id = 1878
-				province_id = 2974
-				province_id = 1742
+				# i will not demand aachen here, it doesn't make any sense. it is also already a requirement for "The crown of Lothair", where it belongs
+				area = luxemburg_liege_area
+				area = north_brabant_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			93 = {
+			luxemburg_liege_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			1878 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			2974 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1742 = {
+			north_brabant_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
@@ -637,7 +880,23 @@ emp_burgundy_3 = {
 				name = "bur_diplo_mod"
 				duration = 5475
 			}
-			frisia_area = {
+			#frisia_area = {
+			#	limit = {
+			#		NOT = { is_core = ROOT }
+			#		NOT = { is_permanent_claim = ROOT }
+			#	}
+			#	add_permanent_claim = ROOT
+			#}
+			100 = { # westergoa
+				add_permanent_claim = ROOT
+			}
+			8119 = { # eastergoa
+				add_permanent_claim = ROOT
+			}
+			4382 = { # Ommelannen
+				add_permanent_claim = ROOT
+			}
+			oversticht_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -652,12 +911,31 @@ emp_burgundy_3 = {
 		required_missions = { emp_bur_liege }
 		
 		provinces_to_highlight = {
-			area = frisia_area
+			OR = {
+				#area = frisia_area
+				province_id = 100 # westergoa
+				province_id = 8119 # eastergoa
+				province_id = 4382 # Ommelannen
+				area = oversticht_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			frisia_area = {
+			#frisia_area = {
+			#	type = all
+			#	country_or_non_sovereign_subject_holds = ROOT
+			#}
+			100 = { # westergoa
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			8119 = { # eastergoa
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4382 = { # Ommelannen
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oversticht_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1024,35 +1302,30 @@ emp_burgundy_4 = {
 		provinces_to_highlight = {
 			if = {
 				limit = {
-					calc_true_if = {
-						amount = 3
-						BRI = { is_subject_of = FRA }
-						PRO = { is_subject_of = FRA }
-						LOR = { is_subject_of = FRA }
-						AUV = { is_subject_of = FRA }
-						AMG = { is_subject_of = FRA }
-						BOU = { is_subject_of = FRA }
-						ORL = { is_subject_of = FRA }
-						FOI = { is_subject_of = FRA }
-						ALE = { is_subject_of = FRA }
-						NEV = { is_subject_of = FRA }
-						NRM = { is_subject_of = FRA }
+					# Instead of the clunky vanilla code i will just use fucking dynamic shit that never needs to be updated again --schockocraft
+					FRA = {
+						calc_true_if = {
+							amount = 3
+							all_subject_country = { # implies AND
+								capital_scope = {
+									region = france_region
+								}
+								OR = {
+									tag = BRI # Brittany
+									culture_group = french
+								}
+							}
+						}
 					}
 				}
-				OR = {
-					owned_by = BRI
-					owned_by = PRO
-					owned_by = LOR
-					owned_by = AUV
-					owned_by = AMG
-					owned_by = BOU
-					owned_by = ORL
-					owned_by = FOI
-					owned_by = ALE
-					owned_by = NEV
-					owned_by = NRM
-				}
-				owner = {
+				owner = { # implies AND
+					capital_scope = {
+						region = france_region
+					}
+					OR = {
+						tag = BRI # Brittany
+						culture_group = french
+					}
 					is_subject_of = FRA
 					NOT = {
 						has_opinion = {
@@ -1075,47 +1348,68 @@ emp_burgundy_4 = {
 		trigger = {
 			if = {
 				limit = {
-					calc_true_if = {
-						amount = 3
-						BRI = { is_subject_of = FRA }
-						PRO = { is_subject_of = FRA }
-						LOR = { is_subject_of = FRA }
-						AUV = { is_subject_of = FRA }
-						AMG = { is_subject_of = FRA }
-						BOU = { is_subject_of = FRA }
-						ORL = { is_subject_of = FRA }
-						FOI = { is_subject_of = FRA }
-						ALE = { is_subject_of = FRA }
-						NEV = { is_subject_of = FRA }
-						NRM = { is_subject_of = FRA }
-					}
-				}
-				OR = {
-					calc_true_if = {
-						desc = emp_bur_league_of_public_weal_trigger_tooltip
-						amount = 3
-						all_country = {
-							OR = {
-								tag = BRI
-								tag = PRO
-								tag = LOR
-								tag = AUV
-								tag = AMG
-								tag = BOU
-								tag = ORL
-								tag = FOI
-								tag = BRI
-								tag = ALE
-								tag = NEV
-								tag = NRM
-							}
-							is_subject_of = FRA
-							has_opinion = {
-								who = root
-								value = 100
+					FRA = {
+						calc_true_if = {
+							amount = 3
+							all_subject_country = { # implies AND
+								capital_scope = {
+									region = france_region
+								}
+								OR = {
+									tag = BRI # Brittany
+									culture_group = french
+								}
 							}
 						}
 					}
+				}
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = emp_bur_league_of_public_weal_trigger_tooltip
+						FRA = {
+							calc_true_if = {
+								amount = 3
+								all_subject_country = { # implies AND
+									capital_scope = {
+										region = france_region
+									}
+									OR = {
+										tag = BRI # Brittany
+										culture_group = french
+									}
+									has_opinion = {
+										who = root
+										value = 100
+									}
+								}
+							}
+						}
+					}
+					#calc_true_if = {
+					#	desc = emp_bur_league_of_public_weal_trigger_tooltip
+					#	amount = 3
+					#	all_country = {
+					#		OR = {
+					#			tag = BRI
+					#			tag = PRO
+					#			tag = LOR
+					#			tag = AUV
+					#			tag = AMG
+					#			tag = BOU
+					#			tag = ORL
+					#			tag = FOI
+					#			tag = BRI
+					#			tag = ALE
+					#			tag = NEV
+					#			tag = NRM
+					#		}
+					#		is_subject_of = FRA
+					#		has_opinion = {
+					#			who = root
+					#			value = 100
+					#		}
+					#	}
+					#}
 					NOT = { exists = FRA }
 					FRA = { is_subject_of = ROOT }
 				}
@@ -1181,8 +1475,21 @@ emp_burgundy_4 = {
 				}
 				FRA = {
 					country_event = { id = new_flavour_bur.6 }
-					every_subject_country = {
-						limit = { capital_scope = { region = france_region } }
+					#every_subject_country = {
+					#	limit = { capital_scope = { region = france_region } }
+					#	add_liberty_desire = 50
+					#}
+					# WOW... here paradox can use the smart way, but not above? fucking dumbasses...
+					every_subject_country = { # implies AND
+						limit = {
+							capital_scope = {
+								region = france_region
+							}
+							OR = {
+								tag = BRI # Brittany
+								culture_group = french
+							}
+						}
 						add_liberty_desire = 50
 					}
 				}
@@ -1223,7 +1530,8 @@ emp_burgundy_4 = {
 					NOT = {
 						ROOT = {
 							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-								value = 18
+								#value = 18 # of 66, starting with 9
+								value = 48 # of 185, starting with 24
 								region = france_region
 							}
 						}
@@ -1234,16 +1542,29 @@ emp_burgundy_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_core_province = 183 #Paris
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 18
-				region = france_region
+			controls = 183 #Paris
+			#num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			#	value = 48
+			#	region = france_region
+			#}
+			calc_true_if = { # better tooltip?
+				amount = 48
+				france_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			total_own_and_non_tributary_subject_development = FRA
 			army_size = FRA
 			has_regency = no
 		}
 		effect = {
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			add_country_modifier = {
 				name = bur_king_of_franks
 				duration = 7300

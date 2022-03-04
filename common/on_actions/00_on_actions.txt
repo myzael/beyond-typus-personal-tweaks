@@ -4630,8 +4630,8 @@ on_culture_promoted = {
 			}
 		}
 	}
-	judaism_on_culture_promoted_effect = yes
-	kongo_on_culture_promoted_effect = yes
+	judaism_on_culture_country_effect = yes
+	kongo_on_culture_country_effect = yes
 }
 
 # FROM = Previous Country, ROOT = Province
