@@ -1885,6 +1885,7 @@ secondary_religion_group = {
 
 #Buddhism is its own can of worms due to the so many aspects of it
 #This was one of the few moments where it was almost worth considering putting Buddhism in its own religion group - almostprovince_is_buddhist_or_accepts_buddhism = {
+province_is_buddhist_or_accepts_buddhism = {
 	OR = {
 		custom_trigger_tooltip = {
 			tooltip = province_is_buddhist_or_accepts_buddhism_at
