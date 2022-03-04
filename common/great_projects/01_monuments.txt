@@ -5979,7 +5979,6 @@ borobudur_temple = {
 			}
 			AND = {
 				culture_group = malay
-<<<<<<< Updated upstream
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -6044,7 +6043,6 @@ borobudur_temple = {
 			}
 			AND = {
 				culture_group = malay
-<<<<<<< Updated upstream
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
@@ -6099,7 +6097,6 @@ borobudur_temple = {
 			}
 			AND = {
 				culture_group = malay
-<<<<<<< Updated upstream
 				province_is_or_accepts_culture = yes
 			}
 			AND = {
