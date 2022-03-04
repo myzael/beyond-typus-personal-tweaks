@@ -12,9 +12,21 @@ BT15
  - Basra independent representing the al-Muntafiq ruling the area, later ruling most of Lower Mesopotamia
  - Iraq renamed to Baghdad to represent the Qara Qoyunlu dynasty ruling there in rebellion against Jahan Shah
  - New Palestine and Transjordan tags as releasable, along side Lebanon and Syria
- - New Great Projects in the Levant and Mesopotamia
-  *
-  *
+ - New Great Projects
+  * Beaune Hospices
+  * Burkhan Khaldun
+  * Canterbury Cathedral
+  * Castle Rock
+  * Citadel of Aleppo
+  * Great Mosque of Aleppo
+  * Painted Churches of Cyprus
+  * Pelourinho
+  * Pont du Gard
+  * Saint Catherine's Monastery
+  * Valley of the Temples
+  * Venetian Arsenal
+  * Umayyad Mosque
+  * York Minster
  
 
 #Bugfixes
