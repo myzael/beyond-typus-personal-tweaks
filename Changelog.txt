@@ -33,6 +33,7 @@ BT15
  - Lots of bugfixes, many likely forgotten to be recorded
  - Fixed numerous bugs with positions
  - Fixed a bug where NZZ had umbrian as its primary culture
+ - Removed an unconnected core of Transylvania on Temes
 
 #Tweaks and Balance
  - Cultural set up of the Levant and the Mesopotamia updated 
