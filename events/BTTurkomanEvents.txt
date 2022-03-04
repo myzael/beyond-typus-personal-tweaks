@@ -30,7 +30,7 @@ country_event = {
 		name = BTTurkomanEvents.1.a
 		hidden_effect = {
 			country_event = {
-				id = BTTurkomanEvents2
+				id = BTTurkomanEvents.2
 				days = 25
 			}
 		}
@@ -94,7 +94,7 @@ country_event = {
 		ai_chance = {
 			factor = 2
 		}
-		prestige = -25
-		legitimacy = -25
+		add_prestige = -25
+		add_legitimacy = -25
 	}
 }
