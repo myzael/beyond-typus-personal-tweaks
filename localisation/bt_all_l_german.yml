@@ -959,7 +959,7 @@
  byzantium_holds_the_line_desc:0 "Seit Generationen drängen die Türken nach Westen. Trotz gelegentlicher römischer Siege ist der Vormarsch der Sultane und der Beyliks unaufhaltsam weitergegangen und schob die Grenze unseres einst großen Reiches bis vor die Tore unserer großen Hauptstadt. Es ist jetzt an der Zeit, aufzustehen das Blatt zu wenden! Wenn wir unseren endgültigen Untergang abwenden wollen, müssen wir die Stellung hier halten, den türkischen Vormarsch zurückdrängen und die Hauptstadtregion stabilisieren, damit nicht alles verloren geht."
  byzantium_holds_the_line_title:0 "Das Blatt wenden"
  cahita:0 "Cahitanisch"
- canadien:0 "Kanadisch"
+ #canadien:0 "Kanadisch"            #Replaced in 1.33 by vanilla 'quebecois'
  cappadocian:0 "Kappadokisch"
  cariban_g:0 "Karibisch"
  cayuse:0 "Cayusisch"

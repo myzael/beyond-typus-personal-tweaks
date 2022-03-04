@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-primary_culture = bavarian
+primary_culture = austrian
 add_accepted_culture = friulian_culture
 religion = catholic
 technology_group = western

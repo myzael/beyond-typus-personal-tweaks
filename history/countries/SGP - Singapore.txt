@@ -8,5 +8,5 @@ capital = 8649	# Singapore
 
 1400.1.1 = {
 	religion = sunni
-	add_piety = -0.1
+        add_piety = -0.1
 }

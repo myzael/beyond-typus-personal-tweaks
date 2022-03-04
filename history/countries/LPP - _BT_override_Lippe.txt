@@ -1,0 +1,29 @@
+
+capital = 3203
+fixed_capital = 3203
+
+
+
+#History
+
+1429.8.11 = {
+	monarch = {
+		name = "Bernhard VII"
+		dynasty = "von Lippe"
+		birth_date = 1428.12.4
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}
+
+#Random at about 50 years old for ruler, to prevent 400 year old ruler bug
+1489.1.1 = {
+	monarch = {
+		name = "Regency Council"
+		adm = 2
+		dip = 2
+		mil = 2
+		regent = yes
+	}
+}

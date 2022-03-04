@@ -38,7 +38,7 @@ capital = 8552 #Mong Mit
 		mil = 2
 		dip = 4
 		regent = yes
-		female = yes
+                female = yes
 	}
 }
 

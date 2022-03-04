@@ -12,18 +12,35 @@ BT15
  - Basra independent representing the al-Muntafiq ruling the area, later ruling most of Lower Mesopotamia
  - Iraq renamed to Baghdad to represent the Qara Qoyunlu dynasty ruling there in rebellion against Jahan Shah
  - New Palestine and Transjordan tags as releasable, along side Lebanon and Syria
- - New Great Projects in the Levant and Mesopotamia
-  *
-  *
+ - New Great Projects
+  * Beaune Hospices
+  * Burkhan Khaldun
+  * Canterbury Cathedral
+  * Castle Rock
+  * Citadel of Aleppo
+  * Great Mosque of Aleppo
+  * Painted Churches of Cyprus
+  * Pelourinho
+  * Pont du Gard
+  * Saint Catherine's Monastery
+  * Valley of the Temples
+  * Venetian Arsenal
+  * Umayyad Mosque
+  * York Minster
  
 
 #Bugfixes
+ - Lots of bugfixes, many likely forgotten to be recorded
+ - Fixed numerous bugs with positions
+ - Fixed a bug where NZZ had umbrian as its primary culture
+ - Removed an unconnected core of Transylvania on Temes
 
 #Tweaks and Balance
  - Cultural set up of the Levant and the Mesopotamia updated 
  - Religious set up of the Levant and the Mesopotamia updated
  - Renamed Mashriqi (Arabic Group) to Mesopotamian
  - Updated (though no new) Trade Nodes and Companies in the Levant and Mesopotamia to correspond to new borders
+ - Renamed Basra to Baghdad and adjusted connections of the trade node
  - Updated Trade Goods throughout the Levant and Mesopotamia to better represent the local industries and agriculture
  - Updated, renamed, and new areas added throughout the Levant and Mesopotamia
  - Updated the terrain set up of the Levant and Mesopotamia to be more accurate
@@ -34,6 +51,7 @@ BT15
  - Some naming in the Levant for old_egyptian.txt (Ancient Egyptian), phoenician.txt (Phoenician), egyptian_group.txt (Coptic Egyptian), kurdish.txt (Kurdish), aramaic.txt (Aramean), armenian.txt and cilician.txt (Armenian)
  - Full naming in Mesopotamia for turko_semitic (Arabic), turkish_g.txt (Turkish) in Mesopotamia
  - Some naming in Mesopotamia for turkoman.txt (Turkoman) in Mesopotamia
+
 #GFX
  - New flags for new tags in Mesopotamia
  - Updated flags for prior Kurdish states, plus the repurposed Baghdad and Basra

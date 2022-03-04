@@ -3,7 +3,7 @@ add_government_reform = autocracy_reform
 primary_culture = nusa_tenggara
 technology_group = chinese
 religion = animism
-capital = 632  #Sumbawa
+capital = 632   #Sumbawa
 
 1392.1.1 = {
 	monarch = {
@@ -52,9 +52,9 @@ capital = 632  #Sumbawa
 		adm = 4
 		dip = 4
 		mil = 3
-	}
-	religion = sunni
-	religious_school = shafii_school
+        }
+        religion = sunni
+        religious_school = shafii_school
 	add_piety = 0.1
 }
 
@@ -116,7 +116,7 @@ capital = 632  #Sumbawa
 		adm = 2
 		dip = 2
 		mil = 1
-		female = yes
+                female = yes
 	}
 }
 
@@ -167,7 +167,7 @@ capital = 632  #Sumbawa
 		adm = 2
 		dip = 2
 		mil = 2
-		female = yes
+                female = yes
 	}
 }
 

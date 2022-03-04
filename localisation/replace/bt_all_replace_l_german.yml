@@ -660,3 +660,6 @@
  demanded_unlawful_tooltip:0 "§RIhr dürft in den letzten 3 Jahren kein unrechtmäßiges Gebiet von diesem Herrscher gefordert haben§!"
  demand_unlawful_at_war_tooltip:0 "§RIhr könnt kein unrechtmäßiges Gebiet zurückfordern, solange Ihr oder der rechtmäßige Besitzer sich im Krieg befinden§!"
  demand_sold_tooltip:0 "§Rihr könnt kein Gebiet zurückfordern, wenn dieses von seinem rechtmäßigen Besitzer freiwillig verkauft wurde oder dieser auf seinen Anspruch auf die Kernprovinz verzichtet hat§!"
+
+ #1.33 Update by Draiocht
+ quebecois:0 "Kanadisch"

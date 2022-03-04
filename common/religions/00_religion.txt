@@ -1653,7 +1653,7 @@ dharmic = {
 		gurus = {
 			guru_nanak = {
 				trigger = {
-					always = yes
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 1000
@@ -1686,6 +1686,7 @@ dharmic = {
 				trigger = {
 					is_year = 1539
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1738,6 +1739,7 @@ dharmic = {
 				trigger = {
 					is_year = 1552
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1792,6 +1794,7 @@ dharmic = {
 				trigger = {
 					is_year = 1574
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1848,6 +1851,7 @@ dharmic = {
 				trigger = {
 					is_year = 1581
 					is_month = 9
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1900,6 +1904,7 @@ dharmic = {
 				trigger = {
 					is_year = 1606
 					is_month = 6
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -1956,6 +1961,7 @@ dharmic = {
 				trigger = {
 					is_year = 1644
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2010,6 +2016,7 @@ dharmic = {
 				trigger = {
 					is_year = 1661
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2062,6 +2069,7 @@ dharmic = {
 				trigger = {
 					is_year = 1665
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2114,6 +2122,7 @@ dharmic = {
 				trigger = {
 					is_year = 1675
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5
@@ -2166,6 +2175,7 @@ dharmic = {
 				trigger = {
 					is_year = 1708
 					is_month = 3
+					NOT = { has_global_flag = guru_event_happening }
 				}
 				chance = {
 					factor = 5

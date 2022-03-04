@@ -37,7 +37,7 @@ religious_school = shafii_school
 		adm = 4
 		dip = 3
 		mil = 5
-		female = yes
+                female = yes
 	}
 }
 

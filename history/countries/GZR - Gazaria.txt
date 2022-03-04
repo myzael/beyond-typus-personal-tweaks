@@ -13,12 +13,3 @@ historical_friend = GEN
 
 
 #History, currently empty.
-1399.1.1 = {
-	monarch = {
-		name = "Consiglio Coloniale"
-		adm = 3
-		dip = 3
-		mil = 3
-		regent = yes
-	}
-}

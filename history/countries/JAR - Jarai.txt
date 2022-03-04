@@ -1,5 +1,5 @@
-government = tribal
-add_government_reform = stateless_society
+government = monarchy
+add_government_reform = mandala_reform
 primary_culture = degar
 religion = animism
 technology_group = chinese
