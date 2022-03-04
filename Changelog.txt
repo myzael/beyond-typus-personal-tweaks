@@ -30,12 +30,16 @@ BT15
  
 
 #Bugfixes
+ - Lots of bugfixes, many likely forgotten to be recorded
+ - Fixed numerous bugs with positions
+ - Fixed a bug where NZZ had umbrian as its primary culture
 
 #Tweaks and Balance
  - Cultural set up of the Levant and the Mesopotamia updated 
  - Religious set up of the Levant and the Mesopotamia updated
  - Renamed Mashriqi (Arabic Group) to Mesopotamian
  - Updated (though no new) Trade Nodes and Companies in the Levant and Mesopotamia to correspond to new borders
+ - Renamed Basra to Baghdad and adjusted connections of the trade node
  - Updated Trade Goods throughout the Levant and Mesopotamia to better represent the local industries and agriculture
  - Updated, renamed, and new areas added throughout the Levant and Mesopotamia
  - Updated the terrain set up of the Levant and Mesopotamia to be more accurate
@@ -46,6 +50,7 @@ BT15
  - Some naming in the Levant for old_egyptian.txt (Ancient Egyptian), phoenician.txt (Phoenician), egyptian_group.txt (Coptic Egyptian), kurdish.txt (Kurdish), aramaic.txt (Aramean), armenian.txt and cilician.txt (Armenian)
  - Full naming in Mesopotamia for turko_semitic (Arabic), turkish_g.txt (Turkish) in Mesopotamia
  - Some naming in Mesopotamia for turkoman.txt (Turkoman) in Mesopotamia
+
 #GFX
  - New flags for new tags in Mesopotamia
  - Updated flags for prior Kurdish states, plus the repurposed Baghdad and Basra
