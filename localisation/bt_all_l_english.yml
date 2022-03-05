@@ -23,6 +23,7 @@
  # cleaned, removed duplicates
  # sorted alpha-numerically
  # do NOT re-sort!
+ alawite:0 "Alawite"
  ALDERMAN:0 "Master Alderman"
  ALDERWOMAN:0 "Master Alderwoman"
  ALLREADY_IN_WAR_WITH:0 "Already at war with the target"
@@ -444,6 +445,7 @@
  LOM_ideas:0 "Lombard Ideas"
  LOM_ideas_bonus:0 "Lombard Ambition"
  LOM_ideas_start:0 "Lombard Traditions"
+ mandaean:0 "Mandaean"
  MTS_ideas:0 "Riminese Ideas"
  MTS_ideas_bonus:0 "Riminese Ambition"
  MTS_ideas_start:0 "Riminese Traditions"
@@ -452,6 +454,7 @@
  MUR_ideas_start:0 "Murcian Traditions"
  NATIVE_START_BOOKMARK:0 "A Brave's New World"
  NATIVE_START_BOOKMARK_DESC:0 "When European explorers began to arrive is large numbers in North America during the 16th and 17th centuries, bringing diseases and death with them, they called this New World 'empty', but it was far from empty. Millions upon millions of diverse people call the grand continent home and from ancient times occupy its swamps, mountains, prairies, forests, deserts, and tundras."
+ nestorian:0 "Nestorian"
  PANGERAN:0 "Pangeran"
  PIE_ideas:0 "Piedmontese Ideas"
  PIE_ideas_bonus:0 "Piedmontese Ambition"
@@ -541,6 +544,7 @@
  UMB_ideas_start:0 "Umbrian Traditions"
  WARDEN:0 "Warden"
  WARDENESS:0 "Wardeness"
+ yazidi:0 "Yazidi"
  YYK_ideas:0 "Brythonic Ideas"
  YYK_ideas_bonus:0 "Brythonic Ambition"
  YYK_ideas_start:0 "Brythonic Traditions"
