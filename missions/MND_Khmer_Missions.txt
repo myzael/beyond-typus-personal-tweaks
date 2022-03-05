@@ -343,13 +343,19 @@ mnd_khmer_3 = {
 				limit = {
 					any_country = {
 						is_free_or_tributary_trigger = yes
-						primary_culture = vietnamese
+						OR = {
+							primary_culture = vietnamese
+							primary_culture = vietnamese_new
+						}
 					}
 				}
 				every_country = {
 					limit = {
 						is_free_or_tributary_trigger = yes
-						primary_culture = vietnamese
+						OR = {
+							primary_culture = vietnamese
+							primary_culture = vietnamese_new
+						}
 					}
 					reverse_add_casus_belli = {
 						target = ROOT
@@ -400,19 +406,13 @@ mnd_khmer_3 = {
 				limit = {
 					any_country = {
 						is_free_or_tributary_trigger = yes
-						OR = {
-							primary_culture = vietnamese
-							primary_culture = vietnamese_new
-						}
+						primary_culture = bornean
 					}
 				}
 				every_country = {
 					limit = {
 						is_free_or_tributary_trigger = yes
-						OR = {
-							primary_culture = vietnamese
-							primary_culture = vietnamese_new
-						}
+						primary_culture = bornean
 					}
 					reverse_add_casus_belli = {
 						target = ROOT
@@ -420,6 +420,16 @@ mnd_khmer_3 = {
 					}
 				}
 			}
+			else = {
+				brunei_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
 	}
 	mnd_khm_overseas_adventures = {
 		icon = mission_mnd_maj_rein_in_brunei

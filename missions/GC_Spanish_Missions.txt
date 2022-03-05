@@ -365,6 +365,7 @@ gc_spain_2 = {
 					name = "fortified_navarra"
 					duration = 7300
 				}
+			}
 			if = {
 				limit = {
 					exists = POR
