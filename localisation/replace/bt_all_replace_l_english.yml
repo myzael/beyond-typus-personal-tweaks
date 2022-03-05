@@ -656,6 +656,7 @@
  visayan:0 "Visayan"
  wien:0 "Vienna"
  yokuts:0 "Yokutsan"
+ zoroastrian_group:0 "Iranic"
  # Cooldown Modifier
  bt_sc_demand_unlawful_land_cooldown:0 "Demanded unlawful territory"
  desc_bt_sc_demand_unlawful_land_cooldown:0 "The emperor has demanded the return of unlawful land, and will leave us alone for some time unless we conquer again"

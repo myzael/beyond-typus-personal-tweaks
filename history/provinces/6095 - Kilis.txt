@@ -10,7 +10,7 @@ controller = KIL
 
 #Demographics
 culture = kurdish
-religion = zoroastrian
+religion = yazidi
 
 #Development and Trade
 base_tax = 2

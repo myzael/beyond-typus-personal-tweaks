@@ -10,7 +10,7 @@ controller = IRQ
 
 #Demographics
 culture = mandaean_culture
-religion = orthodox #Mandaean
+religion = mandaean
 
 #Development and Trade
 base_tax = 1

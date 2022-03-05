@@ -10,7 +10,7 @@ controller = MAM
 
 #Demographics
 culture = al_suryah_arabic
-religion = shiite				#Alawite
+religion = alawite
 
 #Development and Trade
 base_tax = 2

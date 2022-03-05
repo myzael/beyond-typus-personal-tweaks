@@ -4,7 +4,7 @@
 owner = MAM
 controller = MAM
 culture = al_suryah_arabic
-religion = shiite				#Alawites
+religion = alawite
 capital = "Antioch"			#Was once one of the greatest cities in the world, circa the late Roman period
 trade_goods = bt_trade_good_fruit #(JP) Lots and lots of orchards in the valley
 hre = no				#up to the start date. Experienced a revival under the Crusaders, but after the fall of Antioch in 1268

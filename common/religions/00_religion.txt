@@ -840,6 +840,32 @@ christian = {
 		}
 	}
 	
+	#BT Added
+	nestorian = {
+	
+		flags_with_emblem_percentage = 20
+		flag_emblem_index_range = { 1 4 }
+
+		color = { 204 76 127 }
+		icon = 31
+		country = {
+			stability_cost_modifier = -0.1
+			tolerance_own = 1
+		}
+		country_as_secondary = {
+			global_colonial_growth = 10
+			tolerance_own = 1
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		
+		heretic = { ICONOGRAPHERS SHIMUN }
+				
+		fervor = yes
+		misguided_heretic = yes
+	}
+	
 	harmonized_modifier = harmonized_christian
 	
 	crusade_name = CRUSADE		
@@ -864,10 +890,12 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -905,10 +933,12 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -945,10 +975,12 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -985,10 +1017,12 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1026,10 +1060,12 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1069,10 +1105,12 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1109,10 +1147,12 @@ muslim = {
 			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
 			can_invite_scholar = {
 				adm_power_cost = 50
+				NOT = { religion = alawite }
 				if = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
+						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1141,6 +1181,143 @@ muslim = {
 
 			shock_damage_received = -0.1
 		}
+		#BT Added - Alawite Tribal Schools
+		haddadin_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				religion = alawite
+				reverse_has_opinion = { who = FROM value = 150 }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+				NOT = { has_country_modifier = haddadin_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = haddadin_scholar_modifier duration = 7300 }
+			}
+			
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = haddadin_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_haddadin"
+
+			prestige_from_naval = 0.1
+		}
+		kalbiyya_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				religion = alawite
+				reverse_has_opinion = { who = FROM value = 150 }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+				NOT = { has_country_modifier = kalbiyya_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = kalbiyya_scholar_modifier duration = 7300 }
+			}
+			
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = kalbiyya_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_kalbiyya"
+
+			garrison_size = 0.10
+		}
+		khayatin_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				religion = alawite
+				reverse_has_opinion = { who = FROM value = 150 }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+				NOT = { has_country_modifier = khayatin_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = khayatin_scholar_modifier duration = 7300 }
+			}
+			
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = khayatin_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_khayatin"
+
+			missionary_maintenance_cost = -0.1
+		}
+		matawira_school = {
+			potential_invite_scholar = {
+				knows_of_scholar_country_capital_trigger = yes
+			}
+
+			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
+			can_invite_scholar = {
+				adm_power_cost = 50
+				religion = alawite
+				reverse_has_opinion = { who = FROM value = 150 }
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+					overlord_of = FROM
+				}
+				hidden_progressive_opinion_for_scholar_trigger = yes
+				NOT = { has_country_modifier = matawira_scholar_modifier }
+			}
+
+			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
+			on_invite_scholar = {
+				adm_power_cost = 50
+				clear_religious_scholar_modifiers_effect = yes
+				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
+				add_country_modifier = { name = matawira_scholar_modifier duration = 7300 }
+			}
+			
+			# If you don't set this it will expand on_invite_scholar effect which might be super big
+			invite_scholar_modifier_display = matawira_scholar_modifier
+
+			picture = "GFX_icon_muslim_school_matawira"
+
+			global_own_trade_power = 0.05
+		}
 		
 	}
 	
@@ -1159,7 +1336,7 @@ muslim = {
 			local_missionary_strength = -0.02
 		}
 		
-		heretic = { BEKTASHI AHMADI ZIKRI YAZIDI }
+		heretic = { BEKTASHI AHMADI ZIKRI }
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
@@ -1179,7 +1356,7 @@ muslim = {
 			local_missionary_strength = -0.02
 		}
 		
-		heretic = { DRUZE HURUFI ZAIDI }
+		heretic = { HURUFI ZAIDI }
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
@@ -1202,6 +1379,63 @@ muslim = {
 		heretic = { HARURI SUFRI NAJADAT AZRAQI }
 		
 		uses_piety = yes				# Uses piety mechanics
+	}
+	
+	#BT Added
+	druze = {
+		color = { 0 229 102 }
+		icon = 33
+		country = {
+			heir_chance = 1.0
+			dip_tech_cost_modifier = -0.1 # Promoted intellectualism
+			tolerance_heretic = -1 # Renounced 'false' belief
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country_as_secondary = {
+			diplomats = 1
+			dip_tech_cost_modifier = -0.05
+		}
+		
+		heretic = { SECTARIST }	
+		
+		uses_piety = yes				# Uses piety mechanics
+	}
+	
+	#BT Added
+	alawite = {
+		color = { 101 148 70 }
+		icon = 32
+		country = {
+			heir_chance = 1.0
+			global_spy_defence = 0.1
+		}
+		country_as_secondary = {
+			land_morale = 0.05
+			defensiveness = 0.10
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		
+		uses_church_power = yes				# Uses church power/aspect mechanics
+		aspects = {
+			followers_of_ali_aspect
+			manifestations_of_god_aspect
+			philosophical_thought_aspect
+			pillars_of_islam_aspect
+			taqiyya_aspect
+			reincarnation_aspect
+			mass_aspect
+			fortified_coasts_aspect
+			unite_tribes_aspect
+			feast_days_aspect
+		}
+		aspects_name = ALAWITE_ASPECTS
+		
+		heretic = { HANBALI JAFARI }
+		
 	}
 	
 	harmonized_modifier = harmonized_muslim
@@ -2295,9 +2529,11 @@ jewish_group = {
 	
 }
 
-
+#BT Iranic
 zoroastrian_group = {
+
 	flag_emblem_index_range = { 110 110 }
+	
 	zoroastrian = {
 		icon = 26
 		color = { 127 178 51 }
@@ -2326,8 +2562,64 @@ zoroastrian_group = {
 		heretic = { MAZDAKI MANICHEAN }	
 	}
 	
+	#BT Added
+	yazidi = {
+		icon = 34
+		color = { 51 51 178 }
+		country = {
+			tolerance_own = 3 # Preoccupation with religious purity
+			tolerance_heretic = -1 # Too much contact with non-Yazidis is considered polluting
+			tolerance_heathen = -1
+			advisor_pool = 1 # Caste system
+			global_missionary_strength = -0.01 # Accepts no converts
+		}
+		province = {
+			local_missionary_strength = -0.01
+		}
+		country_as_secondary = {
+			tolerance_own = 2
+			advisor_pool = 1
+		}
+		
+		personal_deity = yes
+		
+		heretic = { YAZDANIST }	
+	}
+	
 	harmonized_modifier = harmonized_zoroastrian_group
 	
 	crusade_name = HOLY_WAR
 	
+}
+
+#BT Added
+mandaean_group = {
+
+	flag_emblem_index_range = { 110 110 }
+	
+	mandaean = {
+		icon = 35
+		color = { 188 191 170 }
+		province = {
+			local_missionary_strength = -0.02
+		}
+		country = {
+			tolerance_own = 2
+			advisor_cost = -0.1
+		}
+		country_as_secondary = {
+			diplomatic_reputation = 1
+			tolerance_own = 1
+		}
+		
+		religious_reforms = yes
+		reform_tooltip = MANDAEAN_REFORM_TOOLTIP
+		
+		heretic = { ELCESAITE }	
+	}
+	
+	harmonized_modifier = harmonized_mandaean_group
+	
+	crusade_name = HOLY_WAR
+
 }

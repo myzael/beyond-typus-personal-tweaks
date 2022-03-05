@@ -10,7 +10,7 @@ controller = FAD
 
 #Demographics
 culture = syriac_culture
-religion = orthodox				#Church of the East/Nestorianism
+religion = orthodox
 
 #Development and Trade
 base_tax = 1
