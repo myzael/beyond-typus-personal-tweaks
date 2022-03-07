@@ -58,18 +58,7 @@ country_event = {
 country_event = {
 	id = religious_reforms.2
 	title = religious_reforms.2.t
-	desc = {
-		trigger = {
-			religion = inti
-			text = religious_reforms.2.d
-		}
-	}
-	desc = {
-		trigger = {
-			religion = mandaean
-			text = religious_reforms.2.d.mandaean
-		}
-	}
+	desc = religious_reforms.2.d
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
