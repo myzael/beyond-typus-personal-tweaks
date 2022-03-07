@@ -65,7 +65,10 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "El Dorado"
-		religion = inti
+		OR = { 
+			religion = inti
+			religion = mandaean		# BT
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -127,10 +130,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "El Dorado"
-		OR = {
-			religion = mesoamerican_religion
-			religion = mandaean		#BT
-		}
+		religion = mesoamerican_religion
 	}
 	
 	mean_time_to_happen = {

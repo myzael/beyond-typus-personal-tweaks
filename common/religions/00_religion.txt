@@ -2611,7 +2611,8 @@ mandaean_group = {
 			diplomatic_reputation = 1
 			tolerance_own = 1
 		}
-		
+
+		authority = yes		
 		religious_reforms = yes
 		reform_tooltip = MANDAEAN_REFORM_TOOLTIP
 		
