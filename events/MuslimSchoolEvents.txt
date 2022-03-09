@@ -1963,7 +1963,7 @@ country_event = {
 					has_country_modifier = matawira_scholar_modifier
 				}
 			}
-			add_piety = 0.15	#placeholder
+			add_church_power = 30
 		}
 		else_if = {
 			limit = {
@@ -1976,6 +1976,7 @@ country_event = {
 		}
 		else = { #We have invited scholars from another religion.
 			add_piety = -0.15
+			add_church_power = -30
 		}
 		define_advisor = {
 			type = theologian
@@ -2013,6 +2014,18 @@ country_event = {
 		}
 		else_if = {
 			limit = {
+				religion = alawite
+				OR = {
+					has_country_modifier = haddadin_scholar_modifier
+					has_country_modifier = kalbiyya_scholar_modifier
+					has_country_modifier = khayatin_scholar_modifier
+					has_country_modifier = matawira_scholar_modifier
+				}
+			}
+			add_church_power = 30
+		}
+		else_if = {
+			limit = {
 				OR = {
 					religion = ibadi
 					religion = druze
@@ -2022,6 +2035,7 @@ country_event = {
 		}
 		else = { #We have invited scholars from another religion.
 			add_piety = -0.15
+			add_church_power = -30
 		}
 		add_adm_power = 25
 	}
@@ -2121,7 +2135,7 @@ country_event = {
 					has_country_modifier = matawira_scholar_modifier
 				}
 			}
-			add_piety = 0.15	#placeholder
+			add_church_power = 30
 		}
 		else_if = {
 			limit = {
@@ -2134,6 +2148,7 @@ country_event = {
 		}
 		else = { #We have invited scholars from another religion.
 			add_piety = -0.15
+			add_church_power = -30
 		}
 		event_target:scholar_country = {
 			add_opinion = {
