@@ -1,7 +1,7 @@
 
 capital = 1008	# Winnipeg
 historical_friend = YZC			#Trying to encourge the Iron Confederacy
-historical_friend = YYX
+historical_friend = NEH
 
 
 

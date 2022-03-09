@@ -1,9 +1,9 @@
  
 # No previous file for Sipiwininiwak
 
-owner = YYX			#Plains Cree
-controller = YYX
-add_core = YYX
+owner = NEH			#Plains Cree
+controller = NEH
+add_core = NEH
 is_city = yes
 culture = cree
 religion = totemism
@@ -27,9 +27,9 @@ discovered_by = north_american
 	trade_goods = unknown
 }
 1444.11.17 = { #BeyondTypus batch edit shortcut no native start date end
-	owner = YYX
-	controller = YYX
-	add_core = YYX
+	owner = NEH
+	controller = NEH
+	add_core = NEH
 	is_city = yes
 	trade_goods = fur
 }

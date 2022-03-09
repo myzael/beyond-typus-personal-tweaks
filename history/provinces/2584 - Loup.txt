@@ -21,16 +21,16 @@ discovered_by = north_american
 
 
 1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
-	owner = YZG			#Laurentian
-	controller = YZG
-	add_core = YZG
+	owner = OSH			#Laurentian
+	controller = OSH
+	add_core = OSH
 	is_city = yes
 	trade_goods = grain
 }
 1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
 	owner = XXX
 	controller = XXX
-	remove_core = YZG
+	remove_core = OSH
 	is_city = no
 	trade_goods = unknown
 }

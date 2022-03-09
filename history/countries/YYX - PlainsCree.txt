@@ -1,10 +1,12 @@
 government = native
 government_rank = 1
-primary_culture = athabascan
+primary_culture = cree
 religion = totemism
 technology_group = north_american
-capital = 2600
-historical_rival = NEH
+capital = 2597
+historical_friend = YZC			#Trying to encourge the Iron Confederacy
+historical_friend = ASI
+historical_rival = BVR
 
 
 1444.11.11 = {

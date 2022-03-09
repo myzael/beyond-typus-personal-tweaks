@@ -5174,7 +5174,7 @@ iroquoian = {
 	}
 	#Beyond Typus Culture
 	laurentian = {
-		primary = YZG
+		primary = OSH
 		graphical_culture = northamericagfx
 		dynasty_names = {
 			Awegen Ahaouet
