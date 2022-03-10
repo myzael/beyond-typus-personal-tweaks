@@ -11482,7 +11482,7 @@ kufa_mosque = {			#Great Mosque of Kufa
 
 imam_ali_shrine = {		#Imam Ali Holy Shrine
 	# province it starts in
-	start = 6142		#Najaf
+	start = 2311		#Najaf
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 923.01.01	#Constructed in current form after previous building from 786 was flooded in 850

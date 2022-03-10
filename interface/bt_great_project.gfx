@@ -57,7 +57,7 @@ spriteTypes = {
 
 		spriteType = {
 		name = "GFX_great_project_divrigi_mosque_hospital"	
-		texturefile = "gfx//interface//great_projects//great_project_diyarbakir_divrigi_mosque_hospital.dds"
+		texturefile = "gfx//interface//great_projects//great_project_divrigi_mosque_hospital.dds"
 	}
 
 		spriteType = {
