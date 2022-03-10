@@ -56,6 +56,11 @@ spriteTypes = {
 	}
 
 		spriteType = {
+		name = "GFX_great_project_diyarbakir_fortress"	
+		texturefile = "gfx//interface//great_projects//great_project_diyarbakir_fortress.dds"
+	}
+
+		spriteType = {
 		name = "GFX_great_project_edo_castle"	
 		texturefile = "gfx//interface//great_projects//great_project_edo_castle.dds"
 	}
@@ -98,6 +103,11 @@ spriteTypes = {
 		spriteType = {
 		name = "GFX_great_project_kotoku_in"	
 		texturefile = "gfx//interface//great_projects//great_project_kotoku_in.dds"
+	}
+
+		spriteType = {
+		name = "GFX_great_project_lalish"	
+		texturefile = "gfx//interface//great_projects//great_project_lalish.dds"
 	}
 
 		spriteType = {

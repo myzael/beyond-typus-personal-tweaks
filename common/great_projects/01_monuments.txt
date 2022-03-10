@@ -13184,7 +13184,7 @@ imam_hussein_al-abbas = {
 		}
 		country_modifiers = {
 			monthly_piety = -0.001
-			global_heretic_missionary_strength = 0.01
+			global_heretic_missionary_strength = 0.005
 		}
 		on_upgraded = {
 		}
@@ -13203,7 +13203,7 @@ imam_hussein_al-abbas = {
 		}
 		country_modifiers = {
 			monthly_piety = -0.002
-			global_heretic_missionary_strength = 0.02
+			global_heretic_missionary_strength = 0.01
 			church_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
@@ -13223,7 +13223,7 @@ imam_hussein_al-abbas = {
 		}
 		country_modifiers = {
 			monthly_piety = -0.003
-			global_heretic_missionary_strength = 0.03
+			global_heretic_missionary_strength = 0.02
 			church_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
@@ -15173,7 +15173,7 @@ spiral_minaret_samarra = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_missionary_strength = 0.01
+			global_missionary_strength = 0.005
 			prestige = 0.25
 			church_loyalty_modifier = 0.05
 		}
@@ -15193,7 +15193,7 @@ spiral_minaret_samarra = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_missionary_strength = 0.02
+			global_missionary_strength = 0.01
 			prestige = 0.5
 			church_loyalty_modifier = 0.1
 		}
@@ -15213,7 +15213,7 @@ spiral_minaret_samarra = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_missionary_strength = 0.03
+			global_missionary_strength = 0.02
 			prestige = 1
 			church_loyalty_modifier = 0.2
 		}
