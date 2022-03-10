@@ -3222,6 +3222,10 @@ country_event = {
 				religion = shiite
 				has_sunni_school_trigger = yes
 			}
+			AND = {
+				religion = alawite
+				has_alawite_school_trigger = yes
+			}
 		}
 	}
 
@@ -3325,14 +3329,55 @@ country_event = {
 				school = zaidi_school
 			}
 		}
+		else_if = {	#Haddadin in Bargylus
+			limit = {
+				religion = alawite
+				capital_scope = {
+					area = bargylus_area
+				}
+			}
+		}
+		else_if = {	#Kalbiyya in Aleppo and East Syria
+			limit = {
+				religion = alawite
+				capital_scope = {
+					OR = {
+						area = aleppo_area
+						area = syria_area
+					}
+				}
+			}
+		}
+		else_if = {	#Khayatin in Rakka and Mardin
+			limit = {
+				religion = alawite
+				capital_scope = {
+					OR = {
+						area = rakka_area
+						area = mardin_area
+					}
+				}
+			}
+		}
 		else_if = { #Final fallbacks
-			limit = { NOT = { religion = shiite } }
+			limit = { 
+				NOT = { religion = shiite } 
+				NOT = { religion = alawite }
+			}
 			set_religious_school = {
 				group = muslim
 				school = shafii_school
 			}
 		}
+		else_if = {	#Remaining Alawites get this:
+			limit = { religion = alawite }
+			set_religious_school = {
+				group = muslim
+				school = matawira_school
+			}
+		}
 		else = { #Remaining Shiites get this:
+			limit = { religion = shiite }
 			set_religious_school = {
 				group = muslim
 				school = ismaili_school
@@ -3343,6 +3388,7 @@ country_event = {
 		name = muslim_school_events.20.b #Hanafi
 		trigger = {
 			NOT = { religion = shiite }
+			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3354,6 +3400,7 @@ country_event = {
 		name = muslim_school_events.20.c #Hanbali
 		trigger = {
 			NOT = { religion = shiite }
+			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3365,6 +3412,7 @@ country_event = {
 		name = muslim_school_events.20.dd #Maliki
 		trigger = {
 			NOT = { religion = shiite }
+			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3376,6 +3424,7 @@ country_event = {
 		name = muslim_school_events.20.e #Shafi'i
 		trigger = {
 			NOT = { religion = shiite }
+			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3387,6 +3436,7 @@ country_event = {
 		name = muslim_school_events.20.f #Jafari
 		trigger = {
 			NOT = { religion = sunni }
+			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3398,6 +3448,7 @@ country_event = {
 		name = muslim_school_events.20.g #Ismaili
 		trigger = {
 			NOT = { religion = sunni }
+			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3409,11 +3460,56 @@ country_event = {
 		name = muslim_school_events.20.h #Zaidi
 		trigger = {
 			NOT = { religion = sunni }
+			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
 			group = muslim
 			school = zaidi_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.i #Haddadin
+		trigger = {
+			religion = alawite
+			ai = no
+		}
+		set_religious_school = {
+			group = muslim
+			school = haddadin_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.j #Kalbiyya
+		trigger = {
+			religion = alawite
+			ai = no
+		}
+		set_religious_school = {
+			group = muslim
+			school = kalbiyya_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.k #Khayatin
+		trigger = {
+			religion = alawite
+			ai = no
+		}
+		set_religious_school = {
+			group = muslim
+			school = khayatin_school
+		}
+	}
+	option = {
+		name = muslim_school_events.20.l #Matawira
+		trigger = {
+			religion = alawite
+			ai = no
+		}
+		set_religious_school = {
+			group = muslim
+			school = matawira_school
 		}
 	}
 }
