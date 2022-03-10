@@ -10762,7 +10762,7 @@ erbil_citadel = {		#Erbil Citadel
 	move_days_per_unit_distance = 10
 	
 	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
-	starting_tier = 0
+	starting_tier = 1
 	
 	#project type
 	type = monument
