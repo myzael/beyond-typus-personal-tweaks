@@ -10215,7 +10215,7 @@ lalish = {		#Lalish Valley
 
 	#can we build it?
 	build_trigger = {
-		religion_group = yazidi
+		religion = yazidi
 		has_owner_religion = yes
 	}
 
@@ -10229,13 +10229,13 @@ lalish = {		#Lalish Valley
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		religion_group = yazidi
+		religion = yazidi
 		has_owner_religion = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		religion_group = yazidi
+		religion = yazidi
 		has_owner_religion = yes
 	}
 
