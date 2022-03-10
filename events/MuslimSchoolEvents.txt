@@ -3819,6 +3819,75 @@ country_event = {
 			religious_school = zaidi_school
 		}
 	}
+	
+	# BT Additions
+	option = {
+		name = muslim_school_events.24.i
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_haddadin_school }
+			NOT = { has_country_flag = privilege_can_always_invite_haddadin_school }
+			NOT = {
+				religious_school = {
+					group = muslim
+					school = haddadin_school
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = haddadin_school
+		}
+	}
+	
+	option = {
+		name = muslim_school_events.24.j
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_kalbiyya_school }
+			NOT = { has_country_flag = privilege_can_always_invite_kalbiyya_school }
+			NOT = {
+				religious_school = {
+					group = muslim
+					school = kalbiyya_school
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = kalbiyya_school
+		}
+	}
+	
+	option = {
+		name = muslim_school_events.24.k
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_khayatin_school }
+			NOT = { has_country_flag = privilege_can_always_invite_khayatin_school }
+			NOT = {
+				religious_school = {
+					group = muslim
+					school = khayatin_school
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = khayatin_school
+		}
+	}
+	
+	option = {
+		name = muslim_school_events.24.l
+		trigger = {
+			NOT = { has_country_flag = can_always_invite_matawira_school }
+			NOT = { has_country_flag = privilege_can_always_invite_matawira_school }
+			NOT = {
+				religious_school = {
+					group = muslim
+					school = matawira_school
+				}
+			}
+		}
+		allow_baseline_invite_scholar_privilege = {
+			religious_school = matawira_school
+		}
+	}
 
 	after = {
 		clr_country_flag = swaps_scholar_flag
