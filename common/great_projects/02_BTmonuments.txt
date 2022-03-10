@@ -11509,7 +11509,7 @@ imam_ali_shrine = {		#Imam Ali Holy Shrine
 
 	#can we build it?
 	build_trigger = {
-		religion = shia
+		religion = shiite
 		has_owner_religion = yes
 	}
 
@@ -11523,13 +11523,13 @@ imam_ali_shrine = {		#Imam Ali Holy Shrine
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		religion = shia
+		religion = shiite
 		has_owner_religion = yes
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		religion = shia
+		religion = shiite
 		has_owner_religion = yes
 	}
 
