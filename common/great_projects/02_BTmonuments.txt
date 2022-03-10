@@ -10742,7 +10742,7 @@ nineveh_gates = {		#Gates of Nineveh
 
 erbil_citadel = {		#Erbil Citadel
 	# province it starts in
-	start = 4393		#Erbil
+	start = 4293		#Erbil
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = -2300.01.01	#Citadel is the historic center of Erbil since its founding, earliest record is from 2300BC
