@@ -11106,7 +11106,7 @@ holy_cross_cathedral = {	#Cathedral of the Holy Cross at Aghtamar Island
 		country_modifiers = {
 			missionary_maintenance_cost = -0.15
 			religious_unity = 0.15
-			missionary_strength = 0.02
+			global_missionary_strength = 0.02
 			missionaries = 1
 		}
 
