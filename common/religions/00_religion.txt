@@ -788,7 +788,7 @@ christian = {
 			defensiveness = 0.1
 		}
 		province = {
-			local_missionary_strength = -0.02
+			local_missionary_strength = -0.03
 		}
 		
 		heretic = { ZAMIKAELITES STEPHANITES EUSTATHIANS }
@@ -857,7 +857,7 @@ christian = {
 			tolerance_own = 1
 		}
 		province = {
-			local_missionary_strength = -0.01
+			local_missionary_strength = -0.02
 		}
 		
 		heretic = { ICONOGRAPHERS SHIMUN }
@@ -1391,7 +1391,7 @@ muslim = {
 			tolerance_heretic = -1 # Renounced 'false' belief
 		}
 		province = {
-			local_missionary_strength = -0.02
+			local_missionary_strength = -0.03
 		}
 		country_as_secondary = {
 			diplomats = 1
@@ -1416,7 +1416,7 @@ muslim = {
 			defensiveness = 0.10
 		}
 		province = {
-			local_missionary_strength = -0.02
+			local_missionary_strength = -0.03
 		}
 		
 		uses_church_power = yes				# Uses church power/aspect mechanics
@@ -2573,12 +2573,12 @@ zoroastrian_group = {
 			advisor_pool = 1 # Caste system
 			global_missionary_strength = -0.01 # Accepts no converts
 		}
-		province = {
-			local_missionary_strength = -0.01
-		}
 		country_as_secondary = {
 			tolerance_own = 2
 			advisor_pool = 1
+		}
+		province = {
+			local_missionary_strength = -0.02
 		}
 		
 		personal_deity = yes
@@ -2601,7 +2601,7 @@ mandaean_group = {
 		icon = 35
 		color = { 188 191 170 }
 		province = {
-			local_missionary_strength = -0.02
+			local_missionary_strength = -0.03
 		}
 		country = {
 			tolerance_own = 2
