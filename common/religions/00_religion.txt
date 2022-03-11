@@ -1390,12 +1390,12 @@ muslim = {
 			dip_tech_cost_modifier = -0.1 # Promoted intellectualism
 			tolerance_heretic = -1 # Renounced 'false' belief
 		}
-		province = {
-			local_missionary_strength = -0.03
-		}
 		country_as_secondary = {
 			diplomats = 1
 			dip_tech_cost_modifier = -0.05
+		}
+		province = {
+			local_missionary_strength = -0.03
 		}
 		
 		heretic = { SECTARIST }	
@@ -1562,12 +1562,12 @@ eastern = {
 		country = {
 			land_morale = 0.1
 		}
-		province = {
-			local_missionary_strength = -0.02
-		}
 		country_as_secondary = {
 			discipline = 0.05
 			global_unrest = -1
+		}
+		province = {
+			local_missionary_strength = -0.02
 		}
 		heretic = { SHUGENDO }
 		uses_isolationism = yes
@@ -2600,9 +2600,6 @@ mandaean_group = {
 	mandaean = {
 		icon = 35
 		color = { 188 191 170 }
-		province = {
-			local_missionary_strength = -0.03
-		}
 		country = {
 			tolerance_own = 2
 			advisor_cost = -0.1
@@ -2610,6 +2607,9 @@ mandaean_group = {
 		country_as_secondary = {
 			diplomatic_reputation = 1
 			tolerance_own = 1
+		}
+		province = {
+			local_missionary_strength = -0.03
 		}
 
 		authority = yes		
