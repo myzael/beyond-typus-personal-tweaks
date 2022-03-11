@@ -1214,7 +1214,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_haddadin"
 
-			prestige_from_naval = 0.1
+			prestige_from_naval = 0.2
 		}
 		kalbiyya_school = {
 			potential_invite_scholar = {
@@ -1248,7 +1248,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_kalbiyya"
 
-			garrison_size = 0.10
+			garrison_size = 0.05
 		}
 		khayatin_school = {
 			potential_invite_scholar = {
@@ -1316,7 +1316,7 @@ muslim = {
 
 			picture = "GFX_icon_muslim_school_matawira"
 
-			global_own_trade_power = 0.05
+			global_own_trade_power = 0.1
 		}
 		
 	}
