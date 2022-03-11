@@ -2829,7 +2829,7 @@
  #1.33 update
  bt_sc_mission_emp_bur_lorraine_connect_lowlands_tooltip:0 "Border any of your lowlands subjects"
  bt_sc_mission_emp_bur_secure_the_lowlands_tooltip:0 "All provinces in the Low Countries region, excluding Frisia and Oversticht areas:\n       Owned by and core of §Y[Root.GetName]§!"
-#byd donlad
+##by donlad
  MNC_parliament_name:0 "Conseil national"
  MNC_ideas:0 "Monegasque Ideas"
  MNC_ideas_start:0 "Monegasque Traditions"
@@ -2848,3 +2848,14 @@
  MNC_idea_6_desc:0 "Named in honor of both his grandfather and Hercules, Ercole would be the only son of Honoré II. The tradition of naming the Monegasque heir apparent as 'Marquis of Baux' began with him. A modern military man, Ercole would become quite interested in the proliferation of firearms. However, curiosity killed the cat, and in this case it killed Ercole too when an incompetant musketeer accidentally shot him in the back during rifle drills."
  MNC_idea_7:0 "Menton and Roquebrune"
  MNC_idea_7_desc:0 "The border towns of Menton and Roquebrune are both small but proud. Their pleasant climates and ample opportunities are starting to attract migrants from inland parts of France and Occitania. Alongside this, Menton is home to an ever growing citrus industry, turning in a handsome profit. If we begin to impose higher taxes on both towns we will easily capitalize on their growing population and wealth. Theres no possible way this can backfire!"
+ 
+ #Baghdad Event Tooltips
+ BTTurkomanEvents.1.t:0 "Death of Ispend bin Yusuf"
+ BTTurkomanEvents.1.d:0 "In 1431, our late Emir, Ispend bin Yusuf, defeated the last of the Jalayrid rulers of Lower Mesopotamia. When Ispend returned to Baghdad, he took control from the Qara Qoyunlu governor, Shâh Muhammed, who then fled to Tabriz. Ispend began to mint his own coins in Baghdad, fancying himself the 'Emir' of Baghdad and describing his realm as a 'kingdom'.\n\nIspend bin Yusuf was never a loyal subject of the family leaders in Tabriz after the death of Qara Iskander in 1435, allowing refugees and disgruntled family members to settle in Baghdad. One of those, Ispend's nephew, became his favourite and designated heir - Alvand Mirza.\n\nNow that Ispend has died, the nobles of Baghdad have to decide who should rule the city and its environs. Ispend wished us to enthrone Alvand Mirza, though this will likely upset [QAR.Monarch.GetName]. We could do as [QAR.Monarch.GetName] wishes, and appoint Ispend's son, [Root.Heir.GetName], though this would leave us with a Regency Council until he comes of age."
+ BTTurkomanEvents.1.a:0 "Follow our late Emir's wishes and appoint his nephew Alvand Mirza"
+ BTTurkomanEvents.1.b:0 "Appoint a regency council for our late Emir's son, [Root.Heir.GetName]"
+ BTTurkomanEvents.2.t:0 "Baghdad appoints our unruly nephew"
+ BTTurkomanEvents.2.d:0 "Baghdad has appointed Ispend bin Yusuf's nephew, [IRQ.Monarch.GetName], following the late Emir's wishes. [IRQ.Monarch.GetName] is signalling discontent with [Root.Monarch.GetName]'s rule, with [Root.Monarch.GetName] prefering Ispend's young son, [IRQ.Heir.GetName]. Local nobles in Baghdad have requested our support in removing [IRQ.Monarch.GetName].\n\nEither [Root.Monarch.GetName] can invade to restore order and depose [IRQ.Monarch.GetName], reclaiming Lower Mesopotamia for ourselves, or we can accept our weakening influence over the rebellious ruler in Baghdad."
+ BTTurkomanEvents.2.a:0 "Reunite the Qara Qoyunlu lands under one strong ruler"
+ BTTurkomanEvents.2.b:0 "Accept Ispend's decision"
+ BT_BaghdadTributary_Tooltip:0 "Baghdad becomes our tributary state"

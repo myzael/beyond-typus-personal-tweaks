@@ -7,35 +7,38 @@ country_event = {
 	desc = BTTurkomanEvents.1.d
 	picture = KING_SICK_IN_BED_eventPicture
 	
-	major = yes
 	fire_only_once = yes
 	
 	trigger = {
 		tag = IRQ
-		410 = {
-			owned_by = IRQ
-		}
+		is_subject = yes
 		is_year = 1445
+		has_ruler = "Ispend"
+		has_heir = yes
 	}
 	
 	mean_time_to_happen = {
-		months = 2
-	}
-	
-	immediate = {
-		kill_ruler = yes
+		months = 4
 	}
 	
 	option = { #Follow our Emir's wishes and appoint his nephew Alvand Mirza
 		name = BTTurkomanEvents.1.a
 		hidden_effect = {
-			country_event = {
-				id = BTTurkomanEvents.2
-				days = 25
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				overlord = {
+					country_event = {
+						id = BTTurkomanEvents.2
+						days = 2
+					}
+				}
 			}
 		}
+		kill_ruler = yes
 		define_ruler = {
-			name = "Alvand Mirsa"
+			name = "Alvand Mirza"
 			dynasty = "Qara Qoyunlu"
 			age = 24
 			adm = 3
@@ -52,17 +55,25 @@ country_event = {
 	
 	option = { #Appoint a regency council for our late Emir's son, Fulad Mirza
 		name = BTTurkomanEvents.1.b
+		kill_ruler = yes
+		if = {
+			limit = {
+				not = {	
+					heir_age = 15
+				}
+			}
+			define_ruler = {
+				name = "(Regency Council)"
+				adm = 1
+				dip = 1
+				mil = 1
+				regency = yes
+				culture = turkoman
+				religion = shiite
+			}
+		}
 		ai_chance = {
 			factor = 1
-		}
-		define_ruler = {
-			name = "(Regency Council)"
-			adm = 1
-			dip = 1
-			mil = 1
-			regency = yes
-			culture = turkoman
-			religion = shiite
 		}
 	}
 }
@@ -74,27 +85,36 @@ country_event = {
 	desc = BTTurkomanEvents.2.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	
-	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
-	
-	trigger = {
-		tag = QAR
-	}
 	
 	option = { #Invade Baghdad
 		name = BTTurkomanEvents.2.a
 		ai_chance = {
-			factor = 10
+			factor = 9
+		}
+		declare_war_with_cb = {
+			who = IRQ
+			casus_belli = cb_core
+			war_goal_province = 410 #Baghdad, not needed?
 		}
 	}
 	
 	option = { #Accept Ispend's decision
 		name = BTTurkomanEvents.2.b
 		ai_chance = {
-			factor = 2
+			factor = 1
 		}
-		add_prestige = -25
+		custom_tooltip = BT_BaghdadTributary_Tooltip
+		add_prestige = -10
 		add_legitimacy = -25
+		IRQ = {
+			grant_independence = yes
+			
+		}
+		create_subject = {
+			subject_type = tributary_state
+			subject = IRQ
+		}
 	}
 }
