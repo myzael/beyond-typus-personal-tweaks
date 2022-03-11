@@ -1409,7 +1409,7 @@ muslim = {
 		icon = 32
 		country = {
 			heir_chance = 1.0
-			global_spy_defence = 0.1
+			global_spy_defence = 0.25
 		}
 		country_as_secondary = {
 			land_morale = 0.05
