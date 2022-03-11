@@ -133,7 +133,7 @@
 7150 = { "Hasat" "Hasat" }
 7151 = { "Istanimaka" "Istanimaka" }
 7152 = { "Çirmen" "Çirmen" }
-7154 = { "Balchik" "Balchik" }
+7154 = { "Balçik" "Balçik" }
 7155 = { "Yanbolu" "Yanbolu" }
 7156 = { "Islimiyye" "Islimiyye" }
 7157 = { "Rasbolu" "Rasbolu" }
