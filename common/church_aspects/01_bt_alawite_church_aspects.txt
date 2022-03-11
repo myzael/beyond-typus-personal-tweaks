@@ -2,7 +2,6 @@
 followers_of_ali_aspect = {
 	cost = 100
 	modifier = { 
-		infantry_shock = 1
 		cavalry_shock = 1
 	}
 	ai_will_do = {
@@ -23,8 +22,8 @@ manifestations_of_god_aspect = {
 philosophical_thought_aspect = {
 	cost = 100
 	modifier = { 
-		global_institution_spread = 0.10
-		embracement_cost = -0.10
+		global_institution_spread = 0.20
+		embracement_cost = -0.05
 	}
 	ai_will_do = {
 		factor = 15
@@ -67,7 +66,6 @@ reincarnation_aspect = {
 #	cost = 100
 #	modifier = { 
 #	    improve_relation_modifier = 0.01
-#        #improve_relation_modifier = -0.01
 #	}
 #	#effect = { ### Not actual possible since only temporary effects are valid here - Kallar
 #	#	hidden_effect = {
@@ -96,7 +94,7 @@ reincarnation_aspect = {
 fortified_coasts_aspect = {
 	cost = 100
 	modifier = {
-		defensiveness = 0.10
+		defensiveness = 0.20
 	}
 	ai_will_do = {
 		factor = 15
@@ -116,7 +114,7 @@ unite_tribes_aspect = {
 feast_days_aspect = {
 	cost = 100
 	modifier = {
-	    production_efficiency = 0.1
+	    production_efficiency = 0.05
 		build_cost = -0.1
 		#something with tax income or build costs possibly WIP
 	}
