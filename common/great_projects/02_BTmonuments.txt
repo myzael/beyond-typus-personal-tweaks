@@ -10701,7 +10701,7 @@ nineveh_gates = {		#Gates of Nineveh
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			state_governing_cost = -0.1
-			administrative_efficiency = 0.2
+			administrative_efficiency = 0.02
 		}
 
 		#what effects happen when this tier is achieved
@@ -10731,7 +10731,7 @@ nineveh_gates = {		#Gates of Nineveh
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			governing_cost = -0.1
-			administrative_efficiency = 0.5
+			administrative_efficiency = 0.05
 		}
 
 		#what effects happen when this tier is achieved
