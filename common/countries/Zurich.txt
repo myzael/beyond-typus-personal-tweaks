@@ -86,8 +86,11 @@ leader_names = {
 }
 
 ship_names = {
-	Zurich Rheinfelden Mutenz Pratteln Augst
-	Liestal Oberwil Therwil Rhein
+	Rheinfelden Mutenz Pratteln Augst
+	Liestal Oberwil Therwil 
+	Uri Schwyz Unterwalden Glarus Zug
+	Lucerne Zürich Berne "Wilhelm Tell"
+	Dufour Rhein Rhöne Inn Ticino
 }
 
 army_names = {
