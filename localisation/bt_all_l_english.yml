@@ -2859,3 +2859,12 @@
  BTTurkomanEvents.2.a:0 "Reunite the Qara Qoyunlu lands under one strong ruler"
  BTTurkomanEvents.2.b:0 "Accept Ispend's decision"
  BT_BaghdadTributary_Tooltip:0 "Baghdad becomes our tributary state"
+ 
+ #Tribal Reconquest CB
+ bt_cb_tribal_reconquest:0 "Reconquest"
+ bt_cb_tribal_reconquest_desc:0 "Their land is rightfully ours."
+ bt_tribal_reconquest_wargoal:0 "Take the capital"
+ bt_tribal_reconquest_wargoal_desc:0 "War goal is to take the capital"
+ bt_tribal_reconquest_war_name:0 "$ORDER$$FIRST$ Reconquest of $SECOND_NAME$"
+ 
+ 

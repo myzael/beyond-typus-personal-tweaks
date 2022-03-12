@@ -95,8 +95,7 @@ country_event = {
 		}
 		declare_war_with_cb = {
 			who = IRQ
-			casus_belli = cb_core
-			war_goal_province = 410 #Baghdad, not needed?
+			casus_belli = bt_cb_tribal_reconquest
 		}
 	}
 	
