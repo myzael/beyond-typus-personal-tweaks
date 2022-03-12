@@ -16,3 +16,16 @@ religious_school = shafii_school
 
 #Tech and Military
 technology_group = muslim
+
+#History
+
+1444.1.1 = {
+	monarch = { 
+		name = "Kara Behlül"
+		dynasty = "Silivânî"
+		birthdate = 1423.1.1
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+}

@@ -17,3 +17,5 @@ religious_school = shafii_school
 
 #Tech and Military
 technology_group = muslim
+
+#History
