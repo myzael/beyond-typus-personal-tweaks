@@ -10,15 +10,23 @@ BT15
  - New Turkoman culture representing the unsettled Oghuz people in Mesopotamia, including the rulers of the Black and White Sheep Turkomen
  - New tags across Kurdistan, including three Yazidi nations, mostly guaranteed by the regional powers
  - Basra independent representing the al-Muntafiq ruling the area, later ruling most of Lower Mesopotamia
- - Iraq renamed to Baghdad to represent the Qara Qoyunlu dynasty ruling there in rebellion against Jahan Shah
+ - Iraq renamed to Baghdad to represent the Qara Qoyunlu dynasty ruling there in rebellion against Jahan Shah, with two events to help stimulate historical outcomes
  - New Palestine and Transjordan tags as releasable, along side Lebanon and Syria
  - New Great Projects
   * Beaune Hospices
   * Burkhan Khaldun
   * Canterbury Cathedral
   * Castle Rock
+  * Cathedral of the Holy Cross
   * Citadel of Aleppo
+  * Divrigi Great Mosque and Hospital
+  * Diyarbakir Fortress
+  * Erbil Citadel
+  * Gates of Nineveh
   * Great Mosque of Aleppo
+  * Great Mosque of Kufa
+  * Imam Ali Holy Shrine
+  * Lalish Valley
   * Painted Churches of Cyprus
   * Pelourinho
   * Pont du Gard
@@ -28,12 +36,12 @@ BT15
   * Umayyad Mosque
   * York Minster
  
-
 #Bugfixes
  - Lots of bugfixes, many likely forgotten to be recorded
  - Fixed numerous bugs with positions
  - Fixed a bug where NZZ had umbrian as its primary culture
  - Removed an unconnected core of Transylvania on Temes
+ - Removed occurances with areas with duplicate names/unnamed
 
 #Tweaks and Balance
  - Cultural set up of the Levant and the Mesopotamia updated 
@@ -49,7 +57,7 @@ BT15
 #Localised Naming
  - Full naming in the Levant for british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish), turko_semitic.txt (Arabic)
  - Some naming in the Levant for old_egyptian.txt (Ancient Egyptian), phoenician.txt (Phoenician), egyptian_group.txt (Coptic Egyptian), kurdish.txt (Kurdish), aramaic.txt (Aramean), armenian.txt and cilician.txt (Armenian)
- - Full naming in Mesopotamia for turko_semitic (Arabic), turkish_g.txt (Turkish) in Mesopotamia
+ - Full naming in Mesopotamia for turko_semitic (Arabic), turkish_g.txt (Turkish), kurdish.txt (Kurdish) in Mesopotamia
  - Some naming in Mesopotamia for turkoman.txt (Turkoman) in Mesopotamia
 
 #GFX

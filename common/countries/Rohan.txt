@@ -38,7 +38,8 @@ monarch_names = {
 }
 
 leader_names = {
-	Eorl
+	Eorl "de Saint-Malo" "de Rhuys" "de Porhoët" "de Poher" "de Cornouaille" "de Trégor" "de Quimperlé" "de Vannes" "de Goüyon" Urvoy "de Groix" "de Coëtlogon"
+	"de Rennes" "de Nantes"
 }
 
 ship_names = {
