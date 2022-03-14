@@ -1,7 +1,6 @@
 #6146 - IraqDesert1
 
 discovered_by = eastern
-discovered_by = western
 discovered_by = east_african
 discovered_by = indian
 discovered_by = muslim
