@@ -62,12 +62,15 @@ country_event = { #Styrian Response to Hungarian-Austrian Union
 	option = {
 		name = Chocolate_hab_hun.2.a
 		ai_chance = { factor = 1 }
-		any_owned_province = {
-			limit = {
-				is_core = HAB
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = HAB
+				}
+				add_core = STY
 			}
-			add_core = STY
 		}
+		custom_tooltip = BT_StyrianAustriaCores_Tooltip
 	}
 }
 

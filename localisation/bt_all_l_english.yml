@@ -2855,4 +2855,5 @@
  bt_tribal_reconquest_wargoal_desc:0 "War goal is to take the capital"
  bt_tribal_reconquest_war_name:0 "$ORDER$$FIRST$ Reconquest of $SECOND_NAME$"
  
+ BT_StyrianAustriaCores_Tooltip:0 "Styria gains cores on Austria"
  
