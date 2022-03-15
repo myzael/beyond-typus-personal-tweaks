@@ -2611,10 +2611,6 @@ mandaean_group = {
 		province = {
 			local_missionary_strength = -0.03
 		}
-
-		authority = yes		
-		religious_reforms = yes
-		reform_tooltip = MANDAEAN_REFORM_TOOLTIP
 		
 		heretic = { ELCESAITE }	
 	}
