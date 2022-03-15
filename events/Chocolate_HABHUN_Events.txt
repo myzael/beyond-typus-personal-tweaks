@@ -62,9 +62,11 @@ country_event = { #Styrian Response to Hungarian-Austrian Union
 	option = {
 		name = Chocolate_hab_hun.2.a
 		ai_chance = { factor = 1 }
-		add_casus_belli = {
-			type = cb_restore_personal_union
-			target = HAB
+		europe = {
+			limit = {
+				is_core = HAB
+			}
+			add_core = STY
 		}
 	}
 }
