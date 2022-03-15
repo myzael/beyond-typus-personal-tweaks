@@ -2612,7 +2612,9 @@ mandaean_group = {
 			local_missionary_strength = -0.03
 		}
 		
-		heretic = { ELCESAITE }	
+		heretic = { ELCESAITE }
+		
+		fervor = yes
 	}
 	
 	harmonized_modifier = harmonized_mandaean_group
