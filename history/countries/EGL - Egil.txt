@@ -22,7 +22,7 @@ technology_group = muslim
 
 1444.1.1 = {
 	monarch = { 
-		name = "Isa" #(JP) JEEEEEEEEEEEESUUUUUUUUUS
+		name = "Isa"
 		dynasty = "Pir Badr" #(JP) Founder of dynasty
 		birth_date = 1419.1.1
 		adm = 2

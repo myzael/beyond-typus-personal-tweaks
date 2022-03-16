@@ -10,6 +10,7 @@ historical_friend = ZAZ
 historical_friend = KBN
 #historical_friend = TEK terek
 #historical_friend = KYK kalmykia. Pretty sure there is a vanilla Kalmyks tag now, but meh.
+historical_friend = KLM #added vanilla Kalmykia
 
 1444.1.1 = {
 	monarch = {
