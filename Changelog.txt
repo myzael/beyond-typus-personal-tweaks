@@ -53,7 +53,6 @@ BT15
  - Updated, renamed, and new areas added throughout the Levant and Mesopotamia
  - Updated the terrain set up of the Levant and Mesopotamia to be more accurate
  - Added Latin Empire tags and some Shattered Europe tags to no longer be revoltable
- - Tweaked the interface gfx for Great Projects Tab
 
 #Localised Naming
  - Full naming in the Levant for british.txt (English), french.txt (French), germanic.txt (German), latin.txt (Italian), iberian.txt (Spanish), portugese.txt (Portuguese), brazilian.txt (Brazilian Portuguese), roman.txt (Ancient Latin), turkish_g.txt (Turkish), turko_semitic.txt (Arabic)
@@ -64,6 +63,7 @@ BT15
 #GFX
  - New flags for new tags in Mesopotamia
  - Updated flags for prior Kurdish states, plus the repurposed Baghdad and Basra
+ - Tweaked the interface gfx for Great Projects Tab
 
 
 
