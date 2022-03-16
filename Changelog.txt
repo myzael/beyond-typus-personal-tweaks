@@ -59,6 +59,13 @@ BT15
  - Some naming in the Levant for old_egyptian.txt (Ancient Egyptian), phoenician.txt (Phoenician), egyptian_group.txt (Coptic Egyptian), kurdish.txt (Kurdish), aramaic.txt (Aramean), armenian.txt and cilician.txt (Armenian)
  - Full naming in Mesopotamia for turko_semitic (Arabic), turkish_g.txt (Turkish), kurdish.txt (Kurdish) in Mesopotamia
  - Some naming in Mesopotamia for turkoman.txt (Turkoman) in Mesopotamia
+ - Near full reorganisation of germanic.txt (German) by Arga and myself
+ - Some new naming in germanic.txt (German) for Russia and Ruthenia (thanks to Fatharitan)
+ - Some naming all over the place for aramaic.txt (thanks to Arga)
+ - Full naming in Southeast and Northeast in british.txt (British English) thanks to Alexious
+ - Some naming all over the place for turko_semitic.txt (Arabic) thanks to Fatharitan
+ - Some naming for somali.txt (Somalian) thanks to Arga
+ - Tonnes more korean_g.txt (Korean) for all over East Asia thanks to Flandre Scarlet
 
 #GFX
  - New flags for new tags in Mesopotamia

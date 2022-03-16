@@ -12478,16 +12478,16 @@ taiwanese_group = {
 	}
 }
 syriac_group = {	#(JP) The names in here are ones I literally copied from the old syriac_culture. 
-		graphical_culture = muslimgfx
-		syriac_culture = {	#Aramaean
-			#primary = 
-		}
-		assyrian_culture = {
-			#primary = 
-		}
-		mandaean_culture = {
-			#primary = 
-		}
+	graphical_culture = muslimgfx
+	syriac_culture = {	#Aramaean
+		#primary = 
+	}
+	assyrian_culture = {
+		#primary = 
+	}
+	mandaean_culture = {
+		#primary = 
+	}
 	dynasty_names = {
 		"Mirdasid" "Maanid" "al-Shihab"  Yakubid Hassanid
 		Katkhuda Abaza Qasimiyya Qitas al-Qazdughli

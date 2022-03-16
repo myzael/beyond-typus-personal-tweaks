@@ -1,6 +1,6 @@
 #Contributions by Arga and Chairman Meow (JP)
-#(JP) Aramaic, Lost Culture NOT culture in syriac_group
-#(JP) For syriac_group.txt, try to use more recent naming where possible, as opposed to ancient Aramaean, though there are some clear similarities
+#(JP) Syriac Group, includes Aramaean, Assyrian and Mandaean
+#(JP) Try to use more recent naming where possible, as opposed to ancient Aramaean, though there are some clear similarities
 
 #Mesopotamia
 407 = { "Rakka" "Rakka" }
@@ -12,7 +12,7 @@
 2309 = { "Shingar" "Shingar" } #not on the wiki list
 2310 = { "Tagrit" "Tagrit" } #not on the wiki list
 2314 = { "Dira Zeurta" "Dira Zeurta" } #(JP) "Deir ez-Zor"
-4292 = { "Merda" "Merda" } #rn is Merdô
+4292 = { "Merda" "Merda" } #rn is MerdÃ´
 4295 = { "Hesno d-Kifo" "Hesno d-Kifo" } #not on the wiki list
 4298 = { "Ayindab" "Ayindab" }
 5293 = { "Resh Ayna" "Resh Ayna" } #not on the wiki list
@@ -28,7 +28,7 @@
 377 = { "Halba" "Halba" }
 378 = { "Tra'ara" "Tra'ara" }
 379 = { "Urislem" "Urislem" }
-382 = { "Darmsûq" "Darmsûq" }
+382 = { "DarmsÃ»q" "DarmsÃ»q" }
 405 = { "Tadmur" "Tadmur" } #(JP) Palmyrene "TDMR"
 1849 = { "Hamath" "Hamath" }
 1855 = { "Glila" "Safed" } #same as current name
