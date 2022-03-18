@@ -45,63 +45,72 @@ vassal = {
 	end_date = 1563.12.31
 }
 
-tributary_state = {	#(JP) Switched from vassal to Guarantee
+dependency = {
+	subject_type = tributary_state	#(JP) Switched from vassal to Guarantee
 	first = QAR
 	second = BHT
 	start_date = 1435.1.1
 	end_date = 1469.2.4
 }
 
-tributary_state = {
+dependency = {
+	subject_type = tributary_state
 	first = QAR
 	second = SIN
 	start_date = 1435.1.1
 	end_date = 1469.2.4
 }
 
-tributary_state = {
+dependency = {
+	subject_type = tributary_state
 	first = QAR
 	second = HAK
 	start_date = 1435.1.1
 	end_date = 1469.2.4
 }
 
-tributary_state = {
+dependency = {
+	subject_type = tributary_state
 	first = QAR
 	second = BDI
 	start_date = 1435.1.1
 	end_date = 1469.2.4
 }
 
-tributary_state = {
+dependency = {
+	subject_type = tributary_state
 	first = QAR
 	second = SRN
 	start_date = 1435.1.1
 	end_date = 1469.2.4
 }
 
-tributary_state = {
+dependency = {
+	subject_type = tributary_state
 	first = QAR
 	second = MHM
 	start_date = 1435.1.1
 	end_date = 1469.2.4
 }
 
-tributary_state = {
+dependency = {
+	subject_type = tributary_state
 	first = AKK
 	second = EGL
 	start_date = 1435.1.1
 	end_date = 1503.1.1
 }
 
-tributary_state = {
+dependency = {
+	subject_type = tributary_state
 	first = AKK
 	second = BIN
 	start_date = 1435.1.1
 	end_date = 1503.1.1
 }
 
-tributary_state = {
+dependency = {
+	subject_type = tributary_state
 	first = AKK
 	second = ZIR
 	start_date = 1435.1.1
