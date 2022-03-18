@@ -3,7 +3,7 @@ add_government_reform = plutocratic_reform
 primary_culture = bornean
 technology_group = chinese
 religion = hinduism
-capital = 8680  #Sambas
+capital = 8680   #Sambas
 
 1380.1.1 = {
 	monarch = {
@@ -96,7 +96,7 @@ capital = 8680  #Sambas
 		adm = 3
 		dip = 4
 		mil = 2
-		female = yes
+                female = yes
 	}
 }
 
@@ -107,9 +107,9 @@ capital = 8680  #Sambas
 		adm = 3
 		dip = 2
 		mil = 3
-	}
-	religion = sunni
-	religious_school = shafii_school
+        }
+        religion = sunni
+        religious_school = shafii_school
 	add_piety = 0.1
 }
 
@@ -120,7 +120,7 @@ capital = 8680  #Sambas
 		adm = 4
 		dip = 4
 		mil = 3
-	}
+        }
 }
 1685.1.1 = {
 	monarch = {

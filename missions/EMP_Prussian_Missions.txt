@@ -1,7 +1,10 @@
+#Re-checked/updated by Nuq for BT15 March 4th '22
+#Most things were pulled back in line with vanilla, aside from expansion to Prussia/Polish partitions because making sure right # of prov elsewise is a PITA
+
 #Updated by C1CK 21/07/2020
 #All missions updated with Dub's scipted system
 #A few others are now x in y style, since BT has free cities where vanilla does not (Essen and the like would block missions)
-#Changed Silesia mission to own x in y, since not all of this was ever owned by Brandenburg, at least not until the Nazi annexation of the Czech lands
+#OBSOLETE: Changed Silesia mission to own x in y, since not all of this was ever owned by Brandenburg, at least not until the Nazi annexation of the Czech lands
 #Adjusted the Polish conquest missions to follow the three partitions of Poland, See below
 #Some oddities are caused by the positioning of these missions, namely that the First partition doesn't give claims for the Second partition
 #Moved Claims for the conquest of Silesia to Pomeranian Succession, from the First partition of Poland. Since the conquest of Silesia occured before the First partition of Poland
@@ -249,6 +252,12 @@ emp_bra_pru_2 = {
 			71 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			8449 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			8452 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=emp_brapru_franconian_conquest }
@@ -266,7 +275,7 @@ emp_bra_pru_2 = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces = emp_brapru_franconian_conquest_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 6 #6 of 9 (6 of 8 in vanilla)
+				value = 10 #10 of 13 (6 of 8 in vanilla)
 			}
 		}
 		effect = {
@@ -294,12 +303,12 @@ emp_bra_pru_2 = {
 				provinces=emp_brapru_conquer_silesia_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
-			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
-				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
-				provinces = emp_brapru_conquer_silesia_provinces
-				owner_type = country_or_non_sovereign_subject_holds
-				value = 17 #17 of 29 (all in vanilla) (17 of 29 allows the historic borders, ignoring the exclave of Cottbus)
-			}
+			#has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+			#	tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
+			#	provinces = emp_brapru_conquer_silesia_provinces
+			#	owner_type = country_or_non_sovereign_subject_holds
+			#	value = 17 #17 of 29 (all in vanilla) (17 of 29 allows the historic borders, ignoring the exclave of Cottbus)
+			#}
 		}
 		effect = {
 			add_country_modifier = {
@@ -541,9 +550,9 @@ emp_bra_pru_3 = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces = emp_brapru_lower_saxony_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 16 #16 of 19 (10 of 12 in vanilla) (Excludes the 3 free cities in BT)
+				value = 19 #19 of 23 (10 of 12 in vanilla) (Excludes the 2 free cities in BT + 2 more prov)
 			}
-			1931 = { #East Frisia
+			1931 = { #Emden
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			53 = { #Lüneberg
@@ -726,7 +735,7 @@ emp_bra_pru_4 = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces = emp_brapru_westphalian_conquest_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 7 #7 of 9 (8 of 11 in vanilla)
+				value = 21 #21 of 29 (8 of 11 in vanilla)
 			}
 		}
 		effect = {
@@ -745,7 +754,7 @@ emp_bra_pru_4 = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces = emp_brapru_duchy_of_cleves_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 5 #5 of 6 (all in vanilla) (Excludes the free city in BT)
+				value = 9 #9 of 10 (all in vanilla) (Excludes the free city in BT)
 			}
 		}
 		effect = {
@@ -764,7 +773,7 @@ emp_bra_pru_4 = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces = emp_brapru_rhineland_conquest_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 14 #14 of 17 (10 of 12 in vanilla)
+				value = 24 #24 of 29 (10 of 12 in vanilla) (easily dodges all the FCs on this one)
 			}
 		}
 		effect = {
@@ -793,7 +802,7 @@ emp_bra_pru_4 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 120 #100->120
+				value = 220 #100 in vanilla, adjustment for density puts it at ~220-222
 				OR = {
 					region = north_german_region
 					region = south_german_region

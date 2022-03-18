@@ -4,7 +4,6 @@ government_rank = 1
 primary_culture = aquitaine
 religion = catholic
 technology_group = western
-historical_friend = PRO
 capital = 178
 
 

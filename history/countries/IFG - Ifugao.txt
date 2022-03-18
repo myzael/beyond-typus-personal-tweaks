@@ -6,7 +6,7 @@ capital = 4348 #Ifugao
 religion = animism
 government_rank = 1
 
-1444.1.1 = {
+1444.1.1  = {
 	monarch = {
 		name = "Council of Elders"
 		adm = 4

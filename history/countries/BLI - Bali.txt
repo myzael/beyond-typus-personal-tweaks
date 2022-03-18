@@ -1,6 +1,5 @@
 government = monarchy
 add_government_reform = autocracy_reform
-government_rank = 1
 primary_culture = nusa_tenggara
 technology_group = chinese
 religion = hinduism
@@ -10,7 +9,7 @@ capital = 631	# Bali
 	monarch = {
 		name = "Raden Agra Samprangan"
 		dynasty = "Samprangan"
-		culture = javanese
+                culture = javanese
 		adm = 1
 		dip = 0
 		mil = 2

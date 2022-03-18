@@ -3,6 +3,7 @@
  # cleaned, removed duplicates
  # sorted alpha-numerically
  # do NOT re-sort!
+ al_iraqiya_arabic:0 "Mesopotamian"
  are_legend_of_the_true_cross:1 "Legend of the True Cross"
  ABSOLUTISM_IMPACT_TT:1 "Absolutism is how ruthless and efficient the government is. The higher it is, the greater benefits we gain in efficiency and stable government, but we pay for this in greater Unrest."
  ABSOLUTISM_NOT_YET_TOOLTIP:1 "§YAbsolutism§!\nAbsolutism is how ruthless and efficient the government is. It is a concept that appears in the Age of Absolutism. The higher it is, the greater benefits we gain in efficiency and stable government, but we pay for this in greater Unrest."
@@ -168,6 +169,7 @@
  bajau:0 "Bajau"
  baltic_sea:0 "Bergslagen"
  banjarese:0 "Banjarese"
+ basra:0 "Baghdad"
  batak:0 "Batak"
  bei_council_of_princes:0 "Council of Princes"
  bei_council_of_princes_desc:0 "Although rule in Brunei is absolute, the ruler's powers are limited by a council of princes of royal blood, with one of the council's main duties being to arrange for royal successions."
@@ -654,6 +656,7 @@
  visayan:0 "Visayan"
  wien:0 "Vienna"
  yokuts:0 "Yokutsan"
+ zoroastrian_group:0 "Iranic"
  # Cooldown Modifier
  bt_sc_demand_unlawful_land_cooldown:0 "Demanded unlawful territory"
  desc_bt_sc_demand_unlawful_land_cooldown:0 "The emperor has demanded the return of unlawful land, and will leave us alone for some time unless we conquer again"
@@ -662,3 +665,7 @@
  demanded_unlawful_tooltip:0 "§RYou may not have demanded unlawful territory from this prince in the last 3 years§!"
  demand_unlawful_at_war_tooltip:0 "§RYou can't demand unlawful territory while you or the recipient are at war§!"
  demand_sold_tooltip:0 "§RYou can't demand territory that the previous owner has voluntarily sold, or revoked their core in§!"
+
+ #1.33 update
+ quebecois:0 "Canadian"
+ emp_bur_league_of_public_weal_trigger_tooltip:1 "3 French vassals in the France region:\n       Opinion of §Y[Root.GetName]§! is at least §Y100§!."

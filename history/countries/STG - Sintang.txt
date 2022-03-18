@@ -22,7 +22,7 @@ capital = 8697 #Sintang
 		adm = 2
 		dip = 3
 		mil = 3
-		female = yes
+                female = yes
 	}
 }
 
@@ -31,7 +31,7 @@ capital = 8697 #Sintang
 		name = "Abang Samat"
 		dynasty = "Sintang"
 		adm = 2
-		dip = 2
+                dip = 2
 		mil = 1
 	}
 }

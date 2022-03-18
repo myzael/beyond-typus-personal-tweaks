@@ -3,7 +3,7 @@ add_government_reform = autocracy_reform
 primary_culture = bornean
 technology_group = chinese
 religion = sunni
-capital = 2705  #Sarawak
+capital = 2705   #Sarawak
 
 1599.1.1 = {
 	monarch = {

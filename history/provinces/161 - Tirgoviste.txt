@@ -3,7 +3,7 @@
 
 owner = WAL
 controller = WAL 
-culture = romanian
+culture = transylvanian_saxons
 religion = catholic
 capital = "Tîrgoviste"
 trade_goods = cloth

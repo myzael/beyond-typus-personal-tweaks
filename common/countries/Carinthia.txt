@@ -87,6 +87,16 @@ ship_names = {
 	Vilalch
 	Spittal
 	Lienz
+	Graz
+	Leoben
+	Leibnitz
+	Weiz
+	Steiermark
+	Eisenerz
+	Bruck
+	Mürztal
+	Greim
+	Kapfenberg 
 }
 
 leader_names = { 

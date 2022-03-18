@@ -31,12 +31,12 @@ capital = 7829
 
 1306.7.22 = {
 	monarch = {
-		name = "Nominate"
-		adm = 0
-		mil = 0
-		dip = 0
-		regent = yes
-	}
+        	name = "Nominate"
+        	adm = 0
+       	 	mil = 0
+        	dip = 0
+        	regent = yes
+    	}
 }
 
 1319.12.3 = {
@@ -52,12 +52,12 @@ capital = 7829
 
 1321.8.28 = {
 	monarch = {
-		name = "Nominate"
-		adm = 0
-		mil = 0
-		dip = 0
-		regent = yes
-	}
+        	name = "Nominate"
+        	adm = 0
+       	 	mil = 0
+        	dip = 0
+        	regent = yes
+    	}
 }
 
 1322.3.5 = {
@@ -160,12 +160,12 @@ capital = 7829
 
 1463.10.28 = {
 	monarch = {
-		name = "Nominate"
-		adm = 0
-		mil = 0
-		dip = 0
-		regent = yes
-	}
+        	name = "Nominate"
+        	adm = 0
+       	 	mil = 0
+        	dip = 0
+        	regent = yes
+    	}
 }
 
 1521.6.1 = {

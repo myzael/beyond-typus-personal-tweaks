@@ -1,5 +1,5 @@
 government = theocracy
-add_government_reform = leading_clergy_reform #Draiocht had it as a peasant republic for some reason?
+add_government_reform = leading_clergy_reform #Draiocht had it as a peasant republic for some reason?			#-was reasons I think. No idea which ones.
 government_rank = 1
 primary_culture = flemish
 add_accepted_culture = picard_culture

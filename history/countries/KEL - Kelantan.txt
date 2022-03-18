@@ -5,18 +5,18 @@ primary_culture = malayan
 religion = sunni
 technology_group = chinese
 capital = 599	# Kelantan
-fixed_capital = 599 # BT
+fixed_capital = 599 # Cannot move capital away from this province & no power cost to move to it
 religious_school = shafii_school
 
 1429.1.1 = {
 	monarch = {
 		name = "Iskandar Shâh"
 		dynasty = "Jambi"
-		adm = 3 # BT; 1
-		dip = 2 # BT; 4
-		mil = 1 # BT; 2
+		adm = 3
+		dip = 2
+		mil = 1
 	}
-	add_piety = 0.1 # BT
+	add_piety = 0.1
 }
 
 1467.1.1 = {
@@ -93,7 +93,7 @@ religious_school = shafii_school
 	monarch = {
 		name = "Addil ud-din"
 		dynasty = "Cham"
-		culture = cham
+                culture = cham
 		adm = 3
 		dip = 2
 		mil = 5
@@ -172,7 +172,7 @@ religious_school = shafii_school
 1662.1.1 = {
 	monarch = {
 		name = "Puteri Sa'adong"
-		dynasty = "Kembang"
+                dynasty = "Kembang"
 		adm = 3
 		mil = 5
 		dip = 2

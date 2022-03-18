@@ -9,8 +9,8 @@ owner = TUR
 controller = TUR
 
 #Demographics
-culture = armenian
-religion = apostolic
+culture = turkish
+religion = sunni
 
 #Development and Trade
 base_tax = 2

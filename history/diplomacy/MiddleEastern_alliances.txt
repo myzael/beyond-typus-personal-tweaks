@@ -55,13 +55,13 @@ guarantee = {
 #	end_date = 1468.1.1
 #}
 
-#Kurdish Principalities generally autonomous under Qara Qoyunlu
-vassal = {
-	first = QAR
-	second = BTL
-	start_date = 1435.1.1
-	end_date = 1469.2.4
-}
+#Kurdish Principalities generally autonomous under Qara Qoyunlu #(JP) Switched from vassal to Guarantee. Seems the biggest two were independent
+#guarantee = {
+#	first = QAR
+#	second = BTL
+#	start_date = 1435.1.1
+#	end_date = 1469.2.4
+#}
 
 #Melikdoms of Kharabak
 

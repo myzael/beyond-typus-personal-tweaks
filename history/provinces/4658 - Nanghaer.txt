@@ -4,8 +4,8 @@
 owner = NVK
 controller = NVK
 add_core = NVK
-culture = evenk
-religion = animism
+culture = nivkh
+religion = tengri_pagan_reformed
 capital = "Nangha'er"
 trade_goods = fish
 hre = no
