@@ -89,6 +89,7 @@
 4779 = { "Gelibolu" "Gelibolu" }
 4780 = { "Ohri" "Ohri" }
 5094 = { "Kökes" "Kökes" }
+6096 = { "Sisam" "Sisam" }
 7100 = { "Koron" "Koron" }
 7101 = { "Mesinya" "Zeytin" } #(JP) Capital is base name still #(VL) Mesinya is right Kalamata on the other hand Turks just called it Zeytin (Olive Town)
 7102 = { "Tripoliçe" "Tripoliçe" }

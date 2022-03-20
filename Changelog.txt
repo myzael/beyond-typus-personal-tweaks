@@ -1,3 +1,7 @@
+BT15.0.1
+#Localised naming
+ - Added a Turkish name fo 6096 (Samos)
+
 BT15
 #New Additions
  - Total Overhaul to the Levant and Mesopotamia regions.
