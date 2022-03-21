@@ -3,9 +3,12 @@
  # cleaned, removed duplicates
  # sorted alpha-numerically
  # do NOT re-sort!
+ al_iraqiya_arabic:0 "Mesopotamisch"
  are_legend_of_the_true_cross:1 "Legende vom Wahren Kreuz"
  ABSOLUTISM_IMPACT_TT:0 "Absolutismus beschreibt wie rücksichtslos und effizient die Regierung ist. Je höher er ist, desto mehr Vorteile ergeben sich durch administrative Effizienz und eine stabile Regierung, führt jedoch auch zu größeren Unruhen."
  ABSOLUTISM_NOT_YET_TOOLTIP:0 "§YAbsolutismus§!\nAbsolutismus beschreibt wie rücksichtslos und effizient die Regierung ist. Es ist ein Konzept, das im Zeitalter des Absolutismus auftaucht. Je höher er ist, desto mehr Vorteile ergeben sich durch administrative Effizienz und eine stabile Regierung, führt jedoch auch zu größeren Unruhen."
+ ada_turkish_alliance_ct:0 "Jedes §Y[Root.GetAdjective]§! Regiment befindet sich in einem Hafen in der Region §YÄgypten§! oder §YLevante§!, der an das §YMittelmeer§! grenzt, oder in einer Provinz, die sich in einer §YTürkischen§! Nation befindet."
+ ada_push_further_north_ct:1 "Jede Provinz in den Regionen §YWeißer Nil§!, §YObernubien§!, §YNiedernubien§! and §YBlauer Nil§! im Besitz einer §Y[Root.Religion.GetName]§! Nation oder durch einen Untertanen von §Y[Root.GetName]§!."
  ATJ_ideas:0 "Achinesische Ideen"
  ATJ_ideas_bonus:0 "Achinesische Ambitionen"
  ATJ_ideas_start:0 "Achinesische Traditionen"
@@ -166,6 +169,7 @@
  bajau:0 "Bajauisch"
  baltic_sea:0 "Bergslagen"
  banjarese:0 "Banjaresisch"
+ basra:0 "Bagdad"
  batak:0 "Batakisch"
  bei_council_of_princes:0 "Fürstenrat"
  bei_council_of_princes_desc:0 "Obwohl die Herrschaft in Brunei absolut ist, werden die Befugnisse des Herrschers durch einen Rat von Prinzen königlichen Blutes begrenzt, wobei eine der Hauptaufgaben des Rates darin besteht, königliche Erbschaften zu regeln."
@@ -652,6 +656,7 @@
  visayan:0 "Visayasisch"
  wien:0 "Wien"
  yokuts:0 "Jokuzisch"
+ zoroastrian_group:0 "Iranic"
  # Cooldown Modifier
  bt_sc_demand_unlawful_land_cooldown:0 "Forderte unrechtmäßiges Gebiet"
  desc_bt_sc_demand_unlawful_land_cooldown:0 "Der Kaiser hat die Rückgabe von unrechtmäßigem Land gefordert und wird uns für einige Zeit in Ruhe lassen, solange wir nicht erneut erobern."
@@ -661,5 +666,6 @@
  demand_unlawful_at_war_tooltip:0 "§RIhr könnt kein unrechtmäßiges Gebiet zurückfordern, solange Ihr oder der rechtmäßige Besitzer sich im Krieg befinden§!"
  demand_sold_tooltip:0 "§Rihr könnt kein Gebiet zurückfordern, wenn dieses von seinem rechtmäßigen Besitzer freiwillig verkauft wurde oder dieser auf seinen Anspruch auf die Kernprovinz verzichtet hat§!"
 
- #1.33 Update by Draiocht
+ #1.33 update
  quebecois:0 "Kanadisch"
+ emp_bur_league_of_public_weal_trigger_tooltip:1 "3 Französische Vassalen in der Region Frankreich:\n       Meinung von §Y[Root.GetName]§! ist mindestens §Y100§!."
