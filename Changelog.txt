@@ -1,4 +1,6 @@
 BT15.0.1
+#New Additions
+
 #Localised naming
  - Added a Turkish name fo 6096 (Samos)
 
