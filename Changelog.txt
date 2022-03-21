@@ -3,13 +3,15 @@ BT15.0.1
  - German Localisation updated for BT15 (thanks to Malcador)
 
 #Bugfixes
+ - Added missing adjectives for EGL and SRN
+ - Fixed bugs with events for Fate of the Crimean Khanate chain
 
 #Tweaks and Balance
  - Tweaked some adjectives for minor French tags
  - Upgrading CoT's to tier two and tier three now require 16 dev and 40 dev respectively
 
 #Localised naming
- - Added a Turkish name fo 6096 (Samos)
+ - Added a Turkish name for 6096 (Samos)
  - Fixed an encoding error with syriac_group.txt
  
 #GFX

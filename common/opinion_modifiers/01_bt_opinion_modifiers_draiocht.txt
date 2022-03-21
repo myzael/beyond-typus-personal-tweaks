@@ -84,3 +84,13 @@ bt_loyal_subject = {
 	max = 40
 	yearly_decay = 2
 }
+
+
+#Various Miscellanea
+
+
+bt_otto_badboy_crimea_opinion = {
+	opinion = -50
+	max = -50
+	yearly_decay = 2
+}
