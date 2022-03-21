@@ -1,12 +1,18 @@
 BT15.0.1
 #New Additions
+ - German Localisation updated for BT15 (thanks to Malcador)
+
+#Bugfixes
 
 #Tweaks and Balance
  - Tweaked some adjectives for minor French tags
+ - Upgrading CoT's to tier two and tier three now require 16 dev and 40 dev respectively
 
 #Localised naming
  - Added a Turkish name fo 6096 (Samos)
  - Fixed an encoding error with syriac_group.txt
+ 
+#GFX
 
 
 
