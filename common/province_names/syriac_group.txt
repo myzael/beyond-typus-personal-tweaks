@@ -12,7 +12,7 @@
 2309 = { "Shingar" "Shingar" } #not on the wiki list
 2310 = { "Tagrit" "Tagrit" } #not on the wiki list
 2314 = { "Dira Zeurta" "Dira Zeurta" } #(JP) "Deir ez-Zor"
-4292 = { "Merda" "Merda" } #rn is MerdÃ´
+4292 = { "Merda" "Merda" } #rn is Merdô
 4295 = { "Hesno d-Kifo" "Hesno d-Kifo" } #not on the wiki list
 4298 = { "Ayindab" "Ayindab" }
 5293 = { "Resh Ayna" "Resh Ayna" } #not on the wiki list
@@ -28,7 +28,7 @@
 377 = { "Halba" "Halba" }
 378 = { "Tra'ara" "Tra'ara" }
 379 = { "Urislem" "Urislem" }
-382 = { "DarmsÃ»q" "DarmsÃ»q" }
+382 = { "Darmsûq" "Darmsûq" }
 405 = { "Tadmur" "Tadmur" } #(JP) Palmyrene "TDMR"
 1849 = { "Hamath" "Hamath" }
 1855 = { "Glila" "Safed" } #same as current name
