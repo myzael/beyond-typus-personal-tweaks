@@ -6,6 +6,7 @@ BT15.0.1
  - Added missing adjectives for EGL and SRN
  - Fixed bugs with events for Fate of the Crimean Khanate chain
  - Fixed a bug with Anglo-Ireland having female names for male rulers
+ - Fixed a bug where BRX had wrong primary culture
 
 #Tweaks and Balance
  - Tweaked some adjectives for minor French tags
