@@ -18,7 +18,7 @@ BT15.0.1
  - Fixed an encoding error with syriac_group.txt
  
 #GFX
-
+ - Update the province view monument screen (thanks to Hadiros)
 
 
 BT15
