@@ -12,6 +12,8 @@ BT15.0.1
 #Tweaks and Balance
  - Tweaked some adjectives for minor French tags
  - Upgrading CoT's to tier two and tier three now require 16 dev and 40 dev respectively
+ - 1099 (Socotra) is not Nestorian
+ - Removed area governing cost from Gates of Nineveh
 
 #Localised naming
  - Added a Turkish name for 6096 (Samos)
