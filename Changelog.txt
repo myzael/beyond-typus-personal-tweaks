@@ -30,6 +30,7 @@ BT15.0.1
  - Added new Alawite symbol for Church Power mechanic (thanks to Schoko) though may not yet work as intended
 
 
+
 BT15
 #New Additions
  - Total Overhaul to the Levant and Mesopotamia regions.
