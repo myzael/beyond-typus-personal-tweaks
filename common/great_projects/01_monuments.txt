@@ -11884,8 +11884,8 @@ etchimiadzin_cathedral = {
 	type = monument
 
 	build_trigger = {
-		province_is_or_accepts_religion = {
-			religion = apostolic
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
 		}
 	}
 
@@ -11896,14 +11896,14 @@ etchimiadzin_cathedral = {
 	}
 
 	can_use_modifiers_trigger = {
-		province_is_or_accepts_religion = {
-			religion = apostolic
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
 		}
 	}
 
 	can_upgrade_trigger = {
-		province_is_or_accepts_religion = {
-			religion = apostolic
+		province_is_or_accepts_religion_group = {
+			religion_group = christian
 		}
 	}
 
