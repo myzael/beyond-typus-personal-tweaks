@@ -1,6 +1,7 @@
 BT15.0.1
 #New Additions
  - German Localisation updated for BT15 (thanks to Malcador)
+ - Because of a missing '*', it is now updated to 1.33.3
 
 #Bugfixes
  - Added missing adjectives for EGL and SRN
