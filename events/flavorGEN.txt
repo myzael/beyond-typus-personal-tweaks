@@ -133,12 +133,68 @@ country_event = {
 				}
 			}		
 		}
-		add_claim = 285
-		add_claim = 286
+		custom_tooltip = bt_ottos_want_genoese_land_anatolia_tt
+		custom_tooltip = bt_ottos_want_genoese_land_local_tt
+		hidden_effect = {
+			anatolia_region = {
+				limit = {
+					OR = {
+						owned_by = GEN
+						owner = { is_subject_of = GEN }
+					}
+				}
+				add_permanent_claim = TUR
+			}
+			aegean_archipelago_area = {
+				limit = {
+					OR = {
+						owned_by = GEN
+						owner = { is_subject_of = GEN }
+					}
+				}
+				add_claim = TUR
+			}
+			151 = {
+				every_trade_node_member_province = {
+					limit = {
+						NOT = { region = anatolia_region }
+						OR = {
+							owned_by = GEN
+							owner = { is_subject_of = GEN }
+						}
+					}
+					add_claim = TUR
+				}
+			}
+			330 = {
+				every_trade_node_member_province = {
+					limit = {
+						NOT = { region = anatolia_region }
+						OR = {
+							owned_by = GEN
+							owner = { is_subject_of = GEN }
+						}
+					}
+					add_claim = TUR
+				}
+			}
+			285 = {
+				every_trade_node_member_province = {
+					limit = {
+						OR = {
+							owned_by = GEN
+							owner = { is_subject_of = GEN }
+						}
+					}
+					add_claim = TUR
+				}
+			}
+		}
 	}
 	option = {
 		name = flavor_gen.4.b
 		GEN = {
+			tooltip = { add_mercantilism = 3 }
 			add_opinion = {
 				who = root
 				modifier = gen_trade_given
@@ -148,6 +204,12 @@ country_event = {
 				days = 1
 				tooltip = flavor_gen.4.6
 			}		
+		}
+		151 = { add_base_production = 2 }
+		add_mercantilism = 3
+		if = {
+			limit = { NOT = { truce_with = GEN } }
+			add_truce_with = GEN
 		}
 	}
 }
@@ -188,10 +250,11 @@ country_event = {
 			add_trade_modifier = {
 				who = root
 				duration = -1
-				power = 5
+				power = 15			#Up from 5, BT has more stuffs and things and such. 15 is better. Trust me. Yeah. -D
 				key = genoese_access_to_black_sea
 			}
-		}				
+		}
+		add_mercantilism = 3		
 	}
 }
 
@@ -398,7 +461,7 @@ country_event = {
 			dynasty = "Doria"
 			DIP = 5			
 			ADM = 5
-			MIL = 5 # BT; 6
+			MIL = 6
 			attach_leader = "Andrea Doria"
 		}		
 		if = {

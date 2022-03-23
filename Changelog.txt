@@ -5,6 +5,7 @@ BT15.0.1
 #Bugfixes
  - Added missing adjectives for EGL and SRN
  - Fixed bugs with events for Fate of the Crimean Khanate chain
+ - Fixed bugs with events for Genoa and Ottomans
  - Fixed a bug with Anglo-Ireland having female names for male rulers
  - Fixed a bug where BRX had wrong primary culture
  - Fixed a bug where RAM had wrong primary culture
