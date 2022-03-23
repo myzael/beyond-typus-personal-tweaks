@@ -9,6 +9,7 @@ BT15.0.1
  - Fixed a bug with Anglo-Ireland having female names for male rulers
  - Fixed a bug where BRX had wrong primary culture
  - Fixed a bug where RAM had wrong primary culture
+ - Fixed a bug where Mandeaen did not have a harmonised modifier for Confucianism
 
 #Tweaks and Balance
  - Tweaked some adjectives for minor French tags
