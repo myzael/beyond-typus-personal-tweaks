@@ -18,6 +18,7 @@ BT15.0.1
  - 1099 (Socotra) is not Nestorian
  - Removed area governing cost from Gates of Nineveh
  - Winmerged 01_monuments.txt to update vanilla triggers and modifiers into BT where they changed
+ - Mandaeans can no longer be converted by Muslim propogate trade mechanics (since they are the Sabian People of the Book)
 
 #Localised naming
  - Added a Turkish name for 6096 (Samos)
