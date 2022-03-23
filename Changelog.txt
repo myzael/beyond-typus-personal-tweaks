@@ -14,6 +14,7 @@ BT15.0.1
  - Upgrading CoT's to tier two and tier three now require 16 dev and 40 dev respectively
  - 1099 (Socotra) is not Nestorian
  - Removed area governing cost from Gates of Nineveh
+ - Winmerged 01_monuments.txt to update vanilla triggers and modifiers into BT where they changed
 
 #Localised naming
  - Added a Turkish name for 6096 (Samos)
