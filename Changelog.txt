@@ -22,6 +22,7 @@ BT15.0.1
  
 #GFX
  - Update the province view monument screen (thanks to Hadiros)
+ - Added new Alawite symbol for Church Power mechanic (thanks to Schoko) though may not yet work as intended
 
 
 BT15
