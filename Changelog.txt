@@ -10,6 +10,7 @@ BT15.0.1
  - Fixed a bug where BRX had wrong primary culture
  - Fixed a bug where RAM had wrong primary culture
  - Fixed a bug where Mandeaen did not have a harmonised modifier for Confucianism
+ - Fixed a bug where Syriac Culture Group did not have an assimilation modifier for Mughals
 
 #Tweaks and Balance
  - Tweaked some adjectives for minor French tags
