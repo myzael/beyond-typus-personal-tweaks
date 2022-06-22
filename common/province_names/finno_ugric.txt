@@ -8,20 +8,30 @@
 25 = { "Gotlanti" "Visby" }
 27 = { "Turku" "Turku" }
 28 = { "Uusimaa" "Rasepori" }
+29 = { "Kanta-H‰me" "H‰meenlinna" }
 30 = { "Viipuri" "Viipuri" }
+31 = { "Etel‰-Savo" "Olavinlinna" }
 32 = { "K‰kisalmi" "K‰kisalmi" }
 315 = { "C·hcesuolu" "V·rgg·t" }
 1930 = { "Ahvenanmaa" "Maarianhamina" }
 3119 = { "Romsa" "Romsa" }
 3124 = { "Angermannlanti" "Styresholm" }
+3128 = { "Satakunta" "Ulvila" }
 4113 = { "Oulu" "Oulu" } 
 4114 = { "S·pmi" "Giron" }
+4123 = { "Pirkanmaa" "Tampere" }
+4124 = { "Ilomantsi" "Ilomantsi" }
 4151 = { "Aanaar" "Aanaar" }
 4152 = { "Kainuu" "Kainuu" }
 7747 = { "V·hki" "V·hki" }
 7789 = { "Bododdjo" "Bododdjo" }
 7799 = { "Luleju" "Luleju" }
 7800 = { "Duortnus" "Duortnus" }
+7803 = { "Pohjois-H‰me" "Jyv‰skyl‰" }
+7804 = { "Pohjois-Savo" "Kuopio" }
+7805 = { "Etel‰-H‰me" "Lahti" }
+7806 = { "J‰‰ski" "J‰‰ski" }
+7807 = { "Porvoo" "Porvoo" }
 7808 = { "Sortavala" "Sortavala" }
 
 #Baltic
@@ -94,7 +104,4 @@
 #Scandinavia
 18 = "Ruotsin Lappi"
 19 = "Vaasa"
-29 = "H‰me"
-31 = "Savo"
 3123 = "Uplanti"
-4124 = "Pohjois-Karjala"

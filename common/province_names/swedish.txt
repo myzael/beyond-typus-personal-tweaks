@@ -1,5 +1,23 @@
 #Contributions made by Dub & Chrysocyon
 
+#Scandinavia
+27 = { "Finland" "Åbo" }
+28 = { "Nyland" "Raseborg" }
+29 = { "Tavastehus" "Tavastehus" }
+30 = { "Viborg" "Viborg" }
+31 = { "Sydsavolax" "Sankt Olofsborg" } #(JP) Capital can also be "Nyslott"
+32 = { "Kexholm" "Kexholm" }
+3128 = { "Satakunda" "Ulvsby" }
+4123 = { "Birkaland" "Tammerfors" }
+4124 = { "Ilomants" "Ilomants" }
+7803 = { "Nordtavastland" "Jyväskylä" }
+7804 = { "Nordsavolax" "Kuopio" }
+7805 = { "Sydtavastland" "Lahtis" }
+7806 = { "Jäskis" "Jäskis" }
+7807 = { "Borgå" "Borgå" }
+7808 = { "Sordavala" "Sordavala" }
+
+
 ##########################START OLD ASSORTED NAMING I HAVE NO IDEA WHAT TO DO WITH
 
 
@@ -50,14 +68,11 @@
 6 = "Skåne"
 10 = "Jämtland"
 
-32 = "Kexholm"
 33 = "Nöteborg"
 37 = "Livland"
 #BTP
 4113 = "Kajanaland"
 3127 = "Vasa"
-3128 = "Satakunda"
-4123 = "Birkaland"
 #3228 = "Wolmar"			#Cut & replaced by deserks work
 #3229 = "Fellin"
 #3230 = "Wiek"
@@ -140,20 +155,9 @@
 7801 = "Österbotten" #Technically Österbotten covered both Uleåborg & Vasa, but it's better than Karleby because there was never a Karleby county to my knowledge.
 7864 = "Kolaträsk"
 7802 = "Överbotten"
-27 = "Finland" #Adding this just so that it isn't just called Åbo. This area is what's referred to when in Swedish administration the province of Finland was concerned (Egentliga Finland)
 4114 = "Norra Lappmarken"
 4152 = "Kajanaland"
-4124 = "Nordkarelen"
-7806 = "Sydkarelen" 
 19 = "Vasa"
-7804 = "Nordsavolax" #North Savonia
-31 = "Sydsavolax" #South Savonia
-7807 = "Borgå"
-7803 = "Nordtavastland"
-7805 = "Sydtavastland"
-7808 = "Ladogakarelen"
-
-
 
 #Reoverhauled Norway
 #Protect Norway

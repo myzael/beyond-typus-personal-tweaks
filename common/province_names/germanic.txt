@@ -891,19 +891,29 @@
 18 = { "Südlappland" "Sorsele" } #
 27 = { "Obu" "Obu" }
 28 = { "Neuland" "Raseburg" }
-30 = { "Wiburg" "Wiburg" }
+29 = { "Tawastborg" "Tawastborg" }
+30 = { "Wiborg" "Wiborg" }
+31 = { "Südsavo" "Olafsburg" }
 32 = { "Korelien" "Korelien" }
 1979 = { "Schafsinseln" "Torshaven" }
 1984 = { "Aalburg" "Aalburg" } #
+3128 = { "Satakunda" "Olwsstadt" }
 3134 = { "Apenrade" "Apenrade" } #
 4113 = { "Uleoburg" "Uleoburg" } #
+4123 = { "Birkenland" "Tammerfors" }
+4124 = { "Ilomantsi" "Ilomantsi" 
 4142 = { "Arenhusen" "Arenhusen" } #
 7766 = { "Helsingburg" "Helsingburg" } #
 7770 = { "Viburg" "Viburg" } #
 7773 = { "Flensburg" "Flensburg" }
 7774 = { "Tonder" "Tonder" } #
 7799 = { "Nordbottnien" "Luleo" }
+7803 = { "Nordtawastland" "Jyväskylä" }
+7804 = { "Nordsavo" "Kuopio" }
+7805 = { "Südtawastland" "Lahtis" }
+7806 = { "Lessogorskow" "Lessogorskow" }
 7807 = { "Oburg" "Oburg" } #
+7808 = { "Sortawala" "Sortawala" }
 
 #Low Countries
 90 = { "Brügge" "Brügge" }
@@ -2398,7 +2408,6 @@
 ##Unnamed and Uncapitalised
 5 = "Wermland"
 14 = "Fünen"
-29 = "Tawastland"
 141 = "Serbien"
 143 = "Albanien"
 147 = "Thessalien"
@@ -2555,8 +2564,6 @@
 2170 = "Sonkou"
 680 = "Tschungking"
 2171 = "Tsianfang"
-31 = "Savo"
-4124 = "Nordkarelien"
 1776 = "Weisskarelien"
 1078 = "Katharinenburg"
 1080 = "Saranpaul"
@@ -3196,10 +3203,8 @@
 7 = "Skaraburg"
 17 = "Westfold" #or "Oslo"
 19 = "Ostbottnien"
-3128 = "Satakunda"
 4113 = "Uleoburg"
 4114 = "Samien" #AH
-4123 = "Birkenland"
 4143 = "Ostfold"
 4163 = "Elfsberg" #or "Elfsburg"
 815 = "Fort Loyola"

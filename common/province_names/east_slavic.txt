@@ -347,6 +347,21 @@
 7882 = { "Pochep" "Pochep" }
 
 #Scandinavia
+27 = { "Kaby" "Kaby" }
+28 = { "Usima" "Helsingfors" } #(JP) Swedish name of Helsinki
+#29 Tavastland Proper/Tavastehus
+30 = { "Vyborg" "Vyborg" }
+31 = { "Neishlot" "Neishlot" }
+32 = { "Korela" "Korela" } #(JP) Modern "Priozersk"
+#3128 Satakunda/Ulvsby
+#4123 Birkaland/Tammerfors
+4124 = { "Ilomansk" "Ilomansk" } #(JP) seems like the province is meant to represent this as this is where the nudge town is placed
+#7803 North Tavastland/Jyväskylä
+7804 = { "Kuopio" "Kuopio" } #(JP) Base names
+#7805 South Tavastland/Lahti
+7806 = { "Yaaski" "Yaaski" } #(JP) Modern "Lesogorsky"
+7807 = { "Borjo" "Borjo" }
+7808 = { "Serdobol" "Serdobol" }
 
 #Baltic
 35 = { "Yezel" "Arensburg" } #(JP) kept capital as German name, as that is likeliest for Russia.
@@ -876,12 +891,6 @@
 
 #Unsorted and Uncapitalised
 19 = "Nikolaistadt"
-27 = "Abo"
-28 = "Helsingfors"
-29 = "Tammerfors"
-30 = "Vyborg"
-31 = "Sankt Michel"
-32 = "Korela"	#BTCHANGE was Priozersk
 151 = "Tsargrad"
 315 = "Pechenga"
 423 = "Tiflis"
