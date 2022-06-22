@@ -301,6 +301,80 @@
 #(JP) This is based on the idea that if the British Raj continued and inherited the rest, it would likely have standardised the names further
 
 #Hindustan
+506 = { "Multan" "Multan" }
+507 = { "Lahore" "Lahore" }
+508 = { "Cashmeer" "Srinagar" } 
+509 = { "Kangra" "Kangra" }
+510 = { "Sirhind" "Sirhind" }
+511 = { "Tehri" "Srinagar" }
+522 = { "Delhi" "Delhi" }
+523 = { "Lucknow" "Lucknow" }
+524 = { "Muttra" "Muttra" }
+528 = { "Kotah" "Kotah" }
+554 = { "Jumla" "Jumla" }
+555 = { "Jaunpore" "Jaunpore" }
+556 = { "Allahabad" "Allahabad" }
+557 = { "Katmandu" "Katmandu" }
+558 = { "Patna" "Patna" }
+559 = { "Jhansy" "Jhansy" }
+740 = { "Chanderry" "Chanderry" }
+2047 = { "Sugauna" "Sugauna" }
+2055 = { "Gorakhpore" "Gorakhpore" }
+2059 = { "Kalpy" "Kalpy" }
+2060 = { "Meerut" "Meerut" }
+2061 = { "Rohilkhand" "Budaun" }
+2062 = { "Panipat" "Panipat" }
+2063 = { "Etawah" "Etawah" }
+2065 = { "Hissar" "Hissar" }
+2069 = { "Kemaon" "Fort Moira" }
+2070 = { "Gorkha" "Gorkha" }
+2071 = { "Limbuwan" "Phedap" }
+2073 = { "Gilgit" "Gilgit" }
+2074 = { "Ladakh" "Leh" }
+2075 = { "Jullundur" "Jullundur" }
+2076 = { "Sialkot" "Sialkot" }
+2077 = { "Campbellpore" "Campbellpore" } #(JP) Technically "Attock" rather than "Rawalpindi", but still
+2078 = { "Edwardesabad" "Edwardesabad" }
+2079 = { "Jampore" "Jampore" }
+2086 = { "Uch" "Uch" }
+2094 = { "Bahraich" "Bahraich" }
+2095 = { "Benares" "Benares" }
+2097 = { "Rewah" "Rewah" }
+2098 = { "Sarguja" "Ambicapore" }
+4411 = { "Patiala" "Patiala" }
+4449 = { "Jammu" "Jammu" }
+4459 = { "Saugor" "Saugor" }
+4463 = { "Hanumangarh" "Hanumangarh" }
+4464 = { "Bundy" "Bundy" }
+4465 = { "Ranthambore" "Ranthambore" }
+4466 = { "Mahoba" "Mahoba" }
+4467 = { "Kallinjar" "Kallinjar" }
+4468 = { "Bandhogarh" "Bandhogarh" }
+4469 = { "Rohtasgarh" "Rohtasgarh" }
+4472 = { "Monghyr" "Monghyr" }
+4483 = { "Morang" "Rangeli" }
+4484 = { "Makwanpore" "Makwanpore" }
+4485 = { "Palpa" "Tansen" }
+4487 = { "Saran" "Chapra" }
+4488 = { "Champaran" "Simraon" }
+4489 = { "Hajepore" "Hajepore" }
+4490 = { "Ghazipore" "Ghazipore" }
+4491 = { "Dang" "Dang" }
+4492 = { "Doti" "Doti" }
+4493 = { "Sirmoor" "Nahan" }
+4494 = { "Khairabad" "Khairabad" }
+4495 = { "Fyzabad" "Fyzabad" }
+4496 = { "Fatehpore" "Fatehpore" }
+4497 = { "Cannodge" "Cannodge" }
+4498 = { "Sambhal" "Sambhal" }
+4499 = { "Bareilly" "Bareilly" }
+4508 = { "Bahawalpore" "Bahawalpore" }
+4509 = { "Carore" "Carore" }
+4510 = { "Lyallpore" "Lyallpore" }
+4511 = { "Bhera" "Bhera" }
+4513 = { "Montgomery" "Montgomery" } #(JP) Very English, I like
+4521 = { "Little Tibet" "Skardo" }
+
 #Western India
 503 = { "Cutch" "Bhuj" }
 504 = { "Tatta" "Tatta" }
@@ -354,6 +428,7 @@
 #Deccan
 529 = { "Bombay" "Bombay" }
 530 = { "Dabul" "Dabul" }
+531 = { "Coondapore" "Coondapore"
 532 = { "Raichore" "Raichore" }
 533 = { "Mysore" "Mysore" }
 534 = { "Calicut" "Calicut" }
@@ -411,7 +486,7 @@
 #Coromandel
 536 = { "Madura" "Madura" }
 538 = { "Coimbatore" "Coimbatore" }
-539 = { "Pulicat" "Pulicat" }
+539 = { "Madras" "Madras" }
 540 = { "Cuddalore" "Cuddalore" }
 543 = { "Machilipatnam" "Machilipatnam" }
 549 = { "Vizianagaram" "Vizianagaram" }
@@ -448,6 +523,55 @@
 8581 = { "Nicobar Islands" "Car Nicobar" }
 
 #Bengal
+547 = { "Bastar" "Jagdalpore" }
+552 = { "Cuttack" "Cuttack" }
+553 = { "Sambalpore" "Sambalpore" }
+560 = { "Chota Nagpur" "Ranchi" }
+561 = { "Canning" "Canning" }
+562 = { "Cooch Behar" "Cooch Behar" }
+563 = { "English Bazar" "English Bazar" }
+564 = { "Dacca" "Dacca" }
+566 = { "Charaideo" "Charaideo" }
+567 = { "Sylhet" "Sylhet" }
+568 = { "Chittagong" "Chittagong" }
+570 = { "Dimapore" "Dimapore" }
+571 = { "Darrang" "Tezpore" }
+573 = { "Cachar" "Maibang" }
+2038 = { "Midnapore" "Midnapore" }
+2039 = { "Backergunge" "Barisal" }
+2040 = { "Sadiya" "Sadiya" }
+2041 = { "Manipore" "Manipore" }
+2042 = { "Cooch Hajo" "Hajo" }
+2043 = { "Balasore" "Balasore" }
+2044 = { "Bagalpore" "Bagalpore" }
+2045 = { "Rangpore" "Rangpore" }
+2046 = { "Nasirabad" "Nasirabad" }
+2048 = { "Jeypore" "Jeypore" }
+2049 = { "Khurda" "Khurda" }
+2081 = { "Birbhum" "Suri" }
+2082 = { "Raipore" "Raipore" }
+2091 = { "Lushai Hills" "Aijal" }
+2096 = { "Deoghar" "Deoghar" }
+4440 = { "Narayanpore" "Narayanpore" }
+4441 = { "Ganjam" "Berhampore" }
+4445 = { "Canker" "Canker" }
+4446 = { "Karond" "Bhowani Patna" }
+4447 = { "Patna" "Patna" }
+4448 = { "Khemundy" "Parlakhemundy" }
+4450 = { "Mohurbunge" "Baripada" }
+4451 = { "Sonpore" "Sonpore" }
+4452 = { "Ratanpore" "Ratanpore" }
+4470 = { "Palkot" "Palkot" }
+4471 = { "Bishnupore" "Bishnupore" }
+4473 = { "Tippera" "Udaipore" }
+4474 = { "Comilla" "Comilla" }
+4475 = { "Faridpore" "Faridpore" }
+4476 = { "Nadia" "Nadia" }
+4477 = { "Calcutta" "Calcutta" }
+4478 = { "Kishorganj" "Kishorganj" }
+4479 = { "Beuleah" "Beuleah" }
+4486 = { "Purnea" "Purnea" }
+
 #Burma
 #Indochina
 #Malaysia
@@ -755,7 +879,6 @@
 2555 = "Pittsburgh"
 2557 = "West Branch"
 2558 = "Catskills"
-2559 = "Ticonderoga"
 2560 = "New Haven"
 2561 = "Plymouth"
 2562 = "Keene"
@@ -834,7 +957,6 @@
 2020 = "Idaho Falls" # Bohoinee								#Anglophone name problem bad name need better
 2021 = "San Francisco" # Miwok								#
 2022 = "Haida" # Xaayda											#Generic name
-2078 = "Palm Desert" # Nuwa									#Anglophone name
 2476 = "San Diego" # Payomkawichum					#Iberian name used by Anglophone
 2477 = "Fortuna" # Natinixwe									#Christian name used by Anglophone
 2478 = "Searles Valley" # Natinixwe							#
@@ -1594,7 +1716,6 @@
 
 #tejas
 883 = "San Antonio"
-888 = "Houston"
 2498 = "El Paso County"
 2666 = "Del Rio"
 2667 = "Piedras Negras"
@@ -1887,17 +2008,6 @@
 #East Indies
 8632 = "Hog Island"
 
-#India
-529 = "Bombay"
-539 = "Madras"
-543 = "Masulipatnam"
-561 = "Calcutta"
-2080 = "Chicacole"
-2084 = "Rajahmundry"
-4409 = "Trincomalee"
-4417 = "Conjeevaram"
-4425 = "Kondaveedu"
-
 #By Math Jan 2019
 2469 = "Mazagan"
 5872 = "Quinault"
@@ -1932,7 +2042,7 @@
 #Panama
 2819 = "New Edinburgh" #Historical Scottish settlement
 
-#Nicaragua"
+#Nicaragua
 838 = "Sandy Bay" #Capital of Mosquito Protectorate
 2660 = "Greytown" #Historical settlement in San Juan del Norte
 2661 = "Cape River" #English name; unknown origin
@@ -1941,7 +2051,6 @@
 #Guatemala
 839 = "Salvador" #Possible Anglicization
 841 = "Guatimala"
-2636 = "Vera Paz"
 
 #Honduras
 840 = "Truxillo"
