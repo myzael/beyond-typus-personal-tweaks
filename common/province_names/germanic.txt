@@ -478,8 +478,10 @@
 149 = { "Adrianopel" "Adrianopel" } #
 150 = { "Plewen" "Plewen" }
 151 = { "Konstantinopel" "Konstantinopel" }
+152 = { "Warasdin" "Warasdin" }
 159 = { "Silistrien" "Silistrien" } #
 1766 = { "Neubergen" "Neubergen" } #(Arga) from Nyeu-Berghe in middle saxon
+1767 = { "Essegg" "Essegg" }
 1828 = { "Niederkroatien" "Weina Luka" }
 1853 = { "Kastorien" "Kastorien" } #
 2750 = { "Pulden" "Pulden" }
@@ -494,6 +496,7 @@
 3181 = { "Valona" "Valona" } #
 3182 = { "Schkodra" "Schkodra" }
 3183 = { "Bitola" "Bitola" } #
+3190 = { "Wirowitiza" "Wirowitiza" }
 3193 = { "Jaitze" "Jaitze" }
 3196 = { "Karlstadt" "Karlstadt" }
 4174 = { "Durrach" "Durrach" }
@@ -504,6 +507,7 @@
 4753 = { "Jadera" "Jadera" } #
 4754 = { "Kotor" "Kotor" }
 4755 = { "Wischegrad" "Wischegrad" }
+4756 = { "Bellowar" "Bellowar" }
 4175 = { "Alessio" "Alessio" } #
 7111 = { "Boötien" "Livadeia" }
 7113 = { "Phthiotes" "Zethunien" } #
@@ -516,6 +520,7 @@
 7709 = { "Taschlidscha" "Taschlidscha" }
 7711 = { "Wragi" "Wragi" } 
 7717 = { "Uzice" "Uzice" }
+7718 = { "Syrmien" "Mitrowitz" }
 7139 = { "Sozopol" "Sozopol" } #also Sosopol
 7721 = { "Travunien" "Trebing" }
 7722 = { "Hoca" "Hoca" }
@@ -528,6 +533,9 @@
 7732 = { "Sibenik" "Sibenik" }
 7734 = { "Zengg" "Zengg" }
 7736 = { "Sissek" "Sissek" }
+7738 = { "Poschegg" "Poschegg" }
+7739 = { "Wukowar" "Wukowar" }
+8187 = { "Daruwar" "Daruwar" }
 
 #Carpathia
 135 = { "Ödenburg" "Ödenburg" }
@@ -633,16 +641,6 @@
 8493 = { "Sarand" "Sarand" }
 8494 = { "Olsnitz" "Olsnitz" }
 8495 = { "Großkirchen" "Großkirchen" }
-
-1767 = { "Essegg" "Essegg" }
-
-152 = { "Warasdin" "Warasdin" }
-3190 = { "Wirowitiza" "Wirowitiza" }
-4756 = { "Bellowar" "Bellowar" }
-7718 = { "Syrmien" "Mitrowitz" }
-7738 = { "Poschegg" "Poschegg" }
-7739 = { "Wukowar" "Wukowar" }
-8187 = { "Daruwar" "Daruwar" }
 
 #Ruthenia
 261 = { "Halitsch" "Halitsch" }

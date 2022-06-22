@@ -4,19 +4,6 @@
 #(JP) Following the guidline "The culture is not the primary culture of any starting tag in BT pre-1500. If the culture isn't primary for anything, it is generally unoffensive if someone wants to actually do the work involved for the fringe 1/500th of the time it will show up."
 #(JP) Contributions from Arga and Fatharitan
 
-#Most found in east slavic entry, but a few moved here because I assume engine reads the 'e' in east slavic before the 'r' in russian and ruthenian, so anything different from one another within the family needs to go in individual culture entries - Draiocht
-#282 = "Ochakov"
-2406 = "Nikolaev"
-2961 = "Lvov"
-2962 = "Rovno"
-3242 = "Aleksandria"			#Formerly Novaja Serbija, changed for obvious reasons, though note new options is not ideal either. Hard province to name.
-
-
-
-#Arga's work
-
-#2017 Jul 14
-
 #eastern Europe
 33 = "Niava"
 38 = "Ryha"

@@ -12,8 +12,6 @@
 2406 = "Kyzy-Kerman"
 2410 = "Bagçasaray" #or I think "Baghçasaray", the current name "Bakhchysarai" I had suggested is in a different language
 
-
-
 #2017 Jun 5
 
 #Eastern europe
@@ -22,14 +20,10 @@
 1756 = "Izmayil" #or "Kiliya" (Izmayil might be of more importance considering the khanate)
 1942 = "Jitormir"
 
-
-
 #2017 Jun 10
 
 #levante 
 379 = "Urshelim"			#not sure, or "Qudus", "Yerusalim"
-
-
 
 #2017 Jun 25
 
@@ -1066,3 +1060,5 @@
 7197 = { "Çiçaklei" "Çiçaklei" }
 7199 = { "Orliç" "Orliç" }
 7257 = { "Samar" "Samar" }
+
+#Pontic Steppe

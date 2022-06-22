@@ -117,6 +117,8 @@
 7858 = { "Hlybokoye" "Hlybokoye" }
 7882 = { "Pochep" "Pochep" }
 
+#Pontic Steppe
+
 #Carpathia
 135 = { "Shopron" "Shopron" }
 153 = { "Pesht" "Pesht" }
@@ -345,11 +347,6 @@
 257 = "Varshava"
 259 = "Sandomyrs"
 2959 = "Tarnov"
-
-#2017 Dec 16 (replaced May 31 with complete overhaul)
-
-#Belarus
-276 = "Pynsk"
 
 #Ruthenia
 3271 = "Bilyy"
@@ -1080,7 +1077,6 @@
 #2017 Dec 16 (replaced May 31 with complete overhaul)
 
 #Belarus
-276 = "Pynsk"
 3233 = "Novohrudock"
 
 #Ruthenia
@@ -1365,7 +1361,6 @@
 7216 = "Braslav"
 
 #Bryansk
-3270 = "Starodub"
 5685 = "Roslavl'"
 
 ##Carpathia 
