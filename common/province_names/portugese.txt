@@ -1941,7 +1941,7 @@
 5802 = { "Costa da Meialua" "Meialua" } #Crescent City 
 5803 = { "Arroio do Corno" "Arroio do Corno" } #Hornbrook
 5804 = { "Vila Rosa" "Vila Rosa" } #Roseburg 
-5805 = { "Oregão" "Cidad de Oregão" } #Oregon City
+5805 = { "Oregão" "Cidade de Oregão" } #Oregon City
 5806 = { "Glenoma" "Glenoma" } #Glenoma 
 5807 = { "Nova Albufeira" "Porto Horta" } #Port Orchard
 5808 = { "Concreto" "Concreto" } #Concrete
