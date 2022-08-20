@@ -35,7 +35,7 @@
 2754 = { "Cidade Real" "Cidade Real" }
 2755 = { "Sória" "Sória" }
 2987 = { "Urgel" "Seu de Urgel" }
-2989 = { "Rioxa" "Logronho" }
+2989 = { "Rioja" "Logronho" }
 2990 = { "Terol" "Terol" }
 3095 = { "Calataiú" "Calataiú" }
 3100 = { "Plasência" "Plasência" }
@@ -74,14 +74,14 @@
 8057 = { "Solana" "Solana" }
 8058 = { "Belalcácer" "Belalcácer" }
 8059 = { "Alcácer" "Alcácer" }
-8060 = { "Truxilho" "Truxilho" }
+8060 = { "Trujilho" "Trujilho" }
 8061 = { "Alcântara" "Alcântara" }
 8062 = { "Lerena" "Lerena" }
 8063 = { "Olivença" "Olivença" }
 8065 = { "Vilena" "Vilena" }
 8073 = { "Pedroches" "Poçobranco" }
 8074 = { "Palma do Rio" "Palma do Rio" }
-8078 = { "Medina-Sidónia" "Medina-Sidónia" }
+8078 = { "Medina-Sidônia" "Medina-Sidônia" }
 8079 = { "Sáfara" "Sáfara da Serra" }
 8081 = { "Antequeira" "Antequeira" }
 8082 = { "Alfama" "Alfama" }
@@ -105,7 +105,7 @@
 8113 = { "Osona" "Vique" }
 8114 = { "Ampúrias" "Figueiras" }
 8116 = { "Alcaniz" "Alcaniz" }
-8117 = { "Albarracim" "Albarracim" }
+8117 = { "Albarrazim" "Albarrazim" }
 8121 = { "Almadém" "Almadém" }
 
 #Low Countries
@@ -391,7 +391,7 @@
 80 = { "Tréveres" "Tréveres" }
 82 = { "Vestefália" "Arnesberga" }
 84 = { "Berga" "Dusseldórfia" }
-85 = { "Colônia" "Colônia" }
+85 = { "Colonha" "Colonha" }
 86 = { "Muniste" "Muniste" }
 1758 = { "Hanôver" "Hanôver" }
 1760 = { "Coblença" "Coblença" }
