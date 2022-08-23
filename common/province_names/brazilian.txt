@@ -1740,7 +1740,7 @@
 2595 = { "Ilha à Cruz" "Ilha à Cruz" } #Île-à-la-Crosse
 2596 = { "Sinceridade" "Sinceridade" } #Hohe 
 2597 = { "Príncipe Filipe" "Príncipe Filipe" } #Prince Albert 
-2598 = { "Alce" "Alce" } #Moose Jaw
+2598 = { "Queixada de Alce" "Queixada de Alce" } #Moose Jaw
 2602 = { "Covoada" "Covoada" } #Calgary 
 4990 = { "Esquimal" "Esquimal" } #Eskimo Point 
 4901 = { "Centrália" "Centrália" } #Fargo
@@ -1854,7 +1854,7 @@
 2019 = { "Prados Novos" "Prados Novos" } #New Meadows
 2020 = { "Cachoeiras de Idaó" "Cachoeiras de Idaó" } #Idaho Falls
 2022 = { "Ilha Santa Margarida" "Porto Clemência" } #Port Clements
-2477 = { "Cabo Mendoncinho" "Nueva Jesuralém" } #Petrolia/New Jerusalem 
+2477 = { "Cabo Mendoncinho" "Nova Jesuralém" } #Petrolia/New Jerusalem 
 2480 = { "Monte Xasta" "Vila do Monte Xasta" } #Mount Shasta
 2481 = { "Rio de Aguilar" "Rio de Aguilar" } #Coose Bay 
 2482 = { "Monte Alba" "Povo do Monte" } #Mount Hood
@@ -1887,7 +1887,7 @@
 4958 = { "Cachoeiras Maclajos" "Cachoeiras Maclajos" } #Klamath Falls 
 4960 = { "Porta do Inferno" "Missula" } #Missoula
 4961 = { "Povo São Luís" "Povo São Luís" } #Lewiston
-4972 = { "Arroio do Telégrafo" "Arroyo do Telégrafo" } #Telegraph Creek
+4972 = { "Arroio do Telégrafo" "Arroio do Telégrafo" } #Telegraph Creek
 4988 = { "Forte São João" "Forte São João" } #Fort St. John
 5017 = { "Vale de Jordão" "Vale de Jordão" } #Jordan Valley 
 5031 = { "Porto Trindade" "Porto Trindade" } #Trinidad Bay
