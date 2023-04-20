@@ -125,7 +125,223 @@ demand_unlawful_territory_action = {
 # ask_for_tributary_state_action
 # knowledge_sharing
 
+#Cut because the Grand Crusade war doesn't really have any place in the current content, but it could be very useful for the future.
+#Also modders should have the chance to just uncomment it all so they can experience the great 30 Years War like Crusade.
+declarewar = {
+	#condition = {
+	#	tooltip = GRAND_CRUSADE_NO_OTHER_WAR
+	#	potential = { }
+	#	allow = {
+	#		NOT = {
+	#			is_in_war = {
+	#				attacker_leader = ROOT
+	#				casus_belli = cb_grand_crusade
+	#			}
+	#		}
+	#	}
+	#}
+	#effect = {
+	#	if = {
+	#		limit = {
+	#			has_global_flag = grand_crusades_enabled
+	#			has_country_flag = grand_crusader_war_monger_flag
+	#			is_in_war = {
+	#				attacker_leader = ROOT
+	#				casus_belli = cb_grand_crusade
+	#			}
+	#		}
+	#		FROM = {
+	#			save_global_event_target_as = grand_crusade_target
+	#		}
+	#	}
+	#}
+	condition = {
+		tooltip = AI_CANNOT_DECLARE_WHEN_STABILITY_LOSS
+		potential = {
+			ai = yes
+		}
+		allow = {
+			ai = yes
+			NOT = {
+				has_global_modifier_value = {
+					which = stability_cost_to_declare_war
+					value = 1
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WARS_OTHER_THAN_INDEPENDENCE_WARS
+		potential = {
+			has_country_modifier = revoked_war_rights
+			FROM = { NOT = { overlord_of = ROOT } }
+		}
+		allow = {
+			OR = {
+				NOT = { has_country_modifier = revoked_war_rights }
+				FROM = { overlord_of = ROOT }
+			}
+		}
+	}
+	effect = {
+		on_war_declaration_effect = yes
+		if = {
+			limit = { 
+				has_country_flag = nor_norwegian_independence_modifier
+				FROM = { tag = DAN }
+			}
+			add_country_modifier = {
+				name = nor_norwegian_independence_war_mod
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = teu_joined_the_hre
+				tag = TEU
+				is_part_of_hre = yes
+				FROM = { is_part_of_hre = yes }
+			}
+			clr_country_flag = teu_joined_the_hre
+			country_event = {
+				id = flavor_teu.33
+				days = 10
+			}
+		}
+	}
+}
 
+allianceaction = {
+	condition = {
+		tooltip = PIRATE_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_pirates
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_pirates }
+				FROM = { has_government_attribute = is_pirate_republic_reform }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_PIRATE_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_pirates
+			}
+			NOT = { has_government_attribute = is_pirate_republic_reform }
+		}
+		allow = {
+			OR = {
+				has_government_attribute = is_pirate_republic_reform
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_pirates } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics }
+				FROM = { government = republic }
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics
+			}
+			NOT = { government = republic }
+		}
+		allow = {
+			OR = {
+				government = republic
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics } }
+			}
+		}
+	}
+	condition = {
+		tooltip = REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			has_government_attribute = cannot_ally_non_republics_or_non_rev
+		}
+		allow = {
+			OR = {
+				NOT = { has_government_attribute = cannot_ally_non_republics_or_non_rev }
+				FROM = { 
+					OR = {
+						government = republic 
+						is_revolutionary = yes
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = FROM_REV_REPUBLIC_DENIED_ALLIANCE
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_ally_non_republics_or_non_rev
+			}
+			NOT = { government = republic }
+			is_revolutionary = no
+		}
+		allow = {
+			OR = {
+				government = republic 
+				is_revolutionary = yes
+				NOT = { FROM = { has_government_attribute = cannot_ally_non_republics_or_non_rev } }
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_MAKE_ALLIANCES
+		potential = {
+			has_government_attribute = cannot_form_alliances
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_form_alliances }
+		}
+	}
+	condition = {
+		tooltip = FROM_CANNOT_MAKE_ALLIANCES
+		potential = {
+			FROM = {
+				has_government_attribute = cannot_form_alliances
+			}
+		}
+		allow = {
+			NOT = { FROM = { has_government_attribute = cannot_form_alliances } }
+		}
+	}
+}
+
+enforce_peace = {
+	#do this before the peace is enforced, or there is no war enemy country
+	pre_effect = {
+		if = {
+			limit = {
+				has_country_modifier = liv_protector_of_the_catholics
+				FROM = {
+					any_war_enemy_country = {
+						religion = catholic
+						is_in_war = {
+							defender_leader = THIS
+							attacker_leader = FROM
+						}
+					}
+				}
+			}
+			add_papal_influence = 25
+		}
+	}
+}
 
 
 royal_marriage = {
@@ -144,7 +360,11 @@ annexationaction = {
 		tooltip = ANNEX_TOO_LOW
 		potential = {
 			FROM = {
-				vassal_of = ROOT
+				OR = {
+					is_subject_of_type = core_eyalet
+					is_subject_of_type = appanage
+					vassal_of = ROOT
+				}
 			}
 		}
 		allow = {
@@ -172,6 +392,29 @@ annexationaction = {
 	#		}
 	#	}
 	#}
+	condition = {
+		tooltip = CANNOT_ANNEX
+		potential = {
+			FROM = {
+				has_country_modifier = tur_mamlukian_administration
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = { has_country_modifier = tur_mamlukian_administration }
+			}
+		}
+	}
+	condition = {
+		tooltip = NEEDS_50_CROWNLAND_TT
+		potential = {
+			has_government_attribute = need_crownland_to_annex
+			NOT = { crown_land_share = 50 }
+		}
+		allow = {
+			crown_land_share = 50
+		}
+	}
 }
 
 integrationaction = {
@@ -189,20 +432,28 @@ integrationaction = {
 			}
 		}
 	}
-	#condition = {
-	#	tooltip = INTEGRATEINVALID
-	#	potential = {
-	#		senior_union_with = FROM
-	#	}
-	#	allow = {
-	#		FROM = {
-	#			years_in_union_under = {
-	#				who = ROOT
-	#				years = 50
-	#			}
-	#		}
-	#	}
-	#}
+	condition = {
+		tooltip = PUINTEGRATIONIMPOSSIBLE
+		potential = {
+			has_government_attribute = cannot_integrate_personal_unions
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_integrate_personal_unions }
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX
+		potential = {
+			FROM = {
+				has_country_modifier = tur_mamlukian_administration
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = { has_country_modifier = tur_mamlukian_administration }
+			}
+		}
+	}
 }
 
 vassalaction = {
@@ -223,7 +474,7 @@ vassalaction = {
 	}
 }
 
-abandon_union_action = {
+abandon_union = {
 	condition = {
 		potential = {
 		}
@@ -232,6 +483,15 @@ abandon_union_action = {
 				senior_union_with = FROM
 				is_at_war = no
 			}
+		}
+	}
+	condition = {
+		tooltip = PUABANDONINGIMPOSSIBLE
+		potential = {
+			has_government_attribute = cannot_abandon_personal_unions
+		}
+		allow = {
+			NOT = { has_government_attribute = cannot_abandon_personal_unions }
 		}
 	}
 }
@@ -335,5 +595,11 @@ ask_for_tributary_state_action = {
 				}
 			}
 		}
+	}
+}
+
+break_alliance = {
+	effect = {
+		on_alliance_broken_effect = yes
 	}
 }
