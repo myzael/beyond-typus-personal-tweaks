@@ -20,6 +20,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Cradle of Civilization"
+		religion_group = muslim
 		has_religious_school = yes
 		total_development = 50
 		num_of_cities = 5
@@ -97,6 +98,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Cradle of Civilization"
+		religion_group = muslim
 		has_religious_school = yes
 		total_development = 50
 		num_of_cities = 5
@@ -162,6 +164,7 @@ country_event = {
 	
 	trigger = {
 		has_dlc = "Cradle of Civilization"
+		religion_group = muslim
 		has_religious_school = yes
 		total_development = 50
 		num_of_cities = 5
@@ -271,11 +274,10 @@ country_event = {
 	title = muslim_school_events.1.t
 	desc = muslim_school_events.1.d
 	picture = MUSLIM_SCHOLAR_WRITING_eventPicture
-	
+	goto = mufti_province
 	trigger = {
 		religion_group = muslim
 		NOT = { religion = shiite }
-		NOT = { religion = alawite }
 		has_dlc = "Cradle of Civilization"
 		has_religious_school = yes
 		any_owned_province = {
@@ -816,8 +818,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		any_owned_province = {
 			is_capital = no
 			has_building = temple
@@ -918,8 +918,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		at_war_with_religious_enemy = yes
 		has_border_with_religious_enemy = yes
 		any_country = {
@@ -1019,8 +1017,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		OR = {
 			owns_core_province = 379 #Jerusalem
 			owns_core_province = 384 #Medina
@@ -1191,8 +1187,8 @@ country_event = {
 			NOT = {
 				owns_core_province = 385 #Mecca
 			}
+			NOT = { religion = shiite }
 			NOT = {
-				religion = shiite
 				owns_core_province = 2311 #Najaf
 			}
 		}
@@ -1750,8 +1746,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		NOT = { has_global_flag = neo_sufism }
 		any_owned_province = {
 			NOT = { religion_group = muslim }
@@ -1884,10 +1878,6 @@ country_event = {
 				our_scholar_matches_their_school_trigger = { school=zaidi }
 				our_scholar_matches_their_school_trigger = { school=ismaili }
 				our_scholar_matches_their_school_trigger = { school=jafari }
-				our_scholar_matches_their_school_trigger = { school=haddadin }			# BT Alawite
-				our_scholar_matches_their_school_trigger = { school=kalbiyya }			# BT Alawite
-				our_scholar_matches_their_school_trigger = { school=khayatin }			# BT Alawite
-				our_scholar_matches_their_school_trigger = { school=matawira }			# BT Alawite
 			}
 			has_opinion = { who = ROOT value = 150 }
 			OR = {
@@ -1910,10 +1900,6 @@ country_event = {
 						our_scholar_matches_their_school_trigger = { school=zaidi }
 						our_scholar_matches_their_school_trigger = { school=ismaili }
 						our_scholar_matches_their_school_trigger = { school=jafari }
-						our_scholar_matches_their_school_trigger = { school=haddadin }			# BT Alawite
-						our_scholar_matches_their_school_trigger = { school=kalbiyya }			# BT Alawite
-						our_scholar_matches_their_school_trigger = { school=khayatin }			# BT Alawite
-						our_scholar_matches_their_school_trigger = { school=matawira }			# BT Alawite
 					}
 					has_opinion = { who = ROOT value = 150 }
 					OR = {
@@ -1964,28 +1950,12 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				religion = alawite
-				OR = {
-					has_country_modifier = haddadin_scholar_modifier
-					has_country_modifier = kalbiyya_scholar_modifier
-					has_country_modifier = khayatin_scholar_modifier
-					has_country_modifier = matawira_scholar_modifier
-				}
-			}
-			add_church_power = 30
-		}
-		else_if = {
-			limit = {
-				OR = {
-					religion = ibadi
-					religion = druze
-				}
+				religion = ibadi
 			}
 			add_piety = 0.15
 		}
 		else = { #We have invited scholars from another religion.
 			add_piety = -0.15
-			add_church_power = -30
 		}
 		define_advisor = {
 			type = theologian
@@ -2023,28 +1993,12 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				religion = alawite
-				OR = {
-					has_country_modifier = haddadin_scholar_modifier
-					has_country_modifier = kalbiyya_scholar_modifier
-					has_country_modifier = khayatin_scholar_modifier
-					has_country_modifier = matawira_scholar_modifier
-				}
-			}
-			add_church_power = 30
-		}
-		else_if = {
-			limit = {
-				OR = {
-					religion = ibadi
-					religion = druze
-				}
+				religion = ibadi
 			}
 			add_piety = 0.15
 		}
 		else = { #We have invited scholars from another religion.
 			add_piety = -0.15
-			add_church_power = -30
 		}
 		add_adm_power = 25
 	}
@@ -2073,10 +2027,6 @@ country_event = {
 				our_scholar_matches_their_school_trigger = { school=zaidi }
 				our_scholar_matches_their_school_trigger = { school=ismaili }
 				our_scholar_matches_their_school_trigger = { school=jafari }
-				our_scholar_matches_their_school_trigger = { school=haddadin }			# BT Alawite
-				our_scholar_matches_their_school_trigger = { school=kalbiyya }			# BT Alawite
-				our_scholar_matches_their_school_trigger = { school=khayatin }			# BT Alawite
-				our_scholar_matches_their_school_trigger = { school=matawira }			# BT Alawite
 			}
 		}
 	}
@@ -2093,10 +2043,6 @@ country_event = {
 						our_scholar_matches_their_school_trigger = { school=zaidi }
 						our_scholar_matches_their_school_trigger = { school=ismaili }
 						our_scholar_matches_their_school_trigger = { school=jafari }
-						our_scholar_matches_their_school_trigger = { school=haddadin }			# BT Alawite
-						our_scholar_matches_their_school_trigger = { school=kalbiyya }			# BT Alawite
-						our_scholar_matches_their_school_trigger = { school=khayatin }			# BT Alawite
-						our_scholar_matches_their_school_trigger = { school=matawira }			# BT Alawite
 					}
 				}
 				save_event_target_as = scholar_country
@@ -2136,28 +2082,12 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				religion = alawite
-				OR = {
-					has_country_modifier = haddadin_scholar_modifier
-					has_country_modifier = kalbiyya_scholar_modifier
-					has_country_modifier = khayatin_scholar_modifier
-					has_country_modifier = matawira_scholar_modifier
-				}
-			}
-			add_church_power = 30
-		}
-		else_if = {
-			limit = {
-				OR = {
-					religion = ibadi
-					religion = druze
-				}
+				religion = ibadi
 			}
 			add_piety = 0.15
 		}
 		else = { #We have invited scholars from another religion.
 			add_piety = -0.15
-			add_church_power = -30
 		}
 		event_target:scholar_country = {
 			add_opinion = {
@@ -2215,17 +2145,6 @@ country_event = {
 				has_country_modifier = shafii_scholar_modifier
 			}
 		}
-		# BT Added
-		modifier = {
-			factor = 0.9
-			religion = alawite
-			OR = {
-				has_country_modifier = haddadin_scholar_modifier
-				has_country_modifier = kalbiyya_scholar_modifier
-				has_country_modifier = khayatin_scholar_modifier
-				has_country_modifier = matawira_scholar_modifier
-			}
-		}
 		modifier = {
 			factor = 0.9
 			OR = {
@@ -2262,8 +2181,6 @@ country_event = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
 		NOT = { religion = shiite }
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		any_owned_province = {
 			is_state = yes
 			is_capital = no
@@ -2356,8 +2273,6 @@ country_event = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
 		NOT = { religion = shiite }
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		any_owned_province = {
 			is_state = yes
 			is_capital = no
@@ -2461,8 +2376,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		any_owned_province = {
 			is_state = yes
 			is_capital = no
@@ -2569,8 +2482,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		any_owned_province = {
 			is_state = yes
 			is_capital = no
@@ -2699,8 +2610,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		NOT = { has_country_modifier = "upkeep_of_holy_cities" }
 		OR = {
 			owns_core_province = 379 #Jerusalem
@@ -2837,8 +2746,8 @@ country_event = {
 			NOT = {
 				owns_core_province = 385 #Mecca
 			}
+			NOT = { religion = shiite }
 			NOT = {
-				religion = shiite
 				owns_core_province = 2311 #Najaf
 			}
 		}
@@ -2903,12 +2812,10 @@ country_event = {
 	title = muslim_school_events.16.t
 	desc = muslim_school_events.16.d
 	picture = PRAYER_IN_MOSQUE_eventPicture
-
+	goto = madrasa_province
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		has_religious_scholars_trigger = yes
 		any_owned_province = {
 			is_state = yes
@@ -2992,8 +2899,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		NOT = { has_ruler_modifier = sought_sufi_sheikh }
 		NOT = { has_country_modifier = ruler_not_favoring_sufis }
 		any_owned_province = {
@@ -3155,8 +3060,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		NOT = { stability = 3 }
 	}
 
@@ -3221,10 +3124,6 @@ country_event = {
 			AND = {
 				religion = shiite
 				has_sunni_school_trigger = yes
-			}
-			AND = {
-				religion = alawite
-				has_alawite_school_trigger = yes
 			}
 		}
 	}
@@ -3329,55 +3228,14 @@ country_event = {
 				school = zaidi_school
 			}
 		}
-		else_if = {	#Haddadin in Bargylus
-			limit = {
-				religion = alawite
-				capital_scope = {
-					area = bargylus_area
-				}
-			}
-		}
-		else_if = {	#Kalbiyya in Aleppo and East Syria
-			limit = {
-				religion = alawite
-				capital_scope = {
-					OR = {
-						area = aleppo_area
-						area = syria_area
-					}
-				}
-			}
-		}
-		else_if = {	#Khayatin in Rakka and Mardin
-			limit = {
-				religion = alawite
-				capital_scope = {
-					OR = {
-						area = rakka_area
-						area = mardin_area
-					}
-				}
-			}
-		}
 		else_if = { #Final fallbacks
-			limit = { 
-				NOT = { religion = shiite } 
-				NOT = { religion = alawite }
-			}
+			limit = { NOT = { religion = shiite } }
 			set_religious_school = {
 				group = muslim
 				school = shafii_school
 			}
 		}
-		else_if = {	#Remaining Alawites get this:
-			limit = { religion = alawite }
-			set_religious_school = {
-				group = muslim
-				school = matawira_school
-			}
-		}
 		else = { #Remaining Shiites get this:
-			limit = { religion = shiite }
 			set_religious_school = {
 				group = muslim
 				school = ismaili_school
@@ -3388,7 +3246,6 @@ country_event = {
 		name = muslim_school_events.20.b #Hanafi
 		trigger = {
 			NOT = { religion = shiite }
-			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3400,7 +3257,6 @@ country_event = {
 		name = muslim_school_events.20.c #Hanbali
 		trigger = {
 			NOT = { religion = shiite }
-			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3412,7 +3268,6 @@ country_event = {
 		name = muslim_school_events.20.dd #Maliki
 		trigger = {
 			NOT = { religion = shiite }
-			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3424,7 +3279,6 @@ country_event = {
 		name = muslim_school_events.20.e #Shafi'i
 		trigger = {
 			NOT = { religion = shiite }
-			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3436,7 +3290,6 @@ country_event = {
 		name = muslim_school_events.20.f #Jafari
 		trigger = {
 			NOT = { religion = sunni }
-			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3448,7 +3301,6 @@ country_event = {
 		name = muslim_school_events.20.g #Ismaili
 		trigger = {
 			NOT = { religion = sunni }
-			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
@@ -3460,56 +3312,11 @@ country_event = {
 		name = muslim_school_events.20.h #Zaidi
 		trigger = {
 			NOT = { religion = sunni }
-			NOT = { religion = alawite }
 			ai = no
 		}
 		set_religious_school = {
 			group = muslim
 			school = zaidi_school
-		}
-	}
-	option = {
-		name = muslim_school_events.20.i #Haddadin
-		trigger = {
-			religion = alawite
-			ai = no
-		}
-		set_religious_school = {
-			group = muslim
-			school = haddadin_school
-		}
-	}
-	option = {
-		name = muslim_school_events.20.j #Kalbiyya
-		trigger = {
-			religion = alawite
-			ai = no
-		}
-		set_religious_school = {
-			group = muslim
-			school = kalbiyya_school
-		}
-	}
-	option = {
-		name = muslim_school_events.20.k #Khayatin
-		trigger = {
-			religion = alawite
-			ai = no
-		}
-		set_religious_school = {
-			group = muslim
-			school = khayatin_school
-		}
-	}
-	option = {
-		name = muslim_school_events.20.l #Matawira
-		trigger = {
-			religion = alawite
-			ai = no
-		}
-		set_religious_school = {
-			group = muslim
-			school = matawira_school
 		}
 	}
 }
@@ -3616,8 +3423,6 @@ country_event = {
 	trigger = {
 		has_dlc = "Cradle of Civilization"
 		religion_group = muslim
-		NOT = { religion = alawite }
-		NOT = { religion = druze }
 		OR = {
 			has_pious_sheikh_ul_islam_trigger = yes
 			has_global_flag = neo_sufism
@@ -3817,75 +3622,6 @@ country_event = {
 		}
 		allow_baseline_invite_scholar_privilege = {
 			religious_school = zaidi_school
-		}
-	}
-	
-	# BT Additions
-	option = {
-		name = muslim_school_events.24.i
-		trigger = {
-			NOT = { has_country_flag = can_always_invite_haddadin_school }
-			NOT = { has_country_flag = privilege_can_always_invite_haddadin_school }
-			NOT = {
-				religious_school = {
-					group = muslim
-					school = haddadin_school
-				}
-			}
-		}
-		allow_baseline_invite_scholar_privilege = {
-			religious_school = haddadin_school
-		}
-	}
-	
-	option = {
-		name = muslim_school_events.24.j
-		trigger = {
-			NOT = { has_country_flag = can_always_invite_kalbiyya_school }
-			NOT = { has_country_flag = privilege_can_always_invite_kalbiyya_school }
-			NOT = {
-				religious_school = {
-					group = muslim
-					school = kalbiyya_school
-				}
-			}
-		}
-		allow_baseline_invite_scholar_privilege = {
-			religious_school = kalbiyya_school
-		}
-	}
-	
-	option = {
-		name = muslim_school_events.24.k
-		trigger = {
-			NOT = { has_country_flag = can_always_invite_khayatin_school }
-			NOT = { has_country_flag = privilege_can_always_invite_khayatin_school }
-			NOT = {
-				religious_school = {
-					group = muslim
-					school = khayatin_school
-				}
-			}
-		}
-		allow_baseline_invite_scholar_privilege = {
-			religious_school = khayatin_school
-		}
-	}
-	
-	option = {
-		name = muslim_school_events.24.l
-		trigger = {
-			NOT = { has_country_flag = can_always_invite_matawira_school }
-			NOT = { has_country_flag = privilege_can_always_invite_matawira_school }
-			NOT = {
-				religious_school = {
-					group = muslim
-					school = matawira_school
-				}
-			}
-		}
-		allow_baseline_invite_scholar_privilege = {
-			religious_school = matawira_school
 		}
 	}
 
