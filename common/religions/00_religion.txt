@@ -904,7 +904,6 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
-						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -928,7 +927,6 @@ muslim = {
 					NOT = { has_country_modifier = has_invited_scholar_recently }
 				}
 				NOT = { has_country_modifier = hanafi_scholar_modifier }
-				NOT = { religion = alawite }
 			}
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
@@ -979,7 +977,6 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
-						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1003,7 +1000,6 @@ muslim = {
 					NOT = { has_country_modifier = has_invited_scholar_recently }
 				}
 				NOT = { has_country_modifier = hanbali_scholar_modifier }
-				NOT = { religion = alawite }
 			}
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
@@ -1053,7 +1049,6 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
-						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1077,7 +1072,6 @@ muslim = {
 					NOT = { has_country_modifier = has_invited_scholar_recently }
 				}
 				NOT = { has_country_modifier = maliki_scholar_modifier }
-				NOT = { religion = alawite }
 			}
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
@@ -1127,7 +1121,6 @@ muslim = {
 					limit = {
 						NOT = { religion = sunni }
 						NOT = { religion = ibadi }
-						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1151,7 +1144,6 @@ muslim = {
 					NOT = { has_country_modifier = has_invited_scholar_recently }
 				}
 				NOT = { has_country_modifier = shafii_scholar_modifier }
-				NOT = { religion = alawite }
 			}
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
@@ -1202,7 +1194,6 @@ muslim = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
-						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1226,7 +1217,6 @@ muslim = {
 					NOT = { has_country_modifier = has_invited_scholar_recently }
 				}
 				NOT = { has_country_modifier = ismaili_scholar_modifier }
-				NOT = { religion = alawite }
 			}
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
@@ -1279,7 +1269,6 @@ muslim = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
-						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1303,7 +1292,6 @@ muslim = {
 					NOT = { has_country_modifier = has_invited_scholar_recently }
 				}
 				NOT = { has_country_modifier = jafari_scholar_modifier }
-				NOT = { religion = alawite }
 			}
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
@@ -1353,7 +1341,6 @@ muslim = {
 					limit = {
 						NOT = { religion = shiite }
 						NOT = { religion = ibadi }
-						NOT = { religion = druze }
 					}
 					NOT = { piety = -0.5 }
 				}
@@ -1377,7 +1364,6 @@ muslim = {
 					NOT = { has_country_modifier = has_invited_scholar_recently }
 				}
 				NOT = { has_country_modifier = zaidi_scholar_modifier }
-				NOT = { religion = alawite }
 			}
 
 			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
@@ -1405,146 +1391,7 @@ muslim = {
 			picture = "GFX_icon_muslim_school_zaidi"
 
 			shock_damage_received = -0.1
-		}
-		
-		#New 'Tribal' ?? Schools for Alawites introduced in BT 15.0
-		haddadin_school = {
-			potential_invite_scholar = {
-				knows_of_scholar_country_capital_trigger = yes
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				adm_power_cost = 50
-				religion = alawite
-				reverse_has_opinion = { who = FROM value = 150 }
-				OR = {
-					alliance_with = FROM
-					is_subject_of = FROM
-					overlord_of = FROM
-				}
-				hidden_progressive_opinion_for_scholar_trigger = yes
-				NOT = { has_country_modifier = haddadin_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				adm_power_cost = 50
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = haddadin_scholar_modifier duration = 7300 }
-			}
-			
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = haddadin_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_haddadin"
-
-			prestige_from_naval = 0.2
-		}
-		kalbiyya_school = {
-			potential_invite_scholar = {
-				knows_of_scholar_country_capital_trigger = yes
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				adm_power_cost = 50
-				religion = alawite
-				reverse_has_opinion = { who = FROM value = 150 }
-				OR = {
-					alliance_with = FROM
-					is_subject_of = FROM
-					overlord_of = FROM
-				}
-				hidden_progressive_opinion_for_scholar_trigger = yes
-				NOT = { has_country_modifier = kalbiyya_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				adm_power_cost = 50
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = kalbiyya_scholar_modifier duration = 7300 }
-			}
-			
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = kalbiyya_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_kalbiyya"
-
-			garrison_size = 0.05
-		}
-		khayatin_school = {
-			potential_invite_scholar = {
-				knows_of_scholar_country_capital_trigger = yes
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				adm_power_cost = 50
-				religion = alawite
-				reverse_has_opinion = { who = FROM value = 150 }
-				OR = {
-					alliance_with = FROM
-					is_subject_of = FROM
-					overlord_of = FROM
-				}
-				hidden_progressive_opinion_for_scholar_trigger = yes
-				NOT = { has_country_modifier = khayatin_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				adm_power_cost = 50
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = khayatin_scholar_modifier duration = 7300 }
-			}
-			
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = khayatin_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_khayatin"
-
-			missionary_maintenance_cost = -0.1
-		}
-		matawira_school = {
-			potential_invite_scholar = {
-				knows_of_scholar_country_capital_trigger = yes
-			}
-
-			# THIS = Nation wanting to invite the scholar, FROM = Nation that follows that school
-			can_invite_scholar = {
-				adm_power_cost = 50
-				religion = alawite
-				reverse_has_opinion = { who = FROM value = 150 }
-				OR = {
-					alliance_with = FROM
-					is_subject_of = FROM
-					overlord_of = FROM
-				}
-				hidden_progressive_opinion_for_scholar_trigger = yes
-				NOT = { has_country_modifier = matawira_scholar_modifier }
-			}
-
-			# THIS = Nation wanting to invite the scholar, FORM = Nation that sends scholar
-			on_invite_scholar = {
-				adm_power_cost = 50
-				clear_religious_scholar_modifiers_effect = yes
-				custom_tooltip = INVITE_SCHOLAR_COUNTRY_TEXT
-				add_country_modifier = { name = matawira_scholar_modifier duration = 7300 }
-			}
-			
-			# If you don't set this it will expand on_invite_scholar effect which might be super big
-			invite_scholar_modifier_display = matawira_scholar_modifier
-
-			picture = "GFX_icon_muslim_school_matawira"
-
-			global_own_trade_power = 0.1
-		}
-		
+		}	
 	}
 	
 	sunni = {
@@ -1582,7 +1429,7 @@ muslim = {
 			local_missionary_strength = -0.02
 		}
 		
-		heretic = { HURUFI ZAIDI }			#Druze made its own religion
+		heretic = { HURUFI ZAIDI DRUZE }
 		
 		uses_piety = yes				# Uses piety mechanics
 	}
@@ -1605,62 +1452,6 @@ muslim = {
 		heretic = { HARURI SUFRI NAJADAT AZRAQI }
 		
 		uses_piety = yes				# Uses piety mechanics
-	}
-	
-	#New Muslim religions introduced in BT 15.0
-	druze = {
-		color = { 0 229 102 }
-		icon = 33
-		country = {
-			heir_chance = 1.0
-			dip_tech_cost_modifier = -0.1 # Promoted intellectualism
-			tolerance_heretic = -1 # Renounced 'false' belief
-		}
-		country_as_secondary = {
-			diplomats = 1
-			dip_tech_cost_modifier = -0.05
-		}
-		province = {
-			local_missionary_strength = -0.03
-		}
-		
-		heretic = { SECTARIST }	
-		
-		uses_piety = yes				# Uses piety mechanics
-	}
-	
-	alawite = {
-		color = { 101 148 70 }
-		icon = 32
-		country = {
-			heir_chance = 1.0
-			global_spy_defence = 0.25
-		}
-		country_as_secondary = {
-			land_morale = 0.05
-			defensiveness = 0.10
-		}
-		province = {
-			local_missionary_strength = -0.03
-		}
-		
-		uses_church_power = yes				# Uses church power/aspect mechanics
-		aspects = {
-			followers_of_ali_aspect
-			manifestations_of_god_aspect
-			philosophical_thought_aspect
-			pillars_of_islam_aspect
-			taqiyya_aspect
-			reincarnation_aspect
-			mass_aspect
-			fortified_coasts_aspect
-			unite_tribes_aspect
-			feast_days_aspect
-		}
-		aspects_name = ALAWITE_ASPECTS
-		
-		heretic = { HANBALI JAFARI }
-		
 	}
 	
 	harmonized_modifier = harmonized_muslim
