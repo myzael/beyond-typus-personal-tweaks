@@ -86,7 +86,7 @@ estate_nobles =
 			NOT = { is_state_core = owner }
 		}
 	}
-	
+
 	# Influence modifiers
 	base_influence = 10
 	influence_modifier = {
@@ -217,6 +217,25 @@ estate_nobles =
 	}
 	
 	#Alternative naming of estates
+	custom_name = {
+		desc = estate_oyo_mesi
+		trigger = {
+			tag = OYO
+		}
+	}
+	custom_name = {
+		desc = estate_nakomse
+		trigger = {
+			primary_culture = mossi
+			religion = shamanism
+		}
+	}
+	custom_name = {
+		desc = estate_chieftains
+		trigger = {
+			has_reform = tribal_confederacy
+		}
+	}
 	custom_name = {
 		desc = estate_beys
 		trigger = {
@@ -373,7 +392,23 @@ estate_nobles =
 			religion = animism
 		}
 	}
-
+	custom_name = {
+		desc = estate_warriors
+		trigger = {
+			OR = {
+				government = native
+				has_reform = siberian_tribe
+				has_reform = native_basic_reform
+			}
+		}
+	}
+	custom_name = {
+		desc = estate_mani
+		trigger = {
+			tag = KON
+		}
+	}
+	
 	color = { 200 0 50 }
 	
 	privileges = {
