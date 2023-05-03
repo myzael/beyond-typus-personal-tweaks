@@ -12,8 +12,6 @@ defaults_reform = {
 	heirs_can_be_generals = yes
 	fixed_rank = 0
 	republican_name = no
-	militarised_society = no
-	government_abilities = { }
 	claim_states = no
 	religion = no
 	republic = no
@@ -46,6 +44,7 @@ defaults_reform = {
 	papacy = no
 	has_harem = no
 	has_pashas = no
+	has_janissaries = no
 	allow_vassal_war = no
 	allow_vassal_alliance = no
 	min_autonomy = 0
@@ -63,6 +62,7 @@ defaults_reform = {
 	start_territory_to_estates = 0.8
 	has_term_election = no
 	force_admiral_leader = no
+	force_general_leader = no
 	admirals_become_rulers = no
 	generals_become_rulers = no
 	allow_banners = no
@@ -75,6 +75,12 @@ defaults_reform = {
 	can_customise_heir = yes
 	allow_cawa = no
 	can_change_primary_culture = yes
+	allow_carolean = no
+	can_inherit_personal_unions = yes
+	block_cultural_union = no
+	has_cultural_union = no 
+	can_remove_idea_group = yes
+	mercs_do_not_cost_army_professionalism = no
 }
 
 # legacy governments
@@ -353,6 +359,7 @@ merchant_republic = {
 	
 	custom_attributes = {
 		is_merchant_republic = yes
+		elections_increase_factions_influence = yes
 	}
 
 	ai = {
@@ -420,6 +427,7 @@ venetian_merchant_republic = {
 		lottery_election = yes
 		election_on_death = yes
 		is_merchant_republic = yes
+		elections_increase_factions_influence = yes		
 	}
 
 	ai = {
@@ -488,7 +496,9 @@ prussian_republic = {
 	
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 	
 	custom_attributes = {
@@ -540,7 +550,10 @@ pirate_republic = {
 	can_form_trade_league = no
 
 	nation_designer_trigger = {
-		has_dlc = "Golden Century"
+		OR = {
+			has_dlc = "Golden Century"
+			has_dlc = "Lions of the North"
+		}
 		capital_scope = {
 			has_port = yes
 			OR = {
@@ -556,7 +569,10 @@ pirate_republic = {
 	}
 	
 	potential = {	
-		has_dlc = "Golden Century"
+		OR = {
+			has_dlc = "Golden Century"
+			has_dlc = "Lions of the North"
+		}
 	}
 	
 	factions_frame = 9
@@ -849,10 +865,10 @@ protectorate_parliament_legacy = {
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
-	custom_attributes = {
-		blocked_call_diet = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
 	}
-}
 	has_term_election = no
 }
 
@@ -919,7 +935,7 @@ constitutional_republic = {
 
 	republic = yes
 	modifiers = {
-    	governing_capacity = 300 # BT; 150
+    	governing_capacity = 150
 		production_efficiency = 0.1
 		trade_efficiency = 0.1
 		global_autonomy = -0.075
@@ -931,9 +947,9 @@ constitutional_republic = {
 			has_dlc = "Common Sense"
 		}
 		has_parliament = yes
-	custom_attributes = {
-		blocked_call_diet = yes
-	}
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
 	}
 
 	ai = {
@@ -1697,6 +1713,9 @@ trading_city_legacy = {
 		can_form_trade_league = yes
 		trade_city_reform = merchant_republic # For trade cities this is their fallback government if they get more than 1 provinces
 	}
+	custom_attributes = {
+		elections_increase_factions_influence = yes
+	}
 	ai = {
 		factor = 0
 	}
@@ -1855,7 +1874,7 @@ ottoman_government_legacy = {
 
 
 	modifiers = {
-		governing_capacity = 500 # BT; 250
+		governing_capacity = 250
 		unjustified_demands = -0.1
 		legitimacy = 0.5
 		max_absolutism = 5
@@ -1865,6 +1884,7 @@ ottoman_government_legacy = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		has_harem = yes
 		has_pashas = yes
+		has_janissaries = yes
 	}
 
 	ai = {
@@ -1903,7 +1923,9 @@ prussian_monarchy_legacy = {
 
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 
 	ai = {
@@ -2035,6 +2057,13 @@ shogunate_legacy = {
 		owns = 1020
 	}
 
+	conditional = {
+		allow = { has_dlc = "Mandate of Heaven" }
+		government_abilities = {
+			shogunate_mechanic
+		}
+	}
+
     fixed_rank = 2
 	monarchy = yes
 	modifiers = {
@@ -2043,6 +2072,7 @@ shogunate_legacy = {
 		envoy_travel_time = -0.25
 		max_absolutism = 5
 	}
+	can_change_primary_culture = no
 
 	ai = {
 		factor = 5
@@ -2235,7 +2265,10 @@ veche_republic_legacy = {
 	nation_designer_cost = 40
 
 	nation_designer_trigger = {
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 	}
 
 	factions = {
@@ -2324,13 +2357,16 @@ veche_republic_legacy = {
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
 	}
+	custom_attributes = {
+		elections_increase_factions_influence = yes
+	}
 
 	ai = {
 		factor = 0
 	}
 }
 
-principality_legacy = {
+pprincipality_legacy = {
 	# government mechanics flags go here
 	icon = "crown"
 	legacy_government = yes
@@ -2343,7 +2379,10 @@ principality_legacy = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
 	nation_designer_trigger = {
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		religion = orthodox
 	}
 
@@ -2380,7 +2419,10 @@ tsardom_legacy = {
 	nation_designer_cost = 40
 
 	nation_designer_trigger = {
-		culture_group = east_slavic
+		OR = {
+			culture_group = east_slavic
+			culture_group = slavic
+		}
 		religion = orthodox
 	}
 
@@ -2432,11 +2474,17 @@ cossacks_legacy_reform = {
 		}
 	}
 
+	conditional = {
+		allow = { has_dlc = "Origins" }
+		custom_attributes = {
+			has_itinerant_capital = yes
+		}
+	}
+
 	ai = {
 		factor = 5
 	}
 }
-
 
 united_cantons_legacy = {
 	# government mechanics flags go here
@@ -2730,7 +2778,9 @@ shaka_regime_legacy = {
 		allow = {
 			has_dlc = "Rights of Man"
 		}
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 }
 
