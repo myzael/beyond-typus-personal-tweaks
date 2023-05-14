@@ -2424,6 +2424,22 @@ pagan = {
 		heretic = { WAGYLKOOP MOORAMOORA GINGARRURNDE }
 	}
 	
+	waaq = { #Au Waaq
+		color = { 215 40 30 }
+		icon = 34
+		country = {
+			global_unrest = -1
+			tolerance_heretic = 2
+		}
+		
+		country_as_secondary = {
+			global_heathen_missionary_strength = 0.02
+			tolerance_heretic = 1
+		}
+	
+		heretic = { ADDII_QALLAUU }
+	}
+	
 	crusade_name = CRUSADE
 	harmonized_modifier = harmonized_pagan
 }
