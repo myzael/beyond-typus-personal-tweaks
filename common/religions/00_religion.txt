@@ -2592,7 +2592,7 @@ zoroastrian_group = {
 	
 	#New religion in BT, added in 15.0. Formerly a Sunni heresy
 	yazidi = {
-		icon = 34
+		icon = 32
 		color = { 51 51 178 }
 		country = {
 			tolerance_own = 3 # Preoccupation with religious purity
@@ -2627,7 +2627,7 @@ mandaean_group = {
 	
 	#New religion in BT 15.0
 	mandaean = {
-		icon = 35
+		icon = 33
 		color = { 188 191 170 }
 		country = {
 			tolerance_own = 2
