@@ -2379,7 +2379,7 @@ guiTypes = {
 		smoothListboxType = 
 		{
 			name ="content_list"
-			position = { x = 5 y = 88 }
+			position = { x = 5 y = 84 }
 			backGround=""
 			size = { x= 400 y = 426 }
 			horizontal = 0
@@ -2394,7 +2394,7 @@ guiTypes = {
 			position = {x = 28 y = 526 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}	
-			maxWidth = 400
+			maxWidth = 380
 			maxHeight = 32
 			text = "Army force limit: xx/xx"
 		}
@@ -2604,15 +2604,17 @@ guiTypes = {
 			verticalBorder= ""
 			fullScreen = no
 
-			smoothListboxType = {
-				name = "investments_listbox"
-				backGround = ""
-				position = { x = -50 y = 25 }
-				size = { x = 458 y = 400 }
+			windowType = {
+				name = "investment_offset"
+				backGround=""
+				position = { x=-50 y=25 }
+				size = { x=458 y=400 }
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
 				Orientation = "UPPER_LEFT"
-				horizontal = 0
-				scrollbartype = "standardlistbox_slider"
-				borderSize = { x = 0 y = 0 }
 			}
 		}
 	}

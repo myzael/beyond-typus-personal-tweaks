@@ -1932,7 +1932,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "fervor_current_change"
-				position = { x = 150 y = -61 }
+				position = { x = 140 y = -17 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "123"
@@ -1944,7 +1944,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "fervor_value"
-				position = { x = 22 y = -32 }
+				position = { x = 12 y = 5 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "FERVOR_VALUE2"
@@ -1956,7 +1956,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "fervor_current_value"
-				position = { x = 150 y = -32 }
+				position = { x = 140 y = 5 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "3,1"
