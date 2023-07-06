@@ -6847,8 +6847,8 @@ east_asian = { # Chinese Group
 		}
 	}
 	altaic_new	= {
-		country = { has_banners = 1}
-		province = { local_has_banners = 1}
+		country = { has_banners = yes }
+		province = { local_has_banners = yes }
 		primary = YUA
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan 
@@ -6871,8 +6871,8 @@ east_asian = { # Chinese Group
 	}
 
 	manchu_new = {
-		country = { has_banners = 1}
-		province = { local_has_banners = 1}
+		country = { has_banners = yes }
+		province = { local_has_banners = yes }
 		primary = MCH
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
@@ -10527,8 +10527,8 @@ evenks = {
 	}
 	manchu = {
 		graphical_culture = asiangfx
-		country = { has_banners = 1}
-		province = { local_has_banners = 1}
+		country = { has_banners = yes }
+		province = { local_has_banners = yes }
 		primary = MJZ
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
