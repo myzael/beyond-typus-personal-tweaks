@@ -7616,7 +7616,7 @@ head_of_the_church_aspect_modifier = {
 	yearly_absolutism = 1 
 }
 anglican_aspect_aspect_modifier = {
-	tolerance_heretic = 1 
+	yearly_absolutism = 1 
 }
 
 #Parliament Events
@@ -11998,6 +11998,7 @@ rus_vodka_sales = {
 	global_unrest = -1
 	global_institution_spread = -0.33
 }
+
 
 just_had_revolution_bringing_someone_to_power_timer = { }
 

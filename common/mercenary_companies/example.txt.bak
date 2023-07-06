@@ -101,7 +101,6 @@ twenty_good_men = {
 		capital_scope = {
 			province_id = 4365
 		}
-        is_allowed_to_recruit_mercenaries = yes
 	}
 	modifier = {
 		land_morale = 0.15

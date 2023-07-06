@@ -1545,6 +1545,7 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = prussian_monarchy_legacy
 	}
+
 	iqta = {
 		government = monarchy
 		legacy_government = iqta_legacy

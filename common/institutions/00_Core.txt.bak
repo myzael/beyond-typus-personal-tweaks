@@ -146,7 +146,7 @@ feudalism = {
 			is_year = 1700
 		}
 	}
-	
+
 	# no need for events, as its there from the start.
 	#can_start = {	is_year = 1000	}
 	#start_chance = 100

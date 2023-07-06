@@ -5839,20 +5839,6 @@ ottoman_siyasah_tax_reform = {
 			}
 		}
 	}
-	removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					OR = {
-						has_province_modifier = ottoman_siyasah_tax_reform_tax
-						has_province_modifier = ottoman_siyasah_tax_reform_manpower
-					}
-				}
-				remove_province_modifier = ottoman_siyasah_tax_reform_tax
-				remove_province_modifier = ottoman_siyasah_tax_reform_manpower
-			}
-		}
-	}
 	modifiers = {
 		global_autonomy = -0.05
 		autonomy_change_time = -0.25

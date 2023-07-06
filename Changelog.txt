@@ -1,3 +1,15 @@
+BT16
+
+#New Aditions
+ - Updated BT from 1.33.3 to 1.35.6
+ 
+#Bugfixes
+#Tweaks and Balance
+#Localised Naming
+#GFX
+
+
+
 BT15.0.1
 #New Additions
  - German Localisation updated for BT15 (thanks to Malcador)

@@ -478,7 +478,6 @@ panama_canal = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			owner = { add_prestige = 50 }
 		}
 	}
 

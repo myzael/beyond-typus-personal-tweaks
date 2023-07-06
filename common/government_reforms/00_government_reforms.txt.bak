@@ -2537,6 +2537,7 @@ sacred_kingdom_legacy = {
 		factor = 5
 	}
 }
+
 negusa_nagast_legacy = {
 	icon = "chieftain"
 	allow_normal_conversion = no

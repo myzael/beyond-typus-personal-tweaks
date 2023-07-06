@@ -1,6 +1,6 @@
 
 #This one or the next one will always be valid
-estate_rajput_hire_advisor = {
+estate_maratha_hire_advisor = {
 	can_select = {
 		NOT = {
 			employed_advisor = {
@@ -15,11 +15,11 @@ estate_rajput_hire_advisor = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -31,10 +31,10 @@ estate_rajput_hire_advisor = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
     }
@@ -42,7 +42,7 @@ estate_rajput_hire_advisor = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -50,7 +50,7 @@ estate_rajput_hire_advisor = {
     }
 }
 
-estate_rajput_fire_advisor = {
+estate_maratha_fire_advisor = {
 	can_select = {
 		employed_advisor = {
 			category = MIL
@@ -75,11 +75,11 @@ estate_rajput_fire_advisor = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -91,10 +91,10 @@ estate_rajput_fire_advisor = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		clr_country_flag = just_fired_mil_advisor
@@ -112,7 +112,7 @@ estate_rajput_fire_advisor = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -122,7 +122,7 @@ estate_rajput_fire_advisor = {
 }
 
 #Condottieri against rival (with Mare Nostrum)
-estate_rajput_condottieri_rivals = {
+estate_maratha_condottieri_rivals = {
 	can_select = {
 		has_dlc = "Mare Nostrum"
 		is_at_war = no
@@ -242,11 +242,11 @@ estate_rajput_condottieri_rivals = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -261,10 +261,10 @@ estate_rajput_condottieri_rivals = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		add_mil_power = 50
@@ -273,7 +273,7 @@ estate_rajput_condottieri_rivals = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -283,7 +283,7 @@ estate_rajput_condottieri_rivals = {
 
 
 #Support independence of X (subject of rival)
-estate_rajput_support_independence = {
+estate_maratha_support_independence = {
 	can_select = {
 		OR = {
 			has_dlc = "Conquest of Paradise"
@@ -292,9 +292,9 @@ estate_rajput_support_independence = {
 		is_at_war = no
 		is_subject = no
 		any_rival_country = {
+			NOT = { has_reform = daimyo }
 			NOT = { ROOT = { truce_with = prev } }
 			any_subject_country = {
-				NOT = { has_reform = daimyo }
 				is_subject_other_than_tributary_trigger = yes
 				liberty_desire = 50
 				has_opinion = {
@@ -364,11 +364,11 @@ estate_rajput_support_independence = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -377,10 +377,10 @@ estate_rajput_support_independence = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		add_dip_power = 50
@@ -389,7 +389,7 @@ estate_rajput_support_independence = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -399,7 +399,7 @@ estate_rajput_support_independence = {
 
 
 #Retake Core
-estate_rajput_retake_core = {
+estate_maratha_retake_core = {
 	can_select = {
 		is_free_or_tributary_trigger = yes
 		OR = {
@@ -512,11 +512,11 @@ estate_rajput_retake_core = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -527,10 +527,10 @@ estate_rajput_retake_core = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		add_country_modifier = {
@@ -542,7 +542,7 @@ estate_rajput_retake_core = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -551,7 +551,7 @@ estate_rajput_retake_core = {
 }
 
 #Crush Revolts (not heretics)
-estate_rajput_crush_revolts = {
+estate_maratha_crush_revolts = {
 	can_select = {
 		num_of_rebel_armies = 1
 		NOT = {
@@ -586,11 +586,11 @@ estate_rajput_crush_revolts = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -601,10 +601,10 @@ estate_rajput_crush_revolts = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		add_prestige = 10
@@ -613,7 +613,7 @@ estate_rajput_crush_revolts = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -623,7 +623,7 @@ estate_rajput_crush_revolts = {
 
 
 #Regain liberty
-estate_rajput_regain_liberty = {
+estate_maratha_regain_liberty = {
 	can_select = {
 		is_subject = yes
 		is_at_war = no
@@ -657,11 +657,11 @@ estate_rajput_regain_liberty = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -676,10 +676,10 @@ estate_rajput_regain_liberty = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		create_general = {
@@ -691,7 +691,7 @@ estate_rajput_regain_liberty = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -701,7 +701,7 @@ estate_rajput_regain_liberty = {
 
 
 #Convert province culture
-estate_rajput_convert_province_culture = {
+estate_maratha_convert_province_culture = {
 	can_select = {
 		NOT = { has_estate = estate_nobles }
 		any_owned_province = {
@@ -714,7 +714,7 @@ estate_rajput_convert_province_culture = {
 				culture = root
 			}
 		}
-		primary_culture = rajput
+		primary_culture = marathi
 	}
 	selection_weight = {
 		factor = 1
@@ -774,11 +774,11 @@ estate_rajput_convert_province_culture = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -803,10 +803,10 @@ estate_rajput_convert_province_culture = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		event_target:agenda_province = {
@@ -827,7 +827,7 @@ estate_rajput_convert_province_culture = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -845,7 +845,7 @@ estate_rajput_convert_province_culture = {
 }
 
 #Protect our Culture in X
-estate_rajput_protect_our_culture = {
+estate_maratha_protect_our_culture = {
 	can_select = {
 		NOT = { has_estate = estate_nobles }
 		is_free_or_tributary_trigger = yes
@@ -1008,11 +1008,11 @@ estate_rajput_protect_our_culture = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -1031,7 +1031,7 @@ estate_rajput_protect_our_culture = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		if = {
 			limit = {
@@ -1045,7 +1045,7 @@ estate_rajput_protect_our_culture = {
 		}
 		else = { custom_tooltip = estate_nobles_protect_our_culture_effect_tooltip }
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 15
 		}
 	}
@@ -1053,7 +1053,7 @@ estate_rajput_protect_our_culture = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -1082,7 +1082,7 @@ estate_rajput_protect_our_culture = {
 
 
 #Vassalise X country (less than 3 provinces, you have at least 12)
-estate_rajput_vassalise_vulnerable_country = {
+estate_maratha_vassalise_vulnerable_country = {
 	can_select = {
 		is_free_or_tributary_trigger = yes
 		is_at_war = no
@@ -1222,11 +1222,11 @@ estate_rajput_vassalise_vulnerable_country = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -1246,10 +1246,10 @@ estate_rajput_vassalise_vulnerable_country = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		add_country_modifier = {
@@ -1267,7 +1267,7 @@ estate_rajput_vassalise_vulnerable_country = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -1289,7 +1289,7 @@ estate_rajput_vassalise_vulnerable_country = {
 
 
 #Conquer X area from country you don't have great relations with
-estate_rajput_expand_into_x = {
+estate_maratha_expand_into_x = {
 	can_select = {
 		is_free_or_tributary_trigger = yes
 		is_at_war = no
@@ -1325,7 +1325,7 @@ estate_rajput_expand_into_x = {
 					area_for_scope_province = {
 						OR = {
 							is_empty = yes
-							country_or_subject_holds = ROOT 
+							owned_by = root
 						}
 					}
 				}
@@ -1404,7 +1404,7 @@ estate_rajput_expand_into_x = {
 						area_for_scope_province = {
 							OR = {
 								is_empty = yes
-							country_or_subject_holds = ROOT 
+								owned_by = root
 							}
 						}
 					}
@@ -1481,17 +1481,17 @@ estate_rajput_expand_into_x = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
 			event_target:agenda_province = {
 				area_for_scope_province = {
-							country_or_subject_holds = ROOT 
+					owned_by = root
 				}
 			}
 		}
@@ -1508,10 +1508,10 @@ estate_rajput_expand_into_x = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 15
 		}
 		add_adm_power = 50
@@ -1520,11 +1520,11 @@ estate_rajput_expand_into_x = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-		}
+        }
 		if = {
 			limit = {
 				event_target:agenda_province = {
@@ -1548,7 +1548,7 @@ estate_rajput_expand_into_x = {
 }
 
 #Complete conquest of X area from country you don't have great relations with
-estate_rajput_complete_conquest_of_x = {
+estate_maratha_complete_conquest_of_x = {
 	can_select = {
 		is_free_or_tributary_trigger = yes
 		is_at_war = no
@@ -1764,20 +1764,20 @@ estate_rajput_complete_conquest_of_x = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
 			event_target:agenda_province = {
 				area_for_scope_province = {
 					type = all
-					OR = {
-						owned_by = root
-						owner = {
+					owner = {
+						OR = {
+							tag = root
 							is_subject_of = root
 						}
 					}
@@ -1797,10 +1797,10 @@ estate_rajput_complete_conquest_of_x = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 15
 		}
 		add_adm_power = 50
@@ -1809,7 +1809,7 @@ estate_rajput_complete_conquest_of_x = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -1838,7 +1838,7 @@ estate_rajput_complete_conquest_of_x = {
 
 
 #Annex vassal
-estate_rajput_annex_subject = {
+estate_maratha_annex_subject = {
 	can_select = {
 		is_at_war = no
 		diplomatic_reputation = 0
@@ -1907,11 +1907,11 @@ estate_rajput_annex_subject = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -1943,10 +1943,10 @@ estate_rajput_annex_subject = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		custom_tooltip = no_penalties_annexing_tt
@@ -1955,7 +1955,7 @@ estate_rajput_annex_subject = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -1970,7 +1970,7 @@ estate_rajput_annex_subject = {
 
 
 #Bigger Army
-estate_rajput_build_an_army = {
+estate_maratha_build_an_army = {
 	can_select = {
 		NOT = { has_country_modifier = thriving_arms_industry }
 		NOT = { army_size_percentage = 0.5 }
@@ -2016,11 +2016,11 @@ estate_rajput_build_an_army = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -2037,10 +2037,10 @@ estate_rajput_build_an_army = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		create_general = {
@@ -2052,7 +2052,7 @@ estate_rajput_build_an_army = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -2062,7 +2062,7 @@ estate_rajput_build_an_army = {
 
 
 #Bigger Army than Rival
-estate_rajput_bigger_army_than_rival = {
+estate_maratha_bigger_army_than_rival = {
 	can_select = {
 		NOT = { has_country_modifier = thriving_arms_industry }
 		NOT = { army_size_percentage = 1 }
@@ -2110,11 +2110,11 @@ estate_rajput_bigger_army_than_rival = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -2129,10 +2129,10 @@ estate_rajput_bigger_army_than_rival = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		add_country_modifier = {
@@ -2144,7 +2144,7 @@ estate_rajput_bigger_army_than_rival = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -2153,7 +2153,7 @@ estate_rajput_bigger_army_than_rival = {
 }
 
 #Manpower reserves
-estate_rajput_build_up_manpower_reserves = {
+estate_maratha_build_up_manpower_reserves = {
 	can_select = {
 		is_at_war = no
 		NOT = { manpower_percentage = 0.40 }
@@ -2183,7 +2183,7 @@ estate_rajput_build_up_manpower_reserves = {
 	}
 	pre_effect = {
 		set_variable = {
-			which = estate_rajput_build_up_manpower_reserves_variable
+			which = estate_maratha_build_up_manpower_reserves_variable
 			value = 0
 		}
 		if = {
@@ -2193,7 +2193,7 @@ estate_rajput_build_up_manpower_reserves = {
 				}
 			}
 			set_variable = {
-				which = estate_rajput_build_up_manpower_reserves_variable
+				which = estate_maratha_build_up_manpower_reserves_variable
 				value = 1
 			}
 		}
@@ -2204,13 +2204,13 @@ estate_rajput_build_up_manpower_reserves = {
 				}
 			}
 			set_variable = {
-				which = estate_rajput_build_up_manpower_reserves_variable
+				which = estate_maratha_build_up_manpower_reserves_variable
 				value = 2
 			}
 		}
 		else = {
 			set_variable = {
-				which = estate_rajput_build_up_manpower_reserves_variable
+				which = estate_maratha_build_up_manpower_reserves_variable
 				value = 3
 			}
 		}
@@ -2223,18 +2223,18 @@ estate_rajput_build_up_manpower_reserves = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
 			if = {
 				limit = {
 					check_variable = {
-						which = estate_rajput_build_up_manpower_reserves_variable
+						which = estate_maratha_build_up_manpower_reserves_variable
 						value = 3
 					}
 				}
@@ -2243,7 +2243,7 @@ estate_rajput_build_up_manpower_reserves = {
 			else_if = {
 				limit = {
 					check_variable = {
-						which = estate_rajput_build_up_manpower_reserves_variable
+						which = estate_maratha_build_up_manpower_reserves_variable
 						value = 2
 					}
 				}
@@ -2256,10 +2256,10 @@ estate_rajput_build_up_manpower_reserves = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		generate_scaled_military_advisor_of_religion_effect = {
@@ -2272,18 +2272,18 @@ estate_rajput_build_up_manpower_reserves = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
-        }
+		}
 		clear_random_military_advisor_generation_flags = yes
     }
 }
 
 
 #Recover bad prestige
-estate_rajput_recover_abysmal_prestige = {
+estate_maratha_recover_abysmal_prestige = {
 	can_select = {
 		NOT = { prestige = -30 }
 	}
@@ -2317,11 +2317,11 @@ estate_rajput_recover_abysmal_prestige = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
@@ -2341,10 +2341,10 @@ estate_rajput_recover_abysmal_prestige = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		add_stability_or_adm_power = yes
@@ -2353,7 +2353,7 @@ estate_rajput_recover_abysmal_prestige = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
@@ -2364,7 +2364,7 @@ estate_rajput_recover_abysmal_prestige = {
 
 #Get good prestige
 
-estate_rajput_improve_prestige = {
+estate_maratha_improve_prestige = {
 	can_select = {
 		prestige = -30
 		NOT = { prestige = 20 }
@@ -2380,7 +2380,7 @@ estate_rajput_improve_prestige = {
 	}
 	pre_effect = {
 		set_variable = {
-			which = estate_rajput_improve_prestige_var
+			which = estate_maratha_improve_prestige_var
 			value = 0
 		}
 		if = {
@@ -2390,7 +2390,7 @@ estate_rajput_improve_prestige = {
 				}
 			}
 			set_variable = {
-				which = estate_rajput_improve_prestige_var
+				which = estate_maratha_improve_prestige_var
 				value = 1
 			}
 		}
@@ -2401,13 +2401,13 @@ estate_rajput_improve_prestige = {
 				}
 			}
 			set_variable = {
-				which = estate_rajput_improve_prestige_var
+				which = estate_maratha_improve_prestige_var
 				value = 2
 			}
 		}
 		else = {
 			set_variable = {
-				which = estate_rajput_improve_prestige_var
+				which = estate_maratha_improve_prestige_var
 				value = 3
 			}
 		}
@@ -2416,18 +2416,18 @@ estate_rajput_improve_prestige = {
 		if = {
 			limit = {
 				has_estate_agenda_auto_completion = {
-					estate = estate_rajput
+					estate = estate_maratha
 				}
 			}
 			has_estate_agenda_auto_completion = {
-				estate = estate_rajput
+				estate = estate_maratha
 			}
 		}
 		else = {
 			if = {
 				limit = {
 					check_variable = {
-						which = estate_rajput_improve_prestige_var
+						which = estate_maratha_improve_prestige_var
 						value = 3
 					}
 				}
@@ -2436,7 +2436,7 @@ estate_rajput_improve_prestige = {
 			else_if = {
 				limit = {
 					check_variable = {
-						which = estate_rajput_improve_prestige_var
+						which = estate_maratha_improve_prestige_var
 						value = 2
 					}
 				}
@@ -2449,10 +2449,10 @@ estate_rajput_improve_prestige = {
 	}
     task_completed_effect = {
 		on_completed_agenda_effect = {
-			estate = estate_rajput
+			estate = estate_maratha
 		}
 		add_estate_loyalty = {
-			estate = estate_rajput
+			estate = estate_maratha
 			loyalty = 10
 		}
 		add_adm_power = 50
@@ -2461,7 +2461,7 @@ estate_rajput_improve_prestige = {
 		on_failed_agenda_effect = yes
 		clr_auto_complete_flag = yes
         add_estate_loyalty_modifier = {
-            estate = estate_rajput
+            estate = estate_maratha
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300
