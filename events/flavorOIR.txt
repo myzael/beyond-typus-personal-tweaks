@@ -99,7 +99,7 @@ country_event = {
 				exile_heir_as = mng_exiled_heir
 				set_country_flag = mng_exiled_heir_flag
 			}
-			exile_ruler_as = mng_exiled_ruler
+			exile_ruler_as = { name = mng_exiled_ruler }
 		}
 		define_ruler = {
 			regency = yes
@@ -202,13 +202,21 @@ country_event = {
 	
 	trigger = {
 		tag = OIR
-		FROM = {
-			province_id = 1816
+		OR = { 
+			FROM = {
+				province_id = 1816
+			}
+			AND = { 
+				war_with = MNG 
+				1816 = { controlled_by = ROOT }
+			}
 		}
 		MNG = {
 			has_country_flag = mng_emperor_captured
 		}
 	}
+	
+	mean_time_to_happen = { days = 1 } 
 	
 	option = { # Demand unconditional surrender
 		name = "flavor_oir.5.a"
@@ -326,7 +334,7 @@ country_event = {
 		is_year = 1600
 		NOT = { exists = ZUN }
 		any_owned_province = {
-			area = north_zungaria  
+			area = north_zungaria
 		}
 		OR = {
 			NOT = { exists = OIR }
@@ -344,7 +352,7 @@ country_event = {
 			factor = 0.5
 			num_of_owned_provinces_with = {
 				OR = {
-					area = north_zungaria  
+					area = north_zungaria
 					area = zungaria_area
 				}
 				value = 5
@@ -354,7 +362,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_oir.8.a"
-		north_zungaria = {  
+		north_zungaria = {
 			add_core = ZUN
 		}
 		zungaria_area = {

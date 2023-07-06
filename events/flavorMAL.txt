@@ -7,7 +7,6 @@
 namespace = flavor_mal
 normal_or_historical_nations = yes
 
-	
 # Malian Authority Under Threat
 country_event = {
 	id = flavor_mal.1
@@ -25,7 +24,7 @@ country_event = {
 		owns = 1116
 		owns = 2239
 		NOT = { exists = JOL }
-
+		NOT = { has_dlc = "Origins" }	#Mali gets a whole disaster instead for its authority question
 	}
 
 	mean_time_to_happen = {
@@ -79,6 +78,67 @@ province_event = {
 		months = 36
 	}
 	
+	immediate = {
+		hidden_effect = {
+			every_province = {
+				limit = {
+					OR = {
+						area = tekrur_area
+						province_id = 1112 #Trarza
+						province_id = 1120 #Bambuk
+						province_id = 2238 #Kantor
+						province_id = 2243 #Termes
+						province_id = 2245 #Wagadu
+						province_id = 2246 #Bagena
+					}
+				}
+				add_core = FUL
+				if = {
+					limit = {
+						owner = {
+							NOT = { has_country_flag = fulani_info_flag }
+						}
+					}
+					owner = {
+						country_event = { id = flavor_mal.3 }
+						set_country_flag = fulani_info_flag
+					}
+				}
+				every_province = {
+					limit = {
+						OR = {
+							area = tekrur_area
+							province_id = 1112 #Trarza
+							province_id = 1120 #Bambuk
+							province_id = 2238 #Kantor
+							province_id = 2243 #Termes
+							province_id = 2245 #Wagadu
+							province_id = 2246 #Bagena
+						}
+						is_empty = no
+					}
+					add_province_modifier = {
+						name = "mal_fulani_migration"
+						duration = 3650
+					}
+					change_culture = fulani
+				}
+				baghena_area = {
+					limit = {
+						culture = fulani
+					}
+					if = {
+						limit = {
+							is_core = SOF
+							NOT = { owned_by = SOF }
+						}
+						remove_core = SOF
+					}
+					add_core = ZAF
+				}
+			}
+		}
+	}
 	
 	option = {
 		name = flavor_mal.2.a
@@ -93,40 +153,47 @@ province_event = {
 					province_id = 2245 #Wagadu
 					province_id = 2246 #Bagena
 				}
+				is_empty = yes
 			}
-			add_core = FUL
-			hidden_effect = {
+			cede_province = FUL
+		}
+		hidden_effect = {
+			FUL = {
+				define_ruler = {
+					name = "Koli Tengella"
+					dynasty = "Denianke"
+					change_mil = 4
+					claim = 100
+				}
 				if = {
 					limit = {
-						owner = {
-							NOT = { has_country_flag = fulani_info_flag }
-						}
+						has_dlc = "Rights of Man" 
 					}
-					owner = {
-						country_event = { id = flavor_mal.3 }
-						set_country_flag = fulani_info_flag
-					}
+					add_ruler_personality_ancestor = { key = conqueror }
 				}
+				adopt_reform_progress = ROOT
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 2
+				}
+				add_manpower = 10
+				add_treasury = 300
 			}
 		}
-		every_province = {
-			limit = {
-				OR = {
-					area = tekrur_area
-					province_id = 1112 #Trarza
-					province_id = 1120 #Bambuk
-					province_id = 2238 #Kantor
-					province_id = 2243 #Termes
-					province_id = 2245 #Wagadu
-					province_id = 2246 #Bagena
-				}
-				is_empty = no
+	}
+	
+	
+	option = {	#Switch tag to Fulo
+		name = flavor_mal.2.b
+		trigger = {
+			owner = {
+				ai = no
 			}
-			add_province_modifier = {
-				name = "mal_fulani_migration"
-				duration = 3650
-			}
-			change_culture = fulani
 		}
 		every_province = {
 			limit = {
@@ -143,20 +210,36 @@ province_event = {
 			}
 			cede_province = FUL
 		}
-		FUL = {
-			define_ruler = {
-				name = "Koli Tengella"
-				dynasty = "Denianke"
-				MIL = 4
-				claim = 100
-			}
-			if = {
-				limit = {
-					has_dlc = "Rights of Man" 
+		hidden_effect = {
+			FUL = {
+				define_ruler = {
+					name = "Koli Tengella"
+					dynasty = "Denianke"
+					change_mil = 4
+					claim = 100
 				}
-				hidden_effect = { add_ruler_personality_ancestor = { key = conqueror } }
+				if = {
+					limit = {
+						has_dlc = "Rights of Man" 
+					}
+					add_ruler_personality_ancestor = { key = conqueror }
+				}
+				adopt_reform_progress = ROOT
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.3
+					}
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 2
+				}
+				add_manpower = 10
+				add_treasury = 300
 			}
-			adopt_reform_progress = ROOT
+		}
+		owner = {
+			switch_tag = FUL
 		}
 	}
 }
@@ -315,7 +398,7 @@ country_event = {
 	id = flavor_mal.6
 	title = flavor_mal.6.t
 	desc = flavor_mal.6.d
-	picture = RELIGIOUS_TURMOIL_eventPicture
+	picture = MUSLIM_ANIMIST_DISPUTE_eventPicture
 	
 	fire_only_once = yes
 	
@@ -325,7 +408,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 450
+		months = 12
 	}
 
 	option = {
@@ -341,12 +424,30 @@ country_event = {
 			name = mal_islamisation_of_the_aristocracy
 			duration = -1
 		}
+		if = {
+			limit = {
+				has_dlc = "Origins"
+			}
+			custom_tooltip = flavor_mal.6.a.tt
+			hidden_effect = {
+				set_country_flag = mal_decide_for_conversion
+			}
+		}
 	}
 	
 	option = {
 		name = flavor_mal.6.b	#Let us not rock the boat.
 		add_stability_or_adm_power = yes
 		add_piety = -0.15
+		if = {
+			limit = {
+				has_dlc = "Origins"
+			}
+			custom_tooltip = flavor_mal.6.b.tt
+			hidden_effect = {
+				set_country_flag = mal_decide_for_tolerance
+			}
+		}
 	}
 }
 
@@ -355,7 +456,7 @@ country_event = {
 	id = flavor_mal.7
 	title = flavor_mal.7.t
 	desc = flavor_mal.7.d
-	picture = OVEREXTENSION_eventPicture
+	picture = VILLAGE_BURNING_eventPicture
 	
 	fire_only_once = yes
 	
@@ -498,6 +599,7 @@ country_event = {
 			religion = shamanism
 			is_capital = no
 		}
+		NOT = { has_country_flag = mal_appeased_kaabu }
 	}
 	
 	mean_time_to_happen = {
@@ -521,6 +623,10 @@ country_event = {
 			factor = 0.7
 			has_country_modifier = mal_islamisation_of_the_aristocracy
 		}
+		modifier = {
+			factor = 0.7
+			has_disaster = decline_of_mali
+		}
 	}
 	
 	immediate = {
@@ -534,6 +640,7 @@ country_event = {
 				}
 			set_province_flag = centre_of_kaabu_rebelion
 			}
+			set_country_flag = kaabu_broke_into_rebelion
 		}
 	}
 	
@@ -578,7 +685,6 @@ country_event = {
 	}
 
 }
-
 
 ########################################
 # Events for Mali
@@ -653,7 +759,9 @@ country_event = {
 
 	option = {
 		name = flavor_mal.10.a
-		add_stability = 1
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
 
 		ai_chance = {
 			factor = 1
@@ -773,7 +881,6 @@ country_event = {
 			spawn_rebels = {
 				type = noble_rebels
 				size = 1
-				estate = estate_nobles
 			}
 		}
 		add_estate_loyalty = {
@@ -1044,7 +1151,6 @@ country_event = {
 			spawn_rebels = {
 				type = particularist_rebels
 				size = 1
-				estate = estate_burghers
 			}
 		}
 		add_estate_loyalty = {
@@ -1731,7 +1837,7 @@ country_event = {
 	title = flavor_mal.29.t
 	desc = flavor_mal.29.desc
 	picture = MOSQUE_eventPicture
-
+	goto = 1134
 	is_triggered_only = yes
 
 	option = {
@@ -2249,7 +2355,7 @@ country_event = {
 	title = flavor_mal.34.t
 	desc = flavor_mal.34.desc
 	picture = AFRICAN_EUROPEAN_PURCHASE_eventPicture
-	
+	goto = mal_colony_to_buy
 	is_triggered_only = yes
 	
 	option = {	#Lovely
@@ -2280,7 +2386,7 @@ country_event = {
 	title = flavor_mal.35.t
 	desc = flavor_mal.35.desc
 	picture = AFRICAN_EUROPEAN_PURCHASE_eventPicture
-	
+		goto = mal_colony_to_buy
 	is_triggered_only = yes
 	
 	option = {	#Aww... then I must take it by force then
@@ -2727,7 +2833,7 @@ country_event = {
 				}
 				export_to_variable = {
 					which = trade_income_variable_tt
-					value = trade_income_percentage
+					value = trigger_value:trade_income_percentage
 					who = event_target:selected_biggest_country_of_region
 				}
 				multiply_variable = {
@@ -3003,7 +3109,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			export_to_variable = {
-				which = mal_money_to_give
+				which = mal_money_to_give_tt
 				value = years_of_income
 				who = FROM
 			}
@@ -3013,7 +3119,7 @@ country_event = {
 			}
 			export_to_variable = {
 				which = trade_income_variable_tt
-				value = trade_income_percentage
+				value = trigger_value:trade_income_percentage
 			}
 			multiply_variable = {
 				which = trade_income_variable_tt
@@ -3202,7 +3308,7 @@ country_event = {
 		}
 		event_target:mal_next_gold_target = {
 			country_event = {
-				id = flavor_mal.44
+				id = flavor_mal.43
 			}
 			hidden_effect = {
 				add_country_modifier = {

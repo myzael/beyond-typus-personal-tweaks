@@ -138,7 +138,7 @@ country_event = {
 	id = flavor_kon.2
 	title = flavor_kon.2.t
 	desc = flavor_kon.2.d
-	picture = POPE_PREACHING_eventPicture
+	picture = RELIGION_eventPicture
 
 	is_triggered_only = yes
 		
@@ -163,7 +163,7 @@ country_event = {
 	id = flavor_kon.3
 	title = flavor_kon.3.t
 	desc = flavor_kon.3.d
-	picture = POPE_PREACHING_eventPicture
+	picture = RELIGION_eventPicture
 
 	is_triggered_only = yes
 		
@@ -188,28 +188,42 @@ country_event = {
 
 
 	trigger = {
-		has_country_flag = kongo_allows_missionaries
-		NOT = { religion = catholic }
-		is_female = no
-		
-		any_owned_province = {
-			 religion = catholic
+		tag = KON
+		if = {
+			limit = {
+				has_dlc = "Origins"
+			}
+			NOT = { religion = catholic }
+			NOT = { has_country_flag = kon_secured_coast_from_missionaries }
+			has_global_flag = kon_kongo_got_discovered_by_europeans
+			dominant_religion = catholic
+			is_female = no
+		}
+		else = {
+			has_country_flag = kongo_allows_missionaries
+			NOT = { religion = catholic }
+			is_female = no
+			any_owned_province = {
+				religion = catholic
+			}
 		}
 	}
 	
 	mean_time_to_happen = {
 		months = 60
+		modifier = {
+			factor = 0.1
+			has_dlc = "Origins"
+		}
 	}
 
 		
 	option = { # Christianity will triumph in Kongo
 		name = flavor_kon.4.a
-		ai_chance = { factor = 90 }
 		change_religion = catholic
 		if = {
 			limit = { is_tribal = yes }
-			change_government_to_monarchy = yes
-			#set_legacy_government = despotic_monarchy
+			change_government = monarchy
 		}
 		if = {
 			limit = {
@@ -233,31 +247,21 @@ country_event = {
 			}
 		}
 
-		if = {
-			limit = { exists = POR } # BT
-			hidden_effect = {
-				POR = {
-					country_event = { id = flavor_kon.5 days = 1 }
-
-				}		
-			}
+		hidden_effect = {
+			POR = {
+				country_event = { id = flavor_kon.5 days = 1 }
+			}		
 		}
-		if = { # BT
-			limit = { 
-				NOT = { exists = POR }
-				exists = IBE
-			}
-			hidden_effect = {
-				IBE = {
-					country_event = { id = flavor_kon.5 days = 1 }
-
-				}		
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				has_country_flag = kon_picked_oppose_europeans
 			}
 		}
 	}
 	option = { # Kill the Ruler!
 		name =  flavor_kon.4.b
-		ai_chance = { factor = 10 }
 		kill_ruler = yes
 		if = {
 			limit = {
@@ -279,10 +283,16 @@ country_event = {
 				}
 			}
 		}
+
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 0
+				has_country_flag = kon_picked_side_with_europeans
+			}
+		}
 	}
 }
-
-
 
 # Conversion of the Kongo!
 country_event = {
@@ -298,7 +308,6 @@ country_event = {
 		add_papal_influence = 25
 	}
 }
-
 
 ########################################
 # DLC events for Kongo
@@ -928,6 +937,38 @@ country_event = {
 
 		ai_chance = {
 			factor = 1
+		}
+	}
+}
+
+# Become a Monarchy!
+country_event = {
+	id = flavor_kon.16
+	title = flavor_kon.16.t
+	desc = flavor_kon.16.d	
+	picture = AFRICAN_CATHOLIC_eventPicture
+	is_triggered_only = yes
+		
+	option = {
+		name = flavor_kon.16.a
+		trigger = {
+			NOT = { government = monarchy }
+		}
+		change_government = monarchy
+		add_stability_or_adm_power = yes
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+		
+	option = {
+		name = flavor_kon.16.b
+		change_government_reform_progress = 50
+		add_adm_power = 100
+
+		ai_chance = {
+			factor = 0
 		}
 	}
 }

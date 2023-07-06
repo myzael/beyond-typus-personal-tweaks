@@ -11,15 +11,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			adm = 4
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
 	}
 	
 	trigger = {
@@ -34,6 +25,14 @@ country_event = {
 				factor = 0
 				NOT = { num_of_cities = 5 }
 			}
+			modifier = {
+				factor = 4
+				prestige = 50
+				OR = { 
+					num_of_loans = 2 
+					NOT = { years_of_income = 0.5 }
+				}
+			}
 		}
 		add_years_of_income = 0.2
 	}
@@ -41,6 +40,11 @@ country_event = {
 		name = "EVTOPTB5008"		# Gain prestige
 		ai_chance = {
 			factor = 45
+			modifier = {
+				factor = 5
+				NOT = { prestige = 0 }
+				years_of_income = 0.5
+			}
 		}
 		add_prestige = 10
 	}
@@ -51,7 +55,7 @@ country_event = {
 			ruler_has_personality_ancestor = { key = well_connected }
 		}
 		ai_chance = {
-			factor = 100
+			factor = 1000
 		}
 		add_years_of_income = 0.2
 		add_prestige = 10
@@ -63,7 +67,7 @@ country_event = {
 			ruler_has_personality = embezzler_personality
 		}
 		ai_chance = {
-			factor = 100
+			factor = 1000
 		}
 		add_years_of_income = 0.35
 	}
@@ -77,8 +81,12 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 100
-		}
+			factor = 1000
+			modifier = { 
+				factor = 0
+				prestige = 80 
+			}
+	}
 		add_prestige = 15
 	}
 }
@@ -105,20 +113,17 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { advisor = statesman }
-		}
-		modifier = {
-			factor = 0.66
-			statesman = 3
-		}
 	}
 	
 	option = {
 		name = "EVTOPTA5014"		# Request military guidance.
-		ai_chance = { factor = 55 }
+		ai_chance = { 
+			factor = 55 
+			modifier = {
+				factor = 2
+				national_focus = MIL
+			}
+		}
 		add_prestige = -10
 		add_years_of_income = -0.1
 		add_army_tradition = 5
@@ -126,7 +131,16 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5014"		# Request administrative guidance.
-		ai_chance = { factor = 45 }
+		ai_chance = { 
+			factor = 45 
+			modifier = {
+				factor = 2
+				OR = { 
+					NOT = { adm = 4 }
+					national_focus = ADM 
+				}
+			}
+		}
 		add_prestige = -10
 		add_years_of_income = -0.1
 		add_adm_power = 25
@@ -137,7 +151,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality = well_advised_personality
 		}
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 1000 }
 		add_adm_power = 25
 	}
 }
@@ -225,7 +239,21 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA5015"		# Reap the administrative benefits
-		ai_chance = { factor = 55 }
+		ai_chance = { 
+			factor = 55 
+			modifier = {
+				factor = 2
+				NOT = { prestige = 0 }
+			}
+			modifier = {
+				factor = 2 
+				has_any_active_incomplete_idea_group_of_category = { adm_ideas = yes }
+			}
+			modifier = {
+				factor = 0 
+				ruler_has_personality = well_advised_personality
+			}
+		}
 		if = {
 			limit = { 
 				OR = {
@@ -243,7 +271,21 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5015"		# Reap the military benefits
-		ai_chance = { factor = 45 }
+		ai_chance = { 
+			factor = 45 
+			modifier = {
+				factor = 1.5
+				prestige = 25
+			}
+			modifier = {
+				factor = 4 
+				has_any_active_incomplete_idea_group_of_category = { mil_ideas = yes }
+			}
+			modifier = {
+				factor = 0 
+				ruler_has_personality = well_advised_personality
+			}
+		}
 		add_army_tradition = 10
 		add_navy_tradition = 10
 		add_mil_power = 100
@@ -383,22 +425,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.5
-			ruler_has_personality_ancestor = { key = careful }
-		}
-		modifier = {
-			factor = 1.25
-			OR = {
-				ruler_has_personality = drunkard_personality
-				ruler_has_personality = babbling_buffoon_personality
-			}
-		}
 	}
 
 	option = {
@@ -552,24 +578,30 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { innovativeness_ideas = 1 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = natural_scientist
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5018"		# Knowledge is power
-		ai_chance = { factor = 45 }
+		ai_chance = { 
+			factor = 45 
+			modifier = {
+				factor = 2
+				stability = 2 
+			}
+			modifier = {
+				factor = 2
+				NOT = { prestige = 0 }
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = free_thinker }
+					ruler_has_personality_ancestor = { key = scholar }
+					ruler_has_personality = greedy_personality
+					ruler_has_personality_ancestor = { key = secretive }
+				}
+			}
+		}
 		add_country_modifier = {
 			name = "obscurantism"
 			duration = 1825
@@ -577,7 +609,22 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5018"		# Ignorance is bliss
-		ai_chance = { factor = 55 }
+		ai_chance = { 
+			factor = 55 
+			modifier = {
+				factor = 2 
+				NOT = { stability = -1 }
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = free_thinker }
+					ruler_has_personality_ancestor = { key = scholar }
+					ruler_has_personality = greedy_personality
+					ruler_has_personality_ancestor = { key = secretive }
+				}
+			}
+		}
 		add_prestige = -10
 	}
 	option = {
@@ -589,6 +636,9 @@ country_event = {
 				ruler_has_personality_ancestor = { key = scholar }
 			}
 		}
+		ai_chance = { 
+			factor = 55 
+		}
 		add_adm_power = -5
 	}
 	option = {
@@ -597,6 +647,13 @@ country_event = {
 		trigger = {
 			ruler_has_personality = greedy_personality
 		}
+		ai_chance = { 
+			factor = 55 
+			modifier = {
+				factor = 0 
+				num_of_loans = 10 
+			}
+		}
 		add_years_of_income = 0.05
 	}
 	option = {
@@ -604,6 +661,9 @@ country_event = {
 		highlight = yes
 		trigger = {
 			ruler_has_personality_ancestor = { key = secretive }
+		}
+		ai_chance = { 
+			factor = 55 
 		}
 		add_prestige = 5
 	}
@@ -621,6 +681,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		is_year = 1450
+		NOT = { is_year = 1550 }
+		NOT = { has_country_modifier = exceptional_year }
 		OR = {
 			advisor = treasurer
 			advisor = trader
@@ -630,34 +693,10 @@ country_event = {
 			ruler_has_personality_ancestor = { key = industrious }
 			ruler_has_personality_ancestor = { key = entrepreneur }
 		}
-		is_year = 1450
-		NOT = { is_year = 1550 }
-		NOT = { has_country_modifier = exceptional_year }
 	}
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			production_efficiency = 0.5
-		}
-		modifier = {
-			factor = 0.8
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 1.25
-			stability = 1
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			is_bankrupt = yes
-		}
 	}
 
 	option = {
@@ -694,6 +733,9 @@ country_event = {
 				ruler_has_personality_ancestor = { key = industrious }
 				ruler_has_personality_ancestor = { key = midas_touched }
 			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 		if = { #If you have more than one of these you get more than one reward
 			limit = {
@@ -741,6 +783,9 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		is_year = 1550
+		NOT = { is_year = 1650 }
+		NOT = { has_country_modifier = exceptional_year }
 		OR = {
 			advisor = treasurer
 			advisor = trader
@@ -750,26 +795,10 @@ country_event = {
 			ruler_has_personality_ancestor = { key = industrious }
 			ruler_has_personality_ancestor = { key = entrepreneur }
 		}
-		is_year = 1550
-		NOT = { is_year = 1650 }
-		NOT = { has_country_modifier = exceptional_year }
 	}
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			production_efficiency = 0.5
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			is_bankrupt = yes
-		}
 	}
 
 	option = {
@@ -792,6 +821,9 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
+		ai_chance = {
+			factor = 100
+		}
 		add_years_of_income = 0.15
 	}
 	option = {
@@ -803,6 +835,9 @@ country_event = {
 				ruler_has_personality_ancestor = { key = industrious }
 				ruler_has_personality_ancestor = { key = midas_touched }
 			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 		if = { #If you have more than one of these you get more than one reward
 			limit = {
@@ -850,6 +885,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		is_year = 1650
+		NOT = { has_country_modifier = exceptional_year }
 		OR = {
 			advisor = treasurer
 			advisor = trader
@@ -859,25 +896,10 @@ country_event = {
 			ruler_has_personality_ancestor = { key = industrious }
 			ruler_has_personality_ancestor = { key = entrepreneur }
 		}
-		is_year = 1650
-		NOT = { has_country_modifier = exceptional_year }
 	}
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			production_efficiency = 0.5
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			is_bankrupt = yes
-		}
 	}
 
 	option = {
@@ -911,6 +933,9 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
+		ai_chance = {
+			factor = 100
+		}
 		add_years_of_income = 0.10
 	}
 	option = {
@@ -922,6 +947,9 @@ country_event = {
 				ruler_has_personality_ancestor = { key = industrious }
 				ruler_has_personality_ancestor = { key = midas_touched }
 			}
+		}
+		ai_chance = {
+			factor = 100
 		}
 		if = { #If you have more than one of these you get more than one reward
 			limit = {
@@ -980,19 +1008,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			has_idea = colonial_ventures
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			offensive_ideas = 5
-		}
 	}
 
 	option = {
@@ -1005,7 +1020,13 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5022"		# Receive monetary benefits
-		ai_chance = { factor = 55 }
+		ai_chance = { 
+			factor = 35 
+			modifier = {
+				factor = 2 
+				num_of_loans = 2
+			}
+		}
 		add_country_modifier = {
 			name = "monetary_benefits"
 			duration = 1825
@@ -1018,7 +1039,7 @@ country_event = {
 			ruler_has_personality_ancestor = { key = expansionist }
 			NOT = { has_country_modifier = colonial_enthusiasm }
 		}
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 1000 }
 		add_country_modifier = {
 			name = "colonial_enthusiasm"
 			duration = 3650
@@ -1049,25 +1070,25 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			trade_efficiency = 0.5
-			
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			is_bankrupt = yes
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5023" # Gain extra merchants
-		ai_chance = { factor = 45 }	
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 2 
+				trade_income_percentage = 0.45
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = navigator }
+					ruler_has_personality_ancestor = { key = charismatic_negotiator }
+				}
+			}
+		}	
+		
 		add_country_modifier = {
 			name = rush_of_merchants
 			duration = 1825
@@ -1075,7 +1096,20 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5023" # Receive monetary benefits
-		ai_chance = { factor = 55 }
+		ai_chance = { 
+			factor = 50
+			modifier = {
+				factor = 2 
+				tax_income_percentage = 0.45
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = navigator }
+					ruler_has_personality_ancestor = { key = charismatic_negotiator }
+				}
+			}
+		}
 		add_country_modifier = {
 			name = "monetary_benefits"
 			duration = 1825
@@ -1126,25 +1160,16 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			advisor = diplomat
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5024" # Appoint new diplomats
-		ai_chance = { factor = 60 }
+		ai_chance = { factor = 95 }
 		add_dip_power = 30
 	}	
 	option = {
 		name = "EVTOPTB5024" # Improve relations with neighboring states
-		ai_chance = { factor = 40 }
+		ai_chance = { factor = 5 }
 		trigger = {
 			any_known_country = {
 				is_neighbor_of = ROOT
@@ -1162,7 +1187,7 @@ country_event = {
 		trigger = {
 			ruler_has_personality_ancestor = { key = charismatic_negotiator }
 		}
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 1000 }
 		add_dip_power = 50
 	}
 	option = {
@@ -1203,25 +1228,28 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			dip = 4
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { dip = 1 }
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5025"		# Bask in the Glory
 		ai_chance = {
 			factor = 25
+			modifier = {
+				factor = 2 
+				NOT = { prestige = 0 } 
+			}
+			modifier = {
+				factor = 2
+				has_any_active_incomplete_idea_group_of_category = { dip_ideas = no }
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = charismatic_negotiator }
+					ruler_has_personality_ancestor = { key = silver_tongue }
+				}
+				NOT = { has_country_modifier = excellent_diplomacy_modifier }
+			}
 		}
 		add_prestige = 10
 	}
@@ -1229,6 +1257,22 @@ country_event = {
 		name = "EVTOPTB5025"		# Improve our Reputation
 		ai_chance = {
 			factor = 75
+			modifier = {
+				factor = 2 
+				prestige = 15
+			}
+			modifier = {
+				factor = 4
+				has_any_active_incomplete_idea_group_of_category = { dip_ideas = yes }
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = charismatic_negotiator }
+					ruler_has_personality_ancestor = { key = silver_tongue }
+				}
+				NOT = { has_country_modifier = excellent_diplomacy_modifier }
+			}
 		}
 		add_dip_power = 25
 	}
@@ -1271,38 +1315,51 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			mil = 4
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { mil = 1 }
-		}
 	}
 
 
 	option = {
 		name = "EVTOPTA5027"		# Invest in army technology
-		ai_chance = { factor = 55 }
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 4
+				has_any_active_incomplete_idea_group_of_category = { mil_ideas = yes }
+			}
+			modifier = {
+				factor = 2 
+				army_tradition = 85 
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = martial_educator }
+					ruler_has_personality_ancestor = { key = tactical_genius }
+					ruler_has_personality_ancestor = { key = inspiring_leader }
+				}
+			}
+		}
 		add_mil_power = 50
 	}
 	option = {
 		name = "EVTOPTB5027"		# Improve our existing military
 		ai_chance = {
-			factor = 45
+			factor = 10
 			modifier = {
 				factor = 2
-				NOT = { army_tradition = 80 }
+				NOT = { army_tradition = 60 }
 			}
 			modifier = {
 				factor = 0
 				army_tradition = 90
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = martial_educator }
+					ruler_has_personality_ancestor = { key = tactical_genius }
+					ruler_has_personality_ancestor = { key = inspiring_leader }
+				}
 			}
 		}
 		add_army_tradition = 20
@@ -1351,30 +1408,42 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			mil = 4
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { mil = 1 }
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5032"		# Invest in naval technology
-		ai_chance = { factor = 55 }
+		ai_chance = { 
+			factor = 10
+			modifier = {
+				factor = 5
+				has_any_active_incomplete_idea_group_of_category = { dip_ideas = yes }
+			}
+			modifier = {
+				factor = 2 
+				navy_tradition = 85 
+			}
+			modifier = {
+				factor = 0 
+				OR = {
+					ruler_has_personality_ancestor = { key = navigator }
+					ruler_has_personality_ancestor = { key = expansionist }
+				}
+			}
+		}
 		add_dip_power = 50
 	}
 	option = {
 		name = "EVTOPTB5032"		# Improve our existing navy
 		ai_chance = {
-			factor = 45
+			factor = 10
+			modifier = {
+				factor = 2 
+				NOT = { navy_tradition = 80 }
+			}
+			modifier = {
+				factor = 1.5
+				navy_size_percentage = 0.75 
+			}	
 			modifier = {
 				factor = 0
 				NOT = { num_of_ports = 5 }
@@ -1423,16 +1492,7 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			advisor = statesman
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-	}
+}
 	
 	option = {
 		name = "EVTOPTA5040"		# Use the money to bring stability to our nation
@@ -1447,7 +1507,18 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5040"		# Invest the money in our government
-		ai_chance = { factor = 30 }
+		ai_chance = { 
+			factor = 30 
+			modifier = { 
+				factor = 4 
+				OR = { 
+					has_any_active_incomplete_idea_group_of_category = { adm_ideas = yes } 
+					has_any_active_incomplete_idea_group_of_category = { dip_ideas = yes } 
+					has_any_active_incomplete_idea_group_of_category = { mil_ideas = yes } 
+				}
+				stability = 1 
+			}
+		}
 		if = {
 			limit = { 
 				OR = {
@@ -1471,6 +1542,10 @@ country_event = {
 				factor = 2
 				num_of_cities = 30
 			}
+			modifier = { 
+				factor = 2 
+				num_of_loans = 2 
+			}	
 		}
 		add_years_of_income = 0.20
 	}
@@ -1480,6 +1555,13 @@ country_event = {
 		trigger = {
 			ruler_has_personality_ancestor = { key = incorruptible }
 			corruption = 1
+		}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 10
+				corruption = 2 
+			}
 		}
 		add_corruption = -1
 	}
@@ -1525,12 +1607,31 @@ country_event = {
 		trigger = {
 			ruler_has_personality = embezzler_personality
 		}
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 3
+				num_of_cities = 30
+			}
+			modifier = { 
+				factor = 4 
+				num_of_loans = 2 
+				num_of_cities = 15
+			}	
+		}
 		add_years_of_income = 0.25
 	}
 	option = {
 		name = "personality_options.5040.e"		# This is perfect for a little project of mine...
 		highlight = yes
 		trigger = { ruler_has_personality = obsessive_perfectionist_personality }
+		ai_chance = {
+			factor = 30
+			modifier = {
+				factor = 3
+				NOT = { prestige = -25 }
+			}
+		}
 		add_prestige = 10
 	}
 }
@@ -1554,15 +1655,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = statesman
-		}
 	}
 
 	option = {
@@ -1609,7 +1701,28 @@ country_event = {
 		name = "personality_options.5045.a"		# The fault lies with others
 		highlight = yes
 		trigger = { ruler_has_personality = naive_personality }
+		ai_chance = {
+			factor = 100 
+			modifier = {
+				factor = 0
+				NOT = { prestige = -90 }
+			}
+		}
 		add_prestige = -10
+	}
+	option = {
+		name = "personality_options.5045.b"		# Overhaul the governmental policies.
+		highlight = yes
+		trigger = { ruler_has_personality = reformist_personality }
+		ai_chance = {
+			factor = 100 
+			modifier = {
+				factor = 0
+				has_any_active_incomplete_idea_group_of_category = { adm_ideas = yes } 
+				years_of_income = 1
+			}
+		}
+		add_adm_power = -15
 	}
 }
 
@@ -1636,19 +1749,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { advisor = theologian }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			theologian = 3
-		}
 	}
 
 	option = {
@@ -1803,19 +1903,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			aristocracy_ideas = 7
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3
-		}
 	}
 
 	immediate = {
@@ -1836,7 +1923,7 @@ country_event = {
 		ai_chance = {
 			factor = 55
 			modifier = {
-				factor = 0.5
+				factor = 0
 				NOT = { stability = 1 }
 			}
 			modifier = {
@@ -1881,6 +1968,10 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = { years_of_income = 0.5 }
+			}
+			modifier = { 
+				factor = 0 
+				num_of_loans = 5 
 			}
 		}
 		add_years_of_income = -0.50
@@ -1936,20 +2027,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			has_wartaxes = yes
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3
-			revolt_percentage = 0
-		}
 	}
 
 	immediate = {
@@ -2008,6 +2085,12 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = "personality_options.5051.d"		# Establish new reforms for the peasants
+		highlight = yes
+		trigger = { ruler_has_personality = reformist_personality }
+		add_adm_power = -25
+	}
 }
 
 #########################################################
@@ -2045,52 +2128,19 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			has_government_attribute = is_merchant_republic
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = trader
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5053"		# Reduce trade investment.
 		ai_chance = {
-			factor = 55
-			modifier = {
-				factor = 0
-				has_estate = estate_burghers
-				NOT = {
-					estate_loyalty = {
-						estate = estate_burghers
-						loyalty = 30
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				has_estate = estate_vaisyas
-				NOT = {
-					estate_loyalty = {
-						estate = estate_vaisyas
-						loyalty = 30
-					}
-				}
-			}
-		}
-		add_dip_power = -50
+			factor = 0 				#Sorry, but Mercantilism preservation is never worth it for a player, likewise for the AI.
+		}							#AI must preserve its mana just like an experienced player would.
+	add_dip_power = -50
 		reduce_estate_burghers_loyalty_effect = yes
 	}
 	option = {
 		name = "EVTOPTB5053"		# Get rid of the troublemakers.
-		ai_chance = { factor = 45 }
+		ai_chance = { factor = 100 }
 		add_mercantilism = -1
 	}
 	option = {
@@ -2124,28 +2174,17 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			revolt_percentage = 0.1
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = statesman
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5054"		# Given time, a solution will present itself.
 		ai_chance = {
-			factor = 55
-			modifier = {
-				factor = 0.5
-				NOT = { stability = 1 }
+			factor = 1 				#No, saving 25 Legitimacy is rarely worth it. 
+			modifier = { 			#Unless AI is a republic, to preserve its Rep. Trad 
+				factor = 100		#Which is infinitely more valuable than legitimacy 
+				government = republic 
+				NOT = { republican_tradition = 80 }
+				stability = 2 
 			}
 		}
 		if = {
@@ -2167,9 +2206,11 @@ country_event = {
 				NOT = { republican_tradition = 80 }
 			}
 			modifier = {
-				factor = 0.5
+				factor = 0
 				government = monarchy
-				NOT = { legitimacy_or_horde_unity = 80 }
+				NOT = { legitimacy_or_horde_unity = 70 }
+				NOT = { manpower_percentage = 0.25 } #To prevent AI from spiraling into disasters.
+				NOT = { stability = -1 }
 			}
 		}
 		add_republican_tradition = -10
@@ -2181,8 +2222,21 @@ country_event = {
 		name = "personality_options.5054.a"		# 
 		highlight = yes
 		trigger = { ruler_has_personality_ancestor = { key = righteous } }
+		ai_chance = {
+			factor = 100
+			modifier = { 
+				factor = 0
+				has_reform = steppe_horde
+				NOT = { horde_unity = 50 }
+			}
+			modifier = { 
+				factor = 0
+				is_emperor_of_china = yes 
+				NOT = { imperial_mandate = 45 }
+			}
+		}
 		add_legitimacy = -10
-		add_republican_tradition = -5
+		add_republican_tradition = -3
 		add_horde_unity = -10
 		reduce_mandate_effect = yes
 	}
@@ -2190,17 +2244,10 @@ country_event = {
 		name = "personality_options.5054.b"		# 
 		highlight = yes
 		trigger = { ruler_has_personality_ancestor = { key = just } }
-		random_list = {
-			50 = {
-				add_prestige = 5
-			}
-			50 = {
-				add_republican_tradition = -10
-				add_horde_unity = -25
-				add_legitimacy = -25
-				reduce_mandate_large_effect = yes
-			}
+		ai_chance = { 
+			factor = 1000
 		}
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -2219,27 +2266,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			num_of_loans = 1
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { corruption = 0.5 }
-		}
-		modifier = {
-			factor = 2
-			corruption =4
-		}
-		modifier = {
-			factor = 0.66
-			advisor = treasurer
-		}
 	}
 
 	option = {
@@ -2266,7 +2292,11 @@ country_event = {
 			factor = 45
 			modifier = {
 				factor = 0.5
-				corruption = 10
+				corruption = 5
+			}
+			modifier = { 	
+				factor = 10 
+				NOT = { stability = 1 } 
 			}
 		}
 		if = {
@@ -2335,17 +2365,12 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 0.66
-			dip = 5
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5056" # We won't forget this.
-		ai_chance = { factor = 55 }
-		event_target:insulted_party = {
+		ai_chance = { factor = 0 } 			#There is absolutely no reason to pick this, the AI does not use it.
+		event_target:insulted_party = {		#And opinions can help manage AE and overall assist the AI 
 			reverse_add_casus_belli = {	
 				target = ROOT
 				type = cb_insult
@@ -2355,7 +2380,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5056" # Try to ease the tension.
-		ai_chance = { factor = 45 }
+		ai_chance = { factor = 1 }
 		every_neighbor_country = {
 			limit = { is_at_war = no }
 			add_opinion = { who = ROOT modifier = opinion_eased_tension }
@@ -2365,6 +2390,9 @@ country_event = {
 		name = "personality_options.5056.a" # Try to ease the tension.
 		highlight = yes
 		trigger = { ruler_has_personality_ancestor = { key = silver_tongue } }
+		ai_chance = {
+			factor = 100 
+		}
 		add_estate_burghers_loyalty_effect = yes
 		add_prestige = 5
 		every_neighbor_country = {
@@ -2406,23 +2434,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			adm = 4
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			OR = {
-				has_government_attribute = is_merchant_republic
-				government = theocracy
-				has_reform = tribal_federation
-			}
-		}
 	}
 
 	option = {
@@ -2449,7 +2460,13 @@ country_event = {
 				has_estate = estate_nobles
 				estate_influence = {
 					estate = estate_nobles
-					influence = 80
+					influence = 95
+				}
+				NOT = { 
+					estate_loyalty = {
+						estate = estate_nobles 
+						loyalty = 45 
+					}
 				}
 			}
 		}
@@ -2463,6 +2480,17 @@ country_event = {
 		name = "personality_options.5058.a"		# Crush Them!
 		highlight = yes
 		trigger = { ruler_has_personality = cruel_personality }
+		ai_chance = { 
+			factor = 100 
+			modifier = { 
+				factor = 0 
+				OR = { 
+					num_of_loans = 10 
+					war_exhaustion = 10 
+					NOT = { manpower_percentage = 0.1 }
+				}
+			}
+		}
 		add_prestige = 10
 		random_owned_province = {
 			limit = {
@@ -2481,6 +2509,7 @@ country_event = {
 		name = "personality_options.5058.b"		# They never had those rights to begin with.
 		highlight = yes
 		trigger = { ruler_has_personality_ancestor = { key = lawgiver } }
+		ai_chance = { factor = 100 } 
 		add_prestige = -5
 		add_legitimacy = 5
 	}
@@ -2511,36 +2540,13 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { trade_efficiency = 0.5 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			trade_efficiency = 0.6
-		}
 	}
 
 	option = {
 		name = "EVTOPTA5059"		# Cut down on our expenses
 		ai_chance = {
-			factor = 55
-			modifier = {
-				factor = 0
-				has_estate = estate_burghers
-				NOT = {
-					estate_loyalty = {
-						estate = estate_burghers
-						loyalty = 30
-					}
-				}
-			}
-		}
+			factor = 0 	#Most nations stand to lose way more than 10% Yearly income with this choice
+		}				#So AI should never pick it, just like a player would not.
 		reduce_estate_burghers_loyalty_effect = yes
 		add_country_modifier = {
 			name = "trade_disaster"
@@ -2549,13 +2555,7 @@ country_event = {
 	}
 	option = {
 		name = "EVTOPTB5059"		# This isn't anything we can't handle.
-		ai_chance = {
-			factor = 45
-			modifier = {
-				factor = 0.5
-				NOT = { years_of_income = 0.15 }
-			}
-		}
+		ai_chance = { factor = 1 } 		# Nations should not struggle financially after the 1700s
 		add_estate_burghers_loyalty_effect = yes
 		add_years_of_income = -0.1
 	}
@@ -2563,6 +2563,7 @@ country_event = {
 		name = "personality_options.5059.a"		# You win some, you lose some
 		highlight = yes
 		trigger = { ruler_has_personality_ancestor = { key = entrepreneur } }
+		ai_chance = { factor = 100 } 
 		add_estate_burghers_loyalty_effect = yes
 		add_years_of_income = -0.05
 	}
@@ -2579,35 +2580,11 @@ country_event = {
 	
 	is_triggered_only = yes
 
-	trigger = {}
-
+	trigger = {
+		NOT = { has_country_flag = no_more_comet_sighted_event }
+	}
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 0.1
-			OR = {
-				has_idea = comets
-				ruler_has_personality_ancestor = { key = scholar }
-			}
-		}
-		
-		modifier = {
-			factor = 0.5
-			natural_scientist = 1
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 1.1
-			stability = 2
-		}
-		modifier = {
-			factor = 1.1
-			stability = 3
-		}
 	}
 	
 	option = {
@@ -2705,6 +2682,59 @@ country_event = {
 			add_stability = -1
 		}
 	}		
+	option = {
+		name = "EVTOPTI5060"		# What a great start into the new year.
+		trigger = {
+			NOT = { is_year = 1445 }
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}		
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+	}	
+	option = {
+		name = "EVTOPTJ5060"		# That's now Victoria's problem, not mine.
+		trigger = {
+			is_year = 1810
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}		
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+	}	
+	option = {
+		name = "EVTOPTK5060"		# That's it. I'm dead.
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}		
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+	}		
+	option = {
+		name = "EVTOPTL5060"		# Curse you, Comet Sense!
+		trigger = {
+			NOT = { stability = -1 }
+		}
+		if = {
+			limit = { NOT = { stability = -2 } }
+			add_adm_power = -100
+		}		
+		if = {
+			limit = { stability = -2 }
+			add_stability = -1
+		}
+	}		
 }
 
 #########################################################
@@ -2726,19 +2756,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { innovativeness_ideas = 2 }
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			innovativeness_ideas = 6
-		}
 	}
 
 	option = {
@@ -2788,23 +2805,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { economic_ideas = 2 }
-		}
-		modifier = {
-			factor = 1.25
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.8
-			stability = 1
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
 	}
 
 	immediate = {
@@ -2889,19 +2889,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			aristocracy_ideas = 5
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = statesman
-		}
 	}
 
 	immediate = {
@@ -2991,22 +2978,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			OR = {
-				num_of_loans = 2
-				is_bankrupt = yes
-			}
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = treasurer
-		}
 	}
 
 	option = {
@@ -3098,19 +3069,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			is_at_war = yes
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = treasurer
-		}
 	}
 
 	option = {
@@ -3175,19 +3133,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			trade_efficiency = 0.6
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { trade_efficiency = 0.5 }
-		}
 	}
 
 	option = {
@@ -3237,19 +3182,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3
-		}
 	}
 
 	option = {
@@ -3316,11 +3248,7 @@ country_event = {
 	trigger = {
 		is_lesser_in_union = no
 		NOT = { has_country_modifier = tax_income_boost }
-		OR = {
-			government = monarchy
-			government = republic
-			government = theocracy
-		}
+		NOT = { government = tribal }
 		OR = {
 			has_estate = estate_nobles
 			has_estate = estate_rajput
@@ -3347,19 +3275,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			trader = 2
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { advisor = trader }
-		}
 	}
 
 	immediate = {
@@ -3472,23 +3387,30 @@ country_event = {
 	title = "EVTNAME5074"
 	desc = "EVTDESC5074"
 	picture = LAND_MILITARY_eventPicture
-
+	goto = cantonments_province
 	is_triggered_only = yes
 
 	trigger = {
 		is_year = 1600
+		any_owned_province = {
+			is_city = yes
+			culture_group = ROOT
+		}
 	}
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { mil = 1 }
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_city = yes
+					culture_group = root
+				}
+				save_event_target_as = cantonments_province
+			}
 		}
 	}
 
@@ -3501,11 +3423,7 @@ country_event = {
 				NOT = { treasury = 200 }
 			}
 		}
-		random_owned_province = {
-			limit = {
-				is_city = yes
-				culture_group = root
-			}
+		event_target:cantonments_province = {
 			add_base_manpower = 1
 		}
 	}
@@ -3519,11 +3437,7 @@ country_event = {
 			}
 		}
 		add_treasury = -60
-		random_owned_province = {
-			limit = {
-				is_city = yes
-				culture_group = root
-			}
+		event_target:cantonments_province = {
 			add_base_manpower = 2
 		}
 	}
@@ -3586,19 +3500,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { adm = 1 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			adm = 5
-		}
 	}
 
 	option = {
@@ -3681,19 +3582,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			revolt_percentage = 0.1
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3
-		}
 	}
 
 	option = {
@@ -3792,19 +3680,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 1.25
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.8
-			stability = 1
-		}
 	}
 
 	immediate = {
@@ -3842,6 +3717,7 @@ country_event = {
 					}
 					add_local_autonomy = 15
 				}
+				add_local_autonomy = 15
 			}
 		}
 	}
@@ -3882,19 +3758,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 1.25
-			NOT = { has_government_attribute = is_merchant_republic }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3
-		}
 	}
 
 	option = {
@@ -3964,10 +3827,10 @@ country_event = {
 
 	trigger = {
 		capital_scope = { continent = europe }
+		NOT = { is_year = 1650 }
 		any_known_country = {
 			culture_group = latin
 		}
-		NOT = { is_year = 1650 }
 	}
 	
 	immediate = {
@@ -3991,15 +3854,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			defensive_ideas = 5
-		}
-		modifier = {
-			factor = 0.66
-			offensive_ideas = 5
-		}
 	}
 
 	option = {
@@ -4059,8 +3913,10 @@ country_event = {
 
 	trigger = {
 		capital_scope = { continent = europe }
-		any_known_country = { # ??? BT; any_neighbor_country
+		mil_tech = 5 #firearms generally adopted
+		any_neighbor_country = {
 			same_continent = root
+			mil_tech = 5
 			if = {
 				limit = {
 					has_dlc = "Cradle of Civilization"
@@ -4078,13 +3934,11 @@ country_event = {
 				all_neighbor_country = {
 					OR = {
 						NOT = { same_continent = root }
-						NOT = { army_professionalism = prev } # ??? BT; army_tradition
+						NOT = { army_tradition  = prev }
 					}
 				}
 			}
-			mil_tech = 5
 		}
-		mil_tech = 5 #firearms generally adopted
 	}
 
 	immediate = {
@@ -4132,19 +3986,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			army_reformer = 3
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { advisor = army_reformer }
-		}
 	}
 
 	option = {
@@ -4206,19 +4047,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			artist = 3
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { advisor = artist }
-		}
 	}
 
 	option = {
@@ -4299,19 +4127,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { innovativeness_ideas = 3 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			innovativeness_ideas = 4
-		}
 	}
 
 	option = {
@@ -4410,20 +4225,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			has_idea = merchant_adventures
-			has_government_attribute = is_merchant_republic
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = trader
-		}
 	}
 
 	immediate = {
@@ -4511,19 +4312,6 @@ country_event = {
 	}
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			adm = 5
-		}
 	}
 	immediate = {
 		hidden_effect = {
@@ -4595,15 +4383,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			treasury = 300
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
 	}
 
 	option = {
@@ -4653,26 +4432,13 @@ country_event = {
 		NOT = { adm = 3 }
 		any_neighbor_country = {
 			is_neighbor_of = ROOT
-			is_free_or_tributary_trigger = yes
 			NOT = { alliance_with = root }
+			is_free_or_tributary_trigger = yes
 		}
 	}
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			statesman = 2
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { advisor = statesman }
-		}
 	}
 
 	immediate = {
@@ -4680,8 +4446,8 @@ country_event = {
 			random_neighbor_country = {
 				limit = {
 					is_neighbor_of = ROOT
-					is_free_or_tributary_trigger = yes
 					NOT = { alliance_with = root }
+					is_free_or_tributary_trigger = yes
 				}
 				save_event_target_as = dissidents_in_here
 			}
@@ -4720,19 +4486,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { trade_efficiency = 0.5 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			trade_efficiency = 0.6
-		}
 	}
 
 	option = {
@@ -4788,19 +4541,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { statesman = 2 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			statesman = 3
-		}
 	}
 
 	option = {
@@ -4887,20 +4627,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { statesman = 1 }
-			NOT = { innovativeness_ideas = 2 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			statesman = 3
-		}
 	}
 
 	option = {
@@ -4951,19 +4677,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { adm = 1 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			adm = 4
-		}
 	}
 
 	option = {
@@ -4998,15 +4711,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			num_of_loans = 1
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
 	}
 
 	option = {
@@ -5049,19 +4753,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 1
-		}
 	}
 
 	option = {
@@ -5118,15 +4809,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = treasurer
-		}
 	}
 
 	option = {
@@ -5195,19 +4877,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			has_government_attribute = is_merchant_republic
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			advisor = trader
-		}
 	}
 
 	option = {
@@ -5257,19 +4926,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-				
-		modifier = {
-			factor = 2.0
-			offensive_ideas = 6
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			maritime_ideas = 3
-		}
 	}
 
 	option = {
@@ -5312,19 +4968,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-				
-		modifier = {
-			factor = 5.0
-			has_idea_group = maritime_ideas
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			has_idea = grand_army
-		}
 	}
 
 	option = {
@@ -5364,18 +5007,12 @@ country_event = {
 #
 #	mean_time_to_happen = {
 #		days = 1
-#		
-#		modifier = {
-#			factor = 3.0
-#			full_idea_group = offensive_ideas
-#			full_idea_group = defensive_ideas
-#		}
 #	}
 #
 #	option = {
 #		name = "EVTOPTA6002"		# Attack is always the best option
 #		ai_chance = { factor = 55 }
-#		add_adm_power = -100
+#		add_adm_power = -50
 #		add_country_modifier = {
 #			name = offensive_modifier
 #			duration = 3650
@@ -5384,7 +5021,7 @@ country_event = {
 #	option = {
 #		name = "EVTOPTB6002"		# Let them come to us
 #		ai_chance = { factor = 45 }
-#		add_adm_power = -100
+#		add_adm_power = -50
 #		add_country_modifier = {
 #			name = defensive_modifier
 #			duration = 3650
@@ -5394,7 +5031,7 @@ country_event = {
 #		name = "personality_options.6001.a"		# Attempt to combine the best aspects of both schools.
 #		highlight = yes
 #		trigger = { ruler_has_personality_ancestor = { key = martial_educator } }
-#		add_adm_power = -50
+#		add_adm_power = -25
 #		add_country_modifier = {
 #			name = defensive_modifier
 #			duration = 1825
@@ -5425,19 +5062,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { economic_ideas = 1 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { adm = 1 }
-		}
 	}
 
 	option = {
@@ -5459,7 +5083,18 @@ country_event = {
 		add_dip_power = -35
 		add_mil_power = -35
 	}
-}
+	option = {
+		name = "personality_options.6003.a"		# Establish minor represantive institutions.
+		trigger = {
+			ruler_has_personality_ancestor = {
+				key = reformist
+			}
+		}
+		highlight = yes
+		ai_chance = { factor = 100 }
+		change_government_reform_progress = 15
+	}
+
 
 #########################################################
 #		Vatican infiltration							#
@@ -5479,19 +5114,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			has_idea_group = spy_ideas
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			prestige = 2
-		}
 	}
 
 	option = {
@@ -5536,19 +5158,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3 
-		}
 	}
 
 	option = {
@@ -5587,19 +5196,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			NOT = { stability = 0 }
-		}
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			stability = 3
-		}
 	}
 
 	option = {
@@ -5640,19 +5236,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			prestige = 10
-		}
-		modifier = {
-			factor = 2.0
-			ruler_has_personality_ancestor = { key = well_connected }
-		}
-		modifier = {
-			factor = 0.66
-			advisor = artist
-		}
 	}
 
 	option = {
@@ -5701,15 +5284,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			artist = 3
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { advisor = artist }
-		}
 	}
 
 	option = {
@@ -5746,10 +5320,11 @@ country_event = {
 	trigger = {
 		is_at_war = no
 		has_any_disaster = no
-		NOT = { overextension_percentage = 0.01 }
-		NOT = { num_of_rebel_armies = 1 }
 		adm = 3
 		has_regency = no
+		NOT = { overextension_percentage = 0.01 }
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
 	}
 
 	immediate = {
@@ -5766,19 +5341,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2.0
-			adm = 5
-		}
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}
-		modifier = {
-			factor = 0.66
-			NOT = { production_efficiency = 0.5 }
-		}
 	}
 
 	option = {
@@ -5851,10 +5413,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	immediate = {
@@ -5974,10 +5532,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}
 	}
 
 	immediate = {
@@ -6095,10 +5649,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -6123,6 +5673,20 @@ country_event = {
 		}
 		add_inflation = 3
 	}
+	option = {
+		name = "personality_options.712.a"
+		trigger = {
+			ruler_has_personality_ancestor = {
+				key = reformist
+			}
+		}
+		highlight = yes
+		ai_chance = {
+			factor = 100
+		}
+		add_inflation = -3
+		adm_power_cost = 50
+	}
 }
 
 # Decadence
@@ -6138,24 +5702,33 @@ country_event = {
 		stability = 1
 		is_at_war = no
 		is_bankrupt = no
-		NOT = { num_of_loans = 10 }
-		NOT = { war_exhaustion = 0.1 }
-		NOT = { had_recent_war = 10 }
-		NOT = { num_of_rebel_armies = 1 }
-		NOT = { num_of_rebel_controlled_provinces = 1 }
+		has_truce = no
+		NOT = {
+			AND = {
+				num_of_loans = 10
+				war_exhaustion = 0.1
+				had_recent_war = 10
+				num_of_rebel_armies = 1
+				num_of_rebel_controlled_provinces = 1
+			}
+		}
 	}
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
 		name = "EVTOPTA713"
 		add_stability = -1
+		if = {
+			limit = { has_government_mechanic = ottoman_decadence_mechanic }
+			add_government_power = {
+				mechanic_type = ottoman_decadence_mechanic
+				power_type = ottoman_decadence
+				value = 2
+			}
+		}
 	}
 }
 
@@ -6276,25 +5849,15 @@ country_event = {
 	
 	trigger = {
 		stability = 1
-		OR = {
-			is_at_war = no
-			war_score = 30
-		}
+		is_at_war = no
+		is_bankrupt = no
+		has_estate = estate_nobles
 		NOT = { revolt_percentage = 0.1 }
 		NOT = { num_of_loans = 10 }
-		is_bankrupt = no
 	}
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}	
-		modifier = {
-			factor = 0.25
-			has_active_policy = noble_loyalty_act
-		}
 	}
 
 	option = {
@@ -6350,10 +5913,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -6402,10 +5961,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -6450,10 +6005,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -6517,10 +6068,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -6589,10 +6136,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -6680,10 +6223,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	immediate = {
@@ -6775,10 +6314,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -6865,10 +6400,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	immediate = {
@@ -6956,10 +6487,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -7054,14 +6581,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 2.0
-			luck = yes
-		}	
-		modifier = {
-			factor = 2.0
-			war_exhaustion = 10
-		}
 	}
 
 	option = {
@@ -7084,15 +6603,10 @@ country_event = {
 		dip = 3
 		is_free_or_tributary_trigger = yes
 		any_rival_country = {
+			is_neighbor_of = ROOT
 			any_owned_province = {
 				NOT = { is_claim = ROOT }
 				NOT = { is_core = ROOT }
-				OR = {
-					is_capital = no
-					owner = {
-						NOT = { num_of_cities = 2 }
-					}
-				}
 				any_neighbor_province = {
 					owned_by = ROOT
 				}
@@ -7102,46 +6616,6 @@ country_event = {
 
 	mean_time_to_happen =  {
 		days = 1
-		modifier = {
-			factor = 1.15
-			adm = 4
-		}
-		modifier = {
-			factor = 1.15
-			adm = 5
-		}
-		modifier = {
-			factor = 1.15
-			adm = 6
-		}
-		modifier = {
-			factor = 1.15
-			mil = 4
-		}
-		modifier = {
-			factor = 1.15
-			mil = 5
-		}
-		modifier = {
-			factor = 1.15
-			mil = 6
-		}
-		modifier = {
-			factor = 1.15
-			dip = 4
-		}
-		modifier = {
-			factor = 1.15
-			dip = 5
-		}
-		modifier = {
-			factor = 1.15
-			dip = 6
-		}
-		modifier = {
-			factor = 1.15
-			ruler_has_personality_ancestor = { key = conqueror }
-		}
 	}
 
 	immediate = {
@@ -7166,12 +6640,6 @@ country_event = {
 					limit = {
 						NOT = { is_claim = ROOT }
 						NOT = { is_core = ROOT }
-						OR = {
-							is_capital = no
-							owner = {
-								NOT = { num_of_cities = 2 }
-							}
-						}
 						any_neighbor_province = {
 							owned_by = ROOT
 						}
@@ -7265,10 +6733,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -7319,10 +6783,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -7371,10 +6831,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -7423,10 +6879,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -7475,10 +6927,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -7544,7 +6992,6 @@ country_event = {
 	trigger = {
 		stability = 0
 		is_at_war = no
-		has_truce = no
 		NOT = { war_exhaustion = 1 }
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { has_country_modifier = bad_discipline }
@@ -7552,10 +6999,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -7945,10 +7388,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -8013,10 +7452,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 0.5
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -8130,10 +7565,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			luck = yes
-		}		
 	}
 
 	option = {
@@ -8189,13 +7620,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
+		capital_scope = { continent = europe }
 		government = monarchy
-		NOT = { has_reform = steppe_horde }
 		has_regency = no
+		has_government_attribute = heir
 		is_lesser_in_union = no
 		NOT = { legitimacy = 90 }
-		capital_scope = { continent = europe }
-		has_government_attribute = heir
 	}
 	
 	mean_time_to_happen = {
@@ -8374,14 +7804,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 1.25
-			luck = yes
-		}		
-		modifier = {
-			factor = 1.25
-			advisor = master_of_mint
-		}		
 	}
 	
 	option = {
@@ -8472,9 +7894,20 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA855"
-		add_country_modifier = {
-			name = "warriors_do_not_read_books"
-			duration = 1825
+		if = { 
+			limit = { 
+				NOT = { has_country_flag = warriors_can_read_some_books_flag }
+			}
+			add_country_modifier = {
+				name = "warriors_do_not_read_books"
+				duration = 1825
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = "warriors_do_not_read_books"
+				duration = 912
+			}
 		}
 	}
 	option = {
@@ -9173,7 +8606,9 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {	}
+	trigger = {
+		NOT = { adm = 950 }
+	}
 	
 	mean_time_to_happen = {
 		days = 1
@@ -9219,7 +8654,9 @@ country_event = {
 
 	is_triggered_only = yes
 	
-	trigger = {	}
+	trigger = {	
+		NOT = { dip = 950 }
+	}
 	
 	mean_time_to_happen = {
 		days = 1
@@ -9566,10 +9003,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 2.5
-			tag = FRA
-		}
 	}
 	
 	immediate = {
@@ -9581,10 +9014,13 @@ country_event = {
 	option = {
 		name = "EVTOPTA875"
 		ai_chance = { factor = 100 }
+		if = {
+			limit = { is_lesser_in_union = no }
+			add_legitimacy = -5
+			add_horde_unity = -5
+		}
 		add_prestige = -5
-		add_legitimacy = -5
-		add_horde_unity = -5
-		create_general = { tradition = 0 }
+		create_general = { tradition = 50 female = yes }
 	}
 	option = {
 		name = "EVTOPTB875"
@@ -9655,10 +9091,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		modifier = {
-			factor = 5.0
-			culture_group = germanic
-		}
 	}
 	
 	option = {
@@ -10585,138 +10017,147 @@ country_event = {
 
 namespace = random_event
 
-# Support for revolution overseas
-country_event = {
-	id = random_event.1
-	title = "random_event.EVTNAME1"
-	desc = "random_event.EVTDESC1"
-	picture = LAND_MILITARY_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		is_at_war = no
-		treasury = 100
-		# ??? BT
-		# Brian; compare this with vanilla trigger with:
-		# any_rival_country / any_known_country
-		# and then:
-		# any_enemy_country / any_known_country
-		any_country = {
-			OR = {
-				is_rival = root
-				root = { is_rival = prev }
-			}
-			any_known_country = {
-				OR = {
-					is_in_war = {
-						attacker_leader = this
-						defender_leader = prev
-						casus_belli = cb_colonial_independance_war
-					}
-					AND = {
-						is_former_colonial_nation = yes
-						is_in_war = {
-							defender_leader = this
-							attacker_leader = prev
-						}
-					}
-				}
-			}
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			random_country = {
-				limit = {
-					OR = {
-						is_rival = root
-						root = { is_rival = prev }
-					}
-					any_known_country = {
-						OR = {
-							is_in_war = {
-								attacker_leader = this
-								defender_leader = prev
-								casus_belli = cb_colonial_independance_war
-							}
-							AND = {
-								is_former_colonial_nation = yes
-								is_in_war = {
-									defender_leader = this
-									attacker_leader = prev
-								}
-							}
-						}
-					}
-				}
-				save_event_target_as = enemy_country
-				random_known_country = {
-					limit = {
-						OR = {
-							is_in_war = {
-								attacker_leader = this
-								defender_leader = prev
-								casus_belli = cb_colonial_independance_war
-							}
-							AND = {
-								is_former_colonial_nation = yes
-								is_in_war = {
-									defender_leader = this
-									attacker_leader = prev
-								}
-							}
-						}
-					}
-					save_event_target_as = former_colony
-				}
-			}
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "random_event.EVTOPTA1"
-		add_treasury = -100
-		event_target:former_colony = {
-			add_treasury = 100
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_sent_help
-				years = 20
-			}
-		}
-		event_target:enemy_country = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_interfered_in_war
-				years = 20
-			}
-		}
-	}
-	option = {
-		name = "random_event.EVTOPTB1"
-		add_prestige = -10
-		event_target:former_colony = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_refused_send_help
-				years = 20
-			}
-		}
-		event_target:enemy_country = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_pleased
-				years = 20
-			}
-		}
-	}
-}
+# Support for revolution overseas - No longer supported; the event takes a lot of performance for little gain.
+#country_event = {
+#	id = random_event.1
+#	title = "random_event.EVTNAME1"
+#	desc = "random_event.EVTDESC1"
+#	picture = LAND_MILITARY_eventPicture
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		is_at_war = no
+#		treasury = 100
+#		any_rival_country = {
+#			any_known_country = {
+#				OR = {
+#					is_in_war = {
+#						attacker_leader = this
+#						defender_leader = prev
+#						casus_belli = cb_colonial_independence_war
+#					}
+#					AND = {
+#						is_former_colonial_nation = yes
+#						is_in_war = {
+#							defender_leader = this
+#							attacker_leader = prev
+#						}
+#					}
+#				}
+#			}
+#		}
+#		any_enemy_country = {
+#			any_known_country = {
+#				OR = {
+#					is_in_war = {
+#						attacker_leader = this
+#						defender_leader = prev
+#						casus_belli = cb_colonial_independence_war
+#					}
+#					AND = {
+#						is_former_colonial_nation = yes
+#						is_in_war = {
+#							defender_leader = this
+#							attacker_leader = prev
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			random_country = {
+#				limit = {
+#					OR = {
+#						is_rival = root
+#						root = { is_rival = prev }
+#					}
+#					any_known_country = {
+#						OR = {
+#							is_in_war = {
+#								attacker_leader = this
+#								defender_leader = prev
+#								casus_belli = cb_colonial_independence_war
+#							}
+#							AND = {
+#								is_former_colonial_nation = yes
+#								is_in_war = {
+#									defender_leader = this
+#									attacker_leader = prev
+#								}
+#							}
+#						}
+#					}
+#				}
+#				save_event_target_as = enemy_country
+#				random_known_country = {
+#					limit = {
+#						OR = {
+#							is_in_war = {
+#								attacker_leader = this
+#								defender_leader = prev
+#								casus_belli = cb_colonial_independence_war
+#							}
+#							AND = {
+#								is_former_colonial_nation = yes
+#								is_in_war = {
+#									defender_leader = this
+#									attacker_leader = prev
+#								}
+#							}
+#						}
+#					}
+#					save_event_target_as = former_colony
+#				}
+#			}
+#		}
+#	}
+#	
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	
+#	option = {
+#		name = "random_event.EVTOPTA1"
+#		add_treasury = -100
+#		event_target:former_colony = {
+#			add_treasury = 100
+#			add_opinion = {
+#				who = ROOT
+#				modifier = opinion_sent_help
+#				years = 20
+#			}
+#		}
+#		event_target:enemy_country = {
+#			add_opinion = {
+#				who = ROOT
+#				modifier = opinion_interfered_in_war
+#				years = 20
+#			}
+#		}
+#	}
+#	option = {
+#		name = "random_event.EVTOPTB1"
+#		add_prestige = -10
+#		event_target:former_colony = {
+#			add_opinion = {
+#				who = ROOT
+#				modifier = opinion_refused_send_help
+#				years = 20
+#			}
+#		}
+#		event_target:enemy_country = {
+#			add_opinion = {
+#				who = ROOT
+#				modifier = opinion_pleased
+#				years = 20
+#			}
+#		}
+#	}
+#}
 
 # Culture ties weakened
 # Mangled by Daniel Tolman for 1.28
@@ -10804,7 +10245,7 @@ country_event = {
 				OR = {
 					culture = cosmopolitan_french
 					culture = occitain
-					culture = norman
+					culture = normand
 					culture = gascon
 					culture = burgundian
 				}
@@ -10825,7 +10266,7 @@ country_event = {
 				OR = {
 					culture = cosmopolitan_french
 					culture = occitain
-					culture = norman
+					culture = normand
 					culture = gascon
 					culture = burgundian
 				}
@@ -10917,7 +10358,7 @@ country_event = {
 					OR = {
 						culture = cosmopolitan_french
 						culture = occitain
-						culture = norman
+						culture = normand
 						culture = gascon
 						culture = burgundian
 					}
@@ -10936,7 +10377,7 @@ country_event = {
 					OR = {
 						culture = cosmopolitan_french
 						culture = occitain
-						culture = norman
+						culture = normand
 						culture = gascon
 						culture = burgundian
 					}
@@ -11073,7 +10514,7 @@ country_event = {
 						OR = {
 							culture = cosmopolitan_french
 							culture = occitain
-							culture = norman
+							culture = normand
 							culture = gascon
 							culture = burgundian
 						}
@@ -11089,7 +10530,7 @@ country_event = {
 						OR = {
 							culture = cosmopolitan_french
 							culture = occitain
-							culture = norman
+							culture = normand
 							culture = gascon
 							culture = burgundian
 						}
@@ -11110,7 +10551,7 @@ country_event = {
 						OR = {
 							culture = cosmopolitan_french
 							culture = occitain
-							culture = norman
+							culture = normand
 							culture = gascon
 							culture = burgundian
 						}
@@ -11125,7 +10566,7 @@ country_event = {
 						OR = {
 							culture = cosmopolitan_french
 							culture = occitain
-							culture = norman
+							culture = normand
 							culture = gascon
 							culture = burgundian
 						}
@@ -11372,7 +10813,7 @@ country_event = {
 				OR = {
 					culture = cosmopolitan_french
 					culture = occitain
-					culture = norman
+					culture = normand
 					culture = gascon
 					culture = burgundian
 				}
@@ -11394,7 +10835,7 @@ country_event = {
 					OR = {
 						culture = cosmopolitan_french
 						culture = occitain
-						culture = norman
+						culture = normand
 						culture = gascon
 						culture = burgundian
 					}
@@ -11416,7 +10857,7 @@ country_event = {
 				OR = {
 					culture = cosmopolitan_french
 					culture = occitain
-					culture = norman
+					culture = normand
 					culture = gascon
 					culture = burgundian
 				}
@@ -11442,7 +10883,7 @@ country_event = {
 				OR = {
 					culture = cosmopolitan_french
 					culture = occitain
-					culture = norman
+					culture = normand
 					culture = gascon
 					culture = burgundian
 				}
@@ -11487,7 +10928,7 @@ country_event = {
 				OR = {
 					culture = cosmopolitan_french
 					culture = occitain
-					culture = norman
+					culture = normand
 					culture = gascon
 					culture = burgundian
 				}
@@ -11580,13 +11021,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2
-			any_owned_province = {
-				culture = english
-			}
-		}
 	}
 	
 	option = {
@@ -11979,12 +11413,12 @@ country_event = {
 	trigger = {
 		has_regency = no
 		is_at_war = yes
-		any_country = {
+		any_war_enemy_country = {
+			war_with = ROOT
 			employed_advisor = {
 				type = fortification_expert
 				culture = root
 			}
-			war_with = ROOT
 		}
 		NOT = {
 			has_ruler_modifier = inside_man
@@ -12441,15 +11875,6 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 1
-		
-		modifier = {
-			factor = 2
-			has_country_modifier = hire_privateers
-		}
-		modifier = {
-			factor = 2
-			has_idea = naval_fighting_instruction
-		}
 	}
 	
 	option = {
@@ -13079,7 +12504,6 @@ country_event = {
 	}
 }
 
-
 # Debased Currency
 country_event = {
 	id = random_event.26
@@ -13105,6 +12529,49 @@ country_event = {
 	}
 }
 
+# The Great Fire of [Root.Capital.GetName]
+country_event = {
+	id = random_event.27
+	title = random_event.27.t
+	desc = random_event.27.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = had_capital_fire }
+		capital_scope = {
+			development = 25
+		}
+	}
+	goto = capital
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = had_capital_fire }
+		hidden_effect = {
+			capital_scope = {
+				save_event_target_as = capital
+			}
+		}
+	}
+	
+	option = {
+		name = random_event.27.a
+		capital_scope = {
+			add_base_tax = -2
+			add_base_production = -4
+			add_base_manpower = -4
+			hidden_effect = {
+				if = { limit = { NOT = { base_tax = 1 } } set_base_tax = 1 }
+				if = { limit = { NOT = { base_production = 1 } } set_base_production = 1 }
+				if = { limit = { NOT = { base_manpower = 1 } } set_base_manpower = 1 }
+			}
+			add_devastation = 100
+		}
+	}
+}
 
 
 ######### Product Events #######
@@ -13281,7 +12748,12 @@ country_event = {
 				NOT = { continent = new_world }
 			}
 			is_former_colonial_nation = yes
-			is_subject_of_type = colony
+			OR = {
+				is_subject_of_type = colony
+				is_subject_of_type = crown_colony
+				is_subject_of_type = private_enterprise
+				is_subject_of_type = self_governing_colony
+			}
 		}
 	}
 

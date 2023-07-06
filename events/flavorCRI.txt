@@ -110,7 +110,7 @@ country_event = {
 				has_regency = yes
 				has_heir = yes
 			}
-			kill_heir = { }
+			kill_heir = { allow_new_heir = no }
 			define_ruler = {
 				name = "Mengli"
 				dynasty = "Giray"
@@ -146,6 +146,10 @@ country_event = {
 		name = "flavor_cri.1.b" #We will be better of without Ottoman involvement.
 		ai_chance = {
 			factor = 65
+			modifier = { 
+				factor = 0 
+				TUR = { has_country_flag = tur_guarantee_cri_flag }
+			}
 			modifier = {
 				factor = 1.5
 				TUR = {
@@ -197,7 +201,7 @@ country_event = {
 				has_regency = yes
 				has_heir = yes
 			}
-			kill_heir = { }
+			kill_heir = { allow_new_heir = no }
 			define_ruler = {
 				name = "Nur Devlet"
 				dynasty = "Giray"
@@ -484,7 +488,39 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	
+	immediate = {
+		hidden_effect = {
+			CRI = {
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = tributary_state
+					}
+					grant_independence = yes
+				}
+			}
+			TUR = {
+				if = {
+					limit = {
+						has_country_flag = tur_guarantee_cri_flag
+					}
+					create_march = CRI
+				}
+				else_if = {
+					limit = {
+						has_dlc = "Mandate of Heaven"
+					}
+					set_country_flag = forced_tributary_state
+					create_subject = {
+						subject_type = tributary_state
+						subject = CRI
+					}
+					clr_country_flag = forced_tributary_state
+				}
+				else = { vassalize = CRI }
+			}
+		}
+	}
+
 	option = {
 		name = "flavor_cri.4.a" #We have now tied our fate to theirs.
 		add_legitimacy = 30
@@ -575,7 +611,10 @@ country_event = {
 			modifier = installed_ruler_crimean_succession
 		}
 		TUR = {
-			create_march = CRI
+			create_subject = {
+				subject_type = march
+				subject = CRI
+			}
 			hidden_effect = {
 				country_event = { id = flavor_cri.7 }
 			}
@@ -641,7 +680,10 @@ country_event = {
 				owned_by = ROOT
 			}
 			add_core = ILK
-			remove_core = ROOT
+			if = {
+				limit = { is_core = ROOT }
+				remove_core = ROOT
+			}
 		}
 		release = ILK
 		create_march = ILK

@@ -16,6 +16,7 @@ country_event = {
 		NOT = { exists = PAP } # Brian; 1.30: NOT = { exists = ITA }
 		NOT = { exists = ITL } # Brian; remove that?; BT
 		NOT = { has_country_flag = no_support }
+		NOT = { has_country_flag = general_flag_for_FU_Rome_flag }	
 	}
 	
 	mean_time_to_happen = {
