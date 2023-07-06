@@ -843,7 +843,6 @@ technology = {
 	artillery_fire		=	0.7			#BTAddOn new - Part of tech shock and fire overhaul
 		
 	enable = flying_battery  
-	enable = grand_battery
 }
 
 technology = {

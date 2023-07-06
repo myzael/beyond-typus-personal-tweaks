@@ -349,6 +349,10 @@ pretender_rebels = {
 		}
 		clr_country_flag = no_new_succession_crisis_if_pretender_rebels
 		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
+		if = {
 			limit = { has_disaster = counts_feud }
 			end_disaster = counts_feud
 			clr_country_flag = pretender_flag

@@ -335,6 +335,27 @@ custodian_of_the_two_holy_mosques = {
 ######################################
 # Catholic control of Rome.
 ######################################
+catholic_rome = {
+	potential = {
+		normal_or_historical_nations = yes
+		has_discovered = 118	# Roma
+		religion = catholic
+		NOT = { tag = PAP }
+		any_owned_province = { region = italy_region }			#BT added. Doesn't spam everyone unless they actually have some land in Italy. Might cause very rare situation of Rome taken in the first war.... but I like it organised.
+	}
+
+	trigger = {	
+		NOT = { overlord_of = PAP }
+		owns_or_vassal_of = 118 # Roma		
+		NOT = { tag = ITA }
+		NOT = { tag = ROM }
+		NOT = { tag = ITL }			#BtP
+	}
+
+	papal_influence = -10
+	diplomatic_reputation = -2			#BT changed from -1. Harsh penalties, but a Catholic shouldn't occupy Rome.
+	#icon = 9
+}
 
 papal_subjugation = {
 	potential = {

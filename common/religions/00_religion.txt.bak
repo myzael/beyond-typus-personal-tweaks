@@ -2565,7 +2565,7 @@ jewish_group = {
 					}
 					add_years_of_income = 0.3
 					add_inflation = -1
-				}
+				
 				if = {
 					limit = {
 						has_government_attribute = loyalty_from_celebration

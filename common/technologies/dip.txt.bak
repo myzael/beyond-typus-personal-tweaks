@@ -46,7 +46,7 @@ technology = { #The Barque
 	trade_range				=	100
 	enable = cog
 	enable = galley
-	
+
 	naval_engagement_width = 20
 
 }

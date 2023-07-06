@@ -2990,15 +2990,6 @@ cloves = {
 				has_country_flag = encourage_cash_crops_flag
 			}
 		}
-		modifier = {
-			factor = 2
-			FROM = {
-				OR = {
-					has_increased_trade_goods_discovery = { trade_goods = cloves }
-					colonial_parent = { has_increased_trade_goods_discovery = { trade_goods = cloves } }
-				}
-			}
-		}
 	}
 }
 
