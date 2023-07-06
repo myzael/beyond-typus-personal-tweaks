@@ -1,4 +1,3 @@
- 
 #118 - Roma
 #Region - Italy
 #Area - Central Italy
@@ -19,12 +18,12 @@ fort_15th = yes #Castel Sant'Angelo
 extra_cost = 30
 
 discovered_by = western
+discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = eastern
-
-add_province_triggered_modifier = non_catholic_rome
 add_province_triggered_modifier = religious_center
+add_province_triggered_modifier = catholic_rome
+add_province_triggered_modifier = non_catholic_rome
 
 
 #Province history completed by - Nikicaga

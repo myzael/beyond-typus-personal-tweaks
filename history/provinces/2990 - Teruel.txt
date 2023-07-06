@@ -1,4 +1,3 @@
- 
 #2990 - Teruel
 #Region - Iberia
 #Area - Aragon
@@ -19,11 +18,11 @@ trade_goods = iron
 base_manpower = 1 
 capital = "Teruel"
 is_city = yes
-
 discovered_by = western
+discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = eastern
+
 
 1516.1.23 = {
 	controller = SPA

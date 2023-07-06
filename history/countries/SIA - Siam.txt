@@ -42,7 +42,6 @@ capital = 8556 #Bangkok
 		leader = { 
 			name = "Borommaracha II"
 			type = general
-
 			fire = 2	
 			shock = 4	
 			manuever = 3	

@@ -1,17 +1,17 @@
-
 #856 - Zacatecas
 
 culture = chichimecan 
 religion = animism
-is_city = yes
-owner = CCM
-controller = CCM
-add_core = CCM
+#is_city = yes
+#owner = CCM
+#controller = CCM
+#add_core = CCM
+tribal_owner = CCM
 capital = "Zacatecas" 
 trade_goods = gold
 hre = no
-base_tax = 2 
-base_production = 2 
+base_tax = 2
+base_production = 2
 base_manpower = 2
 
 

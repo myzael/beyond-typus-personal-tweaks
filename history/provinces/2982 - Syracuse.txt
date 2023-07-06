@@ -1,4 +1,3 @@
- 
 # - Syracusa
 #Region - Italy
 #Area - Sicily
@@ -17,9 +16,9 @@ is_city = yes
 add_core = SIC
 
 discovered_by = western
+discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-discovered_by = eastern
 
 
 #Province history completed by - Draiocht to 1516, later by Chairman_Meow (JP)

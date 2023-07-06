@@ -1,4 +1,3 @@
- 
 #Estland, incl. Reval, Hapsal, Weissenstein, Wesenberg and Pernau.
 #Region - Baltic
 #Area - Estonia

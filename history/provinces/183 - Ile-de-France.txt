@@ -1,4 +1,3 @@
- 
 # 183 Île-de-France - Principal cities: Paris
 # Region - France
 # Area - Seine

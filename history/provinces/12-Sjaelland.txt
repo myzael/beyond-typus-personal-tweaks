@@ -1,4 +1,3 @@
- 
 #Sjaelland, incl. København, Roskilde, Helsingør, Ringsted
 #Region - Scandinavia
 #Area - Denmark

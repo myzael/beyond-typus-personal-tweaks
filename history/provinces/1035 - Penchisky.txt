@@ -1,10 +1,12 @@
- 
 #1035 - Penchisky
 
+owner = CHU
+controller = CHU
+add_core = CHU
 culture = kamchatkan
 religion = tengri_pagan_reformed
 capital = "Penzhinsky"
-trade_goods = unknown
+trade_goods = fish
 hre = no
 base_tax = 2  
 base_production = 2 
@@ -15,11 +17,11 @@ native_hostileness = 3
 
 
 
-1444.1.1 = { discovered_by = ANU }
-1444.1.1 = { discovered_by = HOD }
-1444.1.1 = { discovered_by = CHU }
-1444.1.1 = { discovered_by = CHV }
-1444.1.1 = { discovered_by = KMC }
+discovered_by = ANU
+discovered_by = HOD
+discovered_by = CHU
+discovered_by = CHV
+discovered_by = KMC
 
 1647.1.1 = { discovered_by = RUS } # V. Atlasov
 

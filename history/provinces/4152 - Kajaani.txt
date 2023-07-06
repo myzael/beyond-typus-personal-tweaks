@@ -1,4 +1,3 @@
- 
 #4151 - Most of Kemi Lappmark: Enare/Inari, Sodankylä, Kemikyla, Utsjoki, Kittila, Sombio
 
 owner = SWE

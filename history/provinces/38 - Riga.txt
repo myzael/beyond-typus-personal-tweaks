@@ -1,4 +1,3 @@
- 
 #Riga Bight, incl. the city of Riga, and Dünamünde.
 #Region - Baltic
 #Area - Livonia
@@ -6,7 +5,7 @@
 owner = RIG
 controller = RIG
 add_core = RIG
-culture = prussian
+culture = baltic_german
 religion = catholic
 hre = no
 base_tax = 6 

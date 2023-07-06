@@ -1,4 +1,3 @@
- 
 #Kola
 #Region - Russia
 #Area - Karelia
@@ -20,8 +19,9 @@ native_hostileness = 1
 native_size = 2
 native_ferocity = 2
 
-discovered_by = eastern
+
 discovered_by = western
+discovered_by = eastern
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	remove_core = NOV

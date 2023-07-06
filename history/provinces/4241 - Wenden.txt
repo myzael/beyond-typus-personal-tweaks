@@ -1,4 +1,3 @@
- 
 #3228 - Valmiera	(using the old BtP file)
 #Region - Baltic
 #Area - Livonia
