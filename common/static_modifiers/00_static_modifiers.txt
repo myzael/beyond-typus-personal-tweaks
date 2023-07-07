@@ -209,11 +209,7 @@ normal_winter = {
 	local_hostile_movement_speed = -0.30
 	local_friendly_movement_speed = -0.30
 	supply_limit_modifier = -0.5
-<<<<<<< Updated upstream
-=======
 	migration_cost = 0.1
-	
->>>>>>> Stashed changes
 	picture = "winter_normal"
 }
 
@@ -222,11 +218,7 @@ severe_winter = {
 	local_hostile_movement_speed = -0.50
 	local_friendly_movement_speed = -0.50
 	supply_limit_modifier = -0.8
-<<<<<<< Updated upstream
-=======
 	migration_cost = 0.2
-	
->>>>>>> Stashed changes
 	picture = "winter_severe"
 }
 
@@ -305,17 +297,10 @@ development = {
 	naval_forcelimit = 0.05			# special case, affected by autonomy & set to 0 by code if not port
 	local_sailors = 15			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.1
-<<<<<<< Updated upstream
-	local_amount_of_banners = 0.05
-	local_amount_of_cawa = 0.125
-	local_amount_of_carolean = 0.1
-	local_amount_of_hussars = 0.01
-=======
 	local_amount_of_banners = 0.033 #BT Changed from 0.05 to match vanilla's 0.066
 	local_amount_of_cawa = 0.063 #BT Changed from 0.125 for dev doubling
 	local_amount_of_carolean = 0.05 #BT Changed from 0.1 for dev doubling
 	local_amount_of_hussars = 0.005 #BT Changed from 0.01 for dev doubling
->>>>>>> Stashed changes
 }
 
 development_scaled = {
@@ -345,13 +330,8 @@ patriarch_authority_global = {
 	church_influence_modifier = 0.10
 }
 
-<<<<<<< Updated upstream
-pasha_state = {
-	local_governing_cost = -0.2
-=======
 pasha_state = { #Overwrote old entries with vanilla 1.35
 	#local_governing_cost = -0.2 #BT Cut because governing cost has been rebalanced.
->>>>>>> Stashed changes
 	min_local_autonomy = 20
 	local_state_maintenance_modifier = -0.33
 	local_autonomy = -0.1
@@ -442,10 +422,7 @@ gbr_emperor_of_india_overlord_bonus = {
 	trade_efficiency = 0.1
 	reduced_trade_penalty_on_non_main_tradenode = 0.25
 }
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 same_culture_group = {
 	local_tax_modifier = -0.1				#10% penalty if same culture group but nothing else. Not applied if the controller is the Union Tag of the culture group, or has culture_group_union set.			#BTAddOn changed from 0.15, comprehensively reducing culture penalties and increasing religious ones
 	local_manpower_modifier = -0.1			#BTAddOn changed from 0.15, comprehensively reducing culture penalties and increasing religious ones
@@ -616,11 +593,7 @@ left_trade_company = {
 
 scorched_earth = {
 	local_hostile_movement_speed = -0.30			#BTAddOn changed from -0.5 - that is far too much, and I don't like the way it stacks with my terrain changes
-<<<<<<< Updated upstream
-	local_monthly_devastation = 0.25
-=======
 	local_monthly_devastation = 0.25 #BT Inherited from vanilla
->>>>>>> Stashed changes
 }
 
 ##########################################################################
@@ -661,10 +634,6 @@ base_values = {
 	tolerance_of_heathens_capacity = 3
 	max_flagships = 1
 	num_of_parliament_issues = 10
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -724,14 +693,9 @@ negative_stability = {
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 	global_unrest = -2.5
-<<<<<<< Updated upstream
-	all_estate_loyalty_equilibrium = 0.1
-	war_exhaustion = -0.05
-=======
 	#stability_cost_modifier = -0.1 #BT Vanilla cut
 	war_exhaustion = -0.05 #BT Vanilla upped from -0.03
 	all_estate_loyalty_equilibrium = 0.1 #BT Vanilla added
->>>>>>> Stashed changes
 	
 	#Aborted these changes... I think the Autonomy caused some major lag
 	#global_unrest = -2.5
@@ -926,15 +890,9 @@ trade_refusal = {
 
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
-<<<<<<< Updated upstream
-	embargo_efficiency = 1
-	burghers_loyalty_modifier = 0.1
-	vaisyas_loyalty_modifier = 0.1
-=======
 	embargo_efficiency = 1 #BT Vanilla doubled effects
 	burghers_loyalty_modifier = 0.1 #BT Vanilla doubled effects
 	vaisyas_loyalty_modifier = 0.1 #BT Vanilla doubled effects
->>>>>>> Stashed changes
 }
 
 army_tradition = {
@@ -1058,8 +1016,6 @@ num_of_provinces = {
 
 # Multiplied by the amount of papal influence
 papal_influence = {
-<<<<<<< Updated upstream
-=======
 }
 
 # Multiplied by the amount of Church Power
@@ -1088,37 +1044,7 @@ negative_karma = {
 
 # Multiplied by Development/COUNTRY_DEVELOPMENT_SCALE
 country_development = {
-	yearly_tribal_allegiance = -0.005
->>>>>>> Stashed changes
-}
-
-# Multiplied by the amount of Church Power
-church_power = {
-}
-
-# Multiplied by the amount of Fervor
-fervor = {
-	build_cost = -0.001
-	stability_cost_modifier = -0.001
-	years_of_nationalism = -0.05
-	improve_relation_modifier = 0.001
-}
-
-# Multiplied by the amount of Karma
-karma = {
-}
-
-# Multiplied by the amount of positive karma
-positive_karma = {
-}
-
-# Multiplied by the amount of negative karma
-negative_karma = {
-}
-
-# Multiplied by Development/COUNTRY_DEVELOPMENT_SCALE
-country_development = {
-	horde_unity = -3
+	horde_unity = -1.5 #BT Halved for dev doubling
 }
 
 # Multiplied by current Legitimacy - 50
@@ -1320,13 +1246,8 @@ curia_controller = {
 	ae_impact = -0.2
 	#technology_cost = -0.05			#BTAddOn removed - So being the defender of the faith means you automatically become a philistine, yet being the curia controller means you have new insight into technological development..... Removing penalty and bonus
 	church_loyalty_modifier = 0.1
-<<<<<<< Updated upstream
-	diplomatic_reputation = 1
-	diplomatic_annexation_cost = -0.1
-=======
 	diplomatic_reputation = 1 #BT Vanilla new
 	diplomatic_annexation_cost = -0.1 #BT Vanilla new
->>>>>>> Stashed changes
 }
 
 bought_indulgence = {
@@ -1355,13 +1276,8 @@ total_occupation = {
 
 total_blockaded = {
 	war_exhaustion = 0.10					#increases exhaustion.
-<<<<<<< Updated upstream
-	global_trade_power = -0.75
-	trade_steering = -0.75
-=======
 	global_trade_power = -0.75 #BT Vanilla new
 	trade_steering = -0.75 #BT Vanilla new
->>>>>>> Stashed changes
 }
 
 uncontested_cores = {
@@ -2272,19 +2188,11 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
-<<<<<<< Updated upstream
-}
-
-# At 1000% below capacity, this modifier will be fully used
-under_governing_capacity_modifier = {
-=======
->>>>>>> Stashed changes
 }
 
 # At 1000% below capacity, this modifier will be fully used
 under_governing_capacity_modifier = {
 }
-
 
 lost_hegemony = {
 	all_power_cost	= 0.10
