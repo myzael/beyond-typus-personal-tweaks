@@ -3195,7 +3195,7 @@ has_any_active_incomplete_idea_group_of_category = {
                 AND = { has_idea_group = naval_ideas				NOT = { full_idea_group = naval_ideas } }
             }
         }
-    ]
+    }
 }
 
 has_unlocked_church_aspect = {

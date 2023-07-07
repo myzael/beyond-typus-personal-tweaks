@@ -517,7 +517,6 @@ unrest = {
 	ship_recruit_speed = 0.1
 	local_tax_modifier = -0.02
 }
-}
 
 nationalism = {
 	local_unrest = 0.5					#for each year revolt risk!
