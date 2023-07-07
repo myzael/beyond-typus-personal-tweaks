@@ -139,7 +139,7 @@ eng_rb_islands_med = {
 		position = 3
 		
 		provinces_to_highlight = {
-			eng_rb_take_baleares_provinces = yes
+			province_group = eng_rb_take_baleares_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -162,7 +162,7 @@ eng_rb_islands_med = {
 		required_missions = { eng_rb_take_baleares }
 		
 		provinces_to_highlight = {
-			eng_rb_take_mediterranean_islands_provinces = yes
+			province_group = eng_rb_take_mediterranean_islands_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -215,7 +215,7 @@ eng_rb_egypt = {
 		position = 4
 		
 		provinces_to_highlight = {
-			eng_rb_take_delta_provinces = yes
+			province_group = eng_rb_take_delta_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -238,7 +238,7 @@ eng_rb_egypt = {
 		position = 5
 		
 		provinces_to_highlight = {
-			eng_rb_take_bahari_provinces = yes
+			province_group = eng_rb_take_bahari_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -405,7 +405,7 @@ eng_rb_burgundy = {
 		position = 6
 		
 		provinces_to_highlight = {
-			eng_rb_conquer_burgundy_provinces = yes
+			province_group = eng_rb_conquer_burgundy_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -801,7 +801,7 @@ eng_rb_conquest_europe = {
 		position = 4
 		
 		provinces_to_highlight = {
-			eng_rb_brittany_provinces = yes
+			province_group = eng_rb_brittany_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -850,7 +850,7 @@ eng_rb_conquest_europe = {
 		position = 5
 		
 		provinces_to_highlight = {
-			eng_rb_angevin_provinces = yes
+			province_group = eng_rb_angevin_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -1073,7 +1073,7 @@ gbr_rb_indian_group = {
 		completed_by = 1789.1.1
 		
 		provinces_to_highlight = {
-			gbr_rb_india_landfall_provinces = yes
+			province_group = gbr_rb_india_landfall_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -1125,7 +1125,7 @@ gbr_rb_indian_group = {
 		required_missions = { gbr_rb_india_landfall }
 		
 		provinces_to_highlight = {
-			gbr_rb_india_coast_provinces = yes
+			province_group = gbr_rb_india_coast_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -1149,7 +1149,7 @@ gbr_rb_indian_group = {
 		required_missions = { gbr_rb_india_coast }
 		
 		provinces_to_highlight = {
-			gbr_rb_india_landgrab_provinces = yes
+			province_group = gbr_rb_india_landgrab_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -1201,7 +1201,7 @@ gbr_rb_india_princes = {
 		position = 10
 		
 		provinces_to_highlight = {
-			gbr_rb_india_princedoms_provinces = yes
+			province_group = gbr_rb_india_princedoms_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -1288,7 +1288,7 @@ gbr_rb_northern_colonial = {
 		position = 5
 		
 		provinces_to_highlight = {
-			eng_rb_take_shetland_and_faro_isles_provinces = yes
+			province_group = eng_rb_take_shetland_and_faro_isles_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		

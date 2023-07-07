@@ -2497,7 +2497,7 @@ infrastructure_ideas = { #New in 1.3X. It's just like administrative ideas in th
 		center_of_trade_upgrade_cost = -0.2
 	}
 	administrative_efficiency_idea = { 
-		admin_efficiency = 0.025
+		administrative_efficiency = 0.025
 		#state_governing_cost = -0.1 #This is a bad modifier. //Dub
 	}
 	fort_logistics = {

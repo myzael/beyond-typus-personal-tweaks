@@ -15,7 +15,7 @@ danish_missions_kalmar = {
 		required_missions = { }
 		completed_by = 1460.3.5
 		provinces_to_highlight = {
-			dan_slesvig_holstein_inheritance_provinces = yes
+			province_group = dan_slesvig_holstein_inheritance_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -55,7 +55,7 @@ danish_missions_kalmar = {
 		required_missions = { dan_slesvig_holstein_inheritance }
 		completed_by = 1536.1.1
 		provinces_to_highlight = {
-			denmark_norway_integration_provinces = yes
+			province_group = denmark_norway_integration_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -96,7 +96,7 @@ danish_missions_kalmar = {
 		icon = mission_sca_shield
 		required_missions = { denmark_norway_integration }
 		provinces_to_highlight = {
-			denmark_sweden_integration_provinces = yes
+			province_group = denmark_sweden_integration_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -307,7 +307,7 @@ bt_danish_colonialism = {
 		required_missions = { }
 		position = 3
 		provinces_to_highlight = {
-			denmark_iceland_integration_provinces = yes
+			province_group = denmark_iceland_integration_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -752,7 +752,7 @@ bt_danish_resist_prussia = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { dan_restore_danevirke }
 		provinces_to_highlight = {
-			danish_pommerania_provinces = yes
+			province_group = danish_pommerania_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -811,7 +811,7 @@ bt_danish_resist_prussia = {
 		icon = mission_pru_shield
 		required_missions = { danish_pommerania }
 		provinces_to_highlight = {
-			dan_prussian_subjugation_provinces = yes
+			province_group = dan_prussian_subjugation_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -876,7 +876,7 @@ danish_missions_baltic = {
 	}
 	has_country_shield = yes
 	
-	dan_retake_gotland = {
+	bt_dan_retake_gotland = {
 		icon = mission_invade_island
 		required_missions = { }
 		provinces_to_highlight = {
@@ -964,7 +964,7 @@ danish_missions_baltic = {
 		icon = mission_kur_shield
 		required_missions = { control_osel }
 		provinces_to_highlight = {
-			danish_curonia_provinces = yes
+			province_group = danish_curonia_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1033,7 +1033,7 @@ bt_north_sea_empire = {
 		icon = mission_enforce_danelaw
 		required_missions = { dan_north_sea_navy }
 		provinces_to_highlight = {
-			dan_enforce_danelaw_provinces = yes
+			province_group = dan_enforce_danelaw_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

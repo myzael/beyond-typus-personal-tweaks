@@ -29,18 +29,18 @@ kiel_canal = {
 			owns_or_vassal_of = 13 # BT
 			owns_or_vassal_of = 3135 # BT
 			owns_or_vassal_of = 4141
-			is_subject = noOR = { 
+			is_subject = no
+			OR = { 
 				mission_completed = emp_brapru_kiel_canal
 				adm_tech = 22
 			}
-			treasury = 10000
+			#treasury = 10000 #BT Cut because vanilla
 		}
 	}
 	
 	#what to do when it's built
 	on_built = {
 		add_canal = kiel_canal
-		owner = { add_prestige = 30 }
 	}
 	
 	#what to do when it's destroyed
@@ -214,14 +214,13 @@ suez_canal = {
 			owns_or_vassal_of = 2315
 			is_subject = no
 			adm_tech = 22
-			treasury = 20000
+			#treasury = 20000 #BT Removed because vanilla
 		}
 	}
 
 	#what to do when it's built
 	on_built = {
 		add_canal = suez_canal
-		owner = { add_prestige = 40 }
 	}
 	
 	#what to do when it's destroyed
@@ -394,7 +393,7 @@ panama_canal = {
 			owns_or_vassal_of = 835
 			is_subject = no
 			adm_tech = 22
-			treasury = 30000
+			#treasury = 30000 #BT Removed because vanilla
 		}
 	}
 

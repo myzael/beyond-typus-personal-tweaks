@@ -18,7 +18,7 @@ provence_missions_1 = {
 		required_missions = { emp_pro_naples }
 		position = 3
 		provinces_to_highlight = {
-			emp_pro_aragon_provinces = yes
+			province_group = emp_pro_aragon_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -59,7 +59,7 @@ provence_missions_1 = {
 		required_missions = { emp_pro_aragon }
 		position = 4
 		provinces_to_highlight = {
-			emp_pro_hungary_provinces = yes
+			province_group = emp_pro_hungary_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -144,7 +144,7 @@ provence_missions_2 = {
 		icon = king_of_naples
 		required_missions = { emp_pro_corsica }
 		provinces_to_highlight = {
-			emp_pro_naples_provinces = yes
+			province_group = emp_pro_naples_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -191,7 +191,7 @@ provence_missions_2 = {
 		icon = king_of_sicily
 		required_missions = { emp_pro_naples }
 		provinces_to_highlight = {
-			emp_pro_sicily_provinces = yes
+			province_group = emp_pro_sicily_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -209,7 +209,7 @@ provence_missions_2 = {
 		icon = jerusalem
 		required_missions = { emp_pro_sicily }
 		provinces_to_highlight = {
-			emp_pro_jerusalem_provinces = yes
+			province_group = emp_pro_jerusalem_provinces
 			OR = {
 				AND = {
 					NOT = { province_id = 379 }
@@ -422,7 +422,7 @@ provence_missions_4 = {
 		icon = mission_invade_occitania
 		required_missions = { emp_pro_avignon }
 		provinces_to_highlight = {
-			emp_pro_occitania_provinces = yes
+			province_group = emp_pro_occitania_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -441,7 +441,7 @@ provence_missions_4 = {
 		required_missions = { emp_pro_occitania }
 		position = 4
 		provinces_to_highlight = {
-			emp_pro_france_provinces = yes
+			province_group = emp_pro_france_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {

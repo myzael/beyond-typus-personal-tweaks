@@ -215,7 +215,7 @@ gc_aragon_2 = {
 		position = 2
 		
 		provinces_to_highlight = {
-			gc_ara_genoa_provinces = yes
+			province_group = gc_ara_genoa_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -314,7 +314,7 @@ gc_aragon_2 = {
 		# free mission
 		
 		provinces_to_highlight = {
-			gc_ara_crowns_of_iberia_provinces = yes
+			province_group = gc_ara_crowns_of_iberia_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -353,7 +353,7 @@ gc_aragon_2 = {
 		required_missions = { gc_ara_crowns_of_iberia }
 		
 		provinces_to_highlight = {
-			gc_ara_portugal_provinces = yes
+			province_group = gc_ara_portugal_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -406,7 +406,7 @@ gc_aragon_3 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				gc_ara_venice_provinces = yes
+				province_group = gc_ara_venice_provinces
 				province_id = 1308
 			}
 			NOT = {
@@ -433,7 +433,7 @@ gc_aragon_3 = {
 		required_missions = { gc_ara_venice }
 		
 		provinces_to_highlight = {
-			gc_ara_italy_provinces = yes
+			province_group = gc_ara_italy_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -458,7 +458,7 @@ gc_aragon_3 = {
 		# free mission
 		
 		provinces_to_highlight = {
-			gc_ara_navarra_provinces = yes
+			province_group = gc_ara_navarra_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -485,7 +485,7 @@ gc_aragon_3 = {
 		required_missions = { gc_ara_navarra }
 		
 		provinces_to_highlight = {
-			gc_ara_provence_provinces = yes
+			province_group = gc_ara_provence_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -506,7 +506,7 @@ gc_aragon_3 = {
 		icon = mission_invade_occitania
 		required_missions = { gc_ara_provence }
 		provinces_to_highlight = {
-			gc_ara_occitania_provinces = yes
+			province_group = gc_ara_occitania_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -578,7 +578,7 @@ gc_aragon_4 = {
 		# free mission
 		
 		provinces_to_highlight = {
-			gc_ara_naples_provinces = yes
+			province_group = gc_ara_naples_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -607,7 +607,7 @@ gc_aragon_4 = {
 		# free mission
 		
 		provinces_to_highlight = {
-			gc_ara_athens_provinces = yes
+			province_group = gc_ara_athens_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -633,7 +633,7 @@ gc_aragon_4 = {
 		required_missions = { gc_ara_athens }
 		
 		provinces_to_highlight = {
-			gc_ara_albania_provinces = yes
+			province_group = gc_ara_albania_provinces
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				NOT = {
@@ -698,7 +698,7 @@ gc_aragon_4 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				gc_ara_constantinople_provinces = yes
+				province_group = gc_ara_constantinople_provinces
 				province_id = 1320
 			}
 			NOT = {
@@ -726,7 +726,7 @@ gc_aragon_4 = {
 		required_missions = { gc_ara_alexandria gc_ara_italy gc_ara_constantinople }
 		
 		provinces_to_highlight = {
-			gc_ara_mare_nostrum_provinces = yes
+			province_group = gc_ara_mare_nostrum_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -825,7 +825,7 @@ gc_aragon_5 = {
 		required_missions = { gc_ara_navy }
 		
 		provinces_to_highlight = {
-			gc_ara_barbary_ports_provinces = yes
+			province_group = gc_ara_barbary_ports_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -852,7 +852,7 @@ gc_aragon_5 = {
 		required_missions = { gc_ara_barbary_ports }
 		
 		provinces_to_highlight = {
-			gc_ara_tunis_provinces = yes
+			province_group = gc_ara_tunis_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -878,7 +878,7 @@ gc_aragon_5 = {
 		required_missions = { gc_ara_tunis }
 		
 		provinces_to_highlight = {
-			gc_ara_alexandria_provinces = yes
+			province_group = gc_ara_alexandria_provinces
 			OR = {
 				NOT = {
 					country_or_non_sovereign_subject_holds = ROOT

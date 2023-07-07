@@ -170,31 +170,17 @@ romanian_missions_1 = {
 		icon = mission_crusade_for_varna
 		required_missions = { rmn_impale_the_sultan }
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					rmn_drive_out_the_turks_provinces = yes
-					NOT = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
-				AND = {
-					region = balkan_region
-					owned_by = TUR
-				}
+			province_group = rmn_drive_out_the_turks_provinces
+			NOT = {
+				country_or_non_sovereign_subject_holds = TUR
 			}
-			
 		}
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
+			has_fulfiled_province_target_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
 				provinces=rmn_drive_out_the_turks_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-			}
-			balkan_region = {
-				type = all
-				NOT = {
-					owned_by = TUR
-				}
+				target=TUR
 			}
 		}
 		effect = {
@@ -202,11 +188,11 @@ romanian_missions_1 = {
 			add_mil_power = 100
 			custom_tooltip = rmn_heir_of_rome_claims
 			hidden_effect = {
-				every_province = {
+				rmn_heir_of_rome_provinces = {
 					limit = {
-						rmn_heir_of_rome_provinces = yes
+						owned_by = BYZ
 						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
@@ -217,7 +203,7 @@ romanian_missions_1 = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { rmn_drive_out_the_turks }
 		provinces_to_highlight = {
-			rmn_heir_of_rome_provinces = yes
+			province_group = rmn_heir_of_rome_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -226,10 +212,11 @@ romanian_missions_1 = {
 			NOT = {
 				exists = BYZ
 			}
-			has_fulfiled_province_requirement_for_mission_trigger = {
+			has_fulfiled_province_target_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
 				provinces=rmn_heir_of_rome_provinces
 				owner_type=country_or_non_sovereign_subject_holds
+				target=BYZ
 			}
 		}
 		effect = {
@@ -261,7 +248,7 @@ romanian_missions_5 = {
 		icon = mission_noble_council
 		required_missions = { }
 		provinces_to_highlight = {
-			unite_the_voivodes_provinces = yes
+			province_group = unite_the_voivodes_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -325,24 +312,14 @@ romanian_missions_5 = {
 					duration = -1
 				}
 			}
-			custom_tooltip = rmn_conquer_transylvania_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						rmn_conquer_transylvania_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}	
+			give_permaclaims_for_mission = { mission=rmn_conquer_transylvania }	
 		}
 	}
 	rmn_conquer_transylvania = {
 		icon = mission_impaled_soldies
 		required_missions = { found_bucharest }
 		provinces_to_highlight = {
-			rmn_conquer_transylvania_provinces = yes
+			province_group = rmn_conquer_transylvania_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

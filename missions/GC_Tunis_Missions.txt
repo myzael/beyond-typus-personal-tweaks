@@ -21,7 +21,7 @@ gc_tunis_1 = {
 		required_missions = { }
 		
 		provinces_to_highlight = {
-			gc_tun_tribes_provinces = yes
+			province_group = gc_tun_tribes_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -105,7 +105,7 @@ gc_tunis_1 = {
 		required_missions = { gc_tun_sahara }
 		
 		provinces_to_highlight = {
-			gc_tun_air_provinces = yes
+			province_group = gc_tun_air_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -139,7 +139,7 @@ gc_tunis_1 = {
 		required_missions = { gc_tun_air }
 		
 		provinces_to_highlight = {
-			gc_tun_kanem_provinces = yes
+			province_group = gc_tun_kanem_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -270,7 +270,7 @@ gc_tunis_3 = {
 		required_missions = { gc_tun_fleet }
 		
 		provinces_to_highlight = {
-			gc_tun_med_islands_provinces = yes
+			province_group = gc_tun_med_islands_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -305,7 +305,7 @@ gc_tunis_3 = {
 		required_missions = { gc_tun_med_islands }
 		
 		provinces_to_highlight = {
-			gc_tun_east_med_islands_provinces = yes
+			province_group = gc_tun_east_med_islands_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -390,7 +390,7 @@ gc_tunis_4 = {
 		position = 2
 		
 		provinces_to_highlight = {
-			gc_tun_barbary_coast_provinces = yes
+			province_group = gc_tun_barbary_coast_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -464,7 +464,7 @@ gc_tunis_4 = {
 		required_missions = { gc_tun_privateer }
 		
 		provinces_to_highlight = {
-			gc_tun_morocco_provinces = yes
+			province_group = gc_tun_morocco_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -524,8 +524,11 @@ gc_tunis_5 = {
 		required_missions = { gc_tun_ottomans }
 		
 		provinces_to_highlight = {
-			gc_tun_alexandria_provinces = yes #Baked in only colonised provinces in trigger.
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			province_group = gc_tun_alexandria_provinces
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+				is_empty = yes
+			}
 		}
 		
 		trigger = {
@@ -533,6 +536,7 @@ gc_tunis_5 = {
                 tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
                 provinces=gc_tun_alexandria_provinces
                 owner_type=country_or_non_sovereign_subject_holds
+				is_empty=yes
             }
 		}
 		effect = {

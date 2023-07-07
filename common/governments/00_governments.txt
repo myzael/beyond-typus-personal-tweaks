@@ -114,7 +114,6 @@ monarchy = {
 				courts_of_navarra
 				league_of_lezhe_reform
 				tibetan_dual_government_reform
-				sisterhood_of_jeanne_darc_reform
 				#Added by Beyond Typus
 				irish_clann_reform
 				provincial_kingdom_reform
@@ -751,7 +750,7 @@ republic = {
 				tercios_reform
 				expanded_black_army_reform
 			}
-		}		
+		}
 		parliamentary_vs_presidential = {
 			reforms = {
 				parliamentary_reform
@@ -1538,10 +1537,10 @@ pre_dharma_mapping = {
 		legacy_government = ottoman_government_legacy
 	}
 	prussian_monarchy = {
-	prussian_monarchy_base = {
 		government = monarchy
 		legacy_government = prussian_monarchy_legacy
 	}
+	prussian_monarchy_base = {
 		government = monarchy
 		legacy_government = prussian_monarchy_legacy
 	}

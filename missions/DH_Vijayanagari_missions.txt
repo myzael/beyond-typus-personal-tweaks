@@ -17,7 +17,7 @@ vij_north_conquest = {
 		required_missions = { }
 		completed_by = 1522.1.1
 		provinces_to_highlight = {
-			vij_bah_reconquest_provinces = yes
+			province_group = vij_bah_reconquest_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -41,7 +41,7 @@ vij_north_conquest = {
 		icon = mission_advance_to_kalyana
 		required_missions = { vij_bah_reconquest }
 		provinces_to_highlight = {
-			vij_defeat_bahmanis_provinces = yes
+			province_group = vij_defeat_bahmanis_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -67,7 +67,7 @@ vij_north_conquest = {
 		required_missions = { vij_defeat_bahmanis }
 		position = 4
 		provinces_to_highlight = {
-			vij_marathas_provinces = yes
+			province_group = vij_marathas_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -94,7 +94,7 @@ vij_north_conquest = {
 		required_missions = { vij_aden_conquest }
 		position = 7
 		provinces_to_highlight = {
-			vij_africa_conquest_provinces = yes
+			province_group = vij_africa_conquest_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -205,7 +205,7 @@ vij_south_conquest = {
 		icon = mission_conquer_lanka
 		required_missions = { vij_integrate_jaffna }
 		provinces_to_highlight = {
-			vij_ceylon_conquest_provinces = yes
+			province_group = vij_ceylon_conquest_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -232,7 +232,7 @@ vij_south_conquest = {
 		required_missions = { vij_city_of_victory }
 		position = 6
 		provinces_to_highlight = {
-			vij_aden_conquest_provinces = yes
+			province_group = vij_aden_conquest_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -366,7 +366,7 @@ vij_tamil_conquest = {
 		required_missions = { vij_tamil_trade }
 		completed_by = 1513.1.1
 		provinces_to_highlight = {
-			vij_mysore_conquest_provinces = yes
+			province_group = vij_mysore_conquest_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -389,7 +389,7 @@ vij_tamil_conquest = {
 		icon = mission_secure_the_malabar_coast
 		required_missions = { vij_mysore_conquest }
 		provinces_to_highlight = {
-			vij_malabar_provinces = yes
+			province_group = vij_malabar_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -518,7 +518,7 @@ vij_east_conquest = {
 		required_missions = { vij_tamil_rebels }
 		completed_by = 1516.1.1
 		provinces_to_highlight = {
-			vij_conquer_andhra_provinces = yes
+			province_group = vij_conquer_andhra_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -546,7 +546,7 @@ vij_east_conquest = {
 		required_missions = { vij_city_of_victory }
 		position = 6
 		provinces_to_highlight = {
-			vij_conquer_orissa_provinces = yes
+			province_group = vij_conquer_orissa_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -772,7 +772,7 @@ vij_religious_missions = {
 		required_missions = { vij_conquer_orissa }
 		position = 7
 		provinces_to_highlight = {
-			vij_chola_conquest_provinces = yes
+			province_group = vij_chola_conquest_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -796,7 +796,7 @@ vij_religious_missions = {
 		icon = mission_rajendras_ambition
 		required_missions = { vij_chola_conquest }
 		provinces_to_highlight = {
-			vij_rajendra_ambition_provinces = yes
+			province_group = vij_rajendra_ambition_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

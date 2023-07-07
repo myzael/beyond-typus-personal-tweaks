@@ -110,7 +110,7 @@ tim_reconquest_persia = {
 		position = 3
 		
 		provinces_to_highlight = {
-			tim_persia_one_provinces = yes
+			province_group = tim_persia_one_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -134,7 +134,7 @@ tim_reconquest_persia = {
 		position = 5
 		
 		provinces_to_highlight = {
-			tim_persia_two_provinces = yes
+			province_group = tim_persia_two_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -386,7 +386,7 @@ tim_reconquest_transoxiana = {
 		position = 3
 		
 		provinces_to_highlight = {
-			tim_transoxiana_one_provinces = yes
+			province_group = tim_transoxiana_one_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -412,7 +412,7 @@ tim_reconquest_transoxiana = {
 		position = 5
 		
 		provinces_to_highlight = {
-			tim_transoxiana_two_provinces = yes
+			province_group = tim_transoxiana_two_provinces
 			NOT = { owned_by = ROOT }
 		}
 		

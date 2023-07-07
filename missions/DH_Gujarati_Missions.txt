@@ -62,7 +62,7 @@ guj_maritime_conquest = {
 		completed_by = 1470.1.1
 
 		provinces_to_highlight = {
-			guj_subjugate_saurashtra_provinces = yes
+			province_group = guj_subjugate_saurashtra_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
@@ -345,7 +345,7 @@ guj_malwa_focus = {
 		completed_by = 1486.1.1
 
 		provinces_to_highlight = {
-			guj_conquer_malwa_provinces = yes
+			province_group = guj_conquer_malwa_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
@@ -510,7 +510,7 @@ guj_rajputana_conquest = {
 		completed_by = 1486.1.1
 
 		provinces_to_highlight = {
-			guj_subjugate_rajputana_provinces = yes
+			province_group = guj_subjugate_rajputana_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
@@ -815,7 +815,7 @@ guj_mercantile_and_industry = {
 		required_missions = { guj_merchant_of_gujarat }
 
 		provinces_to_highlight = {
-			guj_clear_konkani_coast_provinces = yes
+			province_group = guj_clear_konkani_coast_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1003,7 +1003,7 @@ guj_into_africa = {
 		position = 5
 		required_missions = { guj_gujarati_diaspora }
 		provinces_to_highlight = {
-			guj_zambezi_gold_mines_provinces = yes
+			province_group = guj_zambezi_gold_mines_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 

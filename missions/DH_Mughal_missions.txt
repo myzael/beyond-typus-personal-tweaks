@@ -17,7 +17,7 @@ mug_timurid_resurgence = {
 		icon = mission_pacify_punjab
 		required_missions = {  }
 		provinces_to_highlight = {
-			mug_pacify_punjab_provinces = yes
+			province_group = mug_pacify_punjab_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -60,7 +60,7 @@ mug_timurid_resurgence = {
 		icon = mission_afghan_frontier
 		required_missions = { mug_pacify_punjab }
 		provinces_to_highlight = {
-			mug_afghan_frontier_provinces = yes
+			province_group = mug_afghan_frontier_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -97,7 +97,7 @@ mug_timurid_resurgence = {
 		icon = mission_abu_saids_dream
 		required_missions = { mug_afghan_frontier }
 		provinces_to_highlight = {
-			mug_abu_saids_dream_provinces = yes
+			province_group = mug_abu_saids_dream_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
@@ -194,7 +194,7 @@ mug_towards_china = {
 		required_missions = { mug_ganges_delta }
 		position = 4
 		provinces_to_highlight = {
-			mug_follow_the_brahmaputra_provinces = yes
+			province_group = mug_follow_the_brahmaputra_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -216,7 +216,7 @@ mug_towards_china = {
 		required_missions = { mug_follow_the_brahmaputra }
 		position = 6
 		provinces_to_highlight = {
-			mug_upper_burma_campaign_provinces = yes
+			province_group = mug_upper_burma_campaign_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -246,7 +246,7 @@ mug_towards_china = {
 		}
 		position = 8
 		provinces_to_highlight = {
-			mug_open_up_china_provinces = yes
+			province_group = mug_open_up_china_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -323,7 +323,7 @@ mug_indus_branch = {
 		position = 2
 		required_missions = { mug_pacify_punjab }
 		provinces_to_highlight = {
-			mug_sind_campaign_provinces = yes
+			province_group = mug_sind_campaign_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
@@ -370,7 +370,7 @@ mug_ganges_branch = {
 		position = 3
 		required_missions = { mug_bengal_campaign }
 		provinces_to_highlight = {
-			mug_ganges_delta_provinces = yes
+			province_group = mug_ganges_delta_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -396,7 +396,7 @@ mug_ganges_branch = {
 		icon = mission_conquer_orissa_mug
 		required_missions = { mug_ganges_delta }
 		provinces_to_highlight = {
-			mug_conquer_orissa_provinces = yes
+			province_group = mug_conquer_orissa_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -440,7 +440,7 @@ mug_ganges_branch = {
 		icon = mission_lower_burma_campaign
 		required_missions = { mug_bengal_entrepot }
 		provinces_to_highlight = {
-			mug_lower_burma_campaign_provinces = yes
+			province_group = mug_lower_burma_campaign_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -469,7 +469,7 @@ mug_ganges_branch = {
 		icon = mission_subah_of_ayuddhya
 		required_missions = { mug_lower_burma_campaign }
 		provinces_to_highlight = {
-			mug_subah_of_ayuddhya_provinces = yes
+			province_group = mug_subah_of_ayuddhya_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -498,7 +498,7 @@ mug_ganges_branch = {
 		icon = mission_malayan_viceroyalty
 		required_missions = { mug_subah_of_ayuddhya }
 		provinces_to_highlight = {
-			mug_malaccan_viceroyalty_provinces = yes
+			province_group = mug_malaccan_viceroyalty_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -547,7 +547,7 @@ mug_hindustan_branch = {
 		icon = mission_emperor_of_hindusthan
 		required_missions = {  }
 		provinces_to_highlight = {
-			mug_emperor_of_hindustan_provinces = yes
+			province_group = mug_emperor_of_hindustan_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -573,7 +573,7 @@ mug_hindustan_branch = {
 		icon = mission_bengal_campaign
 		required_missions = { mug_emperor_of_hindustan }
 		provinces_to_highlight = {
-			mug_bengal_campaign_provinces = yes
+			province_group = mug_bengal_campaign_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -802,7 +802,7 @@ mug_desh = {
 		required_missions = { mug_across_vindhyas }
 		position = 7
 		provinces_to_highlight = {
-			mug_control_the_desh_provinces = yes
+			province_group = mug_control_the_desh_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -938,7 +938,7 @@ mug_rajput_branch = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				mug_subdue_rajputana_provinces = yes
+				province_group = mug_subdue_rajputana_provinces
 				AND = {
 					province_id = 518
 					NOT = { owned_by = ROOT }
@@ -1164,7 +1164,7 @@ mug_hyderabad_branch = {
 		required_missions = { mug_across_vindhyas }
 		position = 7
 		provinces_to_highlight = {
-			mug_conquer_central_deccan_provinces = yes
+			province_group = mug_conquer_central_deccan_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1258,7 +1258,7 @@ mug_deccan_branch = {
 		icon = mission_gwalior_and_rathambore
 		required_missions = {  }
 		provinces_to_highlight = {
-			mug_gwalior_and_ranthambore_provinces = yes
+			province_group = mug_gwalior_and_ranthambore_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
@@ -1281,7 +1281,7 @@ mug_deccan_branch = {
 		icon = mission_conquer_malwa_mug
 		required_missions = { mug_gwalior_and_ranthambore }
 		provinces_to_highlight = {
-			mug_conquer_malwa_provinces = yes
+			province_group = mug_conquer_malwa_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1307,7 +1307,7 @@ mug_deccan_branch = {
 		required_missions = { mug_conquer_malwa }
 		position = 4
 		provinces_to_highlight = {
-			mug_secure_hajj_ports_provinces = yes
+			province_group = mug_secure_hajj_ports_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1337,7 +1337,7 @@ mug_deccan_branch = {
 		required_missions = { mug_secure_hajj_ports }
 		position = 6
 		provinces_to_highlight = {
-			mug_across_vindhyas_provinces = yes
+			province_group = mug_across_vindhyas_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1360,7 +1360,7 @@ mug_deccan_branch = {
 		icon = mission_riches_of_golconda
 		required_missions = { mug_across_vindhyas }
 		provinces_to_highlight = {
-			mug_riches_of_golconda_provinces = yes
+			province_group = mug_riches_of_golconda_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1390,7 +1390,7 @@ mug_deccan_branch = {
 		icon = mission_cromandel_coast
 		required_missions = { mug_riches_of_golconda }
 		provinces_to_highlight = {
-			mug_coromandel_coast_provinces = yes
+			province_group = mug_coromandel_coast_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {

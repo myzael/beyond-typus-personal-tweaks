@@ -58,7 +58,7 @@ mer_western_expansion = {
 		position = 2
 		required_missions = { mer_marwar_rivalry }
 		provinces_to_highlight = {
-			mer_conquer_kathiawar_provinces = yes
+			province_group = mer_conquer_kathiawar_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -158,7 +158,7 @@ mer_delhi = {
 		position = 2
 		required_missions = { mer_marwar_rivalry }
 		provinces_to_highlight = {
-			mer_avanti_provinces = yes
+			province_group = mer_avanti_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -184,7 +184,7 @@ mer_delhi = {
 		icon = mission_unite_rajputana
 		required_missions = { mer_avanti }
 		provinces_to_highlight = {
-			mer_unite_rajputana_provinces = yes
+			province_group = mer_unite_rajputana_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -213,7 +213,7 @@ mer_delhi = {
 		icon = mission_reclaim_dehli
 		required_missions = { mer_unite_rajputana }
 		provinces_to_highlight = {
-			mer_reclaim_delhi_provinces = yes
+			province_group = mer_reclaim_delhi_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -253,7 +253,7 @@ mer_delhi = {
 		icon = mission_conquer_kannauj
 		required_missions = { mer_reclaim_delhi }
 		provinces_to_highlight = {
-			mer_restore_kanyakubja_provinces = yes
+			province_group = mer_restore_kanyakubja_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT  }
 		}
 		trigger = {
@@ -274,7 +274,7 @@ mer_delhi = {
 		icon = mission_magadna_and_varanasi
 		required_missions = { mer_restore_kanyakubja }
 		provinces_to_highlight = {
-			mer_magadha_provinces = yes
+			province_group = mer_magadha_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -434,7 +434,7 @@ mer_gurjaratra = {
 		position = 4
 		required_missions = { mer_unite_rajputana }
 		provinces_to_highlight = {
-			mer_conquer_punjab_provinces = yes
+			province_group = mer_conquer_punjab_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -551,7 +551,7 @@ mer_indus = {
 		icon = mission_conquer_sindh_mer
 		required_missions = { mer_unite_rajputana }
 		provinces_to_highlight = {
-			mer_conquer_sindh_provinces = yes
+			province_group = mer_conquer_sindh_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT  }
 		}
 		trigger = {
@@ -657,7 +657,7 @@ mer_gondwana = {
 		position = 4
 		required_missions = { mer_unite_rajputana }
 		provinces_to_highlight = {
-			mer_hills_of_gondwana_provinces = yes
+			province_group = mer_hills_of_gondwana_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT  }
 		}
 		trigger = {

@@ -67,7 +67,7 @@ dh_tim_india = {
 		position = 3
 		
 		provinces_to_highlight = {
-			dh_tim_khorasan_one_provinces = yes
+			province_group = dh_tim_khorasan_one_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -93,7 +93,7 @@ dh_tim_india = {
 		position = 5
 		
 		provinces_to_highlight = {
-			dh_tim_khorasan_two_provinces = yes
+			province_group = dh_tim_khorasan_two_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -236,7 +236,7 @@ dh_tim_india = {
 		required_missions = { dh_indian_raid }
 		
 		provinces_to_highlight = {
-			dh_conquer_punjab_MUG_provinces = yes
+			province_group = dh_conquer_punjab_MUG_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
@@ -264,7 +264,7 @@ dh_tim_india = {
 		required_missions = { dh_conquer_punjab_MUG }
 		
 		provinces_to_highlight = {
-			dh_conquer_delhi_provinces = yes
+			province_group = dh_conquer_delhi_provinces
 			NOT = { owned_by = ROOT }
 		}
 		

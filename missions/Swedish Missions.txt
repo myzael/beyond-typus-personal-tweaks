@@ -28,7 +28,7 @@ swedish_missions_scandinavia = {
 		icon = mission_assemble_an_army
 		required_missions = { swe_win_independence }
 		provinces_to_highlight = {
-			control_scania_provinces = yes
+			province_group = control_scania_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -70,7 +70,7 @@ swedish_missions_scandinavia = {
 		icon = mission_have_two_subjects
 		required_missions = { control_scania }
 		provinces_to_highlight = {
-			vassalize_norway_swe_provinces = yes
+			province_group = vassalize_norway_swe_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -112,7 +112,7 @@ swedish_missions_scandinavia = {
 		icon = mission_sca_shield
 		required_missions = { vassalize_norway_swe }
 		provinces_to_highlight = {
-			swe_turns_have_tabled_provinces = yes
+			province_group = swe_turns_have_tabled_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -450,7 +450,7 @@ bt_swedish_balticum_intermarum = {
 			}
 		}
 	}
-	swe_dominium_maris_baltici = {
+	bt_swe_dominium_maris_baltici = {
 		icon = mission_empire
 		required_missions = { swe_control_baltic_trade }
 		provinces_to_highlight = {
@@ -465,7 +465,7 @@ bt_swedish_balticum_intermarum = {
 		}
 		trigger = {
 			NOT = {
-				any_province = {
+				any_province = { #TODO: There might be a better way to script this one to reduce lag - it wants all provinces bordering the Baltic Sea or Kattegat. //Dub
 					sea_zone = {
 						OR = {
 							area = baltic_area
@@ -542,7 +542,7 @@ bt_swedish_hre_intervention = {
 		icon = mission_breitenfeld
 		required_missions = { swe_participate_league_war }
 		provinces_to_highlight = {
-			swedish_pommerania_provinces = yes
+			province_group = swedish_pommerania_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -601,7 +601,7 @@ bt_swedish_hre_intervention_2 = {
 		required_missions = { swe_participate_league_war }
 		position = 6
 		provinces_to_highlight = {
-			swe_bremen_verden_provinces = yes
+			province_group = swe_bremen_verden_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -914,7 +914,7 @@ bt_swedish_hre_intervention_3 = {
 		required_missions = { swe_participate_league_war }
 		position = 6
 		provinces_to_highlight = {
-			swedish_prussia_provinces = yes
+			province_group = swedish_prussia_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1011,7 +1011,7 @@ swedish_missions_baltic = {
 		icon = mission_invade_island
 		required_missions = { swe_baltic_fleet }
 		provinces_to_highlight = {
-			control_estonia_provinces = yes
+			province_group = control_estonia_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1037,7 +1037,7 @@ swedish_missions_baltic = {
 		icon = mission_unite_home_region
 		required_missions = { control_estonia }
 		provinces_to_highlight = {
-			swe_expand_finland_provinces = yes
+			province_group = swe_expand_finland_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1072,7 +1072,7 @@ swedish_missions_baltic = {
 		icon = mission_sea_battles
 		required_missions = { swe_expand_finland }
 		provinces_to_highlight = {
-			control_latvia_provinces = yes
+			province_group = control_latvia_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1114,7 +1114,7 @@ swedish_missions_baltic = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { control_latvia }
 		provinces_to_highlight = {
-			swe_subjugate_lithuania_provinces = yes
+			province_group = swe_subjugate_lithuania_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

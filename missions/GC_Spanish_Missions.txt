@@ -806,7 +806,7 @@ gc_spain_3 = {
 		completed_by = 1492.1.1
 
 		provinces_to_highlight = {
-			gra_reconquer_sevilla_provinces = yes
+			province_group = gra_reconquer_sevilla_provinces
 			NOT = { owned_by = ROOT }
 		}
 
@@ -1448,7 +1448,7 @@ gc_spain_4 = {
 		completed_by = 1479.1.1
 
 		provinces_to_highlight = {
-			gc_cas_spa_reconquista_three_provinces = yes
+			province_group = gc_cas_spa_reconquista_three_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } #Fixed vanilla error, highlighting the provinces despite having completed the mission.
 		}
 
@@ -1478,8 +1478,7 @@ gc_spain_4 = {
 			else = { #Special case.
 				if = {
 					limit = {
-						any_province = {
-							gc_cas_spa_italian_ambition_provinces = yes
+						gc_cas_spa_italian_ambition_provinces = {
 							OR = {
 								NOT = { is_core = NAP }
 								NOT = { is_permanent_claim = NAP }
@@ -1488,9 +1487,8 @@ gc_spain_4 = {
 					}
 					custom_tooltip = gc_cas_spa_italian_ambition_claims_2
 					hidden_effect = {
-						every_province = {
+						gc_cas_spa_italian_ambition_provinces = {
 							limit = {
-								gc_cas_spa_italian_ambition_provinces = yes
 								NOT = { is_core = NAP }
 								NOT = { is_permanent_claim = NAP }
 							}
@@ -1507,7 +1505,7 @@ gc_spain_4 = {
 		completed_by = 1516.1.1
 
 		provinces_to_highlight = {
-			gc_cas_spa_italian_ambition_provinces = yes
+			province_group = gc_cas_spa_italian_ambition_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
@@ -1533,7 +1531,7 @@ gc_spain_4 = {
 		required_missions = { gc_cas_spa_italian_ambition }
 
 		provinces_to_highlight = {
-			gc_cas_spa_italian_ambition_2_provinces = yes
+			province_group = gc_cas_spa_italian_ambition_2_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
@@ -1639,7 +1637,7 @@ gc_spain_4_b = {
 		required_missions = { gc_spa_spanish_armada }
 
 		provinces_to_highlight = {
-			gc_spa_invade_england_provinces = yes
+			province_group = gc_spa_invade_england_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
@@ -1814,7 +1812,7 @@ gc_spain_4_d = {
 		required_missions = { gc_cas_spa_discover_spice_islands }
 
 		provinces_to_highlight = {
-			gc_cas_spa_conquer_philippines_provinces = yes
+			province_group = gc_cas_spa_conquer_philippines_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -1945,7 +1943,7 @@ gc_spain_5_a = {
 		position = 3
 
 		provinces_to_highlight = {
-			gc_spa_spanish_netherlands_provinces = yes
+			province_group = gc_spa_spanish_netherlands_provinces
 			OR = {
 				NOT = { religion = ROOT }
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -2010,7 +2008,7 @@ gc_spain_5_a = {
 		required_missions = { gc_spa_spanish_netherlands }
 
 		provinces_to_highlight = {
-			gc_spa_austrian_union_provinces = yes
+			province_group = gc_spa_austrian_union_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 

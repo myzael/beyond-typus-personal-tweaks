@@ -16,7 +16,7 @@ akk_missions = {
 		icon = mission_bedouins
 		required_missions = {  }
 		provinces_to_highlight = {
-			destroy_ayyubids_provinces = yes
+			province_group = destroy_ayyubids_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -41,7 +41,7 @@ akk_missions = {
 		required_missions = { destroy_ayyubids }
 		position = 5
 		provinces_to_highlight = {
-			defeat_black_sheep_provinces = yes
+			province_group = defeat_black_sheep_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -69,7 +69,7 @@ akk_missions = {
 		icon = mission_conquer_50_development
 		required_missions = { defeat_black_sheep }
 		provinces_to_highlight = {
-			conquer_the_caucasus_akk_provinces = yes
+			province_group = conquer_the_caucasus_akk_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -96,7 +96,7 @@ akk_missions = {
 		icon = mission_persian_soldiers
 		required_missions = { conquer_the_caucasus_akk conquer_iraq_akk }
 		provinces_to_highlight = {
-			invade_persia_akk_provinces = yes
+			province_group = invade_persia_akk_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -136,7 +136,7 @@ akk_missions_2 = {
 		required_missions = { defeat_black_sheep }
 		position = 6
 		provinces_to_highlight = {
-			conquer_iraq_akk_provinces = yes
+			province_group = conquer_iraq_akk_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

@@ -197,7 +197,7 @@ bah_gharbians = {
 		icon = mission_recover_konkan_ports
 		required_missions = {  }
 		provinces_to_highlight = {
-			recover_konkan_coast_provinces = yes
+			province_group = recover_konkan_coast_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
@@ -415,7 +415,7 @@ bah_persian_branch = {
 		icon = mission_secure_khandesh
 		required_missions = {  }
 		provinces_to_highlight = {
-			mission_secure_khandesh_provinces = yes
+			province_group = mission_secure_khandesh_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -436,7 +436,7 @@ bah_persian_branch = {
 		position = 4
 		required_missions = { secure_khandesh }
 		provinces_to_highlight = {
-			conquer_gujarat_provinces = yes
+			province_group = conquer_gujarat_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -461,7 +461,7 @@ bah_persian_branch = {
 		icon = mission_arabian_sea_trade
 		required_missions = { conquer_gujarat }
 		provinces_to_highlight = {
-			arabian_sea_trade_ports_provinces = yes
+			province_group = arabian_sea_trade_ports_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
@@ -486,7 +486,7 @@ bah_persian_branch = {
 		icon = mission_dominate_persian_gulf
 		required_missions = { arabian_sea_trade_ports }
 		provinces_to_highlight = {
-			persian_gulf_provinces = yes
+			province_group = persian_gulf_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -599,7 +599,7 @@ bah_vijayanagari_branch = {
 		icon = mission_southern_frontier_dharma
 		required_missions = { city_of_victory }
 		provinces_to_highlight = {
-			southern_frontier_provinces = yes
+			province_group = southern_frontier_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -622,7 +622,7 @@ bah_vijayanagari_branch = {
 		position = 4
 		required_missions = { southern_frontier }
 		provinces_to_highlight = {
-			bijapur_karnatak_provinces = yes
+			province_group = bijapur_karnatak_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -677,7 +677,7 @@ bah_delhi_branch = {
 		position = 5
 		required_missions = { conquer_gujarat }
 		provinces_to_highlight = {
-			conquer_malwa_provinces = yes
+			province_group = conquer_malwa_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -796,7 +796,7 @@ bah_coromandel_branch = {
 		icon = mission_conquer_andhra_bah
 		required_missions = { rein_in_the_velamas }
 		provinces_to_highlight = {
-			conquer_andhra_provinces = yes
+			province_group = conquer_andhra_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -877,7 +877,7 @@ bah_coromandel_branch = {
 		icon = mission_coromandel_expansion
 		required_missions = { growth_of_golconda }
 		provinces_to_highlight = {
-			golconda_karnatak_provinces = yes
+			province_group = golconda_karnatak_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {

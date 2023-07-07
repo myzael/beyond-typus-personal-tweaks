@@ -198,7 +198,7 @@ emp_bav_missions_conquest = {
 		required_missions = { bav_expand_in_bavaria }
 		completed_by = 1777.12.30
 		provinces_to_highlight = {
-			emp_bav_union_with_palatinate_provinces = yes
+			province_group = emp_bav_union_with_palatinate_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
@@ -442,7 +442,7 @@ emp_bav_missions_conquest_2 = {
 		position = 7
 		required_missions = { emp_bav_sway_cologne }
 		provinces_to_highlight = {
-			emp_bav_tame_brandenburg_provinces = yes
+			province_group = emp_bav_tame_brandenburg_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -983,7 +983,7 @@ emp_bav_missions_conquer_austria = {
 		required_missions = { emp_bav_union_with_palatinate }
 		position = 5
 		provinces_to_highlight = {
-			emp_bav_conquer_tirol_provinces = yes
+			province_group = emp_bav_conquer_tirol_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -994,22 +994,17 @@ emp_bav_missions_conquer_austria = {
 				value = 3 #3 of 7 (2 of 5 in vanilla)
 			}
 			OR = {
-				custom_trigger_tooltip = {
-					tooltip = HAB_owns_nothing_in_tirol
-					NOT = {
-						HAB = {
-							any_owned_province = {
-								emp_bav_conquer_tirol_provinces = yes
-							}
-						}
-					}
+				has_fulfiled_province_target_requirement_for_mission_trigger = {
+					tooltip=HAB_owns_nothing_in_tirol
+					provinces=emp_bav_conquer_tirol_provinces
+					owner_type=owned_by
+					target=HAB
 				}
 				HAB = { is_subject_of = root }
 			}
 		}
 		effect = {
-			every_owned_province = { #TODO: Fix after Schocko's shizzle
-				limit = { emp_bav_conquer_tirol_provinces = yes }
+			emp_bav_conquer_tirol_provinces = { #TODO: Needs tooltip
 				add_local_autonomy = -15
 				add_nationalism = -10
 			}
@@ -1041,7 +1036,7 @@ emp_bav_missions_conquer_austria = {
 		icon = mission_the_austrian_succession
 		required_missions = { emp_bav_conquer_tirol }
 		provinces_to_highlight = {
-			emp_bav_union_with_austria_provinces = yes
+			province_group = emp_bav_union_with_austria_provinces
 			NOT = { country_or_non_sovereign_subject_holds = root }
 		}
 		trigger = {
@@ -1091,8 +1086,8 @@ emp_bav_missions_conquer_italy = {
 		position = 7
 		required_missions = { emp_bav_union_with_austria }
 		provinces_to_highlight = {
-			emp_bav_italian_sun_provinces = yes
-			NOT = { owned_by = root }
+			province_group = emp_bav_italian_sun_provinces
+			NOT = { owned_by = ROOT }
 		}
 		trigger = {
 			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
@@ -1155,7 +1150,7 @@ emp_bav_missions_netherlands = {
 		position = 7
 		required_missions = { emp_bav_sway_cologne emp_bav_union_with_austria }
 		provinces_to_highlight = {
-			emp_bav_netherlands_provinces = yes
+			province_group = emp_bav_netherlands_provinces
 			NOT = { country_or_non_sovereign_subject_holds = root }
 		}
 		trigger = {

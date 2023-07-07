@@ -102,7 +102,7 @@ dlh_east_missions = {
 		required_missions = { }
 		completed_by = 1486.1.1
 		provinces_to_highlight = {
-			dlh_jnp_reconquest_provinces = yes
+			province_group = dlh_jnp_reconquest_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -126,7 +126,7 @@ dlh_east_missions = {
 		required_missions = { dlh_jnp_reconquest }
 		completed_by = 1486.1.1
 		provinces_to_highlight = {
-			dlh_jnp_reconquest_2_provinces = yes
+			province_group = dlh_jnp_reconquest_2_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -150,7 +150,7 @@ dlh_east_missions = {
 		required_missions = { dlh_jnp_reconquest_2 }
 		position = 4
 		provinces_to_highlight = {
-			dlh_conquer_bengal_provinces = yes
+			province_group = dlh_conquer_bengal_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -194,7 +194,7 @@ dlh_east_missions = {
 		icon = mission_conquer_orissa_dlh
 		required_missions = { dlh_grand_trunk_road }
 		provinces_to_highlight = {
-			dlh_conquer_orissa_provinces = yes
+			province_group = dlh_conquer_orissa_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -238,7 +238,7 @@ dlh_west_missions = {
 		required_missions = {  }
 		completed_by = 1451.1.1
 		provinces_to_highlight = {
-			dlh_lodi_sayyids_provinces = yes
+			province_group = dlh_lodi_sayyids_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -262,7 +262,7 @@ dlh_west_missions = {
 		icon = mission_restore_rule_over_multan
 		required_missions = { dlh_lodi_sayyids  }
 		provinces_to_highlight = {
-			dlh_reconquer_multan_provinces = yes
+			province_group = dlh_reconquer_multan_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -315,7 +315,7 @@ dlh_west_missions = {
 		icon = mission_subdue_malwa
 		required_missions = { dlh_restore_sultanate }
 		provinces_to_highlight = {
-			dlh_conquer_malwa_provinces = yes
+			province_group = dlh_conquer_malwa_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -339,7 +339,7 @@ dlh_west_missions = {
 		icon = mission_conquer_gujarat_dlh
 		required_missions = { dlh_conquer_malwa  }
 		provinces_to_highlight = {
-			dlh_conquer_gujarat_provinces = yes
+			province_group = dlh_conquer_gujarat_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -427,7 +427,7 @@ dlh_slot_4 = {
 		required_missions = { dlh_lodi_sayyids }
 		position = 2
 		provinces_to_highlight = {
-			dlh_conquer_afghans_provinces = yes
+			province_group = dlh_conquer_afghans_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -455,7 +455,7 @@ dlh_slot_4 = {
 		required_missions = { dlh_restore_sultanate }
 		position = 4
 		provinces_to_highlight = {
-			dlh_conquer_sind_provinces = yes
+			province_group = dlh_conquer_sind_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -481,7 +481,7 @@ dlh_slot_4 = {
 		icon = mission_conquer_rajputana
 		required_missions = { dlh_conquer_malwa }
 		provinces_to_highlight = {
-			dlh_conquer_rajputs_provinces = yes
+			province_group = dlh_conquer_rajputs_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -507,7 +507,7 @@ dlh_slot_4 = {
 		icon = mission_conquer_maharashtra
 		required_missions = { dlh_conquer_gujarat  }
 		provinces_to_highlight = {
-			dlh_conquer_marathas_provinces = yes
+			province_group = dlh_conquer_marathas_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -530,7 +530,7 @@ dlh_slot_4 = {
 		icon = mission_invade_the_deccan_dlh
 		required_missions = { dlh_conquer_marathas  }
 		provinces_to_highlight = {
-			dlh_conquer_deccan_provinces = yes
+			province_group = dlh_conquer_deccan_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

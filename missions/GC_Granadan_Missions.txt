@@ -398,7 +398,7 @@ granada_slot_2_missions = {
 		position = 3
 		
 		provinces_to_highlight = {
-			gra_reconquer_valencia_provinces = yes
+			province_group = gra_reconquer_valencia_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -435,7 +435,7 @@ granada_slot_2_missions = {
 		position = 4
 		
 		provinces_to_highlight = {
-			gra_reconquer_sevilla_provinces = yes
+			province_group = gra_reconquer_sevilla_provinces
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { religion_group = ROOT	}
@@ -484,7 +484,7 @@ adu_slot_2_missions = {
 		position = 5
 		
 		provinces_to_highlight = {
-			gra_restore_caliphate_cordoba_provinces = yes
+			province_group = gra_restore_caliphate_cordoba_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -512,7 +512,7 @@ adu_slot_2_missions = {
 		position = 6
 		
 		provinces_to_highlight = {
-			gra_own_iberia_provinces = yes
+			province_group = gra_own_iberia_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -543,7 +543,7 @@ adu_slot_2_missions = {
 		position = 7
 		
 		provinces_to_highlight = {
-			gra_into_france_provinces = yes
+			province_group = gra_into_france_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -731,7 +731,7 @@ granada_slot_3_missions = {
 		position = 3
 		
 		provinces_to_highlight = {
-			gra_reconquer_sevilla_provinces = yes
+			province_group = gra_reconquer_sevilla_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -786,7 +786,7 @@ andalusia_slot_3_missions = {
 		position = 5
 		
 		provinces_to_highlight = {
-			gc_cas_spa_reconquista_two_provinces = yes
+			province_group = gc_cas_spa_reconquista_two_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -1009,7 +1009,7 @@ andalusia_slot_4_missions = {
 		position = 3
 		
 		provinces_to_highlight = {
-			adu_conquer_med_islands_provinces = yes
+			province_group = adu_conquer_med_islands_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -1045,7 +1045,7 @@ andalusia_slot_4_missions = {
 		position = 4
 		
 		provinces_to_highlight = {
-			adu_retake_sicily_provinces = yes
+			province_group = adu_retake_sicily_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -1110,7 +1110,7 @@ andalusia_slot_4_missions = {
 		position = 5
 		
 		provinces_to_highlight = {
-			adu_moroccan_conquest_provinces = yes
+			province_group = adu_moroccan_conquest_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -1214,7 +1214,7 @@ andalusia_slot_4_missions_c = {
 		position = 7
 		
 		provinces_to_highlight = {
-			adu_reclaim_mecca_provinces = yes
+			province_group = adu_reclaim_mecca_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -1251,7 +1251,7 @@ andalusia_slot_4_missions_c = {
 		position = 8
 		
 		provinces_to_highlight = {
-			adu_down_tigris_provinces = yes
+			province_group = adu_down_tigris_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -1412,7 +1412,7 @@ andalusia_slot_5_missions = {
 		position = 5
 		
 		provinces_to_highlight = {
-			adu_own_tunisia_1_provinces = yes
+			province_group = adu_own_tunisia_1_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -1484,9 +1484,10 @@ andalusia_slot_5_missions = {
 		position = 6
 		
 		provinces_to_highlight = {
-			adu_fatimid_lands_provinces = yes
+			province_group = adu_fatimid_lands_provinces
 			NOT = {
 				owned_by = ROOT
+				is_empty = yes
 			}
 		}
 		
@@ -1495,6 +1496,7 @@ andalusia_slot_5_missions = {
 				tooltip=country_holds_highlighted 
 				provinces=adu_fatimid_lands_provinces
 				owner_type=owned_by
+				is_empty=yes
 			}
 		}
 		
@@ -1545,7 +1547,7 @@ andalusia_slot_5_missions = {
 		position = 7
 		
 		provinces_to_highlight = {
-			adu_levantine_restoration_provinces = yes
+			province_group = adu_levantine_restoration_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -1609,7 +1611,7 @@ andalusia_slot_5_missions = {
 		position = 8
 		
 		provinces_to_highlight = {
-			adu_persian_conquest_provinces = yes
+			province_group = adu_persian_conquest_provinces
 			NOT = {
 				owned_by = ROOT
 			}

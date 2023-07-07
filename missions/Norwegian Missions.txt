@@ -43,7 +43,7 @@ bt_norwegian_scandinavia = {
 		icon = mission_have_two_subjects
 		required_missions = { nor_win_independence }
 		provinces_to_highlight = {
-			nor_king_of_sweden_provinces = yes
+			province_group = nor_king_of_sweden_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -81,7 +81,7 @@ bt_norwegian_scandinavia = {
 		icon = mission_sca_shield
 		required_missions = { nor_king_of_sweden }
 		provinces_to_highlight = {
-			nor_reverse_kalmar_union_provinces = yes
+			province_group = nor_reverse_kalmar_union_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -234,7 +234,7 @@ bt_norwegian_colonialism = {
 		required_missions = { nor_win_independence }
 		position = 2
 		provinces_to_highlight = {
-			nor_retake_iceland_provinces = yes
+			province_group = nor_retake_iceland_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -264,7 +264,7 @@ bt_norwegian_colonialism = {
 			}
 		}
 	}
-	nor_colonize_greenland = {
+	bt_nor_colonize_greenland = {
 		icon = mission_colonial
 		required_missions = { nor_retake_iceland }
 		position = 4
@@ -301,7 +301,7 @@ bt_norwegian_colonialism = {
 	nor_colonize_markland = {
 		icon = mission_settlers_north_america
 		position = 5
-		required_missions = { nor_colonize_greenland }
+		required_missions = { bt_nor_colonize_greenland }
 		provinces_to_highlight = {
 			OR = {
 				province_id = 997
@@ -516,7 +516,7 @@ bt_norwegian_british_isles = {
 		icon = mission_sea_battles
 		required_missions = { nor_control_orkney }
 		provinces_to_highlight = {
-			nor_conquer_the_isles_provinces = yes
+			province_group = nor_conquer_the_isles_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -534,15 +534,15 @@ bt_norwegian_british_isles = {
 				duration = 5475
 			}
 			#Claims
-			give_permaclaims_for_mission = { mission=nor_conquer_scotland }
+			give_permaclaims_for_mission = { mission=bt_nor_conquer_scotland }
 		}
 		
 	}
-	nor_conquer_scotland = {
+	bt_nor_conquer_scotland = {
 		icon = mission_cannons_firing
 		required_missions = { nor_conquer_the_isles }
 		provinces_to_highlight = {
-			nor_conquer_scotland_provinces = yes
+			province_group = bt_nor_conquer_scotland_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -550,7 +550,7 @@ bt_norwegian_british_isles = {
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=nor_conquer_scotland_provinces
+				provinces=bt_nor_conquer_scotland_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
@@ -563,9 +563,9 @@ bt_norwegian_british_isles = {
 	nor_conquer_ireland = {
 		icon = mission_unite_home_region
 		position = 5
-		required_missions = { nor_conquer_scotland }
+		required_missions = { bt_nor_conquer_scotland }
 		provinces_to_highlight = {
-			nor_conquer_ireland_provinces = yes
+			province_group = nor_conquer_ireland_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -604,7 +604,7 @@ bt_norwegian_british_isles = {
 		icon = mission_harald_hardrade
 		required_missions = { nor_conquer_ireland }
 		provinces_to_highlight = {
-			nor_conquer_england_provinces = yes
+			province_group = nor_conquer_england_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

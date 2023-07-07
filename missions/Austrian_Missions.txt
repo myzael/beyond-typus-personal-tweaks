@@ -96,7 +96,7 @@ hab_holy_roman_ambitions = {
 		completed_by = 1526.8.30
 		
 		provinces_to_highlight = {
-			subjugate_bohemia_provinces	= yes
+			province_group = subjugate_bohemia_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -144,7 +144,7 @@ hab_holy_roman_ambitions = {
 			}
 		}
 		provinces_to_highlight = {
-			recover_silesia_provinces = yes
+			province_group = recover_silesia_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
@@ -171,7 +171,7 @@ hab_holy_roman_ambitions = {
 		completed_by = 1772.8.5
 		required_missions = { recover_silesia }
 		provinces_to_highlight = {
-			partition_poland_provinces = yes
+			province_group = partition_poland_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -368,7 +368,7 @@ hab_protect_the_balkans = {
 		}
 		
 		provinces_to_highlight = {
-			austrian_hungary_provinces = yes
+			province_group = austrian_hungary_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -413,7 +413,7 @@ hab_protect_the_balkans = {
 			}
 		}
 		provinces_to_highlight = {
-			austrian_croatia_provinces = yes
+			province_group = austrian_croatia_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -453,7 +453,7 @@ hab_protect_the_balkans = {
 			}
 		}
 		provinces_to_highlight = {
-			conquer_transylvania_provinces = yes
+			province_group = conquer_transylvania_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -603,7 +603,7 @@ hab_italian_ambitions = {
 		
 		required_missions = { austrian_croatia }
 		provinces_to_highlight = {
-			austrian_italian_ambition_provinces = yes
+			province_group = austrian_italian_ambition_provinces
 			owner = { is_part_of_hre = no }			
 		}
 		trigger = {

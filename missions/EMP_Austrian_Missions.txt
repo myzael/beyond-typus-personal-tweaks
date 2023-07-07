@@ -997,7 +997,7 @@ emp_hab_german_expansion_branch = {
 		
 		required_missions = {  }
 		provinces_to_highlight = {
-			austrian_take_the_bishoprics_provinces = yes
+			province_group = austrian_take_the_bishoprics_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1041,7 +1041,7 @@ emp_hab_german_expansion_branch = {
 		
 		required_missions = { emp_hab_take_salzburg }
 		provinces_to_highlight = {
-			austrian_bayern_provinces = yes
+			province_group = austrian_bayern_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1073,7 +1073,7 @@ emp_hab_german_expansion_branch = {
 		
 		required_missions = { emp_hab_union_bayern emp_hab_connect_further_austria }
 		provinces_to_highlight = {
-			austrian_swabia_provinces = yes
+			province_group = austrian_swabia_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1418,17 +1418,7 @@ emp_hab_western_expansion_branch = {
 				}
 				add_permanent_claim = root
 			}
-			custom_tooltip = austrian_swabia_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						austrian_swabia_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=austrian_swabia }
 		}
 		ai_weight = {
 			factor = 500	#Historical conquest
@@ -1708,7 +1698,7 @@ emp_hab_balkans = {
 		
 		required_missions = { austrian_croatia }
 		provinces_to_highlight = {
-			austrian_defeat_the_serbs_provinces = yes
+			province_group = austrian_defeat_the_serbs_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {

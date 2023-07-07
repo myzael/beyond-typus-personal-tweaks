@@ -95,7 +95,7 @@ bavarian_missions_main = {
 		position = 3
 		completed_by = 1618.5.6
 		provinces_to_highlight = {
-			bav_expand_in_bavaria_provinces = yes
+			province_group = bav_expand_in_bavaria_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -156,7 +156,7 @@ bavarian_missions_main = {
 		required_missions = { bav_expand_in_bavaria }
 		completed_by = 1806.1.1
 		provinces_to_highlight = {
-			conquer_franken_provinces = yes
+			province_group = conquer_franken_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {

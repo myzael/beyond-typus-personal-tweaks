@@ -172,7 +172,7 @@ hsn_religious_group = {
 		position = 4
 		
 		provinces_to_highlight = {
-			hsn_custodian_of_holy_cities_provinces = yes
+			province_group = hsn_custodian_of_holy_cities_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -243,7 +243,7 @@ hsn_revenge_on_crusaders_group = {
 		position = 6
 		
 		provinces_to_highlight = {
-			hsn_conquer_crusaders_provinces = yes
+			province_group = hsn_conquer_crusaders_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -320,7 +320,7 @@ hsn_conquest_group = {
 		position = 2
 		
 		provinces_to_highlight = {
-			hsn_white_sheep_provinces = yes
+			province_group = hsn_white_sheep_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -349,7 +349,7 @@ hsn_conquest_group = {
 		position = 3
 		
 		provinces_to_highlight = {
-			conquer_aleppo_hsn_provinces = yes
+			province_group = conquer_aleppo_hsn_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -373,7 +373,7 @@ hsn_conquest_group = {
 		position = 4
 		
 		provinces_to_highlight = {
-			hsn_conquer_jerusalem_provinces = yes
+			province_group = hsn_conquer_jerusalem_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -411,8 +411,11 @@ hsn_conquest_group = {
 		position = 5
 		
 		provinces_to_highlight = {
-			hsn_destroy_mamluks_provinces = yes
-			NOT = { owned_by = ROOT }
+			province_group = hsn_destroy_mamluks_provinces
+			NOT = { 
+				owned_by = ROOT
+				is_empty = yes
+			}
 		}
 		
 		trigger = {
@@ -420,6 +423,7 @@ hsn_conquest_group = {
 				tooltip=country_holds_highlighted
 				provinces=hsn_destroy_mamluks_provinces
 				owner_type=owned_by
+				is_empty=yes
 			}
 		}
 		
@@ -522,7 +526,7 @@ hsn_conquest_group_east = {
 		position = 2
 		
 		provinces_to_highlight = {
-			conquer_al_jazira_hsn_provinces = yes
+			province_group = conquer_al_jazira_hsn_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -562,7 +566,7 @@ hsn_conquest_group_east = {
 		position = 3
 		
 		provinces_to_highlight = {
-			hsn_take_baghdad_provinces = yes
+			province_group = hsn_take_baghdad_provinces
 			NOT = { owned_by = ROOT }
 		}
 		

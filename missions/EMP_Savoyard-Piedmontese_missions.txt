@@ -125,7 +125,8 @@ emp_sav_missions_conquest = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
-				add_permanent_claim = ROOT
+					add_permanent_claim = ROOT
+				}
 			}
 			if = {
 				limit = {
@@ -147,7 +148,8 @@ emp_sav_missions_conquest = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
-				add_permanent_claim = ROOT
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 		ai_weight = {

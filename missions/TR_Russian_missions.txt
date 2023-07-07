@@ -129,7 +129,7 @@ tr_muscovy_conquest = {
 		completed_by = 1776.1.1
 		position = 4
 		provinces_to_highlight = {
-			tr_access_to_the_baltic_sea_provinces = yes
+			province_group = tr_access_to_the_baltic_sea_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -152,7 +152,7 @@ tr_muscovy_conquest = {
 		icon = mission_partition_poland
 		required_missions = { tr_russia_partitions_poland_new }
 		provinces_to_highlight = {
-			rus_partition_poland_mission_provinces = yes
+			province_group = rus_partition_poland_mission_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -323,7 +323,7 @@ tr_russia_conquest_1 = {
 		required_missions = { tr_subjugate_novgorod }
 		completed_by = 1776.1.1
 		provinces_to_highlight = {
-			tr_consolidate_russia_mission_provinces = yes
+			province_group = tr_consolidate_russia_mission_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -360,39 +360,9 @@ tr_russia_conquest_1 = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
-			custom_tooltip = tr_russia_partitions_poland_new_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						tr_russia_partitions_poland_new_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			custom_tooltip = tr_access_to_the_baltic_sea_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						tr_access_to_the_baltic_sea_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			custom_tooltip = tr_conquer_finland_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						tr_conquer_finland_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=tr_russia_partitions_poland_new }
+			give_permaclaims_for_mission = { mission=tr_access_to_the_baltic_sea }
+			give_permaclaims_for_mission = { mission=tr_conquer_finland }
 		}
 	}
 	# liberate ruthenia
@@ -400,7 +370,7 @@ tr_russia_conquest_1 = {
 		icon = mission_conquer_5_states
 		required_missions = { tr_consolidate_russia_mission }
 		provinces_to_highlight = {
-			tr_russia_partitions_poland_new_provinces = yes 
+			province_group = tr_russia_partitions_poland_new_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -424,28 +394,8 @@ tr_russia_conquest_1 = {
 					duration = 5475
 				}
 			}
-			custom_tooltip = rus_partition_poland_mission_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						rus_partition_poland_mission_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			custom_tooltip = rus_romania_conquest_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						rus_romania_conquest_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=rus_partition_poland_mission }
+			give_permaclaims_for_mission = { mission=rus_romania_conquest }
 		}
 	}
 }
@@ -471,7 +421,7 @@ tr_russia_exclusive_1 = {
 		required_missions = { tr_russia_partitions_poland_new }
 		position = 5
 		provinces_to_highlight = {
-			rus_romania_conquest_provinces = yes
+			province_group = rus_romania_conquest_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -484,17 +434,7 @@ tr_russia_exclusive_1 = {
 			}
 		}
 		effect = {
-			custom_tooltip = rus_third_rome_mission_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						rus_third_rome_mission_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=rus_third_rome_mission }
 		}
 	}
 	
@@ -504,7 +444,7 @@ tr_russia_exclusive_1 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					rus_third_rome_mission_provinces = yes
+					province_group = rus_third_rome_mission_provinces
 					NOT = {
 						country_or_non_sovereign_subject_holds = ROOT
 					}
@@ -609,7 +549,7 @@ tr_russia_conquest_2 = {
 		required_missions = { tr_consolidate_russia_mission }
 		position = 4
 		provinces_to_highlight = {
-			tr_conquer_finland_provinces = yes
+			province_group = tr_conquer_finland_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

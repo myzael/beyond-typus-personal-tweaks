@@ -25,7 +25,7 @@ prussian_missions_main_slot = {
 		icon = mission_have_two_subjects
 		required_missions = { }
 		provinces_to_highlight = {
-			reclaim_neumark_provinces = yes
+			province_group = reclaim_neumark_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -61,7 +61,7 @@ prussian_missions_main_slot = {
 		required_missions = { reclaim_neumark }
 		position = 3
 		provinces_to_highlight = {
-			pru_conquer_pomerania_provinces = yes
+			province_group = pru_conquer_pomerania_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -86,7 +86,7 @@ prussian_missions_main_slot = {
 		required_missions = { pru_conquer_pomerania }
 		position = 5
 		provinces_to_highlight = {
-			connect_the_prussian_lands_provinces = yes
+			province_group = connect_the_prussian_lands_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -111,7 +111,7 @@ prussian_missions_main_slot = {
 		icon = mission_eastern_european_city
 		required_missions = { connect_the_prussian_lands }
 		provinces_to_highlight = {
-			pru_conquer_silesia_provinces = yes
+			province_group = pru_conquer_silesia_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -170,7 +170,7 @@ prussian_missions_main_slot = {
 		icon = mission_cannons_firing
 		required_missions = { pru_conquer_silesia }
 		provinces_to_highlight = {
-			pru_duchy_of_cleves_provinces = yes
+			province_group = pru_duchy_of_cleves_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -242,7 +242,7 @@ prussian_missions_slot_2 = {
 		required_missions = { connect_the_prussian_lands }
 		position = 6
 		provinces_to_highlight = {
-			prussia_partitions_poland_provinces = yes
+			province_group = prussia_partitions_poland_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

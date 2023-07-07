@@ -45,7 +45,7 @@ emp_bra_pru_1 = {
 		icon = mission_have_two_subjects
 		required_missions = { }
 		provinces_to_highlight = {
-			emp_brapru_reclaim_neumark_provinces = yes
+			province_group = emp_brapru_reclaim_neumark_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -88,7 +88,7 @@ emp_bra_pru_1 = {
 		icon = mission_hanseatic_city
 		required_missions = { emp_brapru_reclaim_neumark }
 		provinces_to_highlight = {
-			emp_brapru_conquer_pomerania_provinces = yes
+			province_group = emp_brapru_conquer_pomerania_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -131,7 +131,7 @@ emp_bra_pru_1 = {
 		icon = mission_teutonic_knights
 		required_missions = { emp_brapru_conquer_pomerania }
 		provinces_to_highlight = {
-			emp_brapru_connect_the_prussian_lands_provinces = yes
+			province_group = emp_brapru_connect_the_prussian_lands_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -466,7 +466,7 @@ emp_bra_pru_2 = {
 		icon = mission_eastern_european_city
 		required_missions = { emp_brapru_ansbach_succession }
 		provinces_to_highlight = {
-			emp_brapru_franconian_conquest_provinces = yes
+			province_group = emp_brapru_franconian_conquest_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -505,7 +505,7 @@ emp_bra_pru_2 = {
 		icon = mission_unite_home_region
 		required_missions = { emp_brapru_conquer_pomerania }
 		provinces_to_highlight = {
-			emp_brapru_conquer_silesia_provinces = yes
+			province_group = emp_brapru_conquer_silesia_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -544,7 +544,7 @@ emp_bra_pru_2 = {
 		icon = mission_conquer_5_states
 		required_missions = { emp_brapru_conquer_silesia }
 		provinces_to_highlight = {
-			emp_brapru_prussia_partitions_poland_provinces = yes
+			province_group = emp_brapru_prussia_partitions_poland_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -629,77 +629,78 @@ emp_bra_pru_2 = {
 						duration = 7300
 					}
 				}
-			yotvingia_area = { #Claims on roughly the third partition
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			7262 = { #Bielsk
-				if = {
+				yotvingia_area = { #Claims on roughly the third partition
 					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-			}
-			8233 = { #Ciechanow
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
+				7262 = { #Bielsk
+					if = {
+						limit = {
+							NOT = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+							}
 						}
+						add_permanent_claim = ROOT
 					}
-					add_permanent_claim = ROOT
 				}
-			}
-			1938 = { #Wizna
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
+				8233 = { #Ciechanow
+					if = {
+						limit = {
+							NOT = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+							}
 						}
+						add_permanent_claim = ROOT
 					}
-					add_permanent_claim = ROOT
 				}
-			}
-			257 = { #Warsaw
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
+				1938 = { #Wizna
+					if = {
+						limit = {
+							NOT = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+							}
 						}
+						add_permanent_claim = ROOT
 					}
-					add_permanent_claim = ROOT
 				}
-			}
-			7264 = { #Nur (Slightly too far, but there is no exact way to represent this)
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
+				257 = { #Warsaw
+					if = {
+						limit = {
+							NOT = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+							}
 						}
+						add_permanent_claim = ROOT
 					}
-					add_permanent_claim = ROOT
 				}
-			}
-			3220 = { #Czestochowa
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
+				7264 = { #Nur (Slightly too far, but there is no exact way to represent this)
+					if = {
+						limit = {
+							NOT = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+							}
 						}
+						add_permanent_claim = ROOT
 					}
-					add_permanent_claim = ROOT
+				}
+				3220 = { #Czestochowa
+					if = {
+						limit = {
+							NOT = {
+								is_permanent_claim = ROOT
+								is_core = ROOT
+							}
+						}
+						add_permanent_claim = ROOT
+					}
 				}
 			}
 		}
@@ -882,7 +883,7 @@ emp_bra_pru_3 = {
 		icon = conquer_lower_saxony
 		required_missions = { emp_brapru_show_of_strength }
 		provinces_to_highlight = {
-			emp_brapru_lower_saxony_provinces = yes
+			province_group = emp_brapru_lower_saxony_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1028,7 +1029,7 @@ emp_bra_pru_3 = {
 					}
 				}
 				AND = {
-					emp_brapru_kiel_canal_provinces = yes
+					province_group = emp_brapru_kiel_canal_provinces
 					NOT = { owned_by = ROOT }
 				}
 			}
@@ -1187,7 +1188,7 @@ emp_bra_pru_4 = {
 		required_missions = { emp_brapru_lower_saxony }
 		position = 3
 		provinces_to_highlight = {
-			emp_brapru_westphalian_conquest_provinces = yes
+			province_group = emp_brapru_westphalian_conquest_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1278,7 +1279,7 @@ emp_bra_pru_4 = {
 		icon = mission_cannons_firing
 		required_missions = { emp_brapru_westphalian_conquest }
 		provinces_to_highlight = {
-			emp_brapru_duchy_of_cleves_provinces = yes
+			province_group = emp_brapru_duchy_of_cleves_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1320,7 +1321,7 @@ emp_bra_pru_4 = {
 		icon = rhineland_conquest
 		required_missions = { emp_brapru_duchy_of_cleves }
 		provinces_to_highlight = {
-			emp_brapru_rhineland_conquest_provinces = yes
+			province_group = emp_brapru_rhineland_conquest_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {

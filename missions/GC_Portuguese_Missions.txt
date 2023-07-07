@@ -96,7 +96,7 @@ gc_por_1 = {
 		required_missions = { gc_por_establishes_foothold_brazil }
 		
 		provinces_to_highlight = {
-			gc_por_bandeirantes_provinces = yes
+			province_group = gc_por_bandeirantes_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -205,7 +205,7 @@ gc_por_1 = {
 		position = 7
 		
 		provinces_to_highlight = {
-			gc_por_ceylon_provinces = yes
+			province_group = gc_por_ceylon_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -234,7 +234,7 @@ gc_por_1 = {
 		required_missions = { gc_por_surat }
 		position = 8
 		provinces_to_highlight = {
-			gc_por_burma_provinces = yes
+			province_group = gc_por_burma_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -324,7 +324,7 @@ gc_por_1 = {
 		completed_by = 1488.1.1
 		
 		provinces_to_highlight = {
-			gc_conquer_the_north_african_coast_provinces = yes
+			province_group = gc_conquer_the_north_african_coast_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -579,7 +579,7 @@ gc_por_2_b = {
 		required_missions = { gc_portugal_discovers_india }
 		position = 6
 		provinces_to_highlight = {
-			gc_por_malabar_provinces = yes
+			province_group = gc_por_malabar_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -602,7 +602,7 @@ gc_por_2_b = {
 		required_missions = { gc_por_malabar }
 		
 		provinces_to_highlight = {
-			gc_por_surat_provinces = yes
+			province_group = gc_por_surat_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -832,7 +832,7 @@ gc_por_3 = {
 		completed_by = 1530.1.1
 		position = 3
 		provinces_to_highlight = {
-			gc_por_discovers_east_africa_provinces = yes
+			province_group = gc_por_discovers_east_africa_provinces
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
 		}
@@ -883,7 +883,7 @@ gc_por_3 = {
 		position = 4
 		
 		provinces_to_highlight = {
-			gc_por_african_gold_provinces = yes
+			province_group = gc_por_african_gold_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -1413,7 +1413,7 @@ gc_por_4 = {
 		required_missions = { gc_por_build_the_navy gc_por_english_alliance }
 		position = 10
 		provinces_to_highlight = {
-			gc_por_intervene_in_castile_provinces = yes
+			province_group = gc_por_intervene_in_castile_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -1433,7 +1433,7 @@ gc_por_4 = {
 		required_missions = { gc_por_intervene_in_castile }
 		
 		provinces_to_highlight = {
-			gc_por_lusitanian_empire_provinces = yes
+			province_group = gc_por_lusitanian_empire_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -1633,7 +1633,7 @@ gc_por_5 = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					gc_por_oman_provinces = yes
+					province_group = gc_por_oman_provinces
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 				AND = {

@@ -5,21 +5,23 @@
 give_permaclaims_for_mission = {
 	if = {
 		limit = {
-			any_province = {
-				$mission$_provinces = yes
-				OR = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
+			$mission$_provinces = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT }
+				[[requirements]
+					$requirements$
+				]
 			}
 		}
 		custom_tooltip = $mission$_claims
 		hidden_effect = {
-			every_province = {
+			$mission$_provinces = {
 				limit = {
-					$mission$_provinces = yes
-					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					[[reqs]
+						$requirements$
+					]
 				}
 				add_permanent_claim = ROOT
 			}
@@ -34,16 +36,14 @@ give_permaclaims_for_mission = {
 give_cores_for_mission = {
 	if = {
 		limit = {
-			any_province = {
-				$mission$_provinces = yes
+			$mission$_provinces = {
 				NOT = { is_core = ROOT }
 			}
 		}
 		custom_tooltip = $mission$_claims
 		hidden_effect = {
-			every_province = {
+			$mission$_provinces = {
 				limit = {
-					$mission$_provinces = yes
 					NOT = { is_core = ROOT }
 				}
 				add_core = ROOT

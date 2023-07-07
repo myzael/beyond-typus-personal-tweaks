@@ -50,7 +50,7 @@ yem_formation = {
 		position = 3
 		
 		provinces_to_highlight = {
-			yem_gen_recon_one_provinces = yes
+			province_group = yem_gen_recon_one_provinces
 			NOT = { owned_by = ROOT }
 		}
 		
@@ -78,7 +78,7 @@ yem_formation = {
 		position = 5
 		
 		provinces_to_highlight = {
-			yem_gen_recon_two_provinces = yes
+			province_group = yem_gen_recon_two_provinces
 			NOT = { owned_by = ROOT }
 		}
 		

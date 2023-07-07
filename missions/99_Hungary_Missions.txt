@@ -131,7 +131,7 @@ hun_north_group = {
 		position = 2
 		
 		provinces_to_highlight = {
-			hun_vassal_states_provinces = yes
+			province_group = hun_vassal_states_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -155,7 +155,7 @@ hun_north_group = {
 		position = 3
 		
 		provinces_to_highlight = {
-			hun_vassal_states_three_provinces = yes
+			province_group = hun_vassal_states_three_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -213,7 +213,7 @@ hun_south_group = {
 		position = 2
 		
 		provinces_to_highlight = {
-			hun_vassal_states_two_provinces = yes
+			province_group = hun_vassal_states_two_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -283,7 +283,7 @@ hun_south_group = {
 		position = 4
 		
 		provinces_to_highlight = {
-			hun_vassal_states_four_provinces = yes
+			province_group = hun_vassal_states_four_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -431,7 +431,7 @@ hun_ottoman_group = {
 		position = 5
 		
 		provinces_to_highlight = {
-			hun_ottoman_borders_three_provinces = yes
+			province_group = hun_ottoman_borders_three_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -459,7 +459,7 @@ hun_ottoman_group = {
 		position = 6
 		
 		provinces_to_highlight = {
-			hun_ottoman_borders_two_provinces = yes
+			province_group = hun_ottoman_borders_two_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -490,7 +490,7 @@ hun_ottoman_group = {
 		position = 7
 		
 		provinces_to_highlight = {
-			hun_ottoman_borders_four_provinces = yes
+			province_group = hun_ottoman_borders_four_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		

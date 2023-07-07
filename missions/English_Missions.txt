@@ -73,7 +73,7 @@ eng_british_conquest_ire = {
 		completed_by = 1603.1.1
 		
 		provinces_to_highlight = {
-			conquer_ireland_provinces = yes
+			province_group = conquer_ireland_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } #Changing from owned_by because BT introduces the Irish Viceroyalty and I didn't want to make the mission incompletable on that basis.
 		}
 		
@@ -125,7 +125,7 @@ eng_british_conquest_scotland = {
 		completed_by = 1603.1.1
 		
 		provinces_to_highlight = {
-			conquer_scotland_provinces = yes
+			province_group = conquer_scotland_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -329,7 +329,7 @@ eng_french_conquest = {
 		position = 5
 		
 		provinces_to_highlight = {
-			vassalize_france_provinces = yes
+			province_group = vassalize_france_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		

@@ -31,17 +31,7 @@ aragonese_missions_1 = {
 				name = military_vassalization
 				duration = 7300
 			}
-			custom_tooltip = ara_crowns_of_iberia_claims
-			hidden_effect = { #TODO: Laggy. FIX!
-				every_province = {
-					limit = {
-						ara_crowns_of_iberia_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=ara_crowns_of_iberia }
 		}
 		ai_weight = {
 			factor = 500	#Navarra is not allowed to have fun
@@ -51,7 +41,7 @@ aragonese_missions_1 = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { vassalize_navarra }
 		provinces_to_highlight = {
-			ara_crowns_of_iberia_provinces = yes
+			province_group = ara_crowns_of_iberia_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -105,7 +95,7 @@ aragonese_missions_2 = {
 		icon = mission_italian_condottiere
 		required_missions = { }
 		provinces_to_highlight = {
-			integrate_naples_provinces = yes
+			province_group = integrate_naples_provinces
 			NOT = {
 				owned_by = ROOT
 			}
@@ -145,7 +135,7 @@ aragonese_missions_2 = {
 		icon = mission_crusade_for_varna
 		required_missions = { integrate_naples }
 		provinces_to_highlight = {
-			conquer_athens_provinces = yes
+			province_group = conquer_athens_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}

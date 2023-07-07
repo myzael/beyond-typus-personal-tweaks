@@ -1800,13 +1800,13 @@ calvinist_republic_government = {
 	}
 	trigger = {
 		religion = reformed 
-		NOT = { total_development = 800 #BT; 400 }
+		NOT = { total_development = 800 } #BT; 400
 	}
 	nation_designer_cost = 50
 	valid_for_nation_designer = no
 	nation_designer_trigger = {
 		religion = reformed 
-		NOT = { total_development = 800 #BT; 400 }
+		NOT = { total_development = 800 } #BT; 400
 	}
 	modifiers = {
 		monthly_fervor_increase = 0.1

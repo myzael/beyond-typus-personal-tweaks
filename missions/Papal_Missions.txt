@@ -31,17 +31,7 @@ papal_missions_slot = {
 			}
 		}
 		effect = {
-			custom_tooltip = conquer_ferrara_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						conquer_ferrara_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=conquer_ferrara }
 			2977 = {
 				add_province_modifier = {
 					name = "faster_integration"
@@ -54,7 +44,7 @@ papal_missions_slot = {
 		icon = mission_italian_condottiere
 		required_missions = { integrate_urbino }
 		provinces_to_highlight = {
-			conquer_ferrara_provinces = yes
+			province_group = conquer_ferrara_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -67,10 +57,7 @@ papal_missions_slot = {
 			}
 		}
 		effect = {
-			every_owned_province = {
-				limit = {
-					conquer_ferrara_provinces = yes
-				}
+			conquer_ferrara_provinces = {
 				add_province_modifier = {
 					name = "faster_integration"
 					duration = 5475
