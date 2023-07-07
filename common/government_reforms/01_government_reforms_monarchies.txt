@@ -35,7 +35,7 @@ feudalism_reform = {
 	}
 	custom_attributes = {
 		buffed_strong_duchies = yes #+5% Loyalty
-	}	
+	}
 	ai = {
 		factor = 0.5 #generic
 	}
@@ -342,7 +342,7 @@ feudal_france_reform = {
 	custom_attributes = {
 		locked_government_type = yes
 		has_appanages = yes
-		need_crownland_to_annex = yes
+		#need_crownland_to_annex = yes
 		nobility_loyalty_hit_on_integration = yes
 	}
 }
@@ -746,6 +746,7 @@ elective_monarchy = {
 	}
 	modifiers = {
 		vassal_income = 0.25
+		#TODO: Consider reverting this change with the new Orthodox minorities estate privilege. //Dub
 		tolerance_heretic = 3			#New in BT. Yeah, I know Lithuanian trads & Polish ambitions both give this, but Heretic unrest is a serious issue in this little corner of land.
 		#global_unrest = -1			#Replacing -1 global unrest with tolerance to heretics. PLC has a pretty spectacular amount of land and dev, and most of it is Orthodox.
 		max_absolutism = -30
@@ -803,7 +804,12 @@ english_monarchy = {
 	icon = "british_queen"
 	allow_normal_conversion = no
 	potential = {
-		have_had_reform = english_monarchy
+		OR = {
+			have_had_reform = english_monarchy
+			tag = ENG
+			was_tag = ENG
+			tag = GBR
+		}
 	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
@@ -2020,6 +2026,19 @@ eyalet_government = {
 		no_religion_penalty = yes
 		governing_capacity = 200 #BT; 100
 	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { is_subject_of_type = eyalet }
+					NOT = { is_subject_of_type = core_eyalet }
+				}
+				country_event = {
+					id = flavor_tur.1000
+				}
+			}
+		}
+	}
 
 	custom_attributes = {
 		locked_government_type = yes
@@ -2058,6 +2077,19 @@ barbary_eyalet_government = {
 		capture_ship_chance = 0.25
 		naval_forcelimit_modifier = 0.1
 		governing_capacity = 200 #BT; 100
+	}
+	removed_effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { is_subject_of_type = eyalet }
+					NOT = { is_subject_of_type = core_eyalet }
+				}
+				country_event = {
+					id = flavor_tur.1000
+				}
+			}
+		}
 	}
 
 	custom_attributes = {
@@ -2364,12 +2396,14 @@ tsardom = {
 	allow_normal_conversion = yes
 	potential = {
 		religion = orthodox
-		OR = {
+		OR = { #PDX doesn't even know how to edgecase guard everything. Let's fix it for now, but this is stupid.
 			culture_group = east_slavic
-			culture_group = slavic
+			primary_culture = russian_new
 		}
 		NOT = { primary_culture = ruthenian }
 		NOT = { primary_culture = byelorussian }
+		NOT = { primary_culture = ruthenian_new }
+		NOT = { primary_culture = byelorussian_new }
 		OR = {
 			AND = {
 				tag = RUS
@@ -2391,12 +2425,14 @@ tsardom = {
 	nation_designer_cost = 40
 
 	nation_designer_trigger = {
-		OR = {
+		OR = { #PDX doesn't even know how to edgecase guard everything. Let's fix it for now, but this is stupid.
 			culture_group = east_slavic
-			culture_group = slavic
+			primary_culture = russian_new
 		}
 		NOT = { primary_culture = ruthenian }
 		NOT = { primary_culture = byelorussian }
+		NOT = { primary_culture = ruthenian_new }
+		NOT = { primary_culture = byelorussian_new }
 		religion = orthodox
 	}
 
@@ -2513,7 +2549,7 @@ russian_empire_reform = {
 
 	modifiers = {
 		max_absolutism = 10
-		yearly_absolutism = 0.05
+		yearly_absolutism = 0.1 #Good catch on nerf. They do not need +0.5 yearly absolutism
 		global_autonomy = -0.05
 		global_manpower_modifier = 0.20
 		embracement_cost = -0.5
@@ -2557,7 +2593,6 @@ mamluk_government = {
 
 	modifiers = {
 		num_accepted_cultures = 3
-		#-50% cost to promote cultures
 		global_autonomy = -0.025
 		monarch_admin_power = 2
 		same_culture_advisor_cost = -0.25
@@ -2583,11 +2618,11 @@ feudal_theocracy = {
 		OR = {
 			AND = {
 				OR = {
-				religion_group = muslim
+					religion_group = muslim
 					religion_group = zoroastrian_group
 				}
 				OR = {
-				has_reform = feudal_theocracy
+					has_reform = feudal_theocracy
 					have_had_reform = feudal_theocracy
 				}
 			}
@@ -2599,7 +2634,7 @@ feudal_theocracy = {
 	}
 	nation_designer_trigger = {
 		OR = {
-		religion_group = muslim
+			religion_group = muslim
 			religion_group = zoroastrian_group
 		}
 	}
@@ -2787,7 +2822,7 @@ mughal_government = {
 		western_aryan = {
 			trade_efficiency = 0.05
 		}
-				slavic = {
+		slavic = { #Omegalul //Dub
 			province_warscore_cost = -0.15
 		}
 		#BT culture groups
@@ -2852,7 +2887,7 @@ revolutionary_empire_reform = {
 	custom_attributes = {
 		locked_government_type = yes
 	}
-	
+
 	conditional = {
 		allow = {
 			has_dlc = "Rights of Man"
@@ -3998,6 +4033,7 @@ livonian_constitutional_monarchy = {
 				government_reform = livonian_constitutional_monarchy
 			}
 		}
+		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 	}
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
@@ -4282,6 +4318,7 @@ livonian_enlightened_monarchy = {
 	}
 }
 
+#Finally this shitstorm's over. //Dub
 norwegian_parliamentary_monarchy = {
 	icon = "queen"
 	allow_normal_conversion = no
@@ -4348,6 +4385,7 @@ quash_noble_power_reform = {
 		nobles_influence_modifier = -0.1
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
+		#parliament_effect_duration = -2
 	}
 	ai = {
 		factor = 1
@@ -4674,7 +4712,6 @@ black_army_reform = {
 	}
 }
 
-
 legion_of_honor_reform = {
 	icon = "legion_of_honor_reform"
 	allow_normal_conversion = yes
@@ -4807,6 +4844,7 @@ separation_of_boyars_from_court_reform = {
 	modifiers = {
 		yearly_government_power = 1.25
 		nobles_influence_modifier = -0.1
+		global_tax_modifier = 0.05
 		maratha_exclusive_influence_modifier = -0.1
 		rajput_exclusive_influence_modifier = -0.1
 	}
@@ -4873,7 +4911,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 15
+						value = 25
 					}
 				}
 			}
@@ -4885,7 +4923,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 25
+						value = 40
 					}
 				}
 			}
@@ -4897,7 +4935,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 35
+						value = 55
 					}
 				}
 			}
@@ -4909,7 +4947,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 50
+						value = 80
 					}
 				}
 			}
@@ -4923,7 +4961,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 15
+						value = 25
 					}
 				}
 			}
@@ -4935,7 +4973,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 25
+						value = 40
 					}
 				}
 			}
@@ -4947,7 +4985,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 35
+						value = 55
 					}
 				}
 			}
@@ -4959,7 +4997,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 50
+						value = 80
 					}
 				}
 			}
@@ -4996,7 +5034,7 @@ centralize_empire_reform = {
 				tooltip = at_least_15_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 15
+					value = 25
 				}
 			}
 		}
@@ -5006,7 +5044,7 @@ centralize_empire_reform = {
 				tooltip = at_least_25_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 25
+					value = 40
 				}
 			}
 		}
@@ -5016,7 +5054,7 @@ centralize_empire_reform = {
 				tooltip = at_least_35_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 35
+					value = 55
 				}
 			}
 		}
@@ -5026,7 +5064,7 @@ centralize_empire_reform = {
 				tooltip = at_least_50_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 50
+					value = 80
 				}
 			}
 		}
@@ -5038,7 +5076,7 @@ centralize_empire_reform = {
 				tooltip = at_least_15_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 15
+					value = 25
 				}
 			}
 		}
@@ -5048,7 +5086,7 @@ centralize_empire_reform = {
 				tooltip = at_least_25_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 25
+					value = 40
 				}
 			}
 		}
@@ -5058,7 +5096,7 @@ centralize_empire_reform = {
 				tooltip = at_least_35_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 35
+					value = 55
 				}
 			}
 		}
@@ -5068,7 +5106,7 @@ centralize_empire_reform = {
 				tooltip = at_least_50_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 50
+					value = 80
 				}
 			}
 		}
@@ -5161,50 +5199,6 @@ regional_council_reform = {
 	conditional = {
 		allow = { has_dlc = "Mandate of Heaven" }
 		custom_attributes = {
-			unlock_special_state_edicts = yes		}
-	}
-	modifiers = {
-		all_estate_influence_modifier = 0.05
-		reform_progress_growth = 0.2
-		advisor_pool = 1
-	}
-}
-
-limit_imperial_court_reform = {
-	icon = "politician"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		all_estate_influence_modifier = -0.05
-		same_culture_advisor_cost = -0.1
-		meritocracy = 0.25
-	}
-	custom_attributes = {
-		blocked_call_diet = yes
-		seizing_land_loyalty = yes
-	}
-}
-
-regional_council_reform = {
-	icon = "peasants"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			is_revolutionary = no
-			NOT = { has_dlc = "Emperor" }
-		}
-	}
-	modifiers = {
-		state_maintenance_modifier = -0.33
-	}
-	conditional = {
-		allow = { has_dlc = "Mandate of Heaven" }
-		custom_attributes = {
 			unlock_special_state_edicts = yes
 		}
 	}
@@ -5250,6 +5244,7 @@ sidhi_recruitment = {
 	}
 }
 
+#Mansabdari reform cut from here
 examination_system_reform = {
 	icon = "asian_scripture"
 	allow_normal_conversion = yes
@@ -5402,7 +5397,6 @@ clergy_in_administration_reform = {
 		
 		brahmins_hindu_influence_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.05
-
 		church_influence_modifier = 0.1
 		church_loyalty_modifier = 0.05
 		tolerance_own = 1
@@ -5822,20 +5816,6 @@ ottoman_siyasah_tax_reform = {
 					name = ottoman_siyasah_tax_reform_manpower
 					duration = -1
 				}
-			}
-		}
-	}
-	removed_effect = {
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					OR = {
-						has_province_modifier = ottoman_siyasah_tax_reform_tax
-						has_province_modifier = ottoman_siyasah_tax_reform_manpower
-					}
-				}
-				remove_province_modifier = ottoman_siyasah_tax_reform_tax
-				remove_province_modifier = ottoman_siyasah_tax_reform_manpower
 			}
 		}
 	}
@@ -6472,6 +6452,7 @@ qng_grand_council_reform = {
 absolute_shogunate_reform = {
 	icon = "absolute_shogunate_reform"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			AND = {
@@ -6500,6 +6481,7 @@ absolute_shogunate_reform = {
 japanese_divine_empire = {
 	icon = "japanese_divine_empire"
 	allow_normal_conversion = no
+	lock_level_when_selected = yes
 	potential = {
 		OR = { 
 			AND = {
@@ -6512,20 +6494,29 @@ japanese_divine_empire = {
 		}
 		NOT = { has_reform = absolute_shogunate_reform }
 	}
-	trigger = { 
-		num_of_estate_privileges = {
-			estate = estate_nobles 
-			value = 6 
-		}
-		num_of_estate_privileges = {
-			estate = estate_burghers 
-			value = 6 
-		}
-		num_of_estate_privileges = {
-			estate = estate_church 
-			value = 6 
-		}
-	}
+	#trigger = {
+	#	if = { 
+	#		limit = { has_estate = estate_nobles }
+	#		num_of_estate_privileges = {
+	#			estate = estate_nobles 
+	#			value = 6 
+	#		}
+	#	}
+	#	if = { 
+	#		limit = { has_estate = estate_burghers }
+	#		num_of_estate_privileges = {
+	#			estate = estate_burghers 
+	#			value = 6 
+	#		}
+	#	}
+	#	if = { 
+	#		limit = { has_estate = estate_church }
+	#		num_of_estate_privileges = {
+	#			estate = estate_church 
+	#			value = 6 
+	#		}
+	#	}
+	#}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
 	nation_designer_trigger = {

@@ -285,7 +285,7 @@ holy_horde_reform = {
 	modifiers = {
 		cb_on_religious_enemies = yes
 		cavalry_cost = -0.1
-		movement_speed = 0.1
+		#movement_speed = 0.1 #Someone taped this to the EU4 Nerf Wagon
 		missionaries = 1
 		global_missionary_strength = 0.02
 	}
@@ -506,6 +506,7 @@ ikko_ikki_reform = {
 	}
 	trigger = {
 		religion_group = eastern
+		is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 	}
 	valid_for_nation_designer = yes
 	nation_designer_trigger = {
@@ -919,25 +920,6 @@ sisterhood_of_jeanne_darc_reform = {
 	ai = {
 		factor = 10
 	}
-}
-
-# BT Added
-imperial_abbey_reform = {
-	potential = {
-		NOT = { tag = PAP }
-		capital_scope = { is_part_of_hre = yes }
-	}
-	modifiers = {
-		global_tax_modifier = 0.1
-		church_influence_modifier = 0.1
-	}
-	legacy_equivalent = theocratic_government
-	icon = "imp_abbey"						#(JP) Waiting for Chrys
-	lock_level_when_selected = yes
-	has_devotion = yes
-	valid_for_new_country = yes
-	valid_for_nation_designer = yes
-	nation_designer_cost = 0
 }
 
 #Internal vs External Mission
@@ -1520,11 +1502,17 @@ theocratic_democracy_reform = {
 	trigger = {
 		NOT = { has_government_attribute = monastic_order }
 		if = {
-			limit = { has_dlc = "Common Sense" }
+			limit = { 
+				OR = {
+					has_dlc = "Common Sense"
+					has_dlc = "Domination"
+				}
+			}
 			OR = {
 				NOT = { has_estate = estate_nobles }
 				crown_stronger_than_estate = { estate = estate_nobles }
 			}
+			is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 		}
 	}
 
@@ -1606,6 +1594,7 @@ regionally_elected_commanders = {
 				NOT = { has_estate = estate_nobles }
 				crown_stronger_than_estate = { estate = estate_nobles }
 			}
+			is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 		}
 	}
 
@@ -2073,6 +2062,24 @@ all_under_tengri_reform = {
 	}
 }
 
+# BT Added
+imperial_abbey_reform = {
+	potential = {
+		NOT = { tag = PAP }
+		capital_scope = { is_part_of_hre = yes }
+	}
+	modifiers = {
+		global_tax_modifier = 0.1
+		church_influence_modifier = 0.1
+	}
+	legacy_equivalent = theocratic_government
+	icon = "imp_abbey"						#(JP) Waiting for Chrys
+	lock_level_when_selected = yes
+	has_devotion = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+}
 
 # Legacy Governments From Beyond Typus and Beyond the Pale
 
