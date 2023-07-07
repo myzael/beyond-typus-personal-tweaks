@@ -52,6 +52,9 @@ guj_maritime_conquest = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Should be an auto-complete anyway due to 1.33 Europa Fortalis :p
+		}
 	}
 	guj_subjugate_saurashtra = {
 		icon = mission_subjugate_saurashtra
@@ -87,6 +90,9 @@ guj_maritime_conquest = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest
+		}
 	}
 	guj_junnagadh_fort = {
 		icon = mission_junnagadh_fort
@@ -119,6 +125,9 @@ guj_maritime_conquest = {
 					key = guj_saurashtra
 				}
 			}
+		}
+		ai_weight = {
+			factor = 500	#More forts
 		}
 	}
 	guj_naval_dominance = {
@@ -173,6 +182,9 @@ guj_maritime_conquest = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 75	#Shouldn't leave India
+		}
 	}
 }
 
@@ -224,6 +236,9 @@ guj_rajputana_frontier_series = {
 				add_prestige = 10
 			}
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest
+		}
 	}
 }
 
@@ -272,6 +287,9 @@ guj_malwa_focus = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest
+		}
 	}
 
 	guj_mahmudabad = {
@@ -314,6 +332,9 @@ guj_malwa_focus = {
 				rename_capital = "Mahmudabad"
 			}
 			give_permaclaims_for_mission = { mission=guj_conquer_malwa }
+		}
+		ai_weight = {
+			factor = 500	#Historical conquest
 		}
 	}
 
@@ -361,6 +382,9 @@ guj_malwa_focus = {
 				add_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest
+		}
 	}
 }
 
@@ -407,6 +431,9 @@ guj_minor_industry = {
 					duration = 10950
 				}
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 }
@@ -468,6 +495,9 @@ guj_rajputana_conquest = {
 			}
 			give_permaclaims_for_mission = { mission=guj_subjugate_rajputana }
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest
+		}
 	}
 
 	guj_subjugate_rajputana = {
@@ -527,6 +557,9 @@ guj_rajputana_conquest = {
 				add_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Historical conquest
+		}
 	}
 }
 
@@ -557,6 +590,9 @@ guj_mercantile = {
 				name = guj_textile_industry
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 	guj_bankers_of_cambay = {
@@ -597,6 +633,9 @@ guj_mercantile = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	guj_shipyards_of_gujarat = {
 		icon = mission_shipyards_of_gujarat
@@ -616,6 +655,9 @@ guj_mercantile = {
 				name = "gujarati_shipyards"
 				duration = 10950
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 	guj_gujarati_diaspora = {
@@ -681,6 +723,9 @@ guj_mercantile = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 0	#Gujurat should probably stay in India
+		}
 	}
 	guj_south_africa = { #This one's horrible in BT, not only because of the overhaul, but because it is now a colonial region.
 		icon = mission_south_african_bases
@@ -717,6 +762,9 @@ guj_mercantile = {
 				name = "gujarati_south_africa"
 				duration = 10950
 			}
+		}
+		ai_weight = {
+			factor = 0	#Gujurat should probably stay in India
 		}
 	}
 }
@@ -806,6 +854,9 @@ guj_mercantile_and_industry = {
 				add_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
+		}
 	}
 	guj_growth_of_surat = {
 		icon = mission_growth_of_surat
@@ -829,6 +880,9 @@ guj_mercantile_and_industry = {
 			add_permanent_claim = 402
 			add_permanent_claim = 1212
 			add_permanent_claim = 1248
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 	guj_arabian_ports = {
@@ -859,7 +913,7 @@ guj_mercantile_and_industry = {
 				add_base_production = 4
 				add_base_manpower = 4
 			}
-			1331 = {
+			1331 = { #BT Trade node change
 				add_trade_modifier = {
 					who = root
 					duration = 10950
@@ -922,6 +976,9 @@ guj_mercantile_and_industry = {
 				add_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 0	#Gujurat should probably stay in India
+		}
 	}
 }
 
@@ -960,6 +1017,9 @@ guj_into_africa = {
 		effect = {
 			add_treasury = 1000
 			add_prestige = 15
+		}
+		ai_weight = {
+			factor = 0	#Gujurat should probably stay in India
 		}
 	}
 }

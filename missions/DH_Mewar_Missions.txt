@@ -49,6 +49,9 @@ mer_western_expansion = {
 			give_permaclaims_for_mission = { mission=mer_conquer_kathiawar }
 			give_permaclaims_for_mission = { mission=mer_avanti }
 		}
+		ai_weight = {
+			factor = 500	#Vassal integration
+		}
 	}
 	mer_conquer_kathiawar = {
 		icon = mission_conquer_kathiawar
@@ -71,6 +74,9 @@ mer_western_expansion = {
 				name = "united_saurashtra"
 				duration = 10950
 			}
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 }
@@ -124,6 +130,9 @@ mer_ujjain = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
+		}
 	}
 }
 
@@ -166,6 +175,9 @@ mer_delhi = {
 			}
 			give_permaclaims_for_mission = { mission=mer_unite_rajputana }
 		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
+		}
 	}
 
 	mer_unite_rajputana = {
@@ -192,6 +204,9 @@ mer_delhi = {
 			give_permaclaims_for_mission = { mission=mer_conquer_punjab }
 			give_permaclaims_for_mission = { mission=mer_conquer_sindh }
 			give_permaclaims_for_mission = { mission=mer_hills_of_gondwana }
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 	mer_reclaim_delhi = {
@@ -230,6 +245,9 @@ mer_delhi = {
 			}
 			give_permaclaims_for_mission = { mission=mer_restore_kanyakubja }
 		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
+		}
 	}
 	mer_restore_kanyakubja = {
 		icon = mission_conquer_kannauj
@@ -247,6 +265,9 @@ mer_delhi = {
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=mer_magadha }
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 	mer_magadha = {
@@ -282,6 +303,9 @@ mer_delhi = {
 				}
 				add_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 }
@@ -357,6 +381,9 @@ mer_fortify_rajputana_tree = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	mer_jawar_silver_mine = {
 		icon = mission_jawal_silver_mine
@@ -378,6 +405,9 @@ mer_fortify_rajputana_tree = {
 				add_base_tax = 2
 				add_base_production = 2
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 }
@@ -420,6 +450,9 @@ mer_gurjaratra = {
 				duration = 10950
 			}
 		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
+		}
 	}
 }
 
@@ -449,6 +482,15 @@ mer_city_of_lakes = {
 			province_id = 2058
 		}
 		trigger = {
+			if = {
+				limit = {
+					518 = {
+						owned_by = ROOT
+						is_capital = yes
+					}
+				}
+				is_at_war = no
+			}
 			2058 = {
 				owned_by = ROOT
 				is_state_core = root
@@ -480,6 +522,9 @@ mer_city_of_lakes = {
 				change_province_name = Udaipur
 				rename_capital = Udaipur
 			}
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 }
@@ -526,6 +571,9 @@ mer_indus = {
 					key = mer_sindh_conquest
 				}
 			}
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 }
@@ -581,6 +629,9 @@ mer_restore_kannauj_empire = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
+		}
 	}
 }
 
@@ -635,6 +686,9 @@ mer_gondwana = {
 				name = "mer_tribal_recruitment"
 				duration = 10950
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 }
@@ -696,6 +750,9 @@ mer_trade = {
 				duration = 10950
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 }
 
@@ -740,6 +797,9 @@ mer_army_tree = {
 				duration = 10950
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	mer_integrate_purbias = {
 		icon = mission_integrate_the_purbias
@@ -755,7 +815,7 @@ mer_army_tree = {
 			}
 			estate_loyalty = {
 				estate = estate_rajput
-				loyalty = 70
+				loyalty = 60
 			}
 			has_global_modifier_value = {
 				which = discipline
@@ -769,6 +829,9 @@ mer_army_tree = {
 				name = "mer_purbias"
 				duration = 10950
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 	mer_new_rajput_army = {
@@ -799,6 +862,9 @@ mer_army_tree = {
 				name = "mer_rajput_army"
 				duration = 10950
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 }

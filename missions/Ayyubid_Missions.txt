@@ -1,5 +1,5 @@
 #Completely overhauled for the 13.0 update by Dub.
-
+#TODO: Add ai_weight to new missions to help AI do less fuckyfucky.
 hsn_economic_group = {
 	slot = 1
 	generic = no
@@ -309,6 +309,9 @@ hsn_conquest_group = {
 			give_permaclaims_for_mission = { mission=hsn_white_sheep }
 			give_permaclaims_for_mission = { mission=conquer_al_jazira_hsn } #The Black Sheep
 		}
+		ai_weight = {
+			factor = 500	#Well, they are damned to die, but at least they should try
+		}
 	}
 	
 	hsn_white_sheep = {
@@ -333,6 +336,9 @@ hsn_conquest_group = {
 			add_prestige = 15
 			add_army_tradition = 20
 			give_permaclaims_for_mission = { mission=conquer_aleppo_hsn }
+		}
+		ai_weight = {
+			factor = 500	#Well, they are damned to die, but at least they should try
 		}
 		
 	}

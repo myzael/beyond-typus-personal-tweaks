@@ -25,6 +25,7 @@ gc_aragon_1 = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -205,6 +206,7 @@ gc_aragon_2 = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	gc_ara_genoa = { #Updated by C1CK
@@ -394,6 +396,7 @@ gc_aragon_3 = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	gc_ara_venice = { #Updated by C1CK
@@ -565,6 +568,7 @@ gc_aragon_4 = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	gc_ara_naples = { #Updated by C1CK (Readded the former vanilla lands of Northern Greece Area to this)
@@ -798,6 +802,7 @@ gc_aragon_5 = {
 			}
 		}
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	

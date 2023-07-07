@@ -56,6 +56,9 @@ dh_tim_india = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	
 	dh_tim_khorasan_one = {
@@ -78,6 +81,9 @@ dh_tim_india = {
 		
 		effect = {
 			give_permaclaims_for_mission = { mission=dh_tim_khorasan_two }
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 	
@@ -105,6 +111,9 @@ dh_tim_india = {
 				name = "tim_heartland_reconquest"
 				duration = 5475
 			}
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 	
@@ -230,12 +239,6 @@ dh_tim_india = {
 			dh_conquer_punjab_MUG_provinces = yes
 			NOT = { owned_by = ROOT }
 		}
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_highlighted 
@@ -251,18 +254,15 @@ dh_tim_india = {
 			}
 			give_permaclaims_for_mission = { mission=dh_conquer_delhi }
 		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
+		}
 	}
 	
 	dh_conquer_delhi = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { dh_conquer_punjab_MUG }
 		
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
 		provinces_to_highlight = {
 			dh_conquer_delhi_provinces = yes
 			NOT = { owned_by = ROOT }
@@ -283,6 +283,9 @@ dh_tim_india = {
 			}
 			add_treasury = 500
 			add_prestige = 20
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 }

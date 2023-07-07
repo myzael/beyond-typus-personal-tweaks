@@ -5,11 +5,9 @@ bur_conquest = {
 	ai = yes
 	
 	potential = {
+		NOT = { has_dlc = "Emperor" }
 		tag = BUR
 		NOT = { map_setup = map_setup_random }
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 	
@@ -38,6 +36,9 @@ bur_conquest = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Makes sense for Burgundy to want to do that
+		}
 	}
 	
 	bur_lorraine = {
@@ -64,6 +65,16 @@ bur_conquest = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 25	#Although Burgundy should want that, they should not suicide themselves into the HRE
+			modifier = {	#Unless they are part of it or it doesn't exist
+				factor = 5
+				OR = {
+					is_part_of_hre = yes
+					NOT = { hre_size = 1 }
+				}
 			}
 		}
 	}
@@ -106,6 +117,16 @@ bur_conquest = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 25	#Although Burgundy should want that, they should not suicide themselves into the HRE
+			modifier = {	#Unless they are part of it or it doesn't exist
+				factor = 5
+				OR = {
+					is_part_of_hre = yes
+					NOT = { hre_size = 1 }
+				}
+			}
+		}
 	}
 	
 	bur_frisia = {
@@ -137,6 +158,16 @@ bur_conquest = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 25	#Although Burgundy should want that, they should not suicide themselves into the HRE
+			modifier = {	#Unless they are part of it or it doesn't exist
+				factor = 5
+				OR = {
+					is_part_of_hre = yes
+					NOT = { hre_size = 1 }
+				}
+			}
+		}
 	}
 	
 }
@@ -148,11 +179,9 @@ bur_arles = {
 	ai = yes
 	
 	potential = {
+		NOT = { has_dlc = "Emperor" }
 		tag = BUR
 		NOT = { map_setup = map_setup_random }
-		NOT = {
-			has_dlc = "Emperor"
-		}
 	}
 	has_country_shield = yes
 
@@ -187,6 +216,9 @@ bur_arles = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Integrating vassal
 		}
 	}
 	
@@ -230,6 +262,16 @@ bur_arles = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 25	#Although Burgundy should want that, they should not suicide themselves into the HRE
+			modifier = {	#Unless they are part of it or it doesn't exist
+				factor = 5
+				OR = {
+					is_part_of_hre = yes
+					NOT = { hre_size = 1 }
+				}
+			}
+		}
 	}
 	
 	bur_cisjurania = {
@@ -245,7 +287,7 @@ bur_arles = {
 			NOT = { owned_by = ROOT }
 		}
 		
-		trigger = {
+		trigger = { #TODO: Check for Avignon not being in this - it's intentionally meant to be left out in vanilla.
 			provence_area = {
 				type = all
 				owned_by = ROOT
@@ -284,6 +326,9 @@ bur_arles = {
 				}
 				add_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 }

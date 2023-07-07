@@ -29,7 +29,7 @@ emp_pap_slot_1 = {
 		}
 
 		trigger = {
-			calc_true_if = {
+			calc_true_if = { #TODO: Vanilla uses emp_pap_patrimony_of_st_peter_tt tooltip. Might want to utilise?
 				amount = 24 
 				all_province = {
 					OR = {
@@ -211,11 +211,12 @@ emp_pap_slot_1 = {
 		icon = mission_rule_italy
 		required_missions = { emp_pap_island_screens }
 		position = 5
+		
 		provinces_to_highlight = {
 			region = italy_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-		trigger = {
+		trigger = { #BT: Vanilla's trigger is completely different. Keeping for now.
 			is_subject = no
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 110
@@ -246,19 +247,39 @@ emp_pap_slot_1 = {
 		}
 
 		trigger = {
-			151 = {
-				owner = {
-					religion = catholic
+			OR = {
+				AND = {
+					151 = { owner = { religion = catholic } }
+					295 = { owner = { religion = catholic } }
 				}
-			}
-			295 = {
-				owner = {
-					religion = catholic
+				custom_trigger_tooltip = {
+					tooltip = catholics_healed_schism_tt
+					has_global_flag = catholics_healed_schism
 				}
 			}
 		}
 		effect = {
-			custom_tooltip = emp_pap_end_the_schism_tt
+			if = {
+				limit = { NOT = { has_global_flag = catholics_healed_schism } }
+				custom_tooltip = emp_pap_end_the_schism_tt
+				hidden_effect = {
+					set_global_flag = catholics_healed_schism
+					every_country = {
+						limit = { 
+							religion = orthodox 
+							knows_country = PAP
+						}
+						country_event = { id = flavor_pap.11 }
+					}
+				}
+			}
+			else = {
+				add_adm_power = 100
+			}
+			add_country_modifier = {
+				name = teu_crusade_end_of_the_schism
+				duration = -1
+			}
 			if = {
 				limit = {
 					151 = {
@@ -274,15 +295,6 @@ emp_pap_slot_1 = {
 					}
 				}
 				295 = { change_religion = catholic }
-			}
-			hidden_effect = {
-				every_country = {
-					limit = { 
-						religion = orthodox 
-						knows_country = PAP
-					}
-					country_event = { id = flavor_pap.11 }
-				}
 			}
 		}
 	}
@@ -438,11 +450,6 @@ emp_pap_slot_2 = {
 						religion = catholic
 					}
 				}
-			}
-			379	= {	
-				owner = {
-						religion = catholic
-					}
 			}
 		}
 		effect = {
@@ -1155,6 +1162,28 @@ emp_pap_slot_4 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = { has_dlc = "Leviathan" }
+				118 = {
+					if = {
+						limit = {
+							NOT = {
+								has_great_project = {
+									type = stpeters_cathedral
+									tier = 3
+								}
+							}
+						}
+						add_great_project_tier = {
+							type = stpeters_cathedral
+							tier = 1
+						}
+					}
+					else = {
+						add_base_tax = 3
+					}
+				}
+			}
 			add_country_modifier = {
 				name = "pap_st_peters_basilica"
 				duration = -1
@@ -1464,6 +1493,7 @@ emp_pap_slot_5 = {
 			if = {
 				limit = { 
 					has_dlc = "Art of War" 
+					in_league = catholic
 					any_country = {
 						is_emperor = yes
 					}
@@ -1522,7 +1552,7 @@ emp_pap_slot_5 = {
 					}
 				}
 			}
-			add_stability = 1
+			add_stability_or_adm_power = yes
 			add_war_exhaustion = -2
 		}
 	}
@@ -1534,6 +1564,7 @@ emp_pap_slot_5 = {
 		
 		trigger = {
 			OR = {
+				is_religion_enabled = protestant
 				is_defender_of_faith_of_tier = 4
 				AND = {
 					hre_religion_locked = yes

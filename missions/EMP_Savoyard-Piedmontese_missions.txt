@@ -50,6 +50,9 @@ emp_sav_missions_conquest = {
 				add_permanent_claim = root
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 	emp_sav_conquer_genoa = {
 		icon = mission_dominate_genoa
@@ -68,17 +71,17 @@ emp_sav_missions_conquest = {
 		effect = {
 			lombardy_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = root
 			}
 			po_valley_area = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = root
 			}
 			7080 = {
 				if = {
@@ -104,6 +107,28 @@ emp_sav_missions_conquest = {
 			}
 			if = {
 				limit = {
+					exists = COR
+					valid_for_personal_unions_trigger = yes
+					COR = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = COR
+				}
+			}
+			else = {
+				corsica_sardinia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
 					exists = SAR
 					valid_for_personal_unions_trigger = yes
 					SAR = {
@@ -125,7 +150,9 @@ emp_sav_missions_conquest = {
 				add_permanent_claim = ROOT
 			}
 		}
-	}
+		ai_weight = {
+			factor = 500
+		}
 	}
 	emp_sav_conquer_sardinia = {
 		icon = unite_with_sardinia
@@ -152,6 +179,11 @@ emp_sav_missions_conquest = {
 					SIC = {
 						valid_for_personal_unions_trigger = yes
 					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = SIC
 				}
 			}
 			else = {
@@ -242,6 +274,9 @@ emp_sav_missions_conquest = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 	emp_sav_union_with_naples = {
 		icon = sav_union_with_naples
@@ -284,6 +319,9 @@ emp_sav_missions_conquest = {
 				name = sav_garibaldis_handshake
 				duration = -1
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 }
@@ -333,6 +371,9 @@ emp_sav_missions_conquest_north = {
 				}
 				add_permanent_claim = root
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
@@ -497,6 +538,9 @@ emp_sav_missions_conquest_italia = {
 				add_permanent_claim = root
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 	emp_sav_conquer_UPCI = { #Tuscany, Parma, Modena
 		icon = conquer_tuscany
@@ -539,8 +583,10 @@ emp_sav_missions_conquest_italia = {
 			add_country_modifier = {
 				name = sav_northern_italian_empire
 				duration = 10950
-
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 }
@@ -649,6 +695,19 @@ emp_sav_missions_conquest_west = {
 			}
 		}
 		effect = {
+			#This was apparently missing in BT. Re-adding...
+			custom_tooltip = emp_sav_conquer_occitania_effect_tooltip
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						culture = occitain
+					}
+					add_province_modifier = {
+						name = sav_savoyard_occitania
+						duration = 10950
+					}
+				}
+			}
 			upper_gascony = {  
 				limit = {
 					NOT = { is_core = root }
@@ -689,6 +748,7 @@ emp_sav_missions_conquest_west = {
 			NOT = { country_or_non_sovereign_subject_holds = root }
 		}
 		trigger = {
+			NOT = { is_part_of_hre = yes }
 			upper_gascony = {  
 				type = all
 				owned_by = ROOT
@@ -945,8 +1005,8 @@ emp_sav_missions_security = {
 							has_building = fort_15th
 						}
 						OR = {
-				area = north_piedmont_area
-				area = south_piedmont_area
+							area = north_piedmont_area
+							area = south_piedmont_area
 							area = piedmont_area
 							area = savoy_dauphine_area
 							area = provence_area
@@ -982,8 +1042,8 @@ emp_sav_missions_security = {
 					has_building = fort_15th
 				}
 				OR = {
-						area = north_piedmont_area
-						area = south_piedmont_area
+					area = north_piedmont_area
+					area = south_piedmont_area
 					area = piedmont_area
 					area = savoy_dauphine_area
 					area = provence_area
@@ -1061,7 +1121,7 @@ emp_sav_missions_security = {
 			}
 		}
 		trigger = {
-			is_subject = NO
+			is_subject = no
 			all_neighbor_country = {
 				NOT = { army_size = ROOT }
 			}
@@ -1333,7 +1393,6 @@ emp_sav_missions_papacy = {
 				}
 				add_permanent_claim = root
 			}
-
 		}
 	}
 }

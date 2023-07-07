@@ -8,11 +8,12 @@ por_african_ambitions = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
 	por_discover_african_coast = {
-		icon = mission_invade_island
+		icon = mission_establish_high_seas_navy
 		required_missions = { }
 		position = 1
 		completed_by = 1445.1.1
@@ -125,6 +126,7 @@ por_moroccan_conquest = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -321,6 +323,7 @@ por_brazilian_ambitions = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -376,13 +379,10 @@ por_brazilian_ambitions = {
 		}
 		
 		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = por_establishes_foothold_brazil.tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					colonial_region = colonial_brazil
-					is_city = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 10
+				colonial_region = colonial_brazil
+				is_city = yes
 			}
 		}
 		
@@ -404,6 +404,7 @@ por_east_african_ambitions = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -538,7 +539,6 @@ por_east_african_ambitions = {
 			add_prestige = 10
 			country_event = {
 				id = flavor_por.11
-				days = 30
 			}
 		}
 	
@@ -618,6 +618,7 @@ por_south_africa_mission = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -670,6 +671,7 @@ por_zanzibar_mission = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 
@@ -713,6 +715,7 @@ por_indonesia_trade_dominance = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 
@@ -751,6 +754,7 @@ por_hormuz_mission = {
 		tag = POR
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	

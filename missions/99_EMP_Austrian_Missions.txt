@@ -49,6 +49,9 @@ emp_hab_netherlands_branch = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 0	#They get this usually through the Burgundian Inheritance. And if not, AI Austria should randomly stress a Netherland player because the Austria has little to gain from the Channel
+		}
 	}
 	
 	emp_hab_ostend_company = {
@@ -64,7 +67,11 @@ emp_hab_netherlands_branch = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = emp_hab_ostend_company_trigger_tooltip
-					num_of_trade_companies = 1
+					#BT Replacing old generic trade company check as to make sure the trade company is in Asia.
+					any_owned_province = {
+						is_owned_by_trade_company = yes
+						continent = asia
+					}
 				}
 			}
 			else = {
@@ -109,6 +116,9 @@ emp_hab_netherlands_branch = {
 					add_permanent_claim = root
 				}
 			}
+		}
+		ai_weight = {
+			factor = 0	#AI AUstria shouldn't focus on colonizing
 		}
 	}
 	
@@ -396,6 +406,9 @@ emp_hab_netherlands_branch = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 0	#Same as above
+		}
 	}
 	
 	emp_hab_foothold_in_china = {
@@ -441,6 +454,9 @@ emp_hab_netherlands_branch = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 0	#No
+		}
 	}
 	
 	emp_hab_austrialasia = {
@@ -479,6 +495,9 @@ emp_hab_netherlands_branch = {
 				name = hab_austrian_australia
 				duration = 10950
 			}
+		}
+		ai_weight = {
+			factor = 0	#It's a meme mission.
 		}
 	}
 }
@@ -611,6 +630,9 @@ emp_hab_develop_hungary_bohemia_branch = {
 				name = hab_invested_in_provinces
 				duration = 10950
 			}
+		}
+		ai_weight = {
+			factor = 50	#Nice to have, but not important for the AI
 		}
 	}
 }

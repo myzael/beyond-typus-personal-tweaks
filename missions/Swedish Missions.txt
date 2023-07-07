@@ -6,6 +6,8 @@ swedish_missions_scandinavia = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
@@ -152,6 +154,8 @@ bt_swedish_colonialism = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -267,6 +271,8 @@ bt_swedish_balticum_intermarum = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -486,6 +492,8 @@ bt_swedish_hre_intervention = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -583,6 +591,8 @@ bt_swedish_hre_intervention_2 = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	#After fighting in 30 years war
@@ -618,6 +628,8 @@ bt_swedish_colonialism_2 = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	swedish_east_indian_trade_company = {
@@ -649,6 +661,8 @@ bt_swedish_internal_missions = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -890,6 +904,8 @@ bt_swedish_hre_intervention_3 = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -971,6 +987,8 @@ swedish_missions_baltic = {
 	ai = yes
 	potential = {
 		tag = SWE
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	

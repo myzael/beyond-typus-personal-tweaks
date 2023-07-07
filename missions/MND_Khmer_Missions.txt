@@ -24,9 +24,19 @@ mnd_khmer_1 = {
 		trigger = {
 			609 = {
 				development = 15
-				has_great_project = {
-					type = angkor_wat
-					tier = 1
+				OR = { 
+					has_great_project = {
+						type = angkor_wat
+						tier = 1
+					}
+					has_great_project = {
+						type = angkor_wat
+						tier = 2
+					}
+					has_great_project = {
+						type = angkor_wat
+						tier = 3
+					}
 				}
 			}
 		}
@@ -360,6 +370,7 @@ mnd_khmer_3 = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
+						months = 120
 					}
 				}
 			}
@@ -417,6 +428,7 @@ mnd_khmer_3 = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
+						months = 120
 					}
 				}
 			}
@@ -514,6 +526,7 @@ mnd_khmer_4 = {
 				add_casus_belli = {
 					target = AYU
 					type = cb_vassalize_mission
+					months = 120
 				}
 			}
 			else = {
@@ -656,6 +669,7 @@ mnd_khmer_5 = {
 					reverse_add_casus_belli = {
 						target = ROOT
 						type = cb_vassalize_mission
+						months = 120
 					}
 				}
 			}

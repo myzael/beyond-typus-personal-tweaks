@@ -35,6 +35,9 @@ bng_slot_1 = {
 			}
 			give_permaclaims_for_mission = { mission=bng_garjat_fealty }
 		}
+		ai_weight = {
+			factor = 500	#Reconquest
+		}
 	}
 	
 	bng_garjat_fealty = {
@@ -59,6 +62,9 @@ bng_slot_1 = {
 				duration = 7300
 			}
 			give_permaclaims_for_mission = { mission=bng_conquer_malwa_1 }
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 	
@@ -87,6 +93,9 @@ bng_slot_1 = {
 				duration = -1
 			}
 		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
+		}
 	}
 	
 	bng_conquer_multan = {
@@ -112,6 +121,9 @@ bng_slot_1 = {
 				name = "bng_arabian_sea_trade"
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 75	#Far fetched conquest
 		}
 	}
 }
@@ -143,6 +155,9 @@ bng_slot_2 = {
 		effect = {
 			give_permaclaims_for_mission = { mission=bng_conquer_jaunpur }
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	bng_conquer_jaunpur = {
 		icon = mission_the_ganges_campaign
@@ -163,6 +178,9 @@ bng_slot_2 = {
 		effect = {
 			give_permaclaims_for_mission = { mission=bng_conquer_delhi }
 			give_permaclaims_for_mission = { mission=bng_conquer_malwa_2 }
+		}
+		ai_weight = {
+			factor = 500	#Reasonable conquest
 		}
 	}
 	bng_conquer_delhi = {
@@ -186,6 +204,9 @@ bng_slot_2 = {
 			add_army_tradition = 20
 			give_permaclaims_for_mission = { mission=bng_conquer_multan }
 		}
+		ai_weight = {
+			factor = 100	#Quite far away
+		}
 	}
 	bng_grand_trunk_road = {
 		icon = mission_the_grand_trunk_road_bng
@@ -199,6 +220,9 @@ bng_slot_2 = {
 		effect = {
 			bt_grand_trunk_road_mission_effect = yes
 			give_permaclaims_for_mission = { mission=bng_tiger_mission }
+		}
+		ai_weight = {
+			factor = 100	#Quite far away
 		}
 	}
 }
@@ -239,6 +263,9 @@ bng_slot_3 = {
 			add_navy_tradition = 25
 			give_permaclaims_for_mission = { mission=bng_conquer_burma_1 }
 		}
+		ai_weight = {
+			factor = 75	#For the love of everything what is holy, Bengal should stop trying to go east...
+		}
 	}
 	bng_conquer_burma = {
 		icon = mission_conquer_burma
@@ -271,6 +298,9 @@ bng_slot_3 = {
 				}
 			}
 			give_permaclaims_for_mission = { mission=bng_conquer_china }
+		}
+		ai_weight = {
+			factor = 50	#For the love of everything what is holy, Bengal should stop trying to go east...
 		}
 	}
 	bng_tiger_mission = {
@@ -316,6 +346,9 @@ bng_slot_3 = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#That one is fine, however (doubt AI will do this one though)
+		}
 	}
 }
 
@@ -352,6 +385,9 @@ bng_slot_4 = {
 		effect = {
 			give_permaclaims_for_mission = { mission=bng_conquer_assam }
 		}
+		ai_weight = {
+			factor = 500	#Rasonable conquest
+		}
 	}
 	
 	bng_conquer_assam = {
@@ -373,6 +409,9 @@ bng_slot_4 = {
 		effect = {
 			add_yearly_manpower = 1
 			give_permaclaims_for_mission = { mission=bng_conquer_burma_2 }
+		}
+		ai_weight = {
+			factor = 500	#Rasonable conquest
 		}
 	}
 	bng_conquer_china = {
@@ -401,6 +440,9 @@ bng_slot_4 = {
 				duration = -1
 			}
 		}
+		ai_weight = {
+			factor = 0	#Bengal should focus more on Indian stuff
+		}
 	}
 	bng_conversion = {
 		icon = mission_convert_bengal
@@ -424,6 +466,9 @@ bng_slot_4 = {
 				name = "converted_bengal"
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 500	#Historical
 		}
 	}
 }
@@ -458,6 +503,9 @@ bng_slot_5 = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	bng_manufactories = {
 		icon = mission_modernize_production
@@ -475,6 +523,9 @@ bng_slot_5 = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	bng_sufis = {
 		icon = mission_patronize_sufi_scholars
@@ -489,7 +540,7 @@ bng_slot_5 = {
 			temple = 5
 			estate_loyalty = {
 				estate = estate_church
-				loyalty = 70
+				loyalty = 60
 			}
 		}
 		effect = {
@@ -497,6 +548,9 @@ bng_slot_5 = {
 				name = "bng_sufi_mystic_settlers"
 				duration = 7300
 			}	
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 	bng_clear_delta = {
@@ -641,6 +695,9 @@ bng_slot_5 = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	bng_shipyards = {
 		icon = mission_grand_bengali_shipyards
@@ -662,6 +719,9 @@ bng_slot_5 = {
 				name = "bng_proto_industrial_shipyards"
 				duration = -1
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 }

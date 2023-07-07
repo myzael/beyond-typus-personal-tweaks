@@ -44,9 +44,15 @@ tim_reconquest_persia = {
 					}
 				}
 				TIM = {
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = insulted
+					OR = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = insulted
+						}
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
+						}
 					}
 				}
 			}
@@ -231,6 +237,9 @@ tim_reconquest_khorasan = { #Unfixed because Dharma gives their own tree. Though
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 	
 	tim_khorasan_one = {
@@ -290,6 +299,9 @@ tim_reconquest_khorasan = { #Unfixed because Dharma gives their own tree. Though
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 	
 	tim_khorasan_two = {
@@ -328,6 +340,9 @@ tim_reconquest_khorasan = { #Unfixed because Dharma gives their own tree. Though
 				duration = 5475
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 	
 }
@@ -354,11 +369,14 @@ tim_reconquest_transoxiana = {
 		position = 1
 		
 		trigger = {
-			stability = 2
+			stability	= 2
 		}
 		
 		effect = {
 			give_permaclaims_for_mission = { mission=tim_transoxiana_one }
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
@@ -382,6 +400,9 @@ tim_reconquest_transoxiana = {
 		
 		effect = {
 			give_permaclaims_for_mission = { mission=tim_transoxiana_two }
+		}
+		ai_weight = {
+			factor = 0
 		}
 	}
 	
@@ -409,6 +430,9 @@ tim_reconquest_transoxiana = {
 				name = "tim_steppe_reconquest"
 				duration = 5475
 			}
+		}
+		ai_weight = {
+			factor = 0
 		}
 	}
 	
@@ -471,6 +495,9 @@ tim_india = { #Unfixed because Dharma gives their own tree. Though it is literal
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 1000
+		}
 	}
 	
 	conquer_delhi = {
@@ -500,6 +527,9 @@ tim_india = { #Unfixed because Dharma gives their own tree. Though it is literal
 		effect = {
 			add_treasury = 500
 			add_prestige = 20
+		}
+		ai_weight = {
+			factor = 1000
 		}
 	}
 }

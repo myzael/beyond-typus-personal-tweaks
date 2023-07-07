@@ -5,12 +5,18 @@ prussian_missions_main_slot = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_dlc = "Emperor" }
+		NOT = { has_dlc = "Domination" }
+		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = BRA
-			tag = PRU
-		}
-		NOT = {
-			has_dlc = "Emperor"
+			AND = {
+				OR = {
+					NOT = { has_dlc = "Lions of the North" }
+					NOT = { was_tag = TEU }
+				}
+				tag = PRU
+			}
 		}
 	}
 	has_country_shield = yes
@@ -32,30 +38,26 @@ prussian_missions_main_slot = {
 			}
 		}
 		effect = {
-			#Claims
-			custom_tooltip = pru_conquer_pomerania_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						pru_conquer_pomerania_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=pru_conquer_pomerania }
 			#BT adjusted, this area was moved outside of requirements for next mission as Brandenburg never directly controlled this until 1815.
 			vorpommern_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500
+			modifier = {
+				factor = 0
+				NOT = { is_year = 1466 }	#Neumark Event can still fire, and Brandenburg shouldn't attack TO before that
+			}
+		}
 	}
 	pru_conquer_pomerania = {
-		icon = mission_conquer_50_development
+		icon = mission_hanseatic_city
 		required_missions = { reclaim_neumark }
 		position = 3
 		provinces_to_highlight = {
@@ -73,23 +75,14 @@ prussian_missions_main_slot = {
 		}
 		effect = {
 			add_legitimacy = 10
-			
-			#Claims
-			custom_tooltip = connect_the_prussian_lands_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						connect_the_prussian_lands_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=connect_the_prussian_lands }
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	connect_the_prussian_lands = { #Mission repurposed - Connection of Prussian lands was not done historically until first partition of Poland. Instead this is now to take east Prussia and consolidate Brandenburg.
-		icon = mission_unite_home_region
+		icon = mission_teutonic_knights
 		required_missions = { pru_conquer_pomerania }
 		position = 5
 		provinces_to_highlight = {
@@ -107,33 +100,15 @@ prussian_missions_main_slot = {
 		}
 		effect = {
 			add_mil_power = 100
-			#Claims
-			custom_tooltip = pru_conquer_silesia_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						pru_conquer_silesia_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			custom_tooltip = prussia_partitions_poland_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						prussia_partitions_poland_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=pru_conquer_silesia }
+			give_permaclaims_for_mission = { mission=prussia_partitions_poland }
+		}
+		ai_weight = {
+			factor = 500	#More Prussia
 		}
 	}
 	pru_conquer_silesia = {
-		icon = mission_assemble_an_army
+		icon = mission_eastern_european_city
 		required_missions = { connect_the_prussian_lands }
 		provinces_to_highlight = {
 			pru_conquer_silesia_provinces = yes
@@ -184,19 +159,11 @@ prussian_missions_main_slot = {
 				}
 			}
 			else = {
-				#Claims
-				custom_tooltip = pru_duchy_of_cleves_claims
-				hidden_effect = {
-					every_province = {
-						limit = {
-							pru_duchy_of_cleves_provinces = yes
-							NOT = { is_core = ROOT }
-							NOT = { owned_by = ROOT }
-						}
-						add_permanent_claim = ROOT
-					}
-				}
+				give_permaclaims_for_mission = { mission=pru_duchy_of_cleves }
 			}
+		}
+		ai_weight = {
+			factor = 500	#Historical Conquest
 		}
 	}
 	pru_duchy_of_cleves = {
@@ -224,17 +191,28 @@ prussian_missions_main_slot = {
 			north_rhine_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_claim = ROOT
 			}
 			westphalia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_claim = ROOT
 			}
+			#TODO: Check if exists in BT
+			north_westphalia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 75	#Little bit far away
 		}
 	}
 }
@@ -244,12 +222,18 @@ prussian_missions_slot_2 = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { has_dlc = "Emperor" }
+		NOT = { has_dlc = "Domination" }
+		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = BRA
-			tag = PRU
-		}
-		NOT = {
-			has_dlc = "Emperor"
+			AND = {
+				OR = {
+					NOT = { has_dlc = "Lions of the North" }
+					NOT = { was_tag = TEU }
+				}
+				tag = PRU
+			}
 		}
 	}
 	has_country_shield = yes
@@ -275,7 +259,7 @@ prussian_missions_slot_2 = {
 				name = "polish_partitions"
 				duration = 7300
 			}
-			
+			#TODO: Check if match JP's BT15 Poland
 			#Claims, to mirror further Polish partitions.
 			#2nd Partition provinces (Except 256 & 4525 in Mazovia)
 			kuyavia_area = {
@@ -307,6 +291,9 @@ prussian_missions_slot_2 = {
 				}
 				add_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Historical Conquest
 		}
 	}
 }

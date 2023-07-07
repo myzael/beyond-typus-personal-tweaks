@@ -10,6 +10,7 @@ spa_colonial_group = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -40,7 +41,7 @@ spa_colonial_group = {
 	}
 	
 	spa_rb_caribbean_colony = {
-		icon = mission_dominate_home_trade_node
+		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_caribbean_discovery }
 		position = 5
 		completed_by = 1493.1.1
@@ -94,7 +95,7 @@ spa_colonial_group = {
 	}
 	
 	spa_rb_la_plata = {
-		icon = mission_trade_company_region_abroad
+		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_caribbean_colony }
 		completed_by = 1508.1.1
 		
@@ -105,13 +106,10 @@ spa_colonial_group = {
 		}
 		
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = spa_rb_la_plata.tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					colonial_region = colonial_la_plata
-					is_city = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_la_plata
+				is_city = yes
 			}
 		}
 		
@@ -136,19 +134,20 @@ spa_colonial_group_rnw_off = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	
 	has_country_shield = yes
 	
 	spa_rb_incans = {
-		icon = mission_assemble_an_army
+		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_spanish_main }
 		position = 7
 		completed_by = 1536.1.1
 		
 		provinces_to_highlight = {
 			OR = {
-				area = upper_peru  
+				area = upper_peru
 				area = potosi_area
 				area = antisuyu_area
 				area = kuntisuyu_area
@@ -160,7 +159,7 @@ spa_colonial_group_rnw_off = {
 		}
 		
 		trigger = {
-			upper_peru = {  
+			upper_peru = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -215,7 +214,7 @@ spa_colonial_group_rnw_off = {
 	}
 	
 	spa_rb_incans_two = {
-		icon = mission_cannons_firing
+		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_incans }
 		completed_by = 1538.1.1
 		
@@ -312,6 +311,7 @@ spa_colonial_group_two = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -328,63 +328,60 @@ spa_colonial_group_two = {
 		}
 		
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = spa_rb_spanish_main.tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					colonial_region = colonial_colombia
-					is_city = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_colombia
+				is_city = yes
 			}
 		}
 		
 		effect = {
-			upper_peru = {  
+			upper_peru = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			potosi_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			antisuyu_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			kuntisuyu_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			huanuco_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			cajamarca_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			quito_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -412,35 +409,35 @@ spa_colonial_group_two = {
 			guatemala_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			east_yucatan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			yucatan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			chiapas_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			oaxaca_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -448,21 +445,21 @@ spa_colonial_group_two = {
 			eastern_mexico_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			guerrero_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			michoacan_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -494,11 +491,12 @@ spa_colonial_group_two_rnw_off = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
 	spa_rb_aztecs = {
-		icon = mission_conquer_50_development
+		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_spanish_main }
 		position = 7
 		completed_by = 1521.1.1
@@ -539,6 +537,7 @@ spa_iberia_convert = {
 		}
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -574,7 +573,7 @@ spa_iberia_convert = {
 			northern_morocco_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -594,11 +593,12 @@ spa_colonial_group_three_rnw_off = {
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
 	spa_rb_zapotecs = {
-		icon = mission_unite_home_region
+		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_spanish_main }
 		position = 7
 		completed_by = 1530.1.1
@@ -637,7 +637,9 @@ spa_reconquista = {
 			tag = CAS
 			tag = SPA
 		}
+		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -662,14 +664,14 @@ spa_reconquista = {
 			upper_andalucia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			lower_andalucia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -705,35 +707,35 @@ spa_reconquista = {
 			beieras_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			alentejo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			aragon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			catalonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			valencia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -801,7 +803,7 @@ spa_reconquista = {
 			western_morocco_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_claim = ROOT }
 				}
 				add_claim = ROOT
 			}
@@ -821,6 +823,7 @@ spa_reconquista_por = {
 		}
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -876,42 +879,42 @@ spa_reconquista_por = {
 			apulia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			calabria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			naples_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			# capitanata_area = {
 				# limit = {
 					# NOT = { is_core = ROOT }
-					# NOT = { owned_by = ROOT }
+					# NOT = { is_permanent_claim = ROOT }
 				# }
 				# add_permanent_claim = ROOT
 			# }
 			abruzzo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
 			# lucania_area = {
 				# limit = {
 					# NOT = { is_core = ROOT }
-					# NOT = { owned_by = ROOT }
+					# NOT = { is_permanent_claim = ROOT }
 				# }
 				# add_permanent_claim = ROOT
 			# }
@@ -921,7 +924,7 @@ spa_reconquista_por = {
 	}
 	
 	spa_rb_italian_ambition = {
-		icon = mission_conquer_50_development
+		icon = mission_italian_condottiere
 		required_missions = { spa_rb_christian_fleet }
 		completed_by = 1516.1.1
 		

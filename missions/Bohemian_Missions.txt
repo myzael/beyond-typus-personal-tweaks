@@ -5,9 +5,8 @@ boh_hussite_group = {
 	ai = yes
 	potential = {
 		tag = BOH
-		NOT = {
-			has_dlc = "Emperor"
-		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Emperor" }
 	}
 	has_country_shield = yes
 	
@@ -51,6 +50,9 @@ boh_hussite_group = {
 				add_dip_power = 50
 			}
 		}
+		ai_weight = {
+			factor = 75	#Default
+		}
 	}
 	
 	boh_integrate_silesia = {
@@ -77,16 +79,20 @@ boh_hussite_group = {
 				type = all
 				owned_by = ROOT
 			}
+			is_subject = no
 		}
 		
 		effect = {
 			wielkopolska_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 	
@@ -116,10 +122,13 @@ boh_hussite_group = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 75	#Default
+		}
 	}
 	
 	boh_prem_conquest_two = {
-		icon = mission_cannons_firing
+		icon = mission_teutonic_knights
 		required_missions = { boh_prem_conquest }
 		position = 7
 		
@@ -142,6 +151,9 @@ boh_hussite_group = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 75	#Default
+		}
 	}
 }
 
@@ -151,9 +163,8 @@ boh_development_group = {
 	ai = yes
 	potential = {
 		tag = BOH
-		NOT = {
-			has_dlc = "Emperor"
-		}
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Emperor" }
 	}
 	has_country_shield = yes
 	
@@ -203,5 +214,10 @@ boh_development_group = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 }
+
+	

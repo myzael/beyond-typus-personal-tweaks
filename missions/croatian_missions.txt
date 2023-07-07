@@ -1,3 +1,5 @@
+#Someone updated this mission tree at some point! I need to know who to credit! //Dub
+
 cro_1 = {
 	slot = 1
 	generic = no
@@ -14,7 +16,7 @@ cro_1 = {
 	
 	cro_reconquer_dalmatia = {
 		icon = mission_invade_island
-		required_missions = { cro_independence }
+		required_missions = {  }
 		position = 2
 		provinces_to_highlight = {
 			OR = {
@@ -25,7 +27,7 @@ cro_1 = {
 			NOT = { province_id = 4754 }
 		}
 		trigger = {
-			is_subject = no
+			# is_subject = no
 			east_adriatic_coast_area = {
 				type = all
 				OR = {
@@ -49,6 +51,9 @@ cro_1 = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Reconquest
+		}
 	}
 	cro_dominate_dubrovnik = {
 		icon = mission_dominate_home_trade_node
@@ -57,12 +62,12 @@ cro_1 = {
 		provinces_to_highlight = {
 			province_id = 137
 			OR = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { owned_by = ROOT }
 				NOT = { is_strongest_trade_power = ROOT }
 			}			
 		}
 		trigger = {
-			137 = { country_or_non_sovereign_subject_holds = ROOT }
+			137 = { owned_by = ROOT }
 			137 = { is_strongest_trade_power = ROOT }
 		}
 		effect = {
@@ -99,6 +104,9 @@ cro_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
+		}
+		ai_weight = {
+			factor = 500	#More expansion at the coast line
 		}
 	}
 	cro_expel_italians = {
@@ -139,6 +147,9 @@ cro_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Seems pretty Balkan to me
+		}
 	}
 	cro_withstand_ottomans = {
 		icon = mission_non-western_soldiers
@@ -162,7 +173,7 @@ cro_1 = {
 					tooltip = cro_tur_army
 					army_strength = {
 						who = TUR
-						value = 0.8
+						value = 0.8 #Vanilla has this at 0.5. Keep at 0.8?
 					}
 				}
 			}
@@ -172,6 +183,9 @@ cro_1 = {
 		}
 		effect = {
 			add_mil_power = 200
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 }
@@ -254,10 +268,13 @@ cro_2 = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 75	#Default
+		}
 	}
 	cro_reclaim_bosnia = {
 		icon = mission_unite_home_region
-		required_missions = { cro_independence }
+		required_missions = { cro_independence } #Dub: Intentionally keeping this because the mission requires Croatia to be independent anyway.
 		provinces_to_highlight = {
 			OR = {
 				area = bosnia_area
@@ -291,21 +308,20 @@ cro_2 = {
 		}
 		effect = {
 			if = {
-				limit = {
-					NOT = {
-						accepted_culture = bosnian
-					}
-				}
-				add_accepted_culture = bosnian
+				limit = { has_updated_culture = { culture = slavic } }
+				add_accepted_culture_or_dip_power = { culture = bosnian_new }
 			}
 			else = {
-				add_dip_power = 100
+				add_accepted_culture_or_dip_power = { culture = bosnian }
 			}
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 	cro_croatian_fleet = {
 		icon = mission_galleys_in_port
-		required_missions = { cro_reclaim_bosnia }
+		required_missions = {  }
 		provinces_to_highlight = {
 		}
 		trigger = {
@@ -319,6 +335,9 @@ cro_2 = {
 				name = "croatian_fleet"
 				duration = 7300
 			}	
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 	cro_conquer_carniola = {
@@ -341,6 +360,9 @@ cro_2 = {
 		}
 		effect = {
 			add_army_tradition = 30
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 }
@@ -378,6 +400,9 @@ cro_5 = {
 				duration = -1
 			}
 		}
+		ai_weight = {
+			factor = 75	#Default
+		}
 	}
 	cro_zagreb = {
 		icon = mission_eastern_european_city
@@ -397,6 +422,9 @@ cro_5 = {
 				add_base_manpower = 2
 				center_of_trade = 2
 			}
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 }

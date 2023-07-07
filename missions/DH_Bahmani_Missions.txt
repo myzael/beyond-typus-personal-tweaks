@@ -59,6 +59,9 @@ bah_indigenization = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	empower_deccani_nobles = {
 		icon = mission_deccanis
@@ -69,7 +72,7 @@ bah_indigenization = {
 				province_id = 544
 				province_id = 569
 			}
-			NOT = { 
+			NOT = { #BT Fix highlighting in vanilla
 				owned_by = ROOT 
 				has_building = workshop
 			}
@@ -94,6 +97,9 @@ bah_indigenization = {
 			}
 			544 = { add_base_manpower = 2 }
 			569 = { add_base_manpower = 2 }
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 	marathi_fiefs = {
@@ -122,6 +128,9 @@ bah_indigenization = {
 				religion = hinduism
 				skill = 3
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 	metropolis_of_the_deccan = {
@@ -160,6 +169,9 @@ bah_indigenization = {
 					duration = 10950
 				}
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 }
@@ -200,6 +212,9 @@ bah_gharbians = {
 				name = "bah_access_to_the_sea"
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 500	#Reconquest
 		}
 	}
 
@@ -243,6 +258,9 @@ bah_gharbians = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Reconquest
+		}
 	}
 	mahmud_gawans_madrassah = {
 		icon = mission_gawans_madrasar
@@ -276,6 +294,9 @@ bah_gharbians = {
 				skill = 4
 				discount = yes
 			}
+		}
+		ai_weight = {
+			factor = 500	#Tall
 		}
 	}
 	persianate_empire = {
@@ -367,6 +388,9 @@ bah_gharbians = {
 				duration = -1
 			}
 		}
+		ai_weight = {
+			factor = 0	#Way too far fetched
+		}
 	}
 }
 
@@ -429,6 +453,9 @@ bah_persian_branch = {
 			}
 			give_permaclaims_for_mission = { mission=arabian_sea_trade_ports }
 		}
+		ai_weight = {
+			factor = 100	#Nice to have
+		}
 	}
 	arabian_sea_trade_ports = {
 		icon = mission_arabian_sea_trade
@@ -450,6 +477,9 @@ bah_persian_branch = {
 				duration = 10950
 			}
 			give_permaclaims_for_mission = { mission=persian_gulf }
+		}
+		ai_weight = {
+			factor = 25	#Leaving India now, which is... well, in that case it is okay
 		}
 	}
 	persian_gulf = {
@@ -496,6 +526,9 @@ bah_persian_branch = {
 			2221 = {
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 0	#But this one goes a little bit too far for the AI
 		}
 	}
 }
@@ -556,11 +589,14 @@ bah_vijayanagari_branch = {
 			}
 			give_permaclaims_for_mission = { mission=southern_frontier }
 		}
+		ai_weight = {
+			factor = 500	#Historical Rival basically
+		}
 	}
 
 
 	southern_frontier = {
-		icon = mission_southern_frontier
+		icon = mission_southern_frontier_dharma
 		required_missions = { city_of_victory }
 		provinces_to_highlight = {
 			southern_frontier_provinces = yes
@@ -575,6 +611,9 @@ bah_vijayanagari_branch = {
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=bijapur_karnatak }
+		}
+		ai_weight = {
+			factor = 500	#Historical Rival conquest
 		}
 	}
 
@@ -609,6 +648,9 @@ bah_vijayanagari_branch = {
 				name = "bijapur_karnatak_modifier"
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 500	#Historical Rival conquest
 		}
 	}
 }
@@ -651,6 +693,9 @@ bah_delhi_branch = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 75	#Default
+		}
 	}
 
 	crush_delhi = {
@@ -691,6 +736,9 @@ bah_delhi_branch = {
 					duration = -1
 				}
 			}
+		}
+		ai_weight = {
+			factor = 50	#Little too ambitious
 		}
 	}
 }
@@ -739,6 +787,9 @@ bah_coromandel_branch = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Integrate vassal
+		}
 	}
 
 	conquer_andhra = {
@@ -764,6 +815,9 @@ bah_coromandel_branch = {
 					duration = 7300
 				}
 			}
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 	growth_of_golconda = {
@@ -815,6 +869,9 @@ bah_coromandel_branch = {
 			}
 			give_permaclaims_for_mission = { mission=golconda_karnatak }
 		}
+		ai_weight = {
+			factor = 500	#Tall
+		}
 	}
 	golconda_karnatak = {
 		icon = mission_coromandel_expansion
@@ -841,6 +898,9 @@ bah_coromandel_branch = {
 				name = "coromandel_trade"
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 500	#Historical Rival conquest
 		}
 	}
 	coromandel_entrepot = {
@@ -889,6 +949,9 @@ bah_coromandel_branch = {
 				}
 				add_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 75	#Default
 		}
 	}
 }

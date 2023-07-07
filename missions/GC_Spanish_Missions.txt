@@ -5,9 +5,11 @@ gc_spain_1 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -109,9 +111,11 @@ gc_spain_1_b = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -197,13 +201,9 @@ gc_spain_1_b = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
-			custom_trigger_tooltip = {
-				tooltip = cas_spa_havana.tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					colonial_region = colonial_cuba
-					is_city = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value =  5
+				colonial_region = colonial_cuba
 			}
 		}
 		effect = {
@@ -212,7 +212,12 @@ gc_spain_1_b = {
 			if = {
 				limit = {
 					any_subject_country = {
-						is_subject_of_type = colony
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
 						owns = 484
 					}
 				}
@@ -275,17 +280,26 @@ gc_spain_1_b = {
 		}
 
 		trigger = {
-			2021 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				has_holy_order_trigger = yes
-			}
-			custom_trigger_tooltip = {
-				tooltip = miss_colonize_california
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					colonial_region = colonial_california
-					is_city = yes
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+					religion = catholic
 				}
+				2021 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_holy_order_trigger = yes
+				}
+			}
+			else = {
+				2021 = {
+					country_or_non_sovereign_subject_holds = ROOT
+					religion = ROOT
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_california
+				is_city = yes
 			}
 		}
 		effect = {
@@ -310,9 +324,11 @@ gc_spain_2 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -413,41 +429,6 @@ gc_spain_2 = {
 		}
 	}
 
-	gc_cas_spa_reconquista_two = {
-		icon = mission_cannons_firing
-		required_missions = {
-			gc_cas_spa_navarra
-			gc_cas_spa_reconquista_one
-		}
-		position = 3
-
-		# free mission
-
-		provinces_to_highlight = {
-			OR = {
-				area = beieras_area
-				area = alentejo_area
-			}
-			NOT = { owned_by = ROOT }
-		}
-
-		trigger = {
-			beieras_area = {
-				type = all
-				owned_by = ROOT
-			}
-			alentejo_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-
-		effect = {
-			add_prestige = 25
-			add_adm_power = 100
-		}
-	}
-
 	gc_cas_spa_expel_moriscos = {
 		icon = mission_expel_the_moriscos
 		required_missions = { gc_cas_spa_iberia_christian }
@@ -485,9 +466,11 @@ gc_spain_2_b = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -638,12 +621,28 @@ gc_spain_2_b = {
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = mexico_holy_order_tooltip
-				num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
-					has_holy_order_trigger = yes
-					region = mexico_region
-					value = 5
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+					religion = catholic
+				}
+				custom_trigger_tooltip = {
+					tooltip = mexico_holy_order_tooltip
+					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+						has_holy_order_trigger = yes
+						region = mexico_region
+						value = 5
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = mexico_holy_order_alternative_tooltip
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						religion = ROOT
+						region = mexico_region
+						value = 25
+					}
 				}
 			}
 			mexico_region = {
@@ -659,7 +658,12 @@ gc_spain_2_b = {
 			if = {
 				limit = {
 					any_subject_country = {
-						is_subject_of_type = colony
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
 						owns = 852
 					}
 					852 = { is_capital = no }
@@ -702,16 +706,13 @@ gc_spain_2_b = {
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cas_spa_florida_forts.tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 3
-					OR = {
-						region = southeast_america_region
-						area = west_florida_area
-					}
-					fort_level = 3
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				OR = {
+					region = southeast_america_region
+					area = west_florida_area
 				}
+				fort_level = 2
 			}
 		}
 		effect = {
@@ -748,9 +749,11 @@ gc_spain_3 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -910,13 +913,13 @@ gc_spain_3 = {
 
 		provinces_to_highlight = {
 			area = northern_morocco_area
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
 			northern_morocco_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 
@@ -962,9 +965,11 @@ gc_spain_3_b = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -993,13 +998,10 @@ gc_spain_3_b = {
 		# free mission
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = spa_rb_spanish_main.tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					colonial_region = colonial_colombia
-					is_city = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_colombia
+				is_city = yes
 			}
 		}
 
@@ -1011,7 +1013,7 @@ gc_spain_3_b = {
 				manuever = 5
 				siege = 1
 			}
-			upper_peru = {  
+			upper_peru = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1162,7 +1164,7 @@ gc_spain_3_b = {
 
 		provinces_to_highlight = {
 			OR = {
-				area = upper_peru  
+				area = upper_peru
 				area = potosi_area
 				area = antisuyu_area
 				area = kuntisuyu_area
@@ -1174,7 +1176,7 @@ gc_spain_3_b = {
 		}
 
 		trigger = {
-			upper_peru = {  
+			upper_peru = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1220,7 +1222,10 @@ gc_spain_3_b = {
 					province_id = 795
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
-				province_id = 809
+				AND = {
+					province_id = 809
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
 				AND = {
 					OR = {
 						province_id = 809
@@ -1229,13 +1234,16 @@ gc_spain_3_b = {
 					}
 					NOT = { is_strongest_trade_power = ROOT }
 				}
+				AND = { 
+					province_id = 809 
+					NOT = { province_has_center_of_trade_of_level = 3 }
+				}
 			}
 		}
 
 		trigger = {
-			809 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_or_non_sovereign_subject_of = 809
+			owns_or_non_sovereign_subject_of = 795
 			if = {
 				limit = {
 					has_dlc = "Dharma"
@@ -1261,31 +1269,48 @@ gc_spain_3_b = {
 			1516 = {
 				is_strongest_trade_power = ROOT
 			}
-			795 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 		}
 		effect = {
-			if = {
-				limit = {
-					any_subject_country = {
-						is_subject_of_type = colony
-						owns = 809
-					}
-				}
-				every_subject_country = {
+			custom_tooltip = gc_cas_spa_potosi_tt
+			hidden_effect = {
+				if = {
 					limit = {
-						owns = 809
+						any_subject_country = {
+							OR = {
+								is_subject_of_type = colony
+								is_subject_of_type = crown_colony
+								is_subject_of_type = private_enterprise
+								is_subject_of_type = self_governing_colony
+							}
+							owns = 809
+						}
 					}
-					809 = {
-						prev_move_capital_effect = yes
+					every_subject_country = {
+						limit = {
+							owns = 809
+						}
+						809 = {
+							prev_move_capital_effect = yes
+						}
 					}
 				}
 			}
-			795 = {
-				add_province_modifier = {
-					name = "spa_rb_gold_rush"
-					duration = 5475
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				795 = {
+					set_great_project_tier_2 = {
+						type = potosi
+					}
+				}
+			}
+			else = {
+				795 = {
+					add_province_modifier = {
+						name = "spa_rb_gold_rush"
+						duration = 5475
+					}
 				}
 			}
 			2946 = {
@@ -1323,17 +1348,36 @@ gc_spain_3_b = {
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = native_reductions_tooltip
-				num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
-					has_holy_order_trigger = yes
-					OR = {
-						continent = north_america
-						continent = south_america
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+					religion = catholic
+				}
+				custom_trigger_tooltip = {
+					tooltip = native_reductions_tooltip
+					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+						has_holy_order_trigger = yes
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+						value = 15
 					}
-					value = 15
 				}
 			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = native_reductions_alternative_tooltip
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						religion = ROOT
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+						value = 75
+					}
+				}
+			}			
 			216 = { # school of salamanca
 				has_building = university
 			}
@@ -1352,7 +1396,12 @@ gc_spain_3_b = {
 				limit = {
 					any_country = {
 						is_subject_of = ROOT
-						is_subject_of_type = colony
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
 					}
 				}
 				every_country = {
@@ -1376,9 +1425,11 @@ gc_spain_4 = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -1508,9 +1559,11 @@ gc_spain_4_b = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		tag = SPA
 		NOT = { primary_culture = aragonese }
 		NOT = { primary_culture = catalan }
@@ -1549,13 +1602,10 @@ gc_spain_4_b = {
 			if = {
 				limit = {
 					exists = GBR
-					is_subject = no
-					government = monarchy
-					religion_group = christian
+					valid_for_personal_unions_trigger = yes
 					GBR = {
-						is_subject = no
+						valid_for_personal_unions_trigger = yes
 						NOT = { religion = ROOT }
-						government = monarchy
 					}
 				}
 				add_casus_belli = {
@@ -1567,13 +1617,10 @@ gc_spain_4_b = {
 			else_if = {
 				limit = {
 					exists = ENG
-					is_subject = no
-					government = monarchy
-					religion_group = christian
+					valid_for_personal_unions_trigger = yes
 					ENG = {
-						is_subject = no
+						valid_for_personal_unions_trigger = yes
 						NOT = { religion = ROOT }
-						government = monarchy
 					}
 				}
 				add_casus_belli = {
@@ -1647,9 +1694,11 @@ gc_spain_4_c = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -1676,13 +1725,10 @@ gc_spain_4_c = {
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = spa_rb_la_plata.tooltip
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					colonial_region = colonial_la_plata
-					is_city = yes
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_la_plata
+				is_city = yes
 			}
 		}
 
@@ -1701,9 +1747,11 @@ gc_spain_4_d = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -1814,15 +1862,76 @@ gc_spain_4_d = {
 	}
 }
 
+gc_castile_spain_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
+	}
+	potential = {
+		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
+		OR = {
+			tag = CAS
+			AND = {
+				tag = SPA
+				NOT = { primary_culture = aragonese }
+				NOT = { primary_culture = catalan }
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	gc_cas_spa_reconquista_two = {
+		icon = mission_cannons_firing
+		required_missions = {
+			gc_cas_spa_reconquista_three
+		}
+		position = 2
+
+		# free mission
+
+		provinces_to_highlight = {
+			OR = {
+				area = beieras_area
+				area = alentejo_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			beieras_area = {
+				type = all
+				owned_by = ROOT
+			}
+			alentejo_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+			add_adm_power = 100
+		}
+	}
+}
+
+
 gc_spain_5_a = {
 	slot = 5
 	generic = no
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		tag = SPA
 		NOT = { primary_culture = aragonese }
 		NOT = { primary_culture = catalan }
@@ -1859,12 +1968,9 @@ gc_spain_5_a = {
 			if = {
 				limit = {
 					exists = HAB
-					is_subject = no
-					government = monarchy
-					religion_group = christian
+					valid_for_personal_unions_trigger = yes
 					HAB = {
-						is_subject = no
-						government = monarchy
+						valid_for_personal_unions_trigger = yes
 					}
 				}
 				add_casus_belli = {
@@ -1965,9 +2071,11 @@ gc_spain_5_c = {
 	ai = yes
 	potential_on_load = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 	}
 	potential = {
 		has_dlc = "Golden Century"
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = CAS
 			AND = {
@@ -1992,12 +2100,28 @@ gc_spain_5_c = {
 		}
 
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = colombia_holy_order_tooltip
-				num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
-					has_holy_order_trigger = yes
-					colonial_region = colonial_colombia
-					value = 5
+			if = {
+				limit = {
+					has_dlc = "Golden Century"
+					religion = catholic
+				}
+				custom_trigger_tooltip = {
+					tooltip = colombia_holy_order_tooltip
+					num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
+						has_holy_order_trigger = yes
+						colonial_region = colonial_colombia
+						value = 5
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = colombia_holy_order_alternative_tooltip
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						religion = ROOT
+						colonial_region = colonial_colombia
+						value = 25
+					}
 				}
 			}
 			colonial_colombia = {
@@ -2020,7 +2144,12 @@ gc_spain_5_c = {
 			if = {
 				limit = {
 					any_subject_country = {
-						is_subject_of_type = colony
+						OR = {
+							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
+						}
 						owns = 825
 					}
 					825 = { is_capital = no }

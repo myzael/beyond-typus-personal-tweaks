@@ -5,13 +5,32 @@ hun_north_group = {
 	ai = yes
 	potential = {
 		tag = HUN
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	hun_poland_alliance = {
-		icon = mission_alliances
+		icon = mission_noble_council
 		required_missions = {  }
 		position = 1
+
+		provinces_to_highlight = {
+			OR = {
+				owned_by = POL
+				AND = {
+					NOT = { exists = POL }
+					region = poland_region
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 6
+								region = poland_region
+							}
+						}
+					}
+				}
+			}
+		}
 		
 		trigger = {
 			if = {
@@ -19,34 +38,15 @@ hun_north_group = {
 					exists = POL
 					has_dlc = "Res Publica"
 					POL = {
-						has_reform = elective_monarchy
+						OR = { 
+							has_reform = polish_elective_monarchy
+							has_reform = elective_monarchy
+						}
 					}
 				}
 				OR = { 
-					dynasty = POL
-					OR = {
-						AND = {
-							is_rival = POL
-							army_size = POL
-							has_spy_network_in = {
-								who = POL
-								value = 50
-							}
-						}
-						AND = {
-							POL = {
-								is_rival = ROOT
-							}
-							army_size = POL
-							has_spy_network_in = {
-								who = POL
-								value = 50
-							}
-						}
-					}
-				}
-				else = {
-					OR = {
+					POL = { dynasty = root }
+					AND = {
 						alliance_with = POL
 						POL = {
 							has_opinion = {
@@ -54,40 +54,74 @@ hun_north_group = {
 								value = 190
 							}
 						}
+					}
+					overlord_of = POL
+					AND = { 
 						OR = {
-							AND = { 
-								is_rival = POL
-								army_size = POL
-								has_spy_network_in = {
-									who = POL
-									value = 50
-								}
-							}
-							AND = {
-								POL = {
-									is_rival = ROOT
-								}
-								army_size = POL
-								has_spy_network_in = {
-									who = POL
-									value = 50
-								}	
+							is_rival = POL
+							POL = { is_rival = ROOT }
+						}
+						army_size = POL
+					}
+				}
+			}
+			else_if = {
+				limit = { exists = POL }
+				OR = {
+					alliance_with = POL
+					overlord_of = POL
+					POL = {
+						has_opinion = {
+							who = ROOT
+							value = 190
+						}
+					}
+					AND = { 
+						OR = {
+							is_rival = POL
+							POL = { is_rival = ROOT }
+						}
+						army_size = POL
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { exists = POL }
+				}
+				OR = {
+					army_size_percentage = 1
+					num_of_owned_provinces_with = {
+						value = 6
+						region = poland_region
+					}
+				}
+			}
+			is_subject = no
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						NOT = { alliance_with = POL }
+						NOT = {
+							moldavia_area = {
+								type = all
+								country_or_non_sovereign_subject_holds = POL
 							}
 						}
 					}
 				}
+				give_permaclaims_for_mission = { mission=hun_vassal_states_two }
 			}
-			if = {
-				limit = {
-					NOT = { exists = POL }
-				}
-				army_size_percentage = 1
+			else = {
+				add_dip_power = 100
 			}
-		}
-		
-		effect = {
 			give_permaclaims_for_mission = { mission=hun_vassal_states }
-			give_permaclaims_for_mission = { mission=hun_vassal_states_two }
+		}
+		ai_weight = {
+			factor = 500	#Mission itself is rather ignorable, but the next one should be important for AI Hungary
 		}
 	}
 	
@@ -107,6 +141,7 @@ hun_north_group = {
 				provinces=hun_vassal_states_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
+			is_subject = no
 		}
 		
 		effect = {
@@ -125,16 +160,16 @@ hun_north_group = {
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = { #TODO: Adjust to X of Y provinces version
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
 				provinces=hun_vassal_states_three_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
+			is_subject = no
 		}
 		
 		effect = {
 			add_dip_power = 100
-			give_permaclaims_for_mission = { mission=hun_vassal_states_four }
 			serbia_area = {
 				add_province_modifier = {
 					name = "hun_moldavia_mod"
@@ -153,6 +188,10 @@ hun_north_group = {
 					duration = 10950
 				}
 			}
+			give_permaclaims_for_mission = { mission=hun_vassal_states_four }
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
@@ -164,11 +203,12 @@ hun_south_group = {
 	ai = yes
 	potential = {
 		tag = HUN
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	hun_vassal_states_two = {
-		icon = mission_have_two_subjects
+		icon = mission_eastern_european_city
 		required_missions = { hun_poland_alliance }
 		position = 2
 		
@@ -204,6 +244,36 @@ hun_south_group = {
 					duration = 10950
 				}
 			}
+
+			if = { #TODO: Links to non-scriptified mission in EMP_Hungarian_Missions.txt. Fix when updating that file.
+				limit = {
+					has_dlc = "Emperor"
+				}
+				malopolska_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				red_ruthenia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				sandomierz_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
@@ -257,9 +327,51 @@ hun_south_group = {
 					duration = 10950
 				}
 			}
+			if = {
+				limit = { has_dlc = "Emperor" }
+				if = {
+					limit = {
+						exists = NAP
+						valid_for_personal_unions_trigger = yes
+						NAP = {
+							valid_for_personal_unions_trigger = yes
+						}
+					}
+					add_casus_belli = {
+						type = cb_restore_personal_union
+						months = 300
+						target = NAP
+					}
+				}
+				else = {
+					naples_area = {
+						limit = {
+							NOT = { is_claim = root }
+							NOT = { is_core = root }
+						}
+						add_claim = root
+					}
+					apulia_area = {
+						limit = {
+							NOT = { is_claim = root }
+							NOT = { is_core = root }
+						}
+						add_claim = root
+					}
+					calabria_area = {
+						limit = {
+							NOT = { is_claim = root }
+							NOT = { is_core = root }
+						}
+						add_claim = root
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
-	
 }
 
 hun_ottoman_group = {
@@ -268,11 +380,12 @@ hun_ottoman_group = {
 	ai = yes
 	potential = {
 		tag = HUN
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	hun_ottoman_borders = {
-		icon = mission_have_two_subjects
+		icon = mission_non-western_soldiers
 		required_missions = { }
 		position = 4
 		
@@ -301,10 +414,14 @@ hun_ottoman_group = {
 					}
 				}
 			}
+			is_subject = no
 		}
 		
 		effect = {
 			give_permaclaims_for_mission = { mission=hun_ottoman_borders_three }
+		}
+		ai_weight = {
+			factor = 500	#AI HUngary should WANT to survive against the Ottoman threat
 		}
 	}
 	
@@ -324,12 +441,16 @@ hun_ottoman_group = {
 				provinces=hun_ottoman_borders_three_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
+			is_subject = no
 		}
 		
 		effect = {
 			add_adm_power = 100
 			add_prestige = 10
 			give_permaclaims_for_mission = { mission=hun_ottoman_borders_two }
+		}
+		ai_weight = {
+			factor = 75	#Tapping into Alt-History, but plausible
 		}
 	}
 	hun_ottoman_borders_two = {
@@ -348,6 +469,7 @@ hun_ottoman_group = {
 				provinces=hun_ottoman_borders_two_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
+			is_subject = no
 		}
 		
 		effect = {
@@ -355,10 +477,13 @@ hun_ottoman_group = {
 			add_prestige = 10
 			give_permaclaims_for_mission = { mission=hun_ottoman_borders_four }
 		}
+		ai_weight = {
+			factor = 50	#Less relevant
+		}
 	}
 	
 	hun_ottoman_borders_four = {
-		icon = mission_monarch_in_throne_room
+		icon = mission_ottoman_harem
 		required_missions = { 
 			hun_ottoman_borders_two 
 		}
@@ -375,6 +500,7 @@ hun_ottoman_group = {
 				provinces=hun_ottoman_borders_four_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
+			is_subject = no
 		}
 		
 		effect = {
@@ -391,6 +517,15 @@ hun_ottoman_group = {
 				}
 				add_permanent_claim = ROOT
 			}
+			if = {
+				limit = {
+					151 = { culture = turkish }
+				}
+				country_event = { id = new_flavour_hun.3 } #event used by Austria too
+			}
+		}
+		ai_weight = {
+			factor = 50	#Less relevant
 		}
 	}
 }

@@ -9,6 +9,7 @@ yem_formation = {
 	ai = yes
 	
 	potential = {
+		NOT = { map_setup = map_setup_random }
 		OR = {
 			tag = RAS
 			tag = ADE #This tag does not exist in BT.
@@ -20,7 +21,7 @@ yem_formation = {
 	has_country_shield = yes
 	
 	yem_gen_buildforces = {
-		icon = mission_non-western_cavalry_raid
+		icon = mission_bedouins
 		required_missions = { }
 		position = 1
 		
@@ -35,30 +36,11 @@ yem_formation = {
 				name = "oma_buildforces_mod"
 				duration = 5475
 			}
-			
-			#Claims
-			custom_tooltip = yem_gen_recon_one_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						yem_gen_recon_one_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			custom_tooltip = yem_gen_recon_two_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						yem_gen_recon_two_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=yem_gen_recon_one }
+			give_permaclaims_for_mission = { mission=yem_gen_recon_two }
+		}
+		ai_weight = {
+			factor = 500	#Having an army to conquer Yemen is probably a good idea
 		}
 	}
 	
@@ -85,10 +67,13 @@ yem_formation = {
 			add_adm_power = 50
 			add_prestige = 15
 		}
+		ai_weight = {
+			factor = 500	#Conquering Yemen is also a good idea
+		}
 	}
 	
 	yem_gen_recon_two = {
-		icon = mission_conquer_50_development
+		icon = mission_central_asian_city
 		required_missions = { yem_gen_recon_one }
 		position = 5
 		
@@ -110,6 +95,9 @@ yem_formation = {
 			add_adm_power = 50
 			add_mil_power = 50
 			add_prestige = 15
+		}
+		ai_weight = {
+			factor = 500	#Man, look at all these good ideas Aden and Rassids have!
 		}
 	}
 }

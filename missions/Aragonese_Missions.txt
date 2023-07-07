@@ -7,8 +7,10 @@ aragonese_missions_1 = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { map_setup = map_setup_random }
 		tag = ARA
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 
@@ -22,9 +24,7 @@ aragonese_missions_1 = {
 			}
 		}
 		trigger = {
-			210 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_or_non_sovereign_subject_of = 210
 		}
 		effect = {
 			add_country_modifier = {
@@ -32,7 +32,7 @@ aragonese_missions_1 = {
 				duration = 7300
 			}
 			custom_tooltip = ara_crowns_of_iberia_claims
-			hidden_effect = {
+			hidden_effect = { #TODO: Laggy. FIX!
 				every_province = {
 					limit = {
 						ara_crowns_of_iberia_provinces = yes
@@ -42,6 +42,9 @@ aragonese_missions_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
+		}
+		ai_weight = {
+			factor = 500	#Navarra is not allowed to have fun
 		}
 	}
 	ara_crowns_of_iberia = {
@@ -66,18 +69,21 @@ aragonese_missions_1 = {
 			add_legitimacy = 20
 			lower_andalucia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 			upper_andalucia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Aragon is always the lesser in the wedding, so it is fair for them to want Castile's provinces through warfare
 		}
 	}
 }
@@ -87,14 +93,16 @@ aragonese_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { map_setup = map_setup_random }
 		tag = ARA
 		NOT = { has_dlc = "Golden Century" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
 	#Hey, what about Sardinia & Sicily? I think they should get missions before this one even. Technically should just be a simple job of copy-paste.
 	integrate_naples = {
-		icon = mission_conquer_50_development
+		icon = mission_italian_condottiere
 		required_missions = { }
 		provinces_to_highlight = {
 			integrate_naples_provinces = yes
@@ -104,9 +112,21 @@ aragonese_missions_2 = {
 		}
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_highlighted 
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
 				provinces=integrate_naples_provinces
-				owner_type=owned_by
+				owner_type=country_or_non_sovereign_subject_holds
+			}
+			if = {
+				limit = {
+					NAP = { is_subject_of = ROOT }
+				}
+				NAP = {
+					has_opinion = {
+						who = ROOT 
+						value = 150
+					}
+					NOT = { liberty_desire = 5 }
+				}
 			}
 		}
 		effect = {
@@ -115,21 +135,14 @@ aragonese_missions_2 = {
 				add_base_manpower = 2
 				add_base_production = 2
 			}
-			custom_tooltip = conquer_athens_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						conquer_athens_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=conquer_athens }
+		}
+		ai_weight = {
+			factor = 500	#No reason to say no to that
 		}
 	}
 	conquer_athens = {
-		icon = mission_non-western_soldiers
+		icon = mission_crusade_for_varna
 		required_missions = { integrate_naples }
 		provinces_to_highlight = {
 			conquer_athens_provinces = yes
@@ -149,6 +162,9 @@ aragonese_missions_2 = {
 				name = "mediterranean_ambition"
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 25	#This, however, is a little bit too far. Might annoy Byzantium players.
 		}
 	}
 }

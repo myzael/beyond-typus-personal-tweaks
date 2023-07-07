@@ -52,6 +52,9 @@ EMP_crusader_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	EMP_crusader_convert_the_holy_land = {
 		icon = convert_the_holy_lands
@@ -94,6 +97,9 @@ EMP_crusader_1 = {
 				name = "kni_converted_the_holy_land"
 				duration = -1
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 }
@@ -168,6 +174,8 @@ EMP_crusader_2 = {
 			owns = 379
 		}
 		effect = {
+			custom_tooltip = crusader_can_always_reform_jerusalem
+			set_country_flag = can_form_jerusalem_later_too
 			if = {
 				limit = {
 					religion = catholic
@@ -181,6 +189,9 @@ EMP_crusader_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	EMP_crusader_syria = {
@@ -269,6 +280,9 @@ EMP_crusader_2 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	EMP_crusader_egypt = {
 		icon = the_land_of_moses
@@ -336,6 +350,9 @@ EMP_crusader_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	EMP_crusader_ark_of_the_covenant = {
@@ -452,34 +469,32 @@ EMP_crusader_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			OR = {
+			OR = { #I'm pretty sure I copied this over correctly, but using all_province is just generally bad/laggy code. //Dub
 				AND = { # Brian; changed order
 					NOT = { exists = BYZ }
-					calc_true_if = {
-						desc = crusader_greece_tt
-						amount = 6
-						all_province = { # Brian added
+					custom_trigger_tooltip = {
+						tooltip = crusader_greece_tt
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							value = 6
 							OR = {
 								area = morea_area
 								area = western_aegean_area
 								area = aegean_archipelago_area
 								area = eastern_mediterrenean_islands_area
 							}
-							country_or_non_sovereign_subject_holds = ROOT
 						}
 					}
 				}
-				calc_true_if = {
-					desc = crusader_greece_tt
-					amount = 12
-					all_province = { # Brian added
+				custom_trigger_tooltip = {
+					tooltip = crusader_greece_tt
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 12
 						OR = {
 							area = morea_area
 							area = western_aegean_area
 							area = aegean_archipelago_area
 							area = eastern_mediterrenean_islands_area
 						}
-						country_or_non_sovereign_subject_holds = ROOT
 					}
 				}
 			}
@@ -548,6 +563,9 @@ EMP_crusader_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	EMP_crusader_latin_empire = {
@@ -639,6 +657,9 @@ EMP_crusader_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	EMP_crusader_catholic = {
@@ -928,15 +949,14 @@ EMP_crusader_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-				calc_true_if = {
-					desc = cruader_piracy_tt
-					amount = 15
-					all_province = { # Brian added
-						region = maghreb_region
-						has_port = yes
-						country_or_non_sovereign_subject_holds = ROOT
-					}
+			custom_trigger_tooltip = {
+				tooltip = cruader_piracy_tt
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 15
+					region = maghreb_region
+					has_port = yes
 				}
+			}
 		}
 		effect = {
 			add_country_modifier = {

@@ -214,7 +214,6 @@ nav_missions_2 = {
 	potential = {
 		tag = NAV
 		NOT = { map_setup = map_setup_random }
-		is_random_new_world = no
 	}
 	has_country_shield = yes
 	nav_reclaim_coast = {
@@ -289,13 +288,10 @@ nav_missions_2 = {
 		effect = {
 			if = {
 				limit = {
-					government = monarchy
 					exists = FRA
-					is_subject = no
-					religion_group = christian
+					valid_for_personal_unions_trigger = yes
 					FRA = {
-						is_subject = no
-						government = monarchy
+						valid_for_personal_unions_trigger = yes
 					}
 				}
 				add_casus_belli = {
@@ -359,7 +355,6 @@ nav_missions_5 = {
 	potential = {
 		tag = NAV
 		NOT = { map_setup = map_setup_random }
-		is_random_new_world = no
 	}
 	has_country_shield = yes
 	nav_aragonese_inheritance = {

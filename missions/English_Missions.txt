@@ -1,14 +1,19 @@
 #Fixed by Dub.
 eng_british_conquest = {
+
 	slot = 1
 	generic = no
 	ai = yes
-	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -34,6 +39,7 @@ eng_british_conquest = {
 				add_casus_belli = {
 					target = SCO
 					type = cb_vassalize_mission
+					months = 120
 				}
 			}
 		}
@@ -46,11 +52,16 @@ eng_british_conquest_ire = {
 	generic = no
 	ai = yes
 	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 	
 	has_country_shield = yes
@@ -82,7 +93,9 @@ eng_british_conquest_ire = {
 				}
 			}
 		}
-	
+		ai_weight = {
+			factor = 500
+		}
 	}
 }
 
@@ -92,11 +105,16 @@ eng_british_conquest_scotland = {
 	generic = no
 	ai = yes
 	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -140,7 +158,9 @@ eng_british_conquest_scotland = {
 				}
 			}
 		}
-	
+		ai_weight = {
+			factor = 500
+		}
 	}
 }
 
@@ -150,11 +170,16 @@ eng_french_conquest = {
 	generic = no
 	ai = yes
 	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -174,12 +199,22 @@ eng_french_conquest = {
 						tooltip = eng_war_france.tooltip
 						has_country_flag = rb_gave_up_maine
 					}
+					FRA = { is_subject_of = ROOT }
 				}
-				else = {
+			}
+			else_if = {
+				limit = { 
+					NOT = { exists = FRA }
+				}
+				OR = {
 					183 = {
 						owner = {
 							war_with = ROOT
 						}
+					}
+					183 = {
+						owned_by = ROOT
+						is_core = ROOT
 					}
 				}
 			}
@@ -216,27 +251,52 @@ eng_french_conquest = {
 			if = {
 				limit = {
 					exists = FRA
+					NOT = { FRA = { is_subject_of = ROOT } }
 				}
 				FRA = {
 					capital_scope = {
 						OR = {
 							controlled_by = ROOT
-							controller = {
-								OR = {
-									is_subject_of = ROOT
-									alliance_with = ROOT
-									overlord = {
+							AND = {
+								controller = {
+									OR = {
+										is_subject_of = ROOT
 										alliance_with = ROOT
+										overlord = {
+											alliance_with = ROOT
+										}
+									}
+									custom_trigger_tooltip = {
+										tooltip = joint_war_with_root_vs_france
+										OR = {
+											is_in_war = {
+												attackers = root
+												attackers = this
+												defenders = FRA
+											}
+											is_in_war = {
+												defenders = root
+												defenders = this
+												attackers = FRA
+											}
+										}
 									}
 								}
 							}
 						}
 					}
 				}
-				else = {
-					183 = {
-						owned_by = ROOT
-					}
+			}
+			else_if = {
+				limit = {
+					exists = FRA
+					FRA = { is_subject_of = ROOT }
+				}
+				FRA = { is_subject_of = ROOT }
+			}
+			else = {
+				183 = {
+					owned_by = ROOT
 				}
 			}
 		}
@@ -245,12 +305,13 @@ eng_french_conquest = {
 			if = {
 				limit = {
 					FRA = {
-						is_subject = NO
+						is_subject = no
 					}
 				}
 				add_casus_belli = {
 					target = FRA
 					type = cb_hundred_years_union
+					months = 360
 				}
 			}
 			if = {
@@ -281,6 +342,16 @@ eng_french_conquest = {
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					has_heir = yes
+					has_ruler_flag = henry_vi_lancaster
+					NOT = { has_country_flag = rb_gave_up_maine }
+				}
+				change_adm = 1
+				change_dip = 1
+				change_mil = 1
+			}
 			add_prestige = 25
 			add_country_modifier = {
 				name = "eng_french_recovery"
@@ -296,12 +367,17 @@ eng_exploration_americas = {
 	generic = no
 	ai = yes
 	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
 		is_random_new_world = no
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -318,7 +394,7 @@ eng_exploration_americas = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_caribbean
-				carribeans_region = { has_discovered = ROOT }
+				carribeans_region = { has_discovered = ROOT } #BT Region namechange
 			}
 		}
 		
@@ -329,11 +405,13 @@ eng_exploration_americas = {
 			}
 			add_dip_power = 50
 		}
-	
+		ai_weight = {
+			factor = 500
+		}
 	}
 	
 	english_colony_in_north_america = {
-		icon = mission_colonial
+		icon = mission_settlers_north_america
 		required_missions = { eng_discover_america_caribbean }
 		completed_by = 1610.1.1
 		
@@ -359,10 +437,13 @@ eng_exploration_americas = {
 				tradition = 80
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 	
 	english_colony_in_the_carribean = {
-		icon = mission_trade_company_region_abroad
+		icon = mission_iberian_conquistador
 		required_missions = { english_colony_in_north_america }
 		completed_by = 1610.1.1
 		
@@ -411,6 +492,9 @@ eng_exploration_americas = {
 				duration = 5475
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 }
 
@@ -419,7 +503,11 @@ eng_chesapeake_dominance = { #Overwritten by RB, not fixing.
 	slot = 2
 	ai = yes
 	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
@@ -428,6 +516,7 @@ eng_chesapeake_dominance = { #Overwritten by RB, not fixing.
 		NOT = {
 			has_dlc = "Rule Britannia"
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
@@ -435,6 +524,7 @@ eng_chesapeake_dominance = { #Overwritten by RB, not fixing.
 		icon = mission_dominate_home_trade_node
 		required_missions = { english_colony_in_north_america }
 		position = 7
+		completed_by = 1618.5.1
 		
 		provinces_to_highlight = {
 			province_id = 1500
@@ -461,6 +551,9 @@ eng_chesapeake_dominance = { #Overwritten by RB, not fixing.
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 
 }
@@ -470,19 +563,24 @@ eng_indian_ocean_exploration = {
 	slot = 5
 	ai = yes
 	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	england_discovers_india = {
-		icon = mission_trade_company_region_abroad
+		icon = mission_junk_boat
 		required_missions = { }
 		position = 7
-		completed_by = 1680.1.1
+		completed_by = 1579.1.1
 		
 		trigger = {
 			custom_trigger_tooltip = {
@@ -497,6 +595,23 @@ eng_indian_ocean_exploration = {
 		effect = {
 			add_dip_power = 100
 			add_navy_tradition = 20
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Rule Britannia"
+					}
+				}
+				west_bengal_area = {
+					limit = {
+						NOT = { is_claim = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					add_claim = ROOT
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
@@ -532,7 +647,9 @@ eng_indian_ocean_exploration = {
 				duration = 5475
 			}
 		}
-	
+		ai_weight = {
+			factor = 500
+		}
 	}
 
 }
@@ -542,7 +659,11 @@ eng_indian_cot_dominance = { #Overwritten by RB, not fixing.
 	slot = 4
 	ai = yes
 	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
@@ -550,20 +671,22 @@ eng_indian_cot_dominance = { #Overwritten by RB, not fixing.
 		NOT = {
 			has_dlc = "Rule Britannia"
 		}
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
 	establish_trade_in_indian_cot = {
-		icon = mission_war_chest
+		icon = mission_indian_stateman
 		required_missions = { england_discovers_india }
 		position = 7
+		completed_by = 1776.7.1
 		
 		provinces_to_highlight = {
 			OR = {
 				province_id = 504
 				province_id = 1340
 				province_id = 1343
-				province_id = 2030
+				province_id = 1948
 			}
 		}
 		
@@ -578,7 +701,7 @@ eng_indian_cot_dominance = { #Overwritten by RB, not fixing.
 				1343 = {	# Ganges Delta
 					is_strongest_trade_power = ROOT
 				}
-				2030 = {	# Goa
+				1948 = {	# Deccan
 					is_strongest_trade_power = ROOT
 				}
 			}
@@ -590,6 +713,9 @@ eng_indian_cot_dominance = { #Overwritten by RB, not fixing.
 				duration = 5475
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 
 }
@@ -599,7 +725,11 @@ eng_british_cot_dominance = { #Overwritten by RB, not fixing.
 	slot = 3
 	ai = yes
 	
+	potential_on_load = {
+		NOT = { has_dlc = "Domination" }
+	}
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = ENG
 			tag = GBR
@@ -608,6 +738,7 @@ eng_british_cot_dominance = { #Overwritten by RB, not fixing.
 			has_dlc = "Rule Britannia"
 		}
 		is_random_new_world = no
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 

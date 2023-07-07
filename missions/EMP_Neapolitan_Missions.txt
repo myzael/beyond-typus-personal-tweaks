@@ -156,6 +156,9 @@ emp_naples_2 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 50
+		}
 	}
 	emp_nap_italian_wars = {
 		icon = the_italian_league
@@ -183,6 +186,9 @@ emp_naples_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 50
 		}
 	}
 	emp_nap_dalmatian_conquest = {
@@ -223,6 +229,9 @@ emp_naples_2 = {
 					duration = 7300
 				}
 			}
+		}
+		ai_weight = {
+			factor = 50
 		}
 	}
 }
@@ -281,6 +290,9 @@ emp_naples_3 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 50
+		}
 	}
 	emp_nap_two_sicilies = {
 		icon = unite_the_two_sicilies
@@ -318,6 +330,9 @@ emp_naples_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	emp_nap_despot_of_epirus = {
@@ -393,6 +408,9 @@ emp_naples_3 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 50
+		}
 	}
 	emp_nap_king_of_jerusalem = {
 		icon = jerusalem
@@ -409,6 +427,9 @@ emp_naples_3 = {
 		}
 		effect = {
 			country_event = { id = knights_missions.2 }
+		}
+		ai_weight = {
+			factor = 50
 		}
 	}
 	emp_nap_crown_of_aragon = {
@@ -448,6 +469,9 @@ emp_naples_3 = {
 				name = "nap_liberty_desire"
 				duration = -1
 			}
+		}
+		ai_weight = {
+			factor = 50
 		}
 	}
 }
@@ -516,15 +540,15 @@ emp_naples_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			baleares_area = { #TODO: Vanilla requires only 1 province. Might change?
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			corsica_sardinia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			sardinia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			baleares_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -565,7 +589,7 @@ emp_naples_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-						if = {
+			if = {
 				limit = {
 					exists = ARA
 					valid_for_personal_unions_trigger = yes
@@ -580,27 +604,27 @@ emp_naples_4 = {
 				}
 			}
 			else = {
-			aragon_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				aragon_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
-			}
-			catalonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				catalonia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
-			}
-			valencia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				valencia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
-			}
 			}
 		}
 	}
@@ -713,15 +737,7 @@ emp_naples_5 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					is_revolutionary = no
-				}
-				add_absolutism = 15
-			}
-			else = {
-				add_revolutionary_zeal = 15
-			}
+			add_revolutionary_zeal_or_absolutism = { amount = 15 }
 		}
 	}
 	emp_nap_neapolitan_governance = {
@@ -732,7 +748,7 @@ emp_naples_5 = {
 				tooltip = naples_government_tt
 				OR = {
 					government = republic
-					has_final_tier_reforms_trigger = yes
+					reform_level = 7
 				}
 			}
 		}

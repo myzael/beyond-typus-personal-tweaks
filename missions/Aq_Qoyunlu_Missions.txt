@@ -6,13 +6,14 @@ akk_missions = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential = {
+	potential = {	
+		NOT = { map_setup = map_setup_random }
 		tag = AKK
 	}
 	has_country_shield = yes
 
 	destroy_ayyubids = {
-		icon = mission_arabian_fort
+		icon = mission_bedouins
 		required_missions = {  }
 		provinces_to_highlight = {
 			destroy_ayyubids_provinces = yes
@@ -29,19 +30,10 @@ akk_missions = {
 		}
 		effect = {
 			add_prestige = 10
-			
-			#Claims
-			custom_tooltip = defeat_black_sheep_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						defeat_black_sheep_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=defeat_black_sheep }
+		}
+		ai_weight = {
+			factor = 500	#Annexing a neighboring OPM should be done by the AI
 		}
 	}
 	defeat_black_sheep = {
@@ -66,30 +58,11 @@ akk_missions = {
 				name = "white_sheep_ascendant"
 				duration = 7300
 			}
-			
-			#Claims
-			custom_tooltip = conquer_the_caucasus_akk_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						conquer_the_caucasus_akk_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			custom_tooltip = conquer_iraq_akk_claims
-			hidden_effect = {
-				every_province = {
-					limit = {
-						conquer_iraq_akk_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=conquer_the_caucasus_akk }
+			give_permaclaims_for_mission = { mission=conquer_iraq_akk }
+		}
+		ai_weight = {
+			factor = 500	#Black and White sheeps cannot stand eachother. Why? They are both sheeps...
 		}
 	}
 	conquer_the_caucasus_akk = {
@@ -113,23 +86,14 @@ akk_missions = {
 				name = "akk_caucasus"
 				duration = 7300
 			}
-			
-			#Claims
-			custom_tooltip = invade_persia_akk_claims_1
-			hidden_effect = {
-				every_province = {
-					limit = {
-						invade_persia_akk_1_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=invade_persia_akk_1 }
+		}
+		ai_weight = {
+			factor = 500	#Should be on their todo list as they can form Persia
 		}
 	}
 	invade_persia_akk = {
-		icon = mission_unite_home_region
+		icon = mission_persian_soldiers
 		required_missions = { conquer_the_caucasus_akk conquer_iraq_akk }
 		provinces_to_highlight = {
 			invade_persia_akk_provinces = yes
@@ -151,6 +115,9 @@ akk_missions = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 500	#Should be on their todo list as they can form Persia
+		}
 	}
 }
 
@@ -159,6 +126,7 @@ akk_missions_2 = {
 	generic = no
 	ai = yes
 	potential = {
+		NOT = { map_setup = map_setup_random }
 		tag = AKK
 	}
 	has_country_shield = yes
@@ -186,19 +154,10 @@ akk_missions_2 = {
 				name = "akk_iraq"
 				duration = 7300
 			}
-			
-			#Claims
-			custom_tooltip = invade_persia_akk_claims_2
-			hidden_effect = {
-				every_province = {
-					limit = {
-						invade_persia_akk_2_provinces = yes
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			give_permaclaims_for_mission = { mission=invade_persia_akk_2 }
+		}
+		ai_weight = {
+			factor = 500	#Should be on their todo list as they can form Persia
 		}
 	}
 }

@@ -4,9 +4,8 @@ consolidate_expand_russia_missions = {
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
-		NOT = {
-			has_dlc = "Third Rome"
-		}
+		NOT = { has_dlc = "Third Rome" }
+		NOT = { has_dlc = "Domination" }
 		OR = {
 			tag = MOS
 			tag = RUS
@@ -39,7 +38,7 @@ consolidate_expand_russia_missions = {
 			russia_region = {
 				limit = {
 					owned_by = NOV
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -47,7 +46,7 @@ consolidate_expand_russia_missions = {
 			ural_region = {
 				limit = {
 					owned_by = NOV
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -55,11 +54,14 @@ consolidate_expand_russia_missions = {
 			scandinavia_region = {
 				limit = {
 					owned_by = NOV
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	subjugate_novgorod = {
@@ -106,15 +108,15 @@ consolidate_expand_russia_missions = {
 		effect = {
 			russia_region = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			310 = {
-				add_base_tax = -3
-				add_base_production = -3
-				add_base_manpower = -3
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
 			}
 			capital_scope = {
 				add_base_tax = 2
@@ -131,6 +133,19 @@ consolidate_expand_russia_missions = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
+			random_target_province = {
+				limit = {
+					owned_by = ROOT
+					is_core = ROOT
+					culture = ROOT
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	consolidate_russia_mission = {
@@ -156,7 +171,7 @@ consolidate_expand_russia_missions = {
 			}
 			ruthenia_region = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -178,6 +193,37 @@ consolidate_expand_russia_missions = {
 				add_base_manpower = 1
 			}
 			1778 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			#BT Adding extra vanilla provinces +3 dev for this mission
+			1778 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			4147 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			312 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			301 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			4116 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			274 = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
@@ -212,46 +258,49 @@ consolidate_expand_russia_missions = {
 			}
 			finland_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			laponia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			bothnia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			estonia_ingria_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			curonia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			livonia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	conquer_finland = {
@@ -287,6 +336,9 @@ consolidate_expand_russia_missions = {
 				duration = 5475
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 
 }
@@ -301,9 +353,8 @@ russia_conquer_baltic_mission_slot = {
 			tag = MOS
 			tag = RUS
 		}
-		NOT = {
-			has_dlc = "Third Rome"
-		}
+		NOT = { has_dlc = "Third Rome" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	access_to_the_baltic_sea = {
@@ -341,6 +392,9 @@ russia_conquer_baltic_mission_slot = {
 				duration = 5475
 			}
 		}
+		ai_weight = {
+			factor = 500
+		}
 	}
 }
 
@@ -354,9 +408,8 @@ russia_steppe_siberia_missions = {
 			tag = MOS
 			tag = RUS
 		}
-		NOT = {
-			has_dlc = "Third Rome"
-		}
+		NOT = { has_dlc = "Third Rome" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	# Tame the Steppes
@@ -378,7 +431,7 @@ russia_steppe_siberia_missions = {
 		effect = {
 			kazan_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -386,25 +439,28 @@ russia_steppe_siberia_missions = {
 			#BT14 cut (?)
 			# volga_area = {
 				# limit = {
-					# NOT = { owned_by = ROOT	}
+					# NOT = { is_permanent_claim = ROOT }
 					# NOT = { is_core = ROOT	}
 				# }
 				# add_permanent_claim = ROOT
 			# }
 			kama_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			samara_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 
@@ -476,32 +532,35 @@ russia_steppe_siberia_missions = {
 			}
 			tambov_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			lower_don_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			astrakhan_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			saratov_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
@@ -578,28 +637,28 @@ russia_steppe_siberia_missions = {
 			}
 			crimea_region = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			ural_region = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			nogai_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			lower_yik_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -607,11 +666,14 @@ russia_steppe_siberia_missions = {
 			west_siberia_region = {
 				limit = {
 					is_empty = no
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500
 		}
 	}
 	
@@ -645,6 +707,9 @@ russia_steppe_siberia_missions = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 75
+		}
 	}
 }
 
@@ -658,9 +723,8 @@ russia_siberian_missions_slot = {
 			tag = MOS
 			tag = RUS
 		}
-		NOT = {
-			has_dlc = "Third Rome"
-		}
+		NOT = { has_dlc = "Third Rome" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	russian_colony_in_west_siberia_new = {
@@ -675,12 +739,9 @@ russia_siberian_missions_slot = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = russia_westsiberia.tooltip
-				num_of_owned_provinces_with = {
-					region = west_siberia_region
-					value = 15
-				}
+			num_of_owned_provinces_with = {
+				region = west_siberia_region
+				value = 15
 			}
 		}
 		effect = {
@@ -711,6 +772,9 @@ russia_siberian_missions_slot = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 75
+		}
 	}
 	russian_colony_in_east_siberia = {
 		icon = mission_trade_company_region_abroad
@@ -723,12 +787,9 @@ russia_siberian_missions_slot = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = russia_eastsiberia.tooltip
-				num_of_owned_provinces_with = {
-					region = east_siberia_region
-					value = 10
-				}
+			num_of_owned_provinces_with = {
+				region = east_siberia_region
+				value = 10
 			}
 			owns_core_province = 1043
 		}
@@ -760,6 +821,9 @@ russia_siberian_missions_slot = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 75
+		}
 	}
 }
 
@@ -773,9 +837,8 @@ russia_continue_steppes_mission_slot = {
 			tag = MOS
 			tag = RUS
 		}
-		NOT = {
-			has_dlc = "Third Rome"
-		}
+		NOT = { has_dlc = "Third Rome" }
+		NOT = { has_dlc = "Domination" }
 	}
 	has_country_shield = yes
 	
@@ -872,6 +935,9 @@ russia_continue_steppes_mission_slot = {
 					duration = 5475
 				}
 			}
+		}
+		ai_weight = {
+			factor = 75
 		}
 	}
 }

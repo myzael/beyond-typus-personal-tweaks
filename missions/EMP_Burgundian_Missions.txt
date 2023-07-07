@@ -58,6 +58,9 @@ emp_burgundy_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Integrate vassal
+		}
 	}
 	emp_bur_romandie = {
 		icon = mission_landsknecht_soldier
@@ -138,6 +141,9 @@ emp_burgundy_1 = {
 			102 = { # nizza
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Rivalry
 		}
 	}
 	
@@ -263,6 +269,9 @@ emp_burgundy_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	emp_bur_lombardy = {
 		icon = kingdom_of_lombardy
@@ -373,6 +382,9 @@ emp_burgundy_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 }
@@ -557,6 +569,9 @@ emp_burgundy_2 = {
 				}
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural întegration
+		}
 	}
 	emp_bur_secure_the_lowlands = {
 		icon = mission_spanish_netherlands
@@ -606,6 +621,9 @@ emp_burgundy_2 = {
 					duration = 7300
 				}
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 
@@ -848,6 +866,9 @@ emp_burgundy_3 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	
 	emp_bur_liege = {
@@ -904,6 +925,9 @@ emp_burgundy_3 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural conquest
+		}
 	}
 	
 	emp_bur_frisia = {
@@ -952,6 +976,9 @@ emp_burgundy_3 = {
 					key = bur_channel_ambition
 				}
 			}
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}
 	
@@ -1056,7 +1083,20 @@ emp_burgundy_3 = {
 			has_regency = no
 		}
 		effect = {
-			country_event = { id = new_flavour_bur.5 }
+			country_event_with_insight = { #Apparently the effect tooltip can now take entire chunks of code and display it as a tooltip.
+				id = new_flavour_bur.5
+				insight_tooltip = INSIGHT_JUST_TOOLTIP
+				effect_tooltip = "
+				add_country_modifier = {
+					name = bur_prestigious_duchy_mod
+					duration = -1
+				}
+				add_permanent_power_projection = {
+					type = 25_permanent_power_projection
+					amount = 25
+				}
+				" 
+			}
 		}
 	}
 }
@@ -1295,6 +1335,9 @@ emp_burgundy_4 = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 500	#Natural diplomacy
+		}
 	}
 	emp_bur_league_of_public_weal = {
 		icon = league_of_the_public_weal
@@ -1364,7 +1407,7 @@ emp_burgundy_4 = {
 					}
 				}
 				OR = {
-					custom_trigger_tooltip = {
+					custom_trigger_tooltip = { #Less laggy. Good on ya, Schocko! //Dub
 						tooltip = emp_bur_league_of_public_weal_trigger_tooltip
 						FRA = {
 							calc_true_if = {

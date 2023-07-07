@@ -40,6 +40,9 @@ hin_slot_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
 	}
 	hin_khorasan = {
 		icon = mission_into_the_west
@@ -65,6 +68,9 @@ hin_slot_1 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
 	}
 	hin_persia = {
 		icon = mission_conquer_persia
@@ -86,6 +92,9 @@ hin_slot_1 = {
 				name = "akk_persia"
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
 		}
 	}
 }
@@ -148,6 +157,9 @@ hin_slot_2 = {
 				add_yearly_manpower = 5
 			}
 		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
 	}
 	hin_arabian_trade = {
 		icon = mission_dharma_mission_arabian_trade
@@ -155,14 +167,14 @@ hin_slot_2 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 1334
-				province_id = 1331
+				province_id = 1331 #BT: I believe this is a tradenode issue.
 			}
 		}
 		trigger = {
 			1334 = {
 				is_strongest_trade_power = ROOT
 			}
-			1331 = {
+			1331 = { #BT: I believe this is a tradenode issue.
 				is_strongest_trade_power = ROOT
 			}
 		}
@@ -171,6 +183,9 @@ hin_slot_2 = {
 				name = "bng_arabian_sea_trade"
 				duration = 7300
 			}
+		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
 		}
 	}
 	hin_riches = {
@@ -227,6 +242,9 @@ hin_slot_2 = {
 				duration = 7300
 			}
 		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
 	}
 	hin_industrial = {
 		icon = mission_industrialize_bengal
@@ -249,6 +267,7 @@ hin_slot_2 = {
 				has_building = grand_shipyard
 			}
 			calc_true_if = {
+				desc = hin_industrial_tt
 				all_owned_province = {
 					region = bengal_region
 					OR = {
@@ -276,6 +295,9 @@ hin_slot_2 = {
 				name = "industrialized_bengal"
 				duration = -1
 			}
+		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
 		}
 	}
 }
@@ -317,6 +339,9 @@ hin_slot_3 = {
 			add_prestige = 20
 			add_army_tradition = 15
 		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
 	}
 	hin_india = {
 		icon = mission_indian_empire
@@ -339,6 +364,9 @@ hin_slot_3 = {
 			add_dip_power = 100
 			add_mil_power = 100
 		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
 	}
 	hin_unity = {
 		icon = mission_dharma_mission_religious_harmony
@@ -353,6 +381,9 @@ hin_slot_3 = {
 				name = "dharma_modifier"
 				duration = -1
 			}
+		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
 		}
 	}
 }
@@ -398,13 +429,16 @@ hin_slot_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			sumatran_region = {
+			sumatran_region = { #Is this a BT-added region? Probably.
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
 		}
 	}
 	
@@ -426,6 +460,9 @@ hin_slot_4 = {
 		}
 		effect = {
 			add_army_tradition = 33
+		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
 		}
 	}
 }
@@ -480,6 +517,9 @@ hin_slot_5 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
 	}
 	hin_burma = {
 		icon = mission_invade_burma
@@ -509,6 +549,9 @@ hin_slot_5 = {
 				add_permanent_claim = ROOT
 			}
 		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
+		}
 	}
 	
 	hin_malaya = {
@@ -532,6 +575,9 @@ hin_slot_5 = {
 		}
 		effect = {
 			add_mercantilism = 5
+		}
+		ai_weight = {
+			factor = 500	#If Bharat / Hindustand EVER forms, than it should crazy with its missions
 		}
 	}
 }
