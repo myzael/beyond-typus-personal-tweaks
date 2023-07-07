@@ -429,8 +429,6 @@ hab_protect_the_balkans = {
 			give_permaclaims_for_mission = { mission=conquer_transylvania }
 			give_permaclaims_for_mission = { mission=austrian_italian_ambition }
 			give_permaclaims_for_mission = { mission=austrian_defeat_the_serbs }
-
-			}
 		}
 	}
 	conquer_transylvania = {

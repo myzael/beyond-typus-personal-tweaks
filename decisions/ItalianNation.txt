@@ -4,6 +4,96 @@ country_decisions = {
 
 #I normally don't like messing with vanilla files when I don't have to, but between all the map changes and the fact that I wanted to clean up a few things
 #and make everything more dynamic anyway, I figured I'd just reorganise. Hope this doesn't mess with anyone too much. - Draiocht
+
+	italian_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = formed_italy_flag }
+			NOT = { tag = ITL }
+			NOT = { tag = ITA }
+			culture_group = latin
+		}
+		provinces_to_highlight = {
+			region = italy_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = ITA }
+			hidden_trigger  = { NOT = { exists = ITA } }
+			is_nomad = no
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 104	# Milan
+			owns_core_province = 116	# Florence
+			owns_core_province = 112	# Venice
+			owns_core_province = 101	# Genoa
+			owns_core_province = 109	# Mantova
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = italy_region
+				is_core = owner
+				value = 106			#At least 65 percent of N Italy's 163 provinces. Also note this is 90 percent of continental, non-Neapolitan Italy's 118 provinces. (Italy has 34 in Naples-Sicily and 11 in Sardinia-Corsica)
+			}
+			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
+			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
+		}
+		effect = {
+			change_tag = ITA
+			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes #Moved down so that it removes HRE missions properly.
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 7300
+			}
+			add_prestige = 25
+			hidden_effect = {
+				italy_region = {
+					limit = {
+						bt_trigger_italy_areas = yes
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = PAP }
+					}
+					add_permanent_claim = ITA
+				}
+			}
+			hidden_effect = {
+				italy_region = {
+					limit = {
+						OR = {
+							bt_trigger_central_italy_areas = yes
+							bt_trigger_sicily_areas = yes
+							area = corsica_sardinia_area
+							area = sardinia_area
+							#area = cagliari_area
+						}
+						NOT = { is_claim = ROOT }
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = PAP }
+					}
+					add_claim = ITA
+				}
+			}
+			swap_ideas = yes
+			swap_non_generic_missions = yes
+			set_country_flag = formed_italy_flag
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				government = republic
+			}
+		}
+		ai_importance = 400 #
+	}
 	
 	gods_kingdom = {
 		major = yes

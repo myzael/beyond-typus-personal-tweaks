@@ -1,5 +1,5 @@
 country_decisions = {
-
+	#This one needs a thunker: Burma is for the Taungoo whatnot a namechange.
 	burma_nation = {
 		major = yes
 		potential = {

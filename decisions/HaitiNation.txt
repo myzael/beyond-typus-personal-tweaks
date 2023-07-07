@@ -2,3 +2,100 @@
 
 #I normally don't like messing with vanilla files when I don't have to, but between all the map changes and the fact that I wanted to clean up a few things
 #and make everything more dynamic anyway, I figured I'd just reorganise. Hope this doesn't mess with anyone too much. - Draiocht
+country_decisions = {
+	
+	haiti_nation = {
+		major = yes
+		potential = {
+			bt_generic_can_form_potential_check = yes
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			is_nomad = no
+			is_random_new_world = no
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				is_former_colonial_nation = yes
+				is_colonial_nation = yes
+				AND = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+					capital_scope = {
+						colonial_region = colonial_the_carribean
+						is_core = ROOT
+					}
+				}
+			}
+			colonial_hispaniola = { owned_by = ROOT }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3	
+				}
+			}
+		}
+		provinces_to_highlight = {
+			colonial_region = colonial_hispaniola
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				is_city = no
+			}
+		}
+		allow = {
+			NOT = { exists = HAT }
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			capital_scope = {
+				colonial_region = colonial_hispaniola
+				is_core = ROOT
+			}
+		}
+		effect = {
+			change_tag = HAT
+			remove_non_electors_emperors_from_empire_effect = yes
+			colonial_hispaniola = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = HAT
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 3650
+			}
+			add_prestige = 10
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							technology_group = north_american
+							technology_group = mesoamerican
+							technology_group = andean
+							technology_group = high_american
+							technology_group = south_american
+						}
+					}
+				}
+				set_country_flag = changed_from_colonial_nation
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_former_colonial_nation = yes }
+					}
+					ROOT = { save_event_target_as = old_tag_target }
+					set_country_flag = was_not_former_colonial_nation
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
