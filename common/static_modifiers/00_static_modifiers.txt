@@ -127,8 +127,8 @@ coastal = {
 
 seat_in_parliament = {
 	#local_manpower_modifier = 0.1			#BTAddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
-	#local_sailors_modifier = 0.05			#BTAddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
-	#local_tax_modifier = 0.1			#BTAddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
+	#local_sailors_modifier = 0.1			#BTAddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
+	#local_tax_modifier = 0.15			#BTAddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
 	#local_production_efficiency = 0.1			#BTAddOn removed - local representation at a federal level doesn't neccessarily mean a boost to local economy.
 	local_institution_spread = 0.10			#BTAddOn new - local representation at a federal level does often mean the province benefits from new ideas sooner. This also is a consolation prize for the enlightenment, which no longer spreads in provinces with a seat in parliament.
 	local_development_cost = -0.05			#BTAddOn new - little bonus, because I say so =p
@@ -209,6 +209,11 @@ normal_winter = {
 	local_hostile_movement_speed = -0.30
 	local_friendly_movement_speed = -0.30
 	supply_limit_modifier = -0.5
+<<<<<<< Updated upstream
+=======
+	migration_cost = 0.1
+	
+>>>>>>> Stashed changes
 	picture = "winter_normal"
 }
 
@@ -217,6 +222,11 @@ severe_winter = {
 	local_hostile_movement_speed = -0.50
 	local_friendly_movement_speed = -0.50
 	supply_limit_modifier = -0.8
+<<<<<<< Updated upstream
+=======
+	migration_cost = 0.2
+	
+>>>>>>> Stashed changes
 	picture = "winter_severe"
 }
 
@@ -260,6 +270,9 @@ provincial_tax_income = {
 	#a tax income of 1.0 appears to be hardcoded into the engine. I hate messy stuff like this, but if I want to double dev, I'm going to have to offset it
 	tax_income = -0.5			#aforementioned offset
 	regiment_recruit_speed = -0.005
+	#local_great_project_upgrade_time = -0.01
+	#local_build_time = -0.01
+	#local_institution_spread = 0.02
 }
 
 provincial_production_size = {
@@ -280,11 +293,6 @@ manpower = {
 	garrison_growth = 0.005 # BT; 0.01
 }
 
-# Caps at 600
-horde_development = {
-	horde_unity = -3
-}
-
 province_razed = {
 	picture = "province_razed"
 }
@@ -297,10 +305,17 @@ development = {
 	naval_forcelimit = 0.05			# special case, affected by autonomy & set to 0 by code if not port
 	local_sailors = 15			# special case, affected by autonomy & set to 0 by code if not port
 	province_trade_power_value = 0.1
+<<<<<<< Updated upstream
 	local_amount_of_banners = 0.05
 	local_amount_of_cawa = 0.125
 	local_amount_of_carolean = 0.1
 	local_amount_of_hussars = 0.01
+=======
+	local_amount_of_banners = 0.033 #BT Changed from 0.05 to match vanilla's 0.066
+	local_amount_of_cawa = 0.063 #BT Changed from 0.125 for dev doubling
+	local_amount_of_carolean = 0.05 #BT Changed from 0.1 for dev doubling
+	local_amount_of_hussars = 0.005 #BT Changed from 0.01 for dev doubling
+>>>>>>> Stashed changes
 }
 
 development_scaled = {
@@ -330,8 +345,13 @@ patriarch_authority_global = {
 	church_influence_modifier = 0.10
 }
 
+<<<<<<< Updated upstream
 pasha_state = {
 	local_governing_cost = -0.2
+=======
+pasha_state = { #Overwrote old entries with vanilla 1.35
+	#local_governing_cost = -0.2 #BT Cut because governing cost has been rebalanced.
+>>>>>>> Stashed changes
 	min_local_autonomy = 20
 	local_state_maintenance_modifier = -0.33
 	local_autonomy = -0.1
@@ -367,7 +387,7 @@ colonial_core = {
 	local_sailors_modifier = 0.75
 	local_missionary_strength = -0.02
 	min_local_autonomy = 50
-	local_governing_cost = -0.75
+	local_governing_cost = -0.5 #BT Adjusted from old -0.75 because vanilla
 }
 
 territory_core = {
@@ -422,7 +442,10 @@ gbr_emperor_of_india_overlord_bonus = {
 	trade_efficiency = 0.1
 	reduced_trade_penalty_on_non_main_tradenode = 0.25
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 same_culture_group = {
 	local_tax_modifier = -0.1				#10% penalty if same culture group but nothing else. Not applied if the controller is the Union Tag of the culture group, or has culture_group_union set.			#BTAddOn changed from 0.15, comprehensively reducing culture penalties and increasing religious ones
 	local_manpower_modifier = -0.1			#BTAddOn changed from 0.15, comprehensively reducing culture penalties and increasing religious ones
@@ -476,12 +499,12 @@ under_siege = {
 
 
 devastation = {
-	trade_goods_size_modifier = -1
+	trade_goods_size_modifier = -2 #BT Vanilla made +100% harsher
 	supply_limit_modifier = -0.5
-	local_institution_spread = -1.0
-	local_development_cost = 0.5			#BTAddOn changed from 0.1 - This is replacing my terrain addon's old stabilty impact on development cost, but I want something much more significant that 10 percent. Plus it appears a province can get through a normal war with less than 30 devastation often, so this can be higher.
-	local_manpower_modifier = -1.0
-	local_sailors_modifier = -1.0
+	local_institution_spread = -2.0 #BT Vanilla made +100% harsher
+	local_development_cost = 1			#BTAddOn changed from 0.1 - This is replacing my terrain addon's old stabilty impact on development cost, but I want something much more significant that 10 percent. Plus it appears a province can get through a normal war with less than 30 devastation often, so this can be higher. #BT Vanilla made +100% harsher
+	local_manpower_modifier = -2.0 #BT Vanilla made +100% harsher
+	local_sailors_modifier = -2.0 #BT Vanilla made +100% harsher
 	local_hostile_movement_speed = -0.25
 	local_friendly_movement_speed = -0.25
 }
@@ -593,7 +616,11 @@ left_trade_company = {
 
 scorched_earth = {
 	local_hostile_movement_speed = -0.30			#BTAddOn changed from -0.5 - that is far too much, and I don't like the way it stacks with my terrain changes
+<<<<<<< Updated upstream
 	local_monthly_devastation = 0.25
+=======
+	local_monthly_devastation = 0.25 #BT Inherited from vanilla
+>>>>>>> Stashed changes
 }
 
 ##########################################################################
@@ -634,6 +661,10 @@ base_values = {
 	tolerance_of_heathens_capacity = 3
 	max_flagships = 1
 	num_of_parliament_issues = 10
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -693,8 +724,14 @@ negative_stability = {
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
 	global_unrest = -2.5
+<<<<<<< Updated upstream
 	all_estate_loyalty_equilibrium = 0.1
 	war_exhaustion = -0.05
+=======
+	#stability_cost_modifier = -0.1 #BT Vanilla cut
+	war_exhaustion = -0.05 #BT Vanilla upped from -0.03
+	all_estate_loyalty_equilibrium = 0.1 #BT Vanilla added
+>>>>>>> Stashed changes
 	
 	#Aborted these changes... I think the Autonomy caused some major lag
 	#global_unrest = -2.5
@@ -711,10 +748,8 @@ negative_mandate = { # By default, starts at 50 mandate, 100% strength at 0 mand
 	global_unrest = 5
 	mercenary_manpower = -0.5
 	global_manpower_modifier = -0.5
-	#BTB moved from Estate files.
-	nobles_loyalty_modifier = -0.1
-	church_loyalty_modifier = -0.1
-	burghers_loyalty_modifier = -0.1
+	all_estate_loyalty_equilibrium = -0.1 #BT Added as a counterbalance on positive mandate replacing an old BTB feature
+	
 
 	#Aborted these changes... I think the Autonomy caused some major lag
 	#global_autonomy = 0.2			#BTAddOn added. China seems simultaneously too weak and too strong, so I'm toying with some logic-inspired changes to see if that makes matters better. I feel like autonomy is going to be the key to a perfectly balanced China.
@@ -858,6 +893,7 @@ war_exhaustion = {
 	global_trade_goods_size_modifier = -0.02
 	monthly_militarized_society = -0.05
 	recover_army_morale_speed = -0.005			#BTAddOn new, as a war drags on soliders recover morale more slowly. At 20 WE it should be the penalty as 100 AT gives in bonus.
+	monthly_militarized_society = -0.05
 }
 
 doom = {
@@ -890,9 +926,15 @@ trade_refusal = {
 
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
+<<<<<<< Updated upstream
 	embargo_efficiency = 1
 	burghers_loyalty_modifier = 0.1
 	vaisyas_loyalty_modifier = 0.1
+=======
+	embargo_efficiency = 1 #BT Vanilla doubled effects
+	burghers_loyalty_modifier = 0.1 #BT Vanilla doubled effects
+	vaisyas_loyalty_modifier = 0.1 #BT Vanilla doubled effects
+>>>>>>> Stashed changes
 }
 
 army_tradition = {
@@ -1016,6 +1058,38 @@ num_of_provinces = {
 
 # Multiplied by the amount of papal influence
 papal_influence = {
+<<<<<<< Updated upstream
+=======
+}
+
+# Multiplied by the amount of Church Power
+church_power = {
+}
+
+# Multiplied by the amount of Fervor
+fervor = {
+	build_cost = -0.001
+	stability_cost_modifier = -0.001
+	years_of_nationalism = -0.05
+	improve_relation_modifier = 0.001
+}
+
+# Multiplied by the amount of Karma
+karma = {
+}
+
+# Multiplied by the amount of positive karma
+positive_karma = {
+}
+
+# Multiplied by the amount of negative karma
+negative_karma = {
+}
+
+# Multiplied by Development/COUNTRY_DEVELOPMENT_SCALE
+country_development = {
+	yearly_tribal_allegiance = -0.005
+>>>>>>> Stashed changes
 }
 
 # Multiplied by the amount of Church Power
@@ -1064,7 +1138,7 @@ legitimacy = {
 horde_unity = {
 	global_unrest = -4
 	discipline = 0.10
-	nomadic_tribes_loyalty_modifier = 0.05
+	#nomadic_tribes_loyalty_modifier = 0.05 #BT Vanilla cut
 }
 
 
@@ -1246,8 +1320,13 @@ curia_controller = {
 	ae_impact = -0.2
 	#technology_cost = -0.05			#BTAddOn removed - So being the defender of the faith means you automatically become a philistine, yet being the curia controller means you have new insight into technological development..... Removing penalty and bonus
 	church_loyalty_modifier = 0.1
+<<<<<<< Updated upstream
 	diplomatic_reputation = 1
 	diplomatic_annexation_cost = -0.1
+=======
+	diplomatic_reputation = 1 #BT Vanilla new
+	diplomatic_annexation_cost = -0.1 #BT Vanilla new
+>>>>>>> Stashed changes
 }
 
 bought_indulgence = {
@@ -1276,8 +1355,13 @@ total_occupation = {
 
 total_blockaded = {
 	war_exhaustion = 0.10					#increases exhaustion.
+<<<<<<< Updated upstream
 	global_trade_power = -0.75
 	trade_steering = -0.75
+=======
+	global_trade_power = -0.75 #BT Vanilla new
+	trade_steering = -0.75 #BT Vanilla new
+>>>>>>> Stashed changes
 }
 
 uncontested_cores = {
@@ -1372,6 +1456,7 @@ absolutism = {
 	all_power_cost	= -0.05			#BTAddOn added. Very powerful compensation for losing Admin Efficiency, hopefully putting to rest any whining about that. Note again, the description of absolutism does read 'how efficient' the government is, so this seems fitting.
 	global_unrest = 10			#BTAddOn added. Further disuading exploitation and just makes logical sense... the description even says absolutism is how 'ruthless' the government is.
 	#core_decay_on_your_own = -0.5			#BTAddOn removed. This is a fun idea that I might have to use elsewhere, but I'm just not seeing the link here with absolute governments specifically.
+	monthly_ottoman_decadence = -0.5
 }
 
 low_army_professionalism = {
@@ -1387,6 +1472,7 @@ high_army_professionalism = {
 	#shock_damage = 0.1			#BTAddOn removed. Replaced by discipline.
 	#siege_ability = 0.2			#BTAddOn removed. Replaced by discipline, plus I'm getting closer with sieges reblancing in this addon, I don't really want (or think we need) another wild card.
 	drill_decay_modifier = -0.5
+	allowed_samurai_fraction = 0.1
 }
 
 streltsy_modifier = {
@@ -2186,23 +2272,18 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
+<<<<<<< Updated upstream
+}
+
+# At 1000% below capacity, this modifier will be fully used
+under_governing_capacity_modifier = {
+=======
+>>>>>>> Stashed changes
 }
 
 # At 1000% below capacity, this modifier will be fully used
 under_governing_capacity_modifier = {
 }
-
-#A new, modified 100% over capacity modifier that BT wants to test.
-# over_governing_capacity_modifier = {
-	# stability_cost_modifier = 1.0
-	# #ae_impact = 0.5 					#Cut in BT in favour of economically impacting modifiers
-	# #improve_relation_modifier = -0.5 	#Cut in BT in favour of economically impacting modifiers
-	# core_creation = 0.2 #-5% admin efficiency in dev diaries. Worthwhile change? Not sure.
-	# advisor_cost = 1.0
-	# monthly_militarized_society = -1.0
-	# min_autonomy = 50					#BT new: This just makes sense on so many levels: Being over what you could possibly govern means that you can't administrate your territories, hence increased base autonomy. If your economy gets crippled, you have little choice than to unstate some of your provinces to get below.
-	# min_autonomy_in_territories = 5	#To impact territories 1/10th of what it impacts in regular provinces.
-# }
 
 
 lost_hegemony = {
@@ -2213,7 +2294,7 @@ at_peace_revolutionary = { # Applied if at peace while reactionaries are borderi
 	yearly_revolutionary_zeal = -4
 }
 
-expanded_infrastructure = {
+expanded_infrastructure = { #TODO: Overhaul
 	allowed_num_of_buildings = 1
 	allowed_num_of_manufactories = 1
 	regiment_recruit_speed = -0.15
