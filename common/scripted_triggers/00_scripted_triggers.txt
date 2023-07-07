@@ -549,10 +549,6 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { was_tag = GZI }
 				NOT = { was_tag = RZI }
 				NOT = { was_tag = SCA }
-				NOT = { was_tag = GZI }
-				NOT = { was_tag = SOM }
-				NOT = { was_tag = RZI }
-				NOT = { was_tag = MAL }
 				NOT = { tag = FRA }
 				NOT = { tag = MUG }
 				NOT = { tag = TUR }
@@ -571,6 +567,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { tag = PAP }
 				NOT = { tag = SPA }
 				NOT = { tag = GBR }
+				NOT = { tag = AVE }
 				NOT = { tag = ITA }
 				NOT = { tag = GER }
 				NOT = { tag = MNG }
@@ -586,9 +583,9 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { tag = ETH }
 				NOT = { tag = AKS }
 				NOT = { tag = GZI }
-				NOT = { tag = SOM }
 				NOT = { tag = RZI }
-				NOT = { tag = MAL }
+				NOT = { tag = SCA }
+			}
 		}
 	}
 }
@@ -1888,6 +1885,7 @@ has_completed_idea_group_of_category = {
 				full_idea_group = exploration_ideas
 				full_idea_group = maritime_ideas
 				full_idea_group = influence_ideas
+				full_idea_group = court_ideas
 			}
 		}
 	]
@@ -2436,9 +2434,8 @@ province_is_buddhist_or_accepts_buddhism = {
 	}
 }
 
-#Buddhism is its own can of worms due to the so many aspects of it
-#This was one of the few moments where it was almost worth considering putting Buddhism in its own religion group - almost
-province_is_buddhist_or_accepts_buddhism = {
+#Had to make a new scripted trigger or otherwise the conditions looks too cluttered...
+province_is_buddhist_or_accepts_buddhism_or_is_dharmic = {
 	OR = {
 		custom_trigger_tooltip = {
 			tooltip = province_is_buddhist_or_accepts_buddhism_at
@@ -2524,7 +2521,7 @@ province_is_buddhist_or_accepts_buddhism = {
 	}
 }
 
-province_is_or_accepts_religion_group = {
+province_is_or_accepts_religion_group = { 
 	custom_trigger_tooltip = {
 		tooltip = province_is_or_accepts_$religion_group$_tt
 		OR = {
@@ -2533,7 +2530,7 @@ province_is_or_accepts_religion_group = {
 				has_owner_religion = yes
 			}
 			AND = {
-				owner = { secondary_religion_group = { $religion_group$ = yes } }
+				owner = { secondary_religion_group = $religion_group$ }
 				OR = {
 					religion_group = $religion_group$
 					has_owner_religion = yes
