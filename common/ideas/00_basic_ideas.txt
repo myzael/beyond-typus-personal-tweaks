@@ -229,7 +229,7 @@ theocracy_gov_ideas = {
 	}
 	martyrs = {
 		manpower_in_true_faith_provinces = 0.15
-		prestige_from_land = 0.5	
+		prestige_from_land = 0.5
 	}
 	ai_will_do = {
 		factor = 3.75
@@ -337,9 +337,8 @@ innovativeness_ideas = {
 			has_reform = steppe_horde
 		}
 		modifier = {
-			factor = 2
-			has_reform = steppe_horde
-			num_of_cities = 20
+			factor = 0.5
+			NOT = { monthly_adm = 8 }
 		}
 		modifier = {
 			factor = 1.25
@@ -570,6 +569,17 @@ religious_ideas = {
 			factor = 2
 			has_border_with_religious_enemy = yes
 		}
+		modifier = {
+			factor = 1.1
+			religion = catholic
+			any_neighbor_country = {
+				is_crusade_target = yes 
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { monthly_adm = 7 }
+		}
 	}
 }
 
@@ -607,7 +617,7 @@ spy_ideas = {
 	}
 	
 	privateers = {
-		embargo_efficiency = 0.25
+		capture_ship_chance = 0.25
 		privateer_efficiency = 0.33
 	}
 	
@@ -633,6 +643,14 @@ spy_ideas = {
 				ruler_has_personality = intricate_web_weaver_personality
 			}
 		}
+		modifier = {
+			factor = 1.1
+			personality = ai_militarist 
+		}
+		modifier = {
+			factor = 0.45
+			NOT = { monthly_dip = 7 }
+		}
 	}
 }
 
@@ -642,7 +660,7 @@ diplomatic_ideas = {
 	bonus = {
 		reduced_stab_impacts = yes
 	}
-
+	
 	grand_banquets = {
 		diplomats = 1
 	}
@@ -817,7 +835,7 @@ defensive_ideas = {
 	improved_foraging = {
 		garrison_size = 0.33
 	}
-
+	#What a meme.
 	#until_the_last_man = {
 	#	morale_damage_received = -0.1
 	#}
@@ -914,6 +932,7 @@ trade_ideas = {
 	}
 	national_trade_policy = {
 		trade_efficiency = 0.1
+		mercantilism_cost = -0.25
 	}
 	overseas_merchants = {
 		placed_merchant_power = 15
@@ -957,6 +976,27 @@ trade_ideas = {
 		modifier = { #If this country has loans, they better god damn pick this up.
 			factor = 4
 			num_of_loans = 1
+		}
+		modifier = {
+			factor = 1.25
+			personality = ai_capitalist 
+			trade_income_percentage = 0.35
+		}
+		modifier = {
+			factor = 1.25
+			home_trade_node = {
+				trade_share = {
+					country = ROOT 
+					share = 0.4
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_idea_group = infrastructure_ideas
+				has_idea_group = economic_ideas
+			}
 		}
 	}
 }
@@ -1441,6 +1481,7 @@ exploration_ideas = {
 	}
 }
 
+
 maritime_ideas = {
 	category = DIP
 
@@ -1494,7 +1535,6 @@ maritime_ideas = {
 		modifier = {
 			factor = 0
 			NOT = { num_of_ports = 1 }
-			NOT = { is_colonial_nation = yes }
 		}
 		modifier = { #More likely if above 500 coastal dev.
 			factor = 0.41
@@ -1558,7 +1598,7 @@ quality_ideas = {
 
 	bonus = {
 		discipline = 0.05
-		#janissaries_loyalty_modifier = 0.1 #This seems a bit random and specific, I think this should be part of some sort of Ottoman goverment reform if anything - Hadiros
+		janissaries_loyalty_modifier = 0.1
 	}
 
 	private_to_marshal = {
@@ -1585,7 +1625,7 @@ quality_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.49
+		factor = 3.5
 		modifier = { #If you have infantry combat ability in your ideas, this makes sense.
 			factor = 3
 			has_global_modifier_value = {
@@ -1670,8 +1710,32 @@ quality_ideas = {
 			factor = 2
 			army_professionalism = 1.00
 		}
+		modifier = { 
+			factor = 0.75
+			NOT = { monthly_mil = 8 }
+		}
+		modifier = { 
+			factor = 1.05
+			is_great_power = yes 
+		}
+		modifier = { 
+			factor = 1.05
+			national_focus = MIL 
+		}
+		modifier = { 
+			factor = 1.1
+			personality = ai_militarist  
+		}
+		modifier = {
+			factor = 1.05
+			OR = {
+				has_idea_group = infrastructure_ideas
+				has_idea_group = economic_ideas
+			}
+		}
 	}
 }
+
 
 quantity_ideas = {
 	category = MIL
@@ -1695,7 +1759,7 @@ quantity_ideas = {
 		reinforce_cost_modifier = -0.33
 	}
 	the_old_and_infirm = {
-		land_maintenance_modifier = -0.05
+		land_maintenance_modifier = -0.1 #BT doubled to counterbalance below.
 	}
 	expanded_supply_trains = {	#Vanilla buffed to -0.25, I think that's a bit too much and so will change it to -0.15. -Hadiros
 		land_attrition = -0.15
@@ -1749,6 +1813,7 @@ quantity_ideas = {
 		}
 	}
 }
+
 
 expansion_ideas = {
 	category = ADM
@@ -1905,16 +1970,17 @@ expansion_ideas = {
 	}
 }
 
+
 administrative_ideas = {
 	category = ADM
 
 	bonus = {
 		governing_capacity_modifier = 0.2
-		#eunuchs_loyalty_modifier = 0.1 #Again, much like the Janissaries in quality ideas, this seems quite specific and would probably better fit in a Celestial Reform
+		eunuchs_loyalty_modifier = 0.1
 	}
 
 	administrative_council = {
-		adm_advisor_cost = -0.15 #BT; -0.25 #Seems a bit to high for my liking, reducing to -0.15. -Hadiros
+		adm_advisor_cost = -0.25 
 	}
 	local_rule = {
 		advisor_pool = 1
@@ -1935,7 +2001,7 @@ administrative_ideas = {
 		adm_tech_cost_modifier = -0.1
 	}
 
-	ai_will_do = { 
+	ai_will_do = {
 		factor = 0.65
 		modifier = {
 			factor = 2
@@ -2007,7 +2073,7 @@ humanist_ideas = {
 		tolerance_heretic = 2
 	}
 	cultural_ties = {
-		num_accepted_cultures = 2
+		num_accepted_cultures = 3 #BT buff because more detailed culturemap
 	}
 	humanist_tolerance = {
 		tolerance_heathen = 2
@@ -2113,7 +2179,22 @@ humanist_ideas = {
 				influence = 75
 			}
 		}
-		
+		modifier = {
+			factor = 0.75
+			NOT = { monthly_adm = 8 }
+		}
+		modifier = {
+			factor = 1.25
+			religion = confucianism
+		}
+		modifier = {
+			factor = 1.1 
+			national_focus = ADM 
+		}
+		modifier = {
+			factor = 1.25
+			has_idea_group = offensive_ideas 
+		}
 	}
 }
 
@@ -2172,7 +2253,7 @@ influence_ideas = {
 			factor = 2
 			OR = {
 				ruler_has_personality = well_connected_personality				
-				ruler_has_personality = fertile_personality
+			#	ruler_has_personality = fertile_personality
 			}
 		}
 	}
@@ -2273,14 +2354,10 @@ naval_ideas = {
 				num_of_galley = 100
 			}
 		}
+
 		modifier = {
 			factor = 10
-			OR = {
-				has_reform = pirate_republic_reform
-				has_reform = pirate_kingdom
-				has_reform = war_against_the_world_government
-				has_reform = black_market_consortium_government
-			}
+			has_government_attribute = is_pirate_republic_reform
 		}
 		modifier = { #If you have heavy ship or galley combat ability in your ideas, this makes sense.
 			factor = 2
@@ -2298,7 +2375,7 @@ naval_ideas = {
 	}
 }
 
-court_ideas = {
+court_ideas = { #New in 1.3X. Seems weak. Could do with a rebalance. //Dub
 	category = DIP
 
 
@@ -2358,7 +2435,7 @@ court_ideas = {
 	}
 }
 
-mercenary_ideas = {
+mercenary_ideas = { #New in 1.3X. Seems... pretty powerful, though given it competes against mil ideas, it makes sense. //Dub
 	category = MIL 
 
 	bonus = {
@@ -2396,7 +2473,7 @@ mercenary_ideas = {
 	}
 }
 
-infrastructure_ideas = {
+infrastructure_ideas = { #New in 1.3X. It's just like administrative ideas in that it has one OP modifier. Rebalanced it for now. //Dub
 	category = ADM
 	
 
@@ -2415,11 +2492,13 @@ infrastructure_ideas = {
 		expand_infrastructure_cost_modifier = -0.25
 	}
 	expanded_infrastructure_network = {
-		movement_speed = 0.1
+		#movement_speed = 0.1
+		development_cost_modifier = -0.05
 		center_of_trade_upgrade_cost = -0.2
 	}
-	administrative_efficiency_idea = {
-		state_governing_cost = -0.1
+	administrative_efficiency_idea = { 
+		admin_efficiency = 0.025
+		#state_governing_cost = -0.1 #This is a bad modifier. //Dub
 	}
 	fort_logistics = {
 		fort_maintenance_modifier = -0.25

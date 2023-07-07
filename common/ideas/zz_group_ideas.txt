@@ -127,7 +127,6 @@ barbary_pirate_ideas = {
 		privateer_efficiency = 0.2
 	}
 	bonus = {
-		republican_tradition = 0.5
 		legitimacy = 1
 		devotion = 1
 		republican_tradition = 0.5
@@ -999,11 +998,11 @@ arabian_ideas = {
 latin_ideas = { #Take another look?
 	start = {
 		papal_influence = 2
-		trade_efficiency = 0.1					#Vanilla   trade_efficiency = 0.1
+		trade_efficiency = 0.1
 	}
 	
 	bonus = {
-		legitimacy 1
+		legitimacy = 1
 		devotion = 1
 		republican_tradition = 0.3
 		meritocracy = 1

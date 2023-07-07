@@ -15,6 +15,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
+fort_15th = yes #BT16 Anatolian Fort Additions - This place has been a major fortified place and capital for many a beylik and other similar entities. It just makes sense. //Dub
 
 discovered_by = western
 discovered_by = eastern

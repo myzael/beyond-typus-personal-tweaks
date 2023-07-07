@@ -27,6 +27,7 @@ add_core = TKK
 hre = no
 
 #Fort/Other Buildings
+fort_15th = yes #BT16 Anatolian Fort Additions - It's literally called "Lake castle" and was byzantine Kibyra //Dub
 
 #Special Modifiers
 

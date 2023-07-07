@@ -14,6 +14,7 @@ base_tax = 4   				#arrival of Sephardic Jews from Spain after 1492; they later 
 base_production = 4  		# as indicated by the first extant Ottoman records describing the town and dating from 1528. Total population estimated between 3500 and 5000 (in 1528). Despite earlier importance to the Byzantines, rather small at this point
 base_manpower = 3
 is_city = yes
+fort_15th = yes #BT16 Anatolian Fort Additions - Smyrna/Izmir had several fortifications, and while it got destroyed by Tamerlane it probably still had some standing and/or rebuilt by the time period. //Dub
 
 extra_cost = 8
 center_of_trade = 2

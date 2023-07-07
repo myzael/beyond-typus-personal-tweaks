@@ -13,6 +13,7 @@ base_tax = 6 			#45k people around the end of the 15th century. Very large, espe
 base_production = 5
 base_manpower = 5
 is_city = yes
+fort_15th = yes #BT16 Anatolian Fort Additions - Ottoman 2nd capital, Prusa Castle. //Dub
 
 extra_cost = 16
 center_of_trade = 2

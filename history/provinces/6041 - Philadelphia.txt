@@ -27,6 +27,7 @@ add_core = SRU
 hre = no
 
 #Fort/Other Buildings
+fort_15th = yes #BT16 Anatolian Fort Additions - The name Akhisar literally means White Castle, and Philadelphia certainly was a fortified city back in the day. //Dub
 
 #Special Modifiers
 
