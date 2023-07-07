@@ -2365,7 +2365,7 @@ veche_republic_legacy = {
 	}
 }
 
-pprincipality_legacy = {
+principality_legacy = {
 	# government mechanics flags go here
 	icon = "crown"
 	legacy_government = yes
