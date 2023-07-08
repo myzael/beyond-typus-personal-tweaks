@@ -275,12 +275,13 @@ guarantee = {
 	end_date = 1479.9.4
 }
 
-vassal = {
-	first = VEN
-	second = CGG
-	start_date = 1381.1.1
-	end_date = 1412.1.1
-} #Chioggia
+#CGG does no longer exist in BT. Cut because it caused errors.
+# vassal = {
+	# first = VEN
+	# second = CGG
+	# start_date = 1381.1.1
+	# end_date = 1412.1.1
+# } #Chioggia
 
 vassal = {
 	first = VEN
