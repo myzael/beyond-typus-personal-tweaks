@@ -1978,16 +1978,22 @@ estate_burghers_orthodox_tolerance = {
 		religion_group = christian
 		NOT = { religion = orthodox }
 		NOT = { religion = coptic }
+		NOT = { religion = apostolic }
+		NOT = { religion = nestorian }
 		#has_unlocked_estate_privilege = { estate_privilege = estate_burghers_orthodox_tolerance }
 	}
 	can_select = {
 		religion_group = christian
 		NOT = { religion = orthodox }
 		NOT = { religion = coptic }
+		NOT = { religion = apostolic }
+		NOT = { religion = nestorian }
 		any_owned_province = {
 			OR = {
 				religion = orthodox
 				religion = coptic
+				religion = apostolic
+				religion = nestorian
 			}
 		}
 	}
@@ -2011,6 +2017,8 @@ estate_burghers_orthodox_tolerance = {
 				OR = {
 					religion = orthodox
 					religion = coptic
+					religion = apostolic
+					religion = nestorian
 				}
 			}
 			add_province_modifier = {
@@ -2067,6 +2075,8 @@ estate_burghers_orthodox_tolerance = {
 					OR = {
 						religion = orthodox
 						religion = coptic
+						religion = apostolic
+						religion = nestorian
 					}
 				}
 			}
