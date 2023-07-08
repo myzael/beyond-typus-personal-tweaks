@@ -16393,7 +16393,7 @@ winter_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
-			institution_growth = 3
+			local_institution_spread = 0.25 #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 3
 		}
 		area_modifier = {
 		}
@@ -16413,10 +16413,10 @@ winter_palace = {
 			factor = 2500
 		}
 		province_modifiers = {
-			institution_growth = 6
+			local_institution_spread = 0.5 #Cut to add to area_modifier #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 6
 		}
 		area_modifier = {
-			local_institution_spread = 0.1
+			local_institution_spread = 0.5
 		}
 		country_modifiers = {
 			yearly_absolutism = 0.5
@@ -16434,14 +16434,15 @@ winter_palace = {
 			factor = 5000
 		}
 		province_modifiers = {
-			institution_growth = 12
+			#BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 12
 		}
 		area_modifier = {
-			local_institution_spread = 0.25
+			local_institution_spread = 0.75
 		}
 		country_modifiers = {
 			yearly_absolutism = 0.5
 			reform_progress_growth = 0.2
+			global_institution_spread = 0.25
 		}
 		on_upgraded = {
 		}
@@ -17295,7 +17296,7 @@ harar_jugol = {
 			factor = 1000
 		}
 		province_modifiers = {
-			institution_growth = 3
+			local_institution_spread = 0.25 #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 3
 		}
 		area_modifier = {
 		}
@@ -17316,7 +17317,7 @@ harar_jugol = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			institution_growth = 3
+			local_institution_spread = 0.25 #institution_growth = 3
 		}
 		country_modifiers = {
 			stability_cost_modifier = -0.1
@@ -17336,11 +17337,12 @@ harar_jugol = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			institution_growth = 6
+			local_institution_spread = 0.25 #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 6
 		}
 		country_modifiers = {
 			stability_cost_modifier = -0.25
 			prestige_per_development_from_conversion = 0.3
+			global_institution_spread = 0.25
 		}
 		on_upgraded = {
 			custom_tooltip = mechanic_allow_piety_switch_decision_yes

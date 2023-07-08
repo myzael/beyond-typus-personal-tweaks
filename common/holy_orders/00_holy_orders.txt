@@ -163,7 +163,7 @@ augustinians = {
         add_base_production = -1
     }
     modifier = {
-		institution_growth = 6 
+		local_institution_spread = 0.5 #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 6 
 		local_missionary_maintenance_cost = -0.5
     }
     ai_priority = {

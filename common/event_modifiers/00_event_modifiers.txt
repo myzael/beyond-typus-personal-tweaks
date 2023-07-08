@@ -427,7 +427,7 @@ reduced_stability_cost = {
 }
 
 gresham_college_royal_society = {	#Permanent
-	institution_growth = 3
+	local_institution_spread = 0.25 #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 3
 	yearly_innovativeness = 0.25
 }
 
@@ -1670,7 +1670,7 @@ tripitaka_koreana = {
 	harmonization_speed = 0.1
 	yearly_karma_decay = 0.01
 	monthly_splendor = 1
-	institution_growth = 3
+	local_institution_spread = 0.25 #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 3
 }
 
 tripitaka_koreana_defenses = {
