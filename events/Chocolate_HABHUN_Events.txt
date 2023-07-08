@@ -100,7 +100,7 @@ country_event = { #Ladislaus becomes of age
 		trigger = { has_ruler_flag = JohnHunyadiKingRegent }
 		ai_chance = { factor = 8 }
 		hidden_effect = {
-			exile_ruler_as = JohnHunyadiExiled
+			exile_ruler_as = { name = JohnHunyadiExiled }
 			set_country_flag = LadislausCrownedHunyadiExiled
 		}
 	}
@@ -251,7 +251,7 @@ country_event = { #Matyas Uncle Occupies lots of territory
 			factor = 6 
 		}
 		#Flee to Prague
-		HUN = { exile_ruler_as = ladislaus_flees_prague }
+		HUN = { exile_ruler_as = { name = ladislaus_flees_prague } }
 		BOH = { grant_independence = yes create_union = HUN set_ruler = ladislaus_flees_prague }
 		#more rebels?
 	}
@@ -334,7 +334,7 @@ country_event = { #Death of Ladislaus, Austria is taken by the Habsburgs again
 				limit = {
 					VOR = { exists = yes has_ruler = "Albrecht VI" } 
 				}
-				VOR = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = Albrecht6Austria }
+				VOR = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = { name = Albrecht6Austria } }
 				HAB = {
 					grant_independence = yes
 					set_ruler = Albrecht6Austria
@@ -546,7 +546,7 @@ country_event = { #Ladislaus becomes of age
 		trigger = { has_ruler_flag = GeorgePodybradyRegentKing }
 		ai_chance = { factor = 8 }
 		hidden_effect = {
-			exile_ruler_as = GeorgePodybradyExiled
+			exile_ruler_as = { name = GeorgePodybradyExiled }
 		}
 		HUN = {
 			create_union = BOH

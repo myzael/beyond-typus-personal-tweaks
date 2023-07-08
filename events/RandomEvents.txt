@@ -5094,7 +5094,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 		change_government_reform_progress = 15
 	}
-
+}
 
 #########################################################
 #		Vatican infiltration							#

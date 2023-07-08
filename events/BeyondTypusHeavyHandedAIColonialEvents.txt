@@ -857,15 +857,15 @@ province_event = {
 				create_colony = 60
 				change_native_hostileness = -9
 			}
-			else = {
-				random_province = {
-					limit = {
-						colonial_region = colonial_colombia
-						bt_historical_colony_events_for_the_ai_candidate = yes
-					}
-					create_colony = 60
-					change_native_hostileness = -9
+		}
+		else = {
+			random_province = {
+				limit = {
+					colonial_region = colonial_colombia
+					bt_historical_colony_events_for_the_ai_candidate = yes
 				}
+				create_colony = 60
+				change_native_hostileness = -9
 			}
 		}
 	}
