@@ -2191,6 +2191,8 @@ estate_church_anti_heresy_act = {
 		religion_group = christian
 		NOT = { religion = orthodox }
 		NOT = { religion = coptic }
+		NOT = { religion = apostolic }
+		NOT = { religion = nestorian }
 		any_owned_province = {
 			religion_group = ROOT
 			NOT = { religion = ROOT }
