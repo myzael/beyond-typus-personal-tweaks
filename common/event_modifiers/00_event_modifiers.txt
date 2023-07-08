@@ -1670,7 +1670,7 @@ tripitaka_koreana = {
 	harmonization_speed = 0.1
 	yearly_karma_decay = 0.01
 	monthly_splendor = 1
-	local_institution_spread = 0.25 #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. #institution_growth = 3
+	global_institution_spread = 0.25 #BT replacing all cases of institution_growth at a rate of X/12 to institution_spread. Changed to global because of the nature of the modifier. #institution_growth = 3
 }
 
 tripitaka_koreana_defenses = {
