@@ -2114,7 +2114,6 @@ merc_swiss_canton_mercenaries = {
 	home_province = 165
 	sprites = {  dlc103_swi_sprite_pack westerngfx_sprite_pack }
 	trigger = {
-	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 		tag = SWI
 		mission_completed = emp_swi_mercenaries
 	}
