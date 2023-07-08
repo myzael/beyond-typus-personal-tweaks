@@ -17944,7 +17944,7 @@ aljaferia_palace = {
 }
 
 divrigi_hospital_mosque = {
-	start = 4310 #Divrigi
+	start = 5158 #Divrigi
 	date = 879.11.04
 	time = { months = 0	}
 	build_cost = 0
