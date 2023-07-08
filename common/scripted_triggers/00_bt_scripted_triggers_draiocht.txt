@@ -107,7 +107,7 @@ bt_generic_can_form_potential_check = {
 	#TODO: Move to was_never_end_game_tag_trigger in 00_scripted_triggers.txt
 	NOT = { tag = UNK }
 	NOT = { tag = CEL }
-	NOT = { tag = LTE }			#Latin Empire, on Dub's request.
+	NOT = { tag = LAE }
 
 	NOT = { was_tag = UNK }
 	NOT = { was_tag = CEL }

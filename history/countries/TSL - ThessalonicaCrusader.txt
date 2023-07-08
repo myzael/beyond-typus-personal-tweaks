@@ -7,6 +7,6 @@ technology_group = western
 historical_friend = VEN
 historical_friend = PHP
 #historical_friend = NCA #(JP) Unknown tag
-historical_friend = LTE
+historical_friend = LAE
 capital = 148 # Thessalonica
 fixed_capital = 148 # Cannot move capital away from this province & no power cost to move to it
