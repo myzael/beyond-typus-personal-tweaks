@@ -5,6 +5,15 @@ historical_friend = HAB			#Dub added. I mean, could be argued either way, but it
 capital = 215
 
 
+change_estate_land_share = { #Reverting part of vanilla's nobility change. Since we give primacy of the nobility at game start, we already cede 10% of crownland to nobles.
+	estate = estate_nobles
+	share = -10
+}
+change_estate_land_share = { #See above
+	estate = estate_church
+	share = 10
+}
+
 
 #History 
 

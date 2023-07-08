@@ -20,7 +20,10 @@ national_focus = DIP
 	}
 }	#Trying an override... let's see what happens. (Change it vanilla country of origin from YAR to SPK
 
-1444.10.1 = { set_estate_privilege = estate_nobles_strong_duchies }
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_strong_duchies
+	set_estate_privilege = estate_nobles_very_strong_duchies
+}
 
 #Time under Dmitry Shemyaka 1446-1447
 1446.2.13 = {

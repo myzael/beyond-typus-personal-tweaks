@@ -184,3 +184,7 @@ national_focus = DIP
 		mil = 5
 	}
 }
+
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_strong_duchies
+}
