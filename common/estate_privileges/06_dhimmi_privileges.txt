@@ -12,7 +12,7 @@ estate_dhimmi_land_rights = {
 	penalties = {
 	}
 	benefits = {
-		governing_capacity = 200
+		governing_capacity = 200 #BT Dev Doubling
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -309,6 +309,20 @@ estate_dhimmi_dhimmi_nobles = {
 				influence = 75
 			}
 			NOT = { has_estate_privilege = estate_dhimmi_lighter_dhimmi_taxes }
+		}
+		modifier = { #The AI should not try and pass this if it results in the nobility or chuch becoming too disloyal.
+			factor = 0.75
+			NOT = { #If below 55%
+				has_global_modifier_value = {
+					which = church_loyalty_modifier
+					value = 0.55
+				}
+				has_global_modifier_value = {
+					which = nobles_loyalty_modifier
+					value = 0.55
+				}
+			}
+			NOT = { is_absolutism_active = yes }
 		}
 	}
 }

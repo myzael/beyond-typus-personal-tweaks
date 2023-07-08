@@ -12,7 +12,7 @@ estate_nomadic_tribes_land_rights = {
 	penalties = {
 	}
 	benefits = {
-		governing_capacity = 200
+		governing_capacity = 200 #BT Dev Doubling
 	}
 	ai_will_do = {
 		factor = 5

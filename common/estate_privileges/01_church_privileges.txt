@@ -21,7 +21,7 @@ estate_church_land_rights = {
 		}
 	}
 	benefits = {
-		governing_capacity = 200
+		governing_capacity = 200 #BT Dev Doubling
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
@@ -2191,6 +2191,7 @@ estate_church_anti_heresy_act = {
 		religion_group = christian
 		NOT = { religion = orthodox }
 		NOT = { religion = coptic }
+		#BT New breakaway Chalcedonian religions
 		NOT = { religion = apostolic }
 		NOT = { religion = nestorian }
 		any_owned_province = {

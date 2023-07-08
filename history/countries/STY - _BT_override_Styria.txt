@@ -1,0 +1,2 @@
+#BT Styria doesn't start as Archduchy
+add_government_reform = austrian_archduchy_reform
