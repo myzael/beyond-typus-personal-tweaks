@@ -129,7 +129,7 @@ choc_FrederickIII_dies_first = {
 				}
 				VOR = { ai = yes }
 			}
-			VOR = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = albrechtVI }
+			VOR = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = { name = albrechtVI } }
 			STY = { clr_country_flag = choc_albrecht_friedrich_brothers inherit = VOR }
 		}
 		else = {
@@ -178,7 +178,7 @@ choc_AlbrechtVI_dies_first = {
 				STY = { exists = yes }
 				has_heir = no
 			}
-			STY = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = FrederickIII }
+			STY = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = { name = FrederickIII } }
 			VOR = { clr_country_flag = choc_albrecht_friedrich_brothers inherit = STY change_tag = STY
 				set_ruler = FrederickIII
 				set_capital = 1863
@@ -189,7 +189,7 @@ choc_AlbrechtVI_dies_first = {
 				HAB = { exists = yes has_country_flag = choc_albrecht_friedrich_brothers }
 				has_heir = no
 			}
-			HAB = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = FrederickIII }
+			HAB = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = { name = FrederickIII } }
 			VOR = { clr_country_flag = choc_albrecht_friedrich_brothers inherit = HAB change_tag = HAB
 				set_ruler = FrederickIII
 				set_capital = 134
