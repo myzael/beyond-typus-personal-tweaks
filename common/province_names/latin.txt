@@ -805,7 +805,6 @@
 6035 = { "Gadilo" "Gadilo" } #Bafra
 6037 = { "Eudocia" "Eudocia" } #Tokat
 6038 = { "Melenzio" "Melenzio" } #Mesudiye
-6039 = { "Eno" "Eno" } #Unye
 6040 = { "Maurocastro" "Maurocastro" } #Sebinkarahisar
 6041 = { "Tiatira" "Tiatira" } #Akhisar
 

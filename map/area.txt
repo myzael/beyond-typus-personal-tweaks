@@ -1140,7 +1140,7 @@ dagestan_area = {
 # Anatolia
 ###
 rum_area = { #West Pontus
-	329 2300 2304 5152 6034 6035 6037 6038 6039 
+	329 2300 2304 5152 6034 6035 6037 6038 
 }
 hudavendigar_area = { #Bithynia
 	316 317 4312 5157 6001 6002 6016 

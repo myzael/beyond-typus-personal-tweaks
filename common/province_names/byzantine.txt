@@ -197,7 +197,6 @@
 6035 = { "Gadilon" "Gadilon" }
 6037 = { "Eudokia" "Eudokia" }
 6038 = { "Meletios" "Meletios" }
-6039 = { "Oinaion" "Oinaion" }
 6040 = { "Mavrokastron" "Mavrokastron" }
 6041 = { "Thyatira" "Thyatira" }
 

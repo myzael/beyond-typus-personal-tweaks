@@ -257,7 +257,6 @@
 6035 = { "Bafra" "Bafra" }
 6037 = { "Tokat" "Tokat" }
 6038 = { "Hamidiye" "Hamidiye" }
-6039 = { "Ünye" "Ünye" }
 6040 = { "Kuguniya" "Kuguniya" }
 6041 = { "Akhisar" "Akhisar" }
 
