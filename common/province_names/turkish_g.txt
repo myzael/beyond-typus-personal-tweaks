@@ -241,7 +241,6 @@
 6007 = { "Ayasoluk" "Ayasoluk" }
 6009 = { "Milas" "Milas" }
 6010 = { "Tavas" "Tavas" }
-6012 = { "Qulhisar" "Qulhisar" }
 6013 = { "Andifli" "Andifli" }
 6014 = { "Isparta" "Isparta" }
 6015 = { "Burdur" "Burdur" }

@@ -5,5 +5,4 @@
 4309 = { "Aydin" "Aydin" }
 4312 = { "Bolu" "Bolu" }
 5162 = { "Meghri" "Meghri" }
-6012 = { "Gölhisar" "Gölhisar" }
 6027 = { "Shehirkishla" "Shehirkishla" }

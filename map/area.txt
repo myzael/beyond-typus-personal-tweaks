@@ -1181,7 +1181,7 @@ karasi_area = { # BT# Mysia
 	2296 5130 5131 5156 5171 6004 
 }
 pamphylia_area = { # BT# Lycia-Pamphylia
-	2298 5147 5162 6012 6013 6014 6020 
+	2298 5147 5162 6013 6014 6020 
 }
 caria_area = { #BT# Caria
 	319 4309 5134 6009 6010 

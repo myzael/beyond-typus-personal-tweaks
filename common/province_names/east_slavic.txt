@@ -670,7 +670,6 @@
 6001 = { "Ivovyy" "Ivovyy" } # Ivovyy - translation of turkish Sogut
 6002 = { "Beledzhyk" "Beledzhyk" } # turkish 
 6007 = { "Efes" "Efes" } # Ephesos
-6012 = { "Kivira" "Kivira" } # greek Kibyra (b - anc.greek spelling), Kivyra - byzantine greek spelling, used in russian
 6017 = { "Anastasyevo" "Knyazebazar" }
 6018 = { "Ergen" "Ergen" }
 6019 = { "Chernogorodye" "Chernograd" }

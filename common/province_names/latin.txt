@@ -789,7 +789,6 @@
 6007 = { "Efeso" "Efeso" } #Ayasoluk
 6009 = { "Milasa" "Milasa" } #Milas 
 6010 = { "Tabe" "Tabe" } #Tavas
-6012 = { "Cibira" "Cibira" } #Gölhisar
 6013 = { "Antifilo" "Antifilo" } #Andifli
 6014 = { "Bari di Pisidia" "Bari di Pisidia" } #Isparta
 6015 = { "Polidorio" "Polidorio" } #Burdur
