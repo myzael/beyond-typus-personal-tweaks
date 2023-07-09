@@ -195,7 +195,6 @@
 6033 = { "Inepolis" "Inepolis" }
 6034 = { "Merzifounta" "Merzifounta" }
 6035 = { "Gadilon" "Gadilon" }
-6036 = { "Laodikeia" "Laodikeia" }
 6037 = { "Eudokia" "Eudokia" }
 6038 = { "Meletios" "Meletios" }
 6039 = { "Oinaion" "Oinaion" }

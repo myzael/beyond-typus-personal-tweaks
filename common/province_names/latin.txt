@@ -803,7 +803,6 @@
 6033 = { "Ionopoli" "Ionopoli" } #Inebolu
 6034 = { "Mersifonte" "Mersifonte" } #Merzifon
 6035 = { "Gadilo" "Gadilo" } #Bafra
-6036 = { "Laodicea Pontica" "Laodicea Pontica" } #Ladik
 6037 = { "Eudocia" "Eudocia" } #Tokat
 6038 = { "Melenzio" "Melenzio" } #Mesudiye
 6039 = { "Eno" "Eno" } #Unye
