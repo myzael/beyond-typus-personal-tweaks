@@ -1165,7 +1165,7 @@ karaman_area = { #Lycaonia
 }
 cukurova_area = { #Cilicia
 	color = { 50 177 200 }
-	327 2302 5135 5138 5154 5161 6021 6023 6025 
+	327 2302 5135 5138 5154 5161 6021 6025 
 }
 dulkadir_area = { #Cappadocia
 	color = { 184 54 72 }

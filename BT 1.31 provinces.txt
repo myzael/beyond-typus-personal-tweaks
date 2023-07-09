@@ -6017,7 +6017,7 @@
 6020 - Beyshehir.txt
 6021 - Ermenek.txt
 
-6023 - Mut.txt
+
 6024 - Eregli.txt
 6025 - Tarsus.txt
 6026 - Ifteryum.txt

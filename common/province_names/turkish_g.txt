@@ -248,7 +248,6 @@
 6019 = { "Akshehir" "Akshehir" }
 6020 = { "Beyshehir" "Beyshehir" }
 6021 = { "Ermenek" "Ermenek" }
-6023 = { "Mut" "Mut" }
 6024 = { "Eregli" "Eregli" }
 6025 = { "Tarsus" "Tarsus" }
 6026 = { "Ifteryum" "Ifteryum" }
