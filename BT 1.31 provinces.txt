@@ -6009,14 +6009,14 @@
 
 6013 - Andifli.txt
 6014 - Isparta.txt
-6015 - Burdur.txt
+
 6016 - Benderegli.txt
-6017 - Beypazari.txt
+
 6018 - Hergenkale.txt
 6019 - Akshehir.txt
 6020 - Beyshehir.txt
 6021 - Ermenek.txt
-6022 - Silifke.txt
+
 6023 - Mut.txt
 6024 - Eregli.txt
 6025 - Tarsus.txt

@@ -243,14 +243,11 @@
 6010 = { "Tavas" "Tavas" }
 6013 = { "Andifli" "Andifli" }
 6014 = { "Isparta" "Isparta" }
-6015 = { "Burdur" "Burdur" }
 6016 = { "Benderegli" "Benderegli" }
-6017 = { "Beypazari" "Beypazari" }
 6018 = { "Hergenkale" "Hergenkale" }
 6019 = { "Akshehir" "Akshehir" }
 6020 = { "Beyshehir" "Beyshehir" }
 6021 = { "Ermenek" "Ermenek" }
-6022 = { "Silifke" "Silifke" }
 6023 = { "Mut" "Mut" }
 6024 = { "Eregli" "Eregli" }
 6025 = { "Tarsus" "Tarsus" }

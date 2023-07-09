@@ -791,14 +791,11 @@
 6010 = { "Tabe" "Tabe" } #Tavas
 6013 = { "Antifilo" "Antifilo" } #Andifli
 6014 = { "Bari di Pisidia" "Bari di Pisidia" } #Isparta
-6015 = { "Polidorio" "Polidorio" } #Burdur
 6016 = { "Eraclea Pontica" "Eraclea Pontica" } #Eregli
-6017 = { "Lagania" "Lagania" } #Beypazari
 6018 = { "Amorio" "Amorio" } #Hergenkale
 6019 = { "Filomelio" "Filomelio" } #Aksehir
 6020 = { "Mistia" "Mistia" } #Beysehir
 6021 = { "Germanicopoli" "Germanicopoli" } #Ermenek
-6022 = { "Seleucia sul Calicadno" "Seleucia sul Calicadno" } #Siflike
 6023 = { "Ninica" "Ninica" } #Mut
 6024 = { "Eraclea Cibistra" "Eraclea Cibistra" } #Eregli 
 6025 = { "Tarso" "Tarso" } #Tarsus

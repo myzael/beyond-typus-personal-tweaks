@@ -183,14 +183,11 @@
 6010 = { "Tabae" "Tabae" }
 6013 = { "Antiphellos" "Antiphellos" }
 6014 = { "Saporda" "Saporda" }
-6015 = { "Polydorion" "Polydorion" }
 6016 = { "Pontoherakleia" "Pontoherakleia" }
-6017 = { "Anastasiopolis" "Anastasiopolis" }
 6018 = { "Amorion" "Amorion" }
 6019 = { "Philomelion" "Philomelion" }
 6020 = { "Mistheia" "Mistheia" }
 6021 = { "Germanicopolis" "Germanicopolis" }
-6022 = { "Seleukeia" "Seleukeia" }
 6023 = { "Claudiopolis" "Claudiopolis" }
 6024 = { "Herakleia Kybistra" "Herakleia" }
 6025 = { "Tarsus" "Tarsus" }

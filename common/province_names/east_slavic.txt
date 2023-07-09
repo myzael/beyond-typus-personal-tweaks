@@ -670,11 +670,9 @@
 6001 = { "Ivovyy" "Ivovyy" } # Ivovyy - translation of turkish Sogut
 6002 = { "Beledzhyk" "Beledzhyk" } # turkish 
 6007 = { "Efes" "Efes" } # Ephesos
-6017 = { "Anastasyevo" "Knyazebazar" }
 6018 = { "Ergen" "Ergen" }
 6019 = { "Chernogorodye" "Chernograd" }
-6020 = { "Knyazev" "Knyazev" }
-6022 = { "Selevkiya" "Selevkiya" } # turk. Silifke, greek origin 
+6020 = { "Knyazev" "Knyazev" } 
 6024 = { "Kivistra" "Kivistra" }
 6025 = { "Tars" "Tars" }
 6026 = { "Ifteriy" "Ifteriy" } # Ifteryum
