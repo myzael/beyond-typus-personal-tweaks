@@ -41,7 +41,6 @@
 5330 = { "Farqîn" "Farqîn" } #Silvan
 5331 = { "Sêrt" "Sêrt" } #Siirt
 5332 = { "Erdish" "Erdish" } #Arjesh
-6030 = { "Semsûr" "Semsûr" } #Hisnmansur
 6089 = { "Reba" "Reba" } #(Chrys) "Rabha"
 6090 = { "Suluk" "Suluk" } #(Chrys) "Suluk" 
 6091 = { "Meskenê" "Meskenê" } #(Chrys) "Maskanah"

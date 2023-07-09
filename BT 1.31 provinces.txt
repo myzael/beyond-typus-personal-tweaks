@@ -6024,7 +6024,7 @@
 6027 - Geduk.txt
 6028 - Darande.txt
 6029 - Elbistan.txt
-6030 - Hisnmansur.txt
+
 6031 - Kalecik.txt
 6032 - Bartin.txt
 6033 - Inebolu.txt

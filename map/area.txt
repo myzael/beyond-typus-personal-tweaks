@@ -1223,7 +1223,7 @@ hauran_area = { #Hawran
 # Mesopotamia
 ###
 rakka_area = { #Upper Euphrates
-	407 2303 2314 4298 6030 6091 6092 6101
+	407 2303 2314 4298 6091 6092 6101
 }
 erzurum_area = { #Lesser Armenia
 	331 2305 5151 5158 6106 6149
