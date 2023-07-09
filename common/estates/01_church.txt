@@ -368,7 +368,7 @@ estate_church = {
 		desc = estate_bete
 		trigger = {
 			OR = {
-				tag = LGN # changed from LAI
+				tag = LAI
 				tag = VIL
 				tag = VNL
 			}

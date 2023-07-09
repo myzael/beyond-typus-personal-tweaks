@@ -422,14 +422,17 @@ rapid_collapse_of_society = {
 ######################################
 submission_to_emperor = {
 	potential = {
+		# AI will avoid joining HRE when this modifier is potential:
+
 		has_global_flag = italians_leave_hre
 		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
-		is_part_of_hre = yes
+		is_emperor = no
+		NOT = { is_year = 1550 }
 		culture_group = latin
 	}
 
 	trigger = {
-		is_emperor = no
+		is_part_of_hre = yes
 		NOT = { tag = ITA }
 		NOT = { tag = ITL } # BT
 		capital_scope = {

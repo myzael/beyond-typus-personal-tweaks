@@ -43,6 +43,7 @@ estate_nobles =
 		manpower_recovery_speed = 0.2 
 		land_maintenance_modifier = -0.1
 		monthly_support_heir_gain = 0.1
+		rr_royalists_influence = 0.2
 		legitimacy = 1.0			#BTAddOn new - estates rebalancing
 	}
 	country_modifier_neutral = {
@@ -53,6 +54,7 @@ estate_nobles =
 		manpower_recovery_speed = -0.2			#BTAddOn changed from 0.1 - estates rebalancing
 		land_maintenance_modifier = 0.1
 		monthly_support_heir_gain = -0.2
+		stability_cost_modifier = 0.66			#BTAddOn new - estates rebalancing
 		global_unrest = 2
 		rr_royalists_influence = -0.1
 	}
@@ -392,7 +394,7 @@ estate_nobles =
 		desc = estate_ratu
 		trigger = {
 			OR = {
-				tag = LGN # changed from LAI
+				tag = LAI
 				tag = VIL
 				tag = VNL
 			}
