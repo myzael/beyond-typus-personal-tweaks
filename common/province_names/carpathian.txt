@@ -516,9 +516,6 @@
 316 = "Nikomédia"
 5157 = "Nikaia"
 
-#Mysia
-5171 = "Milétopolisz"
-
 #Asia
 318 = "Szmirna"
 2297 = "Magnészia"

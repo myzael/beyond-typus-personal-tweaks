@@ -1021,7 +1021,6 @@
 #Phrygia
 1848 = "Nikopolis"
 4311 = "Kotaion"
-5155 = "Gherm" 
 5163 = "Usakeion"
 
 #Lycia-Pamphylia
@@ -1067,7 +1066,6 @@
 326 = "Ankira"
 329 = "Sebastiya"
 5137 = "Tavion"
-5165 = "Sarmalio"
 5167 = "Eukhaneya"
 
 #Lycaonia
@@ -1831,7 +1829,6 @@
 5130 = "Khadrianosirai"
 5156 = "Kizik"
 5131 = "Perham"
-5171 = "Myhaylych"
 
 #Bythnia
 316 = "Nikomidiya"
@@ -1839,7 +1836,6 @@
 322 = "Dorileya"
 4312 = "Klavdiopol'"
 5157 = "Nikeya"
-5168 = "Agrylion"
 
 #Asia
 318 = "Smirna"
@@ -1852,7 +1848,6 @@
 #Phrygia
 1848 = "Nikopolis"
 4311 = "Kotaion"
-5155 = "Herm" 
 5163 = "Usakeion"
 
 #Lycia-Pamphylia
@@ -1898,7 +1893,6 @@
 326 = "Ankira"
 329 = "Sebastiya"
 5137 = "Tavion"
-5165 = "Sarmalio"
 5167 = "Eukhaneya"
 
 #Lycaonia

@@ -41,7 +41,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1268;5494;canal;1775;-1;-1;-1;-1;kiel_canal
 1548;1515;canal;835;-1;-1;-1;-1;panama_canal
 1328;1316;canal;363;-1;-1;-1;-1;suez_canal
-2348;6006;sea;5493;-1;-1;-1;-1;Chios-Cheshme
+2348;318;sea;5493;-1;-1;-1;-1;Chios-Izmir
 4700;2296;sea;1319;-1;-1;-1;-1;Lesbos-Biga
 3245;2447;sea;1323;-1;-1;-1;-1;Kerch-Mapa
 536;2100;sea;1340;-1;-1;-1;-1;Madurai-Vanni

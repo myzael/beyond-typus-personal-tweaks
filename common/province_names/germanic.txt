@@ -1537,10 +1537,7 @@
 5138 = { "Osmanien" "Osmanien" } #
 5150 = { "Korama" "Korama" } #
 5157 = { "Nikäa" "Nikäa" }
-5165 = { "Bruchburg" "Bruchburg" } #
 5167 = { "Korum" "Korum" } #
-5168 = { "Agrilion" "Agrilion" }
-5171 = { "Milletopol" "Milletopol" }
 6033 = { "Ionopol" "Ionopol" }
 
 #Levant
@@ -2453,7 +2450,6 @@
 5130 = "Grossmysien"
 5131 = "Kydonien"
 322 = "Doryläum"
-5155 = "Gordion"
 5152 = "Krönen"			#Or "Euchisien"
 332 = "Germanik"			#Or "Marasch"
 4307 = "Kolonien"

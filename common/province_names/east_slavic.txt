@@ -667,11 +667,8 @@
 5157 = { "Nikeya" "Nikeya" } # from greek Nikaia
 5162 = { "Megri" "Fetya" } # from turkish
 5167 = { "Chorum" "Chorum" }
-5168 = { "Bazar" "Bazar Ostrovnoy" } # or Rynok Ostrovnoy. Bazar - from turkish Pazar, means marketplace. Ostrov - island, translation of Ada.
 6001 = { "Ivovyy" "Ivovyy" } # Ivovyy - translation of turkish Sogut
 6002 = { "Beledzhyk" "Beledzhyk" } # turkish 
-6003 = { "Bigadich" "Bigadich" } 
-6006 = { "Kis" "Kis" } # Kysos
 6007 = { "Efes" "Efes" } # Ephesos
 6012 = { "Kivira" "Kivira" } # greek Kibyra (b - anc.greek spelling), Kivyra - byzantine greek spelling, used in russian
 6017 = { "Anastasyevo" "Knyazebazar" }

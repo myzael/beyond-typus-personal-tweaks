@@ -463,7 +463,6 @@
 
 #galatia
 326 = "Ankara" #turkish and crimean tatar
-5165 = "Kirikkale" #turkish
 
 #west pontus
 2300 = "Niksar" #turkish
@@ -856,9 +855,7 @@
 5151 = { "Baiburt" "Baiburt" } #
 5156 = { "Biga" "Biga" } #
 5157 = { "Iznik" "Iznik" } #
-5168 = { "Sakariyâ" "Adapazari" } #
 5170 = { "Äl-Ladiqiä" "Äl-Ladiqiä" } #
-5171 = { "Mihaliç" "Mihaliç" } #
 5180 = { "Gazzä" "Gazzä" } #
 5205 = { "Bäirut" "Bäirut" } #
 5206 = { "Giresun" "Giresun" } #

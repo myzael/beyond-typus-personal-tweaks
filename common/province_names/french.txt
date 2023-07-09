@@ -1574,7 +1574,6 @@
 5131 = "Kydonie"
 5135 = "Mersine"
 5152 = "Amasée"
-5155 = "Gordion"
 5156 = "Pégée"
 5157 = "Nicée"
 5164 = "Andrinople"

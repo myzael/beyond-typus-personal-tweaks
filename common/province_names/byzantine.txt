@@ -176,12 +176,9 @@
 #Anatolia
 6001 = { "Thebasion" "Thebasion" }
 6002 = { "Belekoma" "Belekoma" }
-6003 = { "Pegadia" "Pegadia" }
 6004 = { "Pergamon" "Pergamon" }
 6005 = { "Phocaea" "Phocaea" }
-6006 = { "Litri" "Litri" } #Apparent later Byzantine name of Erythrae, the main city where Cesme would develop
 6007 = { "Agios Theologos" "Agios Theologos" }
-6008 = { "Pyrgion" "Pyrgion" }
 6009 = { "Mylasa" "Mylasa" }
 6010 = { "Tabae" "Tabae" }
 6011 = { "Tiberiopolis" "Tiberiopolis" }
@@ -243,7 +240,6 @@
 
 #Bithynia
 316 = { "Optimaton" "Nikomedeia" } #Optimatoi specifically refers to the people. Optimaton would be the regional name.
-5168 = { "Agrilion" "Agrilion" }
 4312 = { "Klaudiopolis" "Klaudiopolis" } #Pre 1.24 was 5149.
 322 = { "Dorylaion" "Dorylaion" }
 5157 = { "Nikaia" "Nikaia" }
@@ -254,7 +250,6 @@
 5156 = { "Pegai" "Pegai" }
 2296 = { "Dardanellia" "Dardanellia" }
 5131 = { "Aivali" "Aivali" }
-5171 = { "Michailites" "Michailites" } #Miletoupolis is ancient. I'm using a more Byzantine name, the one which Mihalich actually derives from.
 
 #Asia
 2297 = { "Magnesia" "Magnesia" }
@@ -306,7 +301,6 @@
 #Phrygia
 1848 = { "Nikopolis" "Nikopolis" } #Akroinon is the old name of Afyon before it was named Nikopolis (City of Victory)
 4311 = { "Kotyaion" "Kotyaion" }  #Pre 1.24 was 5133
-5155 = { "Gordion" "Gordion" }
 
 #Lycaonia
 323 = { "Konion" "Konion" } #Wikipedia claims medieval Greek had turned city name into Kónio. The turkish name Konya makes a lot more sense then.
@@ -316,7 +310,6 @@
 
 #Galatia
 326 = { "Ankyra" "Ankyra" }
-5165 = { "Eccobriga" "Eccobriga" }
 5167 = { "Euchaneia" "Euchaneia" }
 5137 = { "Taouion" "Taouion" }
 329 = { "Sivasteia" "Sivasteia" }

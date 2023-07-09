@@ -288,9 +288,6 @@
 #tabarestan
 2214 = "Gulistan"
 
-#mysia
-5171 = "Bursa"
-
 #sind sagar
 2077 = "Îslamabad"
 

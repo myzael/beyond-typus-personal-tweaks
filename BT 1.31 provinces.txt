@@ -5152,7 +5152,6 @@
 5152 - Amasia.txt
 
 5154 - Sis.txt
-5155 - Polatli.txt
 5156 - Bigaii.txt
 5157 - Iznik.txt
 5158 - EastCappadocia.txt
@@ -5162,13 +5161,10 @@
 5162 - Lycia.txt
 5163 - Usak.txt
 5164 - Karabuk.txt
-5165 - Kirikkale.txt
 
 5167 - Corum.txt
-5168 - Adapazari.txt
 
 5170 - Latakia.txt
-5171 - Mihalic.txt
 5172 - Philadelphia.txt
 
 
@@ -6000,12 +5996,9 @@
 
 6001 - Sogut.txt
 6002 - Bilecik.txt
-6003 - Bigadic.txt
 6004 - Bergama.txt
 6005 - Phocaea.txt
-6006 - Cesme.txt
 6007 - Ayasoluk.txt
-6008 - Birgi.txt
 6009 - Milas.txt
 6010 - Tavas.txt
 6011 - Emet.txt

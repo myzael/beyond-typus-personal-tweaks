@@ -285,9 +285,6 @@
 3107 = "Yaburah"
 3108 = "Shetúbar"
 
-#Beyond Typus 4.0 Overhaul of the Levant
-5171 = "Mihalich"
-
 #Beyond Typus 4.0 Overhaul of Anatolia
 316 = "Kocaeli"
 317 = "Hüdavendigâr"
@@ -331,7 +328,6 @@
 5152 = "Amasya"
 4314 = "Koçhisar"
 5154 = "Kozan"
-5155 = "Polatli"
 5156 = "Biga"
 5157 = "Iznik"
 4309 = "Aydin"
@@ -339,10 +335,8 @@
 5162 = "Likya"
 5163 = "Ushak"
 5164 = "Karabuk"
-5165 = "Kirikkale"
 4313 = "Hangara"
 5167 = "Çorum"
-5168 = "Adapazari"
 4315 = "Gümüshane"
 5206 = "Giresun"
 
@@ -667,7 +661,6 @@
 5150 = "Ghawrim"
 5157 = "Iizniq"
 5162 = "Yakia"
-5165 = "Kirkaly"
 5167 = "Jurum"
 
 #sudan

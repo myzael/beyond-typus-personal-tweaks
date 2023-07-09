@@ -100,8 +100,6 @@
 5156 = { "Biga" "Biga" } #
 5157 = { "Izniq" "Izniq" } #
 5164 = { "Karabük" "Karabük" } #
-5168 = { "Adaparazi" "Adaparazi" } #
-5171 = { "Mihaliç" "Mihaliç" } #
 5172 = { "Alasehir" "Alasehir" } #
 7192 = { "Aqmescit" "Aqmescit" } #
 7194 = { "Kilburun" "Kilburun" } #
