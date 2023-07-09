@@ -797,7 +797,6 @@
 6020 = { "Mistia" "Mistia" } #Beysehir
 6021 = { "Germanicopoli" "Germanicopoli" } #Ermenek
 6025 = { "Tarso" "Tarso" } #Tarsus
-6026 = { "Bagnoregio" "Bagnoregio" } #Basilika Therma
 6027 = { "Malandara" "Malandara" } #Sarkisla
 6028 = { "Taranta" "Taranta" } #Darende
 6029 = { "Arabisso" "Arabisso" } #Yarpuz

@@ -1169,7 +1169,7 @@ cukurova_area = { #Cilicia
 }
 dulkadir_area = { #Cappadocia
 	color = { 184 54 72 }
-	332 2301 4307 4314 5146 5150 6026 6027 6028 6029 
+	332 2301 4307 4314 5146 5150 6027 6028 6029 
 }
 lydia_area = { # BT# Lydia
 	2297 5172 6041 

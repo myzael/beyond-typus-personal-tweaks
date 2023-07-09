@@ -674,7 +674,6 @@
 6019 = { "Chernogorodye" "Chernograd" }
 6020 = { "Knyazev" "Knyazev" } 
 6025 = { "Tars" "Tars" }
-6026 = { "Ifteriy" "Ifteriy" } # Ifteryum
 6027 = { "Kharsian" "Kharsian" }
 6031 = { "Kaledzhik" "Mal" }
 6039 = { "Inay" "Inay" }
