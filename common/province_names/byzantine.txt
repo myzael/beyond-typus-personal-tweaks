@@ -188,7 +188,6 @@
 6019 = { "Philomelion" "Philomelion" }
 6020 = { "Mistheia" "Mistheia" }
 6021 = { "Germanicopolis" "Germanicopolis" }
-6024 = { "Herakleia Kybistra" "Herakleia" }
 6025 = { "Tarsus" "Tarsus" }
 6026 = { "Pterion" "Pterion" }
 6027 = { "Tenos" "Tenos" }

@@ -1161,7 +1161,7 @@ kastamonu_area = { #Paphlagonia
 	325 328 2299 4313 5164 6033 
 }
 karaman_area = { #Lycaonia
-	323 324 6024 
+	323 324 
 }
 cukurova_area = { #Cilicia
 	color = { 50 177 200 }

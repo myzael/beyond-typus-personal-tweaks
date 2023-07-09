@@ -6018,7 +6018,7 @@
 6021 - Ermenek.txt
 
 
-6024 - Eregli.txt
+
 6025 - Tarsus.txt
 6026 - Ifteryum.txt
 6027 - Geduk.txt

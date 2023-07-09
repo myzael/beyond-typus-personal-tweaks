@@ -796,7 +796,6 @@
 6019 = { "Filomelio" "Filomelio" } #Aksehir
 6020 = { "Mistia" "Mistia" } #Beysehir
 6021 = { "Germanicopoli" "Germanicopoli" } #Ermenek
-6024 = { "Eraclea Cibistra" "Eraclea Cibistra" } #Eregli 
 6025 = { "Tarso" "Tarso" } #Tarsus
 6026 = { "Bagnoregio" "Bagnoregio" } #Basilika Therma
 6027 = { "Malandara" "Malandara" } #Sarkisla
