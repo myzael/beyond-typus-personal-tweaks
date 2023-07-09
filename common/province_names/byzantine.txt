@@ -192,7 +192,6 @@
 6027 = { "Tenos" "Tenos" }
 6028 = { "Taranda" "Taranda" }
 6029 = { "Ablasta" "Ablasta" }
-6031 = { "Malos" "Malos" } #Nearby
 6032 = { "Parthenios" "Parthenios" }
 6033 = { "Inepolis" "Inepolis" }
 6034 = { "Merzifounta" "Merzifounta" }

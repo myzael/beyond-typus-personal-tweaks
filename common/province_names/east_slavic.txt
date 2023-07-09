@@ -675,7 +675,6 @@
 6020 = { "Knyazev" "Knyazev" } 
 6025 = { "Tars" "Tars" }
 6027 = { "Kharsian" "Kharsian" }
-6031 = { "Kaledzhik" "Mal" }
 6039 = { "Inay" "Inay" }
 6041 = { "Belgorod" "Belgorod Anatoliyskiy" } # Akhisar - white city. Anatoliyskiy means "of Anatolia"
 

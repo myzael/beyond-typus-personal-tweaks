@@ -1155,7 +1155,7 @@ aydin_area = { #Ionia
 }
 ankara_area = { #Galatia
 	color = { 57 154 172 }
-	326 5137 5167 6031 
+	326 5137 5167 
 }
 kastamonu_area = { #Paphlagonia
 	325 328 2299 4313 5164 6033 
