@@ -6,11 +6,11 @@ controller = TNT
 add_core = TNT
 culture = venetian
 religion = catholic
-capital = "Rovereto"	#Appears this town was actually one of many, perhaps not even the largest, by the late Middle Ages, but going for it because by the end of the period, it was, and it is convenient.
+capital = "Rovereto"	#Appears this town was actually one of many, perhaps not even the largest, by the late Middle Ages, but going for it because by the end of the period, it was, and it is convenient. (Unknown person) 
 base_tax = 3
 base_production = 3
 base_manpower = 2
-trade_goods = silk			#a silk manufacture centre... in the Alps. Now I have seen everything
+trade_goods = Wine #a silk manufacture centre... in the Alps. Now I have seen everything (Unknown person) #not at game start and nothing super important about this province as far as I can tell. Changed off of silk and silk given to venice randomly. Changed to wine because it was important before the silk.
 is_city = yes
 hre = yes
 

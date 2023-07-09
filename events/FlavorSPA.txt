@@ -257,6 +257,12 @@ country_event = {
 				name = forced_conversion
 				duration = 3650
 			}
+		}							
+		223 = {						#Removes their silk provinces because historically the silk production was ruined by the castilians. Changed to naval supples to show trees as the locals ended up burning the mulburry trees for firewood. More of a joke at the expense of spain who were horrible to the locals. #Harbivore
+			change_trade_goods = naval_supplies
+		}
+		8086 = {
+			change_trade_goods = naval_supplies
 		}	
 		random_country = {
 			limit = {
@@ -2180,6 +2186,12 @@ country_event = {
 				culture = andalusi_culture
 			}
 			change_culture = andalucian
+		}							
+		223 = {						#Removes their silk provinces because historically the silk production was ruined by the castilians. Changed to naval supples to show trees as the locals ended up burning the mulburry trees for firewood. More of a joke at the expense of spain who were horrible to the locals. #Harbivore
+			change_trade_goods = naval_supplies
+		}
+		8086 = {
+			change_trade_goods = naval_supplies
 		}
 		#Repeat of effect from earlier persecutions:
 		random_country = {

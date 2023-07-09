@@ -10,11 +10,11 @@ add_core = MUR #BTB added: Castilian revolter tag.
 culture = andalucian
 religion = catholic 
 hre = no
-base_tax = 5 
-base_production = 5
-trade_goods = silk
-base_manpower = 3
-capital = "Murcia" 
+base_tax = 3
+base_production = 3
+trade_goods = cloth	#Didn't produce silk till later added through event #Harb
+base_manpower = 2
+capital = "Murcia"
 is_city = yes
 fort_15th = yes
 
