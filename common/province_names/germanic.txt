@@ -1539,6 +1539,7 @@
 5157 = { "Nikäa" "Nikäa" }
 5167 = { "Korum" "Korum" } #
 6033 = { "Ionopol" "Ionopol" }
+5171 = { "Milletopol" "Milletopol" }
 
 #Levant
 321 = { "Limassol" "Limassol" }
@@ -2454,6 +2455,7 @@
 332 = "Germanik"			#Or "Marasch"
 4307 = "Kolonien"
 2476 = "Anaheim"			#Or "Sankt Didakus" "Serrgau"
+5155 = "Gordion"
 2620 = "Tichuanen"
 877 = "Schucken"			#Or "Schuckitz"
 876 = "Phönix"			#Or "Sonnental"

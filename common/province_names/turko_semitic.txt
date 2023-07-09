@@ -286,6 +286,7 @@
 3108 = "Shetúbar"
 
 #Beyond Typus 4.0 Overhaul of Anatolia
+5171 = "Mihalich"
 316 = "Kocaeli"
 317 = "Hüdavendigâr"
 318 = "Izmir"
@@ -331,6 +332,7 @@
 5156 = "Biga"
 5157 = "Iznik"
 4309 = "Aydin"
+5155 = "Polatli"
 5161 = "Silifke"
 5162 = "Likya"
 5163 = "Ushak"

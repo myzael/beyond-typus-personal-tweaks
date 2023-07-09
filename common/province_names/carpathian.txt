@@ -519,6 +519,7 @@
 #Asia
 318 = "Szmirna"
 2297 = "Magnészia"
+5171 = "Milétopolisz"
 4309 = "Trallész"
 5134 = "Halikarnasszosz"
 

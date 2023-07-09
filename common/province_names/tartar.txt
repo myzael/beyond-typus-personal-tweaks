@@ -857,6 +857,7 @@
 5157 = { "Iznik" "Iznik" } #
 5170 = { "Äl-Ladiqiä" "Äl-Ladiqiä" } #
 5180 = { "Gazzä" "Gazzä" } #
+5171 = { "Mihaliç" "Mihaliç" } #
 5205 = { "Bäirut" "Bäirut" } #
 5206 = { "Giresun" "Giresun" } #
 5261 = { "Dimyat" "Medinat Dimyat" } #

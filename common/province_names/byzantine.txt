@@ -256,6 +256,7 @@
 318 = { "Smyrna" "Smyrna" }
 4309 = { "Tralleis" "Tralleis" } 
 5134 = { "Halikarnassos" "Halikarnassos" }
+5171 = { "Michailites" "Michailites" } #Miletoupolis is ancient. I'm using a more Byzantine name, the one which Mihalich actually derives from.
 319 = { "Mogolla" "Mogalla" } #Mylasa is technically further west. Physkos is the province port, however it together with Mogalla (Mughla) is painfully insignificant in Byzantine history.
 
 #Lycia-Pamphylia
@@ -306,6 +307,7 @@
 323 = { "Konion" "Konion" } #Wikipedia claims medieval Greek had turned city name into Kónio. The turkish name Konya makes a lot more sense then.
 4314 = { "Nyssa" "Nyssa" } #Discarding latin Cochisia. Technically Kochisar means (travelling) coach fortress, i.e fortress on the road basically, so I suppose I could transliterate that. Nyssa was decently important however. Pre 1.24 was 5153
 4307 = { "Koloneia" "Koloneia" }
+5155 = { "Gordion" "Gordion" }
 324 = { "Laranda" "Laranda" }
 
 #Galatia

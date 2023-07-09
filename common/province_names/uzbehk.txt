@@ -101,6 +101,7 @@
 5157 = { "Izniq" "Izniq" } #
 5164 = { "Karabük" "Karabük" } #
 5172 = { "Alasehir" "Alasehir" } #
+5171 = { "Mihaliç" "Mihaliç" } #
 7192 = { "Aqmescit" "Aqmescit" } #
 7194 = { "Kilburun" "Kilburun" } #
 7195 = { "Özü-Qale" "Özü-Qale" } #

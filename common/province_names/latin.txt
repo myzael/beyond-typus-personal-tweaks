@@ -772,6 +772,7 @@
 5150 = { "Mocisso" "Mocisso" } #Viransehir
 5152 = { "Amasea" "Amasea" } #Amasya
 5154 = { "Sisio" "Sisio" } #Kozan
+5155 = { "Gordio" "Gordio" } #Polatli
 5156 = { "Pegea" "Pegea" } #Biga
 5157 = { "Nicea" "Nicea" } #Iznik 
 5161 = { "Corico" "Corico" } #Kizkalesi
@@ -779,6 +780,7 @@
 5163 = { "Temenotire" "Temenotire" } #Usak
 5164 = { "Zafferanopoli" "Zafferanopoli" } #Safranbolu
 5167 = { "Eucaita" "Eucaita" } #Corum
+5171 = { "Miletopoli" "Miletopoli" } #Mihalich
 5172 = { "Filadelfia" "Filadelfia" } #Alasehir
 6001 = { "Tebasio" "Tebasio" } #Sögüt
 6002 = { "Armenocastro" "Armenocastro" } #Bilecik

@@ -1147,7 +1147,7 @@ hudavendigar_area = { #Bithynia
 }
 germiyan_area = { #Phrygia
 	color = { 234 145 65 }
-	322 1848 4308 4311 5163 6011 6015 6018 6019 
+	322 1848 4308 4311 5155 5163 6011 6015 6018 6019 
 }
 aydin_area = { #Ionia
 	color = { 239 70 86 }
@@ -1178,7 +1178,7 @@ pontus_area = { # BT# East Pontus
 	330 1846 3248 4315 5206 6040 
 }
 karasi_area = { # BT# Mysia
-	2296 5130 5131 5156 6004 
+	2296 5130 5131 5156 5171 6004 
 }
 pamphylia_area = { # BT# Lycia-Pamphylia
 	2298 5147 5162 6012 6013 6014 6020 

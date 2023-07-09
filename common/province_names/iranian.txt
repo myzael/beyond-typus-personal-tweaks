@@ -237,6 +237,7 @@
 5152 = "Amasya"
 4314 = "Koçhisar"
 5154 = "Kozan"
+5155 = "Polatli"
 5156 = "Biga"
 5157 = "Iznik"
 5158 = "Divrigi"

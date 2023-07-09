@@ -223,12 +223,14 @@
 5150 = { "Kirsehir" "Kirsehir" }
 5152 = { "Amasya" "Amasya" }
 5154 = { "Kozan" "Kozan" }
+5155 = { "Polatli" "Polatli" }
 5156 = { "Biga" "Biga" }
 5157 = { "Iznik" "Iznik" }
 5161 = { "Kizkalesi" "Kizkalesi" }
 5162 = { "Beskaza" "Beskaza" }
 5163 = { "Ushak" "Ushak" }
 5164 = { "Eflani" "Eflani" }
+5171 = { "Mihaliç" "Mihaliç" }
 5167 = { "Çorum" "Çorum" }
 5172 = { "Alashehir" "Alashehir" }
 5206 = { "Giresun" "Giresun" }
