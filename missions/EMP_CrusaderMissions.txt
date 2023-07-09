@@ -309,16 +309,15 @@ EMP_crusader_2 = {
 			}
 		}
 		trigger = {
-			calc_true_if = {
-				desc = crusader_egypt_tt
-				amount = 27
-				all_province = { # Brian added
-					OR = { 
+			custom_trigger_tooltip = {
+				tooltip = crusader_egypt_tt
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 27
+					OR = {
 						region = egypt_region
 						area = syrian_desert_area
 						area = cyrenaica_area
 					}
-					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 			owns_core_province = 358
@@ -367,6 +366,9 @@ EMP_crusader_2 = {
 		}
 		effect = {
 			country_event = { id = knights_missions.4 }
+		}
+		ai_weight = {
+			factor = 500	#Natural conquest
 		}
 	}	
 }
