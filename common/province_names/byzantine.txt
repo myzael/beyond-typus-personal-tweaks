@@ -181,7 +181,6 @@
 6007 = { "Agios Theologos" "Agios Theologos" }
 6009 = { "Mylasa" "Mylasa" }
 6010 = { "Tabae" "Tabae" }
-6011 = { "Tiberiopolis" "Tiberiopolis" }
 6012 = { "Kibrya" "Kibrya" }
 6013 = { "Antiphellos" "Antiphellos" }
 6014 = { "Saporda" "Saporda" }

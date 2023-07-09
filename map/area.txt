@@ -1147,7 +1147,7 @@ hudavendigar_area = { #Bithynia
 }
 germiyan_area = { #Phrygia
 	color = { 234 145 65 }
-	322 1848 4308 4311 5155 5163 6011 6015 6018 6019 
+	322 1848 4308 4311 5155 5163 6015 6018 6019 
 }
 aydin_area = { #Ionia
 	color = { 239 70 86 }

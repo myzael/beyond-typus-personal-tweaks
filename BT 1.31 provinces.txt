@@ -6005,7 +6005,7 @@
 6007 - Ayasoluk.txt
 6009 - Milas.txt
 6010 - Tavas.txt
-6011 - Emet.txt
+
 6012 - Golhisar.txt
 6013 - Andifli.txt
 6014 - Isparta.txt
