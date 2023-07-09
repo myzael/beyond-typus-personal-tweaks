@@ -252,7 +252,6 @@
 6027 = { "Geduk" "Geduk" }
 6028 = { "Darende" "Darende" }
 6029 = { "Elbistan" "Elbistan" }
-6032 = { "Bartin" "Bartin" }
 6033 = { "Inebolu" "Inebolu" }
 6034 = { "Merzifon" "Merzifon" }
 6035 = { "Bafra" "Bafra" }

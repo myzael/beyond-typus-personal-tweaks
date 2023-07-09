@@ -1143,7 +1143,7 @@ rum_area = { #West Pontus
 	329 2300 2304 5152 6034 6035 6036 6037 6038 6039 
 }
 hudavendigar_area = { #Bithynia
-	316 317 4312 5157 6001 6002 6016 6032 
+	316 317 4312 5157 6001 6002 6016 
 }
 germiyan_area = { #Phrygia
 	color = { 234 145 65 }

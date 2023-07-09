@@ -800,7 +800,6 @@
 6027 = { "Malandara" "Malandara" } #Sarkisla
 6028 = { "Taranta" "Taranta" } #Darende
 6029 = { "Arabisso" "Arabisso" } #Yarpuz
-6032 = { "Partenia" "Partenia" } #Filyos
 6033 = { "Ionopoli" "Ionopoli" } #Inebolu
 6034 = { "Mersifonte" "Mersifonte" } #Merzifon
 6035 = { "Gadilo" "Gadilo" } #Bafra

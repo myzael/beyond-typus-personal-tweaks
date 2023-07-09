@@ -6026,7 +6026,7 @@
 6029 - Elbistan.txt
 
 
-6032 - Bartin.txt
+
 6033 - Inebolu.txt
 6034 - Merzifon.txt
 6035 - Bafra.txt
