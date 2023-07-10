@@ -100,7 +100,6 @@
 6092 = { "Manbij" "Manbij" }
 6099 = { "Al-Busayrah" "Al-Busayrah" }
 6101 = { "Samusadah" "Samusadah" }
-6103 = { "Arqniyah" "Arqniyah" }
 6104 = { "Agil" "Agil" }
 6105 = { "Palu" "Palu" } #(JP) Base Kurdish names
 6106 = { "Huzat" "Huzat" }
