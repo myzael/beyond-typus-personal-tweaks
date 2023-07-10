@@ -1258,7 +1258,7 @@ sophene_area = { #Sophene
 	418 4310 5330 6104 6107
 }
 ararat_area = { #Ararat
-	3254 4302 6109 6110 6111
+	3254 4302 6109 6110
 }
 corduene_area = { #Corduene
 	4179 4295 5295 5331 6114 6117 6119 6121

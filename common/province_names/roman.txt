@@ -15,7 +15,6 @@
 6107 = { "Romanopolis" "Romanopolis" } #(Chrys) derived from Greek "Romanoupolis"
 6109 = { "Barzanissa" "Barzanissa" } #(Chrys) derived from Greek "Barzanissa"
 6110 = { "Manzicertum" "Manzicertum" }
-6111 = { "Colchium" "Colchium" } #(Chrys) derived from Greek "Colchion"
 6112 = { "Percri" "Percri" } #(Chrys) derived from Medieval Greek "Perkri"
 6113 = { "Aluaca" "Aluaca" } #(Chrys) derived from Greek "Alouaka"
 6114 = { "Haccarium" "Haccarium" } #(Chrys) Nothing Here at all, nullam rem natam

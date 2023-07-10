@@ -52,7 +52,6 @@
 6107 = { "Çewlîg" "Çewlîg" } #Bingöl
 6109 = { "Gimgim" "Gimgim" } #Varto
 6110 = { "Melezgir" "Melezgir" } #Manzikert
-6111 = { "Qerekilîs" "Qerekilîs" } #Karakilise (JP) Modern "Agri" 
 6112 = { "Bêgirî" "Bêgirî" } #Bergiri (JP) Modern "Muradiye"
 6113 = { "Elbak" "Elbak" } #Baskale
 6114 = { "Colemêrg" "Colemêrg" } #Hakkari

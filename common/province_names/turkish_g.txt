@@ -312,7 +312,6 @@
 6107 = { "Çapakçur" "Çapakçur" } #(JP) modern "Bingöl"
 6109 = { "Varto" "Varto" }
 6110 = { "Malâzgird" "Malâzgird" }
-6111 = { "Karakilise" "Karakilise" } #(JP) Modern "Agri" 
 6112 = { "Bergiri" "Bergiri" } #(JP) Modern "Muradiye"
 6113 = { "Baskale" "Baskale" }
 6114 = { "Hakkâri" "Hakkâri" }

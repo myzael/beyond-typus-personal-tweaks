@@ -105,7 +105,6 @@
 6107 = { "Binqul" "Binqul" }
 6109 = { "Wartu" "Wartu" }
 6110 = { "Mansikart" "Mansikart" }
-6111 = { "Al-Qarbir" "Al-Qarbir" } #(JP) Modern "Agri" 
 6112 = { "Birgiri" "Birgiri" } #(JP) Modern "Muradiye"
 6113 = { "Bashkalah" "Bashkalah" }
 6114 = { "Haqqari" "Haqqari" }
