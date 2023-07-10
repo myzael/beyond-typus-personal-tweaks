@@ -2,7 +2,7 @@
 
 graphical_culture = easterngfx
 
-color = { 119 13 147 }
+color = { 90 10 130 }			#Changed colour to be darker than lower hungary #Harbivore
 
 preferred_religion = catholic
 
