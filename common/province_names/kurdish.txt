@@ -55,7 +55,6 @@
 6112 = { "Bêgirî" "Bêgirî" } #Bergiri (JP) Modern "Muradiye"
 6113 = { "Elbak" "Elbak" } #Baskale
 6114 = { "Colemêrg" "Colemêrg" } #Hakkari
-6116 = { "Axtamar" "Axtamar" } #Aghtamar
 6117 = { "Tiyare" "Tiyare" } #Tyare (Chrys) Kurdish wiki claims Tiyare was a village in the Hakkari area that was evacuated to the Makhmour refugee camp, likely to be equivalent to Tyare
 6118 = { "Telefer" "Telefer" } #Tal Afar (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
 6119 = { "Dihok" "Dihok" } #Duhok

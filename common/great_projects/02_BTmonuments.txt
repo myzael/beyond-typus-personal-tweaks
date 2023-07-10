@@ -10137,7 +10137,7 @@ erbil_citadel = {		#Erbil Citadel
 
 holy_cross_cathedral = {	#Cathedral of the Holy Cross at Aghtamar Island
 	# province it starts in
-	start = 6116		#Aghtamar
+	start = 4296		#Bitlis
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 921.01.01	#built by the architect-monk Manuel during the years 915-921

@@ -1235,7 +1235,7 @@ basra_area = { #Lower Mesopotamia
 	408 2340 4288 6145
 }
 north_kurdistan_area = { #Vaspurakan
-	2306 2307 4296 5332 6112 6113 6116
+	2306 2307 4296 5332 6112 6113
 }
 al_jazira_area = { #Middle Tigris
 	color = { 92 200 92 }
