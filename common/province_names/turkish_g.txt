@@ -310,7 +310,6 @@
 6104 = { "Egil" "Egil" }
 6106 = { "Hozat" "Hozat" }
 6107 = { "Çapakçur" "Çapakçur" } #(JP) modern "Bingöl"
-6108 = { "Qulb" "Qulb" }
 6109 = { "Varto" "Varto" }
 6110 = { "Malâzgird" "Malâzgird" }
 6111 = { "Karakilise" "Karakilise" } #(JP) Modern "Agri" 

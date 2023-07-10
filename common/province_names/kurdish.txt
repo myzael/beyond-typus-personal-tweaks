@@ -50,7 +50,6 @@
 6104 = { "Egil" "Egil" } #Egil
 6106 = { "Xozat" "Xozat" } #Khozat
 6107 = { "Çewlîg" "Çewlîg" } #Bingöl
-6108 = { "Pasûr" "Pasûr" } #Qulb
 6109 = { "Gimgim" "Gimgim" } #Varto
 6110 = { "Melezgir" "Melezgir" } #Manzikert
 6111 = { "Qerekilîs" "Qerekilîs" } #Karakilise (JP) Modern "Agri" 

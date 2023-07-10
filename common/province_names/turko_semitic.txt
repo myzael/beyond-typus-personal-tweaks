@@ -103,7 +103,6 @@
 6104 = { "Agil" "Agil" }
 6106 = { "Huzat" "Huzat" }
 6107 = { "Binqul" "Binqul" }
-6108 = { "Qulb" "Qulb" }
 6109 = { "Wartu" "Wartu" }
 6110 = { "Mansikart" "Mansikart" }
 6111 = { "Al-Qarbir" "Al-Qarbir" } #(JP) Modern "Agri" 

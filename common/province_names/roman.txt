@@ -13,7 +13,6 @@
 6104 = { "Artagigarta" "Artagigarta" }
 6106 = { "Chozanum" "Chozanum" } #(Chrys) derived from Greek "Chozanon"
 6107 = { "Romanopolis" "Romanopolis" } #(Chrys) derived from Greek "Romanoupolis"
-6108 = { "Mambre" "Mambre" } #(Chrys) closest settlement I could find
 6109 = { "Barzanissa" "Barzanissa" } #(Chrys) derived from Greek "Barzanissa"
 6110 = { "Manzicertum" "Manzicertum" }
 6111 = { "Colchium" "Colchium" } #(Chrys) derived from Greek "Colchion"

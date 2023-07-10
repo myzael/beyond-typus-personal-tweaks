@@ -1255,7 +1255,7 @@ middle_euphrates_area = { #Middle Euphrates
 	406 2314 6089 6099 6135 6136
 }
 sophene_area = { #Sophene
-	418 4310 5330 6104 6107 6108
+	418 4310 5330 6104 6107
 }
 ararat_area = { #Ararat
 	3254 4302 6109 6110 6111
