@@ -9,9 +9,7 @@
 6091 = { "Barbalissus" "Barbalissus" } #(JP) "Maskanah" developed over "Balis" which was abandoned
 6092 = { "Hierapolis" "Hierapolis" }
 6099 = { "Circesium" "Circesium" } #(Chrys) "Busayrah"
-6100 = { "Constantina" "Constantina" }
 6101 = { "Samosata" "Samosata" }
-6102 = { "Chasavara" "Chasavara" } #(Chrys) from Medieval Greek "Χασαυαρa", of Arabic origin though
 6103 = { "Arghana" "Arghana" }
 6104 = { "Artagigarta" "Artagigarta" }
 6105 = { "Balisbiga" "Balisbiga" } #(Chrys) Ancient nearby city, later called "Baioulous" by the Byzantines

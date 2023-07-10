@@ -99,9 +99,7 @@
 6091 = { "Maskanah" "Maskanah" }
 6092 = { "Manbij" "Manbij" }
 6099 = { "Al-Busayrah" "Al-Busayrah" }
-6100 = { "Qusantinah" "Qusantinah" } #(JP) "Viransehir", Roman "Constantina"
 6101 = { "Samusadah" "Samusadah" }
-6102 = { "As-Suwayda" "As-Suwayda" }
 6103 = { "Arqniyah" "Arqniyah" }
 6104 = { "Agil" "Agil" }
 6105 = { "Palu" "Palu" } #(JP) Base Kurdish names
