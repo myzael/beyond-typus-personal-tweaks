@@ -108,7 +108,6 @@
 6112 = { "Birgiri" "Birgiri" } #(JP) Modern "Muradiye"
 6113 = { "Bashkalah" "Bashkalah" }
 6114 = { "Haqqari" "Haqqari" }
-6117 = { "Tiari" "Tiari" }
 6118 = { "Talafar" "Talafar" }
 6119 = { "Dahuk" "Dahuk" }
 6120 = { "Ain Sifni" "Ain Sifni" }
