@@ -315,7 +315,6 @@
 6112 = { "Bergiri" "Bergiri" } #(JP) Modern "Muradiye"
 6113 = { "Baskale" "Baskale" }
 6114 = { "Hakkâri" "Hakkâri" }
-6115 = { "Ahlat" "Ahlat" }
 6116 = { "Akdamar" "Akdamar" }
 6117 = { "Çukurca" "Çukurca" }
 6118 = { "Telafer" "Telafer" }

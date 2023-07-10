@@ -18,7 +18,6 @@
 6112 = { "Percri" "Percri" } #(Chrys) derived from Medieval Greek "Perkri"
 6113 = { "Aluaca" "Aluaca" } #(Chrys) derived from Greek "Alouaka"
 6114 = { "Haccarium" "Haccarium" } #(Chrys) Nothing Here at all, nullam rem natam
-6115 = { "Calata" "Calata" }
 6116 = { "Vastauna" "Vastauna" } #(Chrys) closest Roman settlement to the island
 6117 = { "Autiara" "Autiara" } #(Chrys) considering the Tyare are descended from the ancient "Autiyara"
 6118 = { "Ad Pontem" "Ad Pontem" }
