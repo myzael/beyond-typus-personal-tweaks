@@ -48,7 +48,6 @@
 6099 = { "Busêre" "Busêre" } #Busayra (Chrys) no Kurdish wiki, one attestation found after searching "Busêre" and "Sûrî" (hypothesized anme for Busayra and actual name for Syria)
 6101 = { "Samîsad" "Samîsad" } #Samsat
 6104 = { "Egil" "Egil" } #Egil
-6105 = { "Palo" "Palo" } #Palu
 6106 = { "Xozat" "Xozat" } #Khozat
 6107 = { "Çewlîg" "Çewlîg" } #Bingöl
 6108 = { "Pasûr" "Pasûr" } #Qulb

@@ -308,7 +308,6 @@
 6099 = { "Busayra" "Busayra" } #(JP) Base names
 6101 = { "Samsat" "Samsat" }
 6104 = { "Egil" "Egil" }
-6105 = { "Palu" "Palu" }
 6106 = { "Hozat" "Hozat" }
 6107 = { "Çapakçur" "Çapakçur" } #(JP) modern "Bingöl"
 6108 = { "Qulb" "Qulb" }

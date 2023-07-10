@@ -11,7 +11,6 @@
 6099 = { "Circesium" "Circesium" } #(Chrys) "Busayrah"
 6101 = { "Samosata" "Samosata" }
 6104 = { "Artagigarta" "Artagigarta" }
-6105 = { "Balisbiga" "Balisbiga" } #(Chrys) Ancient nearby city, later called "Baioulous" by the Byzantines
 6106 = { "Chozanum" "Chozanum" } #(Chrys) derived from Greek "Chozanon"
 6107 = { "Romanopolis" "Romanopolis" } #(Chrys) derived from Greek "Romanoupolis"
 6108 = { "Mambre" "Mambre" } #(Chrys) closest settlement I could find
