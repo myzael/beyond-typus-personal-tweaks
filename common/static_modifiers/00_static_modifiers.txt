@@ -125,7 +125,7 @@ in_capital_state = {
 	regiment_recruit_speed = -0.5
 	ship_recruit_speed = -0.5
 	local_prosperity_growth = 1
-	development_efficiency = -0.1
+	development_cost_modifier = -0.1
 }
 
 coastal = {
@@ -2261,7 +2261,7 @@ centralize_state = {
 	local_missionary_strength = 0.01 #BT added because centralization makes sense.
 	local_autonomy = -0.025 #BT added because centralization makes sense.
 	
-	development_efficiency = -0.025 #BT added because we want to incentivise tall play.
+	development_cost_modifier = -0.025 #BT added because we want to incentivise tall play.
 	local_prosperity_growth = 0.25
 	local_state_maintenance_modifier = -0.2
 	local_centralize_state_cost = 0.2 #BT Added for balance so that the button isn't clicked 911 times.
