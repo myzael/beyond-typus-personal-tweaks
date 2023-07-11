@@ -118,6 +118,14 @@ in_capital_state = {
 	local_institution_spread = 0.05
 	local_state_maintenance_modifier = -0.5
 	local_governing_cost = -1.0
+	
+	#BT Centralize State rebalance: Capital states cannot be centralized, so capital states get buffs equal to about 4-5 levels worth of centralize state clicks.
+	local_build_cost = -0.25
+	local_build_time = -0.25
+	regiment_recruit_speed = -0.5
+	ship_recruit_speed = -0.5
+	local_prosperity_growth = 1
+	development_efficiency = -0.1
 }
 
 coastal = {
@@ -2202,33 +2210,61 @@ at_peace_revolutionary = { # Applied if at peace while reactionaries are borderi
 	yearly_revolutionary_zeal = -4
 }
 
-expanded_infrastructure = { #TODO: Overhaul
-	allowed_num_of_buildings = 1
-	allowed_num_of_manufactories = 1
-	regiment_recruit_speed = -0.15
-	ship_recruit_speed = -0.15
-	local_defensiveness = 0.05
-	garrison_growth = 0.05
-	local_development_cost = -0.15
-	local_production_efficiency = 0.05
-	local_tax_modifier = 0.1
-	local_manpower_modifier = 0.05
-	local_sailors_modifier = 0.05
-	local_ship_repair = 0.05
-	local_autonomy = -0.005
-	local_build_cost = -0.05
-	local_build_time = -0.05
-	province_trade_power_modifier = 0.05
-	trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 15
-	local_governing_cost = 0.1
-	local_great_project_upgrade_cost = -0.05
+#BT16 overhauled to better fit with what I think the button is meant to do.
+#Basically I believe this button is the tall version of coring new provinces. A tall player will be likely to have developed their provinces.
+#Therefore, the logic of this button is to amplify those clicks that a tall player has made. Therefore, most of the bonuses this button gave have been cut,
+#and the ones left have instead been buffed. Some new modifiers have also been added as they just make sense.
+#
+#Some other mechanics of this button that needs explaining, such that this will not be modified in a vacuum:
+#The button can only be clicked once per 15 dev in the province, so this button is unavailable until the province reaches 15 dev, and can be clicked again at 30 dev.
+#Clicking the button costs 50 admin points
+expanded_infrastructure = {
+	allowed_num_of_buildings = 0.5 #BT changed from 1
+	allowed_num_of_manufactories = 0.5 #BT changed from 1
+	#regiment_recruit_speed = -0.10 #BT Cut
+	#ship_recruit_speed = -0.10 #BT Cut
+	#local_defensiveness = 0.05 #BT Cut
+	#garrison_growth = 0.05 #BT Cut
+	#local_development_cost = -0.15 #BT Cut
+	local_production_efficiency = 0.25 #BT changed from 0.05
+	local_tax_modifier = 0.25 #BT changed from 0.1
+	local_manpower_modifier = 0.25 #BT changed from 0.05
+	local_sailors_modifier = 0.25 #BT changed from 0.05
+	province_trade_power_modifier = 0.25 #BT changed from 0.05
+	local_garrison_size = 0.1 #BT New, intermingles with base manpower's garrison growth.
+	#trade_goods_size_modifier = 0.05 #BT Cut
+	#local_ship_repair = 0.05 #BT Cut
+	#local_autonomy = -0.005 #BT Cut
+	#local_build_cost = -0.1 #BT Cut
+	#local_build_time = -0.1 #BT Cut
+	local_governing_cost_increase = 10 #BT changed from 15. Makes sense given that +15 is a steep cost for more provinces.
+	#local_governing_cost = 0.1 #BT Cut due to governing capacity rebalance
+	local_great_project_upgrade_cost = -0.1 #BT changed from 0.05. Makes sense that monuments become cheaper to upgrade. A nice little bonus.
 }
 
+#BT16 overhauled to fit better what I think this button is meant to do.
+#Essentially, we want this button to solely, or almost completely only, benefit tall players. It is meant to make more areas work like your capital state.
+#The costs of the button means that it will be clicked as an alternative for tall players instead of expand administration that is clicked by wide players to gain government capacity.
+#Tall players have probably way more governing capacity than they need, but what they do need is more abilities to develop their nation.
+#I have shuffled some modifiers from expand infrastructure over to centralize state, as I feel they make more sense here than above, plus a couple of new ones.
+#Some other mechanics of this button:
+#This button can be clicked any number of times and costs 50 reform progress and 50 admin points to click.
+#There is a government reform that refunds half this cost upon clicking (I.e 25 reform progress and 25 admin points).
+#We have added a +20% cost to this modifier, meaning each additional click costs 10 more reform progress and admin points.
 centralize_state = {
-	statewide_governing_cost = -0.2
+	#statewide_governing_cost = -0.2 #BT Cut for balance
+	local_build_cost = -0.1 #BT added, moved from expanded_infrastructure.
+	local_build_time = -0.1 #BT added, moved from expanded_infrastructure.
+	regiment_recruit_speed = -0.1 #BT added, moved from expanded_infrastructure.
+	ship_recruit_speed = -0.1 #BT added, moved from expanded_infrastructure.
+	local_culture_conversion_time = -0.1 #BT added because centralization makes sense.
+	local_missionary_strength = 0.01 #BT added because centralization makes sense.
+	local_autonomy = -0.025 #BT added because centralization makes sense.
+	
+	development_efficiency = -0.025 #BT added because we want to incentivise tall play.
 	local_prosperity_growth = 0.25
 	local_state_maintenance_modifier = -0.2
+	local_centralize_state_cost = 0.2 #BT Added for balance so that the button isn't clicked 911 times.
 	picture = "centralize_state"
 }
 
