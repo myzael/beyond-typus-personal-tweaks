@@ -165,7 +165,7 @@ has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 	calc_true_if = {
 		desc = $tooltip$
 		$provinces$ = {
-			type = all
+			#type = all
 			$owner_type$ = ROOT #No check for unused_area because they would count towards this.
 		}
 		amount = $value$
