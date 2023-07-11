@@ -1414,3 +1414,18 @@ emp_brapru_rhineland_conquest_provinces = {
 	77 8434 8435 80 1760 3198 8414 8415 8416 8417 81 1762 3209 4774 8425 8426 8427 8429 1761 4767 8431 8432 8433 78 83 1876 3207 8428 8430
 }
 
+#Aceh missions ATJ/PSA
+#Aceh area + Langkat
+atj_conquer_aceh_provinces = {
+	617 2673 2674 2685 4811 8688 4809
+}
+#batak+central_sumatra+minangkabau - IDG tag to match vanilla mission
+atj_sumatra_campaign_provinces = {
+	618 4808 4809 4810 8689 619 621 2680 2681 2682 2683 2684 4817 4818 8606 
+	620 2675 8602 	
+}
+#4 areas + 2 provinces to match vanilla borders
+atj_peninsula_campaign_provinces = {
+	597 659 2686 4815 8559 595 596 2392 8668 8669 8670 2394 4812 4813 8667 8672 598 599 2393 4814 8674 8675 
+	594 8673
+}
