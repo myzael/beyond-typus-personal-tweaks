@@ -99,9 +99,9 @@ country_event = {					#Changing Bolonga trade good to Silk
 				duration = -1
 			}
 		}
-		if = {						#Added for BOL tag because they can't get the other one later. Just incase bol gets big early
+		if = {						#Added for BLG tag because they can't get the other one later. Just incase bol gets big early
 			limit = {
-				TAG = BOL
+				TAG = BLG
 				total_development = 100
 			}
 			random_owned_province = {
@@ -121,7 +121,7 @@ country_event = {					#Changing Bolonga trade good to Silk
 		}
 		if = {
 			limit = {
-				TAG = BOL
+				TAG = BLG
 				total_development = 250
 			}
 			random_owned_province = {
@@ -141,7 +141,7 @@ country_event = {					#Changing Bolonga trade good to Silk
 		}
 		if = {
 			limit = {
-				TAG = BOL
+				TAG = BLG
 				total_development = 500
 			}
 			random_owned_province = {
