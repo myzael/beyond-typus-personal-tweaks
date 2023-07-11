@@ -145,9 +145,9 @@ has_fulfiled_province_target_requirement_for_mission_trigger = {
 #------------#
 #Usage:
 #has_fulfiled_num_of_province_requirement_for_mission_trigger = {
-#	tooltip=country_holds_or_non_sovereign_subject_holds_highlighted
+#	tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 #	provinces=byz_mainland_greece_provinces
-#	owner_type=num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with
+#	owner_type=country_or_non_sovereign_subject_holds
 #	value=15
 #}
 #------------#
@@ -165,7 +165,7 @@ has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 	calc_true_if = {
 		desc = $tooltip$
 		$provinces$ = {
-			#type = all
+			type = all
 			$owner_type$ = ROOT #No check for unused_area because they would count towards this.
 		}
 		amount = $value$
