@@ -1,5 +1,5 @@
 guiTypes = {
-
+	
 	#Janissaries
 	windowType = {
 		name = "janissaries_state_view"
@@ -2964,7 +2964,7 @@ guiTypes = {
 					maxHeight = 32
 					format = left
 				}
-                
+
 				guiButtonType =
 				{
 					name ="expand_infrastructure_button"
@@ -3031,6 +3031,26 @@ guiTypes = {
 					format = right
 				}
 				
+				iconType =
+				{
+					name = "province_governing_cost_icon"
+					spriteType = "GFX_province_governing_cost"
+					position = { x= 224 y = 147  }
+					Orientation = "UPPER_LEFT"
+				}
+				
+				instantTextBoxType = {
+					name = "capacity_value"
+					position = { x = 253 y = 152 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "200"
+					maxWidth = 50
+					maxHeight = 20
+					format = right
+				}
+
 				iconType =
 				{
 					name = "center_of_revolution"
@@ -3120,29 +3140,6 @@ guiTypes = {
 					format = left
 				}
 	
-				
-				
-				iconType =
-				{
-					name = "province_governing_cost_icon"
-					spriteType = "GFX_province_governing_cost"
-					position = { x= 224 y = 147  }
-					Orientation = "UPPER_LEFT"
-				}
-				
-				instantTextBoxType = {
-					name = "capacity_value"
-					position = { x = 253 y = 152 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "200"
-					maxWidth = 50
-					maxHeight = 20
-					format = right
-				}
-
-
 				iconType =
 				{
 					name ="build_allowed_icon"
@@ -6876,7 +6873,7 @@ guiTypes = {
 				spriteType = "GFX_edicts_bg_overlay"
 				position = { x = 484 y = -20 }
 			}
-
+			
 			instantTextBoxType = {
 				name = "edicts_list_title"
 				position = { x = 520 y = 14 }
