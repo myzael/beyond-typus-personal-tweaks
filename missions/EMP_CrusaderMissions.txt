@@ -309,16 +309,21 @@ EMP_crusader_2 = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = crusader_egypt_tt
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 27
-					OR = {
-						region = egypt_region
-						area = syrian_desert_area
-						area = cyrenaica_area
-					}
+			calc_true_if = {
+				desc = crusader_egypt_tt
+				egypt_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
+				syrian_desert_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				cyrenaica_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				amount = 27
 			}
 			owns_core_province = 358
 		}
@@ -474,30 +479,46 @@ EMP_crusader_3 = {
 			OR = { #I'm pretty sure I copied this over correctly, but using all_province is just generally bad/laggy code. //Dub
 				AND = { # Brian; changed order
 					NOT = { exists = BYZ }
-					custom_trigger_tooltip = {
-						tooltip = crusader_greece_tt
-						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							value = 6
-							OR = {
-								area = morea_area
-								area = western_aegean_area
-								area = aegean_archipelago_area
-								area = eastern_mediterrenean_islands_area
-							}
+					calc_true_if = {
+						desc = crusader_greece_tt
+						morea_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
 						}
+						western_aegean_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						aegean_archipelago_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						eastern_mediterrenean_islands_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ROOT
+						}
+						amount = 6
 					}
 				}
-				custom_trigger_tooltip = {
-					tooltip = crusader_greece_tt
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 12
-						OR = {
-							area = morea_area
-							area = western_aegean_area
-							area = aegean_archipelago_area
-							area = eastern_mediterrenean_islands_area
-						}
+				calc_true_if = {
+					desc = crusader_greece_tt
+					morea_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
 					}
+					western_aegean_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					aegean_archipelago_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					eastern_mediterrenean_islands_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					amount = 12
 				}
 			}
 		}
@@ -951,13 +972,14 @@ EMP_crusader_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cruader_piracy_tt
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 15
-					region = maghreb_region
+			calc_true_if = {
+				desc = cruader_piracy_tt
+				maghreb_region = {
+					type = all
 					has_port = yes
+					country_or_non_sovereign_subject_holds = ROOT
 				}
+				amount = 15
 			}
 		}
 		effect = {
