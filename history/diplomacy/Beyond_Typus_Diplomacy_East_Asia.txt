@@ -278,13 +278,14 @@ dependency = {
 	end_date = 1558.1.1
 }
 
-dependency = {
-	subject_type = tributary_state
-	first = MNG
-	second = MYA
-	start_date = 1444.1.1
-	end_date = 1521.1.1
-}
+#BT Commenting out because doesn't exist at game start.
+# dependency = {
+	# subject_type = tributary_state
+	# first = MNG
+	# second = MYA
+	# start_date = 1444.1.1
+	# end_date = 1521.1.1
+# }
 
 dependency = {
 	subject_type = tributary_state

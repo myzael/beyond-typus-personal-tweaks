@@ -1040,13 +1040,14 @@ dependency = {
 	end_date = 1489.1.1
 }
 
-dependency = {
-	subject_type = tributary_state
-	first = GOL
-	second = YLT
-	start_date = 1444.1.1
-	end_date = 1483.1.1
-}
+#BT Commenting out because doesn't exist at game start any more and it spams error log.
+# dependency = {
+	# subject_type = tributary_state
+	# first = GOL
+	# second = YLT
+	# start_date = 1444.1.1
+	# end_date = 1483.1.1
+# }
 #Cheap wiki quote to remind me to look into something -
 #'During the Great Feudal War in the Grand Duchy of Moscow, Tver once again rose to prominence and concluded defensive alliances with Lithuania, Novgorod, Byzantium, and the Golden Horde.
 
