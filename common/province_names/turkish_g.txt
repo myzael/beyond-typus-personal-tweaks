@@ -306,6 +306,7 @@
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
 6092 = { "Menbic" "Menbic" }
 6099 = { "Busayra" "Busayra" } #(JP) Base names
+6100 = { "Viransehir" "Viransehir" }
 6101 = { "Samsat" "Samsat" }
 6104 = { "Egil" "Egil" }
 6106 = { "Hozat" "Hozat" }

@@ -99,6 +99,7 @@
 6091 = { "Maskanah" "Maskanah" }
 6092 = { "Manbij" "Manbij" }
 6099 = { "Al-Busayrah" "Al-Busayrah" }
+6100 = { "Qusantinah" "Qusantinah" } #(JP) "Viransehir", Roman "Constantina"
 6101 = { "Samusadah" "Samusadah" }
 6104 = { "Agil" "Agil" }
 6106 = { "Huzat" "Huzat" }
