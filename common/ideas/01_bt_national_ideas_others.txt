@@ -1034,44 +1034,45 @@ musi_ideas = {
 	}
 }
 
-BEI_ideas = {
-	start = {
-		naval_forcelimit_modifier = 0.15
-		naval_maintenance_modifier = -0.10
-	}
+#BT Cut because vanilla provided new ones. If CR disagrees, we'll reintroduce this as new_BEI_ideas. //Dub
+# BEI_ideas = {
+	# start = {
+		# naval_forcelimit_modifier = 0.15
+		# naval_maintenance_modifier = -0.10
+	# }
 
-	bonus = {
-		trade_range_modifier = 0.15
-	}
+	# bonus = {
+		# trade_range_modifier = 0.15
+	# }
 
-	trigger = {
-		tag = BEI
-	}
-	free = yes
+	# trigger = {
+		# tag = BEI
+	# }
+	# free = yes
 
-	bei_tribal_sailors = {
-		sailors_recovery_speed = 0.10
-		sailor_maintenance_modifer = -0.1
-	}
-	bei_thalassocratic_realm = {
-		trade_efficiency = 0.2
-	}
-	bei_naval_tolls = {
-		global_tax_modifier = 0.10
-	}
-	bei_council_of_princes = {
-		legitimacy = 1
-	}
-	bei_scattering_of_merchants = {
-		global_trade_power = 0.1
-	}
-	bei_multiculturalism = {
-		num_accepted_cultures = 1
-	}
-	bei_white_rajahs = {
-		global_unrest = -2
-	}
-}
+	# bei_tribal_sailors = {
+		# sailors_recovery_speed = 0.10
+		# sailor_maintenance_modifer = -0.1
+	# }
+	# bei_thalassocratic_realm = {
+		# trade_efficiency = 0.2
+	# }
+	# bei_naval_tolls = {
+		# global_tax_modifier = 0.10
+	# }
+	# bei_council_of_princes = {
+		# legitimacy = 1
+	# }
+	# bei_scattering_of_merchants = {
+		# global_trade_power = 0.1
+	# }
+	# bei_multiculturalism = {
+		# num_accepted_cultures = 1
+	# }
+	# bei_white_rajahs = {
+		# global_unrest = -2
+	# }
+# }
 
 SIA_ideas = {
 	start = {
