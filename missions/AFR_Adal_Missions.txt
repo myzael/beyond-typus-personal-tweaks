@@ -175,7 +175,12 @@ adal_conquest_missions_slot = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_temporary_colonist = {
+			#add_temporary_colonist = {
+			#	duration = 18250
+			#}
+			#BT added to replace the modifier that expires on idea group pick up (to also help with higher prov density in Africa especially)
+			add_country_modifier = {
+				name = bt_temporary_colonist_afr
 				duration = 18250
 			}
 		}

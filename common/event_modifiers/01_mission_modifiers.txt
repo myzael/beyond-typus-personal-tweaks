@@ -74,6 +74,20 @@ imperial_ambition = {
 	years_of_nationalism = -5
 }
 
+# Temporary Colonizer Rewards:
+# BT Added to replace "temporary_colonist" modifier and "add_temporary_colonist" scripted effect, as those are removed upon picking up ideas that give a colonist. Understandable stacking preventions but with extra density for both new world colonizers and native africans that need this mission? Eh. (Mutapa in particular)
+# For Europeans (only given to SWE and DAN), who get another temporary one, no need to buff this - just no expiration on idea pickups.
+bt_temporary_colonist_eu = {	
+	colonists = 1
+	global_colonial_growth = 15
+}
+# For African natives: this mostly allows them to colonize >2x normal amount of provinces - considering the massive increase in density of Cape and Nile (where 3/4 mission trees that give this (or lea, are located, this is acceptable).
+bt_temporary_colonist_afr = {	
+	colonists = 2
+	global_colonial_growth = 15
+	colonist_placement_chance = 15 #~+45 extra settlers per year but requires paying for them
+}
+
 #Austrian Missions:
 
 austria_reunited = {
