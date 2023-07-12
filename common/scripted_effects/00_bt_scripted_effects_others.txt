@@ -123,19 +123,21 @@ choc_FrederickIII_dies_first = {				#Ruler of HAB and STY
 		}
 		if = {
 			limit = {
-				OR = {
-					has_heir = no
-					has_heir_flag = AlbrechtBrother
-				}
+				VOR = { has_country_flag = choc_albrecht_friedrich_brothers }
 				VOR = { ai = yes }
 			}
 			VOR = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = { name = albrechtVI } }
 			STY = { clr_country_flag = choc_albrecht_friedrich_brothers inherit = VOR }
 			set_ruler = albrechtVI
+			HAB = { kill_ruler = yes }
+			set_country_flag = albrechtVI_is_archduke
 		}
 		else = {
-			HAB = { clr_country_flag = choc_albrecht_friedrich_brothers }
-			STY = { 
+			HAB = {
+				clr_country_flag = choc_albrecht_friedrich_brothers 
+				remove_country_modifier = bt_chocolcate_habsburg_fix_sty
+			}
+			STY = {
 				clr_country_flag = choc_albrecht_friedrich_brothers
 				remove_country_modifier = bt_chocolcate_habsburg_fix_sty
 			}
@@ -207,7 +209,19 @@ choc_AlbrechtVI_dies_first = {				#Ruler of Further Austria
 			remove_country_modifier = bt_chocolcate_habsburg_fix
 		}
 	}
+    if = {
+		limit = {
+			OR = {
+				tag = STY
+				tag = HAB
+			}
+			has_country_flag = albrechtVI_is_archduke 
+		}
+		remove_country_modifier = bt_chocolcate_habsburg_fix
+	}
 }
+
+
 
 # CHO_AlbrechtVI_heir_dies = { #Kill duplicate Albrecht if heir dies
 	# if = {

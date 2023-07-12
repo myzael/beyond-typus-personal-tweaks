@@ -849,7 +849,7 @@ country_event = { #Event for Styria to get Ladislaus as an heir after he leaves 
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
     }
 	
 	option = {
@@ -865,6 +865,43 @@ country_event = { #Event for Styria to get Ladislaus as an heir after he leaves 
 			claim = 60
 		}
 		set_country_flag = hab_ladislaus_postumus_heir
+		remove_country_modifier = bt_chocolcate_habsburg_fix_sty
+		add_country_modifier = {
+			name = bt_chocolcate_habsburg_fix 
+			duration = -1
+			hidden = yes
+		}
 	}
+}
+
+country_event = { #Event for removing modifiers if something goes wrong
+	id = Chocolate_hab_hun.226
+	desc = Chocolate_hab_hun.226.desc
+	title = Chocolate_hab_hun.226.t
+	picture = CONQUEST_eventPicture
 	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			TAG = STY
+			TAG = HAB
+			TAG = VOR
+		}
+		is_year = 1480
+		OR = {
+			has_country_modifier = bt_chocolcate_habsburg_fix
+			has_country_modifier = bt_chocolcate_habsburg_fix_sty
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 0
+    }
+	
+	option = {
+		name = Chocolate_hab_hun.226.opt
+		remove_country_modifier = bt_chocolcate_habsburg_fix_sty
+		remove_country_modifier = bt_chocolcate_habsburg_fix
+	}
 }
