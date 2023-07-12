@@ -95,6 +95,10 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 10
 		}
+		create_union = HAB				#BT Edited by Harbivore to work with moddified chocolate
+		hidden_effect = {
+			STY = { country_event = { id = Chocolate_hab_hun.2 days = 1 } }
+		}
 	}
 	option = {
 		name = flavor_hun.1.b
@@ -135,6 +139,10 @@ country_event = {
 			POL = { 
 				remove_historical_friend = HUN
 			}
+		}
+		create_union = HAB				#BT Edited by Harbivore to work with moddified chocolate
+		hidden_effect = {
+			STY = { country_event = { id = Chocolate_hab_hun.2 days = 1 } }
 		}
 	}
 	option = {
@@ -211,8 +219,6 @@ country_event = {
 		has_regency = no
 		is_lesser_in_union = no
 		HAB = {
-			is_lesser_in_union = no
-			is_subject = no
 			government = monarchy
 			has_regency = no
 		}
@@ -231,14 +237,23 @@ country_event = {
 	}
 
 	option = {
-		ai_chance = { factor = 90 } #modified from 75
+		name = flavor_hun.2.a					
+		ai_chance = {  #Changed to increase the chance if there is a good relationship between Austria and hungary so it isn't random
+			factor = 75
+			modifier = {
+				factor = 3
+				OR = {
+					is_rival = STY
+					is_rival = HAB #Just in case
+				}
+			}
+		}
 		trigger = {
 			OR = {
 				has_heir = no
 				has_heir = "Ladislaus Postumus"
 			}
 		}
-		name = flavor_hun.2.a
 		remove_historical_friend = HAB
 		HAB = { remove_historical_friend = HUN }
 		hidden_effect = { clr_country_flag = hun_ladislaus_postumus_heir }
@@ -265,7 +280,7 @@ country_event = {
 			DIP = 2
 			MIL = 2
 		}
-		HAB = {
+		STY = {
 			tooltip = {
 				add_casus_belli = {
 					target = HUN
@@ -278,9 +293,43 @@ country_event = {
 			}
 		}
 	}
+	
 	option = {
 		name = flavor_hun.2.b
-		ai_chance = { factor = 25 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.5
+				trust = { who = STY value = 60 }
+			}
+			modifier = {
+				factor = 1.5
+				trust = { who = STY value = 70 }
+			}
+			modifier = {
+				factor = 1.5
+				trust = { who = STY value = 80 }
+			}
+			modifier = {
+				factor = 1.5
+				trust = { who = STY value = 90 }
+			}
+			modifier = {
+				factor = 2
+				trust = { who = STY value = 90 }
+			}
+			modifier = {
+				factor = 10
+				trust = { who = STY value = 100 }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					alliance_with = STY
+					alliance_with = HAB #Just in case
+				}
+			}
+		}
 		add_stability_or_adm_power = yes
 		HUN = {
 			if = {
@@ -288,14 +337,15 @@ country_event = {
 				inherit = CRO
 			}
 		}
-		HAB = {
+		STY = {							#BT Edited by Harbivore to work with moddified chocolate
 			create_union = HUN
 			hidden_effect = {
 				country_event = { id = flavor_hun.3 days = 1 }
 			}
 		}
 	}
-	option = {
+	
+	option = {							#Changed chances from if leader good to is leader bad so ai will only allow pu if bad heir
 		name = flavor_hun.2.c
 		trigger = {
 			has_heir = yes
@@ -303,12 +353,42 @@ country_event = {
 			NOT = { dynasty = HAB }
 		}
 		ai_chance = {
-			factor = 25
+			factor = 100
 			modifier = {
-				factor = 10
-				heir_adm = 5
-				heir_mil = 5
-				heir_dip = 5
+				factor = 0.5
+				NOT = {
+				heir_adm = 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+				heir_dip = 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+				heir_adm = 2
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+				heir_adm = 1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+				heir_dip = 1
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+				heir_adm = 1
+				}
 			}
 		}
 		remove_historical_friend = HAB
@@ -356,14 +436,14 @@ country_event = {
 	picture = DEATH_OF_HEIR_eventPicture
 
 	mean_time_to_happen = {
-		years = 7 #so it should happen about 1/3 of games
+		years = 10 #Should happen most games
 	}
 
 	fire_only_once = yes
 
 	trigger = {
 		tag = HUN
-		is_year = 1453
+		is_year = 1448
 		NOT = { is_year = 1460 }
 		OR = {
 			has_heir = "Ladislaus Postumus"
@@ -384,8 +464,17 @@ country_event = {
 	}
 
 	option = { #Heir dies, get Matyas
-		name = flavor_hun.201.a
-		ai_chance = { factor = 1 }
+		name = flavor_hun.201.a			
+		ai_chance = {  
+		factor = 75
+			modifier = {
+				factor = 3
+				OR = {
+					is_rival = STY
+					is_rival = HAB #Just in case
+				}
+			}
+		}
 		trigger = {
 			has_heir = "Ladislaus Postumus"
 		}
@@ -443,27 +532,66 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = { senior_union_with = HAB }
-			STY = { country_event = { id = Chocolate_hab_hun.7 } }
-		}
-		country_event = { id = Chocolate_hab_hun.6 } #Deal with Bohemia
+		# if = {			#BT Edited by Harbivore to work with moddified chocolate
+			# limit = { senior_union_with = HAB }
+			# STY = { country_event = { id = Chocolate_hab_hun.7 } }
+		# }
 	}
-	option = { #Ruler dies, keep his heir
+	
+	option = { #Ruler dies, keep his heir				#Only way Austria stays as a pu under hungary 
 		name = flavor_hun.201.b
-		ai_chance = { factor = 3 }
+		ai_chance = { factor = 75 }
 		trigger = {
 			has_ruler = "Ladislaus Postumus I"
 			has_heir = yes
 		}
 		kill_ruler = yes
 	}
+
 	option = { #Ruler dies with no heir, take a union
 		name = flavor_hun.201.c
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 1.5
+				trust = { who = STY value = 60 }
+			}
+			modifier = {
+				factor = 1.5
+				trust = { who = STY value = 70 }
+			}
+			modifier = {
+				factor = 1.5
+				trust = { who = STY value = 80 }
+			}
+			modifier = {
+				factor = 1.5
+				trust = { who = STY value = 90 }
+			}
+			modifier = {
+				factor = 2
+				trust = { who = STY value = 90 }
+			}
+			modifier = {
+				factor = 10
+				trust = { who = STY value = 100 }
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					alliance_with = STY
+					alliance_with = HAB #Just in case
+				}
+			}
+		}
 		trigger = {
-			has_ruler = "Ladislaus Postumus I"
-			has_heir = no
+			OR = {
+				AND = {
+					has_ruler = "Ladislaus Postumus I"
+					has_heir = no
+				}
+				
+			}
 		}
 		add_stability_or_adm_power = yes
 		kill_ruler = yes
@@ -473,26 +601,25 @@ country_event = {
 				inherit = CRO
 			}
 		}
-		if = { limit = { HAB = { vassal_of = STY } }
-			STY = {
-				create_union = HUN
-				hidden_effect = {
-					country_event = { id = flavor_hun.3 days = 1 }
-				}
-			}
-		}
-		else = {
-			HAB = {
-				create_union = HUN
-				hidden_effect = {
-					country_event = { id = flavor_hun.3 days = 1 }
-				}
+		STY = {							#BT Edited by Harbivore to work with moddified chocolate
+			create_union = HUN
+			hidden_effect = {
+				country_event = { id = flavor_hun.3 days = 1 }
 			}
 		}
 	}
 	option = { #Ruler dies with no heir, take Matyas
-		name = flavor_hun.201.d
-		ai_chance = { factor = 9 }
+		name = flavor_hun.201.d			
+		ai_chance = {  #Changed to increase the chance if there is a good relationship between Austria and hungary so it isn't random
+			factor = 75
+			modifier = {
+				factor = 3
+				OR = {
+					is_rival = STY
+					is_rival = HAB #Just in case
+				}
+			}
+		}
 		trigger = {
 			has_ruler = "Ladislaus Postumus I"
 			has_heir = no
@@ -551,10 +678,10 @@ country_event = {
 				}
 			}
 		}
-		if = {
-			limit = { senior_union_with = HAB }
-			STY = { country_event = { id = Chocolate_hab_hun.7 } }
-		}
+		# if = {			#BT Edited by Harbivore to work with moddified chocolate
+			# limit = { senior_union_with = HAB }
+			# STY = { country_event = { id = Chocolate_hab_hun.7 } }
+		# }
 	}
 }
 
@@ -572,6 +699,7 @@ country_event = {
 		name = flavor_hun.3.a
 		add_legitimacy = 5
 		add_prestige = 5
+		STY = { inherit = HAB }			#BT Edited by Harbivore to work with moddified chocolate
 	}
 }
 
@@ -586,6 +714,7 @@ country_event = {
 
 	option = {
 		name = flavor_hun.10.a
+		STY = { inherit = HAB }			#BT Edited by Harbivore to work with moddified chocolate
 		if = { #Only add if we haven't got one already.
 			limit = {
 				has_casus_belli = {

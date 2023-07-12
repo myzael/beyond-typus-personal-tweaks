@@ -1,2 +1,8 @@
 #BT Styria doesn't start as Archduchy
 add_government_reform = austrian_archduchy_reform
+set_country_flag = choc_albrecht_friedrich_brothers
+add_country_modifier = { 
+	name = bt_chocolcate_habsburg_fix_sty
+	duration = -1
+	hidden = yes
+}

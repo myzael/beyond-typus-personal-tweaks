@@ -7,7 +7,7 @@
 namespace = flavor_boh
 normal_or_historical_nations = yes
 
-#Hussites march on Prague
+#Hussites march on Prague			#Increased the chances of hussite ai, just for more fun. From 1/10 to 5/10 #Harbivore 
 country_event = {
 	id = flavor_boh.1
 	title = flavor_boh.1.t
@@ -57,7 +57,7 @@ country_event = {
 	}
 	
 	option = { # Convert to Hussite
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 50 }
 		name = flavor_boh.1.a
 		set_country_flag = hussite_regency_mission_flag
 		if = {
@@ -100,8 +100,41 @@ country_event = {
 		add_reform_desire = 0.02
 	}
 	
+	option = { # Fight them
+		name = flavor_boh.1.b
+		ai_chance = { factor = 15 }
+		set_country_flag = hussite_regency_mission_flag
+		266 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+				leader = "Jirí"
+				leader_dynasty = "z Podebrad"
+			}		
+		}
+		random_owned_province = {
+			limit = {
+				NOT = { province_id = 266 }
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+		}
+		if = {
+			limit = { religion = catholic }
+			add_papal_influence = 10
+			PAP = {
+				add_opinion = {
+					who = root
+					modifier = boh_papal_reconciled
+				}
+			}
+		}
+	}
+	
 	option = { # Hussite King, Catholic nation - tolerance option
-		ai_chance = { factor = 90 }
+		ai_chance = { factor = 35 }
 		set_country_flag = hussite_regency_mission_flag
 		name = flavor_boh.1.c
 		add_papal_influence = -100
@@ -142,41 +175,9 @@ country_event = {
 			country_event = { id = flavor_boh.9 }
 		}
 	}
-	
-	option = { # Fight them
-		name = flavor_boh.1.b
-		set_country_flag = hussite_regency_mission_flag
-		266 = {
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 1
-				leader = "Jirí"
-				leader_dynasty = "z Podebrad"
-			}		
-		}
-		random_owned_province = {
-			limit = {
-				NOT = { province_id = 266 }
-			}
-			spawn_rebels = {
-				type = pretender_rebels
-				size = 1
-			}
-		}
-		if = {
-			limit = { religion = catholic }
-			add_papal_influence = 10
-			PAP = {
-				add_opinion = {
-					who = root
-					modifier = boh_papal_reconciled
-				}
-			}
-		}
-	}
 }
 
-#The Heretic King
+#The Heretic King			#Increased the chances of hussite ai, just for more fun #Harbivore
 country_event = {
 	id = flavor_boh.2
 	title = flavor_boh.2.t
@@ -261,10 +262,12 @@ country_event = {
 	
 	option = { # reconciliation
 		ai_chance = {
-			factor = 90
+			factor = 2
 			modifier = {
-				factor = 0.1
-				is_year = 1470
+				factor = 3
+				NOT = {
+					stability = 1
+				}
 			}
 		}
 		name = flavor_boh.2.a
@@ -307,7 +310,7 @@ country_event = {
 	option = {
 		name = flavor_boh.2.b
 		ai_chance = {
-			factor = 10
+			factor = 8
 		}
 		add_ruler_modifier = {
 			name = "boh_hussite_king"
@@ -583,7 +586,15 @@ country_event = {
 	
 	option = { # Remain Hussite
 		ai_chance = {
-			factor = 20
+			factor = 25
+			modifier = {
+				factor = 20
+				is_great_power = yes		#BT Change if they are big they won't change religion #Harbivore
+			}
+			modifier = {
+				factor = 20
+				has_idea_group = religious_ideas		#BT Change if they are religious ideas they won't change religion #Harbivore
+			}
 		}
 		trigger = {
 			religion = hussite
@@ -601,7 +612,7 @@ country_event = {
 	
 	option = { # Switch to Protestant
 		ai_chance = {
-			factor = 80
+			factor = 75
 		}
 		trigger = {
 			religion = hussite

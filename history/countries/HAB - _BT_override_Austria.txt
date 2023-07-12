@@ -2,7 +2,7 @@
 add_accepted_culture = slovene
 historical_friend = CAS			#Dub added. I mean, could be argued either way, but it hurts little. Both should be rivaling Ottomans and/or France, anyway. Not close enough to mess with balance...yeah, hurts nothing.
 historical_friend = SPA			#Dub added. I mean, could be argued either way, but it hurts little. Both should be rivaling Ottomans and/or France, anyway. Not close enough to mess with balance...yeah, hurts nothing.
-
+set_country_flag = choc_albrecht_friedrich_brothers
 
 
 #History			#Note the price change events are fired for later starts in this Austrian file, for whatever reason. That is what basically all this crap is below.
