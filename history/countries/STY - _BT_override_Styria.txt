@@ -6,3 +6,9 @@ add_country_modifier = {
 	duration = -1
 	hidden = yes
 }
+historical_friend = HUN			#Added all of these from the HAB file because STY is HAB in bt
+historical_rival = TUR
+historical_rival = FRA
+add_accepted_culture = slovene
+historical_friend = CAS			#Dub added. I mean, could be argued either way, but it hurts little. Both should be rivaling Ottomans and/or France, anyway. Not close enough to mess with balance...yeah, hurts nothing.
+historical_friend = SPA			#Dub added. I mean, could be argued either way, but it hurts little. Both should be rivaling Ottomans and/or France, anyway. Not close enough to mess with balance...yeah, hurts nothing.
