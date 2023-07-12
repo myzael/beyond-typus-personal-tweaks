@@ -9,8 +9,6 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_france_flag }
 			NOT = { tag = FRA }
-			NOT = { tag = CEL }
-			NOT = { tag = SPA }
 			OR = {
 				culture_group = french
 				primary_culture = basque
@@ -42,18 +40,24 @@ country_decisions = {
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = FRA
+			on_change_tag_effect = yes
+			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
-			}
 			add_country_modifier = {
 				name = centralization_modifier
 				duration = 7300
 			}
+			#Rank + prestige
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
 			add_prestige = 25
+			#Nation claims + Mission claims
 			france_region = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -77,6 +81,7 @@ country_decisions = {
 				}
 				add_claim = FRA
 			}
+			#Swap culture, government, government reform & ideas, plus set flag
 			if = {
 				limit = {
 					NOT = { has_idea_group = FRA_ideas }
@@ -90,4 +95,5 @@ country_decisions = {
 		}
 		ai_importance = 400 #
 	}
+	
 }

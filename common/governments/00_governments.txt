@@ -120,7 +120,7 @@ monarchy = {
 				norman_lordship_reform
 				norman_duchy_reform
 				anglo_irish_monarchy_reform
-				tanistry_reform
+				bt_tanistry_reform
 				bt_ayyubid_sultanate_reform
 			}
 		}
@@ -494,7 +494,7 @@ monarchy = {
 		kalmar_union
 		celestial_empire
 		#Added by Beyond Typus
-		tanistry_reform
+		bt_tanistry_reform
 		anglo_irish_monarchy_reform
 	}
 

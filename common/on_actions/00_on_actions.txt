@@ -1118,7 +1118,7 @@ on_new_monarch = {
 	#BT
 	if = {
 		limit = {
-			has_reform = tanistry_reform
+			has_reform = bt_tanistry_reform
 			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
 		}
 		set_country_flag = bt_tanistry_king_just_died
@@ -1279,7 +1279,7 @@ on_monarch_death = {
 	#BT
 	#if = {
 	#	limit = {
-	#		has_reform = tanistry_reform
+	#		has_reform = bt_tanistry_reform
 	#		NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
 	#	}
 	#	set_country_flag = bt_tanistry_king_just_died
@@ -1427,7 +1427,7 @@ on_heir_death = {
 	#CHO_AlbrechtVI_heir_dies = yes
 	if = {
 		limit = {
-			has_reform = tanistry_reform
+			has_reform = bt_tanistry_reform
 			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
 		}
 		remove_country_modifier = bt_tanistry_underaged_heir
@@ -1543,7 +1543,7 @@ on_new_heir = {
 	#BT
 	if = {
 		limit = {
-			has_reform = tanistry_reform
+			has_reform = bt_tanistry_reform
 			has_country_modifier = bt_tanistry_waiting_on_heir
 			NOT = { has_country_flag = bt_abolition_of_tanistry_succession }
 		}
