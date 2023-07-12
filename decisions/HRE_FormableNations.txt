@@ -11,15 +11,12 @@ country_decisions = {
 	bavaria_nation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			bt_generic_can_form_potential_check = yes
 			was_never_german_regional_tag_trigger = yes
 			NOT = { has_country_flag = formed_bavaria_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			NOT = { exists = BAV }
+			NOT = { num_of_cities = 30 }	#With more than 30 cities, tag should be aiming to form Prussia or Germany
+				
+
 			primary_culture = bavarian
 		}
 		provinces_to_highlight = {
@@ -71,9 +68,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			is_free_or_tributary_trigger = yes
-			is_at_war = no
-
+			NOT = { exists = BAV }
+			is_at_war = no 
+			is_free_or_tributary_trigger = yes 
+			is_nomad = no
 			if = {
 				limit = { NOT = { tag = UBV } }
 				OR = {
@@ -110,8 +108,26 @@ country_decisions = {
 			owns_or_non_sovereign_subject_of = 2955			#Ingolstadt
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = BAV
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
+			if = { #These tags already have these missions
+				limit = {
+					NOT = { tag = UBV }
+					NOT = { tag = LBV }
+					NOT = { tag = ING }
+					NOT = { was_tag = UBV }
+					NOT = { was_tag = LBV }
+					NOT = { was_tag = ING }
+				}
+				swap_non_generic_missions = yes
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
 			if = {
 				limit = {
 					UBV = { is_subject_of = ROOT }
@@ -130,6 +146,13 @@ country_decisions = {
 				}
 				inherit = ING
 			}
+			capital_scope = { #BT Cut capital set, adding bonuses to capital instead.
+				add_base_tax = 2 
+				add_base_production = 2
+			} 
+			#Rank + prestige
+			add_prestige = 10 #Vanilla does 25. I think 10 is enough. //Dub
+			#Nation claims + Mission claims
 			lower_bavaria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -151,33 +174,15 @@ country_decisions = {
 			#	}
 			#	add_permanent_claim = root
 			#}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			add_prestige = 25
-			set_capital = 65
-			65 = { add_base_tax = 2 }
-			set_country_flag = formed_bavaria_flag
-			if = {
-				limit = { 
-					has_custom_ideas = no
-					NOT = { has_idea_group = BAV_ideas }
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
+			#Swap culture, government, government reform & ideas, plus set flag
 
 			if = {
 				limit = {
-					NOT = { tag = UBV }
-					NOT = { tag = LBV }
-					NOT = { tag = ING }
-					NOT = { was_tag = UBV }
-					NOT = { was_tag = LBV }
-					NOT = { was_tag = ING }
+					NOT = { has_idea_group = BAV_ideas }
 				}
-				swap_non_generic_missions = yes
-			}
+				swap_ideas = yes #Swap Ideas
+			}			
+			set_country_flag = formed_bavaria_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -189,107 +194,178 @@ country_decisions = {
 		major = yes
 		potential = {
 			bt_generic_can_form_potential_check = yes
-			bt_hre_stem_duchy_check = yes			#prevents lateral progression. Must not be or have been a stem duchy already
-			NOT = { has_country_flag = bt_formed_stem_duchy } 			#prevents lateral progression. All Stem Duchies should give this and check for this.
-			NOT = { has_country_flag = formed_pomerania_flag_btp } 
+			was_never_german_regional_tag_trigger = yes
+			NOT = { has_country_flag = formed_pomerania_flag } 
 			NOT = { num_of_cities = 30 }	#With more than 30 cities, tag should be aiming to form Prussia or Germany
 			OR = {
-				#Tags which we want to see the decision by default
-				tag = WOL
-				tag = STE
-				tag = STP
-				tag = KMI
-				tag = RUG
-				AND = {
-					capital_scope = {
-						OR = {
-							area = vorpommern_area
-							area = hinter_pommern_area
-						}
-					}
-					OR = {
-						culture_group = germanic
-						primary_culture = polabian_culture
-						primary_culture = kashubian_culture
-					}
-					NOT = { government_rank = 2 }
-				}	#Some contingencies for odd situations. So long as the tag is a reasonable culture, it isn't too large, and has a capital in Pomerania, then why not? Note the num of city check should ensure no quirks with giant tags switching who shouldn't
+				primary_culture = pommeranian
+				primary_culture = polabian_culture
+				primary_culture = kashubian_culture
 			}
 		}
 		provinces_to_highlight = {
-			OR = { 
-				area = vorpommern_area
-				area = hinter_pommern_area
-			}
 			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+				AND = {
+					province_id = 1858
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					province_id = 2994
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					province_id = 2995
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					ROOT = { NOT = { tag = WOL } }
+					WOL = {
+						OR = {
+							num_of_cities = 8
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = WOL
+				}
+				AND = {
+					ROOT = { NOT = { tag = STE } }
+					STE = {
+						OR = {
+							num_of_cities = 8
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = STE
+				}
+				AND = {
+					ROOT = { NOT = { tag = RUG } }
+					RUG = {
+						OR = {
+							num_of_cities = 8
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = RUG
+				}
+				AND = {
+					ROOT = { NOT = { tag = STP } }
+					STP = {
+						OR = {
+							num_of_cities = 8
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = RUG
+				}
 			}
 		}
 		allow = {
 			NOT = { exists = POM } 
 			is_at_war = no 
 			is_free_or_tributary_trigger = yes 
-			is_nomad = no 
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = bt_sole_pomeranian_duchy_tooltip
-					OR = {
-						AND = {
-							tag = WOL
-							NOT = { exists = STE }
-							NOT = { exists = STP }
-							NOT = { exists = RUG }
-						}
-						AND = {
-							tag = STE
-							NOT = { exists = WOL }
-							NOT = { exists = STP }
-							NOT = { exists = RUG }
-						}
-						AND = {
-							tag = STP
-							NOT = { exists = WOL }
-							NOT = { exists = STE }
-							NOT = { exists = RUG }
-						}
-						AND = {
-							tag = RUG
-							NOT = { exists = STP }
-							NOT = { exists = WOL }
-							NOT = { exists = STE }
-						}
+			is_nomad = no
+			if = {
+				limit = { NOT = { tag = WOL } }
+				OR = {
+					NOT = { exists = WOL }
+					WOL = {
+						NOT = { num_of_cities = 8 }
+						is_subject_of = ROOT
 					}
-				}
-				AND  = {
-					custom_trigger_tooltip = {
-						tooltip = bt_no_other_surviving_pomeranian_minors
-						NOT = { exists = WOL }
-						NOT = { exists = STE }
-						NOT = { exists = STP }
-						NOT = { exists = RUG }
-					}
-					num_of_owned_provinces_with = {
-						is_core = ROOT
-						OR = {
-							area = vorpommern_area
-							area = hinter_pommern_area
-						}
-						value = 10			#At least 2/3 of Pomerania's 15 provinces
-					}
-					owns_core_province = 1858			#Stettin
-					owns_core_province = 2994			#Griefswald
-					owns_core_province = 2995			#Stolp
 				}
 			}
+			if = {
+				limit = { NOT = { tag = STE } }
+				OR = {
+					NOT = { exists = STE }
+					STE = {
+						NOT = { num_of_cities = 8 }
+						is_subject_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { tag = RUG } }
+				OR = {
+					NOT = { exists = RUG }
+					RUG = {
+						NOT = { num_of_cities = 8 }
+						is_subject_of = ROOT
+					}
+				}
+			}
+			if = {
+				limit = { NOT = { tag = STP } }
+				OR = {
+					NOT = { exists = STP }
+					STP = {
+						NOT = { num_of_cities = 8 }
+						is_subject_of = ROOT
+					}
+				}
+			}
+			owns_core_province = 1858			#Stettin
+			owns_core_province = 2994			#Griefswald
+			owns_core_province = 2995			#Stolp
+
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = POM
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
+			if = { #These tags already have these missions
+				limit = {
+					NOT = { tag = WOL }
+					NOT = { tag = STE }
+					NOT = { tag = RUG }
+					NOT = { tag = STP }
+					NOT = { was_tag = WOL }
+					NOT = { was_tag = STE }
+					NOT = { was_tag = RUG }
+					NOT = { was_tag = STP }
+				}
+				swap_non_generic_missions = yes
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 5
+			if = {
+				limit = {
+					STP = { is_subject_of = ROOT }
+				}
+				inherit = STP
+			}
+			if = {
+				limit = {
+					WOL = { is_subject_of = ROOT }
+				}
+				inherit = WOL
+			}
+			if = {
+				limit = {
+					STE = { is_subject_of = ROOT }
+				}
+				inherit = STE
+			}
+			if = {
+				limit = {
+					RUG = {
+						is_subject_of = ROOT
+						NOT = { has_government_attribute = is_pirate_republic_reform }
+					}
+				}
+				inherit = RUG
+			}
+			capital_scope = { 
+				add_base_tax = 2 
+				add_base_production = 2
+			}
+			#Rank + prestige
+			add_prestige = 10
+			#Nation claims + Mission claims
 			vorpommern_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -304,43 +380,7 @@ country_decisions = {
 				}
 				add_permanent_claim = POM
 			}
-			custom_tooltip = bt_reunifies_duchy_of_pomerania
-			hidden_effect = {
-				every_province = {
-					limit = {
-						continent = europe
-						is_core = WOL
-					}
-					remove_core = WOL
-					add_core = POM
-				}
-				every_province = {
-					limit = {
-						continent = europe
-						is_core = STE
-					}
-					remove_core = STE
-					add_core = POM
-				}
-				every_province = {
-					limit = {
-						continent = europe
-						is_core = STP
-					}
-					remove_core = STP
-					add_core = POM
-				}
-				every_province = {
-					limit = {
-						continent = europe
-						is_core = RUG
-					}
-					remove_core = RUG
-					add_core = POM
-				}
-			}
-			set_country_flag = formed_pomerania_flag_btp
-			set_country_flag = bt_formed_stem_duchy
+			set_country_flag = formed_pomerania_flag
 			if = {
 				limit = { NOT = { has_idea_group = POM_ideas } }
 				swap_ideas = yes
@@ -355,23 +395,10 @@ country_decisions = {
 	franconia_nation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			bt_generic_can_form_potential_check = yes
 			was_never_german_regional_tag_trigger = yes
+			NOT = { num_of_cities = 30 }	#With more than 30 cities, tag should be aiming to form Prussia or Germany
 			NOT = { has_country_flag = formed_franconia_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			NOT = { exists = FKN }
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
 			primary_culture = franconian
 		}
 		provinces_to_highlight = {
@@ -389,7 +416,7 @@ country_decisions = {
 					ROOT = {
 						NOT = {
 							num_of_owned_provinces_with = {
-								value = 6
+								value = 8
 								culture = franconian
 								continent = europe
 								is_core = root
@@ -424,6 +451,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			NOT = { exists = FKN }
 #			adm_tech = 10
 			OR = { #Wurzburg was the theoretical holder of the title
 				tag = WBG
@@ -435,40 +463,28 @@ country_decisions = {
 				owns_core_province = 67			#Nurnberg
 			}
 			num_of_owned_provinces_with = {
-				value = 6
+				value = 8 #Upped from vanilla's 6 because more provinces in BT. //Dub
 				culture = franconian
 				continent = europe
 				is_core = root
 			}
 			OR = { #just to make it not so easy (owning 6 provinces is really not so hard; Franconia is 70 development at start, so this is that +5)
-				total_development = 150 #BT Dev Doubling
+				total_development = 70 #BT going back to 70 dev because getting 150 dev without taking Nürnberg is bloody impossible in just Franconian lands.
 				is_elector = yes
 			}
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = FKN
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
-			franconia_area = {
-				limit = {
-					NOT = { owned_by = root }
-					NOT = { is_permanent_claim = root }
-				}
-				add_permanent_claim = root
-			}
-			#upper_franconia_area = { # Brian; doesn't exist in BT
-			#	limit = {
-			#		NOT = { owned_by = root }
-			#		NOT = { is_permanent_claim = root }
-			#	}
-			#	add_permanent_claim = root
-			#}
+			swap_non_generic_missions = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			add_prestige = 25
-			set_country_flag = formed_franconia_flag
-
+			#Rank + prestige
 			if = {
 				limit = {
 					total_development = 200
@@ -479,15 +495,30 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-
-			swap_non_generic_missions = yes
-			
+			add_prestige = 10
+			#Nation claims + Mission claims
+			franconia_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			upper_franconia_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			#Swap culture, government, government reform & ideas, plus set flag
 			if = {
 				limit = {
-					is_playing_custom_nation = no
+					NOT = { has_idea_group = FKN_ideas }
 				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
+				swap_ideas = yes
 			}
+			set_country_flag = formed_franconia_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -498,23 +529,10 @@ country_decisions = {
 	swabia_nation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			bt_generic_can_form_potential_check = yes
 			was_never_german_regional_tag_trigger = yes
+			NOT = { num_of_cities = 30 }	#With more than 30 cities, tag should be aiming to form Prussia or Germany
 			NOT = { has_country_flag = formed_swabia_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			NOT = { exists = SWA }
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
 			primary_culture = swabian
 		}
 		provinces_to_highlight = {
@@ -545,6 +563,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			NOT = { exists = SWA }
 #			adm_tech = 10
 			owns_core_province = 70 #Wurttemberg
 			owns_core_province = 1872 #Ulm
@@ -556,8 +575,28 @@ country_decisions = {
 			}
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = SWA
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#Rank + prestige
+			if = {
+				limit = {
+					OR = {
+						is_elector = yes
+						is_part_of_hre = no
+					}
+				}
+				set_government_rank = 2
+			}
+			add_prestige = 10
+			#Nation claims + Mission claims
 			lower_swabia_area = {
 				limit = {
 					NOT = { owned_by = root }
@@ -617,32 +656,15 @@ country_decisions = {
 #					add_permanent_claim = root
 #				}
 #			}
-
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			add_prestige = 25
-			set_country_flag = formed_swabia_flag
-
-			if = {
-				limit = {
-					OR = {
-						is_elector = yes
-						is_part_of_hre = no
-					}
-				}
-				set_government_rank = 2
-			}
-
-			swap_non_generic_missions = yes
-
+			#Swap culture, government, government reform & ideas, plus set flag
 			if = {
 				limit = {
 					is_playing_custom_nation = no
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
+			set_country_flag = formed_swabia_flag
+
 		}
 		ai_will_do = {
 			factor = 1
@@ -653,32 +675,14 @@ country_decisions = {
 	saxony_nation = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
+			bt_generic_can_form_potential_check = yes
 			was_never_german_regional_tag_trigger = yes
-			NOT = { has_country_flag = formed_franconia_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				ai = no
-				NOT = { exists = SAX }
-			}
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
+			NOT = { num_of_cities = 30 }	#With more than 30 cities, tag should be aiming to form Prussia or Germany
+			NOT = { has_country_flag = formed_saxony_flag }
 			OR = {
 				primary_culture = saxon
-				tag = LAU
+				tag = LAU #Supposedly historical stem-duchy. I guess the name "Saxe-Lauenburg" gives it away.
 			}
-			NOT = { tag = BRA }
-			NOT = { tag = SAX }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -743,9 +747,37 @@ country_decisions = {
 			}
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = SAX
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
-			south_saxony_area = {
+			if = {
+				limit = {
+					NOT = { tag = THU }
+					NOT = { was_tag = THU }
+					NOT = { tag = MEI }
+					NOT = { was_tag = MEI }
+				}
+				swap_non_generic_missions = yes
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#Rank + prestige
+			if = { #Adding this here because makes sense. Saxony is Kingdom-rank in-game anyway. //Dub
+				limit = {
+					OR = {
+						is_elector = yes
+						is_part_of_hre = no
+					}
+				}
+				set_government_rank = 2
+			}
+			add_prestige = 10
+			#Nation claims + Mission claims
+			middle_saxony_area = {
 				limit = {
 					NOT = { owned_by = root }
 					NOT = { is_permanent_claim = root }
@@ -766,26 +798,14 @@ country_decisions = {
 				}
 				add_permanent_claim = root
 			}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			add_prestige = 25
-			set_country_flag = formed_saxony_flag
-
+			#Swap culture, government, government reform & ideas, plus set flag
 			if = {
 				limit = {
-					is_playing_custom_nation = no
+					NOT = { has_idea_group = SAX_ideas }
 				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			if = {
-				limit = {
-					NOT = { tag = THU }
-					NOT = { was_tag = THU }
-				}
-				swap_non_generic_missions = yes
-			}
+			set_country_flag = formed_saxony_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -798,14 +818,11 @@ country_decisions = {
 		potential = {
 			bt_generic_can_form_potential_check = yes
 			was_never_german_regional_tag_trigger = yes
+			NOT = { num_of_cities = 30 }	#With more than 30 cities, tag should be aiming to form Prussia or Germany
 			NOT = { has_country_flag = formed_hannover_flag }
-			NOT = { tag = HAN }
-			NOT = { tag = GER }
-			NOT = { tag = PRU }
 			NOT = { tag = HSA }
-			NOT = { tag = SAX } #Saxe-Lauenburg should form either Saxony or Hannover, not both
-			NOT = { exists = HAN }
 			primary_culture = lower_saxon #Westphalian
+			#BT: If we want to re-add Westphalia we need to limit capital scope to the eastern part of lower saxon. Can't be bothered right now. //Dub
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -817,7 +834,7 @@ country_decisions = {
 					ROOT = {
 						NOT = {
 							num_of_owned_provinces_with = {
-								value = 8 #out of 13 i.e. you can leave out Holstein or the FCs
+								value = 15 #out of 13 i.e. you can leave out Holstein or the FCs
 								culture = lower_saxon
 								region = north_german_region
 								is_core = root
@@ -834,13 +851,14 @@ country_decisions = {
 			}
 		}
 		allow = {
+			NOT = { exists = HAN }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 53	# Luneburg
 			owns_core_province = 1758	# Hannover
 			num_of_owned_provinces_with = {
-				value = 8 #out of 13 i.e. you can leave out Holstein and stuff
+				value = 15 #BT upping from 8 because Lower Saxon is massive in BT. //Dub #out of 13 i.e. you can leave out Holstein and stuff
 				culture = lower_saxon
 				region = north_german_region
 				is_core = root
@@ -848,34 +866,22 @@ country_decisions = {
 			total_development = 200 #BT Dev Doubling
 		}
 		effect = {
-			1758 = {
+			#Mission completions - None at the moment
+			#Country formation effects
+			1758 = { #Normally BT cuts these, but frankly I think a nation named after a city ought to have its capital there. //Dub
 				move_capital_effect = yes
+				add_base_tax = 2
+				add_base_production = 2
 			}
 			change_tag = HAN
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
-			1758 = { 
-				add_base_tax = 1 
-				add_base_production = 1 
-			}
+			swap_non_generic_missions = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
-			add_prestige = 10
-			#braunschweig_area = { # Brian; doesn't exist in BT
-			#	limit = {
-			#		NOT = { is_permanent_claim = ROOT }
-			#		NOT = { is_core = ROOT }
-			#	}
-			#	add_permanent_claim = HAN
-			#}
-			weser_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = HAN
-			}
+			#Rank + prestige
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -886,8 +892,36 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			swap_non_generic_missions = yes
-			swap_ideas = yes
+			add_prestige = 10
+			#Nation claims + Mission claims
+			braunschweig_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = HAN
+			}
+			lower_saxony_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = HAN
+			}
+			weser_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = HAN
+			}
+			#Swap culture, government, government reform & ideas, plus set flag
+			if = {
+				limit = {
+					NOT = { has_idea_group = HAN_ideas }
+				}
+				swap_ideas = yes
+			}
 			set_country_flag = formed_hannover_flag
 		}
 		ai_will_do = {
@@ -896,7 +930,7 @@ country_decisions = {
 		ai_importance = 400 #
 	}
 
-	westfalian_nation = {
+	westfalian_nation = { #BT Not bothering for now since Rheinland exists and Westphalian culture was cut. //Dub
 		major = yes
 		potential = {
 			bt_generic_can_form_potential_check = yes
@@ -911,8 +945,8 @@ country_decisions = {
 			NOT = { exists = WES }
 			NOT = { has_reform = celestial_empire }
 			OR = {
-				primary_culture = hannoverian #Westphalian
-				primary_culture = hessian
+				primary_culture = hannoverian #Westphalian #Cut in BT, so this decision will never show up. Therefore I'm not fixing it. //Dub
+				#primary_culture = hessian #BT Hessians should go for Rheinland //Dub
 			}
 			OR = {
 				ai = no

@@ -61,19 +61,24 @@ country_decisions = {
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = IRE
-			if = {
-				limit = { has_dlc = "Dharma" }
-				remove_government_reform = irish_clann_reform
-				add_government_reform = tanistry_reform
-			}
-			if = {
-				limit = { NOT = { has_dlc = "Dharma" } }
-				set_legacy_government = high_kingship_legacy
-			}
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes			
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			hidden_effect = { country_event = { id = BeyondTypusCelticFlavour.1 days = 1 } }			#Fires new BT Tanistry succession
-			custom_tooltip = tooltip_bt_starts_tanistry_succession
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#Rank + prestige
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			#Nation claims + Mission claims
 			ireland_region = { # Brian; changed from _area
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -81,9 +86,33 @@ country_decisions = {
 				}
 				add_permanent_claim = IRE
 			}
+			#Swap culture, government, government reform & ideas, plus set flag
 			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
+				limit = {
+					has_dlc = "Domination"
+				}
+				if = {
+					limit = {
+						has_reform = tanistry_reform
+					}
+					hidden_effect = {
+						unlock_government_reform = {
+							government_reform = irish_highkingdom_reform
+						}
+					}
+					add_government_reform = irish_highkingdom_reform
+				}
+				else = {
+					unlock_government_reform = {
+						government_reform = irish_highkingdom_reform
+					}
+				}
+			}
+			else = { #This is for non-DLC-players essentially. Years back, this was created, and it still stands. Good on ya, HR/Draiocht. //Dub
+				remove_government_reform = irish_clann_reform
+				add_government_reform = bt_tanistry_reform
+				hidden_effect = { country_event = { id = BeyondTypusCelticFlavour.1 days = 1 } }			#Fires new BT Tanistry succession
+				custom_tooltip = tooltip_bt_starts_tanistry_succession
 			}
 			if = {
 				limit = {
@@ -94,23 +123,17 @@ country_decisions = {
 				}
 				add_historical_rival = ENG
 			}			#Add England as a historical rival if relations are negative (and not already rivals or friends)
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-			#I decided to remove the development bonus from forming altogether. With the ability to build up provinces already there, this isn't really needed and can get out of hand quickly. Plus capital should move to Dublin anyway.
-			add_prestige = 25
 			if = {
 				limit = {
 					NOT = { has_idea_group = irish_ideas }
 				}
 				swap_ideas = yes
 			}
-			swap_non_generic_missions = yes
 			set_country_flag = formed_ireland_flag
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
+	
 }

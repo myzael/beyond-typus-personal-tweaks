@@ -42,12 +42,24 @@ country_decisions = {
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = ENG
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			#Rank + prestige
 			if = {
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
+			add_prestige = 25
+			#Nation claims + Mission claims
 			northern_england_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
@@ -97,11 +109,24 @@ country_decisions = {
 				}
 				add_permanent_claim = ENG
 			}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
+			#Swap culture, government, government reform & ideas, plus set flag
+			if = { #A bit of a new change. I presume the game wants England to have a parliament.
+				limit = {
+					NOT = { government = monarchy }
+					NOT = { has_government_attribute = locked_government_type }
+				}
+				change_government = monarchy
 			}
-			add_prestige = 25
+			if = {
+				limit = {
+					OR = {
+						government = monarchy
+						NOT = { has_government_attribute = locked_government_type }
+					}
+					has_not_locked_first_tier_reform = yes
+				}
+				add_government_reform = english_monarchy 
+			}
 			if = {
 				limit = {
 					NOT = { has_idea_group = ENG_ideas }
@@ -115,4 +140,5 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
 }

@@ -83,7 +83,7 @@ bt_generic_can_form_potential_check = {
 		ai = no
 		AND = {
 			ai = yes
-			num_of_cities = 6	#3 is common in vanilla, but more provinces in BT
+			num_of_cities = 3	#3 is common in vanilla, but more provinces in BT. Making it 3 however because some nation formables are tiny.
 		}
 	}
 	OR = { #Only player-controlled subjects shall see decisions.
@@ -105,12 +105,6 @@ bt_generic_can_form_potential_check = {
 		# }
 	# }
 	#TODO: Move to was_never_end_game_tag_trigger in 00_scripted_triggers.txt
-	NOT = { tag = UNK }
-	NOT = { tag = CEL }
-	NOT = { tag = LAE }
-
-	NOT = { was_tag = UNK }
-	NOT = { was_tag = CEL }
 }
 
 #A check for HRE formables to make sure of a smooth progression from minor to mid to major to Germany or united HRE. This should prevent lateral progression

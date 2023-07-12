@@ -6703,7 +6703,7 @@ provincial_kingdom_reform = { #T2
 	}
 }
 
-tanistry_reform = { #T3
+bt_tanistry_reform = { #T3
 	icon = "crown"
 	allow_normal_conversion = no
 	potential = {
@@ -6713,7 +6713,7 @@ tanistry_reform = { #T3
 			primary_culture = celtic_irish_culture
 			primary_culture = celtic_highland_scottish_culture
 		}
-		has_reform = tanistry_reform
+		has_reform = bt_tanistry_reform
 	}
 	lock_level_when_selected = yes
 	legacy_equivalent = high_kingship_legacy

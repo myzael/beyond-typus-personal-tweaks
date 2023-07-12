@@ -39,6 +39,10 @@ country_decisions = {
 					ai = no
 				}
 			}
+			OR = {
+				has_country_flag = teu_can_form_germany
+				NOT = { has_mission = teu_pru_an_empire_of_blood_and_iron }	#Mission already makes you to Germany
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -144,7 +148,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			is_emperor = no
+			is_emperor = no #BT Keeping. Vanilla decided that if you are the emperor, you just dismantle the HRE instead, but I find that ridiculous. //Dub
 			owns_core_province = 50	# Berlin
 			owns_core_province = 57	# Brunswick
 			owns_core_province = 65	# München
@@ -183,7 +187,9 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = GER
+			on_change_tag_effect = yes
 			restore_country_name_effect = yes
+			swap_non_generic_missions = yes
 			emperor = {
 				add_opinion = {
 					who = root
@@ -193,8 +199,15 @@ country_decisions = {
 			set_in_empire = no
 			emperor = {
 				country_event = { id = hre_event.5 }
+			}		
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
 			}
+			#Rank + prestige
 			GER = { set_government_rank = 3 }
+			add_prestige = 25
+			#Nation claims + Mission claims
 			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -206,20 +219,16 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = GER
-			}			
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
 			}
-			add_prestige = 25
-			set_country_flag = formed_germany_flag
+
+			#Swap culture, government, government reform & ideas, plus set flag
 			if = {
 				limit = {
-					has_custom_ideas = no
+					NOT = { has_idea_group = GER_ideas }
 				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
+				swap_ideas = yes
 			}
-			swap_non_generic_missions = yes
+			set_country_flag = formed_germany_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -228,5 +237,6 @@ country_decisions = {
 				tag = HAB
 			}
 		}
+		ai_importance = 400 #
 	}
 }

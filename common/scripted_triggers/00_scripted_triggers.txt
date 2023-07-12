@@ -585,6 +585,15 @@ was_never_end_game_tag_trigger = {	#Country Scope
 				NOT = { tag = GZI }
 				NOT = { tag = RZI }
 				NOT = { tag = SCA }
+				
+				#BT Additions
+				NOT = { tag = UNK }
+				NOT = { tag = CEL }
+				NOT = { tag = LAE }
+
+				NOT = { was_tag = UNK }
+				NOT = { was_tag = CEL }
+				NOT = { was_tag = LAE }
 			}
 		}
 	}
