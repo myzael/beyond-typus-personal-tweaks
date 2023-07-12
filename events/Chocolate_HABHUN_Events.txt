@@ -146,6 +146,9 @@ country_event = { #Nobles in Tirol force Maximilian to get on the throne						#E
 		dynasty = HAB
 		dynasty = STY
 		}
+		NOT = {
+			is_at_war = yes
+		}
 	}
 
 	mean_time_to_happen = {

@@ -1077,6 +1077,7 @@ ladislaus_postumus_heir_died_effect = {
 	if = {
 		limit = {
 			tag = HAB
+			STY = { exists = yes }
 			has_country_flag = hab_ladislaus_postumus_heir
 		}
 		clr_country_flag = hab_ladislaus_postumus_heir
