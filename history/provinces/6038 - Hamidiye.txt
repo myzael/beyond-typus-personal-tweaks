@@ -9,8 +9,8 @@ owner = TUR
 controller = TUR
 
 #Demographics
-culture = armenian
-religion = apostolic
+culture = turkish
+religion = sunni
 
 #Development and Trade
 base_tax = 1
@@ -20,6 +20,7 @@ trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)
 add_core = TUR
+add_core = TRE
 add_core = ERE
 add_core = CIK
 

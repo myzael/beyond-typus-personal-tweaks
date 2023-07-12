@@ -6,8 +6,8 @@
 #Core Details
 capital = "Shapkarahisar"
 is_city = yes
-owner = TRE
-controller = TRE
+owner = AKK
+controller = AKK
 
 #Demographics
 culture = armenian
@@ -20,7 +20,9 @@ base_manpower = 2
 trade_goods = dyes	#(Velius) Once referred to as the 'Black Fortress of Alum', making assumptions here. (JP) Using dyes for Alum
 
 #Cores and Occupation (Alphabetical after current)
+add_core = AKK
 add_core = TRE
+add_core = ERE
 
 #Other Political
 hre = no
