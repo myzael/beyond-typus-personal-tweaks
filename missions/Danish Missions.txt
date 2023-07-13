@@ -1,4 +1,5 @@
 #Overhauled and scriptified missions by Dub
+## Limiting to no LoN/SCA DLC.
 danish_missions_kalmar = {
 	slot = 3
 	generic = no
@@ -133,6 +134,8 @@ bt_danish_trade_2 = {
 	ai = yes
 	potential = {
 		tag = DAN
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	dan_strengthen_sound_toll = {
@@ -297,7 +300,9 @@ bt_danish_colonialism = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = DAN
+		tag = DAN		
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -447,7 +452,9 @@ bt_danish_trade = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = DAN
+		tag = DAN		
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	dan_curtail_hanseatic_trade = {
@@ -564,7 +571,9 @@ bt_danish_internal_missions = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = DAN
+		tag = DAN	
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	dan_found_kongsberg_silver_mine = {
@@ -668,7 +677,9 @@ bt_danish_colonialism_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = DAN
+		tag = DAN		
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	danish_east_indian_trade_company = {
@@ -707,7 +718,9 @@ bt_danish_resist_prussia = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = DAN
+		tag = DAN		
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	dan_restore_danevirke = {
@@ -872,7 +885,9 @@ danish_missions_baltic = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = DAN
+		tag = DAN		
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -1001,7 +1016,9 @@ bt_north_sea_empire = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = DAN
+		tag = DAN	
+		NOT = { has_dlc = "Lions of the North" }
+		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	dan_north_sea_navy = {
