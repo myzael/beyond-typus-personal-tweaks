@@ -18,12 +18,12 @@ mnd_khmer_1 = {
 		provinces_to_highlight = {
 			province_id = 609
 			OR = {
-				NOT = { development = 15 }
+				NOT = { development = 25 } #BT Dev doubling up from 15
 			}
 		}
 		trigger = {
 			609 = {
-				development = 15
+				development = 25 #BT Dev doubling up from 15
 				OR = { 
 					has_great_project = {
 						type = angkor_wat
@@ -100,7 +100,7 @@ mnd_khmer_2 = {
 		}
 		trigger = {
 			OR = {
-				temple = 5
+				temple = 10 #BT half cost buildings.
 				religious_unity = 1
 			}
 			if = {
@@ -164,7 +164,7 @@ mnd_khmer_2 = {
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			total_own_and_non_tributary_subject_development = 400
+			total_own_and_non_tributary_subject_development = 800 #BT Dev doubling up from 400
 			vassal = 2
 			NOT = {
 				any_province = {
@@ -193,7 +193,7 @@ mnd_khmer_2 = {
 				}
 				absolutism = 50
 			}
-			total_own_and_non_tributary_subject_development = 600
+			total_own_and_non_tributary_subject_development = 1200 #BT Dev doubling up from 600
 			OR = {
 				num_of_times_used_transfer_development = 2
 				capital_scope = { num_of_times_improved = 5 }
@@ -234,29 +234,31 @@ mnd_khmer_3 = {
 			OR = {
 				area = cambodia_area
 				area = mekong_area
-				area = angkor_area
+				#BT cut area
+				#area = angkor_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
-				NOT = { development = 10 }
+				NOT = { development = 16 } #BT Dev doubling up from 10
 			}
 		}
 		trigger = {
 			cambodia_area = {
 				type = all
 				owned_by = ROOT
-				development = 10
+				development = 16 #BT Dev doubling up from 10
 			}
 			mekong_area = {
 				type = all
 				owned_by = ROOT
-				development = 10
+				development = 16 #BT Dev doubling up from 10
 			}
-			angkor_area = {
-				type = all
-				owned_by = ROOT
-				development = 10
-			}
+			#BT cut area
+			#angkor_area = {
+			#	type = all
+			#	owned_by = ROOT
+			#	development = 10
+			#}
 		}
 		effect = {
 			add_adm_power = 100
@@ -417,13 +419,22 @@ mnd_khmer_3 = {
 				limit = {
 					any_country = {
 						is_free_or_tributary_trigger = yes
-						primary_culture = bornean
+						##BT Culture expansion
+						OR = {
+							primary_culture = bornean
+							primary_culture = banjarese 
+							primary_culture = kutainese
+						}
 					}
 				}
 				every_country = {
 					limit = {
 						is_free_or_tributary_trigger = yes
-						primary_culture = bornean
+						OR = {
+							primary_culture = bornean
+							primary_culture = banjarese 
+							primary_culture = kutainese
+						}
 					}
 					reverse_add_casus_belli = {
 						target = ROOT
@@ -441,31 +452,31 @@ mnd_khmer_3 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			#BT: this missions's claims without Subjugation CBs sure seem incomplete. But oh well.
 		}
 	}
 	mnd_khm_overseas_adventures = {
 		icon = mission_mnd_maj_rein_in_brunei
 		required_missions = { mnd_khm_subjugate_dia_viet }
 		provinces_to_highlight = {
-			area = banjar_area
-			area = brunei_area
-			area = kalimantan_area
-			area = kutai_area
-			area = sabah_area
+			#area = banjar_area
+			#area = brunei_area
+			#area = kalimantan_area
+			#area = kutai_area
+			#area = sabah_area
+			region = borneo_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			calc_true_if = {
-				amount = 10
+				amount = 10 #BT: Despite increase in total provinces, the culture shift keeps the number ~the same, so...
 				all_province = {
-					culture = bornean
 					OR = {
-						area = banjar_area
-						area = brunei_area
-						area = kalimantan_area
-						area = kutai_area
-						area = sabah_area
+						culture = bornean
+						culture = banjarese 
+						culture = kutainese
 					}
+					region = borneo_region
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -502,13 +513,12 @@ mnd_khmer_4 = {
 		}
 		trigger = {
 			OR = {
-				OR = {
-					AYU = {
-						humiliated_by = ROOT
-					}
-					ROOT = {
-						has_pillaged_capital_against = AYU
-					}
+				#BT: declutterified the reqs, OR inside an OR does nothing.
+				AYU = {
+					humiliated_by = ROOT
+				}
+				ROOT = {
+					has_pillaged_capital_against = AYU
 				}
 				central_thai_area = {
 					owned_by = ROOT
@@ -537,6 +547,14 @@ mnd_khmer_4 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				#BT area split. Not adding into reqs as it would autocomplete.
+				prachin_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
@@ -544,11 +562,18 @@ mnd_khmer_4 = {
 		icon = mission_mnd_siam_royal_duel
 		required_missions = { mnd_khm_avenge_angkor }
 		provinces_to_highlight = {
-			area = central_thai_area
+			OR = {
+				area = central_thai_area
+				area = prachin_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			central_thai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			prachin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -698,19 +723,22 @@ mnd_khmer_5 = {
 			OR = {
 				area = north_laos_area
 				area = champasak_area
-				area = vientiane_area
+				#area = vientiane_area
+				area = khorat_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			calc_true_if = {
-				amount = 12
+				amount = 18 #BT up from 12 to better represent density.
 				all_province = {
 					OR = {
-						area = south_laos_area
+						#area = south_laos_area
+						#BT: ...IDK where this one comes from. Seems to be absent in BT
 						area = north_laos_area
 						area = champasak_area
-						area = vientiane_area
+						area = khorat_area
+						#area = vientiane_area
 					}
 					country_or_non_sovereign_subject_holds = ROOT
 				}
@@ -739,7 +767,7 @@ mnd_khmer_5 = {
 		}
 		trigger = {
 			calc_true_if = {
-				amount = 50
+				amount = 80 #BT Up from 50
 				all_province = {
 					region = indo_china_region
 					country_or_non_sovereign_subject_holds = ROOT
@@ -804,7 +832,7 @@ mnd_khmer_5 = {
 		}
 		trigger = {
 			calc_true_if = {
-				amount = 20
+				amount = 32 ##BT 20/32 -> 32/51
 				all_province = {
 					region = burma_region
 					country_or_non_sovereign_subject_holds = ROOT
