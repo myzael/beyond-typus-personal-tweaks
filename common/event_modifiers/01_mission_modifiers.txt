@@ -6178,6 +6178,11 @@ bei_easy_colony = {
 }
 
 # Majapahit Missions
+#BT Added: nobility restrictions early game to allow adding up to 3 strong duchies privileges later.
+maj_early_nobility_malus = {
+	nobles_privilege_slots = -3
+}
+
 maj_subject_liberty_modifier = {
 	reduced_liberty_desire = 10
 }
