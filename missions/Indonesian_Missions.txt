@@ -418,19 +418,29 @@ indonesians_4 = {
 				region = moluccas_region
 				region = indonesia_region
 				region = malaya_region
+				#BT expanded regions:
+				region = sumatran_region
+				region = borneo_region
+				region = celebes_region
+				region = philippines_region
 			}
 		}
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = obj_convert_60_provinces_tooltip_tt
 				calc_true_if = {
-					amount = 60
+					amount = 90 #BT 60/133 -> 90/204 (should be spot on 92 but that's not a nice at all number.
 					all_province = {
 						religion = ROOT
 						OR = {
 							region = moluccas_region
 							region = indonesia_region
 							region = malaya_region
+							#BT expanded regions:
+							region = sumatran_region
+							region = borneo_region
+							region = celebes_region
+							region = philippines_region
 						}
 					}
 				}
@@ -454,16 +464,22 @@ indonesians_4 = {
 			OR = {
 				region = malaya_region
 				region = indonesia_region
+				#BT expanded regions:
+				region = sumatran_region
+				region = borneo_region
 			}
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
 			tag = MSA
 			num_of_owned_provinces_with = {
-				value = 70
+				value = 105 ##BT: 70/85 -> 105/129
 				OR = {
 					region = malaya_region
 					region = indonesia_region
+					#BT expanded regions:
+					region = sumatran_region
+					region = borneo_region
 				}
 			}
 		}
@@ -500,6 +516,9 @@ indonesians_4 = {
 			OR = {
 				region = malaya_region
 				region = indonesia_region
+				#BT expanded regions:
+				region = sumatran_region
+				region = borneo_region
 			}
 		}
 		trigger = {
@@ -519,6 +538,9 @@ indonesians_4 = {
 							OR = {
 								region = malaya_region
 								region = indonesia_region
+								#BT expanded regions:
+								region = sumatran_region
+								region = borneo_region
 							}
 						}
 					}
