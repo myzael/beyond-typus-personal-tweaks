@@ -191,9 +191,7 @@ indonesians_4 = {
 				AND = { # borneo
 					ROOT = {
 						capital_scope = {
-							OR = {
-								region = borneo_region
-							}
+							region = borneo_region
 						}
 					}
 					region = borneo_region
@@ -225,14 +223,20 @@ indonesians_4 = {
 				AND = { # sulawesi and spice islands
 					ROOT = {
 						capital_scope = {
+							#area = molluca_area
+							#area = sulawesi_area
+							#area = south_sulawesi_area
+							#area = makassar_area
+							#area = spice_islands_area
+							##BT rejiggle
 							OR = {
-								region = sulawesi_region
+								region = celebes_region
 								region = moluccas_region
 							}
 						}
 					}
 					OR = {
-						region = sulawesi_region
+						region = celebes_region
 						region = moluccas_region
 					}
 				}
@@ -342,19 +346,14 @@ indonesians_4 = {
 					limit = {
 						capital_scope = {
 							OR = {
-								#area = molluca_area
-								#area = sulawesi_area
-								#area = south_sulawesi_area
-								#area = makassar_area
-								#area = spice_islands_area
-								##BT rejiggle
-								region = sulawesi_region
+								region = celebes_region
 								region = moluccas_region
 							}
 							
 						}
 					}
-					sulawesi_region = {
+					
+					celebes_region = {
 						type = all
 						OR = {
 							religion = ROOT
@@ -368,6 +367,7 @@ indonesians_4 = {
 							is_empty = yes
 						}
 					}
+					
 				}
 				else_if = {	# philippines
 					limit = {
