@@ -5753,6 +5753,15 @@ on_transfer_development = { #BT concentrate development fix/tweak/whatever
     capital_scope = {
         if = {
             limit = {
+                has_province_modifier = bt_dev_cost_5
+            }
+            extend_province_modifier = {
+                name = bt_dev_cost_5
+                duration = 1825
+            }
+        }
+        else_if = {
+            limit = {
                 has_province_modifier = bt_dev_cost_4
             }
             add_province_modifier = {
