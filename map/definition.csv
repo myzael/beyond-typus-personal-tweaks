@@ -5547,18 +5547,18 @@ province;red;green;blue;x;x
 5546;246;80;80;Bergamasque Alps;###
 5547;246;85;85;Dolomite Alps;###
 5548;246;90;90;Ortler Alps;###
-5549;246;95;95;Taurus;###
+5549;246;95;95;Bolkar Mountains;###
 5550;246;100;100;Anti-Taurus;###
-5551;245;50;50;UNUSED;###
-5552;245;55;55;UNUSED;###
-5553;245;60;60;UNUSED;###
-5554;245;65;65;UNUSED;###
-5555;245;70;70;UNUSED;###
-5556;245;75;75;UNUSED;###
-5557;245;80;80;UNUSED;###
-5558;245;85;85;UNUSED;###
-5559;245;90;90;UNUSED;###
-5560;245;95;95;UNUSED;###
+5551;245;50;50;Gümüshane Mountains;###
+5552;245;55;55;Kalkani Mountains;###
+5553;245;60;60;Kaçkar Mountains;###
+5554;245;65;65;Mescit Mountains;###
+5555;245;70;70;Otlukbeli Mountains;###
+5556;245;75;75;Munzur Mountains;###
+5557;245;80;80;Aras Mountains;###
+5558;245;85;85;Aladag Highlands;###
+5559;245;90;90;Hakkari Mountains;###
+5560;245;95;95;Buzul Mountains;###
 5561;245;100;100;UNUSED;###
 5562;100;100;25;UNUSED;###
 5563;100;100;100;Yaquimel;x
