@@ -124,7 +124,7 @@ indonesians_3 = {
 		}
 		trigger = {
 			calc_true_if = {
-				amount = 50
+				amount = 80 #BT Up from 50
 				all_province = {
 					country_or_non_sovereign_subject_holds = ROOT
 					region = indo_china_region

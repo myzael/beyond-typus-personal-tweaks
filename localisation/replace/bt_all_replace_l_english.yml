@@ -683,3 +683,4 @@
  at_least_25_provinces_on_same_continent:0 "Has at least §Y40§! provinces in §Y[Root.Capital.GetContinentName]§!."
  at_least_35_provinces_on_same_continent:0 "Has at least §Y55§! provinces in §Y[Root.Capital.GetContinentName]§!."
  at_least_50_provinces_on_same_continent:0 "Has at least §Y80§! provinces in §Y[Root.Capital.GetContinentName]§!."
+ sun_conquer_lampung:0 "Conquer Palembang"
