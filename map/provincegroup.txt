@@ -623,7 +623,7 @@ hsn_take_baghdad_provinces = {
 }
 
 hsn_white_sheep_provinces = {
-	4310 2308 4292 5293 6090 6100 6102
+	4310 2308 4292 5293 6090 6100
 }
 
 conquer_aleppo_hsn_provinces = {
