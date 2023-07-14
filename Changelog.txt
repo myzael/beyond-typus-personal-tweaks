@@ -8,6 +8,7 @@ BT16
 
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
+ - (Nuq) Updating most/all missions to fit BT's development and province density tweaks across all regions and DLCs.
  
 #Localised Naming
  - 
