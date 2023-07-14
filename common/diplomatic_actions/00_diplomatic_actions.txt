@@ -325,6 +325,16 @@ allianceaction = {
 		potential = {
 			always = yes
 			ai = yes
+			NOT = {	
+				OR = {
+					tag = STY
+					tag = HAB
+				}
+				ai = yes
+				NOT = {
+					total_development = 500
+				}
+			}
 		}
 		allow = {
 				variable_arithmetic_trigger = {
