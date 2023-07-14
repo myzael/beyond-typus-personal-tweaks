@@ -337,26 +337,26 @@ allianceaction = {
 			}
 		}
 		allow = {
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						variable_name = their_development
-						value = trigger_value:total_own_and_non_tributary_subject_development 
-						who = FROM
-					}
-					export_to_variable = {
-						variable_name = our_development
-						value = total_development
-						who = ROOT
-					}
-					divide_variable = {     
-						which = their_development       
-						which = our_development
-					}
-					check_variable = {            
-						which = their_development
-						value = 0.15
-					}
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					variable_name = their_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
+					who = FROM
 				}
+				export_to_variable = {
+					variable_name = our_development
+					value = total_development
+					who = ROOT
+				}
+				divide_variable = {     
+					which = their_development       
+					which = our_development
+				}
+				check_variable = {            
+					which = their_development
+					value = 0.15
+				}
+			}
 		}
 	}
 	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
@@ -366,29 +366,29 @@ allianceaction = {
 			ai = yes
 		}
 		allow = {
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						variable_name = their_development
-						value = total_development
-						who = FROM
-					}
-					export_to_variable = {
-						variable_name = our_development
-						value = trigger_value:total_own_and_non_tributary_subject_development 
-						who = ROOT
-					}
-					divide_variable = {     
-						which = their_development       
-						which = our_development
-					}
-					NOT = {
-					check_variable = {            
-						which = their_development
-						value = 5
-					}
-					}
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					variable_name = their_development
+					value = total_development
+					who = FROM
+				}
+				export_to_variable = {
+					variable_name = our_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
+					who = ROOT
+				}
+				divide_variable = {     
+					which = their_development       
+					which = our_development
+				}
+				NOT = {
+				check_variable = {            
+					which = their_development
+					value = 5
+				}
 				}
 			}
+		}
 	}
 	condition = {								#BT Special one for Styria #Harbivore
 		tooltip = THEY_ARE_TOO_SMALL_STY
@@ -403,26 +403,26 @@ allianceaction = {
 			}
 		}
 		allow = {
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						variable_name = their_development
-						value = trigger_value:total_own_and_non_tributary_subject_development 
-						who = FROM
-					}
-					export_to_variable = {
-						variable_name = our_development
-						value = total_development
-						who = ROOT
-					}
-					divide_variable = {     
-						which = their_development       
-						which = our_development
-					}
-					check_variable = {            
-						which = their_development
-						value = 0.5
-					}
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					variable_name = their_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
+					who = FROM
 				}
+				export_to_variable = {
+					variable_name = our_development
+					value = total_development
+					who = ROOT
+				}
+				divide_variable = {     
+					which = their_development       
+					which = our_development
+				}
+				check_variable = {            
+					which = their_development
+					value = 0.5
+				}
+			}
 		}
 	}
 }
@@ -458,6 +458,111 @@ royal_marriage = {
 		}
 		allow = {
 			NOT = { war_with = FROM }
+		}
+	}
+	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
+		tooltip = THEY_ARE_TOO_SMALL
+		potential = {
+			always = yes
+			ai = yes
+			NOT = {	
+				OR = {
+					tag = STY
+					tag = HAB
+				}
+				ai = yes
+				NOT = {
+					total_development = 500
+				}
+			}
+		}
+		allow = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					variable_name = their_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
+					who = FROM
+				}
+				export_to_variable = {
+					variable_name = our_development
+					value = total_development
+					who = ROOT
+				}
+				divide_variable = {     
+					which = their_development       
+					which = our_development
+				}
+				check_variable = {            
+					which = their_development
+					value = 0.15
+				}
+			}
+		}
+	}
+	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
+		tooltip = THEY_ARE_TOO_BIG	
+		potential = {
+			always = yes
+			ai = yes
+		}
+		allow = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					variable_name = their_development
+					value = total_development
+					who = FROM
+				}
+				export_to_variable = {
+					variable_name = our_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
+					who = ROOT
+				}
+				divide_variable = {     
+					which = their_development       
+					which = our_development
+				}
+				NOT = {
+				check_variable = {            
+					which = their_development
+					value = 5
+				}
+				}
+			}
+		}
+	}
+	condition = {								#BT Special one for Styria #Harbivore
+		tooltip = THEY_ARE_TOO_SMALL_STY
+		potential = {
+			OR = {
+				tag = STY
+				tag = HAB
+			}
+			ai = yes
+			NOT = {
+				total_development = 500
+			}
+		}
+		allow = {
+			variable_arithmetic_trigger = {
+				export_to_variable = {
+					variable_name = their_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
+					who = FROM
+				}
+				export_to_variable = {
+					variable_name = our_development
+					value = total_development
+					who = ROOT
+				}
+				divide_variable = {     
+					which = their_development       
+					which = our_development
+				}
+				check_variable = {            
+					which = their_development
+					value = 0.5
+				}
+			}
 		}
 	}
 }

@@ -123,6 +123,62 @@ country_event = {
 				limit = {
 					estate_influence = {
 						estate = estate_burghers
+						influence = 40
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+							area = masuria_area
+							area = nadruvia_area 
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 50
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+							area = masuria_area
+							area = nadruvia_area 
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
 						influence = 50
 					}
 				}
