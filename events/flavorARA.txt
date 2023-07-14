@@ -399,7 +399,7 @@ country_event = {
 			factor = 20
 		}
 		custom_tooltip = flavor_ara7_naples_goes_free
-		tooltip = { # BT
+		tooltip = { # BT Addition
 			if = {
 				limit = {
 					sicily_area = {

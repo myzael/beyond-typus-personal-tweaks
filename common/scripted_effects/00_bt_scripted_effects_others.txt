@@ -136,10 +136,12 @@ choc_FrederickIII_dies_first = {				#Ruler of HAB and STY
 			HAB = {
 				clr_country_flag = choc_albrecht_friedrich_brothers 
 				remove_country_modifier = bt_chocolcate_habsburg_fix_sty
+				remove_country_modifier = bt_fredricks_diplomats
 			}
 			STY = {
 				clr_country_flag = choc_albrecht_friedrich_brothers
 				remove_country_modifier = bt_chocolcate_habsburg_fix_sty
+				remove_country_modifier = bt_fredricks_diplomats
 			}
 			#VOR = { clr_country_flag = CHO_albrecht_friedrich_brothers inherit = ROOT change_tag = ROOT }
 		}

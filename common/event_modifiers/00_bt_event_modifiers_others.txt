@@ -189,3 +189,7 @@ bt_chocolcate_habsburg_fix_sty = {
 	heir_chance = -10
  	monarch_lifespan = 1
 }
+
+bt_fredricks_diplomats = {				#Added to help styria to get good allies at game start as they have 70% of their vanilla land taken
+	 diplomatic_reputation = 3
+}

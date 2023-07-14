@@ -233,7 +233,7 @@ bt_wettin_realms = {
 		senior_union_with = MEI
 		senior_union_with = THU
 	}
-	diplomatic_upkeep = 2 
+	#diplomatic_upkeep = 2 `Removed because of strong duchies reform. Strong duchies added to history files
 	reduced_liberty_desire = 40
 }
 

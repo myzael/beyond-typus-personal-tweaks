@@ -3002,3 +3002,19 @@ bt_grand_trunk_road_mission_trigger = { #This occurs in three mission trees: Ben
 		# province_id = 8435
 	# }
 # }
+
+#############################################################
+#############################################################
+#############################################################
+#Harbivore's work
+#############################################################
+#############################################################
+#############################################################
+
+important_person = {					#People that shouldn't be affected by events that kill or add rulers/heirs/consorts
+	OR = {
+	has_ruler_flag = united_austria_person	#People who are required for the events that result in a united austria
+	has_heir_flag = united_austria_person
+	has_consort_flag = united_austria_person
+	}
+}

@@ -105,7 +105,17 @@ country_event = {
 	
 	option = {		# Let us bind their Dynasty to ours
 		name = "flavor_spa.EVTOPTA3716"
-		ai_chance = { factor = 90 }
+		ai_chance = { 				#BT Added modifiers to allow the event to make more sense depending on game state
+			factor = 75
+			modifier = {
+				factor = 0.5
+				is_rival = ARA
+			}
+			modifier = {
+				factor = 1.5
+				alliance_with = ARA
+			}
+		}
 		if = {
 			limit = { tag = CAS }
 			create_union = ARA
@@ -160,14 +170,19 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = noble_rebels
-				size = 2
+				size = 2			
 			}
 		}
 	}
 	option = {		# No let us marry a local talent instead
 		name = "flavor_spa.EVTOPTB3716"
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 25 }
 		add_stability_or_adm_power = yes
+		add_adm_power = 200			#BT ADDED
+		add_dip_power = 200			#BT ADDED
+		add_mil_power = 200			#BT ADDED
+		add_manpower = 30			#BT ADDED
+		add_treasury = 400			#BT ADDED
 		if = {
 			limit = { tag = CAS }
 			ARA = {
@@ -175,6 +190,11 @@ country_event = {
 					who = ROOT
 					modifier = spa_declined_iberian_wedding
 				}
+			}
+			reverse_add_casus_belli = {					#BT added to make more conflict if the ai pics this one
+				type = cb_restore_personal_union
+				months = 300
+				target = ARA
 			}
 		}
 		if = {
@@ -185,6 +205,11 @@ country_event = {
 					modifier = spa_declined_iberian_wedding
 				}
 			}
+			reverse_add_casus_belli = {
+				type = cb_restore_personal_union
+				months = 300
+				target = CAS					#BT added to make more conflict if the ai pics this one
+			}	
 		}
 		if = {
 			limit = {

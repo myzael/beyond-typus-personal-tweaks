@@ -70,6 +70,7 @@ country_event = {
 			birth_date = 1440.2.22
 			claim = 60
 		}
+		set_heir_flag = united_austria_person
 		if = { 
 			limit = { 
 				historical_friend_with = POL
@@ -117,6 +118,7 @@ country_event = {
 			birth_date = 1440.2.22
 			claim = 60
 		}
+		set_heir_flag = united_austria_person
 		hidden_effect = {
 			define_ruler = {
 				ADM = 0
@@ -436,7 +438,7 @@ country_event = {
 	picture = DEATH_OF_HEIR_eventPicture
 
 	mean_time_to_happen = {
-		years = 10 #Should happen most games
+		years = 7 #He kinda needs to die #Harbivore
 	}
 
 	fire_only_once = yes

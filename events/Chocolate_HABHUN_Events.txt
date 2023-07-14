@@ -64,15 +64,16 @@ country_event = { #Styrian Response to Hungarian-Austrian Union						#Syrian eve
 	option = {
 		name = Chocolate_hab_hun.2.a
 		ai_chance = { factor = 1 }
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					is_core = HAB
-				}
-				add_core = STY
-			}
-		}
-		custom_tooltip = BT_StyrianAustriaCores_Tooltip
+		# hidden_effect = {
+			# every_owned_province = {
+				# limit = {
+					# is_core = HAB
+				# }
+				# add_core = STY
+			# }
+		# }
+		custom_tooltip = BT_StyrialosesLadislaus_Tooltip
+		add_prestige = -10
 	}
 }
 
@@ -137,7 +138,7 @@ country_event = { #Nobles in Tirol force Maximilian to get on the throne						#E
 	fire_only_once = yes
 	
 	trigger = {
-			is_year = 1448
+			is_year = 1446
 		NOT = { 
 			is_year = 1500
 		}
@@ -152,14 +153,14 @@ country_event = { #Nobles in Tirol force Maximilian to get on the throne						#E
 	}
 
 	mean_time_to_happen = {
-		months = 240
+		months = 120
 		modifier = {
 			factor = 0.2
-			is_year = 1480
+			is_year = 1460
 		}
 		modifier = {
 			factor = 0.5
-			is_year = 1460
+			is_year = 1450
 		}
 		modifier = {
 			factor = 0.8
@@ -651,14 +652,13 @@ country_event = { #Maximilian is born
 	
 	fire_only_once = yes
 
-	trigger = {
-		OR = { 
+	trigger = { 
+		OR = {
 			tag = STY
 			tag = HAB
 		}
 		has_ruler = "Friedrich III"
 		is_year = 1455
-		has_heir_flag = AlbrechtBrother
 	}
 	
 	mean_time_to_happen = {
@@ -669,6 +669,10 @@ country_event = { #Maximilian is born
 			NOT = {
 				has_heir = yes
 			}
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1465
 		}
 		modifier = {
 			factor = 6
@@ -689,7 +693,7 @@ country_event = { #Maximilian is born
 			claim = 90
 			male = yes
 		}
-		clr_heir_flag = AlbrechtBrother
+		custom_tooltip = BT_StyriagetsMaximilian_Tooltip
 	}
 }
 
@@ -874,6 +878,8 @@ country_event = { #Event for Styria to get Ladislaus as an heir after he leaves 
 			duration = -1
 			hidden = yes
 		}
+		set_heir_flag = united_austria_person
+		custom_tooltip = BT_StyriaproclaimsLadislausheir_Tooltip
 	}
 }
 
@@ -906,5 +912,135 @@ country_event = { #Event for removing modifiers if something goes wrong
 		name = Chocolate_hab_hun.226.opt
 		remove_country_modifier = bt_chocolcate_habsburg_fix_sty
 		remove_country_modifier = bt_chocolcate_habsburg_fix
+	}
+}
+
+country_event = { #Event for turning styria into austria
+	id = Chocolate_hab_hun.227
+	desc = Chocolate_hab_hun.227.desc
+	title = Chocolate_hab_hun.227.t
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = STY
+		NOT = { exists = HAB }
+		owns = 134
+		num_of_owned_provinces_with = {
+			value = 10
+			is_core = root
+			culture = austrian
+			continent = europe
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 0
+    }
+	
+	immediate = {
+		change_tag = HAB
+		on_change_tag_effect = yes
+		restore_country_name = yes
+		swap_non_generic_missions = yes
+		if = {
+			limit = { ai = yes }
+			set_ai_personality = {
+				personality = ai_balanced
+				locked = yes
+			}
+			add_manpower = 10	#Just for ai to help them
+			add_treasury = 200
+		}
+		8471 = {				#Added cores to all provinces of Austrian culture in germany
+			add_core = HAB
+		}
+		8474 = {
+			add_core = HAB
+		}
+		8469 = {
+			add_core = HAB
+		}
+		8480 = {
+			add_core = HAB
+		}
+		8475 = {
+			add_core = HAB
+		}
+		4759 = {
+			add_core = HAB
+		}
+		8481 = {
+			add_core = HAB
+		}
+		7762 = {
+			add_core = HAB
+		}
+		austria_proper_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = HAB
+		}
+		inner_austria_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = HAB
+		}
+		tirol_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = HAB
+		}
+		salzburg_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = HAB
+		}
+		austria_proper_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = HAB
+		}
+		upper_austria_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = HAB
+		}
+		carinthia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = HAB
+		}
+		carniola_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = HAB
+		}
+		#Swap culture, government, government reform & ideas, plus set flag
+		add_government_reform = austrian_archduchy_reform
+		if = {
+			limit = {
+				NOT = { has_idea_group = HAB_ideas }
+			}
+			swap_ideas = yes
+		}
+		set_country_flag = formed_austria_flag
+	}
+	
+	option = {
+		name = Chocolate_hab_hun.227.opt
+			add_prestige = 10
+			add_legitimacy = 20
+			add_splendor = 200
+		}	
 	}
 }

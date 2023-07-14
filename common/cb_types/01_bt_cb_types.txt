@@ -13,3 +13,10 @@ bt_cb_tribal_reconquest = {
 
 	war_goal = bt_tribal_reconquest_wargoal
 }
+
+bt_danzig_revolt = {
+
+	is_triggered_only = yes
+	
+	war_goal = bt_danzig_revolt_wargoal
+}

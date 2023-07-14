@@ -95,7 +95,11 @@ country_decisions = {
 		allow = {
 			NOT = { exists = PRU }
 			is_nomad = no
-			is_free_or_tributary_trigger = yes
+			is_free_or_tributary_trigger = yes			
+			OR = { #Readded to all of these otherwise its too easy for players
+				religion = reformed
+				religion = protestant
+			}
 			is_at_war = no
 			owns_core_province = 41			# Königsberg
 			OR = {
@@ -229,6 +233,10 @@ country_decisions = {
 			NOT = { exists = PRU }
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
+			OR = { #Readded to all of these otherwise its too easy for players
+				religion = reformed
+				religion = protestant
+			}
 			is_at_war = no
 			owns_core_province = 41			# Königsberg
 			OR = {
