@@ -13,9 +13,9 @@ culture = pontic_greek		#Converted to Islam but still many Greeks, often practic
 religion = sunni
 
 #Development and Trade
-base_tax = 2
+base_tax = 3
 base_production = 2
-base_manpower = 1
+base_manpower = 2
 trade_goods = bt_trade_good_fruit	#(JP) Watermelons
 
 #Cores and Occupation (Alphabetical after current)

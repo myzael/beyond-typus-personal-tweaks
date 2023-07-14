@@ -11,7 +11,7 @@ capital = "Kütahya"
 trade_goods = glass			#(JP) Known for its ceramics production
 hre = no
 base_tax = 3
-base_production = 3
+base_production = 2
 base_manpower = 2
 is_city = yes
 

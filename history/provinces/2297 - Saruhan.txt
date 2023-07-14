@@ -11,8 +11,8 @@ capital = "Manisa"
 trade_goods = cotton			#eh... whatever, not the worst choice, had some good growing land, but I can't find evidence of anything outstanding at the moment
 hre = no
 base_tax = 3
-base_production = 3
-base_manpower = 3
+base_production = 2
+base_manpower = 2
 is_city = yes
 
 

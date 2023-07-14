@@ -11,9 +11,9 @@ religion = sunni
 capital = "Amasya"
 trade_goods = bt_trade_good_books			#(JP) Important educational site for Ottoman Heirs
 hre = no
-base_tax = 4
-base_production = 4
-base_manpower = 3
+base_tax = 3
+base_production = 3
+base_manpower = 2
 is_city = yes
 fort_15th = yes #BT16 Anatolian Fort Additions - This place has been a major fortified place and capital for many a beylik and other similar entities. It just makes sense. //Dub
 

@@ -12,7 +12,7 @@ capital = "Kirshehir"
 trade_goods = grain				#(JP) Known for Sunflowers and other grains
 hre = no
 base_tax = 2			
-base_production = 2 
+base_production = 1
 base_manpower = 1 
 is_city = yes
 

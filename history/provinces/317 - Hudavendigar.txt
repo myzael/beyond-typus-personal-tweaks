@@ -9,9 +9,9 @@ religion = sunni
 capital = "Bursa"
 trade_goods = silk
 hre = no
-base_tax = 6 			#45k people around the end of the 15th century. Very large, especially compared to the rest of Anatolia at the time.
-base_production = 5
-base_manpower = 5
+base_tax = 4 			#45k people around the end of the 15th century. Very large, especially compared to the rest of Anatolia at the time.
+base_production = 4
+base_manpower = 4
 is_city = yes
 fort_15th = yes #BT16 Anatolian Fort Additions - Ottoman 2nd capital, Prusa Castle. //Dub
 
