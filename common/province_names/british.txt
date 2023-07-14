@@ -228,7 +228,6 @@
 #Anatolia
 #Mesopotamia
 407 = { "Rakkah" "Rakkah" } #(JP) "Raqqa"
-2314 = { "Deir ez-Zor" "Deir ez-Zor" } #(JP) "Deir ez-Zor"
 4298 = { "Hantab" "Hantab" }
 6089 = { "Rahba" "Rahba" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"

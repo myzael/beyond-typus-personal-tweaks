@@ -283,7 +283,6 @@ bt_grand_trunk_road_mission_trigger = { #This occurs in three mission trees: Ben
 		# #BT additions:
 		# area = mardin_area
 		# province_id = 420 #Da Ganja!
-		# province_id = 2314
 		# province_id = 2306
 	# }
 	# NOT = { #Exclusion of some Georgian provinces

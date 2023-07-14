@@ -73,7 +73,6 @@
 2310 = { "Tikrit" "Tikrit" }
 2311 = { "An-Najaf" "An-Najaf" }
 2312 = { "Wasit" "Wasit" }
-2314 = { "Dayru z-Zawr" "Dayru z-Zawr" } #(JP) "Deir ez-Zor"
 3254 = { "Beyahzid" "Beyahzid" }
 4179 = { "Uramar" "Uramar" } 
 4288 = { "Al-Qurnah" "Al-Qurnah" }
@@ -199,8 +198,6 @@
 1746 = "Qila"
 1751 = "Sebtah"
 1851 = "Qulumriya"
-#2314 = "Rahba"			#BTPL removed
-#2315 = "as-Suways"			#BTPL removed
 #BTPL removed 2316 to 2321. Either replaced below or no longer needed
 #2325 = "Tarrana"				#BTPL removed
 #2326 = "Bardiya"			#BTPL removed

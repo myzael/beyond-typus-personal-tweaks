@@ -720,7 +720,6 @@
 410 = { "Baldacca" "Baldacca" }
 411 = { "Mossul" "Mossul" }
 418 = { "Amida" "Amida" }
-2314 = { "Cirssesa" "Cirssesa" } #(JP) "Deir ez-Zor", from Latin "Circesium"
 4298 = { "Antep" "Antep" }
 6089 = { "Rahba" "Rahba" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"

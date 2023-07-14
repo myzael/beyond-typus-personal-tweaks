@@ -279,7 +279,6 @@
 2310 = { "Tikrit" "Tikrit" } #(JP) Base name, cannot find a specific Ottoman/Turkish name #(VL)Turks used Tikrit as well.
 2311 = { "Necef" "Necef" }
 2312 = { "Vasit" "Vasit" }
-2314 = { "Deyrizor" "Deyrizor" }
 2340 = { "Gürni-Hafat" "Gürni-Hafat" } #(JP) Not too sure on this one #(VL)It's Gürni-Hafat.
 3254 = { "Bayazit" "Bayazit" }
 4179 = { "Oramar" "Oramar" } #(JP) Base names

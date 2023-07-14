@@ -20,7 +20,6 @@
 2310 = { "Tikrît" "Tikrît" } #Tikrit
 2311 = { "Necef" "Necef" } #Najaf (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for
 2312 = { "Wasit" "Wasit" } #Wasit (Chrys) no Kurdish wiki, found on the Kurdish wiki for Wasit Province
-2314 = { "Dêrazorê" "Dêrazorê" } #Deir-ez-Zor (Chrys) no Kurdish wiki, found online
 3254 = { "Bazîd" "Bazîd" } #Bayazit
 4179 = { "Oremar" "Oremar" } #Oramar
 #4288 = { "" "" } #Qurna (Chrys) no Kurdish wiki

@@ -1339,7 +1339,6 @@
 
 ##Mesopotamia
 407 = { "Kallinikos" "Kallinikos" } #Ar Raqqah
-2314 = { "Kirkesion" "Kirkesion" } #Deirez Zor
 5239 = { "Rhaisena" "Rhaisena" } #Res Ayna
 5296 = { "Nisibis" "Nisibis" } #Nusaybin
 2309 = { "Singara" "Singara" } #Sindjar

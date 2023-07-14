@@ -24,7 +24,6 @@
 
 #Mesopotamia
 407 = { "Racca" "Racca" } #(JP) "Raqqa"
-2314 = { "Deir ez-Zor" "Deir ez-Zor" } #(JP) "Deir ez-Zor"
 4298 = { "Aïntab" "Aïntab" }
 6089 = { "Rahba" "Rahba" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"

@@ -2,7 +2,6 @@
 
 #Mesopotamia
 407 = { "Nicephorium" "Nicephorium" } #(JP) "Raqqa"
-2314 = { "Azdra" "Azdra" } #(Chrys) "When Syria came under the Roman Empire in 64 BC, Deir Ez-Zor was a small, marginal village known as Azdra, which the Romans made the center of the region and founded a strong military garrison."
 4298 = { "Doliche" "Doliche" }
 6089 = { "Audattha" "Audattha" }
 6091 = { "Barbalissus" "Barbalissus" } #(JP) "Maskanah" developed over "Balis" which was abandoned

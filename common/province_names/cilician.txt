@@ -35,7 +35,6 @@
 
 #Mesopotamia
 2307 = { "Van" "Van" }
-2314 = { "Derzor" "Derzor" } #(JP) "Deir ez-Zor"
 3254 = { "Ararat" "Daruynk" }
 4296 = { "Baghesh" "Baghesh" }
 4298 = { "Aintab" "Aintab" }

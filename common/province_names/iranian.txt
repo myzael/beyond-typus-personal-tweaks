@@ -177,7 +177,6 @@
 1854 = "Yaffa"
 1855 = "Safad"
 2313 = "Antakiyyah"
-2314 = "ar-Rahbah"
 2315 = "as-Suways"
 4271 = "Idlib"
 4297 = "Wadi I-Biqa"

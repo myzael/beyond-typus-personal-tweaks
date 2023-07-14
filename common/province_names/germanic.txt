@@ -1598,7 +1598,6 @@
 #Mesopotamia
 407 = { "Rakka" "Rakka" } #(JP) "Raqqa"
 411 = { "Mossul" "Mossul" } #
-2314 = { "Deir as-Sur" "Deir as-Sur" } #(JP) "Deir ez-Zor"
 4298 = { "Antep" "Antep" }
 4310 = { "Harput" "Harput" }
 5295 = { "Zisen" "Zisen" }

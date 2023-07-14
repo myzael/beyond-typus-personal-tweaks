@@ -877,7 +877,6 @@ byz_pp_religion = {
 			}
 			add_claim = 407
 			add_claim = 2309
-			add_claim = 2314
 			add_claim = 4292
 		}
 		ai_weight = {

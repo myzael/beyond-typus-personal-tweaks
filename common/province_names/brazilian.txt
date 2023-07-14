@@ -473,7 +473,6 @@
 #Mesopotamia
 410 = { "Baguedá" "Baguedá" }
 411 = { "Moçul" "Moçul" }
-2314 = { "Deireçor" "Deireçor" } #(JP) "Deir ez-Zor"
 4298 = { "Aintave" "Aintave" }
 6092 = { "Manbije" "Manbije" }
 

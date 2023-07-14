@@ -11,7 +11,6 @@
 2308 = { "Urhay" "Urhay" } #rn is Urhoy
 2309 = { "Shingar" "Shingar" } #not on the wiki list
 2310 = { "Tagrit" "Tagrit" } #not on the wiki list
-2314 = { "Dira Zeurta" "Dira Zeurta" } #(JP) "Deir ez-Zor"
 4292 = { "Merda" "Merda" } #rn is Merdô
 4295 = { "Hesno d-Kifo" "Hesno d-Kifo" } #not on the wiki list
 4298 = { "Ayindab" "Ayindab" }
