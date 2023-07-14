@@ -169,6 +169,13 @@ ai_diplomat = {
 		modifier = {			#Added in bt as a quick fix to stop mamluks killing everything Harbivore
 			factor = 10
 			tag = MAM
+		}		
+		modifier = {
+			factor = 10
+			tag = TEU
+			NOT = {
+			is_year = 1470
+			}
 		}
 		modifier = {
 			factor = 5
