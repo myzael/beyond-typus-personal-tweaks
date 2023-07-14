@@ -684,6 +684,6 @@
  at_least_35_provinces_on_same_continent:0 "Has at least §Y55§! provinces in §Y[Root.Capital.GetContinentName]§!."
  at_least_50_provinces_on_same_continent:0 "Has at least §Y80§! provinces in §Y[Root.Capital.GetContinentName]§!."
  sun_conquer_lampung:0 "Conquer Palembang"
- obj_convert_60_provinces_tooltip_tt:1 "At least 90 provinces in the regions of §YMalaya§!, §YSumatra§!, §YJava§!, §YBorneo§!, §YCelebes§!, §YLesser Sundas§! and/or §YPhillipines§! must profess the §Y[Root.Religion.GetName]§! religion."
- emp_hab_german_expansion_title:0 "Assert our Borders"
+ obj_convert_60_provinces_tooltip_tt:1 "At least 90 provinces in the regions of §YMalaya§!, §YSumatra§!, §YJava§!, §YBorneo§!, §YCelebes§!, §YLesser Sundas§! and/or §YPhillipines§! must profess the §Y[Root.Religion.GetName]§!   religion."
+ emp_hab_take_salzburg:0 "Assert our Borders"
  emp_hab_take_salzburg_desc:0 "There are several small counties and bishropics on our borders paying us lip service. If we wish to strengthen Austria, we should reassert control over these lands and fully unite Austria."
