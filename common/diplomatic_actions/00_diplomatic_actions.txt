@@ -380,6 +380,35 @@ allianceaction = {
 				}
 			}
 	}
+	condition = {								#BT Special one for Styria #Harbivore
+		tooltip = THEY_ARE_TOO_SMALL_STY
+		potential = {
+			tag = STY
+			#ai = yes
+		}
+		allow = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = their_development
+						value = trigger_value:total_own_and_non_tributary_subject_development 
+						who = FROM
+					}
+					export_to_variable = {
+						variable_name = our_development
+						value = total_development
+						who = ROOT
+					}
+					divide_variable = {     
+						which = their_development       
+						which = our_development
+					}
+					check_variable = {            
+						which = their_development
+						value = 0.5
+					}
+				}
+		}
+	}
 }
 	
 
