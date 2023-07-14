@@ -4,18 +4,55 @@ BT16
  - (All) Updated BT from 1.33.3 to 1.35.6
  
 #Bugfixes
- - 
-
+ - (Dub) Fixed bug with 5th concentrate development modifier 
+ - (Dub) Fixed bug with duplicate BEI_ideas 
+ - (Dub) Fixed vanilla localisation bug where locked reform tooltip would not draw new line 
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
- - (Nuq) Updating most/all missions to fit BT's development and province density tweaks across all regions and DLCs.
+ - (Dub) Tweaked Expand Infrastructure + Centralize State 
+ - (Dub) Removed BT's Japanese monuments with no modifiers for now. They may get re-added someday, but AI is now capable of upgrading great projects and them being there would hurt Japanese AI nations 
+ - (Dub) Cut all mentions of flat institution growth in vanilla, replacing them with varying levels of institution spread modifiers 
+ - (Dub) Changed Goslar's trade good from iron to copper (Vanilla issue) to reflect the mine not producing any ferrous metals 
+ - (Dub) Base sailors from provinces are now doubled, from 15 to 30, to account for vanilla's change from 30 to 60 at some point.
  
 #Localised Naming
  - 
  
+#Mission updates
+ - (Dub) Fixed BT's scriptified mission system to remove all all_province checks, greatly reducing lag 
+ - (Dub) Hid BT Scandinavian nations' missions from appearing with the Lions of the North DLC installed
+ - (Nuq) Updating most/all missions to fit BT's development and province density tweaks across all regions and DLCs. Done so far are:
+	- Aceh
+	- Albania
+	- Bali
+	- Brunei
+	- Adal
+	- Jolof
+	- Kongo
+	- Mutapa
+	- Denmark
+	- Sweden
+	- Generic Indonesian
+	- Philippine
+	- Tondo
+	- Madyas
+	- Malacca
+	- Spice
+	- Sunda
+	- Majapahit
+	- Champa
+	- Dai Viet
+	- Ayutthaya/Siam
+	- Lan Na
+	- Lan Xang
+	- Khmer
+	- Pegu
+	- Taungu
+	- Mossi
+	- Oyo
+ 
 #GFX
  - 
-
 
 BT15.0.1
 #New Additions
