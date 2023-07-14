@@ -7,6 +7,7 @@ BT16
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
  - (Dub) Fixed vanilla localisation bug where locked reform tooltip would not draw new line 
+ 
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
  - (Dub) Tweaked Expand Infrastructure + Centralize State 
@@ -55,6 +56,8 @@ BT16
  
 #GFX
  - 
+
+
 
 BT15.0.1
 #New Additions
