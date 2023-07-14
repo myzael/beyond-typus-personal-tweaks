@@ -1,13 +1,13 @@
 BT16
 
 #New Additions
- - Updated BT from 1.33.3 to 1.35.6
+ - (All) Updated BT from 1.33.3 to 1.35.6
  
 #Bugfixes
  - 
 
 #Tweaks and Balance
- - Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
+ - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
  
 #Localised Naming
  - 
