@@ -68,7 +68,6 @@
 6084 = { "Magloula" "Magloula" }
 6085 = { "Salamias" "Salamias" }
 6086 = { "Hemesa" "Hemesa" }
-6087 = { "Arre" "Arre" }
 6088 = { "Adada" "Adada" }
 6094 = { "Alexandria" "Alexandria" }
 6095 = { "Cyrrus" "Cyrrus" }

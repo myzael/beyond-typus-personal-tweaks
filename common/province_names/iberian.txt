@@ -675,7 +675,6 @@
 6084 = { "Malula" "Malula" }
 6085 = { "Salamia" "Salamia" }
 6086 = { "Hamad" "Hamad" }
-6087 = { "Marra" "Marra" }
 6088 = { "Suña" "Suña" }
 6094 = { "Alejandreta" "Alejandreta" }
 6095 = { "Kilís" "Kilís" }

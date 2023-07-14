@@ -468,7 +468,6 @@
 6084 = { "Malule" "Malule" }
 6085 = { "Alamiye" "Alamiye" }
 6086 = { "Hum" "Hum" }
-6087 = { "Mantike" "Mantike" } #(VL) "Mantike" or "Mantiqa"
 6088 = { "Sükneh" "Sükneh" }
 6094 = { "Iskenderun" "Iskenderun" }
 6095 = { "Kilis" "Kilis" }

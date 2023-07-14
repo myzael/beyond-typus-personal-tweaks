@@ -1191,7 +1191,7 @@ caria_area = { #BT# Caria
 # Levant
 ###
 aleppo_area = { #Aleppo
-	377 4271 6087 6095
+	377 4271 6095
 }
 syria_area = { #Syria
 	382 405 1849 6084 6085 6086 6088
