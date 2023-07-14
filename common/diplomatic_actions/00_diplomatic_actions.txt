@@ -320,11 +320,11 @@ allianceaction = {
 			NOT = { FROM = { has_government_attribute = cannot_form_alliances } }
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 10% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
+	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
 		tooltip = THEY_ARE_TOO_SMALL
 		potential = {
 			always = yes
-			#ai = yes
+			ai = yes
 		}
 		allow = {
 				variable_arithmetic_trigger = {
@@ -344,16 +344,16 @@ allianceaction = {
 					}
 					check_variable = {            
 						which = their_development
-						value = 0.1
+						value = 0.15
 					}
 				}
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 10% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
+	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
 		tooltip = THEY_ARE_TOO_BIG	
 		potential = {
 			always = yes
-			#ai = yes
+			ai = yes
 		}
 		allow = {
 				variable_arithmetic_trigger = {
@@ -383,8 +383,14 @@ allianceaction = {
 	condition = {								#BT Special one for Styria #Harbivore
 		tooltip = THEY_ARE_TOO_SMALL_STY
 		potential = {
-			tag = STY
-			#ai = yes
+			OR = {
+				tag = STY
+				tag = HAB
+			}
+			ai = yes
+			NOT = {
+				total_development = 500
+			}
 		}
 		allow = {
 				variable_arithmetic_trigger = {
