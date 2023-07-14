@@ -723,7 +723,6 @@
 4298 = { "Antep" "Antep" }
 6089 = { "Rahba" "Rahba" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
-6092 = { "Ierapoli" "Ierapoli" } #(JP)Italian for Roman "Hierapolis" according to wiki
 
 #Anatolia
 16 = { "Bosforo" "Nicomedia" } #Izmit

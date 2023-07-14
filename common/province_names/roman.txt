@@ -5,7 +5,6 @@
 4298 = { "Doliche" "Doliche" }
 6089 = { "Audattha" "Audattha" }
 6091 = { "Barbalissus" "Barbalissus" } #(JP) "Maskanah" developed over "Balis" which was abandoned
-6092 = { "Hierapolis" "Hierapolis" }
 6099 = { "Circesium" "Circesium" } #(Chrys) "Busayrah"
 6100 = { "Constantina" "Constantina" }
 6101 = { "Samosata" "Samosata" }

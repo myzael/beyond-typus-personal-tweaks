@@ -1604,7 +1604,6 @@
 5332 = { "Arissa" "Arissa" } #
 6089 = { "Rahba" "Rahba" }
 6091 = { "Maskanah" "Maskanah" }
-6092 = { "Manbidsch" "Manbidsch" }
 
 #Persia
 416 = { "Täbris" "Täbris" } #

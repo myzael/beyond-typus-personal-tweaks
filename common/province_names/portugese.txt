@@ -474,7 +474,6 @@
 410 = { "Baguedá" "Baguedá" }
 411 = { "Moçul" "Moçul" }
 4298 = { "Aintave" "Aintave" }
-6092 = { "Manbije" "Manbije" }
 
 #Levant
 321 = { "Limassol" "Limassol" }

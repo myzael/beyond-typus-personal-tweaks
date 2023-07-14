@@ -42,7 +42,6 @@
 5331 = { "Sghert" "Sghert" }
 5332 = { "Arjesh" "Arjesh" }
 6091 = { "Maskana" "Maskana" }
-6092 = { "Mabbogh" "Mabbogh" } #(JP) Syriac
 
 #Levant #(JP) Some are Base/Western/Crusader names
 321 = { "Limassol" "Limassol" }

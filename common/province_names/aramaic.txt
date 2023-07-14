@@ -19,7 +19,6 @@
 5331 = { "Si-Reth" "Si-Reth" } #not on the wiki list
 6089 = { "Audattha" "Audattha" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
-6092 = { "Mabog" "Mabog" }
 
 #Levant
 365 = { "Raithu" "Raithu" }

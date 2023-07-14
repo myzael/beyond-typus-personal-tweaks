@@ -94,7 +94,6 @@
 5332 = { "Arjish" "Arjish" }
 6089 = { "Ar-Rahba" "Ar-Rahba" }
 6091 = { "Maskanah" "Maskanah" }
-6092 = { "Manbij" "Manbij" }
 6099 = { "Al-Busayrah" "Al-Busayrah" }
 6100 = { "Qusantinah" "Qusantinah" } #(JP) "Viransehir", Roman "Constantina"
 6101 = { "Samusadah" "Samusadah" }

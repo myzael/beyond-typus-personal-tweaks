@@ -27,7 +27,6 @@
 4298 = { "Aïntab" "Aïntab" }
 6089 = { "Rahba" "Rahba" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
-6092 = { "Manbij" "Manbij" }
 
 #Levant
 321 = { "Limassol" "Limassol" }
