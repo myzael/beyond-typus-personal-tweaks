@@ -697,7 +697,6 @@
 6080 = { "Tartosso" "Tartosso" }
 6081 = { "Adria" "Adria" } #(JP) Modern "Daraa"
 6082 = { "Sovado" "Sovado" } #(JP) "As-Suwayda"
-6083 = { "Sanamene" "Sanamene" } #(JP) "Al-Sanamayn"
 6084 = { "Malulla" "Malulla" }
 6085 = { "Salamia" "Salamia" }
 6086 = { "Epifania" "Epifania" } #(JP) Roman "Epiphania"

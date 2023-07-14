@@ -63,7 +63,6 @@
 6080 = { "Antaradus" "Antaradus" }
 6081 = { "Adraa" "Adraa" }
 6082 = { "Dionysias" "Dionysias" }
-6083 = { "Aere" "Aere" }
 6084 = { "Magloula" "Magloula" }
 6085 = { "Salamias" "Salamias" }
 6086 = { "Hemesa" "Hemesa" }

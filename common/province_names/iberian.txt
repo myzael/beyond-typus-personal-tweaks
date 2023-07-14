@@ -670,7 +670,6 @@
 6080 = { "Tartús" "Tartús" }
 6081 = { "Adra" "Adra" } #(JP) Modern "Daraa"
 6082 = { "Sueyda" "Sueyda" } #(JP) "As-Suwayda"
-6083 = { "Sanamén" "Sanamén" } #(JP) "Al-Sanamayn"
 6084 = { "Malula" "Malula" }
 6085 = { "Salamia" "Salamia" }
 6086 = { "Hamad" "Hamad" }
