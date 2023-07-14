@@ -1826,7 +1826,7 @@ country_event = {
 	option = {
 		name = flavor_pol.18.a #We must retain the Jagiellon Dynasty
 		ai_chance = { 
-			factor = 75			#BT added modifier to have more stable region Harbivore			Roughly 87.5% if allied
+			factor = 90			#BT added modifier to have more stable region Harbivore			Roughly 87.5% if allied
 		modifier = {
 			factor = 1.15
 			is_year = 1448
@@ -1849,10 +1849,10 @@ country_event = {
 	option = {
 		name = flavor_pol.18.b #Appoint a Local Noble.			#BT buffed so ai doesn't die if they pic this one and to make it better for crazy players that take it.
 		ai_chance = { 
-			factor = 25
+			factor = 10
 			modifier = {
 				factor = 0.5
-				is_year = 1448
+				alliance_with = LIT
 			}
 		} 
 		add_stability_or_adm_power = yes	#BT ADDED
