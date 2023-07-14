@@ -84,8 +84,8 @@ austrian_defeat_the_serbs_provinces = {
 }
 
 austrian_take_the_bishoprics_provinces = {
-	8216 8475 4759 8480 110 8446 1868 4709 8474 4708 7760 8457 8471 76 8462 8463 8464 8465
-}
+	8483 73 8482 4758 3048 7083 1768      8481 4759 128 8480     8462 8463 8465 76 8464     8475 8216    		     8469         4751 7762 7760        1308 4738          8471 8474
+}	#Tirol area			        		  #Carinthia area	     #Salzburg area		        #Salzburg exclaves       #Eferding	  #Cilli provinces  	#Coastal minors	   #Austria proper minors
 
 austrian_bayern_provinces = {
 	8482 4760 8468 8469 76 8462 8463 8464 8465 65 2955 4707 4708 8455 8456 8457 8458 64 2956 2957 4709 8459 8460 8461

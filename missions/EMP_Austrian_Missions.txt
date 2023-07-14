@@ -1002,10 +1002,10 @@ emp_hab_german_expansion_branch = {
 		}
 		trigger = {
 			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
-				provinces=austrian_take_the_bishoprics_provinces
-				owner_type=country_or_non_sovereign_subject_holds
-				value=7 #Vanilla: 2/4, BT 7/19: forces at least 2 wars to take enough provinces.
+				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces = austrian_take_the_bishoprics_provinces
+				owner_type = country_or_non_sovereign_subject_holds
+				value = 20 #Vanilla: 2/4, BT 7/19: forces at least 2 wars to take enough provinces. Completely changed to encourage and reward austria for forming vanilla borders
 			}
 		}
 		effect = {
@@ -1026,9 +1026,13 @@ emp_hab_german_expansion_branch = {
 			else = {
 				give_permaclaims_for_mission = { mission=austrian_bayern }
 			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 5475 #15 years
+			}
 		}
 		ai_weight = {
-			factor = 500	#Historical conquest
+			factor = 1000	#Historical conquest
 			modifier = {
 				is_emperor = yes
 				factor = 0	#Unless they are the emperor
@@ -1421,9 +1425,9 @@ emp_hab_western_expansion_branch = {
 			give_permaclaims_for_mission = { mission=austrian_swabia }
 		}
 		ai_weight = {
-			factor = 500	#Historical conquest
+			factor = 100	#Historical conquest #Lowered for bt even if not the emperor they should focus other missions. Harbivore
 			modifier = {
-				is_emperor = yes	#But not when you are the emperor
+				is_emperor = yes	#But not when you are the emperor (Unknown person)  #Good change #Harbivore
 				factor = 0
 			}
 			modifier = {
