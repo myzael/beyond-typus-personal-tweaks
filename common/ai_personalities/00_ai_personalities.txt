@@ -163,11 +163,11 @@ ai_diplomat = {
 			tag = BYZ
 		}	
 		modifier = {			#Added in bt as a quick fix to stop bohemia killing everything Harbivore
-			factor = 10
+			factor = 20
 			tag = BOH
 		}
 		modifier = {			#Added in bt as a quick fix to stop mamluks killing everything Harbivore
-			factor = 10
+			factor = 200
 			tag = MAM
 		}		
 		modifier = {

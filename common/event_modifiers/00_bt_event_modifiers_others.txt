@@ -193,3 +193,8 @@ bt_chocolcate_habsburg_fix_sty = {
 bt_fredricks_diplomats = {				#Added to help styria to get good allies at game start as they have 70% of their vanilla land taken
 	 diplomatic_reputation = 3
 }
+
+bt_centralization_effort = {
+	global_autonomy = -0.05
+	global_unrest = -2
+}

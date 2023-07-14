@@ -1027,7 +1027,7 @@ emp_hab_german_expansion_branch = {
 				give_permaclaims_for_mission = { mission=austrian_bayern }
 			}
 			add_country_modifier = {
-				name = "centralization_modifier"
+				name = "centralization_effort"
 				duration = 5475 #15 years
 			}
 		}
@@ -1035,7 +1035,7 @@ emp_hab_german_expansion_branch = {
 			factor = 1000	#Historical conquest
 			modifier = {
 				is_emperor = yes
-				factor = 0	#Unless they are the emperor
+				factor = 1 #Unless they are the emperor #BT Changed they need to do this one to form natural austrian borders
 			}
 		}
 	}
