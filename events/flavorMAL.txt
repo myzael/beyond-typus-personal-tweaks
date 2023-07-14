@@ -1684,9 +1684,9 @@ country_event = {
 				}
 				cede_province = ROOT
 				add_core = ROOT
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 1
+				add_base_tax = 4 #BT Dev Doubling
+				add_base_production = 4
+				add_base_manpower = 2
 				change_religion = ROOT
 				change_culture = ROOT
 			}
@@ -2746,8 +2746,10 @@ country_event = {
 		}
 		else = {
 			385 = {
-				add_base_tax = 2
-				add_base_production = 2
+				#BT Dev doubling 2/2/0 -> 3/3/2
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
 				set_great_project_tier_3 = {
 					type = kaaba
 				}
@@ -2895,8 +2897,10 @@ country_event = {
 				owns = 385
 			}
 			385 = {
-				add_base_tax = 2
-				add_base_production = 2
+				#BT Dev doubling 2/2/0 -> 3/3/2
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
 				set_great_project_tier_3 = {
 					type = kaaba
 				}
@@ -2944,8 +2948,10 @@ country_event = {
 				owns = 385
 			}
 			385 = {
-				add_base_tax = 2
-				add_base_production = 2
+				#BT Dev doubling 2/2/0 -> 3/3/2
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
 				set_great_project_tier_3 = {
 					type = kaaba
 				}
