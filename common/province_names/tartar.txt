@@ -987,7 +987,6 @@
 #basra
 408 = { "Bäsrä" "Bäsrä" } #
 #al jazira
-5293 = { "Resülayn" "Resülayn" } #
 5296 = { "Nusaybin" "Nusaybin" } #
 #aleppo
 4298 = { "Antep" "Antep" } #

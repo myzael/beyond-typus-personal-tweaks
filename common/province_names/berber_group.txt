@@ -267,7 +267,6 @@
 #Beyond Typus 7.0 revisit of Van area
 4302 = "Karakilisa"
 4295 = "Hesn Kayfa"
-5293 = "Ra's al 'Ayn"
 4296 = "Si'ird"
 4292 = "Mardin"
 5296 = "Nsibin"

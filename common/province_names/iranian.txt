@@ -342,7 +342,6 @@
 5300 = "Wadi Al-Malik"
 5302 = "Abu Hameb"
 4302 = "Karakilisa"
-5293 = "Ra's al 'Ayn"
 4296 = "Bitlis"
 5296 = "Nsibin"
 5330 = "Mayyafariqin"

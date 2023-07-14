@@ -88,7 +88,6 @@
 4310 = { "Hisn Ziyad" "Hisn Ziyad" }
 5151 = { "Bayburt" "Bayburt" }
 5158 = { "Divrigi" "Divrigi" }
-5293 = { "Ras al-Ayn" "Ras al-Ayn" }
 5295 = { "Jazirat Ibn Umar" "Madinat al-Jazira" }
 5296 = { "Al-Hasakah" "Al-Hasakah" }
 5330 = { "Mayyafaraqin" "Mayyafaraqin" }

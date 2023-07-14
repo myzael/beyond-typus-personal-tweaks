@@ -5290,7 +5290,7 @@
 5290 - Malakal.txt
 
 
-5293 - Ras Al Ayn.txt
+
 
 5295 - Mardin.txt
 5296 - Nusaybin.txt

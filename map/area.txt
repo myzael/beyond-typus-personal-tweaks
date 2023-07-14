@@ -1242,7 +1242,7 @@ al_jazira_area = { #Middle Tigris
 	415 2310 6126 6127 6128 6132 6134
 }
 mardin_area = { #Osrhoene
-	2308 4292 5293 6090 6100
+	2308 4292 6090 6100
 }
 shahrizor_area = { #Shahrizor
 	color = { 152 102 102 }

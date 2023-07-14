@@ -35,7 +35,6 @@
 4310 = { "Xarpêt" "Xarpêt" } #Kharput
 #5151 = { "" "" } #Bayburt (Chrys) no Kurdish wiki
 5158 = { "Dîvrîgî" "Dîvrîgî" } #Divrigi
-5293 = { "Serê Kaniyê" "Serê Kaniyê" } #Ras al-Ayn
 5295 = { "Cizîr" "Cizîr" } #Cizre
 5296 = { "Hesekê" "Hesekê" } #Hasakah
 5330 = { "Farqîn" "Farqîn" } #Silvan
