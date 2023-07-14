@@ -688,3 +688,5 @@
  emp_hab_take_salzburg_title:0 "Assert our Borders"
  emp_hab_take_salzburg_desc:0 "There are several small counties and bishropics on our borders paying us lip service. If we wish to strengthen Austria, we should reassert control over these lands and fully unite Austria."
  centralization_effort:0 "Centralization Effort"
+ #BT Vanilla bugfixes
+ ENACT_REFORM_EFFECT_LOCK_WARNING:0 "\n(§RThis is a locked reform. You will not be able to switch to other reforms on the same Tier.§!)\n"
