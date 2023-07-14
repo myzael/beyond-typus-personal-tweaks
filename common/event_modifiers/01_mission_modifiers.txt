@@ -85,7 +85,7 @@ bt_temporary_colonist_eu = {
 bt_temporary_colonist_afr = {	
 	colonists = 2
 	global_colonial_growth = 15
-	colonist_placement_chance = 15 #~+45 extra settlers per year but requires paying for them
+	colonist_placement_chance = 0.15 #~+45 extra settlers per year but requires paying for them
 }
 
 #Austrian Missions:
