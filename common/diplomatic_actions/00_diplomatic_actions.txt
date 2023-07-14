@@ -326,13 +326,15 @@ allianceaction = {
 			always = yes
 			ai = yes
 			NOT = {	
-				OR = {
-					tag = STY
-					tag = HAB
-				}
-				ai = yes
-				NOT = {
-					total_development = 500
+				AND = {
+					OR = {
+						tag = STY
+						tag = HAB
+					}
+					ai = yes
+					NOT = {
+						total_development = 500
+					}
 				}
 			}
 		}
@@ -426,7 +428,7 @@ allianceaction = {
 					which = their_development       
 					which = our_development
 				}
-				check_variable = {            
+				check_variable = {        	    
 					which = their_development
 					value = 0.5
 				}

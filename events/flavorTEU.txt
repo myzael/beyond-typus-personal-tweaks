@@ -57,12 +57,6 @@ country_event = {
 		hidden_effect = {					# Almost 3x as many provinces as vanilla so almost 3x as many provinces revolt. This event is not meant to be survivable if it fires
 			set_country_flag = pru_confederation_happened
 			# add cores to DNZ based on burgher land share
-			7828 = {			#2 for free
-				add_core = DNZ
-			}
-			5097 = {
-				add_core = DNZ
-			}
 			if = {
 				limit = {
 					estate_influence = {
@@ -74,12 +68,7 @@ country_event = {
 					limit = {
 						is_capital = no
 						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
+						area = west_prussia_area
 						any_neighbor_province = {
 							is_core = DNZ
 						}
@@ -102,40 +91,7 @@ country_event = {
 					limit = {
 						is_capital = no
 						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
-						any_neighbor_province = {
-							is_core = DNZ
-						}
-					}
-					add_core = DNZ
-					if = {
-						limit = { is_part_of_hre = yes }
-						set_in_empire = no
-					}
-				}
-			}
-			if = {
-				limit = {
-					estate_influence = {
-						estate = estate_burghers
-						influence = 40
-					}
-				}
-				random_owned_province = {
-					limit = {
-						is_capital = no
-						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
+						area = west_prussia_area
 						any_neighbor_province = {
 							is_core = DNZ
 						}
@@ -158,12 +114,7 @@ country_event = {
 					limit = {
 						is_capital = no
 						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
+						area = west_prussia_area
 						any_neighbor_province = {
 							is_core = DNZ
 						}
@@ -186,40 +137,7 @@ country_event = {
 					limit = {
 						is_capital = no
 						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
-						any_neighbor_province = {
-							is_core = DNZ
-						}
-					}
-					add_core = DNZ
-					if = {
-						limit = { is_part_of_hre = yes }
-						set_in_empire = no
-					}
-				}
-			}
-			if = {
-				limit = {
-					estate_influence = {
-						estate = estate_burghers
-						influence = 50
-					}
-				}
-				random_owned_province = {
-					limit = {
-						is_capital = no
-						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
+						area = west_prussia_area
 						any_neighbor_province = {
 							is_core = DNZ
 						}
@@ -242,12 +160,7 @@ country_event = {
 					limit = {
 						is_capital = no
 						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
+						area = west_prussia_area
 						any_neighbor_province = {
 							is_core = DNZ
 						}
@@ -270,12 +183,7 @@ country_event = {
 					limit = {
 						is_capital = no
 						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
+						area = west_prussia_area
 						any_neighbor_province = {
 							is_core = DNZ
 						}
@@ -294,20 +202,22 @@ country_event = {
 						influence = 70
 					}
 				}
-				random_owned_province = {
-					limit = {
-						is_capital = no
-						NOT = { is_core = DNZ }
-						OR = {
-							area = east_prussia_area
-							area = west_prussia_area
-							area = masuria_area
-							area = nadruvia_area 
-						}
-						any_neighbor_province = {
-							is_core = DNZ
-						}
+				7829 = {
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
 					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 70
+					}
+				}
+				1859 = {
 					add_core = DNZ
 					if = {
 						limit = { is_part_of_hre = yes }
@@ -354,6 +264,29 @@ country_event = {
 					limit = {
 						is_capital = no
 						NOT = { is_core = DNZ }
+						area = west_prussia_area
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 80
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
 						OR = {
 							area = east_prussia_area
 							area = west_prussia_area
@@ -376,6 +309,62 @@ country_event = {
 					estate_influence = {
 						estate = estate_burghers
 						influence = 80
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+							area = masuria_area
+							area = nadruvia_area 
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 90
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+							area = masuria_area
+							area = nadruvia_area 
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 90
 					}
 				}
 				random_owned_province = {
@@ -426,7 +415,7 @@ country_event = {
 			DNZ = {
 				capital_scope = {
 					build_to_forcelimit = {
-						infantry = 0.6
+						infantry = 0.8
 						cavalry = 0.3
 					}
 				}
@@ -440,6 +429,9 @@ country_event = {
 						transport = 0.2
 					}
 				}
+			}
+			every_owned_province = {				#Removes the autonomy floor from the disaster BT HARB
+				add_local_autonomy = -20
 			}
 		}
 	}
@@ -459,7 +451,7 @@ country_event = {
 		}
 		declare_war_with_cb = {
 			who = DNZ
-			casus_belli = danzig_revolt				#BT changed special cb because of all the dev in the area
+			casus_belli = bt_danzig_revolt 				#BT changed special cb because of all the dev in the area
 			war_goal_province = 43
 		}
 		custom_tooltip = flavor_teu.1.tooltip
@@ -570,14 +562,23 @@ country_event = {
 				# remove_core = DNZ
 			# }
 		# }
-		west_prussia_area = {
+		west_prussia_area = {	#Claims given to danzig in a potentially futile attempt to stop border gore #HARBICOIRI
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT	}
 				NOT = { is_permanent_claim = DNZ }
 				NOT = { is_core = DNZ }
 			}
-			add_permanent_claim = ROOT
+			add_permanent_claim = DNZ
+		}
+		east_prussia_area = {
+			limit = {
+				NOT = { is_permanent_claim = ROOT }
+				NOT = { is_core = ROOT	}
+				NOT = { is_permanent_claim = DNZ }
+				NOT = { is_core = DNZ }
+			}
+			add_permanent_claim = DNZ
 		}
 		masuria_area = {				#Added areas in BT
 			limit = {
@@ -586,7 +587,7 @@ country_event = {
 				NOT = { is_permanent_claim = DNZ }
 				NOT = { is_core = DNZ }
 			}
-			add_permanent_claim = ROOT
+			add_permanent_claim = DNZ
 		}
 		nadruvia_area = {
 			limit = {
@@ -595,7 +596,7 @@ country_event = {
 				NOT = { is_permanent_claim = DNZ }
 				NOT = { is_core = DNZ }
 			}
-			add_permanent_claim = ROOT
+			add_permanent_claim = DNZ
 		}
 	}
 	
@@ -632,6 +633,21 @@ country_event = {
 				on_change_tag_effect = yes
 				override_country_name = RPR
 				set_country_flag = is_RPR_flag
+			}
+			east_prussia_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				cede_province = PRU 
+				add_core = PRU 
+			}
+			masuria_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				cede_province = PRU 
+				add_core = PRU 
+			}
+			nadruvia_area = {
+				limit = { country_or_non_sovereign_subject_holds = ROOT }
+				cede_province = PRU 
+				add_core = PRU 
 			}
 		}
 		if = {
