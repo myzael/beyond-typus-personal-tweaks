@@ -50,7 +50,6 @@
 6086 = { "Hamah" "Hamah" }
 6087 = { "Maarrat an-Numan" "Maarrat an-Numan" }
 6088 = { "As-Sukhnah" "As-Sukhnah" }
-6093 = { "Azaz" "Azaz" } #(JP) "Aziz"
 6094 = { "Al-Iskandarun" "Al-Iskandarun" }
 6095 = { "Killiz" "Killiz" }
 

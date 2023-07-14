@@ -102,7 +102,6 @@
 6075 = { "Sidun" "Sidun" }
 6079 = { "Markab" "Markab" }
 6080 = { "Dardus" "Dardus" }
-6093 = { "Ezaz" "Ezaz" } #(JP) "Aziz"
 6094 = { "Mûrawanda" "Mûrawanda" }
 6095 = { "Kilîs" "Kilîs" }
 

@@ -704,7 +704,6 @@
 6086 = { "Epifania" "Epifania" } #(JP) Roman "Epiphania"
 6087 = { "Marra" "Marra" } #(JP) "Marre" is Crusader name of "Maarat al-Numan"
 6088 = { "Sugna" "Sugna" }
-6093 = { "Azarto" "Azarto" } #(JP) "Aziz", Crusader "Hazart", Medieval Greek "Azázion"
 6094 = { "Alessandretta" "Alessandretta" }
 6095 = { "Cilizza" "Cilizza" } #(JP) Roman "Ciliza"
 

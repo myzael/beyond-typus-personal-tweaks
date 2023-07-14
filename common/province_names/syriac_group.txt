@@ -46,7 +46,6 @@
 6084 = { "Malula" "Malula" }
 6086 = { "Hamat" "Hamat" }
 6088 = { "Sikne" "Sikne" }
-6093 = { "Hazazu" "Hazazu" } #(JP) "Aziz"
 6094 = { "Aleksandrette" "Aleksandrette" }
 6095 = { "Kilizi" "Kilizi" }
 

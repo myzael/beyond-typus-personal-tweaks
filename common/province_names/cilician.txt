@@ -76,7 +76,6 @@
 6085 = { "Salamia" "Salamia" }
 6086 = { "Hama" "Hama" } #(JP) Base Names
 6087 = { "Arra" "Arra" }
-6093 = { "Azzau" "Azzau" } #(JP) "Aziz", Crusader "Hazart"
 6094 = { "Alexandrend" "Alexandrend" }
 6095 = { "Kilis" "Kilis" } #(JP) Base Names
 

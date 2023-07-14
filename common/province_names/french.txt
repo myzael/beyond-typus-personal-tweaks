@@ -78,7 +78,6 @@
 6086 = { "Hamath" "Hamath" }
 6087 = { "Marre" "Marre" } #(JP) Crusader name of "Maarat al-Numan"
 6088 = { "Soukhna" "Soukhna" }
-6093 = { "Hazart" "Hazart" } #(JP) "Aziz"
 6094 = { "Alexandrette" "Alexandrette" }
 6095 = { "Kilis" "Kilis" }
 

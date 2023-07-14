@@ -677,7 +677,6 @@
 6086 = { "Hamad" "Hamad" }
 6087 = { "Marra" "Marra" }
 6088 = { "Suña" "Suña" }
-6093 = { "Hazarte" "Hazarte" } #(JP) "Aziz"
 6094 = { "Alejandreta" "Alejandreta" }
 6095 = { "Kilís" "Kilís" }
 
