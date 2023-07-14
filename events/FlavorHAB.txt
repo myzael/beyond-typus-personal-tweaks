@@ -1208,8 +1208,7 @@ country_event = {
 
 	option = {		# Crush the Rebellion!
 		name = "flavor_hab.EVTOPTA5"
-		1863 = {
-			add_core = STY
+		1863 = {							#BT removed the core because hab was sty
 			spawn_rebels = {
 				type = nationalist_rebels
 				size = 2

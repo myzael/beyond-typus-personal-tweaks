@@ -364,6 +364,14 @@ allianceaction = {
 		potential = {
 			always = yes
 			ai = yes
+			if = {
+				limit = {
+					FROM = {
+						TAG = STY
+					}
+				}
+				total_development = 50
+			}
 		}
 		allow = {
 			variable_arithmetic_trigger = {
@@ -504,6 +512,14 @@ royal_marriage = {
 		potential = {
 			always = yes
 			ai = yes
+			if = {
+				limit = {
+					FROM = {
+						TAG = STY
+					}
+				}
+				total_development = 50
+			}
 		}
 		allow = {
 			variable_arithmetic_trigger = {

@@ -701,7 +701,14 @@ country_event = {
 		name = flavor_hun.3.a
 		add_legitimacy = 5
 		add_prestige = 5
-		STY = { inherit = HAB }			#BT Edited by Harbivore to work with moddified chocolate
+		if = {
+			limit = {
+				ROOT = {
+					TAG = STY 
+				}
+			}
+			STY = { inherit = HAB }			#BT Edited by Harbivore to work with moddified chocolate
+		}
 	}
 }
 
