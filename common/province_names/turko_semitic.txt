@@ -40,7 +40,6 @@
 6076 = { "Apiskopiya" "Apiskopiya" }
 6077 = { "Kurmajit" "Kurmajit" }
 6078 = { "Kireniya" "Kireniya" }
-6079 = { "Marqab" "Marqab" }
 6080 = { "Tartus" "Tartus" }
 6081 = { "Adhriat" "Adhriat" } #(JP) Modern "Daraa"
 6082 = { "Jabal al-Arab" "As-Suwayda" }

@@ -272,7 +272,7 @@
 6076 = { "Episkopi" "Episkopi" }
 6077 = { "Kormakitis" "Kormakitis" }
 6078 = { "Kyrenia" "Kyrenia" }
-6079 = { "Margate" "Margate" } #(JP) "Margat", semi-jokey-easter-egg for British "sunny" town of "Margate"
+#6079 = { "Margate" "Margate" } #(JP) "Margat", semi-jokey-easter-egg for British "sunny" town of "Margate" #(JP) Cut this. Keeping here as I like the joke...
 6080 = { "Tartus" "Tartus" }
 6081 = { "Adraat" "Adraat" } #(JP) Modern "Daraa"
 6082 = { "Swaida" "Swaida" } #(JP) "As-Suwayda"

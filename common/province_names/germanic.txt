@@ -1581,7 +1581,6 @@
 6076 = { "Episkopien" "Episkopien" }
 6077 = { "Kormakitis" "Kormakitis" }
 6078 = { "Schernis" "Schernis" } #(JP) "Kyrenia", Wilbrand von Oldenburg 
-6079 = { "Margad" "Burg Margad" }
 6080 = { "Tortosa" "Tortosa" } #(JP) "Tartus", same as given for Spanish "Tortosa"
 6081 = { "Adratien" "Adratien" } #(JP) Modern "Daraa", in period "Adratum" or "Adhri'at"
 6082 = { "Suweida" "Suweida" } #(JP) "As-Suwayda"

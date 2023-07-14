@@ -1213,7 +1213,7 @@ tripoli_area = { #Lebanon
 	378 4297 5205 6074 6075
 }
 bargylus_area = { #Bargylus
-	2313 5170 6079 6080 6094
+	2313 5170 6080 6094
 }
 hauran_area = { #Hawran
 	6069 6070 6081 6082 6083

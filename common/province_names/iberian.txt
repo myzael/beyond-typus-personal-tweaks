@@ -667,7 +667,6 @@
 6076 = { "La Piscopia" "La Piscopia" }
 6077 = { "Cormácite" "Cormácite" }
 6078 = { "Cirénia" "Cirénia" }
-6079 = { "Margata" "Margata" }
 6080 = { "Tartús" "Tartús" }
 6081 = { "Adra" "Adra" } #(JP) Modern "Daraa"
 6082 = { "Sueyda" "Sueyda" } #(JP) "As-Suwayda"

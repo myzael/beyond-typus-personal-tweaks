@@ -460,7 +460,6 @@
 6076 = { "Piskobu" "Piskobu" }
 6077 = { "Kormacit" "Kormacit" } #(JP) "Koruçam" is a post-1974 development
 6078 = { "Girne" "Girne" }
-6079 = { "Markab" "Markab" } #(JP) "Marqab"/"Margat", or "Baniyas" are base names
 6080 = { "Tartus" "Tartus" } #(JP) Base Names #(VL) Correct though.
 6081 = { "Dera" "Dera" } 
 6082 = { "Üsvad" "Üsvad" }

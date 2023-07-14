@@ -100,7 +100,6 @@
 6067 = { "Emman" "Emman" }
 6074 = { "Tir" "Tir" }
 6075 = { "Sidun" "Sidun" }
-6079 = { "Markab" "Markab" }
 6080 = { "Dardus" "Dardus" }
 6094 = { "Mûrawanda" "Mûrawanda" }
 6095 = { "Kilîs" "Kilîs" }

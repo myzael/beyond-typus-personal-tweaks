@@ -68,7 +68,6 @@
 6076 = { "Episcopé" "Episcopé" }
 6077 = { "Kormakitis" "Kormakitis" }
 6078 = { "Cyrenie" "Cyrenie" }
-6079 = { "Margatte" "Margatte" } #(JP) "Margat"
 6080 = { "Tartous" "Tartous" }
 6081 = { "Adrée" "Adrée" } #(JP) Modern "Daraa"
 6082 = { "Soueïda" "Soueïda" } #(JP) "As-Suwayda"

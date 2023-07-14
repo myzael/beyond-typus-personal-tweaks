@@ -60,7 +60,6 @@
 6076 = { "Kourion" "Kourion" } #(JP) Next door
 6077 = { "Soloi" "Soloi" } #(JP) In the area
 6078 = { "Keryneia" "Keryneia" }
-6079 = { "Balanea" "Balanea" }
 6080 = { "Antaradus" "Antaradus" }
 6081 = { "Adraa" "Adraa" }
 6082 = { "Dionysias" "Dionysias" }
