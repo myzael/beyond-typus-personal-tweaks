@@ -125,9 +125,10 @@ indonesians_3 = {
 		trigger = {
 			calc_true_if = {
 				amount = 80 #BT Up from 50
-				all_province = {
+				indo_china_region = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					region = indo_china_region
+					
 				}
 			}
 		}
@@ -394,8 +395,7 @@ indonesians_4 = {
 				else = {
 					calc_true_if = {
 						amount = 30
-						all_province = {
-							owned_by = ROOT
+						all_owned_province = {
 							religion = ROOT
 						}
 					}
@@ -430,18 +430,33 @@ indonesians_4 = {
 				tooltip = obj_convert_60_provinces_tooltip_tt
 				calc_true_if = {
 					amount = 90 #BT 60/133 -> 90/204 (should be spot on 92 but that's not a nice at all number.
-					all_province = {
+					moluccas_region = {
+						type = all
 						religion = ROOT
-						OR = {
-							region = moluccas_region
-							region = indonesia_region
-							region = malaya_region
-							#BT expanded regions:
-							region = sumatran_region
-							region = borneo_region
-							region = celebes_region
-							region = philippines_region
-						}
+					}
+					indonesia_region = {
+						type = all
+						religion = ROOT
+					}
+					malaya_region = {
+						type = all
+						religion = ROOT
+					}
+					sumatran_region = {
+						type = all
+						religion = ROOT
+					}
+					borneo_region = {
+						type = all
+						religion = ROOT
+					}
+					celebes_region = {
+						type = all
+						religion = ROOT
+					}
+					philippines_region = {
+						type = all
+						religion = ROOT
 					}
 				}
 			}

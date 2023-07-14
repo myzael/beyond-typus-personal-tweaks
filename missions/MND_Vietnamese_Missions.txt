@@ -175,8 +175,8 @@ mnd_dai_1 = {
 			}
 			calc_true_if = {
 				amount = 15
-				all_province = {
-					region = south_china_region
+				south_china_region = {
+					type = all
 					owned_by = ROOT
 				}
 			}

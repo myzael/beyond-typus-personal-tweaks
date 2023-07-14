@@ -155,9 +155,9 @@ mnd_maj_1 = {
 			}
 			calc_true_if = {
 				amount = 19 #BT up from 12
-				all_province = {
+				malaya_region = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					region = malaya_region
 				}
 			}
 		}
@@ -379,9 +379,9 @@ mnd_maj_2 = {
 			}
 			calc_true_if = {
 				amount = 27 ##BT up from 15, keep all your subjects + full annex Brunei
-				all_province = {
+				borneo_region = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					region = borneo_region
 				}
 			}
 			brunei_area = {
@@ -426,12 +426,13 @@ mnd_maj_2 = {
 		trigger = {
 			calc_true_if = {
 				amount = 80 #BT up from 50
-				all_province = {
+				indo_china_region = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						region = indo_china_region
-						region = burma_region
-					}
+				}
+				burma_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}

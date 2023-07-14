@@ -31,14 +31,24 @@ emp_pap_slot_1 = {
 		trigger = {
 			calc_true_if = { #TODO: Vanilla uses emp_pap_patrimony_of_st_peter_tt tooltip. Might want to utilise?
 				amount = 24 
-				all_province = {
-					OR = {
-						area = central_italy_area
-						area = emilia_romagna_area
-						area = emilia_area 
-						area = lazio_area 
-						area = umbria_area 
-					}
+				central_italy_area = {
+					type = all
+					owned_by = ROOT
+				}
+				emilia_romagna_area = {
+					type = all
+					owned_by = ROOT
+				}
+				emilia_area = {
+					type = all
+					owned_by = ROOT
+				}
+				lazio_area = {
+					type = all
+					owned_by = ROOT
+				}
+				umbria_area = {
+					type = all
 					owned_by = ROOT
 				}
 			}
@@ -444,8 +454,8 @@ emp_pap_slot_2 = {
 			calc_true_if = {
 				desc = emp_pap_levantine_missions_tt
 				amount = 16 # just over half of Mashriq's 31 total provinces
-				all_province = {
-					region = mashriq_region
+				mashriq_region = {
+					type = all
 					owner = {
 						religion = catholic
 					}
@@ -516,11 +526,12 @@ emp_pap_slot_2 = {
 			}
 			calc_true_if = {
 				desc = emp_pap_mission_to_china_tt2
-				all_province = {
-					OR = {
-						region = north_china_region
-						region = south_china_region
-					}
+				north_china_region = {
+					type = all
+					owner = { religion = catholic }
+				}
+				south_china_region = {
+					type = all
 					owner = { religion = catholic }
 				}
 				amount = 6 # Taiwan is three provinces, so at least one non-Taiwanese province must be taken
@@ -896,8 +907,8 @@ emp_pap_slot_3 = {
 			}
 			calc_true_if = {
 				desc = emp_pap_mission_to_japan_tt2
-				all_province = {
-					region = japan_region
+				japan_region = {
+					type = all
 					owner = { religion = catholic }
 				}
 				amount = 6

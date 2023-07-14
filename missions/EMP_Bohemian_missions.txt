@@ -1198,7 +1198,8 @@ emp_bohemia_4 = {
 					hre_size = 1
 				}
 				calc_true_if = {
-					all_province = {
+					europe = { #Changing to Europe continent as I believe the HRE is hardcoded to be on the European continent //Dub
+						type = all
 						is_part_of_hre = yes
 					}
 					amount = 400

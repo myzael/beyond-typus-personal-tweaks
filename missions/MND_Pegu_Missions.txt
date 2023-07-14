@@ -396,15 +396,20 @@ mnd_pegu_3 = {
 		trigger = {
 			calc_true_if = {
 				amount = 15 ##BT up from 12 since bigger density.
-				all_province = {
-					OR = {
-						area = central_thai_area
-						area = sukhothai_area
-						area = north_tenasserim_area
-						#area = khorat_area
-						#BT read above.
-						area = prachin_area
-					}
+				central_thai_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				sukhothai_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				north_tenasserim_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				prachin_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}

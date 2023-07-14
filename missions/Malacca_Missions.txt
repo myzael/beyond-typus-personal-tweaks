@@ -315,13 +315,17 @@ mnd_mlc_1 = {
 		trigger = {
 			calc_true_if = {
 				amount = 9
-				all_province = {
+				jambi_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						area = jambi_area
-						area = central_sumatra_area
-						area = batak_area
-					}
+				}
+				central_sumatra_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				batak_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}

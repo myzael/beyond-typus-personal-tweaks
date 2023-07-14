@@ -113,14 +113,24 @@ mas_1 = {
 			}
 			calc_true_if = {
 				# desc = going_back_home_tooltip
-				all_province = {
-					OR = {
-						area = luzon_area
-						area = southern_luzon_area
-						area = visayas_area
-						area = mindanao_area
-						area = west_mindanao_area
-					}
+				luzon_area = {
+					type = all
+					owned_by = ROOT
+				}
+				southern_luzon_area = {
+					type = all
+					owned_by = ROOT
+				}
+				visayas_area = {
+					type = all
+					owned_by = ROOT
+				}
+				mindanao_area = {
+					type = all
+					owned_by = ROOT
+				}
+				west_mindanao_area = {
+					type = all
 					owned_by = ROOT
 				}
 				amount = 10

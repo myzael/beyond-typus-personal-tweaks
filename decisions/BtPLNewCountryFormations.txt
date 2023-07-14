@@ -232,8 +232,8 @@ country_decisions = {
 			custom_trigger_tooltip = {
 				tooltip = hegemony_over_france_tooltip
 				calc_true_if = {
-					all_province = {
-						region = france_region
+					france_region = {
+						type = all
 						country_or_vassal_holds = ROOT
 						is_core = owner
 					}

@@ -4040,12 +4040,36 @@ dan_sca_conquest_slot_2 = {
 					value = 7
 				}
 				calc_true_if = {
-					all_province = {
-						OR = {
-							area = hinter_pommern_area
-							area = vorpommern_area
-							area = mecklenburg_area
+					hinter_pommern_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+							trust = {
+								who = ROOT
+								value = 70
+							}
 						}
+					}
+					vorpommern_area = {
+						type = all
+						owner = {
+							alliance_with = ROOT
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+							trust = {
+								who = ROOT
+								value = 70
+							}
+						}
+					}
+					mecklenburg_area = {
+						type = all
 						owner = {
 							alliance_with = ROOT
 							has_opinion = {
@@ -4096,12 +4120,36 @@ dan_sca_conquest_slot_2 = {
 			else_if = {
 				limit = {
 					calc_true_if = {
-						all_province = {
-							OR = {
-								area = hinter_pommern_area
-								area = vorpommern_area
-								area = mecklenburg_area
+						hinter_pommern_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								has_opinion = {
+									who = ROOT
+									value = 100
+								}
+								trust = {
+									who = ROOT
+									value = 70
+								}
 							}
+						}
+						vorpommern_area = {
+							type = all
+							owner = {
+								alliance_with = ROOT
+								has_opinion = {
+									who = ROOT
+									value = 100
+								}
+								trust = {
+									who = ROOT
+									value = 70
+								}
+							}
+						}
+						mecklenburg_area = {
+							type = all
 							owner = {
 								alliance_with = ROOT
 								has_opinion = {

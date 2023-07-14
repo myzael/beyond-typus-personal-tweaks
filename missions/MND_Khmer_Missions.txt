@@ -342,12 +342,9 @@ mnd_khmer_3 = {
 				}
 				accepted_culture = cham
 			}
-			calc_true_if = {
-				amount = 3
-				all_province = {
-					country_or_non_sovereign_subject_holds = ROOT
-					culture = cham
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				culture = cham
 			}
 		}
 		effect = {
@@ -470,13 +467,13 @@ mnd_khmer_3 = {
 		trigger = {
 			calc_true_if = {
 				amount = 10 #BT: Despite increase in total provinces, the culture shift keeps the number ~the same, so...
-				all_province = {
+				borneo_region = {
+					type = all
 					OR = {
 						culture = bornean
 						culture = banjarese 
 						culture = kutainese
 					}
-					region = borneo_region
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -596,8 +593,8 @@ mnd_khmer_4 = {
 		trigger = {
 			calc_true_if = {
 				amount = 20
-				all_province = {
-					superregion = china_superregion
+				china_superregion = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -635,8 +632,8 @@ mnd_khmer_4 = {
 			}
 			calc_true_if = {
 				amount = 50
-				all_province = {
-					superregion = china_superregion
+				china_superregion = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -731,15 +728,16 @@ mnd_khmer_5 = {
 		trigger = {
 			calc_true_if = {
 				amount = 18 #BT up from 12 to better represent density.
-				all_province = {
-					OR = {
-						#area = south_laos_area
-						#BT: ...IDK where this one comes from. Seems to be absent in BT
-						area = north_laos_area
-						area = champasak_area
-						area = khorat_area
-						#area = vientiane_area
-					}
+				north_laos_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				champasak_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				khorat_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -768,8 +766,8 @@ mnd_khmer_5 = {
 		trigger = {
 			calc_true_if = {
 				amount = 80 #BT Up from 50
-				all_province = {
-					region = indo_china_region
+				indo_china_region = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 					NOT = { nationalism = 1 }
 					NOT = { unrest = 1 }
@@ -833,8 +831,8 @@ mnd_khmer_5 = {
 		trigger = {
 			calc_true_if = {
 				amount = 32 ##BT 20/32 -> 32/51
-				all_province = {
-					region = burma_region
+				burma_region = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}

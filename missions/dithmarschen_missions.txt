@@ -544,11 +544,18 @@ peasants_2 = {
 		trigger = {
 			calc_true_if = {
 				desc = protect_frisia_tt
-				all_province = {
-					OR = { 
-						area = frisia_area
-						area = north_brabant_area
+				frisia_area = {
+					type = all
+					OR = {
+						owned_by = ROOT
+						owner = {
+							has_reform = peasants_republic
+							alliance_with = ROOT
+						}
 					}
+				}
+				north_brabant_area = {
+					type = all
 					OR = {
 						owned_by = ROOT
 						owner = {
@@ -597,29 +604,45 @@ peasants_2 = {
 					}
 					calc_true_if = {
 						desc = dtt_peasants_war_tt_2
-						all_province = {
-							OR = {
-								region = north_german_region
-								region = south_german_region
-								area = schleswig_area
-							}
+						north_german_region = {
+							type = all
 							owner = {
 								has_reform = peasants_republic
 							}
 						}
-						amount = 45
+						south_german_region = {
+							type = all
+							owner = {
+								has_reform = peasants_republic
+							}
+						}
+						schleswig_area = {
+							type = all
+							owner = {
+								has_reform = peasants_republic
+							}
+						}
+						amount = 35 #I noticed the amount was the same no matter the outcome of the great peasants war. Lowering this one to 35 so there's at least some benefit. //Dub
 					}
 				}
 			}
 			else = {
 				calc_true_if = {
 					desc = dtt_peasants_war_tt_2
-					all_province = {
-						OR = {
-							region = north_german_region
-							region = south_german_region
-							area = schleswig_area
+					north_german_region = {
+						type = all
+						owner = {
+							has_reform = peasants_republic
 						}
+					}
+					south_german_region = {
+						type = all
+						owner = {
+							has_reform = peasants_republic
+						}
+					}
+					schleswig_area = {
+						type = all
 						owner = {
 							has_reform = peasants_republic
 						}

@@ -480,15 +480,24 @@ sun_2 = {
 		trigger = {
 			calc_true_if = {
 				amount = 15 #BT up from 12
-				all_province = {
-					OR = {
-						area = north_sumatra_area
-						area = central_sumatra_area
-						area = south_sumatra_area
-						area = jambi_area
-						#BT addition due to area reshuffle
-						area = batak_areas
-					}
+				north_sumatra_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				central_sumatra_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				south_sumatra_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				jambi_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				batak_areas = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}

@@ -355,8 +355,8 @@ bt_norwegian_colonialism = {
 		}
 		trigger = {
 			calc_true_if = {
-				all_province = {
-					colonial_region = colonial_newfoundland
+				colonial_newfoundland = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				amount = 5
@@ -464,8 +464,8 @@ bt_norwegian_colonialism_3 = {
 		}
 		trigger = {
 			calc_true_if = {
-				all_province = {
-					colonial_region = colonial_acadia
+				colonial_acadia = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 				amount = 5

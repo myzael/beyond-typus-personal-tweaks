@@ -321,11 +321,12 @@ gen_europe_hre_theocracy = {
 				root = {
 					calc_true_if = {
 						amount = 50
-						all_province = {
-							OR = {
-								region = north_german_region
-								region = south_german_region
-							}
+						north_german_region = {
+							type = all
+							religion = root
+						}
+						south_german_region = {
+							type = all
 							religion = root
 						}
 					}
@@ -344,11 +345,12 @@ gen_europe_hre_theocracy = {
 			calc_true_if = {
 				desc = gen_hre_theocracy_divine_empire_trigger_tooltip
 				amount = 50
-				all_province = {
-					OR = {
-						region = north_german_region
-						region = south_german_region
-					}
+				north_german_region = {
+					type = all
+					religion = root
+				}
+				south_german_region = {
+					type = all
 					religion = root
 				}
 			}

@@ -754,12 +754,12 @@ eng_rb_buildings_group = {
 			calc_true_if = {
 				desc = eng_rb_furnaces_tt
 				amount = 5
-				all_province = {
+				british_isles_region = {
+					type = all
 					OR = {
 						has_latent_trade_goods = coal
 						trade_goods = coal
 					}
-					region = british_isles_region
 					owned_by = ROOT
 					has_building = furnace
 				}

@@ -4657,12 +4657,34 @@ swe_sca_hre_slot = {
 						is_emperor = yes
 						calc_true_if = {
 							desc = swe_sca_low_countries_tt
-							all_province = {
+							frisia_area = {
+								type = all
 								OR = {
-									area = frisia_area
-									area = holland_area
-									area = north_brabant_area
+									country_or_non_sovereign_subject_holds = ROOT
+									owner = {
+										has_opinion = {
+											who = ROOT
+											value = 100
+										}
+										is_part_of_hre = yes
+									}
 								}
+							}
+							holland_area = {
+								type = all
+								OR = {
+									country_or_non_sovereign_subject_holds = ROOT
+									owner = {
+										has_opinion = {
+											who = ROOT
+											value = 100
+										}
+										is_part_of_hre = yes
+									}
+								}
+							}
+							north_brabant_area = {
+								type = all
 								OR = {
 									country_or_non_sovereign_subject_holds = ROOT
 									owner = {
@@ -4695,12 +4717,34 @@ swe_sca_hre_slot = {
 				limit = {
 					is_emperor = yes
 					calc_true_if = {
-						all_province = {
+						frisia_area = {
+							type = all
 							OR = {
-								area = frisia_area
-								area = holland_area
-								area = north_brabant_area
+								country_or_non_sovereign_subject_holds = ROOT
+								owner = {
+									has_opinion = {
+										who = ROOT
+										value = 100
+									}
+									is_part_of_hre = yes
+								}
 							}
+						}
+						holland_area = {
+							type = all
+							OR = {
+								country_or_non_sovereign_subject_holds = ROOT
+								owner = {
+									has_opinion = {
+										who = ROOT
+										value = 100
+									}
+									is_part_of_hre = yes
+								}
+							}
+						}
+						north_brabant_area = {
+							type = all
 							OR = {
 								country_or_non_sovereign_subject_holds = ROOT
 								owner = {

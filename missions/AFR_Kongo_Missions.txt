@@ -360,8 +360,8 @@ kongo_catholic_missions_slot = {
 		trigger = {
 			religion = catholic
 			calc_true_if = {
-				all_province = {
-					continent = africa
+				africa = {
+					type = all
 					religion = catholic
 				}
 				amount = 100

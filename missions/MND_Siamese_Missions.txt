@@ -544,14 +544,16 @@ mnd_siam_3 = {
 			}
 			calc_true_if = {
 				amount = 18 #BT 12/14 -> 18/22
-				all_province = {
-					OR = {
-						area = north_laos_area
-						area = champasak_area
-						#area = vientiane_area
-						#BT Area cut, replacing with expanded into it khorat_area
-						area = khorat_area
-					}
+				north_laos_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				champasak_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				khorat_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -668,8 +670,8 @@ mnd_siam_3 = {
 		trigger = {
 			calc_true_if = {
 				amount = 20
-				all_province = {
-					superregion = china_superregion
+				china_superregion = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -722,8 +724,8 @@ mnd_siam_3 = {
 			}
 			calc_true_if = {
 				amount = 50
-				all_province = {
-					superregion = china_superregion
+				china_superregion = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -946,8 +948,8 @@ mnd_siam_4 = {
 		trigger = {
 			calc_true_if = {
 				amount = 35 ##BT 20/32 -> 31/49 + 4 held at the start as AYU/conquered from AYU as SUK
-				all_province = {
-					region = burma_region
+				burma_region = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
@@ -1142,14 +1144,15 @@ mnd_siam_5 = {
 			}
 			calc_true_if = {
 				amount = 4 ##Not many extra COT's added, no need for adjustment
-				all_province = {
+				malaya_region = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 					province_has_center_of_trade_of_level = 1
-					OR = {
-						region = malaya_region
-						##BT Added due to region split.
-						region = sumatran_region
-					}
+				}
+				sumatran_region = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+					province_has_center_of_trade_of_level = 1
 				}
 			}
 		}

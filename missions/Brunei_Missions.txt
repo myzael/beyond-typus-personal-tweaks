@@ -17,9 +17,9 @@ mnd_bei_1 = {
 		trigger = {
 			calc_true_if  = {
 				amount = 5 #BT Up from 4 to account for new density: either way this mission now requires a war with Majapahit or a non-cobelligerent annexation.
-				all_province = {
+				kalimantan_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					area = kalimantan_area
 				}
 			}
 		}
@@ -181,12 +181,13 @@ mnd_bei_1 = {
 		trigger = {
 			calc_true_if  = {
 				amount = 5 #BT Up from 3.
-				all_province = {
+				mindanao_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						area = mindanao_area
-						area = west_mindanao_area
-					}
+				
+				west_mindanao_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}
@@ -253,16 +254,29 @@ mnd_bei_1 = {
 		trigger = {
 			calc_true_if  = {
 				amount = 25 #BT Up from 13, all colonized provinces at the start of the game.
-				all_province = {
+				mindanao_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						area = mindanao_area
-						area = west_mindanao_area
-						area = luzon_area
-						area = southern_luzon_area
-						area = visayas_area
-						area = palawan_area
-					}
+				
+				west_mindanao_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				luzon_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				
+				southern_luzon_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				visayas_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				
+				palawan_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}
@@ -313,9 +327,9 @@ mnd_bei_2 = {
 		trigger = {
 			calc_true_if  = {
 				amount = 3 #BT down from 5 due to area redrawing
-				all_province = {
+				kutai_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					area = kutai_area
 				}
 			}
 		}
@@ -478,12 +492,13 @@ mnd_bei_2 = {
 		trigger = {
 			calc_true_if  = {
 				amount = 9 #BT Up from 5
-				all_province = {
+				luzon_area = {
+					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-					OR = {
-						area = luzon_area
-						area = southern_luzon_area
-					}
+				}
+				southern_luzon_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 		}

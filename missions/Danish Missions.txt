@@ -171,12 +171,13 @@ bt_danish_trade_2 = {
 				custom_trigger_tooltip = {
 					tooltip = dan_strengthen_sound_toll_tooltip
 					calc_true_if = {
-						all_province = {
-							OR = {
-								province_id = 12 #Copenhagen
-								province_id = 7766 #Helsingborg
-								province_id = 6 #Skaane/Malmö
-							}
+						12 = {
+							province_has_center_of_trade_of_level = 3
+						}
+						7766 = {
+							province_has_center_of_trade_of_level = 3
+						}
+						6 = {
 							province_has_center_of_trade_of_level = 3
 						}
 						amount = 1
