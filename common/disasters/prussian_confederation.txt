@@ -63,7 +63,8 @@ prussian_confederation_disaster = {
 		burghers_influence_modifier = 0.1
 		burghers_loyalty_modifier = -0.1
 		stability_cost_modifier = 0.2
-		min_autonomy = 20					#BT balance making the disaster worse to weaken the teutons
+		min_autonomy = 25					#BT balance making the disaster worse to weaken the teutons 	
+		land_maintenance_modifier = 0.20
 	}
 	
 	on_start = flavor_teu.4

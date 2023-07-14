@@ -95,19 +95,19 @@ country_decisions = {
 		allow = {
 			NOT = { exists = PRU }
 			is_nomad = no
-			is_free_or_tributary_trigger = yes			
-			OR = { #Readded to all of these otherwise its too easy for players
-				religion = reformed
-				religion = protestant
-			}
+			is_free_or_tributary_trigger = yes	
 			is_at_war = no
 			owns_core_province = 41			# Königsberg
 			OR = {
 				owns_core_province = 43		# Danzig
 				owns_core_province = 2995	# Stolp
 			}
-			total_development = 150			#Normal requirement for rank 2 is 500 dev, so this is 70 percent discounted
+			total_development = 300			#Changed to 300 because original number was so low
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
+			OR = { #Added here too brandenburg does not get special treatment
+				religion = reformed
+				religion = protestant
+			}
 		}
 		effect = {
 			change_tag = PRU
@@ -210,7 +210,6 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = GER }
 			tag = TEU
-			has_reform = monastic_order_reform
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -233,17 +232,14 @@ country_decisions = {
 			NOT = { exists = PRU }
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
-			OR = { #Readded to all of these otherwise its too easy for players
-				religion = reformed
-				religion = protestant
-			}
+			adm_tech = 10 #Vanilla restored to stop players just forming it straight away
 			is_at_war = no
 			owns_core_province = 41			# Königsberg
 			OR = {
 				owns_core_province = 43		# Danzig
 				owns_core_province = 2995	# Stolp
 			}
-			total_development = 150			#Normal requirement for rank 2 is 500 dev, so this is 70 percent discounted
+			total_development = 300			#Changed to 300 because original number was so low
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
@@ -349,8 +345,14 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 41	# Königsberg
-				province_id = 43	# Danzig
-				province_id = 2995	# Stolp
+				AND = {
+					province_id = 43	# Danzig
+					ROOT = { NOT = { owns_core_province = 2995 } }
+				}
+				AND = {
+					province_id = 2995
+					ROOT = { NOT = { owns_core_province = 43 } }
+				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -367,9 +369,11 @@ country_decisions = {
 				religion = protestant
 			}
 			owns_core_province = 41			# Königsberg
-			owns_core_province = 43		# Danzig
-			owns_core_province = 2995	# Stolp
-			total_development = 150			#Normal requirement for rank 2 is 500 dev, so this is 70 percent discounted
+			OR = {												#Changed to be less brutal
+				owns_core_province = 43		# Danzig
+				owns_core_province = 2995	# Stolp
+			}
+			total_development = 300			#Changed to 300 because original number was so low
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {

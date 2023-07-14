@@ -1040,7 +1040,50 @@ country_event = { #Event for turning styria into austria
 		name = Chocolate_hab_hun.227.opt
 			add_prestige = 10
 			add_legitimacy = 20
-			add_splendor = 200
-		}	
+			add_splendor = 200	
+	}
+}
+
+country_event = {                         #Event to add development to austrian gold mine to help their economy
+	id = Chocolate_hab_hun.229
+	desc = Chocolate_hab_hun.229.desc
+	title = Chocolate_hab_hun.229.t
+	picture = CONQUEST_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			TAG = STY
+			TAG = HAB
+			TAG = TIR
+		}
+		owns = 73
+		adm_power = 50
+		dip_power = 50
+		mil_power = 50
+		73 = {
+			NOT = {
+			 	base_tax = 20
+				base_production = 20
+				base_manpower = 20
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+    }
+	
+	option = {
+		name = Chocolate_hab_hun.229.opt
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		73 = {
+			add_base_tax = 1
+			add_base_production = 2
+			add_base_manpower = 1
+		}
 	}
 }
