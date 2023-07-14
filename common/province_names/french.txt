@@ -27,7 +27,6 @@
 2314 = { "Deir ez-Zor" "Deir ez-Zor" } #(JP) "Deir ez-Zor"
 4298 = { "Aïntab" "Aïntab" }
 6089 = { "Rahba" "Rahba" }
-6090 = { "Soulouk" "Soulouk" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
 6092 = { "Manbij" "Manbij" }
 

@@ -94,7 +94,6 @@
 5331 = { "Siird" "Siird" }
 5332 = { "Arjish" "Arjish" }
 6089 = { "Ar-Rahba" "Ar-Rahba" }
-6090 = { "Suluk" "Suluk" }
 6091 = { "Maskanah" "Maskanah" }
 6092 = { "Manbij" "Manbij" }
 6099 = { "Al-Busayrah" "Al-Busayrah" }

@@ -1604,7 +1604,6 @@
 5295 = { "Zisen" "Zisen" }
 5332 = { "Arissa" "Arissa" } #
 6089 = { "Rahba" "Rahba" }
-6090 = { "Suluk" "Suluk" }
 6091 = { "Maskanah" "Maskanah" }
 6092 = { "Manbidsch" "Manbidsch" }
 

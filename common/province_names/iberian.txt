@@ -623,7 +623,6 @@
 2314 = { "Deirezor" "Deirezor" } #(JP) "Deir ez-Zor"
 4298 = { "Aintabe" "Aintabe" }
 6089 = { "Raba" "Raba" }
-6090 = { "Suluque" "Suluque" }
 6091 = { "Mesquene" "Mesquene" } #(JP) "Maskanah"
 6092 = { "Manbiz" "Manbiz" }
 

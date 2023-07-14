@@ -301,7 +301,6 @@
 5331 = { "Siirt" "Siirt" }
 5332 = { "Ercish" "Ercish" }
 6089 = { "Rahba" "Rahba" }
-6090 = { "Suluk" "Suluk" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
 6092 = { "Menbic" "Menbic" }
 6099 = { "Busayra" "Busayra" } #(JP) Base names
