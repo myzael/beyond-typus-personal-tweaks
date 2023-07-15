@@ -295,7 +295,7 @@
 5151 = { "Bayburt" "Bayburt" }
 5158 = { "Divrigi" "Divrigi" }
 5295 = { "Cizre" "Cizre" }
-5296 = { "Hasakah" "Hasakah" }
+5296 = { "Nusaybin" "Nusaybin" }
 5330 = { "Meyafarikîn" "Meyafarikîn" }
 5331 = { "Siirt" "Siirt" }
 5332 = { "Ercish" "Ercish" }

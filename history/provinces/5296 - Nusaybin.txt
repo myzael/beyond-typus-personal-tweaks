@@ -3,7 +3,7 @@
 owner = QAR
 controller = QAR
 add_core = QAR
-capital = "Hasakah"
+capital = "Nusaybin"
 culture = assyrian_culture
 religion = orthodox
 trade_goods = livestock

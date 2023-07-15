@@ -75,7 +75,7 @@
 5151 = { "Bayburt" "Bayburt" }
 5158 = { "Divrigi" "Divrigi" }
 5295 = { "Jazirat Ibn Umar" "Madinat al-Jazira" }
-5296 = { "Al-Hasakah" "Al-Hasakah" }
+5296 = { "Nusaybin" "Nusaybin" }
 5330 = { "Mayyafaraqin" "Mayyafaraqin" }
 5331 = { "Siird" "Siird" }
 5332 = { "Arjish" "Arjish" }
