@@ -16,7 +16,7 @@ religion = orthodox
 base_tax = 3
 base_production = 3
 base_manpower = 2
-trade_goods = 
+trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
 add_core = KKE

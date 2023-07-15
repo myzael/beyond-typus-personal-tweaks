@@ -16,7 +16,7 @@ religion = catholic
 base_tax = 4
 base_production = 4
 base_manpower = 4
-trade_goods = 
+trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
 add_core = ISP
