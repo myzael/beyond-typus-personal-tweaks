@@ -60,7 +60,6 @@
 6068 = { "Azrac" "Azrac" }
 6069 = { "Mafrac" "Mafrac" } #(JP) "Al-Mafraq"
 6071 = { "Bersabée" "Bersabée" }
-6072 = { "Remle" "Remle" }
 6074 = { "Tyr" "Tyr" }
 6075 = { "Saete" "Saete" } #(JP) Or "Sayette" or "Sagette"
 6076 = { "Episcopé" "Episcopé" }

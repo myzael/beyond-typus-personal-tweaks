@@ -32,7 +32,6 @@
 6068 = { "Azraq" "Azraq" }
 6069 = { "Al-Mafraq" "Al-Mafraq" }
 6071 = { "Bir as-Sab" "Bir as-Sab" }
-6072 = { "Ar-Ramla" "Ar-Ramla" }
 6074 = { "Sur" "Sur" }
 6075 = { "Sayda" "Sayda" }
 6076 = { "Apiskopiya" "Apiskopiya" }

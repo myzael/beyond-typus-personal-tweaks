@@ -659,7 +659,6 @@
 6068 = { "Azraque" "Azraque" }
 6069 = { "Mafraque" "Mafraque" } #(JP) "Al-Mafraq"
 6071 = { "Berseba" "Berseba" }
-6072 = { "Rámula" "Rámula" }
 6074 = { "Tiro" "Tiro" }
 6075 = { "Sidón" "Sidón" }
 6076 = { "La Piscopia" "La Piscopia" }

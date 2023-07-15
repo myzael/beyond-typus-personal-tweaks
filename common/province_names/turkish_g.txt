@@ -452,7 +452,6 @@
 6068 = { "Ezrak" "Ezrak" }
 6069 = { "Mefrak" "Mefrak" }
 6071 = { "Birüsseb" "Birüsseb" } #(VL) Other name is Beersheba with s-cedilla.
-6072 = { "Remle" "Remle" }
 6074 = { "Sur" "Sur" }
 6075 = { "Sayda" "Sayda" }
 6076 = { "Piskobu" "Piskobu" }
