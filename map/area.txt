@@ -1249,7 +1249,7 @@ shahrizor_area = { #Shahrizor
 	4294 6124 6129 6130 6131 6133
 }
 lower_tigris_area = { #Lower Tigris
-	410 4291 6137 6138 6139 6140
+	410 4291 6138 6139 6140
 }
 middle_euphrates_area = { #Middle Euphrates
 	406 6089 6099 6135 6136

@@ -111,7 +111,6 @@
 6134 = { "Baqubah" "Baqubah" }
 6135 = { "Anah" "Anah" }
 6136 = { "Fallujah" "Fallujah" }
-6137 = { "Badrah" "Badrah" }
 6138 = { "An-Numaniyah" "An-Numaniyah" }
 6139 = { "Al-Kut" "Al-Kut" }
 6140 = { "Amarah" "Amarah" }
