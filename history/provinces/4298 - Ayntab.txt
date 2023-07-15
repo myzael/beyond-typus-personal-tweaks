@@ -10,8 +10,8 @@ religion = sunni
 capital = "Aintab"
 trade_goods = spices			#Olive groves, vineyards, and Pistachio orchards, going with spices for pistachios
 hre = no
-base_tax = 7
-base_production = 7
+base_tax = 4
+base_production = 4
 base_manpower = 4
 is_city = yes
 
