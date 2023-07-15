@@ -7278,10 +7278,10 @@ province;red;green;blue;x;x
 7277;200;150;75;Bender;x
 7278;200;150;150;Moncastro;x
 7279;200;150;225;Transdniestria;x
-7280;172;115;10;UNUSED;###
-7281;52;246;114;UNUSED;###
-7282;24;72;30;UNUSED;###
-7283;72;6;154;UNUSED;###
+7280;172;115;10;CentreWestCaucasiaMountains;###
+7281;52;246;114;CentreEastCaucasiaMountains;###
+7282;24;72;30;KarabakhRange;###
+7283;72;6;154;MurovdagRange;###
 7284;78;52;176;Barda;###
 7285;173;86;119;AstaraGilan;###
 7286;224;41;151;Beylagan;###
