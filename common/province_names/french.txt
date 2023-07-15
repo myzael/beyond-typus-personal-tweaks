@@ -70,7 +70,6 @@
 6078 = { "Cyrenie" "Cyrenie" }
 6080 = { "Tartous" "Tartous" }
 6081 = { "Adrée" "Adrée" } #(JP) Modern "Daraa"
-6082 = { "Soueïda" "Soueïda" } #(JP) "As-Suwayda"
 6084 = { "Maaloule" "Maaloule" }
 6085 = { "Salamié" "Salamié" }
 6086 = { "Hamath" "Hamath" }

@@ -1583,7 +1583,6 @@
 6078 = { "Schernis" "Schernis" } #(JP) "Kyrenia", Wilbrand von Oldenburg 
 6080 = { "Tortosa" "Tortosa" } #(JP) "Tartus", same as given for Spanish "Tortosa"
 6081 = { "Adratien" "Adratien" } #(JP) Modern "Daraa", in period "Adratum" or "Adhri'at"
-6082 = { "Suweida" "Suweida" } #(JP) "As-Suwayda"
 6084 = { "Maalula" "Maalula" }
 6085 = { "Salamieh" "Salamieh" }
 6086 = { "Hama" "Hama" }	

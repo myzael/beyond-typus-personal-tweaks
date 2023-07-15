@@ -462,7 +462,6 @@
 6078 = { "Girne" "Girne" }
 6080 = { "Tartus" "Tartus" } #(JP) Base Names #(VL) Correct though.
 6081 = { "Dera" "Dera" } 
-6082 = { "Üsvad" "Üsvad" }
 6084 = { "Malule" "Malule" }
 6085 = { "Alamiye" "Alamiye" }
 6086 = { "Hum" "Hum" }

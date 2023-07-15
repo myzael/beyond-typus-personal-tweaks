@@ -42,7 +42,6 @@
 6074 = { "Sur" "Sur" }
 6075 = { "Saydun" "Saydun" }
 6077 = { "Kurmajit" "Kurmajit" }
-6082 = { "Suada" "Suada" } #(JP) "As-Suwayda"
 6084 = { "Malula" "Malula" }
 6086 = { "Hamat" "Hamat" }
 6088 = { "Sikne" "Sikne" }
