@@ -2,6 +2,7 @@ BT16
 
 #New Additions
  - (All) Updated BT from 1.33.3 to 1.35.6
+ - (Velius) Added Waaq paganism in the Horn of Africa
  
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
