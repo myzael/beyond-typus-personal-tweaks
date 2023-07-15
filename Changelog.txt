@@ -13,7 +13,6 @@ BT16
  - (Dub) Fixed vanilla localisation bug where locked reform tooltip would not draw new line 
  
 #Tweaks and Balance
- - (Harbivore) Changed the AI to no longer make alliances with nations 10% of their development or 5x their development. (AI make much better alliances yay now more opm allies with great powers)
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
  - (Dub) Tweaked Expand Infrastructure + Centralize State 
  - (Dub) Removed BT's Japanese monuments with no modifiers for now. They may get re-added someday, but AI is now capable of upgrading great projects and them being there would hurt Japanese AI nations 
@@ -73,7 +72,7 @@ BT16
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders
  - (Harbivore) Made it so if Castile/Spain kicks out the Andalusi through missions or events they will lose their silk provinces in the region. (Don't deport the people making your goods, they turn to naval supplies. (The locals ended up burning the mulberry trees for firewood.))
- - (Harbivore)
+
  
 #GFX
  - 
