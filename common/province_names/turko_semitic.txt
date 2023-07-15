@@ -27,7 +27,6 @@
 5205 = { "Bayrut" "Bayrut" }
 365 = { "Sina" "Sant Katrin" }
 6067 = { "Amman" "Amman" }
-6068 = { "Azraq" "Azraq" }
 6069 = { "Al-Mafraq" "Al-Mafraq" }
 6071 = { "Bir as-Sab" "Bir as-Sab" }
 6074 = { "Sur" "Sur" }

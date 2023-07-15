@@ -681,7 +681,6 @@
 5205 = { "Berito" "Berito" }
 365 = { "Santa Caterina" "Santa Caterina del Sinai" }
 6067 = { "Filadelfia" "Filadelfia" } #(JP) "Amman"
-6068 = { "Asrache" "Asrache" } #(JP) "Azraq"
 6069 = { "Mafrache" "Mafrache" } #(JP) "Al-Mafraq"
 6071 = { "Bersabea" "Bersabea" }
 6074 = { "Tiro" "Tiro" }

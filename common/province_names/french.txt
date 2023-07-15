@@ -55,7 +55,6 @@
 5205 = { "Beyrouth" "Beyrouth" }
 365 = { "Sinaï" "Sainte-Catherine du Sinaï" }
 6067 = { "Philadelphie" "Philadelphie" } #(JP) "Amman"
-6068 = { "Azrac" "Azrac" }
 6069 = { "Mafrac" "Mafrac" } #(JP) "Al-Mafraq"
 6071 = { "Bersabée" "Bersabée" }
 6074 = { "Tyr" "Tyr" }
@@ -785,7 +784,6 @@
 5161 = { "Coryce" "Coryce" }				#Corycus. Found by Math5615, though Corycus was used more often
 
 #Levant
-6068 = { "Basie" "Basie" }
 5138 = "Osmanie"						#Osmaniye. Notes
 5203 = "Montréal" 						#Arabah. Notes
 5205 = "Beyrouth"						#Beirut. Notes

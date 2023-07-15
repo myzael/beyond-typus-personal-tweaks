@@ -259,7 +259,6 @@
 5205 = { "Baruth" "Baruth" }
 365 = { "Sinai" "Saint Catherine" }
 6067 = { "Philadelphia" "Philadelphia" } #(JP) "Amman"
-6068 = { "Azraq" "Azraq" }
 6069 = { "Mafra" "Mafra" } #(JP) "Al-Mafraq"
 6071 = { "Beersheba" "Beersheba" }
 6074 = { "Tyre" "Tyre" }

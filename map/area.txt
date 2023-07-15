@@ -1197,7 +1197,7 @@ syria_area = { #Syria
 	382 405 1849 6084 6085 6086 6088
 }
 trans_jordan_area = { #Transjordan
-	380 381 4270 5203 6067 6068
+	380 381 4270 5203 6067
 }
 palestine_area = { #Palestine
 	364 379 1854 1855 5180 6071
