@@ -1519,7 +1519,7 @@ march_subject = {
 }
 
 vassal_subject = {
-	land_forcelimit = 2			#BTAddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful
+	land_forcelimit = 1			#BTAddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful. Tweaked back down to 1 because vanilla added +10% FL of vassal's FL to overlord in Dharma (1.26). This modifier causes too much craziness with 1444 starts at +2. //Dub
 }
 
 daimyo_subject = {
