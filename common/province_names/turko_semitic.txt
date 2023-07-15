@@ -102,7 +102,6 @@
 6125 = { "Bakhdidah" "Bakhdidah" }
 6126 = { "Qayyarah" "Qayyarah" }
 6127 = { "Az-Zab" "Az-Zab" }
-6128 = { "Ash-Shirqat" "Ash-Shirqat" }
 6129 = { "Chamchamal" "Chamchamal" }
 6130 = { "Qifri" "Qifri" }
 6131 = { "Daquq" "Daquq" }

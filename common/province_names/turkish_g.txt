@@ -322,7 +322,6 @@
 6125 = { "Karakosh" "Karakosh" }
 6126 = { "Qayyarah" "Qayyarah" } #(JP) Base name
 6127 = { "Zab" "Zab" } #(JP) "Az-Zab"
-6128 = { "Shirqat" "Shirqat" } #(JP) Base name
 6129 = { "Çemçemal" "Çemçemal" } #(JP) "Chamchamal"
 6130 = { "Kifri" "Kifri" }
 6131 = { "Dakuk" "Dakuk" }
