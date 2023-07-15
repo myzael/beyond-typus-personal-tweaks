@@ -328,7 +328,6 @@
 6131 = { "Dakuk" "Dakuk" }
 6132 = { "Samarra" "Samarra" } #(JP) Base name
 6133 = { "Miqdadiyah" "Miqdadiyah" } #(JP) Base name
-6134 = { "Bakube" "Bakube" } #(JP) "Baqubah"
 6135 = { "Ane" "Ane" } #(JP) "Anah"
 6136 = { "Felluce" "Felluce" } #(JP) "Fallujah"
 6138 = { "Numaniyah" "Numaniyah" } #(JP) Base name

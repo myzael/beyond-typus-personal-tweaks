@@ -1239,7 +1239,7 @@ north_kurdistan_area = { #Vaspurakan
 }
 al_jazira_area = { #Middle Tigris
 	color = { 92 200 92 }
-	415 2310 6126 6127 6128 6132 6134
+	415 2310 6126 6127 6128 6132
 }
 mardin_area = { #Osrhoene
 	2308 4292 6100
