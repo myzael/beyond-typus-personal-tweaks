@@ -55,7 +55,6 @@
 5203 = { "Montréal" "Montréal" } #(JP) "Shoubak"
 5205 = { "Beyrouth" "Beyrouth" }
 6065 = { "Sinaï" "Sainte-Catherine du Sinaï" }
-6066 = { "Tafile" "Tafile" }
 6067 = { "Philadelphie" "Philadelphie" } #(JP) "Amman"
 6068 = { "Azrac" "Azrac" }
 6069 = { "Mafrac" "Mafrac" } #(JP) "Al-Mafraq"

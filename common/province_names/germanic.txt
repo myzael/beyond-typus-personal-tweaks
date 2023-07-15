@@ -1568,7 +1568,6 @@
 5203 = { "Schubak" "Schubak" } #(JP) "Shoubak"
 5205 = { "Türien" "Türien" } #(JP) "Beirut"
 6065 = { "Sinai" "Katharinenkloster" }
-6066 = { "Tafila" "Tafila" }
 6067 = { "Ammanen" "Ammanen" } #(JP) "Amman"
 6068 = { "Azrak" "Azrak" } #(JP) "Azraq" means blue, akin to Azure I suppose?
 6069 = { "Mafrak" "Mafrak" } #(JP) "Al-Mafraq"

@@ -47,7 +47,6 @@
 5203 = { "Mons Regalis" "Mons Regalis" } #(JP) "Shoubak"
 5205 = { "Berytus" "Berytus" }
 6065 = { "Sinai" "Sancta Catharina" }
-6066 = { "Thornla" "Thornla" } #(JP) In the area
 6067 = { "Philadelphia" "Philadelphia" } #(JP) "Amman"
 6068 = { "Basie" "Basie" }
 6069 = { "Thanita" "Thanita" } #(JP) In the area
