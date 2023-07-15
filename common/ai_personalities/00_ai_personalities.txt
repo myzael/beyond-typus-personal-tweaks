@@ -165,6 +165,9 @@ ai_diplomat = {
 		modifier = {			#Added in bt as a quick fix to stop bohemia killing everything Harbivore
 			factor = 20
 			tag = BOH
+			NOT = {
+				num_of_subjects = 4
+			}
 		}
 		modifier = {			#Added in bt as a quick fix to stop mamluks killing everything Harbivore
 			factor = 200
