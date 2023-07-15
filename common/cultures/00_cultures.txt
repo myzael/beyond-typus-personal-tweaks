@@ -4178,6 +4178,15 @@ iranian = {
 			Bavandid Eshaqvand
 		}
 	}
+	talysh = {
+		primary = ISP
+		#male_name = {
+		}
+		#female_names = {
+		}
+		dynasty_names = {
+		}
+	}
 	dynasty_names = {
 		Afsharid Zand Qajar Qoli Zahedi Talish Safavid Zulqadr Shamlu Sahandlu Zanganeh
 		Zaman Ustajlu Tekkelu Jaberi Khuzani Kujuji Ordubadi Khalifeh Karaki
