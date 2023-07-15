@@ -51,7 +51,6 @@
 6067 = { "Philadelphia" "Philadelphia" } #(JP) "Amman"
 6068 = { "Basie" "Basie" }
 6069 = { "Thanita" "Thanita" } #(JP) In the area
-6070 = { "Arabella" "Arabella" }
 6071 = { "Bersabea" "Bersabea" } #(JP) Feels out of place, but apparently is the name (Chrys) found better name
 6072 = { "Ascalonia" "Ascalonia" }
 6074 = { "Tyrus" "Tyrus" }

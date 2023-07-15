@@ -31,7 +31,6 @@
 6067 = { "Amman" "Amman" }
 6068 = { "Azraq" "Azraq" }
 6069 = { "Al-Mafraq" "Al-Mafraq" }
-6070 = { "Irbid" "Irbid" }
 6071 = { "Bir as-Sab" "Bir as-Sab" }
 6072 = { "Ar-Ramla" "Ar-Ramla" }
 6074 = { "Sur" "Sur" }

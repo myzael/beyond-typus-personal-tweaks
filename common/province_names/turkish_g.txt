@@ -451,7 +451,6 @@
 6067 = { "Çerkezhur" "Çerkezhur" } #(JP) Base Names, was Roman Philadelphia #(VL) Ahh the arabian city of Circassians. Amman is right call but i would call it "Çerkezhur".Some local guidebook from 1800s called the Amman city that and back when I've read it i liked it very much and thougt it was a befitting name for the city due to its history with Circassians.
 6068 = { "Ezrak" "Ezrak" }
 6069 = { "Mefrak" "Mefrak" }
-6070 = { "Irbid" "Irbid" }
 6071 = { "Birüsseb" "Birüsseb" } #(VL) Other name is Beersheba with s-cedilla.
 6072 = { "Remle" "Remle" }
 6074 = { "Sur" "Sur" }

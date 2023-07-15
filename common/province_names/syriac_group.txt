@@ -37,7 +37,6 @@
 5205 = { "Biruta" "Biruta" }
 6065 = { "Sinay" "Mar Katrine" }
 6067 = { "Piladelpia" "Piladelpia" } #(JP) "Amman"
-6070 = { "Saliq" "Saliq" }
 6071 = { "Beersheba" "Beersheba" }
 6074 = { "Sur" "Sur" }
 6075 = { "Saydun" "Saydun" }

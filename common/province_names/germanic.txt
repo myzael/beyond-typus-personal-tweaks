@@ -1572,7 +1572,6 @@
 6067 = { "Ammanen" "Ammanen" } #(JP) "Amman"
 6068 = { "Azrak" "Azrak" } #(JP) "Azraq" means blue, akin to Azure I suppose?
 6069 = { "Mafrak" "Mafrak" } #(JP) "Al-Mafraq"
-6070 = { "Irbit" "Irbit" } #(JP) "Irbid"
 6071 = { "Siebenbrünnen" "Siebenbrünnen" } #(JP) "Beersheeba", alternatively "Berscheba" or "Bir As-Sab"
 6072 = { "Rama" "Rama" }
 6074 = { "Tiros" "Tiros" }

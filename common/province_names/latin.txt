@@ -685,7 +685,6 @@
 6067 = { "Filadelfia" "Filadelfia" } #(JP) "Amman"
 6068 = { "Asrache" "Asrache" } #(JP) "Azraq"
 6069 = { "Mafrache" "Mafrache" } #(JP) "Al-Mafraq"
-6070 = { "Abila" "Abila" }
 6071 = { "Bersabea" "Bersabea" }
 6072 = { "Ramula" "Ramula" }
 6074 = { "Tiro" "Tiro" }
