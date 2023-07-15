@@ -316,7 +316,6 @@
 6119 = { "Duhok" "Duhok" } #(JP) Base name
 6120 = { "Shekhan" "Shekhan" } #(JP) Kurdish name
 6121 = { "Imadiyye" "Imadiyye" } #(JP) "Amadiya"
-6122 = { "Akra" "Akra" } #(JP) "Akre"
 6123 = { "Soran" "Soran" } #(JP) Base name
 6124 = { "Ranya" "Ranya" } #(JP) Base name
 6125 = { "Karakosh" "Karakosh" }

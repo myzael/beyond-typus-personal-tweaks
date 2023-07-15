@@ -56,7 +56,6 @@
 6119 = { "Dihok" "Dihok" } #Duhok
 6120 = { "Shêxan" "Shêxan" } #Shekhan
 6121 = { "Amêdî" "Amêdî" } #Amadiya
-6122 = { "Akrê" "Akrê" } #Akre
 6123 = { "Soran" "Soran" } #Soran
 6124 = { "Ranye" "Ranye" } #Ranya
 6125 = { "Qereqûsh" "Qereqûsh" } #Bakhdida (Chrys) no Kurdish wiki, there is a Central Kurdish wiki which I used an online transliterator for

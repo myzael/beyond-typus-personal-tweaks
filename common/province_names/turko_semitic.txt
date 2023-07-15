@@ -96,7 +96,6 @@
 6119 = { "Dahuk" "Dahuk" }
 6120 = { "Ain Sifni" "Ain Sifni" }
 6121 = { "Amadiyah" "Amadiyah" }
-6122 = { "Aqrah" "Aqrah" }
 6123 = { "Suran" "Suran" }
 6124 = { "Ranyah" "Ranyah" }
 6125 = { "Bakhdidah" "Bakhdidah" }
