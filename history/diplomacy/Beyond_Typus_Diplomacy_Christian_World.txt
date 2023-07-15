@@ -5,28 +5,32 @@ union = {
 	end_date = 1542.1.22
 }
 
-march = {
+dependency = {
+	subject_type = bt_english_march 
 	first = ENG
 	second = WMC
 	start_date = 1444.1.1
 	end_date = 1535.2.4
 }
 
-march = {
+dependency = {
+	subject_type = bt_english_march 
 	first = ENG
 	second = DUR
 	start_date = 1291.1.1 
 	end_date = 1836.6.5
 }
 
-march = {
+dependency = {
+	subject_type = bt_english_march 
 	first = ENG
 	second = KOI
 	start_date = 1444.1.1
 	end_date = 1707.5.12
 }
 
-march = {
+dependency = {
+	subject_type = bt_english_march 
 	first = ENG
 	second = JER
 	start_date = 1444.1.1

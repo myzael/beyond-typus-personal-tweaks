@@ -369,3 +369,55 @@ hanseatic_league_member_bt = {
 	subject_opinion_modifier = is_vassal
 }
 
+
+bt_english_march = {
+	copy_from = vassal
+	count = vassal
+    sprite = GFX_icon_appanage
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_appanage
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_appanage
+	
+	# Properties:
+	forms_trade_companies = no
+	pays_overlord = 0.0
+	military_focus = 1.5
+	base_liberty_desire = -15.0
+	can_be_annexed = yes
+	forcelimit_to_overlord = 0.2
+	
+	# Subject Interactions
+	scutage = no
+	subsidize_armies = yes
+	fortify_march = yes
+	send_officers = yes
+	conscript_general = yes
+	
+	# Modifiers
+	
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear #Ditto
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_overlord = {
+		modifier = march_subject
+	}
+	modifier_subject = {
+		modifier = march_bonus
+		trigger = {
+			NOT = {
+				development_of_overlord_fraction = 0.25
+			}
+		}
+		expiration_message_overlord = MARCHTOOLARGE
+		expiration_message_subject = MARCHTOOLARGEUS
+	}
+	modifier_subject = {
+		modifier = subject_tax_modifier
+		trigger = {
+			overlord = {
+				has_government_attribute = subject_tax_modifier_25
+			}
+		}
+	}
+}
