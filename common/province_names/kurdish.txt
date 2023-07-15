@@ -97,7 +97,6 @@
 5180 = { "Xeze" "Xeze" }
 5205 = { "Bêrût" "Bêrût" }
 365 = { "Sîna" "Sêx Katherine" } #(JP) "Sêx" is Kurdish for Sheikh, the name given to Kurdish religious rulers, better than nowt for "Saint"right?
-6067 = { "Emman" "Emman" }
 6074 = { "Tir" "Tir" }
 6075 = { "Sidun" "Sidun" }
 6080 = { "Dardus" "Dardus" }

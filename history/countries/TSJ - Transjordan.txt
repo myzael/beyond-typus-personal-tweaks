@@ -1,7 +1,7 @@
 #TSJ - Transjordan
 
 #Political Situation
-capital = 6067 #Amman #(JP) Does not exist in 1444, modern capital
+capital = 380 #Amman #(JP) Does not exist in 1444, modern capital
 
 #Government
 government_rank = 1

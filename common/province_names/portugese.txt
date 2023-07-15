@@ -493,7 +493,6 @@
 5181 = { "Nequel" "Nequel" }
 5205 = { "Beirute" "Beirute" }
 365 = { "Sinai" "Santa Catarina do Sinai" }
-6067 = { "Filadélfia" "Filadélfia" } #(JP) "Amman"
 6071 = { "Bersebá" "Bersebá" }
 6075 = { "Sidão" "Sidão" }
 6076 = { "Piscópia" "Piscópia" }
