@@ -165,6 +165,7 @@ IFG = "countries/Ifugao.txt" #BT
 ILY = "countries/Illyria.txt" #BT
 INI = "countries/Ingria.txt" #BT
 INK = "countries/Inuktitut.txt" #BT
+ISP = "countries/IspahbadsTalysh.txt #BT
 IST	= "countries/Istria.txt" #BT
 ITL = "countries/Italia.txt" #BT
 IVE = "countries/Iveagh.txt" #BT
