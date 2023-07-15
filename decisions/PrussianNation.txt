@@ -73,6 +73,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_prussia_flag }
 			NOT = { tag = PRU }
 			NOT = { tag = GER }
+			NOT = { tag = TEU }
 			tag = BRA
 		}
 		provinces_to_highlight = {
@@ -326,6 +327,8 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = GER }
 			NOT = { tag = HLR }
+			NOT = { tag = BRA }
+			NOT = { tag = TEU }
 			OR = {
 				primary_culture = pommeranian
 				primary_culture = saxon

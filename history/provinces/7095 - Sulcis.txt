@@ -15,6 +15,10 @@ trade_goods = gold			#famous silver mines
 is_city = yes
 hre = no
 
+latent_trade_goods = {			#Coal mine found abit later but needed as italy dosnt have any
+	coal
+}
+
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
