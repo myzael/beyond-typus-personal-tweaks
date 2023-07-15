@@ -3533,6 +3533,15 @@ caucasian = {
 			Sirvart Srpouhi Shoushanig Takouhi Tamar Tamar Vartanoush Vartouhi Vosgi Yeva Zabel Elizabeth
 		}
 	}
+	abkhaz = {
+		primary = ABK
+		dynasty_names = {
+		}
+		male_names = {
+		}
+		female_names = {
+		}
+	}
 	dynasty_names = {
 		# CKII - Alan
 		"Burtasid" "Alauni" "Halani" "Shoana" "Senty" "Zmbalani" "Sathisi" "Totrazi" "Ovseti" "Tsaerasantae" "Aelbeg"
