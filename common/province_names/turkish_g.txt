@@ -454,7 +454,6 @@
 6070 = { "Irbid" "Irbid" }
 6071 = { "Birüsseb" "Birüsseb" } #(VL) Other name is Beersheba with s-cedilla.
 6072 = { "Remle" "Remle" }
-6073 = { "Lajjun" "Lajjun" } #(Chrys) Seems "Lajjun Sanjak" is translated as "Lejyon Sancagi"? #(VL) "Lajjun" itself is still a better name then "Lejyon" though
 6074 = { "Sur" "Sur" }
 6075 = { "Sayda" "Sayda" }
 6076 = { "Piskobu" "Piskobu" }

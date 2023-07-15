@@ -498,7 +498,6 @@
 6068 = { "Asraque" "Asraque" }
 6070 = { "Arbela" "Arbela" }
 6071 = { "Bersebá" "Bersebá" }
-6073 = { "Leão do Leste" "Leão do Leste" }
 6075 = { "Sidão" "Sidão" }
 6076 = { "Piscópia" "Piscópia" }
 6078 = { "Cirênia" "Cirênia" } 

@@ -1575,7 +1575,6 @@
 6070 = { "Irbit" "Irbit" } #(JP) "Irbid"
 6071 = { "Siebenbrünnen" "Siebenbrünnen" } #(JP) "Beersheeba", alternatively "Berscheba" or "Bir As-Sab"
 6072 = { "Rama" "Rama" }
-6073 = { "Ladschun" "Ladschun" } #(JP) "Lajjun"
 6074 = { "Tiros" "Tiros" }
 6075 = { "Sidon" "Sidon" }
 6076 = { "Episkopien" "Episkopien" }

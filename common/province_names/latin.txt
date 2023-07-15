@@ -688,7 +688,6 @@
 6070 = { "Abila" "Abila" }
 6071 = { "Bersabea" "Bersabea" }
 6072 = { "Ramula" "Ramula" }
-6073 = { "Massimianopoli" "Massimianopoli" } #(JP) "Maximianopolis", Massimiano being modern Italian for Maximian
 6074 = { "Tiro" "Tiro" }
 6075 = { "Sidone" "Sidone" }
 6076 = { "La Piscopia" "La Piscopia da Cornaro" }

@@ -69,7 +69,6 @@
 6070 = { "Arbela" "Arbela" } #(JP) Base Names
 6071 = { "Beer Shea" "Beer Shea" }
 6072 = { "Rama" "Rama" }
-6073 = { "Ligum" "Ligum" } #(JP) A Crusader name
 6074 = { "Tire" "Tire" }
 6075 = { "Saida" "Saida" } #(JP) Base Names
 6080 = { "Tartus" "Tartus" } #(JP) Base Names

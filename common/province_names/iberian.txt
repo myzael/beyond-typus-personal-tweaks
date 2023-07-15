@@ -661,7 +661,6 @@
 6070 = { "Arbella" "Arbella" }
 6071 = { "Berseba" "Berseba" }
 6072 = { "Rámula" "Rámula" }
-6073 = { "El León" "El León" }
 6074 = { "Tiro" "Tiro" }
 6075 = { "Sidón" "Sidón" }
 6076 = { "La Piscopia" "La Piscopia" }

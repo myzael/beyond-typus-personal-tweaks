@@ -1200,7 +1200,7 @@ trans_jordan_area = { #Transjordan
 	380 381 4270 5203 6066 6067 6068
 }
 palestine_area = { #Palestine
-	364 379 1854 1855 5180 6071 6072 6073
+	364 379 1854 1855 5180 6071 6072
 }
 syrian_desert_area = { #Sinai
 	#color = { 219 30 57 }

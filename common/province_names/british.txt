@@ -266,7 +266,6 @@
 6070 = { "Arbela" "Arbela" }
 6071 = { "Beersheba" "Beersheba" }
 6072 = { "Rama" "Rama" }
-6073 = { "Lyon" "Lyon" }
 6074 = { "Tyre" "Tyre" }
 6075 = { "Sidon" "Sidon" }
 6076 = { "Episkopi" "Episkopi" }

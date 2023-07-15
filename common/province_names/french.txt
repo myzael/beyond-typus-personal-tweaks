@@ -62,7 +62,6 @@
 6070 = { "Arbelle" "Arbelle" }
 6071 = { "Bersabée" "Bersabée" }
 6072 = { "Remle" "Remle" }
-6073 = { "Le Lyon" "Le Lyon" }
 6074 = { "Tyr" "Tyr" }
 6075 = { "Saete" "Saete" } #(JP) Or "Sayette" or "Sagette"
 6076 = { "Episcopé" "Episcopé" }

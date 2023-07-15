@@ -12,7 +12,6 @@
 6065 = { "Biau" "Biau" }
 6071 = { "Beersheba" "Beersheba" } #(JP) Older Hebrew name
 6072 = { "Asqanu" "Asqanu" }
-6073 = { "Makedo" "Makedo" }
 6074 = { "Surru" "Surru" }
 6075 = { "Djedouna" "Djedouna" }
 

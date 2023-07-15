@@ -11,7 +11,6 @@
 5180 = { "Zazah" "Zazah" } #(JP) "ZZH"
 5205 = { "Biruta" "Biruta" }
 6072 = { "Ashqelon" "Ashqelon" } #(JP) "`šqln"
-6073 = { "Magidda" "Magidda" }
 6074 = { "Sur" "Sur" }
 6075 = { "Sidun" "Sidun" }
 6080 = { "Arwad" "Arwad" }
