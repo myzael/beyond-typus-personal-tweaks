@@ -1,6 +1,5 @@
 #Levant
 364 = { "Jorsha" "Jorsha" }
-365 = { "Ta Mefkat" "Ta Mefkat" }
 378 = { "Derbly" "Derbly" }
 379 = { "Uruschalimum" "Uruschalimum" }
 1854 = { "Yapho" "Yapho" }
@@ -9,7 +8,7 @@
 5180 = { "Ghazzat" "Ghazzat" }
 5181 = { "Du Mafkat" "Du Mafkat" } #(JP) Technically the region, but you know
 5205 = { "Biruta" "Biruta" }
-6065 = { "Biau" "Biau" }
+365 = { "Biau" "Biau" }
 6071 = { "Beersheba" "Beersheba" } #(JP) Older Hebrew name
 6074 = { "Surru" "Surru" }
 6075 = { "Djedouna" "Djedouna" }

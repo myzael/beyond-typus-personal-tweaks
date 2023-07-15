@@ -478,7 +478,6 @@
 #Levant
 321 = { "Limassol" "Limassol" }
 364 = { "Arixe" "Arixe" }
-365 = { "Raia" "Raia" }
 379 = { "Jerusalém" "Jerusalém" }
 378 = { "Trípoles" "Trípoles do Oriente" }
 381 = { "Aslum" "Aslum" }
@@ -493,7 +492,7 @@
 5170 = { "Latáquia" "Latáquia" }
 5181 = { "Nequel" "Nequel" }
 5205 = { "Beirute" "Beirute" }
-6065 = { "Sinai" "Santa Catarina do Sinai" }
+365 = { "Sinai" "Santa Catarina do Sinai" }
 6067 = { "Filadélfia" "Filadélfia" } #(JP) "Amman"
 6068 = { "Asraque" "Asraque" }
 6071 = { "Bersebá" "Bersebá" }

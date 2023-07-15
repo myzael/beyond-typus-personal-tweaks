@@ -7678,7 +7678,7 @@ venetian_arsenal = {
 
 st_catherines = {	#St. Catherine's Monastery
 	# province it starts in
-	start = 6065		#Sinai (Saint Catherine)
+	start = 365		#Sinai (Saint Catherine)
 	
 	# date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 565.01.01	#Built between 548 and 565

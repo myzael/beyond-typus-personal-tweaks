@@ -45,7 +45,6 @@
 
 #Levant #(JP) Some are Base/Western/Crusader names
 321 = { "Limassol" "Limassol" }
-365 = { "Raya" "Raya" }
 377 = { "Halep" "Halep" }
 378 = { "Tripoli" "Tripoli" } #(JP) Base Names
 379 = { "Yerusalem" "Yerusalem" }
@@ -63,7 +62,7 @@
 5181 = { "Nakhl" "Nakhl" }
 5203 = { "Shubak" "Shubak" } #(JP) "Shoubak"
 5205 = { "Beyrut" "Beyrut" }
-6065 = { "Sina" "Surb Yekaterina" }
+365 = { "Sina" "Surb Yekaterina" }
 6067 = { "Filadelfia" "Filadelfia" } #(JP) "Amman"
 6069 = { "Mafrag" "Mafrag" }
 6071 = { "Beer Shea" "Beer Shea" }

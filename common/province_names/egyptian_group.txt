@@ -1,12 +1,11 @@
 #Levant
 364 = { "Hrinokorura" "Hrinokorura" }
-365 = { "Raitho" "Raitho" }
 379 = { "Hierusalim" "Hierusalim" }
 382 = { "Damaskos" "Damaskos" }
 4268 = { "Berenike" "Berenike" }
 5180 = { "Azza" "Azza" }
 5181 = { "Nakhl" "Nakhl" }
-6065 = { "Sina" "Agia Kattrin" }
+365 = { "Sina" "Agia Kattrin" }
 
 #Beyond Typus 7.0 Overhaul of Egypt
 358 = "Rakote"

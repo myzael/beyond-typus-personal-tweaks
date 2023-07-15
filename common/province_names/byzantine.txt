@@ -732,7 +732,6 @@
 364 = { "Rhinokoloura" "Rhinokoloura" } #El Arish
 5181 = { "Hagia Aikaterine" "Hagia Aikaterine" } #Nekhel
 4268 = { "Ailana" "Ailana" } #Aqaba
-365 = { "Chersonesos tou Sinà" "Rhaithou" } #Raithu
 
 ##Egypt
 363 = { "Pelousion" "Pelousion" } #El Farama

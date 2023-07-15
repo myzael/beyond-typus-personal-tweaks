@@ -3,7 +3,6 @@
 #Levant
 321 = { "Limassol" "Limassol" }
 364 = { "Al-Arish" "Al-Arish" }
-365 = { "At-Tur" "At-Tur" }
 377 = { "Halab" "Halab" }
 378 = { "Tarabulus" "Tarabulus" }
 379 = { "Al-Quds" "Al-Quds" }
@@ -26,7 +25,7 @@
 5181 = { "Nakhl" "Nakhl" }
 5203 = { "Shubak" "Shubak" }
 5205 = { "Bayrut" "Bayrut" }
-6065 = { "Sina" "Sant Katrin" }
+365 = { "Sina" "Sant Katrin" }
 6067 = { "Amman" "Amman" }
 6068 = { "Azraq" "Azraq" }
 6069 = { "Al-Mafraq" "Al-Mafraq" }

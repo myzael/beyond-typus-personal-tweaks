@@ -21,7 +21,6 @@
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
 
 #Levant
-365 = { "Raithu" "Raithu" }
 377 = { "Halba" "Halba" }
 378 = { "Tra'ara" "Tra'ara" }
 379 = { "Urislem" "Urislem" }
@@ -35,7 +34,7 @@
 4298 = { "Ayin Debo" "Ayin Debo" } #not on the wiki list
 5180 = { "Gaza" "Gaza" }
 5205 = { "Biruta" "Biruta" }
-6065 = { "Sinay" "Mar Katrine" }
+365 = { "Sinay" "Mar Katrine" }
 6067 = { "Piladelpia" "Piladelpia" } #(JP) "Amman"
 6071 = { "Beersheba" "Beersheba" }
 6074 = { "Sur" "Sur" }

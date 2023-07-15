@@ -23,7 +23,6 @@
 #Levant
 321 = { "Neapolis" "Neapolis" }
 364 = { "Rhinocorura" "Rhinocorura" }
-365 = { "Raithou" "Raithou" } #(JP) "Ancient", so... yeah?
 377 = { "Beroea" "Beroea" }
 378 = { "Tripolis" "Tripolis" }
 379 = { "Hierosolyma" "Hierosolyma" }
@@ -46,7 +45,7 @@
 5181 = { "Nechelia" "Nechelia" }
 5203 = { "Mons Regalis" "Mons Regalis" } #(JP) "Shoubak"
 5205 = { "Berytus" "Berytus" }
-6065 = { "Sinai" "Sancta Catharina" }
+365 = { "Sinai" "Sancta Catharina" }
 6067 = { "Philadelphia" "Philadelphia" } #(JP) "Amman"
 6068 = { "Basie" "Basie" }
 6069 = { "Thanita" "Thanita" } #(JP) In the area

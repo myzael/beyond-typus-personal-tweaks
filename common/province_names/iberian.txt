@@ -630,7 +630,6 @@
 #Levant
 321 = { "Limasol" "Limasol" }
 364 = { "Ariz" "Ariz" }
-365 = { "Raya" "Raya" }
 377 = { "Alepo" "Alepo" }
 378 = { "Trípoles" "Trípoles del Oriente" }
 379 = { "Jerusalén" "Jerusalén" }
@@ -653,7 +652,7 @@
 5181 = { "Nejel" "Nejel" }
 5203 = { "Montreal" "Montreal" }
 5205 = { "Beirud" "Beirud" }
-6065 = { "Sinaí" "Santa Catalina del Sinaí" }
+365 = { "Sinaí" "Santa Catalina del Sinaí" }
 6067 = { "Filadelfia" "Filadelfia" } #(JP) "Amman"
 6068 = { "Azraque" "Azraque" }
 6069 = { "Mafraque" "Mafraque" } #(JP) "Al-Mafraq"
