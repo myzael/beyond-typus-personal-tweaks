@@ -1,6 +1,6 @@
 #Ispahbads of Gilan (Talish)
 
-graphical_culture = westerngfx
+graphical_culture = muslimgfx
 
 color = { 169 13 47 }
 
