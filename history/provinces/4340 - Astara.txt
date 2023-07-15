@@ -1,10 +1,9 @@
- 
 #4340 - Astara
 #Following vanilla's interpretation of Shirvani rule. There was a paragraph on a wikipage mentioning they controlled stuff around here, but to be perfectly honesy, they were vassals of QQ.
-owner = SRV
-controller = SRV
-culture = azerbaijani
-religion = shiite
+owner = ISP
+controller = ISP
+culture = talysh
+religion = sunni
 capital = "Lankaran"
 trade_goods = fish
 hre = no
@@ -12,7 +11,7 @@ base_tax = 2
 base_production = 2 
 base_manpower = 2 
 is_city = yes
-add_core = SRV
+add_core = ISP
 #add_core = PER
 
 discovered_by = muslim
