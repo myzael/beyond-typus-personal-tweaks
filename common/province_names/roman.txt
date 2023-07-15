@@ -46,7 +46,6 @@
 5203 = { "Mons Regalis" "Mons Regalis" } #(JP) "Shoubak"
 5205 = { "Berytus" "Berytus" }
 365 = { "Sinai" "Sancta Catharina" }
-6069 = { "Thanita" "Thanita" } #(JP) In the area
 6071 = { "Bersabea" "Bersabea" } #(JP) Feels out of place, but apparently is the name (Chrys) found better name
 6074 = { "Tyrus" "Tyrus" }
 6075 = { "Sidon" "Sidon" }

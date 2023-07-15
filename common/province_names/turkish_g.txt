@@ -446,7 +446,6 @@
 5203 = { "Shubak" "Shubak" }
 5205 = { "Beyrut" "Beyrut" }
 365 = { "Sina" "Azize Katerina" }
-6069 = { "Mefrak" "Mefrak" }
 6071 = { "Birüsseb" "Birüsseb" } #(VL) Other name is Beersheba with s-cedilla.
 6074 = { "Sur" "Sur" }
 6075 = { "Sayda" "Sayda" }

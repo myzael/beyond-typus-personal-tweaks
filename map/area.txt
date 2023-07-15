@@ -1194,7 +1194,7 @@ aleppo_area = { #Aleppo
 	377 4271 6095
 }
 syria_area = { #Syria
-	382 405 1849 6084 6085 6086 6088
+	382 405 1849 6084 6085 6086 6088 6081
 }
 trans_jordan_area = { #Transjordan
 	380 381 4270 5203
@@ -1215,9 +1215,9 @@ tripoli_area = { #Lebanon
 bargylus_area = { #Bargylus
 	2313 5170 6080 6094
 }
-hauran_area = { #Hawran
-	6069 6081
-}
+#hauran_area = { #Hawran #(JP) Removed in BT16
+#	
+#}
 
 ###
 # Mesopotamia

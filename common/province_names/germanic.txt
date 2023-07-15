@@ -1567,7 +1567,6 @@
 5203 = { "Schubak" "Schubak" } #(JP) "Shoubak"
 5205 = { "Türien" "Türien" } #(JP) "Beirut"
 365 = { "Sinai" "Katharinenkloster" }
-6069 = { "Mafrak" "Mafrak" } #(JP) "Al-Mafraq"
 6071 = { "Siebenbrünnen" "Siebenbrünnen" } #(JP) "Beersheeba", alternatively "Berscheba" or "Bir As-Sab"
 6074 = { "Tiros" "Tiros" }
 6075 = { "Sidon" "Sidon" }

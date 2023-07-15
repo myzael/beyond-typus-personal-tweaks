@@ -63,7 +63,6 @@
 5203 = { "Shubak" "Shubak" } #(JP) "Shoubak"
 5205 = { "Beyrut" "Beyrut" }
 365 = { "Sina" "Surb Yekaterina" }
-6069 = { "Mafrag" "Mafrag" }
 6071 = { "Beer Shea" "Beer Shea" }
 6074 = { "Tire" "Tire" }
 6075 = { "Saida" "Saida" } #(JP) Base Names

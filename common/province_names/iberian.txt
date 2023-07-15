@@ -653,7 +653,6 @@
 5203 = { "Montreal" "Montreal" }
 5205 = { "Beirud" "Beirud" }
 365 = { "Sinaí" "Santa Catalina del Sinaí" }
-6069 = { "Mafraque" "Mafraque" } #(JP) "Al-Mafraq"
 6071 = { "Berseba" "Berseba" }
 6074 = { "Tiro" "Tiro" }
 6075 = { "Sidón" "Sidón" }
