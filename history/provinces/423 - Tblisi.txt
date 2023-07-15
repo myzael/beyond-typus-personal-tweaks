@@ -1,20 +1,18 @@
- 
 #423 - Kartli
 
 owner = GEO
 controller = GEO
 culture = georgian
 religion = orthodox
-capital = "T'bilisi"
+capital = "Tbilisi"
 trade_goods = dyes
 hre = no
 base_tax = 6
-base_production = 6
+base_production = 5
 base_manpower = 4
 is_city = yes
 add_core = GEO
 
-extra_cost = 8
 center_of_trade = 1
 
 discovered_by = muslim

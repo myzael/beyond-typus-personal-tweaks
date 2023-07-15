@@ -1,4 +1,3 @@
- 
 #4301 - Kartli
 
 owner = GEO
@@ -9,8 +8,8 @@ capital = "Gori"
 trade_goods = grain
 hre = no
 base_tax = 4
-base_production = 2 
-base_manpower = 4
+base_production = 3 
+base_manpower = 3
 is_city = yes
 add_core = GEO
 fort_15th = yes #Gori

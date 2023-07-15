@@ -1,11 +1,10 @@
- 
 #3256 - Syunik
 
 owner = TIM
 controller = TIM
 culture = armenian
 religion = apostolic
-capital = "Tatev"
+capital = "Kapan"
 trade_goods = copper
 hre = no
 base_tax = 2 

@@ -1,16 +1,15 @@
- 
-#2202 - Karabakh
+#2202 - Kachen
 
 owner = KCH
 controller = KCH
 culture = armenian
 religion = apostolic
-capital = "Shusha"
+capital = "Vank" #(JP)Shusha is more modern, Vank seems to have been Kachen's capital
 trade_goods = wool
 hre = no
 base_tax = 4  
-base_production = 4 
-base_manpower = 4 
+base_production = 3
+base_manpower = 3 
 is_city = yes
 add_core = KCH
 fort_15th = yes

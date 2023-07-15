@@ -1,7 +1,8 @@
 #4302 - Bayazid
 
-owner = GEO
-controller = GEO
+owner = SME
+controller = SME
+add_core = SME
 add_core = GEO
 add_core = ARM
 capital = "Alashkert"
@@ -9,8 +10,8 @@ culture = armenian
 religion = apostolic
 trade_goods = grain
 hre = no
-base_tax = 2 
-base_production = 2 
+base_tax = 1 
+base_production = 1 
 base_manpower = 1 
 is_city = yes
 
