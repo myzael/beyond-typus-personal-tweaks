@@ -364,7 +364,7 @@ carpathia_region = { # 15 areas
 	}
 }
 # Asia / 32 regions / 295 areas
-caucasia_region = { # 6 areas
+caucasia_region = { # 8 areas
 	areas = {
 		imereti_area
 		samtskhe_area
@@ -372,6 +372,8 @@ caucasia_region = { # 6 areas
 		shirvan_area
 		circassia_area
 		dagestan_area
+		kartli_kakheti_area
+		talysh_area
 	}
 }
 anatolia_region = { # 14 areas
