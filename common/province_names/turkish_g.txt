@@ -1241,30 +1241,37 @@
 #Ural
 
 #Caucasia
+422 = { "Kütayis" "Kütayis" } #(JP) or "Kutayis"
+462 = { "Marqalistan" "Zuqdidi" } #(JP) or "Marqaliya", "Meqrelistan", "Marqalistan"
+1856 = { "Suqumqala" "Suqumqala" } #(JP) Azerbaijani name
+2196 = { "Gürye" "Oçerki" } #(JP) or "Gürel", "Güril", "Gorya", and "Azerkit" for capital
+2204 = { "Çildir" "Çildir" } #(JP) Sanjak Capital rather than destroyed Ani
+3250 = { "Klarceti" "Ardanuç" }
+3251 = { "Axisqa" "Axisqa" }
+4303 = { "Tao" "Oltu" } #(JP) Was Çildir, but this is in the now Ani province
+7295 = { "Raça" "Oni" }
+7296 = { "Ardahan" "Ardahan" }
+7297 = { "Acaristan" "Kulakale" }
+7298 = { "Suvanya" "Lentehi" }
+7299 = { "Gagra" "Gagra" }
+
 419 = { "Erivan" "Erivan" }
 420 = { "Gence" "Gence" }
 421 = { "Shirvan" "Bakü" }
-422 = { "Açikbash" "Kutayis" }
 423 = { "Tiflis" "Tiflis" }
 424 = { "Erdebil" "Erdebil" }
 425 = { "Kuba" "Kuba" }
-462 = { "Megrelya" "Zekdide" }
 463 = { "Çerkes" "Shithale" }
-1856 = { "Abhazya" "Sohumkale" }
 2195 = { "Adige" "Cenaheyn" } #(JP) Base capital name, "Tuapse" means two rivers though, so could be the base for a name #(VL) Cenaheyn Nehr or just Cenaheyn
-2196 = { "Gürye" "Oçerki" }
 2197 = { "Kabardiya" "Nalçik" }
 2198 = { "Kunduzkale" "Kunduzkale" } #(JP) Not a clue. Base name Khundzia, cannot find "Solzh-Glala" but Humraj, later Khunzakh #(VL) Kunduzhisar or Kunduzkale
 2199 = { "Tarak" "Tarak" }
 2201 = { "Terekkale" "Terekkale" }
 2202 = { "Haçin" "Shishe" }
 2203 = { "Kahit" "Telav" }
-2204 = { "Kars" "Kars" }
 2205 = { "Nahçivan" "Nahçivan" }
 2208 = { "Kizlarkalesi" "Kizlarkalesi" } #Near Mozdok, the capital of the Terek province
 2416 = { "Majar" "Majar" }
-3250 = { "Klarceti" "Artvani" } #(JP) Really not sure on this, halp #(VL) Artvin is the modern name currently used in Turkey. Artvani was the Ottoman version.
-3251 = { "Meshetya" "Aksika" }
 3253 = { "Lore" "Karakilis" }
 3256 = { "Sünnik" "Tütev" } #(JP) Tatev -> Tativ? #(VL)Tütev sounds better Sünik on the other hand can be Sünnik. with two "N"
 3261 = { "Demirkapi" "Demirkapi" }
@@ -1272,7 +1279,6 @@
 3263 = { "Beshdag" "Beshdag" }
 4299 = { "Shamahi" "Shamahi" }
 4301 = { "Göri" "Göri" }
-4303 = { "Çildir" "Çildir" } #(JP) Tao, really nor sure on this, halp. Oltu was the city. However, Çildir was a Sanjak capital so worth represented #(VL)Çildir is correct.
 4305 = { "Sheki" "Sheki" }
 4306 = { "Lezgistan" "Kümüye" } #(JP) Base names, Lakia/Lezgistan and Gazikumukh/Kumukh as capital. #(VL) Lazgistan / Kümüye
 4340 = { "Talish" "Lenkeran" }

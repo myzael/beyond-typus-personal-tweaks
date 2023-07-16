@@ -677,32 +677,40 @@
 6027 = { "Kharsian" "Kharsian" }
 6041 = { "Belgorod" "Belgorod Anatoliyskiy" } # Akhisar - white city. Anatoliyskiy means "of Anatolia"
 
+4303 = { "Eleshkirt" "Eleshkirt" }
 
 #Caucasia
+422 = { "Kutais" "Kutais" }
+462 = { "Megrelia" "Zugdidi" } 
+1856 = { "Sukhum" "Sukhum" }
+2196 = { "Batum" "Batum" }
+2204 = { "Ani" "Ani" }
+3250 = { "Klarjeti" "Ardanuch" }
+3251 = { "Akhaltsikhe" "Akhaltsikhe" }
+4303 = { "Olty" "Olty" }
+7295 = { "Racha" "Oni" } #(JP) Base Names
+7296 = { "Ardahan" "Ardahan }
+7297 = { "Adjara" "Khulo" }
+7298 = { "Svanetia" "Lentekh" }
+7299 = { "Gagra" "Gagra" }
+
 419 = { "Yerivan" "Yerivan" } #Yerevan
 420 = { "Yelizavetpol" "Yelizavetpol" } #Ganja
 421 = { "Baku" "Baku" } #Baku 
-422 = { "Kutais" "Kutais" } #Kutaisi
 423 = { "Tiflis" "Tiflis" } #Tbilisi
 424 = { "Ardebil" "Ardebil" } #Ardabil
 425 = { "Guba" "Guba" } #Quba
-462 = { "Megrelia" "Zugdidi" } #Zugdidi 
 463 = { "Maykop" "Maykop" } #Maykop
-1856 = { "Abkhazia" "Sukhum" } Sukhumi
 2195 = { "Novorossiysk" "Novorossiysk" } #Novorossiysk
-2196 = { "Batum" "Batum" } #Batumi
 2197 = { "Nalchik" "Nalchik" } #Nalchik
 2198 = { "Groznaya" "Groznaya" } #Grozny
 2199 = { "Petrovskoye" "Petrovskoye" } #Makhachkala
 2201 = { "Vladikavkaz" "Vladikavkaz" } #Vladikavkaz
 2202 = { "Shusha" "Shusha" } #Shusha 
 2203 = { "Telav" "Telav" } #Telavi
-2204 = { "Kars" "Kars" } #Kars 
 2205 = { "Nakhichevan" "Nakhichevan" } #Nakhchivan
 2208 = { "Mozdok" "Mozdok" } #Mozdok
 2416 = { "Stavropol" "Stavropol" } #Stavropol 
-3250 = { "Ardanuj" "Ardanuj" } #Ardanuç
-3251 = { "Akhaltsikh" "Akhaltsikh" } #Akhaltsikhe
 3253 = { "Karaklis" "Karaklis" } #Vanadzor
 3256 = { "Zangezur" "Tatev" } #Tatev 
 3261 = { "Derbent" "Derbent" } #Derbent
@@ -710,7 +718,6 @@
 3263 = { "Pyatigorsk" "Pyatigorsk" } #Pyatigorsk
 4299 = { "Shemakha" "Shemakha" } #Shamakhi
 4301 = { "Gori" "Gori" } #Gori 
-4303 = { "Olty" "Olty" } #Oltu 
 4305 = { "Nuha" "Nuha" } #Shaki
 4306 = { "Lakiya" "Kumukh" } #Kumukh
 4340 = { "Lankaran" "Lankaran" } #Lenkaran

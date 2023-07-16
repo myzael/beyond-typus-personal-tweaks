@@ -1,4 +1,20 @@
+#Tartar Group
 #Arga's Work
+
+#Caucasia
+422 = { "Qutais" "Qutais" }
+462 = { "Mingrellär" "Zugdidi" } #(JP) Capital is base name
+1856 = { "Suxum" "Suxum" }
+#2196 Guria/Batumi
+2204 = { "Ani" "Ani" }
+3250 = { "Klarceti" "Ardanuç" } #Turkic
+3251 = { "Axisqa" "Axisqa" }
+4303 = { "Tao" "Oltu" } #(JP) Was Çildir, but this is in the now Ani province
+7295 = { "Racha" "Oni" } #(JP) Base Names
+7296 = { "Ardahan" "Ardahan" }
+7297 = { "Acaristan" "Kulakale" } #(JP) Turkic
+#7298 Svaneti/Lentekhi
+#7299 - Gagra
 
 283 = { "Küçük-As" "Küçük-As" } #toponym map online tool
 7201 = { "Adamaxa" "Adamaxa" } #toponym map online tool
@@ -92,28 +108,20 @@
 #great horde
 303 = "Ükäk" #saratov is a russian name and younger, though then again 2418 has the same name and city atm which is weird
 
-
-
 #2017 Nov 8
 
 #central europe
 134 = "Viyana"
 
 #Caucasus
-462 = "Mingrellär" #or "Megrel"
-1856 = "Abxazça" #or "Abhaziya"
 2199 = "Targhu"
 3262 = "Qaraçay"
-
-
 
 #2018 Apr 15
 
 #siberia
 305 = "Wisu" #arab name, but viable to use
 2444 = "Basqart" #or "Baskardiya"
-
-
 
 #2018 Jun 5
 
@@ -124,8 +132,6 @@
 
 #inner mongolia
 723 = "Sili-Yin Roul Ayimar" #oral approximation, could be 'g' or 'r' written
-
-
 
 #2018 Mid-Oct Bugfix report
 7204 = "Lugansk"
@@ -159,8 +165,6 @@
 2201 = "Terek-Qale"
 2198 = "Khazav-Yurtu"
 2417 = "Kalmukya"
-3250 = "Ardanuç"
-3251 = "Ahiska" #name of town, not of Meshketi
 
 #ukraine
 2962 = "Rivne"
@@ -467,9 +471,6 @@
 #west pontus
 2300 = "Niksar" #turkish
 
-#odishi
-422 = "Bashaçiq" #azeri
-
 #east guangdong
 667 = "Kantón" #tatarça
 
@@ -743,7 +744,6 @@
 411 = { "Äl Müs'il" "Äl Müs'il" } #
 415 = { "Kärkuk" "Kärkuk" } #
 421 = { "Baqu" "Baqu" } #
-422 = { "Bashaçiq" "Qutais" } #
 428 = { "Tehran" "Tehran" } #
 429 = { "Isfähan" "Isfähan" } #
 438 = { "Karakum" "Karakum" } #
@@ -778,7 +778,6 @@
 1849 = { "Xoms" "Xoms" } #
 1854 = { "Yäffä" "Yäffä" } #
 1855 = { "Celile" "Celile" } #
-1856 = { "Abxazça" "Suxum" } #
 1942 = { "Jitomir" "Jitomir" } #
 1944 = { "Çerkasi" "Çerkasi" } #
 1957 = { "Gärej" "Gärej" } #
@@ -831,7 +830,6 @@
 3246 = { "Romni" "Romni" } #
 3247 = { "Izüm" "Izüm" } #
 3248 = { "Rize" "Rize" } #
-3251 = { "Ahiska" "Ahiska" } #
 3261 = { "Därbänt" "Därbänt" } #
 3262 = { "Qaraçay" "Qaraçay" } #
 3268 = { "Elets" "Elets" } #

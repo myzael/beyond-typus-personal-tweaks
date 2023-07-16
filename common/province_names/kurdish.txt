@@ -1,7 +1,6 @@
 #(Chrys) Choosing to depict "S-cedilla" as "Sh" until a native Kurdish speaker says they prefer otherwise
 
 #Mesopotamia
-
 331 = { "Erzirom" "Erzirom" } #Erzurum
 406 = { "Hît" "Hît" } #Hit (Chrys) no Kurdish wiki, found after searching "Hît" and "Îraq" (hypothesized anme for Hit and actual name for Iraq)
 407 = { "Reqa" "Reqa" } #Raqqa
@@ -99,6 +98,21 @@
 6094 = { "Mûrawanda" "Mûrawanda" }
 6095 = { "Kilîs" "Kilîs" }
 
+#Caucasia
+#422 Kutaisi
+#462 Mingrelia/Zugdidi
+#1856 Sukhumi
+#2196 Guria/Batumi
+2204 = { "Zûrzuna" "Zûrzuna" }
+#3250 Klarjeti/Artanuj
+3251 = { "Exhêskah" "Exhêskah" }
+4303 = { "Oltî" "Oltî" }
+#7295 Racha/Oni
+7296 = { "Erdêxan" "Erdêxan" }
+7297 = { "Acaristan" "Xûlo" }
+#7298 Svaneti/Lentekhi
+#7299 Gagra
+
 #Arga's Work
 
 #2017 Jun 5
@@ -167,7 +181,6 @@
 
 #middle east
 3254 = "Agirî"
-4302 = "Gharakilisa" #seljuk
 4304 = "Xoy"
 
 #arabia
@@ -235,12 +248,8 @@
 #dagestan
 425 = "Quba" #or "Daxistan" which is the name of the entire ingame state
 
-#odishi
-1856 = "Abxazstan"
-
 #armenia
 419 = "Êrîvan"
-2204 = "Qers"
 2205 = "Naxçivan"
 
 #baleares
@@ -337,8 +346,7 @@
 436 = { "Bîrcend" "Bîrcend" } #
 463 = { "Çerkessk" "Çerkessk" } #
 1231 = { "Eswan" "Eswan" } #
-2201 = { "Alanistanê" "" } #
-2204 = { "Qers" "Qers" } #
+2201 = { "Alanistanê" "Alanistanê" } #
 2205 = { "Naxçivan" "Naxçivan" } #
 2206 = { "Ûrmiye" "Ûrmiye" } #
 2209 = { "Îlam" "Îlam" } #
