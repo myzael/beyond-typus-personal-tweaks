@@ -2,12 +2,18 @@
 add_accepted_culture = english	
 religion = catholic
 capital = 242	# Gwynedd
-historical_rival = ENG
+#historical_rival = ENG #Removed because it causes problems and doesn't make much sense with welsh subject. Added disloyalty through trust.
 historical_friend = BRI
 historical_friend = CRN
 historical_friend = KOI
-
-
+add_trust = {
+    who = ENG
+    value = -65
+}
+add_country_modifier = {
+    name = pissed_at_the_english_bt
+    duration = -1
+}
 
 #History
 

@@ -30,7 +30,7 @@ BT16
  - (Harbivore) Removed several silk provinces at game start.
  - (Harbivore) Set Bohemia's AI personality to be mostly diplomat in the hopes it stops their bloodlust
  - (Harbivore) Set Mamluk's AI personality to be mostly diplomat to show the state being too nonchalant about the turkish threat. This will help BT ottomans who were struggling
- - (Harbivore) Reremove the Welsh-English historic rivalry, but if Wales is ever independent they get it back
+ - (Harbivore) Reremove the Welsh-English historic rivalry, but if Wales is ever independent they get it back. They also start with 10 trust with England at game start and a +25 liberty disire for "Discontent with English Rule"
  
 #Localised Naming
  - 
