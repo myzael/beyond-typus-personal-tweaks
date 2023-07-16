@@ -9,6 +9,7 @@ country_event = {                         #Event to give wales english rivalry
 	picture = CONQUEST_eventPicture
 	
 	hidden = yes
+	fire_only_once = yes
 	
 	trigger = {
 		TAG = WLS
@@ -25,5 +26,113 @@ country_event = {                         #Event to give wales english rivalry
 		name = BT_H_Misc.1.opt
 		add_historical_rival = ENG
 		remove_country_modifier = pissed_at_the_english_bt
+	}
+}
+
+country_event = {                         #The discovery of amalgamation 
+	id = BT_H_Misc.2
+	desc = BT_H_Misc.2.desc
+	title = BT_H_Misc.2.t
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		set_global_flag = bt_great_bullion_famine_over
+		is_year = 1500
+	}
+
+	mean_time_to_happen = {
+		months = 120
+    }
+	
+	immediate = {
+		set_global_flag = amalgamation_used_for_gold
+	}
+	
+	option = {
+		name = BT_H_Misc.2.opta
+		add_treasury = 250
+		add_prestige = 10
+		any_owned_province = { 
+			limit = {
+				province_id = 8121 #Spanish one
+			}
+			change_trade_goods = gold
+		}
+		any_owned_province = { 
+			limit = {
+				province_id = 7761 #Slovinian one
+			}
+			change_trade_goods = gold
+		}
+		any_owned_province = { 
+			limit = {
+				province_id = 4239 #The serbian one
+			}
+			change_trade_goods = gold
+		}
+	}
+}
+
+country_event = {                         #Event to change mercury provinces into gold with the discovery of amalgamation 
+	id = BT_H_Misc.3
+	desc = BT_H_Misc.3.desc
+	title = BT_H_Misc.3.t
+	picture = CONQUEST_eventPicture
+	
+	trigger = {
+		OR = {
+			AND = {
+				owns = 8121
+				8121 = {
+					NOT = {
+						trade_goods = gold 
+					}
+				}
+			}
+			AND = {
+				owns = 7761
+				7761 = {
+					NOT = {
+						trade_goods = gold 
+					}
+				}
+			}
+			AND = {
+				owns = 4239
+				4239 = {
+					NOT = {
+						trade_goods = gold 
+					}
+				}
+			}
+		has_global_flag = amalgamation_used_for_gold
+	}
+
+	mean_time_to_happen = {
+		days = 1
+    }
+	
+	option = {
+		name = BT_H_Misc.3.opta
+		any_owned_province = { 
+			limit = {
+				province_id = 8121 #Spanish one
+			}
+			change_trade_goods = gold
+		}
+		any_owned_province = { 
+			limit = {
+				province_id = 7761 #Slovinian one
+			}
+			change_trade_goods = gold
+		}
+		any_owned_province = { 
+			limit = {
+				province_id = 4239 #The serbian one
+			}
+			change_trade_goods = gold
+		}
 	}
 }
