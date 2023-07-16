@@ -5,6 +5,7 @@ bt_norwegian_scandinavia = {
 	ai = yes
 	potential = {
 		tag = NOR
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 
@@ -115,6 +116,7 @@ bt_norwegian_internal_missions = {
 	ai = yes
 	potential = {
 		tag = NOR
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 	#First two copied over from Danish Missions.txt
@@ -226,6 +228,7 @@ bt_norwegian_colonialism = {
 	ai = yes
 	potential = {
 		tag = NOR
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 	
@@ -411,6 +414,7 @@ bt_norwegian_colonialism_2 = {
 	ai = yes
 	potential = {
 		tag = NOR
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 		
@@ -448,6 +452,7 @@ bt_norwegian_colonialism_3 = {
 	ai = yes
 	potential = {
 		tag = NOR
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 	
@@ -486,6 +491,7 @@ bt_norwegian_british_isles = {
 	ai = yes
 	potential = {
 		tag = NOR
+		NOT = { has_dlc = "Lions of the North" }
 	}
 	has_country_shield = yes
 	
