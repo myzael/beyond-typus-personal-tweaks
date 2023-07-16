@@ -96,9 +96,9 @@ country_event = {
 			estate = estate_nobles
 			loyalty = 10
 		}
-		create_union = HAB				#BT Edited by Harbivore to work with moddified chocolate
+		create_union = HAB				#BT Edited by Harbivore for Austrian Unification
 		hidden_effect = {
-			STY = { country_event = { id = Chocolate_hab_hun.2 days = 1 } }
+			STY = { country_event = { id = bt_austrian_unification.1 days = 1 } }
 		}
 	}
 	option = {
@@ -142,9 +142,9 @@ country_event = {
 				remove_historical_friend = HUN
 			}
 		}
-		create_union = HAB				#BT Edited by Harbivore to work with moddified chocolate
+		create_union = HAB				#BT Edited by Harbivore for Austrian Unification
 		hidden_effect = {
-			STY = { country_event = { id = Chocolate_hab_hun.2 days = 1 } }
+			STY = { country_event = { id = bt_austrian_unification.1 days = 1 } }
 		}
 	}
 	option = {
@@ -339,7 +339,7 @@ country_event = {
 				inherit = CRO
 			}
 		}
-		STY = {							#BT Edited by Harbivore to work with moddified chocolate
+		STY = {							#BT Edited by Harbivore for Austrian Unification
 			create_union = HUN
 			hidden_effect = {
 				country_event = { id = flavor_hun.3 days = 1 }
@@ -534,9 +534,9 @@ country_event = {
 				}
 			}
 		}
-		# if = {			#BT Edited by Harbivore to work with moddified chocolate
+		# if = {			#BT Edited by Harbivore for Austrian Unification
 			# limit = { senior_union_with = HAB }
-			# STY = { country_event = { id = Chocolate_hab_hun.7 } }
+			# STY = { country_event = { id = bt_austrian_unification.7 } }
 		# }
 	}
 	
@@ -603,7 +603,7 @@ country_event = {
 				inherit = CRO
 			}
 		}
-		STY = {							#BT Edited by Harbivore to work with moddified chocolate
+		STY = {							#BT Edited by Harbivore for Austrian Unification
 			create_union = HUN
 			hidden_effect = {
 				country_event = { id = flavor_hun.3 days = 1 }
@@ -680,9 +680,9 @@ country_event = {
 				}
 			}
 		}
-		# if = {			#BT Edited by Harbivore to work with moddified chocolate
+		# if = {			#BT Edited by Harbivore for Austrian Unification
 			# limit = { senior_union_with = HAB }
-			# STY = { country_event = { id = Chocolate_hab_hun.7 } }
+			# STY = { country_event = { id = bt_austrian_unification.7 } }
 		# }
 	}
 }
@@ -707,7 +707,7 @@ country_event = {
 					TAG = STY 
 				}
 			}
-			STY = { inherit = HAB }			#BT Edited by Harbivore to work with moddified chocolate
+			STY = { inherit = HAB }			#BT Edited by Harbivore for Austrian Unification
 		}
 	}
 }
@@ -723,7 +723,7 @@ country_event = {
 
 	option = {
 		name = flavor_hun.10.a
-		STY = { inherit = HAB }			#BT Edited by Harbivore to work with moddified chocolate
+		STY = { inherit = HAB }			#BT Edited by Harbivore for Austrian Unification
 		if = { #Only add if we haven't got one already.
 			limit = {
 				has_casus_belli = {

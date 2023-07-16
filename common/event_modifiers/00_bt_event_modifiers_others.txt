@@ -181,11 +181,11 @@ bt_sc_demand_unlawful_land_cooldown = {
 ##################################################################################################
 ##################################################################################################
 
-bt_chocolcate_habsburg_fix = {
+bt_au_cannot_get_heir = {
 	heir_chance = -10
 }
 
-bt_chocolcate_habsburg_fix_sty = {
+bt_au_cannot_get_heir_or_die = {
 	heir_chance = -10
  	monarch_lifespan = 1
 }
