@@ -2,14 +2,40 @@
 #Arga's Work
 
 #Caucasia
+419 = { "Erevan" "Erevan" }
+420 = { "Gence" "Gence" } #Turkic
+421 = { "Baqu" "Baqu" }
 422 = { "Qutais" "Qutais" }
+423 = { "Tiflis" "Tiflis" }
+424 = { "Erdevil" "Erdevil" }
+425 = { "Qybe" "Qybe" } 
 462 = { "Mingrellär" "Zugdidi" } #(JP) Capital is base name
 1856 = { "Suxum" "Suxum" }
 #2196 Guria/Batumi
+2202 = { "Haçen" "Vengli" }
+2203 = { "Telav" "Telav" }
 2204 = { "Ani" "Ani" }
-3250 = { "Klarceti" "Ardanuç" } #Turkic
+2205 = { "Naxçivan" "Naxçivan" } #(JP) Turkic
+3250 = { "Klarceti" "Ardanuç" } #(JP) Turkic
 3251 = { "Axisqa" "Axisqa" }
+3253 = { "Karakilise" "Karakilise" } #(JP) Nearby important city Turkic
+3256 = { "Sünnik" "Qafan" }
+4299 = { "Shämaxi" "Shämaxi" }
+4301 = { "Göri" "Göri" }
 4303 = { "Tao" "Oltu" } #(JP) Was Çildir, but this is in the now Ani province
+4305 = { "Sheki" "Sheki" }
+4340 = { "Länkärän" "Länkärän" }
+7284 = { "Barda" "Barda" }
+7285 = { "Astara" "Astara" } #(JP) Base Names
+7286 = { "Beyleqan" "Beyleqan" } #(JP) Turkic
+7287 = { "Dizaq" "Tugh" } #(JP) Turkic
+7288 = { "Basargeçer" "Basargeçer" } #(JP) Turkic
+7289 = { "Qazaq" "Qazaq" }
+7290 = { "Siginak" "Siginak" }
+7291 = { "Balaken" "Balaken" }
+7292 = { "Sanaryia" "Kazbek" } #Base Names
+7293 = { "Dvaleti" Nuzal" }# (JP) Base Names
+7294 = { "Tsxinval" "Tsxinval" }
 7295 = { "Racha" "Oni" } #(JP) Base Names
 7296 = { "Ardahan" "Ardahan" }
 7297 = { "Acaristan" "Kulakale" } #(JP) Turkic
@@ -51,9 +77,6 @@
 1971 = "Sary-Su"
 2365 = "Urda-Ulus" #or "Urda"
 2408 = "Achmat" #AH
-2423 = "Ulatar"
-
-
 
 #2017 Aug 9
 
@@ -64,8 +87,6 @@
 
 #adjustment 
 286 = "Azaq" #to make the distinction between tatar and ottoman name
-
-
 
 #2017 Aug 17
 
@@ -160,7 +181,6 @@
 7190 = "Baliqlava"
 
 #caucasus
-423 = "Tiflis"
 2197 = "Kabardiya"
 2201 = "Terek-Qale"
 2198 = "Khazav-Yurtu"
@@ -209,7 +229,6 @@
 5206 = "Giresun"
 
 #persia
-424 = "Erdevil" #?
 2214 = "Gülistan"
 2233 = "çabahar"
 
@@ -418,9 +437,6 @@
 
 #tabriz
 2206 = "Urmija" #tatarça
-
-#shirvan
-421 = "Baqu" #crimean tatar
 
 #dagestan
 425 = "Daghistan" #crimean tatar
@@ -743,7 +759,6 @@
 407 = { "Är-Raqqa" "Är-Raqqa" } #
 411 = { "Äl Müs'il" "Äl Müs'il" } #
 415 = { "Kärkuk" "Kärkuk" } #
-421 = { "Baqu" "Baqu" } #
 428 = { "Tehran" "Tehran" } #
 429 = { "Isfähan" "Isfähan" } #
 438 = { "Karakum" "Karakum" } #
@@ -974,8 +989,6 @@
 #lycaonia
 323 = { "Könya" "Könya" } #
 4307 = { "Aksarai" "Aksarai" } #
-#shirvan
-424 = { "Erdevil" "Erdevil" } #
 #azerbaijan
 4338 = { "Sultaniye" "Sultaniye" } #
 #ural
@@ -1009,7 +1022,6 @@
 299 = { "Voronej" "Voronej" } #
 356 = { "Bingazi" "Bingazi" } #
 362 = { "Reshid" "Reshid" } #
-419 = { "Erevan" "Erevan" } #
 667 = { "Kantón" "Kantón" } #
 679 = { "Tchändu" "Tchändu" } #
 682 = { "Wutchan" "Wutchan" } #
@@ -1034,10 +1046,8 @@
 4195 = { "Jending" "Jending" } #
 4242 = { "Borisov" "Borisov" } #
 4253 = { "Voloçëk" "Voloçëk" } #
-4299 = { "Shämaxi" "Shämaxi" } #
 4305 = { "Shäke" "Shäke" } #
 4316 = { "Sharqiye" "Sharqiye" } #
-4340 = { "Länkärän" "Länkärän" } #
 4779 = { "Gelibolu" "Gelibolu" } #
 5660 = { "Sebej" "Sebej" } #
 7137 = { "Silivri" "Silivri" } #

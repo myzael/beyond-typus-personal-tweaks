@@ -1,14 +1,40 @@
 #Vanilla moved from ROM tag
 
 #Caucasia
+419 = { "Tibion" "Tibion" }
+420 = { "Gantzaka" "Gantzaka" } #(JP) Base Names
+421 = { "Bagaban" "Bagaban" } #This is what armenian historians call the city before ~800 AD, i.e city of winds (Baga-avan)
 422 = { "Kotais" "Kotais" }
+423 = { "Tiphlida" "Tiphlida" }
+424 = { "Arbandon" "Arbandon" } #Aharawa (Which is what province marker signifies)
+425 = { "Guba" "Guba" } #(JP) Base Names
 462 = { "Archaiopolis" "Archaiopolis" }
 1856 = { "Sebastopolis" "Sebastopolis" }
 2196 = { "Bathus" "Bathus" }
+2202 = { "Kachen" "Vank" }
+2203 = { "Teleda" "Teleda" }
 2204 = { "Abnicum" "Abnicum" }
+2205 = { "Naxouana" "Naxouana" }
 3250 = { "Ardanoutzin" "Ardanoutzin" }
 3251 = { "Achaltsiche" "Achaltsiche" } 
+3253 = { "Lorium" "Lorium" }
+3256 = { "Syunik" "Kapan" } #(JP) Base Names
+4299 = { "Kamachia" "Kamachia" }
+4301 = { "Gori" "Gori" } #(JP) Base Names
 4303 = { "Pharangium" "Pharangium" }
+4305 = { "Sakion" "Sakion" }
+4340 = { "Lankaran" "Lankaran" } #(JP) Base Names
+7284 = { "Barda" "Barda" } #(JP) Base Names
+7285 = { "Astara" "Astara" } #(JP) Base Names
+7286 = { "Beylagan" "Beylagan" } #(JP) Base Names
+7287 = { "Dizak" "Togh" } #(JP) Base Names
+7288 = { "Gegharkunik" "Vasakashen" } #(JP) Base Names
+7289 = { "Kazakh" "Kazakh" } #(JP) Base Names
+7290 = { "Tamaris" "Tamaris" }
+7291 = { "Balaken" "Balaken" } #(JP) Base Names
+7292 = { "Canaria" "Stepantsminda" } #Base Names
+7293 = { "Dvaletia" Nuzal" }# (JP) Base Names
+7294 = { "Tskhinval" "Tskhinval" } #(JP) Base Names
 7295 = { "Racha" "Oni" } #(JP) Base Names
 7296 = { "Artani" "Artani }
 7297 = { "Achara" "Khulo" } #(JP) Base Names

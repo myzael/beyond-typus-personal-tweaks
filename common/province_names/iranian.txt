@@ -45,21 +45,46 @@
 7193 = { "Izke" "Izke" }
 
 #Caucasia
+419 = { "Yerevan" "Yerevan" }
+420 = { "Ganja" "Ganja" } #(JP) Base Names
+421 = { "Bâdkube" "Bâdkube" }
 422 = { "Kutaisi" "Kutaisi" } # (JP) Base Names
+423 = { "Teflis" "Teflis" }
+424 = { "Ardebil" "Ardebil" }
+425 = { "Qebh" "Qebh" }
 462 = { "Mingerlia" "Zugdidi" }
 1856 = { "Sukhumi" "Sukhumi" } #(JP) Base Names
 2196 = { "Goriya" "Azorgeti" }
+2202 = { "Kachen" "Vank" } #(JP) Base Names
+2203 = { "Telav" "Telav" }
 2204 = { "Ani" "Ani" } #(JP) Base Names
+2205 = { "Nagsh-e Jahan" "Nagsh-e Jahan" }
 3250 = { "Klarjeti" "Artanuji" } #(JP) Base Names
 3251 = { "Akhesqeh" "Akhesqeh" }
+3253 = { "Lori" "Loriberd" } #(JP) Base Names
+3256 = { "Sivnik" "Kapan" }
+4299 = { "Shamakhi" "Shamakhi" }
+4301 = { "Gori" "Gori" } #(JP) Base Names
 4303 = { "Tao" "Oltu" } #(JP) Base Names
+4305 = { "Sheki" "Sheki" } #(JP) Base Names
+4340 = { "Lankon" "Lankon" } #(JP) Talysh
+7284 = { "Pahlav" "Pahlav" }
+7285 = { "Astara" "Astara" }
+7286 = { "Bilaqan" "Bilaqan" }
+7287 = { "Dizak" "Togh" } #(JP) Base Names
+7288 = { "Gegharkunik" "Vasakashen" } #(JP) Base Names
+7289 = { "Gazakh" "Gazakh" } #(JP) Base Names
+7290 = { "Khornabuji" "Khornabuji" }
+7291 = { "Balakan" "Balakan" } 
+7292 = { "Tsanaria" "Stepantsminda" } #Base Names
+7293 = { "Dvaleti" Nuzal" }# (JP) Base Names
+7294 = { "Ckhinval" "Ckhinval" } #(JP) Ossetian
 7295 = { "Racha" "Oni" } #(JP) Base Names
 7296 = { "Ardahan" "Ardahan" }
 7297 = { "Achara" "Khulo" } #(JP) Base Names
 7298 = { "Svante" "Lantakh" }
 7299 = { "Gagra" "Gagra" } #(JP) Base Names
 
-425 = { "Qebh" "Qebh" }
 463 = { "Cherkes" "Cherkes" }
 2197 = { "Kaesaer" "Kaesaer" }
 2201 = { "Iryston" "Dzawjeqaw" }

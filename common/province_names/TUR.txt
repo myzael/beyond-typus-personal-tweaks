@@ -8,8 +8,16 @@
 6027 = { "Shehirkishla" "Shehirkishla" }
 
 #Caucasia
-422 = { "QutayÄ±s" "QutayÄ±s" }
-462 = { "Megrelya" "ZÃ¼kdit" } #(JP) or "Mingrelya", "Migrelya", "Mengrelya", "Megrelistan", "Mingirelya", and "Zekdide"
+419 = { "Revan" "Revan" }
+421 = { "Bakü" "Bakü" }
+422 = { "Qutayis" "Qutayis" }
+425 = { "Kuba" "Kuba" } 
+462 = { "Megrelya" "Zükdit" } #(JP) or "Mingrelya", "Migrelya", "Mengrelya", "Megrelistan", "Mingirelya", and "Zekdide"
 1856 = { "Sohumkale" "Sohumkale" }
+2205 = { "Nahçivan" "Nahçivan" }
 3251 = { "Ahiska" "Ahiska" }
+4299 = { "Shamahi" "Shamahi" }
+7289 = { "Kazah" "Kazah" }
+7291 = { "Balakene" "Balakene" }
+7294 = { "Shinval" "Shinval" }
 7297 = { "Adjaristan" "Hulakale" }

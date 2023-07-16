@@ -99,14 +99,40 @@
 6095 = { "Kilîs" "Kilîs" }
 
 #Caucasia
+419 = { "Êrîvan" "Êrîvan" }
+#420 Ganja
+421 = { "Bâdkûbe" "Bâdkûbe" }
 #422 Kutaisi
+423 = { "Tbîlîsî" "Tbîlîsî" }
+424 = { "Erdebîl" "Erdebîl" }
+425 = { "Quba" "Quba" }
 #462 Mingrelia/Zugdidi
 #1856 Sukhumi
 #2196 Guria/Batumi
+#2202 Kachen/Vank
+2203 = { "Têlav" "Têlav" }
 2204 = { "Zûrzuna" "Zûrzuna" }
+2205 = { "Naxçivan" "Naxçivan" }
 #3250 Klarjeti/Artanuj
 3251 = { "Exhêskah" "Exhêskah" }
+#3253 Lori
+#3256 Syunik/Kapan
+#4299 Shamakhi
+#4301 Gori
 4303 = { "Oltî" "Oltî" }
+#4305 Sheki
+4340 = { "Lenkeran" "Lenkeran" } 
+7284 = { "Berde" "Berde" }
+7285 = { "Astara" "Astara" } #(JP) Base Names
+#7286 Beylagan
+#7287 Dizak/Togh
+#7288 Vardenis
+7289 = { "Gazakh" "Gazakh" } #(JP) Base Names
+#7290 Khornabuji
+#7291 Balakan
+#7292 Tsanareti/Stepantsminda
+#7293 Dvaleti/Nuzal
+#7294 Tskhinval
 #7295 Racha/Oni
 7296 = { "Erdêxan" "Erdêxan" }
 7297 = { "Acaristan" "Xûlo" }
@@ -137,7 +163,6 @@
 408 = "Besre"
 412 = "Xûzistan"
 413 = "Xurremabad"
-424 = "Erdebîl"
 426 = "Mazenderan"
 427 = "Gundê Mex" #AH for now, couldn't find a translation
 428 = "Taran" #or "Tehran"
@@ -245,13 +270,6 @@
 7134 = "Enez"
 7135 = "Gelibolu"
 
-#dagestan
-425 = "Quba" #or "Daxistan" which is the name of the entire ingame state
-
-#armenia
-419 = "Êrîvan"
-2205 = "Naxçivan"
-
 #baleares
 4559 = "Minorka"
 
@@ -336,7 +354,6 @@
 412 = { "Xûzistan" "Ehvaz" } #
 414 = { "Hemedan" "Hemedan" } #
 416 = { "Tewrêz" "Tewrêz" } #
-419 = { "Êrivan" "Êrivan" } #
 428 = { "Taran" "Taran" } #
 429 = { "Îsfehan" "Îsfehan" } #
 418 = { "Amed" "Amed" } #
@@ -347,7 +364,6 @@
 463 = { "Çerkessk" "Çerkessk" } #
 1231 = { "Eswan" "Eswan" } #
 2201 = { "Alanistanê" "Alanistanê" } #
-2205 = { "Naxçivan" "Naxçivan" } #
 2206 = { "Ûrmiye" "Ûrmiye" } #
 2209 = { "Îlam" "Îlam" } #
 2210 = { "Kirmashan" "Kirmashan" } #
@@ -371,7 +387,6 @@
 3254 = { "Agirî" "Bazîd" } #
 3262 = { "Karaçay" "Karaçay" } #
 4282 = { "Kalet Bisha" "Kalet Bisha" } #
-4301 = { "Bashûrê Alanistanê" "Shinval" } #
 4304 = { "Xoy" "Xoy" } #
 4315 = { "Gümüshane" "Gümüshane" } #
 4319 = { "El-Uksur" "El-Uksur" } #

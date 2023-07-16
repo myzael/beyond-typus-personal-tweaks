@@ -201,14 +201,40 @@
 6041 = { "Thyatira" "Thyatira" }
 
 #Caucasia
+419 = { "Tibion" "Tibion" }
+420 = { "Gantzaka" "Gantzaka" } #(JP) Base Names
+421 = { "Bagaban" "Bagaban" } #This is what armenian historians call the city before ~800 AD, i.e city of winds (Baga-avan)
 422 = { "Kotais" "Kotais" }
-462 = { "Archaiopolis" "Archaiopolis" } #Technically further in-land, but will do for now.
+423 = { "Tiphlida" "Tiphlida" } #(JP) Modern Greek "Tiflída"
+424 = { "Arbandon" "Arbandon" } #(Dub) Aharawa (Which is what province marker signifies)
+425 = { "Guba" "Guba" } #(JP) Base Names
+462 = { "Archaiopolis" "Archaiopolis" } #(Dub) Technically further in-land, but will do for now.
 1856 = { "Sebastopolis" "Sebastopolis" }
 2196 = { "Migrelía" "Bathys" }
+2202 = { "Kachen" "Vank" }
+2203 = { "Teleda" "Teleda" }
 2204 = { "Ánion" "Ánion" }
+2205 = { "Naxouana" "Naxouana" }
 3250 = { "Ardanoutzin" "Ardanoutzin" }
-3251 = { "Achaltskai" "Achaltskai" } #The Armenian name is Achaltscha, Achaltsiche means "New castle", so if we want to drop the armenian/georgian names we could go for Neokastron. I went with assuming Achaltscha would turn into Achaltskae.
-4303 = { "Pharangion" "Pharangion" } #Actually a persian name, but it sounds sufficiently greek so I'll go for it. In Latin it was Pharangium. Alternatively we have Taochoi. This one is hell on earth to find a name for otherwise. Was 3249 pre 1.24
+3251 = { "Achaltskai" "Achaltskai" } #(Dub) The Armenian name is Achaltscha, Achaltsiche means "New castle", so if we want to drop the armenian/georgian names we could go for Neokastron. I went with assuming Achaltscha would turn into Achaltskae.
+3253 = { "Lorion" "Lorion" }
+3256 = { "Syunik" "Kapan" } #(JP) Base Names
+4299 = { "Kamachia" "Kamachia" }
+4301 = { "Gori" "Gori" } #(JP) Base Names
+4303 = { "Pharangion" "Pharangion" } #(Dub) Actually a persian name, but it sounds sufficiently greek so I'll go for it. In Latin it was Pharangium. Alternatively we have Taochoi. This one is hell on earth to find a name for otherwise. Was 3249 pre 1.24
+4305 = { "Sakion" "Sakion" }
+4340 = { "Lankaran" "Lankaran" } #(JP) Base Names
+7284 = { "Barda" "Barda" } #(JP) Base Names
+7285 = { "Astara" "Astara" } #(JP) Base Names
+7286 = { "Beylagan" "Beylagan" } #(JP) Base Names
+7287 = { "Dizak" "Togh" } #(JP) Base Names
+7288 = { "Gegharkunik" "Vasakashen" } #Base Names
+7289 = { "Kazakh" "Kazakh" } #(JP) Base Names
+7290 = { "Tamaris" "Tamaris" }
+7291 = { "Balaken" "Balaken" } #(JP) Base Names
+7292 = { "Canaria" "Stepantsminda" } #Base Names
+7293 = { "Dvaletia" Nuzal" }# (JP) Base Names
+7294 = { "Tskhinval" "Tskhinval" } #(JP) Base Names
 7295 = { "Racha" "Oni" } #(JP) Base Names 
 7297 = { "Atzaría" "Hulo" }
 7298 = { "Suania" "Lentekhi" } #(JP) Capital is base name
@@ -365,26 +391,6 @@
 5295 = { "Kordyene" "Zabdaion" } #Removed Gazarta due to it seemingly being referenced in Catholic. Was moved from 2308 in 1.24
 5330 = { "Arzanene" "Martyropolis" } #New in 1.24
 2308 = { "Edessa" "Edessa" } #Was 407 pre 1.24, moved to Mardin in 1.24. It was rebuilt by Justin II and named Justiniopolis in the 500's, however later on during Byzantine resurgence in the 1000s it was once more known as Edessa, so I pick that.
-
-#Armenia proper
-419 = { "Tibion" "Tibion" }
-3253 = { "Lorion" "Lorion" }
-2205 = { "Naxouana" "Naxouana" }
-3256 = { "Balaberdon" "Balaberdon" } #I pick Baghaberd instead as it's probably more important. Using same logic for Baybird -> Baiberdon. If you like Paipert, then this would be Palapert
-2202 = { "Amaras" "Amaras" } #Picked instead due to historical importance
-
-#Shirvan
-420 = { "Gantzaka" "Gantzaka" } 
-4305 = { "Sakion" "Sakion" } #Pre 1.24 was 3259
-4299 = { "Chabala" "Chabala" } #Pre 1.24 was 3258
-421 = { "Bagaban" "Bagaban" } #This is what armenian historians call the city before ~800 AD, i.e city of winds (Baga-avan)
-4340 = { "Balanrot" "Balanrot" } #Not really sure where this one comes from, it was found on Pleiades as an old name to Bilasuvar, which is what the city marker actually signifies. Pre 1.24 was 3257
-424 = { "Arbandon""Arbandon" } #Aharawa (Which is what province marker signifies), moved to Shirvan in 1.24
-
-#Georgia
-4301 = { "Meschistha" "Meschistha" } #Old capital of Georgia - Gori has no importance whatsoever from what I can tell. Pre 1.24 was 3252
-423 = { "Tiphlida" "Tiphlida" } #Tiphilis is ancient greek. One can also use the name for its fortress Narikala, although that's a name given by the Mongols in Arabic.
-2203 = { "Teleda" "Teleda" } #Greek geographer's name for Telavi? No source, and it is also claimed to be the name of a city in Azerbaijan, but what do I know.
 
 #Odishi (Lazica)
 2195 = { "Palaia Achaia" "Palaia Achaia" }

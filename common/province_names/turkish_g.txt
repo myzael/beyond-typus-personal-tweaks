@@ -1241,26 +1241,47 @@
 #Ural
 
 #Caucasia
+419 = { "Erivan" "Erivan" }
+420 = { "Gence" "Gence" }
+421 = { "Baki" "Baki" }
 422 = { "Kütayis" "Kütayis" } #(JP) or "Kutayis"
+423 = { "Tiflis" "Tiflis" }
+424 = { "Erdebil" "Erdebil" }
+425 = { "Quba" "Quba" }
 462 = { "Marqalistan" "Zuqdidi" } #(JP) or "Marqaliya", "Meqrelistan", "Marqalistan"
 1856 = { "Suqumqala" "Suqumqala" } #(JP) Azerbaijani name
 2196 = { "Gürye" "Oçerki" } #(JP) or "Gürel", "Güril", "Gorya", and "Azerkit" for capital
+2202 = { "Haçen" "Vengli" }
+2203 = { "Telav" "Telav" }
 2204 = { "Çildir" "Çildir" } #(JP) Sanjak Capital rather than destroyed Ani
+2205 = { "Naxçivan" "Naxçivan" }
 3250 = { "Klarceti" "Ardanuç" }
 3251 = { "Axisqa" "Axisqa" }
+3253 = { "Karakilise" "Karakilise" } #(JP) Nearby important city
+3256 = { "Sünnik" "Qafan" }
+4299 = { "Shamaxi" "Shamaxi" }
+4301 = { "Göri" "Göri" }
 4303 = { "Tao" "Oltu" } #(JP) Was Çildir, but this is in the now Ani province
+4305 = { "Sheki" "Sheki" }
+4340 = { "Lenkeran" "Lenkeran" }
+7284 = { "Barda" "Barda" }
+7285 = { "Astara" "Astara" } #(JP) Base Names
+7286 = { "Beyleqan" "Beyleqan" }
+7287 = { "Dizaq" "Tugh" }
+7288 = { "Basargeçer" "Basargeçer" }
+7289 = { "Qazax" "Qazax" }
+7290 = { "Siginak" "Siginak" }
+7291 = { "Balaken" "Balaken" }
+7292 = { "Sanaryia" "Kazbek" } #Base Names
+7293 = { "Dvaleti" Nuzal" }# (JP) Base Names
+7294 = { "Tsxinval" "Tsxinval" }
 7295 = { "Raça" "Oni" }
 7296 = { "Ardahan" "Ardahan" }
 7297 = { "Acaristan" "Kulakale" }
 7298 = { "Suvanya" "Lentehi" }
 7299 = { "Gagra" "Gagra" }
 
-419 = { "Erivan" "Erivan" }
 420 = { "Gence" "Gence" }
-421 = { "Shirvan" "Bakü" }
-423 = { "Tiflis" "Tiflis" }
-424 = { "Erdebil" "Erdebil" }
-425 = { "Kuba" "Kuba" }
 463 = { "Çerkes" "Shithale" }
 2195 = { "Adige" "Cenaheyn" } #(JP) Base capital name, "Tuapse" means two rivers though, so could be the base for a name #(VL) Cenaheyn Nehr or just Cenaheyn
 2197 = { "Kabardiya" "Nalçik" }
@@ -1268,20 +1289,14 @@
 2199 = { "Tarak" "Tarak" }
 2201 = { "Terekkale" "Terekkale" }
 2202 = { "Haçin" "Shishe" }
-2203 = { "Kahit" "Telav" }
-2205 = { "Nahçivan" "Nahçivan" }
 2208 = { "Kizlarkalesi" "Kizlarkalesi" } #Near Mozdok, the capital of the Terek province
 2416 = { "Majar" "Majar" }
 3253 = { "Lore" "Karakilis" }
-3256 = { "Sünnik" "Tütev" } #(JP) Tatev -> Tativ? #(VL)Tütev sounds better Sünik on the other hand can be Sünnik. with two "N"
 3261 = { "Demirkapi" "Demirkapi" }
 3262 = { "Karaçay" "Çerkezkale" } 
 3263 = { "Beshdag" "Beshdag" }
 4299 = { "Shamahi" "Shamahi" }
-4301 = { "Göri" "Göri" }
-4305 = { "Sheki" "Sheki" }
 4306 = { "Lezgistan" "Kümüye" } #(JP) Base names, Lakia/Lezgistan and Gazikumukh/Kumukh as capital. #(VL) Lazgistan / Kümüye
-4340 = { "Talish" "Lenkeran" }
 
 #Persia
 412 = { "Ahvaz" "Ahvaz" }
