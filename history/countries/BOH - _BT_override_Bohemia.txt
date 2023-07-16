@@ -3,6 +3,7 @@ historical_friend = HUN
 historical_friend = POL
 
 
+set_country_flag = looking_for_a_king
 
 #History
 

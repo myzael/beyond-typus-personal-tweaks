@@ -107,11 +107,11 @@ change_culture_group_effect = {
 #############################################################
 #############################################################
 #############################################################
-#Pieter's From Chocolate
+#Harbivore's Austrian Unification
 #############################################################
 #############################################################
 #############################################################
-choc_FrederickIII_dies_first = {				#Ruler of HAB and STY
+BT_AU_FrederickIII_dies_first = {				#Ruler of HAB and STY
     #Habsburger succession elements
     if = {
 		limit = {
@@ -119,41 +119,40 @@ choc_FrederickIII_dies_first = {				#Ruler of HAB and STY
 				tag = STY
 				tag = HAB
 			}
-			has_country_flag = choc_albrecht_friedrich_brothers 
+			has_country_flag = bt_au_albrecht_friedrich_brothers_alive 
 		}
 		if = {
 			limit = {
-				VOR = { has_country_flag = choc_albrecht_friedrich_brothers }
+				VOR = { has_country_flag = bt_au_albrecht_friedrich_brothers_alive }
 				VOR = { ai = yes }
 			}
-			VOR = { clr_country_flag = choc_albrecht_friedrich_brothers exile_ruler_as = { name = albrechtVI } }
-			STY = { clr_country_flag = choc_albrecht_friedrich_brothers inherit = VOR }
+			VOR = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive exile_ruler_as = { name = albrechtVI } }
+			STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive inherit = VOR }
 			set_ruler = albrechtVI
 			HAB = { kill_ruler = yes }
-			set_country_flag = albrechtVI_is_archduke
+			set_country_flag = bt_au_albrechtVI_is_archduke
 		}
 		else = {
 			HAB = {
-				clr_country_flag = choc_albrecht_friedrich_brothers 
-				remove_country_modifier = bt_chocolcate_habsburg_fix_sty
+				clr_country_flag = bt_au_albrecht_friedrich_brothers_alive 
+				remove_country_modifier = bt_au_cannot_get_heir_or_die
 				remove_country_modifier = bt_fredricks_diplomats
 			}
 			STY = {
-				clr_country_flag = choc_albrecht_friedrich_brothers
-				remove_country_modifier = bt_chocolcate_habsburg_fix_sty
+				clr_country_flag = bt_au_albrecht_friedrich_brothers_alive
+				remove_country_modifier = bt_au_cannot_get_heir_or_die
 				remove_country_modifier = bt_fredricks_diplomats
 			}
-			#VOR = { clr_country_flag = CHO_albrecht_friedrich_brothers inherit = ROOT change_tag = ROOT }
 		}
 	}
 }
 
-choc_AlbrechtVI_dies_first = {				#Ruler of Further Austria
+BT_AU_AlbrechtVI_dies_first = {				#Ruler of Further Austria
     #Habsburger succession elements
     if = {
 		limit = {
 			tag = VOR
-			has_country_flag = choc_albrecht_friedrich_brothers
+			has_country_flag = bt_au_albrecht_friedrich_brothers_alive
 			has_heir = no
 			ai = yes
 		}
@@ -162,27 +161,27 @@ choc_AlbrechtVI_dies_first = {				#Ruler of Further Austria
 				STY = { exists = yes }
 				has_heir = no #If Further Austria
 			}
-			STY = { clr_country_flag = choc_albrecht_friedrich_brothers inherit = VOR }	#Styria Inherits Further austria
-			HAB = { clr_country_flag = choc_albrecht_friedrich_brothers }
+			STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive inherit = VOR }	#Styria Inherits Further austria
+			HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
 		}
 		else_if = {
 			limit = {
-				HAB = { exists = yes has_country_flag = choc_albrecht_friedrich_brothers }
+				HAB = { exists = yes has_country_flag = bt_au_albrecht_friedrich_brothers_alive }
 				has_heir = no #If Further Austria
 			}
-			HAB = { clr_country_flag = choc_albrecht_friedrich_brothers inherit = VOR }	#Austria Inherits Further austria
+			HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive inherit = VOR }	#Austria Inherits Further austria
 		}
-		STY = { clr_country_flag = choc_albrecht_friedrich_brothers }
-		HAB = { clr_country_flag = choc_albrecht_friedrich_brothers }				#If they have an heir nothing happens (They cant get an heir with Harbs modifier)
+		STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+		HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }				#If they have an heir nothing happens (They cant get an heir with Harbs modifier)
 		VOR = {
-			clr_country_flag = choc_albrecht_friedrich_brothers 	
-			remove_country_modifier = bt_chocolcate_habsburg_fix
+			clr_country_flag = bt_au_albrecht_friedrich_brothers_alive 	
+			remove_country_modifier = bt_au_cannot_get_heir
 		}
 	}
 	else_if = {				#If you are Further Austria and your ruler dies you will become Styria or Austria and then inherit your old tag of VOR. 
 		limit = { 
 				tag = VOR
-				has_country_flag = choc_albrecht_friedrich_brothers
+				has_country_flag = bt_au_albrecht_friedrich_brothers_alive
 				has_heir = no
 				ai = no
 		}
@@ -191,24 +190,24 @@ choc_AlbrechtVI_dies_first = {				#Ruler of Further Austria
 				STY = { exists = yes }
 				has_heir = no #If Further Austria
 			}
-			clr_country_flag = choc_albrecht_friedrich_brothers 
+			clr_country_flag = bt_au_albrecht_friedrich_brothers_alive 
 			switch_tag = STY 
 			inherit = VOR
 		}
 		else_if = {
 			limit = {
-				HAB = { exists = yes has_country_flag = choc_albrecht_friedrich_brothers }
+				HAB = { exists = yes has_country_flag = bt_au_albrecht_friedrich_brothers_alive }
 				has_heir = no #If Further Austria
 			}	
-			clr_country_flag = choc_albrecht_friedrich_brothers
+			clr_country_flag = bt_au_albrecht_friedrich_brothers_alive
 			switch_tag = HAB
 			inherit = VOR
 		}
-		STY = { clr_country_flag = choc_albrecht_friedrich_brothers }
-		HAB = { clr_country_flag = choc_albrecht_friedrich_brothers }
+		STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+		HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
 		VOR = { 
-			clr_country_flag = choc_albrecht_friedrich_brothers 
-			remove_country_modifier = bt_chocolcate_habsburg_fix
+			clr_country_flag = bt_au_albrecht_friedrich_brothers_alive 
+			remove_country_modifier = bt_au_cannot_get_heir
 		}
 	}
     if = {
@@ -217,34 +216,18 @@ choc_AlbrechtVI_dies_first = {				#Ruler of Further Austria
 				tag = STY
 				tag = HAB
 			}
-			has_country_flag = albrechtVI_is_archduke 
+			has_country_flag = bt_au_albrechtVI_is_archduke 
 		}
-		remove_country_modifier = bt_chocolcate_habsburg_fix
+		remove_country_modifier = bt_au_cannot_get_heir
 	}
 }
 
 
 
-# CHO_AlbrechtVI_heir_dies = { #Kill duplicate Albrecht if heir dies
-	# if = {
-		# limit = {
-			# OR = { 
-				# tag = STY
-				# tag = HAB
-			# }				
-			# has_country_flag = CHO_albrecht_friedrich_brothers
-			# VOR = {	ai = yes }
-		# }
-		# STY = { clr_country_flag = CHO_albrecht_friedrich_brothers }
-		# HAB = { clr_country_flag = CHO_albrecht_friedrich_brothers }
-		# VOR = { clr_country_flag = CHO_albrecht_friedrich_brothers kill_ruler = yes }
-	# }
-# }
-
-clear_chocolate_flags = {
-	if = { limit = { OR = { tag = STY tag = VOR AND = { tag = HAB has_country_flag = CHO_albrecht_friedrich_brothers } } }
-	STY = { clr_country_flag = CHO_albrecht_friedrich_brothers }
-	HAB = { clr_country_flag = CHO_albrecht_friedrich_brothers }
-	VOR = { clr_country_flag = CHO_albrecht_friedrich_brothers }
+clear_austrian_unification_flags = {
+	if = { limit = { OR = { tag = STY tag = VOR AND = { tag = HAB has_country_flag = bt_au_albrecht_friedrich_brothers_alive } } }
+	STY = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+	HAB = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
+	VOR = { clr_country_flag = bt_au_albrecht_friedrich_brothers_alive }
 	}
 }

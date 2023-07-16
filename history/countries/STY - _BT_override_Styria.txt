@@ -1,9 +1,9 @@
 #BT Styria doesn't start as Archduchy
 add_government_reform = austrian_archduchy_reform
-set_country_flag = choc_albrecht_friedrich_brothers
+set_country_flag = bt_au_albrecht_friedrich_brothers_alive
 national_focus = dip
 add_country_modifier = { 
-	name = bt_chocolcate_habsburg_fix_sty
+	name = bt_au_cannot_get_heir_or_die
 	duration = -1
 	hidden = yes
 }
