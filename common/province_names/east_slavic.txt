@@ -689,7 +689,7 @@
 3251 = { "Akhaltsikhe" "Akhaltsikhe" }
 4303 = { "Olty" "Olty" }
 7295 = { "Racha" "Oni" } #(JP) Base Names
-7296 = { "Ardahan" "Ardahan }
+7296 = { "Ardahan" "Ardahan" }
 7297 = { "Adjara" "Khulo" }
 7298 = { "Svanetia" "Lentekh" }
 7299 = { "Gagra" "Gagra" }
