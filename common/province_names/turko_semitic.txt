@@ -2250,9 +2250,6 @@
 423 = { "Taflis" "Taflis" } # Tbilisi
 3251 = { "Mwskhya" "Mwskhya" } # Meskheti
 3250 = { "Klarjitya" "Klarjitya" } # Klarjeti
-422 = { "'Iimiriti" "'Iimiriti" } # Imereti
-462 = { "Awdishi" "Awdishi" } # Odishi
-1856 = { "'Abkhazya" "Madinat Al-Abaza" } # Abkhazia
 2195 = { "'Adigha" "'Adigha" } # Adyghe
 2197 = { "Qibaridia" "Qibaridia" } # Kabardia
 2201 = { "'Alan" "Madinat Alan" } # Alania

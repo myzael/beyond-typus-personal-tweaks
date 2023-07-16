@@ -6,3 +6,10 @@
 4312 = { "Bolu" "Bolu" }
 5162 = { "Meghri" "Meghri" }
 6027 = { "Shehirkishla" "Shehirkishla" }
+
+#Caucasia
+422 = { "Qutayıs" "Qutayıs" }
+462 = { "Megrelya" "Zükdit" } #(JP) or "Mingrelya", "Migrelya", "Mengrelya", "Megrelistan", "Mingirelya", and "Zekdide"
+1856 = { "Sohumkale" "Sohumkale" }
+3251 = { "Ahiska" "Ahiska" }
+7297 = { "Adjaristan" "Hulakale" }

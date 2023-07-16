@@ -200,6 +200,20 @@
 6040 = { "Mavrokastron" "Mavrokastron" }
 6041 = { "Thyatira" "Thyatira" }
 
+#Caucasia
+422 = { "Kotais" "Kotais" }
+462 = { "Archaiopolis" "Archaiopolis" } #Technically further in-land, but will do for now.
+1856 = { "Sebastopolis" "Sebastopolis" }
+2196 = { "Migrelía" "Bathys" }
+2204 = { "Ánion" "Ánion" }
+3250 = { "Ardanoutzin" "Ardanoutzin" }
+3251 = { "Achaltskai" "Achaltskai" } #The Armenian name is Achaltscha, Achaltsiche means "New castle", so if we want to drop the armenian/georgian names we could go for Neokastron. I went with assuming Achaltscha would turn into Achaltskae.
+4303 = { "Pharangion" "Pharangion" } #Actually a persian name, but it sounds sufficiently greek so I'll go for it. In Latin it was Pharangium. Alternatively we have Taochoi. This one is hell on earth to find a name for otherwise. Was 3249 pre 1.24
+7295 = { "Racha" "Oni" } #(JP) Base Names 
+7297 = { "Atzaría" "Hulo" }
+7298 = { "Suania" "Lentekhi" } #(JP) Capital is base name
+7299 = { "Nitica" "Nitica" }
+
 ###Localization made by Dub
 #Cyprus
 321 = { "Lemesos" "Lemesos" }
@@ -339,7 +353,8 @@
 5331 = { "Sirte" "Sirte" } #Pre 1.24 was 5294
 2307 = { "Baspurakan" "Thospitis" } #Or Aban/Iban, not sure. Wikipedia claims Eua, but I have NO idea wherever they may have gotten that from. The ancient Greek is Thospia or Thospitis. There is also a Bouana.
 3254 = { "Taroua" "Taroua" } #FINALLY found a name for Daruynk.
-4302 = { "Mantzikert" "Mantzikert" } #I just want this on the map. It is technically speaking a bit further south, actually on the bottom of the province. Alashkert otherwise is just Alaskert? Ancient Roman name was Chadas. Pre 1.24 was 5291
+4302 = { "Vagharshakert" "Vagharshakert" } #(JP) Medieval name, moved Mantzikert to correct province in south
+6110 = { "Mantzikert" "Mantzikert" } #I just want this on the map. It is technically speaking a bit further south, actually on the bottom of the province. Alashkert otherwise is just Alaskert? Ancient Roman name was Chadas. Pre 1.24 was 5291
 5332 = { "Arzes" "Arzes" } #New in 1.24
 4296 = { "Taron" "Balaleison" } #New in 1.24. Wikipedia claims Balales, Pleiades claims Balaleisa or Balouos mid-Byzantine times, but finally Balaleison up until 1200, which is what I'm going for. It might be a bit ancient, but it sounds good in my opinion.
 
@@ -352,7 +367,6 @@
 2308 = { "Edessa" "Edessa" } #Was 407 pre 1.24, moved to Mardin in 1.24. It was rebuilt by Justin II and named Justiniopolis in the 500's, however later on during Byzantine resurgence in the 1000s it was once more known as Edessa, so I pick that.
 
 #Armenia proper
-2204 = { "Anion" "Anion" }
 419 = { "Tibion" "Tibion" }
 3253 = { "Lorion" "Lorion" }
 2205 = { "Naxouana" "Naxouana" }
@@ -368,18 +382,11 @@
 424 = { "Arbandon""Arbandon" } #Aharawa (Which is what province marker signifies), moved to Shirvan in 1.24
 
 #Georgia
-4303 = { "Pharangion" "Pharangion" } #Actually a persian name, but it sounds sufficiently greek so I'll go for it. In Latin it was Pharangium. Alternatively we have Taochoi. This one is hell on earth to find a name for otherwise. Was 3249 pre 1.24
-3250 = { "Ardanoutzin" "Ardanoutzin" } #Found in Escorial Taktikon.
-3251 = { "Achaltskai" "Achaltskai" } #The Armenian name is Achaltscha, Achaltsiche means "New castle", so if we want to drop the armenian/georgian names we could go for Neokastron. I went with assuming Achaltscha would turn into Achaltskae.
 4301 = { "Meschistha" "Meschistha" } #Old capital of Georgia - Gori has no importance whatsoever from what I can tell. Pre 1.24 was 3252
 423 = { "Tiphlida" "Tiphlida" } #Tiphilis is ancient greek. One can also use the name for its fortress Narikala, although that's a name given by the Mongols in Arabic.
 2203 = { "Teleda" "Teleda" } #Greek geographer's name for Telavi? No source, and it is also claimed to be the name of a city in Azerbaijan, but what do I know.
 
 #Odishi (Lazica)
-2196 = { "Bathys" "Bathys" } #Phasis is further on the coast. Bathys is the province port (Batumi)
-462 = { "Archaiopolis" "Archaiopolis" } #Technically further in-land, but will do for now. To be honest, I can't even find reports of Zugdidi occuring until the 17th century or so.
-422 = { "Lazion" "Kotais" } #Also contains the important Lazic fortresses of Skandis and Sarapanis
-1856 = { "Sebastopolis" "Sebastopolis" }
 2195 = { "Palaia Achaia" "Palaia Achaia" }
 
 #Tabriz

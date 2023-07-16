@@ -1,5 +1,20 @@
 #Vanilla moved from ROM tag
 
+#Caucasia
+422 = { "Kotais" "Kotais" }
+462 = { "Archaiopolis" "Archaiopolis" }
+1856 = { "Sebastopolis" "Sebastopolis" }
+2196 = { "Bathus" "Bathus" }
+2204 = { "Abnicum" "Abnicum" }
+3250 = { "Ardanoutzin" "Ardanoutzin" }
+3251 = { "Achaltsiche" "Achaltsiche" } 
+4303 = { "Pharangium" "Pharangium" }
+7295 = { "Racha" "Oni" } #(JP) Base Names
+7296 = { "Artani" "Artani }
+7297 = { "Achara" "Khulo" } #(JP) Base Names
+7298 = { "Suania" "Lentekhi" } #(JP) Capital is base name
+7299 = { "Nitica" "Nitica" }
+
 #Mesopotamia
 407 = { "Nicephorium" "Nicephorium" } #(JP) "Raqqa"
 4298 = { "Doliche" "Doliche" }
@@ -556,14 +571,6 @@
 #italy
 3043 = "Ticinum"
 3047 = "Bergomum"
-
-
-#2017 Jun 10
-
-#caucasus
-1856 = "Sebastopolis"
-
-
 
 #JP's Work
 
