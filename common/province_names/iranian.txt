@@ -54,7 +54,7 @@
 3251 = { "Akhesqeh" "Akhesqeh" }
 4303 = { "Tao" "Oltu" } #(JP) Base Names
 7295 = { "Racha" "Oni" } #(JP) Base Names
-7296 = { "Ardahan" "Ardahan }
+7296 = { "Ardahan" "Ardahan" }
 7297 = { "Achara" "Khulo" } #(JP) Base Names
 7298 = { "Svante" "Lantakh" }
 7299 = { "Gagra" "Gagra" } #(JP) Base Names
