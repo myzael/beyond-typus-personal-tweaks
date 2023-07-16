@@ -1116,10 +1116,10 @@ imereti_area = { #Imereti
 	422 462 1856 2196 7295 7298 7299
 }
 samtskhe_area = { #Upper Kartli
-	2204 3250 3251 4303 7296 7297
+	3250 3251 4303 7296 7297
 }
 armenia_area = { #Armenia
-	419 420 2202 2205 3253 3256 7287 7288
+	419 420 2202 2204 2205 3253 3256 7287 7288
 }
 shirvan_area = { #Shirvan
 	color = { 225 231 53 }
