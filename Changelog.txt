@@ -2,6 +2,9 @@ BT16
 
 #New Additions
  - (All) Updated BT from 1.33.3 to 1.35.6
+ - (JP) Overhauled the South Caucases
+ - (JP) New tags in Kakheti and Talysh, along with numerous releasables
+ - (JP) Added Abkhaz and Talysh cultures
  - (Velius) Added Waaq paganism in the Horn of Africa
  - (Harbivore) Added flavour Silk events into the game. Silk will now start in Lucca spread to Bologna and then start to spread to other Italian states after about 50 years. Then it will appear in France around 1570. 
  - (Harbivore) Reworked the Austrian Unification events (previously Chocolate). They unite 99% of the time and doesn't allow Hungary to just steal Austria forever.
@@ -33,7 +36,7 @@ BT16
  - (Harbivore) Reremove the Welsh-English historic rivalry, but if Wales is ever independent they get it back. They also start with 10 trust with England at game start and a +25 liberty disire for "Discontent with English Rule"
  
 #Localised Naming
- - 
+ - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
  
 #Mission updates
  - (Dub) Fixed BT's scriptified mission system to remove all all_province checks, greatly reducing lag 
