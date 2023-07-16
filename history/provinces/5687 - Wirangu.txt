@@ -1,18 +1,34 @@
- 
-# Brian added
+#5687 - Wirangu
+#Area - 
+#Region - 
 
+#Core Details
+capital = "Cheduna"
+
+#Demographics
 culture = yura
 religion = dreamtime
-capital = "Cheduna"
-hre = no
-base_tax = 1
-base_production = 1
-base_manpower = 2
-trade_goods = unknown
 native_size = 20
 native_ferocity = 2
 native_hostileness = 9
 
+#Development and Trade
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = unknown
+
+#Cores and Occupation (Alphabetical after current)
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
 discovered_by = aboriginal_tech
 
-1619.1.10 = { discovered_by = NED } # Frederick de Houtman
+#Histories 
+1619.1.10 = { discovered_by = NED } # Frederick de Houtman 

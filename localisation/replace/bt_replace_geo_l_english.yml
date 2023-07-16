@@ -1746,3 +1746,14 @@
  zaporizhia_area:0 "Zaporizhia"
  zaporizhia_area_adj:0 "Zaporizhian"
  zaporizhia_area_name:0 "Zaporizhia"
+ 
+ #BT16
+ western_australia_area:0 "Swan Coast"
+ northern_australia_area:0 "Cape York"
+ top_end_area:0 "Darwin"
+ eastern_australia_area:0 "Darling Plain"
+ southern_australia_area:0 "Victoria"
+ murray_river_area:0 "Murray Plain"
+ illawara_area:0 "Botany Bay"
+ north_queensland_area:0 "Brigalow Belt"
+ south_queensland_area:0 "Moreton Bay-Burnett"

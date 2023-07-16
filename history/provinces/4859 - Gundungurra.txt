@@ -1,18 +1,35 @@
- 
-# new in 1.31
+#4859 - Gundungurra
+#Area - 
+#Region - 
 
+#Core Details
+capital = "Gundungurra"
+
+#Demographics
 culture = aboriginal
 religion = dreamtime
-capital = "Gundungurra"
-hre = no
-base_tax = 4
-base_production = 3
-base_manpower = 2
-trade_goods = unknown
 native_size = 5
 native_ferocity = 1
 native_hostileness = 4
 
+#Development and Trade
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = unknown
+center_of_trade = 1
+
+#Cores and Occupation (Alphabetical after current)
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
 discovered_by = aboriginal_tech
 
-1642.11.24 = { discovered_by = NED } # Abel Tasman
+#Histories 
+1642.11.24 = { discovered_by = NED } # Abel Tasman    

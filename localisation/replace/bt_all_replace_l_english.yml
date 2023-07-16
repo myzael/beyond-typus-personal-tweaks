@@ -675,6 +675,7 @@
  #BT16
  russian_new:0 "Russian"
  byelorussian_new:0 "Belarusian"
+ dreamtime:0 "Dreamtime"
  less_than_15_provinces_on_same_continent:0 "Has less than §Y25§! provinces in §Y[Root.Capital.GetContinentName]§!."
  less_than_25_provinces_on_same_continent:0 "Has less than §Y40§! provinces in §Y[Root.Capital.GetContinentName]§!."
  less_than_35_provinces_on_same_continent:0 "Has less than §Y55§! provinces in §Y[Root.Capital.GetContinentName]§!."
