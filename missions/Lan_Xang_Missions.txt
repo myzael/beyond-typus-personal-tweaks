@@ -126,7 +126,7 @@ lxa_1 = {
 					add_permanent_claim = ROOT
 				}
 				#BT Added to more closely represent original mission (+mission tree leads one to conquer Khmer as is)
-				prachin_area = = {
+				prachin_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }

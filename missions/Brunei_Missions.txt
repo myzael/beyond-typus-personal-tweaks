@@ -184,7 +184,7 @@ mnd_bei_1 = {
 				mindanao_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-				
+				}
 				west_mindanao_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -257,7 +257,7 @@ mnd_bei_1 = {
 				mindanao_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-				
+				}
 				west_mindanao_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -265,7 +265,7 @@ mnd_bei_1 = {
 				luzon_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-				
+				}
 				southern_luzon_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
@@ -273,7 +273,7 @@ mnd_bei_1 = {
 				visayas_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
-				
+				}
 				palawan_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT

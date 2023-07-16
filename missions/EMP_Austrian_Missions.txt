@@ -1027,7 +1027,7 @@ emp_hab_german_expansion_branch = {
 				give_permaclaims_for_mission = { mission=austrian_bayern }
 			}
 			add_country_modifier = {
-				name = "centralization_effort"
+				name = "bt_centralization_effort"
 				duration = 5475 #15 years
 			}
 		}

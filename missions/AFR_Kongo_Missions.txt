@@ -1180,7 +1180,7 @@ kongo_colonies_centralization_missions_slot = {
 				amount = 5
 			}
 		}
-		#effect = {
+		effect = {
 		#	add_temporary_colonist = {
 		#		duration = 36500
 		#	}
@@ -1190,6 +1190,7 @@ kongo_colonies_centralization_missions_slot = {
 				name = bt_temporary_colonist_afr
 				duration = 36500
 			}
+		}
 		ai_weight = {
 			factor = 500	#Tall mission
 		}

@@ -121,16 +121,20 @@ mnd_mlc_1 = {
 					add_permanent_claim = ROOT
 				}
 				594 = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+					if = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
 					}
 					add_permanent_claim = ROOT
 				}
 				8673 = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
+					if = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
 					}
 					add_permanent_claim = ROOT
 				}
