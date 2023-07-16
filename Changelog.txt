@@ -25,7 +25,7 @@ BT16
  - (Velius) Cut Alawite and Druze religions
  - (Dub) Lowered base vassal FL contribution from +2 to +1 due to them already giving +10% of their FL to their overlord, causing nations such as Bohemia to have 10 more FL than they ought to.
  - (Harbivore) Changed the Teutonic disaster and added a new cb only in that war that is 50% cost and ae. Also reduced the amount of provinces that is ceded to Danzig
- - (Harbivore) Changed chances of Ai forming personal unions in events. They are more likely to take it, but if they still decline there is a big insentive to do so and the other nation will get a CB of reclaim personal union. So maybe Poland will be Lithuania's PU instead
+ - (Harbivore) Changed chances of Ai forming personal unions in events. They are more likely to take it, but if they still decline there is a big incentive to do so and the other nation will get a CB of reclaim personal union. So maybe Poland will be Lithuania's PU instead
  - (Harbivore) Added +0.5 yearly tax per state in the HRE for the Emperor so if the Emperorship goes to a small nation they should still be pretty formidable
  - (Harbivore) Removed several silk provinces at game start.
  - (Harbivore) Set Bohemia's AI personality to be mostly diplomat in the hopes it stops their bloodlust
