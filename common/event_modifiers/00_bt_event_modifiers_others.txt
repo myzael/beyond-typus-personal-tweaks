@@ -208,3 +208,7 @@ danzig_revolt_fervor = {
 pissed_at_the_english_bt = {
 	liberty_desire = 25
 }
+
+bt_shah_rukh_deaded = {			#BT Added as a fix for timmy until there is a region overhaul Harbivore
+	reduced_liberty_desire = -20
+}
