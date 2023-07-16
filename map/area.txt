@@ -1192,14 +1192,14 @@ caria_area = { #BT# Caria
 ###
 # Levant
 ###
-aleppo_area = { #Aleppo
-	377 4271 6095
+aleppo_area = { #Lower Syria
+	377 2313 4271 5170 6080 6086 6094 6095
 }
-syria_area = { #Syria
-	382 405 1849 6084 6085 6086 6088 6081
+syria_area = { #Upper Syria
+	382 405 1849 6084 6085 6086 6088 
 }
 trans_jordan_area = { #Transjordan
-	380 381 4270 5203
+	380 381 4270 5203 6081
 }
 palestine_area = { #Palestine
 	364 379 1854 1855 5180 6071
@@ -1214,9 +1214,9 @@ cyprus_area = { #Cyprus
 tripoli_area = { #Lebanon
 	378 4297 5205 6074 6075
 }
-bargylus_area = { #Bargylus
-	2313 5170 6080 6094
-}
+#bargylus_area = { #Bargylus #(JP) Removed in BT16
+#	
+#}
 #hauran_area = { #Hawran #(JP) Removed in BT16
 #	
 #}
@@ -1244,7 +1244,7 @@ al_jazira_area = { #Middle Tigris
 	415 2310 6126 6127 6132
 }
 mardin_area = { #Osrhoene
-	2308 4292 6100
+	418 2308 4292 6100
 }
 shahrizor_area = { #Shahrizor
 	color = { 152 102 102 }
@@ -1257,7 +1257,7 @@ middle_euphrates_area = { #Middle Euphrates
 	406 6089 6099 6135 6136
 }
 sophene_area = { #Sophene
-	418 4310 5330 6104 6107
+	4310 5330 6104 6107
 }
 ararat_area = { #Ararat
 	3254 4302 6109 6110
