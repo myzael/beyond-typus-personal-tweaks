@@ -3536,10 +3536,21 @@ caucasian = {
 	abkhaz = {
 		primary = ABK
 		dynasty_names = {
+			Adlejba Agrba Ahashba Ajwëdzba Ardzinba Argun Arshba Arstaa Ashwba Axba Bëdzhba Cëgwba Cw'eiba
+			Dzhopua Ebëzhnow Gagwlja Gëcba Gjanaba Hadzjëmba Harazja Inal-ipa Kw'artaa Kw'braa Kw'ëbraa Kw'ëc'nja
+			Labaxwua Lak'erbaia Lak'oba Patej-ipa Plja Shat-ipa Shënkwba T'apsh Tarba Txwazh Zekw'a
 		}
 		male_names = {
+			Abga Abzagw Adamër Adgwër Alc'ëkw' Alëkjsandr Alëkjsa Aljas Aljasgjeri Alxas Amza Anatolii Aqw'langjeri
+			Ardashën Arnow Arsow Arzadin Ashhangjeri Aslangjeri Astamër Axmat Axra Azhgjeri Bagrat Bakjt'or Batal
+			Bekjër Bërfën Beslan Bzagjaws Danaq'aj Daratja Dawr Dërmit' Dzhamal Ebërham Ekwëp Elq'an Esëf Eshaq' 
+			Eshsow Eslam Est'at' Ezat Fatkjeri Frankj'ël Ghjat'ama Gwdisa Hanashw Iurii Kj'aghwsa Kjalëshbej Lach'ës
+			Leon Mahmatkjeri Mamsër Mëchwarkj'ëzhow Mra-lasha Msowst Nowrëz Nugzar Nuri Q'amlat Rach'ës Saatbej 
+			Saatkjeri Shaaban Shakjër Shwarax Soghwëm Sokrat Sowfëdzh Sowlahw Sowsran T'owlahw Talix Tamaz Temër 
+			Tengiz Thasow Wazha Valerii Vjanor Xjërbej Xjrëps Xwazhwarpës Zafas Zafq'ara Zartëzhw Zereps Zhwrab 
 		}
 		female_names = {
+			Amra Amza Bashnux Bërfënka Eriwara Esma Gunda Mramza Naala Qw'arasa Rarira Sharifa Xjëbla Xjëmra
 		}
 	}
 	dynasty_names = {
