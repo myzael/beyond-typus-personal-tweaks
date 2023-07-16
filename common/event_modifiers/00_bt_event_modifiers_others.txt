@@ -204,3 +204,7 @@ danzig_revolt_fervor = {
 	land_forcelimit = 7
 	land_morale = 0.20
 }
+
+pissed_at_the_english_bt = {
+	liberty_desire = 25
+}

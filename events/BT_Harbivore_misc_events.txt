@@ -1,0 +1,29 @@
+namespace = BT_H_Misc
+normal_or_historical_nations = yes
+
+
+country_event = {                         #Event to give wales english rivalry 
+	id = BT_H_Misc.1
+	desc = BT_H_Misc.1.desc
+	title = BT_H_Misc.1.t
+	picture = CONQUEST_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		TAG = WLS
+		NOT = {
+		 	is_subject = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+    }
+	
+	option = {
+		name = BT_H_Misc.1.opt
+		add_historical_rival = ENG
+		remove_country_modifier = pissed_at_the_english_bt
+	}
+}

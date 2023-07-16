@@ -2270,6 +2270,7 @@
  bt_english_march_no_overlord_dow:0 "You cannot declare war on a Marcher Lordship"
  bt_english_march_title:0 "Marcher Lordship"
  bt_english_march_title_plural:0 "Marcher Lordship"
+ pissed_at_the_english_bt:0 "Discontent with English Rule"
  papuan_group:0 "Papuan"
  paranoid_defenses_at_colony:0 "Colony at High Alert"
  partition_poland_claims:0 "Grants permanent claims on the provinces required for the mission §YConquer Galicia§!"

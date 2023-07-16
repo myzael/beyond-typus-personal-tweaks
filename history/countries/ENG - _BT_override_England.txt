@@ -7,6 +7,10 @@ change_estate_land_share = {
 	share = -5
 }
 
+add_trust = {
+    who = WLS
+    value = -20
+}
 
 
 #History
