@@ -17,7 +17,7 @@ capital = "Venezia"
 is_city = yes	# Estimated 
 #shipyard = yes
 
-
+add_province_triggered_modifier = bt_island_of_venice
 
 discovered_by = western
 discovered_by = eastern

@@ -5,4 +5,5 @@
  bt_american_cot_events.1.a:0 "Sharpen my quill!"
  bt_american_cot_events.1.b:0 "[Root.GetCapitalName] is not a worthy candidate."
  bt_american_cot_events.1.b_tooltip:0 "This will prevent the province of [Root.GetName] from §Rever§! getting a center of trade from this event."
- 
+ bt_island_of_venice:0 "The Island of Venice"
+ desc_bt_island_of_venice:0 "The Island of Venice is very hard to reach without the use of transport ships, let alone siege. Without naval superiority, one can never hope to make the island surrender."

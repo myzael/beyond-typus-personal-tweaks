@@ -138,3 +138,15 @@ bt_birkarls = {
 	local_tax_modifier = 0.25
 	trade_goods_size_modifier = 0.25
 }
+
+bt_island_of_venice = { #Mainly here to remedy the fact that anyone can siege down Venice otherwise.
+	potential = {
+		NOT = { has_province_flag = bt_venice_flew_off_the_water_flag }
+	}
+	trigger = {
+		is_blockaded = no
+	}
+	
+	local_defensiveness = 2 #+200%
+	fort_level = 2
+}
