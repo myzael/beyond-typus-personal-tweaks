@@ -555,11 +555,13 @@ country_event = {
 		highlight = yes 
 		custom_tooltip = pol_delegate_the_formation_of_royal_prussia_tt
 		hidden_effect = {
+			remove_historical_rival = TEU
 			inherit = DNZ
 			41 = {
 				create_vassal = TEU
 			}
 			TEU = {
+				remove_historical_rival = POL
 				change_government = monarchy
 				change_tag = PRU
 				on_change_tag_effect = yes
@@ -653,9 +655,11 @@ country_event = {
 		highlight = yes 
 		custom_tooltip = pol_delegate_the_formation_of_royal_prussia_tt
 		hidden_effect = {
+			remove_historical_rival = TEU
 			inherit = DNZ
 			vassalize = TEU
 			TEU = {
+				remove_historical_rival = POL
 				change_government = monarchy
 				change_tag = PRU
 				on_change_tag_effect = yes
@@ -700,12 +704,12 @@ country_event = {
 					SMG = {
 						is_subject_of = LIT
 					}
-					nadruvia_area = {
-						limit = {
-							owned_by = SMG
-						}
-						cede_province = PRU 
+				}
+				nadruvia_area = {
+					limit = {
+						owned_by = SMG
 					}
+					cede_province = PRU 
 				}
 			}
 			nadruvia_area = {
