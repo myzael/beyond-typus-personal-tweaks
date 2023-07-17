@@ -10,6 +10,7 @@ BT16
  - (Harbivore) Reworked the Austrian Unification events (previously Chocolate). They unite 99% of the time and doesn't allow Hungary to just steal Austria forever.
  - (Harbivore) Changed the AI to no longer make alliances with nations 10% of their development or 5x their development. (AI make much better alliances yay now more opm allies with great powers)
  - (Harbivore) Added English Marcher Lordships. Like normal marches but you can integrate them and also steal their generals
+ - (Harbivore) Added mercury events giving gold to 3 provinces where cinnabar was mined. Castile, Slovinia and Serbia.
 
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
@@ -34,6 +35,8 @@ BT16
  - (Harbivore) Set Bohemia's AI personality to be mostly diplomat in the hopes it stops their bloodlust
  - (Harbivore) Set Mamluk's AI personality to be mostly diplomat to show the state being too nonchalant about the turkish threat. This will help BT ottomans who were struggling
  - (Harbivore) Reremove the Welsh-English historic rivalry, but if Wales is ever independent they get it back. They also start with 10 trust with England at game start and a +25 liberty disire for "Discontent with English Rule"
+ - (Harbivore) Changed trade good in belgrade to dyes. Cinnabar production
+ - (Harbivore & Dub) Added Coal in a few provinces in Italy and Iberia
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
