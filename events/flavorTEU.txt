@@ -508,7 +508,7 @@ country_event = {
 	option = {
 		name = "flavor_teu.3.a"
 		vassalize = DNZ
-		west_prussia_area = {	#Claims given to danzig in a potentially futile attempt to stop border gore #HARBICOIRI
+		west_prussia_area = {	#Claims given to danzig in a potentially futile attempt to stop border gore #HARBIVORE
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT	}
@@ -560,6 +560,7 @@ country_event = {
 				create_vassal = TEU
 			}
 			TEU = {
+				change_government = monarchy
 				change_tag = PRU
 				on_change_tag_effect = yes
 				override_country_name = RPR
@@ -655,6 +656,7 @@ country_event = {
 			inherit = DNZ
 			vassalize = TEU
 			TEU = {
+				change_government = monarchy
 				change_tag = PRU
 				on_change_tag_effect = yes
 				override_country_name = RPR
@@ -678,7 +680,7 @@ country_event = {
 				add_core = PRU 
 			}
 			east_prussia_area = {
-				limit = { 
+				limit = {
 					country_or_non_sovereign_subject_holds = ROOT 
 					NOT = {
 						province_id = 1859
@@ -693,6 +695,19 @@ country_event = {
 				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				cede_province = PRU 
 			}
+			if = {
+				limit = {
+					SMG = {
+						is_subject_of = LIT
+					}
+					nadruvia_area = {
+						limit = {
+							owned_by = SMG
+						}
+						cede_province = PRU 
+					}
+				}
+			}
 			nadruvia_area = {
 				limit = { country_or_non_sovereign_subject_holds = ROOT }
 				cede_province = PRU 
@@ -706,6 +721,12 @@ country_event = {
 			east_prussia_area = {
 				limit = { 
 					owned_by = ROOT  
+					OR = {
+						province_id = 1859
+						province_id = 7829
+						province_id = 1841
+						province_id = 42
+					}
 				}
 				set_local_autonomy = 50
 			}
