@@ -36,8 +36,11 @@ BT16
  - (Harbivore) Set Mamluk's AI personality to be mostly diplomat to show the state being too nonchalant about the turkish threat. This will help BT ottomans who were struggling
  - (Harbivore) Reremove the Welsh-English historic rivalry, but if Wales is ever independent they get it back. They also start with 10 trust with England at game start and a +25 liberty disire for "Discontent with English Rule"
  - (Harbivore) Changed trade good in belgrade to dyes. Cinnabar production
- - (Harbivore & Dub) Added Coal in a few provinces in Italy and Iberia
- 
+ - (Harbivore & Dub) Added Coal in a few provinces in Italy (Sulcis) and Iberia (Carmona)
+ - (Dub) Removed Cordoban gold - there was no evidence to suggest the Sierra Morenas were properly mined in Spain. All evidence pointed towards romans & arabs. In fact, the area was *very* rural during the Spaniards.
+ - (Dub) Added +20% breakthrough to cav units. For anyone not aware: Breakthrough is a mechanic disabled in vanilla where when defeating a front row unit in combat, it has a chance of pulling the artillery behind it to the front row. This chance is 0% in vanilla by default. BT now changes this to 0% for infantry and 20% for cavalry.
+
+
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
  
