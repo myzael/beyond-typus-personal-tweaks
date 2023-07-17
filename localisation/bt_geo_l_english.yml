@@ -7449,6 +7449,9 @@
  zambezi_area_name:0 "Zambezi"
  
  #BT16
+ northeastern_australia_region:0 "Northeastern Australia"
+ northern_australia_region:0 "Northern Australia"
+ western_australia_region:0 "Western Australia"
  arnhemland_area:0 "Arnhemland"
  carpentaria_area:0 "Carpentaria"
  west_mitchell_downs_area:0 "West Mitchell Downs"

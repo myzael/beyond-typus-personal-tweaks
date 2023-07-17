@@ -1467,30 +1467,14 @@ colombia_region = { # 13 areas
 		00.11.30
 	}
 }
-# Oceania / 3 regions / 63 areas
-australia_region = { # 44 areas
+# Oceania / 6 regions / 57 areas
+australia_region = { # Southeastern Australia # 13 areas
 	areas = {
-		western_australia_area
-		northern_australia_area
-		top_end_area
 		eastern_australia_area
 		southern_australia_area
 		murray_river_area
-		illawara_area # new in 1.31
-		north_queensland_area # new in 1.31
-		south_queensland_area # new in 1.31
-		pilbara_area # new in 1.31
-		tasmania_area # new in 1.31
-		arnhemland_area
-		carpentaria_area
-		west_mitchell_downs_area
-		east_mitchell_downs_area
-		desert_uplands_area
-		channel_country_area
-		mulga_lands_area
-		gulf_country_area
-		einasleigh_area
-		coral_coast_area
+		illawara_area
+		tasmania_area
 		northern_tablelands_area
 		southeast_highlands
 		cape_howe_area
@@ -1498,16 +1482,60 @@ australia_region = { # 44 areas
 		naracoorte_area
 		gulf_of_st_vincent_area
 		flinders_ranges_area
-		stony_plains_area
 		eyre_peninsula_area
-		nullarbor_area
-		great_victoria_desert_area
+	}
+}
+northeastern_australia_region = {	# 10 areas
+	areas = {
+		northern_australia_area
+		north_queensland_area
+		south_queensland_area
+		east_mitchell_downs_area
+		desert_uplands_area
+		channel_country_area
+		mulga_lands_area
+		gulf_country_area
+		einasleigh_area
+		coral_coast_area
+	}
+	monsoon = {
+		00.10.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.03.30
+	}
+}
+northern_australia_region = {	# 10 areas
+	areas = {
+		top_end_area
+		arnhemland_area
+		carpentaria_area
+		west_mitchell_downs_area
 		deep_outback_area
 		great_victorian_plain_area
 		sturt_plateau_area
 		bonaparte_gulf_area
 		kimberley_area
 		dampierland_area
+	}
+	monsoon = {
+		00.10.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.03.30
+	}
+}
+western_australia_region = {	# 11 areas
+	areas = {
+		western_australia_area
+		pilbara_area
+		stony_plains_area
+		nullarbor_area
+		great_victoria_desert_area
 		gascoyne_area
 		murchison_area
 		goldfields_area

@@ -3416,21 +3416,13 @@ coquivacoa_area = {
 }
 
 ###
-# Australia
+# South East Australia
 ###
-western_australia_area = {	#Swan Coast
-	4864 6408 6409 6410 6431
-}
-northern_australia_area = { #Cape York
-	2730 2731 6218 6219 6220 6221 6222 6223
-}
-top_end_area = {	#Darwin
-	2728 4846 6358 6359 6362 6363
-}
 eastern_australia_area = {	#Darling Plain
 	1091 4855 6262 6268 6279 6280 6281 6282 6283 6284
 }
 southern_australia_area = {	#Victoria
+	color = { 8 73 45 }
 	1087 6295 6296 6300 6301 6302 6303 6304
 }
 murray_river_area = {	#Murray Plain
@@ -3438,28 +3430,47 @@ murray_river_area = {	#Murray Plain
 	1088 6288 6289 6312 6313 6293
 }
 illawara_area = { #Botany Bay
-	1090 4857 6269 6272 
+	1090 4857 6267 6269 6272 
+}
+tasmania_area = { #Tasmania
+	1085 4868 4869 6308 6309 6310
+}
+northern_tablelands_area = {	#BT16
+	1089 4856 6266 6270 6271 
+}
+southeast_highlands = {	#BT16
+	4859 4860 6275 6276 6297
+}
+cape_howe_area = {	#BT16
+	2734 4858 6273 6274 6298 6299 
+}
+riverina_area = {	#BT16
+	4861 6277 6278 6290 6291 6292 6294 
+}
+naracoorte_area = {	#BT16
+	2735 6305 6306 6307 6311
+}
+gulf_of_st_vincent_area = {	#BT16
+	1086 6314 6315 6316 6317 6318 6319 
+}
+flinders_ranges_area = {	#BT16
+	4862 6285 6286 6287 6324 
+}
+eyre_peninsula_area = {	#BT16
+	2736 6320 6321 6322 
+}
+
+###
+# Northeast Australia
+###
+northern_australia_area = { #Cape York
+	2730 2731 6218 6219 6220 6221 6222 6223
 }
 north_queensland_area = { # Brigalow Belt
 	1093 4853 6200 6201 6203 6207 6208 6237 6209
 }
 south_queensland_area = { #Moreton Bay-Burnett
-	1092 1094 4850 4851 4852 4854 6202 6266 6267
-}
-pilbara_area = { #Pilbara
-	6381 6382 6383 6384 6385 6386 6387 6388 6389
-}
-tasmania_area = { #Tasmania
-	1085 4868 4869 6308 6309 6310
-}
-arnhemland_area = {	#BT16
-	2729 6351 6352 6353 6354 6355 6356 6357 6360 6361
-}
-carpentaria_area = {	#BT16
-	4847 4848 6243 6244 6245 6246 6349 6350
-}
-west_mitchell_downs_area = {	#BT16
-	6241 6242 6247 6248 6249 6250 6343 
+	1092 1094 4850 4851 4852 4854 6202 
 }
 east_mitchell_downs_area = {	#BT16
 	6233 6234 6239 6240 6256 
@@ -3482,38 +3493,21 @@ einasleigh_area = {	#BT16
 coral_coast_area = {	#BT16
 	2732 2733 6204 6205 6206 6207 6210 6211 6216
 }
-northern_tablelands_area = {	#BT16
-	1089 4856 6270 6271 
+
+###
+# Northern Australia
+###
+top_end_area = {	#Darwin
+	2728 4846 6358 6359 6362 6363
 }
-southeast_highlands = {	#BT16
-	4859 4860 6275 6276 6297
+arnhemland_area = {	#BT16
+	2729 6351 6352 6353 6354 6355 6356 6357 6360 6361
 }
-cape_howe_area = {	#BT16
-	2734 4858 6273 6274 6298 6299 
+carpentaria_area = {	#BT16
+	4847 4848 6243 6244 6245 6246 6349 6350
 }
-riverina_area = {	#BT16
-	4861 6277 6278 6290 6291 6292 6294 
-}
-naracoorte_area = {	#BT16
-	2735 6305 6306 6307 6311
-}
-gulf_of_st_vincent_area = {	#BT16
-	1086 6314 6315 6316 6317 6318 6319 
-}
-flinders_ranges_area = {	#BT16
-	4862 6285 6286 6287 6324 
-}
-stony_plains_area = { #BT16
-	6253 6323 6325 6326 6330
-}
-eyre_peninsula_area = {	#BT16
-	2736 6320 6321 6322 
-}
-nullarbor_area = {	#BT16
-	5686 5687 6328 6415 6416 
-}
-great_victoria_desert_area = {	#BT16
-	6327 6329 6331 6332 6333 6398 6400
+west_mitchell_downs_area = {	#BT16
+	6241 6242 6247 6248 6249 6250 6343 
 }
 deep_outback_area = {	#BT16
 	6334 6335 6336 6337 6338 6339 
@@ -3532,6 +3526,24 @@ kimberley_area = {	#BT16
 }
 dampierland_area = {	#BT16
 	4866 4867 6378 6379 6380 
+}
+###
+# Western Australia
+###
+western_australia_area = {	#Swan Coast
+	4864 6408 6409 6410 6431
+}
+pilbara_area = { #Pilbara
+	6381 6382 6383 6384 6385 6386 6387 6388 6389
+}
+stony_plains_area = { #BT16
+	6253 6323 6325 6326 6330
+}
+nullarbor_area = {	#BT16
+	5686 5687 6328 6415 6416 
+}
+great_victoria_desert_area = {	#BT16
+	6327 6329 6331 6332 6333 6398 6400
 }
 gascoyne_area = {	#BT16
 	2726 4865 6391 6392 6393 6406 6407
