@@ -12,7 +12,7 @@
  ATJ_ideas:0 "Acehnese Ideas"
  ATJ_ideas_bonus:0 "Acehnese Ambition"
  ATJ_ideas_start:0 "Acehnese Traditions"
- BASE:0 "x2 Base Tax:"
+ #BASE:0 "x2 Base Tax:" #Commenting out because this string appears EVERYWHERE. //Dub
  BPR_ideas:0 "Prome Ideas"
  BPR_ideas_bonus:0 "Prome Ambition"
  BPR_ideas_start:0 "Prome Traditions"
