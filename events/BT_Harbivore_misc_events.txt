@@ -40,6 +40,12 @@ country_event = {                         #The discovery of amalgamation
 	trigger = {
 		set_global_flag = bt_great_bullion_famine_over
 		is_year = 1500
+		OR = {
+			owns = 4239
+			owns = 7761
+			owns = 8121
+		}
+		religion_group = christian
 	}
 
 	mean_time_to_happen = {
@@ -107,6 +113,7 @@ country_event = {                         #Event to change mercury provinces int
 					}
 				}
 			}
+		religion_group = christian
 		has_global_flag = amalgamation_used_for_gold
 	}
 
