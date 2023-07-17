@@ -39,18 +39,19 @@
  desc_Bologna_silk_mills:0 "Bologna was the birthplace of the invention of the hydraulic silk mill. Which allowed to process silk much faster and resulted in higher quality silk as well."
 
  bt_shah_rukh_deaded:0 "Chaos following Shah Rukh's Death"
- 
- bt_almadén_mercury_mines:0 "Almadén is home to the world's greatest reserves of cinnabar. Mercury comes from the cinnabar and was used in the process of amalgamation which extracted gold and silver from ore."
- 
 
 BT_H_Misc.2.title:0 "Amalgamation"
 BT_H_Misc.2.disc:0 "Cinnabar was used for dyes and to create gold and silver plating. Mercury can be refined from the cinnabar and this was used in the process of amalgamation which extracted gold and silver from ore. With this discovery is now being used to extract gold and silver from their ores in the new world."
 BT_H_Misc.2.opta:0 "Liquid gold?"
  
-
 BT_H_Misc.3.title:0 "Amalgamation"
 BT_H_Misc.3.disc:0 "Cinnabar was used for dyes and to create gold and silver plating. Mercury can be refined from the cinnabar and this was used in the process of amalgamation which extracted gold and silver from ore. With this discovery is now being used to extract gold and silver from their ores in the new world."
 BT_H_Misc.3.opta:0 "Liquid gold?"
  
  flavor_teu.3.b:0 "Invite teutonic order to reclaim ducal prussia as our vassal"
 
+ bt_danzig_revolt:0 "Thirteen Years' War"
+ bt_danzig_revolt_disc:0 "They have declared themselves to be an independant state we must reincorporate them"
+ bt_danzig_revolt_wargoal:0 "Take their capital"
+ bt_danzig_revolt_wargoal_disc:0 "We must take their capital"
+ bt_danzig_revolt_war_name:0 "Thirteen Years' War"
