@@ -2,6 +2,7 @@
 -- sorted alphabetically
 -- do NOT re-sort!
 
+NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25, -- BT changed from 75 to 25 because more provinces making dev per province much less. //Dub
 NDefines.NAI.CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE = 1			-- from 3
 NDefines.NAI.DEVELOPMENT_CAP_BASE = 50			-- From 10. Trying to unhinge the AI's development so that they actually use their extra monarch points.
 NDefines.NAI.DEVELOPMENT_CAP_MULT = 10			-- From 2. Same here.
@@ -217,7 +218,7 @@ NDefines.NMilitary.DEVASTATION_DEVELOPMENT_SCALE = 2.5			-- from 5  I dont actua
 NDefines.NMilitary.DEVELOPMENT_FOR_BLOCKADE_COST = 0.25			-- from 0p5 Don't actually know how this works or what it is, but I presume it is a new 1.30 define
 NDefines.NMilitary.FORTRESS_COST = 0.4			-- Beyond Typus added so many new provinces which means more forts but no more dev so everyone was going broke Base 05
 NDefines.NMilitary.FORT_FLIPPING_TIME = 60			-- BTAddOn changed from 30 Just because this annoys me just a personal thing
-NDefines.NMilitary.FORT_PER_DEV_RATIO = 20			-- From 50 vanilla, from 100 in BT. It seems that the AI will delete any forts that are unnecessary to obtain this fort per dev ratio. This was the culprit of the ever-deleting fort AI, not the actual income it made. This has been semi-tailored after Ottomans, who start with now 738 dev and 22 forts, yielding an approximate 33 dev per fort.
+NDefines.NMilitary.FORT_PER_DEV_RATIO = 25			-- From 50 vanilla, from 100 in BT. It seems that the AI will delete any forts that are unnecessary to obtain this fort per dev ratio. This was the culprit of the ever-deleting fort AI, not the actual income it made. This has been semi-tailored after Ottomans, who start with now 738 dev and 22 forts, yielding an approximate 33 dev per fort.
 NDefines.NMilitary.GALLEY_TIME = 730			-- BTAddOn changed from 365 Far more provinces and a few changes to recruit speed made it possible to build far too large an army far too quickly increasing recruiting times for land by 50 percent and sea by 100 percent
 NDefines.NMilitary.HEAVY_SHIP_TIME = 1095			-- BTAddOn changed from 730 Far more provinces and a few changes to recruit speed made it possible to build far too large an army far too quickly increasing recruiting times for land by 50 percent and sea by 100 percent
 NDefines.NMilitary.REVANCHISM_DEVASTATION_IMPACT = -1 -- BT Changed from -0.02 because it is much harder for countries to recover from devastation. Harbivore
