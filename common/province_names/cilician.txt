@@ -35,7 +35,7 @@
 7290 = { "Khornabud" "Khornabud" }
 7291 = { "Bailakan" "Bailakan" }
 7292 = { "Tsanars" "Stepantsminda" } #Base Names
-7293 = { "Dvalet" Nuzal" }# (JP) Base Names
+7293 = { "Dvalet" "Nuzal" }# (JP) Base Names
 7294 = { "Tskhinval" "Tskhinval" }
 7295 = { "Racha" "Oni" } #(JP) Georgian
 7296 = { "Ardahan" "Ardahan" }

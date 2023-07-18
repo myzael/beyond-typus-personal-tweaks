@@ -712,7 +712,7 @@
 7290 = { "Hornabuji" "Hornabuji" }
 7291 = { "Balaken" "Balaken" }
 7292 = { "Tsanaria" "Stepantsminda" } #Base Names
-7293 = { "Dvaletia" Nuzal" }# (JP) Base Names
+7293 = { "Dvaletia" "Nuzal" }# (JP) Base Names
 7294 = { "Tskhinval" "Tskhinval" }
 7295 = { "Racha" "Oni" } #(JP) Base Names
 7296 = { "Ardahan" "Ardahan" }

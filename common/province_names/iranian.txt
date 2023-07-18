@@ -77,7 +77,7 @@
 7290 = { "Khornabuji" "Khornabuji" }
 7291 = { "Balakan" "Balakan" } 
 7292 = { "Tsanaria" "Stepantsminda" } #Base Names
-7293 = { "Dvaleti" Nuzal" }# (JP) Base Names
+7293 = { "Dvaleti" "Nuzal" }# (JP) Base Names
 7294 = { "Ckhinval" "Ckhinval" } #(JP) Ossetian
 7295 = { "Racha" "Oni" } #(JP) Base Names
 7296 = { "Ardahan" "Ardahan" }

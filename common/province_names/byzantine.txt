@@ -233,7 +233,7 @@
 7290 = { "Tamaris" "Tamaris" }
 7291 = { "Balaken" "Balaken" } #(JP) Base Names
 7292 = { "Canaria" "Stepantsminda" } #Base Names
-7293 = { "Dvaletia" Nuzal" }# (JP) Base Names
+7293 = { "Dvaletia" "Nuzal" }# (JP) Base Names
 7294 = { "Tskhinval" "Tskhinval" } #(JP) Base Names
 7295 = { "Racha" "Oni" } #(JP) Base Names 
 7297 = { "Atzaría" "Hulo" }

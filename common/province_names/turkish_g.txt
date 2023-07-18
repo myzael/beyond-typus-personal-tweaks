@@ -1273,7 +1273,7 @@
 7290 = { "Siginak" "Siginak" }
 7291 = { "Balaken" "Balaken" }
 7292 = { "Sanaryia" "Kazbek" } #Base Names
-7293 = { "Dvaleti" Nuzal" }# (JP) Base Names
+7293 = { "Dvaleti" "Nuzal" }# (JP) Base Names
 7294 = { "Tsxinval" "Tsxinval" }
 7295 = { "Raça" "Oni" }
 7296 = { "Ardahan" "Ardahan" }
