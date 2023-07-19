@@ -2065,7 +2065,6 @@ town_hall = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
-		allowed_num_of_buildings = 1
 		}
 
 	on_built = {
@@ -2245,11 +2244,6 @@ conscription_center = {
 	time = 24			#BTAddOn changed from 12. Doubling second level military buildings build time.
 	
 	make_obsolete = regimental_camp
-	
-	modifier = {
-		land_forcelimit = 1			#BTAddOn changed from 2.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
-		regiment_recruit_speed = -0.25			#BTAddOn new. Adding this new feature to match the shipyard equivalents, which also speed recruit time.
-	}
 
 #	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 #	on_built = {
@@ -2275,7 +2269,8 @@ conscription_center = {
 #	}
 
 	modifier = {
-		land_forcelimit = 2
+		land_forcelimit = 1			#BTAddOn changed from 2.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		regiment_recruit_speed = -0.25			#BTAddOn new. Adding this new feature to match the shipyard equivalents, which also speed recruit time.
 	}
 	on_built = {
 		add_development_from_upgrading_or_building = {
@@ -3834,6 +3829,7 @@ state_house = {
 	}
 
 	build_trigger = {
+		is_state = yes
 		NOT = {
 			area_for_scope_province = {
 				owner = {
@@ -3848,6 +3844,7 @@ state_house = {
 	}
 	
 	keep_trigger = {
+		is_state = yes
 		NOT = {
 			area_for_scope_province = {
 				NOT = { province_id = root }
@@ -3865,15 +3862,10 @@ state_house = {
 	modifier = {
 		statewide_governing_cost = -0.2
 		min_local_autonomy = -5
-		local_governing_cost = -0.15
-		local_governing_cost_increase = -10
-		allowed_num_of_buildings = 1
 	}
 	bonus_modifier = {
 		statewide_governing_cost = -0.2
 		min_local_autonomy = -5
-		local_governing_cost = -0.15
-		local_governing_cost_increase = -10
 	}
 	onmap = no
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
