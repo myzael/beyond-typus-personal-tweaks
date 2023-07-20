@@ -2275,6 +2275,7 @@ guru_teaching = {
 }
 
 diplomatic_reputation = {
+	chance_to_inherit = 0.05 #BT added: Base inheritance chance is +5%/diplorep, -1% per province. Since we cannot modify this value, this is a bandaid fix. Since only Christians can form PUs and inherit, I think this is fine. //Dub
 }
 
 tolerance_own = {
