@@ -60,19 +60,19 @@ country_event = {                         #The discovery of amalgamation
 		name = BT_H_Misc.2.opta
 		add_treasury = 250
 		add_prestige = 10
-		any_owned_province = { 
+		random_owned_province = { 
 			limit = {
 				province_id = 8121 #Spanish one
 			}
 			change_trade_goods = gold
 		}
-		any_owned_province = { 
+		random_owned_province = { 
 			limit = {
 				province_id = 7761 #Slovinian one
 			}
 			change_trade_goods = gold
 		}
-		any_owned_province = { 
+		random_owned_province = { 
 			limit = {
 				province_id = 4239 #The serbian one
 			}
@@ -123,19 +123,19 @@ country_event = {                         #Event to change mercury provinces int
 	
 	option = {
 		name = BT_H_Misc.3.opta
-		any_owned_province = { 
+		random_owned_province = { 
 			limit = {
 				province_id = 8121 #Spanish one
 			}
 			change_trade_goods = gold
 		}
-		any_owned_province = { 
+		random_owned_province = { 
 			limit = {
 				province_id = 7761 #Slovinian one
 			}
 			change_trade_goods = gold
 		}
-		any_owned_province = { 
+		random_owned_province = { 
 			limit = {
 				province_id = 4239 #The serbian one
 			}
