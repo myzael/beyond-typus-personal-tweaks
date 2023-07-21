@@ -53,7 +53,7 @@ create_interregnum_effect = {
             }
             break_marriage = ROOT
         }
-        kill_heir = { }
+        kill_heir = { allow_new_heir = no }
     }
     define_ruler = {
         name = "(Interregnum)"
