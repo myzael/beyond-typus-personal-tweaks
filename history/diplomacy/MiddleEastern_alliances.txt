@@ -40,11 +40,61 @@ vassal = {
 #End of Timurid Princes
 
 #Atabegs of Samtskhe under Georgia
-alliance = {
-	first = GEO
+vassal = {
+	first = KRT
 	second = SME
-	start_date = 1444.1.1
-	end_date = 1446.12.1
+	start_date = 1444.1.1 #(JP) To stop quick annex
+	end_date = 1462.6.1
+}
+
+#Triarchy of Georgia
+alliance = {
+	first = KRT
+	second = IME
+	start_date = 1444.1.1 
+	end_date = 1453.6.1
+}
+alliance = {
+	first = KRT
+	second = KKE
+	start_date = 1444.1.1 
+	end_date = 1446.6.1
+}
+alliance = {
+	first = IME
+	second = KKE
+	start_date = 1444.1.1 
+	end_date = 1446.6.1
+}
+
+#Kartli-Kakheti PU from 1446-1466, death of Vakhtang IV until George VIII flees to Kakheti
+union = {
+	first = KRT
+	second = KKE
+	start_date = 1446.6.1 
+	end_date = 1466.6.1
+}
+
+#Kartli-Imereti PU from 1453-1462, death of Demetrius III until Revolt of Bagrat
+union = {
+	first = KRT
+	second = IME
+	start_date = 1453.6.1
+	end_date = 1462.6.1
+}
+
+#Samtskhe backs Imereti and Kakheti against Kartli-Kakheti
+alliance = {
+	first = IME
+	second = SME
+	start_date = 1462.6.1
+	end_date = 1490.6.1
+}
+alliance = {
+	first = KKE
+	second = SME
+	start_date = 1466.6.1
+	end_date = 1490.6.1
 }
 
 #Safavid Order
