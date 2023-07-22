@@ -5,8 +5,8 @@
 #Core Details
 capital = "Nuzal" #(JP) Link here as it was a fucking pain to find https://ru.wikipedia.org/wiki/%D0%9D%D1%83%D0%B7%D0%B0%D0%BB
 is_city = yes
-owner = GEO
-controller = GEO
+owner = KRT
+controller = KRT
 
 #Demographics
 culture = georgian
@@ -19,6 +19,7 @@ base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
+add_core = KRT
 add_core = GEO
 
 #Other Political

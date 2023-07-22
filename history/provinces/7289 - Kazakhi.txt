@@ -5,8 +5,8 @@
 #Core Details
 capital = "Gazakh"
 is_city = yes
-owner = GEO
-controller = GEO
+owner = KRT
+controller = KRT
 
 #Demographics
 culture = georgian
@@ -19,6 +19,7 @@ base_manpower = 2
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
+add_core = KRT
 add_core = GEO
 
 #Other Political
