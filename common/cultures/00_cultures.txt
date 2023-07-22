@@ -3564,6 +3564,18 @@ dagestani_group = {
 	#}	
 }
 
+alan_group = {
+	ossetian = {
+		#primary = 
+		dynasty_names = {
+		}
+		male_names = {
+		}
+		female_names = {
+		}
+	}
+}
+
 circassian_group = {
 	circassian = { #(JP) Adjusted to Adyghe in BT16
 		primary = CIR
