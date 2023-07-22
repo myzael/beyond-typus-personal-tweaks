@@ -202,6 +202,7 @@ KMI = "countries/Kammin.txt" #BT
 KMP = "countries/Kempten.txt" #BT
 KNT = "countries/KnightsTemplar.txt" #BT
 KRO = "countries/Crossen.txt" #BT
+KRT = "countries/Kartli.txt" #BT
 KTX = "countries/Kootenay.txt" #BT
 KTZ = "countries/Katzenelnbogen.txt" #BT
 KUK = "countries/Kuku.txt" #BT
