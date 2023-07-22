@@ -1113,7 +1113,7 @@ eastern_alfold_area = { #Crisana
 # Caucasia
 ###
 imereti_area = { #Imereti
-	422 462 1856 2196 7295 7298 7299
+	422 462 1856 2195 2196 7295 7298 7299
 }
 samtskhe_area = { #Upper Kartli
 	3250 3251 4303 7296 7297
@@ -1126,7 +1126,7 @@ shirvan_area = { #Shirvan
 	421 425 4299 4305 7284 7286  
 }
 circassia_area = { #Circassia
-	463 2195 2197 2201 2416 3262 3263 
+	463 2197 2201 2416 3262 3263 
 }
 dagestan_area = { #Dagestan
 	2198 2199 2208 3261 4306 
@@ -1149,21 +1149,21 @@ hudavendigar_area = { #Bithynia
 }
 germiyan_area = { #Phrygia
 	color = { 234 145 65 }
-	322 1848 4308 4311 5155 5163 6018 6019 
+	322 1848 4311 5155 5163 6018 6019 
 }
-aydin_area = { #Ionia
+aydin_area = { #Lydia
 	color = { 239 70 86 }
-	318 6005 6007 
+	318 2297 5172 6005 6007 6041
 }
 ankara_area = { #Galatia
 	color = { 57 154 172 }
-	326 5137 5167 
+	326 4314 5137 5150 5167 
 }
 kastamonu_area = { #Paphlagonia
 	325 328 2299 4313 5164 6033 
 }
 karaman_area = { #Lycaonia
-	323 324 
+	323 324 4307 5146
 }
 cukurova_area = { #Cilicia
 	color = { 50 177 200 }
@@ -1171,11 +1171,10 @@ cukurova_area = { #Cilicia
 }
 dulkadir_area = { #Cappadocia
 	color = { 184 54 72 }
-	332 2301 4307 4314 5146 5150 6027 6028 6029 
+	332 2301 6027 6028 6029 
 }
-lydia_area = { # BT# Lydia
-	2297 5172 6041 
-}
+#lydia_area = { # BT# Lydia (JP) Removed in BT16
+#}
 pontus_area = { # BT# East Pontus
 	330 1846 3248 4315 5206 6040 
 }
@@ -1186,7 +1185,7 @@ pamphylia_area = { # BT# Lycia-Pamphylia
 	2298 5147 5162 6013 6014 6020 
 }
 caria_area = { #BT# Caria
-	319 4309 5134 6009 6010 
+	319 4308 4309 5134 6009 6010 
 }
 
 ###
