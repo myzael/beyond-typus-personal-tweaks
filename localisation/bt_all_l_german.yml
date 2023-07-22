@@ -2863,3 +2863,12 @@
  bt_otto_crimea_tweaks_tt:0 "§YKrim§! wir zu unserer §YMark§!, und wir erhalten einen §YAnspruch§! auf jede von Heiden gehaltene Provinz in ihrer Umgebung"           #In a perfect world I'd figure out the strupid from.root.to.for.what.why strings and make the name dynamic. For now, can't be bothered.
  bt_otto_badboy_crimea_opinion:0 "Aggressiver Opportunismus auf der Krim"
  
+ #BT16
+ abkhaz:0 "Abkhaz"
+ alan_group:0 "Alanian"
+ armenian_group:0 "Armenian"
+ circassian_group:0 "Circassian"
+ dagestani_group:0 "Dagestani"
+ karbadian:0 "Karbadian"
+ ossetian:0 "Ossetian"
+ talysh:0 "Talysh"

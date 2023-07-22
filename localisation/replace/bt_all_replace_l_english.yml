@@ -692,3 +692,5 @@
  #BT Vanilla bugfixes
  ENACT_REFORM_EFFECT_LOCK_WARNING:0 "\n(§RThis is a locked reform. You will not be able to switch to other reforms on the same Tier.§!)\n"
  flavor_teu.3.b:0 "Invite the the teutonic order to rule over ducal prussia."
+ caucasian:0 "Kartvelian"
+ circassian:0 "Adyghe"

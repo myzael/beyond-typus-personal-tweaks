@@ -672,3 +672,7 @@
  
  #BT15.0.1
  flavor_cri.2.d:0 "Mit dem Tod von Hadschi Giray muss sich das junge Krim-Khanat zum ersten Mal ohne seinen dynamischen Gründer zurechtfinden. [From.Monarch.GetName] hat es geschafft, den Thron der Krim zu sichern, aber [From.Monarch.GetHerHis] Position ist sehr schwach. Ehrgeizige Geschwister haben nicht aufgegeben, das Erbe Hadschis für sich zu beanspruchen, und im Osten und Westen schielen hungrige Nachbarn gierig auf die Ländereien der Krim. Um die Situation zu stabilisieren, hat [From.Monarch.GetName] einen Hilferuf an uns gerichtet. [From.Monarch.GetSheHeCap] bietet [From.Monarch.GetHerHis] Dienlichkeit und Loyalität an, wenn wir bereit sind, die Krim vor ihren Feinden zu schützen."         #Cut the mention of 'as well as direct ownership of a number of Black Sea ports' & rearranged to sound fluid with the cut. I'm no expert here, but in game terms I think a subject is a fine representation.
+ 
+ #BT16
+ caucasian:0 "Kartvelian"
+ circassian:0 "Adyghe"
