@@ -3566,7 +3566,7 @@ dagestani_group = {
 
 alan_group = {
 	ossetian = {
-		#primary = 
+		primary = ALN
 		dynasty_names = {
 		}
 		male_names = {
@@ -3602,7 +3602,7 @@ circassian_group = {
 		}
 	}
 	abkhaz = {
-		primary = ABK
+		primary = ABZ
 		dynasty_names = {
 			Adlejba Agrba Ahashba Ajwëdzba Ardzinba Argun Arshba Arstaa Ashwba Axba Bëdzhba Cëgwba Cw'eiba
 			Dzhopua Ebëzhnow Gagwlja Gëcba Gjanaba Hadzjëmba Harazja Inal-ipa Kw'artaa Kw'braa Kw'ëbraa Kw'ëc'nja
@@ -3622,7 +3622,7 @@ circassian_group = {
 		}
 	}
 	kabardian = {
-		#primary = 
+		primary = KAB
 		dynasty_names = {
 		}
 		male_names = {
