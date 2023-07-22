@@ -3,7 +3,7 @@
 
 owner = CIR
 controller = CIR
-culture = circassian
+culture = kabardian
 religion = orthodox
 capital = "Karachai"
 trade_goods = wool

@@ -3,7 +3,7 @@
 
 owner = CIR
 controller = CIR
-culture = circassian
+culture = kabardian
 religion = orthodox
 capital = "Slabada"
 trade_goods = wine
