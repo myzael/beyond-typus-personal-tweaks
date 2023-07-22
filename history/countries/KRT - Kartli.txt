@@ -1,7 +1,8 @@
-#KKE - Kakheti
+#KRT - Kartli
 
 #Political Situation
-capital = 2203
+capital = 423
+#fixed_capital = #Cannot move capital away from this province & no power cost to move to it
 
 #Government
 government_rank = 2

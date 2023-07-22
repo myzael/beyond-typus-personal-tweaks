@@ -1,10 +1,11 @@
-#KKE - Kakheti
+#GRI - Guria
 
 #Political Situation
-capital = 2203
+capital = 2196
+fixed_capital = 2196 #Cannot move capital away from this province & no power cost to move to it
 
 #Government
-government_rank = 2
+government_rank = 1
 government = monarchy
 add_government_reform = autocracy_reform
 
