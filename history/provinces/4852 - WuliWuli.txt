@@ -6,7 +6,7 @@
 capital = "Wuli-Wuli"
 
 #Demographics
-culture = gamilaraay
+culture = bandjalang
 religion = dreamtime
 native_size = 5
 native_ferocity = 1

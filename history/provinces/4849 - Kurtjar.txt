@@ -6,7 +6,7 @@
 capital = "Kurtjar"
 
 #Demographics
-culture = paman
+culture = garandi
 religion = dreamtime
 native_size = 2
 native_ferocity = 1

@@ -9,7 +9,7 @@ owner = GMI
 controller = GMI
 
 #Demographics
-culture = gamilaraay
+culture = aboriginal
 religion = dreamtime
 native_size = 50
 native_ferocity = 1

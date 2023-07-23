@@ -8531,12 +8531,12 @@ pacific = {
 		Balla Bulu Lompo Sallo Karaeng Bambang Cipuru Doe Iyo Tena Tabe Apa Lakeko Battu Keko
 	}
 }
-
-aboriginal_australian = { # Brian; new in 1.31; BT australian_group
+#(Hadiros) An absolutely gargantuan group. A cluster of some 300 languages all with varying levels of relations to one another, though many would be far too small to represent.
+aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16 
 	graphical_culture = aboriginalgfx
 	second_graphical_culture = africangfx
 
-	aboriginal = { #(Kuric) Eora/East Coast # Brian; all vanilla
+	aboriginal = { #(Hadiros) Adjusted to Kuri in BT16
 		primary = EOR
 		male_names = {
 			#pre-mandala names
@@ -8567,7 +8567,7 @@ aboriginal_australian = { # Brian; new in 1.31; BT australian_group
 			Adina Alinta Alira Arika Birindabella Cardinia Inala Jindalee Kareela Killara Lowanna Merri Pemau Waratah
 		}
 	}
-	yura = { #South Australia # Brian; new in 1.31
+	yura = { #(Hadiros) Adjusted to Yuran in BT16
 		primary = KAU
 		male_names = {
 			#pre-mandala names
@@ -8598,7 +8598,7 @@ aboriginal_australian = { # Brian; new in 1.31; BT australian_group
 			Karro Kudnarto Manmarra Medika Tarni Thoomi
 		}
 	}
-	paman = { #Capricornia # Brian; new in 1.31
+	paman = { #(Hadiros) Represents northernmost Paman groups
 		primary = AWN
 		male_names = {
 			#pre-mandala names
@@ -8625,7 +8625,7 @@ aboriginal_australian = { # Brian; new in 1.31; BT australian_group
 			Truganina Truganini Truganner Walangkura Watorea Wintjiya Yakari Yalamay Yinarupa Yindi
 		}
 	}
-	gunwinyguan = { #Top End # Brian; new in 1.31
+	gunwinyguan = {
 		primary = LAR
 		male_names = {
 			#pre-mandala names
@@ -8654,7 +8654,7 @@ aboriginal_australian = { # Brian; new in 1.31; BT australian_group
 			Adaliya Banalandju Jannali
 		}
 	}
-	palawa = { #Tasmania # Brian; new in 1.31
+	palawa = {
 		primary = PLW
 		male_names = {
 			#pre-mandala names
@@ -8685,7 +8685,7 @@ aboriginal_australian = { # Brian; new in 1.31; BT australian_group
 			Lenah Lutana Tanganutura Trugernanner
 		}
 	}
-	kulin = { #Melbourne # Brian; new in 1.31
+	kulin = { #(Hadiros) Adjusted to Kulinic in BT16
 		primary = WRU
 		male_names = {
 			#pre-mandala names
@@ -8712,7 +8712,7 @@ aboriginal_australian = { # Brian; new in 1.31; BT australian_group
 			Truganina Truganini Truganner Walangkura Watorea Wintjiya Yakari Yalamay Yinarupa Yindi
 		}
 	}
-	gamilaraay = { #interior # Brian; new in 1.31
+	gamilaraay = { #(Hadiros) Adjusted to Wiradhuric in BT16
 		primary = GMI
 		male_names = {
 			#pre-mandala names
@@ -8739,7 +8739,7 @@ aboriginal_australian = { # Brian; new in 1.31; BT australian_group
 			Truganina Truganini Truganner Walangkura Watorea Wintjiya Yakari Yalamay Yinarupa Yindi
 		}
 	}
-	nyoongah = { #Perth # Brian; new in 1.31
+	nyoongah = { #(Hadiros) Adjusted to Noongar in BT16
 		primary = NOO
 		male_names = {
 			#pre-mandala names
@@ -8770,6 +8770,296 @@ aboriginal_australian = { # Brian; new in 1.31; BT australian_group
 			Alkina Bindi Inyuwa Jedda Makinti Mirri Wawiriya
 		}
 	}
+	#BT Added
+	garandi = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	thaypan = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	lamalama = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	yalanji = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	dyirbalic = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	biri = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	kingkel = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	bidjara = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	gabi = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	bandjalang = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	yoran = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	yuin = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	gunaikurnai = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	yotayota = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	narrinyeri = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	kadli = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	paakantyi = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	muruwari = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	karnic = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	mayi = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	kalkutung = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	ngarna = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	aranda = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	wati = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	nangga = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	mirning = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	kartu = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	kanyara = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	ngayarda = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	marrngu = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	yapa = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	ngumbin = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	
 	dynasty_names = {
 		Barak Bennelong Billibellary Calyute Derrimut Dundalli Jackey Jandamarra Lanne Mannalargenna Mokare Mullagh Musquito Pemulwuy
 		Tullamareena Wonga Yagan Wylle Napaljarri Tjakamarra Tjapaltjarri Gurruwiwi Nungurrayi Mununggurr Namok Milyika Ginibi Wagan

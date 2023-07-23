@@ -9,7 +9,7 @@ owner = KAU
 controller = KAU
 
 #Demographics
-culture = yura
+culture = kadli
 religion = dreamtime
 native_size = 10
 native_ferocity = 1

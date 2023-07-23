@@ -9,7 +9,7 @@ owner = EOR
 controller = EOR
 
 #Demographics
-culture = aboriginal
+culture = yoran
 religion = dreamtime
 native_size = 10
 native_ferocity = 1

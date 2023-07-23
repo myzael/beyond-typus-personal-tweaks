@@ -6,7 +6,7 @@
 capital = "Baiali"
 
 #Demographics
-culture = paman
+culture = biri
 religion = dreamtime
 native_size = 10
 native_ferocity = 1

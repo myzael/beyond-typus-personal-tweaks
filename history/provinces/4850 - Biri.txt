@@ -6,7 +6,7 @@
 capital = "Biri"
 
 #Demographics
-culture = paman
+culture = gabi
 religion = dreamtime
 native_size = 2
 native_ferocity = 1

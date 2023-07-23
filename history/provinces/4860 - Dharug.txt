@@ -6,7 +6,7 @@
 capital = "Dharug"
 
 #Demographics
-culture = aboriginal
+culture = yuin
 religion = dreamtime
 native_size = 5
 native_ferocity = 1

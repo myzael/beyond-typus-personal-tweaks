@@ -9,7 +9,7 @@ owner = MLG
 controller = MLG
 
 #Demographics
-culture = nyoongah
+culture = kanyara
 religion = dreamtime
 native_size = 5
 native_ferocity = 1

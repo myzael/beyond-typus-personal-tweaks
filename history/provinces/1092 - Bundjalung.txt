@@ -6,7 +6,7 @@
 capital = "Kamilaroi"
 
 #Demographics
-culture = aboriginal
+culture = bandjalang
 religion = dreamtime
 native_size = 10
 native_ferocity = 1
