@@ -5997,6 +5997,15 @@ on_expanded_infrastructure = {
 
 #ROOT = province that was centralized in
 on_centralized_state = {
+	area = {
+		limit = {
+			NOT = { province_id = ROOT }
+		}
+		extend_province_modifier = {
+			name = "bt_centralize_state_provinces"
+			duration = -1
+		}
+	}
 	if = {
 		limit = {
 			owner = { has_government_attribute = centralize_state_no_reform_cost }

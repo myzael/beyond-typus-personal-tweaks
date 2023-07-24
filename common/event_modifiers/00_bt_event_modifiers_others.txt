@@ -103,6 +103,19 @@ bt_dev_cost_4 = {
 bt_dev_cost_5 = {
     local_development_cost = 2
 }
+bt_centralize_state_provinces = {
+	local_build_cost = -0.1 #BT added, moved from expanded_infrastructure.
+	local_build_time = -0.1 #BT added, moved from expanded_infrastructure.
+	regiment_recruit_speed = -0.1 #BT added, moved from expanded_infrastructure.
+	ship_recruit_speed = -0.1 #BT added, moved from expanded_infrastructure.
+	local_culture_conversion_time = -0.1 #BT added because centralization makes sense.
+	local_missionary_strength = 0.01 #BT added because centralization makes sense.
+	local_autonomy = -0.025 #BT added because centralization makes sense.
+	
+	local_development_cost_modifier = -0.025 #BT added because we want to incentivise tall play. #Changed to local development efficiency, we want to encourage tall play but not that much.
+	local_centralize_state_cost = 0.2 #BT Added for balance so that the button isn't clicked 911 times.
+	picture = "centralize_state"
+}
 
 
 ##################################################################################################
