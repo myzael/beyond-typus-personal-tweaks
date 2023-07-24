@@ -12,14 +12,12 @@ country_decisions = {
 			NOT = { tag = PLC }
 			NOT = { tag = POL }
 			NOT = { tag = GMV  }
-			NOT = { tag = TUS } #Tuscany...?
-			NOT = { tag = EMR } #Emilia-Romagna?!
-			NOT = { tag = LMV } #FUCKING LOMBARDY-VENETIA?! Draiocht, stop smoking, please.
 			OR = {
 				primary_culture = polish
+				primary_culture = polish_new
 				#primary_culture = pommeranian
 				primary_culture = schlesian
-				tag = DNZ
+				#tag = DNZ #BT cut because we don't want Danzig forming Poland methinks.
 			}
 		}
 		provinces_to_highlight = {
@@ -31,9 +29,9 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = POL }
-			is_nomad = no
-			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
 			owns_core_province = 262	# Krakow
 			owns_core_province = 257	# Warszawa
 			owns_core_province = 260	# Lublin
@@ -47,8 +45,15 @@ country_decisions = {
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
+			set_country_flag = pol_chose_pu_flag
 			change_tag = POL
+			on_change_tag_effect = yes
+			restore_country_name = yes
 			swap_non_generic_missions = yes
+			complete_mission = pol_leverage_magnates
+			complete_mission = pol_great_sejm
+			complete_mission = plc_articles_agreement
+			complete_mission = pol_varna_aftermath
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
@@ -66,12 +71,18 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			swap_ideas = yes
+			if = {
+				limit = {
+					NOT = { has_idea_group = POL_ideas }
+				}
+				swap_ideas = yes
+			}
 			set_country_flag = formed_poland_flag
 		}
 		ai_will_do = {
 			factor = 1
 		}
-		ai_importance = 400
+		ai_importance = 400 #If there is no Poland then Polish minors will prioritize reforming it.
 	}
+	
 }

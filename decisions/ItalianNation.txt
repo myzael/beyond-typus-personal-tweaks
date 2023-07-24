@@ -41,28 +41,32 @@ country_decisions = {
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
+			#Mission completions - None at the moment
+			#Country formation effects
 			change_tag = ITA
+			on_change_tag_effect = yes
+			restore_country_name_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes #Moved down so that it removes HRE missions properly.
-			if = {
-				limit = { NOT = { government_rank = 2 } }
-				set_government_rank = 2
-			}
 			add_country_modifier = {
 				name = centralization_modifier
 				duration = 7300
 			}
+			#Rank + prestige
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
 			add_prestige = 25
-			hidden_effect = {
-				italy_region = {
-					limit = {
-						bt_trigger_italy_areas = yes
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = PAP }
-					}
-					add_permanent_claim = ITA
+			#Nation claims + Mission claims
+			italy_region = { #Unhiding this one because there's no tooltip otherwise.
+				limit = {
+					bt_trigger_italy_areas = yes
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = PAP }
 				}
+				add_permanent_claim = ITA
 			}
 			hidden_effect = {
 				italy_region = {
@@ -81,8 +85,13 @@ country_decisions = {
 					add_claim = ITA
 				}
 			}
-			swap_ideas = yes
-			swap_non_generic_missions = yes
+			#Swap culture, government, government reform & ideas, plus set flag
+			if = {
+				limit = {
+					NOT = { has_idea_group = ITA_ideas }
+				}			
+				swap_ideas = yes
+			}
 			set_country_flag = formed_italy_flag
 		}
 		ai_will_do = {
@@ -102,6 +111,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			NOT = { exists = ITA }
 			NOT = { exists = ITL } # BT
@@ -163,10 +176,6 @@ country_decisions = {
 			owns_core_province = 2977	# Pesaro
 		}
 		effect = {
-			add_country_modifier = { # BT
-				name = "btp_kingdom_of_god"
-				duration = -1
-			}
 			country_event  = { id = catholic_flavor.2 }
             italy_region = { # BT adjusted
                 limit = {
@@ -174,6 +183,10 @@ country_decisions = {
                 }
                 add_permanent_claim = ROOT
             }
+			add_country_modifier = { # BT
+				name = "btp_kingdom_of_god"
+				duration = -1
+			}
 			override_country_name = KINGDOM_OF_GOD
 			set_country_flag = is_kingdom_of_god_flag
 		}

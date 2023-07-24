@@ -64,6 +64,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = MSA
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -99,11 +100,18 @@ country_decisions = {
 				}
 				add_permanent_claim = MSA
 			}
+			country_event = { #Vanilla has this. Adding just in case. //Dub
+				id = flavor_mlc.9
+			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
 			set_country_flag = formed_malaya_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				swap_ideas = yes
+			}
 			add_prestige = 25
 		}
 		ai_will_do = {

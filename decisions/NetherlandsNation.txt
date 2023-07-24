@@ -54,10 +54,10 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 95 # Breda
-			owns_core_province = 97 # Amsterdam
 			owns_core_province = 98 # Utrecht
 			owns_core_province = 99 # Gelre
 			owns_core_province = 4383 # Den Haag
+			owns_core_province = 97 # Amsterdam
 			num_of_owned_provinces_with = {
 				value = 10
 				region = low_countries_region
@@ -83,7 +83,9 @@ country_decisions = {
 					exists = FRA
 				}
 	  			france_region = {
-					limit = { owned_by = BUR }
+					limit = {
+						owned_by = BUR
+					}
 	  				remove_core = BUR
 	  				add_core = FRA
 	  				cede_province = FRA
@@ -93,12 +95,24 @@ country_decisions = {
 				limit = {
 					tag = BUR
 					exists = FRA
-					BUR = { any_subject_country = { france_region = { owned_by = PREV } } }
+					BUR = {
+						any_subject_country = {
+							france_region = {
+								owned_by = PREV
+							}
+						}
+					}
 				}
 				every_subject_country = {
-					limit = { france_region = { owned_by = PREV } }
+					limit = {
+						france_region = {
+							owned_by = PREV
+						}
+					}
 					france_region = {
-						limit = { owned_by = PREV }
+						limit = {
+							owned_by = PREV
+						}
 						remove_core = BUR
 						remove_core = PREV
 						add_core = FRA
@@ -107,9 +121,11 @@ country_decisions = {
 				}
 	  		}
 			change_tag = NED
+			on_change_tag_effect = yes
+			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
+			if = { #Curious - Vanilla specifically gives NED kingdom rank.
 				limit = { NOT = { government_rank = 2 } }
 				set_government_rank = 2
 			}
@@ -144,9 +160,33 @@ country_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
+				NOT = { adm_tech = 9 }
+			}
+			modifier = {
+				factor = 0
 				tag = BUR
+				NOT = { is_year = 1500 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_cities = 3 }
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					any_ally = {
+						OR = {
+							owns_or_non_sovereign_subject_of = 95
+							owns_or_non_sovereign_subject_of = 97
+							owns_or_non_sovereign_subject_of = 98
+							owns_or_non_sovereign_subject_of = 99
+							owns_or_non_sovereign_subject_of = 4383
+						}
+					}
+				}
 			}
 		}
 		ai_importance = 400
 	}
+	
 }

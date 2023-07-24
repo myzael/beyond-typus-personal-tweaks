@@ -3,7 +3,6 @@
 #I normally don't like messing with vanilla files when I don't have to, but between all the map changes and the fact that I wanted to clean up a few things
 #and make everything more dynamic anyway, I figured I'd just reorganise. Hope this doesn't mess with anyone too much. - Draiocht
 country_decisions = {
-
 	greek_nation = {
 		major = yes
 		potential = {
@@ -43,23 +42,23 @@ country_decisions = {
 			#swap_non_generic_missions = yes #Greece no missions yet has.
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = { government_rank = 2 }
+				}
 				set_government_rank = 2
 			}
 			add_country_modifier = {
-				name = centralization_modifier
+				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
-			hidden_effect = {
-				balkan_region = {
-					limit = {
-						bt_trigger_historical_greece_areas = yes
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = GRE
+			balkan_region = {
+				limit = {
+					bt_trigger_historical_greece_areas = yes
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
+				add_permanent_claim = GRE
 			}
 			hidden_effect = {
 				balkan_region = {
@@ -81,14 +80,9 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				government = republic
-			}
 		}
-		ai_importance = 400 #
 	}
-	
+
 	icelandic_nation = {
 		major = yes
 		potential = {
@@ -148,6 +142,8 @@ country_decisions = {
 					}					
 				}
 			}
+			on_change_tag_effect = yes
+			set_country_flag = formed_iceland
 			change_tag = ICE
 			remove_non_electors_emperors_from_empire_effect = yes
 			hidden_effect = {
@@ -180,8 +176,12 @@ country_decisions = {
 				duration = 3650
 			}
 			add_prestige = 10
-			swap_ideas = yes
-			set_country_flag = formed_iceland
+			if = {
+				limit = {
+					NOT = { has_idea_group = ICE_ideas }
+				}
+				swap_ideas = yes
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -190,6 +190,6 @@ country_decisions = {
 				capital_scope = { NOT = { area = iceland_area } }
 			}
 		}
-		ai_importance = 400 #
-	}	
+	}
+	
 }

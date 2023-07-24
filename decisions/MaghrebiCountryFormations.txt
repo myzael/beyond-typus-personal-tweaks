@@ -81,10 +81,13 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = MOR
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = { government_rank = 2 }
+				}
 				set_government_rank = 2
 			}
 			add_country_modifier = {
@@ -143,10 +146,15 @@ country_decisions = {
 			add_prestige = 25
 			if = {
 				limit = { government = tribal }
-				change_government_to_monarchy = yes #Desert tribes settling down, theocracies become monarchies.
+				change_government = monarchy #Desert tribes settling down, theocracies become monarchies.
 				#set_legacy_government = despotic_monarchy
 			}
-			swap_ideas = yes
+			if = {
+				limit = {
+					NOT = { has_idea_group = MOR_ideas }
+				}
+				swap_ideas = yes
+			}
 			set_country_flag = formed_morocco_flag
 		}
 		ai_will_do = {
@@ -154,8 +162,8 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-
-	algiers_nation = { #MaghrebiCountryFormations.txt
+	
+	algiers_nation = {
 		major = yes
 		potential = {
 			bt_generic_can_form_potential_check = yes
@@ -235,9 +243,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = ALG
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = { government_rank = 2 }
+				}
 				set_government_rank = 2
 			}
 			add_country_modifier = {
@@ -294,12 +305,12 @@ country_decisions = {
 				add_permanent_claim = ALG
 			}
 			if = {
-				limit = { government = tribal }
-				change_government_to_monarchy = yes
+				limit = { is_tribal = yes }	#Desert tribes settling down.
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
-			swap_ideas = yes
+			swap_ideas = yes #Vanilla checks for berber ideas here. I really don't think that makes sense for BT's Algeria. //Dub
 			set_country_flag = formed_algiers_flag
 		}
 		ai_will_do = {
@@ -364,6 +375,8 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = OTN
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
@@ -407,7 +420,12 @@ country_decisions = {
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
-			swap_ideas = yes
+			if = {
+				limit = {
+					NOT = { has_idea_group = TUN_ideas }
+				}
+				swap_ideas = yes
+			}
 			set_country_flag = formed_tunisia_flag
 		}
 		ai_will_do = {
@@ -484,9 +502,12 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = TRP
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = { government_rank = 2 }
+				}
 				set_government_rank = 2
 			}
 			add_country_modifier = {
@@ -522,12 +543,12 @@ country_decisions = {
 				add_permanent_claim = TRP
 			}
 			if = {
-				limit = { government = tribal }
-				change_government_to_monarchy = yes
+				limit = { government = tribal } #Desert tribes settling down.
+				change_government = monarchy
 				#set_legacy_government = despotic_monarchy
 			}
 			add_prestige = 25
-			swap_ideas = yes
+			swap_ideas = yes #Vanilla checks for berber ideas. Not sure that makes sense here. //Dub
 			set_country_flag = formed_tripoli_flag
 		}
 		ai_will_do = {
@@ -535,5 +556,5 @@ country_decisions = {
 		}
 		#ai_importance = 400
 	}
-
+	
 }
