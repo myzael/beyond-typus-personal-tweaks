@@ -4270,12 +4270,9 @@ iranian = {
 	}
 	talysh = {
 		primary = ISP
-		#male_name = {
-		}
-		#female_names = {
-		}
-		dynasty_names = {
-		}
+		#male_names = { }
+		#female_names = { }
+		#dynasty_names = { }
 	}
 	dynasty_names = {
 		Afsharid Zand Qajar Qoli Zahedi Talish Safavid Zulqadr Shamlu Sahandlu Zanganeh
