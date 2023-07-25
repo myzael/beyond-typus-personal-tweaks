@@ -1,0 +1,1 @@
+primary_culture = crimean #BT added so that Zaporizhia can be released. It is very much a bandaid fix - the real way would be to add a decision to establish a Cossack Host by Ruthenian nations in Crimean lands. But until then, I think this is an okay compromise. //Dub

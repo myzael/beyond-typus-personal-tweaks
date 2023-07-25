@@ -2,6 +2,8 @@
 -- sorted alphabetically
 -- do NOT re-sort!
 
+NDefines.NGovernment.CENTRALIZE_STATE_YEARS = 0 -- For testing purposes.
+
 NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25 -- BT changed from 75 to 25 because more provinces making dev per province much less. //Dub
 NDefines.NAI.CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE = 1			-- from 3
 NDefines.NAI.DEVELOPMENT_CAP_BASE = 50			-- From 10. Trying to unhinge the AI's development so that they actually use their extra monarch points.
