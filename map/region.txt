@@ -387,7 +387,7 @@ anatolia_region = { # 14 areas
 		karaman_area
 		cukurova_area
 		dulkadir_area
-		lydia_area
+		#lydia_area #BT Cut
 		pontus_area
 		karasi_area
 		pamphylia_area
@@ -403,8 +403,8 @@ mashriq_region = { #Levant 9 areas
 		syrian_desert_area
 		cyprus_area
 		tripoli_area
-		bargylus_area
-		hauran_area
+		#bargylus_area #BT Cut
+		#hauran_area #BT Cut
 	}
 }
 mesopotamia_region = { # 14 areas
