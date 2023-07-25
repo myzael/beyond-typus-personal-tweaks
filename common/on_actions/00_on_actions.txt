@@ -6002,8 +6002,8 @@ on_centralized_state = {
 			NOT = { province_id = ROOT }
 		}
 		add_or_extend_province_modifier_effect = {
-			modifier = "bt_centralize_state_provinces"
-			duration = -1
+			MODIFIER = "bt_centralize_state_provinces"
+			DURATION = -1
 		}
 	}
 	if = {
