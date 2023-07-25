@@ -34,6 +34,5 @@ hre = no
 #Discoveries
 discovered_by = aboriginal_tech
 
-}
 #Histories   
 1642.11.24 = { discovered_by = NED } # Abel Tasman 

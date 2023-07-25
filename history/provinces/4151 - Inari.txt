@@ -40,7 +40,7 @@ add_province_triggered_modifier = bt_birkarls
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	add_core = SWE
-	remove_core SMI
+	remove_core = SMI
 	owner = SWE
 	controller = SWE
 	add_local_autonomy = 55 #This stacks with culture and religious starting autonomy, it seems. Reducing from 90.
