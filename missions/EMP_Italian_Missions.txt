@@ -1073,13 +1073,13 @@ emp_ita_war_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
-			lydia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			# lydia_area = { #BT Removed
+				# limit = {
+					# NOT = { is_core = ROOT }
+					# NOT = { is_permanent_claim = ROOT }
+				# }
+				# add_permanent_claim = ROOT
+			# }
 			karasi_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1102,7 +1102,7 @@ emp_ita_war_branch = {
 				area = germiyan_area
 				area = cukurova_area
 				area = pamphylia_area
-				area = lydia_area
+				#area = lydia_area #BT Removed
 				area = karasi_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1128,10 +1128,10 @@ emp_ita_war_branch = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			lydia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# lydia_area = { #BT Removed
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 			karasi_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
