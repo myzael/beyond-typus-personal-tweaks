@@ -7,7 +7,7 @@ capital = 7284
 #Government
 government_rank = 1
 government = monarchy
-add_government_reform = iqta_reform
+add_government_reform = iqta
 
 #Demographics
 primary_culture = turkoman
