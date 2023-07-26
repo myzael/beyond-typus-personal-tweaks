@@ -184,7 +184,7 @@
 6013 = { "Antiphellos" "Antiphellos" }
 6014 = { "Saporda" "Saporda" }
 6016 = { "Pontoherakleia" "Pontoherakleia" }
-6018 = { "Amorion" "Amorion" }
+#6018 = { "Amorion" "Amorion" }
 6019 = { "Philomelion" "Philomelion" }
 6020 = { "Mistheia" "Mistheia" }
 6021 = { "Germanicopolis" "Germanicopolis" }
@@ -276,7 +276,7 @@
 5130 = { "Palaeokastron" "Palaeokastron" } #Found as a fortress of Mysia from a detailed map during the Nicaean period.
 5156 = { "Pegai" "Pegai" }
 2296 = { "Dardanellia" "Dardanellia" }
-5131 = { "Aivali" "Aivali" }
+#5131 = { "Aivali" "Aivali" }
 
 #Asia
 2297 = { "Magnesia" "Magnesia" }

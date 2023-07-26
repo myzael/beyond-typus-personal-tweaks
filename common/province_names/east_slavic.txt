@@ -658,7 +658,7 @@
 4313 = { "Paflagoniya" "Chankiri" }
 4314 = { "Kochevo" "Kochevsk" } # Koch - turkish word, -sk - ending, means fortress/city/settlement, -vo - ending, means small regions (and settlements).
 5130 = { "Staraya Krepost" "Adrianov" } # Staraya - old, Krepost - fortress. translation of Balikesir. Adrianov means "/city, build/ by Adrian" or "/city/ of Adrian"
-5131 = { "Adramitey" "Adramitey" } # Adramitteion
+#5131 = { "Adramitey" "Adramitey" } # Adramitteion
 5134 = { "Petroniy" "Petroniy" } 
 5137 = { "Taviy" "Taviy" }
 5138 = { "Kharuniya" "Anazarb" }
@@ -670,7 +670,7 @@
 6001 = { "Ivovyy" "Ivovyy" } # Ivovyy - translation of turkish Sogut
 6002 = { "Beledzhyk" "Beledzhyk" } # turkish 
 6007 = { "Efes" "Efes" } # Ephesos
-6018 = { "Ergen" "Ergen" }
+#6018 = { "Ergen" "Ergen" }
 6019 = { "Chernogorodye" "Chernograd" }
 6020 = { "Knyazev" "Knyazev" } 
 6025 = { "Tars" "Tars" }

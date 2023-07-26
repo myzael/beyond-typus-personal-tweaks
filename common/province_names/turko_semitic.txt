@@ -116,7 +116,7 @@
 6143 = { "As-Samawah" "As-Samawah" }
 6144 = { "Dhi Qar" "Dhi Qar" }
 6145 = { "Az-Zubayr" "Az-Zubayr" }
-6149 = { "Qalqit" "Qalqit" }
+#6149 = { "Qalqit" "Qalqit" }
 
 #Egypt
 358 = { "Al-Iskandariyah" "Al-Iskandariyah" }
@@ -282,7 +282,7 @@
 2304 = "Samsoon"
 3248 = "Lazistan"
 5130 = "Karasi"
-5131 = "Ayvalik"
+#5131 = "Ayvalik"
 4308 = "Denizli"
 4311 = "Kütahya"
 5134 = "Bodrum"

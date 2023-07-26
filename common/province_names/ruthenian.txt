@@ -1829,7 +1829,7 @@
 2296 = "Abidos"
 5130 = "Khadrianosirai"
 5156 = "Kizik"
-5131 = "Perham"
+#5131 = "Perham"
 5171 = "Myhaylych"
 
 #Bythnia

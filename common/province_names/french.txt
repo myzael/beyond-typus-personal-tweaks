@@ -1554,7 +1554,7 @@
 4368 = "Duresme"
 4375 = "Chestre"
 5130 = "Mysie"
-5131 = "Kydonie"
+#5131 = "Kydonie"
 5135 = "Mersine"
 5152 = "Amasée"
 5155 = "Gordion"

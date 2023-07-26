@@ -213,7 +213,7 @@
 4314 = { "Koçhisar" "Koçhisar" }
 4315 = { "Gümüshane" "Gümüshane" }
 5130 = { "Karasi" "Balikesir" }
-5131 = { "Ayvalik" "Ayvalik" }
+#5131 = { "Ayvalik" "Ayvalik" }
 5134 = { "Bodrum" "Bodrum" }
 5135 = { "Mersin" "Mersin" }
 5137 = { "Yozgat" "Yozgat" }
@@ -244,7 +244,7 @@
 6013 = { "Andifli" "Andifli" }
 6014 = { "Isparta" "Isparta" }
 6016 = { "Benderegli" "Benderegli" }
-6018 = { "Hergenkale" "Hergenkale" }
+#6018 = { "Hergenkale" "Hergenkale" }
 6019 = { "Akshehir" "Akshehir" }
 6020 = { "Beyshehir" "Beyshehir" }
 6021 = { "Ermenek" "Ermenek" }
@@ -336,7 +336,7 @@
 6143 = { "Semave" "Semave" }
 6144 = { "Nasiriyye" "Nasiriyye" }
 6145 = { "Zubayr" "Zubayr" } #(JP) Base name
-6149 = { "Kelkit" "Kelkit" }
+#6149 = { "Kelkit" "Kelkit" }
 
 #Arabia
 383 = { "Tebük" "Tebük" }

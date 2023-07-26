@@ -746,7 +746,7 @@
 4314 = { "Nissa" "Nissa" } #Nevsehir
 4315 = { "Argiropoli" "Argiropoli" } #Gumushane
 5130 = { "Paleocastro" "Paleocastro" } #Balikesir
-5131 = { "Adramitto" "Adramitto" } #Ayvalik
+#5131 = { "Adramitto" "Adramitto" } #Ayvalik
 5134 = { "Caria" "Alicarnasso" } #Bodrum
 5135 = { "Zefirio" "Zefirio" } #Mersin
 5137 = { "Tavio" "Tavio" } #Yozgat
@@ -776,7 +776,7 @@
 6013 = { "Antifilo" "Antifilo" } #Andifli
 6014 = { "Bari di Pisidia" "Bari di Pisidia" } #Isparta
 6016 = { "Eraclea Pontica" "Eraclea Pontica" } #Eregli
-6018 = { "Amorio" "Amorio" } #Hergenkale
+#6018 = { "Amorio" "Amorio" } #Hergenkale
 6019 = { "Filomelio" "Filomelio" } #Aksehir
 6020 = { "Mistia" "Mistia" } #Beysehir
 6021 = { "Germanicopoli" "Germanicopoli" } #Ermenek

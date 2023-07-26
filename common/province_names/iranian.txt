@@ -255,7 +255,7 @@
 2305 = "Erzincan"
 3248 = "Lazistan"
 5130 = "Karasi"
-5131 = "Ayvalik"
+#5131 = "Ayvalik"
 4308 = "Denizli"
 4311 = "Kütahya"
 5134 = "Bodrum"

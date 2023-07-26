@@ -96,7 +96,7 @@
 4311 = { "Kütahya" "Kütahya" } #
 4339 = { "Gelon" "Gelon" } #
 4343 = { "Termiz" "Termiz" } #
-5131 = { "Ayvalik" "Ayvalik" } #
+#5131 = { "Ayvalik" "Ayvalik" } #
 5156 = { "Biga" "Biga" } #
 5157 = { "Izniq" "Izniq" } #
 5164 = { "Karabük" "Karabük" } #

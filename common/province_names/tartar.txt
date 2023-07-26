@@ -864,7 +864,7 @@
 4701 = { "Korinth" "Korinth" } #
 4704 = { "Tirnovo" "Tirnovo" } #
 4706 = { "Tulçä" "Tulçä" } #
-5131 = { "Ayvali" "Ayvali" } #
+#5131 = { "Ayvali" "Ayvali" } #
 5151 = { "Baiburt" "Baiburt" } #
 5156 = { "Biga" "Biga" } #
 5157 = { "Iznik" "Iznik" } #
