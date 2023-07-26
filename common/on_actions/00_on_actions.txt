@@ -1273,8 +1273,8 @@ on_monarch_death = {
 	}
 	burgundian_inheritance_start_effect = yes
 	ladislaus_postumus_king_died_effect = yes
-	choc_FrederickIII_dies_first = yes	#BT
-	choc_AlbrechtVI_dies_first = yes	#BT
+	BT_AU_FrederickIII_dies_first = yes	#BT
+	BT_AU_AlbrechtVI_dies_first = yes	#BT
 	joan_de_trastamara_king_died_effect = yes
 	#BT
 	#if = {
