@@ -2,7 +2,7 @@
 -- sorted alphabetically
 -- do NOT re-sort!
 
-NDefines.NGovernment.CENTRALIZE_STATE_YEARS = 0 -- For testing purposes.
+-- NDefines.NGovernment.CENTRALIZE_STATE_YEARS = 0 -- For testing purposes.
 
 NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25 -- BT changed from 75 to 25 because more provinces making dev per province much less. //Dub
 NDefines.NAI.CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE = 1			-- from 3
