@@ -2249,10 +2249,11 @@ expanded_infrastructure = {
 #Tall players have probably way more governing capacity than they need, but what they do need is more abilities to develop their nation.
 #I have shuffled some modifiers from expand infrastructure over to centralize state, as I feel they make more sense here than above, plus a couple of new ones.
 #Some other mechanics of this button:
-#This button can be clicked any number of times and costs 50 reform progress and 50 admin points to click.
+#The button can be clicked up to 5 times for for the highest dev province in the state, and the modifiers are not state-wide by default, instead applying to the highest dev province in the state.
+#This button can therefore theoretically be clicked any number of times if you dev a province to become highest in the state, and costs 50 reform progress and 50 admin points to click.
 #There is a government reform that refunds half this cost upon clicking (I.e 25 reform progress and 25 admin points).
 #We have added a +20% cost to this modifier, meaning each additional click costs 10 more reform progress and admin points.
-centralize_state = {
+centralize_state = { #This modifier also gets applied in all other provinces of the state as part of on_actions.
 	#statewide_governing_cost = -0.2 #BT Cut for balance
 	local_build_cost = -0.1 #BT added, moved from expanded_infrastructure.
 	local_build_time = -0.1 #BT added, moved from expanded_infrastructure.
