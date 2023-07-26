@@ -38,7 +38,7 @@ country_event = {                         #The discovery of amalgamation
 	fire_only_once = yes
 	
 	trigger = {
-		set_global_flag = bt_great_bullion_famine_over
+		has_global_flag = bt_great_bullion_famine_over
 		is_year = 1500
 		OR = {
 			owns = 4239
