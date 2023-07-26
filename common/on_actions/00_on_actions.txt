@@ -6105,22 +6105,6 @@ on_centralized_state = {
                 duration = -1
             }
         }
-		if = {
-			limit = {
-				has_province_modifier = bt_centralize_state_provinces
-			}
-			extend_province_modifier = { 
-				name = bt_centralize_state_provinces
-				duration = -1
-			}
-		}
-		else = {
-			add_province_modifier = { 
-				name = bt_centralize_state_provinces 
-				duration = -1
-				hidden = yes
-			}
-		}
 	}
 	if = {
 		limit = {
