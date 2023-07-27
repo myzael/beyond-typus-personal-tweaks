@@ -3933,46 +3933,126 @@ poland_sca_slot_5_branching_lit_hre = {
 			}
 			west_dniepr_area = {
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			east_dniepr_area = {
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			podolia_volhynia_area = {
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			yedisan_area = {	#BT added to make it the same provinces as vanilla all these are Harbivore
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			2406 = {				#BT added to make it the same provinces as vanilla 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			7199 = {			#BT added to make it the same provinces as vanilla 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			7251 = {			#BT added to make it the same provinces as vanilla 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			7196 = {			#BT added to make it the same provinces as vanilla 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			7198 = {			#BT added to make it the same provinces as vanilla 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			3243 = {			#BT added to make it the same provinces as vanilla 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			# 282 = { 
@@ -4255,7 +4335,6 @@ poland_sca_slot_5_branching_lit_hre = {
 						add_prosperity = 15 
 					}
 				}
-				
 			}
 			emperor = {
 				country_event = { id = flavor_pol.33 } 
@@ -4283,17 +4362,25 @@ poland_sca_slot_5_branching_lit_hre = {
 			}
 			development_in_provinces = {
 				area = lithuania_area
-				value = 50 
+				value = 72  			#BT changed to be correct
 			}
 			development_in_provinces = {
 				area = smolensk_area 
-				value = 50 
+				value = 84 			#BT changed to be correct
+			}
+			development_in_provinces = {	#BT Added to better represent the lituanian culture provinces
+				area = trakai_area 
+				value = 72 			#BT changed to be correct
 			}
 			lithuania_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
 			smolensk_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			trakai_area = {	#BT Added to better represent the lituanian culture provinces
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
@@ -4308,12 +4395,13 @@ poland_sca_slot_5_branching_lit_hre = {
 			}
 			272 = { 
 				country_or_non_sovereign_subject_holds = ROOT 
-				num_of_buildings_in_province = 4 
+				num_of_buildings_in_province = 3#BT Lowered from 4 to account from the dev requirement 
+				development = 25				#BT Added seems fair enough to create a high dev province here
 			}
 			is_elector = yes 
 			has_global_modifier_value = {
 				which = diplomatic_reputation 
-				value = 6 
+				value = 6
 			}
 			legitimacy_equivalent = 95 
 			OR = {
@@ -4324,7 +4412,7 @@ poland_sca_slot_5_branching_lit_hre = {
 				}
 			}
 		}
-		effect = { 
+		effect = {
 			add_country_modifier = {
 				name = pol_efficient_taxation_lit_lands_modifier
 				duration = 5475
@@ -4472,58 +4560,174 @@ poland_sca_slot_5_branching_lit_east = {
 						area = west_dniepr_area
 						area = east_dniepr_area
 						area = podolia_volhynia_area
+						area = yedisan_area
+						province_id = 2406
+						province_id = 7199
+						province_id = 7251
+						province_id = 7196
+						province_id = 7198
+						province_id = 3243
 					}
 					NOT = { 
 						num_of_times_improved = 1
 					}
 				}
-				AND = {
-					OR = {
-						province_id = 282
-						province_id = 283
-						province_id = 2406
-					}
-					NOT = { 
-						num_of_times_improved = 2 
-					}
-				}
+				# AND = {
+					# OR = {
+						# province_id = 282
+						# province_id = 283
+						# province_id = 2406
+					# }
+					# NOT = { 
+						# num_of_times_improved = 2 
+					# }
+				# }
 			}
 		}	
 		position = 2 
-		trigger = { 
+		trigger = {
 			west_dniepr_area = {
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			east_dniepr_area = {
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
 			podolia_volhynia_area = {
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
 				num_of_times_improved = 1 
 			}
-			282 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-				num_of_times_improved = 2 
+			yedisan_area = {	#BT added to make it the same provinces as vanilla all these are Harbivore
+				type = all 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+				num_of_times_improved = 1 
 			}
-			283 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-				num_of_times_improved = 2 
+			2406 = {				#BT added to make it the same provinces as vanilla 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+				num_of_times_improved = 1 
 			}
-			2406 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-				num_of_times_improved = 2 
+			7199 = {			#BT added to make it the same provinces as vanilla 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+				num_of_times_improved = 1 
 			}
+			7251 = {			#BT added to make it the same provinces as vanilla 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+				num_of_times_improved = 1 
+			}
+			7196 = {			#BT added to make it the same provinces as vanilla 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+				num_of_times_improved = 1 
+			}
+			7198 = {			#BT added to make it the same provinces as vanilla 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+				num_of_times_improved = 1 
+			}
+			3243 = {			#BT added to make it the same provinces as vanilla 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+				num_of_times_improved = 1 
+			}
+			# 282 = { 
+				# country_or_non_sovereign_subject_holds = ROOT 
+				# num_of_times_improved = 2 
+			# }
+			# 283 = { 
+				# country_or_non_sovereign_subject_holds = ROOT 
+				# num_of_times_improved = 2 
+			# }
+			# 2406 = { 
+				# country_or_non_sovereign_subject_holds = ROOT 
+				# num_of_times_improved = 2 
+			# }
 			if = {
 				limit = { has_dlc = "Leviathan" }
-				280 = { 
+				280 = { 	#Kyiv
 					OR = {
 						AND = {
-							num_of_times_improved = 5 
+							num_of_times_improved = 10	#Dev doubled for BT Harbivore
 							has_tax_building_trigger = yes 
 						}
 						custom_trigger_tooltip = {
@@ -4541,30 +4745,141 @@ poland_sca_slot_5_branching_lit_east = {
 						}
 					}
 				}
-			}
-			else = {
-				280 = {
-					num_of_times_improved = 5 
-					has_tax_building_trigger = yes 
+				else = {
+					280 = {
+						num_of_times_improved = 10	#BT Doubled
+						has_tax_building_trigger = yes 
+					}
 				}
 			}
 		}
-		effect = { 
+		effect = {
 			if = {
 				limit = {
 					west_dniepr_area = {
 						type = all 
-						owned_by = LIT 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
 					}
 					east_dniepr_area = {
-						type = all
-						owned_by = LIT 
+						type = all 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
 					}
 					podolia_volhynia_area = {
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
 					}
-					LIT = { is_subject_of = ROOT }
+					yedisan_area = {	#BT added to make it the same provinces as vanilla all these are Harbivore
+						type = all 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
+					}
+					2406 = {				#BT added to make it the same provinces as vanilla 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
+					}
+					7199 = {			#BT added to make it the same provinces as vanilla 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
+					}
+					7251 = {			#BT added to make it the same provinces as vanilla 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
+					}
+					7196 = {			#BT added to make it the same provinces as vanilla 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
+					}
+					7198 = {			#BT added to make it the same provinces as vanilla 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
+					}
+					3243 = {			#BT added to make it the same provinces as vanilla 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+						num_of_times_improved = 1 
+					}
 				}
 				country_event = { id = flavor_pol.32 } 
 			}
@@ -4599,6 +4914,60 @@ poland_sca_slot_5_branching_lit_east = {
 						add_prosperity = 15 
 					}
 				}
+				yedisan_area = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				2406 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				7199 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				7251 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+				}
+				7196 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+				}
+				7198 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+				}
+				3243 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+				}
 			}
 		}				
 	}
@@ -4611,22 +4980,34 @@ poland_sca_slot_5_branching_lit_east = {
 			OR = {
 				area = smolensk_area 
 				area = lithuania_area 
+				area = trakai_area 	#BT Added to better represent the lituanian culture provinces
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { development = 10 }
+				NOT = { development = 12 }				#BT Only slightly increased from 10 to make more fair given increased province count
+			}
+			NOT = {
+				272 = {
+					num_of_buildings_in_province = 3#BT Lowered from 4 to account from the dev requirement 
+					development = 25				#BT Added seems fair enough to create a high dev province here
+				}
 			}
 		}
 		trigger = { 
 			lithuania_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT
-				development = 10 
+				development = 12				#BT Only slightly increased from 10 to make more fair given increased province count
 			}
 			smolensk_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
-				development = 10
+				development = 12				#BT Only slightly increased from 10 to make more fair given increased province count
+			}
+			trakai_area = {			#BT Added to better represent the lituanian culture provinces
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+				development = 12				#BT Only slightly increased from 10 to make more fair given increased province count
 			}
 			if = {
 				limit = {
@@ -4638,8 +5019,8 @@ poland_sca_slot_5_branching_lit_east = {
 				}
 			}
 			272 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-				num_of_buildings_in_province = 4 
+				num_of_buildings_in_province = 3#BT Lowered from 4 to account from the dev requirement 
+				development = 25				#BT Added seems fair enough to create a high dev province here
 			}
 		}
 		effect = { 
@@ -4839,7 +5220,7 @@ poland_sca_slot_5_branching_hre_west = {
 					tooltip = 6_dip_rep_tt
 					has_global_modifier_value = {
 						which = diplomatic_reputation 
-						value = 6 
+						value = 6
 					}
 				}
 				power_projection = 70

@@ -2837,7 +2837,7 @@ country_event = { #Negotiations of Lublin
 			cede_province = ROOT 
 			remove_core = LIT 
 		}
-		yedisan_area = {
+		yedisan_area = {	#BT added to follow vanilla provinces
 			limit = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 
@@ -2852,8 +2852,9 @@ country_event = { #Negotiations of Lublin
 			cede_province = ROOT 
 			remove_core = LIT 
 		}
-		2406 = {
+		lower_dnieper_area = {	#BT added to follow vanilla provinces
 			limit = {
+				province_id = 2406
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 
 					AND = {
@@ -2867,68 +2868,13 @@ country_event = { #Negotiations of Lublin
 			cede_province = ROOT 
 			remove_core = LIT 
 		}
-		7199 = {
+		zaporizhia_area  = {	#BT added to follow vanilla provinces
 			limit = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT 
-					AND = {
-						owned_by = KIE
-						KIE = {
-							is_subject_of = LIT
-						}
-					}
-				}
-			}
-			cede_province = ROOT 
-			remove_core = LIT 
-		}
-		7251 = {
-			limit = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT 
-					AND = {
-						owned_by = KIE
-						KIE = {
-							is_subject_of = LIT
-						}
-					}
-				}
-			}
-			cede_province = ROOT 
-			remove_core = LIT 
-		}
-		7196 = {
-			limit = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT 
-					AND = {
-						owned_by = KIE
-						KIE = {
-							is_subject_of = LIT
-						}
-					}
-				}
-			}
-			cede_province = ROOT 
-			remove_core = LIT 
-		}
-		7198 = {
-			limit = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT 
-					AND = {
-						owned_by = KIE
-						KIE = {
-							is_subject_of = LIT
-						}
-					}
-				}
-			}
-			cede_province = ROOT 
-			remove_core = LIT 
-		}
-		3243 = {
-			limit = {
+				NOT = { province_id = 2411 }
+				NOT = { province_id = 7257 }
+				NOT = { province_id = 7202 }
+				NOT = { province_id = 3302 }
+				NOT = { province_id = 7204 }
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 
 					AND = {

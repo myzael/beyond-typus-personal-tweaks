@@ -2282,7 +2282,7 @@ request_access_to_modern_ideas = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = num_of_loans
+				value = trigger_value:num_of_loans
 			}			
 			multiply_variable = {
 				which = ai_value
@@ -2614,7 +2614,7 @@ share_modern_ideas = {
 			}
 			export_to_variable = {
 				variable_name = ai_value
-				value = num_of_loans
+				value = trigger_value:num_of_loans
 			}			
 			multiply_variable = {
 				which = ai_value
