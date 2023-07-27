@@ -22,6 +22,7 @@
  CALL_FAVORS_COST_2:0 "This will cost you §Y20§! favors."
  CANT_PRESS_SAILORS_TOO_FEW:0 "You can't press sailors from a subject nation, if they have less than $NEED|Y$ of their sailors. They currently have $CURR|Y$."
  CENTRALIZE_STATE_DESC:6 "§YCentralize State§!\nSpend $COST|Y$ of government progress and $POWER_COST|Y$£adm£ to centralize the $STATE|Y$ in the most developed province, giving the following bonuses to the state:\nLocal Local Build Cost: §G-10.0%§!\nLocal Build Time: §G-10.0%§!\nRegiment Recruitment Speed: §G-10.0%§!\nLocal Shipbuilding Speed: §G-10.0%§!\nLocal Culture Conversion Time: §G-10.0%§!\nLocal Missionary Strength: §G-1.0%§!\nLocal Autonomy Change: §G-0.025§!\nState Maintenance: §G-20.0%§!\nLocal Prosperity Growth: §G+0.25§!\nCost to Centralize State: §R+20.0%§!\n\nIt will take $YEARS|0Y$ years."
+ CONFIRM_CENTRALIZE_STATE_TEXT:5 "Are you sure you want to spend $COST|0Y$ of government progress and $POWER_COST|Y$£adm£ to centralize the $STATE|Y$ in the province of $PROVINCE|Y$?\nThe $STATE|Y$ will gain the following bonuses:\nLocal Local Build Cost: §G-10.0%§!\nLocal Build Time: §G-10.0%§!\nRegiment Recruitment Speed: §G-10.0%§!\nLocal Shipbuilding Speed: §G-10.0%§!\nLocal Culture Conversion Time: §G-10.0%§!\nLocal Missionary Strength: §G-1.0%§!\nLocal Autonomy Change: §G-0.025§!\nState Maintenance: §G-20.0%§!\nLocal Prosperity Growth: §G+0.25§!\nCost to Centralize State: §R+20.0%§!\n\nIt will take $YEARS|0Y$ years."
  CHAKKAPHAT:0 "Chakkaphat"
  CHAKKAPHATNI:0 "Chakkaphatni"
  CHAKKRAPHAT:0 "Chakkraphat"
@@ -689,6 +690,10 @@
  emp_hab_take_salzburg_title:0 "Assert our Borders"
  emp_hab_take_salzburg_desc:0 "There are several small counties and bishropics on our borders paying us lip service. If we wish to strengthen Austria, we should reassert control over these lands and fully unite Austria."
  centralization_effort:0 "Centralization Effort"
+ #Below two are same as vanilla, except dev number doubled from 100 to 200.
+ HUSSARS_DESC:1 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
+ custom_can_recruit_hussars_desc:0 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
+ 
  #BT Vanilla bugfixes
  ENACT_REFORM_EFFECT_LOCK_WARNING:0 "\n(§RThis is a locked reform. You will not be able to switch to other reforms on the same Tier.§!)\n"
  flavor_teu.3.b:0 "Invite the the teutonic order to rule over ducal prussia."

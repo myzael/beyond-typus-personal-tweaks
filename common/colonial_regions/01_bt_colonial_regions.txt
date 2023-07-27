@@ -259,7 +259,7 @@ colonial_hudson_bay = {
 
 	# Specific
 	names = {
-		trigger = { culture_group = portugese }
+		trigger = { primary_culture = portugese }
 		name = "COLONIAL_HUDSON_BAY_PT"
 	}
 	names = {

@@ -901,7 +901,7 @@
 3134 = { "Apenrade" "Apenrade" } #
 4113 = { "Uleoburg" "Uleoburg" } #
 4123 = { "Birkenland" "Tammerfors" }
-4124 = { "Ilomantsi" "Ilomantsi" 
+4124 = { "Ilomantsi" "Ilomantsi" }
 4142 = { "Arenhusen" "Arenhusen" } #
 7766 = { "Helsingburg" "Helsingburg" } #
 7770 = { "Viburg" "Viburg" } #
