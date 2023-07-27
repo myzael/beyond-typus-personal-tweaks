@@ -9,7 +9,7 @@ owner = YOL
 controller = YOL
 
 #Demographics
-culture = gunwinyguan
+culture = yolngu
 religion = dreamtime
 native_size = 5
 native_ferocity = 1

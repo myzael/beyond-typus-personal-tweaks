@@ -6,7 +6,7 @@
 capital = "Wunambul"
 
 #Demographics
-culture = gunwinyguan
+culture = nyulnyulic
 religion = dreamtime
 native_size = 1
 native_ferocity = 1

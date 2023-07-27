@@ -9,7 +9,7 @@ owner = TIW
 controller = TIW
 
 #Demographics
-culture = gunwinyguan
+culture = tiwi
 religion = dreamtime
 native_size = 5
 native_ferocity = 1

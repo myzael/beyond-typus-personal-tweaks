@@ -9,7 +9,7 @@ owner = LAR
 controller = LAR
 
 #Demographics
-culture = gunwinyguan
+culture = limilngan
 religion = dreamtime
 native_size = 5
 native_ferocity = 1

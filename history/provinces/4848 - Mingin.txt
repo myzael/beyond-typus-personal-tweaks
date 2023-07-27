@@ -6,7 +6,7 @@
 capital = "Mingin"
 
 #Demographics
-culture = paman
+culture = tangkic
 religion = dreamtime
 native_size = 2
 native_ferocity = 1

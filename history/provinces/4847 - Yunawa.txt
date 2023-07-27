@@ -9,7 +9,7 @@ owner = YNU
 controller = YNU
 
 #Demographics
-culture = paman
+culture = yanyuwa
 religion = dreamtime
 native_size = 2
 native_ferocity = 1

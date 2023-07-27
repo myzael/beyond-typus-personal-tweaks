@@ -8622,35 +8622,6 @@ aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16
 			Truganina Truganini Truganner Walangkura Watorea Wintjiya Yakari Yalamay Yinarupa Yindi
 		}
 	}
-	gunwinyguan = {
-		primary = LAR
-		male_names = {
-			#pre-mandala names
-			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah
-			Jerara Jirra Kalti Maka Mallee Mandu Marron Matari Mearann Minar Miro Mogo Monti Mowan Odern Orad Parri
-			Pindan Pindari Taree Tewart Tuart Uwan Warra Warrain
-
-			#shared names
-			Babawar Bambam Binyan Birrinbirrin Bunji Cambul Darana Dayindi Djarrjuntjun Dural Gabii Gambuu Marrii
-			Minygululu Nadi Nullah Nyakul Nyukuti Omeo Ridjimiraril Tidam Toba Umbarra Waku Watorea Yarran Yeeralparil
-			Yibaay Yileen
-		}
-		female_names = {
-			#pre-mandala names
-			Akala Alba Alinga Alkina Alkira Allirea Allora Allunga Amarina Anka Apanie Coorah Coreen Corowa Darri
-			Ekala Elouera Gedala Gheera Kala Kamballa Karri Karuah Katyin Kayle Kiah Kimba Kirra Kolora
-			Koorine Maiya Mallana Manilla Manya Marinna Marlee Mayra Meera Merinda Merindah Neridah Niley Noora Olba Olono
-			Oola Orana Orani Pangari Pengana Pierah Weema Wihelma Wilga Wilhemine Willa Wilmette Wyla Wyuna Yani Yara Yaralla
-
-			#shared names
-			Alkawari Allira Angoona Anmari Babawar Bando Binda Binmarray Biralee Bunji Chumbuli Colba Darana
-			Illarah Karri Kirrili Kyeema Lilardia Maroochy Mirrin Munandjarra Myaree Naata Ngoia Ningali Nowalingu
-			Nymbulda Nyurapayia Oodgeroo Papalya Parara Patiseba Payu Pirrmangka Takariya Talei Tallara Tatali Tjunkiya
-			Truganina Truganini Truganner Walangkura Watorea Wintjiya Yakari Yalamay Yinarupa Yindi
-
-			Adaliya Banalandju Jannali
-		}
-	}
 	palawa = {
 		primary = PLW
 		male_names = {
@@ -8966,7 +8937,7 @@ aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16
 	#	female_names = {
 	#	}
 	}
-	aranda = {
+	wati = {
 	#	#primary = 
 	#	dynasty_names = {
 	#	}
@@ -8975,7 +8946,7 @@ aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16
 	#	female_names = {
 	#	}
 	}
-	wati = {
+	aranda = {
 	#	#primary = 
 	#	dynasty_names = {
 	#	}
@@ -9056,13 +9027,278 @@ aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16
 	#	female_names = {
 	#	}
 	}
-	
+	warumungu = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	yanyuwa = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	yolngu = {
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
 	dynasty_names = {
 		Barak Bennelong Billibellary Calyute Derrimut Dundalli Jackey Jandamarra Lanne Mannalargenna Mokare Mullagh Musquito Pemulwuy
 		Tullamareena Wonga Yagan Wylle Napaljarri Tjakamarra Tjapaltjarri Gurruwiwi Nungurrayi Mununggurr Namok Milyika Ginibi Wagan
 	}
 }
 
+#(Hadiros) Refers to essentially all non Pama-Nyungan aboriginals, note that a few distinct language groups are represented here
+northern_aboriginal_australian = {
+	gunwinyguan = {	#Macro-Gunwinyguan
+		primary = LAR
+		male_names = {
+			#pre-mandala names
+			Adoni Akama Allambee Amaroo Apari Araluen Araluen Arunta Balun Balunn Dural Ganan Gelar Girra Jarrah
+			Jerara Jirra Kalti Maka Mallee Mandu Marron Matari Mearann Minar Miro Mogo Monti Mowan Odern Orad Parri
+			Pindan Pindari Taree Tewart Tuart Uwan Warra Warrain
+
+			#shared names
+			Babawar Bambam Binyan Birrinbirrin Bunji Cambul Darana Dayindi Djarrjuntjun Dural Gabii Gambuu Marrii
+			Minygululu Nadi Nullah Nyakul Nyukuti Omeo Ridjimiraril Tidam Toba Umbarra Waku Watorea Yarran Yeeralparil
+			Yibaay Yileen
+		}
+		female_names = {
+			#pre-mandala names
+			Akala Alba Alinga Alkina Alkira Allirea Allora Allunga Amarina Anka Apanie Coorah Coreen Corowa Darri
+			Ekala Elouera Gedala Gheera Kala Kamballa Karri Karuah Katyin Kayle Kiah Kimba Kirra Kolora
+			Koorine Maiya Mallana Manilla Manya Marinna Marlee Mayra Meera Merinda Merindah Neridah Niley Noora Olba Olono
+			Oola Orana Orani Pangari Pengana Pierah Weema Wihelma Wilga Wilhemine Willa Wilmette Wyla Wyuna Yani Yara Yaralla
+
+			#shared names
+			Alkawari Allira Angoona Anmari Babawar Bando Binda Binmarray Biralee Bunji Chumbuli Colba Darana
+			Illarah Karri Kirrili Kyeema Lilardia Maroochy Mirrin Munandjarra Myaree Naata Ngoia Ningali Nowalingu
+			Nymbulda Nyurapayia Oodgeroo Papalya Parara Patiseba Payu Pirrmangka Takariya Talei Tallara Tatali Tjunkiya
+			Truganina Truganini Truganner Walangkura Watorea Wintjiya Yakari Yalamay Yinarupa Yindi
+
+			Adaliya Banalandju Jannali
+		}
+	}
+	marran = {	#Macro-Gunwinyguan
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	maningrida = {	#Possibly Macro-Gunwinyguan
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	tangkic = {	#Thought to be a somewhat close relative to Pama-Nyungan, but distinct enough to be separate. Thought to form a group with Garawan.
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	garawan = {	#Thought to be a somewhat close relative to Pama-Nyungan, but distinct enough to be separate. Thought to form a group with Tangkic.
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	ngurlun = {	#Mirndi Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	jingulu = {	#Mirndi Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	yirram = {	#Mirndi Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	marranj = {	#Western Daly (geographic)
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	miriwoong = {	#Jarrakan Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	kija = {	#Jarrakan Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	wunambal = {	#Worrorran Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}	
+	ungarinjin = {	#Worrorran Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	worora = {	#Worrorran Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	guniyandi = {	#Bunuban Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	nyulnyulic = {	#Nyulnyulan Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	dyukun = {	#Nyulnyulan Language
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	iwaidjan = {	#Isolate or possibly Macro-Gunwinyguan
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	giimbiyu = {	#Isolate or possibly Macro-Gunwinyguan
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}`
+	}
+	wardaman = {	#Language Isolate
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	tiwi = {	#Language Isolate
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	limilngan = {	#Language Isolate
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	kungarakany = {	#Language Isolate
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+	wagiman = {	#Language Isolate
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
+}
 eastern_aryan = {
 	graphical_culture = indiangfx
 
