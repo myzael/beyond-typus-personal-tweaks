@@ -1112,7 +1112,7 @@ byz_pp_east = {
 				area = karaman_area
 				area = cukurova_area
 				area = dulkadir_area
-				area = lydia_area
+				#area = lydia_area #BT Removed
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1145,10 +1145,10 @@ byz_pp_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			lydia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# lydia_area = { #BT Removed
+				# type = all
+				# country_or_non_sovereign_subject_holds = ROOT
+			# }
 		}
 		effect = {
 			rum_area = {

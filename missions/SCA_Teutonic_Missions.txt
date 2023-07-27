@@ -34,13 +34,13 @@ teu_hre_protection_mission_slot = {
 					who = emperor
 					value = 100
 				}
+				any_neighbor_province = { 			#BT added to keep consistant with normal methods of joining the hre. #Harbivore
+					is_part_of_hre = yes
+				}
 				if = {
 					limit = { has_dlc = "Emperor" }
 					NOT = { active_imperial_incident = any }
 				}
-			}
-			any_neighbor_province = { 			#BT added to keep consistant with normal methods of joining the hre. #Harbivore
-				is_part_of_hre = yes
 			}
 			else = {
 				stability = 1
