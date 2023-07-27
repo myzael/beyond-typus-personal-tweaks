@@ -39,6 +39,9 @@ teu_hre_protection_mission_slot = {
 					NOT = { active_imperial_incident = any }
 				}
 			}
+			any_neighbor_province = { 			#BT added to keep consistant with normal methods of joining the hre. #Harbivore
+				is_part_of_hre = yes
+			}
 			else = {
 				stability = 1
 			}

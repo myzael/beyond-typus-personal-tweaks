@@ -3946,24 +3946,53 @@ poland_sca_slot_5_branching_lit_hre = {
 				country_or_non_sovereign_subject_holds = ROOT
 				num_of_times_improved = 1 
 			}
-			282 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-				num_of_times_improved = 2 
+			yedisan_area = {	#BT added to make it the same provinces as vanilla all these are Harbivore
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 1 
 			}
-			283 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-				num_of_times_improved = 2 
+			2406 = {				#BT added to make it the same provinces as vanilla 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 1 
 			}
-			2406 = { 
-				country_or_non_sovereign_subject_holds = ROOT 
-				num_of_times_improved = 2 
+			7199 = {			#BT added to make it the same provinces as vanilla 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 1 
 			}
+			7251 = {			#BT added to make it the same provinces as vanilla 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 1 
+			}
+			7196 = {			#BT added to make it the same provinces as vanilla 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 1 
+			}
+			7198 = {			#BT added to make it the same provinces as vanilla 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 1 
+			}
+			3243 = {			#BT added to make it the same provinces as vanilla 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved = 1 
+			}
+			# 282 = { 
+				# country_or_non_sovereign_subject_holds = ROOT 
+				# num_of_times_improved = 2 
+			# }
+			# 283 = { 
+				# country_or_non_sovereign_subject_holds = ROOT 
+				# num_of_times_improved = 2 
+			# }
+			# 2406 = { 
+				# country_or_non_sovereign_subject_holds = ROOT 
+				# num_of_times_improved = 2 
+			# }
 			if = {
 				limit = { has_dlc = "Leviathan" }
 				280 = { 
 					OR = {
 						AND = {
-							num_of_times_improved = 5 
+							num_of_times_improved = 10 			#BT Doubled Harbivore
 							has_tax_building_trigger = yes 
 						}
 						custom_trigger_tooltip = {
@@ -4005,19 +4034,121 @@ poland_sca_slot_5_branching_lit_hre = {
 			}
 		}
 		effect = { 
-			if = {
+			if = {						#BT Edited to make the same as Vanilla provinces also changed to be inclusive with Kiev tag
 				limit = {
 					west_dniepr_area = {
 						type = all 
-						owned_by = LIT 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
 					}
 					east_dniepr_area = {
 						type = all
-						owned_by = LIT 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
 					}
 					podolia_volhynia_area = {
 						type = all 
-						country_or_non_sovereign_subject_holds = ROOT 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+					}
+					yedisan_area = {									#BT changed Harbivore
+						type = all 
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+					}
+					2406 = {											#BT changed Harbivore
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+					}
+					7199 = {											#BT changed Harbivore
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+					}
+					7251 = {											#BT changed Harbivore
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+					}
+					7196 = {											#BT changed Harbivore
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+					}
+					7198 = {											#BT changed Harbivore
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
+					}
+					3243 = {											#BT changed Harbivore
+						OR = {
+							country_or_non_sovereign_subject_holds = ROOT 
+							AND = {
+								owned_by = KIE
+								KIE = {
+									is_subject_of = LIT
+								}
+							}
+						}
 					}
 					LIT = { is_subject_of = ROOT }
 				}
@@ -4054,6 +4185,77 @@ poland_sca_slot_5_branching_lit_hre = {
 						add_prosperity = 15 
 					}
 				}
+				yedisan_area = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				2406 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				7199 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				7251 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				7196 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				7198 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				3243 = {											#BT changed Harbivore
+					add_province_modifier = {
+						name = pol_prosperity_in_ukraine_modifier
+						duration = 7300 
+					}
+					if = {
+						limit = { has_dlc = "Mandate of Heaven" } 
+						add_prosperity = 15 
+					}
+				}
+				
 			}
 			emperor = {
 				country_event = { id = flavor_pol.33 } 

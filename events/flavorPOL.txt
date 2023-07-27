@@ -2790,50 +2790,185 @@ country_event = { #Negotiations of Lublin
 	is_triggered_only = yes 
 	
 	option = {
-		name = flavor_pol.32.a 
+		name = flavor_pol.32.a 						#BT Edited by Harbivore to make inline with Vanilla provinces
 		
 		west_dniepr_area = {
-			limit = { country_or_non_sovereign_subject_holds = ROOT } 
-			cede_province = ROOT 
-			remove_core = LIT
-		}
-		east_dniepr_area = {
-			limit = { country_or_non_sovereign_subject_holds = ROOT } 
-			cede_province = ROOT 
-			remove_core = LIT
-		}
-		podolia_volhynia_area = {
-			limit = { country_or_non_sovereign_subject_holds = ROOT }  
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+			}
 			cede_province = ROOT 
 			remove_core = LIT 
 		}
-		282 = {
-			if = { 
-				limit = {
-					NOT = { owned_by = ROOT }
+		east_dniepr_area = {
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
 				}
-				cede_province = ROOT 
-				remove_core = LIT
 			}
+			cede_province = ROOT 
+			remove_core = LIT 
 		}
-		283 = {
-			if = { 
-				limit = {
-					NOT = { owned_by = ROOT }
+		podolia_volhynia_area = {
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
 				}
-				cede_province = ROOT 
-				remove_core = LIT
 			}
+			cede_province = ROOT 
+			remove_core = LIT 
+		}
+		yedisan_area = {
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+			}
+			cede_province = ROOT 
+			remove_core = LIT 
 		}
 		2406 = {
-			if = { 
-				limit = {
-					NOT = { owned_by = ROOT }
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
 				}
-				cede_province = ROOT 
-				remove_core = LIT
 			}
+			cede_province = ROOT 
+			remove_core = LIT 
 		}
+		7199 = {
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+			}
+			cede_province = ROOT 
+			remove_core = LIT 
+		}
+		7251 = {
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+			}
+			cede_province = ROOT 
+			remove_core = LIT 
+		}
+		7196 = {
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+			}
+			cede_province = ROOT 
+			remove_core = LIT 
+		}
+		7198 = {
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+			}
+			cede_province = ROOT 
+			remove_core = LIT 
+		}
+		3243 = {
+			limit = {
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					AND = {
+						owned_by = KIE
+						KIE = {
+							is_subject_of = LIT
+						}
+					}
+				}
+			}
+			cede_province = ROOT 
+			remove_core = LIT 
+		}
+		# 282 = {	
+			# if = { 
+				# limit = {
+					# NOT = { owned_by = ROOT }
+				# }
+				# cede_province = ROOT 
+				# remove_core = LIT
+			# }
+		# }
+		# 283 = {
+			# if = { 
+				# limit = {
+					# NOT = { owned_by = ROOT }
+				# }
+				# cede_province = ROOT 
+				# remove_core = LIT
+			# }
+		# }
+		# 2406 = {
+			# if = { 
+				# limit = {
+					# NOT = { owned_by = ROOT }
+				# }
+				# cede_province = ROOT 
+				# remove_core = LIT
+			# }
+		# }
 		LIT = {
 			add_opinion = {
 				who = ROOT 
