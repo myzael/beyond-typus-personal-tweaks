@@ -164,6 +164,7 @@ NDefines.NEconomy.EXPELLED_MINORITY_DEV_BONUS_FACTOR = 0.2			-- reverted from 0p
 NDefines.NEconomy.EXPELLING_MINORITY_SETTLER_CHANCE_FACTOR = 0.001			-- from 0p001, was 0p003 from 0p005, reverted for similar reasoning to line above
 NDefines.NEconomy.GOLD_MINE_DEPLETION_CHANCE = 0.05			-- from 0p1
 NDefines.NEconomy.GOLD_MINE_DEPLETION_THRESHOLD = 2			-- from 1
+NDefines.NEconomy.MAX_BUILDING_SLOTS = 16						-- from 12
 NDefines.NEconomy.MISSIONARY_MAINTENANCE_DEVELOPMENT_CAP = 120			-- from 100
 NDefines.NEconomy.MISSIONARY_MAINTENANCE_DEVELOPMENT_FACTOR = 0.5			-- from 1p0
 NDefines.NEconomy.TRADE_CAPITAL_POWER = 5.0			-- BTAddOn changed from 5p0 Im seeing a lot of numbers I dont really like and I think this might help things along a bit Well see how it goes
