@@ -1870,7 +1870,7 @@ new_world_i = {
 				OR = {
 					AND = {
 						continent = europe
-						NOT = { technology_group = nomad_group }
+						NOT = { owner = { technology_group = nomad_group } }
 					}
 					owner = { technology_group = ottoman }
 				}

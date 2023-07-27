@@ -105,27 +105,27 @@ country_decisions = {
 					full_idea_group = humanist_ideas
 				}
 			}
-
-			modifier = {
-				factor = 1.15
-				enlightenment = 20
-			}
-			modifier = {
-				factor = 1.15
-				enlightenment = 40
-			}
-			modifier = {
-				factor = 1.15
-				enlightenment = 60
-			}
-			modifier = {
-				factor = 1.15
-				enlightenment = 80
-			}
-			modifier = {
-				factor = 1.5
-				enlightenment = 100
-			}
+			#I don't know who coded this, but this makes no sense. //Dub
+			#modifier = {
+			#	factor = 1.15
+			#	enlightenment = 20
+			#}
+			#modifier = {
+			#	factor = 1.15
+			#	enlightenment = 40
+			#}
+			#modifier = {
+			#	factor = 1.15
+			#	enlightenment = 60
+			#}
+			#modifier = {
+			#	factor = 1.15
+			#	enlightenment = 80
+			#}
+			#modifier = {
+			#	factor = 1.5
+			#	enlightenment = 100
+			#}
 			modifier = {
 				factor = 1.5
 				has_institution = enlightenment
@@ -405,27 +405,27 @@ country_decisions = {
 					value = 40
 				}
 			}
-
-			modifier = {
-				factor = 1.15
-				industrialization = 20
-			}
-			modifier = {
-				factor = 1.15
-				industrialization = 40
-			}
-			modifier = {
-				factor = 1.15
-				industrialization = 60
-			}
-			modifier = {
-				factor = 1.15
-				industrialization = 80
-			}
-			modifier = {
-				factor = 1.33
-				industrialization = 100
-			}
+			#Same here. No clue. //Dub
+			#modifier = {
+			#	factor = 1.15
+			#	industrialization = 20
+			#}
+			#modifier = {
+			#	factor = 1.15
+			#	industrialization = 40
+			#}
+			#modifier = {
+			#	factor = 1.15
+			#	industrialization = 60
+			#}
+			#modifier = {
+			#	factor = 1.15
+			#	industrialization = 80
+			#}
+			#modifier = {
+			#	factor = 1.33
+			#	industrialization = 100
+			#}
 			modifier = {
 				factor = 1.33
 				has_institution = industrialization

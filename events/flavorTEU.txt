@@ -374,25 +374,25 @@ country_event = {
 						transport = 0.2
 					}
 				}
-			}		
-			DNZ = {
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				infantry = 7827
-				cavalry = 7827
-				cavalry = 7827
-				cavalry = 7827
-				cavalry = 7827
 			}
+			7827 = {
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				infantry = DNZ
+				cavalry = DNZ
+				cavalry = DNZ
+				cavalry = DNZ
+				cavalry = DNZ
+			}	
 		}
 	}
 	
@@ -557,9 +557,7 @@ country_event = {
 		hidden_effect = {
 			remove_historical_rival = TEU
 			inherit = DNZ
-			41 = {
-				create_vassal = TEU
-			}
+			create_vassal = TEU
 			TEU = {
 				remove_historical_rival = POL
 				change_government = monarchy

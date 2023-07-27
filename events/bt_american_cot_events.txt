@@ -21,11 +21,14 @@ province_event = {
 			NOT = { is_tribal = yes }
 		}
 		NOT = { #Limit to a maximum of 7 CoTs per node.
-			calc_true_if = {
-				all_trade_node_member_province = { 
-					province_has_center_of_trade_of_level = 1
+			any_active_trade_node  = {	
+				calc_true_if = {
+						all_trade_node_member_province = { 
+							province_has_center_of_trade_of_level = 1
+						}
+					}
+					amount = 7
 				}
-				amount = 7
 			}
 		}
 		NOT = {	has_province_flag = bt_owner_denied_cot_in_province	} #For the player, should they decide that, no, this province is not worthy a CoT.

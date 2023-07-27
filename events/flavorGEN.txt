@@ -155,38 +155,44 @@ country_event = {
 				add_claim = TUR
 			}
 			151 = {
-				every_trade_node_member_province = {
-					limit = {
-						NOT = { region = anatolia_region }
-						OR = {
-							owned_by = GEN
-							owner = { is_subject_of = GEN }
+				any_active_trade_node = {
+					every_trade_node_member_province = {
+						limit = {
+							NOT = { region = anatolia_region }
+							OR = {
+								owned_by = GEN
+								owner = { is_subject_of = GEN }
+							}
 						}
+						add_claim = TUR
 					}
-					add_claim = TUR
 				}
 			}
 			330 = {
-				every_trade_node_member_province = {
-					limit = {
-						NOT = { region = anatolia_region }
-						OR = {
-							owned_by = GEN
-							owner = { is_subject_of = GEN }
+				any_active_trade_node = {
+					every_trade_node_member_province = {
+						limit = {
+							NOT = { region = anatolia_region }
+							OR = {
+								owned_by = GEN
+								owner = { is_subject_of = GEN }
+							}
 						}
+						add_claim = TUR
 					}
-					add_claim = TUR
 				}
 			}
 			285 = {
-				every_trade_node_member_province = {
-					limit = {
-						OR = {
-							owned_by = GEN
-							owner = { is_subject_of = GEN }
+				any_active_trade_node = {
+					every_trade_node_member_province = {
+						limit = {
+							OR = {
+								owned_by = GEN
+								owner = { is_subject_of = GEN }
+							}
 						}
+						add_claim = TUR
 					}
-					add_claim = TUR
 				}
 			}
 		}
