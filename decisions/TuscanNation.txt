@@ -49,6 +49,7 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = TUS
+			on_change_tag_effect = yes
 			#remove_non_electors_emperors_from_empire_effect = yes
 			tuscany_area = {
 				limit = { 
@@ -66,7 +67,7 @@ country_decisions = {
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
-				duration = 3650
+				duration = 7300
 			}
 			add_prestige = 10
 			if = {
@@ -77,11 +78,11 @@ country_decisions = {
 			}
 			set_country_flag = formed_tuscany_flag
 			hidden_effect = {
-				country_event = {
-					id = flavor_tus.2
-					days = 50
-					random = 20
-				}
+				country_event = { id = flavor_tus.2 days = 50 random = 20 }
+			}
+			if = {
+				limit = { has_dlc = "Emperor" }
+				swap_non_generic_missions = yes
 			}
 		}
 		ai_will_do = {

@@ -13,13 +13,9 @@ country_decisions = {
 			NOT = { exists = PLC }
 			NOT = { tag = HLR }
 			tag = POL
-			LIT = {
-				exists = yes
-				ai = yes
-				was_player = no
-			}
+			LIT = { exists = yes }
 			OR = {
-			ai = no
+				ai = no
 				AND = {
 					senior_union_with = LIT
 					LIT = { #This overlaps with allow for AI, is meant to negate do_not_integrate
@@ -44,8 +40,13 @@ country_decisions = {
 			LIT = { was_player = no }
 			LIT = {
 				NOT = { num_of_cities = 156 } #Keep this number the same as in potential. Original 31 +10
+				NOT = { liberty_desire = 25 } 
 			}
-			adm_tech = 10
+			if = {
+				limit = { has_country_flag = pol_tech_8_form_plc_flag }
+				adm_tech = 8
+			}
+			else = { adm_tech = 10 }
 			is_subject = no
 			is_nomad = no
 			stability = 1
@@ -59,11 +60,16 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PLC
+			on_change_tag_effect = yes
 			inherit = LIT
 			swap_non_generic_missions = yes
 			if = {
 				limit = { NOT = { accepted_culture = lithuanian } }
 				add_accepted_culture = lithuanian
+			}
+			add_country_modifier = {
+				name = plc_polish_lithuanian_union
+				duration = -1
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -119,11 +125,24 @@ country_decisions = {
 				}
 			}
 			random_owned_province = {
-				limit = { culture = polish }
+				limit = { OR = { culture = polish culture = polish_new } }
 				add_base_tax = 1
 			}
 			set_country_flag = formed_plc_flag
 			add_prestige = 25
+			if = { 
+				limit = { 
+					has_dlc = "Lions of the North"
+					NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+				}
+				complete_mission = pol_leverage_magnates
+				complete_mission = pol_great_sejm
+				complete_mission = plc_articles_agreement
+			}
+			if = {
+				limit = { has_idea_group = POL_ideas }
+				swap_ideas = yes
+			} 
 		}
 		ai_will_do = {
 			factor = 1
@@ -142,6 +161,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = PLC }
 			NOT = { tag = HLR }
 			tag = LIT
@@ -156,6 +179,7 @@ country_decisions = {
 					senior_union_with = POL
 					POL = { #This overlaps with allow for AI, is meant to negate do_not_integrate
 						NOT = { num_of_cities = 61 } #Keep this number the same as in allow. Original 14 +10   -Draiocht 1.27 brought this to 22 + 10, but 10.0 brings it to 41 + 20
+						NOT = { liberty_desire = 25 } 
 					}
 				}
 			}	
@@ -173,7 +197,10 @@ country_decisions = {
 			}
 		}
 		allow = {
-			POL = { NOT = { num_of_cities = 61 } } #Keep this number the same as in potential. Original 14+10
+			POL = { 
+				NOT = { num_of_cities = 61 } 
+				NOT = { liberty_desire = 25 }
+			} #Keep this number the same as in potential. Original 14+10
 			adm_tech = 10
 			is_subject = no
 			is_nomad = no
@@ -188,11 +215,37 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PLC
+			on_change_tag_effect = yes
+			if = { 
+				limit = { 
+					OR = { 
+						tag = LIT
+						primary_culture = lithuanian 
+					}
+				}
+				override_country_name = LPC
+				set_country_flag = is_LPC_flag
+			}
+			else = { restore_country_name = yes }
 			inherit = POL
+			set_country_flag = pol_chose_pu_flag
 			swap_non_generic_missions = yes
 			if = {
-				limit = { NOT = { accepted_culture = polish } }
-				add_accepted_culture = polish
+				limit = { has_updated_culture = { culture = slavic } }
+				if = {
+					limit = { NOT = { primary_culture = polish_new } }
+					change_primary_culture = polish_new
+				}
+			}
+			else = {
+				if = {
+					limit = { NOT = { primary_culture = polish } }
+					change_primary_culture = polish
+				}
+			}
+			add_country_modifier = {
+				name = plc_polish_lithuanian_union
+				duration = -1
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -253,6 +306,13 @@ country_decisions = {
 			}
 			set_country_flag = formed_plc_flag
 			add_prestige = 25
+			complete_mission = pol_leverage_magnates
+			complete_mission = pol_great_sejm
+			complete_mission = plc_articles_agreement
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			} 
 		}
 		ai_will_do = {
 			factor = 1
@@ -270,6 +330,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			NOT = { exists = PLC }
 			LIT = {
@@ -324,6 +388,19 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = PLC
+			on_change_tag_effect = yes
+			if = { 
+				limit = { 
+					OR = { 
+						tag = LIT 
+						primary_culture = lithuanian 
+					}
+				}
+				override_country_name = LPC
+				set_country_flag = is_LPC_flag
+			}
+			else = { restore_country_name = yes }
+			set_country_flag = pol_chose_pu_flag
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -331,11 +408,17 @@ country_decisions = {
 				PLC = { set_government_rank = 2 }
 			}
 			if = {
-				limit = {
-					NOT = { primary_culture = polish }
-					NOT = { accepted_culture = polish }
+				limit = { has_updated_culture = { culture = slavic } }
+				if = {
+					limit = { NOT = { primary_culture = polish_new } NOT = { accepted_culture = polish_new } }
+					change_primary_culture = polish_new
 				}
-				add_accepted_culture = polish
+			}
+			else = {
+				if = {
+					limit = { NOT = { primary_culture = polish } NOT = { accepted_culture = polish } }
+					change_primary_culture = polish
+				}
 			}
 			if = {
 				limit = {
@@ -343,6 +426,10 @@ country_decisions = {
 					NOT = { accepted_culture = lithuanian }
 				}
 				add_accepted_culture = lithuanian
+			}
+			add_country_modifier = {
+				name = plc_polish_lithuanian_union
+				duration = -1
 			}
 			if = {
 				limit = {
@@ -398,11 +485,22 @@ country_decisions = {
 			}
 			set_country_flag = formed_plc_flag
 			add_prestige = 25
+			if = { 
+				limit = { 
+					NOT = { was_tag = POL } 
+				}
+				complete_mission = pol_leverage_magnates
+				complete_mission = pol_great_sejm
+				complete_mission = plc_articles_agreement
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		ai_importance = 200
 	}
-	
 }

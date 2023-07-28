@@ -89,7 +89,7 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			add_country_modifier = {
-				name = centralization_modifier
+				name = "centralization_modifier"
 				duration = 7300
 			}
 			#Rank + Prestige
