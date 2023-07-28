@@ -673,10 +673,24 @@
  #BT15.0.1
  flavor_cri.2.d:0 "With the death of Haji Giray the young Crimean Khanate must for the first time find its feet without it's dynamic founder. [From.Monarch.GetName] has managed to secure the Crimean throne but [From.Monarch.GetHerHis] position is very weak. Ambitious siblings have not given up on claiming Haji's legacy for themselves and to the east and west hungry neighbors are eyeing the Crimean lands greedily. In order to stabilize the situation [From.Monarch.GetName] has sent a plea for our help. [From.Monarch.GetSheHeCap] offers [From.Monarch.GetHerHis] servitude and loyalty if we are willing to protect Crimea from her enemies."         #Cut the mention of 'as well as direct ownership of a number of Black Sea ports' & rearranged to sound fluid with the cut. I'm no expert here, but in game terms I think a subject is a fine representation.
  
- #BT16
+ ###### BT16 #####
+ ###Cultures###
+ #Unified Slavic
  russian_new:0 "Russian"
  byelorussian_new:0 "Belarusian"
+ #Kartvelian
+ caucasian:0 "Kartvelian"
+ #Adyghe
+ circassian:0 "Adyghe"
+ #Pama-Nyungan
+ aboriginal:0 "Kuri"
+ yura:0 "Yuran"
+ kulin:0 "Kulinic"
+ gamilaraay:0 "Wiradhuric"
+ nyoongah:0 "Noongar"
+ ###Religions###
  dreamtime:0 "Dreamtime"
+ ###Missions###
  less_than_15_provinces_on_same_continent:0 "Has less than §Y25§! provinces in §Y[Root.Capital.GetContinentName]§!."
  less_than_25_provinces_on_same_continent:0 "Has less than §Y40§! provinces in §Y[Root.Capital.GetContinentName]§!."
  less_than_35_provinces_on_same_continent:0 "Has less than §Y55§! provinces in §Y[Root.Capital.GetContinentName]§!."
@@ -693,9 +707,8 @@
  #Below two are same as vanilla, except dev number doubled from 100 to 200.
  HUSSARS_DESC:1 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
  custom_can_recruit_hussars_desc:0 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
- 
- #BT Vanilla bugfixes
+ ###BT Vanilla bugfixes###
  ENACT_REFORM_EFFECT_LOCK_WARNING:0 "\n(§RThis is a locked reform. You will not be able to switch to other reforms on the same Tier.§!)\n"
  flavor_teu.3.b:0 "Invite the the teutonic order to rule over ducal prussia."
- caucasian:0 "Kartvelian"
- circassian:0 "Adyghe"
+
+
