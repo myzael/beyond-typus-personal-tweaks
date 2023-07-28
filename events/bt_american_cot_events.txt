@@ -23,9 +23,8 @@ province_event = {
 		NOT = { #Limit to a maximum of 7 CoTs per node.
 			any_active_trade_node  = {	
 				calc_true_if = {
-						all_trade_node_member_province = { 
-							province_has_center_of_trade_of_level = 1
-						}
+					all_trade_node_member_province = { 
+						province_has_center_of_trade_of_level = 1
 					}
 					amount = 7
 				}

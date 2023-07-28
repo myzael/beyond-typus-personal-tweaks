@@ -155,7 +155,7 @@ country_event = {
 				add_claim = TUR
 			}
 			151 = {
-				any_active_trade_node = {
+				random_active_trade_node = {
 					every_trade_node_member_province = {
 						limit = {
 							NOT = { region = anatolia_region }
@@ -169,7 +169,7 @@ country_event = {
 				}
 			}
 			330 = {
-				any_active_trade_node = {
+				random_active_trade_node = {
 					every_trade_node_member_province = {
 						limit = {
 							NOT = { region = anatolia_region }
@@ -183,7 +183,7 @@ country_event = {
 				}
 			}
 			285 = {
-				any_active_trade_node = {
+				random_active_trade_node = {
 					every_trade_node_member_province = {
 						limit = {
 							OR = {
