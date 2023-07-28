@@ -36,11 +36,14 @@ country_decisions = {
 				NOT = { is_core = ROOT }
 			}
 		}
+		
 		allow = {
 			NOT = { exists = SPI }
 			OR = {
-				NOT = { exists = SAV }
-				NOT = { exists = PIE }
+				OR = {
+					NOT = { exists = SAV }
+					NOT = { exists = PIE }
+				}
 				NOT = { exists = SAR }
 			}
 			is_at_war = no
@@ -73,11 +76,17 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = SPI
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
 				set_government_rank = 2
 			}
+			set_country_flag = formed_sardinia_piedmont_flag
 			add_country_modifier = {
 				name = centralization_modifier
 				duration = 7300
@@ -104,14 +113,13 @@ country_decisions = {
 				}
 				swap_non_generic_missions = yes
 			}
-			set_country_flag = formed_sardinia_piedmont_flag
 		}
 		ai_will_do = {
 			factor = 1
 		}
 		ai_importance = 400
 	}
-
+	
 	sardinia_piedmont_nation_inherit = {
 		major = yes
 		potential = {
@@ -123,6 +131,7 @@ country_decisions = {
 			NOT = { tag = TUS }
 			NOT = { tag = EMR }
 			NOT = { tag = LMV }
+			government = monarchy
 			OR = {
 				AND = {
 					tag = SAV
@@ -132,10 +141,23 @@ country_decisions = {
 					}
 				}
 				AND = {
-					tag = SAR
-					SAV = { 
+					tag = PIE
+					SAR = { 
 						ai = yes 
-						was_player = no 
+						was_player = no
+					}
+				}
+				AND = {
+					tag = SAR
+					OR = {
+						SAV = { 
+							ai = yes 
+							was_player = no 
+						}
+						PIE = { 
+							ai = yes 
+							was_player = no 
+						}
 					}
 				}
 			}
@@ -145,10 +167,11 @@ country_decisions = {
 			}
 		}
 		allow = {
+			adm_tech = 10
 			NOT = { exists = SPI }
-			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
+			is_at_war = no
 			prestige = 75
 			dip = 3
 			adm = 3
@@ -177,20 +200,31 @@ country_decisions = {
 		}
 		effect = {
 			if = {
-				limit = { tag = SAV }
+				limit = {
+					tag = SAV
+				}
 				inherit = SAR
 			}
 			if = {
-				limit = { tag = SAR }
+				limit = {
+					tag = SAR
+				}
 				inherit = SAV
 			}
-			change_tag = SPI
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
 				set_government_rank = 2
 			}
+			change_tag = SPI
+			on_change_tag_effect = yes
+			set_country_flag = formed_sardinia_piedmont_flag
 			add_prestige = 25
+			
 			if = {
 				limit = {
 					primary_culture = sardinian
@@ -212,7 +246,6 @@ country_decisions = {
 				}
 				swap_non_generic_missions = yes
 			}
-			set_country_flag = formed_sardinia_piedmont_flag
 		}
 		ai_will_do = {
 			factor = 1
@@ -221,4 +254,5 @@ country_decisions = {
 		do_not_integrate = SAR
 		do_not_integrate = SAV
 	}
+
 }

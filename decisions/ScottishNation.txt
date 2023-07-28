@@ -2,8 +2,7 @@
 
 #I normally don't like messing with vanilla files when I don't have to, but between all the map changes and the fact that I wanted to clean up a few things
 #and make everything more dynamic anyway, I figured I'd just reorganise. Hope this doesn't mess with anyone too much. - Draiocht
-country_decisions = {
-	
+country_decisions = {	
 	scottish_nation = {			#Formerly BT only btpl_scottish_nation, which still has a localisation
 		major = yes
 		potential = {
@@ -68,14 +67,8 @@ country_decisions = {
 			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
 		}
 		effect = {
-			#LOI not this mission has.
-			# hidden_effect = {
-				# if = {
-					# limit = { tag = LOI }
-					# complete_mission = sco_highlands_mission
-				# }	
-			# }
 			change_tag = SCO
+			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -86,10 +79,11 @@ country_decisions = {
 					}
 				}
 				change_government = monarchy
-				set_legacy_government = feudal_monarchy
 			}
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = { government_rank = 2 }
+				}
 				set_government_rank = 2
 			}
 			lowlands_area = {

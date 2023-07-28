@@ -50,15 +50,19 @@ country_decisions = {
 		}
 		effect = {
 			change_tag = RMN
-			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			swap_non_generic_missions = yes
 			if = {
-				limit = { NOT = { government_rank = 2 } }
+				limit = {
+					NOT = {
+						government_rank = 2
+					}
+				}
 				set_government_rank = 2
 			}
 			add_country_modifier = {
-				name = centralization_modifier
+				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
@@ -126,4 +130,5 @@ country_decisions = {
 		}
 		ai_importance = 400 #
 	}
+	
 }
