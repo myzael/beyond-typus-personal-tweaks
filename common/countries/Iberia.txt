@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx # portuguesegfx # UPE compatibility
 
-color = { 34  177  76 }
+color = { 30 90 100 }
 
 historical_idea_groups = {
 	exploration_ideas
