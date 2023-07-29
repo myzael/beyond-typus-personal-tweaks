@@ -118,7 +118,7 @@ workshop = {
 		#2. Half cost of building --> Half factor.
 		#BT Base yearly return: 1*(0.01+value(+30% production efficiency)) --> 0.49 ducats gained/year --> +0.04 ducats/month
 		#We desire this to be at around +0.02 ducats/month. Mainly because you need a lot of dev or high producing trade good.
-		factor = 2 #Doubled because this means about .02 ducats/month increase.
+		factor = 4 #Doubled because the AI doesn't seem to see much value with this one.
 		modifier = { #Mainly to promote this building over others.
 			factor = 5
 			base_production = 5
@@ -306,11 +306,11 @@ barracks = {
 		}
 		modifier = { #Build if low on manpower.
 			factor = 2
-			owner = { manpower_percentage = 0.2 }
+			owner = { NOT = { manpower_percentage = 0.2 } }
 		}
 		modifier = { #Build if low on manpower.
 			factor = 3
-			owner = { manpower_percentage = 0.1 }
+			owner = { NOT = { manpower_percentage = 0.1 } }
 		}
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
@@ -490,7 +490,7 @@ coastal_defence = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1 #The base calculated value of this building is .25 on an island, or bordering a rival.
 		modifier = { #I am raided. I might need protection.
 			factor = 105
 			has_province_modifier = slaves_raided
@@ -1299,11 +1299,11 @@ training_fields = {
 		}
 		modifier = { #Build if low on manpower.
 			factor = 2
-			owner = { manpower_percentage = 0.2 }
+			owner = { NOT = { manpower_percentage = 0.2 } }
 		}
 		modifier = { #Build if low on manpower.
 			factor = 3
-			owner = { manpower_percentage = 0.1 }
+			owner = { NOT = { manpower_percentage = 0.1 } }
 		}
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
@@ -2629,7 +2629,11 @@ furnace = {
 	}
 
 	ai_will_do = {
-		factor = 50000 #Why haven't you built this yet?
+		factor = 1 
+		modifier = { #Why haven't you built this yet?
+			factor = 10000
+			trade_goods = coal
+		}
 	}
 }
 
@@ -3146,9 +3150,9 @@ state_house = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1 #The base value of this building is actually 1.01.
 		modifier = {
-			factor = 500
+			factor = 5
 			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
 			OR = {
 				AND = {
