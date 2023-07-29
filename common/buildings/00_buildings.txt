@@ -118,7 +118,7 @@ workshop = {
 		#2. Half cost of building --> Half factor.
 		#BT Base yearly return: 1*(0.01+value(+30% production efficiency)) --> 0.49 ducats gained/year --> +0.04 ducats/month
 		#We desire this to be at around +0.02 ducats/month. Mainly because you need a lot of dev or high producing trade good.
-		factor = 4 #Doubled because the AI doesn't seem to see much value with this one.
+		factor = 2 #Doubled because the AI doesn't seem to see much value with this one.
 		modifier = { #Mainly to promote this building over others.
 			factor = 5
 			base_production = 5
@@ -291,7 +291,7 @@ barracks = {
 
 	ai_will_do = {
 		#AI is capable of seeing economic factor from this.
-		factor = 1
+		factor = 10 
 		modifier = { #Encourage if high manpower province.
 			factor = 5
 			base_manpower = 5
@@ -324,6 +324,10 @@ barracks = {
 		modifier = {
 			factor = 0.2
 			is_state = no
+		}
+		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -380,6 +384,10 @@ shipyard = {
 		modifier = {
 			factor = 0.2
 			is_state = no
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.01
+			NOT = { num_free_building_slots = 2 }
 		}
 	}
 }
@@ -652,18 +660,18 @@ dock = {
 
 	ai_will_do = {
 		#AI sees no monetary benefit from this, therefore factor needs to equal cost for AI to build.
-		factor = 20 #Vanilla has this set to 1, so clearly the AI shall never build these.
+		factor = 5 #Vanilla has this set to 1, so clearly the AI shall never build these.
 		modifier = { #Encourage if this was built in the province
 			factor = 10
 			has_building = impressment_offices
 		}
 		modifier = { #Build if low on sailors.
 			factor = 2
-			owner = { sailors_percentage = 0.2 }
+			owner = { NOT = { sailors_percentage = 0.2 } }
 		}
 		modifier = { #Build if low on sailors.
 			factor = 3
-			owner = { sailors_percentage = 0.1 }
+			owner = { NOT = { sailors_percentage = 0.1 } }
 		}
 		modifier = { #Don't build bloody docks if you're not using your navy.
 			factor = 0
@@ -681,6 +689,10 @@ dock = {
 		modifier = {
 			factor = 0.2
 			is_state = no
+		}
+		modifier = { #The AI seems to give a +0.1 calculated value per dev on fort provinces. I'm just dividing the total value by 10 because it's a magnitude above any other modifiers.
+			factor = 0.1
+			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -756,6 +768,14 @@ regimental_camp = {
 		modifier = {
 			factor = 0.2
 			is_state = no
+		}
+		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.01
+			NOT = { num_free_building_slots = 2 }
 		}
 	}
 }
@@ -882,13 +902,13 @@ naval_battery = {
 				}
 			}
 		}
-		modifier = { #If above is true, favourite fort provinces.
-			factor = 2
-			has_fort_building_trigger = yes
-		}
 		modifier = { #If above is true, favourite islands slightly more.
-			factor = 3
+			factor = 1.5
 			is_island = yes
+		}
+		modifier = { #AI adds +0.25 value on forts, meaning it times it by 26. --> Times by 2.6
+			factor = 0.1
+			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -1202,6 +1222,10 @@ grand_shipyard = {
 			factor = 0.2
 			is_state = no
 		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.01
+			NOT = { num_free_building_slots = 2 }
+		}
 	}
 }
 
@@ -1317,6 +1341,10 @@ training_fields = {
 		modifier = {
 			factor = 0.2
 			is_state = no
+		}
+		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -1725,18 +1753,18 @@ drydock = {
 
 	ai_will_do = {
 		#AI sees no monetary benefit from this, therefore factor needs to equal cost for AI to build.
-		factor = 80 #Vanilla has this set to 1, so clearly the AI shall never build these.
+		factor = 40 #Vanilla has this set to 1, so clearly the AI shall never build these.
 		modifier = { #Encourage if this was built in the province
 			factor = 10
 			has_building = impressment_offices
 		}
 		modifier = { #Build if low on sailors.
 			factor = 2
-			owner = { sailors_percentage = 0.2 }
+			owner = { NOT = { sailors_percentage = 0.2 } }
 		}
 		modifier = { #Build if low on sailors.
 			factor = 3
-			owner = { sailors_percentage = 0.1 }
+			owner = { NOT = { sailors_percentage = 0.1 } }
 		}
 		modifier = { #Don't build bloody docks if you're not using your navy.
 			factor = 0
@@ -1754,6 +1782,10 @@ drydock = {
 		modifier = {
 			factor = 0.2
 			is_state = no
+		}
+		modifier = { #The AI puts a flat 0.5 calculated value on fort provinces. I'm just dividing the total value by 10 because it's a magnitude above any other modifiers.
+			factor = 0.1
+			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -1833,6 +1865,14 @@ conscription_center = {
 		modifier = {
 			factor = 0.2
 			is_state = no
+		}
+		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.01
+			NOT = { num_free_building_slots = 2 }
 		}
 	}
 }
@@ -2836,9 +2876,9 @@ soldier_households = {
 	}
 
 	ai_will_do = {
-		factor = 1 #The AI seems to multiply the 0.01 by 1/10th of barracks and other manpower modifiers.
+		factor = 1
 		modifier = {
-			factor = 500 #Apparently the AI seems to see *some* sort of value in these buildings when bunched up.
+			factor = 40 #Apparently the AI seems to see *some* sort of value in these buildings with manpower modifiers and forcelimit modifiers.
 			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
 			OR = {
 				AND = {
@@ -2987,7 +3027,7 @@ impressment_offices = {
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 450 #Apparently the AI seems to see *some* sort of value in these buildings when bunched up.
+			factor = 40 #Apparently the AI sees a lot of value if there's already naval forcelimit and/or sailor modifiers on the province.
 			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
 			OR = {
 				AND = {
