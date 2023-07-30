@@ -83,7 +83,7 @@ can_decrease_autonomy = {
 can_make_core = {
 }
 
-can_make_state = { 
+can_make_state = { #BT Modified
 	condition = { #An overseas province should never be made a state by the AI.
 		tooltip = "BT_AI_SPECIFIC_CHANGE"
 		potential = {
@@ -100,13 +100,61 @@ can_make_state = {
 can_abandon_state = {
 }
 
-can_improve_tax = {
+can_improve_tax = { #BT Modified
+	condition = { #We want to stop overdevving of coal provinces.
+		tooltip = "BT_AI_SPECIFIC_CHANGE"
+		potential = {
+			owner = {
+				ai = yes
+			}
+			has_latent_trade_goods = coal
+		}
+		allow = { #So if province has coal latent trade good, only develop up to 5 clicks, unless is capital or enlightenment is spreading.
+			OR = {
+				is_capital = yes
+				enlightenment = 10
+				NOT = { num_of_times_improved_by_owner = 5 }
+			}
+		}
+	}
 }
 
-can_improve_production = {
+can_improve_production = { #BT Modified
+	condition = { #We want to stop overdevving of coal provinces.
+		tooltip = "BT_AI_SPECIFIC_CHANGE"
+		potential = {
+			owner = {
+				ai = yes
+			}
+			has_latent_trade_goods = coal
+		}
+		allow = { #So if province has coal latent trade good, only develop up to 5 clicks, unless is capital or enlightenment is spreading.
+			OR = {
+				is_capital = yes
+				enlightenment = 10
+				NOT = { num_of_times_improved_by_owner = 5 }
+			}
+		}
+	}
 }
 
-can_improve_manpower = {
+can_improve_manpower = { #BT Modified
+	condition = { #We want to stop overdevving of coal provinces.
+		tooltip = "BT_AI_SPECIFIC_CHANGE"
+		potential = {
+			owner = {
+				ai = yes
+			}
+			has_latent_trade_goods = coal
+		}
+		allow = { #So if province has coal latent trade good, only develop up to 5 clicks, unless is capital or enlightenment is spreading.
+			OR = {
+				is_capital = yes
+				enlightenment = 10
+				NOT = { num_of_times_improved_by_owner = 5 }
+			}
+		}
+	}
 }
 
 can_exploit_tax = {
