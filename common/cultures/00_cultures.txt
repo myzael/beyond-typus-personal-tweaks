@@ -8892,7 +8892,7 @@ aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16
 	#	female_names = {
 	#	}
 	}
-	muruwari = {
+	karnic = {
 	#	#primary = 
 	#	dynasty_names = {
 	#	}
@@ -8901,7 +8901,7 @@ aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16
 	#	female_names = {
 	#	}
 	}
-	karnic = {
+	muruwari = {
 	#	#primary = 
 	#	dynasty_names = {
 	#	}
