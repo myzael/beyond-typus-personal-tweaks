@@ -164,7 +164,7 @@ bavarian_missions_main = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces = conquer_franken_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 6 #6 of 9 (6 of 8 in vanilla)
+				value = 9 #9 of 12 (6 of 8 in vanilla)
 			}
 		}
 		effect = {
@@ -184,10 +184,7 @@ bavarian_missions_main = {
 		icon = mission_landsknecht_soldier
 		required_missions = { conquer_franken }
 		provinces_to_highlight = {
-			OR = {
-				area = lower_swabia_area
-				area = upper_swabia_area
-			}
+			province_group = conquer_ansbach_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -197,7 +194,7 @@ bavarian_missions_main = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted 
 				provinces = conquer_ansbach_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 8 #8 of 9 (6 of 7 in vanilla)
+				value = 18 #18 of 23 (6 of 7 in vanilla)
 			}
 		}
 		effect = {
