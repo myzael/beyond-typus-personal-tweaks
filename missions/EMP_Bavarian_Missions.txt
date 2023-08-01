@@ -991,7 +991,7 @@ emp_bav_missions_conquer_austria = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces = emp_bav_conquer_tirol_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 3 #3 of 7 (2 of 5 in vanilla)
+				value = 3 #3 of 8 (2 of 5 in vanilla)
 			}
 			OR = {
 				has_fulfiled_province_target_requirement_for_mission_trigger = {
