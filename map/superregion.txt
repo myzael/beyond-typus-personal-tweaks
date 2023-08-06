@@ -131,6 +131,9 @@ andes_superregion = {
 }
 oceania_superregion = {
 	australia_region
+	northeastern_australia_region #BT
+	northern_australia_region #BT
+	western_australia_region #BT
 	new_zealand_region
 	oceanea_region
 }
