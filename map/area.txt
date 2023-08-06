@@ -524,6 +524,7 @@ eastern_norway = {
 }
 western_norway = {  
 	23 24 2752 3118 7785 7786 
+	4145 7772 7782 7809 
 }
 subarctic_islands_area = { #no longer includes Greenland
 	369 1978 1979 5591 
@@ -537,8 +538,7 @@ schleswig_area = { # BT
 west_karelia_area = { # BT
 	30 32 4124 7806 7808 
 }
-southern_norway_area = { # BT
-	4145 7772 7782 7809 
+southern_norway_area = { # BT, deprecated. Keeping declaration in case something goes wrong.
 }
 trondelag_area = { # BT
 	10 20 7787 7788 7796 

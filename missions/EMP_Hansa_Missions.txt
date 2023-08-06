@@ -586,13 +586,6 @@ hanseatic_sound_toll_tree = {
 					}
 					add_permanent_claim = ROOT
 				}
-				southern_norway_area = {
-					limit = {
-						NOT = { is_core = root }
-						NOT = { is_permanent_claim = root }
-					}
-					add_permanent_claim = ROOT
-				}
 				eastern_norway = {  
 					limit = {
 						NOT = { is_core = root }

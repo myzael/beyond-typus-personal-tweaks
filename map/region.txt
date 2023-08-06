@@ -151,7 +151,6 @@ scandinavia_region = { # 18 areas
 		iceland_area
 		schleswig_area
 		west_karelia_area
-		southern_norway_area
 		trondelag_area
 	}
 }

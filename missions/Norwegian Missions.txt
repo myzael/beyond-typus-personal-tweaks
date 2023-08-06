@@ -167,8 +167,7 @@ bt_norwegian_internal_missions = {
 			OR = {
 				area = northern_norway  
 				area = eastern_norway  
-				area = western_norway  
-				area = southern_norway_area
+				area = western_norway 
 				area = trondelag_area
 			}
 		}
@@ -187,8 +186,7 @@ bt_norwegian_internal_missions = {
 				OR = {
 					area = northern_norway  
 					area = eastern_norway  
-					area = western_norway  
-					area = southern_norway_area
+					area = western_norway 
 					area = trondelag_area
 				}
 			}
