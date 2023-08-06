@@ -121,7 +121,7 @@ country_event = {
 		exists = SWE
 		SWE = {	is_subject_of = DAN }
 		is_year = 1450
-		NOT = { is_year = 1550 }		
+		NOT = { is_year = 1550 }
 		NOT = { has_dlc = "Lions of the North" }
 	}
 	
@@ -476,7 +476,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_dan.EVTOPTA3300"
-		add_core = 6 #Sk?ne
+		add_core = 6 #Skåne
 		SWE = {
 			add_opinion = {
 				who = DAN
