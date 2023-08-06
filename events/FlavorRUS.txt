@@ -153,7 +153,7 @@ country_event = {
 		464 = {
 			add_base_tax = 2
 			add_base_manpower = 2
-		}	
+		}
 	}
 }
 
@@ -359,7 +359,7 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 1
-	}
+	}	
 
 	option = {		# Revenge this horrible insult
 		name = "flavor_rus.EVTOPTA3411"
@@ -518,7 +518,7 @@ country_event = {
 	title = "flavor_rus.EVTNAME3416"
 	desc = "flavor_rus.EVTDESC3416"
 	picture = REFORM_eventPicture
-	fire_only_once = yes
+	fire_only_once = yes	
 	trigger = {
 		NOT = { has_dlc = "Domination" }
 		tag = RUS
@@ -547,7 +547,7 @@ country_event = {
 
 # Hundred Chapter Synod
 country_event = {
-	id = flavor_rus.11
+	id = flavor_rus.11	
 	title = "flavor_rus.EVTNAME1005"
 	desc = "flavor_rus.EVTDESC1005"
 	picture = ORTHODOX_eventPicture
@@ -563,7 +563,7 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 100
-	}
+	}	
 
 	option = {		# Affirm these changes
 		name = "flavor_rus.EVTOPTA1005"
@@ -624,7 +624,7 @@ country_event = {
 
 # Full Serfdom enforced by Sobornoj Ulozjenije
 country_event = {
-	id = flavor_rus.13
+	id = flavor_rus.13	
 	title = "flavor_rus.EVTNAME3417"
 	desc = "flavor_rus.EVTDESC3417"
 	picture = REFORM_eventPicture
@@ -686,7 +686,7 @@ country_event = {
 
 # Nikons Reform and the Raskolniks
 country_event = {
-	id = flavor_rus.14
+	id = flavor_rus.14	
 	title = "flavor_rus.EVTNAME3418"
 	desc = "flavor_rus.EVTDESC3418"
 	picture = REFORM_eventPicture
@@ -697,7 +697,7 @@ country_event = {
 		tag = RUS
 		is_year = 1650
 		NOT = { is_year = 1750 }	
-		religion = orthodox
+		religion = orthodox	
 		NOT = { has_country_flag = RUS_raskol_flag }
 	}
 	
@@ -845,9 +845,10 @@ country_event = {
 		}
 	}
 }
+
 # The Bulavin Rebellion
 country_event = {
-	id = flavor_rus.17
+	id = flavor_rus.17	
 	title = "flavor_rus.EVTNAME1008"
 	desc = "flavor_rus.EVTDESC1008"
 	picture = ANGRY_MOB_eventPicture
@@ -927,7 +928,7 @@ country_event = {
 
 # Fjodor Baikov's Diplomatic Incident
 country_event = {
-	id = flavor_rus.18
+	id = flavor_rus.18	
 	title = "flavor_rus.EVTNAME3419"
 	desc = "flavor_rus.EVTDESC3419"
 	picture = DIPLOMACY_eventPicture
@@ -2330,15 +2331,50 @@ country_event = {
 	option = {
 		name = flavor_rus.100.a
 		custom_tooltip = flavor_rus.100.a.tt
-		russia_region = {
-			limit = {
-				NOT = { is_permanent_claim = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { owned_by = LIT }
-				NOT = { owned_by = SWE }
+		#Novgorod mission
+		custom_tooltip = bt_novgorod_perm_claims
+		hidden_effect = {
+			russia_region = {
+				limit = {
+					owned_by = NOV
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
-			add_permanent_claim = ROOT
 		}
+		hidden_effect = {
+			ural_region = {
+				limit = {
+					owned_by = NOV
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		hidden_effect = {
+			scandinavia_region = {
+				limit = {
+					owned_by = NOV
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		310 = {
+			if = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		#Kazan
 		kama_area = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
@@ -2414,6 +2450,50 @@ country_event = {
 			name = rus_expanded_administrative_offices
 			duration = -1
 		}
+		#Novgorod
+		custom_tooltip = bt_novgorod_perm_claims
+		hidden_effect = {
+			russia_region = {
+				limit = {
+					owned_by = NOV
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		hidden_effect = {
+			ural_region = {
+				limit = {
+					owned_by = NOV
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		hidden_effect = {
+			scandinavia_region = {
+				limit = {
+					owned_by = NOV
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		310 = {
+			if = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		give_permaclaims_for_mission = { mission= }
 		russia_region = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
@@ -4678,7 +4758,7 @@ country_event = {
 		OR = {
 			ADM = 5
 			DIP = 5
-			MIL = 5		
+			MIL = 5
 		}
 		ADM = 3
 		DIP = 3

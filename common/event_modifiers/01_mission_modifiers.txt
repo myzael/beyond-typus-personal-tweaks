@@ -2556,7 +2556,7 @@ rus_expanded_administrative_offices = {
 	no_claim_cost_increasement = yes
 	can_claim_states = yes
 	can_chain_claim = yes
-	core_creation = -0.15
+	#core_creation = -0.15 #Cut because this is meant to bridge the gap between claims' -10% CCC and permaclaims' -25% CCC in vanilla. BT puts both at -10%. //Dub
 }
 
 rus_developed_trade_post_novgorod = {	#Permanent, province
