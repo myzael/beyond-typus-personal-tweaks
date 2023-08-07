@@ -79,7 +79,7 @@
  nor_retake_iceland_provinces:0 ""
  nor_reverse_kalmar_union_provinces:0 ""
  nor_conquer_the_isles_provinces:0 ""
- nor_conquer_scotland_provinces:0 ""
+ bt_nor_conquer_scotland_provinces:0 ""
  nor_conquer_ireland_provinces:0 ""
  nor_conquer_england_provinces:0 ""
  bul_conquer_north_bulgaria_provinces:0 ""
@@ -337,3 +337,6 @@
  atj_conquer_aceh_provinces:0 ""
  atj_sumatra_campaign_provinces:0 ""
  atj_peninsula_campaign_provinces:0 ""
+ 
+ nor_conquer_scotland_claims:0 "Grants permanent claims on the provinces required for the mission §YThe Claims of Orkney§!"
+ nor_conquer_scotland_provinces:0 ""
