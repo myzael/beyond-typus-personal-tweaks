@@ -600,14 +600,13 @@ hanseatic_sound_toll_tree = {
 					}
 					add_permanent_claim = ROOT
 				}
-				# Brian; disabled below because...?
-				#northern_norway = {  
-				#	limit = {
-				#		NOT = { is_core = root }
-				#		NOT = { is_permanent_claim = root }
-				#	}
-				#	add_permanent_claim = ROOT
-				#}
+				northern_norway = {  
+					limit = {
+						NOT = { is_core = root }
+						NOT = { is_permanent_claim = root }
+					}
+					add_permanent_claim = ROOT
+				}
 				21 = {
 					if = {
 						limit = {
