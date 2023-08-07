@@ -1436,3 +1436,10 @@ atj_peninsula_campaign_provinces = {
 	597 659 2686 4815 8559 595 596 2392 8668 8669 8670 2394 4812 4813 8667 8672 598 599 2393 4814 8674 8675 
 	594 8673
 }
+
+#LotN Norwegian tree
+nor_conquer_scotland_provinces = { #Identical to conquer_scotland_provinces
+	248 4361 8145 8146 8148 8149 8150 249 3008 3019 4362 8147 252 3137 3138 4110 8153 8154 8155 250 251 3139 8151 8152
+	253 4363 4364 4365
+	369 1978 #Adding provinces that risk being lost to Scotland due to Mary Queen of Scots.
+}

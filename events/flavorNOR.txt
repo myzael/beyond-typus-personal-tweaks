@@ -902,6 +902,7 @@ country_event = {
 	# fire_only_once = yes
 	
 	# trigger = {
+		# NOT = { has_dlc = "Lions of the North" }
 		# OR = {
 			# tag = NOR
 			# tag = DAN
@@ -938,146 +939,147 @@ country_event = {
 	# }
 # }
 
-# # Prospectors Return
-# country_event = {
-	# id = flavor_nor.18
-	# title = "flavor_nor.18.t"
-	# desc = "flavor_nor.18.d"
-	# picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+# Prospectors Return
+country_event = {
+	id = flavor_nor.18
+	title = "flavor_nor.18.t"
+	desc = "flavor_nor.18.d"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 	
-	# fire_only_once = yes
+	fire_only_once = yes
 	
-	# trigger = {
-		# has_country_modifier = nor_prospecting_the_skands
-		# NOT = { has_country_flag = nor_mines_found }
-		# owns = 17
-	# }
+	trigger = {
+		has_country_modifier = nor_prospecting_the_skands
+		NOT = { has_country_flag = nor_mines_found }
+		owns = 17
+	}
 	
-	# immediate = {
-		# hidden_effect = { set_country_flag = nor_mines_found }
-	# }
+	immediate = {
+		hidden_effect = { set_country_flag = nor_mines_found }
+	}
 	
-	# mean_time_to_happen = {
-		# months = 240
-	# }
+	mean_time_to_happen = {
+		months = 240
+	}
 	
-	# option = {
-		# name = "flavor_nor.18.a"
-		# ai_chance = {
-			# factor = 41
-		# }
-		# 17 = { change_trade_goods = iron }
-		# add_adm_power = -75
-	# }
-	# option = {
-		# name = "flavor_nor.18.b"
-		# ai_chance = {
-			# factor = 41
-		# }
-		# 17 = { change_trade_goods = copper }
-		# add_adm_power = -50
-	# }
-	# option = {
-		# name = "flavor_nor.18.c"
-		# ai_chance = {
-			# factor = 18
-		# }
-		# 17 = { add_base_production = 1 }
-	# }
-# }
+	option = {
+		name = "flavor_nor.18.a"
+		ai_chance = {
+			factor = 41
+		}
+		17 = { change_trade_goods = iron }
+		add_adm_power = -75
+	}
+	option = {
+		name = "flavor_nor.18.b"
+		ai_chance = {
+			factor = 41
+		}
+		17 = { change_trade_goods = copper }
+		add_adm_power = -50
+	}
+	option = {
+		name = "flavor_nor.18.c"
+		ai_chance = {
+			factor = 18
+		}
+		17 = { add_base_production = 1 }
+	}
+}
 
-# # Copper found at Røros
-# country_event = {
-	# id = flavor_nor.19
-	# title = "flavor_nor.19.t"
-	# desc = "flavor_nor.19.d"
-	# picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+# Copper found at Røros
+country_event = {
+	id = flavor_nor.19
+	title = "flavor_nor.19.t"
+	desc = "flavor_nor.19.d"
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 	
-	# fire_only_once = yes
+	fire_only_once = yes
 	
-	# trigger = {
-		# has_country_modifier = nor_prospecting_the_skands
-		# owns = 20
-	# }
+	trigger = {
+		has_country_modifier = nor_prospecting_the_skands
+		owns = 20
+	}
 	
-	# mean_time_to_happen = {
-		# months = 240
-	# }
+	mean_time_to_happen = {
+		months = 240
+	}
 	
-	# option = {
-		# name = "flavor_nor.19.a"
-		# ai_chance = {
-			# factor = 75
-		# }
-		# 20 = { change_trade_goods = copper }
-		# add_adm_power = -50
-	# }
-	# option = {
-		# name = "flavor_nor.19.b"
-		# ai_chance = {
-			# factor = 25
-		# }
-		# 20 = { add_base_production = 1 }
-	# }
-# }
+	option = {
+		name = "flavor_nor.19.a"
+		ai_chance = {
+			factor = 75
+		}
+		20 = { change_trade_goods = copper }
+		add_adm_power = -50
+	}
+	option = {
+		name = "flavor_nor.19.b"
+		ai_chance = {
+			factor = 25
+		}
+		20 = { add_base_production = 1 }
+	}
+}
 
-# # Silver found in Sandsvær
-# country_event = {
-	# id = flavor_nor.20
-	# title = "flavor_nor.20.t"
-	# desc = "flavor_nor.20.d"
-	# picture = ADVISOR_eventPicture
+# Silver found in Sandsvær
+country_event = {
+	id = flavor_nor.20
+	title = "flavor_nor.20.t"
+	desc = "flavor_nor.20.d"
+	picture = ADVISOR_eventPicture
+	goto = 7783
+	fire_only_once = yes
 	
-	# fire_only_once = yes
+	trigger = {
+		OR = {
+			AND = {
+				has_country_modifier = nor_prospecting_the_skands
+				has_country_flag = nor_mines_found
+			}
+			AND = {
+				OR = {
+					tag = NOR
+					AND = {
+						was_tag = NOR
+						NOT = { exists = NOR }
+						tag = SCA
+					}		
+				}
+				is_year = 1600
+				NOT = { is_year = 1620 }
+			}
+		}
+		owns = 7783
+	}
 	
-	# trigger = {
-		# OR = {
-			# AND = {
-				# has_country_modifier = nor_prospecting_the_skands
-				# has_country_flag = nor_mines_found
-			# }
-			#AND = {
-			#	OR = {
-			#		tag = NOR
-			#		AND = {
-			#			was_tag = NOR
-			#			NOT = { exists = NOR }
-			#			tag = SCA
-			#		}		
-			#	}
-			#	is_year = 1600
-			#	NOT = { is_year = 1620 }
-			#}
-		# }
-		# owns = 17
-	# }
+	mean_time_to_happen = {
+		months = 240
+	}
 	
-	# mean_time_to_happen = {
-		# months = 240
-	# }
-	
-	# option = {
-		# name = "flavor_nor.20.a"
-		# ai_chance = {
-			# factor = 75
-		# }
-		# add_treasury = -300
-		# add_adm_power = -50
-		# 17 = {
-			# add_permanent_province_modifier = {
-				# name = nor_kongsberg_mine
-				# duration = -1
-			# }
-		# }
-	# }
-	# option = {
-		# name = "flavor_nor.20.b"
-		# ai_chance = {
-			# factor = 25
-		# }
-		# 17 = { add_base_production = 1 }
-	# }
-# }
+	option = {
+		name = "flavor_nor.20.a"
+		ai_chance = {
+			factor = 75
+		}
+		add_treasury = -300
+		add_adm_power = -50
+		7783 = {
+			add_permanent_province_modifier = {
+				name = nor_kongsberg_mine
+				duration = -1
+			}
+			change_trade_goods = gold
+		}
+	}
+	option = {
+		name = "flavor_nor.20.b"
+		ai_chance = {
+			factor = 25
+		}
+		7783 = { add_base_production = 1 }
+	}
+}
 
 # Peter Tordenskiold
 country_event = {
@@ -1259,7 +1261,7 @@ country_event = {
 }
 
 #Population growth
-country_event = {
+country_event = { #TODO: Could do with updating for the new province layout, but it feels so generic I have no idea what to change. //Dub
 	id = flavor_nor.25
 	title = "flavor_nor.25.t"
 	desc = "flavor_nor.25.d"
@@ -1806,7 +1808,7 @@ country_event = {
 	}
 }
 
-# Copper found in Fr?? and Hus?
+# Copper found in Fröå and Huså
 country_event = {
 	id = flavor_nor.38
 	title = "flavor_nor.38.t"
@@ -1852,7 +1854,7 @@ country_event = {
 	
 	trigger = {
 		has_country_modifier = nor_prospecting_the_skands
-		owns = 22
+		owns = 3117
 	}
 	
 	mean_time_to_happen = {
@@ -1864,7 +1866,7 @@ country_event = {
 		ai_chance = {
 			factor = 75
 		}
-		22 = { change_trade_goods = copper }
+		3117 = { change_trade_goods = copper }
 		add_adm_power = -50
 	}
 	option = {
@@ -1872,7 +1874,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		22 = { add_base_production = 1 }
+		3117 = { add_base_production = 1 }
 	}
 }
 
@@ -1888,8 +1890,12 @@ country_event = {
 		current_age = age_of_discovery
 		owns_core_province = 370
 		owns_core_province = 371
+		owns_core_province = 3114
+		owns_core_province = 3115
 		370 = { NOT = { local_autonomy = 5 } }
 		371 = { NOT = { local_autonomy = 5 } }
+		3114 = { NOT = { local_autonomy = 5 } }
+		3115 = { NOT = { local_autonomy = 5 } }
 	}
 	
 	mean_time_to_happen = {
@@ -1902,13 +1908,22 @@ country_event = {
 	option = {
 		name = "flavor_nor.40.a"
 		add_treasury = 200
-		370 = {
+		#BT Changed from +10 dev in 2 provinces to +12 dev in 4 provinces.
+		370 = { 
 			add_base_tax = 2
-			add_base_production = 3
+			add_base_production = 2
 		}
 		371 = {
 			add_base_tax = 2
-			add_base_production = 3
+			add_base_production = 2
+		}
+		3114 = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		3115 = {
+			add_base_tax = 1
+			add_base_production = 1
 		}
 		ai_chance = {
 			factor = 1
@@ -2331,6 +2346,14 @@ country_event = {
 			limit = { owned_by = ROOT }
 			add_core = HSC
 		}
+		scottish_marches_area = {
+			limit = { owned_by = ROOT }
+			add_core = HSC
+		}
+		grampians_area = {
+			limit = { owned_by = ROOT }
+			add_core = HSC
+		}
 		release = HSC
 		add_historical_friend = HSC
 		HSC = { add_historical_friend = ROOT }
@@ -2372,17 +2395,48 @@ country_event = {
 	
 	option = {	#We can rule over it ourselves
 		name = "flavor_nor.46.b"
+		#Vanilla gives +8 dev in 1 province. BT gives +14 in 3 provinces.
 		random_owned_province = {
 			limit = {
 				OR ={
 					area = highlands_area
 					area = lowlands_area
 					area = kingdom_of_the_isles_area
+					area = scottish_marches_area
+					area = grampians_area
 				}
 			}
 			add_base_tax = 3
 			add_base_production = 3
 			add_base_manpower = 2
+		}
+		random_owned_province = { #BT Duplicated because dev doubling.
+			limit = {
+				OR ={
+					area = highlands_area
+					area = lowlands_area
+					area = kingdom_of_the_isles_area
+					area = scottish_marches_area
+					area = grampians_area
+				}
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+		random_owned_province = { #BT Duplicated because dev doubling.
+			limit = {
+				OR ={
+					area = highlands_area
+					area = lowlands_area
+					area = kingdom_of_the_isles_area
+					area = scottish_marches_area
+					area = grampians_area
+				}
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
 		}
 		1975 = {
 			add_trade_modifier = {

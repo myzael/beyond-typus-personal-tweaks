@@ -678,6 +678,7 @@
  #Unified Slavic
  russian_new:0 "Russian"
  byelorussian_new:0 "Belarusian"
+ scandinavian:0 "Scandinavian"
  #Kartvelian
  caucasian:0 "Kartvelian"
  #Adyghe
@@ -704,6 +705,10 @@
  emp_hab_take_salzburg_title:0 "Assert our Borders"
  emp_hab_take_salzburg_desc:0 "There are several small counties and bishropics on our borders paying us lip service. If we wish to strengthen Austria, we should reassert control over these lands and fully unite Austria."
  centralization_effort:0 "Centralization Effort"
+ #Altered due to BT changes.
+ nor_powerhouse_of_the_north_tt:0 "Provinces of the §YScandinavian§! culture group gain §G-2.00§! Local Unrest as long §YEmpire of the North§! is active.\n\n§YEmpire of the North§! gets §Rremoved§! should [Root.GetName] switch its culture group."
+ nor_discover_new_world_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province with a §YCenter of Trade§! or with an §YEstuary§! in §YColonial Eastern America§!, §YColonial Acadia§!, §YColonial Newfoundland§!, §YColonial Canada§!, §YColonial Cuba§!, §YColonial Hispaniola§!, §YColonial Lesser Antilles§!, §YColonial Bahamas§! and §YColonial Mexico§!."
+ nor_colonize_canada_and_na_tt:0 "Up to §Y5§! colonized provinces in §YColonial Canada§!, §YColonial Acadia§!, §YColonial Newfoundland§! or §YColonial Eastern America§!, which are either owned by §Y[Root.GetName]§! or its subjects, get a §YCounting House§!."
  #Below two are same as vanilla, except dev number doubled from 100 to 200.
  HUSSARS_DESC:1 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
  custom_can_recruit_hussars_desc:0 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
