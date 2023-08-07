@@ -660,7 +660,7 @@ hanseatic_sound_toll_tree = {
 			OR = {
 				province_id = 17
 				province_id = 23
-				#province_id = 20
+				province_id = 20
 			}
 			NOT = { country_or_non_sovereign_subject_holds = root }
 			NOT = {
@@ -689,14 +689,14 @@ hanseatic_sound_toll_tree = {
 						}
 					}
 				}
-				#20 = { #TODO: Check if Trondelag (20) deserves its CoT back now that Britain is overhauled //Dub
-				#	OR = {
-				#		country_or_non_sovereign_subject_holds = ROOT
-				#		owner = {
-				#			is_in_trade_league_with = root
-				#		}
-				#	}
-				#}
+				20 = {
+					OR = {
+						country_or_non_sovereign_subject_holds = ROOT
+						owner = {
+							is_in_trade_league_with = root
+						}
+					}
+				}
 			}
 			else = {
 				17 = {
@@ -705,9 +705,9 @@ hanseatic_sound_toll_tree = {
 				23 = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				#20 = {
-				#	country_or_non_sovereign_subject_holds = ROOT
-				#}   #Trondelag kicked out of checks as it is no longer a CoT.
+				20 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
 

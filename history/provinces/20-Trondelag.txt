@@ -17,9 +17,8 @@ capital = "Trondheim"
 is_city = yes
 fort_15th = yes
 
-#removed for now, at least until Britain reoverhaul. Norway was pulling too much trade
-#extra_cost = 8
-#center_of_trade = 1
+extra_cost = 8
+center_of_trade = 1
 
 discovered_by = western
 discovered_by = eastern
