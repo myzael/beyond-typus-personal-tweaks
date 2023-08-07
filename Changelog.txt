@@ -42,14 +42,15 @@ BT16
  - (Dub) Removed Cordoban gold - there was no evidence to suggest the Sierra Morenas were properly mined in Spain. All evidence pointed towards romans & arabs. In fact, the area was *very* rural during the Spaniards.
  - (Dub) Added +20% breakthrough to cav units. For anyone not aware: Breakthrough is a mechanic disabled in vanilla where when defeating a front row unit in combat, it has a chance of pulling the artillery behind it to the front row. This chance is 0% in vanilla by default. BT now changes this to 0% for infantry and 20% for cavalry.
  - (Dub) Rebalanced AI building code such that the AI will finally be more intelligent in their build order, making it much less willing to spend on forcelimit buildings and more focused on economic buffs.
-
+ - (Dub) Re-added CoT to Trondelag (PROV20)
+ 
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
  
 #Mission updates
  - (Dub) Fixed BT's scriptified mission system to remove all all_province checks, greatly reducing lag 
  - (Dub) Hid BT Scandinavian nations' missions from appearing with the Lions of the North DLC installed
- - (Nuq) Updating most/all missions to fit BT's development and province density tweaks across all regions and DLCs. Done so far are:
+ - (Nuq) Updating a lot of mission trees to fit BT's development and province density tweaks across all regions and DLCs. Done so far are:
 	- Aceh
 	- Albania
 	- Bali
@@ -80,6 +81,8 @@ BT16
 	- Oyo
 	- Songhai
 	- Mali
+	- Bavarian 
+	- LotN Norwegian (Dub)
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders
