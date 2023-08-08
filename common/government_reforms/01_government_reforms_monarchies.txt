@@ -2141,13 +2141,13 @@ al_andalusia_government = {
 	}
 	trigger = {
 		religion_group = muslim
-		primary_culture = andalucian
+		primary_culture = andalusi_culture
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
 	nation_designer_trigger = {
 		religion_group = muslim
-		primary_culture = andalucian
+		primary_culture = andalusi_culture
 	}
 	modifiers = {
 		idea_cost = -0.1
@@ -6803,7 +6803,7 @@ anglo_irish_monarchy_reform = { #T3
 
 
 #Ayyubids mission reward
-bt_ayyubid_sultanate_reform = {
+bt_ayyubid_sultanate_reform = { 
 	lock_level_when_selected = yes
 	allow_normal_conversion = yes
 	icon = "ottoman_government"
@@ -6842,6 +6842,10 @@ bt_ayyubid_sultanate_reform = {
 
 	custom_attributes = {
 		locked_government_type = yes
+	}
+	
+	government_abilities = {
+		#TODO: Create unique government mechanics for this one.
 	}
 	
 	conditional = {
