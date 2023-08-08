@@ -621,37 +621,56 @@ hun_ottoman_borders_four_provinces = {
 	149 151 3170 4705 4779 7130 7134 7136 7137 7138 2750 3168 3169 7149 7150 7151 1764 7139 7152 7155 7156
 }
 
-conquer_al_jazira_hsn_provinces = {
+conquer_al_jazira_hsn_provinces = { #num_of_provinces mission
+	4179 4295 5295 5331 6114 6119 6121 
+	411 2309 4293 5296 6118 6120 6123 6125 
+}
+
+hsn_take_baghdad_provinces = { #num_of_provinces mission
 	415 2310 6126 6127 6132
+	406 6089 6099 6135 6136
+	409 2311 2312 6141 6142 6143 6144 
+	408 2340 4288 6145
 }
 
-hsn_take_baghdad_provinces = {
-	409 2311 2312 6141 6142 6143 6144 408 2340 4288 6145
+hsn_white_sheep_provinces = { #num_of_provinces mission
+	4310 6104 6107 5330
+	418 2308 4292 6100
 }
 
-hsn_white_sheep_provinces = {
-	4310 2308 4292 6100
+conquer_aleppo_hsn_provinces = { #num_of_provinces mission
+	377 2313 4271 5170 6080 6094 6095
+	407 2303 4298 6091 6101
 }
 
-conquer_aleppo_hsn_provinces = {
-	377 4271 6095
-}
-
-hsn_conquer_jerusalem_provinces = {
-	378 4297 5205 6074 6075 382 405 1849 6084 6085 6086 6088 364 379 1854 1855 5180 6071 380 381 4270 5203 365 4268 5181
+hsn_conquer_jerusalem_provinces = { #num_of_provinces mission
+	378 4297 5205 6074 6075 
+	382 405 1849 6084 6085 6086 6088 
+	364 379 1854 1855 5180 6071 
+	380 381 4270 5203 365 4268 5181
 }
 
 #NB: Identical to adu_fatimid_lands_provinces
-hsn_destroy_mamluks_provinces = { #Needs is_empty check
+hsn_destroy_mamluks_provinces = { #Needs is_empty check #num_of_provinces mission
 	# the source trigger for this provincegroup contained triggers not representable in provincegroups, please move these triggers to the mission this provincegroup is referenced in. 
+	356 357 2326 5274 5303 5304 
+	358 362 363 2316 4316 4317 5261 
+	359 361 4318 5264 5267
+	2315 2320 2321 4321 5271 
+	1233 2318 2325 4323 5272 5273 5301 
+	360 1231 2317 2319 4319 4320
 }
 
 hsn_conquer_crusaders_provinces = {
-	320 321 5139 5145 6076 6077 6078
+	320 
+	321 5139 5145 6076 6077 6078
 }
 
-hsn_custodian_of_holy_cities_provinces = {
-	384 385
+hsn_custodian_of_holy_cities_provinces = { #num_of_provinces mission
+	383 2327 4269
+	384 5231 5232
+	385 2330 4277
+	2331 4278 5233
 }
 
 tim_persia_one_provinces = {

@@ -177,16 +177,20 @@ hsn_religious_group = {
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=hsn_custodian_of_holy_cities_provinces
 				owner_type=country_or_non_sovereign_subject_holds
+				value=6 #out of 12
 			}
+			owns = 384
+			owns = 385
 		}
 		
 		effect = {
 			add_prestige = 25
 			add_piety = -0.25
+			#Once Arabia is overhauled, probably add claims in Yemen. The current setup is a mess however, so I'm leaving it for now.
 		}
 	}
 }
@@ -325,10 +329,11 @@ hsn_conquest_group = {
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_highlighted
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted_num
 				provinces=hsn_white_sheep_provinces
 				owner_type=owned_by
+				value=6 #out of 8
 			}
 		}
 		
@@ -354,15 +359,23 @@ hsn_conquest_group = {
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_highlighted
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted_num
 				provinces=conquer_aleppo_hsn_provinces
 				owner_type=owned_by
+				value=9 #out of 12
 			}
+			owns = 377
 		}
 		
 		effect = {
 			add_army_tradition = 20
+			377 = { #6/5/5 (16) to 12/11/10 (33). Needs 40 for Eagle's Perch mission.
+				add_base_tax = 6
+				add_base_production = 6
+				add_base_manpower = 4
+				set_province_flag = bt_aleppo_restored
+			}
 			give_permaclaims_for_mission = { mission=hsn_conquer_jerusalem }
 		}
 	}
@@ -378,19 +391,22 @@ hsn_conquest_group = {
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_highlighted
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted_num
 				provinces=hsn_conquer_jerusalem_provinces
 				owner_type=owned_by
+				value=18 #out of 25
 			}
+			owns = 382
+			owns = 379
 		}
 		
 		effect = {
 			add_prestige = 15
-			382 = { #From 12/12/8 (32) to 16/16/12 (44)
-				add_base_tax = 4
-				add_base_production = 4
-				add_base_manpower = 4
+			382 = { #From 7/6/5 (18) to 12/11/10 (33)
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_manpower = 5
 				add_province_modifier = { #Great Mosque of Damascus (Umayyad mosque) modifier from Andalusian mission tree.
 					name = "adu_summer_capital"
 					duration = -1
@@ -419,12 +435,13 @@ hsn_conquest_group = {
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_highlighted
 				provinces=hsn_destroy_mamluks_provinces
 				owner_type=owned_by
-				is_empty=yes
+				value=20 #out of 30. Note that 2 provinces are uncolonized in 1444.
 			}
+			owns = 361 #Cairo
 		}
 		
 		effect = {
@@ -440,7 +457,7 @@ hsn_conquest_group = {
 	hsn_new_capital = {
 		icon = mission_early_game_buildings
 		required_missions = { hsn_destroy_mamluks }
-		position = 5
+		position = 6
 		
 		provinces_to_highlight = {
 			OR = {
@@ -482,7 +499,7 @@ hsn_conquest_group = {
 	hsn_ayyubid_restoration = {
 		icon = mission_empire
 		required_missions = { hsn_new_capital }
-		position = 6
+		position = 7
 		
 		trigger = {
 			total_own_and_non_tributary_subject_development = 2000
@@ -531,10 +548,11 @@ hsn_conquest_group_east = {
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_highlighted
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted_num
 				provinces=conquer_al_jazira_hsn_provinces
-				owner_type=owned_by
+				owner_type=owned_by 
+				value=9 #out of 15
 			}
 		}
 		
@@ -547,15 +565,6 @@ hsn_conquest_group_east = {
 					NOT = { is_core = ROOT }
 				}
 				add_permanent_claim = ROOT
-			}
-			2306 = {
-				if = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 		}
 	}
@@ -571,11 +580,13 @@ hsn_conquest_group_east = {
 		}
 		
 		trigger = {
-			has_fulfiled_province_requirement_for_mission_trigger = {
-				tooltip=country_holds_highlighted
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted_num
 				provinces=hsn_take_baghdad_provinces
 				owner_type=owned_by
+				value=15 #out of 21
 			}
+			owns = 410
 		}
 		
 		effect = {
@@ -584,6 +595,33 @@ hsn_conquest_group_east = {
 				add_base_production = 5
 				add_base_manpower = 3
 				set_province_flag = bt_baghdad_restored
+			}
+			al_jazira_area = {
+				limit = {
+					religion = shiite
+				}
+				add_province_modifier = {
+					name = "bt_hsn_influx_of_sunni_population"
+					duration = 7300
+				}
+			}
+			middle_euphrates_area = {
+				limit = {
+					religion = shiite
+				}
+				add_province_modifier = {
+					name = "bt_hsn_influx_of_sunni_population"
+					duration = 7300
+				}
+			}
+			lower_tigris_area = {
+				limit = {
+					religion = shiite
+				}
+				add_province_modifier = {
+					name = "bt_hsn_influx_of_sunni_population"
+					duration = 7300
+				}
 			}
 			basra_area = {
 				limit = {
