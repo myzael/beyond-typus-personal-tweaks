@@ -2255,7 +2255,7 @@ on_culture_demoted_effect = {
 	if = {
 		limit = {
 			has_country_modifier = tur_turkish_andalusian_relations_tur
-			NOT = { accepted_culture = andalucian }
+			NOT = { accepted_culture = andalusi_culture }
 		}
 		remove_country_modifier = tur_turkish_andalusian_relations_tur
 	}
