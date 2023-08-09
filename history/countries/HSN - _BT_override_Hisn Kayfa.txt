@@ -1,2 +1,2 @@
 
-add_accepted_culture = syriac_culture
+add_accepted_culture = assyrian_culture
