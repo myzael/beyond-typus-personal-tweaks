@@ -12,7 +12,10 @@ BT16
  - (Harbivore) Changed the AI to no longer make alliances with nations 10% of their development or 5x their development. (AI make much better alliances yay now more opm allies with great powers)
  - (Harbivore) Added English Marcher Lordships. Like normal marches but you can integrate them and also steal their generals
  - (Harbivore) Added mercury events giving gold to 3 provinces where cinnabar was mined. Castile, Slovinia and Serbia.
-
+ - (Dub) Added an Ayyubid Administration government mechanic to the Ayyubid Sultanate government reform, allowing the choice of one of three interactions once every 5 years:
+	 - Draft Mamluks: Gain 1 years worth of manpower from stated provinces of unaccepted cultures of non-state religion.
+	 - Sponsor Shayk: Gain a random 50% discounted advisor of skill level 2/3 depending on if monthly income is below/above 35.
+	 - Grant Iqta: Gain a general with current army tradition + 25.
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
@@ -83,6 +86,7 @@ BT16
 	- Mali
 	- Bavarian 
 	- LotN Norwegian (Dub)
+	- BT Ayyubid (Dub)
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders

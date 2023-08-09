@@ -1562,14 +1562,17 @@ andalusia_slot_5_missions = {
 		}
 		
 		effect = {
-			382 = { #From 3/3/3 (+9) to 6/6/5 (+17)
-				add_base_tax = 6
-				add_base_production = 6
+			382 = { #From 7/6/5 (18) to 12/11/10 (33)
+				add_base_tax = 5
+				add_base_production = 5
 				add_base_manpower = 5
-				add_province_modifier = {
-					name = "adu_summer_capital"
-					duration = -1
+				set_great_project_tier_2 = { #BT makes this a monument
+					type = umayyad_mosque
 				}
+				# add_province_modifier = {
+					# name = "adu_summer_capital"
+					# duration = -1
+				# }
 				set_province_flag = bt_damascus_restored
 			}
 			erzurum_area = { #Upper Euphrates

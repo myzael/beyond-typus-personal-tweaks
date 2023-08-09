@@ -6845,7 +6845,7 @@ bt_ayyubid_sultanate_reform = {
 	}
 	
 	government_abilities = {
-		#TODO: Create unique government mechanics for this one.
+		ayyubid_sultanate_mechanic
 	}
 	
 	conditional = {

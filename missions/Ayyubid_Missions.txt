@@ -188,7 +188,7 @@ hsn_religious_group = {
 		}
 		
 		effect = {
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_piety = -0.25
 			#Once Arabia is overhauled, probably add claims in Yemen. The current setup is a mess however, so I'm leaving it for now.
 		}
@@ -234,7 +234,7 @@ hsn_revenge_on_crusaders_group = {
 		}
 		
 		effect = {
-			add_prestige = 10
+			add_prestige_or_monarch_power = { amount = 10 }
 			add_navy_tradition = 25
 			#Changed from nonsensical north_kurdistan_area & erzurum_area to rest of mainland Levant.
 			give_permaclaims_for_mission = { mission=hsn_conquer_crusaders }
@@ -260,7 +260,7 @@ hsn_revenge_on_crusaders_group = {
 		}
 		
 		effect = {
-			add_prestige = 15
+			add_prestige_or_monarch_power = { amount = 15 }
 			add_country_modifier = {
 				name = "bt_hsn_crusaders_conquered"
 				duration = 5475
@@ -338,7 +338,7 @@ hsn_conquest_group = {
 		}
 		
 		effect = {
-			add_prestige = 15
+			add_prestige_or_monarch_power = { amount = 15 }
 			add_army_tradition = 20
 			give_permaclaims_for_mission = { mission=conquer_aleppo_hsn }
 		}
@@ -374,6 +374,9 @@ hsn_conquest_group = {
 				add_base_tax = 6
 				add_base_production = 6
 				add_base_manpower = 4
+				set_great_project_tier_2 = {
+					type = umayyad_mosque
+				}
 				set_province_flag = bt_aleppo_restored
 			}
 			give_permaclaims_for_mission = { mission=hsn_conquer_jerusalem }
@@ -402,15 +405,18 @@ hsn_conquest_group = {
 		}
 		
 		effect = {
-			add_prestige = 15
-			382 = { #From 7/6/5 (18) to 12/11/10 (33)
+			add_prestige_or_monarch_power = { amount = 15 }
+			382 = { #From 7/6/5 (18) to 12/11/10 (33). Needs 40 for Eagle's Perch mission.
 				add_base_tax = 5
 				add_base_production = 5
 				add_base_manpower = 5
-				add_province_modifier = { #Great Mosque of Damascus (Umayyad mosque) modifier from Andalusian mission tree.
-					name = "adu_summer_capital"
-					duration = -1
+				set_great_project_tier_2 = {
+					type = umayyad_mosque
 				}
+				# add_province_modifier = { #Great Mosque of Damascus (Umayyad mosque) modifier from Andalusian mission tree.
+					# name = "adu_summer_capital"
+					# duration = -1
+				# }
 				set_province_flag = bt_damascus_restored
 			}
 			country_event = {
@@ -445,7 +451,7 @@ hsn_conquest_group = {
 		}
 		
 		effect = {
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_legitimacy = 25
 			add_country_modifier = {
 				name = "bt_hsn_egypt_reclaimed" #+10% governing capacity
@@ -518,7 +524,7 @@ hsn_conquest_group = {
 				}
 				set_dynasty = original_dynasty
 			}
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_legitimacy = 25
 			add_government_reform = bt_ayyubid_sultanate_reform
 			override_country_name = AYB #Using BT's old country names still in the localisation files.
@@ -557,7 +563,7 @@ hsn_conquest_group_east = {
 		}
 		
 		effect = {
-			add_prestige = 15
+			add_prestige_or_monarch_power = { amount = 15 }
 			give_permaclaims_for_mission = { mission=hsn_take_baghdad }
 			north_kurdistan_area = {
 				limit = {
@@ -641,7 +647,7 @@ hsn_conquest_group_east = {
 					duration = 7300
 				}
 			}
-			add_prestige = 15
+			add_prestige_or_monarch_power = { amount = 15 }
 		}
 	}
 	
@@ -670,7 +676,7 @@ hsn_conquest_group_east = {
 				name = "bt_hsn_new_caliphate"
 				duration = 7300
 			}
-			add_prestige = 15
+			add_prestige_or_monarch_power = { amount = 15 }
 		}
 	}
 	
@@ -743,7 +749,7 @@ hsn_tech_internal_group = {
 			add_adm_power = 100
 			add_dip_power = 100
 			add_mil_power = 100
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 		}
 	}
 }
