@@ -195,7 +195,6 @@ estate_nobles_border_forts = {
 	penalties = {
 	}
 	benefits = {
-		fort_maintenance_modifier = -0.25
 	}
 	ai_will_do = {
 		factor = 1
