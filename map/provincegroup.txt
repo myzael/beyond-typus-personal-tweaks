@@ -1349,7 +1349,7 @@ emp_pro_sicily_provinces = {
 }
 
 emp_pro_jerusalem_provinces = {
-	364 379 1854 1855 5180 6071 365 4268 5181 365 380 381 4270 5203
+	364 379 1854 1855 5180 6071 365 4268 5181 380 381 4270 5203
 }
 
 emp_pro_france_provinces = {
