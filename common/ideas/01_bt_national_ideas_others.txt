@@ -2195,8 +2195,10 @@ MKL_ideas = {
 	}
 	
 	trigger = {
-		tag = MKL
-		tag = STR
+		OR = {
+			tag = MKL
+			tag = STR
+		}
 	}
 	free = yes
 	
@@ -2222,6 +2224,47 @@ MKL_ideas = {
 	mkl_grand_duchy = {
 		unjustified_demands = -0.2
  	}
+}
+SLZ_ideas = {
+	start = {
+		land_morale = 0.1
+		tolerance_own = 1
+	}
+	bonus = {
+		warscore_cost_vs_other_religion = -0.2
+	}
+	trigger = {
+		tag = SLZ
+	}
+	free = yes
+	
+	SLZ_idea_1 = {
+		global_tax_modifier = 0.1
+	}
+	SLZ_idea_2 = {
+		production_efficiency = 0.1
+	}
+	SLZ_idea_3 = { #trying to be inclusive
+		papal_influence = 0.5
+		church_power_modifier = 0.5
+		monthly_fervor_increase = 1
+		devotion = 1
+	}
+	SLZ_idea_4 = {
+		prestige = 1
+		great_project_upgrade_cost = -0.15
+	}
+	SLZ_idea_5 = {
+		expel_minorities_cost = -0.2
+		global_missionary_strength = 0.01
+	}
+	SLZ_idea_6 = {
+		global_manpower_modifier = 0.2
+	}
+	SLZ_idea_7 = {
+		innovativeness_gain = 0.25
+		curia_powers_cost = -0.1
+	}
 }
 SBG_ideas = {
 	start = {
