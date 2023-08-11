@@ -534,11 +534,11 @@ ayyubid_sultanate_mechanic = {
 			effect = { 
 				trigger_switch = { #On intervals of 5. I don't really feel like making this 5 times longer.
 					on_trigger = army_tradition
-					100 = { create_general = { tradition = 125 } }
-					95 = { create_general = { tradition = 120 } }
-					90 = { create_general = { tradition = 115 } }
-					85 = { create_general = { tradition = 110 } }
-					80 = { create_general = { tradition = 105 } }
+					100 = { create_general = { tradition = 100 } }
+					95 = { create_general = { tradition = 100 } }
+					90 = { create_general = { tradition = 100 } }
+					85 = { create_general = { tradition = 100 } }
+					80 = { create_general = { tradition = 100 } }
 					75 = { create_general = { tradition = 100 } }
 					70 = { create_general = { tradition = 95 } }
 					65 = { create_general = { tradition = 90 } }
