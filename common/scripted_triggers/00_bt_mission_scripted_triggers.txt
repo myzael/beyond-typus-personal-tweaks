@@ -25,7 +25,7 @@ has_fulfiled_province_requirement_for_mission_trigger = {
 		$provinces$ = {
 			type = all
 			OR = {
-				$owner_type$ = ROOT
+				$owner_type$ = PREV
 				area = unused_area #Fixes the edge case whereif a province group is outdated such that it contains provinces that were at some point cut from the game.
 				[[is_empty]
 					is_empty = yes 
@@ -100,7 +100,7 @@ has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 		desc = $tooltip$
 		$provinces$ = {
 			type = all
-			$owner_type$ = ROOT #No check for unused_area because they would count towards this.
+			$owner_type$ = PREV #No check for unused_area because they would count towards this.
 		}
 		amount = $value$
 	}
@@ -141,7 +141,7 @@ has_fulfiled_general_province_requirement_for_mission_trigger = {
 #General num of province case with custom set of triggers:
 #------------#
 #Usage:
-#has_fulfiled_general_province_requirement_for_mission_trigger = {
+#has_fulfiled_general_num_of_provinces_requirement_for_mission_trigger = {
 #	tooltip=country_holds_or_non_sovereign_subject_holds_highlighted
 #	provinces=byz_mainland_greece_provinces
 #	triggers="
