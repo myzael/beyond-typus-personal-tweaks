@@ -523,8 +523,7 @@ eastern_norway = {
 	17 22 3117 4143 4144 7780 7781 7783 7784 
 }
 western_norway = {  
-	23 24 2752 3118 7785 7786 
-	4145 7772 7782 7809 
+	23 24 2752 3118 4145 7772 7782 7785 7786 7809
 }
 subarctic_islands_area = { #no longer includes Greenland
 	369 1978 1979 5591 
