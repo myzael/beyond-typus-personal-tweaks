@@ -768,7 +768,7 @@ swe_diplomacy_mission_slot = {
 					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 					provinces=swe_swedish_pommerania_provinces
 					owner_type=country_or_non_sovereign_subject_holds
-					value = 10 #out of 22 #In vanilla it's 7 out of 12. This is way more than historical Swedish Pomerania (Technically 4 of these provinces and technically parts of two others), so I'm discarding this equivalency here to count for the entirety of historical Swedish Pomerania.
+					value=10 #out of 22 #In vanilla it's 7 out of 12. This is way more than historical Swedish Pomerania (Technically 4 of these provinces and technically parts of two others), so I'm discarding this equivalency here to count for the entirety of historical Swedish Pomerania.
 				}
 				custom_trigger_tooltip = { #Might need altering.
 					tooltip = swe_swedish_pommerania_at
@@ -1314,7 +1314,7 @@ swe_kalmar_union_mission_slot = {
 					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 					provinces=swe_the_livonian_order_provinces
 					owner_type=country_or_non_sovereign_subject_holds
-					value = 21 #out of 34 #In vanilla it's 6 out of 10. The intent with BT's number is to match historical Swedish borders, so I'm discarding this equivalency here to count for the entirety of historical Swedish Estonia-Livonia.
+					value=21 #out of 34 #In vanilla it's 6 out of 10. The intent with BT's number is to match historical Swedish borders, so I'm discarding this equivalency here to count for the entirety of historical Swedish Estonia-Livonia.
 				}
 				owns_or_non_sovereign_subject_of = 38
 			}
@@ -1326,7 +1326,7 @@ swe_kalmar_union_mission_slot = {
 							tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 							provinces=swe_the_livonian_order_provinces
 							owner_type=country_or_non_sovereign_subject_holds
-							value = 21 #out of 34 #In vanilla it's 6 out of 10. The intent with BT's number is to match historical Swedish borders, so I'm discarding this equivalency here to count for the entirety of historical Swedish Estonia-Livonia.
+							value=21 #out of 34 #In vanilla it's 6 out of 10. The intent with BT's number is to match historical Swedish borders, so I'm discarding this equivalency here to count for the entirety of historical Swedish Estonia-Livonia.
 						}
 						owns_or_non_sovereign_subject_of = 38
 					}
@@ -1475,7 +1475,7 @@ swe_kalmar_union_mission_slot = {
 					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 					provinces=swe_the_teutonic_order_provinces
 					owner_type=country_or_non_sovereign_subject_holds
-					value = 16 #out of 25 #In vanilla it's 5 out of 8.
+					value=16 #out of 25 #In vanilla it's 5 out of 8.
 				}
 				owns_or_non_sovereign_subject_of = 40
 			}
@@ -1487,7 +1487,7 @@ swe_kalmar_union_mission_slot = {
 							tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 							provinces=swe_the_teutonic_order_provinces
 							owner_type=country_or_non_sovereign_subject_holds
-							value = 16 #out of 25 #In vanilla it's 5 out of 8.
+							value=16 #out of 25 #In vanilla it's 5 out of 8.
 						}
 						owns_or_non_sovereign_subject_of = 40
 					}

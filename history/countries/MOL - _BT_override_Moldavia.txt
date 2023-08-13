@@ -30,4 +30,4 @@ capital = 3156 # Suceava
 	}
 }
 
-1565.1.1 = { capital = 268 # Iasi }
+1565.1.1 = { capital = 268 } # Iasi 
