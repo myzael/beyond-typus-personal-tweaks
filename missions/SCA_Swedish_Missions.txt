@@ -62,15 +62,18 @@ swe_scandinavian_colonialism_mission_slot = {
 			swe_declare_independence
 		}
 		provinces_to_highlight = {
-			area = skaneland_area
+			province_group = swe_conquer_scania_provinces
 			NOT = { owned_by = ROOT }
 			NOT = { is_core = ROOT }
 		}
 		trigger = {
-			skaneland_area = {
-				owned_by = ROOT
-				is_core = ROOT
-				type = all
+			has_fulfiled_general_province_requirement_for_mission_trigger = { #Special for this mission because it requires cores as well.
+				tooltip=country_holds_and_cores_highlighted
+				provinces=swe_conquer_scania_provinces
+				triggers="
+					owned_by = ROOT
+					is_core = ROOT
+				"
 			}
 		}
 		effect = {
@@ -109,36 +112,7 @@ swe_scandinavian_colonialism_mission_slot = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					315 = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-				}
-				add_permanent_claim = 315
-			}
-			eastern_norway = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			western_norway = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			northern_norway = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=swe_claim_norwegian_crown }
 		}
 	}
 	
@@ -147,31 +121,24 @@ swe_scandinavian_colonialism_mission_slot = {
 		position = 4
 		required_missions = { swe_conquer_scania }
 		provinces_to_highlight = {
-			OR = {
-				area = eastern_norway
-				area = western_norway
-				area = northern_norway
-				owned_by = NOR
-			}
+			province_group = swe_claim_norwegian_crown_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			OR = {
 				NOR = { is_subject_of = ROOT }
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					OR = {
-						area = eastern_norway
-						area = western_norway
-						area = northern_norway
-					}
-					value = 8
+				has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+					provinces=swe_claim_norwegian_crown_provinces
+					owner_type=country_or_non_sovereign_subject_holds
+					value=20 #out of 30. #Vanilla has 8 out of 11. BT includes two, potentially three, provinces not included in vanilla.
 				}
 			}
 			owns_or_non_sovereign_subject_of = 17
 			owns_or_non_sovereign_subject_of = 20
 			owns_or_non_sovereign_subject_of = 23
 		}
-		effect = {
+		effect = { #Contemplated adding a mission reward to swedify Bohuslen + Jemtland-Herjedalen, but decided against it. Norway as a subject is so weak that the extra LD and relations malus is negligible. Plus, there is a gameplay reason for Sweden to keep at least Jemtland under Norwegian control - its prospecting event can grant it copper.
 			if = { 	
 				limit = {
 					NOR = { 
@@ -190,27 +157,7 @@ swe_scandinavian_colonialism_mission_slot = {
 				name = "norway_subjugated_swe"
 				duration = 5475
 			}
-			jutland_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			denmark_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			holstein_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=swe_fall_of_denmark }
 		}
 	}
 	
@@ -219,41 +166,45 @@ swe_scandinavian_colonialism_mission_slot = {
 		position = 5
 		required_missions = { swe_claim_norwegian_crown }
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					owned_by = DAN
-					region = scandinavia_region
-				}
-				AND = {
-					OR = {
-						province_id = 12
-						province_id = 6
-						province_id = 4142
-					}
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-			}
+			province_group = swe_fall_of_denmark_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			OR = {
 				NOT = { exists = DAN }
 				DAN = { NOT = { any_owned_province = { region = scandinavia_region } } }
 				DAN = { is_subject_of = ROOT }
+				has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+					provinces=swe_fall_of_denmark_provinces
+					owner_type=country_or_non_sovereign_subject_holds
+					value=15 #out of 26. #The desire is to require almost all provinces in Denmark+Slesvig, but allow the Holstein area to be claimed and potentially counted for this.
+				}
 			}
-			owns_or_non_sovereign_subject_of = 12
+			owns_or_non_sovereign_subject_of = 12 #Because capital of Denmark
 			owns_or_non_sovereign_subject_of = 6
+			owns_or_non_sovereign_subject_of = 15
 			owns_or_non_sovereign_subject_of = 4142
 		}
-		effect = {
-			6 = { center_of_trade = 2 }
-			12 = {
+		effect = { #This effect has been tweaked heavily because BT changes the CoT layout.
+			#Vanilla does:
+			#Upgrade Copenhagen + Aarhus to level 2
+			#Add one in Lund/Skaane.
+			#BT does:
+			#Add one in Aarhus at level 2
+			#Upgrade Skaane and Ribe to level 2
+			#I decided against giving a CoT in Copenhagen. It already gets +20 from the Sound Toll, and without nerfing that modifier, it gets... a bit OP, esp. as it makes it better or as good as Lubeck at a CoT level of 1.
+			6 = { 
 				custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
 				hidden_effect = {
 					if = {
 						limit = { NOT = { province_has_center_of_trade_of_level = 2 } }
 						add_center_of_trade_level = 1
 					}
-				}
+				} 
+			}
+			15 = {
+				center_of_trade = 2
 			}
 			4142 = {
 				custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
@@ -268,82 +219,18 @@ swe_scandinavian_colonialism_mission_slot = {
 		}
 	}
 	
-	swe_swedish_peasantry = {
+	swe_swedish_peasantry = { #This mission's triggers have been shuffled over to a scripted trigger - The BT addon Internal Politicks specifically adds the Peasants estate, and this mission makes sense to interact with that estate. This allows that addon to not have to keep a separate copy of this mission file, and can instead just alter scripted triggers/effects. //Dub
 		icon = mission_swedish_peasantry
 		position = 7
 		required_missions = {}
 		provinces_to_highlight = {
-			owned_by = ROOT
-			OR = {
-				trade_goods = grain
-				trade_goods = livestock
-				trade_goods = fish
-			}
-			if = {
-				limit = {
-					ROOT = { NOT = { has_country_flag = had_the_dacke_feud } }
-				}
-				OR = {
-					NOT = { development = 10 }
-					NOT = { has_manufactory_trigger = yes }
-				}
-			}
-			else = {
-				NOT = { has_manufactory_trigger = yes }
-			}
+			bt_compat_btip_swe_swedish_peasantry_provinces_to_highlight_trigger = yes
 		}
 		trigger = {
-			stability = 2
-			has_any_disaster = no
-			NOT = { has_spawned_rebels = particularist_rebels }
-			NOT = { has_spawned_rebels = anti_tax_rebels }
-			num_of_owned_provinces_with = {
-				OR = {
-					trade_goods = grain
-					trade_goods = livestock
-					trade_goods = fish
-				}
-				has_manufactory_trigger = yes
-				value = 10
-			}
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = swe_swedish_peasantry_ct
-					has_country_flag = had_the_dacke_feud
-				}
-				num_of_owned_provinces_with = {
-					OR = {
-						trade_goods = grain
-						trade_goods = livestock
-						trade_goods = fish
-					}
-					development = 10
-					value = 10
-				}
-			}
+			bt_compat_swe_btip_swedish_peasantry_trigger_trigger = yes
 		}
 		effect = {
-			add_country_modifier = {
-				name = swe_support_of_the_peasantry
-				duration = -1
-			}
-			custom_tooltip = swe_swedish_peasantry_tt
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						OR = {
-							trade_goods = grain
-							trade_goods = fish
-							trade_goods = livestock
-						}
-					}
-					add_province_modifier = {
-						name = swe_support_of_the_peasantry_prov
-						duration = -1
-						hidden = yes
-					}
-				}
-			}
+			bt_compat_swe_swedish_peasantry_effect_effect = yes
 		}
 	}
 	
@@ -356,6 +243,7 @@ swe_scandinavian_colonialism_mission_slot = {
 				area = laponia_area
 				area = norrland_area
 				area = bothnia_area
+				area = northern_norway #BT; This area contains Sami culture provinces in BT
 			}
 			OR = {
 				NOT = { religion = ROOT }
@@ -409,6 +297,20 @@ swe_scandinavian_colonialism_mission_slot = {
 				}
 				type = all
 			}
+			northern_norway = { 
+				custom_trigger_tooltip = {
+					tooltip = swe_handle_the_sami_tt
+					owned_by = ROOT
+					religion = ROOT
+					if = {
+						limit = {
+							owned_by = ROOT
+						}
+						has_owner_accepted_culture = yes
+					}
+				}
+				type = all
+			}
 		}
 		effect = {
 			unlock_estate_privilege = {
@@ -426,10 +328,14 @@ swe_scandinavian_colonialism_mission_slot = {
 				add_local_autonomy = -100
 				add_base_manpower = 2
 			}
+			northern_norway = {
+				add_local_autonomy = -100
+				add_base_manpower = 2
+			}
 		}
 	}
 	
-	swe_forest_expansion = {
+	swe_forest_expansion = { #Decided to keep this unchanged as it essentially forces Sweden to have a decent high base dev all over.
 		icon = mission_expand_into_the_forest
 		position = 9
 		required_missions = { swe_handle_the_sami }
@@ -852,25 +758,19 @@ swe_diplomacy_mission_slot = {
 		position = 3
 		required_missions = { swe_declare_independence }
 		provinces_to_highlight = {
-			OR = {
-				area = hinter_pommern_area
-				area = vorpommern_area
-				area = mecklenburg_area
-			}
+			province_group = swe_swedish_pommerania_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			owner = { NOT = { alliance_with = ROOT } }
 		}
 		trigger = {
 			OR = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					OR = {
-						area = hinter_pommern_area
-						area = vorpommern_area
-						area = mecklenburg_area
-					}
-					value = 7
+				has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+					provinces=swe_swedish_pommerania_provinces
+					owner_type=country_or_non_sovereign_subject_holds
+					value = 10 #out of 22 #In vanilla it's 7 out of 12. This is way more than historical Swedish Pomerania (Technically 4 of these provinces and technically parts of two others), so I'm discarding this equivalency here to count for the entirety of historical Swedish Pomerania.
 				}
-				custom_trigger_tooltip = {
+				custom_trigger_tooltip = { #Might need altering.
 					tooltip = swe_swedish_pommerania_at
 					any_ally = {
 						has_opinion = {
@@ -887,7 +787,7 @@ swe_diplomacy_mission_slot = {
 								area = vorpommern_area
 								area = mecklenburg_area
 							}
-							value = 7
+							value = 7 #Keeping vanilla's 7 here because it's just simpler and frankly, getting an ally like this is quite a bit harder than conquering it directly anyway.
 						}
 					}
 				}
@@ -897,12 +797,8 @@ swe_diplomacy_mission_slot = {
 			if = {
 				limit = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						OR = {
-							area = hinter_pommern_area
-							area = vorpommern_area
-							area = mecklenburg_area
-						}
-						value = 7
+						province_group = swe_swedish_pommerania_provinces
+						value = 10
 					}
 				}
 				add_country_modifier = {
@@ -975,7 +871,6 @@ swe_diplomacy_mission_slot = {
 				mecklenburg_area = {
 					limit = {
 						is_permanent_claim = ROOT
-						NOT = { province_id = 45 }
 					}
 					remove_claim = ROOT
 				}
@@ -1024,13 +919,14 @@ swe_diplomacy_mission_slot = {
 			}
 		}
 		effect = {
-			#Maybe a new event for LÃ¼beck?
+			#Maybe a new event for Lübeck?
 			if = {
 				limit = {
 					owns_or_non_sovereign_subject_of = 45
 				}
 				45 = {
 					add_prosperity = 100
+					add_base_tax = 4 #BT dev doubling;
 					add_base_production = 4
 				}
 			}
@@ -1083,12 +979,12 @@ swe_diplomacy_mission_slot = {
 			has_any_disaster = no
 			legitimacy_equivalent = 90
 			is_subject = no
-			total_development = 500
+			total_development = 1000 #BT dev doubling;
 			num_of_owned_provinces_with = {
 				region = scandinavia_region
 				is_core = ROOT
 				owned_by = ROOT
-				value = 45
+				value = 100 #Sweden 51, Denmark 19, Norway 30 for a total of 100 provinces. Then we have Iceland 4, 4 in Northern Isles, Gotland 1, the remaining 3 provinces in West Karelia and 5 in Slesvig. So there's 113 provinces in Scandinavia. 100 seems fine.
 			}
 			owns_core_province = 1
 			owns_core_province = 6
@@ -1217,21 +1113,36 @@ swe_diplomacy_mission_slot = {
 					}
 				}
 				AND = {
-					province_id = 1926
+					province_id = 1
 					NOT = {
 						trade_share = {
 							country = ROOT
-							share = 50
+							share = 75
+						}
+					}
+				}
+				AND = {
+					province_id = 43
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 25
 						}
 					}
 				}
 			}
 		}
 		trigger = {
-			1926 = {
+			1 = {
 				trade_share = {
 					country = ROOT
-					share = 50
+					share = 75
+				}
+			}
+			43 = {
+				trade_share = {
+					country = ROOT
+					share = 25
 				}
 			}
 			1975 = {
@@ -1382,13 +1293,7 @@ swe_kalmar_union_mission_slot = {
 					id = flavor_swe.121
 				}
 			}
-			skaneland_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=swe_conquer_scania }
 		}
 	}
 	
@@ -1397,11 +1302,7 @@ swe_kalmar_union_mission_slot = {
 		position = 3
 		required_missions = { swe_declare_independence }
 		provinces_to_highlight = {
-			OR = {
-				area = estonia_ingria_area
-				area = livonia_area
-				area = curonia_area
-			}
+			province_group = swe_the_livonian_order_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -1409,30 +1310,27 @@ swe_kalmar_union_mission_slot = {
 				limit = {
 					NOT = { has_country_flag = swe_polish_swedish_coexistence_goal }
 				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					OR = {
-						area = estonia_ingria_area
-						area = livonia_area
-						area = curonia_area
-					}
-					value = 6
+				has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+					provinces=swe_the_livonian_order_provinces
+					owner_type=country_or_non_sovereign_subject_holds
+					value = 21 #out of 34 #In vanilla it's 6 out of 10. The intent with BT's number is to match historical Swedish borders, so I'm discarding this equivalency here to count for the entirety of historical Swedish Estonia-Livonia.
 				}
 				owns_or_non_sovereign_subject_of = 38
 			}
 			else = {
 				OR = {
-					custom_trigger_tooltip = {
-						tooltip = swe_the_livonian_order_at
-						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							OR = {
-								area = estonia_ingria_area
-								area = livonia_area
-								area = curonia_area
-							}
-							value = 6
+					AND = {
+						#tooltip = swe_the_livonian_order_at
+						has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+							tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+							provinces=swe_the_livonian_order_provinces
+							owner_type=country_or_non_sovereign_subject_holds
+							value = 21 #out of 34 #In vanilla it's 6 out of 10. The intent with BT's number is to match historical Swedish borders, so I'm discarding this equivalency here to count for the entirety of historical Swedish Estonia-Livonia.
 						}
 						owns_or_non_sovereign_subject_of = 38
 					}
+					#Leaving everything below here as unmodified because currently it's a mess, and I honestly do not see why you would want PLC/Poland to own these.
 					if = {
 						limit = {
 							exists = PLC
@@ -1515,28 +1413,15 @@ swe_kalmar_union_mission_slot = {
 					custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
 				}
 				38 = {
-					add_base_tax = 2
-					add_base_production = 2
-					add_base_manpower = 1
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 2
 					add_latest_building = {
 						trade = yes
 						builder = ROOT
 					}
 				}
-				east_prussia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				west_prussia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				give_permaclaims_for_mission = { mission=swe_the_teutonic_order }
 			}
 			else = {
 				if = {
@@ -1574,6 +1459,7 @@ swe_kalmar_union_mission_slot = {
 		position = 5
 		required_missions = { swe_the_livonian_order }
 		provinces_to_highlight = {
+			province_group = swe_the_teutonic_order_provinces
 			OR = {
 				area = east_prussia_area
 				area = west_prussia_area
@@ -1585,28 +1471,27 @@ swe_kalmar_union_mission_slot = {
 				limit = {
 					NOT = { has_country_flag = swe_polish_swedish_coexistence_goal }
 				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					OR = {
-						area = east_prussia_area
-						area = west_prussia_area
-					}
-					value = 5
+				has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+					provinces=swe_the_teutonic_order_provinces
+					owner_type=country_or_non_sovereign_subject_holds
+					value = 16 #out of 25 #In vanilla it's 5 out of 8.
 				}
 				owns_or_non_sovereign_subject_of = 40
 			}
 			else = {
 				OR = {
-					custom_trigger_tooltip = {
-						tooltip = swe_the_teutonic_order_at
-						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-							OR = {
-								area = east_prussia_area
-								area = west_prussia_area
-							}
-							value = 5
+					AND = {
+						#tooltip = swe_the_teutonic_order_at
+						has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+							tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+							provinces=swe_the_teutonic_order_provinces
+							owner_type=country_or_non_sovereign_subject_holds
+							value = 16 #out of 25 #In vanilla it's 5 out of 8.
 						}
 						owns_or_non_sovereign_subject_of = 40
 					}
+					#Leaving everything below here unchanged, because it's a mess.
 					if = {
 						limit = {
 							exists = PLC
@@ -1686,27 +1571,8 @@ swe_kalmar_union_mission_slot = {
 						builder = ROOT
 					}
 				}
-				hinter_pommern_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				vorpommern_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				mecklenburg_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				#I don't get why they're giving it again, but oh well.
+				give_permaclaims_for_mission = { mission=swe_swedish_pommerania }
 			}
 			else = {
 				if = {
@@ -1753,6 +1619,9 @@ swe_kalmar_union_mission_slot = {
 				area = vorpommern_area
 				area = hinter_pommern_area
 				area = eastern_norway
+				#BT Additions
+				area = north_karelia
+				area = schleswig_area
 			}
 			has_port = yes
 			owner = {
@@ -1780,6 +1649,9 @@ swe_kalmar_union_mission_slot = {
 				vorpommern_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				hinter_pommern_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				eastern_norway = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+				#BT Additions
+				north_karelia = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+				schleswig_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 			}
 		}
 		effect = {
@@ -1800,6 +1672,9 @@ swe_kalmar_union_mission_slot = {
 					vorpommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					hinter_pommern_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 					eastern_norway = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+					#BT Additions
+					north_karelia = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
+					schleswig_area = { OR = { country_or_non_sovereign_subject_holds = ROOT has_port = no } type = all }
 				}
 				add_country_modifier = {
 					name = swe_dominium_maris_baltici_mod
@@ -1823,6 +1698,9 @@ swe_kalmar_union_mission_slot = {
 					vorpommern_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					hinter_pommern_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 					eastern_norway = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+					#BT Additions
+					north_karelia = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
+					schleswig_area = { OR = { owner = { OR = { tag = ROOT is_subject_of = ROOT alliance_with = ROOT } } has_port = no } type = all }
 				}
 				add_country_modifier = {
 					name = swe_baltic_diplomacy
@@ -1864,15 +1742,16 @@ swe_kalmar_union_mission_slot = {
 					duration = 9125
 				}
 			}
-			ostra_svealand_area = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_province_modifier = {
-					name = swe_local_economical_upswing
-					duration = 9125
-				}
-			}
+			#BT Merged;
+			# ostra_svealand_area = {
+				# limit = {
+					# owned_by = ROOT
+				# }
+				# add_province_modifier = {
+					# name = swe_local_economical_upswing
+					# duration = 9125
+				# }
+			# }
 		}
 	}
 	
@@ -1892,7 +1771,7 @@ swe_kalmar_union_mission_slot = {
 				}
 				else = { num_of_times_improved = 10 }
 				has_production_building_trigger = yes
-				base_production = 10
+				base_production = 10 #Seems sensible to me. 10 base production is quite a lot.
 			}
 			treasury = 1500
 		}
@@ -1913,6 +1792,10 @@ swe_kalmar_union_mission_slot = {
 				province_id = 4
 				province_id = 5
 				province_id = 1985
+				#BT Additions
+				province_id = 3123
+				province_id = 7794
+				province_id = 7863
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1927,25 +1810,46 @@ swe_kalmar_union_mission_slot = {
 			owns_core_province = 4
 			owns_core_province = 5
 			owns_core_province = 1985
-			8 = {
-				base_production = 5
-				has_production_building_trigger = yes
-				has_manufactory_trigger = yes
-			}
-			4 = {
-				base_production = 5
-				has_production_building_trigger = yes
-				has_manufactory_trigger = yes
-			}
-			5 = {
-				base_production = 5
-				has_production_building_trigger = yes
-				has_manufactory_trigger = yes
-			}
-			1985 = {
-				base_production = 5
-				has_production_building_trigger = yes
-				has_manufactory_trigger = yes
+			owns_core_province = 3123
+			owns_core_province = 7794
+			owns_core_province = 7863
+			custom_trigger_tooltip = {
+				tooltip = swe_industrialize_sweden_trigger_tt
+				8 = {
+					base_production = 5
+					has_production_building_trigger = yes
+					has_manufactory_trigger = yes
+				}
+				4 = {
+					base_production = 5
+					has_production_building_trigger = yes
+					has_manufactory_trigger = yes
+				}
+				5 = {
+					base_production = 5
+					has_production_building_trigger = yes
+					has_manufactory_trigger = yes
+				}
+				1985 = {
+					base_production = 5
+					has_production_building_trigger = yes
+					has_manufactory_trigger = yes
+				}
+				3123 = {
+					base_production = 5
+					has_production_building_trigger = yes
+					has_manufactory_trigger = yes
+				}
+				7794 = {
+					base_production = 5
+					has_production_building_trigger = yes
+					has_manufactory_trigger = yes
+				}
+				7863 = {
+					base_production = 5
+					has_production_building_trigger = yes
+					has_manufactory_trigger = yes
+				}
 			}
 			NOT = { has_estate_privilege = estate_nobles_monopoly_of_metals }
 		}
@@ -1962,6 +1866,10 @@ swe_kalmar_union_mission_slot = {
 						province_id = 4
 						province_id = 5
 						province_id = 1985
+						#BT Additions
+						province_id = 3123
+						province_id = 7794
+						province_id = 7863
 					}
 				}
 				custom_tooltip = swe_industrialize_sweden_tt
@@ -2123,33 +2031,65 @@ swe_internal_slot = {
 		}
 	}
 	
+	#Added this to the LotN tree because it went woefully unrepresented, pushing down the original missions one step.
+	lotn_swe_expand_finland = {
+		icon = mission_conquer_finland
+		position = 3
+		required_missions = { swe_declare_independence }
+		provinces_to_highlight = {
+			province_group = lotn_swe_expand_finland_provinces
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=lotn_swe_expand_finland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
+		}
+		effect = {
+			novgorod_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			karelia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			#BT added Kola lappland - The natural border of the three lakes was something the Swedes would've wanted had they beaten back Russia.
+			laponia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	
 	swe_conquest_of_novgorod = {
 		icon = mission_novgorod_the_great
-		position = 3
+		position = 4
 		required_missions = {
-			swe_declare_independence
+			lotn_swe_expand_finland
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 33
-				province_id = 310
-			}
+			province_id = 310
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
 		}
 		trigger = {
-			owns_core_province = 33
 			owns_core_province = 310
-			33 = { 
-				NOT = { devastation = 1 }
-				is_state = yes
-				if = {
-					limit = { has_dlc = "Mandate of Heaven" }
-					has_state_edict = edict_centralization_effort
-				}
-			}
 			310 = { 
 				NOT = { devastation = 1 }
 				is_state = yes
@@ -2160,7 +2100,7 @@ swe_internal_slot = {
 			}
 		}
 		effect = {
-			add_accepted_culture_or_dip_power = { culture = novgorodian }
+			add_accepted_culture_or_dip_power = { culture = russian }
 			310 = {
 				change_province_name = "Hólmgarðr"
 				rename_capital = "Hólmgarðr"
@@ -2190,8 +2130,9 @@ swe_internal_slot = {
 					limit = {
 						NOT = { culture = finnish }
 						NOT = { culture = swedish }
+						NOT = { culture = karelian } #BT added; I can see someone wanting it to stay Karelian.
 					}
-					change_culture = novgorodian
+					change_culture = russian #Novgorodian isn't a thing.
 				}
 			}
 			tver_area = {
@@ -2220,7 +2161,7 @@ swe_internal_slot = {
 	
 	swe_conquest_of_moscovy = {
 		icon = mission_take_over_the_kremlin
-		position = 4
+		position = 5
 		required_missions = { swe_conquest_of_novgorod }
 		provinces_to_highlight = {
 			province_id = 295
@@ -2372,7 +2313,7 @@ swe_internal_slot = {
 		required_missions = { swe_the_theologian_discussions }
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1
+				province_id = 3123
 				province_id = 6
 			}
 			OR = {
@@ -2386,9 +2327,9 @@ swe_internal_slot = {
 		}
 		trigger = {
 			is_institution_enabled = renaissance
-			owns_core_province = 1
+			owns_core_province = 3123
 			owns_core_province = 6
-			1 = {
+			3123 = {
 				development = 20
 				current_institution = 100
 				NOT = { devastation = 1 }
@@ -2461,15 +2402,24 @@ swe_internal_slot = {
 			num_of_owned_provinces_with = {
 				culture = finnish
 				development = 10
-				value = 5
+				value = 7 #BT; 5
 			}
 			28 = { development = 15 }
 			accepted_culture = finnish
 		}
 		effect = {
-			28 = { 
-				center_of_trade = 2
+			28 = { #Raseborg/Helsingfors is a CoT in BT.
+				custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { province_has_center_of_trade_of_level = 2 }
+						}
+						add_center_of_trade_level = 1
+					}
+				}
 				add_building = town_hall
+				rename_capital = "Helsingfors"
 			}
 			add_stability_or_adm_power = yes
 		}
@@ -2865,7 +2815,7 @@ swe_religion_start_mission_slot = {
 				OR = {
 					tag = PAP
 					is_emperor = yes
-					total_own_and_non_tributary_subject_development = 250
+					total_own_and_non_tributary_subject_development = 500 #BT Dev Doubling; 250
 				}
 				capital_scope = { continent = europe }
 				NOT = { alliance_with = ROOT }
@@ -2875,14 +2825,14 @@ swe_religion_start_mission_slot = {
 			is_subject = no
 			is_at_war = no
 			OR = {
-				total_own_and_non_tributary_subject_development = 1000
+				total_own_and_non_tributary_subject_development = 2000 #BT Dev Doubling; 1000
 				calc_true_if = {
 					desc = swe_dabble_into_european_diplomacy_tt
 					all_ally = {
 						OR = {
 							tag = PAP
 							is_emperor = yes
-							total_own_and_non_tributary_subject_development = 250
+							total_own_and_non_tributary_subject_development = 500 #BT Dev Doubling; 250
 						}
 						capital_scope = { continent = europe }
 						has_opinion = {

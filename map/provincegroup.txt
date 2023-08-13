@@ -242,19 +242,27 @@ conquer_silesia_provinces = {
 
 #Swedish missions
 control_scania_provinces = {
-	5 7 16 4163 4164 7791 7795 2 3 25 3120 3121 4166 7790 7792 7793 6 26 1982 4165 7766 7779
+	5 7 16 4163 4164 7791 7795 
+	2 3 25 3120 3121 4166 7790 7792 7793 
+	6 26 1982 4165 7766 7779
 }
 
 vassalize_norway_swe_provinces = {
-	21 315 3119 7747 7789 17 22 3117 4143 4144 7780 7781 7783 7784 23 24 2752 3118 7785 7786 4145 7772 7782 7809 10 20 7787 7788 7796
+	21 315 3119 7747 7789 
+	17 22 3117 4143 4144 7780 7781 7783 7784 
+	23 24 2752 3118 7785 7786 4145 7772 7782 7809 
+	10 20 7787 7788 7796
 }
 
 swe_turns_have_tabled_provinces = {
-	1981 12 14 1983 7767 7768 15 1984 4142 4149 7769 7770 7771 13 3134 3135 7773 7774
+	1981 12 14 1983 7767 7768 
+	15 1984 4142 4149 7769 7770 7771 
+	13 3134 3135 7773 7774
 }
 
 swe_expand_finland_provinces = {
-	30 32 4124 7806 7808 33 34 5644 5646
+	30 32 4124 7806 7808
+	33 34 5644 5646
 }
 
 control_estonia_provinces = {
@@ -1457,8 +1465,56 @@ atj_peninsula_campaign_provinces = {
 }
 
 #LotN Norwegian tree
-nor_conquer_scotland_provinces = { #Identical to conquer_scotland_provinces
+nor_conquer_scotland_provinces = { #(Almost) identical to conquer_scotland_provinces
 	248 4361 8145 8146 8148 8149 8150 249 3008 3019 4362 8147 252 3137 3138 4110 8153 8154 8155 250 251 3139 8151 8152
 	253 4363 4364 4365
 	369 1978 #Adding provinces that risk being lost to Scotland due to Mary Queen of Scots.
+}
+
+#LotN Swedish tree
+swe_conquer_scania_provinces = {
+	6 26 1982 4165 7766 7779 
+}
+
+swe_claim_norwegian_crown_provinces = { #num_of_provinces trigger
+	16 #Bohuslen is for whatever reason missing from the LotN mission tree.
+	21 315 3119 7747 7789 
+	17 22 3117 4143 4144 7780 7781 7783 7784 
+	23 24 2752 3118 4145 7772 7782 7785 7786 7809
+	10 20 7787 7788 7796
+}
+
+swe_fall_of_denmark_provinces = { #num_of_provinces trigger
+	12 14 1983 7767 7768 
+	15 1984 4142 4149 7769 7770 7771 
+	13 3134 3135 7773 7774 
+	44 45 1775 1857 4141 7775 7776 7777 7778 #Adding Holstein area to this, but none of the provinces here shall be necessary for the mission.
+}
+
+swe_swedish_pommerania_provinces = { #num_of_provinces trigger
+	48 1858 2995 4746 7818 7819 7823 7824 
+	47 2994 4745 7815 7816 7817 7842 
+	46 2996 4749 7811 7812 7813 
+}
+
+swe_the_livonian_order_provinces = { #num_of_provinces trigger
+	35 36 1842 3230 3231 7853 7855 7856 7857 
+	38 4241 7843 7844 7845 7848 7849 
+	1834 3229 7850 7851 7852 
+	#Optional provinces
+	39 3227 7838 7839 7840 7854 
+	37 273 7846 7847 
+	1935 3293 7841 
+}
+
+swe_the_teutonic_order_provinces = { #num_of_provinces trigger
+	43 2997 5097 7825 7826 7827 7828 
+	41 42 1841 1859 2958 7829 7833 7834 7862 
+	40 3224 7835 7836 7837 
+	767 7830 7831 7832 
+}
+
+lotn_swe_expand_finland_provinces = { #Identical to swe_expand_finland_provinces
+	30 32 4124 7806 7808 
+	33 34 5644 5646	
 }

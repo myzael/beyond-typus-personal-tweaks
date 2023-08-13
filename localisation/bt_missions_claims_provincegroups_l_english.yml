@@ -1,8 +1,8 @@
 ﻿l_english:
 
 
- 
- # automatically generated output from provincegroup.js by schockocraft 
+ #I attempted to dynamically localise the mission titles used in all _claims strings. Unfortunately I was not able to find a way to do it.
+ #If anyone knows how to do so, I'd love to know. //Dub
 
  destroy_ayyubids_provinces:0 ""
  defeat_black_sheep_provinces:0 ""
@@ -652,6 +652,11 @@
  atj_sumatra_campaign_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YThe Sumatra Campaign§!"
  atj_peninsula_campaign_provinces:0 ""
  atj_peninsula_campaign_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §The Peninsula Campaign§!"
- 
- nor_conquer_scotland_claims:0 "Grants permanent claims on the provinces required for the mission §YThe Claims of Orkney§!"
+ nor_conquer_scotland_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YThe Claims of Orkney§!"
  nor_conquer_scotland_provinces:0 ""
+ swe_conquer_scania_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YSwedish Skåneland§!"
+ swe_conquer_scania_provinces:0 ""
+ swe_fall_of_denmark_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YFall of Denmark§!"
+ swe_fall_of_denmark_provinces:0 ""
+ lotn_swe_expand_finland_claims:0
+ lotn_swe_expand_finland_provinces:0 ""
