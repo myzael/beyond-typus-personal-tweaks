@@ -520,7 +520,6 @@
  GEN_ideas:0 "Genoese Ideas" #xxx
  GEN_ideas_bonus:0 "Genoese Ambition"
  GEN_ideas_start:0 "Genoese Traditions"
- GER_parliament_name:0 "Reichstag"
  HEIRESSBTP:0 "Heiress"
  HOLY_SITE_151_DESC:0 "Constantinople, City of the World's Desire, is one of the most important landmarks for the entire Christendom. In this magnificent city stands Hagia Sophia, one of the most recognizable Christian temples in the entire world."
  HOLY_SITE_329_DESC:0 "Near the city of Sivas stands the site of the Monastery of Sourb Nshan, which was established by prince Atom-Ashot, son of King Senekerim in the 10th century. It remains one of the most important centres of enlightenment and scholarship in the region."
@@ -1168,6 +1167,7 @@
  corsican_culture:0 "Corsican"
  country_holds_highlighted:0 "The highlighted provinces are owned by §Y[Root.GetName]§!."
  country_holds_highlighted_num:0 " highlighted provinces are owned by §Y[Root.GetName]§! (Provinces already counted are no longer highlighted)."
+ country_holds_and_cores_highlighted:0 "The highlighted provinces are owned by §Y[Root.GetName]§! and are §Y[Root.GetAdjective]§! cores."
  country_holds_or_non_sovereign_subject_holds_highlighted:0 "The highlighted provinces are owned by §Y[Root.GetName]§! or one of its non-Tributary subjects."
  country_holds_or_non_sovereign_subject_holds_highlighted_num:0 " highlighted provinces are owned by §Y[Root.GetName]§! or one of its non-Tributary subjects (Provinces already counted are no longer highlighted)."
  create_the_kingdom_of_ireland_as_england_desc:0 "We have established dominance over Ireland, but we face the wrath of other European countries because of this annexation, and the rebellious nature of this frontier makes it difficult to govern effectively. The ideal solution may be to create a new Irish viceroyalty, similar to the former feudal system but significantly more organised, who may rule in our stead and protect our interests while distancing us from direct governance."
