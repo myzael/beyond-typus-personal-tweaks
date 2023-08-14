@@ -8527,6 +8527,16 @@ pacific = {
 	dynasty_names = {
 		Balla Bulu Lompo Sallo Karaeng Bambang Cipuru Doe Iyo Tena Tabe Apa Lakeko Battu Keko
 	}
+	#Beyond Typus Culture
+	lagau_ya = {	#Torres Strait Islander #(Hadiros) They're in a sort of odd spot between Papuan, Pama-Nyungan and Melanesian, I'll place them here for now. Also it means home island language.
+	#	#primary = 
+	#	dynasty_names = {
+	#	}
+	#	male_names = {
+	#	}
+	#	female_names = {
+	#	}
+	}
 }
 #(Hadiros) An absolutely gargantuan group. A cluster of some 300 languages all with varying levels of relations to one another, though many would be far too small to represent.
 aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16 
