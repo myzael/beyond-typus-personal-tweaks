@@ -31,6 +31,14 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = ADU }
+			OR = {
+				NOT = { exists = IBE }			#Special, no doubling up on Iberia superpowers
+				num_of_cities = IBE 			#...Unless you eclipse them.
+			}
+			OR = {
+				NOT = { exists = ADU }			#Special, no doubling up on Iberia superpowers
+				num_of_cities = ADU 			#...Unless you eclipse them.
+			}
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
