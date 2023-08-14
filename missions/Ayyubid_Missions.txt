@@ -590,7 +590,7 @@ hsn_conquest_group_east = {
 				tooltip=country_holds_highlighted_num
 				provinces=hsn_take_baghdad_provinces
 				owner_type=owned_by
-				value=15 #out of 21
+				value=20 #out of 26
 			}
 			owns = 410
 		}
