@@ -21,6 +21,7 @@ BT16
  - (Dub) Fixed bug with duplicate BEI_ideas 
  - (Dub) Fixed vanilla localisation bug where locked reform tooltip would not draw new line
  - (Dub) Fixed Venice losing Venetian republic government reform upon forming a new nation, like Lombardy-Venetia.
+ - (Dub) Fixed Ottoman moving capital to Constantinople giving +10 extra dev to the province.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance

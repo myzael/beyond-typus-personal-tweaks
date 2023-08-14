@@ -43,17 +43,7 @@ country_decisions = {
 					instant = no
 				}
 			}
-			if = {
-				limit = {
-					NOT = { has_global_flag = constantinople_restored }
-				}
-				151 = {
-					add_base_tax = 6 # BT; 4
-					add_base_production = 6 # BT; 4
-					add_base_manpower = 3
-				}
-				set_global_flag = constantinople_restored
-			}
+			#Recoded because the way it was coded was... flimsy. //Dub
 			# Added another if below, in case the Greeks have partially restored the capital, but then Ottomans take it. relocated_capital_constantinople flag will prevent spamming of this, meaning no doubling up of dev bonus. Keep this above the limit below, not below it, or double bonus happens when taking the decision (oops again =p)
 			if = {
 				limit = {
@@ -64,6 +54,14 @@ country_decisions = {
 					add_base_production = 4
 					add_base_manpower = 2
 				}
+			}
+			else = {
+				151 = {
+					add_base_tax = 6 # BT; 4
+					add_base_production = 6 # BT; 4
+					add_base_manpower = 3
+				}
+				set_global_flag = constantinople_restored
 			}
 			if = { # BT
 				limit = {
