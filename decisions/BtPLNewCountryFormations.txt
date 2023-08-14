@@ -197,6 +197,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			bt_generic_can_form_potential_check = yes
+			always = no #This decision has no localisation. Blocking. (Who is this for anyway...? I can sort of see an England that went Angevin forming this, but if so, they already have their own formable at this point.)
 			NOT = { has_country_flag = formed_france_flag }
 			NOT = { tag = FRA }
 			NOT = { tag = CEL }
