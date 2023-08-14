@@ -29,7 +29,7 @@ BT16
  - (Dub) Cut all mentions of flat institution growth in vanilla, replacing them with varying levels of institution spread modifiers 
  - (Dub) Changed Goslar's trade good from iron to copper (Vanilla issue) to reflect the mine not producing any ferrous metals 
  - (Dub) Base sailors from provinces are now doubled, from 15 to 30, to account for vanilla's change from 30 to 60 at some point.
- - (Dub) Adjusted Great Power's crownland share at game start
+ - (Dub) Adjusted Great Powers' crownland share at game start
  - (Dub) Added strong duchies to several nations lacking it
  - (Velius) Cut Alawite and Druze religions
  - (Dub) Lowered base vassal FL contribution from +2 to +1 due to them already giving +10% of their FL to their overlord, causing nations such as Bohemia to have 10 more FL than they ought to.
@@ -86,6 +86,7 @@ BT16
 	- Mali
 	- Bavarian 
 	- LotN Norwegian (Dub)
+	- LotN Swedish (Dub)
 	- BT Ayyubid (Dub)
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting

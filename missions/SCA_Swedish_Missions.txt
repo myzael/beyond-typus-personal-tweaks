@@ -476,6 +476,28 @@ swe_scandinavian_colonialism_mission_slot = {
 						}
 						add_permanent_claim = ROOT
 					}
+					colonial_newfoundland = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							OR = {
+								province_has_center_of_trade_of_level = 1
+								has_river_estuary_trigger = yes
+							}
+						}
+						add_permanent_claim = ROOT
+					}
+					colonial_acadia = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							OR = {
+								province_has_center_of_trade_of_level = 1
+								has_river_estuary_trigger = yes
+							}
+						}
+						add_permanent_claim = ROOT
+					}
 					colonial_eastern_america = {
 						limit = {
 							OR = {
@@ -553,6 +575,39 @@ swe_north_america_mission_slot = {
 						NOT = { is_permanent_claim = ROOT }
 						NOT = { owner = { is_subject_of = ROOT } }
 						has_port = yes
+					}
+					add_permanent_claim = ROOT
+				}
+				colonial_hispaniola = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							has_river_estuary_trigger = yes
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				colonial_cuba = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							has_river_estuary_trigger = yes
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				colonial_bahamas = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							has_river_estuary_trigger = yes
+						}
 					}
 					add_permanent_claim = ROOT
 				}
