@@ -22,6 +22,7 @@ BT16
  - (Dub) Fixed vanilla localisation bug where locked reform tooltip would not draw new line
  - (Dub) Fixed Venice losing Venetian republic government reform upon forming a new nation, like Lombardy-Venetia.
  - (Dub) Fixed Ottoman moving capital to Constantinople giving +10 extra dev to the province.
+ - (Dub) Cut French Diplomatic formation because it had no localisation.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -89,6 +90,7 @@ BT16
 	- LotN Norwegian (Dub)
 	- LotN Swedish (Dub)
 	- BT Ayyubid (Dub)
+	- GC Andalusian (Dub)
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders

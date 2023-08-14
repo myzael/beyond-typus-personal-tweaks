@@ -849,9 +849,7 @@ andalusia_slot_3_missions_b = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = miss_discover_caribbean
-					colonial_the_carribean = {
-						has_discovered = ROOT
-					}
+					carribeans_region = { has_discovered = ROOT }
 				}
 			}
 			custom_trigger_tooltip = {
@@ -895,7 +893,12 @@ andalusia_slot_3_missions_c = {
 		position = 8
 
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			OR = {
+				colonial_region = colonial_the_carribean
+				colonial_region = colonial_hispaniola
+				colonial_region = colonial_cuba
+				colonial_region = colonial_bahamas
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -903,7 +906,12 @@ andalusia_slot_3_missions_c = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_the_carribean
+				OR = {
+					colonial_region = colonial_the_carribean
+					colonial_region = colonial_hispaniola
+					colonial_region = colonial_cuba
+					colonial_region = colonial_bahamas
+				}
 				is_city = yes
 			}
 		}
