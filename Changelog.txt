@@ -48,6 +48,7 @@ BT16
  - (Dub) Added +20% breakthrough to cav units. For anyone not aware: Breakthrough is a mechanic disabled in vanilla where when defeating a front row unit in combat, it has a chance of pulling the artillery behind it to the front row. This chance is 0% in vanilla by default. BT now changes this to 0% for infantry and 20% for cavalry.
  - (Dub) Rebalanced AI building code such that the AI will finally be more intelligent in their build order, making it much less willing to spend on forcelimit buildings and more focused on economic buffs.
  - (Dub) Re-added CoT to Trondelag (PROV20)
+ - (Dub) Tweaked Lusitania, Spain & Andalusia formable such that you can circumvent the clause of none of the other existing by having more provinces than them.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
