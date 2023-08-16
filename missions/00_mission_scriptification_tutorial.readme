@@ -41,7 +41,7 @@ effect = {
 
 If this is done, the following needs localisation:
 1. The tooltip used in the trigger. BT already holds a couple of localised tooltips, but if you do custom triggers that are particularly interesting, you need a custom tooltip localised.
-2. A tooltip for giving permaclaims. The tooltip that needs localisation is spa_conquer_hispaniola_claims. This is usually localised as "Give permanent claims on the provinces required for the mission §Y<mission name>§!"
+2. A tooltip for giving permaclaims. The tooltip that needs localisation is spa_conquer_hispaniola_claims. This is usually localised as "§Y[Root.GetName] gains permanent claims on the provinces required for the mission §Y<mission name>§!"
 3. An empty localisation string for the province group. To make it empty, simply denote it as ""
 
 This system allows you to quickly copy-paste mission triggers and the like, as well as allowing BT to quickly update existing missions upon provinces being cut and/or added.
