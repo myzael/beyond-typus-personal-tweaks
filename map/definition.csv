@@ -8794,7 +8794,7 @@ province;red;green;blue;x;x
 8793;254;27;183;UNUSED;x
 8794;232;224;74;UNUSED;x
 8795;9;24;64;UNUSED;x
-8796;172;167;133;UNUSED;x
+8796;172;167;133;DanakilDesert;x
 8797;66;126;74;Buurhakaba;x
 8798;174;81;191;Jowhar;x
 8799;234;158;0;Baidoa;x
@@ -8810,7 +8810,7 @@ province;red;green;blue;x;x
 8809;241;225;158;Gode;x
 8810;55;23;240;SheikhHussein;x
 8811;247;88;188;Ginir;x
-8812;173;83;103;BerduKurkurittu;x
+8812;173;83;103;BereduKurkurittu;x
 8813;69;248;150;Sharka;x
 8814;135;161;52;Mormor;x
 8815;218;149;248;HarroGerjjaa;x
@@ -8829,7 +8829,7 @@ province;red;green;blue;x;x
 8828;67;217;95;Gamo;x
 8829;74;228;112;Gedeo;x
 8830;77;133;198;Sidamo;x
-8831;68;106;203;Sharka;x
+8831;68;106;203;TuluYambel;x
 8832;68;140;141;Kambaata;x
 8833;245;215;150;Wej;x
 8834;237;241;230;Gurage;x
