@@ -1155,7 +1155,8 @@ central_indic_ideas = { #Gond Ideas
 		hostile_attrition = 1.0
 	}
 	flexible_caste_central_indic = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	raiding_the_plains_central_indic = {
 		infantry_power = 0.1
@@ -1552,7 +1553,8 @@ west_african_ideas = {
 		envoy_travel_time = -0.25
 	}
 	west_african_idea_7 = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 }
 
@@ -1695,7 +1697,8 @@ caucasus_ideas = {
 	free = yes
 	
 	crossroads_of_cultures = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	alan_mercenaries = {
 		merc_maintenance_modifier = -0.10
@@ -1783,7 +1786,8 @@ guajiro_ideas = {
 		global_trade_power = 0.1
 	}
 	tribal_tolerance = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		tolerance_heretic = 1		
 	}
 	guajiro_raiders = {
@@ -1800,7 +1804,8 @@ guajiro_ideas = {
 shan_ideas = {
 	start = {
 		heir_chance = 0.5
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	bonus = {
@@ -1889,7 +1894,8 @@ chinese_ideas = {
 
 vindhyan_ideas = {
 	start = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		fort_maintenance_modifier = -0.2
 	}
 	
@@ -2627,7 +2633,8 @@ highland_scottish_ideas = {
 deccani_muslim_ideas = {
 	start = {
 		cavalry_power = 0.1
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	bonus = {
@@ -2888,8 +2895,8 @@ nw_native_ideas = {
 		leader_land_manuever = 1
 	}
 	division_as_a_strength_nw = {
-		num_accepted_cultures = 1
-		promote_culture_cost = -0.25
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.15 #BT Nerfed from -0.25 as part of Accepted Culture Slots overhaul
 	}
 }
 
@@ -2959,8 +2966,8 @@ california_native_ideas = {
 	free = yes
 	
 	division_as_a_strength_cf = {
-		num_accepted_cultures = 1
-		promote_culture_cost = -0.25
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.15 #BT Nerfed from -0.25 as part of Accepted Culture Slots overhaul
 	}
 	basketweaving = {
 		production_efficiency = 0.05
@@ -3019,8 +3026,8 @@ ne_native_ideas = {
 		defensiveness = 0.15
 	}
 	ne_deer_clan = {
-		num_accepted_cultures = 1
-		promote_culture_cost = -0.25
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.15 #BT Nerfed from -0.25 as part of Accepted Culture Slots overhaul
 	}
 	ne_bear_clan = {
 		manpower_recovery_speed = 0.2
@@ -3149,7 +3156,8 @@ fijian_ideas = { #Credit to James Beaumont
 	free = yes
 	
 	fijian_crossroad = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	fijian_degel = {
 		range = 0.1
@@ -3213,7 +3221,8 @@ hawaiian_ideas = { #Credit to James Beaumont
 	}
 	ohana = {
 		diplomatic_upkeep = 1
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	kanawai_mamalahoe = {
 		manpower_recovery_speed = 0.2
@@ -3262,7 +3271,8 @@ iroquoian_federation_ideas = {
 		land_morale = 0.15
 	}
 	iro_sachems = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	iro_the_grand_council = {
 		global_colonial_growth = 30
@@ -3409,7 +3419,8 @@ central_algonquian_federation_ideas = {
 
 muskogean_federation_ideas = {
 	start = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		reinforce_speed = 0.1
 	}
 	

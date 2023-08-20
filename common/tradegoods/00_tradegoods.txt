@@ -2250,7 +2250,8 @@ cocoa = {
 silk = {
 	color = { 0.72 0.10 0.10 }
 	modifier = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	province = {
 		province_trade_power_value = 2

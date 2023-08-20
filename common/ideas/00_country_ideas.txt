@@ -980,7 +980,7 @@ TUR_ideas = {
 	
 	millets = {
 		core_creation = -0.20 #Not giving the vanilla buff to -25%. //Dub
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1 #BT removed entirely as part of the Accepted Culture Slots overhaul. Ottomans get unique government reforms that already give accepted culture cost reduction, and it gets quite insane if it stacks.
 	}	
 	ghazi = {
 		manpower_recovery_speed = 0.2
@@ -1489,7 +1489,8 @@ DAL_ideas = {
 		global_foreign_trade_power = 0.15
 	}
 	DAL_language = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	DAL_art_and_lit = {
 		global_institution_spread = 0.1
@@ -1633,7 +1634,8 @@ POR_ideas = {
 POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	bonus = {
@@ -1755,7 +1757,8 @@ LIT2_ideas = {
 PLC_ideas = {
 	start = {
 		nobles_loyalty_modifier = 0.1
-		num_accepted_cultures = 2 
+		#num_accepted_cultures = 2 
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	bonus = {
@@ -5655,7 +5658,8 @@ mossi_ideas = {
 	}
 	
 	nyonnyonse_vassals = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	nakomse = { 
@@ -5716,7 +5720,8 @@ fulani_jihad_ideas = {
 	}
 	
 	community_of_the_faithful = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 
 	caliph_in_africa = {
@@ -5928,7 +5933,8 @@ ATH_ideas = {
 		horde_unity = 1
 	}
 	athenian_openeness = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	athenian_pragmatism = {
 		diplomatic_reputation = 1
@@ -6352,7 +6358,8 @@ TEU_ideas = {
 
 LIV_ideas = {
 	start = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		missionaries = 1
 	}
 	
@@ -6393,7 +6400,8 @@ LIV_ideas = {
 LVA_ideas = {
 	start = {
 		discipline = 0.05
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	bonus = {
@@ -6949,7 +6957,8 @@ LXA_ideas = {
 	free = yes
 	
 	lao_ethnic_diversity = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}	
 	lxa_elephant_cavalry = {
 		cavalry_power = 0.15
@@ -7034,7 +7043,8 @@ BAH_ideas = {
 		prestige = 0.5
 	}
 	dakani_language = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	karimis = {
 		trade_efficiency = 0.1
@@ -7402,7 +7412,8 @@ MEX_ideas = {
 		build_cost = -0.10
 	}	
 	the_republic_of_indians = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
     peace_by_purchase = {
 		years_of_nationalism = -5
@@ -7732,7 +7743,8 @@ BEN_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	ben_adoption_of_benin_customs = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	ben_regulation_of_trade = {
 		trade_efficiency = 0.1
@@ -7861,7 +7873,8 @@ HES_ideas = {
 ARK_ideas = {
 	start = {
 		light_ship_cost = -0.20
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	bonus = {
 		light_ship_power = 0.15
@@ -8136,7 +8149,8 @@ LNA_ideas = {
         tolerance_own = 2
     }
 	lna_red_and_black= {
-        num_accepted_cultures = 1
+        #num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
     }
 	lna_elephant_charge = {
 		cavalry_flanking = 0.5
@@ -9139,7 +9153,8 @@ JMN_ideas = {
 		naval_attrition = -0.15
 	}
 	polarized_nation = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.25 #BT Accepted Culture Slots overhaul, though I frankly don't know if Jan Mayenese needs to be properly altered.
 	}
 	come_bearing_gifts = {
 		improve_relation_modifier = 0.3
@@ -9338,7 +9353,8 @@ SLN_ideas = {
 		defensiveness = 0.15
 	}
 	sln_galic_meets_norman = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	sln_a_different_way = {
 		spy_offence = 0.10
@@ -9479,7 +9495,8 @@ MIR_ideas = {
 TBK_ideas = {
 	start = {  
 		hostile_attrition = 1.0
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
   
 	bonus = {
@@ -9733,7 +9750,8 @@ MLW_ideas = {
 	}
 
 	bonus = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	trigger = {
@@ -9767,7 +9785,8 @@ MLW_ideas = {
 
 PAT_ideas = {
 	start = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		light_ship_power = 0.10
 	}
 	bonus = {
@@ -9819,7 +9838,8 @@ KAF_ideas = {
 		production_efficiency = 0.10
 	}
 	kaf_minjo_usurpation = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	kaf_kaffan_highlands = {
 		global_trade_goods_size_modifier = 0.1
@@ -9904,7 +9924,8 @@ LOR_ideas = {
 		diplomats = 1
 	}
 	lor_two_languages = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	lor_three_bishoprics = {
 		tolerance_own = 2
@@ -11626,7 +11647,8 @@ MVA_ideas = {
 		production_efficiency = 0.1
 	}
 	mva_german_quarters = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	mva_jesuit_university = {
 		papal_influence = 1
@@ -12127,7 +12149,8 @@ TNT_ideas = {
 		yearly_absolutism = 0.5
 	}
 	TNT_south_tyrol_identity = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	TNT_italy_and_the_empire = {
 		global_prov_trade_power_modifier = 0.1
@@ -12858,7 +12881,8 @@ RUM_ideas = {
 	}
 	rum_king_of_the_east_and_west = {
 		core_creation = -0.20
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul. Keeping this because Rum does not get Ottoman content as far as I know. If that ends up being the case, this should be removed. //Dub
 	}
 	rum_shahanshah = {
 		legitimacy = 1
@@ -14122,7 +14146,8 @@ FRI_ideas = {
 		tolerance_heathen = 1
 	}
 	fri_brothers_arms = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		global_own_trade_power = 0.1
 	}
 }
@@ -14168,7 +14193,8 @@ UTR_ideas = {
 	}
 	utr_cultural_resilience = {
 		same_culture_advisor_cost = -0.25
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	utr_enlightenment_masses = {
 		global_institution_spread = 0.25
@@ -14501,7 +14527,8 @@ DLH_ideas = {
 	}
 	
 	bonus = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	trigger = {
@@ -14554,7 +14581,8 @@ BHA_ideas = {
 		cavalry_power = 0.15
 	}
 	bha_united_india = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	bha_sanskrit_golden_age = {
 		technology_cost = -0.05
@@ -14986,8 +15014,8 @@ LTG_ideas = {
 		tolerance_of_heretics_capacity = 2
 	}
 	ltg_latvian_people = {
-		num_accepted_cultures = 1
-		promote_culture_cost = -0.25
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Nerfed from -0.25 as part of the Accepted Culture Slots overhaul
 	}
 	ltg_modernize_livonian_castles = {
 		defensiveness = 0.2
@@ -15097,7 +15125,8 @@ ILK_ideas = {
 		tolerance_heretic = 2
 	}
 	ilk_persian_language_at_court = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	ilk_yam_networks = {
 		movement_speed = 0.15
@@ -15368,7 +15397,8 @@ ALA_ideas = {
 	}
 	ALA_diversity = {
 		tolerance_heretic = 2
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	ALA_navy = {
 		naval_forcelimit_modifier = 0.25
@@ -15392,7 +15422,8 @@ CSC_ideas = {
 	}
 	free = yes
 	CSC_melting_pot = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	CSC_chinook_jargon = {
 		native_uprising_chance = -0.5
@@ -15442,7 +15473,8 @@ WSI_ideas = {
 		trade_range_modifier = 0.1
 	}
 	WSI_Miskoto_Zambos = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	WSI_Interconnected_Relations = {
 		diplomatic_reputation = 1
@@ -15518,7 +15550,8 @@ VRM_ideas = {
 		global_tax_modifier = 0.1
 	}
 	VRM_vermont_constitution = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	VRM_Liberty_is_Life = {
 		liberty_desire_from_subject_development = -0.25
@@ -16103,7 +16136,8 @@ SOR_ideas = {
 		tolerance_heretic = 3
 	}
 	sor_political_influences = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 }
 
@@ -16169,7 +16203,8 @@ WES_ideas = {
 		global_manpower_modifier = 0.20
 	}
 	wes_administrative_assimilation_of_rheinlanders = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		same_culture_advisor_cost = -0.25
 	}
 	wes_taxation = {
@@ -16347,7 +16382,8 @@ EOR_ideas = {
 	}
 
 	bonus = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	trigger = {
@@ -16445,7 +16481,8 @@ PLW_ideas = {
 		republican_tradition = 0.3
 		meritocracy = 1
 		horde_unity = 1
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	PLW_darwin = {
 		shock_damage = 0.2
@@ -16527,7 +16564,8 @@ GMI_ideas = {
 		core_creation = -0.15
 	}
 	GMI_land_of_languages = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	GMI_fertile_soils = {
 		development_cost = -0.1
@@ -16814,7 +16852,8 @@ MLC_ideas = {
 	}
 	mlc_habor_masters = {
 		trade_steering = 0.2
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	mlc_daulat = {
 		legitimacy = 1
@@ -16936,7 +16975,8 @@ LFA_ideas = {
 		hostile_attrition = 1.0
 	}
 	lfa_integrate_local_communities = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	lfa_improved_mining_techniques = {
 		global_trade_goods_size_modifier = 0.1
@@ -17053,7 +17093,8 @@ BAN_ideas = {
 	}
 	ban_cultural_richness = {
 		core_creation = -0.20
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 }
 
@@ -17096,7 +17137,8 @@ SUL_ideas = {
 
 CRB_ideas = { 
 	start = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		core_creation = -0.20
 	}
 	bonus = {
@@ -17779,8 +17821,8 @@ UKR_ideas = {
 		prestige = 1
 	}
 	international_influences = {
-		num_accepted_cultures = 2
-		promote_culture_cost = -0.25
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.2 #BT Nerfed from -0.25 as part of the Accepted Culture Slot overhaul.
 	}
 	zaporizhian_cossacs = {
 		cavalry_power = 0.15

@@ -106,7 +106,8 @@ BEL_ideas = {
 		manpower_recovery_speed = 0.1
 	}
 	bel_divided_peoples = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	bel_flemish_scientists = {
 		technology_cost = -0.10
@@ -170,7 +171,8 @@ LMV_ideas = {
 
 	lmv_italian_unification = { #LMV shall be the unifiers of Italy!
 		governing_capacity_modifier = 0.1
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 }
 
@@ -506,7 +508,8 @@ BOU_ideas = {
 	free = yes		#will be added at load
 
 	bou_frontier_area = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	bou_bath_bourbon = {
 		prestige = 0.5
@@ -728,7 +731,8 @@ ANC_ideas = {
 	}
 
 	anc_cosmopolitan_city = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		religious_unity = 0.25
 	}
 
@@ -872,7 +876,8 @@ new_DAI_ideas = {
 LIG_ideas = {
 	start = {
 		religious_unity = 0.20
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 
 	bonus = {
@@ -1067,7 +1072,8 @@ musi_ideas = {
 		# global_trade_power = 0.1
 	# }
 	# bei_multiculturalism = {
-		# num_accepted_cultures = 1
+		# #num_accepted_cultures = 1
+		# promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	# }
 	# bei_white_rajahs = {
 		# global_unrest = -2
@@ -1399,7 +1405,8 @@ nusa_tenggara_ideas = {
 		hostile_attrition = 2
 	}
 	nt_ethnic_diversity = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	nt_splendid_isolation = {
 		global_unrest = -1
@@ -1612,7 +1619,8 @@ new_laotian_ideas = {
 		tolerance_heathen = 2
 	}
 	lao_ethnic_diversity = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	lao_elephant_cavalry = {
 		cavalry_power = 0.1
@@ -1628,7 +1636,8 @@ new_laotian_ideas = {
 new_shan_ideas = {
 	start = {
 		heir_chance = 0.5
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 
 	bonus = {
@@ -1638,14 +1647,14 @@ new_shan_ideas = {
 	trigger = {
 		NOT = {
 			tag = MMA
-                        tag = MYA
-                        tag = MKA
-                        tag = MMT
+			tag = MYA
+			tag = MKA
+			tag = MMT
 		}
 		OR = {
 			primary_culture = shan
 			primary_culture = khun
-                        primary_culture = tai
+			primary_culture = tai
 		}
 	}
 	free = yes
@@ -2113,7 +2122,8 @@ TLD_ideas = {
 	#City of Three Cultures
 	#Toledo has a lot of Christian, Muslim, and Jewish influence. Three cultures!
 	tld_city_three_cultures = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		global_institution_spread = 0.15
 	}
 
@@ -2408,7 +2418,8 @@ JER_ideas = {
 		range = 0.20
 	}
 	jer_jerriais_guerriesais = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	jer_neutral_trade = {
 		trade_efficiency = 0.15
@@ -2554,7 +2565,8 @@ GRN_ideas = {
 		global_tax_modifier = 0.1
 	}
 	GRN_idea_4 = {
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	GRN_idea_5 = {
 		religious_unity = 0.2

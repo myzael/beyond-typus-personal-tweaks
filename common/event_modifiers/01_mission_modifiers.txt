@@ -344,16 +344,16 @@ teu_pru_nobles_in_general_positions = {
 	monthly_prussian_militarized_society_3 = 0.05
 }
 
-teu_pru_integration_of_the_poles = {
-	num_accepted_cultures = 1
+teu_pru_integration_of_the_poles = { #BT Discarded as part of Accepted Culture Slot Overhaul
+	#num_accepted_cultures = 1
 }
 
-teu_pru_integration_of_the_ruthenians = {
-	num_accepted_cultures = 1
+teu_pru_integration_of_the_ruthenians = { #BT Discarded as part of Accepted Culture Slot Overhaul
+	#num_accepted_cultures = 1
 }
 
-teu_pru_integration_of_the_lithuanians = {
-	num_accepted_cultures = 1
+teu_pru_integration_of_the_lithuanians = { #BT Discarded as part of Accepted Culture Slot Overhaul
+	#num_accepted_cultures = 1
 }
 
 teu_pru_wine_and_faith = {
@@ -904,8 +904,8 @@ swe_norse_great_power = {	#Permanent
 	religion = yes
 }
 
-swe_east_european_integration = {	#Permanent
-	num_accepted_cultures = 2
+swe_east_european_integration = {	#Permanent #BT Discarded as part of Accepted Culture Slot Overhaul
+	#num_accepted_cultures = 2
 }
 
 swe_an_empire_of_tolerance = {	#Permanent
@@ -956,8 +956,8 @@ dan_humiliated_the_hanse = {
 	trade_steering = 0.1
 }
 
-dan_estonian_culture_accepted = {	#Lasts until Estonian is no longer accepted
-	num_accepted_cultures = 1
+dan_estonian_culture_accepted = {	#Lasts until Estonian is no longer accepted #BT Discarded as part of Accepted Culture Slot Overhaul
+	#num_accepted_cultures = 1
 }
 
 dan_control_over_the_english_channel = {	#Permanent
@@ -1649,7 +1649,7 @@ eng_irish_revolts = {
 }
 
 eng_culture_mission = {
-	promote_culture_cost =  -0.25
+	promote_culture_cost =  -0.15 #BT Nerfed from -0.25 as part of Accepted Culture Slots overhaul
 	same_culture_advisor_cost = -0.25
 }
 
@@ -1820,8 +1820,8 @@ eng_loyalty_to_catholocisim = {
 	religion = yes
 }
 
-gbr_unified_british_isles_culture = {	#Permanent until either Irish or Highlander get demoted
-	num_accepted_cultures = 2
+gbr_unified_british_isles_culture = {	#Permanent until either Irish or Highlander get demoted #BT Discarded as part of Accepted Culture Slot Overhaul
+	#num_accepted_cultures = 2
 }
 
 gbr_isolation_policy = {
@@ -1927,8 +1927,8 @@ gbr_english_dutch_trade_partners = {	#Permanent until ally breaks alliance
 	trade_efficiency = 0.1
 }
 
-gbr_accepted_lowlands = {	#Breaks when either culture gets demoted
-	num_accepted_cultures = 3
+gbr_accepted_lowlands = {	#Breaks when either culture gets demoted #BT Discarded as part of Accepted Culture Slot Overhaul
+	#num_accepted_cultures = 3
 }
 
 gbr_colonial_australia = {
@@ -2330,7 +2330,7 @@ bur_diplo_mod = {
 bur_arles_mod = {
 	prestige = 2
 	legitimacy = 1
-	promote_culture_cost = -0.25
+	promote_culture_cost = -0.1 #BT Nerfed from -0.25 as part of Accepted Culture Slots overhaul
 }
 
 # Arabian missions
@@ -2568,18 +2568,18 @@ rus_steppe_conversion = {
 	global_missionary_strength = 0.02
 }
 
-rus_west_slavic_union = {	#Permanent, gets lost when either West Slavic culture gets demoted
-	num_accepted_cultures = 5
+rus_west_slavic_union = {	#Permanent, gets lost when either West Slavic culture gets demoted #BT Discarded as part of Accepted Culture Slot Overhaul
+	#num_accepted_cultures = 5
 }
 
-rus_carpathian_union = {	#Permanent, gets lost when either Carpathian culture gets demoted
+rus_carpathian_union = {	#Permanent, gets lost when either Carpathian culture gets demoted 
 	manpower_in_true_faith_provinces = 0.1
-	num_accepted_cultures = 3
+	#num_accepted_cultures = 3 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 rus_south_slavic_union = {	#Permanent, gets lost when either South Slavic culture gets demoted
 	governing_capacity_modifier = 0.1
-	num_accepted_cultures = 6
+	#num_accepted_cultures = 6 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 rus_unifier_of_russia = {
@@ -2868,12 +2868,12 @@ nov_ruriks_eliminated = {
 }
 
 nov_rus_scandinavian_conquest = {	#Permanent
-	num_accepted_cultures = 2
+	#num_accepted_cultures = 2 #BT Discarded as part of Accepted Culture Slot Overhaul
 	land_attrition = -0.05
 }
 
 nov_rus_scandinavian_dominance = {	#Permanent
-	num_accepted_cultures = 5
+	#num_accepted_cultures = 5 #BT Discarded as part of Accepted Culture Slot Overhaul
 	land_attrition = -0.1
 	manpower_in_accepted_culture_provinces = 0.1
 	core_creation = -0.1
@@ -3682,7 +3682,7 @@ silk_road_controlled = {
 # Tatar missions
 
 integrating_the_steppe_peoples = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 fall_of_china = {
@@ -4277,7 +4277,7 @@ mongol_european_conquest = {
 }
 
 reorganized_mongols = {
-	num_accepted_cultures = 3
+	#num_accepted_cultures = 3 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 genghis_khan_reborn = {
@@ -4830,7 +4830,7 @@ hun_funded_paulines = {
 
 hun_hungary_poland = {
 	diplomats = 1
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 hun_supreme_black_army = {
@@ -5030,7 +5030,8 @@ hab_viennese_ballrooms = {
 }
 
 hab_tolerant_society = {
-	num_accepted_cultures = 2
+	#num_accepted_cultures = 2 
+	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 }
 
 hab_holdings_in_swabia = {
@@ -5108,7 +5109,7 @@ bur_carolingia = {
 }
 
 bur_german_empire = {
-	num_accepted_cultures = 2
+	#num_accepted_cultures = 2 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 bur_seed_is_strong = {
@@ -5386,7 +5387,7 @@ ser_citadel_of_belgrade = {
 }
 
 ser_united_balkans = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 	stability_cost_modifier = -0.15
 }
 
@@ -5641,7 +5642,7 @@ han_kings_of_england = {
 }
 
 han_anglo_german_unity = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 	global_unrest = -2
 }
 
@@ -5924,8 +5925,8 @@ itm_loyalists_control_the_church = {
 }
 
 fla_belgium_nostrum = {
-	num_accepted_cultures = 1
-	promote_culture_cost = -0.25
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
+	promote_culture_cost = -0.1 #BT16 nerfed from -0.25
 }
 
 fla_prosperous_burghers = {
@@ -5964,7 +5965,7 @@ westfalen_capital_modifier = {
 }
 
 westphalia_integrate_rheinland = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1
 	global_prov_trade_power_modifier = 0.10
 }
 
@@ -6097,7 +6098,7 @@ siam_mandate_modifier = {
 }
 
 siam_accepted_mon = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 # Spice Islands missions
@@ -7945,7 +7946,7 @@ fin_era_of_independence_modifier = {
 	core_creation = -0.2
 }
 fin_celebrated_melting_pot_modifier = {
-	num_accepted_cultures = 2 
+	#num_accepted_cultures = 2 #BT Discarded as part of Accepted Culture Slot Overhaul
 	global_unrest = -1 
 }
 fin_accelerated_assimilation_modifier = {
@@ -8297,7 +8298,7 @@ tur_crown_of_rome_modifier = {
 }
 
 tur_legitimate_roman_empire_modifier = { 
-	num_accepted_cultures = 12 
+	#num_accepted_cultures = 12 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 tur_expanded_governmential_offices = {	#Permanent
@@ -8314,11 +8315,11 @@ tur_morisco_refugees_modifier = {
 }
 
 tur_turkish_andalusian_relations_gra = {	#Permanent until no more Turkish acceptance
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 tur_turkish_andalusian_relations_tur = {	#Permanent until no more Andalusian acceptance
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 tur_conquest_of_iberia = {	#Permanent
@@ -9155,7 +9156,7 @@ fra_influx_of_milanese_engineers_modifier = {
 fra_first_opera_house_modifier = { 
 	max_absolutism = 5 
 	dip_advisor_cost = -0.25
-	promote_culture_cost = -0.2
+	promote_culture_cost = -0.1 #BT Nerfed from -0.2 as part of Accepted Culture Slots overhaul
 }
 fra_port_of_french_signoria_modifier = { 
 	province_trade_power_modifier = 0.2
@@ -9274,7 +9275,7 @@ fra_french_cloth_centers_modifier = {
 fra_rules_the_waves_modifier = {
 	number_of_cannons_modifier = 0.1
 	navy_tradition = 0.5
-	num_accepted_cultures = 1 
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 fra_french_isles_modifier = {
 	culture_conversion_cost = -0.2
@@ -9643,7 +9644,7 @@ jap_scramble_for_china_modifier = {
 
 jap_era_tranquil_sun_modifier = {
 	imperial_mandate = 0.1
-	num_accepted_cultures = 2 
+	#num_accepted_cultures = 2 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 jap_masters_dragon_throne_modifier = {
@@ -10016,7 +10017,7 @@ ara_maritime_administration_modifier = {
 	centralize_state_cost = -0.1
 	governing_capacity_modifier = 0.1
 	overextension_impact_modifier = -0.05
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Discarded as part of Accepted Culture Slot Overhaul
 }
 
 diamond_district2 = {

@@ -180,7 +180,8 @@ horde_gov_ideas = {
 		caravan_power = 0.20
 	}
 	a_magnanimous_empire = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	
 	ai_will_do = {
@@ -1989,7 +1990,7 @@ administrative_ideas = {
 		core_creation = -0.25
 	}
 	cultural_regulations = {
-		promote_culture_cost = -0.3
+		promote_culture_cost = -0.1 #BT Nerfed from -0.3 as part of Accepted Culture Slots overhaul
 	}
 	stable_government = {
 		stability_cost_modifier = -0.25 
@@ -2073,7 +2074,8 @@ humanist_ideas = {
 		tolerance_heretic = 2
 	}
 	cultural_ties = {
-		num_accepted_cultures = 3 #BT buff because more detailed culturemap
+		#num_accepted_cultures = 3 #BT buff because more detailed culturemap
+		promote_culture_cost = -0.5 #BT Accepted Culture Slots overhaul. This is the main modifier to give players the option to promote cultures properly.
 	}
 	humanist_tolerance = {
 		tolerance_heathen = 2
