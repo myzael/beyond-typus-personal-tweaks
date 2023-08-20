@@ -11396,7 +11396,7 @@ oromo_group = {
 		dynasty_names = {
 		}
 	}
-	konsa = {
+	konso = {
 		#primary = XYZ
 		male_names = {
 		}
