@@ -4,7 +4,7 @@
 owner = JJI
 controller = JJI
 add_core = JJI
-culture = sidamo
+culture = yemsa
 religion = shamanism
 capital = "Fofa"
 is_city = yes

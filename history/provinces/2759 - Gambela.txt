@@ -1,13 +1,10 @@
  
 #2759 - Gambela
 
-owner = KAF
-controller = KAF
-add_core = KAF
-culture = sidamo 
+culture = luo_culture 
 religion = shamanism #Fetishism
 capital = "Gambela"
-is_city = yes
+is_city = no
 base_manpower = 2 
 trade_goods = slaves
 hre = no

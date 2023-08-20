@@ -4,7 +4,7 @@
 owner = ETH
 controller = ETH
 add_core = ETH
-culture = afar
+culture = argobba
 religion = sunni
 capital = "Manadeley"
 is_city = yes

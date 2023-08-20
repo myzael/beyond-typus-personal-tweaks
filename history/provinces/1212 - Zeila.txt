@@ -4,7 +4,7 @@
 owner = ADA
 controller = ADA
 add_core = ADA
-culture = somali # issa
+culture = issa
 religion = sunni
 capital = "Zayla"
 is_city = yes

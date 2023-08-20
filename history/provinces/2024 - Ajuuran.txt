@@ -1,14 +1,10 @@
  
 #2024 - Garoowe
 
-owner = MRE
-controller = MRE
-add_core = MRE
-add_core = MJE
-culture = somali
+culture = darood
 religion = sunni
 capital = "Garoowe"
-is_city = yes
+is_city = no
 base_manpower = 2 
 trade_goods = fish
 hre = no

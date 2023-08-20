@@ -4,8 +4,8 @@
 owner = ENA
 controller = ENA
 add_core = ENA
-culture = sidamo
-religion = coptic
+culture = gonga
+religion = shamanism
 capital = "Illubabor"
 is_city = yes
 base_manpower = 4

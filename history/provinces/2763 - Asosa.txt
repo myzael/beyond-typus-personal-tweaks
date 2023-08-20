@@ -1,12 +1,12 @@
  
 #2763 - Asosa
 
-owner = DAM
+owner = DAM #Asosa
 controller = DAM
 add_core = DAM
-culture = amhara 
-religion = coptic
-capital = "Assosa"
+culture = berta_culture
+religion = shamanism
+capital = "Asosa"
 is_city = yes
 base_manpower = 4
 trade_goods = slaves

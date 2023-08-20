@@ -1,11 +1,11 @@
  
 #New Province
 
-owner = ADA
+owner = ADA #Danakil
 controller = ADA
 add_core = ADA
 capital = "Zula"
-culture = afar
+culture = saho 
 religion = sunni
 trade_goods = fish
 hre = no

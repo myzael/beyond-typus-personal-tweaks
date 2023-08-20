@@ -4,7 +4,7 @@
 owner = WLY
 controller = WLY
 add_core = WLY
-culture = sidamo 
+culture = ometo 
 religion = shamanism
 capital = "Bonga"
 is_city = yes

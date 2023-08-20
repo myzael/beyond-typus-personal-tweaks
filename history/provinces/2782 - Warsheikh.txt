@@ -4,7 +4,7 @@
 owner = MDI
 controller = MDI
 add_core = MDI
-culture = somali
+culture = hawiye
 religion = sunni
 capital = "Warsheikh"
 is_city = yes
