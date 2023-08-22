@@ -3454,7 +3454,7 @@ GRA_ideas = {
 		global_own_trade_power = 0.1
 		trade_steering = 0.1
 	}
-	alhambra = {
+	gra_alhambra = {
 		build_cost = -0.1
 	}
 	moors = {
