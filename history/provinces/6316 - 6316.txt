@@ -3,7 +3,7 @@
 #Region - 
 
 #Core Details
-capital = "Pintingga"
+capital = "Karta Pintingga"
 is_city = no
 
 #Demographics - Kangaroo Island was seen as cursed and thus uninhabited by aboriginals for the last ~2000 years
