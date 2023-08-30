@@ -201,6 +201,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4867;6377;sea;1408;-1;-1;-1;-1;KingSound
 6367;6365;sea;1408;-1;-1;-1;-1;VictoriaRiverEstuary
 2728;6356;sea;1408;-1;-1;-1;-1;Tiwi-Cobourg
+2728;4846;sea;1408;-1;-1;-1;-1;Tiwi-Darwin
 2729;6352;sea;1410;-1;-1;-1;-1;Arnhemland-GrooteEyland
 2730;6219;sea;1410;-1;-1;-1;-1;TorresStraitIslands
 -1;-1;;-1;-1;-1;-1;-1;-1;
