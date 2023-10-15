@@ -985,7 +985,7 @@ sahel_region = { # 13 areas
 		00.09.30
 	}
 }
-horn_of_africa_region = { # 17 areas
+horn_of_africa_region = { 
 	areas = {
 		ogaden_area
 		sennar_area
@@ -1004,6 +1004,15 @@ horn_of_africa_region = { # 17 areas
 		white_nile_area
 		butana_area
 		medri_bahri_area
+		semien_area
+		begemder_area
+		gojjam_area
+		illuabor_area
+		omo_valley_area
+		arsi_area
+		bale_area
+		borana_area
+		hobyo_area
 	}
 }
 east_africa_region = { # 18 areas

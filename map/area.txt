@@ -2380,57 +2380,84 @@ northwest_sahara_area = { # BT
 ###
 # Horn of Africa
 ###
-ogaden_area = {
-	1207 1208 1210 2778 2779 
+ogaden_area = { #Central Somailia
+	1206 1207 1208 2024 2778 2790 2792 8806 
 }
-sennar_area = {
+sennar_area = { #Blue Nile
 	2798 2799 5287 5289 
 }
-tigray_area = {
-	1227 2766 2767 2771 2787 5297 
+tigray_area = { #Tigray
+	1227 2767 8883 8885 8886
 }
-ifat_area = {
-	1211 1212 2773 2793 
+ifat_area = { #Hararghe
+	1211 2764 2773 2793 8860 8861 8862 8863
 }
-somaliland_area = {
-	1209 2786 2789 2790 2792 
+somaliland_area = { #Barbaria
+	1209 1212 1215 2786 2789 8805 8887
 }
-southern_ethiopia_area = {
-	2757 2758 2759 4158 
+southern_ethiopia_area = { #Gibe
+	2758 4158 8843 8844
 }
-hadiya_area = {
-	1218 2756 2760 
+hadiya_area = { #Rift Valley
+	2756 2760 8827 8828 8829 8830 8832
 }
-central_ethiopia_area = {
-	1214 1223 1224 2769 2772 
+central_ethiopia_area = { #Amhara
+	1214 2768 2769 8858 8859 8867 8868 8870 8884
 }
-damot_area = {
-	2762 2763 2770 
+damot_area = { #Damot
+	2762 2763 8831 8849 8850 8851 8852 8853 8854 
 }
-aussa_area = {
-	1215 2764 2768 
+aussa_area = { #Danakil
+	2765 8864 8888 8889 8890 8891 
 }
-shewa_area = {
-	1213 2761 2791 
+shewa_area = { #Shewa
+	1213 2791 8834 8855 8856 8857 8865 8866
 }
-mogadishu_area = {
+mogadishu_area = { #Lower Shebelle
 	color = { 239 36 74 }
-	1205 2775 2782 2794 2795 
+	1205 2775 2776 2782 2794 8797
 }
-ajuuran_area = {
-	2776 2780 2781 2785 
+ajuuran_area = { #Upper Shebelle
+	2779 2780 8798 8799 8800 8807 8808 8809
 }
-majarteen_area = {
-	1206 2024 2783 2784 2788 
+majarteen_area = { #Majeerteenia
+	2788 8802 8803 8804
 }
-white_nile_area = { # BT
+white_nile_area = { #White Nile
 	1217 1222 2800 5285 5290 
 }
-butana_area = { # BT
-	1225 1226 4033 
+butana_area = { #Butana
+	1225 1226 4033 5297 8895 8896 8897 8898
 }
-medri_bahri_area = { # BT
-	1230 2765 5288 5298 
+medri_bahri_area = { #Eritrea
+	1230 2766 2787 5288 5298 8892 8893 8894 8899
+}
+semien_area = { #Semien
+	2771 8880 8881 8882
+}
+begemder_area = { #Begemder
+	1224 2772 8869 8871 8878 8879
+}
+gojjam_area = { #Gojjam
+	1223 2770 8872 8873 8874 8875 8876 8877
+}
+illuabor_area = { #Illuabor
+	2757 2759 8842 8845 8846 8847 8848
+}
+omo_valley_area = { #Omo Valley
+	8835 8836 8837 8838 8839 8840 8841
+}
+arsi_area = { #Arsi
+	1210 2761 8813 8833
+}
+bale_area = { #Bale
+	8810 8811 8812 8814 8815 8816
+}
+borana_area = { #Borana
+	8817 8818 8819 8820 8821 8822 8823 8824 8825 8826
+}
+hobyo_area = { #Hobyo
+	2783 2784 2785 2795 8801
 }
 
 ###
@@ -2488,7 +2515,7 @@ mombasa_area = {
 	1200 1202 1203 
 }
 jubba_area = {
-	2777 4051 4052 
+	2777 2781 4051 4052 
 }
 mascarenes_area = {
 	1100 1102 1103 
