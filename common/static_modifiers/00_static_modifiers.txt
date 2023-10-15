@@ -632,7 +632,7 @@ base_values = {
 	devotion = -0.5
 	meritocracy = -2
 	governing_capacity = 200			#BTB Probably not a wise idea to lower from 200 to 80 based on the 10 to 4 max states conversion.
-	num_accepted_cultures = 2			#BTAddOn changed from 2 - Note accepted culture bonus to government levels, so kingdoms start with the same as vanilla, and empires get 1 more. Changed back to 2 because of number of cultures in bt is a lot higher #Harbivore
+	num_accepted_cultures = 99999		#BT16 Accepted Culture Overhaul removing accepted culture slots.	#BTAddOn changed from 2 - Note accepted culture bonus to government levels, so kingdoms start with the same as vanilla, and empires get 1 more. Changed back to 2 because of number of cultures in bt is a lot higher #Harbivore
 	monthly_splendor = 1
 	artillery_levels_available_vs_fort = 5
 	cav_to_inf_ratio = 0.3			#BTAddOn changed from 0.5 - Seriously, what normal army was a full 50 percent cavalry? Realistic might be closer to 10 as a base, but 30 hits a nice gameplay/realism balance, I think.
@@ -642,6 +642,7 @@ base_values = {
 	tolerance_of_heathens_capacity = 3
 	max_flagships = 1
 	num_of_parliament_issues = 10
+	promote_culture_cost = 0.5 #BT Accepted Culture Slots overhaul: Tech reduces promote culture cost by up to -50% by the end of the game. This is here partly to prevent modifier stacking until the absolute last part of the game, but also just makes sense to me. //Dub
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI

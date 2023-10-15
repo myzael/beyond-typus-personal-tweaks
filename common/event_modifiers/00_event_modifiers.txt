@@ -434,7 +434,8 @@ gresham_college_royal_society = {	#Permanent
 angevin_age = {	#Permanent
 	years_of_nationalism = -5
 	core_creation = -0.05
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1
+	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 }
 
 #Court and Country
@@ -1154,7 +1155,8 @@ superintendent_office = {
 
 monastic_education_system = {
 	global_missionary_strength = 0.01
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1
+	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	religion = yes
 }
 
@@ -3652,7 +3654,8 @@ pol_zebrzydowski_rebellion_flag = {
 }
 
 plc_polish_lithuanian_union = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1
+	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 }
 
 economic_development_of_mazovia = {
@@ -7333,7 +7336,8 @@ cortes_defended = {
 }
 
 promote_regional_languages = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1
+	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	global_autonomy = 0.02
 }
 

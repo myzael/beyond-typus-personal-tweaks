@@ -194,7 +194,8 @@ grand_duchy_reform = {
 		diplomatic_upkeep = 2 # BT ???
 		min_autonomy_in_territories = -0.25 # BT ???
 		land_maintenance_modifier = -0.25 # BT ???
-		num_accepted_cultures = 2 # BT ???
+		#num_accepted_cultures = 2 # BT ???
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		governing_capacity = 400 # BT; 200
 	}
 }
@@ -910,7 +911,7 @@ angevin_monarchy = {
 	}
 	modifiers = {
 		governing_capacity = 200 #BT; 100
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2 #BT Discarded as part of Accepted Culture Slot Overhaul
 		max_absolutism = 10
 		prestige = 1
 		max_possible_parliament_seats = 15
@@ -2335,10 +2336,10 @@ austrian_dual_monarchy = {
 	}
 
 	modifiers = {
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2 #BT Discarded as part of Accepted Culture Slot Overhaul
 		global_unrest = -2
 		monarch_diplomatic_power = 2
-		promote_culture_cost = -0.33
+		promote_culture_cost = -0.15 #BT Nerfed from -0.33 as part of Accepted Culture Slots overhaul
 	}
 }
 
@@ -2592,11 +2593,11 @@ mamluk_government = {
 	}
 
 	modifiers = {
-		num_accepted_cultures = 3
+		#num_accepted_cultures = 3 #BT Discarded as part of Accepted Culture Slot Overhaul
 		global_autonomy = -0.025
 		monarch_admin_power = 2
 		same_culture_advisor_cost = -0.25
-		promote_culture_cost = -0.5
+		promote_culture_cost = -0.2 #BT Nerfed from -0.5 as part of Accepted Culture Slots overhaul
 		governing_capacity = 100 # BT; 50
 		nobles_influence_modifier = 0.1
 	}
@@ -5140,7 +5141,8 @@ decentralize_reform = {
 	}
 	modifiers = {
 		min_autonomy_in_territories = -0.05
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2 
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		all_estate_loyalty_equilibrium = 0.05
 	}
 	ai = {
@@ -5310,7 +5312,7 @@ ottoman_provincial_government_system_reform = {
 	modifiers = {
 		global_tax_modifier = 0.15
 		vassal_income = 0.25
-		promote_culture_cost = -0.25
+		promote_culture_cost = -0.1 #BT Nerfed from -0.25 as part of Accepted Culture Slots overhaul
 	}
 	conditional = {
 		allow = { 
@@ -5836,7 +5838,8 @@ ottoman_siyasah_tax_reform = {
 	modifiers = {
 		global_autonomy = -0.05
 		autonomy_change_time = -0.25
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		all_estate_loyalty_equilibrium = 0.05
 	}
 	custom_attributes = {
@@ -6068,7 +6071,8 @@ two_treatises_reform = {
 	modifiers = {
 		expand_administration_cost = -1
 		can_revoke_parliament_seats = yes
-		num_accepted_cultures = 1
+		#num_accepted_cultures = 1
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
@@ -6321,7 +6325,8 @@ enlightened_monarchy_reform = {
 	}
 	modifiers = {
 		global_unrest = -2
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	ai = {
 		factor = 2.5

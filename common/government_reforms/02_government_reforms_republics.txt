@@ -2261,8 +2261,8 @@ liberte_reform = {
 	}
 	modifiers = {
 		rr_girondists_influence = 0.1
-		num_accepted_cultures = 2
-		promote_culture_cost = -0.75
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.2 #BT Nerfed from -0.75 to account for accepted culture slots overhaul
 	}
 	ai = {
 		factor = 2.5
@@ -2785,8 +2785,8 @@ cultural_administration_reform = {
 	icon = "conciliarism_reform"
 	allow_normal_conversion = yes
 	modifiers = {
-		num_accepted_cultures = 2
-		promote_culture_cost = -0.5
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Nerfed from -0.5 as part of accepted culture slots overhaul
 	}
 	ai = {
 		factor = 1

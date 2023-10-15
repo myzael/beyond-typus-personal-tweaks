@@ -5752,7 +5752,8 @@ enlightenment = {
 	#penalty = 0.5
 
 	bonus = {
-		num_accepted_cultures = 2			#BTAddOn change from culture conversion cost -25 percent. The Enlightenment wasn't about more effective methods of assimilation, it was about bringing enlightenment to the world (okay, maybe a little bit about assimilation, but not enough for a bonus here). Plus, cheaper culture conversion was wiping out too many small cultures too quickly.
+		#num_accepted_cultures = 2			#BTAddOn change from culture conversion cost -25 percent. The Enlightenment wasn't about more effective methods of assimilation, it was about bringing enlightenment to the world (okay, maybe a little bit about assimilation, but not enough for a bonus here). Plus, cheaper culture conversion was wiping out too many small cultures too quickly.
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 		religious_unity = 0.2			#BTAddOn new. Just a little bonus. Plus there is room for 2 bonuses in the UI =D
 	}
 

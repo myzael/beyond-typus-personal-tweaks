@@ -1826,7 +1826,8 @@ belief_and_unity_reform = {
 	allow_normal_conversion = yes
 	modifiers = {
 		religious_unity = 0.5
-		num_accepted_cultures = 2
+		#num_accepted_cultures = 2
+		promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	}
 	ai = {
 		factor = 0
@@ -1852,7 +1853,7 @@ harmonization_of_cultures_reform = {
 	allow_normal_conversion = yes
 
 	modifiers = {
-		promote_culture_cost = -0.5
+		promote_culture_cost = -0.1 #BT Nerfed from -0.5 as part of Accepted Culture Slots overhaul
 		same_culture_advisor_cost = -0.2
 	}
 	ai = {
