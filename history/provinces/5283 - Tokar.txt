@@ -2,8 +2,8 @@
 #New Province
 
 capital = "Tokar"
-culture = tigray
-religion = coptic
+culture = beja
+religion = sunni
 trade_goods = unknown
 hre = no
 base_tax = 1 

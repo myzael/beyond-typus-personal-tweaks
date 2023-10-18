@@ -1,17 +1,15 @@
-#6438 - Placeholder
+#6438 - Kangaroo Island
 #Area - 
 #Region - 
 
 #Core Details
-capital = "Placeholder"
+capital = "Karta Pintingga"
 is_city = no
 
-#Demographics
-culture = kadli
-religion = dreamtime
-native_size = 10
-native_ferocity = 1
-native_hostileness = 2
+#Demographics - Kangaroo Island was seen as cursed and thus uninhabited by aboriginals for the last ~2000 years
+native_size = 0
+native_ferocity = 0
+native_hostileness = 0
 
 #Development and Trade
 base_tax = 1

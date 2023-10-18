@@ -4,8 +4,8 @@
 owner = HDY
 controller = HDY
 add_core = HDY
-culture = sidamo 
-religion = sunni
+culture = hadiya 
+religion = shamanism
 capital = "Angacha"
 is_city = yes
 base_manpower = 4

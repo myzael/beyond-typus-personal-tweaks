@@ -1,11 +1,10 @@
  
 #2788 - Hafun
 
-owner = MRE
-controller = MRE
-add_core = MRE
+owner = MJE
+controller = MJE
 add_core = MJE
-culture = somali
+culture = darood
 religion = sunni
 capital = "Hafun"
 trade_goods = incense #also cinnamon, spices, cloves and ivory

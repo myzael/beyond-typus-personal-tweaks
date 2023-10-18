@@ -1,8 +1,8 @@
  
 #1226 - Taka
 
-culture = tigray
-religion = coptic
+culture = beja
+religion = sunni
 capital = "Gadamai"			#couldn't find any information other than a name here
 base_manpower = 1 
 trade_goods = unknown

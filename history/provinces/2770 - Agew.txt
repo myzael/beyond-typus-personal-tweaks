@@ -1,15 +1,12 @@
  
 #2770 - Agew
 
-owner = ETH
-controller = ETH
-add_core = ETH
-culture = amhara 
-religion = coptic
+culture = awngi 
+religion = shamanism
 capital = "Dangila"
-is_city = yes
+is_city = no
 base_manpower = 2 
-trade_goods = bt_trade_good_fruit
+trade_goods = unknown
 hre = no
 base_tax = 4  
 base_production = 4
