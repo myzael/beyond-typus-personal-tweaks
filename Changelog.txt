@@ -11,7 +11,7 @@ BT16
  - (Harbivore) Reworked the Austrian Unification events (previously Chocolate). They unite 99% of the time and doesn't allow Hungary to just steal Austria forever.
  - (Harbivore) Changed the AI to no longer make alliances with nations 10% of their development or 5x their development. (AI make much better alliances yay now more opm allies with great powers)
  - (Harbivore) Added English Marcher Lordships. Like normal marches but you can integrate them and also steal their generals
- - (Harbivore) Added mercury events giving gold to 3 provinces where cinnabar was mined. Castile, Slovinia and Serbia.
+ - (Harbivore) Added mercury events giving gold to 3 provinces where historically cinnabar was mined and rose to prominence during the discovery of New World gold mines in Castile, Slovenia and Serbia.
  - (Dub) Added an Ayyubid Administration government mechanic to the Ayyubid Sultanate government reform, allowing the choice of one of three interactions once every 5 years:
 	 - Draft Mamluks: Gain 1 years worth of manpower from stated provinces of unaccepted cultures of non-state religion.
 	 - Sponsor Shayk: Gain a random 50% discounted advisor of skill level 2/3 depending on if monthly income is below/above 35.
@@ -45,10 +45,11 @@ BT16
  - (Harbivore) Changed trade good in belgrade to dyes. Cinnabar production
  - (Harbivore & Dub) Added Coal in a few provinces in Italy (Sulcis) and Iberia (Carmona)
  - (Dub) Removed Cordoban gold - there was no evidence to suggest the Sierra Morenas were properly mined in Spain. All evidence pointed towards romans & arabs. In fact, the area was *very* rural during the Spaniards.
- - (Dub) Added +20% breakthrough to cav units. For anyone not aware: Breakthrough is a mechanic disabled in vanilla where when defeating a front row unit in combat, it has a chance of pulling the artillery behind it to the front row. This chance is 0% in vanilla by default. BT now changes this to 0% for infantry and 20% for cavalry.
+ - (Dub) Added +20% breakthrough to cav units. For anyone not aware: Breakthrough is a mechanic disabled in vanilla where when defeating a front row unit in combat, it has a chance of pulling the artillery behind it to the front row. This chance is 0% in vanilla by default. BT now changes this to 0% for infantry and 20% for cavalry in an attempt to promote cav usage later game.
  - (Dub) Rebalanced AI building code such that the AI will finally be more intelligent in their build order, making it much less willing to spend on forcelimit buildings and more focused on economic buffs.
  - (Dub) Re-added CoT to Trondelag (PROV20)
  - (Dub) Tweaked Lusitania, Spain & Andalusia formable such that you can circumvent the clause of none of the other existing by having more provinces than them.
+ - (Dub) Tweaked Defender of Faith modifiers and num of nations following the faith such that same faith nations get more modifiers, and the defender of faith being more oriented towards amassing large armies rather than more professional ones and a bunch of other things. Certain modifiers were cut, and others were introduced, attempting to hearken back to Misc changes made by Draiocht.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
