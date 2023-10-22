@@ -446,7 +446,7 @@ MAG_ideas = {
 	}
 	
 	mag_strike_against_the_city = { #The Burghers of Magdeburg were in constant conflict with the Archbishopric. This idea represents the idea of pacifying them through a variety of reforms. As well, Martin Luther attented school in the city.
-		burgher_influence_modifier = -0.1
+		burghers_influence_modifier = -0.1
 		estate_interaction_cooldown_modifier = -0.2
 	}
 	
