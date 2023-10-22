@@ -411,6 +411,61 @@ JAE_ideas = {
 	}
 }
 
+#Magdeburg
+MAG_ideas = {
+	start = {
+		trade_efficiency = 0.1 #Hanseatic city
+		defensiveness = 0.2 #Referencing the major fort of Magdeburg and its later defense against the Catholic League
+	}
+	
+	bonus = {
+		leader_siege = 1 #Semi-dump, referencing Otto von Guericke's military engineering education
+	}
+	
+	trigger = {
+		tag = MAG
+	}
+	free = yes
+	
+	mag_magdeburg_rights = { #The world-famous Magdeburg Rights. This tag does not utilise them as such for their ideas because the tag represents the Archbishopric, and so instead harnesses its reputation.
+		prestige = 1
+		diplomatic_reputation = 1
+	}
+	
+	mag_cathedral = { #Cathedral of Saints Maurice and Catherine, seat of the archbishop, today the principal church of the Evangelical Church in Central Germany, landmark of the city, houses the body of Otto I the great and wife, and is the oldest Gothic cathedral in Germany.
+		papal_influence = 1
+		monthly_fervor_increase = 1
+		church_power_modifier = 0.1
+	}
+	
+	mag_christianize_the_east = { #Magdeburg and its bishopric were instrumental in spreading Catholicism to the likes of the Magyards, and likely also for the later Northern Crusades.
+		devotion = 1
+		legitimacy = 1
+		republican_tradition = 0.2
+		global_missionary_strength = 0.01
+	}
+	
+	mag_strike_against_the_city = { #The Burghers of Magdeburg were in constant conflict with the Archbishopric. This idea represents the idea of pacifying them through a variety of reforms. As well, Martin Luther attented school in the city.
+		burgher_influence_modifier = -0.1
+		estate_interaction_cooldown_modifier = -0.2
+	}
+	
+	mag_question_of_secularization = { #The Archbishopric eventually converted to Protestantism and was secularised. Herein represented as better reforms of governance.
+		monthly_reform_progress_modifier = 0.1
+		monthly_reform_progress = 0.25
+	}
+	
+	mag_magdeburgization = { #The city of Magdeburg recovered awfully quick despite losing about 80% of its population during the 30 years war, Magdeburg's Sacrifice.
+		manpower_recovery_speed = 0.10 #Modifier's probably not the best, but this idea set needs some sort of military buff.
+	}
+	
+	mag_magdeburg_hemispheres = { #There's little that can be based off of the archbishopric itself, and at this point, post-secularisation and "pacifying" the burghers, these kinds of things become more interesting. I don't think I need to mention what this idea is about.
+		innovativeness_gain = 0.25
+		yearly_innovativeness = 0.1
+	}
+}
+
+
 # Eris's work
 PMO_ideas = {
 	start = {
