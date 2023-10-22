@@ -1,0 +1,138 @@
+Herein lies a list of countries that in the current version of BT lacks unique ideas, and exist in the 1444 start. These are great candidates for contributors to do ideas for.
+
+German minors/OPMs/TPMs:
+------------------------
+Ruppin
+Pinneberg
+Magdeburg
+Schonburg
+Halberstadt
+Wolfenbuttel
+Hildesheim
+Grubenhagen
+Mansfeld
+Schwarzburg
+Mühlhausen
+Gottingen
+Calenberg
+Lippe
+Gottingen
+Calenberg
+Minden
+Waldeck
+Paderborn
+Hoya
+Diepholz
+Oldenburg
+Osnabruck
+Tecklenburg
+Bentheim
+Essen
+Nassau
+Sayn
+Wetzlar
+Katzenelnbogen
+Moers
+Stavelot
+Worms
+Hohenlohe
+Regensburg (Has Bavarian ideas currently)
+Freising
+Buchau (Lacks Swabian City-State ideas???)
+Speyer
+Prum
+Berchtesgaden
+Passau
+Schaunberg
+Brixen (Has Bavarian ideas currently)
+Gorizia (Has Bavarian ideas currently)
+Rijeka
+
+Formables:
+Rheinland
+
+French minors:
+--------------
+Besancon (Has French Ducal ideas???)
+Toul
+Verdun
+Barrois
+Langres
+Rheims
+Laon
+Tournai
+Cambrai
+Metz
+Vienne
+
+Addendum: It's worth mentioning several French appanages/Burgundian PUs have French Ducal ideas, though them having that may or may not be fine at the current point in time. 
+These are mainly BT-added nations such as Armagnac, Maine and Foix.
+
+Italy:
+------
+Tenda
+Masserano
+Bobbio
+Finale
+Correggio
+Massa
+Modena
+Ceneda
+Trieste
+Faenza
+Citta di Castello
+Volterra
+Piombino
+Carpegna
+Marche
+Camerino
+Orvieto
+Sovana
+Velletri
+Arborea
+
+
+There's also a bunch of releasables in particularly Northern Italy, that also lack unique ideas, but the focus should mainly be on the ones above. One potential generic idea set is an autonomous papal state idea set.
+
+Baltic minors:
+--------------
+Pomesania
+Warmia
+Sambia
+Kulm
+
+Samogitia
+
+Osel-Wiek
+Dorpat
+
+Russia:
+-------
+Galich
+Mologa
+Zubtsov
+Mozhaysk
+Serpukhov
+Vorotynsk
+Mosalsk
+Belyov
+Pronsk
+Vyatka
+
+Maghreb:
+---------------------------------
+Debdou (Arabian ideas, Moroccan vassal)
+Marrakesh (Berber ideas, Moroccan vassal)
+Tafilalt (Berber ideas, Moroccan vassal)
+Sus (Berber ideas, Moroccan vassal)
+Laghouat
+Mzab
+Ouargla
+Touggourt
+Zab
+Qastiliya
+Ghadames
+Fezzan
+Banu Sulaym
+
+Berber minors south of Tunis (Some with Arabian ideas, some with Berber ideas)
