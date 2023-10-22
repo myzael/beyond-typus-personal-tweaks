@@ -45,3 +45,23 @@
  ayyubid_sultanate_mechanic_sponsor_shayk_tt_dip_2:0 "Gain a skill §Y2§! advisor of the §YDiplomatic§! category following the §Y[Root.Religion.GetName]§! faith. This advisor is §G50%§! cheaper to employ."
  ayyubid_sultanate_mechanic_sponsor_shayk_tt_mil_2:0 "Gain a skill §Y2§! advisor of the §YMilitary§! category following the §Y[Root.Religion.GetName]§! faith. This advisor is §G50%§! cheaper to employ."
  
+ #Mainly done by Draiocht, with some modifications by Dub
+ new_CSC_ideas:0 "Cascadian Ideas"
+ new_CSC_ideas_start:0 "Cascadian Traditions"
+ new_CSC_ideas_bonus: "Cascadian Ambition" 
+ csc_natural_walls:0 "Geology of Cascadia"
+ csc_natural_walls_desc:0 "Surrounded on all sides by mountains, deserts, rainforests, as well as the largest ocean in the world, it is only natural that we have learned how to utilize geography to provide the most impecciable of defenses."
+ csc_exploit_exploiters:0 "Exploit the Exploiters"
+ csc_exploit_exploiters_desc:0 "When Europeans first showed up to trick, steal and manipulate the people here, the locals turned the tables, and the European walked away with junk in return for his riches. Now that we form a united nation, European and native side-by-side, we should remember these lessons and never be exploited."
+ csc_rivers_of_salmon:0 "Rivers of Salmon"
+ csc_rivers_of_salmon_desc:0 "Most lands have rivers of water, which occasionally have fish in them. We have rivers of salmon, which occasionally have water in them. In this land of plenty you have but to reach towards a river, and a salmon will jump in your hand."
+ csc_heritage_of_compromise:0 "Heritage of Compromise"
+ csc_heritage_of_compromise_desc:0 "In many regions of the New World, land is coveted by several nations and when border disputes arise, matters come to blows. But here, ere the earliest settlements, compromises to share the land amicably have been reached. We would do well to remember and build upon this tradition of compromise."
+ csc_land_of_heroes:0 "Land of Heroes"
+ csc_land_of_heroes_desc:0 "When first arriving in their mighty ships, Europeans expected to find pitiful savages, cowering and pathetic. They did not expect to find the brave and warlike peoples of the Pacific coast, already accustomed to siege warfare, raiding, and open battles. Now that we form one nation, we should tap into this courage and belligerence for the defense of our new united nation."
+ csc_giant_pines:0 "Land of Giant Pines"
+ csc_giant_pines_desc:0 "Though familiar with the forests of Scandinavia and Eastern Europe, Europeans were completely unprepared for the size and abundance of the massive pines along the Pacific coast. Natives construct mighty sea-going vessels carrying 30 men out of single trees. We can likewise turn these natural forests into the heart of a naval war machine."
+ 
+ 
+ 
+ 

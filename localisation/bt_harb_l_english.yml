@@ -1,5 +1,5 @@
 ﻿l_english:
-
+#DEV NOTE: Some of these strings don't follow proper syntax, containing capital letters in strings. //Dub
 #Events
 
  bt_silk_events.1.title:0 "Murcian Silk production"
@@ -39,14 +39,14 @@
  desc_Bologna_silk_mills:0 "Bologna was the birthplace of the invention of the hydraulic silk mill. Which allowed to process silk much faster and resulted in higher quality silk as well."
 
  bt_shah_rukh_deaded:0 "Chaos following Shah Rukh's Death"
-
-BT_H_Misc.2.title:0 "Amalgamation"
-BT_H_Misc.2.disc:0 "Cinnabar was used for dyes and to create gold and silver plating. Mercury can be refined from the cinnabar and this was used in the process of amalgamation which extracted gold and silver from ore. With this discovery is now being used to extract gold and silver from their ores in the new world."
-BT_H_Misc.2.opta:0 "Liquid gold?"
  
-BT_H_Misc.3.title:0 "Amalgamation"
-BT_H_Misc.3.disc:0 "Cinnabar was used for dyes and to create gold and silver plating. Mercury can be refined from the cinnabar and this was used in the process of amalgamation which extracted gold and silver from ore. With this discovery is now being used to extract gold and silver from their ores in the new world."
-BT_H_Misc.3.opta:0 "Liquid gold?"
+ BT_H_Misc.2.title:0 "Amalgamation"
+ BT_H_Misc.2.disc:0 "Cinnabar was used for dyes and to create gold and silver plating. Mercury can be refined from the cinnabar and this was used in the process of amalgamation which extracted gold and silver from ore. With this discovery is now being used to extract gold and silver from their ores in the new world."
+ BT_H_Misc.2.opta:0 "Liquid gold?"
+ 
+ BT_H_Misc.3.title:0 "Amalgamation"
+ BT_H_Misc.3.disc:0 "Cinnabar was used for dyes and to create gold and silver plating. Mercury can be refined from the cinnabar and this was used in the process of amalgamation which extracted gold and silver from ore. With this discovery is now being used to extract gold and silver from their ores in the new world."
+ BT_H_Misc.3.opta:0 "Liquid gold?"
  
  flavor_teu.3.b:0 "Invite teutonic order to reclaim ducal prussia as our vassal"
 

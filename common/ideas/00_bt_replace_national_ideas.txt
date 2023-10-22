@@ -44,3 +44,48 @@ new_SCA_ideas = {
 		range = 0.25
 	}
 }
+
+new_CSC_ideas = {
+	start = {
+		hostile_attrition = 1
+		religious_unity = 0.25
+	}
+	bonus = {
+		artillery_power = 0.1
+	}
+	trigger = {
+		tag = CSC
+	}
+	
+	free = yes
+	
+	csc_natural_walls = {
+		defensiveness = 0.2
+	}
+	
+	csc_exploit_exploiters = {
+		trade_efficiency = 0.1
+	}
+	
+	csc_rivers_of_salmon = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	
+	csc_heritage_of_compromise = {
+		promote_culture_cost = -0.1
+		diplomatic_reputation = 1
+	}
+	
+	csc_land_of_heroes = {
+		infantry_power = 0.1
+	}
+	
+	csc_giant_pines = {
+		ship_durability = 0.05
+		global_ship_cost = -0.1
+	}
+	
+	CSC_oregon_trail = { #Vanilla CSC ideas
+		
+	}
+}
