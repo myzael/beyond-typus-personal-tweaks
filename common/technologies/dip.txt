@@ -138,7 +138,7 @@ technology  = { #Docks
 
 	
 	#num_accepted_cultures = 1
-	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
+	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	shipyard = yes
 
 	trade_range				=	10
@@ -240,7 +240,7 @@ technology = { #The Galleass
 	
 	tradecompany = yes
 	#num_accepted_cultures = 1
-	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
+	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 
 	
 	enable = galleass
@@ -357,7 +357,7 @@ technology = { #Naval Professionalization
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
 	#num_accepted_cultures = 1
-	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
+	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	
 }
 
@@ -481,7 +481,7 @@ technology = { #The Eastindiaman
 	range					=	250			#BTAddOn changed from 200
 	global_colonial_growth  = 	25
 	#num_accepted_cultures = 1
-	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
+	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 	
 	enable = eastindiaman
 	enable = great_frigate
@@ -578,7 +578,7 @@ technology = { #Superior Ship Design
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1	
 	#num_accepted_cultures = 1
-	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
+	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
 }
 
 technology = { #The Gold Standard
