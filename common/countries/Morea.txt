@@ -82,13 +82,13 @@ monarch_names = {
 }	
 
 leader_names = { 
-	Angelus Asan
+	Angelos Asan
 	Branas	
-	Cantacuzene Comnenus 
-	Ducas
-	Mavros 
+	Kantacouzenos Komnenos 
+	Doukas
+	Mauros 
 	Notaras
-	Palaeologus Phocas
+	Palaiologos Phokas
 	Raoul
 	Spagnoli Sphrantzes
 	Tocco
