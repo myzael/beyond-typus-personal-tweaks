@@ -7433,6 +7433,7 @@ canterbury_cathedral = {
 			papal_influence = 1.5
 			monthly_fervor_increase = 0.5
 			church_power_modifier =  0.075
+			church_privilege_slots = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -7483,6 +7484,7 @@ canterbury_cathedral = {
 			monthly_fervor_increase = 0.75
 			church_power_modifier = 0.1
 			tolerance_own = 1
+			church_privilege_slots = 1
 		}
 
 		#what effects happen when this tier is achieved
