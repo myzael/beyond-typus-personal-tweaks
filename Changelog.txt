@@ -92,8 +92,9 @@ BT16
 	- Songhai
 	- Mali
 	- Bavarian 
-	- LotN Norwegian (Dub)
-	- LotN Swedish (Dub)
+	- LotN Norwegian (Dub) - Scandinavian branches not updated
+	- LotN Swedish (Dub) - Scandinavian branches not updated
+	- LotN Danish (Dub) - Scandinavian branches not updated
 	- BT Ayyubid (Dub)
 	- GC Andalusian (Dub)
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)

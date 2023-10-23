@@ -1540,3 +1540,28 @@ lotn_swe_expand_finland_provinces = { #Identical to swe_expand_finland_provinces
 	30 32 4124 7806 7808 
 	33 34 5644 5646	
 }
+
+dan_livonian_order_provinces = {
+	35 36 1842 3230 3231 7853 7855 7856 7857 
+}
+
+dan_land_in_northumberland_provinces = {
+	245 4367 4785 8133 8134 
+	244 247 4375 8135 
+	246 4368 8136 8137
+}
+
+dan_conquer_england_provinces = { #Includes dan_land_in_northumberland_provinces
+	245 4367 4785 8133 8134 
+	244 247 4375 8135 
+	246 4368 8136 8137 #18
+	#Rest of English
+	233 234 239 4130 4373 4374 8122 8124 8170 
+	235 236 237 238 4371 8123 8125 8127 
+	243 1861 4372 4376 8126 8128 8130 8131 
+	1860 3028 4370 #28
+	#Wales
+	242 8138 8139 8140 8141 
+	240 4366 8129 8142 
+	241 3034 3036 4369 8143 8144 #15
+}

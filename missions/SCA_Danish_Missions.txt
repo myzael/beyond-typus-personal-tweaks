@@ -133,7 +133,7 @@ dan_secure_baltic_mission_slot = {
 			NOT = { controller = { OR = { tag = ROOT alliance_with = ROOT is_subject_of = ROOT } } }
 		}
 		trigger = {
-			custom_trigger_tooltip = {
+			custom_trigger_tooltip = { #This tooltip is seriously bad as it doesn't have a counter. Could restructure it, but oh well for now.
 				tooltip = dan_the_german_trade_cities_tt
 				calc_true_if = {
 					47 = {
@@ -187,6 +187,17 @@ dan_secure_baltic_mission_slot = {
 				custom_tooltip = dan_the_german_trade_cities_ct
 				years = 4
 			}
+			7776 = { #BT Added: Establishment of Glückstadt/Lykstad, established to rival Hamburg.
+				if = {
+					limit = {
+						owned_by = ROOT
+					}
+					rename_capital = "Lykstad"
+					add_base_tax = 2
+					add_base_production = 2
+					center_of_trade = 1
+				}
+			}
 			1876 = {
 				add_trade_modifier = {
 					who = ROOT
@@ -213,7 +224,7 @@ dan_secure_baltic_mission_slot = {
 			dan_livonian_order
 			dan_the_german_trade_cities
 		}
-		provinces_to_highlight = {
+		provinces_to_highlight = { #BT Dev Note: I would argue Helsingborg is very important for this particular mission, but I'm just not going to change it for now.
 			OR = {
 				province_id = 12
 				province_id = 4142
@@ -299,7 +310,7 @@ dan_secure_baltic_mission_slot = {
 		}
 	}
 
-	dan_push_westwards = {
+	dan_push_westwards = { #Because PDX is not using colonial regions, this needs no fix.
 		icon = mission_exploration
 		position = 7
 		required_missions = { dan_colonial_ambitions }
@@ -462,6 +473,39 @@ dan_north_america_mission_slot = {
 					}
 					add_permanent_claim = ROOT
 				}
+				colonial_hispaniola = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							has_river_estuary_trigger = yes
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				colonial_cuba = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							has_river_estuary_trigger = yes
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+				colonial_bahamas = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							has_river_estuary_trigger = yes
+						}
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 			if = {
 				limit = {
@@ -561,26 +605,34 @@ dan_trade_and_colonial_mission_slot = {
 			create_admiral = {
 				tradition = 50
 			}
+			give_permaclaims_for_mission = { mission=dan_livonian_order }
 			livonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_claim = ROOT }
 				}
-				add_permanent_claim = ROOT
-			}
-			estonia_ingria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
+				add_claim = ROOT
 			}
 			curonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_claim = ROOT }
 				}
-				add_permanent_claim = ROOT
+				add_claim = ROOT
+			}
+			north_livonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			semigallia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
 			}
 		}
 	}
@@ -590,26 +642,23 @@ dan_trade_and_colonial_mission_slot = {
 		position = 3
 		required_missions = { dan_the_baltic_force }
 		provinces_to_highlight = {
-			OR = {
-				province_id = 35
-				area = estonia_ingria_area
-			}
+			province_group = dan_livonian_order_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			estonia_ingria_area = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted
+				provinces=dan_livonian_order_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
-			owns_or_non_sovereign_subject_of = 35
 		}
 		effect = {
 			add_accepted_culture_or_dip_power = { culture = estonian }
-			add_country_modifier = {
-				name = dan_estonian_culture_accepted
-				duration = -1
-				desc = dan_estonian_culture_accepted_tt
-			}
+			# add_country_modifier = { #BT Deprecated
+				# name = dan_estonian_culture_accepted
+				# duration = -1
+				# desc = dan_estonian_culture_accepted_tt
+			# }
 			custom_tooltip = dan_livonian_order_tt
 			hidden_effect = {
 				every_owned_province = {
@@ -622,14 +671,7 @@ dan_trade_and_colonial_mission_slot = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					NOT = { is_core = 33 }
-					NOT = { is_permanent_claim = 33 }
-				}
-				add_permanent_claim = 33
-			}
-			karelia_area = {
+			north_karelia = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -869,6 +911,8 @@ dan_trade_and_colonial_mission_slot = {
 					1132 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
 					341 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
 					1110 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
+					5393 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } } #BT Namibia trade node new
+					
 				}
 				amount = 6
 			}
@@ -914,14 +958,19 @@ dan_caribbeans_mission_slot = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 493
+			owns_or_non_sovereign_subject_of = 5584 #BT centers St. Thomas on a new province, not 493. //Dub
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_the_carribean
+				OR = {
+					colonial_region = colonial_the_carribean
+					colonial_region = colonial_hispaniola
+					colonial_region = colonial_cuba
+					colonial_region = colonial_bahamas
+				}
 				value = 5
 			}
 		}
 		effect = {
-			493 = { center_of_trade = 2 }
+			5584 = { center_of_trade = 2 }
 			1516 = {
 				add_trade_modifier = {
 					who = ROOT
@@ -1135,8 +1184,8 @@ dan_norway_holstein_mission_slot = {
 				add_dip_power = 100
 				add_mil_power = 100
 			}
-			6 = { center_of_trade = 2 }
-			4142 = {
+			4142 = { center_of_trade = 2 } #BT swapped IDs: BT has Skaane with CoT at game start and Kolding lacking one.
+			6 = {
 				custom_tooltip = will_upgrade_center_of_trade_to_level_2_tt
 				hidden_effect = {
 					if = {
@@ -1148,7 +1197,7 @@ dan_norway_holstein_mission_slot = {
 		}
 	}
 
-	dan_integrate_norway = {
+	dan_integrate_norway = { #Decided against scriptifying this mission because it doesn't have a related claim for whatever reason. If someone finds a claim in some obscure event somewhere, please do let me know. //Dub
 		icon = mission_conquer_norway
 		position = 4
 		required_missions = { dan_ratify_kalmar_succession }
@@ -1157,6 +1206,7 @@ dan_norway_holstein_mission_slot = {
 				area = northern_norway
 				area = western_norway
 				area = eastern_norway
+				area = trondelag_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -1175,6 +1225,11 @@ dan_norway_holstein_mission_slot = {
 				type = all
 			}
 			eastern_norway = {
+				owned_by = ROOT
+				is_core = ROOT
+				type = all
+			}
+			trondelag_area = {
 				owned_by = ROOT
 				is_core = ROOT
 				type = all
@@ -1225,7 +1280,7 @@ dan_norway_holstein_mission_slot = {
 			owns_core_province = 20
 			num_of_owned_provinces_with = {
 				region = scandinavia_region
-				value = 45
+				value = 100 #Sweden 51, Denmark 19, Norway 30 for a total of 100 provinces. Then we have Iceland 4, 4 in Northern Isles, Gotland 1, the remaining 3 provinces in West Karelia and 5 in Slesvig. So there's 113 provinces in Scandinavia. 100 seems fine.
 			}
 		}
 		effect = {
@@ -1235,7 +1290,7 @@ dan_norway_holstein_mission_slot = {
 		}
 	}
 
-	dan_university_of_coppenhagen = {
+	dan_university_of_coppenhagen = { #This mission is so bad, but I'll let it slide. //Dub
 		icon = mission_university_of_copenhagen
 		position = 6
 		required_missions = {  }
@@ -1632,7 +1687,7 @@ dan_sweden_and_great_power_mission_slot = {
 		}
 	}
 
-	dan_integrate_sweden = {
+	dan_integrate_sweden = { #Not scriptified. See dan_integrate_norway.
 		icon = mission_conquer_sweden
 		position = 4
 		required_missions = { 
@@ -1642,7 +1697,7 @@ dan_sweden_and_great_power_mission_slot = {
 		provinces_to_highlight = {
 			OR = {
 				area = svealand_area
-				area = ostra_svealand_area
+				area = vastra_gotaland_area
 				area = gotaland_area
 				area = norrland_area
 				area = bothnia_area
@@ -1654,7 +1709,7 @@ dan_sweden_and_great_power_mission_slot = {
 				owned_by = ROOT
 				type = all
 			}
-			ostra_svealand_area = {
+			vastra_gotaland_area = {
 				owned_by = ROOT
 				type = all
 			}
@@ -1744,7 +1799,7 @@ dan_sweden_and_great_power_mission_slot = {
 				}
 				legitimacy_equivalent = 100
 				stability = 3
-				total_own_and_non_tributary_subject_development = 600
+				total_own_and_non_tributary_subject_development = 1200 #BT; 600
 				custom_trigger_tooltip = {
 					tooltip = absolutism_dynamic_reward_tt
 					is_absolutism_active = no
@@ -1795,15 +1850,15 @@ dan_sweden_and_great_power_mission_slot = {
 					desc = dan_denmark_on_european_stage_ct
 					all_ally = {
 						capital_scope = { same_continent = ROOT }
-						total_development = 90
+						total_development = 180
 					}
 					amount = 2
 				}
 				AND = {
-					total_development = 400
+					total_development = 800
 					power_projection = 100
 				}
-				total_own_and_non_tributary_subject_development = 1000
+				total_own_and_non_tributary_subject_development = 2000
 			}
 		}
 		effect = {
@@ -1813,7 +1868,7 @@ dan_sweden_and_great_power_mission_slot = {
 				every_ally = {
 					limit = {
 						capital_scope = { same_continent = ROOT }
-						total_development = 90
+						total_development = 180
 					}
 					ROOT = {
 						add_trust = {
@@ -1845,7 +1900,7 @@ dan_sweden_and_great_power_mission_slot = {
 				}
 				owner = {
 					NOT = { tag = ROOT }
-					total_own_and_non_tributary_subject_development = 200
+					total_own_and_non_tributary_subject_development = 400
 					NOT = {
 						has_opinion_modifier = {
 							who = ROOT
@@ -1874,7 +1929,7 @@ dan_sweden_and_great_power_mission_slot = {
 					custom_trigger_tooltip = {
 						tooltip = dan_a_danish_great_power_at
 						all_known_country = {
-							total_own_and_non_tributary_subject_development = 200
+							total_own_and_non_tributary_subject_development = 400
 							has_opinion_modifier = {
 								who = ROOT
 								modifier = great_power_influence
@@ -1897,7 +1952,7 @@ dan_sweden_and_great_power_mission_slot = {
 					custom_trigger_tooltip = {
 						tooltip = dan_a_danish_great_power_ct
 						all_known_country = {
-							total_own_and_non_tributary_subject_development = 200
+							total_own_and_non_tributary_subject_development = 400
 							subsidised_percent_amount = {
 								value = 0.25
 							}
@@ -2183,20 +2238,7 @@ dan_england_mission_slot = {
 		}
 		effect = {
 			add_navy_tradition = 20
-			scottish_marches_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			yorkshire_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=dan_land_in_northumberland }
 		}
 	}
 
@@ -2205,64 +2247,19 @@ dan_england_mission_slot = {
 		position = 3
 		required_missions = { dan_trump_the_english_fleet }
 		provinces_to_highlight = {
-			OR = {
-				area = scottish_marches_area
-				area = yorkshire_area
-			}
+			province_group = dan_land_in_northumberland_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = scottish_marches_area
-					area = yorkshire_area
-				}
-				value = 4
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=dan_land_in_northumberland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=7 #out of 13 #In vanilla it's 4 out of 8.
 			}
 		}
 		effect = {
-			east_midlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			west_midlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			wales_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			wessex_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			east_anglia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			home_counties_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=dan_conquer_england }
 		}
 	}
 
@@ -2271,31 +2268,15 @@ dan_england_mission_slot = {
 		position = 5
 		required_missions = { dan_land_in_northumberland }
 		provinces_to_highlight = {
-			OR = {
-				area = yorkshire_area
-				area = scottish_marches_area
-				area = east_midlands_area
-				area = west_midlands_area
-				area = wales_area
-				area = wessex_area
-				area = east_anglia_area
-				area = home_counties_area
-			}
+			province_group = dan_conquer_england_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = yorkshire_area
-					area = scottish_marches_area
-					area = east_midlands_area
-					area = west_midlands_area
-					area = wales_area
-					area = wessex_area
-					area = east_anglia_area
-					area = home_counties_area
-				}
-				value = 20
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=dan_conquer_england_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=40 #out of 61 #In vanilla it's 20 out of 30.
 			}
 			owns_or_non_sovereign_subject_of = 236
 		}

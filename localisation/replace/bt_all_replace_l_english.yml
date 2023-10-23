@@ -715,6 +715,9 @@
  swe_declare_independence_ct:0 "We will get an event, which grants us permanent claims on all provinces required for the missions '§YThe German Coastline§!', '§YWindow to the East§!' and '§YExpand Finland§!' if we win the §YIndependence War§!."
  swe_colonial_ambitions_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every §YCenter of Trade§! or province with an §YEstuary§! in §YColonial Eastern America§!, §YColonial Acadia§!, §YColonial Newfoundland§! and §YColonial Canada§!."
  swe_colonize_delaware_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every §YCenter of Trade§! or province with an §YEstuary§! in §YColonial Cuba§!, §YColonial Hispaniola§!, §YColonial Lesser Antilles§! and §YColonial Bahamas§!."
+ dan_denmark_on_european_stage_ct:1 " §Yallies§! of §Y[Root.GetName]§! which have their capital on §Y[Root.Capital.GetContinentName]§! and have at least §Y180§! Total Development."
+ dan_a_danish_great_power_at:0 "Countries with at least §Y400§! own and non-tributary subject development have been §YInfluenced§! by §Y[Root.GetName]§!"
+ dan_a_danish_great_power_ct:0 "Countries with at least §Y400§! own and non-tributary subject development have §Y25%§! of their income subsidized by §Y[Root.GetName]§!"
  
  #Below two are same as vanilla, except dev number doubled from 100 to 200.
  HUSSARS_DESC:1 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
