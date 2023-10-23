@@ -244,6 +244,27 @@ bt_centralize_state_provinces_10 = {
 	picture = "centralize_state"
 }
 
+#The below modifiers apply in on_actions and are a hacky way of doing the overhaul because the dip tech file does not take promote culture cost as a valid modifier.
+bt_culture_cost_redux_1 = { #Dip tech 8-13
+	promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
+}
+
+bt_culture_cost_redux_2 = { #Dip tech 14-19
+	promote_culture_cost = -0.2 #BT Accepted Culture Slots overhaul
+}
+
+bt_culture_cost_redux_3 = { #Dip tech 20-25
+	promote_culture_cost = -0.3 #BT Accepted Culture Slots overhaul
+}
+
+bt_culture_cost_redux_4 = { #Dip tech 26-30
+	promote_culture_cost = -0.4 #BT Accepted Culture Slots overhaul
+}
+
+bt_culture_cost_redux_5 = { #Dip tech 31-32
+	promote_culture_cost = -0.5 #BT Accepted Culture Slots overhaul
+}
+
 
 
 ##################################################################################################

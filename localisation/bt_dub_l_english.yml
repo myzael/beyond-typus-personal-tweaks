@@ -29,6 +29,17 @@
  bt_centralize_state_provinces_10:0 "Centralize State"
  desc_bt_centralize_state_provinces_10:0 ""
  
+ bt_culture_cost_redux_1:0 "Diplomatic Technology 8"
+ desc_bt_culture_cost_redux_1:0 "(This modifier exists due to hardcoded technology files.)"
+ bt_culture_cost_redux_2:0 "Diplomatic Technology 14"
+ desc_bt_culture_cost_redux_2:0 "(This modifier exists due to hardcoded technology files.)"
+ bt_culture_cost_redux_3:0 "Diplomatic Technology 20"
+ desc_bt_culture_cost_redux_3:0 "(This modifier exists due to hardcoded technology files.)"
+ bt_culture_cost_redux_4:0 "Diplomatic Technology 26"
+ desc_bt_culture_cost_redux_4:0 "(This modifier exists due to hardcoded technology files.)"
+ bt_culture_cost_redux_5:0 "Diplomatic Technology 31"
+ desc_bt_culture_cost_redux_5:0 "(This modifier exists due to hardcoded technology files.)"
+ 
  ability_ayyubid_sultanate_mechanic:0 "Ayyubid Administration"
  ayyubid_sultanate_mechanic_draft_mamluks:0 "Draft Mamluks"
  ayyubid_sultanate_mechanic_draft_mamluks_desc:0 ""

@@ -6343,7 +6343,60 @@ on_adm_tech_taken = { #ROOT - Country, executed after on_tech_taken!
 }
 
 on_dip_tech_taken = { #ROOT - Country, executed after on_tech_taken!
-
+	if = {
+		limit = {
+			dip_tech = 31
+			NOT = { has_country_modifier = bt_culture_cost_redux_5 }
+		}
+		remove_country_modifier = bt_culture_cost_redux_4
+		add_country_modifier = { 
+			name = bt_culture_cost_redux_5
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			dip_tech = 26
+			NOT = { has_country_modifier = bt_culture_cost_redux_4 }
+		}
+		remove_country_modifier = bt_culture_cost_redux_3
+		add_country_modifier = { 
+			name = bt_culture_cost_redux_4
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			dip_tech = 20
+			NOT = { has_country_modifier = bt_culture_cost_redux_3 }
+		}
+		remove_country_modifier = bt_culture_cost_redux_2
+		add_country_modifier = { 
+			name = bt_culture_cost_redux_3
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			dip_tech = 14
+			NOT = { has_country_modifier = bt_culture_cost_redux_2 }
+		}
+		remove_country_modifier = bt_culture_cost_redux_1
+		add_country_modifier = { 
+			name = bt_culture_cost_redux_2
+			duration = -1
+		}
+	}
+	else_if = {
+		limit = {
+			dip_tech = 8
+			NOT = { has_country_modifier = bt_culture_cost_redux_1 }
+		}
+		add_country_modifier = { 
+			name = bt_culture_cost_redux_1
+			duration = -1
+		}
+	}
 }
 
 on_mil_tech_taken = { #ROOT - Country, executed after on_tech_taken!
