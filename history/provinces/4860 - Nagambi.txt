@@ -1,21 +1,21 @@
-#5687 - Wirangu
-#Area - Nullarbor
-#Region - Western Australia
+#4860 - Nagambi
+#Area - Southeast Highlands
+#Region - Southeastern Australia
 
 #Core Details
-capital = "Cheduna"
+capital = "Nagambi"
 
 #Demographics
-culture = nangga
+culture = yuin
 religion = dreamtime
-native_size = 20
-native_ferocity = 2
-native_hostileness = 9
+native_size = 5
+native_ferocity = 1
+native_hostileness = 3
 
 #Development and Trade
-base_tax = 1
+base_tax = 2
 base_production = 1
-base_manpower = 2
+base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
@@ -31,4 +31,4 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories 
-1619.1.10 = { discovered_by = NED } # Frederick de Houtman 
+1642.11.24 = { discovered_by = NED } # Abel Tasman 

@@ -1,0 +1,43 @@
+#4869 - Kanamaluka
+#Area - Tasmania
+#Region - Southeastern Australia
+
+#Core Details
+capital = "Kanamaluka"
+is_city = no
+tribal_owner = PLW
+
+#Demographics
+culture = palawa
+religion = dreamtime
+native_size = 6
+native_ferocity = 6
+native_hostileness = 9
+
+#Development and Trade
+base_manpower = 3
+base_tax = 1
+base_production = 2
+trade_goods = fur
+
+#Cores and Occupation (Alphabetical after current)
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = aboriginal_tech
+
+#Histories   
+1642.11.24 = { discovered_by = NED } # Abel Tasman
+1803.1.1 = {
+	owner = GBR
+	controller = GBR
+	capital = "Hobart"
+	trade_goods = slaves
+	is_city = yes
+} # Penal colony

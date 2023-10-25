@@ -3492,9 +3492,11 @@ northern_australia_area = { #Cape York
 	2730 2731 6218 6219 6220 6221 6222 6223
 }
 north_queensland_area = { # Brigalow Belt
+	color = { 145 50 50 }
 	1093 4853 6200 6201 6203 6207 6208 6237 6209
 }
 south_queensland_area = { #Moreton Bay-Burnett
+	color = { 130 0 65 }
 	1092 1094 4850 4851 4852 4854 6202 
 }
 east_mitchell_downs_area = {	#BT16
@@ -3513,6 +3515,7 @@ gulf_country_area = {	#BT16
 	4849 6224 6225 6227 6229 6230 6231 6232
 }
 einasleigh_area = {	#BT16
+	color = { 175 110 25 }
 	6212 6214 6215 6217 6226 6228 
 }
 coral_coast_area = {	#BT16

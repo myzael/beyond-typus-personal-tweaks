@@ -1,22 +1,23 @@
-#2734 - Wergaia
-#Area - Murray Plain
+#4858 - Worerker
+#Area - Cape Howe
 #Region - Southeastern Australia
 
 #Core Details
-capital = "Wergaia"
+capital = "Worerker"
 
 #Demographics
-culture = kulin
+culture = yuin
 religion = dreamtime
-native_size = 10
-native_ferocity = 7
-native_hostileness = 5
+native_size = 5
+native_ferocity = 1
+native_hostileness = 4
 
 #Development and Trade
-base_tax = 1
-base_production = 1
+base_tax = 2
+base_production = 2
 base_manpower = 1
 trade_goods = unknown
+center_of_trade = 1
 
 #Cores and Occupation (Alphabetical after current)
 
@@ -31,4 +32,4 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories 
-1770.1.1 = { discovered_by = GBR } # James Cook 
+1642.11.24 = { discovered_by = NED } # Abel Tasman   

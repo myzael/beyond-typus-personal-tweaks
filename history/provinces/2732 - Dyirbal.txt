@@ -1,28 +1,25 @@
-#2728 - Tiwi
-#Area - Darwin
-#Region - Northern Australia
+#2732 - Dyirbal
+#Area - Coral Coast
+#Region - Northeastern Australia
 
 #Core Details
-capital = "Tiwi"
-is_city = yes
-owner = TIW
-controller = TIW
+capital = "Dyirbal"
 
 #Demographics
-culture = tiwi
+culture = dyirbalic
 religion = dreamtime
-native_size = 5
+native_size = 10
 native_ferocity = 1
-native_hostileness = 9
+native_hostileness = 1
 
 #Development and Trade
-base_tax = 2
+base_tax = 2 
 base_production = 2
 base_manpower = 1
-trade_goods = fish
+trade_goods = unknown
+#latent_trade_goods = { coal } # 1.31; BT removed
 
 #Cores and Occupation (Alphabetical after current)
-add_core = TIW
 
 #Other Political
 hre = no
@@ -38,5 +35,6 @@ discovered_by = aboriginal_tech
 	discovered_by = TER
 	discovered_by = TID
 }
+
 #Histories   
-1642.11.24 = { discovered_by = NED } # Abel Tasman
+1770.1.1 = { discovered_by = GBR } # James Cook

@@ -1,21 +1,21 @@
-#5687 - Wirangu
-#Area - Nullarbor
-#Region - Western Australia
+#2736 - Galinyala
+#Area - Eyre Peninsula
+#Region - Southeastern Australia
 
 #Core Details
-capital = "Cheduna"
+capital = "Galinyala"
 
 #Demographics
 culture = nangga
 religion = dreamtime
-native_size = 20
-native_ferocity = 2
+native_size = 10
+native_ferocity = 1
 native_hostileness = 9
 
 #Development and Trade
-base_tax = 1
-base_production = 1
-base_manpower = 2
+base_tax = 3
+base_production = 3
+base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
@@ -31,4 +31,4 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories 
-1619.1.10 = { discovered_by = NED } # Frederick de Houtman 
+1802.1.1 = { discovered_by = GBR } # Matthew Flinders
