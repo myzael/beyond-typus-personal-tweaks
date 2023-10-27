@@ -1,0 +1,36 @@
+#4851 - Mianjin
+#Area - Moreton Bay-Burnett
+#Region - Northeastern Australia
+
+#Core Details
+capital = "Mianjin"
+owner = MIA
+controller = MIA
+
+#Demographics
+culture = bandjalang
+religion = dreamtime
+native_size = 3
+native_ferocity = 1
+native_hostileness = 2
+
+#Development and Trade
+base_tax = 2 
+base_production = 2
+base_manpower = 1
+trade_goods = unknown
+
+#Cores and Occupation (Alphabetical after current)
+
+#Other Political
+hre = no
+
+#Fort/Other Buildings
+
+#Special Modifiers
+
+#Discoveries
+discovered_by = aboriginal_tech
+
+#Histories    
+1642.11.24 = { discovered_by = NED } # Abel Tasman 
