@@ -1,3 +1,4 @@
 #MIA - Mianjin
 
+capital = 4851
 primary_culture = bandjalang
