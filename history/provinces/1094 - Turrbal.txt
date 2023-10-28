@@ -4,7 +4,6 @@
 
 #Core Details
 capital = "Gubbi Gubbi"
-is_city = yes
 
 #Demographics
 culture = gabi
@@ -17,10 +16,9 @@ native_hostileness = 1
 base_tax = 3 # BT; 2
 base_production = 3 # BT; 2
 base_manpower = 2 # BT; 1
-trade_goods = naval_supplies
+trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
-add_core = MIA
 
 #Other Political
 hre = no
