@@ -2632,6 +2632,7 @@
  wagiman:0 "Wagiman"
  #Pacific
  lagau_ya:0 "Lagau Ya"
+ 
  ###Missions###
  bt_temporary_colonist_eu:0 "Adventurers Settlers"
  bt_temporary_colonist_eu_desc:0 "Some of our people are adventurers who seek for new opportunities in uncharted far-away lands. As such they are ready to settle where nobody of our realm has ever set foot in."
@@ -2646,4 +2647,5 @@
  lotn_swe_expand_finland_title:0 "Expand Finland"
  swe_industrialize_sweden_trigger_tt:0 "[8.GetName], [4.GetName], [5.GetName], [1985.GetName], [3123.GetName], [7794.GetName], [7863.GetName]:\n  Base Production at least §Y5§!£icon_production£\n  Has a §YWorkshop§! or a §YCounting House§! building.\n  Have any §YManufactory§!"
  
- 
+ ###Great Projects###
+ uluru:0 "Uluru"

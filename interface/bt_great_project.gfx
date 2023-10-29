@@ -314,5 +314,9 @@ spriteTypes = {
 		name = "GFX_great_project_york_minster"	
 		texturefile = "gfx//interface//great_projects//great_project_york_minster.dds"
 	}
-
+		spriteType = {
+		name = "GFX_great_project_uluru"	
+		texturefile = "gfx//interface//great_projects//great_project_uluru.dds"
+	}
+	
 }
