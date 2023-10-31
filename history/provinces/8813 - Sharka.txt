@@ -5,11 +5,11 @@
 #Core Details
 capital = "?"
 is_city = yes
-owner = HDY #Sultanate of Sharka?
-controller = HDY #Sultanate of Sharka?
+owner = HDY #Sultanate of Hadiya
+controller = HDY #Sultanate of Hadiya
 
 #Demographics
-culture = gurage
+culture = hadiya
 religion = shamanism
 
 #Development and Trade
@@ -19,7 +19,8 @@ base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = HDY #Sultanate of Sharka?
+add_core = HDY #Sultanate of Hadiya
+add_core = SHK
 
 #Other Political
 hre = no

@@ -5,8 +5,8 @@
 #Core Details
 capital = "Beilul"
 is_city = yes
-owner = ADA #Danakil
-controller = ADA
+owner = DNK
+controller = DNK
 
 #Demographics
 culture = afar
@@ -19,7 +19,7 @@ base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = ADA
+add_core = DNK
 
 #Other Political
 hre = no

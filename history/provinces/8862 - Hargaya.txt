@@ -20,6 +20,7 @@ trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
 add_core = ADA
+add_core = HRG
 
 #Other Political
 hre = no

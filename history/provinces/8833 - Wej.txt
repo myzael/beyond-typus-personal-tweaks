@@ -4,10 +4,12 @@
 
 #Core Details
 capital = "?"
-is_city = no
+is_city = yes
+owner = HDY
+controller = HDY
 
 #Demographics
-culture = gurage
+culture = hadiya
 religion = shamanism
 
 #Development and Trade
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = HDY
 
 #Other Political
 hre = no

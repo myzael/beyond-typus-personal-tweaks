@@ -5,8 +5,8 @@
 #Core Details
 capital = "?"
 is_city = yes
-owner = HDY #Sultanate of Bale
-controller = HDY #Sultanate of Bale
+owner = BLE
+controller = BLE
 
 #Demographics
 culture = sidamo
@@ -19,7 +19,7 @@ base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = HDY #Sultanate of Bale
+add_core = BLE
 
 #Other Political
 hre = no

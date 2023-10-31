@@ -4,6 +4,7 @@
 owner = MED
 controller = MED
 add_core = MED
+add_core = DHK
 culture = tigre 
 religion = sunni
 capital = "Mitsiwa"

@@ -4,6 +4,7 @@
 owner = ADA
 controller = ADA
 add_core = ADA
+add_core = DWR
 culture = argobba 
 religion = sunni
 capital = "Gende Belo"

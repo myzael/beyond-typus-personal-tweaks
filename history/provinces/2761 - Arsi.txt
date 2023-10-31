@@ -1,10 +1,10 @@
- 
 #2761 - Arsi
 
-owner = ADA
-controller = ADA
-add_core = ADA
-culture = argobba 
+owner = HDY
+controller = HDY
+add_core = HDY
+add_core = ABN
+culture = hadiya 
 religion = sunni
 capital = "Assela"
 is_city = yes
