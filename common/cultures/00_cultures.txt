@@ -11031,7 +11031,7 @@ cushitic = { #Representing Lowland East Cushite
 		dynasty_names = {
 		}
 	}	
-	dir = {
+	dir = { #(JP) Messed up here. This is Isaaq instead. 
 		#primary = XYZ
 		male_names = {
 		}
