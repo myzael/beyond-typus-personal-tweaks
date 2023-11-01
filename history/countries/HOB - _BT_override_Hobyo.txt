@@ -1,4 +1,3 @@
-
-primary_culture = darood
+primary_culture = hawiye
 government = tribe
 add_government_reform = somali_clan

@@ -1,0 +1,4 @@
+primary_culture = darood
+government = tribe
+add_government_reform = somali_clan
+capital = 8804
