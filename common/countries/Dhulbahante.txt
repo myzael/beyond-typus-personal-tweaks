@@ -1,8 +1,8 @@
-#Mora
+#Dhulbahante
 
 graphical_culture = muslimgfx
 
-color = { 157 215 115 }
+color = { 142 133 22 }
 
 preferred_religion = sunni
 
