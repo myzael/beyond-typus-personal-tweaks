@@ -1019,3 +1019,25 @@ tribe_tribal_unity = {
 		factor = 2
 	}
 }
+
+#(JP) I hope I'm doing this right. Any issues, please go ahead and fix
+#(JP) Possibly also usable for Oromos or others in the Horn. Who knows. 
+somali_clan = {
+	icon = "tribal_council"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = somali_clan
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = -10
+	legacy_equivalent = tribal_confederacy_legacy #(JP) Using another here I think?
+	native_mechanic = no
+	allow_migration = yes
+	modifiers = {
+		cavalry_cost = -0.10
+		loot_amount = 0.10
+	}
+	ai = {
+		factor = 1
+	}
+}
