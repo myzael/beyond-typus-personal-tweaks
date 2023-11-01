@@ -4,6 +4,7 @@ owner = HDY
 controller = HDY
 add_core = HDY
 add_core = ABN
+add_core = IFT
 culture = hadiya 
 religion = sunni
 capital = "Assela"

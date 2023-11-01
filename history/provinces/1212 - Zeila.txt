@@ -4,6 +4,8 @@
 owner = ADA
 controller = ADA
 add_core = ADA
+add_core = ISI
+add_core = IFT
 culture = issa
 religion = sunni
 capital = "Zayla"

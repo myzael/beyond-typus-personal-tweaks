@@ -4,9 +4,8 @@
 
 #Core Details
 capital = "Gode"
-is_city = yes
-owner = OGD
-controller = OGD
+is_city = no
+tribal_owner = OGD
 
 #Demographics
 culture = darood
@@ -19,7 +18,6 @@ base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = OGD
 
 #Other Political
 hre = no

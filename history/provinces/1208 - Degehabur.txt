@@ -5,6 +5,7 @@ culture = darood
 religion = sunni
 capital = "Degehabur"
 is_city = no
+tribal_owner = OGD
 base_manpower = 2 
 base_tax = 2  
 base_production = 2  

@@ -5,6 +5,7 @@
 #Core Details
 capital = "Gerlugobi"
 is_city = no
+tribal_owner = MRE
 
 #Demographics
 culture = darood

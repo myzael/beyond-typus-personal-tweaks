@@ -5,6 +5,7 @@ culture = darood
 religion = sunni
 capital = "Garoowe"
 is_city = no
+tribal_owner = DHL
 base_manpower = 2 
 trade_goods = fish
 hre = no

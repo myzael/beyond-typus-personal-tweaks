@@ -4,6 +4,8 @@
 owner = WAR
 controller = WAR
 add_core = WAR
+add_core = ISI
+add_core = IFT
 culture = dir
 religion = sunni
 capital = "Berbera"

@@ -1,9 +1,8 @@
  
 #1230 - Massawa
 
-owner = MED
-controller = MED
-add_core = MED
+owner = DHK
+controller = DHK
 add_core = DHK
 culture = tigre 
 religion = sunni

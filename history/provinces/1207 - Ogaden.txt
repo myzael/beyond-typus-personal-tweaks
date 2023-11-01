@@ -3,6 +3,7 @@
 culture = darood
 religion = sunni
 capital = "Bale"
+tribal_owner = OGD
 trade_goods = incense
 hre = no
 base_tax = 2  

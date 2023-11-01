@@ -4,6 +4,7 @@
 owner = ETH
 controller = ETH
 add_core = ETH
+add_core = BTI
 culture = kayla 
 religion = jewish
 capital = "Gondar"

@@ -5,6 +5,7 @@ culture = dir
 religion = sunni
 capital = "Togdheer"
 is_city = no
+tribal_owner = DHL
 base_manpower = 2 
 trade_goods = slaves
 hre = no

@@ -20,6 +20,7 @@ trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
 add_core = WAR
+add_core = ISI
 
 #Other Political
 hre = no

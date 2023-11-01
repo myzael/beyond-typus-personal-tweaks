@@ -20,6 +20,8 @@ trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
 add_core = ADA
+add_core = IFT
+add_core = AFA
 
 #Other Political
 hre = no
