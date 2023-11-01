@@ -1,6 +1,6 @@
 #Dahlak
 
-graphical_culture = eastafricangfx
+graphical_culture = muslimgfx
 
 color = { 210 134 134 }
 

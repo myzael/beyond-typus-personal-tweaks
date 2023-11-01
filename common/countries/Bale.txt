@@ -1,6 +1,6 @@
 #Bale
 
-graphical_culture = eastafricangfx
+graphical_culture = muslimgfx
 
 color = { 0 56 186 }
 

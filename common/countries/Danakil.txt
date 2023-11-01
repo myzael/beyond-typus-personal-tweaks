@@ -1,6 +1,6 @@
 #Danakil
 
-graphical_culture = eastafricangfx
+graphical_culture = muslimgfx
 
 color = { 182 113 42 }
 

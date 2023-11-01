@@ -1,6 +1,6 @@
 #Arababni
 
-graphical_culture = eastafricangfx
+graphical_culture = muslimgfx
 
 color = { 186 40 170 }
 

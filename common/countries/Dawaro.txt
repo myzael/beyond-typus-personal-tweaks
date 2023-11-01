@@ -1,6 +1,6 @@
 #Dawaro
 
-graphical_culture = eastafricangfx
+graphical_culture = muslimgfx
 
 color = { 43 147 162 }
 

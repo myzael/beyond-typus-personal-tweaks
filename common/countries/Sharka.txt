@@ -1,6 +1,6 @@
 #Sharka
 
-graphical_culture = eastafricangfx
+graphical_culture = muslimgfx
 
 color = { 11 134 78 }
 

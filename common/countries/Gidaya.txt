@@ -1,6 +1,6 @@
 #Gidaya
 
-graphical_culture = eastafricangfx
+graphical_culture = muslimgfx
 
 color = { 54 84 34 }
 

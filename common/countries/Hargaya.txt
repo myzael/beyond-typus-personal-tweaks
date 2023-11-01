@@ -1,6 +1,6 @@
 #Hargaya
 
-graphical_culture = eastafricangfx
+graphical_culture = muslimgfx
 
 color = { 72 56 24 }
 

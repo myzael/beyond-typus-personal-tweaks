@@ -3,9 +3,12 @@ BT16
 #New Additions
  - (All) Updated BT from 1.33.3 to 1.35.6
  - (JP) Overhauled the South Caucases
+ - (JP) Overhauled the Horn of Africa
  - (JP) New tags in Kakheti and Talysh, along with numerous releasables
  - (JP) Split the Caucasian Culture Group into Armenian, Kartvelian, Circassian, Dagestani, and Alanian
  - (JP) Added Abkhaz and Kabardian to Circassian group, Talysh to Iranian group and Ossetian to Alanian group 
+ - (JP) Massive cultural overhaul in the Horn of Africa. Cushitic split into three. New Omotic, Oromo Groups and Agaw Groups. Over 25 new cultures.
+ - (JP) Tonnes of new tags in the Horn of Africa, many are releasable. 
  - (Velius) Added Waaq paganism in the Horn of Africa
  - (Harbivore) Added flavour Silk events into the game. Silk will now start in Lucca spread to Bologna and then start to spread to other Italian states after about 50 years. Then it will appear in France around 1570. 
  - (Harbivore) Reworked the Austrian Unification events (previously Chocolate). They unite 99% of the time and doesn't allow Hungary to just steal Austria forever.
@@ -19,6 +22,7 @@ BT16
  - New idea sets for the following nations:
 	 - (Dub) Cascadia
 	 - (Dub) Magdeburg
+	 
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
