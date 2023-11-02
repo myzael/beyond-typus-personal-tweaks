@@ -3160,6 +3160,139 @@ on_parliament_seat_given_effect = {
 				loyalty = 1
 			}
 		}
+		#BT
+		if = {
+			limit = {
+				is_absolutism_active = yes
+				OR = {
+					has_government_attribute = no_absolutism_loss_for_parliament_seat #If has government reform with mechanic
+					has_country_flag  = no_absolutism_loss_for_parliament_seat_reward #If this is awarded elsehow, say, through a mission, or similar.
+				}
+			}
+			ROOT = { #Unfortunately I cannot use variables in effects as of right now - only triggers support the use of variables. Hence, I have to do a hacky trigger switch.
+				#Had variables actually worked for effects, this would've been the following code, commented out:
+				# export_to_variable = {
+					# which = provSeatDev
+					# value = development
+					# who = ROOT
+				# }
+				# multiply_variable = {
+					# which = provSeatDev
+					# value = 1.5
+				# }
+				# divide_variable = {
+					# which = provSeatDev
+					# value = 10
+				# }
+				# owner = {
+					# add_absolutism = "provSeatDev"
+				# }
+				trigger_switch = { 
+					on_trigger = development #Up to 100 dev for now. Getting a 100+ dev province during normal gameplay that isn't your capital is incredibly rare, so this is the limit I'll use.
+					#Last two are redundant during normal gameplay
+					100 = { owner = { add_absolutism = 15 } }
+					99 = { owner = { add_absolutism = 14.85 } }
+					98 = { owner = { add_absolutism = 14.7 } }
+					97 = { owner = { add_absolutism = 14.55 } }
+					96 = { owner = { add_absolutism = 14.4 } }
+					95 = { owner = { add_absolutism = 14.25 } }
+					94 = { owner = { add_absolutism = 14.1 } }
+					93 = { owner = { add_absolutism = 13.95 } }
+					92 = { owner = { add_absolutism = 13.8 } }
+					91 = { owner = { add_absolutism = 13.65 } }
+					90 = { owner = { add_absolutism = 13.5 } }
+					89 = { owner = { add_absolutism = 13.35 } }
+					88 = { owner = { add_absolutism = 13.2 } }
+					87 = { owner = { add_absolutism = 13.05 } }
+					86 = { owner = { add_absolutism = 12.9 } }
+					85 = { owner = { add_absolutism = 12.75 } }
+					84 = { owner = { add_absolutism = 12.6 } }
+					83 = { owner = { add_absolutism = 12.45 } }
+					82 = { owner = { add_absolutism = 12.3 } }
+					81 = { owner = { add_absolutism = 12.15 } }
+					80 = { owner = { add_absolutism = 12 } }
+					79 = { owner = { add_absolutism = 11.85 } }
+					78 = { owner = { add_absolutism = 11.7 } }
+					77 = { owner = { add_absolutism = 11.55 } }
+					76 = { owner = { add_absolutism = 11.4 } }
+					75 = { owner = { add_absolutism = 11.25 } }
+					74 = { owner = { add_absolutism = 11.1 } }
+					73 = { owner = { add_absolutism = 10.95 } }
+					72 = { owner = { add_absolutism = 10.8 } }
+					71 = { owner = { add_absolutism = 10.65 } }
+					70 = { owner = { add_absolutism = 10.5 } }
+					69 = { owner = { add_absolutism = 10.35 } }
+					68 = { owner = { add_absolutism = 10.2 } }
+					67 = { owner = { add_absolutism = 10.05 } }
+					66 = { owner = { add_absolutism = 9.9 } }
+					65 = { owner = { add_absolutism = 9.75 } }
+					64 = { owner = { add_absolutism = 9.6 } }
+					63 = { owner = { add_absolutism = 9.45 } }
+					62 = { owner = { add_absolutism = 9.3 } }
+					61 = { owner = { add_absolutism = 9.15 } }
+					60 = { owner = { add_absolutism = 9 } }
+					59 = { owner = { add_absolutism = 8.85 } }
+					58 = { owner = { add_absolutism = 8.7 } }
+					57 = { owner = { add_absolutism = 8.55 } }
+					56 = { owner = { add_absolutism = 8.4 } }
+					55 = { owner = { add_absolutism = 8.25 } }
+					54 = { owner = { add_absolutism = 8.1 } }
+					53 = { owner = { add_absolutism = 7.95 } }
+					52 = { owner = { add_absolutism = 7.8 } }
+					51 = { owner = { add_absolutism = 7.65 } }
+					50 = { owner = { add_absolutism = 7.5 } }
+					49 = { owner = { add_absolutism = 7.35 } }
+					48 = { owner = { add_absolutism = 7.2 } }
+					47 = { owner = { add_absolutism = 7.05 } }
+					46 = { owner = { add_absolutism = 6.9 } }
+					45 = { owner = { add_absolutism = 6.75 } }
+					44 = { owner = { add_absolutism = 6.6 } }
+					43 = { owner = { add_absolutism = 6.45 } }
+					42 = { owner = { add_absolutism = 6.3 } }
+					41 = { owner = { add_absolutism = 6.15 } }
+					40 = { owner = { add_absolutism = 6 } }
+					39 = { owner = { add_absolutism = 5.85 } }
+					38 = { owner = { add_absolutism = 5.7 } }
+					37 = { owner = { add_absolutism = 5.55 } }
+					36 = { owner = { add_absolutism = 5.4 } }
+					35 = { owner = { add_absolutism = 5.25 } }
+					34 = { owner = { add_absolutism = 5.1 } }
+					33 = { owner = { add_absolutism = 4.95 } }
+					32 = { owner = { add_absolutism = 4.8 } }
+					31 = { owner = { add_absolutism = 4.65 } }
+					30 = { owner = { add_absolutism = 4.5 } }
+					29 = { owner = { add_absolutism = 4.35 } }
+					28 = { owner = { add_absolutism = 4.2 } }
+					27 = { owner = { add_absolutism = 4.05 } }
+					26 = { owner = { add_absolutism = 3.9 } }
+					25 = { owner = { add_absolutism = 3.75 } }
+					24 = { owner = { add_absolutism = 3.6 } }
+					23 = { owner = { add_absolutism = 3.45 } }
+					22 = { owner = { add_absolutism = 3.3 } }
+					21 = { owner = { add_absolutism = 3.15 } }
+					20 = { owner = { add_absolutism = 3 } }
+					19 = { owner = { add_absolutism = 2.85 } }
+					18 = { owner = { add_absolutism = 2.7 } }
+					17 = { owner = { add_absolutism = 2.55 } }
+					16 = { owner = { add_absolutism = 2.4 } }
+					15 = { owner = { add_absolutism = 2.25 } }
+					14 = { owner = { add_absolutism = 2.1 } }
+					13 = { owner = { add_absolutism = 1.95 } }
+					12 = { owner = { add_absolutism = 1.8 } }
+					11 = { owner = { add_absolutism = 1.65 } }
+					10 = { owner = { add_absolutism = 1.5 } }
+					9 = { owner = { add_absolutism = 1.35 } }
+					8 = { owner = { add_absolutism = 1.2 } }
+					7 = { owner = { add_absolutism = 1.05 } }
+					6 = { owner = { add_absolutism = 0.9 } }
+					5 = { owner = { add_absolutism = 0.75 } }
+					4 = { owner = { add_absolutism = 0.6 } }
+					3 = { owner = { add_absolutism = 0.45 } }
+					2 = { owner = { add_absolutism = 0.3 } }
+					1 = { owner = { add_absolutism = 0.15 } }
+				}
+			}
+		}
 	}
 	if = {
 		limit = {
