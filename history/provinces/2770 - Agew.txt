@@ -3,7 +3,7 @@
 
 culture = awngi 
 religion = shamanism
-capital = "Dangila"
+capital = "Kosober"
 is_city = no
 base_manpower = 2 
 trade_goods = unknown

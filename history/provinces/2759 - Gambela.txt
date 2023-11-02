@@ -1,9 +1,9 @@
  
-#2759 - Gambela
+#2759 - Upeeno/Baro/Itang
 
 culture = luo_culture 
 religion = shamanism #Fetishism
-capital = "Gambela"
+capital = "Itang"
 is_city = no
 base_manpower = 2 
 trade_goods = slaves

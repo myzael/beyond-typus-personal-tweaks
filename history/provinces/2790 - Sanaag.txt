@@ -3,7 +3,7 @@
 
 culture = darood
 religion = sunni
-capital = "Maydh"
+capital = "Cerigaabo"
 trade_goods = incense
 is_city = yes
 hre = no

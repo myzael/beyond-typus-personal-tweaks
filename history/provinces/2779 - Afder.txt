@@ -2,7 +2,7 @@
 
 culture = darood
 religion = sunni
-capital = "Afder"
+capital = "El Kere"
 trade_goods = livestock
 hre = no
 is_city = no

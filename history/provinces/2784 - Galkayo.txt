@@ -3,7 +3,7 @@
 
 culture = darood
 religion = sunni
-capital = "Galkayo"
+capital = "Galkacyo"
 trade_goods = livestock
 is_city = no
 tribal_owner = MRE
