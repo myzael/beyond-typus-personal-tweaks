@@ -5,7 +5,7 @@ capital = 8805
 
 #Government
 government_rank = 1
-government = tribe
+government = tribal
 add_government_reform = somali_clan
 
 #Demographics
