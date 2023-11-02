@@ -1,0 +1,18 @@
+estate_peasants = {
+	modifier_definition = {
+		type = loyalty
+		key = peasants_loyalty_modifier
+		trigger = {
+			has_estate = estate_peasants
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = peasants_influence_modifier
+		trigger = {
+			has_estate = estate_peasants
+		}
+	}
+	#May potentially do something for peasant republic-specific modifiers. Will have to get back to this.
+}

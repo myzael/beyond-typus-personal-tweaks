@@ -304,6 +304,9 @@ estate_burghers = {
 		estate_burghers_financial_demand
 		estate_burghers_sindicat_remensa_privilege
 		estate_burghers_promote_burgher_bookkeeping
+		#BTIP
+		estate_burghers_court_titles
+		estate_burghers_trade_deals_freedom
 	}
 
 	agendas = {

@@ -422,6 +422,9 @@ estate_church = {
 		estate_church_religious_delegation
 		estate_church_institutionalized_clergy
 		estate_church_donation_right
+		#BTIP
+		estate_church_court_titles
+		estate_church_tithe_collection_freedom
 	}
 
 	agendas = {

@@ -3920,6 +3920,18 @@ on_five_year_pulse_2 = {
 		# Random
 		5 = flavor_fra.9500
 		1000 = 0
+		
+		# Peasants for BTIP
+		100 = peasants_estate_events.1
+		100 = peasants_estate_events.2
+		100 = peasants_estate_events.3
+		100 = peasants_estate_events.4
+		100 = peasants_estate_events.5
+		400 = peasants_estate_events.6 #Disloyal
+		100 = peasants_estate_events.7
+		100 = peasants_estate_events.8
+		100 = peasants_estate_events.9
+		100 = peasants_estate_events.10 #Bonus
 	}
 }
 
