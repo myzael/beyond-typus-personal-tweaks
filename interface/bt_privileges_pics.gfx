@@ -8,4 +8,31 @@ spriteTypes = {
 		name = "privilege_autonomous_defences"
 		texturefile = "gfx/interface/privileges/privilege_autonomous_defences.dds"
 	}
+	
+	#BTIP Privileges
+	spriteType = {
+		name = "privilege_church_court_titles"
+		texturefile = "gfx/interface/privileges/privilege_church_court_titles.dds"
+	}
+	spriteType = {
+		name = "privilege_burghers_court_titles"
+		texturefile = "gfx/interface/privileges/privilege_burghers_court_titles.dds"
+	}
+	spriteType = {
+		name = "privilege_nobles_court_titles"
+		texturefile = "gfx/interface/privileges/privilege_nobles_court_titles.dds"
+	}
+	
+	spriteType = {
+		name = "privilege_tithe_collection_freedom"
+		texturefile = "gfx/interface/privileges/privilege_tithe_collection_freedom.dds"
+	}
+	spriteType = {
+		name = "privilege_trade_deals_freedom"
+		texturefile = "gfx/interface/privileges/privilege_trade_deals_freedom.dds"
+	}
+	spriteType = {
+		name = "privilege_tax_collection_freedom"
+		texturefile = "gfx/interface/privileges/privilege_tax_collection_freedom.dds"
+	}
 }

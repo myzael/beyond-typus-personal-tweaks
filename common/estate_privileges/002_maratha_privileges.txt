@@ -183,6 +183,10 @@ estate_maratha_land_rights = {
 			factor = 0.75
 			has_estate_privilege = estate_rajput_land_rights
 		}
+		modifier = { #BTIP Added
+			factor = 0.75
+			has_estate_privilege = estate_peasants_land_rights
+		}
 	}
 }
 

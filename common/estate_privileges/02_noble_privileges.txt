@@ -197,6 +197,10 @@ estate_nobles_land_rights = {
 			factor = 0.75
 			has_estate_privilege = estate_rajput_land_rights
 		}
+		modifier = { #BTIP Added
+			factor = 0.75
+			has_estate_privilege = estate_peasants_land_rights
+		}
 	}
 }
 
@@ -592,6 +596,9 @@ estate_nobles_supremacy_over_crown = {
 		vaisyas_loyalty_modifier = 0.1
 		nomadic_tribes_loyalty_modifier = 0.1
 		janissaries_loyalty_modifier = 0.1
+		#BTIP Peasants
+		peasants_loyalty_modifier = 0.1
+		
 		burghers_influence_modifier = 0.1
 		church_influence_modifier = 0.1
 		dhimmi_influence_modifier = 0.1
@@ -605,6 +612,8 @@ estate_nobles_supremacy_over_crown = {
 		vaisyas_influence_modifier = 0.1
 		nomadic_tribes_influence_modifier = 0.1
 		janissaries_influence_modifier = 0.1
+		#BTIP Peasants
+		peasants_influence_modifier = 0.1
 	}
 	mechanics = {
 		can_give_agendas_without_interaction

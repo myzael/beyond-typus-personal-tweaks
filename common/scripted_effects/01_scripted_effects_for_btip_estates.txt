@@ -1,0 +1,124 @@
+pick_all_present_estates = {
+	if = { #Brahmins
+		limit = {
+			has_estate = estate_brahmins
+			NOT = { has_country_flag = estate_brahmins_present_agenda }
+		}
+		set_country_flag = estate_brahmins_present_agenda
+		generate_estate_agenda = estate_brahmins
+	}
+	if = { #Church/Clergy
+		limit = {
+			has_estate = estate_church
+			NOT = { has_country_flag = estate_church_present_agenda }
+		}
+		set_country_flag = estate_church_present_agenda
+		generate_estate_agenda = estate_church
+	}
+	if = { #Maratha
+		limit = {
+			has_estate = estate_maratha
+			NOT = { has_country_flag = estate_maratha_present_agenda }
+		}
+		set_country_flag = estate_maratha_present_agenda
+		generate_estate_agenda = estate_maratha
+	}
+	if = { #Nobles/Nobility
+		limit = {
+			has_estate = estate_nobles
+			NOT = { has_country_flag = estate_nobles_present_agenda }
+		}
+		set_country_flag = estate_nobles_present_agenda
+		generate_estate_agenda = estate_nobles
+	}
+	if = { #Burghers
+		limit = {
+			has_estate = estate_burghers
+			NOT = { has_country_flag = estate_burghers_present_agenda }
+		}
+		set_country_flag = estate_burghers_present_agenda
+		generate_estate_agenda = estate_burghers
+	}
+	if = { #Vaisyas
+		limit = {
+			has_estate = estate_vaisyas
+			NOT = { has_country_flag = estate_vaisyas_present_agenda }
+		}
+		set_country_flag = estate_vaisyas_present_agenda
+		generate_estate_agenda = estate_vaisyas
+	}
+	if = { #Cossacks
+		limit = {
+			has_estate = estate_cossacks
+			NOT = { has_country_flag = estate_cossacks_present_agenda }
+		}
+		set_country_flag = estate_cossacks_present_agenda
+		generate_estate_agenda = estate_cossacks
+	}
+	if = { #Nomadic Tribes/Tribes
+		limit = {
+			has_estate = estate_nomadic_tribes
+			NOT = { has_country_flag = estate_nomadic_tribes_present_agenda }
+		}
+		set_country_flag = estate_nomadic_tribes_present_agenda
+		generate_estate_agenda = estate_nomadic_tribes
+	}
+	if = { #Dhimmi
+		limit = {
+			has_estate = estate_dhimmi
+			NOT = { has_country_flag = estate_dhimmi_present_agenda }
+		}
+		set_country_flag = estate_dhimmi_present_agenda
+		generate_estate_agenda = estate_dhimmi
+	}
+	if = { #Jains
+		limit = {
+			has_estate = estate_jains
+			NOT = { has_country_flag = estate_jains_present_agenda }
+		}
+		set_country_flag = estate_jains_present_agenda
+		generate_estate_agenda = estate_jains
+	}
+	if = { #Rajput
+		limit = {
+			has_estate = estate_rajput
+			NOT = { has_country_flag = estate_rajput_present_agenda }
+		}
+		set_country_flag = estate_rajput_present_agenda
+		generate_estate_agenda = estate_rajput
+	}
+	if = { #Generals
+		limit = {
+			has_estate = estate_generals
+			NOT = { has_country_flag = estate_generals_present_agenda }
+		}
+		set_country_flag = estate_generals_present_agenda
+		generate_estate_agenda = estate_generals
+	}
+	#Disabled: Exarches lack agendas
+	# if = { #Exarches
+		# limit = {
+			# has_estate = estate_exarches
+			# NOT = { has_country_flag = estate_exarches_present_agenda }
+		# }
+		# set_country_flag = estate_exarches_present_agenda
+		# generate_estate_agenda = estate_exarches
+	# }
+	#Disabled: Knightly Orders lack agendas
+	# if = { #Knightly Orders
+		# limit = {
+			# has_estate = estate_knightly_orders
+			# NOT = { has_country_flag = estate_knightly_orders_present_agenda }
+		# }
+		# set_country_flag = estate_knightly_orders_present_agenda
+		# generate_estate_agenda = estate_knightly_orders
+	# }
+	if = { #Peasants
+		limit = {
+			has_estate = estate_peasants
+			NOT = { has_country_flag = estate_peasants_present_agenda }
+		}
+		set_country_flag = estate_peasants_present_agenda
+		generate_estate_agenda = estate_peasants
+	}
+}
