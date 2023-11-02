@@ -60,6 +60,7 @@
 2310 = { "Tikrit" "Tikrit" }
 2311 = { "An-Najaf" "An-Najaf" }
 2312 = { "Wasit" "Wasit" }
+2134 = { "Ar-Rahba" "Ar-Rahba" }
 3254 = { "Beyahzid" "Beyahzid" }
 4179 = { "Uramar" "Uramar" } 
 4288 = { "Al-Qurnah" "Al-Qurnah" }
@@ -79,7 +80,6 @@
 5330 = { "Mayyafaraqin" "Mayyafaraqin" }
 5331 = { "Siird" "Siird" }
 5332 = { "Arjish" "Arjish" }
-6089 = { "Ar-Rahba" "Ar-Rahba" }
 6091 = { "Maskanah" "Maskanah" }
 6099 = { "Al-Busayrah" "Al-Busayrah" }
 6100 = { "Qusantinah" "Qusantinah" } #(JP) "Viransehir", Roman "Constantina"

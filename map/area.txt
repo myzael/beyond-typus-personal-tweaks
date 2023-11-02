@@ -2450,8 +2450,8 @@ omo_valley_area = { #Omo Valley
 arsi_area = { #Hadiya
 	1210 2760 2761 8813 8833 8834
 }
-bale_area = { #Sidama
-	8810 8811 8812 8814 8815 8816
+bale_area = { #Bale
+	1218 8810 8811 8812 8814 8815 8816
 }
 borana_area = { #Borana
 	8817 8818 8819 8820 8821 8822 8823 8824 8825 8826

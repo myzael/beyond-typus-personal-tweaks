@@ -1585,11 +1585,11 @@
 #Mesopotamia
 407 = { "Rakka" "Rakka" } #(JP) "Raqqa"
 411 = { "Mossul" "Mossul" } #
+2134 = { "Rahba" "Rahba" }
 4298 = { "Antep" "Antep" }
 4310 = { "Harput" "Harput" }
 5295 = { "Zisen" "Zisen" }
 5332 = { "Arissa" "Arissa" } #
-6089 = { "Rahba" "Rahba" }
 6091 = { "Maskanah" "Maskanah" }
 
 #Persia
