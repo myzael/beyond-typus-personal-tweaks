@@ -96,3 +96,5 @@ pick_all_present_estates = {
 		generate_estate_agenda = estate_peasants
 	}
 }
+
+on_completed_agenda_effect_estate_peasants = {}
