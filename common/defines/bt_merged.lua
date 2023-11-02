@@ -25,7 +25,6 @@ NDefines.NCountry.ABANDON_IDEAGROUP_REFUND = 0.20			-- BTAddOn changed from 010 
 NDefines.NCountry.ABDICATE_RULING_LENGTH_THRESHOLD = 10			-- BTAddOn changed from 20 I see why for game balance reasons this has to be high but too many historical kings abdicated after a short period for me to not lower this
 NDefines.NCountry.ADDITIONAL_MIN_DEVELOPMENT_FOR_GOV_RANK_X = 3000			-- from 500  Probably unused but just throwing in here as a reminder in case I decide to do some wacky stuff later
 NDefines.NCountry.ALLOWED_TERRITORY_VS_MAX_STATES = 1.5			-- Same logic as above new provinces and areas require higher numbers
-NDefines.NCountry.ALLOW_ESTATE_AND_PARLIAMENT_SEAT_IN_PROVINCE = 1			-- BTAddOn changed I see no reason to prevent this
 NDefines.NCountry.COLONIAL_NATION_GROWTH_IMPACT = 0.5			-- 025 to 05 This is a huge change Colonies being able to grow themselves twice as fast will result in much faster colonisation and is an important factor in BT balance Historically colonists expanded the new frontier not the Old World
 NDefines.NCountry.CONCENTRATED_DEV_LIBERTY_DESIRE_PER_DEV = 1.5 --from 3
 NDefines.NCountry.CORE_HAD_PERMANENT_CLAIM = 0.1			-- BTAddOn changed from 025 patch 1 25 broke balance hard permanent claims everywhere left everyone swimming in adm points and exapanding far too fast way too cheaply trying this on Dubs suggestion to bring balance slightly more in line
