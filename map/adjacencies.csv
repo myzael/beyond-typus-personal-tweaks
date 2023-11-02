@@ -25,7 +25,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 5048;982;sea;1491;-1;-1;-1;-1;Esgigeoag-Unamakik
 4891;983;sea;1491;-1;-1;-1;-1;Segepenegatig-Epekwitk
 1050;4658;sea;1379;-1;-1;-1;-1;Deren-Nanghaer
-1215;387;sea;1330;-1;-1;-1;-1;Tajura-Mocha
+8888;387;sea;1330;-1;-1;-1;-1;Obock-Mocha
 54;3136;sea;1268;-1;-1;-1;-1;Stade-Dithmarschen
 1820;1021;sea;1391;-1;-1;-1;-1;1223;Awa-Settsu
 4131;4193;sea;1387;-1;-1;-1;-1;Oshima-Mutsu
@@ -204,4 +204,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2728;4846;sea;1408;-1;-1;-1;-1;Tiwi-Darwin
 2729;6352;sea;1410;-1;-1;-1;-1;Arnhemland-GrooteEyland
 2730;6219;sea;1410;-1;-1;-1;-1;TorresStraitIslands
+1230;8892;sea;4333;-1;-1;-1;-1;Massawa-Dahlak
+5298;8892;sea;4333;-1;-1;-1;-1;Zula-Dahlak
 -1;-1;;-1;-1;-1;-1;-1;-1;
