@@ -369,6 +369,7 @@ interaction = {
 		        }
 			}
 			custom_tooltip = ESTATES_SEIZE_LAND_EXCEPTION_DESC
+			custom_tooltip = btip_exempt_from_seize_land_tt #TODO: Merge into one
 			re_add_loyalty_from_seized_land = yes
 			if = {
 				limit = { NOT = { has_government_attribute = seizing_land_no_rebels } }

@@ -3,6 +3,8 @@
  desc_btip_recently_seized_land:0 "The Crown has recently seized land from the Estates of the Realm. They are justifiably angry and are much less accepting of our actions."
  btip_recently_seized_land_15_loyalty:0 "Recently Seized Land"
  desc_btip_recently_seized_land_15_loyalty:0 "The Crown has recently seized land from the Estates of the Realm. They are justifiably angry and are much less accepting of our actions."
+ btip_exempt_from_seize_land_tt:0 "Estate which are §YExempted from Seize Land§! will NOT lose loyalty equilibrium."
+ EST_EXEMPT_FROM_SEIZE_LAND:0 "Exempted from Seizing Land"
  
  #Privileges for non-peasants
  estate_church_court_titles:0 "$ESTATE_NAME$ Court Titles"
