@@ -2312,7 +2312,7 @@ province;red;green;blue;x;x
 2311;51;130;63;Samawat;x
 2312;242;102;96;Wasit;x
 2313;181;181;52;Antioch;x
-2314;49;11;71;UNUSED;x
+2314;49;11;71;Rabha;x
 2315;139;22;59;Suez;x
 2316;4;24;61;Al Gharbia;x
 2317;149;201;61;Minya;x
@@ -6087,7 +6087,7 @@ province;red;green;blue;x;x
 6086;238;218;74;Hama;###
 6087;106;30;203;UNUSED;###
 6088;34;185;117;AlSukhnah;###
-6089;134;229;226;Rabha;###
+6089;134;229;226;UNUSED;###
 6090;168;207;238;UNUSED;###
 6091;223;116;40;Maskanah;###
 6092;240;200;211;UNUSED;###
