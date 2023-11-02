@@ -964,6 +964,7 @@ tribal = {
 				matrilineal_system
 				feudal_tribe
 				great_man
+				somali_clan
 			}
 		}
 		tribal_cultural_values = {
