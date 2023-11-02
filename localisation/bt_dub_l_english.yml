@@ -56,6 +56,8 @@
  ayyubid_sultanate_mechanic_sponsor_shayk_tt_dip_2:0 "Gain a skill §Y2§! advisor of the §YDiplomatic§! category following the §Y[Root.Religion.GetName]§! faith. This advisor is §G50%§! cheaper to employ."
  ayyubid_sultanate_mechanic_sponsor_shayk_tt_mil_2:0 "Gain a skill §Y2§! advisor of the §YMilitary§! category following the §Y[Root.Religion.GetName]§! faith. This advisor is §G50%§! cheaper to employ."
  
+ mechanic_no_absolutism_loss_for_parliament_seat_yes:0 "Granting a seat of Parliament to a province no longer incurs an absolutism penalty."
+ 
  #Mainly done by Draiocht, with some modifications by Dub
  new_CSC_ideas:0 "Cascadian Ideas"
  new_CSC_ideas_start:0 "Cascadian Traditions"

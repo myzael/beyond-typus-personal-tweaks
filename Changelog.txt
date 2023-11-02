@@ -25,6 +25,8 @@ BT16
 - (Hadiros) Overhauled Australia
 - (Hadiros) Massive cultural overhaul to Australia, added 32 more cultures to the Aboriginal group for a total of 39 cultures. Added New Northern Aboriginal group with 24 cultures.
 - (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
+- (Dub) Added new government mechanic/mission reward to disable absolutism loss from assigning seat to Parliament. Currently unused in BT, it finds uses in Byzantine Resurgence.
+- (Dub) Added an Island of Venice province triggered modifier for Venice, making it much harder to siege without a blockade on it to compensate for it not being an island in BT.
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
