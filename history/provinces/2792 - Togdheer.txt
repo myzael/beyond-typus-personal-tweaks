@@ -3,7 +3,7 @@
 
 culture = dir
 religion = sunni
-capital = "Togdheer"
+capital = "Ceelgooni"
 is_city = no
 tribal_owner = DHL
 base_manpower = 2 

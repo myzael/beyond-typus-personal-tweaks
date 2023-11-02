@@ -2,7 +2,7 @@
 
 culture = darood
 religion = sunni
-capital = "Bale"
+capital = "Denan" #(JP) Random settlement here
 tribal_owner = OGD
 trade_goods = incense
 hre = no

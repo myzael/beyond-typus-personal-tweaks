@@ -3,7 +3,7 @@
 
 culture = darood
 religion = sunni
-capital = "Wardheer"
+capital = "Werder"
 trade_goods = slaves
 is_city = yes
 owner = OGD
