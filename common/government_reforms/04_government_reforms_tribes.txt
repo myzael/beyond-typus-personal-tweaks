@@ -1030,7 +1030,7 @@ somali_clan = {
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = -10
-	legacy_equivalent = tribal_confederacy_legacy #(JP) Using another here I think?
+	#legacy_equivalent = tribal_confederacy_legacy #(JP) Using another here I think?
 	native_mechanic = no
 	allow_migration = yes
 	modifiers = {
