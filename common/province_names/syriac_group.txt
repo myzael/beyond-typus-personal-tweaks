@@ -11,13 +11,13 @@
 2308 = { "Urhay" "Urhay" } #rn is Urhoy
 2309 = { "Shingar" "Shingar" } #not on the wiki list
 2310 = { "Tagrit" "Tagrit" } #not on the wiki list
+2134 = { "Audattha" "Audattha" }
 4292 = { "Merda" "Merda" } #rn is Merdô
 4295 = { "Hesno d-Kifo" "Hesno d-Kifo" } #not on the wiki list
 4298 = { "Ayindab" "Ayindab" }
 5295 = { "Gazarta" "Gazarta" } #rn is Gzira, Gazarta d-Kardu
 5296 = { "Nsibin" "Nsibin" } #Nasibina
 5331 = { "Si-Reth" "Si-Reth" } #not on the wiki list
-6089 = { "Audattha" "Audattha" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
 
 #Levant

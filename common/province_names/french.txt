@@ -24,8 +24,8 @@
 
 #Mesopotamia
 407 = { "Racca" "Racca" } #(JP) "Raqqa"
+2134 = { "Rahba" "Rahba" }
 4298 = { "Aïntab" "Aïntab" }
-6089 = { "Rahba" "Rahba" }
 6091 = { "Meskene" "Meskene" } #(JP) "Maskanah"
 
 #Levant

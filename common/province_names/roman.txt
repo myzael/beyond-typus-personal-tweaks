@@ -43,8 +43,8 @@
 
 #Mesopotamia
 407 = { "Nicephorium" "Nicephorium" } #(JP) "Raqqa"
+2134 = { "Audattha" "Audattha" }
 4298 = { "Doliche" "Doliche" }
-6089 = { "Audattha" "Audattha" }
 6091 = { "Barbalissus" "Barbalissus" } #(JP) "Maskanah" developed over "Balis" which was abandoned
 6099 = { "Circesium" "Circesium" } #(Chrys) "Busayrah"
 6100 = { "Constantina" "Constantina" }

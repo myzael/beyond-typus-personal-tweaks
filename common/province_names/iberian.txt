@@ -620,8 +620,8 @@
 407 = { "Raca" "Raca" } #(JP) "Raqqa"
 410 = { "Baguedad" "Baguedad" }
 411 = { "Mozul" "Mozul" }
+2134 = { "Raba" "Raba" }
 4298 = { "Aintabe" "Aintabe" }
-6089 = { "Raba" "Raba" }
 6091 = { "Mesquene" "Mesquene" } #(JP) "Maskanah"
 
 #Levant
