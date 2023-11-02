@@ -1,8 +1,9 @@
  
 #1210 - Dawaro
 
-owner = ADA
-controller = ADA
+owner = ETH
+controller = ETH
+add_core = ETH
 add_core = ADA
 add_core = DWR
 add_core = IFT
