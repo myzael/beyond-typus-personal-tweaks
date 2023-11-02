@@ -13,6 +13,5 @@ tags={
 	"Military"
 	"Map"
 }
-replace_path="common/bookmarks"
 name="BeyondTypusInternal"
 supported_version="1.35.*"
