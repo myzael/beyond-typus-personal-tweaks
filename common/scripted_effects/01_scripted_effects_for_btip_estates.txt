@@ -87,32 +87,6 @@ pick_all_present_estates = {
 		set_country_flag = estate_rajput_present_agenda
 		generate_estate_agenda = estate_rajput
 	}
-	if = { #Generals
-		limit = {
-			has_estate = estate_generals
-			NOT = { has_country_flag = estate_generals_present_agenda }
-		}
-		set_country_flag = estate_generals_present_agenda
-		generate_estate_agenda = estate_generals
-	}
-	#Disabled: Exarches lack agendas
-	# if = { #Exarches
-		# limit = {
-			# has_estate = estate_exarches
-			# NOT = { has_country_flag = estate_exarches_present_agenda }
-		# }
-		# set_country_flag = estate_exarches_present_agenda
-		# generate_estate_agenda = estate_exarches
-	# }
-	#Disabled: Knightly Orders lack agendas
-	# if = { #Knightly Orders
-		# limit = {
-			# has_estate = estate_knightly_orders
-			# NOT = { has_country_flag = estate_knightly_orders_present_agenda }
-		# }
-		# set_country_flag = estate_knightly_orders_present_agenda
-		# generate_estate_agenda = estate_knightly_orders
-	# }
 	if = { #Peasants
 		limit = {
 			has_estate = estate_peasants

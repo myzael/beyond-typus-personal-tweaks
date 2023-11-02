@@ -27,6 +27,13 @@ BT16
 - (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
 - (Dub) Added new government mechanic/mission reward to disable absolutism loss from assigning seat to Parliament. Currently unused in BT, it finds uses in Byzantine Resurgence.
 - (Dub) Added an Island of Venice province triggered modifier for Venice, making it much harder to siege without a blockade on it to compensate for it not being an island in BT.
+- (Dub) Integrated the Internal Politicks addon to BT16, with almost all its features & tweaks.
+	- Included, but not limited to:
+		- Absolutism now reducing estate loyalty equilibrium by up to -20% at 100 absolutism
+		- Seizing land now incurs a -20%/-15% estate loyalty equilibrium malus for 5 years
+		- Being over governing capacity now increases corruption
+		- New estate privileges to help players in a bind where they cannot revoke privileges due to absolutism.
+
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
@@ -64,6 +71,7 @@ BT16
  - (Hadiros) Changed Lustiana to blue to match vanilla Portugal change.
  - (Hadiros) Gave Tlemcen a different shade of green to the old Portugal green.
  - (Hadiros) Added Nestorian and Apostolic to Burghers Orthodox Tolerance Privilege.
+ - (Dub) Tweaked Corruption & Over Governing Capacity such that the minimum province autonomy was shuffled over to being over govcap.
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
  

@@ -235,8 +235,6 @@ country_event = {
 		clr_country_flag = estate_rajput_present_agenda
 		clr_country_flag = estate_janissaries_present_agenda
 		clr_country_flag = estate_eunuchs_present_agenda
-		#BR Generals
-		clr_country_flag = estate_generals_present_agenda
 		#BTIP Peasants
 		clr_country_flag = estate_peasants_present_agenda
 		clear_estate_agenda_cache = ROOT
@@ -853,145 +851,6 @@ country_event = {
 		}
 	}
 	
-	#BR Compat
-	option = { #Generals, l
-		name = estate_privileges_and_agendas_events.3.n
-		trigger = { has_country_flag = estate_generals_present_agenda }
-		start_estate_agenda = estate_generals
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.5
-				NOT = {
-					estate_loyalty = {
-						loyalty = 30
-						estate = estate_generals
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				NOT = {
-					estate_loyalty = {
-						loyalty = 20
-						estate = estate_generals
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				estate_influence = {
-					influence = 70
-					estate = estate_generals
-				}
-			}
-			modifier = {
-				factor = 2
-				is_absolutism_active = yes
-				num_of_estate_privileges = {
-					estate = estate_generals
-					value = 1
-				}
-				estate_loyalty = {
-					estate = estate_generals
-					higher_than_influence = no
-				}
-			}
-		}
-	}
-	
-	option = { #Exarches, m
-		name = estate_privileges_and_agendas_events.3.o
-		trigger = { has_country_flag = estate_exarches_present_agenda }
-		start_estate_agenda = estate_exarches
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.5
-				NOT = {
-					estate_loyalty = {
-						loyalty = 30
-						estate = estate_exarches
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				NOT = {
-					estate_loyalty = {
-						loyalty = 20
-						estate = estate_exarches
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				estate_influence = {
-					influence = 70
-					estate = estate_exarches
-				}
-			}
-			modifier = {
-				factor = 2
-				is_absolutism_active = yes
-				num_of_estate_privileges = {
-					estate = estate_exarches
-					value = 1
-				}
-				estate_loyalty = {
-					estate = estate_exarches
-					higher_than_influence = no
-				}
-			}
-		}
-	}
-	
-	option = { #Knightly Orders, n
-		name = estate_privileges_and_agendas_events.3.p
-		trigger = { has_country_flag = estate_knightly_orders_present_agenda }
-		start_estate_agenda = estate_knightly_orders
-		ai_chance = {
-			factor = 1
-			modifier = {
-				factor = 1.5
-				NOT = {
-					estate_loyalty = {
-						loyalty = 30
-						estate = estate_knightly_orders
-					}
-				}
-			}
-			modifier = {
-				factor = 2
-				NOT = {
-					estate_loyalty = {
-						loyalty = 20
-						estate = estate_knightly_orders
-					}
-				}
-			}
-			modifier = {
-				factor = 1.5
-				estate_influence = {
-					influence = 70
-					estate = estate_knightly_orders
-				}
-			}
-			modifier = {
-				factor = 2
-				is_absolutism_active = yes
-				num_of_estate_privileges = {
-					estate = estate_knightly_orders
-					value = 1
-				}
-				estate_loyalty = {
-					estate = estate_knightly_orders
-					higher_than_influence = no
-				}
-			}
-		}
-	}
-	
 	#BTIP Peasants
 	option = {
 		name = estate_privileges_and_agendas_events.3.q
@@ -1325,7 +1184,7 @@ country_event = {
 }
 
 #Seize crownland
-country_event = {
+country_event = { #TODO: Add new estate
 	id = estate_privileges_and_agendas_events.7
 	title = estate_privileges_and_agendas_events.7.t
 	desc = estate_privileges_and_agendas_events.7.desc

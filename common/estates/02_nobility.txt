@@ -1,5 +1,4 @@
-estate_nobles =
-{
+estate_nobles = {
 	icon = 2
 
 	# If true, country will get estate
@@ -487,6 +486,9 @@ estate_nobles =
 		estate_nobles_british_strong_marches
 		estate_nobles_border_forts
 		#End of BT-specific privileges
+		#BTIP
+		estate_nobles_court_titles
+		estate_nobles_tax_collection_freedom
 	}
 
 	agendas = {
