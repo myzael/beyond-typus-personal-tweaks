@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Fadis"
 is_city = yes
 owner = ADA
 controller = ADA

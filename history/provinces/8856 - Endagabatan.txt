@@ -3,14 +3,14 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Ambo"
 is_city = yes
 owner = DAM
 controller = DAM
 
 #Demographics
 culture = gafat
-religion = shamanism
+religion = coptic #(JP) seems to be first area christianised in Damot
 
 #Development and Trade
 base_tax = 1

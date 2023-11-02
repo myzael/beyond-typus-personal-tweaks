@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Berza" #(JP) Apparently capital before 1928.
 is_city = no
 
 #Demographics

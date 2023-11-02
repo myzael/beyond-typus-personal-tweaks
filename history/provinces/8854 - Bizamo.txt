@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Bizamo"
 is_city = yes
 owner = DAM
 controller = DAM

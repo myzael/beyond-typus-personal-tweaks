@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Zway" #(JP) The Lake here
 is_city = yes
 owner = HDY
 controller = HDY

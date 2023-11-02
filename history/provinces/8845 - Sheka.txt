@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Shellani"
 is_city = yes
 owner = KAF
 controller = KAF

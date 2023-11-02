@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Meshala Maryam"
 is_city = yes
 owner = ETH
 controller = ETH

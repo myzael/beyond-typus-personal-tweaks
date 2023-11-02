@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Debre Zeyit"
 is_city = no
 
 #Demographics

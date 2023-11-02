@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Fugug" #(JP) Where the Oromo belive they originated or something
 is_city = yes
 owner = BLE
 controller = BLE

@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Debre Damo"
 is_city = yes
 owner = MED
 controller = MED

@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Mizan Tefere"
 is_city = no
 
 #Demographics

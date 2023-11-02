@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "?"
+capital = "Biqulzar"
 is_city = yes
 owner = ADA
 controller = ADA
