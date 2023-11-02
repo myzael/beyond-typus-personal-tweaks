@@ -22,7 +22,9 @@ BT16
  - New idea sets for the following nations:
 	 - (Dub) Cascadia
 	 - (Dub) Magdeburg
-	 
+- (Hadiros) Overhauled Australia
+- (Hadiros) Massive cultural overhaul to Australia, added 32 more cultures to the Aboriginal group for a total of 39 cultures. Added New Northern Aboriginal group with 24 cultures.
+- (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
@@ -57,7 +59,9 @@ BT16
  - (Dub) Re-added CoT to Trondelag (PROV20)
  - (Dub) Tweaked Lusitania, Spain & Andalusia formable such that you can circumvent the clause of none of the other existing by having more provinces than them.
  - (Dub) Tweaked Defender of Faith modifiers and num of nations following the faith such that same faith nations get more modifiers, and the defender of faith being more oriented towards amassing large armies rather than more professional ones and a bunch of other things. Certain modifiers were cut, and others were introduced, attempting to hearken back to Misc changes made by Draiocht.
- 
+ - (Hadiros) Changed Lustiana to blue to match vanilla Portugal change.
+ - (Hadiros) Gave Tlemcen a different shade of green to the old Portugal green.
+ - (Hadiros) Added Nestorian and Apostolic to Burghers Orthodox Tolerance Privilege.
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
  
