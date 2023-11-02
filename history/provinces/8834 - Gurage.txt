@@ -8,7 +8,7 @@ is_city = no
 
 #Demographics
 culture = gurage
-religion = shamanism
+religion = coptic
 
 #Development and Trade
 base_tax = 1

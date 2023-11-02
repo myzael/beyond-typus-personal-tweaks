@@ -10,7 +10,7 @@ controller = HDY
 
 #Demographics
 culture = hadiya
-religion = shamanism
+religion = sunni
 
 #Development and Trade
 base_tax = 1

@@ -7,8 +7,8 @@ capital = "?"
 is_city = no
 
 #Demographics
-culture = tigray
-religion = coptic
+culture = qwara #(JP) When doing Nubia, will likely end up being Beja
+religion = shamanism
 
 #Development and Trade
 base_tax = 1

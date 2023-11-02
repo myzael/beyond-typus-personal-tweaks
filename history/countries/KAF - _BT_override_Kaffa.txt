@@ -1,1 +1,2 @@
 primary_culture = gonga
+religion = shamanism #(JP) Converted in late 16th Century
