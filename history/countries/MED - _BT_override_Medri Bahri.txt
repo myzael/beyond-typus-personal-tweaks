@@ -1,3 +1,2 @@
 
 capital = 2787
-add_accepted_culture = tigre

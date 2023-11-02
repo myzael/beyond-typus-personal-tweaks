@@ -4,9 +4,7 @@
 
 #Core Details
 capital = "Agordat"
-is_city = yes
-owner = MED
-controller = MED
+is_city = no
 
 #Demographics
 culture = tigre
@@ -19,7 +17,6 @@ base_manpower = 1
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = MED
 
 #Other Political
 hre = no

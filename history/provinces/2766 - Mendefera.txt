@@ -1,13 +1,10 @@
  
 #2766 - Mendefera
 
-owner = MED
-controller = MED
-add_core = MED
 culture = bilen 
 religion = shamanism
 capital = "Sanhit"
-is_city = yes
+is_city = no
 base_manpower = 2 
 trade_goods = grain
 hre = no
