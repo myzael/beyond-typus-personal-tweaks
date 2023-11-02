@@ -10972,7 +10972,7 @@ cushitic = { #Representing Lowland East Cushite
 	graphical_culture = africangfx
 
 	afar = {
-		primary = AFA
+		primary = DNK #(JP) Vanilla was Aussa
 		dynasty_names = {
 			Walashma Muzaffar Gareen Gobroon Karanle Jaladi Harti Darod Gerad
 			# CKII
@@ -10993,7 +10993,7 @@ cushitic = { #Representing Lowland East Cushite
 		}
 	}
 	saho = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11002,7 +11002,7 @@ cushitic = { #Representing Lowland East Cushite
 		}
 	}
 	somali = { #old Somali Culture. Going to keep present for possible later use?
-		primary = ADA
+		#primary = ADA
 		dynasty_names = {
 			Walashma Muzaffar Gareen Gobroon Karanle Jaladi Harti Darod Gerad
 			# CKII
@@ -11023,7 +11023,7 @@ cushitic = { #Representing Lowland East Cushite
 		}
 	}
 	issa = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11032,7 +11032,7 @@ cushitic = { #Representing Lowland East Cushite
 		}
 	}	
 	dir = { #(JP) Messed up here. This is Isaaq instead. 
-		#primary = XYZ
+		primary = ISI
 		male_names = {
 		}
 		female_names = {
@@ -11041,7 +11041,7 @@ cushitic = { #Representing Lowland East Cushite
 		}
 	}
 	darood = {
-		#primary = XYZ
+		primary = WAR #(JP) Tough choice here, the culture is split between five tags representing the five largest states. Warsangali is the tag most likely to die so... yeah...
 		male_names = {
 		}
 		female_names = {
@@ -11050,7 +11050,7 @@ cushitic = { #Representing Lowland East Cushite
 		}
 	}
 	hawiye = {
-		#primary = XYZ
+		primary = AJU
 		male_names = {
 		}
 		female_names = {
@@ -11059,7 +11059,7 @@ cushitic = { #Representing Lowland East Cushite
 		}
 	}
 	reewin = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11138,7 +11138,7 @@ ethiopian_group = {
 		}
 	}
 	tigre = { #Tigre, not Tigrayan or Tigrina
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11147,7 +11147,7 @@ ethiopian_group = {
 		}
 	}
 	dahalik = {
-		#primary = XYZ
+		primary = DHK
 		male_names = {
 		}
 		female_names = {
@@ -11156,7 +11156,7 @@ ethiopian_group = {
 		}
 	}
 	argobba = {
-		#primary = XYZ
+		primary = IFT #(JP) Walashama of Ifat and Adal were likely Argobba. This maintains the Ifat tag longer. 
 		male_names = {
 		}
 		female_names = {
@@ -11165,7 +11165,7 @@ ethiopian_group = {
 		}
 	}
 	gafat = {
-		#primary = XYZ
+		primary = DAM
 		male_names = {
 		}
 		female_names = {
@@ -11174,7 +11174,7 @@ ethiopian_group = {
 		}
 	}
 	gurage = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11188,7 +11188,7 @@ omotic_group = {
 	graphical_culture = africangfx
 	
 	koman-mao = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11197,7 +11197,7 @@ omotic_group = {
 		}
 	}
 	gonga = {
-		#primary = XYZ
+		primary = KAF #(JP) Primary state here
 		male_names = {
 		}
 		female_names = {
@@ -11206,7 +11206,7 @@ omotic_group = {
 		}
 	}
 	yemsa = {
-		#primary = XYZ
+		primary = JJI
 		male_names = {
 		}
 		female_names = {
@@ -11215,7 +11215,7 @@ omotic_group = {
 		}
 	}
 	ometo = {
-		#primary = XYZ
+		primary = WLY #(JP) Most established and northerly of the Ometo states
 		male_names = {
 		}
 		female_names = {
@@ -11224,7 +11224,7 @@ omotic_group = {
 		}
 	}
 	ari-banna = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11233,7 +11233,7 @@ omotic_group = {
 		}
 	}
 	maji = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11247,7 +11247,7 @@ gumuz_group = {
 	graphical_culture = africangfx
 	
 	gumuz = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11270,7 +11270,7 @@ kunama_group = {
 	
 	
 	kunama = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11284,7 +11284,7 @@ agaw_group = {
 	graphical_culture = africangfx
 	
 	awngi = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11293,7 +11293,7 @@ agaw_group = {
 		}
 	}
 	qwara = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11302,7 +11302,7 @@ agaw_group = {
 		}
 	}
 	kayla = {
-		#primary = XYZ
+		primary = BTI #(JP) Semien
 		male_names = {
 		}
 		female_names = {
@@ -11311,7 +11311,7 @@ agaw_group = {
 		}
 	}
 	bilen = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11325,7 +11325,7 @@ highland_east_cushite_group = {
 	graphical_culture = africangfx
 	
 	sidamo = {
-		primary = KAF
+		primary = BLE #(JP) Should probably be a later Sidama tag, but for now, Bale will do
 
 		male_names = {
 			"Minjo" "Iyâsû" "Taqla Hâymânôt" "Salômôn" "Yôhannes" "Hezqeyâs" "Zar'a Yâqob" "Ba'eda Mâryâm"
@@ -11341,7 +11341,7 @@ highland_east_cushite_group = {
 		}
 	}
 	gedeo = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11350,7 +11350,7 @@ highland_east_cushite_group = {
 		}
 	}
 	kambaata = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11359,7 +11359,7 @@ highland_east_cushite_group = {
 		}
 	}
 	hadiya = {
-		#primary = XYZ
+		primary = HDY
 		male_names = {
 		}
 		female_names = {
@@ -11373,7 +11373,7 @@ oromo_group = {
 	graphical_culture = africangfx
 	
 	oromo = { #Barentu
-		primary = JIM
+		#primary = JIM #(JP) Not sure what JIM is
 		male_names = {
 			"Taqla Hâymânôt" "'Amsa Gîyôrgîs" "Tuqla Gîyôrgîs" "Zar'a Yâqob" "Ba'eda Mâryâm" "'Amda Seyôn" "Lebna"
 			"Saga Krestos" "Malta Krestos" "Dengel" "Welde Giyorgis" "Mika'el Sehul" "Wolda Gabrael" "Wand Bewossen"
@@ -11388,7 +11388,7 @@ oromo_group = {
 		}
 	}
 	borana = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11397,7 +11397,7 @@ oromo_group = {
 		}
 	}
 	konso = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
@@ -11406,7 +11406,7 @@ oromo_group = {
 		}
 	}
 	orma = {
-		#primary = XYZ
+		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
 		female_names = {
