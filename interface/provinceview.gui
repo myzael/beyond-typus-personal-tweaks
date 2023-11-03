@@ -3767,7 +3767,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "building_close_button"
-				position = { x = 304 y = 120 }
+				position = { x = 304 y = 130 }
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
 			}
@@ -4614,7 +4614,7 @@ guiTypes = {
 
 	positionType = {
 		name = "building_close_button_natives_large"
-		position = { x = 382 y = 140 }
+		position = { x = 382 y = -110 }
 	}
 
 	positionType = {
