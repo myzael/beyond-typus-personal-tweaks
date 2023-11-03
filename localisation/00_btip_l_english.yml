@@ -26,6 +26,7 @@
  estate_peasants_ownership:0 "[Country.GetPeasantsName] Land Ownership"
  peasants_loyalty_modifier:0 "[Country.GetPeasantsName] Loyalty Equilibrium"
  peasants_influence_modifier:0 "[Country.GetPeasantsName] Influence"
+ estate_privileges_and_agendas_events.7.o:0 "Seize it from the [Root.GetPeasantsName]"
  
  #Influence modifiers
  EST_VAL_MINERS:0 "At least one province producing Iron, Copper, Gold or Coal: §Y$VAL$%§!"
