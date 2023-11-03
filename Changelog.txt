@@ -27,12 +27,15 @@ BT16
 - (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
 - (Dub) Added new government mechanic/mission reward to disable absolutism loss from assigning seat to Parliament. Currently unused in BT, it finds uses in Byzantine Resurgence.
 - (Dub) Added an Island of Venice province triggered modifier for Venice, making it much harder to siege without a blockade on it to compensate for it not being an island in BT.
-- (Dub) Integrated the Internal Politicks addon to BT16, with almost all its features & tweaks.
-	- Included, but not limited to:
-		- Absolutism now reducing estate loyalty equilibrium by up to -20% at 100 absolutism
-		- Seizing land now incurs a -20%/-15% estate loyalty equilibrium malus for 5 years
-		- Being over governing capacity now increases corruption
-		- New estate privileges to help players in a bind where they cannot revoke privileges due to absolutism.
+- (Dub) Integrated the Internal Politicks addon to BT16, with almost all its features & tweaks. Included, but not limited to:
+	- Absolutism now reducing estate loyalty equilibrium by up to -20% at 100 absolutism
+	- Seizing land now incurs a -20%/-15% estate loyalty equilibrium malus for 5 years
+	- Being over governing capacity now increases corruption
+	- New estate privileges to help players in a bind where they cannot revoke privileges due to absolutism.
+	- An overhaul to governing capacity & corruption modifiers
+	- The Peasants estate for Scandinavian nations and peasant republics
+	- The ability to pick between each and every estate's agenda in diets (Somewhat done by vanilla, but in a roundabout breakable way)
+		
 
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
@@ -68,10 +71,11 @@ BT16
  - (Dub) Re-added CoT to Trondelag (PROV20)
  - (Dub) Tweaked Lusitania, Spain & Andalusia formable such that you can circumvent the clause of none of the other existing by having more provinces than them.
  - (Dub) Tweaked Defender of Faith modifiers and num of nations following the faith such that same faith nations get more modifiers, and the defender of faith being more oriented towards amassing large armies rather than more professional ones and a bunch of other things. Certain modifiers were cut, and others were introduced, attempting to hearken back to Misc changes made by Draiocht.
- - (Hadiros) Changed Lustiana to blue to match vanilla Portugal change.
+ - (Hadiros) Changed Lusitania to blue to match vanilla Portugal change.
  - (Hadiros) Gave Tlemcen a different shade of green to the old Portugal green.
  - (Hadiros) Added Nestorian and Apostolic to Burghers Orthodox Tolerance Privilege.
  - (Dub) Tweaked Corruption & Over Governing Capacity such that the minimum province autonomy was shuffled over to being over govcap.
+ 
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
  
@@ -111,7 +115,7 @@ BT16
 	- Mali
 	- Bavarian 
 	- LotN Norwegian (Dub) - Scandinavian branches not updated
-	- LotN Swedish (Dub) - Scandinavian branches not updated
+	- LotN Swedish (Dub) - Scandinavian branches not updated - Includes a BT Swedish mission to fill the void of Expanding Finland.
 	- LotN Danish (Dub) - Scandinavian branches not updated
 	- BT Ayyubid (Dub)
 	- GC Andalusian (Dub)
