@@ -15,7 +15,7 @@ trade_goods = glass
 base_manpower = 2 
 capital = "Wolgast"
 is_city = yes
-center_of_trade = 1
+#center_of_trade = 1 #Moved to Stettin
 
 discovered_by = western
 discovered_by = muslim

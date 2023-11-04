@@ -15,6 +15,7 @@ base_production = 5
 base_manpower = 2
 capital = "Stettin"
 is_city = yes
+center_of_trade = 1 #Moved from Wolgast. I don't know what the CoT was doing in Wolgast - it was not important for trade. Stettin however was, and I do not at all mind it having an estuary + CoT.
 
 discovered_by = western
 discovered_by = muslim
