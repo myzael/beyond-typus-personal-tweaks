@@ -11986,7 +11986,7 @@ ellora_caves = {
 }
 
 erdene_zuu = {
-	start = 2190 #Qaraqorum #(JP) Province changed in BT map for some reason
+	start = 4678 #Qaraqorum #(JP) Province changed in BT map for some reason #(Chrys) JP got this wrong somehow? Switching back
 	date = 1444.01.01	#1585.01.01
 	time = { months = 0	}
 	build_cost = 0
