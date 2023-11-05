@@ -2549,7 +2549,10 @@
  bt_otto_crimea_tweaks_tt:0 "§YCrimea§! becomes our §Ymarch§!, and we gain §Yclaims§! on the heathen-held land in their vicinity"           #In a perfect world I'd figure out the strupid from.root.to.for.what.why strings and make the name dynamic. For now, can't be bothered.
  bt_otto_badboy_crimea_opinion:0 "Aggressive Opportunism in Crimea"
  
- ##### BT16 #####
+ ##################################
+ ############## BT16 ##############
+ ##################################
+ 
  ###Cultures###
  #Unified Slavic#
  schlesian_new:0 "High Silesian"
@@ -2580,7 +2583,7 @@
  bidjara:0 "Bidjara"
  gabi:0 "Gabi"
  bandjalang:0 "Bandjalang"
- yoran:0 "Yoran"
+ yoran:0 "Yora"
  yuin:0 "Yuin"
  gunaikurnai:0 "Gunaikurnai"
  yotayota:0 "Yotayota"

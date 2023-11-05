@@ -4,9 +4,7 @@
 
 #Core Details
 capital = "Warrane"
-is_city = yes
-owner = EOR
-controller = EOR
+is_city = no
 
 #Demographics
 culture = yoran
@@ -24,7 +22,7 @@ center_of_trade = 1
 extra_cost = 8
 
 #Cores and Occupation (Alphabetical after current)
-add_core = EOR
+
 
 #Other Political
 hre = no
@@ -37,6 +35,20 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories  
+1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
+	owner = EOR			#Eora
+	controller = EOR
+	add_core = EOR
+	is_city = yes
+	trade_goods = fish
+}
+1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
+	owner = XXX
+	controller = XXX
+	remove_core = EOR
+	is_city = no
+	trade_goods = unknown
+}
 1770.1.1 = { discovered_by = GBR } # James Cook
 1788.1.26 = {
 	discovered_by = GBR

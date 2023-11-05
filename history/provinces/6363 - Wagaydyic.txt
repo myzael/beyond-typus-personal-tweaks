@@ -4,7 +4,9 @@
 
 #Core Details
 capital = "Wagaydyic"
-is_city = no
+is_city = yes
+owner = MRJ
+controller = MRJ
 
 #Demographics
 culture = marranj
@@ -20,6 +22,7 @@ base_manpower = 2
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = MRJ
 
 #Other Political
 hre = no

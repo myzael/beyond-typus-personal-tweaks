@@ -20,7 +20,8 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
-
+tribal_owner = YOL
+	
 #Other Political
 hre = no
 

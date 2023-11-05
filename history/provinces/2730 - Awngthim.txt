@@ -4,9 +4,7 @@
 
 #Core Details
 capital = "Injinoo"
-is_city = yes
-owner = YNU
-controller = YNU
+is_city = no
 
 #Demographics
 culture = paman
@@ -19,10 +17,9 @@ native_hostileness = 1
 base_tax = 2
 base_production = 2
 base_manpower = 1
-trade_goods = tropical_wood
+trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
-add_core = YNU
 
 #Other Political
 hre = no
@@ -35,4 +32,18 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories   
+1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
+	owner = AWN			#Awngthim
+	controller = AWN
+	add_core = AWN
+	is_city = yes
+	trade_goods = tropical_wood
+}
+1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
+	owner = XXX
+	controller = XXX
+	remove_core = AWN
+	is_city = no
+	trade_goods = unknown
+}
 1642.11.24 = { discovered_by = NED } # Abel Tasman 

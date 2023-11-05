@@ -17,6 +17,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 trade_goods = unknown
+center_of_trade = 1
 #latent_trade_goods = { coal } # 1.31; BT removed
 
 #Cores and Occupation (Alphabetical after current)

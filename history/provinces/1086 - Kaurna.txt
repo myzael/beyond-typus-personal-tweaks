@@ -4,9 +4,7 @@
 
 #Core Details
 capital = "Tarndanya"
-is_city = yes
-owner = KAU
-controller = KAU
+is_city = no
 
 #Demographics
 culture = kadli
@@ -19,10 +17,10 @@ native_hostileness = 9
 base_tax = 4
 base_production = 3
 base_manpower = 1
-trade_goods = fish
+trade_goods = unknown
+unknown
 
 #Cores and Occupation (Alphabetical after current)
-add_core = KAU
 
 #Other Political
 hre = no
@@ -35,6 +33,20 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories   
+1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
+	owner = KAU			#Kaurna
+	controller = KAU
+	add_core = KAU
+	is_city = yes
+	trade_goods = fish
+}
+1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
+	owner = XXX
+	controller = XXX
+	remove_core = KAU
+	is_city = no
+	trade_goods = unknown
+}
 1802.1.1 = { discovered_by = GBR } # Matthew Flinders
  
 # owned in 1.31
