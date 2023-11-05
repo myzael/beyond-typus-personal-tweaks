@@ -13,9 +13,9 @@ culture = dahalik
 religion = sunni
 
 #Development and Trade
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 4
+base_manpower = 3
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
