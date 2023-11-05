@@ -4,7 +4,9 @@
 
 #Core Details
 capital = "Warlmanpa"
-is_city = no
+is_city = yes
+owner = WRP
+controller = WRP
 
 #Demographics
 culture = yapa
@@ -20,6 +22,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = WRP
 
 #Other Political
 hre = no

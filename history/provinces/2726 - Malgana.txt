@@ -4,9 +4,7 @@
 
 #Core Details
 capital = "Maya"
-is_city = yes
-owner = MLG
-controller = MLG
+is_city = no
 
 #Demographics
 culture = kanyara
@@ -19,7 +17,7 @@ native_hostileness = 9
 base_tax = 2
 base_production = 2
 base_manpower = 1
-trade_goods = naval_supplies
+trade_goods = unknown
 center_of_trade = 1
 
 #Cores and Occupation (Alphabetical after current)
@@ -36,4 +34,18 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories   
+1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
+	owner = MLG			#Malgana
+	controller = MLG
+	add_core = MLG
+	is_city = yes
+	trade_goods = naval_supplies
+}
+1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
+	owner = XXX
+	controller = XXX
+	remove_core = MLG
+	is_city = no
+	trade_goods = unknown
+}
 1619.1.10 = { discovered_by = NED } # Frederick de Houtman

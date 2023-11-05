@@ -4,9 +4,7 @@
 
 #Core Details
 capital = "Mianjin"
-is_city = yes
-owner = MIA
-controller = MIA
+is_city = no
 
 #Demographics
 culture = bandjalang
@@ -19,10 +17,10 @@ native_hostileness = 2
 base_tax = 4 
 base_production = 3
 base_manpower = 2
-trade_goods = naval_supplies
+trade_goods = unknown
+center_of_trade = 1
 
 #Cores and Occupation (Alphabetical after current)
-add_core = MIA
 
 #Other Political
 hre = no
@@ -35,4 +33,18 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories    
+1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
+	owner = MIA			#Yuggera
+	controller = MIA
+	add_core = MIA
+	is_city = yes
+	trade_goods = naval_supplies
+}
+1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
+	owner = XXX
+	controller = XXX
+	remove_core = MIA
+	is_city = no
+	trade_goods = unknown
+}
 1642.11.24 = { discovered_by = NED } # Abel Tasman 

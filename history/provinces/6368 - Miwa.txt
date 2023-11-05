@@ -20,6 +20,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+tribal_owner = WUN
 
 #Other Political
 hre = no

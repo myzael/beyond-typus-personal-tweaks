@@ -8043,7 +8043,12 @@
  zambezi_area_adj:0 "Zambezi"
  zambezi_area_name:0 "Zambezi"
  
- #BT16
+ ##################################
+ ############## BT16 ##############
+ ##################################
+ 
+ ###Australia###
+ #Areas & Regions
  northeastern_australia_region:0 "Northeastern Australia"
  northern_australia_region:0 "Northern Australia"
  western_australia_region:0 "Western Australia"
@@ -8081,7 +8086,7 @@
  avon_savanna_area:0 "Avon Savanna"
  rainbow_coast_area:0 "Rainbow Coast"
  
- 
+ #Provinces
  PROV6200:0 "Bigambul"
  PROV6201:0 "Mandandanji"
  PROV6202:0 "Waka Waka"
@@ -8318,6 +8323,33 @@
  PROV6434:0 "Great Victorian Desert"
  PROV6435:0 "Tanami Desert"
  
+ #Tags
+ AER:0 "Arrernte"
+ AER_adj:0 "Arrernte"
+ LUR:0 "Luritja"
+ LUR_adj:0 "Luritja"
+ WRP:0 "Warlpiri"
+ WRP_adj:0 "Warlpiri"
+ MRR:0 "Mara"
+ MRR_adj:0 "Mara"
+ MRJ:0 "Marranj"
+ MRJ_adj:0 "Marranj"
+ GUN:0 "Gunwinyguan"
+ GUN_adj:0 "Gunwinyguan"
+ NGM:0 "Ngarinman"
+ NGM_adj:0 "Ngarinman"
+ YIR:0 "Yirram"
+ YIR_adj:0 "Yirram"
+ WUN:0 "Wunambal"
+ WUN_adj:0 "Wunambal"
+ 
+ #Tradenodes
+ southern_australia:0 "Southern Australia"
+ #Colonial Regions
+ colonial_western_australia:0 "Colonial Western Australia"
+ 
+ ###Horn of Africa###
+ #Cultures
  argobba:0 "Argobba"
  ari-banna:0 "Ari-Banna"
  awngi:0 "Awngi"
@@ -8348,6 +8380,7 @@
  tigre:0 "Tigre"
  yemsa:0 "Yemsa"
  
+ #Culture Groups
  agaw_group:0 "Agaw"
  ethiopian_group:0 "Ethiopic"
  gumuz_group:0 "Gumuz"
@@ -8356,6 +8389,7 @@
  omotic_group:0 "Omotic"
  oromo_group:0 "Oromo"
  
+ #Tags
  ABN:0 "Arababni"
  ABN_ADJ:0 "Arababnian"
  BLE:0 "Bale"

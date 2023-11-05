@@ -1913,7 +1913,11 @@
  zaporizhia_area_adj:0 "Zaporizhian"
  zaporizhia_area_name:0 "Zaporizhia"
  
- #BT16
+ ##################################
+ ############## BT16 ##############
+ ##################################
+ ###Australia###
+ #Regions
  australia_region:0 "Southeastern Australia"
  western_australia_area:0 "Swan Coast"
  northern_australia_area:0 "Cape York"
@@ -1925,13 +1929,7 @@
  north_queensland_area:0 "Brigalow Belt"
  south_queensland_area:0 "Moreton Bay-Burnett"
  
- western_norway:0 "West Norway"
- western_norway_adj:0 "Western Norwegian"
- western_norway_name:0 "West Norway"
- north_karelia:0 "Ingria"
- north_karelia_adj:0 "Ingrian"
- north_karelia_name:0 "Ingria"
- 
+ #Provinces
  PROV1084:0 "Wardandi"
  PROV1085:0 "Nipaluna"
  PROV1086:0 "Tarndanya"
@@ -1979,10 +1977,28 @@
  PROV4868:0 "Kanamaluka"
  PROV4869:0 "Pirapa"
  
+ #Tradenodes
+ australia:0 "Northern Australia"
+ 
+ #Colonial Regions
+ colonial_australia:0 "Colonial Eastern Australia"
+ 
+ #Tags
  MIA:0 "Yuggera"
  MIA_ADJ:0 "Yuggera"
  
+ ###Horn of Africa
+ #Cultures
  oromo:0 "Barentu"
  tigray:0 "Tigrinya"
  
+ #Culture Groups
  cushitic:0 "Somali"
+ 
+ ###Other###
+ western_norway:0 "West Norway"
+ western_norway_adj:0 "Western Norwegian"
+ western_norway_name:0 "West Norway"
+ north_karelia:0 "Ingria"
+ north_karelia_adj:0 "Ingrian"
+ north_karelia_name:0 "Ingria"

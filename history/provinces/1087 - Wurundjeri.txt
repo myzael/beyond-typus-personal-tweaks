@@ -4,9 +4,7 @@
 
 #Core Details
 capital = "Narrm"
-is_city = yes
-owner = WRU
-controller = WRU
+is_city = no
 
 #Demographics
 culture = kulin
@@ -19,11 +17,11 @@ native_hostileness = 9
 base_tax = 4
 base_production = 3
 base_manpower = 2
-trade_goods = fish
+trade_goods = unknown
 center_of_trade = 1
 
 #Cores and Occupation (Alphabetical after current)
-add_core = EOR
+
 
 #Other Political
 hre = no
@@ -36,3 +34,17 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories   
+1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
+	owner = WRU			#Wurundjeri
+	controller = WRU
+	add_core = WRU
+	is_city = yes
+	trade_goods = fish
+}
+1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
+	owner = XXX
+	controller = XXX
+	remove_core = WRU
+	is_city = no
+	trade_goods = unknown
+}
