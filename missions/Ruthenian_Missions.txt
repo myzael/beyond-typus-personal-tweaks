@@ -1,0 +1,1021 @@
+bt_ukr_dynasty = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_invite_rurikids = {
+		icon = mission_consolidate_the_state
+		required_missions = { } #None
+		position = 1
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+	}
+}
+
+bt_ukr_kiev_ruthenia = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_restore_kiev = {
+		icon = mission_restore_kiev
+		required_missions = { ukr_declare_independence }
+		position = 2
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_reclaim_kievan_metropolitanate = {
+		icon = mission_land_of_churches
+		required_missions = { ukr_restore_kiev }
+		position = 4
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_restore_ruthenia = {
+		icon = mission_invade_island
+		required_missions = { ukr_reclaim_kievan_metropolitanate ukr_reclaim_ruthenia }
+		position = 5
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_ruthenia_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_resettle_dniepr = {
+		icon = mission_advance_to_the_dnieper
+		required_missions = { ukr_restore_kiev }
+		position = 3
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_baltic_conquest = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_access_to_the_baltic = {
+		icon = mission_conquer_riga
+		required_missions = { ukr_reclaim_ruthenia }
+		position = 5
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_conquer_poland = {
+		icon = mission_partition_poland
+		required_missions = { ukr_access_to_the_baltic }
+		position = 6
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_reclaim_novgorod = {
+		icon = mission_conquer_novgorod
+		required_missions = { ukr_challenge_northern_rus }
+		position = 7
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_finnish_borderlands = {
+		icon = mission_conquer_finland
+		required_missions = { ukr_reclaim_novgorod }
+		position = 8
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_ruthenia_russia_conquest = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_declare_independence = {
+		icon = mission_conquer_tver
+		required_missions = { } #None
+		position = 1
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_reclaim_chernigov = {
+		icon = mission_eastern_european_city
+		required_missions = { ukr_declare_independence }
+		position = 2
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_reclaim_ruthenia = {
+		icon = mission_sovereign_principality
+		required_missions = { ukr_reclaim_chernigov }
+		position = 4
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_challenge_northern_rus = {
+		icon = mission_defeat_muscovy
+		required_missions = { ukr_reclaim_ruthenia }
+		position = 6
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_subjugate_moscow = {
+		icon = mission_conquer_moscow
+		required_missions = { ukr_challenge_northern_rus }
+		position = 7
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_rebuild_principalities = {
+		icon = mission_unite_the_princes
+		required_missions = { ukr_subjugate_moscow ukr_reclaim_novgorod }
+		position = 8
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_mother_of_all_rus = {
+		icon = mission_invade_island
+		required_missions = { ukr_rebuild_principalities }
+		position = 9
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_challenge_ottos = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_restore_tmutarakan = {
+		icon = mission_invade_island
+		required_missions = { ukr_declare_independence }
+		position = 2
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_reconnect_with_constantinople = {
+		icon = mission_invade_island
+		required_missions = { ukr_restore_tmutarakan }
+		position = 3
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_push_back_turk = {
+		icon = mission_invade_island
+		required_missions = { ukr_reconnect_with_constantinople }
+		position = 4
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_caucasus_border = {
+		icon = mission_the_caucasus_rus
+		required_missions = { ukr_break_tatar_yoke }
+		position = 6
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+#TODO: Make separate version of Caucasus border to match with people lacking Cossacks DLC
+
+bt_ukr_steppe_conquests_1 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_amass_army = {
+		icon = mission_early_russian_army
+		required_missions = { } #None
+		position = 1
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_steppe_conquests_dlc = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		has_dlc = "The Cossacks" #Because Cossacks estate + unique units
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	ukr_recruit_cossacks = {
+		icon = mission_cossack_cavalry
+		required_missions = { ukr_amass_army }
+		position = 2
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_permanent_cossack_host = {
+		icon = mission_recruit_the_cossacks
+		required_missions = { ukr_recruit_cossacks }
+		position = 3
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_claim_wild_fields = {
+		icon = mission_destroy_the_horde
+		required_missions = { ukr_permanent_cossack_host }
+		position = 4
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+
+	ukr_break_tatar_yoke = {
+		icon = mission_break_the_tatar_yoke
+		required_missions = { ukr_claim_wild_fields }
+		position = 5
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_venture_east = {
+		icon = mission_beyond_the_urals
+		required_missions = { ukr_break_tatar_yoke }
+		position = 3
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+#TODO: Version of above with non-DLC with changed mission requirements, cut recruit cossacks mission.
+
+#Internals
+bt_ukr_navy = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_black_sea_navy = {
+		icon = mission_russian_navy
+		required_missions = { ukr_centralized_state }
+		position = 11
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_navy_of_the_intermarum = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { ukr_black_sea_navy }
+		position = 12
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_production = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_means_of_production = {
+		icon = mission_state_manufactories
+		required_missions = { ukr_centralized_state }
+		position = 11
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_production_of_vodka = {
+		icon = mission_vodka_monopoly
+		required_missions = { ukr_means_of_production }
+		position = 12
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_form_ruthenia = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE #Kiev
+			tag = UKR #Ruthenia
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_centralized_state = {
+		icon = mission_rule_ruthenia
+		required_missions = { } #None
+		position = 10
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_religion = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_strengthen_kievan_patriarch = {
+		icon = mission_russian_patriarchatee
+		required_missions = { ukr_centralized_state }
+		position = 11
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_boyars = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_handle_boyars = {
+		icon = mission_great_northern_war
+		required_missions = { ukr_centralized_state }
+		position = 11
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_royal_court = {
+		icon = mission_invade_island
+		required_missions = { ukr_handle_boyars ukr_strengthen_kievan_patriarch }
+		position = 12
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_unique_units = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		AND = {
+			has_dlc = "Third Rome"
+			has_dlc = "The Cossacks"
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	ukr_of_streltsy_and_cossacks = {
+		icon = mission_recruit_streltsy
+		required_missions = { ukr_centralized_state }
+		position = 11
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_military_elites = {
+		icon = mission_assemble_an_army
+		required_missions = { ukr_of_streltsy_and_cossacks }
+		position = 12
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+#TODO: Duplicate this mission plus everything below to not require ukr_military_elites for non-TR/Cossacks users, and the below not requiring ukr_freedom_of_steppes
+bt_ukr_government = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+		AND = {
+			has_dlc = "Third Rome"
+			has_dlc = "The Cossacks"
+		}
+	}
+	has_country_shield = yes
+	
+	ukr_absolute_authority = {
+		icon = mission_autocratic_rule
+		required_missions = { ukr_navy_of_the_intermarum ukr_production_of_vodka ukr_royal_court ukr_military_elites }
+		position = 13
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+	ukr_ideas_of_revolution = {
+		icon = mission_invade_island
+		required_missions = { ukr_industrialize_donets ukr_enlightened_rus ukr_question_of_serfdom ukr_freedom_of_steppes }
+		position = 15
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_industrialization = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+		AND = {
+			has_dlc = "Third Rome"
+			has_dlc = "The Cossacks"
+		}
+	}
+	has_country_shield = yes
+	
+	ukr_industrialize_donets = {
+		icon = mission_invade_island
+		required_missions = { ukr_centralized_state }
+		position = 14
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+	
+}
+
+bt_ukr_enlightenment = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+		AND = {
+			has_dlc = "Third Rome"
+			has_dlc = "The Cossacks"
+		}
+	}
+	has_country_shield = yes
+	
+	ukr_enlightened_rus = {
+		icon = mission_early_modern_university
+		required_missions = { ukr_centralized_state }
+		position = 14
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_peasants = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+		AND = {
+			has_dlc = "Third Rome"
+			has_dlc = "The Cossacks"
+		}
+	}
+	has_country_shield = yes
+	
+	ukr_question_of_serfdom = {
+		icon = mission_serfdom
+		required_missions = { ukr_centralized_state }
+		position = 14
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
+
+bt_ukr_cossacks = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		NOT = { map_setup = map_setup_random }
+		AND = {
+			has_dlc = "Third Rome"
+			has_dlc = "The Cossacks"
+		}
+	}
+	has_country_shield = yes
+	
+	ukr_freedom_of_steppes = {
+		icon = mission_invade_island
+		required_missions = { ukr_centralized_state }
+		position = 14
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			
+		}
+		
+		effect = {
+			
+		}
+		
+	}
+}
