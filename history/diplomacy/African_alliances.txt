@@ -69,3 +69,17 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1534.1.1
 }
+#Bale
+vassal = {
+	first = ETH
+	second = BLE
+	start_date = 1444.1.1
+	end_date = 1534.1.1
+}
+#Medri Bahri
+vassal = {
+	first = ETH
+	second = MED
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
