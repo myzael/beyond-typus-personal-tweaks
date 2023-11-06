@@ -213,7 +213,10 @@ suez_canal = {
 			owns_or_vassal_of = 363 # BT; 4316
 			owns_or_vassal_of = 2315
 			is_subject = no
-			adm_tech = 22
+			OR = {
+				adm_tech = 22
+				mission_completed = mam_highway_empire
+			}
 			#treasury = 20000 #BT Removed because vanilla
 		}
 	}

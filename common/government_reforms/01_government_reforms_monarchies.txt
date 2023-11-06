@@ -10,6 +10,7 @@ monarchy_mechanic = {
 	heir = yes
 	queen = yes
 	basic_reform = yes # = invisible/does not take up a slot
+	is_eligible_for_hre_emperor = yes
 	valid_for_nation_designer = no
 	custom_attributes = {
 		enables_aristocratic_idea_group = yes
@@ -1024,7 +1025,7 @@ ottoman_government = {
 	removed_effect = {
 		remove_country_modifier = tur_weakened_the_harem
 	}
-	
+
 	custom_attributes = {
 		locked_government_type = yes
 	}
@@ -1077,10 +1078,13 @@ byzantine_autocracy_reform = {
 		max_absolutism = -25
 		prestige = 0.5
 	}
-	
-	#custom_attributes = {
-	#	civil_war_on_every_new_ruler = yes
-	#}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			civil_war_on_every_new_ruler = yes
+			enables_pronoias = yes 
+		}
+	}
 }
 
 reformed_byzantine_monarchy_reform = {
@@ -1099,7 +1103,7 @@ reformed_byzantine_monarchy_reform = {
 		global_autonomy = -0.05
 		culture_conversion_cost = -0.2
 		years_of_nationalism = -5
-		max_possible_parliament_seats = 8
+		yearly_absolutism = 1
 	}
 	
 	conditional = {
@@ -1108,8 +1112,15 @@ reformed_byzantine_monarchy_reform = {
 				has_dlc = "Common Sense"
 				has_dlc = "Domination"
 			}
+			NOT = { has_dlc = "King of Kings" }
 		}
 		has_parliament = yes
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			enables_pronoias = yes 
+		}
 	}
 }
 
@@ -1481,6 +1492,12 @@ roman_empire_reform = {
 		}
 		has_parliament = yes
 	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			enables_pronoias = yes 
+		}
+	}
 	ai = {
 		factor = 1
 	}
@@ -1489,6 +1506,7 @@ roman_empire_reform = {
 persian_government_reform = {
 	icon = "persian_sultanate"
 	allow_normal_conversion = yes
+	lock_level_when_selected = yes
 	potential = {
 		OR = {
 			tag = PER
@@ -1500,12 +1518,13 @@ persian_government_reform = {
 				is_playing_custom_nation = yes
 			}
 		}
+		NOT = { religion_group = zoroastrian_group }
 	}
 	trigger = {
-		primary_culture = persian
+		NOT = { religion_group = zoroastrian_group }
 	}
 	nation_designer_trigger = {
-		primary_culture = persian
+		NOT = { religion_group = zoroastrian_group }
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -1515,18 +1534,82 @@ persian_government_reform = {
 		tolerance_own = 2
 		development_cost = -0.05
 		innovativeness_gain = 0.25
-		manpower_in_accepted_culture_provinces = 0.15
 	}
 	custom_attributes = {
 		enables_divine_idea_group = yes
 		enables_aristocratic_idea_group = no
 	}
+	maintain_dynasty = yes
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		government_abilities = {
 			feudal_theocracy_mechanic
 		}
 	}
+	ai = {
+		factor = 1
+	}
+}
+
+zoroastrian_persian_government_reform = {
+	icon = "zoroastrian_persian_government_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			tag = PER
+			tag = ERS
+			AND = {
+				OR = {
+					has_reform = persian_government_reform
+					have_had_reform = persian_government_reform
+				}
+				is_playing_custom_nation = yes
+			}
+		}
+		religion_group = zoroastrian_group
+	}
+	trigger = {
+		religion_group = zoroastrian_group
+	}
+	nation_designer_trigger = {
+		religion_group = zoroastrian_group
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	modifiers = {
+		innovativeness_gain = 0.25
+		global_missionary_strength = 0.01
+		tolerance_own = 2
+		development_cost = -0.05
+		monarch_admin_power = 2
+	}
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	maintain_dynasty = yes
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		government_abilities = {
+			the_three_royal_fires_mechanic
+		}
+	}
+	#post_removed_effect = {
+	#	hidden_effect = {
+	#		if = {
+	#			limit = { NOT = { has_government_mechanic = the_three_royal_fires_mechanic } }
+	#			clr_country_flag = can_place_center_of_reformation
+	#			every_owned_province = {
+	#				limit = {
+	#					is_reformation_center = yes
+	#					religion = root
+	#				}
+	#				remove_reform_center = zoroastrian
+	#			}
+	#		}
+	#	}
+	#}
 	ai = {
 		factor = 1
 	}
@@ -1692,6 +1775,7 @@ stadthalter_monarchy_reform = {
 		heir = no
 		duration = 4
 		has_term_election = yes
+		is_eligible_for_hre_emperor = no
 		states_general_mechanic = {
 			statists = {
 				naval_forcelimit_modifier = 0.10
@@ -2142,13 +2226,13 @@ al_andalusia_government = {
 	}
 	trigger = {
 		religion_group = muslim
-		primary_culture = andalusi_culture
+		primary_culture = andalusi_culture #BT; andalucian
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
 	nation_designer_trigger = {
 		religion_group = muslim
-		primary_culture = andalusi_culture
+		primary_culture = andalusi_culture #BT; andalucian
 	}
 	modifiers = {
 		idea_cost = -0.1
@@ -2618,10 +2702,7 @@ feudal_theocracy = {
 	potential = {
 		OR = {
 			AND = {
-				OR = {
-					religion_group = muslim
-					religion_group = zoroastrian_group
-				}
+				religion_group = muslim
 				OR = {
 					has_reform = feudal_theocracy
 					have_had_reform = feudal_theocracy
@@ -2634,10 +2715,7 @@ feudal_theocracy = {
 		}
 	}
 	nation_designer_trigger = {
-		OR = {
-			religion_group = muslim
-			religion_group = zoroastrian_group
-		}
+		religion_group = muslim
 	}
 	legacy_equivalent = feudal_theocracy_legacy
 	valid_for_nation_designer = yes
@@ -2650,6 +2728,7 @@ feudal_theocracy = {
 		brahmins_hindu_loyalty_modifier = 0.05
 		church_loyalty_modifier = 0.05
 	}
+	maintain_dynasty = yes
 
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -2667,7 +2746,10 @@ mughal_government = {
 	icon = "peacock_throne"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		AND = {
 			tag = MUG
 			NOT = { map_setup = map_setup_random }
@@ -2875,6 +2957,7 @@ revolutionary_empire_reform = {
 	valid_for_new_country = no
 	uses_revolutionary_zeal = yes
 	revolutionary = yes
+	is_eligible_for_hre_emperor = no
 	fixed_rank = 3
 	modifiers = {
 		global_manpower_modifier = 0.25
@@ -2883,6 +2966,7 @@ revolutionary_empire_reform = {
 		governing_capacity = 300 # BT; 150
 		max_revolutionary_zeal = 50
 		papal_influence = -100
+		allowed_rev_guard_fraction = 0.2
 	}
 
 	custom_attributes = {
@@ -2930,6 +3014,16 @@ revolutionary_empire_reform = {
 				restore_country_name = yes
 				override_country_name = GURKANI_EMPIRE_STRING
 				set_country_flag = is_gurkani_flag
+			}
+			if = {
+				limit = {
+					has_country_flag = is_revolutionary_iran_flag
+					is_revolutionary = no
+				}
+				clr_country_flag = is_revolutionary_iran_flag
+				restore_country_name = yes
+				override_country_name = IRAN_STRING
+				set_country_flag = is_iran_flag
 			}
 		}
 	}
@@ -3677,6 +3771,7 @@ livonian_naval_monarchy = {
 		heir = no
 		duration = 4
 		has_term_election = yes
+		is_eligible_for_hre_emperor = no
 		states_general_mechanic = {
 			statists = {
 				global_colonial_growth = 10
@@ -4854,6 +4949,45 @@ separation_of_boyars_from_court_reform = {
 	}
 }
 
+reform_the_pronoiars_reform = {
+	icon = "reform_the_pronoiars_reform"
+	allow_normal_conversion = yes
+	potential = {
+		culture_group = byzantine
+	}
+	modifiers = {
+		allow_client_states = yes
+		num_of_pronoiars = 2
+	}
+	ai = {
+		factor = 10
+	}
+}
+
+pronoiar_monarchy_reform = {
+	icon = "pronoiar_monarchy_reform"
+	allow_normal_conversion = yes
+	potential = {
+		is_playing_custom_nation = yes
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	modifiers = {
+		allow_client_states = yes
+		num_of_pronoiars = 3
+
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		custom_attributes = {
+			enables_pronoias = yes 
+		}
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 house_of_lords_reform = {
 	icon = "assembly_hall"
 	allow_normal_conversion = yes
@@ -4912,7 +5046,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 25
+						value = 25 #BT; 15
 					}
 				}
 			}
@@ -4924,7 +5058,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 40
+						value = 40 #BT; 25
 					}
 				}
 			}
@@ -4936,7 +5070,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 55
+						value = 55 #BT; 35
 					}
 				}
 			}
@@ -4948,7 +5082,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 80
+						value = 80 #BT; 50
 					}
 				}
 			}
@@ -4962,7 +5096,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 25
+						value = 25 #BT; 15
 					}
 				}
 			}
@@ -4974,7 +5108,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 40
+						value = 40 #BT; 25
 					}
 				}
 			}
@@ -4986,7 +5120,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 55
+						value = 55 #BT; 35
 					}
 				}
 			}
@@ -4998,7 +5132,7 @@ centralize_reform = {
 				NOT = {
 					num_of_owned_provinces_with = {
 						same_continent = ROOT
-						value = 80
+						value = 80 #BT; 50
 					}
 				}
 			}
@@ -5035,7 +5169,7 @@ centralize_empire_reform = {
 				tooltip = at_least_15_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 25
+					value = 25 #BT; 15
 				}
 			}
 		}
@@ -5045,7 +5179,7 @@ centralize_empire_reform = {
 				tooltip = at_least_25_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 40
+					value = 40 #BT; 25
 				}
 			}
 		}
@@ -5055,7 +5189,7 @@ centralize_empire_reform = {
 				tooltip = at_least_35_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 55
+					value = 55 #BT; 35
 				}
 			}
 		}
@@ -5065,7 +5199,7 @@ centralize_empire_reform = {
 				tooltip = at_least_50_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 80
+					value = 80 #BT; 50
 				}
 			}
 		}
@@ -5077,7 +5211,7 @@ centralize_empire_reform = {
 				tooltip = at_least_15_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 25
+					value = 25 #BT; 15
 				}
 			}
 		}
@@ -5087,7 +5221,7 @@ centralize_empire_reform = {
 				tooltip = at_least_25_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 40
+					value = 40 #BT; 25
 				}
 			}
 		}
@@ -5097,7 +5231,7 @@ centralize_empire_reform = {
 				tooltip = at_least_35_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 55
+					value = 55 #BT; 35
 				}
 			}
 		}
@@ -5107,7 +5241,7 @@ centralize_empire_reform = {
 				tooltip = at_least_50_provinces_on_same_continent
 				num_of_owned_provinces_with = {
 					same_continent = ROOT
-					value = 80
+					value = 80 #BT; 50
 				}
 			}
 		}
@@ -5354,6 +5488,29 @@ ottoman_provincial_government_system_reform = {
 	}
 }
 
+legacy_of_timur_reform = {
+	icon = "legacy_of_timur_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_unlocked_government_reform = {
+			government_reform = legacy_of_timur_reform
+		}
+	}
+	modifiers = {
+		global_autonomy = -0.05
+		years_of_nationalism = -10
+		core_creation = -0.05
+	}
+	custom_attributes = {
+		legacy_of_timur_decision = yes
+	}
+	effect = {
+	}
+	ai = {
+		factor = 10
+	}
+}
+
 #State and Religion
 #in Common
 restoration_of_clergy_reform = {
@@ -5559,7 +5716,10 @@ zabt_reform = {
 	icon = "general_eastern_administrative"
 	allow_normal_conversion = yes
 	potential = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		tag = MUG
 	}
 	modifiers = {
@@ -5684,6 +5844,59 @@ administration_of_the_parliament_reform = {
 	}
 }
 
+legacy_of_eranshahr_reform = {
+	icon = "legacy_of_eranshahr_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_unlocked_government_reform = {
+			government_reform = legacy_of_eranshahr_reform
+		}
+	}
+	modifiers = {
+		same_religion_advisor_cost = -0.2
+		free_policy = 1
+	}
+	custom_attributes = {
+		reform_progress_from_advisors = yes
+	}
+	ai = {
+		factor = 2
+	}
+}
+
+court_of_art_and_culture_reform = {
+	icon = "court_of_art_and_culture_reform"
+	allow_normal_conversion = yes
+	potential = {
+		has_dlc = "King of Kings"
+		has_unlocked_government_reform = {
+			government_reform = court_of_art_and_culture_reform
+		}
+	}
+	modifiers = {
+		advisor_pool = 1
+		culture_conversion_cost = -0.1
+		prestige_decay = -0.005
+	}
+	conditional = {
+		allow = { has_dlc = "King of Kings" }
+		government_abilities = {
+			persian_influence_mechanic
+		}
+	}
+	custom_attributes = {
+		can_enforce_primary_culture = yes
+	}
+	removed_effect = {
+		country_event = {
+			id = persian_influence_events.3000
+		}
+	}
+	ai = {
+		factor = 5
+	}
+}
+
 #deliberative_assembly
 
 # parliamentary_reform defined in common file
@@ -5746,6 +5959,7 @@ states_general_reform = {
 		heir = no
 		duration = 4
 		has_term_election = yes
+		is_eligible_for_hre_emperor = no
 		states_general_mechanic = {
 			statists = {
 				diplomatic_reputation = 1
@@ -6199,7 +6413,7 @@ political_absolutism_reform = {
 	}
 	modifiers = {
 		administrative_efficiency = 0.025
-		max_absolutism_effect = 0.15
+		max_absolutism = 10
 	}
 	ai = {
 		factor = 1.5
@@ -6567,8 +6781,8 @@ land_christian_sun_reform = {
 	nation_designer_trigger = {
 		capital_scope = { region = japan_region } 
 	}
+	heir = no
 	fixed_rank = 3
-	maintain_dynasty = yes
 	modifiers = {
 		manpower_recovery_speed = 0.15
 		cb_on_religious_enemies = yes 
