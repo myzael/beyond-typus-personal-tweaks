@@ -1,7 +1,7 @@
 BT16
 
 #New Additions
- - (All) Updated BT from 1.33.3 to 1.35.6
+ - (All) Updated BT from 1.33.3 to 1.36.0
  - (JP) Overhauled the South Caucases
  - (JP) Overhauled the Horn of Africa
  - (JP) New tags in Kakheti and Talysh, along with numerous releasables
