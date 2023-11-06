@@ -3549,8 +3549,8 @@ guiTypes = {
 			windowType = {
 				name = "natives_buildings_window_large"
 				backGround=""
-				position = {  x=1 y=-105 }
-				size = { x=475 y=480 }
+				position = {  x=1 y=150 }
+				size = { x=475 y=270 }
 				dontRender = ""
 				horizontalBorder= ""
 				verticalBorder= ""
@@ -3561,7 +3561,7 @@ guiTypes = {
 				iconType =
 				{
 					name ="provinceview_native_building_bg_large"
-					spriteType = "GFX_select_building_large_bg"
+					spriteType = "GFX_select_building_small_bg2"
 					position = { x= 6 y = 0 }
 				}
 
@@ -3605,7 +3605,7 @@ guiTypes = {
 					name = "buildings"
 					position = { x = 12 y = 67 }
 					backGround=""
-					size = { x=365 y = 525}
+					size = { x=365 y = 210}
 					Orientation = "UPPER_LEFT"
 					horizontal = 0
 					spacing = 0
@@ -3618,7 +3618,7 @@ guiTypes = {
 				windowType = {
 					name = "province_values_window"
 					backGround=""
-					position = { x=0 y=0 }
+					position = { x=0 y=-310 }
 					size = { x=475 y=586 }
 					dontRender = ""
 					horizontalBorder= ""
@@ -3767,7 +3767,7 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "building_close_button"
-				position = { x = 304 y = 130 }
+				position = { x = 304 y = 120 }
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
 			}
@@ -4614,7 +4614,7 @@ guiTypes = {
 
 	positionType = {
 		name = "building_close_button_natives_large"
-		position = { x = 382 y = -110 }
+		position = { x = 382 y = 140 }
 	}
 
 	positionType = {
@@ -6720,6 +6720,11 @@ guiTypes = {
 			maxWidth = 114
 			maxHeight = 20
 			format = left
+		}
+		guiButtonType = {
+			name = "name_overlay"
+			position = { x = 31 y = 6 }
+			quadTextureSprite = "GFX_state_view_invisible_button_114x20"
 		}
 
 		guiButtonType =
