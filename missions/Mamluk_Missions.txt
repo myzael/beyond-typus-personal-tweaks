@@ -2,8 +2,13 @@ mam_south_missions = {
 	slot = 1
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "King of Kings" }
+	}
 	potential = {
 		tag = MAM
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "King of Kings" }
 	}
 	has_country_shield = yes
 	
@@ -32,35 +37,35 @@ mam_south_missions = {
 			country_event = { id = flavor_mam.23 }
 			tihama_al_yemen_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			upper_yemen_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			yemen_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			asir_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			hadramut_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -120,19 +125,24 @@ mam_north_missions = {
 	slot = 5
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = { has_dlc = "King of Kings" }
+	}
 	potential = {
 		tag = MAM
+		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "King of Kings" }
 	}
 	has_country_shield = yes
 	
 	mam_alexandria_trade = {
-		icon = mission_arabian_fort
+		icon = mission_egyptian_mamluk_soldier
 		required_missions = {  }
 		trigger = {
 			OR = {
 				trade_embargoing = VEN
 				358 = {
-					has_building = marketplace
+					has_trade_building_trigger = yes
 				}
 			}
 		}
@@ -160,7 +170,7 @@ mam_north_missions = {
 		}
 	}
 	mam_pacify_bedouins = {
-		icon = mission_non-western_cavalry_raid
+		icon = mission_bedouins
 		required_missions = { mam_alexandria_trade }
 		provinces_to_highlight = {
 			OR = {
@@ -199,7 +209,7 @@ mam_north_missions = {
 			}
 			aleppo_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -208,7 +218,7 @@ mam_north_missions = {
 				if = {
 					limit = {
 						NOT = {
-							owned_by = ROOT
+							is_permanent_claim = ROOT
 							is_core = ROOT
 						}
 					}
@@ -219,7 +229,7 @@ mam_north_missions = {
 				if = {
 					limit = {
 						NOT = {
-							owned_by = ROOT
+							is_permanent_claim = ROOT
 							is_core = ROOT
 						}
 					}
@@ -228,14 +238,14 @@ mam_north_missions = {
 			}
 			karaman_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			dulkadir_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -284,21 +294,21 @@ mam_north_missions = {
 			}
 			erzurum_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 			armenia_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 			north_kurdistan_area = {
 				limit = {
-					NOT = { owned_by = ROOT	}
+					NOT = { is_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT

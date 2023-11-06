@@ -4,11 +4,17 @@ mug_timurid_resurgence = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -180,11 +186,17 @@ mug_towards_china = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -273,11 +285,17 @@ mug_land_assesement = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -309,11 +327,17 @@ mug_indus_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -323,7 +347,10 @@ mug_indus_branch = {
 		position = 2
 		required_missions = { mug_pacify_punjab }
 		provinces_to_highlight = {
-			province_group = mug_sind_campaign_provinces
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = {
@@ -356,11 +383,17 @@ mug_ganges_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -534,11 +567,17 @@ mug_hindustan_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -788,11 +827,17 @@ mug_desh = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -829,11 +874,17 @@ mug_sufis = { #Unchanged
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -923,11 +974,17 @@ mug_rajput_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1150,11 +1207,17 @@ mug_hyderabad_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1245,11 +1308,17 @@ mug_deccan_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 	}
 	potential = {
 		tag = MUG
-		has_dlc = "Dharma"
+		OR = {
+			has_dlc = "Dharma"
+			has_dlc = "King of Kings"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

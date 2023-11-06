@@ -262,7 +262,7 @@ nor_colonialism_mission_slot = {
 		}
 	}
 	
-	nor_discover_new_world = { #TODO: Needs fixing
+	nor_discover_new_world = {
 		icon = mission_invade_island
 		position = 5
 		required_missions = { nor_the_great_disovery_fleet }
@@ -415,7 +415,7 @@ nor_colonialism_mission_slot = {
 	}
 }
 
-nor_colonize_north_america_slot = { #TODO: Needs fixing
+nor_colonize_north_america_slot = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -2337,7 +2337,7 @@ nor_religion_mission_slot = {
 			}
 			custom_tooltip = swe_humanist_effects_tt
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 3
 			}
 		}
@@ -2683,7 +2683,7 @@ nor_humanist_mission_slot = {
 		}
 		effect = {
 			change_ruler_stat = {
-				stat = dip
+				type = dip
 				amount = 3
 			}
 		}

@@ -212,6 +212,7 @@ mnd_mlc_1 = {
 					exists = SAK
 					SAK = {
 						is_free_or_tributary_trigger = yes
+						ai = yes
 					}
 				}
 				add_casus_belli = {
@@ -303,7 +304,6 @@ mnd_mlc_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
-			
 		}
 	}
 	mnd_mlc_jambi = {
@@ -366,16 +366,14 @@ mnd_mlc_1 = {
 				}
 			}
 			else = {
-				central_sumatra_area =
-				{
+				central_sumatra_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
 					}
 					add_permanent_claim = ROOT
 				}
-				jambi_area =
-				{
+				jambi_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -405,13 +403,13 @@ mnd_mlc_1 = {
 				#	add_permanent_claim = ROOT
 				#}
 			}
-			south_sumatra_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			south_sumatra_area = { #BT Dev note: It begs the question if this is intentionally put outside the if-statement.
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	mnd_mlc_defeat_ayutthaya = {
@@ -518,9 +516,12 @@ mnd_mlc_2 = {
 								who = ROOT
 								value = 100
 							}
-							trust = { 
-								who = ROOT 
-								value = 65 
+							if = {
+								limit = { has_dlc = "Leviathan" }
+								trust = { 
+									who = ROOT 
+									value = 65 
+								}
 							}
 						}
 					}

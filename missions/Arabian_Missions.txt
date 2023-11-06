@@ -9,6 +9,7 @@ ara_conquest = {
 	ai = yes
 	
 	potential = {
+		NOT = { map_setup = map_setup_random }
 		culture_group = turko_semitic #Arabic
 		religion_group = muslim
 		NOT = { 
@@ -21,6 +22,12 @@ ara_conquest = {
 				tag = FDI
 				tag = HDR
 			}
+		}
+		if = {
+			limit = {
+				has_dlc = "King of Kings"
+			}
+			NOT = { tag = EGY }
 		}
 	}
 	
@@ -46,8 +53,9 @@ ara_conquest = {
 			mecca_area = {
 				limit = {
 					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
+				add_permanent_claim = ROOT #BT Added: Vanilla for some reason declares Mecca and nothing else. Not sure why. //Dub
 			}
 			add_country_modifier = {
 				name = "gen_eur_defender"
@@ -63,7 +71,7 @@ ara_conquest = {
 		
 		provinces_to_highlight = {
 			area = mecca_area
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
@@ -84,7 +92,7 @@ ara_conquest = {
 	}
 	
 	ara_gen_trade_leader = {
-		icon = mission_high_income
+		icon = mission_bedouins
 		required_missions = { }
 		position = 3
 		

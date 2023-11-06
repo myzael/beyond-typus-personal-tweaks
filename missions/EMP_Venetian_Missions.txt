@@ -40,8 +40,7 @@ emp_ven_slot_1 = {
 			}
 		}
 		effect = {
-			custom_tooltip = emp_ven_plague_doctor_training_tt
-			set_country_flag = has_competent_doctors
+			remove_plague_events = yes
 		}
 	}
 	
@@ -138,7 +137,6 @@ emp_ven_slot_2 = {
 		icon = expand_the_doges_palace
 		position = 3
 		required_missions = { emp_ven_patronize_the_scuole_grandi }
-		
 		provinces_to_highlight = {
 			province_id = 112
 			OR = {
@@ -146,7 +144,6 @@ emp_ven_slot_2 = {
 				NOT = { owned_by = ROOT }
 			}
 		}
-		
 		trigger = {
 			treasury = 3000
 			legitimacy_equivalent = 90
@@ -297,7 +294,7 @@ emp_ven_slot_3 = {
 		required_missions = { emp_ven_hire_more_venture_captains }
 		
 		trigger = {
-			total_development = 500k
+			total_development = 500
 		}
 		effect = {
 			add_country_modifier = {
@@ -437,7 +434,7 @@ emp_ven_slot_3 = {
 		position = 5
 		required_missions = { emp_ven_north_italian_rivals }
 		
-		provinces_to_highlight = {	
+		provinces_to_highlight = {
 			area = tirol_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -732,7 +729,7 @@ emp_ven_slot_5 = {
 		required_missions = { emp_ven_monopolize_adriatic_trade emp_ven_expand_the_arsenal }
 		
 		provinces_to_highlight = {
-				province_id = 5493
+			province_id = 5493
 			NOT = {
 				trade_share = {
 					country = ROOT
@@ -747,7 +744,6 @@ emp_ven_slot_5 = {
 					share = 25
 				}
 			}
-
 		}
 		effect = {
 			151 = {
