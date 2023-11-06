@@ -26,6 +26,8 @@
  estate_peasants_ownership:0 "[Country.GetPeasantsName] Land Ownership"
  peasants_loyalty_modifier:0 "[Country.GetPeasantsName] Loyalty Equilibrium"
  peasants_influence_modifier:0 "[Country.GetPeasantsName] Influence"
+ estate_privileges_and_agendas_events.3.q:0 "The Proposal of the [Root.GetPeasantsName]"
+ estate_privileges_and_agendas_events.6.q:0 "Sell it to the [Root.GetPeasantsName]"
  estate_privileges_and_agendas_events.7.o:0 "Seize it from the [Root.GetPeasantsName]"
  
  #Influence modifiers
@@ -59,7 +61,6 @@
  btip_monopoly_privileges.1.b.tooltip:0 "We will be able to revoke the §YMonopoly on Agriculture§! estate privilege."
  
  #Agendas
- estate_privileges_and_agendas_events.3.q:0 "The Proposal of the [Root.GetPeasantsName]"
  local_peasants_displeased:0 "Local Peasants Displeased"
  local_peasants_pleased:0 "Local Peasants Pleased"
  

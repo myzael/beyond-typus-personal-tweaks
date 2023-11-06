@@ -407,6 +407,7 @@ country_event = {
 					war_exhaustion = 10
 				}
 			}
+			 
 		}
 		declare_war_with_cb = {
 			who = DNZ
@@ -424,7 +425,7 @@ country_event = {
 		}
 	}
 	option = { # Let them go
-		name = flavor_teu.1.b
+		name = "flavor_teu.1.b"
 		ai_chance = { 
 			factor = 100 
 			modifier = {
@@ -548,6 +549,7 @@ country_event = {
 	
 	option = {									#Invite the leadership of the teutonic order to become our vassal and rule over ducal prussia
 		name = "flavor_teu.3.b"
+		
 		trigger = {
 			PRU = { exists = no } 
 			TEU = { exists = no } 
@@ -764,7 +766,6 @@ country_event = {
 	option = {
 		name = "flavor_teu.4.a"
 		custom_tooltip = dnz_decision_available_tooltip
-		add_stability = -1
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -20
@@ -802,6 +803,7 @@ country_event = {
 	}
 
 	immediate = {
+		on_non_estate_disaster_end = yes
 		hidden_effect = {
 			set_country_flag = pru_danzig_victory_happend
 		}
@@ -2471,11 +2473,13 @@ country_event = {
 			}
 			add_accepted_culture_or_dip_power = {
 				culture = russian_new
+				dip_reward = yes
 			}
 		}
 		else = {
 			add_accepted_culture_or_dip_power = {
 				culture = russian
+				dip_reward = yes
 			}
 		}
 		add_dip_power = 100

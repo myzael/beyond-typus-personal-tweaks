@@ -40,6 +40,11 @@ country_event = {
 		months = 30
 	}
 	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = eth_contact_with_portugal
+		}
+	}
 	
 	option = { 
 		name = flavor_eth.1.a
@@ -278,6 +283,12 @@ country_event = {
 	mean_time_to_happen = {
 		months = 48
 	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = eth_had_centralization_event
+		}
+	}
 	
 	
 	option = { 
@@ -296,7 +307,6 @@ country_event = {
 		ai_chance = { factor = 10 }
 		add_stability_or_adm_power = yes
 	}
-	
 }
 
 # The itinerant capital
@@ -311,6 +321,7 @@ country_event = {
 	trigger = {
 		tag = ETH
 		NOT = { is_year = 1460 }
+		NOT = { has_dlc = "Origins" } 
 	}
 
 	mean_time_to_happen = {
@@ -351,6 +362,8 @@ country_event = {
 		NOT = { is_year = 1520 }
 		owns_core_province = 1213 #Shewa
 		has_country_flag = eth_itinerant_capital_flag
+		NOT = { has_dlc = "Origins" }
+		religion_group = christian
 	}
 
 	mean_time_to_happen = {
@@ -367,6 +380,7 @@ country_event = {
 		set_capital = 1213
 		1213 = {
 			rename_capital = "Debre Berhan"
+			add_building = temple
 		}
 		every_owned_province = {
 			limit = {
@@ -433,6 +447,7 @@ country_event = {
 		tag = ETH
 		is_year = 1630
 		owns_core_province = 1224 #Begmeder
+		NOT = { has_dlc = "Origins" }
 	}
 
 	mean_time_to_happen = {
@@ -486,16 +501,15 @@ country_event = {
 		is_year = 1450
 		NOT = { is_year = 1480 }
 		exists = MAM
-		NOT = {
-			vassal_of = MAM
-			overlord_of = MAM
-			alliance_with = MAM
-			war_with = MAM
-		}
+		NOT = { vassal_of = MAM }
+		NOT = { overlord_of = MAM }
+		NOT = { alliance_with = MAM }
+		NOT = { war_with = MAM }
 		MAM = {
 			religion_group = muslim
 			owns = 358
 		}
+		religion = coptic
 	}
 
 	mean_time_to_happen = {
@@ -619,7 +633,7 @@ country_event = {
 		add_casus_belli = {
 			target = MAM
 			type = cb_insult
-			months = 1825
+			months = 120
 		}
 		MAM = {
 			country_event = { id = flavor_eth.13 days = 1 }
@@ -688,12 +702,10 @@ country_event = {
 			NOT = { has_country_flag = eth_autonomous_church }
 			religion = coptic
 		}
-		NOT = {
-			vassal_of = ETH
-			overlord_of = ETH
-			alliance_with = ETH
-			war_with = ETH
-		}
+		NOT = { vassal_of = ETH }
+		NOT = { overlord_of = ETH }
+		NOT = { alliance_with = ETH }
+		NOT = { war_with = ETH }
 	}
 
 	mean_time_to_happen = {
@@ -1168,7 +1180,7 @@ country_event = {
 		is_lesser_in_union = no
 		has_heir = no
 		government = monarchy
-		#has_government_attribute = heir # ??? BT
+		has_government_attribute = heir
 	}
 	
 	mean_time_to_happen = {
@@ -1245,7 +1257,7 @@ country_event = {
 			}
 			define_consort = {
 				name = "Eleni"
-				#country_of_origin = HDY # ??? BT
+				country_of_origin = HDY
 				dynasty = "Hadiya"
 				culture = sidamo
 				religion = coptic #But was muslim

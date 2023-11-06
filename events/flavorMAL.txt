@@ -733,6 +733,7 @@ country_event = {
 	major = yes
 
 	immediate = {
+		on_non_estate_disaster_end = yes
 		hidden_effect = {
 			set_country_flag = had_decline_of_mali
 			clr_country_flag = started_decline_of_mali
@@ -2386,7 +2387,7 @@ country_event = {
 	title = flavor_mal.35.t
 	desc = flavor_mal.35.desc
 	picture = AFRICAN_EUROPEAN_PURCHASE_eventPicture
-		goto = mal_colony_to_buy
+	goto = mal_colony_to_buy
 	is_triggered_only = yes
 	
 	option = {	#Aww... then I must take it by force then

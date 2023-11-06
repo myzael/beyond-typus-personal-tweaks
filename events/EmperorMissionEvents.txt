@@ -229,9 +229,11 @@ country_event = {
 	desc = {
 		trigger = {
 			NOT = {
-				has_adm_advisor = yes
-				has_dip_advisor = yes
-				has_mil_advisor = yes
+				AND = {
+					has_adm_advisor = yes
+					has_dip_advisor = yes
+					has_mil_advisor = yes
+				}
 			}
 		}
 		desc = emp_mission_events.7.d2
@@ -665,9 +667,9 @@ country_event = {
 	title = emp_mission_events.14.name
 	desc = emp_mission_events.14.desc
 	picture = DIPLOMACY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	option = {
 		name = OH_NO
 		tooltip = {
