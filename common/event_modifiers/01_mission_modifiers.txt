@@ -10568,7 +10568,7 @@ turkoman_house_of_wisdom = {
 }
 
 turkmen_turkic_union = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Removed as part of Accepted Culture Slot overhaul
 	years_of_nationalism = -5
 }
 
@@ -10770,7 +10770,7 @@ BYZ_ceasarean_conquests = {	#until age of reformation
 }
 
 BYZ_no_slot_bulgarian = {
-	num_accepted_cultures = 1
+	#num_accepted_cultures = 1 #BT Deprecated as part of Accepted Culture Slot Overhaul
 }
 
 BYZ_grain_shipments = {

@@ -118,6 +118,7 @@ in_capital_state = {
 	local_institution_spread = 0.05
 	local_state_maintenance_modifier = -0.5
 	local_governing_cost = -1.0
+	local_has_qizilbash = yes
 	
 	#BT Centralize State rebalance: Capital states cannot be centralized, so capital states get buffs equal to about 4-5 levels worth of centralize state clicks.
 	local_build_cost = -0.25
@@ -202,6 +203,7 @@ land_province = {
 	local_manpower_modifier = 0.25			#25% of manpower.
 	local_has_musketeers = yes
 	local_has_streltsy = yes
+	local_has_mamluks = yes
 }
 
 mild_winter = {
@@ -218,6 +220,7 @@ normal_winter = {
 	local_friendly_movement_speed = -0.30
 	supply_limit_modifier = -0.5
 	migration_cost = 0.1
+
 	picture = "winter_normal"
 }
 
@@ -227,6 +230,7 @@ severe_winter = {
 	local_friendly_movement_speed = -0.50
 	supply_limit_modifier = -0.8
 	migration_cost = 0.2
+
 	picture = "winter_severe"
 }
 
@@ -440,6 +444,7 @@ same_culture_group = {
 }
 
 non_accepted_culture = {
+	monthly_persian_influence = -0.01
 	local_tax_modifier = -0.25			#BTAddOn changed from 0.33, comprehensively reducing culture penalties and increasing religious ones
 	local_missionary_strength = -0.02
 	local_manpower_modifier = -0.25			#BTAddOn changed from 0.33, comprehensively reducing culture penalties and increasing religious ones
@@ -586,10 +591,9 @@ resource_depleted = {
 }
 
 in_trade_company = {
-	#local_unrest = -5 #Implementing to revert absolutism issues in TCs. BTIP Cut because cut unrest in absolutism
 	province_trade_power_modifier = 1
 	naval_forcelimit = 0.5
-	local_missionary_strength = -2
+	local_missionary_strength = -0.2
 	#local_institution_spread = 0.10			#BTAddOn removed - why exactly does an institution spread faster in the assend of the empire weeks away from the capital.... This also makes institutions spread faster to 3rd world neighbours than to European neighbours, which is silly.
 	local_governing_cost = 0.25
 }
@@ -642,6 +646,7 @@ base_values = {
 	tolerance_of_heathens_capacity = 3
 	max_flagships = 1
 	num_of_parliament_issues = 10
+	has_marines = yes
 	promote_culture_cost = 0.5 #BT Accepted Culture Slots overhaul: Tech reduces promote culture cost by up to -50% by the end of the game. This is here partly to prevent modifier stacking until the absolute last part of the game, but also just makes sense to me. //Dub
 }
 
@@ -809,7 +814,6 @@ bankruptcy = {
 	sailors_recovery_speed = -1.0
 	advisor_cost = 0.5
 	monthly_fervor_increase = -1
-	global_colonial_growth = -200
 	global_autonomy = 0.05
 	global_institution_spread = -0.50
 	monthly_militarized_society = -0.5
@@ -839,6 +843,7 @@ peace = {
 	pr_smugglers_influence = 0.1
 	monthly_militarized_society = -0.1
 	monthly_ottoman_decadence = 0.1
+	monthly_asha_vahishta = 0.25
 }
 
 unconditional_surrender = {
@@ -918,6 +923,8 @@ army_tradition = {
 	maratha_loyalty_modifier = 0.05
 	rajput_loyalty_modifier = 0.05
 	janissaries_loyalty_modifier = 0.05
+	qizilbash_loyalty_modifier = 0.05
+	ghulams_loyalty_modifier = 0.05
 	allowed_tercio_fraction = 0.1
 	allowed_samurai_fraction = 0.1
 }
@@ -967,12 +974,12 @@ defender_of_faith = {
 	prestige = 1							#1% extra prestige yearly
 	missionaries = 1
 	devotion = 0.5
-	
-	
+	monthly_asha_vahishta = 0.25
 }
 
 defender_of_faith_refused_cta = {
 	diplomatic_reputation = -1
+	monthly_asha_vahishta = -2
 }
 
 emperor = {
@@ -1077,7 +1084,6 @@ horde_unity = {
 	#nomadic_tribes_loyalty_modifier = 0.05 #BT Vanilla cut
 }
 
-
 # Multiplied by current Devotion - 50
 devotion = {
 	papal_influence = 2
@@ -1116,7 +1122,6 @@ corruption = {
 	#min_autonomy = 50 #BTIP Cut and moved to over_governing_capacity_modifier
 	global_unrest = -20
 	imperial_mandate = -1
-	all_estate_loyalty_equilibrium = 0.20 #BTIP Added to replace the below code mess. Increased to +20% at 100 corruption
 	# brahmins_hindu_loyalty_modifier = 0.1
 	# brahmins_muslim_loyalty_modifier = 0.1
 	# brahmins_other_loyalty_modifier = 0.1
@@ -1132,6 +1137,9 @@ corruption = {
 	# rajput_loyalty_modifier = 0.1
 	# janissaries_loyalty_modifier = 0.1
 	# eunuchs_loyalty_modifier = 0.1
+	# qizilbash_loyalty_modifier = 0.1
+	# ghulams_loyalty_modifier = 0.1
+	all_estate_loyalty_equilibrium = 0.20 #BTIP Added to replace the above code mess. Increased to +20% at 100 corruption
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
@@ -1207,8 +1215,9 @@ prestige = {
 	ae_impact = -0.10
 	#embracement_cost = -0.1			#BTAddOn removed - no real reason other than I don't like it. It does make balance easier to plan too, though, when not having to factor this into AI chance to embrace.
 	monthly_heir_claim_increase = 0.05
+	
+	monthly_persian_influence = 0.25
 	all_estate_loyalty_equilibrium = 0.05 #BR Tweaked for better interface.
-
 	# brahmins_hindu_loyalty_modifier = 0.05
 	# brahmins_muslim_loyalty_modifier = 0.05
 	# brahmins_other_loyalty_modifier = 0.05
@@ -1224,6 +1233,8 @@ prestige = {
 	# rajput_loyalty_modifier = 0.05
 	# janissaries_loyalty_modifier = 0.05
 	# eunuchs_loyalty_modifier = 0.05
+	# qizilbash_loyalty_modifier = 0.05
+	# ghulams_loyalty_modifier = 0.05
 }
 
 no_debate_in_parliament = {
@@ -1258,8 +1269,8 @@ curia_controller = {
 	ae_impact = -0.2
 	#technology_cost = -0.05			#BTAddOn removed - So being the defender of the faith means you automatically become a philistine, yet being the curia controller means you have new insight into technological development..... Removing penalty and bonus
 	church_loyalty_modifier = 0.1
-	diplomatic_reputation = 1 #BT Vanilla new
-	diplomatic_annexation_cost = -0.1 #BT Vanilla new
+	diplomatic_reputation = 1
+	diplomatic_annexation_cost = -0.1
 }
 
 bought_indulgence = {
@@ -1288,8 +1299,8 @@ total_occupation = {
 
 total_blockaded = {
 	war_exhaustion = 0.10					#increases exhaustion.
-	global_trade_power = -0.75 #BT Vanilla new
-	trade_steering = -0.75 #BT Vanilla new
+	global_trade_power = -0.75
+	trade_steering = -0.75
 }
 
 uncontested_cores = {
@@ -1328,6 +1339,39 @@ federation_leader = {
 	land_morale = 0.1
 }
 
+pronoia_base_overlord_modifiers = {
+	# land_forcelimit = -5
+	pronoia_amount_check_influence = 1 #used for exporting, invisible by default
+}
+
+pronoia_base_modifiers = {
+	core_creation = 1
+	overextension_impact_modifier = 1
+	administrative_efficiency = -0.2
+	global_manpower = 5
+	global_manpower_modifier = 0.5 
+	global_regiment_cost = -0.5
+}
+
+BYZ_pronoia_buff_army_tradition_modifier = {
+	army_tradition = 0.2
+}
+
+BYZ_pronoia_land_forcelimit_penalty = {
+	land_forcelimit = -5
+}
+
+BYZ_extra_forcelimit_for_pronoiars = {
+	land_forcelimit = 5
+}
+
+BYZ_army_trad = {
+	army_tradition = 3
+}
+
+BYZ_discipline = {
+	discipline = 0.05
+}
 
 tributary_state_behind_overlord_tech_adm = {
 	adm_tech_cost_modifier = -0.05
@@ -1402,6 +1446,11 @@ absolutism = {
 	jains_loyalty_modifier = -0.20 #BTIP Added. I have pondered to split between -10% for Hindu indians and -20% for Muslim indians. However, there's no loyalty modifier to do this in vanilla, and I like the symmetry of all Indian nations having -20% loyalty.
 	rajput_exclusive_loyalty_modifier = -0.2 #BTIP Added. For nations whose nobles are Rajputs, reduce by -20%
 	rajput_muslim_loyalty_modifier = -0.10 #BTIP Added. Halved because unique estate
+	janissaries_loyalty_modifier = -0.10 #BTIP Added. Halved because unique estate
+	eunuchs_loyalty_modifier = -0.10 #BTIP Added. Halved because unique estate
+	qizilbash_loyalty_modifier = -0.10 #BTIP Added. Halved because unique estate
+	ghulams_loyalty_modifier = -0.10 #BTIP Added. Halved because unique estate
+
 	peasants_loyalty_modifier = -0.10 #BTIP Added: Peasants estate. There is an argument that this shouldn't be here given that historically Absolutism granted the peasants more power relatively, but I think halving it works nicely.
 
 }
@@ -1435,6 +1484,12 @@ musketeers_modifier = {
 }
 
 samurai_modifier = {
+}
+
+qizilbash_modifier = {
+}
+
+mamluks_modifier = {
 }
 
 geobukseon_modifier = {
@@ -1474,6 +1529,7 @@ power_projection_25 = {
 #100 Land Forcelimit = 1
 land_forcelimit = {
     free_land_leader_pool = 1.25 #80 Army forcelimit -> +1 free leader
+	num_of_pronoiars = 1
 }
 
 #100 Naval Forcelimit = 1
@@ -2117,6 +2173,17 @@ samurai_regiment = {
 	reinforce_cost_modifier = 0.5
 }
 
+qizilbash_regiment = {
+	fire_damage_received = -0.05
+	land_maintenance_modifier = -0.25
+}
+
+mamluks_regiment = {
+	drill_gain_modifier = 1
+	morale_damage = 0.1
+	reinforce_speed = 0.33 
+}
+
 geobukseon_ship = {
 	ship_durability = 0.1
 	galley_power = 0.1
@@ -2226,6 +2293,9 @@ over_governing_capacity_modifier = {
 # At 1000% below capacity, this modifier will be fully used
 under_governing_capacity_modifier = {
 }
+#Scales with unused capacity, eing at full capacity means 0% of the modifier
+reverse_under_governing_capacity_modifier = {
+}
 
 lost_hegemony = {
 	all_power_cost	= 0.10
@@ -2317,14 +2387,17 @@ num_accepted_cultures = {
 
 ruler_adm = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 }
 
 ruler_dip = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 }
 
 ruler_mil = {
 	monthly_council_consensus = 0.1
+	monthly_egyptian_westernization = 0.05
 }
 
 heir_adm = {
@@ -2375,7 +2448,7 @@ negative_imperial_authority_member = {
 
 slackening_modifier = {
     yearly_army_professionalism = -0.05
-    manpower_recovery_speed = 1
+    manpower_recovery_speed = 2
 }
 
 royal_council_meeting_mod = {
@@ -2412,4 +2485,55 @@ average_global_autonomy = { #100% autonomy => 100% modifier
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier
 	monthly_council_consensus = 0.2
+}
+
+adur_burzhen_mihr_mod = {
+	country_diplomatic_power = 1
+	development_cost = -0.1
+	monthly_asha_vahishta = -0.5
+	religion = yes
+}
+
+adur_farnbag_mod = {
+	country_admin_power = 1
+	reform_progress_growth = 0.1
+	monthly_asha_vahishta = -0.5
+	religion = yes
+}
+
+adur_gushnasp_mod = {
+	country_military_power = 1
+	own_territory_dice_roll_bonus = 1
+	monthly_asha_vahishta = -0.5
+	religion = yes
+}
+
+culturally_influencing_countries = {
+	influence_to_vassal_elevation_cost = 20
+	monthly_persian_influence = -0.2
+}
+
+culturally_influencing_countries_same_culture = {
+	influence_to_vassal_elevation_cost = 20
+}
+
+culturally_influenced_country = {
+	relation_with_same_religion = 10
+	reverse_relation_with_same_religion = 10
+}
+
+manpower_percentage = {
+
+}
+
+reverse_manpower_percentage = {
+
+}
+
+sailors_percentage = {
+
+}
+
+reverse_sailors_percentage = {
+
 }
