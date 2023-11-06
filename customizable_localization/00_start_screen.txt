@@ -1287,6 +1287,18 @@ defined_text = {
 			}
         }
 	}
+	text = { #Ajam
+		localisation_key = string_start_ajam
+		trigger = {
+			tag = QOM
+		}
+	}
+	text = { #Ardabil
+		localisation_key = string_start_ardabil
+		trigger = {
+			tag = ARL
+		}
+	}
 	# India
 	text = { # The remnants of Delhi
 		localisation_key = string_start_delhi
@@ -1371,7 +1383,7 @@ defined_text = {
 			}
         }
     }
-	text = { #West Africa
+	text = { # West Africa
         localisation_key = string_start_tag_north_west_africa
         trigger = {
 			capital_scope = {
@@ -1405,6 +1417,14 @@ defined_text = {
 			}
         }
     }
+	text = { #Arabia
+		localisation_key = string_start_tag_arabia
+		trigger	= {
+			capital_scope = {
+				region = arabia_region
+			}
+		}
+	}
 	text = { # Central Asia
         localisation_key = string_start_tag_central_asia
         trigger = {
@@ -1559,7 +1579,7 @@ defined_text = {
 			religion = hussite
         }
     }
-   	#Protestant (The Reformation)
+	#Protestant (The Reformation)
 	text = {
         localisation_key = string_start_religion_protestant
         trigger = {
