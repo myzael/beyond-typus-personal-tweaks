@@ -39,7 +39,7 @@ country_decisions = {
 			#Country formation effects
 			change_tag = ARB
 			on_change_tag_effect = yes
-			#swap_non_generic_missions = yes #Arabia no missions yet has
+			swap_non_generic_missions = yes #Arabia no missions yet has
 			remove_non_electors_emperors_from_empire_effect = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -62,17 +62,24 @@ country_decisions = {
 			#Swap culture, government, government reform & ideas, plus set flag
 			if = { #Technically Arabia doesn't have unique ideas yet.
 				limit = {
-					NOT = { has_idea_group = arabian_ideas }
+					NOT = { has_idea_group = ARB_ideas }
 				}
 				swap_ideas = yes
 			}
 			set_country_flag = formed_arabia_flag
+			country_event = {
+				id = flavor_ARB.10
+			}
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
 				NOT = { capital_scope = { region = arabia_region } }			#Capital not in Arabia
+			}
+			modifier = {
+				factor = 0
+				not = { adm_tech = 19 }
 			}
 		}
 		ai_importance = 400 #

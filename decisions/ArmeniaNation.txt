@@ -52,7 +52,10 @@ country_decisions = {
 			change_tag = ARM
 			on_change_tag_effect = yes
 			restore_country_name_effect = yes
-			#swap_non_generic_missions = yes #Armenia no missions yet has
+			if = {
+				limit = { has_dlc = "King of Kings" }
+				swap_non_generic_missions = yes
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -113,6 +116,50 @@ country_decisions = {
 			factor = 1
 		}
 		ai_importance = 400 #
+	}
+	
+	armenia_tigranakert = {
+		major = yes
+		potential = {
+			OR = {
+				tag = MLK
+				was_tag = MLK
+				tag = ARM
+				was_tag = ARM
+			}
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = arm_moved_capital }
+			has_country_flag = arm_capital_tigranakert
+		}
+		allow = {
+			is_core = 418
+			owns = 418
+			NOT = { capital = 418 }
+			is_at_war = no
+		}
+		provinces_to_highlight = {
+			province_id = 418
+		}
+		effect = {
+			set_country_flag = arm_moved_capital
+			418 = {
+				move_capital_effect = yes
+			}
+			418 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			418 = {
+				add_province_modifier = {
+					name = "arm_new_capital"
+					duration = 7300
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 
 }
