@@ -6877,6 +6877,57 @@ courts_of_navarra = {
 	}
 }
 
+cawa_auxiliary_forces = {
+	icon = "cawa_auxiliary_forces"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = cawa_auxiliary_forces
+			has_country_flag = allow_cawa_auxiliary_forces_flag
+		}
+	}
+
+	modifiers = {
+		manpower_in_accepted_culture_provinces = 0.10
+		may_return_manpower_on_disband = yes
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		allow_cawa = yes
+	}
+}
+
+egyptian_government_reform = {
+	icon = "egyptian_government_reform"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			have_had_reform = egyptian_government_reform
+			has_country_flag = egyptian_government_reform_flag
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 80
+
+	nation_designer_trigger = {
+		religion_group = muslim
+	}
+
+	modifiers = {
+		yearly_innovativeness = 0.1
+		yearly_government_power = 0.5
+		
+	}
+
+	government_abilities = {
+		egyptian_westernization
+	}
+}
+
 # New Beyond Typus Reforms
 
 #Irish-cultured minors government reform tree.
