@@ -3,9 +3,10 @@
 #Region - Russia
 #Area - Tambov
 
-latent_trade_goods = {
-	coal
-}
+#BT16 Cut because not in Donets coal fields
+# latent_trade_goods = {
+	# coal
+# }
 
 owner = GOL
 controller = GOL

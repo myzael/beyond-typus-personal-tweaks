@@ -15,7 +15,7 @@ religion = coptic #(JP) seems to be first area christianised in Damot
 #Development and Trade
 base_tax = 1
 base_production = 1
-base_manpower = 1
+base_manpower = 2
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)

@@ -11986,7 +11986,7 @@ ellora_caves = {
 }
 
 erdene_zuu = {
-	start = 2190 #Qaraqorum #(JP) Province changed in BT map for some reason
+	start = 4678 #Qaraqorum #(JP) Province changed in BT map for some reason #(Chrys) JP got this wrong somehow? Switching back
 	date = 1444.01.01	#1585.01.01
 	time = { months = 0	}
 	build_cost = 0
@@ -12236,7 +12236,7 @@ etchimiadzin_cathedral = {
 }
 
 fuerte_del_morro = {
-	start = 484 #Havana #(JP) So... vanilla changed this from Havana in 1.32 to Puerto Rico in 1.33. There seems to be a fort of this name in both historically. Unsure what to do, though feels like Cuba deserves it more
+	start = 492 #Havana #(JP) So... vanilla changed this from Havana in 1.32 to Puerto Rico in 1.33. There seems to be a fort of this name in both historically. Unsure what to do, though feels like Cuba deserves it more #(Chrys) PDX moved the monument to Puerto Rico as that's the one depicted in the monument artwork
 	date = 1444.01.01	#1589.01.01
 	time = { months = 0	}
 	build_cost = 0

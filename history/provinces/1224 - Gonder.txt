@@ -9,11 +9,11 @@ culture = kayla
 religion = jewish
 capital = "Gondar"
 is_city = yes
-base_manpower = 4
+base_manpower = 3
 trade_goods = grain
 hre = no
-base_tax = 8
-base_production = 8
+base_tax = 3
+base_production = 3
 
 discovered_by = east_african
 discovered_by = muslim

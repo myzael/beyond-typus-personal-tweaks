@@ -76,7 +76,7 @@ BT16
  - (Hadiros) Added Nestorian and Apostolic to Burghers Orthodox Tolerance Privilege.
  - (Dub) Tweaked Corruption & Over Governing Capacity such that the minimum province autonomy was shuffled over to being over govcap.
  - (Dub) Shifted Wolgast CoT to Stettin - it deserved it, being a major hanseatic city and the capital of Pomerania, whereas Wolgast simply was not a trade city.
-  
+ - (Dub) Shuffled Wild Fields coal provinces into the Donets basin 
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
  

@@ -13,7 +13,7 @@ religion = waaq
 #Development and Trade
 base_tax = 1
 base_production = 1
-base_manpower = 1
+base_manpower = 2
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
