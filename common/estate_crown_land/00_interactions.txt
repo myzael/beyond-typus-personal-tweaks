@@ -389,6 +389,8 @@ interaction = {
 					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas } }		add_estate_loyalty_modifier = { estate = estate_vaisyas 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 15 duration = 1875 } }
 					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries } }	add_estate_loyalty_modifier = { estate = estate_janissaries 	desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 15 duration = 1875 } }
 					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs } }		add_estate_loyalty_modifier = { estate = estate_eunuchs 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 15 duration = 1875 } }
+					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash } }		add_estate_loyalty_modifier = { estate = estate_qizilbash 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 15 duration = 1875 } }
+					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ghulams } }		add_estate_loyalty_modifier = { estate = estate_ghulams 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 15 duration = 1875 } }
 					#BTIP Estates
 					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_peasants } }		add_estate_loyalty_modifier = { estate = estate_peasants 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 15 duration = 1875 } }
 				}
@@ -406,6 +408,8 @@ interaction = {
 					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_vaisyas } }		add_estate_loyalty_modifier = { estate = estate_vaisyas 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 20 duration = 1875 } }
 					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_janissaries } }	add_estate_loyalty_modifier = { estate = estate_janissaries 	desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 20 duration = 1875 } }
 					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_eunuchs } }		add_estate_loyalty_modifier = { estate = estate_eunuchs 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 20 duration = 1875 } }
+					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_qizilbash } }		add_estate_loyalty_modifier = { estate = estate_qizilbash 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 20 duration = 1875 } }
+					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_ghulams } }		add_estate_loyalty_modifier = { estate = estate_ghulams 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 20 duration = 1875 } }
 					#BTIP Estates
 					if = { limit = { estate_has_exempt_from_seize_land_privilege = { estate = estate_peasants } }		add_estate_loyalty_modifier = { estate = estate_peasants 		desc = EST_EXEMPT_FROM_SEIZE_LAND loyalty = 20 duration = 1875 } }
 				}
