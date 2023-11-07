@@ -104,6 +104,10 @@ technology_group = eastern
 		dip = 2
 		mil = 1
 	}
+	add_ruler_modifier = {
+		name = bt_georgia_triarchy
+		duration = -1
+	}
 }
 
 1446.1.1 = {

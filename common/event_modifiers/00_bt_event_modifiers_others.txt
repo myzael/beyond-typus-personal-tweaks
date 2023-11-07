@@ -265,6 +265,10 @@ bt_culture_cost_redux_5 = { #Dip tech 31-32
 	promote_culture_cost = -0.5 #BT Accepted Culture Slots overhaul
 }
 
+bt_georgia_triarchy = {			#BT Added to fix Georgian minors starting LD.
+	reduced_liberty_desire = 20
+}
+
 
 
 ##################################################################################################

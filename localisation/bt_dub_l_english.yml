@@ -179,5 +179,6 @@
  ukr_freedom_of_steppes_title:0 "The Freedom of the Steppes"
  ukr_freedom_of_steppes_desc:0 ""
  
- 
+ bt_georgia_triarchy:0 "Rule of [Root.Monarch.GetName]"
+ bt_georgia_triarchy_desc:0 "[Root.Monarch.GetName] rules from [Root.Capital.GetName] whilst his two younger brothers, [IME.Monarch.GetName] and [KKE.Monarch.GetName] rule the two appanages of [IME.GetName] and [KKE.GetName] under [Root.Monarch.GetHerHim]. Whilst they're currently loyal, should he die, his brothers may be vying for the throne..."
  
