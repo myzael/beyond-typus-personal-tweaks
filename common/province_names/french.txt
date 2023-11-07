@@ -76,17 +76,17 @@
 #Horn of Africa
 1205 = { "Mogadischou" "Mogadischou" }
 2775 = { "Merka" "Merka" }
-2776 = { "Afgoïe" "Afgoïe" } #(JP) Base Names
-2779 = { "Le Kère" "Le Kère" } #(JP) Base Names
-2780 = { "Beledoueïn" "Beledoueïn" } #(JP) Base Names
-2782 = { "Ouarcheikh" "Ouarcheikh" } #(JP) Base Names
+2776 = { "Afgoïe" "Afgoïe" }
+2779 = { "Le Kère" "Le Kère" }
+2780 = { "Beledoueïn" "Beledoueïn" }
+2782 = { "Ouarcheikh" "Ouarcheikh" }
 2794 = { "Brava" "Brava" } #(JP) Italian Names
-8797 = { "Burakaba" "Burakaba" } #(JP) Base Names
-8798 = { "Jouar" "Jouar" } #(JP) Base Names
-8799 = { "Baïdoa" "Baïdoa" } #(JP) Base Names
-8800 = { "Odur" "Odur" } #(JP) Base Names
-8807 = { "Guerlogubi" "Guerlogubi" } #(JP) Base Names
-8808 = { "Quelafo" "Quelafo" } #(JP) Base Names
+8797 = { "Burakaba" "Burakaba" }
+8798 = { "Jouar" "Jouar" }
+8799 = { "Baïdoa" "Baïdoa" }
+8800 = { "Odur" "Odur" }
+8807 = { "Guerlogubi" "Guerlogubi" }
+8808 = { "Quelafo" "Quelafo" }
 8809 = { "Gode" "Gode" } #(JP) Base Names
 
 #East Africa
