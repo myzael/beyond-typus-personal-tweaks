@@ -20,7 +20,7 @@ trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
 add_core = IME
-add_core = GEO
+#add_core = GEO
 add_core = SVA
 
 #Other Political

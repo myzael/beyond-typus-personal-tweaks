@@ -3,7 +3,7 @@
 owner = SME
 controller = SME
 add_core = SME
-add_core = GEO
+#add_core = GEO
 add_core = ARM
 capital = "Alashkert"
 culture = armenian

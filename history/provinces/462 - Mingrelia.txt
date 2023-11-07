@@ -13,7 +13,7 @@ base_production = 3
 base_manpower = 3 
 is_city = yes
 add_core = IME
-add_core = GEO
+#add_core = GEO
 add_core = SGR
 
 discovered_by = muslim

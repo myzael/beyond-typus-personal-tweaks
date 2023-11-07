@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 3
 is_city = yes
 add_core = KRT
-add_core = GEO
+#add_core = GEO
 fort_15th = yes #Gori
 
 discovered_by = muslim
