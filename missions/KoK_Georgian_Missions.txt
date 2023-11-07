@@ -120,7 +120,7 @@ geo_first_branch = {
 			AND = {
 				has_fort_building_trigger = yes
 				NOT = {
-					fort_level = 4
+					fort_level = 2
 				}
 			}
 			NOT = { num_of_times_improved = 3 }
@@ -132,7 +132,7 @@ geo_first_branch = {
 			calc_true_if = {
 				all_owned_province = {
 					num_of_times_improved = 3
-					fort_level = 4
+					fort_level = 2
 					region = caucasia_region
 				}
 				amount = 4
