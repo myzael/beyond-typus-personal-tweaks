@@ -1,7 +1,7 @@
 #2202 - Kachen
 
-owner = KCH
-controller = KCH
+owner = MLK
+controller = MLK
 culture = armenian
 religion = apostolic
 capital = "Vank" #(JP)Shusha is more modern, Vank seems to have been Kachen's capital
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 3 
 is_city = yes
-add_core = KCH
+add_core = MLK
 fort_15th = yes
 
 discovered_by = muslim
