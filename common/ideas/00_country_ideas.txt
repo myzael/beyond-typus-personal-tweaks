@@ -4796,6 +4796,8 @@ GEO_ideas = {
 		OR = {
 			tag = GEO
 			tag = IME
+			tag = KRT #BT Added
+			tag = KKE #BT Added
 		}
 	}
 	free = yes
