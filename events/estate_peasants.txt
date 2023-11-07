@@ -400,7 +400,7 @@ country_event = { #4 [Root.GetPeasantsName] Furious about [Root.GetNobilityName]
 			loyalty = 15
 		}
 		add_estate_influence_modifier = {
-			estate = estate_nobility
+			estate = estate_nobles
 			desc = EST_VAL_PUNISHED_NOBILITY
 			influence = -10
 			duration = 5475
