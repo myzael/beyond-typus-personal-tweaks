@@ -358,7 +358,7 @@ country_event = { #BT Dev note: These stats were taken from the Kartli history f
 	}
 
 	option = {
-		name = "georgian_crisis.4.a"
+		name = "georgian_crisis.5.a"
 		if = {
 			limit = {
 				KKE = {
@@ -432,7 +432,7 @@ country_event = { #BT Dev note: These stats were taken from the Kartli history f
 	}
 	
 	option = {
-		name = "georgian_crisis.4.b"
+		name = "georgian_crisis.5.b"
 		add_legitimacy = -20
 		if = {
 			limit = {
