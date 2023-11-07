@@ -44,7 +44,7 @@ qara_qoyunlu_first = {
 		}
 		
 		effect = {
-			custom_tooltip = turkmen_emirs_of_baghdad_remove_tt
+			#custom_tooltip = turkmen_emirs_of_baghdad_remove_tt
 			basra_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -59,19 +59,19 @@ qara_qoyunlu_first = {
 				}
 				add_permanent_claim = ROOT
 			}
-			hidden_effect = {
-				remove_estate_privilege = estate_nobles_emirs_of_baghdad
-				every_owned_province = {
-					limit = {
-						OR = {
-							area = iraq_arabi_area
-							area = basra_area
-							area = al_jazira_area
-						}
-					}
-					add_local_autonomy = -100
-				}
-			}
+			# hidden_effect = {
+				# remove_estate_privilege = estate_nobles_emirs_of_baghdad
+				# every_owned_province = {
+					# limit = {
+						# OR = {
+							# area = iraq_arabi_area
+							# area = basra_area
+							# area = al_jazira_area
+						# }
+					# }
+					# add_local_autonomy = -100
+				# }
+			# }
 		}
 	}
 	
