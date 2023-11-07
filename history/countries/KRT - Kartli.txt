@@ -108,6 +108,7 @@ technology_group = eastern
 		name = bt_georgia_triarchy
 		duration = -1
 	}
+	set_estate_privilege = estate_nobles_strong_duchies
 }
 
 1446.1.1 = {
