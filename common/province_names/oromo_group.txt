@@ -1,0 +1,22 @@
+#(JP) Oromo Group
+
+#Horn of Africa
+1205 = { "Muqdisho" "Muqdisho" } #(JP) Somali Names
+2775 = { "Marka" "Marka" } #(JP) Somali Names
+2776 = { "Afgooye" "Afgooye" } #(JP) Somali Names
+2779 = { "El Kere" "El Kere" } #(JP) Base Names
+2780 = { "Beledweyne" "Beledweyne" } #(JP) Somali Names
+2782 = { "Warshiikh" "Warshiikh" } #(JP) Somali Names
+2794 = { "Baraawe" "Baraawe" } #(JP) Somali Names
+8797 = { "Buurhakaba" "Buurhakaba" } #(JP) Somali Names
+8798 = { "Jowhar" "Jowhar" } #(JP) Somali Names
+8799 = { "Baydhabo" "Baydhabo" } #(JP) Somali Names
+8800 = { "Xuddur" "Xuddur" } #(JP) Somali Names
+8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
+8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
+8809 = { "Godey" "Godey" } #(JP) Somali Names
+
+#East Africa
+2774 = { "Kismaayo" "Kismaayo" } #(JP) Somali Names
+2777 = { "Baardheere" "Baardheere" } #(JP) Somali Names
+2781 = { "Luuq" "Luuq" } #(JP) Somali Names

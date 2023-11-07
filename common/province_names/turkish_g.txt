@@ -509,6 +509,20 @@
 5302 = { "Ifkarhane" "Ifkarhane" } #(JP) Base names #(VL)Ifkarhane
 
 #Horn of Africa
+1205 = { "Mogadishu" "Mogadishu" } #(JP) Base Names
+2775 = { "Merka" "Merka" }
+2776 = { "Afgooye" "Afgooye" } #(JP) Base Names
+2779 = { "El Kere" "El Kere" } #(JP) Base Names
+2780 = { "Beledveyne" "Beleveyne" }
+2782 = { "Warsheikh" "Warsheikh" } #(JP) Base Names
+2794 = { "Barawa" "Barawa" } #(JP) Base Names
+8797 = { "Burhakaba" "Burhakaba" } #(JP) Base Names
+8798 = { "Cevher" "Cevher" }
+8799 = { "Baydabo" "Baydabo" }
+8800 = { "Hudur" "Hudur" } #(JP) Base Names
+8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
+8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
+8809 = { "Gode" "Gode" } #(JP) Base Names
 
 #Sahel
 2448 = { "Sebha" "Sebha" }
@@ -1426,3 +1440,8 @@
 
 #Mongolia
 715 = { "Urumçi" "Urumçi" }
+
+#East Africa
+2774 = { "Kismayo" "Kismayo" } #(JP) Base Names
+2777 = { "Bardere" "Bardere" } #(JP) Base Names
+2781 = { "Luuq" "Luuq" } #(JP) Base Names
