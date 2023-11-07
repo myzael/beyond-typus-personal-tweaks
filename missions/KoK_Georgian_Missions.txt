@@ -534,7 +534,7 @@ geo_second_branch = {
 						}
 						estate_loyalty = {
 							estate = estate_burghers
-							loyalty = 30
+							loyalty = 50 #PDX, 30 is way too easy.
 						}
 					}
 					if = {
@@ -543,7 +543,7 @@ geo_second_branch = {
 						}
 						estate_loyalty = {
 							estate = estate_nobles
-							loyalty = 30
+							loyalty = 50 #PDX, 30 is way too easy.
 						}
 					}
 					if = {
@@ -552,7 +552,7 @@ geo_second_branch = {
 						}
 						estate_loyalty = {
 							estate = estate_church
-							loyalty = 30
+							loyalty = 50 #PDX, 30 is way too easy.
 						}
 					}
 				}
