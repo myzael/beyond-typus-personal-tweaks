@@ -1143,8 +1143,27 @@
 
 #West Siberia
 
-#Horn of Africa #(JP) Apart from Sudan
+#Horn of Africa
 1205 = { "Mogadiscio" "Mogadiscio" }
+2775 = { "Merca" "Merca" }
+2776 = { "Afgoi" "Afgoi" }
+2779 = { "El Cerre" "El Cerre" }
+2780 = { "Belet Uen" "Belet Uen" }
+2782 = { "Uarscèc" "Uarscèc" }
+2794 = { "Brava" "Brava" }
+8797 = { "Bur Acaba" "Bur Acaba" } 
+8798 = { "Giohar" "Villaggio Duca degli Abruzzi" }
+8799 = { "Iscia Baidoa" "Iscia Baidoa" }
+8800 = { "Uddùr" "Uddùr" }
+8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
+8808 = { "Callafo" "Callafo" }
+8809 = { "Gode" "Gode" } #(JP) Base Names
+
+#East Africa
+2774 = { "Chisimaio" "Chisimaio" }
+2777 = { "Bardera" "Bardera" }
+2781 = { "Lugh Ferrandi" "Lugh Ferrandi" }
+
 1206 = { "Gardò" "Gardò" }
 1207 = { "Gode" "Gode" }
 1208 = { "Dagabore" "Dagabore" }
@@ -1179,13 +1198,7 @@
 2771 = { "Debarech" "Debarech" }
 2772 = { "Gregorio" "Gregorio" }
 2773 = { "Giggiga" "Giggiga" }
-2775 = { "Merca" "Merca" }
-2776 = { "Afgoi" "Afgoi" }
 2778 = { "Uardere" "Uardere" }
-2779 = { "Afder" "Afder" }
-2780 = { "Belet Uen" "Belet Uen" }
-2781 = { "Lugh Ferrandi" "Lugh Ferrandi" }
-2782 = { "Uarscèc" "Uarscèc" }
 2783 = { "Obbia" "Obbia" }
 2784 = { "Gallacaio" "Gallacaio" }
 2785 = { "Selburo" "Selburo" }
@@ -1197,7 +1210,6 @@
 2791 = { "Ancober" "Ancober" }
 2792 = { "Bohotle" "Bohotle" }
 2793 = { "Hargheisa" "Hargheisa" }
-2794 = { "Brava" "Brava" }
 2795 = { "Meregh" "Meregh" }
 4158 = { "Giangiero" "Fofa" }
 5288 = { "Cabo Cesare" "Cabo Cesare" } #(JP) "Ras Kasar". Ras -> Cabo. "Cesare" is more like a mini easter egg
@@ -1246,7 +1258,6 @@
 #East Africa
 1102 = "Maurizio"
 1103 = "Isole delle Riunione"
-2774 = { "Chisimaio" "Chisimaio" }
 2777 = { "Bardera" "Bardera" }
 
 #South Africa

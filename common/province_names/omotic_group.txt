@@ -1,0 +1,4 @@
+#(JP) Omotic Languages
+#(JP) Will likely use local Omotic names for their provinces
+
+#Horn of Africa
