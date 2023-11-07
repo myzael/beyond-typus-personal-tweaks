@@ -5,8 +5,8 @@
 #Core Details
 capital = "Togh"
 is_city = yes
-owner = KCH
-controller = KCH
+owner = MLK
+controller = MLK
 
 #Demographics
 culture = armenian
@@ -19,7 +19,7 @@ base_manpower = 2
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
-add_core = KCH
+add_core = MLK
 
 #Other Political
 hre = no

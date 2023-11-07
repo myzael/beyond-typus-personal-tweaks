@@ -6828,7 +6828,6 @@ ARM_ideas = {
 		OR = {
 			tag = ARM
 			tag = MLK
-			tag = KCH #BT tag
 		}
 	}
 	free = yes		#will be added at load.
@@ -17998,7 +17997,6 @@ ARM1_ideas = {
 		OR = {
 			tag = ARM
 			tag = MLK
-			tag = KCH #BT-added
 		}
 		has_country_flag = arm_great_armenian_ideas
 	}

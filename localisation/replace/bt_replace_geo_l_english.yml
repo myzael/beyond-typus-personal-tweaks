@@ -1916,6 +1916,12 @@
  ##################################
  ############## BT16 ##############
  ##################################
+ 
+ ###Caucasus###
+ #Tags
+ MLK:0 "Khachen"
+ MLK_ADJ:0 "Khacheni"
+ 
  ###Australia###
  #Regions
  australia_region:0 "Southeastern Australia"
