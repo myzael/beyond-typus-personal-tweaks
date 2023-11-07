@@ -74,25 +74,25 @@
 #Maghreb
 
 #Horn of Africa
-1205 = { "Mogadiscio" "Mogadiscio" }
+1205 = { "Mogadischou" "Mogadischou" }
 2775 = { "Merka" "Merka" }
-2776 = { "Afgooye" "Afgooye" } #(JP) Base Names
-2779 = { "El Kere" "El Kere" } #(JP) Base Names
-2780 = { "Beledweyne" "Beledweyne" } #(JP) Base Names
-2782 = { "Warsheikh" "Warsheikh" } #(JP) Base Names
+2776 = { "Afgoïe" "Afgoïe" }
+2779 = { "Le Kère" "Le Kère" }
+2780 = { "Beledoueïn" "Beledoueïn" }
+2782 = { "Ouarcheikh" "Ouarcheikh" }
 2794 = { "Brava" "Brava" } #(JP) Italian Names
-8797 = { "Burhakaba" "Burhakaba" } #(JP) Base Names
-8798 = { "Jowhar" "Jowhar" } #(JP) Base Names
-8799 = { "Baidoa" "Baidoa" } #(JP) Base Names
-8800 = { "Hudur" "Hudur" } #(JP) Base Names
-8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
-8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
+8797 = { "Burakaba" "Burakaba" }
+8798 = { "Jouar" "Jouar" }
+8799 = { "Baïdoa" "Baïdoa" }
+8800 = { "Odur" "Odur" }
+8807 = { "Guerlogubi" "Guerlogubi" }
+8808 = { "Quelafo" "Quelafo" }
 8809 = { "Gode" "Gode" } #(JP) Base Names
 
 #East Africa
-2774 = { "Kismayo" "Kismayo" } #(JP) Base Names
-2777 = { "Bardere" "Bardere" } #(JP) Base Names
-2781 = { "Luuq" "Luuq" } #(JP) Base Names
+2774 = { "Quismayo" "Quismayo" }
+2777 = { "Bardère" "Bardère" }
+2781 = { "Luuc" "Luuc" }
 
 ######Americas######
 
