@@ -28,6 +28,7 @@ hre = no
 #Fort/Other Buildings
 
 #Special Modifiers
+add_local_autonomy = 50 #BT Syrian governor autonomy
 
 #Discoveries
 discovered_by = muslim

@@ -27,6 +27,7 @@ discovered_by = indian
 extra_cost = 10
 
 center_of_trade = 2
+add_local_autonomy = 50 #BT Syrian governor autonomy
 
 #2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
