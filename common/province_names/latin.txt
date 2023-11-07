@@ -1147,15 +1147,15 @@
 1205 = { "Mogadiscio" "Mogadiscio" }
 2775 = { "Merca" "Merca" }
 2776 = { "Afgoi" "Afgoi" }
-2779 = { "El Cerre" "El Cerre" }
+2779 = { "Elchere" "El Elchere" }
 2780 = { "Belet Uen" "Belet Uen" }
-2782 = { "Uarscèc" "Uarscèc" }
+2782 = { "Uarsceich" "Uarsceich" }
 2794 = { "Brava" "Brava" }
 8797 = { "Bur Acaba" "Bur Acaba" } 
 8798 = { "Giohar" "Villaggio Duca degli Abruzzi" }
 8799 = { "Iscia Baidoa" "Iscia Baidoa" }
-8800 = { "Uddùr" "Uddùr" }
-8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
+8800 = { "Oddur" "Oddur" }
+8807 = { "Gherlogubi" "Gherlogubi" }
 8808 = { "Callafo" "Callafo" }
 8809 = { "Gode" "Gode" } #(JP) Base Names
 
