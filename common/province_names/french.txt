@@ -90,9 +90,9 @@
 8809 = { "Gode" "Gode" } #(JP) Base Names
 
 #East Africa
-2774 = { "Quismayo" "Quismayo" } #(JP) Base Names
-2777 = { "Bardère" "Bardère" } #(JP) Base Names
-2781 = { "Luuc" "Luuc" } #(JP) Base Names
+2774 = { "Quismayo" "Quismayo" }
+2777 = { "Bardère" "Bardère" }
+2781 = { "Luuc" "Luuc" }
 
 ######Americas######
 
