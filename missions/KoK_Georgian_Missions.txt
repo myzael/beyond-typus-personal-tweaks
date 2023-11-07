@@ -477,7 +477,7 @@ geo_second_branch = {
 	}
 	has_country_shield = yes
 	
-	geo_vakhtangs_succession = {
+	geo_vakhtangs_succession = { #BT Note: This must be a vanilla bug. You can complete this from day 1 because you have more than 90 legitimacy.
 		icon = mission_restore_faith_in_the_throne
 		required_missions = {  }
 		position = 1
