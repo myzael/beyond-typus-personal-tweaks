@@ -15,16 +15,37 @@ bt_ukr_dynasty = {
 		icon = mission_consolidate_the_state
 		required_missions = { } #None
 		position = 1
-		provinces_to_highlight = {
-			
+		provinces_to_highlight = { #Highlights capitals of potential nations
+			is_capital = yes
+			owner = {
+				dynasty = "Rurikovich"
+				religion_group = christian
+			}
 		}
 		
 		trigger = {
-			
+			if = {
+				limit = {
+					any_country = {
+						dynasty = "Rurikovich"
+						religion_group = christian
+					}
+				}
+				any_country = {
+					dynasty = "Rurikovich"
+					religion_group = christian
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
 		}
 		
 		effect = {
-			
+			# country_event = { #TODO: Event
+				# id = "X"
+			# }
 		}
 	}
 }
@@ -79,7 +100,7 @@ bt_ukr_kiev_ruthenia = {
 	}
 	
 	ukr_restore_ruthenia = {
-		icon = mission_invade_island
+		icon = mission_develop_kiev
 		required_missions = { ukr_reclaim_kievan_metropolitanate ukr_reclaim_ruthenia }
 		position = 5
 		provinces_to_highlight = {
@@ -237,11 +258,13 @@ bt_ukr_ruthenia_russia_conquest = {
 		}
 		
 		trigger = {
-			
+			is_subject = no
 		}
 		
 		effect = {
-			
+			add_stability = 1
+			give_permaclaims_for_mission = { mission=ukr_reclaim_chernigov }
+			give_permaclaims_for_mission = { mission=ukr_restore_tmutarakan }
 		}
 		
 	}
@@ -251,15 +274,39 @@ bt_ukr_ruthenia_russia_conquest = {
 		required_missions = { ukr_declare_independence }
 		position = 2
 		provinces_to_highlight = {
-			
+			province_group = ukr_reclaim_chernigov_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns = 280 #Kiev
+			owns = 289 #Chernigov
+			owns = 2407 #Pereyaslavl
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_reclaim_chernigov_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=15 #out of 17. Kiev starts with 9 of them.
+			}
 		}
 		
 		effect = {
+			280 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			289 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
 			
+			give_permaclaims_for_mission = { mission=ukr_reclaim_ruthenia }
 		}
 		
 	}
@@ -269,15 +316,48 @@ bt_ukr_ruthenia_russia_conquest = {
 		required_missions = { ukr_reclaim_chernigov }
 		position = 4
 		provinces_to_highlight = {
-			
+			province_group = ukr_reclaim_ruthenia_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns = 280 #Kiev
+			owns = 289 #Chernigov
+			owns = 293 #Smolensk
+			owns = 275 #Polotsk
+			owns = 279 #Volodimir
+			owns = 261 #Halych
+			owns = 2407 #Pereyaslavl
+			# has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				# tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				# provinces=ukr_reclaim_ruthenia_provinces
+				# owner_type=country_or_non_sovereign_subject_holds
+				# value=90 #out of 124. Some of them are not owned by the PLC.
+			# }
 		}
 		
 		effect = {
-			
+			293 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			275 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			279 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			261 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			#Possibly Ruthenia-regionwide reward?
 		}
 		
 	}
@@ -287,15 +367,41 @@ bt_ukr_ruthenia_russia_conquest = {
 		required_missions = { ukr_reclaim_ruthenia }
 		position = 6
 		provinces_to_highlight = {
-			
+			OR = {
+				province_id = 295 #Moskva
+				province_id = 310 #Novgorod
+				
+			}
 		}
 		
 		trigger = {
-			
+			295 = {
+				owner = {
+					OR = {
+						is_rival = ROOT
+						AND = {
+							NOT = { total_development = ROOT }
+							NOT = { army_size = ROOT }
+						}
+					}
+				}
+			}
+			310 = {
+				owner = {
+					OR = {
+						is_rival = ROOT
+						AND = {
+							NOT = { total_development = ROOT }
+							NOT = { army_size = ROOT }
+						}
+					}
+				}
+			}
 		}
 		
 		effect = {
-			
+			# give_permaclaims_for_mission = { mission=ukr_subjugate_moscow }
+			# give_permaclaims_for_mission = { mission=ukr_reclaim_novgorod }
 		}
 		
 	}
@@ -337,7 +443,7 @@ bt_ukr_ruthenia_russia_conquest = {
 	}
 	
 	ukr_mother_of_all_rus = {
-		icon = mission_invade_island
+		icon = mission_the_russian_tsardom
 		required_missions = { ukr_rebuild_principalities }
 		position = 9
 		provinces_to_highlight = {
@@ -369,7 +475,7 @@ bt_ukr_challenge_ottos = {
 	has_country_shield = yes
 	
 	ukr_restore_tmutarakan = {
-		icon = mission_invade_island
+		icon = mission_the_varangians
 		required_missions = { ukr_declare_independence }
 		position = 2
 		provinces_to_highlight = {
@@ -387,7 +493,7 @@ bt_ukr_challenge_ottos = {
 	}
 	
 	ukr_reconnect_with_constantinople = {
-		icon = mission_invade_island
+		icon = take_constantinople
 		required_missions = { ukr_restore_tmutarakan }
 		position = 3
 		provinces_to_highlight = {
@@ -405,7 +511,7 @@ bt_ukr_challenge_ottos = {
 	}
 	
 	ukr_push_back_turk = {
-		icon = mission_invade_island
+		icon = capture_adriatic_ports
 		required_missions = { ukr_reconnect_with_constantinople }
 		position = 4
 		provinces_to_highlight = {
@@ -766,7 +872,7 @@ bt_ukr_boyars = {
 	}
 	
 	ukr_royal_court = {
-		icon = mission_invade_island
+		icon = mission_noble_council
 		required_missions = { ukr_handle_boyars ukr_strengthen_kievan_patriarch }
 		position = 12
 		provinces_to_highlight = {
@@ -869,7 +975,7 @@ bt_ukr_government = {
 	}
 	
 	ukr_ideas_of_revolution = {
-		icon = mission_invade_island
+		icon = mission_ruthenian_revolution
 		required_missions = { ukr_industrialize_donets ukr_enlightened_rus ukr_question_of_serfdom ukr_freedom_of_steppes }
 		position = 15
 		provinces_to_highlight = {
@@ -902,8 +1008,8 @@ bt_ukr_industrialization = {
 	has_country_shield = yes
 	
 	ukr_industrialize_donets = {
-		icon = mission_invade_island
-		required_missions = { ukr_centralized_state }
+		icon = mission_rb_build_furnaces
+		required_missions = { ukr_absolute_authority }
 		position = 14
 		provinces_to_highlight = {
 			
@@ -937,7 +1043,7 @@ bt_ukr_enlightenment = {
 	
 	ukr_enlightened_rus = {
 		icon = mission_early_modern_university
-		required_missions = { ukr_centralized_state }
+		required_missions = { ukr_absolute_authority }
 		position = 14
 		provinces_to_highlight = {
 			
@@ -970,7 +1076,7 @@ bt_ukr_peasants = {
 	
 	ukr_question_of_serfdom = {
 		icon = mission_serfdom
-		required_missions = { ukr_centralized_state }
+		required_missions = { ukr_absolute_authority }
 		position = 14
 		provinces_to_highlight = {
 			
@@ -1002,8 +1108,8 @@ bt_ukr_cossacks = {
 	has_country_shield = yes
 	
 	ukr_freedom_of_steppes = {
-		icon = mission_invade_island
-		required_missions = { ukr_centralized_state }
+		icon = mission_chinese_general_riding
+		required_missions = { ukr_absolute_authority }
 		position = 14
 		provinces_to_highlight = {
 			
