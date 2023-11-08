@@ -511,7 +511,7 @@ bt_ukr_challenge_ottos = {
 	}
 	
 	ukr_push_back_turk = {
-		icon = capture_adriatic_ports
+		icon = geo_break_the_crescent_2
 		required_missions = { ukr_reconnect_with_constantinople }
 		position = 4
 		provinces_to_highlight = {
