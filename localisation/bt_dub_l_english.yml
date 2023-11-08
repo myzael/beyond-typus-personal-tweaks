@@ -179,6 +179,10 @@
  ukr_freedom_of_steppes_title:0 "The Freedom of the Steppes"
  ukr_freedom_of_steppes_desc:0 ""
  
+ #Georgia content
  bt_georgia_triarchy:0 "Rule of Vakhtang IV"
  bt_georgia_triarchy_desc:0 "[Root.Monarch.GetName] rules from [Root.Capital.GetName] whilst his two younger brothers, [IME.Monarch.GetName] and [KKE.Monarch.GetName] rule the two appanages of [IME.GetName] and [KKE.GetName] under [Root.Monarch.GetHerHim]. Whilst they're currently loyal, should he die, his brothers may be vying for the throne..."
- 
+ BeyondTypusCaucasianEvents.EVTNAME1:0 "Death of Vakhtang IV"
+ BeyondTypusCaucasianEvents.EVTDESC1:0 "Vakhtang IV, co-king with his father Aleksandre I since 1433 and sole king since 1442, suddenly lay on his deathbed. Having had no children of his own, the succession laws dictate the oldest brother, Demetre ruling the appanage of Imereti, shall succeed to the throne. However, Giorgi, ruling the appanage of Kakheti, while second oldest, is vying for the throne in Tbilisi. Whoever fails to ascend the throne will likely not accept the decision without a fight, thereby starting an internal succession war."
+ BeyondTypusCaucasianEvents.EVTOPTA1:0 "Favor Demetre"
+ BeyondTypusCaucasianEvents.EVTOPTB1:0 "Favor Giorgi"
