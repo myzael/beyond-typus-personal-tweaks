@@ -21,7 +21,7 @@ country_event = { #Death of Vakhtang IV
 		IME =  {
 			has_ruler = "Demetre I"
 		}
-		KKT = {
+		KKE = {
 			has_ruler = "Giorgi IV"
 		}
 	}
@@ -30,7 +30,7 @@ country_event = { #Death of Vakhtang IV
 		name = "BeyondTypusCaucasianEvents.EVTOPTA1"
 		create_union = IME
 		custom_tooltip = BeyondTypusCaucasianEvents.EVTOPTA1.tt
-		KKT = {
+		KKE = {
 			add_liberty_desire = 100
 		}
 		
@@ -38,7 +38,7 @@ country_event = { #Death of Vakhtang IV
 	
 	option = { #Favor Giorgi
 		name = "BeyondTypusCaucasianEvents.EVTOPTB1"
-		create_union = KKT
+		create_union = KKE
 		custom_tooltip = BeyondTypusCaucasianEvents.EVTOPTB1.tt
 		IME = {
 			add_liberty_desire = 100
