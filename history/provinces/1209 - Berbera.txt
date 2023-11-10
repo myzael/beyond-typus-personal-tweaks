@@ -1,9 +1,9 @@
  
 #1209 - Berbera
 
-owner = WAR
-controller = WAR
-add_core = WAR
+owner = ADA
+controller = ADA
+add_core = ADA
 add_core = ISI
 add_core = IFT
 culture = dir
@@ -13,8 +13,8 @@ is_city = yes
 base_manpower = 4
 trade_goods = slaves
 hre = no
-base_tax = 4 
-base_production = 4
+base_tax = 5 
+base_production = 5
 
 discovered_by = east_african
 discovered_by = muslim
