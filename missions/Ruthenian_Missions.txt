@@ -43,7 +43,7 @@ bt_ukr_dynasty = {
 		}
 		
 		effect = {
-			# country_event = { #TODO: Event
+			# country_event = { #TODO: Event to invite a Rurikid heir
 				# id = "X"
 			# }
 		}
@@ -72,7 +72,7 @@ bt_ukr_kiev_ruthenia = {
 		}
 		
 		trigger = {
-			
+			#Kiev 30 dev, 3 buildings
 		}
 		
 		effect = {
@@ -90,11 +90,12 @@ bt_ukr_kiev_ruthenia = {
 		}
 		
 		trigger = {
-			
+			#Upgrade Pechersk monument
+			#Have 50 patriarch authority
 		}
 		
 		effect = {
-			
+			#Pechersk monument gives +0/1/3% missionary strength and +0/5/10% church loyalty modifier
 		}
 		
 	}
@@ -104,15 +105,21 @@ bt_ukr_kiev_ruthenia = {
 		required_missions = { ukr_reclaim_kievan_metropolitanate ukr_reclaim_ruthenia }
 		position = 5
 		provinces_to_highlight = {
-			
+			region = ruthenia_region
 		}
 		
 		trigger = {
-			
+			development_in_provinces = {
+				value = 600 #TODO: Check dev at game start
+				region = ruthenia_region
+				religion = ROOT
+			}
 		}
 		
 		effect = {
-			
+			ruthenia_region = {
+				#Give +0.2 goods produced and +12 yearly tax. (In essence 2 production dev and 2 tax dev)
+			}
 		}
 		
 	}
@@ -204,15 +211,23 @@ bt_ukr_baltic_conquest = {
 		required_missions = { ukr_challenge_northern_rus }
 		position = 7
 		provinces_to_highlight = {
-			
+			ukr_reclaim_novgorod_provinces = yes
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns = 310 #Novgorod
+			owns = 274 #Pskov
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_reclaim_novgorod_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=41 #out of 53.
+			}
 		}
 		
 		effect = {
-			
+			#Some sort of bonus for Novgorod and possibly trade related stuff?
 		}
 		
 	}
@@ -226,11 +241,18 @@ bt_ukr_baltic_conquest = {
 		}
 		
 		trigger = {
-			
+			owns = 27 #Turku
+			owns = 28 #Helsinki
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_finnish_borderlands
+				owner_type=country_or_non_sovereign_subject_holds
+				value=17 #out of 22.
+			}
 		}
 		
 		effect = {
-			
+			#Event to establish Finnish vassal
 		}
 		
 	}
@@ -328,12 +350,12 @@ bt_ukr_ruthenia_russia_conquest = {
 			owns = 279 #Volodimir
 			owns = 261 #Halych
 			owns = 2407 #Pereyaslavl
-			# has_fulfiled_num_of_province_requirement_for_mission_trigger = {
-				# tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
-				# provinces=ukr_reclaim_ruthenia_provinces
-				# owner_type=country_or_non_sovereign_subject_holds
-				# value=90 #out of 124. Some of them are not owned by the PLC.
-			# }
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_reclaim_ruthenia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=90 #out of 124. Some of them are not owned by the PLC.
+			}
 		}
 		
 		effect = {
@@ -411,15 +433,28 @@ bt_ukr_ruthenia_russia_conquest = {
 		required_missions = { ukr_challenge_northern_rus }
 		position = 7
 		provinces_to_highlight = {
-			
+			province_group = ukr_subjugate_moscow_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
+			owns = 295 #Moscow
+			owns = 301 #Ryazan
+			owns = 1974 #Murom
+			owns = 4147 #Rostov
+			owns = 1956 #Suzdal
+			owns = 307 #Vladimir
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_subjugate_moscow_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=40 #out of 49.
+			}
 			
 		}
 		
 		effect = {
-			
+			#Sack of Moscow, dev other cities
 		}
 		
 	}
@@ -429,15 +464,79 @@ bt_ukr_ruthenia_russia_conquest = {
 		required_missions = { ukr_subjugate_moscow ukr_reclaim_novgorod }
 		position = 8
 		provinces_to_highlight = {
+			OR = { #15 provs
+				owns = 280 #Kiev
+				owns = 289 #Chernigov
+				owns = 293 #Smolensk
+				owns = 275 #Polotsk
+				owns = 279 #Volodimir
+				owns = 261 #Halych
+				owns = 2407 #Pereyaslavl
+				owns = 295 #Moscow
+				owns = 301 #Ryazan
+				owns = 1974 #Murom
+				owns = 4147 #Rostov
+				owns = 1956 #Suzdal
+				owns = 307 #Vladimir
+				owns = 310 #Novgorod
+				owns = 274 #Pskov
+			}
 			
 		}
 		
 		trigger = {
-			
+			calc_true_if = {
+				#tooltip = "ukr_rebuild_principalities_tt"
+				ruthenia_region = {
+					type = all
+					OR = { #A bit lazy here, just pasting the same trigger on both
+						owns = 280 #Kiev
+						owns = 289 #Chernigov
+						owns = 293 #Smolensk
+						owns = 275 #Polotsk
+						owns = 279 #Volodimir
+						owns = 261 #Halych
+						owns = 2407 #Pereyaslavl
+						owns = 295 #Moscow
+						owns = 301 #Ryazan
+						owns = 1974 #Murom
+						owns = 4147 #Rostov
+						owns = 1956 #Suzdal
+						owns = 307 #Vladimir
+						owns = 310 #Novgorod
+						owns = 274 #Pskov
+					}
+					development = 30
+					num_of_buildings_in_province = 3
+				}
+				russia_region = {
+					type = all
+					OR = { #A bit lazy here, just pasting the same trigger on both
+						owns = 280 #Kiev
+						owns = 289 #Chernigov
+						owns = 293 #Smolensk
+						owns = 275 #Polotsk
+						owns = 279 #Volodimir
+						owns = 261 #Halych
+						owns = 2407 #Pereyaslavl
+						owns = 295 #Moscow
+						owns = 301 #Ryazan
+						owns = 1974 #Murom
+						owns = 4147 #Rostov
+						owns = 1956 #Suzdal
+						owns = 307 #Vladimir
+						owns = 310 #Novgorod
+						owns = 274 #Pskov
+					}
+					development = 30
+					num_of_buildings_in_province = 3
+				}
+				amount = 12
+			}
 		}
 		
 		effect = {
-			
+			#Add provtrig modifier to cities that fulfil mission: So long as dev > 30, give extra tax & production modifiers and dev cost reduction
 		}
 		
 	}
@@ -483,7 +582,14 @@ bt_ukr_challenge_ottos = {
 		}
 		
 		trigger = {
-			
+			owns = 3245 #Kerch
+			owns = 2447 #Tmutarakan
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_restore_tmutarakan_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=17 #out of 22.
+			}
 		}
 		
 		effect = {
