@@ -160,19 +160,54 @@
 
 #Horn of Africa
 1205 = { "Maqadishu" "Maqadishu" }
+1209 = { "Berbera" "Berbera" } #(JP) Base Names
+1212 = { "Zayla" "Zayla" }
+1215 = { "Tajurah" "Tajurah" }
+1230 = { "Musawwa" "Musawwa" }
+2766 = { "Sanhit" "Sanhit" } #(JP) Base Names
 2775 = { "Marka" "Marka" }
 2776 = { "Afgooye" "Afgooye" } #(JP) Base Names
 2779 = { "El Kere" "El Kere" } #(JP) Base Names
 2780 = { "Baladwein" "Baladwein" }
 2782 = { "Warsheikh" "Warsheikh" } #(JP) Base Names
+2783 = { "Hobya" "Hobya" }
+2784 = { "Galkayu" "Galkayu" }
+2785 = { "Ailbur" "Ailbur" }
+2786 = { "Bandar Qasim" "Bandar Qasim" } #(JP) Base Names
+2787 = { "Hamasien" "Asmara" } #(JP) Base Names
+2788 = { "Hafun" "Hafun" } #(JP) Base Names
+2789 = { "Lasqoray" "Lasqoray" }
 2794 = { "Barawa" "Barawa" }
+2795 = { "Mareeg" "Mareeg" } #(JP) Base Names
+5288 = { "Ras Kasar" "Ras Kasar" }
+5297 = { "Barka" "Barentu" } #(JP) Base Names
+5298 = { "Zola" "Zola" }
 8797 = { "Burhakaba" "Burhakaba" } #(JP) Base Names
 8798 = { "Jawhar" "Jawhar" }
 8799 = { "Baidoa" "Baidoa" } #(JP) Base Names
 8800 = { "Hodar" "Hodar" }
+8801 = { "Dusamareb" "Dusamareb" } #(JP) Base Names
+8802 = { "Eyl" "Eyl" } #(JP) Base Names
+8803 = { "Bandar Beyla" "Bandar Beyla" } #(JP) Base Names
+8804 = { "Alula" "Alula" } #(JP) Base Names
+8805 = { "Maydh" "Maydh" } #(JP) Base Names
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
 8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
 8809 = { "Gode" "Gode" } #(JP) Base Names
+8864 = { "Doobi" "Bododya" } #(JP) Base Names
+8887 = { "Ali Sobeih" "Ali Sobeih" }
+8888 = { "Obock" "Obock" } #(JP) Base Names
+8889 = { "Beylul" "Beylul" }
+8890 = { "Addi" "Addi" }
+8891 = { "Taiwa" "Taiwa" }
+8892 = { "Dahlak" "Dahlak Kebir" } #(JP) Base Names
+8893 = { "Akele Guzai" "Dekemhare" } #(JP) Base Names
+8894 = { "Serae" "Debawra" } #(JP) Base Names
+8895 = { "Agordat" "Agordat" } #(JP) Base Names
+8896 = { "Kunama" "Magalo" } #(JP) Base Names
+8897 = { "Tessenei" "Tessenei" }
+8898 = { "Hedareb" "Kerkebet" } #(JP) Base Names
+8899 = { "Naqfa" "Naqfa" } 
 
 #East Africa
 2774 = { "Kismayu" "Kismayu" } 
@@ -427,7 +462,6 @@
 #1226 = "Gadamai"			#As default
 1228 = "Dunqula"
 1229 = "Amarar"
-1230 = "Musawwa"			#native Bats'e or Badhe
 1232 = "Sawakin"
 2323 = "Ash-Shanka"
 #2797 = "Shendi"			#As default
@@ -448,7 +482,6 @@
 #5285 = "Halfaya"			#As default
 5286 = "Samal Kurdufan"
 #5287 = "Singa"			#As default
-5288 = "Bani Rashid"
 #5289 = "Berta"			#As default
 #5290 = "Malakal"			#As default
 5300 = "Wadi al-Malik"
@@ -657,9 +690,6 @@
 #sudan
 1220 = "Suhra' Biawda"
 2799 = "Sannar"
-
-#Somaliland
-2789 = "Lasqoray"
 
 #morocco
 335 = "Maliliyyah"
@@ -1047,10 +1077,6 @@
 #arabia yemen
 388 = "'Adan"
 5239 = "'Ibb"
-
-#Bab el mandeb
-1212 = "Zayla"
-1215 = "Tajurah" #"Tachurah"
 
 #barbary coast
 4566 = "Habira"
@@ -2042,7 +2068,6 @@
 1146 = { "Ayfi" "Ayfi" } #
 1177 = { "Makhlab" "Makhlab" } #
 1179 = { "Nahr ath-Thueban" "Ath-Thueban" } #
-1230 = { "Musawwa" "Musawwa" } #
 1745 = { "Shant Andem" "Shant Andem" } #
 1746 = { "Burchia" "Burchia" } #
 1747 = { "Al-Qazrish" "Al-Qazrish" } #
@@ -2068,7 +2093,6 @@
 2754 = { "Al-Mansha" "Al-Mansha" } #
 2755 = { "Madinat Salim" "Madinat Salim" } #
 2778 = { "Wardair" "Wardair" } #
-2789 = { "Lasqoray" "Lasqoray" } #
 2801 = { "Shamal Darfur" "Al Fashir" } #
 2802 = { "Sharq Darfur" "Ad Du'ain" } #
 2850 = { "Yvyty" "Yvyty" } #
@@ -2213,8 +2237,6 @@
 1129 = { "Azawaad" "Azawad al-Mustaqilla" } #
 1197 = { "Dar Es Salaam" "Dar Es Salaam" } #
 1201 = { "Zanjibaar" "Zanjibaar" } #
-1212 = { "Zeyla" "Zeyla" } #
-1215 = { "Tajurah" "Tajurah" } #
 1224 = { "Qundar" "Qundar" } #
 1773 = { "'Iilia" "Byrghaus" } #
 2199 = { "Tarqu" "Tarqu" } #

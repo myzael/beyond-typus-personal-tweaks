@@ -1145,40 +1145,73 @@
 
 #Horn of Africa
 1205 = { "Mogadiscio" "Mogadiscio" }
+1209 = { "Berbera" "Berbera" } #(JP) Base Names
+1212 = { "Zeila" "Zeila" } #(JP) Base Names
+1215 = { "Tagiura" "Tagiura" }
+1230 = { "Massaua" "Massaua" }
+2766 = { "Sanhito" "Sanhito" }
 2775 = { "Merca" "Merca" }
 2776 = { "Afgoi" "Afgoi" }
 2779 = { "Elchere" "El Elchere" }
 2780 = { "Belet Uen" "Belet Uen" }
 2782 = { "Uarsceich" "Uarsceich" }
+2783 = { "Obbio" "Obbio" }
+2784 = { "Rocca Littorio" "Rocca Littorio" }
+2785 = { "Selburo" "Selburo" }
+2786 = { "Porta Cassim" "Porta Cassim" }
+2787 = { "L'Asmara" "L'Asmara" }
+2788 = { "Dante" "Dante" }
+2789 = { "Las Gorei" "Las Gorei" }
 2794 = { "Brava" "Brava" }
+2795 = { "Meregh" "Meregh" }
+5288 = { "Cabo Cesare" "Cabo Cesare" } #(JP) "Ras Kasar". Ras -> Cabo. "Cesare" is more like a mini easter egg
+5297 = { "Barca" "Barentù" }
+5298 = { "Adúli" "Adúli" }
 8797 = { "Bur Acaba" "Bur Acaba" } 
 8798 = { "Giohar" "Villaggio Duca degli Abruzzi" }
 8799 = { "Iscia Baidoa" "Iscia Baidoa" }
 8800 = { "Oddur" "Oddur" }
+8801 = { "Dusa Mareb" "Dusa Mareb" } #(JP) Base Names
+8802 = { "Eil" "Eil" }
+8803 = { "Porta Beila" "Porta Beila" }
+8804 = { "Alula" "Alula" } #(JP) Base Names
+8805 = { "Maydh" "Maydh" } #(JP) Base Names
 8807 = { "Gherlogubi" "Gherlogubi" }
 8808 = { "Callafo" "Callafo" }
 8809 = { "Gode" "Gode" } #(JP) Base Names
+8864 = { "Doobi" "Bododya" } #(JP) Base Names
+8887 = { "Ali Sabieh" "Ali Sabieh" } #(JP) Base Names
+8888 = { "Obock" "Obock" } #(JP) Base Names
+8889 = { "Beylul" "Beylul" } 
+8890 = { "Edd" "Edd" } #(JP) Base Names
+8891 = { "Tiyo" "Tiyo" } #(JP) Base Names
+8892 = { "Dahlak" "Grande Dahlac" }
+8893 = { "Decamerè" "Decamerè" }
+8894 = { "Serae" "Debawra" } #(JP) Base Names
+8895 = { "Curdèt" "Curdèt" }
+8896 = { "Kunama" "Magalo" } #(JP) Base Names
+8897 = { "Tessenei" "Tessenei" }
+8898 = { "Carcabat" "Carcabat" }
+8899 = { "Nacfa" "Nacfa" } 
 
 #East Africa
 2774 = { "Chisimaio" "Chisimaio" }
 2777 = { "Bardera" "Bardera" }
 2781 = { "Lugh Ferrandi" "Lugh Ferrandi" }
 
+
+
+
 1206 = { "Gardò" "Gardò" }
-1207 = { "Gode" "Gode" }
 1208 = { "Dagabore" "Dagabore" }
-1209 = { "Berbera" "Berbera" }
 1210 = { "Gendebelo" "Gendebelo" }
 1211 = { "Harer" "Harer" }
-1212 = { "Zeila" "Zeila" }
 1213 = { "Scioà" "Scioà" }
 1214 = { "Haico" "Haico" }
-1215 = { "Tagiura" "Tagiura" }
 1218 = { "Irgalem" "Irgalem" }
 1223 = { "Debra Marcos" "Debra Marcos" }
 1224 = { "Gondar" "Gondar" }
 1227 = { "Axum" "Axum" }
-1230 = { "Massaua" "Massaua" }
 2024 = { "Garoe" "Garoe" }
 2756 = { "Caffa" "Caffa" }
 2757 = { "Anderaccha" "Anderaccha" }
@@ -1190,7 +1223,6 @@
 2763 = { "Asosà" "Asosà" }
 2764 = { "Asaita" "Asaita" }
 2765 = { "Assab" "Assab" }
-2766 = { "Sanhito" "Sanhito" }
 2767 = { "Antalo" "Antalo" }
 2768 = { "Terio" "Terio" }
 2769 = { "Lalibela" "Lalibela" }
@@ -1199,22 +1231,11 @@
 2772 = { "Gregorio" "Gregorio" }
 2773 = { "Giggiga" "Giggiga" }
 2778 = { "Uardere" "Uardere" }
-2783 = { "Obbia" "Obbia" }
-2784 = { "Gallacaio" "Gallacaio" }
-2785 = { "Selburo" "Selburo" }
-2786 = { "Porta Cassim" "Porta Cassim" }
-2787 = { "L'Asmara" "L'Asmara" } #(JP) Not technically this province, but nice 'lil Italian name
-2788 = { "Dante" "Dante" }
-2789 = { "Las Gorei" "Las Gorei" }
 2790 = { "Meit" "Meit" }
 2791 = { "Ancober" "Ancober" }
 2792 = { "Bohotle" "Bohotle" }
 2793 = { "Hargheisa" "Hargheisa" }
-2795 = { "Meregh" "Meregh" }
 4158 = { "Giangiero" "Fofa" }
-5288 = { "Cabo Cesare" "Cabo Cesare" } #(JP) "Ras Kasar". Ras -> Cabo. "Cesare" is more like a mini easter egg
-5297 = { "Curdèt" "Curdèt" }
-5298 = { "Adúli" "Adúli" }
 
 #Sahel
 2448 = { "Sebha" "Sebha" }

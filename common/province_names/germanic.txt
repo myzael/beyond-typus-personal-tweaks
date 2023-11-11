@@ -3053,8 +3053,6 @@
 2637 = "Hengstenhüde" 			#(as "Pferdhafen" is a bit a simple held name)
 1206 = "Kardh"
 2024 = "Garö"
-2783 = "Obbia"			#Or "Mudug"
-2784 = "Littburg"
 2792 = "Burau"
 2793 = "Klein-Harar"
 788 = "Angosch"

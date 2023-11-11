@@ -2,19 +2,54 @@
 
 #Horn of Africa
 1205 = { "Muqdisho" "Muqdisho" } #(JP) Somali Names
+1209 = { "Barbara" "Barbara" } #(JP) Somali Names
+1212 = { "Saylac" "Saylac" } #(JP) Somali Names
+1215 = { "Tajuura" "Tajuura" } #(JP) Somali Names
+1230 = { "Massawa" "Massawa" } #(JP) Base Names
+2766 = { "Sanhit" "Sanhit" } #(JP) Base Names
 2775 = { "Marka" "Marka" } #(JP) Somali Names
 2776 = { "Afgooye" "Afgooye" } #(JP) Somali Names
 2779 = { "El Kere" "El Kere" } #(JP) Base Names
 2780 = { "Beledweyne" "Beledweyne" } #(JP) Somali Names
 2782 = { "Warshiikh" "Warshiikh" } #(JP) Somali Names
+2783 = { "Hobyo" "Hobyo" } #(JP) Somali Names
+2784 = { "Gaalkacyo" "Gaalkacyo" } #(JP) Somali Names
+2785 = { "Ceelbuur" "Ceelbuur" } #(JP) Somali Names
+2786 = { "Bandar Qaasim" "Bandar Qaasim" } #(JP) Somali Names
+2787 = { "Hamasien" "Asmara" } #(JP) Base Names
+2788 = { "Xaafuun" "Xaafuun" } #(JP) Somali Nameas
+2789 = { "Laasqoray" "Laasqoray" } #(JP) Somali Names
 2794 = { "Baraawe" "Baraawe" } #(JP) Somali Names
+2795 = { "Mareeg" "Mareeg" } #(JP) Somali Names
+5288 = { "Ras Kasar" "Ras Kasar" } #(JP) Base Names
+5297 = { "Barka" "Barentu" } #(JP) Base Names
+5298 = { "Buri" "Zula" } #(JP) Base Names
 8797 = { "Buurhakaba" "Buurhakaba" } #(JP) Somali Names
 8798 = { "Jowhar" "Jowhar" } #(JP) Somali Names
 8799 = { "Baydhabo" "Baydhabo" } #(JP) Somali Names
 8800 = { "Xuddur" "Xuddur" } #(JP) Somali Names
+8801 = { "Dhuusamareeb" "Dhuusamareeb" } #(JP) Somali Names
+8802 = { "Eyl" "Eyl" } #(JP) Somali Names
+8803 = { "Bandar Beyla" "Bandar Beyla" } #(JP) Somali Names
+8804 = { "Caluula" "Caluula" } #(JP) Somali Names
+8805 = { "Maydh" "Maydh" } #(JP) Somali Names
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
 8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
 8809 = { "Godey" "Godey" } #(JP) Somali Names
+8864 = { "Doobi" "Bododya" } #(JP) Base Names
+8887 = { "Cali Sabiix" "Cali Sabiix" } #(JP) Somali Names
+8888 = { "Obock" "Obock" } #(JP) Base Names
+8889 = { "Beilul" "Beilul" } #(JP) Base Names
+8890 = { "Edd" "Edd" } #(JP) Base Names
+8891 = { "Tiyo" "Tiyo" } #(JP) Base Names
+8892 = { "Dahlak" "Dahlak Kebir" } #(JP) Base Names
+8893 = { "Akele Guzai" "Dekemhare" } #(JP) Base Names
+8894 = { "Serae" "Debawra" } #(JP) Base Names
+8895 = { "Agordat" "Agordat" } #(JP) Base Names
+8896 = { "Kunama" "Magalo" } #(JP) Base Names
+8897 = { "Teseney" "Teseney" } #(JP) Base Names
+8898 = { "Hedareb" "Kerkebet" } #(JP) Base Names
+8899 = { "Nakfa" "Nakfa" } #(JP) Base Names
 
 #East Africa
 2774 = { "Kismaayo" "Kismaayo" } #(JP) Somali Names

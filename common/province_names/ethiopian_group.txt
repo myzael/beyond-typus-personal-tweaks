@@ -4,19 +4,54 @@
 
 #Horn of Africa
 1205 = { "Mokudisho" "Mokudisho" }
+1209 = { "Berbera" "Berbera" } #(JP) Base Names
+1212 = { "Zelia" "Zeila" }
+1215 = { "Tadjoura" "Tadjoura" } #(JP) Base Names
+1230 = { "Mesua" "Mesua" }
+2766 = { "Sanhit" "Sanhit" } #(JP) Base Names
 2775 = { "Merca" "Merca" } #(JP) Base Names
 2776 = { "Afgooye" "Afgooye" } #(JP) Base Names
 2779 = { "El Kere" "El Kere" } #(JP) Base Names
 2780 = { "Beledweyne" "Beledweyne" } #(JP) Base Names
 2782 = { "Warsheikh" "Warsheikh" } #(JP) Base Names
+2783 = { "Hobyo" "Hobyo" } #(JP) Base Names
+2784 = { "Gaalkayo" "Gaalkayo" } #(JP) Base Names
+2785 = { "El Buur" "El Buur" } #(JP) Base Names
+2786 = { "Bandar Qasim" "Bandar Qasim" } #(JP) Base Names
+2787 = { "HamasÈn" "Asmara" } #(JP) Base Names
+2788 = { "Hafun" "Hafun" } #(JP) Base Names
+2789 = { "Las Khorey" "Las Khorey" } #(JP) Base Names
 2794 = { "Barawa" "Barawa" } #(JP) Base Names
+2795 = { "M‰rÈg" "M‰rÈg" }
+5288 = { "Ras Kasar" "Ras Kasar" } #(JP) Base Names
+5297 = { "Barka" "Barentu" } #(JP) Base Names
+5298 = { "Buri" "Zula" }
 8797 = { "Burhakaba" "Burhakaba" } #(JP) Base Names
 8798 = { "Jowhar" "Jowhar" } #(JP) Base Names
 8799 = { "Baidoa" "Baidoa" } #(JP) Base Names
 8800 = { "Hudur" "Hudur" } #(JP) Base Names
+8801 = { "Dusamareb" "Dusamareb" } #(JP) Base Names
+8802 = { "Eyl" "Eyl" } #(JP) Base Names
+8803 = { "Bandar Beyla" "Bandar Beyla" } #(JP) Base Names
+8804 = { "Alula" "Alula" } #(JP) Base Names
+8805 = { "Maydh" "Maydh" } #(JP) Base Names
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
-8808 = { "Q√§llafo" "Q√§llafo" }
+8808 = { "Q‰llafo" "Q‰llafo" }
 8809 = { "Gode" "Gode" } #(JP) Base Names
+8864 = { "Doobi" "Bododya" } #(JP) Base Names
+8887 = { "Ali Sabieh" "Ali Sabieh" } #(JP) Base Names
+8888 = { "Obock" "Obock" } #(JP) Base Names
+8889 = { "B‰ylul" "B‰ylul" }
+8890 = { "Edd" "Edd" } #(JP) Base Names
+8891 = { "Tiyo" "Tiyo" } #(JP) Base Names
+8892 = { "Dahlak" "Dahlak Kebir" } #(JP) Base Names
+8893 = { "Akele Guzai" "Dequ-Mehari" }
+8894 = { "Serae" "Debawra" } #(JP) Base Names
+8895 = { "Ak'ordat" "Ak'ordat" }
+8896 = { "Kunama" "Magalo" } #(JP) Base Names
+8897 = { "Teseney" "Teseney" } #(JP) Base Names
+8898 = { "Hedareb" "Kerkebet" } #(JP) Base Names
+8899 = { "Nakfa" "Nakfa" } #(JP) Base Names
 
 #East Africa
 2774 = { "Kismayo" "Kismayo" } #(JP) Base Names
@@ -33,7 +68,6 @@
 385 = "Mekaka" #Makkah
 2331 = "Jadida" #Jidda
 1228 = "Donola" #Dongola
-1212 = "Zeyila" #Zeila
 2793 = "Harigesa" #Hargeisa
 2763 = "Ashosa" #Asosa
 2799 = "Senari" #Sennar
@@ -53,28 +87,26 @@
 #By Ajsieg
 
 #2019 May 28
-1210 = "D√§waro" #Dawaro"
-1211 = "Har√§r" #Harer
-1213 = "Sh√§wa" #Shewa (Few variations)
-1214 = "Lakomalza" #W√§llo (name before the W√§llo Oromo settled in the area)
+1210 = "D‰waro" #Dawaro"
+1211 = "Har‰r" #Harer
+1213 = "Sh‰wa" #Shewa (Few variations)
+1214 = "Lakomalza" #W‰llo (name before the W‰llo Oromo settled in the area)
 1218 = "Boloso" #Sidamo (Irgalem is mentioned in the 1930's. Nope. Boloso/Bolosa was a division of the kingdom in the eastern portion. This will be fixed in my rework.).
 1223 = "Gozzam" #Gojjam (Few variations)
-1224 = "Imfraz" #Emfraz (settlement southwest of Gond√§r that existed in 1444)
-1227 = "Shir√©" #Aksum (Shire is a province near Aksum)
-1230 = "Mesua" #Massawa
-2756 = "W√§lamo" #Welayta
-2757 = "K√§fa" #Kaffa
+1224 = "Imfraz" #Emfraz (settlement southwest of Gond‰r that existed in 1444)
+1227 = "ShirÈ" #Aksum (Shire is a province near Aksum)
+2756 = "W‰lamo" #Welayta
+2757 = "K‰fa" #Kaffa
 2758 = "Innarya" #Ennarea
-2759 = "Itangh" #Gambela (Gambela was founded in the early 1900's. Itangh was around earlier, presumably founded after Menelik's conquest. Province will be taken from Kaffa in my rework anyway so ¬Ø\_(:D)_/¬Ø)
+2759 = "Itangh" #Gambela (Gambela was founded in the early 1900's. Itangh was around earlier, presumably founded after Menelik's conquest. Province will be taken from Kaffa in my rework anyway so Ø\_(:D)_/Ø)
 2760 = "Hadya" #Hadiya
 2761 = "Asella" #Arsi/Assela (Arsi is an Oromo clan who settled here after the 1590's)
 2762 = "Damut" #Damot
 2764 = "Awsa" #Aussa 
-2767 = "End√§rta" #Enderta (Int√§rta is from the Amda Seyon days)
+2767 = "End‰rta" #Enderta (Int‰rta is from the Amda Seyon days)
 2768 = "Ganget" #Angot
 2769 = "Begwena" #Lasta
-2770 = "Ag√§wmeder" #Agew
-2771 = "Sim√©n" #Semien
-2772 = "D√§mbea" #Dembiya (Various other spellings available)
-2787 = "Hamas√©n" #Hamasien
-2791 = "Ankob√§r" #Ankober
+2770 = "Ag‰wmeder" #Agew
+2771 = "SimÈn" #Semien
+2772 = "D‰mbea" #Dembiya (Various other spellings available)
+2791 = "Ankob‰r" #Ankober
