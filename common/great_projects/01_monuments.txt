@@ -8161,6 +8161,26 @@ kiev_pechersk_lavra = {
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
+		
+		conditional_modifier = {
+			trigger = {
+				owner = { 
+					hidden_trigger = {
+						OR = { 
+							tag = KIE 
+							was_tag = KIE 
+							tag = UKR 
+							was_tag = UKR 
+						}
+					}
+					mission_completed = ukr_reclaim_kievan_metropolitanate
+				}
+			}
+			modifier = {
+				global_missionary_strength = 0.01
+				church_loyalty_modifier = 0.05
+			}
+		}	
 	}
 
 	tier_3 = {
@@ -8198,6 +8218,24 @@ kiev_pechersk_lavra = {
 				}
 			}
 		}
+		
+		conditional_modifier = {
+			trigger = {
+				owner = { 
+					OR = { 
+						tag = KIE 
+						was_tag = KIE 
+						tag = UKR 
+						was_tag = UKR 
+					}
+					mission_completed = ukr_reclaim_kievan_metropolitanate
+				}
+			}
+			modifier = {
+				global_missionary_strength = 0.03
+				church_loyalty_modifier = 0.1
+			}
+		}	
 	}
 }
 

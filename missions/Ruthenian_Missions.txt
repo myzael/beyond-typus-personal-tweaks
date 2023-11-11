@@ -68,15 +68,25 @@ bt_ukr_kiev_ruthenia = {
 		required_missions = { ukr_declare_independence }
 		position = 2
 		provinces_to_highlight = {
-			
+			province_id = 280
 		}
 		
 		trigger = {
-			#Kiev 30 dev, 3 buildings
+			280 = {
+				development = 25 #Intentionally the dev of Constantinople in 1444.
+				num_of_buildings_in_province = 2
+			}
 		}
 		
 		effect = {
-			
+			add_legitimacy = 50
+			add_prestige_or_monarch_power = { amount = 50 }
+			if = { #Monarch now styles themselves Grand Kniaz if a Principality.
+				limit = {
+					has_reform = principality
+				}
+				custom_tooltip = ukr_restore_kiev_tooltip
+			}
 		}
 		
 	}
@@ -91,11 +101,38 @@ bt_ukr_kiev_ruthenia = {
 		
 		trigger = {
 			#Upgrade Pechersk monument
-			#Have 50 patriarch authority
+			patriarch_authority = 0.5
+			280 = {
+				has_state_patriach = yes
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+					}
+					has_great_project = {
+						type = kiev_pechersk_lavra
+						tier = 2
+					}
+				}
+			}
 		}
 		
 		effect = {
 			#Pechersk monument gives +0/1/3% missionary strength and +0/5/10% church loyalty modifier
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				custom_tooltip = ukr_reclaim_kievan_metropolitanate_tooltip
+				#set_country_flag = ukr_reclaim_kievan_metropolitanate_miss_completed
+			}
+			else = {
+				280 = {
+					add_province_modifier = {
+						name = "bt_kievan_metropolitanate_no_dlc_mod"
+						duration = -1
+					}
+				}
+			}
 		}
 		
 	}
@@ -110,7 +147,7 @@ bt_ukr_kiev_ruthenia = {
 		
 		trigger = {
 			development_in_provinces = {
-				value = 600 #TODO: Check dev at game start
+				value = 750 #Starts at 480 dev. Missions grant +15 dev as part of rewards. Lands will be decently cheap to develop as well.
 				region = ruthenia_region
 				religion = ROOT
 			}
@@ -143,15 +180,83 @@ bt_ukr_ruthenia_2 = {
 		required_missions = { ukr_restore_kiev }
 		position = 3
 		provinces_to_highlight = {
-			
+			OR = {
+				area = west_dniepr_area
+				area = east_dniepr_area
+				area = chernigov_area
+				area = zaporizhia_area
+				area = lower_dnieper_area
+			}
+			culture = ruthenian
+			OR = {			
+				NOT = { base_production = 4 }
+				NOT = { has_building = farm_estate }
+			}
 		}
 		
 		trigger = {
-			
+			calc_true_if = {
+				west_dniepr_area = {
+					type = all
+					culture = ruthenian
+					base_production = 4
+					has_building = farm_estate
+				}
+				east_dniepr_area = {
+					type = all
+					culture = ruthenian
+					base_production = 4
+					has_building = farm_estate
+				}
+				chernigov_area = {
+					type = all
+					culture = ruthenian
+					base_production = 4
+					has_building = farm_estate
+				}
+				zaporizhia_area = {
+					type = all
+					culture = ruthenian
+					base_production = 4
+					has_building = farm_estate
+				}
+				lower_dnieper_area = {
+					type = all
+					culture = ruthenian
+					base_production = 4
+					has_building = farm_estate
+				}
+				amount = 15
+			}
 		}
 		
 		effect = {
-			
+			ruthenia_region = {
+				limit = {
+					culture = ruthenian
+					base_production = 4
+					has_building = farm_estate
+				}
+				add_province_modifier = {
+					name = "bt_ukr_flourishing_peasant_fields"
+					duration = -1
+				}
+			}
+			crimea_region = {
+				limit = {
+					culture = ruthenian
+					base_production = 4
+					has_building = farm_estate
+				}
+				add_province_modifier = {
+					name = "bt_ukr_flourishing_peasant_fields"
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = "bt_ukr_resettled_dniepr"
+				duration = -1
+			}
 		}
 		
 	}
@@ -175,15 +280,22 @@ bt_ukr_baltic_conquest = {
 		required_missions = { ukr_reclaim_ruthenia }
 		position = 5
 		provinces_to_highlight = {
-			
+			province_group = ukr_access_to_the_baltic_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns = 38 #Riga
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_access_to_the_baltic_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=40 #out of 52.
+			}
 		}
 		
 		effect = {
-			
+			#Possibly trade stuff with Riga or something. Not sure.
 		}
 		
 	}
@@ -193,15 +305,35 @@ bt_ukr_baltic_conquest = {
 		required_missions = { ukr_access_to_the_baltic }
 		position = 6
 		provinces_to_highlight = {
-			
+			province_group = ukr_conquer_poland_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
+			owns = 262 #Krakow
+			owns = 257 #Warsaw
+			OR = {
+				AND = {
+					owns = 41 #Königsberg
+					owns = 43 #Danzig
+				}
+				AND = {
+					owns = 264 #Breslau
+					owns = 263 #Ratibor
+				}
+			}
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_conquer_poland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=58 #out of 83. #Logic is 55 allows for the combination of Poland-Prussia (64), or Poland-Silesia (58)
+			}
 			
 		}
 		
 		effect = {
-			
+			#Free Polish accepted culture.
+			#Depending on if owning Breslau/Ratibor or Königsberg/Danzig, give Silesian/Prussian as accepted culture
 		}
 		
 	}
@@ -211,7 +343,7 @@ bt_ukr_baltic_conquest = {
 		required_missions = { ukr_challenge_northern_rus }
 		position = 7
 		provinces_to_highlight = {
-			ukr_reclaim_novgorod_provinces = yes
+			province_group = ukr_reclaim_novgorod_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
@@ -222,7 +354,7 @@ bt_ukr_baltic_conquest = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=ukr_reclaim_novgorod_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-				value=41 #out of 53.
+				value=40 #out of 53.
 			}
 		}
 		
@@ -237,7 +369,8 @@ bt_ukr_baltic_conquest = {
 		required_missions = { ukr_reclaim_novgorod }
 		position = 8
 		provinces_to_highlight = {
-			
+			province_group = ukr_finnish_borderlands_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
@@ -245,7 +378,7 @@ bt_ukr_baltic_conquest = {
 			owns = 28 #Helsinki
 			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
-				provinces=ukr_finnish_borderlands
+				provinces=ukr_finnish_borderlands_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 				value=17 #out of 22.
 			}
@@ -323,11 +456,15 @@ bt_ukr_ruthenia_russia_conquest = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
+			2407 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
 			change_ruler_stat = {
 				type = mil
 				amount = 1
 			}
-			
 			give_permaclaims_for_mission = { mission=ukr_reclaim_ruthenia }
 		}
 		
@@ -354,7 +491,7 @@ bt_ukr_ruthenia_russia_conquest = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=ukr_reclaim_ruthenia_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-				value=90 #out of 124. Some of them are not owned by the PLC.
+				value=90 #out of 129. Some of them are not owned by the PLC.
 			}
 		}
 		
@@ -379,7 +516,11 @@ bt_ukr_ruthenia_russia_conquest = {
 				add_base_production = 1
 				add_base_manpower = 1
 			}
-			#Possibly Ruthenia-regionwide reward?
+			change_ruler_stat = {
+				type = mil
+				amount = 3
+			}
+			add_ruler_personality = conqueror_personality
 		}
 		
 	}
@@ -392,7 +533,6 @@ bt_ukr_ruthenia_russia_conquest = {
 			OR = {
 				province_id = 295 #Moskva
 				province_id = 310 #Novgorod
-				
 			}
 		}
 		
@@ -440,7 +580,7 @@ bt_ukr_ruthenia_russia_conquest = {
 		trigger = {
 			owns = 295 #Moscow
 			owns = 301 #Ryazan
-			owns = 1974 #Murom
+			owns = 1754 #Murom
 			owns = 4147 #Rostov
 			owns = 1956 #Suzdal
 			owns = 307 #Vladimir
@@ -465,71 +605,77 @@ bt_ukr_ruthenia_russia_conquest = {
 		position = 8
 		provinces_to_highlight = {
 			OR = { #15 provs
-				owns = 280 #Kiev
-				owns = 289 #Chernigov
-				owns = 293 #Smolensk
-				owns = 275 #Polotsk
-				owns = 279 #Volodimir
-				owns = 261 #Halych
-				owns = 2407 #Pereyaslavl
-				owns = 295 #Moscow
-				owns = 301 #Ryazan
-				owns = 1974 #Murom
-				owns = 4147 #Rostov
-				owns = 1956 #Suzdal
-				owns = 307 #Vladimir
-				owns = 310 #Novgorod
-				owns = 274 #Pskov
+				province_id = 280 #Kiev
+				province_id = 289 #Chernigov
+				province_id = 293 #Smolensk
+				province_id = 275 #Polotsk
+				province_id = 279 #Volodimir
+				province_id = 261 #Halych
+				province_id = 2407 #Pereyaslavl
+				province_id = 295 #Moscow
+				province_id = 301 #Ryazan
+				province_id = 1754 #Murom
+				province_id = 4147 #Rostov
+				province_id = 1956 #Suzdal
+				province_id = 307 #Vladimir
+				province_id = 310 #Novgorod
+				province_id = 274 #Pskov
 			}
-			
+			OR = {
+				NOT = {	development = 30 }
+				NOT = {	num_of_buildings_in_province = 3 }
+				NOT = {	owned_by = ROOT }
+			}
 		}
 		
 		trigger = {
 			calc_true_if = {
-				#tooltip = "ukr_rebuild_principalities_tt"
+				tooltip = "ukr_rebuild_principalities_tt"
 				ruthenia_region = {
 					type = all
 					OR = { #A bit lazy here, just pasting the same trigger on both
-						owns = 280 #Kiev
-						owns = 289 #Chernigov
-						owns = 293 #Smolensk
-						owns = 275 #Polotsk
-						owns = 279 #Volodimir
-						owns = 261 #Halych
-						owns = 2407 #Pereyaslavl
-						owns = 295 #Moscow
-						owns = 301 #Ryazan
-						owns = 1974 #Murom
-						owns = 4147 #Rostov
-						owns = 1956 #Suzdal
-						owns = 307 #Vladimir
-						owns = 310 #Novgorod
-						owns = 274 #Pskov
+						province_id = 280 #Kiev
+						province_id = 289 #Chernigov
+						province_id = 293 #Smolensk
+						province_id = 275 #Polotsk
+						province_id = 279 #Volodimir
+						province_id = 261 #Halych
+						province_id = 2407 #Pereyaslavl
+						province_id = 295 #Moscow
+						province_id = 301 #Ryazan
+						province_id = 1754 #Murom
+						province_id = 4147 #Rostov
+						province_id = 1956 #Suzdal
+						province_id = 307 #Vladimir
+						province_id = 310 #Novgorod
+						province_id = 274 #Pskov
 					}
 					development = 30
 					num_of_buildings_in_province = 3
+					owned_by = ROOT
 				}
 				russia_region = {
 					type = all
 					OR = { #A bit lazy here, just pasting the same trigger on both
-						owns = 280 #Kiev
-						owns = 289 #Chernigov
-						owns = 293 #Smolensk
-						owns = 275 #Polotsk
-						owns = 279 #Volodimir
-						owns = 261 #Halych
-						owns = 2407 #Pereyaslavl
-						owns = 295 #Moscow
-						owns = 301 #Ryazan
-						owns = 1974 #Murom
-						owns = 4147 #Rostov
-						owns = 1956 #Suzdal
-						owns = 307 #Vladimir
-						owns = 310 #Novgorod
-						owns = 274 #Pskov
+						province_id = 280 #Kiev
+						province_id = 289 #Chernigov
+						province_id = 293 #Smolensk
+						province_id = 275 #Polotsk
+						province_id = 279 #Volodimir
+						province_id = 261 #Halych
+						province_id = 2407 #Pereyaslavl
+						province_id = 295 #Moscow
+						province_id = 301 #Ryazan
+						province_id = 1974 #Murom
+						province_id = 1754 #Rostov
+						province_id = 1956 #Suzdal
+						province_id = 307 #Vladimir
+						province_id = 310 #Novgorod
+						province_id = 274 #Pskov
 					}
 					development = 30
 					num_of_buildings_in_province = 3
+					owned_by = ROOT
 				}
 				amount = 12
 			}
@@ -546,15 +692,30 @@ bt_ukr_ruthenia_russia_conquest = {
 		required_missions = { ukr_rebuild_principalities }
 		position = 9
 		provinces_to_highlight = {
-			
+			owner = {
+				NOT = { tag = ROOT }
+				culture_group = east_slavic
+				#Technically need to account for unified slavic but honestly, I cannot be bothered. That fringe case will simply not happen if a country exists with this mission tree, unless a Russia decides to release a Kiev, but they need to be independent to get here so... ./shrug //Dub
+			}
 		}
 		
 		trigger = {
-			
+			custom_trigger_tooltip = {
+				tooltip = ukr_mother_of_all_rus_tooltip
+				NOT = {
+					any_country = {
+						NOT = { tag = ROOT }
+						culture_group = east_slavic
+					}
+				}
+			}
 		}
 		
 		effect = {
-			
+			add_country_modifier = {
+				name = "bt_ukr_mother_of_all_rus"
+				duration = -1
+			}
 		}
 		
 	}
@@ -578,7 +739,8 @@ bt_ukr_challenge_ottos = {
 		required_missions = { ukr_declare_independence }
 		position = 2
 		provinces_to_highlight = {
-			
+			province_group = ukr_restore_tmutarakan_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
@@ -593,7 +755,19 @@ bt_ukr_challenge_ottos = {
 		}
 		
 		effect = {
-			
+			3245 = {
+				add_base_tax = 1
+				add_base_production = 1
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+			2447 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 2
+				change_religion = ROOT
+				change_culture = ROOT
+			}
 		}
 		
 	}
@@ -603,15 +777,235 @@ bt_ukr_challenge_ottos = {
 		required_missions = { ukr_restore_tmutarakan }
 		position = 3
 		provinces_to_highlight = {
-			
+			province_id = 151 #Constantinople
 		}
 		
 		trigger = {
-			
+			151 = { #Either you own Constantinople directly, indirectly, or you have 100 opinion with them.
+				owner = {
+					religion = orthodox
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
 		}
 		
 		effect = {
-			
+			if = { #Show rewards with tooltip
+				limit = {
+					NOT = {
+						151 = {
+							owner = {
+								religion = orthodox
+								OR = {
+									alliance_with = ROOT
+									tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
+				}
+				custom_tooltip = ukr_reconnect_with_constantinople_direct_conquest
+				tooltip = {
+					balkan_region = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							owned_by = TUR
+						}
+						add_permanent_claim = ROOT
+					}
+					hudavendigar_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							owned_by = TUR
+						}
+						add_permanent_claim = ROOT
+					}
+					karasi_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							owned_by = TUR
+						}
+						add_permanent_claim = ROOT
+					}
+					aydin_area = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+							owned_by = TUR
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+				custom_tooltip = ukr_reconnect_with_constantinople_subject_conquest_or_friendly
+				tooltip = {
+					151 = {
+						owner = {
+							balkan_region = {
+								limit = {
+									NOT = { is_core = PREV }
+									NOT = { is_permanent_claim = PREV }
+									owned_by = TUR
+								}
+								add_permanent_claim = PREV
+							}
+							hudavendigar_area = {
+								limit = {
+									NOT = { is_core = PREV }
+									NOT = { is_permanent_claim = PREV }
+									owned_by = TUR
+								}
+								add_permanent_claim = PREV
+							}
+							karasi_area = {
+								limit = {
+									NOT = { is_core = PREV }
+									NOT = { is_permanent_claim = PREV }
+									owned_by = TUR
+								}
+								add_permanent_claim = PREV
+							}
+							aydin_area = {
+								limit = {
+									NOT = { is_core = PREV }
+									NOT = { is_permanent_claim = PREV }
+									owned_by = TUR
+								}
+								add_permanent_claim = PREV
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					owns = 151
+				}
+				balkan_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						owned_by = TUR
+					}
+					add_permanent_claim = ROOT
+				}
+				hudavendigar_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						owned_by = TUR
+					}
+					add_permanent_claim = ROOT
+				}
+				karasi_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						owned_by = TUR
+					}
+					add_permanent_claim = ROOT
+				}
+				aydin_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+						owned_by = TUR
+					}
+					add_permanent_claim = ROOT
+				}
+				set_country_flag = ukr_151_direct_conquest #Set what Ruthenia did to complete the mission for ukr_push_back_turk mission reward
+			}
+			else_if = {
+				limit = {
+					country_or_non_sovereign_subject_holds = 151
+				}
+				151 = {
+					owner = {
+						balkan_region = {
+							limit = {
+								NOT = { is_core = PREV }
+								NOT = { is_permanent_claim = PREV }
+								owned_by = TUR
+							}
+							add_permanent_claim = PREV
+						}
+						hudavendigar_area = {
+							limit = {
+								NOT = { is_core = PREV }
+								NOT = { is_permanent_claim = PREV }
+								owned_by = TUR
+							}
+							add_permanent_claim = PREV
+						}
+						karasi_area = {
+							limit = {
+								NOT = { is_core = PREV }
+								NOT = { is_permanent_claim = PREV }
+								owned_by = TUR
+							}
+							add_permanent_claim = PREV
+						}
+						aydin_area = {
+							limit = {
+								NOT = { is_core = PREV }
+								NOT = { is_permanent_claim = PREV }
+								owned_by = TUR
+							}
+							add_permanent_claim = PREV
+						}
+					}
+				}
+				set_country_flag = ukr_151_subject_conquest #Set what Ruthenia did to complete the mission for ukr_push_back_turk mission reward
+			}
+			else = {
+				151 = {
+					owner = {
+						balkan_region = {
+							limit = {
+								NOT = { is_core = PREV }
+								NOT = { is_permanent_claim = PREV }
+								owned_by = TUR
+							}
+							add_permanent_claim = PREV
+						}
+						hudavendigar_area = {
+							limit = {
+								NOT = { is_core = PREV }
+								NOT = { is_permanent_claim = PREV }
+								owned_by = TUR
+							}
+							add_permanent_claim = PREV
+						}
+						karasi_area = {
+							limit = {
+								NOT = { is_core = PREV }
+								NOT = { is_permanent_claim = PREV }
+								owned_by = TUR
+							}
+							add_permanent_claim = PREV
+						}
+						aydin_area = {
+							limit = {
+								NOT = { is_core = PREV }
+								NOT = { is_permanent_claim = PREV }
+								owned_by = TUR
+							}
+							add_permanent_claim = PREV
+						}
+					}
+				}
+				set_country_flag = ukr_151_friendly #Set what Ruthenia did to complete the mission for ukr_push_back_turk mission reward
+			}
 		}
 		
 	}
@@ -621,15 +1015,96 @@ bt_ukr_challenge_ottos = {
 		required_missions = { ukr_reconnect_with_constantinople }
 		position = 4
 		provinces_to_highlight = {
+			OR = {
+				region = balkan_region
+				area = hudavendigar_area
+				area = karasi_area
+				area = aydin_area
+			}
+			owned_by = TUR
 			
 		}
 		
 		trigger = {
-			
+			balkan_region = {
+				type = all
+				NOT = { owned_by = TUR }
+			}
+			hudavendigar_area = {
+				type = all
+				NOT = { owned_by = TUR }
+			}
+			karasi_area = {
+				type = all
+				NOT = { owned_by = TUR }
+			}
+			aydin_area = {
+				type = all
+				NOT = { owned_by = TUR }
+			}
 		}
 		
 		effect = {
-			
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ukr_151_direct_conquest
+						has_country_flag = ukr_151_subject_conquest
+						has_country_flag = ukr_151_friendly
+					}
+				}
+				custom_tooltip = ukr_push_back_turk_tt
+			}
+			if = {
+				limit = {
+					has_country_flag = ukr_151_direct_conquest
+				}
+				anatolia_region = {
+					if = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = ukr_151_subject_conquest
+				}
+				151 = {
+					owner = {
+						add_liberty_desire = -100
+						add_trust = {
+							who = ROOT
+							value = 25
+							mutual = yes
+						}
+					}
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 2
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = ukr_151_friendly
+				}
+				151 = {
+					owner = {
+						add_trust = {
+							who = ROOT
+							value = 50
+							mutual = yes
+						}
+						add_favors = {
+						   who = ROOT
+						   amount = 50
+						}
+					}
+				}
+			}
 		}
 		
 	}
@@ -713,7 +1188,7 @@ bt_ukr_steppe_conquests_dlc = {
 		}
 		
 		effect = {
-			
+			#Prov modifier to owned Sunni provinces in Pontic Steppe, giving miss. strength
 		}
 		
 	}
@@ -731,7 +1206,10 @@ bt_ukr_steppe_conquests_dlc = {
 		}
 		
 		effect = {
-			
+			#Event to establish Zaporizhia:
+			#Zaporizhia becomes Cossack Host subject type, giving +20% available Cossacks modifier to overlord
+			#Zaporizhia gets Sich Rada gov reform and all that jazz, plus claims to Wild Fields mission
+			#If Zaporizhia is not established, give claim to Wild Fields mission
 		}
 		
 	}
@@ -749,7 +1227,7 @@ bt_ukr_steppe_conquests_dlc = {
 		}
 		
 		effect = {
-			
+			#Prov modifier to owned Sunni provinces in Pontic Steppe, giving miss. strength
 		}
 		
 	}
@@ -767,7 +1245,8 @@ bt_ukr_steppe_conquests_dlc = {
 		}
 		
 		effect = {
-			
+			#Prov modifier to owned Sunni provinces in Pontic Steppe, giving miss. strength
+			#Enable Cossack estate privilege to establish Siberian Frontiers.
 		}
 		
 	}

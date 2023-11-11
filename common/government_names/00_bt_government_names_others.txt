@@ -368,3 +368,60 @@ imperial_abbacy = {
 		government = theocracy
 	}
 }
+
+####
+# Dub
+####
+
+ruthenian_monarchy = { #Carbon-copy of Muscovy monarchy
+	rank = {
+		1 = GRAND_PRINCIPALITY
+		2 = GRAND_PRINCIPALITY
+		3 = TSARDOM
+	}
+
+	ruler_male = {
+		1 = GREAT_KNIAZ
+		2 = GREAT_KNIAZ
+		3 = TSAR
+	}
+
+	ruler_female = {
+		1 = GREAT_KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = TSARITSA
+	}
+	
+	consort_male = {
+		1 = GREAT_KNIAZ
+		2 = GREAT_KNIAZ
+		3 = TSAR
+	}
+
+	consort_female = {
+		1 = GREAT_KNIAGINIA
+		2 = GREAT_KNIAGINIA
+		3 = TSARITSA
+	}
+
+	heir_male = {
+		1 = KNIAZHICH
+		2 = KNIAZHICH
+		3 = TSAREVICH
+	}
+
+	heir_female = {
+		1 = KNIAZHNA
+		2 = KNIAZHNA
+		3 = TSAREVNA
+	}
+
+	trigger = {
+		OR = {
+			has_reform = principality
+			has_reform = tsardom
+		}
+		tag = KIE
+		mission_completed = ukr_restore_kiev
+	}
+}
