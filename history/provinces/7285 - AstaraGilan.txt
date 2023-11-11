@@ -27,6 +27,7 @@ hre = no
 #Fort/Other Buildings
 
 #Special Modifiers
+center_of_trade = 1
 
 #Discoveries
 discovered_by = western
