@@ -5,7 +5,7 @@
 28 = { "Nyland" "Raseborg" }
 29 = { "Tavastehus" "Tavastehus" }
 30 = { "Viborg" "Viborg" }
-31 = { "Sydsavolax" "Sankt Olofsborg" } #(JP) Capital can also be "Nyslott"
+31 = { "Sydsavolax" "Nyslott" }
 32 = { "Kexholm" "Kexholm" }
 3128 = { "Satakunda" "Ulvsby" }
 4123 = { "Birkaland" "Tammerfors" }
@@ -13,7 +13,7 @@
 7803 = { "Nordtavastland" "Jyväskylä" }
 7804 = { "Nordsavolax" "Kuopio" }
 7805 = { "Sydtavastland" "Lahtis" }
-7806 = { "Jäskis" "Jäskis" }
+7806 = { "Villmanstrand" "Villmanstrand" } #Could go with Kymmenegård or Kymmenedalen, but eh.
 7807 = { "Borgå" "Borgå" }
 7808 = { "Sordavala" "Sordavala" }
 
@@ -51,8 +51,8 @@
 #eastern europe
 271 = "Samogitien"
 273 = "Lettgallen"
-310 = "Navgard"
-313 = "Ärkeängel"
+#310 = "Navgard"
+#313 = "Ärkeängel" #Cut by Dub: This name sounds as bad as a place called "Archangel" in English
 #1776 = "Karelen"
 #1777 = "Kolahalvön"
 1936 = "Kaunas"

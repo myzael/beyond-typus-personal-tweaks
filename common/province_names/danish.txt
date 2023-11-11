@@ -328,7 +328,7 @@
 30 = { "Viborg" "Viborg" } # Same name as 7770, but look at the notes there.
 32 = { "KÊksborg" "KÊksborg" } #
 4124 = { "Karelen" "LÊksa" } #
-7806 = { "Sydkarelen" "JÊskis" } #
+7806 = { "Sydkarelen" "Lappee" } #Change by Dub changing from J‰‰ski to Lappee/Lapvesi/Villmanstrand (Swedish). Don't know enough Danish to translate it properly.
 7808 = { "Sordavala" "Sordavala" } #
 
 #Denmark

@@ -30,7 +30,7 @@
 7803 = { "Pohjois-H‰me" "Jyv‰skyl‰" }
 7804 = { "Pohjois-Savo" "Kuopio" }
 7805 = { "Etel‰-H‰me" "Lahti" }
-7806 = { "J‰‰ski" "J‰‰ski" }
+7806 = { "Lappee" "Kauskila" } #Going with Karelian local name for the city, but Lappee for the prov name for now. Technically would be split between karelian.txt and finnish.txt.
 7807 = { "Porvoo" "Porvoo" }
 7808 = { "Sortavala" "Sortavala" }
 
