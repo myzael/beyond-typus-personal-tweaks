@@ -54,3 +54,8 @@ bt_kievan_metropolitanate_no_dlc_mod = { #T2 version of additional modifiers for
 	global_missionary_strength = 0.01
 	church_loyalty_modifier = 0.05
 }
+
+bt_ukr_ruthenia_restored = {
+	tax_income = 12 #+2 base tax
+	trade_goods_size = 0.2 #+2 base production
+}

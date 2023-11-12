@@ -101,6 +101,7 @@
  ukr_restore_kiev_tooltip:0 "[Root.GetName] will become a §YGrand Principality§!"
  ukr_reclaim_kievan_metropolitanate_title:0 "The Kievan Metropolitanate"
  ukr_reclaim_kievan_metropolitanate_desc:0 ""
+ ukr_reclaim_kievan_metropolitanate_tooltip:0 "The §YKiev Pechersk Lavra§! Monument will grant additional modifiers at Significant and Magnificent level."
  ukr_restore_ruthenia_title:0 "Restore Ruthenia"
  ukr_restore_ruthenia_desc:0 "Ruthenia has been neglected and ridden with devastation for far too long. With the region firmly in our control, it is time we dedicate serious attempts towards restoring the region to its former glory, and return peace to the region once and for all."
  ukr_resettle_dniepr_title:0 "Resettle the Dniepr"
@@ -182,6 +183,18 @@
  ukr_question_of_serfdom_desc:0 ""
  ukr_freedom_of_steppes_title:0 "The Freedom of the Steppes"
  ukr_freedom_of_steppes_desc:0 ""
+ 
+ #Mission modifiers
+ bt_ukr_mother_of_all_rus:0 "Mother of All Rus"
+ bt_ukr_mother_of_all_rus_desc:0 "We have restored the mighty Kievan Rus to its former glory and can now claim the Mother of All Rus."
+ bt_ukr_flourishing_peasant_fields:0 "Flourishing Peasant Fields"
+ bt_ukr_flourishing_peasant_fields_desc:0 "The fields and farms are prospering and are yielding large amounts of food for the populace."
+ bt_ukr_resettled_dniepr:0 "Resettled the Dniepr"
+ bt_ukr_resettled_dniepr_desc:0 "With the settlements around the Dniepr resettled and restored to what it was prior to the Mongol incursion, developing the country is far easier."
+ bt_kievan_metropolitanate_no_dlc_mod:0 "Kiev Pechersk Lavra Metropolitan"
+ bt_kievan_metropolitanate_no_dlc_mod_desc:0 "We have restored the Kievan Metropolitanate and now reap its benefits for the state."
+ bt_ukr_ruthenia_restored:0 "Ruthenia Restored"
+ bt_ukr_ruthenia_restored_desc:0 "The lands of Ruthenia have been restored to their former glory, granting additional treasury in our coffers in both taxation and production."
  
  #Georgia content
  bt_georgia_triarchy:0 "Rule of Vakhtang IV"
