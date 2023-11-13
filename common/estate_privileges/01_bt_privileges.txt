@@ -276,6 +276,7 @@ estate_cossacks_siberian_frontier = {
     }
 	benefits = {
 		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
 		global_colonial_growth = 20
 	}
     ai_will_do = {

@@ -1,0 +1,3 @@
+cossack_host_bonus = {
+	allowed_cossack_fraction = 0.2
+}

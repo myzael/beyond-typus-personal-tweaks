@@ -369,7 +369,6 @@ hanseatic_league_member_bt = {
 	subject_opinion_modifier = is_vassal
 }
 
-
 bt_english_march = {
 	copy_from = vassal
 	count = vassal
@@ -420,4 +419,45 @@ bt_english_march = {
 			}
 		}
 	}
+}
+
+bt_cossack_host = {
+	copy_from = march
+	count = march
+    sprite = GFX_icon_march
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_lead_march
+	diplomacy_subject_sprite = GFX_icon_diplomacy_am_march
+	
+	# Properties:
+	forms_trade_companies = no
+	pays_overlord = 0.0
+	military_focus = 2
+	base_liberty_desire = -50.0
+	can_be_annexed = yes
+	forcelimit_to_overlord = 0.2
+	
+	# Subject Interactions	
+	scutage = no
+	subsidize_armies = yes
+	fortify_march = yes
+	send_officers = yes
+	conscript_general = yes
+	
+	# Modifiers
+	
+	modifier_overlord = clear #We don't want to duplicate the ones inherited from vassal
+	modifier_subject = clear #Ditto
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_overlord = {
+		modifier = march_subject
+	}
+	modifier_overlord = {
+		modifier = cossack_host_bonus
+		trigger = {
+			total_development = 200
+		}
+	}
+	
 }

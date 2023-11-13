@@ -366,6 +366,16 @@ bt_ukr_baltic_conquest = {
 		
 		effect = {
 			#Some sort of bonus for Novgorod and possibly trade related stuff?
+			310 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			274 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
 			give_permaclaims_for_mission = { mission=ukr_finnish_borderlands }
 		}
 		
@@ -501,6 +511,7 @@ bt_ukr_ruthenia_russia_conquest = {
 			owns = 289 #Chernigov
 			owns = 293 #Smolensk
 			owns = 275 #Polotsk
+			owns = 1941 #Turov
 			owns = 279 #Volodimir
 			owns = 261 #Halych
 			owns = 2407 #Pereyaslavl
@@ -519,6 +530,11 @@ bt_ukr_ruthenia_russia_conquest = {
 				add_base_manpower = 1
 			}
 			275 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			1941 = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
@@ -612,6 +628,36 @@ bt_ukr_ruthenia_russia_conquest = {
 		
 		effect = {
 			#Sack of Moscow, dev other cities
+			295 = {
+				add_base_tax = -5
+				add_base_production = -5
+				add_base_manpower = -5
+			}
+			301 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			1754 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			4147 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			1956 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			307 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
 		}
 		
 	}
@@ -626,7 +672,8 @@ bt_ukr_ruthenia_russia_conquest = {
 				province_id = 289 #Chernigov
 				province_id = 293 #Smolensk
 				province_id = 275 #Polotsk
-				province_id = 279 #Volodimir
+				province_id = 1941 #Turov
+				province_id = 279 #Volodymyr
 				province_id = 261 #Halych
 				province_id = 2407 #Pereyaslavl
 				province_id = 295 #Moscow
@@ -655,7 +702,8 @@ bt_ukr_ruthenia_russia_conquest = {
 						province_id = 289 #Chernigov
 						province_id = 293 #Smolensk
 						province_id = 275 #Polotsk
-						province_id = 279 #Volodimir
+						province_id = 1941 #Turov
+						province_id = 279 #Volodymyr
 						province_id = 261 #Halych
 						province_id = 2407 #Pereyaslavl
 						province_id = 295 #Moscow
@@ -678,7 +726,8 @@ bt_ukr_ruthenia_russia_conquest = {
 						province_id = 289 #Chernigov
 						province_id = 293 #Smolensk
 						province_id = 275 #Polotsk
-						province_id = 279 #Volodimir
+						province_id = 1941 #Turov
+						province_id = 279 #Volodymyr
 						province_id = 261 #Halych
 						province_id = 2407 #Pereyaslavl
 						province_id = 295 #Moscow
@@ -694,12 +743,57 @@ bt_ukr_ruthenia_russia_conquest = {
 					num_of_buildings_in_province = 3
 					owned_by = ROOT
 				}
-				amount = 12
+				amount = 8
 			}
 		}
 		
 		effect = {
-			#Add provtrig modifier to cities that fulfil mission: So long as dev > 30, give extra tax & production modifiers and dev cost reduction
+			#Add provtrig modifier to cities that fulfil mission: So long as dev > 30, give unique bonuses for each one.
+			custom_tooltip = ukr_rebuild_principalities_effect_tt
+			hidden_effect = {
+				280 = { #Kiev
+					add_province_triggered_modifier = bt_kiev_principality
+				}
+				289 = { #Chernigov
+					add_province_triggered_modifier = bt_chernigov_principality
+				}
+				293 = { #Smolensk
+					add_province_triggered_modifier = bt_smolensk_principality
+				}
+				275 = { #Polotsk
+					add_province_triggered_modifier = bt_polotsk_principality
+				}
+				279 = { #Volodymyr
+					add_province_triggered_modifier = bt_volodymyr_principality
+				}
+				2407 = { #Pereyaslavl
+					add_province_triggered_modifier = bt_pereyaslavl_principality
+				}
+				295 = { #Moscow
+					add_province_triggered_modifier = bt_moscow_principality
+				}
+				301 = { #Ryazan
+					add_province_triggered_modifier = bt_ryazan_principality
+				}
+				1974 = { #Murom
+					add_province_triggered_modifier = bt_murom_principality
+				}
+				1754 = { #Rostov
+					add_province_triggered_modifier = bt_rostov_principality
+				}
+				1956 = { #Suzdal
+					add_province_triggered_modifier = bt_suzdal_principality
+				}
+				307 = { #Vladimir
+					add_province_triggered_modifier = bt_vladimir_principality
+				}
+				310 = { #Novgorod
+					add_province_triggered_modifier = bt_novgorod_principality
+				}
+				274 = { #Pskov
+					add_province_triggered_modifier = bt_pskov_principality
+				}
+			}
 		}
 		
 	}
@@ -802,10 +896,7 @@ bt_ukr_challenge_ottos = {
 				owner = {
 					religion = orthodox
 					OR = {
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
+						alliance_with = ROOT
 						tag = ROOT
 						is_subject_of = ROOT
 					}
@@ -1291,10 +1382,15 @@ bt_ukr_steppe_conquests_dlc = {
 		}
 		
 		trigger = {
+			283 = {
+				owned_by = ROOT
+				religion = orthodox
+			}
 			calc_true_if = {
 				crimea_region = {
 					type = all
 					religion = orthodox
+					owned_by = ROOT
 				}
 				amount = 10
 			}
@@ -1313,7 +1409,7 @@ bt_ukr_steppe_conquests_dlc = {
 				}
 			}
 			country_event_with_insight = {
-				id = X
+				id = BeyondTypusRuthenianFlavour.1
 				insight_tooltip = ukr_permanent_cossack_host_insight
 			}
 			#Event to establish Zaporizhia:

@@ -1,0 +1,22 @@
+namespace = BeyondTypusRuthenianFlavour
+
+
+#Release Zaporizhie
+country_event = {
+	id = BeyondTypusRuthenianFlavour.1
+	title = "BeyondTypusRuthenianFlavour.EVTNAME1"
+	desc = "BeyondTypusRuthenianFlavour.EVTDESC1"
+	picture = COSSACK_ESTATE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+	option = { # Yay, an heir!
+		name = "BeyondTypusRuthenianFlavour.EVTOPTA1"
+	}
+	option = { # Well, he isn't of age, but we'll make it work.
+		name = "BeyondTypusRuthenianFlavour.EVTOPTB1"
+	}
+}
