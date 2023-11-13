@@ -1,3 +1,4 @@
+#BT Nobles privileges
 estate_nobles_very_strong_duchies = {
 	icon = privilege_royal_authority
 	max_absolutism = -10
@@ -233,4 +234,74 @@ estate_nobles_border_forts = {
 			NOT = { has_estate_privilege = estate_nobles_border_forts }
 		}
 	}
+}
+
+#BT Cossacks privileges
+estate_cossacks_siberian_frontier = {
+    icon = privilege_siberian_frontier
+    land_share = 5 # should this cost crown land?
+    max_absolutism = -5
+    loyalty = 0.05
+    influence = 0.05
+    
+    is_valid = { # auto revoke when no provinces left to colonize
+        any_owned_province = {
+            any_empty_neighbor_province = {
+                ROOT = { has_discovered = prev }
+                is_city = no
+                is_wasteland = no
+                OR = {
+                    region = ural_region
+                    region = west_siberia_region
+                    region = east_siberia_region
+                }
+            }
+        }
+    }
+    can_select = {
+        NOT = {
+            has_idea = siberian_frontier
+            has_idea = custom_establish_frontier_ability
+        }
+		mission_completed = ukr_break_tatar_yoke
+    }
+    on_granted = {
+        #custom_tooltip = estate_cossacks_siberian_frontier_effect_tooltip
+    }
+    on_revoked = {
+        #custom_tooltip = estate_cossacks_siberian_frontier_revoke_tooltip
+    }
+    on_invalid = {
+        #custom_tooltip = estate_cossacks_siberian_frontier_revoke_tooltip
+    }
+	benefits = {
+		may_establish_frontier = yes
+		global_colonial_growth = 20
+	}
+    ai_will_do = {
+        factor = 1
+        modifier = {
+            factor = 2
+            num_of_colonists = 2
+        }
+        modifier = {
+            factor = 2
+            tag = RUS
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                NOT = { crown_land_share = 25 }
+                estate_influence = {
+                    estate = estate_cossacks
+                    influence = 75
+                }
+            }
+            NOT = { has_estate_privilege = estate_cossacks_siberian_frontier }
+        }
+        modifier = {
+            factor = 0
+            is_absolutism_active = yes
+        }
+    }
 }

@@ -59,3 +59,19 @@ bt_ukr_ruthenia_restored = {
 	tax_income = 12 #+2 base tax
 	trade_goods_size = 0.2 #+2 base production
 }
+
+bt_ukr_bane_of_turk = { #Permanent, gain one of these three
+	administrative_efficiency = 0.05
+	power_projection_from_insults = 1
+}
+
+bt_ukr_restored_second_rome = { #Permanent, gain one of these three
+	administrative_efficiency = 0.05
+	legitimacy = 1
+	prestige = 1
+}
+
+bt_ukr_banished_scourge_of_christendom = { #Permanent, gain one of these three
+	administrative_efficiency = 0.05
+	land_morale = 0.1
+}

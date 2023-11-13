@@ -134,8 +134,11 @@
  ukr_restore_tmutarakan_desc:0 ""
  ukr_reconnect_with_constantinople_title:0 "Reconnect with Constantinople"
  ukr_reconnect_with_constantinople_desc:0 ""
+ ukr_reconnect_with_constantinople_direct_conquest:0 "If §Y[Root.GetName]§! completes the mission by owning §Y[151.GetName]§!, the following happens:"
+ ukr_reconnect_with_constantinople_subject_conquest_or_friendly:0 "\nIf §Y[151.GetName]§! is held by a subject or ally instead, the following happens:"
  ukr_push_back_turk_title:0 "Push Back the Turk"
  ukr_push_back_turk_desc:0 ""
+ ukr_push_back_turk_tt:0 "The reward from this mission is dependent on the how the mission §YReconnect with Constantinople§! is completed."
  ukr_caucasus_border_title:0 "The Caucasus Border"
  ukr_caucasus_border_desc:0 ""
  ukr_amass_army_title:0 "Amass an Army"
@@ -144,12 +147,15 @@
  ukr_recruit_cossacks_desc:0 ""
  ukr_permanent_cossack_host_title:0 "A Permanent Cossack Host"
  ukr_permanent_cossack_host_desc:0 ""
+ ukr_permanent_cossack_host_tooltip:0 "Culture in §YProvinces that fulfil the mission requirements§! will become §YRuthenian§!"
+ ukr_permanent_cossack_host_insight:0 ""
  ukr_claim_wild_fields_title:0 "Claim the Wild Fields"
  ukr_claim_wild_fields_desc:0 ""
  ukr_break_tatar_yoke_title:0 "Break the Tatar Yoke"
  ukr_break_tatar_yoke_desc:0 ""
+ ukr_break_tatar_yoke_tooltip:0 "Enables the §Y[This.GetCossacksName]§! estate privilege §YEstablish Siberian Frontiers§!"
  ukr_venture_east_title:0 "Venture Further East"
- ukr_venture_east_desc:0 ""
+ ukr_venture_east_desc:0 "The event will allow us to release @ZAZ §Y[ZAZ.GetName]§! as a §YCossack Host§! subject type with the §YSich Rada§! government reform. If done, §Y[ZAZ.GetName]§! also receives permanent claims on the provinces required for the mission §YBreak the Tatar Yoke§!.\n\nAlternatively, we gain 100 £ADM£, 100 £DIP£ and 100 £MIL£, whilst receiving permanent claims on the provinces required for the mission §YBreak the Tatar Yoke§!."
  
  ukr_black_sea_navy_title:0 "A Black Sea Navy"
  ukr_black_sea_navy_desc:0 ""
@@ -195,6 +201,17 @@
  bt_kievan_metropolitanate_no_dlc_mod_desc:0 "We have restored the Kievan Metropolitanate and now reap its benefits for the state."
  bt_ukr_ruthenia_restored:0 "Ruthenia Restored"
  bt_ukr_ruthenia_restored_desc:0 "The lands of Ruthenia have been restored to their former glory, granting additional treasury in our coffers in both taxation and production."
+ bt_ukr_bane_of_turk:0 "Bane of the Turkish Devil"
+ bt_ukr_bane_of_turk_desc:0 "With the Turkish assailant scurrying away from the Balkans and the city of Constantinople, we have finally banished them from what once was the seat of the many Emperors."
+ bt_ukr_restored_second_rome:0 "Restored the Roman Empire"
+ bt_ukr_restored_second_rome_desc:0 "With the Turks banished from the city of Constantinople and the lands around it, we can now claim rightful restorers of the Roman Empire."
+ bt_ukr_banished_scourge_of_christendom:0 "Banished the Scourge of Christendom"
+ bt_ukr_banished_scourge_of_christendom_desc:0 "As Constantinople has been recovered and the Roman Empire resurges once more, we have shown that we have the capability of protecting the entirety of the Christian Faith from any islamic incursions."
+ 
+ #Technically Schocko's localisation:
+ estate_cossacks_siberian_frontier:0 "Siberian Frontier"
+ estate_cossacks_siberian_frontier_desc:0 "The distant wastes of Siberia call to us. We must clear a way there and let our cossacks go forth and bring land for the [Root.Culture.GetName] people." # reused from idea
+ 
  
  #Georgia content
  bt_georgia_triarchy:0 "Rule of Vakhtang IV"

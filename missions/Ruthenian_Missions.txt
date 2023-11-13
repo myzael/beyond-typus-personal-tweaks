@@ -189,10 +189,13 @@ bt_ukr_ruthenia_2 = {
 				area = zaporizhia_area
 				area = lower_dnieper_area
 			}
-			culture = ruthenian
-			OR = {			
-				NOT = { base_production = 4 }
-				NOT = { has_building = farm_estate }
+			OR = {
+				AND = {
+					culture = ruthenian
+					NOT = { base_production = 4 }
+					NOT = { has_building = farm_estate }
+				}
+				NOT = { culture = ruthenian }
 			}
 		}
 		
@@ -298,6 +301,7 @@ bt_ukr_baltic_conquest = {
 		
 		effect = {
 			#Possibly trade stuff with Riga or something. Not sure.
+			give_permaclaims_for_mission = { mission=ukr_conquer_poland }
 		}
 		
 	}
@@ -362,6 +366,7 @@ bt_ukr_baltic_conquest = {
 		
 		effect = {
 			#Some sort of bonus for Novgorod and possibly trade related stuff?
+			give_permaclaims_for_mission = { mission=ukr_finnish_borderlands }
 		}
 		
 	}
@@ -574,8 +579,8 @@ bt_ukr_ruthenia_russia_conquest = {
 		}
 		
 		effect = {
-			# give_permaclaims_for_mission = { mission=ukr_subjugate_moscow }
-			# give_permaclaims_for_mission = { mission=ukr_reclaim_novgorod }
+			give_permaclaims_for_mission = { mission=ukr_subjugate_moscow }
+			give_permaclaims_for_mission = { mission=ukr_reclaim_novgorod }
 		}
 		
 	}
@@ -642,7 +647,7 @@ bt_ukr_ruthenia_russia_conquest = {
 		
 		trigger = {
 			calc_true_if = {
-				tooltip = "ukr_rebuild_principalities_tt"
+				desc = "ukr_rebuild_principalities_tt"
 				ruthenia_region = {
 					type = all
 					OR = { #A bit lazy here, just pasting the same trigger on both
@@ -1080,6 +1085,10 @@ bt_ukr_challenge_ottos = {
 					}
 					add_permanent_claim = ROOT
 				}
+				add_country_modifier = {
+					name = "bt_ukr_bane_of_turk"
+					duration = -1
+				}
 			}
 			if = {
 				limit = {
@@ -1098,6 +1107,10 @@ bt_ukr_challenge_ottos = {
 					add_base_production = 3
 					add_base_manpower = 2
 				}
+				add_country_modifier = {
+					name = "bt_ukr_restored_second_rome"
+					duration = -1
+				}
 			}
 			if = {
 				limit = {
@@ -1115,6 +1128,10 @@ bt_ukr_challenge_ottos = {
 						   amount = 50
 						}
 					}
+				}
+				add_country_modifier = {
+					name = "bt_ukr_banished_scourge_of_christendom"
+					duration = -1
 				}
 			}
 		}
@@ -1197,6 +1214,7 @@ bt_ukr_steppe_conquests_dlc = {
 		}
 		
 		trigger = { #10% of FL is Cossacks
+			has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
 			if = {
 				limit = {
 					land_forcelimit = 100
@@ -1278,21 +1296,25 @@ bt_ukr_steppe_conquests_dlc = {
 					type = all
 					religion = orthodox
 				}
-				value = 10
+				amount = 10
 			}
 		}
 		
 		effect = {
-			crimea_region = {
-				limit = {
-					owned_by = ROOT
-					religion = orthodox
-					NOT = { culture = ruthenian }
+			custom_tooltip = ukr_permanent_cossack_host_tooltip
+			hidden_effect = {
+				crimea_region = {
+					limit = {
+						owned_by = ROOT
+						religion = orthodox
+						NOT = { culture = ruthenian }
+					}
+					change_culture = ruthenian
 				}
-				change_culture = ruthenian
 			}
-			country_event = {
+			country_event_with_insight = {
 				id = X
+				insight_tooltip = ukr_permanent_cossack_host_insight
 			}
 			#Event to establish Zaporizhia:
 			#Zaporizhia becomes Cossack Host subject type, giving +20% available Cossacks modifier to overlord
@@ -1330,6 +1352,7 @@ bt_ukr_steppe_conquests_dlc = {
 					duration = 5475
 				}
 			}
+			give_permaclaims_for_mission = { mission=ukr_break_tatar_yoke }
 		}
 		
 	}
