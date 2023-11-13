@@ -263,6 +263,62 @@ bt_norwegian_colonialism = {
 				manuever = 3
 				siege = 0
 			}
+			if = {
+				limit = {
+					3113 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				3113 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					3112 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				3112 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					1104 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				1104 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					3111 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				3111 = {
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	bt_nor_colonize_greenland = {
@@ -296,6 +352,34 @@ bt_norwegian_colonialism = {
 			add_country_modifier = {
 				name = "colonial_enthusiasm"
 				duration = 5475
+			}
+			if = {
+				limit = {
+					997 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				997 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					2575 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				2575 = {
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
@@ -340,6 +424,20 @@ bt_norwegian_colonialism = {
 				add_province_modifier = {
 					name = "nor_markland_timber"
 					duration = 18250 #50yr
+				}
+			}
+			if = {
+				limit = {
+					4998 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				4998 = {
+					add_permanent_claim = ROOT
 				}
 			}
 		}

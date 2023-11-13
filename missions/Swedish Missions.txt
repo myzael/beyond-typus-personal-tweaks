@@ -190,6 +190,20 @@ bt_swedish_colonialism = {
 				name = "colonial_enthusiasm"
 				duration = 5475
 			}
+			if = {
+				limit = {
+					1139 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				1139 = {
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	swedish_gold_coast = {
@@ -209,6 +223,62 @@ bt_swedish_colonialism = {
 			add_country_modifier = {
 				name = "colonial_enthusiasm"
 				duration = 5475
+			}
+			if = {
+				limit = {
+					496 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				496 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					5581 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				5581 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					5585 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				5585 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					4416 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				4416 = {
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}

@@ -375,6 +375,34 @@ bt_danish_colonialism = {
 				name = "colonial_enthusiasm"
 				duration = 5475
 			}
+			if = {
+				limit = {
+					1139 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				1139 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					2258 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				2258 = {
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 	}
 	danish_gold_coast = {
@@ -400,6 +428,62 @@ bt_danish_colonialism = {
 			add_country_modifier = {
 				name = "colonial_enthusiasm"
 				duration = 5475
+			}
+			if = {
+				limit = {
+					5584 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				5584 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					4416 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				4416 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					4477 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				4477 = {
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit = {
+					574 = {
+						OR = {
+							is_city = yes
+							is_colony = yes
+						}
+						NOT = { owned_by = ROOT }
+					}
+				}
+				574 = {
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
