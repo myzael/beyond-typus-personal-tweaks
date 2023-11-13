@@ -1912,6 +1912,9 @@
  zaporizhia_area:0 "Zaporizhia"
  zaporizhia_area_adj:0 "Zaporizhian"
  zaporizhia_area_name:0 "Zaporizhia"
+ chernigov_area:0 "Severia"
+ chernigov_area_name:0 "Severia"
+ chernigov_area_adj:0 "Severian"
  
  ##################################
  ############## BT16 ##############
