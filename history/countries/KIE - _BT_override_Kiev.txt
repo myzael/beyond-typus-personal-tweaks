@@ -9,6 +9,8 @@ historical_friend = LIT
 		dip = 4 #Starter of a dynasty. Must count for something.
 		mil = 2
 		birth_date = 1379.1.1		#No idea when this bugger was born, but he did survive 'til 1454 so he ruled for 60 years.
+		death_date = 1454.1.1
+		claim = 95
 	}
 }
 
@@ -22,6 +24,7 @@ historical_friend = LIT
 		female = yes
 		country_of_origin = MOS
 		birth_date = 1397.6.6		#Born "sometime in 1397 or 1398"
+		death_date = 1470.1.1
 	}
 }
 
@@ -33,10 +36,11 @@ historical_friend = LIT
 		dip = 5 #Maintained close ties with Moldavia, Genoese colonies & Theodoro, married off two children to the princes of Pinsk (In Lithuania) and Tver.
 		mil = 4 #Fought with Crimean tatars
 		birth_date = 1420.1.1		#Born this year roughly.
+		death_date = 1470.1.1
 	}
  }
  
- 1454.1.1 = { #Olelko died in 1454.
+1454.1.1 = { #Olelko died in 1454.
 	monarch = { #Ruled until 1450 when the Principality of Kiev was annexed and transformed into the Kiev Voivodeship.
 		name = "Simeon"
 		dynasty = "Olelkovich" #The first of Olelko's dynasty: Olelkovich, son of Olelko
@@ -44,5 +48,7 @@ historical_friend = LIT
 		dip = 5 #Maintained close ties with Moldavia, Genoese colonies & Theodoro, married off two children to the princes of Pinsk (In Lithuania) and Tver.
 		mil = 4 #Fought with Crimean tatars
 		birth_date = 1420.1.1		#Born this year roughly.
+		death_date = 1470.1.1
+		claim = 95
 	}
  }
