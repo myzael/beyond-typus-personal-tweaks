@@ -434,7 +434,7 @@ age_of_reformation = {
 					}
 					tag = PER
 				}
-			}	
+			}
 			modifier = {
 				development_cost = -0.2
 			}

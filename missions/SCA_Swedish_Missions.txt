@@ -224,13 +224,77 @@ swe_scandinavian_colonialism_mission_slot = {
 		position = 7
 		required_missions = {}
 		provinces_to_highlight = {
-			bt_compat_btip_swe_swedish_peasantry_provinces_to_highlight_trigger = yes
+			owned_by = ROOT
+			OR = {
+				trade_goods = grain
+				trade_goods = livestock
+				trade_goods = fish
+			}
+			if = {
+				limit = {
+					ROOT = { NOT = { has_country_flag = had_the_dacke_feud } }
+				}
+				OR = {
+					NOT = { development = 10 }
+					NOT = { has_manufactory_trigger = yes }
+				}
+			}
+			else = {
+				NOT = { has_manufactory_trigger = yes }
+			}
 		}
 		trigger = {
-			bt_compat_swe_btip_swedish_peasantry_trigger_trigger = yes
+			stability = 2
+			has_any_disaster = no
+			NOT = { has_spawned_rebels = particularist_rebels }
+			NOT = { has_spawned_rebels = anti_tax_rebels }
+			num_of_owned_provinces_with = {
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = fish
+				}
+				has_manufactory_trigger = yes
+				value = 10
+			}
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = swe_swedish_peasantry_ct
+					has_country_flag = had_the_dacke_feud
+				}
+				num_of_owned_provinces_with = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = fish
+					}
+					development = 10
+					value = 10
+				}
+			}
 		}
 		effect = {
-			bt_compat_swe_swedish_peasantry_effect_effect = yes
+			add_country_modifier = {
+				name = swe_support_of_the_peasantry
+				duration = -1
+			}
+			custom_tooltip = swe_swedish_peasantry_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							trade_goods = grain
+							trade_goods = fish
+							trade_goods = livestock
+						}
+					}
+					add_province_modifier = {
+						name = swe_support_of_the_peasantry_prov
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
 		}
 	}
 	
@@ -3038,8 +3102,9 @@ swe_religion_start_mission_slot = {
 			}
 		}
 		effect = {
-			country_event = {
-				id = flavor_sca.1
+			enable_branching_mission_review = {
+				key = SWE
+				ai_event_id = flavor_sca.1
 			}
 			if = {
 				limit = {
@@ -3699,6 +3764,7 @@ swe_catholic_mission_slot = {
 			owned_by = PAP
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion = catholic
 			OR = {
 				NOT = { exists = PAP }
@@ -3748,6 +3814,7 @@ swe_catholic_mission_slot = {
 			NOT = { religion = ROOT }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion = catholic
 			OR = {
 				has_idea = devoutness
@@ -3782,6 +3849,7 @@ swe_catholic_mission_slot = {
 		required_missions = { swe_catholic_bulwark }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion = catholic
 			if = {
 				limit = {
@@ -3899,6 +3967,7 @@ swe_catholic_mission_slot = {
 		required_missions = { swe_catholic_30_years_war }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion = catholic
 			NOT = { current_age = age_of_discovery }
 			NOT = { current_age = age_of_reformation }
@@ -3964,6 +4033,7 @@ swe_protestant_mission_slot = {
 		required_missions = { swe_the_theologian_discussions }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion_group = christian
 			NOT = { religion = catholic }
 			calc_true_if = {
@@ -4001,6 +4071,7 @@ swe_protestant_mission_slot = {
 		required_missions = { swe_defenders_of_the_reformers }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion_group = christian
 			NOT = { religion = catholic }
 			if = {
@@ -4106,6 +4177,7 @@ swe_protestant_mission_slot = {
 		required_missions = { swe_protestant_sword }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion_group = christian
 			NOT = { religion = catholic }
 			if = {
@@ -4183,6 +4255,7 @@ swe_protestant_mission_slot = {
 		required_missions = { swe_protestant_30_years_war }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion_group = christian
 			NOT = { religion = catholic }
 			NOT = { current_age = age_of_discovery }
@@ -4249,6 +4322,7 @@ swe_humanist_mission_slot = {
 		required_missions = { swe_the_theologian_discussions }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			has_idea_group = humanist_ideas
 			theologian = 2
 			religious_unity = 0.75
@@ -4272,6 +4346,7 @@ swe_humanist_mission_slot = {
 		required_missions = { swe_commune_between_the_religions }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			has_idea_group = humanist_ideas
 			if = {
 				limit = { has_estate = estate_church }
@@ -4307,6 +4382,7 @@ swe_humanist_mission_slot = {
 		required_missions = { swe_revoke_clergy_power }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			has_idea_group = humanist_ideas
 			full_idea_group = humanist_ideas
 			num_accepted_cultures = 5
@@ -4329,6 +4405,7 @@ swe_humanist_mission_slot = {
 		required_missions = { swe_multi_cultural_kingdom }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			has_idea_group = humanist_ideas
 			full_idea_group = humanist_ideas
 			OR = {
@@ -4399,6 +4476,7 @@ swe_norse_mission_slot = {
 			}
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion = norse_pagan_reformed
 			num_of_owned_provinces_with = {
 				has_manpower_building_trigger = yes
@@ -4428,6 +4506,7 @@ swe_norse_mission_slot = {
 			NOT = { religion = norse_pagan_reformed }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion = norse_pagan_reformed
 			if = {
 				limit = { has_dlc = "Wealth of Nations" }
@@ -4457,6 +4536,7 @@ swe_norse_mission_slot = {
 		required_missions = { swe_spread_the_norse_faith }
 		provinces_to_highlight = {}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion = norse_pagan_reformed
 			OR = {
 				custom_trigger_tooltip = {
@@ -4500,6 +4580,7 @@ swe_norse_mission_slot = {
 			NOT = { religion = norse_pagan_reformed }
 		}
 		trigger = {
+			not_in_mission_preview_mode = { key = SWE }
 			religion = norse_pagan_reformed
 			government_rank = 3
 			religious_unity = 1

@@ -13,10 +13,60 @@ country_event = {
 	trigger = {
 	}
 
-	option = { # Yay, an heir!
+	option = { # Establish the Cossack Host of Zaporizhie
 		name = "BeyondTypusRuthenianFlavour.EVTOPTA1"
+		
+		hidden_effect = {
+			crimea_region = {
+				limit = {
+					owned_by = ROOT
+					religion = orthodox
+					NOT = { culture = ruthenian }
+				}
+				add_core = ZAZ
+				remove_core = ROOT 
+			}
+		}
+		if = {
+			limit = { NOT = { exists = ZAZ } }
+			release = ZAZ
+			hidden_effect = {
+				ZAZ = {
+					change_government = monarchy
+					add_government_reform = feudalism_reform
+					if = {
+						limit = { 28 = { religion = catholic } }
+						change_religion = catholic
+					}
+					else_if = {
+						limit = { 28 = { religion = protestant } }
+						change_religion = protestant
+					}
+					else_if = {
+						limit = { 28 = { religion = reformed } }
+						change_religion = reformed
+					}
+					else = {
+						change_religion = orthodox
+					}
+					change_primary_culture = ruthenian
+					set_prestige_to_zero = yes
+					add_adm_power = 50
+					add_dip_power = 50
+					add_mil_power = 50
+				}
+			}
+		}
+		create_subject = {
+			who = ZAZ
+			subject_type = bt_cossack_host
+		}
 	}
-	option = { # Well, he isn't of age, but we'll make it work.
+	option = { # Refrain
 		name = "BeyondTypusRuthenianFlavour.EVTOPTB1"
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		give_permaclaims_for_mission = { mission=ukr_claim_wild_fields }
 	}
 }

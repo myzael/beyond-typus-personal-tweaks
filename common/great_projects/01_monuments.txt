@@ -2660,7 +2660,7 @@ himeji_castle = {
 
 	#can we build it?
 	build_trigger = {
-		culture_group = japanese_g
+		culture_group = japanese_g #BT added? Restricting monuments is good either way.
 	}
 
 	#what to do when it's built
@@ -2675,12 +2675,12 @@ himeji_castle = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = japanese_g
+		culture_group = japanese_g #BT added? Restricting monuments is good either way.
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = japanese_g
+		culture_group = japanese_g #BT added? Restricting monuments is good either way.
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -9997,7 +9997,7 @@ kaaba = {
 				global_prov_trade_power_modifier = 0.025
 			}
 		}
-
+		
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
@@ -10054,7 +10054,6 @@ kaaba = {
 				global_prov_trade_power_modifier = 0.05
 			}
 		}
-
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 		}
@@ -15948,6 +15947,16 @@ white_house = {
 			OR = {
 				is_former_colonial_nation = yes
 				tag = USA
+				AND = {
+					NOT = { government = native }
+					is_subject = no
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
 			}			
 		}
 	}
@@ -15963,6 +15972,15 @@ white_house = {
 			OR = {
 				is_former_colonial_nation = yes
 				tag = USA
+				AND = {
+					is_subject = no
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
 			}			
 		}
 	}
@@ -15972,6 +15990,15 @@ white_house = {
 			OR = {
 				is_former_colonial_nation = yes
 				tag = USA
+				AND = {
+					is_subject = no
+					capital_scope = {
+						OR = {
+							continent = north_america
+							continent = south_america
+						}
+					}
+				}
 			}			
 		}
 	}
@@ -19221,7 +19248,7 @@ narikala_fortress = {
 	on_destroyed = {
 	}
 	can_use_modifiers_trigger = {
-		AND = {
+		AND = { #Vanilla cut this. Don't think I agree on the change.
 			custom_trigger_tooltip = {
 				tooltip = is_georgian_culture_tt
 				OR = {
@@ -19233,7 +19260,7 @@ narikala_fortress = {
 		}
 	}
 	can_upgrade_trigger = {
-		AND = {
+		AND = { #Vanilla cut this. Don't think I agree on the change.
 			custom_trigger_tooltip = {
 				tooltip = is_georgian_culture_tt
 				OR = {

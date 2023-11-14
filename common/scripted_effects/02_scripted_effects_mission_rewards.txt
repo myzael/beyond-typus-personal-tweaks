@@ -1446,6 +1446,26 @@ country_event_with_option_insight = {
 ######################################
 # Branching Missions Preview Effects #
 ######################################
+enable_branching_mission_review_of_batch = {
+	if = {
+		limit = { not = { has_country_flag = has_batch_1_active } }
+		set_country_flag = has_batch_1_active
+		set_country_flag = can_choose_$key$_1_branching_missions
+	}
+	else_if = {
+		limit = { not = { has_country_flag = has_batch_2_active } }
+		set_country_flag = has_batch_2_active
+		set_country_flag = can_choose_$key$_2_branching_missions
+	}
+	else_if = {
+		limit = { not = { has_country_flag = has_batch_3_active } }
+		set_country_flag = has_batch_3_active
+		set_country_flag = can_choose_$key$_3_branching_missions
+	}
+	else = {
+		log = "Too many mission batches active at the same time. Make sure that any given moment only 3 batches are active to preview"
+	}
+}
 enable_branching_mission_review = {
 	if = {
 		limit = { ai = yes }
@@ -1454,7 +1474,7 @@ enable_branching_mission_review = {
 	else = {
 		custom_tooltip = BYZ_unlock_branches_decision
 		hidden_effect = {
-			set_country_flag = can_choose_$key$_branching_missions
+			enable_branching_mission_review_of_batch = { key = $key$ }
 			change_variable = {
 				which = can_preview_missions_var
 				value = 1
@@ -1462,7 +1482,176 @@ enable_branching_mission_review = {
 		}
 	}
 }
+enable_branching_mission_review_without_ai = {
+	custom_tooltip = BYZ_unlock_branches_decision
+	hidden_effect = {
+		enable_branching_mission_review_of_batch = { key = $key$ }
+		change_variable = {
+			which = can_preview_missions_var
+			value = 1
+		}
+	}
+}
 
+select_current_missions_MAL = {}	#Empty on purpose, preview system only implemented for the sake of completion
+select_current_missions_SON = {
+	if = {
+		limit = { has_country_flag = son_islamic_focus }
+		hidden_effect = { clr_country_flag = son_tolerance_focus }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = -10
+		}
+	}
+	if = {
+		limit = { has_country_flag = son_tolerance_focus }
+		hidden_effect = { clr_country_flag = son_islamic_focus }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = 10
+		}
+	}
+}
+select_current_missions_KON = {}	#Empty on purpose, preview system only implemented for the sake of completion
+select_scandinavian_religion_mission_effect = {
+	if = {
+		limit = { has_country_flag = sca_unlock_catholic_missions }
+		if = {
+			limit = { NOT = { religion = catholic } }
+			add_stability = -2
+			custom_tooltip = flavor_sca.1.a.tt
+			if = {
+				limit = {
+					NOT = { religion = coptic }
+					NOT = { religion = orthodox }
+				}
+				hidden_effect = {
+					every_known_country = {
+						limit = {
+							religion = ROOT
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = swe_abandoned_the_reformation
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					every_known_country = {
+						limit = {
+							religion = ROOT
+						}
+						add_opinion = {
+							who = ROOT
+							modifier = swe_betrayed_our_faith
+						}
+					}
+				}
+			}
+			change_religion = catholic
+			capital_scope = {
+				change_religion = catholic
+			}
+			random_owned_province = {
+				limit = {
+					region = scandinavia_region
+					NOT = { religion = catholic }
+				}
+				change_religion = catholic
+			}
+		}
+	}
+	if = {
+		limit = { has_country_flag = sca_unlock_protestant_missions }
+		if = {
+			limit = { religion = catholic }
+			add_stability = -2
+			custom_tooltip = flavor_sca.1.a.tt
+			hidden_effect = {
+				every_known_country = {
+					limit = {
+						religion = ROOT
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = swe_betrayed_the_holy_see
+					}
+				}
+			}
+			change_religion = protestant
+			capital_scope = {
+				change_religion = protestant
+			}
+			random_owned_province = {
+				limit = {
+					region = scandinavia_region
+					religion = catholic
+				}
+				change_religion = protestant
+			}
+		}
+		else = {
+			capital_scope = {
+				change_religion = ROOT
+			}
+			random_owned_province = {
+				limit = {
+					region = scandinavia_region
+					NOT = { religion = ROOT }
+				}
+				change_religion = ROOT
+			}
+		}
+	}
+	if = {
+		limit = { has_country_flag = sca_unlock_humanist_missions }
+		custom_tooltip = flavor_sca.1.d.tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					religion_group = christian
+					NOT = { religion = orthodox }
+					NOT = { religion = coptic }
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = swe_is_not_for_us
+				}
+			}
+		}
+	}
+	if = {
+		limit = { has_country_flag = sca_unlock_norse_missions }
+		add_army_tradition = 5
+	}
+}
+select_current_missions_SWE = {
+	select_scandinavian_religion_mission_effect = yes
+}
+select_current_missions_DAN = {
+	select_scandinavian_religion_mission_effect = yes
+}
+select_current_missions_NOR = {
+	select_scandinavian_religion_mission_effect = yes
+}
 select_current_missions_TEU = {
 	if = {
 		limit = { has_country_flag = teu_prussian_path }

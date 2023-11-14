@@ -589,7 +589,7 @@ geo_second_branch = {
 						}
 						estate_loyalty = {
 							estate = estate_burghers
-							loyalty = 40
+							loyalty = 50
 						}
 					}
 					if = {
@@ -598,7 +598,7 @@ geo_second_branch = {
 						}
 						estate_loyalty = {
 							estate = estate_nobles
-							loyalty = 40
+							loyalty = 50
 						}
 					}
 					if = {
@@ -607,7 +607,7 @@ geo_second_branch = {
 						}
 						estate_loyalty = {
 							estate = estate_church
-							loyalty = 40
+							loyalty = 50
 						}
 					}
 				}
@@ -672,7 +672,7 @@ geo_second_branch = {
 							}
 							estate_loyalty = {
 								estate = estate_burghers
-								loyalty = 40
+								loyalty = 50
 							}
 						}
 						if = {
@@ -681,7 +681,7 @@ geo_second_branch = {
 							}
 							estate_loyalty = {
 								estate = estate_nobles
-								loyalty = 40
+								loyalty = 50
 							}
 						}
 						if = {
@@ -690,7 +690,7 @@ geo_second_branch = {
 							}
 							estate_loyalty = {
 								estate = estate_church
-								loyalty = 40
+								loyalty = 50
 							}
 						}
 					}
