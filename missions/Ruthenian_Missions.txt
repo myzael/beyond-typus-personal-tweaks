@@ -806,6 +806,7 @@ bt_ukr_ruthenia_russia_conquest = {
 			owner = {
 				NOT = { tag = ROOT }
 				culture_group = east_slavic
+				NOT = { is_subject_of = ROOT }
 				#Technically need to account for unified slavic but honestly, I cannot be bothered. That fringe case will simply not happen if a country exists with this mission tree, unless a Russia decides to release a Kiev, but they need to be independent to get here so... ./shrug //Dub
 			}
 		}
@@ -817,6 +818,7 @@ bt_ukr_ruthenia_russia_conquest = {
 					any_country = {
 						NOT = { tag = ROOT }
 						culture_group = east_slavic
+						is_subject = no
 					}
 				}
 			}
@@ -1367,6 +1369,15 @@ bt_ukr_steppe_conquests_dlc = {
 		
 		effect = {
 			#Prov modifier to owned Sunni provinces in Pontic Steppe, giving miss. strength
+			crimea_region = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_province_modifier = {
+					name = "convert_the_steppes"
+					duration = 5475
+				}
+			}
 		}
 		
 	}

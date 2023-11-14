@@ -32,23 +32,9 @@ country_event = {
 			release = ZAZ
 			hidden_effect = {
 				ZAZ = {
-					change_government = monarchy
-					add_government_reform = feudalism_reform
-					if = {
-						limit = { 28 = { religion = catholic } }
-						change_religion = catholic
-					}
-					else_if = {
-						limit = { 28 = { religion = protestant } }
-						change_religion = protestant
-					}
-					else_if = {
-						limit = { 28 = { religion = reformed } }
-						change_religion = reformed
-					}
-					else = {
-						change_religion = orthodox
-					}
+					change_government = republic
+					add_government_reform = cossacks_reform
+					change_religion = orthodox
 					change_primary_culture = ruthenian
 					set_prestige_to_zero = yes
 					add_adm_power = 50
@@ -60,6 +46,9 @@ country_event = {
 		create_subject = {
 			who = ZAZ
 			subject_type = bt_cossack_host
+		}
+		ZAZ = {
+			give_permaclaims_for_mission = { mission=ukr_claim_wild_fields }
 		}
 	}
 	option = { # Refrain

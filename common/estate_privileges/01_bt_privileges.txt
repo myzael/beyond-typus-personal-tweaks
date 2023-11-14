@@ -261,7 +261,7 @@ estate_cossacks_siberian_frontier = {
     can_select = {
         NOT = {
             has_idea = siberian_frontier
-            has_idea = custom_establish_frontier_ability
+            #has_idea = custom_establish_frontier_ability
         }
 		mission_completed = ukr_break_tatar_yoke
     }
