@@ -510,13 +510,23 @@
 
 #Horn of Africa
 1205 = { "Mogadishu" "Mogadishu" } #(JP) Base Names
+1206 = { "Qardho" "Qardho" } #(JP) Base Names
+1207 = { "Guban" "Danan" } #(JP) Base Names
+1208 = { "Degehabur" "Degehabur" } #(JP) Base Names
 1209 = { "Berbera" "Berbera" } #(JP) Base Names
+1211 = { "Harar" "Harar" } #(JP) Base Names
 1212 = { "Zeyla" "Zeyla" }
 1215 = { "Tadjourah" "Tadjourah" }
+1227 = { "Aksum" "Aksum" } #(JP) Base Names
 1230 = { "Masavva" "Masavva" } 
+2024 = { "Garove" "Garove" }
+2764 = { "Aussa" "Aussa" } #(JP) Base Names
 2766 = { "Sanhit" "Sanhit" } #(JP) Base Names
+2767 = { "Enderta" "Antalo" } #(JP) Base Names
+2773 = { "Jigjiga" "Jigjiga" } #(JP) Base Names
 2775 = { "Merka" "Merka" }
 2776 = { "Afgooye" "Afgooye" } #(JP) Base Names
+2778 = { "Werder" "Werder" } #(JP) Base Names
 2779 = { "El Kere" "El Kere" } #(JP) Base Names
 2780 = { "Beledveyne" "Beleveyne" }
 2782 = { "Warsheikh" "Warsheikh" } #(JP) Base Names
@@ -527,6 +537,9 @@
 2787 = { "Hamasien" "Asmara" } #(JP) Base Names
 2788 = { "Hafun" "Hafun" } #(JP) Base Names
 2789 = { "Las Khorey" "Las Khorey" } #(JP) Base Names
+2790 = { "Erigavo" "Erigavo" } #(JP) Base Names
+2792 = { "Burao" "Burao" } #(JP) Base Names
+2793 = { "Hargeisa" "Hargeisa" } #(JP) Base Names
 2794 = { "Barawa" "Barawa" } #(JP) Base Names
 2795 = { "Mareeg" "Mareeg" } #(JP) Base Names
 5288 = { "Ras Kasar" "Ras Kasar" } #(JP) Base Names
@@ -541,10 +554,18 @@
 8803 = { "Bandar Beyla" "Bandar Beyla" } #(JP) Base Names
 8804 = { "Alula" "Alula" } #(JP) Base Names
 8805 = { "Maydh" "Maydh" } #(JP) Base Names
+8806 = { "Geladin" "Geladin" } #(JP) Base Names
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
 8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
 8809 = { "Gode" "Gode" } #(JP) Base Names
+8860 = { "Biqulzar" "Hazalo" } #(JP) Base Names
+8861 = { "Khubat" "Khubat" }
+8862 = { "Hargaya" "Fedis" } #(JP) Base Names
+8863 = { "Adigala" "Adigala" } #(JP) Base Names
 8864 = { "Doobi" "Bododya" } #(JP) Base Names
+8883 = { "Tembien" "Melfa" } #(JP) Base Names
+8885 = { "Shire" "Shire" } #(JP) Base Names
+8886 = { "Agame" "Debre Damo" } #(JP) Base Names
 8887 = { "Ali Sabieh" "Ali Sabieh" } #(JP) Base Names
 8888 = { "Obock" "Obock" } #(JP) Base Names
 8889 = { "Beilul" "Beilul" } #(JP) Base Names

@@ -3052,9 +3052,8 @@
 2636 = "Maisfeld"			#Or "Neumünd"
 2637 = "Hengstenhüde" 			#(as "Pferdhafen" is a bit a simple held name)
 1206 = "Kardh"
-2024 = "Garö"
-2792 = "Burau"
-2793 = "Klein-Harar"
+2024 = { "Garö" "Garö" }
+2792 = { "Burau" "Burau" }
 788 = "Angosch"
 1184 = "Simbabwe"
 1195 = "Mosambik"

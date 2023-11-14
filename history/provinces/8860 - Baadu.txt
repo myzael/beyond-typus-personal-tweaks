@@ -1,9 +1,9 @@
-#8860 - Baadu
+#8860 - Biqulzar/Hazalo
 #Area - 
 #Region - Horn of Africa
 
 #Core Details
-capital = "Biqulzar"
+capital = "Hazalo"
 is_city = yes
 owner = ADA
 controller = ADA
