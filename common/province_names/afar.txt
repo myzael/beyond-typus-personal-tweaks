@@ -3,5 +3,7 @@
 
 #Horn of Africa
 1215 = { "Tagórri" "Tagórri" } 
+2764 = { "Aysaqiita" "Aysaqiita" }
+8860 = { "Ayelu" "Ayelu" }
 8888 = { "Hayyú" "Hayyú" }
 8890 = { "Idi" "Idi" }

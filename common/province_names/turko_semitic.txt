@@ -160,13 +160,23 @@
 
 #Horn of Africa
 1205 = { "Maqadishu" "Maqadishu" }
+1206 = { "Khardo" "Khardo" }
+1207 = { "Guban" "Danan" } #(JP) Base Names
+1208 = { "Degehabur" "Degehabur" } #(JP) Base Names
 1209 = { "Berbera" "Berbera" } #(JP) Base Names
+1211 = { "Harar" "Harar" } #(JP) Base Names
 1212 = { "Zayla" "Zayla" }
 1215 = { "Tajurah" "Tajurah" }
+1227 = { "Aksum" "Aksum" } #(JP) Base Names
 1230 = { "Musawwa" "Musawwa" }
+2024 = { "Garuvi" "Garuvi" }
+2764 = { "Aussa" "Aussa" } #(JP) Base Names
 2766 = { "Sanhit" "Sanhit" } #(JP) Base Names
+2767 = { "Enderta" "Antalo" } #(JP) Base Names
+2773 = { "Jigjiga" "Jigjiga" } #(JP) Base Names
 2775 = { "Marka" "Marka" }
 2776 = { "Afgooye" "Afgooye" } #(JP) Base Names
+2778 = { "Wardair" "Wardair" }
 2779 = { "El Kere" "El Kere" } #(JP) Base Names
 2780 = { "Baladwein" "Baladwein" }
 2782 = { "Warsheikh" "Warsheikh" } #(JP) Base Names
@@ -177,6 +187,9 @@
 2787 = { "Hamasien" "Asmara" } #(JP) Base Names
 2788 = { "Hafun" "Hafun" } #(JP) Base Names
 2789 = { "Lasqoray" "Lasqoray" }
+2790 = { "Ericabu" "Ericabu" }
+2792 = { "Burau" "Burau" }
+2793 = { "Harjisa" "Harjisa" }
 2794 = { "Barawa" "Barawa" }
 2795 = { "Mareeg" "Mareeg" } #(JP) Base Names
 5288 = { "Ras Kasar" "Ras Kasar" }
@@ -191,10 +204,18 @@
 8803 = { "Bandar Beyla" "Bandar Beyla" } #(JP) Base Names
 8804 = { "Alula" "Alula" } #(JP) Base Names
 8805 = { "Maydh" "Maydh" } #(JP) Base Names
+8806 = { "Geladin" "Geladin" } #(JP) Base Names
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
 8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
 8809 = { "Gode" "Gode" } #(JP) Base Names
+8860 = { "Biqulzar" "Hazalo" } #(JP) Base Names
+8861 = { "Khubat" "Khubat" } #(JP) Base Names
+8862 = { "Hargaya" "Fedis" } #(JP) Base Names
+8863 = { "Adigala" "Adigala" } #(JP) Base Names
 8864 = { "Doobi" "Bododya" } #(JP) Base Names
+8883 = { "Tembien" "Melfa" } #(JP) Base Names
+8885 = { "Shire" "Shire" } #(JP) Base Names
+8886 = { "Agame" "Debre Damo" } #(JP) Base Names
 8887 = { "Ali Sobeih" "Ali Sobeih" }
 8888 = { "Obock" "Obock" } #(JP) Base Names
 8889 = { "Beylul" "Beylul" }
@@ -1099,10 +1120,6 @@
 2797 = "Shandi"
 2800 = "Kusti"
 5287 = "Sinjah"
-
-#somalia
-1207 = "Ogadeniya"
-2778 = "Wardair"
 
 #East african coast
 1197 = "Dar Es Salaam"
@@ -2092,7 +2109,6 @@
 2751 = { "Qunka" "Qunka" } #
 2754 = { "Al-Mansha" "Al-Mansha" } #
 2755 = { "Madinat Salim" "Madinat Salim" } #
-2778 = { "Wardair" "Wardair" } #
 2801 = { "Shamal Darfur" "Al Fashir" } #
 2802 = { "Sharq Darfur" "Ad Du'ain" } #
 2850 = { "Yvyty" "Yvyty" } #
