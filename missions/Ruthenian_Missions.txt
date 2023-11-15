@@ -1402,6 +1402,10 @@ bt_ukr_steppe_conquests_dlc = {
 					type = all
 					religion = orthodox
 					owned_by = ROOT
+					NOT = {
+						area = crimea_area
+						area = azov_area
+					}
 				}
 				amount = 10
 			}

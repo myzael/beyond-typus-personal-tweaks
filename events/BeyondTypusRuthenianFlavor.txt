@@ -23,7 +23,8 @@ country_event = {
 					religion = orthodox
 					NOT = { culture = ruthenian }
 					NOT = {
-						area = 
+						area = crimea_area
+						area = azov_area
 					}
 				}
 				add_core = ZAZ
