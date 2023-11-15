@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "Nafas Mawea"
+capital = "Nafas Mawca"
 is_city = yes
 owner = ETH
 controller = ETH
