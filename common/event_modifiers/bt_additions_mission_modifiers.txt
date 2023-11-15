@@ -75,3 +75,8 @@ bt_ukr_banished_scourge_of_christendom = { #Permanent, gain one of these three
 	administrative_efficiency = 0.05
 	land_morale = 0.1
 }
+
+bt_ukr_black_sea_naval_base = {
+	ship_recruit_speed = -0.25
+	naval_morale = 0.1
+}

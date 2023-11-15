@@ -863,7 +863,7 @@ bt_ukr_challenge_ottos = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces=ukr_restore_tmutarakan_provinces
 				owner_type=country_or_non_sovereign_subject_holds
-				value=17 #out of 22.
+				value=10 #out of 15.
 			}
 		}
 		
@@ -1561,11 +1561,142 @@ bt_ukr_navy = {
 		}
 		
 		trigger = {
-			
+			OR = {
+				282 = { #Odessa, current base of Ukraine navy
+					has_docks_building = yes
+					has_shipyard_building = yes
+				}
+				7201 = { #Mariupol, where parts of Ukraine navy moved after 2014
+					has_docks_building = yes
+					has_shipyard_building = yes
+				}
+				2410 = { #Sevastopol, classical Russian naval base
+					has_docks_building = yes
+					has_shipyard_building = yes
+				}
+				285 = { #Yevpatoria, alternate Russian naval base
+					has_docks_building = yes
+					has_shipyard_building = yes
+				}
+				7203 = { #Taganrog, apparently an alternative Russian naval base
+					has_docks_building = yes
+					has_shipyard_building = yes
+				}
+				2195 = { #Novorossiysk, also an alternative Russian naval base
+					has_docks_building = yes
+					has_shipyard_building = yes
+				}
+			}
+			num_of_galley = 30
+			num_of_heavy_ship = 3
 		}
 		
 		effect = {
-			
+			if = {
+				limit = {
+					282 = { #Odessa, current base of Ukraine navy
+						has_docks_building = yes
+						has_shipyard_building = yes
+					}
+				}
+				282 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "bt_ukr_black_sea_naval_base"
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					7201 = { #Mariupol, where parts of Ukraine navy moved after 2014
+						has_docks_building = yes
+						has_shipyard_building = yes
+					}
+				}
+				7201 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "bt_ukr_black_sea_naval_base"
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					2410 = { #Sevastopol, classical Russian naval base
+						has_docks_building = yes
+						has_shipyard_building = yes
+					}
+				}
+				2410 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "bt_ukr_black_sea_naval_base"
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					285 = { #Yevpatoria, alternate Russian naval base
+						has_docks_building = yes
+						has_shipyard_building = yes
+					}
+				}
+				285 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "bt_ukr_black_sea_naval_base"
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					7203 = { #Taganrog, apparently an alternative Russian naval base
+						has_docks_building = yes
+						has_shipyard_building = yes
+					}
+				}
+				7203 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "bt_ukr_black_sea_naval_base"
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					2195 = { #Novorossiysk, also an alternative Russian naval base
+						has_docks_building = yes
+						has_shipyard_building = yes
+					}
+				}
+				2195 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					add_province_modifier = {
+						name = "bt_ukr_black_sea_naval_base"
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = ukr_black_sea_navy_tooltip
+			}
 		}
 		
 	}

@@ -160,6 +160,7 @@
  
  ukr_black_sea_navy_title:0 "A Black Sea Navy"
  ukr_black_sea_navy_desc:0 "We have claimed successorship of the Kievan Rus', but no legitimate state can exist without a proper navy. The Black Sea in our vicinity is a prime candidate in which to establish a grand navy!"
+ ukr_black_sea_navy_tooltip:0 "Whichever province is used to complete the mission receives the following effects:\n§G+2§! Base Tax\n§G+2§! Base Production\n§G+2§! Base Manpower\nThe province modifier §YBlack Sea Naval Base§! until the end of the game, giving the following modifiers:\n   Morale of Navies: §G+10%§!\n   Local Shipbuilding Time: §G-25%§!"
  ukr_navy_of_the_intermarum_title:0 "Navy of the Intermarum"
  ukr_navy_of_the_intermarum_desc:0 "With the Black Sea Navy established, it is time we look towards the northwest. With our nation stretching from the Baltic Sea to the Black Sea, it is only natural that we establish a grand navy in the Baltic, as well."
  ukr_means_of_production_title:0 "The Means of Production"
@@ -208,6 +209,9 @@
  bt_ukr_restored_second_rome_desc:0 "With the Turks banished from the city of Constantinople and the lands around it, we can now claim rightful restorers of the Roman Empire."
  bt_ukr_banished_scourge_of_christendom:0 "Banished the Scourge of Christendom"
  bt_ukr_banished_scourge_of_christendom_desc:0 "As Constantinople has been recovered and the Roman Empire resurges once more, we have shown that we have the capability of protecting the entirety of the Christian Faith from any islamic incursions."
+ bt_ukr_black_sea_naval_base:0 "Black Sea Naval Base"
+ bt_ukr_black_sea_naval_base_desc:0 "This city has been designated as the naval base of our Black Sea Navy!"
+ 
  
  #Province trigmods from Rebuild Principalities mission
  bt_kiev_principality:0 "The Principal City of Kiev"
