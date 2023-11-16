@@ -419,7 +419,7 @@ vodka_of_the_crown_reform = {
 	potential = {
 		has_dlc = "Domination"
 		OR = {
-			culture_group = east_slavic
+			primary_culture = russian #BT Changed: This does not make sense for Ruthenian nations according to what I've read, who would instead use a vodka monopoly to strengthen estates or similar.
 			culture_group = slavic
 		}
 	}
@@ -475,7 +475,7 @@ governing_senate_reform = {
 			has_unlocked_government_reform = {
 				government_reform = governing_senate_reform
 			}
-			has_reform = ruthenian_tsardom
+			#has_reform = ruthenian_tsardom #BT Removed: No. Just, no.
 		}
 	}
 	
@@ -528,7 +528,7 @@ enforced_autocracy_reform = {
 			has_unlocked_government_reform = {
 				government_reform = enforced_autocracy_reform
 			}
-			has_reform = ruthenian_tsardom
+			#has_reform = ruthenian_tsardom #BT Removed: No. Just, no.
 		}
 	}
 	modifiers = {
@@ -1417,7 +1417,7 @@ holy_synod_reform = {
 			has_unlocked_government_reform = {
 				government_reform = holy_synod_reform
 			}
-			has_reform = ruthenian_tsardom
+			#has_reform = ruthenian_tsardom #BT Removed: No. Just, no.
 		}
 	}
 	trigger = {
@@ -1471,7 +1471,7 @@ strengthened_the_patriarchy_reform = {
 			has_unlocked_government_reform = {
 				government_reform = strengthened_the_patriarchy_reform
 			}
-			has_reform = ruthenian_tsardom
+			#has_reform = ruthenian_tsardom #BT Removed: No. Just, no.
 		}
 	}
 	trigger = {

@@ -1283,21 +1283,7 @@ bt_ukr_steppe_conquests_1 = {
 		}
 		
 	}
-}
 
-bt_ukr_steppe_conquests_dlc = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = KIE #Kiev
-			tag = UKR #Ruthenia
-		}
-		has_dlc = "The Cossacks" #Because Cossacks estate + unique units
-		NOT = { map_setup = map_setup_random }
-	}
-	
 	ukr_recruit_cossacks = {
 		icon = mission_cossack_cavalry
 		required_missions = { ukr_amass_army }
@@ -1307,63 +1293,71 @@ bt_ukr_steppe_conquests_dlc = {
 		}
 		
 		trigger = { #10% of FL is Cossacks
-			has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
 			if = {
 				limit = {
-					land_forcelimit = 100
+					has_dlc = "The Cossacks"
 				}
-				num_of_cossacks = 10
-			}
-			else_if = {
-				limit = {
-					land_forcelimit = 90
+				has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+				if = {
+					limit = {
+						land_forcelimit = 100
+					}
+					num_of_cossacks = 10
 				}
-				num_of_cossacks = 9
-			}
-			else_if = {
-				limit = {
-					land_forcelimit = 80
+				else_if = {
+					limit = {
+						land_forcelimit = 90
+					}
+					num_of_cossacks = 9
 				}
-				num_of_cossacks = 8
-			}
-			else_if = {
-				limit = {
-					land_forcelimit = 70
+				else_if = {
+					limit = {
+						land_forcelimit = 80
+					}
+					num_of_cossacks = 8
 				}
-				num_of_cossacks = 7
-			}
-			else_if = {
-				limit = {
-					land_forcelimit = 60
+				else_if = {
+					limit = {
+						land_forcelimit = 70
+					}
+					num_of_cossacks = 7
 				}
-				num_of_cossacks = 6
-			}
-			else_if = {
-				limit = {
-					land_forcelimit = 50
+				else_if = {
+					limit = {
+						land_forcelimit = 60
+					}
+					num_of_cossacks = 6
 				}
-				num_of_cossacks = 5
-			}
-			else_if = {
-				limit = {
-					land_forcelimit = 40
+				else_if = {
+					limit = {
+						land_forcelimit = 50
+					}
+					num_of_cossacks = 5
 				}
-				num_of_cossacks = 4
-			}
-			else_if = {
-				limit = {
-					land_forcelimit = 30
+				else_if = {
+					limit = {
+						land_forcelimit = 40
+					}
+					num_of_cossacks = 4
 				}
-				num_of_cossacks = 3
-			}
-			else_if = {
-				limit = {
-					land_forcelimit = 20
+				else_if = {
+					limit = {
+						land_forcelimit = 30
+					}
+					num_of_cossacks = 3
 				}
-				num_of_cossacks = 2
+				else_if = {
+					limit = {
+						land_forcelimit = 20
+					}
+					num_of_cossacks = 2
+				}
+				else = {
+					num_of_cossacks = 1
+				}
 			}
 			else = {
-				num_of_cossacks = 1
+				cavalry_fraction = 0.2 #Because... well... yeah.
 			}
 		}
 		
@@ -1427,10 +1421,6 @@ bt_ukr_steppe_conquests_dlc = {
 				id = BeyondTypusRuthenianFlavour.1
 				insight_tooltip = ukr_permanent_cossack_host_insight
 			}
-			#Event to establish Zaporizhia:
-			#Zaporizhia becomes Cossack Host subject type, giving +20% available Cossacks modifier to overlord
-			#Zaporizhia gets Sich Rada gov reform and all that jazz, plus claims to Wild Fields mission
-			#If Zaporizhia is not established, give claim to Wild Fields mission
 		}
 		
 	}
@@ -1496,7 +1486,13 @@ bt_ukr_steppe_conquests_dlc = {
 					duration = 5475
 				}
 			}
-			custom_tooltip = ukr_break_tatar_yoke_tooltip
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+					has_dlc = "The Cossacks"
+				}
+				custom_tooltip = ukr_break_tatar_yoke_tooltip
+			}
 			#Enable Cossack estate privilege to establish Siberian Frontiers.
 			west_siberia_region = {
 				limit = {
@@ -1543,8 +1539,6 @@ bt_ukr_steppe_conquests_dlc = {
 	}
 }
 
-#TODO: Version of above with non-DLC with changed mission requirements, cut recruit cossacks mission.
-
 #Internals
 bt_ukr_navy = {
 	slot = 1
@@ -1561,34 +1555,53 @@ bt_ukr_navy = {
 		required_missions = { ukr_centralized_state }
 		position = 11
 		provinces_to_highlight = {
-			
+			OR = {
+				province_id = 282
+				province_id = 7201
+				province_id = 2410
+				province_id = 285
+				province_id = 7203
+				province_id = 2195
+			}
+			OR = {
+				NOT = { has_dock_building_trigger = yes }
+				NOT = { has_shipyard_building_trigger = yes }
+				NOT = { owned_by = ROOT }
+				
+			}
 		}
 		
 		trigger = {
 			OR = {
 				282 = { #Odessa, current base of Ukraine navy
-					has_docks_building = yes
-					has_shipyard_building = yes
+					has_dock_building_trigger = yes
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
 				}
 				7201 = { #Mariupol, where parts of Ukraine navy moved after 2014
-					has_docks_building = yes
-					has_shipyard_building = yes
+					has_dock_building_trigger = yes
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
 				}
 				2410 = { #Sevastopol, classical Russian naval base
-					has_docks_building = yes
-					has_shipyard_building = yes
+					has_dock_building_trigger = yes
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
 				}
 				285 = { #Yevpatoria, alternate Russian naval base
-					has_docks_building = yes
-					has_shipyard_building = yes
+					has_dock_building_trigger = yes
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
 				}
 				7203 = { #Taganrog, apparently an alternative Russian naval base
-					has_docks_building = yes
-					has_shipyard_building = yes
+					has_dock_building_trigger = yes
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
 				}
 				2195 = { #Novorossiysk, also an alternative Russian naval base
-					has_docks_building = yes
-					has_shipyard_building = yes
+					has_dock_building_trigger = yes
+					has_shipyard_building_trigger = yes
+					owned_by = ROOT
 				}
 			}
 			num_of_galley = 30
@@ -1599,8 +1612,9 @@ bt_ukr_navy = {
 			if = {
 				limit = {
 					282 = { #Odessa, current base of Ukraine navy
-						has_docks_building = yes
-						has_shipyard_building = yes
+						has_dock_building_trigger = yes
+						has_shipyard_building_trigger = yes
+						owned_by = ROOT
 					}
 				}
 				282 = {
@@ -1616,8 +1630,9 @@ bt_ukr_navy = {
 			else_if = {
 				limit = {
 					7201 = { #Mariupol, where parts of Ukraine navy moved after 2014
-						has_docks_building = yes
-						has_shipyard_building = yes
+						has_dock_building_trigger = yes
+						has_shipyard_building_trigger = yes
+						owned_by = ROOT
 					}
 				}
 				7201 = {
@@ -1633,8 +1648,9 @@ bt_ukr_navy = {
 			else_if = {
 				limit = {
 					2410 = { #Sevastopol, classical Russian naval base
-						has_docks_building = yes
-						has_shipyard_building = yes
+						has_dock_building_trigger = yes
+						has_shipyard_building_trigger = yes
+						owned_by = ROOT
 					}
 				}
 				2410 = {
@@ -1650,8 +1666,9 @@ bt_ukr_navy = {
 			else_if = {
 				limit = {
 					285 = { #Yevpatoria, alternate Russian naval base
-						has_docks_building = yes
-						has_shipyard_building = yes
+						has_dock_building_trigger = yes
+						has_shipyard_building_trigger = yes
+						owned_by = ROOT
 					}
 				}
 				285 = {
@@ -1667,8 +1684,9 @@ bt_ukr_navy = {
 			else_if = {
 				limit = {
 					7203 = { #Taganrog, apparently an alternative Russian naval base
-						has_docks_building = yes
-						has_shipyard_building = yes
+						has_dock_building_trigger = yes
+						has_shipyard_building_trigger = yes
+						owned_by = ROOT
 					}
 				}
 				7203 = {
@@ -1684,8 +1702,9 @@ bt_ukr_navy = {
 			else_if = {
 				limit = {
 					2195 = { #Novorossiysk, also an alternative Russian naval base
-						has_docks_building = yes
-						has_shipyard_building = yes
+						has_dock_building_trigger = yes
+						has_shipyard_building_trigger = yes
+						owned_by = ROOT
 					}
 				}
 				2195 = {
@@ -1739,11 +1758,50 @@ bt_ukr_production = {
 		required_missions = { ukr_centralized_state }
 		position = 11
 		provinces_to_highlight = {
-			
+			OR = {
+				AND = {
+					NOT = { has_building = farm_estate }
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = bt_trade_good_beer
+						trade_goods = bt_trade_good_fruit
+						trade_goods = bt_trade_good_apiculture
+					}
+					NOT = { owner = { farm_estate = 25 } } #Stop highlighting grain provinces if this trigger is fulfilled
+				}
+				AND = {
+					NOT = { has_building = weapons }
+					OR = {
+						trade_goods = copper
+						trade_goods = iron
+					}
+					NOT = { owner = { weapons = 10 } } #Stop highlighting grain provinces if this trigger is fulfilled
+					NOT = { owner = { textile = 10 } } #Stop highlighting grain provinces if this trigger is fulfilled
+				}
+				AND = {
+					NOT = { has_building = textile }
+					OR = {
+						trade_goods = wool
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = dyes
+						trade_goods = bt_trade_good_books
+					}
+					NOT = { owner = { weapons = 10 } } #Stop highlighting grain provinces if this trigger is fulfilled
+					NOT = { owner = { textile = 10 } } #Stop highlighting grain provinces if this trigger is fulfilled
+				}
+			}
+			owned_by = ROOT
 		}
 		
 		trigger = {
-			
+			farm_estate = 25
+			OR = {
+				weapons = 10
+				textile = 10
+			}
 		}
 		
 		effect = {
@@ -1757,15 +1815,22 @@ bt_ukr_production = {
 		required_missions = { ukr_means_of_production }
 		position = 12
 		provinces_to_highlight = {
-			
+			trade_goods = grain
+			owned_by = ROOT
 		}
 		
 		trigger = {
-			
+			production_leader = {
+				trade_goods = grain
+			}
+			trade_goods_produced_amount = {
+				trade_goods = grain
+				amount = 50 #500 production dev worth of grain, modified by production efficiency and goods produced. Should be easy if Ruthenia has been restored.
+			}
 		}
 		
 		effect = {
-			
+			#Fire event, allow to choose estate to handle vodka monopoly, or take for yourself as crown. Gives privilege methinks.
 		}
 		
 	}
@@ -1820,15 +1885,65 @@ bt_ukr_religion = {
 		required_missions = { ukr_centralized_state }
 		position = 11
 		provinces_to_highlight = {
-			
+			OR = { 
+				AND = {
+					province_id = 151
+					OR = { #Hide 151 if fulfilling requirements for it.
+						NOT = { owned_by = ROOT }
+						owner = {
+							NOT = {
+								has_opinion = {
+									who = ROOT
+									value = 200
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					province_id = 280
+					NOT = { has_tax_building_trigger = yes }
+				}
+			}
 		}
 		
 		trigger = {
-			
+			151 = {
+				owner = {
+					OR = {
+						tag = ROOT
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+				}
+			}
+			patriarch_authority = 0.9
+			has_advisor = theologian
+			280 = {
+				has_tax_building_trigger = yes
+			}
+			OR = {
+				NOT = { has_estate = estate_church }
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 70
+				}
+			}
 		}
 		
 		effect = {
-			
+			enable_improved_consecration = yes 
+			unlock_government_reform = {
+				government_reform = head_of_the_patriarchy_reform
+			}
+			if = {
+				limit = {
+					government = monarchy
+				}
+				add_government_reform = head_of_the_patriarchy_reform
+			}
 		}
 		
 	}
@@ -1844,7 +1959,7 @@ bt_ukr_boyars = {
 	}
 	has_country_shield = yes
 	
-	ukr_handle_boyars = {
+	ukr_handle_boyars = { #Essentially a copy of Russia's mission
 		icon = mission_great_northern_war
 		required_missions = { ukr_centralized_state }
 		position = 11
@@ -1853,11 +1968,36 @@ bt_ukr_boyars = {
 		}
 		
 		trigger = {
-			
+			OR = {
+				AND = {
+					crown_land_share = estate_nobles
+					NOT = { estate_influence = { estate = estate_nobles influence = 30 } }
+				}
+				AND = {
+					NOT = { crown_land_share = estate_nobles }
+					estate_loyalty = { estate = estate_nobles loyalty = 70 }
+				}
+				NOT = { has_estate = estate_nobles }
+			}
 		}
 		
 		effect = {
-			
+			if = {
+				limit = { has_estate = estate_nobles }
+				simple_dynamic_effect = {
+					first_custom_tooltip = rus_handle_the_boyars_at
+					first_limit = "crown_land_share = estate_nobles"
+					first_effect = "add_country_modifier = { name = rus_demoted_the_boyars duration = 9125 }"
+					second_custom_tooltip = rus_handle_the_boyars_bt
+					second_limit = "NOT = { crown_land_share = estate_nobles }"
+					second_effect = "add_country_modifier = { name = rus_support_of_the_boyars duration = 9125 }"
+				}
+			}
+			else = {
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+			}
 		}
 		
 	}
@@ -1887,10 +2027,6 @@ bt_ukr_unique_units = {
 	ai = yes
 	potential = {
 		tag = UKR #Ruthenia
-		AND = {
-			has_dlc = "Third Rome"
-			has_dlc = "The Cossacks"
-		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1904,7 +2040,24 @@ bt_ukr_unique_units = {
 		}
 		
 		trigger = {
-			
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+				}
+				num_of_streltsy = 30
+			}
+			else = {
+				land_forcelimit = 150
+			}
+			if = {
+				limit = {
+					has_dlc = "The Cossacks"
+				}
+				num_of_cossacks = 15
+			}
+			else = {
+				cavalry_fraction = 0.15
+			}
 		}
 		
 		effect = {
@@ -1922,17 +2075,56 @@ bt_ukr_unique_units = {
 		}
 		
 		trigger = {
-			
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				army_professionalism = 0.6
+			}
+			else = {
+				army_tradition = 95 #Because I basically have nothing else to check with. Bloody DLC features I guess...
+			}
 		}
 		
-		effect = {
-			
+		effect = { #Bloody DLC gating... Oh well. Not much I can do.
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+					army_professionalism = 0.6
+				}
+				if = {
+					limit = {
+						has_dlc = "Third Rome"
+					}
+					add_country_modifier = {
+						name = "bt_ukr_elite_streltsy"
+						duration = -1
+					}
+				}
+				else = {
+					add_mil_power = 100
+				}
+				if = {
+					limit = {
+						has_dlc = "The Cossacks"
+					}
+					add_country_modifier = {
+						name = "bt_ukr_elite_cossacks"
+						duration = -1
+					}
+				}
+				else = {
+					add_mil_power = 100
+				}
+			}
+			else = {
+				add_mil_power = 100
+			}
 		}
 		
 	}
 }
 
-#TODO: Duplicate this mission plus everything below to not require ukr_military_elites for non-TR/Cossacks users, and the below not requiring ukr_freedom_of_steppes
 bt_ukr_government = {
 	slot = 3
 	generic = no
@@ -1940,10 +2132,6 @@ bt_ukr_government = {
 	potential = {
 		tag = UKR #Ruthenia
 		NOT = { map_setup = map_setup_random }
-		AND = {
-			has_dlc = "Third Rome"
-			has_dlc = "The Cossacks"
-		}
 	}
 	has_country_shield = yes
 	
@@ -1956,11 +2144,35 @@ bt_ukr_government = {
 		}
 		
 		trigger = {
-			
+			is_absolutism_active = yes
+			OR = {
+				absolutism = 50
+				AND = { #All estate loyalty above 70.
+					if = { limit = { has_estate = estate_church }			estate_loyalty = { estate = estate_church			loyalty = 70 } }
+					if = { limit = { has_estate = estate_brahmins }			estate_loyalty = { estate = estate_brahmins			loyalty = 70 } }
+					if = { limit = { has_estate = estate_burghers }			estate_loyalty = { estate = estate_burghers			loyalty = 70 } }
+					if = { limit = { has_estate = estate_cossacks }			estate_loyalty = { estate = estate_cossacks			loyalty = 70 } }
+					if = { limit = { has_estate = estate_dhimmi }			estate_loyalty = { estate = estate_dhimmi			loyalty = 70 } }
+					if = { limit = { has_estate = estate_jains }			estate_loyalty = { estate = estate_jains			loyalty = 70 } }
+					if = { limit = { has_estate = estate_maratha }			estate_loyalty = { estate = estate_maratha			loyalty = 70 } }
+					if = { limit = { has_estate = estate_nobles }			estate_loyalty = { estate = estate_nobles			loyalty = 70 } }
+					if = { limit = { has_estate = estate_nomadic_tribes }	estate_loyalty = { estate = estate_nomadic_tribes	loyalty = 70 } }
+					if = { limit = { has_estate = estate_rajput }			estate_loyalty = { estate = estate_rajput			loyalty = 70 } }
+					if = { limit = { has_estate = estate_vaisyas }			estate_loyalty = { estate = estate_vaisyas			loyalty = 70 } }
+					if = { limit = { has_estate = estate_janissaries }		estate_loyalty = { estate = estate_janissaries		loyalty = 70 } }
+					if = { limit = { has_estate = estate_eunuchs }			estate_loyalty = { estate = estate_eunuchs			loyalty = 70 } }
+					if = { limit = { has_estate = estate_qizilbash }		estate_loyalty = { estate = estate_qizilbash		loyalty = 70 } }
+					if = { limit = { has_estate = estate_ghulams }			estate_loyalty = { estate = estate_ghulams			loyalty = 70 } }
+					if = { limit = { has_estate = estate_peasants }			estate_loyalty = { estate = estate_peasants			loyalty = 70 } }
+				}
+			}
 		}
 		
 		effect = {
-			
+			custom_tooltip = ukr_absolute_authority_tt
+			hidden_effect = {
+				swap_non_generic_missions = yes
+			}
 		}
 		
 	}
@@ -2107,7 +2319,10 @@ bt_ukr_cossacks = {
 		}
 		
 		trigger = {
-			
+			OR = {
+				NOT = { exists = ZAZ }
+				
+			}
 		}
 		
 		effect = {
