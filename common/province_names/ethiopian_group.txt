@@ -6,7 +6,7 @@
 1205 = { "Mokudisho" "Mokudisho" }
 1206 = { "Qardho" "Qardho" } #(JP) Base Names
 1207 = { "Guban" "Denan" }
-1208 = { "Degeh Bur" "Degeh Bur" }
+1208 = { "Dägah Bur" "Dägah Bur" }
 1209 = { "Berbera" "Berbera" } #(JP) Base Names
 1211 = { "Harär" "Harär" }
 1212 = { "Zelia" "Zeila" }
@@ -33,7 +33,7 @@
 2775 = { "Merca" "Merca" } #(JP) Base Names
 2776 = { "Afgooye" "Afgooye" } #(JP) Base Names
 2778 = { "Werder" "Werder" } #(JP) Base Names
-2779 = { "El Käre" "El Käre" }
+2779 = { "El Kärre" "El Kärre" }
 2780 = { "Beledweyne" "Beledweyne" } #(JP) Base Names
 2782 = { "Warsheikh" "Warsheikh" } #(JP) Base Names
 2783 = { "Hobyo" "Hobyo" } #(JP) Base Names
