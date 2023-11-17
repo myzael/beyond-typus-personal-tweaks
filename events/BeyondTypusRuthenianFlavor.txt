@@ -22,6 +22,10 @@ country_event = {
 					owned_by = ROOT
 					religion = orthodox
 					NOT = { culture = ruthenian }
+					NOT = {
+						area = crimea_area
+						area = azov_area
+					}
 				}
 				add_core = ZAZ
 				remove_core = ROOT 
