@@ -7,7 +7,8 @@
 1206 = { "Qardho" "Qardho" } #(JP) Base Names
 1207 = { "Guban" "Denan" }
 1208 = { "Dägah Bur" "Dägah Bur" }
-1209 = { "Berbera" "Berbera" } #(JP) Base Names
+1209 = { "Bärbära" "Bärbära" }
+1210 = { "Däwaro" "Gända Bälo" }
 1211 = { "Harär" "Harär" }
 1212 = { "Zelia" "Zeila" }
 1213 = { "Fätägar" "Télq" } #(JP) Later Addis Ababa
@@ -18,6 +19,11 @@
 1227 = { "Aksum" "Aksum" }
 1230 = { "Mesua" "Mesua" }
 2024 = { "Garoowe" "Garoowe" } #(JP) Base Names
+2757 = { "Käfa" "Bonga" }
+2758 = { "Énnarya" "Yadare" }
+2759 = { "Baro" "Gambella" } #(JP) Base Names
+2760 = { "Hossaéna" "Hossaéna" }
+2761 = { "Arabäbni" "Étäya" }
 2762 = { "Damot" "Tomagarer" }
 2763 = { "Ashosa" "Ashosa" }
 2764 = { "Awsa" "Awsa" }
@@ -49,6 +55,7 @@
 2793 = { "Hargeisa" "Hargeisa" } #(JP) Base Names
 2794 = { "Barawa" "Barawa" } #(JP) Base Names
 2795 = { "Märég" "Märég" }
+4158 = { "Gangäro" "Fofa" } #(JP) Base Names
 5288 = { "Ras Kasar" "Ras Kasar" } #(JP) Base Names
 5297 = { "Barka" "Barentu" } #(JP) Base Names
 5298 = { "Buri" "Zula" }
@@ -65,7 +72,15 @@
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
 8808 = { "Qällafo" "Qällafo" }
 8809 = { "Gode" "Gode" } #(JP) Base Names
+8813 = { "Sarkä" "Ganbah" }
 8831 = { "Gimbi" "Gimbi" } #(JP) Tulu/Yambel before Oromo Invasions
+8833 = { "Wäg" "Zway" } #(JP) Base Names
+8834 = { "Gurage" "Aymälläl" } #(JP) Base Names
+8842 = { "Gimira" "Mizan Täfäri" }
+8845 = { "Mocha" "Tepi" }
+8846 = { "Gog" "Fugnido" } #(JP) Base Names
+8847 = { "Jor" "Ongoogi" } #(JP) Base Names
+8848 = { "Anfillo" "Anfillo" } #(JP) Base Names
 8849 = { "Leeqa Qällém" "Gidami" }
 8850 = { "Fadasi" "Ya'a" } #(JP) Base Names
 8851 = { "Komesha" "Komesha" } #(JP) Base Names
@@ -89,7 +104,7 @@
 8869 = { "Bägemdér" "Addis Zämän" }
 8870 = { "Gayént" "Näfas Mäwca" }
 8871 = { "Bäläsa" "Énfraz" }
-8872 = { "Mengesta Semayat" "Mengesta Semayat" } #(JP) Base Names
+8872 = { "Mängästa Semayat" "Mängästa Semayat" }
 8873 = { "Wämbärma" "Fanotä Sälam" }
 8874 = { "Acäfär" "Gish Abay" }
 8875 = { "Wänbära" "Däbrä Zäyt" }
@@ -102,6 +117,8 @@
 8882 = { "Sällämt" "Addi Arkay" }
 8883 = { "Tämben" "Mälfa" }
 8884 = { "Wäggärat" "Bahri Haiäy" }
+8843 = { "Bädelle" "Buno Bädelle" }
+8844 = { "Hirmata" "Hirmata" } #(JP) Base Names
 8885 = { "Shére" "Shére" }
 8886 = { "Agamä" "Däbrä Dammo" }
 8887 = { "Ali Sabieh" "Ali Sabieh" } #(JP) Base Names
@@ -150,11 +167,6 @@
 #By Ajsieg
 
 #2019 May 28
-1210 = "Däwaro" #Dawaro"
 1218 = "Boloso" #Sidamo (Irgalem is mentioned in the 1930's. Nope. Boloso/Bolosa was a division of the kingdom in the eastern portion. This will be fixed in my rework.).
 2756 = "Wälamo" #Welayta
-2757 = "Käfa" #Kaffa
-2758 = "Innarya" #Ennarea
-2759 = "Itangh" #Gambela (Gambela was founded in the early 1900's. Itangh was around earlier, presumably founded after Menelik's conquest. Province will be taken from Kaffa in my rework anyway so ¯\_(:D)_/¯)
 2760 = "Hadya" #Hadiya
-2761 = "Asella" #Arsi/Assela (Arsi is an Oromo clan who settled here after the 1590's)

@@ -6,6 +6,7 @@
 1207 = { "Guban" "Dhanaan" } #(JP) Somali Names
 1208 = { "Dhagaxbuur" "Dhagaxbuur" } #(JP) Somali Names
 1209 = { "Barbara" "Barbara" } #(JP) Somali Names
+1210 = { "Dawaro" "Gende Belo" } #(JP) Base Names
 1211 = { "Adare Biyyo" "Adare Biyyo" }
 1212 = { "Saylac" "Saylac" } #(JP) Somali Names
 1213 = { "Fatagar" "Telq" } #(JP) Base Names #(JP) Later Addis Ababa
@@ -16,6 +17,11 @@
 1227 = { "Aksum" "Aksum" } #(JP) Base Names
 1230 = { "Massawa" "Massawa" } #(JP) Base Names
 2024 = { "Garoowe" "Garoowe" } #(JP) Somali Names
+2757 = { "Kaffa" "Bonga" } #(JP) Base Names
+2758 = { "Ennarea" "Yadare" } #(JP) Base Names
+2759 = { "Baro" "Gambella" } #(JP) Base Names
+2760 = { "Hosaena" "Hosaena" } #(JP) Base Names
+2761 = { "Arababni" "Iteya" } #(JP) Base Names
 2762 = { "Damot" "Tomagarer" } #(JP) Base Names
 2763 = { "Asosa" "Asosa" } #(JP) Base Names
 2764 = { "Auwa" "Auwa" } #(JP) Somali Names
@@ -47,6 +53,7 @@
 2793 = { "Hargeysa" "Hargeysa" } #(JP) Somali Names
 2794 = { "Baraawe" "Baraawe" } #(JP) Somali Names
 2795 = { "Mareeg" "Mareeg" } #(JP) Somali Names
+4158 = { "Janjero" "Fofa" } #(JP) Base Names
 5288 = { "Ras Kasar" "Ras Kasar" } #(JP) Base Names
 5297 = { "Barka" "Barentu" } #(JP) Base Names
 5298 = { "Buri" "Zula" } #(JP) Base Names
@@ -63,7 +70,17 @@
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
 8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
 8809 = { "Godey" "Godey" } #(JP) Somali Names
+8813 = { "Sarkha" "Ganbah" } #(JP) Base Names
 8831 = { "Gimbii" "Gimbii" } #(JP) Tulu/Yambel before Oromo Invasions
+8833 = { "Wej" "Zway" } #(JP) Base Names
+8834 = { "Gurage" "Aymallal" } #(JP) Base Names
+8842 = { "Gimira" "Mizan Tefere" } #(JP) Base Names
+8843 = { "Beddellee" "Buunoo Beddellee" }
+8844 = { "Jimmaa" "Jimmaa" }
+8845 = { "Sheka" "Tepi" } #(JP) Base Names
+8846 = { "Gog" "Fugnido" } #(JP) Base Names
+8847 = { "Jor" "Ongoogi" } #(JP) Base Names
+8848 = { "Sayyoo" "Afillo" }
 8849 = { "Leeqa Kellem" "Gidaamii" }
 8850 = { "Fadaasi" "Yaa'a" }
 8851 = { "Komesha" "Komesha" } #(JP) Base Names

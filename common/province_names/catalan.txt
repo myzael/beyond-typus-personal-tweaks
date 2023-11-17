@@ -209,7 +209,6 @@
 2319 = "Assiut"
 2461 = "Mostagà"
 2465 = "Uxda"
-2759 = "Ciutat Reial"
 2957 = "Ratisbona"
 2990 = "Terol"
 3041 = "Bolonya"
