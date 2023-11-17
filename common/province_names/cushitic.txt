@@ -121,7 +121,7 @@
 8885 = { "Shire" "Shire" } #(JP) Base Names
 8886 = { "Agame" "Debre Damo" } #(JP) Base Names
 8887 = { "Cali Sabiix" "Cali Sabiix" }
-8888 = { "Obock" "Obock" } #(JP) Base Names
+8888 = { "Obock" "Obock" } #(JP) Base Names 
 8889 = { "Beilul" "Beilul" } #(JP) Base Names
 8890 = { "Edd" "Edd" } #(JP) Base Names
 8891 = { "Tiyo" "Tiyo" } #(JP) Base Names

@@ -136,4 +136,4 @@
 #East Africa
 2774 = { "Kismaayo" "Kismaayo" } #(JP) Somali Names
 2777 = { "Baardheere" "Baardheere" } #(JP) Somali Names
-2781 = { "Luuq" "Luuq" } #(JP) Somali Names
+2781 = { "Luuq" "Luuq" } #(JP) Somali Names 
