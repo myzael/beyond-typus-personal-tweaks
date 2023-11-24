@@ -8,7 +8,7 @@ capital = "Thalanji"
 #Demographics
 culture = kanyara
 religion = dreamtime
-native_size = 4
+native_size = 20
 native_ferocity = 1
 native_hostileness = 2
 

@@ -9,8 +9,8 @@ capital = "Jadjuuna"
 culture = mirning
 religion = dreamtime
 native_size = 20
-native_ferocity = 2
-native_hostileness = 9
+native_ferocity = 1
+native_hostileness = 2
 
 #Development and Trade
 base_tax = 1

@@ -8,9 +8,9 @@ capital = "Worerker"
 #Demographics
 culture = yuin
 religion = dreamtime
-native_size = 5
+native_size = 50
 native_ferocity = 1
-native_hostileness = 4
+native_hostileness = 2
 
 #Development and Trade
 base_tax = 2

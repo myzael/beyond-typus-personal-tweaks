@@ -8,7 +8,7 @@ capital = "Gureng Gureng"
 #Demographics
 culture = gabi
 religion = dreamtime
-native_size = 2
+native_size = 50
 native_ferocity = 1
 native_hostileness = 2
 
