@@ -1437,7 +1437,7 @@ bt_ukr_steppe_conquests_1 = {
 		trigger = {
 			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
-				provinces=ukr_subjugate_moscow_provinces
+				provinces=ukr_claim_wild_fields_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 				value=30 #out of 39.
 			}
@@ -2170,12 +2170,25 @@ bt_ukr_government = {
 		
 		effect = {
 			custom_tooltip = ukr_absolute_authority_tt
+			set_country_flag = ukr_absolute_authority_flag
 			hidden_effect = {
 				swap_non_generic_missions = yes
 			}
 		}
 		
 	}
+}
+
+bt_ukr_government_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = UKR #Ruthenia
+		has_country_flag = ukr_absolute_authority_flag
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 	
 	ukr_ideas_of_revolution = {
 		icon = mission_ruthenian_revolution
@@ -2202,11 +2215,8 @@ bt_ukr_industrialization = {
 	ai = yes
 	potential = {
 		tag = UKR #Ruthenia
+		has_country_flag = ukr_absolute_authority_flag
 		NOT = { map_setup = map_setup_random }
-		AND = {
-			has_dlc = "Third Rome"
-			has_dlc = "The Cossacks"
-		}
 	}
 	has_country_shield = yes
 	
@@ -2219,11 +2229,45 @@ bt_ukr_industrialization = {
 		}
 		
 		trigger = {
-			
+			furnace = 4
+			crimea_region = {
+				has_building = furnace
+			}
 		}
 		
 		effect = {
-			
+			crimea_region = {
+				limit = {
+					has_building = furnace
+				}
+				add_base_tax = 4
+				add_base_production = 4
+			}
+			custom_tooltip = ukr_industrialize_donets_tooltip
+			ruthenia_region = {
+				limit = {
+					OR = {
+						trade_goods = iron
+						trade_goods = copper
+					}
+				}
+				add_province_modifier = {
+					name = "bt_ukr_donets_coal"
+					duration = -1
+				}
+			}
+			crimea_region = {
+				limit = {
+					OR = {
+						trade_goods = iron
+						trade_goods = copper
+					}
+				}
+				add_province_modifier = {
+					name = "bt_ukr_donets_coal"
+					duration = -1
+				}
+			}
 		}
 		
 	}
@@ -2236,11 +2280,8 @@ bt_ukr_enlightenment = {
 	ai = yes
 	potential = {
 		tag = UKR #Ruthenia
+		has_country_flag = ukr_absolute_authority_flag
 		NOT = { map_setup = map_setup_random }
-		AND = {
-			has_dlc = "Third Rome"
-			has_dlc = "The Cossacks"
-		}
 	}
 	has_country_shield = yes
 	
@@ -2269,11 +2310,8 @@ bt_ukr_peasants = {
 	ai = yes
 	potential = {
 		tag = UKR #Ruthenia
+		has_country_flag = ukr_absolute_authority_flag
 		NOT = { map_setup = map_setup_random }
-		AND = {
-			has_dlc = "Third Rome"
-			has_dlc = "The Cossacks"
-		}
 	}
 	has_country_shield = yes
 	
@@ -2302,11 +2340,8 @@ bt_ukr_cossacks = {
 	ai = yes
 	potential = {
 		tag = UKR #Ruthenia
+		has_country_flag = ukr_absolute_authority_flag
 		NOT = { map_setup = map_setup_random }
-		AND = {
-			has_dlc = "Third Rome"
-			has_dlc = "The Cossacks"
-		}
 	}
 	has_country_shield = yes
 	
@@ -2315,13 +2350,50 @@ bt_ukr_cossacks = {
 		required_missions = { ukr_absolute_authority }
 		position = 14
 		provinces_to_highlight = {
-			
+			if = {
+				limit = {
+					exists = ZAZ
+					NOT = { 
+						ROOT = {
+							is_subject = ZAZ
+						}
+					}
+				}
+				province_group = ukr_claim_wild_fields_provinces
+				NOT = {
+					owned_by = ROOT
+				}
+				local_autonomy = 10
+			}
 		}
 		
 		trigger = {
-			OR = {
-				NOT = { exists = ZAZ }
-				
+			NOT = { exists = ZAZ }
+			if = { #If ZAZ was established, be integrated and Cossacks influence below 30.
+				limit = {
+					OR = {
+						is_subject = ZAZ
+						NOT = { exists = ZAZ }
+					}
+				}
+				NOT = {
+					estate_influence = {
+						estate = estate_cossacks
+						influence = 30
+					}
+				}
+			}
+			else = { #ZAZ was allowed to break free at some point.
+				has_fulfiled_general_province_requirement_for_mission_trigger = { #Less than 10 autonomy in wild field provinces
+					tooltip=country_holds_highlighted_less_than_10_autonomy
+					provinces=ukr_claim_wild_fields_provinces
+					triggers="
+						owned_by = ROOT
+						NOT = {
+							local_autonomy = 10
+						}
+					"
+				}
 			}
 		}
 		

@@ -257,6 +257,7 @@ estate_cossacks_siberian_frontier = {
                 }
             }
         }
+		mission_completed = ukr_break_tatar_yoke
     }
     can_select = {
         NOT = {

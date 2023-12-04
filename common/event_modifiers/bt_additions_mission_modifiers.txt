@@ -91,3 +91,8 @@ bt_ukr_elite_cossacks = { #Permanent, cossack mod
 	morale_damage = 0.15
 	is_cossack_modifier = yes
 }
+
+bt_ukr_donets_coal = {
+	trade_goods_size = 1
+	trade_goods_size_modifier = 0.25
+}

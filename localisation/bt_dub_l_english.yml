@@ -185,13 +185,14 @@
  ukr_ideas_of_revolution_title:0 "The Ideas of Revolution"
  ukr_ideas_of_revolution_desc:0 ""
  ukr_industrialize_donets_title:0 "Industrialize the Donets"
- ukr_industrialize_donets_desc:0 ""
+ ukr_industrialize_donets_desc:0 "The plains around the Donets river has been pointed out as geologically interesting by our enlightened scholars of the court. It appears that the region houses massive deposits of coal and salt. The former is particularly interesting for an enlightened state such as ours, and our advisors suggest that forming an industry in the region to extract the coal deposits would make us, and our subjects, very rich."
+ ukr_industrialize_donets_tooltip:0 "Provinces in §YPontic Steppes§! region with a §YFurnace§! gain the following:\n\n\nProvinces in §YPontic Steppes§! and §YRuthenia§! regions producing either §YIron§! or §YCopper§! gain the following:\n"
  ukr_enlightened_rus_title:0 "An Enlightened Rus"
- ukr_enlightened_rus_desc:0 ""
+ ukr_enlightened_rus_desc:0 "While the [Root.Monarh.GetTitle]'s rule is absolute, no man rules alone. Thus, able-minded subjects are necessary for a state such as ours, and nurturing such minds becomes a necessity. Let us establish state-sponsored halls of education, such that the state apparatus continues to function."
  ukr_question_of_serfdom_title:0 "The Question of Serfdom"
- ukr_question_of_serfdom_desc:0 ""
+ ukr_question_of_serfdom_desc:0 "The farmers and field workers have for a long time been subject to serfdom in our country. Practically slaves under the [Root.GetNoblesName], the question arises: Shall the men working in the fields, who produce the most glorious of grains for the most glorious of medicinal brews, still be treated like vermin? Let us improve their conditions and release them from noble servitude."
  ukr_freedom_of_steppes_title:0 "The Freedom of the Steppes"
- ukr_freedom_of_steppes_desc:0 ""
+ ukr_freedom_of_steppes_desc:0 "The Cossacks have long had free rein in our southern domains, completely autonomously. The [Root.Monarch.GetTitle]'s reign in these lands is therefore not necessarily recognized. While they have faithfully served in our army so far, the time has come to rein them in."
  
  #Mission modifiers
  bt_ukr_mother_of_all_rus:0 "Mother of All Rus"
@@ -216,6 +217,8 @@
  bt_ukr_elite_streltsy_desc:0 "With a professional standing army, the Streltsy regiments have been made more fearsome, properly standing ground against our foes"
  bt_ukr_elite_cossacks:0 "Elite Cossacks"
  bt_ukr_elite_cossacks_desc:0 "With a professional standing army, our Cossack regiments will now strike at the flanks harsher than ever before, leaving our enemies trembling in fear."
+ bt_ukr_donets_coal:0 "Donets Coal"
+ bt_ukr_donets_coal_desc:0 "This province is currently benefitting from the coal industry formed in the Donets Basin, massively improving its metallurgic production"
  
  #Province trigmods from Rebuild Principalities mission
  bt_kiev_principality:0 "The Principal City of Kiev"
