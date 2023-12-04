@@ -1134,7 +1134,7 @@ gc_morocco_5 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				colonial_region = colonial_the_carribean
+				region = carribeans_region
 				colonial_region = colonial_colombia
 			}
 			OR = {
@@ -1153,12 +1153,7 @@ gc_morocco_5 = {
 					tooltip = mor_carib_colony.tooltip
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 10
-						OR = { #Expanded to include all of the Carribean, as it does in vanilla
-							colonial_region = colonial_the_carribean #Lesser Antilles
-							colonial_region = colonial_cuba
-							colonial_region = colonial_hispaniola
-							colonial_region = colonial_bahamas
-						}
+						region = carribeans_region
 						is_city = yes
 					}
 				}

@@ -281,8 +281,8 @@ french_missions_colonial = {
 				}
 			}
 			custom_trigger_tooltip = {
-				tooltip = fra_carib_discovery.tooltip
-				colonial_the_carribean = {
+				tooltip = fra_carib_discovery.tooltip	
+				carribeans_region = {
 					has_discovered = ROOT
 				}
 			}

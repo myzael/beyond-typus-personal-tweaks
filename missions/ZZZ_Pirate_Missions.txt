@@ -181,7 +181,7 @@ pirate_2 = {
 		has_reform = pirate_republic_reform
 		NOT = { map_setup = map_setup_random }
 		capital_scope = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 		}
 		OR = {
 			AND = {
@@ -228,7 +228,7 @@ pirate_2 = {
 		
 		trigger = {
 			capital_scope = {
-				fort_level = 3	# capital fort + level 1 fort
+				fort_level = 2	# capital fort + level 1 fort
 			}
 		}
 		

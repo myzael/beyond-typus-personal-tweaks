@@ -893,12 +893,7 @@ andalusia_slot_3_missions_c = {
 		position = 8
 
 		provinces_to_highlight = {
-			OR = {
-				colonial_region = colonial_the_carribean
-				colonial_region = colonial_hispaniola
-				colonial_region = colonial_cuba
-				colonial_region = colonial_bahamas
-			}
+			region = carribeans_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -906,12 +901,7 @@ andalusia_slot_3_missions_c = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				OR = {
-					colonial_region = colonial_the_carribean
-					colonial_region = colonial_hispaniola
-					colonial_region = colonial_cuba
-					colonial_region = colonial_bahamas
-				}
+				region = carribeans_region
 				is_city = yes
 			}
 		}

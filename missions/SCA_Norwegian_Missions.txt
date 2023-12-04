@@ -354,40 +354,7 @@ nor_colonialism_mission_slot = {
 						}
 						add_permanent_claim = ROOT
 					}
-					colonial_the_carribean = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-							OR = {
-								province_has_center_of_trade_of_level = 1
-								has_river_estuary_trigger = yes
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					colonial_hispaniola = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-							OR = {
-								province_has_center_of_trade_of_level = 1
-								has_river_estuary_trigger = yes
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					colonial_cuba = {
-						limit = {
-							NOT = { is_core = ROOT }
-							NOT = { is_permanent_claim = ROOT }
-							OR = {
-								province_has_center_of_trade_of_level = 1
-								has_river_estuary_trigger = yes
-							}
-						}
-						add_permanent_claim = ROOT
-					}
-					colonial_bahamas = {
+					carribeans_region = {
 						limit = {
 							NOT = { is_core = ROOT }
 							NOT = { is_permanent_claim = ROOT }

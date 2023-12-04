@@ -448,7 +448,7 @@ eng_exploration_americas = {
 		completed_by = 1610.1.1
 		
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			region = carribeans_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
