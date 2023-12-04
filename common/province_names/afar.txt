@@ -2,9 +2,9 @@
 #(JP) Using Saho names where no Afar exists
 
 #Horn of Africa
-1215 = { "TagÃ³rri" "TagÃ³rri" } 
+1215 = { "Tagórri" "Tagórri" } 
 2764 = { "Aysaqiita" "Aysaqiita" }
-2765 = { "RahaytÃ³" "RahaytÃ³" }
+2765 = { "Rahaytó" "Rahaytó" }
 8860 = { "Ayelu" "Ayelu" }
-8888 = { "HayyÃº" "HayyÃº" }
-8890 = { "Idi" "Idi" }
+8888 = { "Hayyú" "Hayyú" }
+8890 = { "Idi" "Idi" } 

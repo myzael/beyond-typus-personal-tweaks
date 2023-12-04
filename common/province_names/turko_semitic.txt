@@ -164,6 +164,7 @@
 1207 = { "Guban" "Danan" } #(JP) Base Names
 1208 = { "Degehabur" "Degehabur" } #(JP) Base Names
 1209 = { "Berbera" "Berbera" } #(JP) Base Names
+1210 = { "Dawaro" "Gende Belo" } #(JP) Base Names
 1211 = { "Harar" "Harar" } #(JP) Base Names
 1212 = { "Zayla" "Zayla" }
 1213 = { "Fatagar" "Telq" } #(JP) Base Names #(JP) Later Addis Ababa
@@ -174,6 +175,11 @@
 1227 = { "Aksum" "Aksum" } #(JP) Base Names
 1230 = { "Musawwa" "Musawwa" }
 2024 = { "Garuvi" "Garuvi" }
+2757 = { "Kaffa" "Bonga" } #(JP) Base Names
+2758 = { "Ennarea" "Yadare" } #(JP) Base Names
+2759 = { "Baro" "Gambella" } #(JP) Base Names
+2760 = { "Hosaena" "Hosaena" } #(JP) Base Names
+2761 = { "Arababni" "Iteya" } #(JP) Base Names
 2762 = { "Damot" "Tomagarer" } #(JP) Base Names
 2763 = { "Asosa" "Asosa" } #(JP) Base Names
 2764 = { "Aussa" "Aussa" } #(JP) Base Names
@@ -205,6 +211,7 @@
 2793 = { "Harjisa" "Harjisa" }
 2794 = { "Barawa" "Barawa" }
 2795 = { "Mareeg" "Mareeg" } #(JP) Base Names
+4158 = { "Janjero" "Fofa" } #(JP) Base Names
 5288 = { "Ras Kasar" "Ras Kasar" }
 5297 = { "Barka" "Barentu" } #(JP) Base Names
 5298 = { "Zola" "Zola" }
@@ -221,7 +228,17 @@
 8807 = { "Gerlogubi" "Gerlogubi" } #(JP) Base Names
 8808 = { "Kelafo" "Kelafo" } #(JP) Base Names
 8809 = { "Gode" "Gode" } #(JP) Base Names
+8813 = { "Sarkha" "Ganbah" } #(JP) Base Names
 8831 = { "Gimbi" "Gimbi" } #(JP) Tulu/Yambel before Oromo Invasions
+8833 = { "Wej" "Zway" } #(JP) Base Names
+8834 = { "Gurage" "Aymallal" } #(JP) Base Names
+8842 = { "Gimira" "Mizan Tefere" } #(JP) Base Names
+8843 = { "Bedele" "Buno Bedele" } #(JP) Base Names
+8844 = { "Hirmata" "Hirmata" } #(JP) Base Names
+8845 = { "Sheka" "Tepi" } #(JP) Base Names
+8846 = { "Gog" "Fugnido" } #(JP) Base Names
+8847 = { "Jor" "Ongoogi" } #(JP) Base Names
+8848 = { "Anfillo" "Anfillo" } #(JP) Base Names
 8849 = { "Gidami" "Gidami" } #(JP) Base Names
 8850 = { "Fadasi" "Ya'a" } #(JP) Base Names
 8851 = { "Komesha" "Komesha" } #(JP) Base Names

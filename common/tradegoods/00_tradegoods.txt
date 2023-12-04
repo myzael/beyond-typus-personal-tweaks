@@ -1162,6 +1162,9 @@ gold = {
 			NOT = { region = east_siberia_region }
 			NOT = { region = cascadia_region }
 			NOT = { region = australia_region }
+			NOT = { region = western_australia_region }
+			NOT = { region = northeastern_australia_region }
+			NOT = { region = northern_australia_region }
 			NOT = { region = california_region }
 			#NOT = { region = south_africa_region }
 			NOT = { area = highveld_area }
@@ -1199,6 +1202,9 @@ gold = {
 			NOT = { region = west_siberia_region }
 			NOT = { region = east_siberia_region }
 			NOT = { region = australia_region }
+			NOT = { region = western_australia_region }
+			NOT = { region = northeastern_australia_region }
+			NOT = { region = northern_australia_region }
 			NOT = { region = south_africa_region }
 			NOT = { region = central_africa_region }
 		}
@@ -1279,6 +1285,7 @@ gold = {
 				area = mexico_area
 				area = jalisco_area
 				area = gran_chichimeca_area
+				area = goldfields_area
 				#area = high_desert_area
 				#area = stikine_area
 			}
@@ -1290,6 +1297,7 @@ gold = {
 				#area = west_hispaniola_area
 				area = dominica_area
 				area = sierra_nevada_area
+				area = murchison_area
 			}
 		}
 		modifier = {	#Gold is a bit more common here

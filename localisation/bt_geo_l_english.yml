@@ -6468,8 +6468,8 @@
  PROV_ADJ8840:0 "Hamer"
  PROV8841:0 "Dizi"
  PROV_ADJ8841:0 "Dizi"
- PROV8842:0 "Gimra"
- PROV_ADJ8842:0 "Gimra"
+ PROV8842:0 "Gimira"
+ PROV_ADJ8842:0 "Gimira"
  PROV8843:0 "Bedele"
  PROV_ADJ8843:0 "Bedele"
  PROV8844:0 "Hirmata"
@@ -8345,6 +8345,7 @@
  southern_australia:0 "Southern Australia"
  #Colonial Regions
  colonial_western_australia:0 "Colonial Western Australia"
+ colonial_northeastern_australia:0 "Colonial Northeastern Australia"
  
  ###Horn of Africa###
  #Cultures
