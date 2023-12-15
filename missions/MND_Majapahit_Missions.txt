@@ -282,7 +282,7 @@ mnd_maj_2 = {
 		effect = {
 			custom_tooltip = majapahit_cb_1_tt # see cb_vassalize_majapahit
 			
-			#BT: Custom loc so the whole reward isn't screen tall X turns into vassal.
+			##BT: Custom loc so the whole reward isn't screen tall X turns into vassal.
 			custom_tooltip = majapahit_super_vassalization
 			hidden_effect = {
 				if = {
@@ -304,56 +304,21 @@ mnd_maj_2 = {
 				}
 			}
 			
-			##BT ADDED: Strong Duchies for majapahit if they need to sustain that amount of vassals:
-			#>=11 vassals, add all 3 (+6 slots), else 11>|>=9 add 2, 9>|>=7 add 1. 
-			#It has to be in ROOT. Don't ask why mission doesn't also scope to country. /shrug\
+			##BT Strong Duchies for majapahit if they need to sustain that amount of vassals:
+			#Was meant to vary based on how many slots you'd need, but... if = {} doesn't work that way, for some reason, so... You're getting all 3.
+			
+			#This has to be in ROOT. Don't ask why mission doesn't also scope to country. /shrug\
 			ROOT = { remove_country_modifier = maj_early_nobility_malus }
 			
-			if = {
-				limit = {
-					calc_true_if = {
-						all_country = {
-							is_subject_of = ROOT
-							is_subject_of_type = tributary_state
-						}
-						amount = 11
-					}
-				}
-				custom_tooltip = majapahit_extra_strong_duchied
-				hidden_effect = {
+			custom_tooltip = majapahit_extra_strong_duchied
+			hidden_effect = {
+				ROOT = {
 					set_estate_privilege = estate_nobles_strong_duchies
 					set_estate_privilege = estate_nobles_very_strong_duchies
 					set_estate_privilege = estate_nobles_extremely_strong_duchies
 				}
 			}
-			else_if = {
-				limit = {
-					calc_true_if = {
-						all_country = {
-							is_subject_of = ROOT
-							is_subject_of_type = tributary_state
-						}
-						amount = 9
-					}
-				}
-				custom_tooltip = majapahit_very_strong_duchied
-				hidden_effect = {
-					set_estate_privilege = estate_nobles_strong_duchies
-					set_estate_privilege = estate_nobles_very_strong_duchies
-				}
-			}
-			else_if = {
-				limit = {
-					calc_true_if = {
-						all_country = {
-							is_subject_of = ROOT
-							is_subject_of_type = tributary_state
-						}
-						amount = 7
-					}
-				}
-				set_estate_privilege = estate_nobles_strong_duchies
-			}
+
 		}
 	}
 	mnd_maj_rein_in_brunei = {
