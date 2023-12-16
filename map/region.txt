@@ -1483,6 +1483,7 @@ australia_region = { # Southeastern Australia # 13 areas
 		murray_river_area
 		illawara_area
 		tasmania_area
+		upper_darling_plains_area
 		northern_tablelands_area
 		southeast_highlands
 		cape_howe_area

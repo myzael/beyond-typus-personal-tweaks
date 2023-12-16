@@ -3443,9 +3443,9 @@ coquivacoa_area = {
 ###
 # Southeastern Australia
 ###
-eastern_australia_area = {	#Darling Plain
+eastern_australia_area = {	#Lower Darling Plain
 	color = { 52 144 185 }
-	1091 4855 6262 6268 6279 6280 6281 6282 6283 6284
+	6280 6281 6282 6283 6284
 }
 southern_australia_area = {	#Victoria
 	color = { 8 73 45 }
@@ -3462,6 +3462,10 @@ illawara_area = { #Botany Bay
 tasmania_area = { #Tasmania
 	color = { 207 91 23 }
 	1085 4868 4869 6308 6309 6310
+}
+upper_darling_plains_area = {	#Upper Darling Plain
+	color = { 22 98 211 }
+	1091 4855 6262 6268 6279 
 }
 northern_tablelands_area = {	#BT16
 	color = { 13 112 148 }
@@ -3537,13 +3541,13 @@ coral_coast_area = {	#BT16
 # Northern Australia
 ###
 top_end_area = {	#Darwin
-	2728 4846 6358 6359 6362 6363
+	2728 4846 6358 6359 6362 6363 
 }
 arnhemland_area = {	#BT16
-	2729 6351 6352 6353 6354 6355 6356 6357 6360 6361
+	2729 6351 6352 6353 6354 6355 6356 6357 6360 6361 
 }
 carpentaria_area = {	#BT16
-	4847 4848 6243 6244 6245 6246 6349 6350
+	4847 4848 6243 6244 6245 6246 6349 6350 
 }
 west_mitchell_downs_area = {	#BT16
 	6241 6242 6247 6248 6249 6250 6343 
@@ -3555,7 +3559,7 @@ great_victorian_plain_area = {	#BT16
 	6340 6341 6346 6371 6372 6373 
 }
 sturt_plateau_area = {	#BT16
-	6342 6344 6345 6348 6347
+	6342 6344 6345 6348 6347 
 }
 bonaparte_gulf_area = {	#BT16
 	6364 6365 6366 6367 

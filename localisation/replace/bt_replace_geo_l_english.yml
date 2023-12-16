@@ -1931,7 +1931,7 @@
  western_australia_area:0 "Swan Coast"
  northern_australia_area:0 "Cape York"
  top_end_area:0 "Darwin"
- eastern_australia_area:0 "Darling Plain"
+ eastern_australia_area:0 "Lower Darling Plain"
  southern_australia_area:0 "Victoria"
  murray_river_area:0 "Murray Plain"
  illawara_area:0 "Botany Bay"
@@ -1990,7 +1990,8 @@
  australia:0 "Northern Australia"
  
  #Colonial Regions
- colonial_australia:0 "Colonial Southeastern Australia"
+ colonial_australia:0 "Colonial Eastern Australia"
+ COLONIAL_AUSTRALIA_Australia:0 "New South Wales"
  
  #Tags
  MIA:0 "Yuggera"
@@ -2011,3 +2012,4 @@
  north_karelia:0 "Ingria"
  north_karelia_adj:0 "Ingrian"
  north_karelia_name:0 "Ingria"
+ east_pacific_ocean_area:0 "West Pacific" #Uhh, yeah that's actually on the Western edge of the Pacific, though it touches the Far East of Eurasia so that's probably why it got confused.
