@@ -458,6 +458,13 @@ wool = {
 			factor = 0.75
 			region = cascadia_region
 		}
+		modifier = { #Wool a little too common in Australia
+			factor = 0.75
+			region = australia_region
+			region = northeastern_australia_region
+			region = northern_australia_region
+			region = western_australia_region
+		}
 		modifier = { #Paradox went livestock for Arabia, so I might as well follow suit
 			factor = 0.1
 			region = arabia_region
@@ -837,6 +844,18 @@ salt = {
 				area = utah_area
 			}
 		}
+		modifier = { #Salt abundant in the Australian Deserts
+			factor = 2.5
+			OR = {
+				area = great_victoria_desert_area
+				area = stony_plains_area
+				area = nullarbor_area
+				area = west_mitchell_downs_area
+				area = deep_outback_area
+				area = channel_country_area
+				area = flinders_ranges_area
+			}
+		}
 		modifier = { #bonus chance
 			factor = 1.5
 			OR = {
@@ -1020,15 +1039,37 @@ copper = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_terrain = steppe
+				AND = {
+					has_terrain = steppe
+					NOT = { region = australia_region }
+					NOT = { region = western_australia_region }
+					NOT = { region = northeastern_australia_region }
+					NOT = { region = northern_australia_region }
+				}	
 				AND = {
 					has_terrain = desert
 					NOT = { area = arizona_area }
+					NOT = { region = australia_region }
+					NOT = { region = western_australia_region }
+					NOT = { region = northeastern_australia_region }
+					NOT = { region = northern_australia_region }
 				}
 				has_terrain = coastal_desert
-				has_terrain = drylands
+				AND = {
+					has_terrain = drylands
+					NOT = { region = australia_region }
+					NOT = { region = western_australia_region }
+					NOT = { region = northeastern_australia_region }
+					NOT = { region = northern_australia_region }
+				}
 				has_terrain = grasslands
-				has_terrain = savannah
+				AND = {
+					has_terrain = savannah
+					NOT = { region = australia_region }
+					NOT = { region = western_australia_region }
+					NOT = { region = northeastern_australia_region }
+					NOT = { region = northern_australia_region }
+				}
 				has_terrain = coastline
 				has_terrain = glacier
 				has_terrain = jungle
@@ -1064,6 +1105,10 @@ copper = {
 			NOT = { region = peru_region } #Not covered improve later
 			NOT = { region = upper_peru_region } #Not covered improve later
 			NOT = { region = la_plata_region } #Not covered improve later
+			NOT = { region = australia_region }
+			NOT = { region = western_australia_region }
+			NOT = { region = northeastern_australia_region }
+			NOT = { region = northern_australia_region }
 			NOT = {
 				AND = {
 					region = carribeans_region
@@ -1138,12 +1183,19 @@ copper = {
 		modifier = { #Copper was too common, want it lower than Iron
 			factor = 0.65
 			region = canada_region
+			area = goldfields_area
 		}
 		modifier = { #Copper very rare in the east
 			factor = 0.25
 			OR = {
 				area = upper_louisiana_area
 				area = ozarks_area
+			}
+		}
+		modifier = {	#Specific province bonuses
+			factor = 24.0
+			OR = {
+				province_id = 6241		# Mt Isa
 			}
 		}
 	}
@@ -1271,6 +1323,7 @@ gold = {
 		modifier = {	#Gold is grows on trees here
 			factor = 6.0
 			area = klondike_area
+			area = goldfields_area
 		}
 		modifier = {	#Gold is abundant here
 			factor = 4.0
@@ -1285,7 +1338,6 @@ gold = {
 				area = mexico_area
 				area = jalisco_area
 				area = gran_chichimeca_area
-				area = goldfields_area
 				#area = high_desert_area
 				#area = stikine_area
 			}
@@ -1304,6 +1356,10 @@ gold = {
 			factor = 1.5
 			OR = {
 				region = alaska_region
+				region = australia_region
+				region = northeastern_australia_region
+				region = western_australia_region
+				region = northern_australia_region
 			}
 		}
 		modifier = {	#Gold is a bit rarer here
@@ -1314,6 +1370,8 @@ gold = {
 				area = baja_california_area
 				area = central_valley_area
 				area = sonora_y_sinaloa_area
+				area = great_victoria_desert_area
+				area = deep_outback_area
 			}
 		}
 		modifier = {	#Gold is rarer here
@@ -1394,7 +1452,7 @@ iron = {
 	}
 	chance = {
 		factor = 10
-		modifier = { #BEYONDTYPUS added copper terrain criteria if not in Africa iron producing areas Siberian Steppe border loses iron otherwise no change
+		modifier = { #BEYONDTYPUS added copper terrain criteria if not in Africa or Australia iron producing areas Siberian Steppe border loses iron otherwise no change
 			factor = 0
 			OR = {
 				has_terrain = steppe
@@ -1410,6 +1468,10 @@ iron = {
 				has_terrain = woods
 			}
 			NOT = { region = central_africa_region }
+			NOT = { region = australia_region }
+			NOT = { region = western_australia_region }
+			NOT = { region = northeastern_australia_region }
+			NOT = { region = northern_australia_region }
 		}
 		modifier = {
 			factor = 0
@@ -1418,6 +1480,9 @@ iron = {
 			NOT = { region = east_siberia_region }
 			NOT = { region = central_africa_region }
 			NOT = { region = australia_region }
+			NOT = { region = western_australia_region }
+			NOT = { region = northeastern_australia_region }
+			NOT = { region = northern_australia_region }
 			NOT = { region = brazil_region }
 			NOT = { continent = north_america }
 			NOT = { continent = south_america }
@@ -1452,9 +1517,9 @@ iron = {
 			factor = 0.8
 			continent = south_america
 		}
-		modifier = { #Havent done Australia yet but how did Paradox miss this I will improve later
+		modifier = { #Western Australia produces many minerals, accounting for almost half of Australia's total mineral output, half of that output being iron (modern figures, however historical mines appeared quite early)
 			factor = 3.0
-			area = western_australia_area
+			region = western_australia_region
 		}
 		modifier = { #Newfoundland has the best fishing in the world but little else
 			factor = 0.1
@@ -1478,6 +1543,7 @@ iron = {
 			factor = 0.5
 			OR = {
 				area = california_area
+				area = goldfields_area
 				#area = northern_rocky_mountains_area
 			}
 		}
@@ -2037,8 +2103,9 @@ sugar = {
 		modifier = {
 			factor = 0
 			OR = {
-			NOT = { has_climate = tropical }
-			area = macaronesia_area
+				NOT = { has_climate = tropical }
+				area = macaronesia_area
+				area = south_queensland_area
 			}
 			OR = {
 				has_winter = severe_winter
@@ -2067,6 +2134,9 @@ sugar = {
 			NOT = { area = florida_area }
 			NOT = { area = north_florida_area }
 			NOT = { area = lower_louisiana_area }
+			NOT = { area = south_queensland_area }
+			NOT = { area = coral_coast_area }
+			NOT = { area = northern_australia_area }
 		}
 		modifier = {	#Less likely in very rough/cold/dry terrain
 			factor = 0.5
@@ -2086,6 +2156,9 @@ sugar = {
 				area = bahia_area
 				area = guyana_area
 				area = suriname_area
+				area = south_queensland_area
+				area = coral_coast_area
+				area = northern_australia_area
 			}
 		}
 		modifier = {	#Much less likely
@@ -2533,6 +2606,13 @@ livestock = {
 		modifier = {
 			factor = 1.5
 			region = central_africa_region
+		}
+		modifier = { #Livestock a little too common in Australia
+			factor = 0.75
+			region = australia_region
+			region = northeastern_australia_region
+			region = northern_australia_region
+			region = western_australia_region
 		}
 		modifier = {
 			factor = 2
