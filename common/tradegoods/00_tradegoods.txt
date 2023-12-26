@@ -1070,6 +1070,14 @@ copper = {
 					NOT = { region = northeastern_australia_region }
 					NOT = { region = northern_australia_region }
 				}
+				NOT = {
+					owner = {
+						AND = {
+							technology_group = aboriginal	#Don't want unreformed aboriginals getting metals
+							primitives = no
+						}	
+					}
+				}
 				has_terrain = coastline
 				has_terrain = glacier
 				has_terrain = jungle
@@ -1246,6 +1254,14 @@ gold = {
 			NOT = { area = hispaniola_area }
 			#NOT = { area = west_hispaniola_area }
 			NOT = { area = dominica_area }
+			NOT = {
+				owner = {
+					AND = {
+						technology_group = aboriginal	#Don't want unreformed aboriginals getting metals
+						primitives = no
+					}	
+				}
+			}
 		}
 		modifier = {
 			factor = 0
@@ -1472,6 +1488,14 @@ iron = {
 			NOT = { region = western_australia_region }
 			NOT = { region = northeastern_australia_region }
 			NOT = { region = northern_australia_region }
+			NOT = {
+				owner = {
+					AND = {
+						technology_group = aboriginal	#Don't want unreformed aboriginals getting metals
+						primitives = no
+					}	
+				}
+			}
 		}
 		modifier = {
 			factor = 0

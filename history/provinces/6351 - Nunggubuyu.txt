@@ -33,3 +33,10 @@ hre = no
 discovered_by = aboriginal_tech # 1.31
 
 #Histories  
+#1444 onwards
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = MRR
+}

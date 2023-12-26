@@ -38,5 +38,17 @@ discovered_by = aboriginal_tech
 	discovered_by = TER
 	discovered_by = TID
 }
-#Histories   
+#Histories  
+#1444 onwards
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	owner = xxx
+	controller = xxx
+	add_core = xxx
+	remove_core = YNU
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	owner = YNU
+	controller = YNU
+	add_core = YNU
+}  
 1642.11.24 = { discovered_by = NED } # Abel Tasman

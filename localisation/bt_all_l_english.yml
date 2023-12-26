@@ -2654,3 +2654,11 @@
  
  ###Great Projects###
  uluru:0 "Uluru"
+ 
+ ###Bookmarks###
+ BT_NATIVES_NORTH_AMERICA_BOOKMARK:0 "Native Start Date: North America"
+ BT_NATIVES_NORTH_AMERICA_BOOKMARK_DESC:0 "Beyond Typus contains extra tags in North America on this start date, in order to help mitigate lag in the default start date."
+ BT_NATIVES_OCEANIA_BOOKMARK:0 "Native Start Date: Oceania"
+ BT_NATIVES_OCEANIA_BOOKMARK_DESC:0 "Beyond Typus contains extra tags in Oceania on this start date, in order to help mitigate lag in the default start date."
+ BT_REDUCED_TAGS_BOOKMARK:0 "Reduced Tags Start Date"
+ BT_REDUCED_TAGS_BOOKMARK_DESC:0 "Beyond Typus contains consolidated or otherwise removed tags on this start date, if the extra tags are too much for your machine."

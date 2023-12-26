@@ -1,0 +1,16 @@
+bookmark =
+{
+	name = "BT_NATIVES_OCEANIA_BOOKMARK"
+	desc = "BT_NATIVES_OCEANIA_BOOKMARK_DESC"
+	date = 1444.11.12
+	
+	center = 4851
+	
+	country = TIW
+	country = YOL
+	country = WRU
+	country = HAW
+	country = MAA
+	country = TOG
+	
+}

@@ -1,0 +1,17 @@
+bookmark =
+{
+	name = "BT_NATIVES_NORTH_AMERICA_BOOKMARK"
+	desc = "BT_NATIVES_NORTH_AMERICA_BOOKMARK_DESC"
+	date = 1444.11.12
+	
+	center = 2007
+	
+	country = CHE
+	country = MOH
+	country = NAH
+	country = CAD
+	country = SAL
+	country = SHO
+	country = YZB
+	
+}

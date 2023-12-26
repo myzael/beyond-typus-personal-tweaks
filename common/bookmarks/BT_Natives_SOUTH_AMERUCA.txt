@@ -1,0 +1,10 @@
+# bookmark =	
+# {	#South American doesn't have any extra native tags in the native start date, so this will be commented out until such a thing happens
+	# name = "BT_NATIVES_SOUTH_AMERICA_BOOKMARK"
+	# desc = "BT_NATIVES_SOUTH_AMERICA_BOOKMARK_DESC"
+	# date = 1444.11.12
+	
+	# center = 2007
+	
+	
+# }

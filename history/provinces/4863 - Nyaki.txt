@@ -31,4 +31,11 @@ hre = no
 discovered_by = aboriginal_tech
 
 #Histories 
+#1444 onwards
+1444.11.12 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = NOO
+}
+1444.11.14 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = xxx
+}
 1642.11.24 = { discovered_by = NED } # Abel Tasman
