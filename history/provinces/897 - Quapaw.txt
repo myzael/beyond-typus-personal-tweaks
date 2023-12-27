@@ -16,6 +16,15 @@ base_manpower = 1
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = CAQ
+	controller = CAQ
+}
 1541.1.1 = { discovered_by = SPA } # Hernando de Soto
 
 1755.1.1 = {

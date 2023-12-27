@@ -16,6 +16,15 @@ trade_goods = unknown # ???
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = PCH
+	controller = PCH
+}
 1554.1.1 = { discovered_by = SPA }
 1600.1.1 = { culture = osage } #Mississippian collapse. Pacaha tag now represent Quapaw. 
 1762.1.1 = {

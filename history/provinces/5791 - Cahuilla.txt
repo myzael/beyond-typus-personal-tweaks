@@ -17,5 +17,11 @@ discovered_by = north_american
 
 
 1444.1.1 = { tribal_owner = YYO }
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = YYO
+}
 1798.1.1 = { discovered_by = SPA } #Unclear, but probably known by the founding of Mission San Luis Rey de Francia
 # Palm Springs area first settled mid-late 1800s.

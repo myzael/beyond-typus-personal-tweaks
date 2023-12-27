@@ -24,7 +24,15 @@ discovered_by = eastern
 
 
 #History here is much more complicated than currently shown, have to reutrn later
-
+1444.11.16 = { #BT Performance Start Begin
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+}
+1444.11.18 = { #BT Performance Start End
+	owner = VOR
+	controller = VOR
+}
 1453.1.1 = {
 	owner = HAB
 	controller = HAB

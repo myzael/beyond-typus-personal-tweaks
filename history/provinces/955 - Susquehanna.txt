@@ -21,7 +21,15 @@ native_hostileness = 4
 
 discovered_by = north_american
  
-
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = SUS
+	controller = SUS
+}
 1615.1.1 = { discovered_by = FRA } # Étienne Brûlé
 1650.1.1 = {
 	owner = SUS

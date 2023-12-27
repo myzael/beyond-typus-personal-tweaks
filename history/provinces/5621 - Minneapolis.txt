@@ -16,3 +16,9 @@ native_hostileness = 3
 discovered_by = north_american
 
 1444.1.1 = { tribal_owner = SIO }
+1444.11.16 = { #BT Performance Start Begin
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	tribal_owner = CIA
+}

@@ -21,18 +21,12 @@ native_hostileness = 3
 
 discovered_by = north_american
 
-1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = XXX
 	controller = XXX
-	remove_core = BLA
-	is_city = no
-	trade_goods = unknown
-}
-1444.11.17 = { #BeyondTypus batch edit shortcut no native start date end
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
 	owner = BLA
 	controller = BLA
-	add_core = BLA
-	is_city = yes
-	trade_goods = fur
-}
+} #Return to proper mod added owners and cuts vanilla core, typically.
 1787.1.1 = { discovered_by = GBR } #David Thomson

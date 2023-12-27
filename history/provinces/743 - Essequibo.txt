@@ -19,7 +19,14 @@ native_ferocity = 2
 native_hostileness = 3
 
 
-
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = ARW
+	controller = ARW
+}
 
 1498.1.1 = { discovered_by = CAS } # Christopher Columbus
 1516.1.23 = { discovered_by = SPA }

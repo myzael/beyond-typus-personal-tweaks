@@ -22,17 +22,9 @@ discovered_by = north_american
 
 
 1444.1.1 = { tribal_owner = BLA }
-1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
-	owner = XXX
-	controller = XXX
-	remove_core = BLA
-	is_city = no
-	trade_goods = unknown
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
 }
-1444.11.17 = { #BeyondTypus batch edit shortcut no native start date end
-	owner = BLA
-	controller = BLA
-	add_core = BLA
-	is_city = yes
-	trade_goods = fur
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = BLA
 }

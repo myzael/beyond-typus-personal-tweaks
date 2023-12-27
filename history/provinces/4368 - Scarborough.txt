@@ -34,6 +34,16 @@ discovered_by = eastern
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	add_core = NOL
 }
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = ENG
+	controller = ENG
+	add_core = ENG
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = DUR
+	controller = DUR
+	remove_core = DUR
+} #Return to proper mod added owners and cuts vanilla core, typically.
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1467.1.1 = { unrest = 5 } # Rivalry between Edward IV & Warwick
 1471.1.1 = { unrest = 8 } # Unpopularity of Warwick & War with Burgundy

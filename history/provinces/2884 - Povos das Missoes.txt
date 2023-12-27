@@ -19,7 +19,14 @@ native_ferocity = 1
 native_hostileness = 5
 
 
-
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = GUA
+	controller = GUA
+}
 
 1530.1.1 = { discovered_by = POR }
 

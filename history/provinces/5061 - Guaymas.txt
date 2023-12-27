@@ -19,19 +19,11 @@ discovered_by = mesoamerican
 
 
 1444.1.1 = { tribal_owner = YAQ }
-1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
-	owner = XXX
-	controller = XXX
-	remove_core = YAQ
-	is_city = no
-	trade_goods = unknown
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
 }
-1444.11.17 = { #BeyondTypus batch edit shortcut no native start date end
-	owner = YAQ
-	controller = YAQ
-	add_core = YAQ
-	is_city = yes
-	trade_goods = fish
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = YAQ
 }
 1539.1.1 = { discovered_by = SPA } # Francisco de Ulloa, who called the area 'the port of ports.'
 1620.1.1 = {

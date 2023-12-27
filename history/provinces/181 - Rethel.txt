@@ -37,7 +37,15 @@ discovered_by = eastern
 	owner = NEV
 	controller = NEV
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
-
+1444.11.16 = { #BT Performance Start Begin
+	owner = BUR
+	controller = BUR
+	add_core = BUR
+}
+1444.11.18 = { #BT Performance Start End
+	owner = NEV
+	controller = NEV
+}
 #1444 onwards
 1539.1.1 = { owner = FRA controller = FRA add_core = FRA remove_core = NEV }
 1583.1.1 = { fort_15th = no fort_16th = yes }

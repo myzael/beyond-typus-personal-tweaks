@@ -18,7 +18,15 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = east_african
 
-
+1444.11.16 = { #BT Performance Start Begin
+	owner = MAM
+	controller = MAM
+	add_core = MAM
+}
+1444.11.18 = { #BT Performance Start End
+	owner = BEJ
+	controller = BEJ
+}
 1517.1.1 = {
 	add_core = TUR 
 } # Mamluks fall to Ottomans, Ottomans do not advance up Nile

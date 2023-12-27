@@ -17,7 +17,12 @@ native_hostileness = 3
 discovered_by = north_american
 
 1444.1.1 = { tribal_owner = PEN }
-
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = PEN
+}
 1524.1.1 = { discovered_by = POR } 		# Estêvão Gomes
 
 1605.1.1 = { discovered_by = FRA } 		# Samuel de Champlain

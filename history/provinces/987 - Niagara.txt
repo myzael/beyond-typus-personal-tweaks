@@ -24,18 +24,14 @@ center_of_trade = 2
 discovered_by = north_american
 
 
-1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
+1444.11.16 = { #BT Performance Start Begin
 	owner = XXX
 	controller = XXX
-	is_city = no
-	trade_goods = unknown
+	tribal_owner = XXX
 }
-1444.11.17 = { #BeyondTypus batch edit shortcut no native start date end
+1444.11.18 = { #BT Performance Start End
 	owner = YZI
 	controller = YZI
-	add_core = YZI
-	is_city = yes
-	trade_goods = grain
 }
 1604.1.1 = { discovered_by = FRA } # Samuel de Champlain explored - possibly - going with it
 

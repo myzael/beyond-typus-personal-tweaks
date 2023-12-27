@@ -39,3 +39,12 @@ discovered_by = indian
 discovered_by = east_african
 
 #Histories 
+1444.11.16 = { #BT Performance Start Begin
+	owner = AKK
+	controller = AKK
+	add_core = AKK
+}
+1444.11.18 = { #BT Performance Start End
+	owner = BIN
+	controller = BIN
+}

@@ -29,6 +29,15 @@ discovered_by = east_african
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	add_core = SYR
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+1444.11.16 = { #BT Performance Start Begin
+	owner = MAM
+	controller = MAM
+	add_core = MAM
+}
+1444.11.18 = { #BT Performance Start End
+	owner = FAD
+	controller = FAD
+}
 
 #1444 onwards
 1516.8.24 = {	owner = TUR

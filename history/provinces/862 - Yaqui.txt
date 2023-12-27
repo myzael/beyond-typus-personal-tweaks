@@ -16,7 +16,14 @@ base_manpower = 1
 discovered_by = north_american
 discovered_by = mesoamerican
 
-
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = YAQ
+	controller = YAQ
+}
 1550.1.1 = { discovered_by = SPA }	#The first encounter between the Spanish and natives occurred in the middle of the 16th century
 
 1687.1.1 = {

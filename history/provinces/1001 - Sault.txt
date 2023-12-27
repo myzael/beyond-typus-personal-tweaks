@@ -23,6 +23,14 @@ center_of_trade = 1
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = OJI
+	controller = OJI
+}
 1623.1.1 = { 
 	discovered_by = FRA
 	capital = "Sault de Gaston"

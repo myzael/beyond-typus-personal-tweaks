@@ -20,6 +20,12 @@ native_hostileness = 5
 
 discovered_by = mesoamerican
 
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = CCM
+}
 1530.1.1 = { discovered_by = SPA } # Pedro Alm’ndez Chirinos 
 
 1583.1.1 = {

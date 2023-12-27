@@ -20,6 +20,15 @@ native_hostileness = 3
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = CHY
+	controller = CHY
+}
 1654.1.1 = { discovered_by = FRA } # Médard Chouart Des Groseilliers
 1664.1.1 = { discovered_by = ENG }
 

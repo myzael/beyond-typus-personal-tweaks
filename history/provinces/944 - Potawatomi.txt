@@ -20,6 +20,14 @@ discovered_by = north_american
 extra_cost = 16
 center_of_trade = 2
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = POT
+	controller = POT
+}
 1659.1.1 = { discovered_by = FRA } # Médard Chouart Des Groseilliers
 1670.1.1 = {
  	owner = IRO

@@ -25,6 +25,14 @@ native_hostileness = 3
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = MIK
+	controller = MIK
+}
 1604.1.1 = { discovered_by = FRA } # Pierre Dugua, Sieur de Mons
 
 1621.1.1 = {

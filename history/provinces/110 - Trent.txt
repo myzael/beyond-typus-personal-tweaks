@@ -28,6 +28,15 @@ discovered_by = ottoman
 #1291 to 1444
 
 #Second shattering unused
+1444.11.16 = { #BT Performance Start Begin
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+}
+1444.11.18 = { #BT Performance Start End
+	owner = TNT
+	controller = TNT
+}
 1475.3.21 = { unrest = 10 }	#3 year old Christian boy murdered, local Jews blamed, the kid controversially canonised
 1476.3.21 = { unrest = 0 }	#things settle down
 1545.1.1 = {

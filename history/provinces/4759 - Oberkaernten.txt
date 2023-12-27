@@ -33,6 +33,15 @@ discovered_by = ottoman
 	controller = CNT
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = HAB
+	controller = HAB
+	add_core = HAB
+}
+1444.11.18 = { #BT Performance Start End
+	owner = CNT
+	controller = CNT
+}
 #1444 onwards
 1452.1.1 = {
 	owner = STY

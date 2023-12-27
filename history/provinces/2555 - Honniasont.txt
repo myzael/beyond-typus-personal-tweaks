@@ -17,6 +17,12 @@ extra_cost = 8
 center_of_trade = 1
 
 1444.1.1 = { tribal_owner = ERI }
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = ERI
+}
 1650.1.1 = {
 	owner = HUR
 	controller = HUR

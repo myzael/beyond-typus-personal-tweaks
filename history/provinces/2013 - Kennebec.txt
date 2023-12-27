@@ -16,6 +16,12 @@ native_hostileness = 8
 discovered_by = north_american
 
 1444.1.1 = { tribal_owner = PEN }
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = PEN
+}
 1604.1.1 = { discovered_by = FRA } # Samuel de Champlain
 1605.1.1 = { discovered_by = ENG } # George Waymouth
 

@@ -18,6 +18,15 @@ add_core = KSI
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = KSI
+	controller = KSI
+}
 1526.1.1 = { discovered_by = FRA }
 1528.10.1 = { discovered_by = SPA } # Cabeza de Vaca
 

@@ -16,6 +16,14 @@ discovered_by = polynesian_tech # 1.31
 #extra_cost = 15					#(JP) I hate this
 center_of_trade = 1
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = XXX
+	controller = XXX
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = TOG
+	controller = TOG
+} #Return to proper mod added owners and cuts vanilla core, typically.
 1616.4.21 = { 
 	discovered_by = NED  # Explorers Willem Schouten and Jacob Le Maire
 }

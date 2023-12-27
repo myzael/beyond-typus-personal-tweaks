@@ -17,6 +17,16 @@ add_core = COW
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = COW
+	controller = COW
+}
+
 1540.1.1 = { discovered_by = SPA } # Hernando De Soto
 
 1814.8.9 = {

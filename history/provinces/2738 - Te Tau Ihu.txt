@@ -22,4 +22,12 @@ latent_trade_goods = { coal } # 1.31
 
 discovered_by = polynesian_tech # 1.31
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = XXX
+	controller = XXX
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = WAI
+	controller = WAI
+} #Return to proper mod added owners and cuts vanilla core, typically.
 1642.1.1 = { discovered_by = NED } # Abel Tasman

@@ -22,19 +22,13 @@ trade_goods = cloth # BT had fish
 discovered_by = polynesian_tech # 1.31
 #discovered_by = YZW
 
-#1444.11.15 = { #BeyondTypus batch edit shortcut no native start date begin
-#	owner = XXX
-#	controller = XXX
-#	is_city = no
-#	trade_goods = unknown
-#}
-#1444.11.17 = { #BeyondTypus batch edit shortcut no native start date end
-#	owner = YZW
-#	controller = YZW
-#	add_core = YZW
-#	is_city = yes
-#	trade_goods = fish
-#}
-
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = XXX
+	controller = XXX
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = OAH
+	controller = OAH
+} #Return to proper mod added owners and cuts vanilla core, typically.
 1555.1.1 = { discovered_by = SPA }
 1778.1.1 = { discovered_by = GBR } #James Cook

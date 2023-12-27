@@ -15,6 +15,14 @@ trade_goods = unknown
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = KSK
+	controller = KSK
+}
 1670.1.1 = { discovered_by = FRA } # Robert Cavelier de La Salle
 1679.1.1 = { discovered_by = ENG }
 1703.1.1 = {

@@ -32,6 +32,7 @@ discovered_by = ottoman
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	owner = CAS
 	controller = CAS
+	add_core = CAS
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
 #1444 onwards

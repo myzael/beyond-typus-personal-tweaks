@@ -21,6 +21,15 @@ discovered_by = east_african
 
 add_province_triggered_modifier = religious_center
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = QAR
+	controller = QAR
+	add_core = QAR
+}
+1444.11.18 = { #BT Performance Start End
+	owner = IRQ
+	controller = IRQ
+}
 1447.1.1 = {
 	owner = MSY
 	controller = MSY

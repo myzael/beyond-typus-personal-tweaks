@@ -21,5 +21,13 @@ trade_goods = fish
 
 discovered_by = polynesian_tech # 1.31
 
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = XXX
+	controller = XXX
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = KAA
+	controller = KAA
+} #Return to proper mod added owners and cuts vanilla core, typically.
 1555.1.1 = { discovered_by = SPA }
 1778.1.1 = { discovered_by = GBR } #James Cook

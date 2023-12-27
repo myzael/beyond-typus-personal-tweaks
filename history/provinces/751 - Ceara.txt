@@ -20,6 +20,15 @@ native_hostileness = 3
 extra_cost = 8
 center_of_trade = 1
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = PTG
+	controller = PTG
+}
+
 1500.1.26 = { discovered_by = CAS } # Vicente Yáñez Pinzõn, couldn't make a claim due to the Treaty of Tordesillas
 1500.4.23 = { discovered_by = POR } # Pedro Álvares Cabral
 1516.1.23 = { discovered_by = SPA }

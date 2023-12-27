@@ -21,6 +21,14 @@ native_hostileness = 4
 
 discovered_by = north_american
 
+1444.11.16 = { #BT Performance Start Begin
+	owner = XXX
+	controller = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	owner = MAH
+	controller = MAH
+}
 1609.1.1 = { discovered_by = FRA } # Samuel de Champlain
 1629.1.1 = { discovered_by = ENG }
 

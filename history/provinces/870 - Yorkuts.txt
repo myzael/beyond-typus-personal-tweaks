@@ -16,5 +16,11 @@ discovered_by = north_american
 
 
 1444.1.1 = { tribal_owner = YKT }
+1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = YKT
+}
 1806.1.1 = { discovered_by = SPA } # Not sure who? But apparently discovered?
 #Gold rush started settlement in the area. Stockton founded around 1849
