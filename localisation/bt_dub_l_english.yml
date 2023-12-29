@@ -192,7 +192,7 @@
  ukr_enlightened_rus_title:0 "An Enlightened Rus"
  ukr_enlightened_rus_desc:0 "While the [Root.Monarh.GetTitle]'s rule is absolute, no man rules alone. Thus, able-minded subjects are necessary for a state such as ours, and nurturing such minds becomes a necessity. Let us establish state-sponsored halls of education, such that the state apparatus continues to function."
  ukr_question_of_serfdom_title:0 "The Question of Serfdom"
- ukr_question_of_serfdom_desc:0 "The farmers and field workers have for a long time been subject to serfdom in our country. Practically slaves under the [Root.GetNoblesName], the question arises: Shall the men working in the fields, who produce the most glorious of grains for the most glorious of medicinal brews, still be treated like vermin? Let us improve their conditions and release them from noble servitude."
+ ukr_question_of_serfdom_desc:0 "The farmers and field workers have for a long time been subject to serfdom in our country. Practically slaves under the [Root.GetNobilityName], the question arises: Shall the men working in the fields, who produce the most glorious of grains for the most glorious of medicinal brews, still be treated like vermin? Let us improve their conditions and release them from noble servitude."
  ukr_freedom_of_steppes_title:0 "The Freedom of the Steppes"
  ukr_freedom_of_steppes_desc:0 "The Cossacks have long had free rein in our southern domains, completely autonomously. The [Root.Monarch.GetTitle]'s reign in these lands is therefore not necessarily recognized. While they have faithfully served in our army so far, the time has come to rein them in."
  
@@ -270,6 +270,13 @@
  BeyondTypusRuthenianFlavour.EVTDESC1:0 "Our cossacks are hearing the call of the steppes to the south of [280.GetName]. With the conversion of the steppe folk, they clamor for a more permanent autonomous area, free from meddling of the crown. They will remain loyal to the crown, of course, provided they are allowed to govern themselves. Shall we establish a more permanent Cossack Host?"
  BeyondTypusRuthenianFlavour.EVTOPTA1:0 "Let them establish the Zaporizhian Sich"
  BeyondTypusRuthenianFlavour.EVTOPTB1:0 "These lands are better administrated under the crown."
+ BeyondTypusRuthenianFlavour.EVTNAME2:0 "The Vodka Monopoly"
+ BeyondTypusRuthenianFlavour.EVTDESC2:0 "With our investments into grain cereal production in the entirety of our country, it is time to decide how to handle the production of Horilka, or Vodka. The [This.GetNobilityName] suggest, as the rightful landowners of peasant fields, that only they are rightful overseers of its production. The [This.GetClergyName] on the other hand, claim that due to its medicinal properties only they should distribute it to the populace. Meanwhile, the [This.GetBurghersName] suggest that, as city-dwellers and shrewd traders, they can ensure its distribution not only internally, but also externally. Finally, the [This.GetCossacksName] promise eternal loyalty of the Steppes, should they receive the rights of its distribution.\n\nAlternatively, the [Root.Monarch.GetTitle] can personally oversee its production and its use, potentially as a pacifier of the populace. Ultimately, a decision must be made."
+ BeyondTypusRuthenianFlavour.EVTOPTA2:0 "The [Root.GetNobilityName] are natural overseers!"
+ BeyondTypusRuthenianFlavour.EVTOPTB2:0 "The [Root.GetClergyName] are natural healers!"
+ BeyondTypusRuthenianFlavour.EVTOPTC2:0 "The [Root.GetBurghersName] are natural traders!"
+ BeyondTypusRuthenianFlavour.EVTOPTD2:0 "The [Root.GetCossacksName] are natural steppe warriors!"
+ BeyondTypusRuthenianFlavour.EVTOPTE2:0 "The [Root.Monarch.GetTitle] is a natural, naturally."
  
  #Cossack host subject type
  bt_cossack_host_title:0 "Cossack Host"

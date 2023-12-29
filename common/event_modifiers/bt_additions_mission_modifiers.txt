@@ -38,7 +38,7 @@ bt_hsn_madrasas = {
 }
 
 bt_ukr_mother_of_all_rus = { #Permanent, country mod
-	core_creation = -0.1 #Doubles uniting Rus' CCC from Ruthenian ideas. I don't want to do it the way vanilla does it where it grants a new idea set just to tweak one modifier, even though I suppose it "looks" cooler. //Dub
+	core_creation = -0.1 #Doubles uniting Rus' CCC from Ruthenian ideas. Fallback if you somehow did not pick up Ruthenian Ideas. //Dub
 }
 
 bt_ukr_flourishing_peasant_fields = { #Permanent, province mod
