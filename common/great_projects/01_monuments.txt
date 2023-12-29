@@ -16768,7 +16768,7 @@ winter_palace = {
 		}
 		country_modifiers = {
 			yearly_absolutism = 0.5
-			accept_vassalization_reasons = 15
+			reform_progress_growth = 0.15
 		}
 		on_upgraded = {
 		}
