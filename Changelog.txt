@@ -35,6 +35,7 @@ BT16
 	- An overhaul to governing capacity & corruption modifiers
 	- The Peasants estate for Scandinavian nations and peasant republics
 	- The ability to pick between each and every estate's agenda in diets (Somewhat done by vanilla, but in a roundabout breakable way)
+- (Dub) Added a Ruthenian Mission tree.
 		
 
 #Bugfixes

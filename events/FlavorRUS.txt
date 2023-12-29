@@ -2655,54 +2655,16 @@ country_event = {
 	# Establish the autonomous Grand Duchy of Finland
 	option = {
 		name = flavor_rus.105.a
-		hidden_effect = {
-			finland_area = {
+		hidden_effect = { #BT modified to fit map
+			mos_rus_conquer_finland_provinces = {
 				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			bothnia_area = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			1930 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			32 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			4124 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
-			}
-			4151 = {
-				add_core = FIN
-				remove_core = ROOT 
-				if = {
-					limit = { NOT = { owned_by = ROOT } }
-					cede_province = ROOT
-				}
+				remove_core = ROOT
+				#BT Removing because megacheese allows you to, in-between of completing the mission and clicking the event option, you can cede provinces back or to somebody else and still get them back. 
+				#Removing this also allows the mission to not require all provinces, which is just better overall if you ask me.
+				# if = {
+					# limit = { NOT = { owned_by = ROOT } }
+					# cede_province = ROOT
+				# }
 			}
 		}
 		if = {

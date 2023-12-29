@@ -1681,3 +1681,9 @@ ukr_break_tatar_yoke_provinces = {
 	475 1965 1966 2420 2444 
 	
 }
+
+mos_rus_conquer_finland_provinces = { #Identical to ukr_finnish_borderlands_provinces, and must remain identical as both missions use this specific one in their flavour event.
+	30 32 4124 7806 7808 
+	27 28 29 31 3128 4123 7803 7804 7805 7807 
+	19 4113 4151 4152 7801 7802 7864 
+}
