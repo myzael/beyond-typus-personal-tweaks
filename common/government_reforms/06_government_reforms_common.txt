@@ -421,6 +421,9 @@ vodka_of_the_crown_reform = {
 		OR = {
 			primary_culture = russian #BT Changed: This does not make sense for Ruthenian nations according to what I've read, who would instead use a vodka monopoly to strengthen estates or similar.
 			culture_group = slavic
+			has_unlocked_government_reform = { #BT Added: To allow Ruthenia to unlock the privilege
+				government_reform = vodka_of_the_crown_reform
+			}
 		}
 	}
 	modifiers = {

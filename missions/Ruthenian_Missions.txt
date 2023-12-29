@@ -841,9 +841,20 @@ bt_ukr_ruthenia_russia_conquest = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "bt_ukr_mother_of_all_rus"
-				duration = -1
+			if = { #Much cooler than just a regular modifier.
+				limit = {
+					has_idea_group = UKR_ideas
+				}
+				custom_tooltip = ukr_mother_of_all_rus_effect_tooltip
+				hidden_effect = {
+					swap_ideas = yes
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = "bt_ukr_mother_of_all_rus"
+					duration = -1
+				}
 			}
 		}
 		
@@ -1847,6 +1858,10 @@ bt_ukr_production = {
 		
 		effect = {
 			#Fire event, allow to choose estate to handle vodka monopoly, or take for yourself as crown. Gives privilege methinks.
+			country_event_with_insight = {
+				id = flavor_rus.105
+				insight_tooltip = mos_rus_conquer_finland_at
+			}
 		}
 		
 	}
@@ -2077,6 +2092,15 @@ bt_ukr_unique_units = {
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				add_army_professionalism = 0.05
+			}
+			else = {
+				add_army_tradition = 15
+			}
 			
 		}
 		
@@ -2106,7 +2130,6 @@ bt_ukr_unique_units = {
 			if = {
 				limit = {
 					has_dlc = "Cradle of Civilization"
-					army_professionalism = 0.6
 				}
 				if = {
 					limit = {

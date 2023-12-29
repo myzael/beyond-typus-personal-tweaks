@@ -132,6 +132,7 @@
  ukr_mother_of_all_rus_title:0 "Mother of all Rus"
  ukr_mother_of_all_rus_desc:0 "With all lands of the Rus united, we can now proclaim ourselves Mother of All Rus as the true successors of the Kievan Rus, once and for all!"
  ukr_mother_of_all_rus_tooltip:0 "No other tag with a primary culture belonging to the §YEast Slavic§! culture group is independent"
+ ukr_mother_of_all_rus_effect_tooltip:0 "Modifies the national idea §YReuniting Rus'§! to give §G-20.0%§! Core-Creation Cost instead of §G-10.0%§!."
  ukr_restore_tmutarakan_title:0 "Restore Tmutarakan"
  ukr_restore_tmutarakan_desc:0 "The Principality of Tmutarakan was a principality established by the Kievan Rus' during a time when it was controlled by Khazar hordes. Tmutarakan enjoyed a great deal of trade with the city of Emperors, Tsargrad or Constantinople during its existence, however it was eventually ceded to the Byzantines as a result of civil wars. As Constantinople fell, however, so did the Byzantines' authority in the area. With them now facing a Turkish onslaught right at the gates of Constantinople, if we are to rescue them, we must move to re-establish this bridgehead. Only then can we cross the Black Sea and help our brothers in faith."
  ukr_reconnect_with_constantinople_title:0 "Reconnect with Constantinople"
@@ -195,6 +196,13 @@
  ukr_freedom_of_steppes_title:0 "The Freedom of the Steppes"
  ukr_freedom_of_steppes_desc:0 "The Cossacks have long had free rein in our southern domains, completely autonomously. The [Root.Monarch.GetTitle]'s reign in these lands is therefore not necessarily recognized. While they have faithfully served in our army so far, the time has come to rein them in."
  
+ #Idea set alteration
+ UKR_ideas_2:0 "Ruthenian Ideas"
+ UKR_ideas_2_start:0 "Ruthenian Traditions"
+ UKR_ideas_2_bonus:0 "Ruthenian Ambition"
+ reuniting_rus_2:0 "Reuniting Rus'"
+ reuniting_rus_2_desc:0 "Kievan Rus' has been reborn in Ruthenian lands, but many people of the old Rus live under foreign rule or in small principalities. Rus must be reunited!"
+  
  #Mission modifiers
  bt_ukr_mother_of_all_rus:0 "Mother of All Rus"
  bt_ukr_mother_of_all_rus_desc:0 "We have restored the mighty Kievan Rus to its former glory and can now claim the Mother of All Rus."

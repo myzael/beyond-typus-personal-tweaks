@@ -465,6 +465,42 @@ MAG_ideas = {
 	}
 }
 
+#Mission-altered Ruthenian ideas
+UKR_ideas_2 = { #Literally, all I do is double the CCR in reuniting_rus. A bit wasteful, code-wise, but looks *much* cooler in my opinion, and ultimately, that is all that matters.
+	start = {
+		manpower_recovery_speed = 0.2
+		morale_damage_received = -0.1
+	}
+
+	bonus = {
+		discipline = 0.05
+	}
+ 
+	trigger = {
+		tag = UKR
+		mission_completed = ukr_mother_of_all_rus
+	}
+	free = yes
+ 
+	mother_of_russian_cities = { #In UKR_ideas
+	}
+	international_influences = { #In UKR_ideas
+	}
+	zaporizhian_cossacs = { #In UKR_ideas
+	}
+	east_and_west = { #In UKR_ideas
+	}
+	legacy_of_ancient_rus = { #In UKR_ideas
+	}
+	reuniting_rus_2 = {
+		core_creation = -0.2
+		years_of_nationalism = -5
+	}
+	birth_of_russian_orthodoxy = { #In UKR_ideas
+	}
+}
+
+
 
 # Eris's work
 PMO_ideas = {

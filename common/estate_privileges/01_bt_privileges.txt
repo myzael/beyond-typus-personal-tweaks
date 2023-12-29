@@ -1,3 +1,5 @@
+#Dev note: This file may eventually be split up into several different files, one for each estate, but until it grows larger, we'll keep it in a single file.
+
 #BT Nobles privileges
 estate_nobles_very_strong_duchies = {
 	icon = privilege_royal_authority
@@ -235,6 +237,20 @@ estate_nobles_border_forts = {
 		}
 	}
 }
+estate_nobles_vodka_monopoly = {
+	
+}
+
+
+#BT Church privileges
+estate_church_vodka_monopoly = {
+	
+}
+
+#BT Burghers privileges
+estate_burghers_vodka_monopoly = {
+	
+}
 
 #BT Cossacks privileges
 estate_cossacks_siberian_frontier = {
@@ -306,4 +322,8 @@ estate_cossacks_siberian_frontier = {
             is_absolutism_active = yes
         }
     }
+}
+
+estate_cossacks_vodka_monopoly = {
+	
 }

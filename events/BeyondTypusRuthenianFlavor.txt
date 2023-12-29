@@ -63,3 +63,82 @@ country_event = {
 		give_permaclaims_for_mission = { mission=ukr_claim_wild_fields }
 	}
 }
+
+country_event = { #The Vodka Monopoly
+	id = BeyondTypusRuthenianFlavour.2
+	title = "BeyondTypusRuthenianFlavour.EVTNAME2"
+	desc = "BeyondTypusRuthenianFlavour.EVTDESC2"
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+
+	option = { # Give it to the Boyars!
+		name = "BeyondTypusRuthenianFlavour.EVTOPTA2"
+		set_estate_privilege = estate_nobles_vodka_monopoly
+		add_years_of_owned_provinces_production_income = {
+			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
+			trigger = {
+				trade_goods = grain
+			}
+			years = 2
+		}
+	}
+	option = { # Give it to the Clergy!
+		name = "BeyondTypusRuthenianFlavour.EVTOPTB2"
+		set_estate_privilege = estate_church_vodka_monopoly
+		add_years_of_owned_provinces_production_income = {
+			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
+			trigger = {
+				trade_goods = grain
+			}
+			years = 2
+		}
+		
+	}
+	option = { # Give it to the Burghers!
+		name = "BeyondTypusRuthenianFlavour.EVTOPTC2"
+		set_estate_privilege = estate_burghers_vodka_monopoly
+		add_years_of_owned_provinces_production_income = {
+			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
+			trigger = {
+				trade_goods = grain
+			}
+			years = 2
+		}
+	}
+	option = { # Give it to the Cossacks!
+		name = "BeyondTypusRuthenianFlavour.EVTOPTD2"
+		set_estate_privilege = estate_cossacks_vodka_monopoly
+		add_years_of_owned_provinces_production_income = {
+			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
+			trigger = {
+				trade_goods = grain
+			}
+			years = 2
+		}
+	}
+	option = { # Keep it for the State!
+		name = "BeyondTypusRuthenianFlavour.EVTOPTE2"
+		if = { #Gov reform is DLC-locked unfortunately.
+			limit = {
+				has_dlc = "Domination"
+			}
+			unlock_government_reform = {
+				government_reform = vodka_of_the_crown_reform
+			}
+			add_government_reform = vodka_of_the_crown_reform
+		}
+		custom_tooltip = rus_enable_vodka_sales_decision_tt #Decision is not Domination DLC-locked.
+		set_country_flag = rus_enable_vodka_sales_decision
+		add_years_of_owned_provinces_production_income = {
+			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
+			trigger = {
+				trade_goods = grain
+			}
+			years = 4
+		}
+	}
+}
