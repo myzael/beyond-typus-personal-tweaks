@@ -150,6 +150,7 @@ country_decisions = {
 		}
 		effect = {
 			clr_country_flag = final_serfdom_privileges
+			set_country_flag = bt_rus_abolished_serfdom #BT Added: Used in Ruthenian missions to check if this decision has been passed
 			add_stability = -1
 			adm_power_cost = 100
 			dip_power_cost = 100

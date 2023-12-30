@@ -4592,6 +4592,7 @@ country_event = {
 		remove_estate_privilege = estate_burghers_the_new_middle_class
 		remove_estate_privilege = estate_burghers_rise_of_the_burghers
 		add_stability = -2
+		set_country_flag = bt_rus_challenged_burghers #BT Added: Checked for in Ruthenian missions.
 		if = {
 			limit = {
 				has_estate = estate_burghers
