@@ -9,7 +9,7 @@ owner = ADA
 controller = ADA
 
 #Demographics
-culture = issa
+culture = dir
 religion = sunni
 
 #Development and Trade

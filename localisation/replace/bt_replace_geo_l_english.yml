@@ -1998,12 +1998,7 @@
  MIA_ADJ:0 "Yuggera"
  
  ###Horn of Africa
- #Cultures
- oromo:0 "Barentu"
- tigray:0 "Tigrinya"
- 
- #Culture Groups
- cushitic:0 "Somali"
+
  
  ###Other###
  western_norway:0 "West Norway"

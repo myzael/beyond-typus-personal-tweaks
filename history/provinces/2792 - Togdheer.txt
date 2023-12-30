@@ -1,7 +1,7 @@
  
 #2792 - Togdheer
 
-culture = dir
+culture = issa
 religion = sunni
 capital = "Ceelgooni"
 is_city = no

@@ -695,6 +695,12 @@
  kulin:0 "Kulinic"
  gamilaraay:0 "Wiradhuric"
  nyoongah:0 "Noongar"
+ #Oromo
+ oromo:0 "Barentu"
+ #Ethiopic
+ tigray:0 "Tigrinya"
+ #Cushitic
+ cushitic:0 "Somali"
  ###Religions###
  dreamtime:0 "Dreamtime"
  ###Missions###

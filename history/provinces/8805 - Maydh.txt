@@ -9,7 +9,7 @@ owner = WAR
 controller = WAR
 
 #Demographics
-culture = dir
+culture = issa
 religion = sunni
 
 #Development and Trade

@@ -2638,7 +2638,53 @@
  wagiman:0 "Wagiman"
  #Pacific
  lagau_ya:0 "Lagau Ya"
- 
+ #Agaw
+ agaw_group:0 "Agaw"
+ awngi:0 "Awngi"
+ bilen:0 "Bilen"
+ kayla:0 "Kayla"
+ qwara:0 "Qwara"
+ #Beja
+ beja_group:0 "Beja"
+ #Ethiopic 
+ ethiopian_group:0 "Ethiopic"
+ argobba:0 "Argobba"
+ dahalik:0 "Dahalik"
+ gafat:0 "Gafat"
+ gurage:0 "Gurage"
+ tigre:0 "Tigre"
+ #Gumuz 
+ gumuz_group:0 "Gumuz"
+ gumuz:0 "Gumuz"
+ #Sidamic 
+ highland_east_cushite_group:0 "Sidamic"
+ hadiya:0 "Hadiya"
+ kambaata:0 "Kambaata"
+ gedeo:0 "Gedeo"
+ #Kunama 
+ kunama_group:0 "Kunama"
+ kunama:0 "Kunama"
+ #Omotic 
+ omotic_group:0 "Omotic"
+ ari-banna:0 "Ari-Banna"
+ gonga:0 "Gonga"
+ koman-mao:0 "Koman-Mao"
+ maji:0 "Maji"
+ ometo:0 "Ometo"
+ yemsa:0 "Yemsa"
+ #Oromo 
+ oromo_group:0 "Oromo"
+ borana:0 "Borana"
+ konso:0 "Konso"
+ orma:0 "Orma"
+ #Somali
+ darood:0 "Darood"
+ dir:0 "Dir"
+ hawiye:0 "Hawiye"
+ issa:0 "Isaaq"
+ reewin:0 "Reewin"
+ saho:0 "Saho"
+
  ###Missions###
  bt_temporary_colonist_eu:0 "Adventurers Settlers"
  bt_temporary_colonist_eu_desc:0 "Some of our people are adventurers who seek for new opportunities in uncharted far-away lands. As such they are ready to settle where nobody of our realm has ever set foot in."

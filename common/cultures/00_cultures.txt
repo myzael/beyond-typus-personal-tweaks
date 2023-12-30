@@ -12426,7 +12426,7 @@ cushitic = { #Representing Lowland East Cushite
 			Mulki Nasteexo Sagal Sahra Sufia Ubah Ubax Waris Xalwo
 		}
 	}
-	issa = {
+	issa = { 
 		#primary = XYZ #(JP) No tags
 		male_names = {
 		}
@@ -12435,8 +12435,8 @@ cushitic = { #Representing Lowland East Cushite
 		dynasty_names = {
 		}
 	}	
-	dir = { #(JP) Messed up here. This is Isaaq instead. 
-		primary = ISI
+	dir = { #(JP) Messed up here. This is Isaaq instead. #After having dealt with an issue of two cultures being the other via localisation and it causing me quite the fuss, I went ahead and flipped these to what they should be. -Hadiros
+		primary = ISI	
 		male_names = {
 		}
 		female_names = {
