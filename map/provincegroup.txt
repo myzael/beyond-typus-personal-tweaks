@@ -1659,6 +1659,13 @@ ukr_restore_tmutarakan_provinces = {
 	286 287 468 2413 2414 2447 
 }
 
+ukr_caucasus_border_provinces = {
+	463 2197 2201 2416 3262 3263 
+	2198 2199 2208 3261 4306 
+	2195
+	425
+}
+
 ukr_claim_wild_fields_provinces = {
 	282 7195 7197 7279 
 	283 1974 2406 7194 
