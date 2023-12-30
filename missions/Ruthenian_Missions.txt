@@ -1024,7 +1024,7 @@ bt_ukr_challenge_ottos = {
 					}
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					owns = 151
 				}
@@ -1184,16 +1184,6 @@ bt_ukr_challenge_ottos = {
 		effect = {
 			if = {
 				limit = {
-					NOT = {
-						has_country_flag = ukr_151_direct_conquest
-						has_country_flag = ukr_151_subject_conquest
-						has_country_flag = ukr_151_friendly
-					}
-				}
-				custom_tooltip = ukr_push_back_turk_tt
-			}
-			if = {
-				limit = {
 					has_country_flag = ukr_151_direct_conquest
 				}
 				anatolia_region = {
@@ -1254,6 +1244,9 @@ bt_ukr_challenge_ottos = {
 					duration = -1
 				}
 			}
+			else = {
+				custom_tooltip = ukr_push_back_turk_tt
+			}
 		}
 		
 	}
@@ -1263,21 +1256,31 @@ bt_ukr_challenge_ottos = {
 		required_missions = { ukr_break_tatar_yoke }
 		position = 6
 		provinces_to_highlight = {
-			
+			province_group = ukr_caucasus_border_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			
+			owns = 2201 #Vladikavkaz
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=ukr_caucasus_border_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=10 #out of 13.
+			}
 		}
 		
 		effect = {
-			
+			caucasia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 		
 	}
 }
-
-#TODO: Make separate version of Caucasus border to match with people lacking Cossacks DLC
 
 bt_ukr_steppe_conquests_1 = {
 	slot = 5
@@ -2042,7 +2045,19 @@ bt_ukr_boyars = {
 		}
 		
 		trigger = {
-			
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				has_adm_advisor_of_level = { level = 4 }
+				has_dip_advisor_of_level = { level = 4 }
+				has_mil_advisor_of_level = { level = 4 }
+			}
+			else = {
+				has_adm_advisor_of_level = { level = 3 }
+				has_dip_advisor_of_level = { level = 3 }
+				has_mil_advisor_of_level = { level = 3 }
+			}
 		}
 		
 		effect = {
