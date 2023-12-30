@@ -8,6 +8,42 @@ capital = 4255
 fixed_capital = 4255
 historical_rival = RYA
 
-#No information found, EU4 should auto generate appropriate name from culture list
+#This is some very tenuous data collected from a variety of Wikipages, mostly in Russian.
+1378.1.1 = {
+	monarch = {
+		name = "Ivan III Vladimirovich"
+		dynasty = "Rurikovich"
+		birth_date = 1370.1.1 #Born around 1370 or so it claims.
+		adm = 3
+		dip = 2 #Finished off Vytautas "with his forehead" and "giving himself into his service" in 1428 (lol)
+		mil = 2
+	}
+}
+
+1402.1.1 = {
+	heir = {
+		name = "Fyodor Ivanovich"
+		monarch_name = "Fyodor I Ivanovich"
+		dynasty = "Rurikovich"
+		birth_date = 1410.1.1 #We know he was the firstborn of four children, out of which the last one was born in Jan 14 1416. That means this guy, given 'rules of childbirth' (Phrasing), that he was probably born latest around 1410.
+		death_date = 1479.1.1 #Died before 1479. No more info is known about this person
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
+
+1430.1.1 = { #Death of Ivan Vladimirovich (Rurikovich)
+	monarch = {
+		name = "Fyodor I Ivanovich"
+		dynasty = "Rurikovich"
+		birth_date = 1402.1.1
+		death_date = 1479.1.1 #Died before 1479. No more info is known about this person
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
 
 #Annexed in 1483
