@@ -9941,6 +9941,8 @@ aboriginal_australian = { #(Hadiros) Adjusted to Pama-Nyungan in BT16
 
 #(Hadiros) Refers to essentially all non Pama-Nyungan aboriginals, note that a few distinct language groups are represented here
 northern_aboriginal_australian = {
+	graphical_culture = aboriginalgfx
+	second_graphical_culture = africangfx
 	gunwinyguan = {	#Macro-Gunwinyguan
 		primary = LAR
 		male_names = {
