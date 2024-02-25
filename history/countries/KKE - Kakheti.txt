@@ -14,3 +14,13 @@ religion = orthodox
 
 #Tech and Military
 technology_group = eastern
+
+1433.1.1 = {
+	monarch = {
+		name = "Giorgi VII"
+		dynasty = "Bagrationi"
+		adm = 0
+		dip = 0
+		mil = 3
+	}
+}
