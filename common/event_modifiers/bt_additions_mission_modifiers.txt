@@ -83,7 +83,7 @@ bt_ukr_black_sea_naval_base = { #Permanent, province mod
 
 bt_ukr_elite_streltsy = { #Permanent, streltsy mod
 	morale_damage = 0.1
-	morale_damage_received = 0.1
+	morale_damage_received = -0.1
 	is_streltsy_modifier = yes
 }
 
