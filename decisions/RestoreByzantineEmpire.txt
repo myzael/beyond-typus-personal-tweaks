@@ -171,7 +171,7 @@ country_decisions = {
 					add_base_tax = 2
 					add_base_production = 2
 					add_base_manpower = 1
-					rename_capital = Constantinople
+					#rename_capital = Constantinople
 					if = {
 						limit = { NOT = { culture = greek } }
 						change_culture = greek
@@ -200,7 +200,7 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
 	
