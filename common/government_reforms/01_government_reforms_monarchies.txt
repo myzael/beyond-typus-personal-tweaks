@@ -519,7 +519,7 @@ celestial_empire = {
 		church_influence_modifier = -0.1
 		nobles_influence_modifier = -0.1
 		burghers_influence_modifier = -0.1
-		governing_capacity = 800 # BT; 300 #(JP) It was not enough, Ming was immediately releasing Xi every single game. They were 233 over, this makes them just 33 over
+		governing_capacity = 1000 # BT; 500
 	}
 	
 	ai = {

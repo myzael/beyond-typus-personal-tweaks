@@ -406,7 +406,7 @@ technology = { #Improved Production
 		enlightenment = 0.3
 	}
 	
-	governing_capacity = 200 #BT Added
+	governing_capacity = 250 #BT Added
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
@@ -441,7 +441,7 @@ technology = { #Modern Bureaucracy
 		enlightenment = 0.5
 	}
 	
-	governing_capacity = 300 #BT Added
+	governing_capacity = 250 #BT Added
 
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1	
