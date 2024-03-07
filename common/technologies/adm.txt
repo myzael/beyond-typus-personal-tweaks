@@ -62,6 +62,8 @@ technology = { #Medieval Administration
 	expects_institution = {
 		feudalism = 0.5
 	}
+	
+	governing_capacity = 100 #BT Added
 
 	production_efficiency	=	0.02
 	may_support_rebels = yes
@@ -77,7 +79,6 @@ technology = { #Temples
 	# Temple
 	temple = yes
 	
-	governing_capacity = 150 #BT Added
 }
 
 technology = { #National Ideas
@@ -87,6 +88,8 @@ technology = { #National Ideas
 		feudalism = 0.5
 		renaissance = 0.15
 	}
+	
+	governing_capacity = 100 #BT Added
 
 	allowed_idea_groups = 1
 	production_efficiency	 =	0.02
@@ -114,6 +117,8 @@ technology = { #Renaissance Thought
 		renaissance = 0.5
 	}
 	
+	governing_capacity = 100 #BT Added
+	
 	#Noble Republic
 	allowed_idea_groups = 2	
 }
@@ -127,7 +132,6 @@ technology = { #Courthouse
 	}
 
 	courthouse = yes
-	governing_capacity = 200 #BT Doubled
 
 }
 
@@ -139,6 +143,8 @@ technology = { #The Scythe
 		renaissance = 0.5
 		new_world_i = 0.15
 	}
+	
+	governing_capacity = 125 #BT Added
 	
 	#The Scythe
 	production_efficiency 	=	0.02
@@ -168,6 +174,8 @@ technology = { #Textile Manufactory
 		new_world_i = 0.5
 	}
 	
+	governing_capacity = 125 #BT Added
+	
 	#Textile Manufactory
 	textile = yes  
 
@@ -184,7 +192,6 @@ technology = { #Early Modern Administration
 	
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
-	governing_capacity = 200 #BT Doubled
 	state_house = yes
 }
 
@@ -197,6 +204,8 @@ technology = { #Improved Drainage
 		new_world_i = 0.5
 		printing_press = 0.15
 	}
+	
+	governing_capacity = 150 #BT Added
 	
 	#Improved Drainage
 	production_efficiency 	=	0.02
@@ -225,6 +234,8 @@ technology = { #Military Administration
 		new_world_i = 0.5
 		printing_press = 0.5
 	}
+	
+	governing_capacity = 150 #BT Added
 	
 	may_force_march = yes
 	soldier_households = yes
@@ -257,8 +268,9 @@ technology = { #University
 		global_trade = 0.15
 	}
 	
-	university = yes	
-	governing_capacity = 500 #BT Doubled
+	governing_capacity = 175 #BT Added
+	
+	university = yes
 	
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
@@ -289,6 +301,8 @@ technology = { #Cathedral
 		global_trade = 0.5
 	}
 	
+	governing_capacity = 175 #BT Added
+	
 	#Cathedral
 	cathedral = yes
 }
@@ -305,7 +319,6 @@ technology = { #Absolute Rulership
 	}
 	
 	republican_dictatorship = yes
-	governing_capacity = 500 #BT Doubled
 }
 
 technology = { #Land Clearance
@@ -319,6 +332,8 @@ technology = { #Land Clearance
 		global_trade = 0.5
 		manufactories = 0.15
 	}
+	
+	governing_capacity = 200 #BT Added
 	
 	#Land Clearance
 	production_efficiency 	=	0.02
@@ -356,6 +371,8 @@ technology = { #Measuring the World
 		manufactories = 0.5
 	}
 	
+	governing_capacity = 200 #BT Added
+	
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
 }
@@ -373,8 +390,7 @@ technology = { #Bonds and Tontines
 		enlightenment = 0.15
 	}
 	
-	counting_house = yes  
-	governing_capacity = 500 #BT Doubled
+	counting_house = yes 
 }
 
 technology = { #Improved Production
@@ -389,6 +405,8 @@ technology = { #Improved Production
 		manufactories = 0.5
 		enlightenment = 0.3
 	}
+	
+	governing_capacity = 200 #BT Added
 	
 	#Improved Farm Animals
 	production_efficiency 	=	0.02
@@ -422,10 +440,11 @@ technology = { #Modern Bureaucracy
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
+	
+	governing_capacity = 300 #BT Added
 
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1	
-	governing_capacity = 500 #BT Doubled
 }
 
 technology = { #Rotherham Plough
@@ -459,6 +478,8 @@ technology = { #Rights of Man
 		enlightenment = 1
 		industrialization = 0.5
 	}
+	
+	governing_capacity = 300 #BT Added
 
 	allowed_idea_groups = 8
 	enlightened_despotism = yes
@@ -497,9 +518,10 @@ technology = { #Revolutionary Ideals
 		industrialization = 1
 	}
 	
+	governing_capacity = 300 #BT Added
+	
 	revolutionary_republic = yes
 	revolutionary_empire = yes
-	governing_capacity = 1000 #BT Doubled
 }
 
 technology = { #Four Field Rotation
