@@ -89,6 +89,7 @@ NDefines.NDiplomacy.AE_ATTACKER_DEVELOPMENT = 0.005			-- from 0p01
 NDefines.NDiplomacy.AE_DEFENDER_DEVELOPMENT = 0.005			-- from 0p01
 NDefines.NDiplomacy.AE_PROVINCE_CAP = 50			-- from 30
 NDefines.NDiplomacy.ANNEX_DIP_COST_PER_DEVELOPMENT = 4			-- from 8
+NDefines.NDiplomacy.AUTONOMY_WARSCORE_COST_MODIFIER = 0.75		-- from 0.33
 NDefines.NDiplomacy.CALL_TO_ARMS_COST = 20			-- BTAddOn changed from 10 calling an ally into an offensive war was too cheap and when a similar strength tag a player could tie up an ally constantly with wars every 10 years calling to arms for a WoA should be a big deal fewer WW0s
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_DEVASTATION = -5			-- from -10p0
 NDefines.NDiplomacy.CELESTIAL_EMPIRE_MANDATE_PER_HUNDRED_NONTRIBUTARY_DEV = 0.0			-- from -0p0 used to be -0p3 and BT was -0p15
