@@ -45,6 +45,10 @@ BT16
  - (Dub) Fixed Venice losing Venetian republic government reform upon forming a new nation, like Lombardy-Venetia.
  - (Dub) Fixed Ottoman moving capital to Constantinople giving +10 extra dev to the province.
  - (Dub) Cut French Diplomatic formation because it had no localisation.
+ - (Dub) Fixed Tyrrhenian Sea being called "Tyrrenean Sea"
+ - (Dub) Fixed the in-game menu, accessed by pressing Escape.
+ - (Dub) Semi-fixed the readability of the modifiers that apply for different subjects by adding spacing between different modifiers.
+	- Note that this cannot be properly fixed without writing massive amounts of custom localisation, as the game does not procure localisation when checking for government abilities.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -78,6 +82,9 @@ BT16
  - (Dub) Tweaked Corruption & Over Governing Capacity such that the minimum province autonomy was shuffled over to being over govcap.
  - (Dub) Shifted Wolgast CoT to Stettin - it deserved it, being a major hanseatic city and the capital of Pomerania, whereas Wolgast simply was not a trade city.
  - (Dub) Shuffled Wild Fields coal provinces into the Donets basin 
+ - (Dub) Tweaked Governing Capacity - now government ranks grant 0/25/50% extra governing capacity instead of a flat bonus, and governing capacity from tech has been smudged over all admin technologies.
+ - (Dub) Tweaked Warscore impact from province autonomy to be more impactful - provinces with high autonomy should now be much cheaper to conquer.
+ 
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
  
@@ -128,7 +135,7 @@ BT16
 
  
 #GFX
- - 
+ - (Dub) Resized new DLC units (LotN, Domination). Origins still lack resizing.
 
 
 
