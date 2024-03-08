@@ -350,7 +350,10 @@ add_trust = {
 	add_heir_personality = infertile_personality 
 }
 
-1422.8.31 = {
+# 1422.8.31 = { #Moving to 1429 because otherwise BT fails to overwrite vanilla's 0/0/0. //Dub
+# }
+
+1429.11.6 = { 
 	# change_estate_land_share = { #compensates for lack of nobles, distributes 20 between the remaining estates
 		# estate = all
 		# share = 20
@@ -366,9 +369,8 @@ add_trust = {
 	set_estate_privilege = estate_nobles_british_strong_marches
 	clear_scripted_personalities = yes
 	add_ruler_personality = infertile_personality
-}
-
-#1429.11.6 = { } #Coronation			#Paradox goes by coronation, but we need a ruler so I'm going by reign
+	set_ruler_flag = henry_vi_lancaster
+} #Coronation			#Paradox goes by coronation, but we need a ruler so I'm going by reign
 
 1510.1.1 = { mercantilism = 25 }			#Randomly calling early Tudor period when England's mercantilism kicks in for later starts
 
