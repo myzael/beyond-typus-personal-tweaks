@@ -2404,7 +2404,7 @@ bt_ukr_enlightenment = {
 				limit = {
 					has_dlc = "Rule Britannia"
 				}
-				add_innovativeness = 5
+				change_innovativeness = 5
 			}
 			else = {
 				add_adm_power = 100
