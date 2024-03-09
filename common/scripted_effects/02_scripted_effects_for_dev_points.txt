@@ -1,0 +1,794 @@
+# Development point effects by Harbivore (with design help from Dub)
+# All the effects are here to hopefully make them easier to change
+
+integer = { #changes a variable into an integer
+    change_variable = { which = $var$ value = 0.5 }
+    multiply_variable = { which = $var$ value = 0.001 }
+    multiply_variable = { which = $var$ value = 1000 }
+}
+two_decimals = { #rounds a variable to 2 decimal points
+    change_variable = { which = $var$ value = 0.005 }
+    multiply_variable = { which = $var$ value = 0.1 }
+    multiply_variable = { which = $var$ value = 10 }
+}
+
+#############################  Calculations for dev points  #############################
+
+# Calculation to get the cost of developing in a province 
+calculate_development_cost = {
+	set_variable = {		#Sets variable for base development cost
+		which = base_development_cost_for_dev_points
+		value = 25
+	}
+	export_to_variable = {		#Gets the development cost modifier
+		which = local_development_cost_for_dev_points
+		value = modifier:local_development_cost
+	}
+	export_to_variable = {		#Gets the development cost modifier
+		which = development_cost_for_dev_points
+		value = modifier:development_cost
+		who = PREV
+	}
+	export_to_variable = {		#Gets the development cost modifier
+		which = all_power_cost_for_dev_points
+		value = modifier:all_power_cost 
+		who = PREV
+	}
+	change_variable = {			#Adds 1 to the modifier 
+		which = local_development_cost_for_dev_points
+		which = development_cost_for_dev_points
+	}
+	change_variable = {			#Adds 1 to the modifier 
+		which = local_development_cost_for_dev_points
+		which = all_power_cost_for_dev_points
+	}
+	change_variable = {			#Adds 1 to the modifier 
+		which = local_development_cost_for_dev_points
+		value = 1
+	}
+	if = {
+		limit = {
+			has_owner_culture = yes
+		}
+        export_to_variable = {
+            which = development_cost_in_primary_culture_for_dev_points
+            value = modifier:development_cost_in_primary_culture
+            who = PREV
+        }
+		change_variable = {			#Adds 1 to the modifier 
+			which = local_development_cost_for_dev_points
+			which = development_cost_in_primary_culture_for_dev_points
+		}
+	}
+	if = {
+		limit = {
+			is_capital = yes
+			owner = {   #This needs to scope to the owner of the province not the nation in charge
+				total_development = 1000
+			}
+		}
+		change_variable = {			#Adds 1 to the modifier 
+			which = local_development_cost_for_dev_points
+			value = -0.5
+		}
+	}
+	else_if = {
+		limit = {
+			is_capital = yes
+		}
+		export_to_variable = {		#Gets the 'development cost modifier' modifier
+			variable_name = total_development_for_dev_points
+			value = total_development 
+			who = owner		#This needs to scope to the owner of the province not the nation in charge
+		}
+		divide_variable = {		#Applies the 'development cost modifier' modifier
+			which = total_development_for_dev_points
+			value = -2000
+		}
+		change_variable = {			#Adds 1 to the modifier 
+			which = local_development_cost_for_dev_points
+			which = total_development_for_dev_points
+		}
+	}
+	export_to_variable = {		#Gets the 'development cost modifier' modifier
+		which = local_development_cost_modifier_for_dev_points
+		value = modifier:local_development_cost_modifier 
+	}
+	export_to_variable = {		#Gets the 'development cost modifier' modifier
+		which = development_cost_modifier_for_dev_points
+		value = modifier:development_cost_modifier 
+		who = PREV
+	}
+	if = {
+		limit = {
+			PREV = {
+				adm_tech = 27
+			}
+		}
+		change_variable = {			#Adds 1 to the modifier  
+			which = local_development_cost_modifier_for_dev_points
+			value = -0.3
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				adm_tech = 23
+			}
+		}
+		change_variable = {			#Adds 1 to the modifier  
+			which = local_development_cost_modifier_for_dev_points
+			value = -0.2
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				adm_tech = 17
+			}
+		}
+		change_variable = {			#Adds 1 to the modifier  
+			which = local_development_cost_modifier_for_dev_points
+			value = -0.1
+		}
+	}
+	change_variable = {			#Adds 1 to the modifier  
+		which = local_development_cost_modifier_for_dev_points
+		which = development_cost_modifier_for_dev_points
+	}
+	change_variable = {			#Adds 1 to the modifier  
+		which = local_development_cost_modifier_for_dev_points
+		value = 1
+	}
+	multiply_variable = {		#Applies the development cost modifier
+		which = base_development_cost_for_dev_points
+		which = local_development_cost_for_dev_points
+	}
+	multiply_variable = {		#Applies the 'development cost modifier' modifier
+		which = base_development_cost_for_dev_points
+		which = local_development_cost_modifier_for_dev_points
+	}
+	set_variable = { 
+		which = shown_development_cost
+		which = base_development_cost_for_dev_points 
+	}
+	integer = { var = shown_development_cost }
+}
+
+# Calculation to get dev points per month from provinces 							(used in country scope) (Very intensive)
+calculate_monthly_dev_points_in_all_provinces_effect = {
+	set_variable = {
+		which = precalc_monthly_dev_points
+		value = 0
+	}
+	set_variable = {
+		which = monthly_dev_points_from_subjects
+		value = 0
+	}
+	every_owned_province = {
+		export_to_variable = {
+			which = precalc_monthly_dev_points
+			value = modifier:base_local_dev_points
+		}
+		export_to_variable = {
+			which = provincial_dev_points_modifier
+			value = modifier:local_dev_points_modifier
+		}	
+		change_variable = {
+			which = provincial_dev_points_modifier
+			value = 1
+		}
+
+		if = {					#Is in the new world
+			limit = {
+				is_in_any_colonial_region = yes
+				owner = { 
+					is_tribal = no
+				}
+			}
+			change_variable = {
+				which = precalc_monthly_dev_points
+				value = 0.04
+			}
+		}
+		if = {				#Saves on computing for 90% of provinces without CoT
+			limit = {
+				NOT = {
+					province_has_center_of_trade_of_level = 1
+				}
+			}
+		}
+		else_if = {					#CoT level 3
+			limit = {
+				province_has_center_of_trade_of_level = 3
+			}
+			change_variable = {            
+				which = provincial_dev_points_modifier
+				value = 0.4
+			}
+		}
+		else_if = {					#CoT level 2
+			limit = {
+				province_has_center_of_trade_of_level = 2
+			}
+			change_variable = {            
+				which = provincial_dev_points_modifier
+				value = 0.2
+			}
+		}
+		else = {					#CoT level 1
+			change_variable = {            
+				which = provincial_dev_points_modifier
+				value = 0.1
+			}
+		}
+		if = {					#Amount of infrastructure
+			limit = {
+				num_of_times_expanded_infrastructure = 1
+			}
+			export_to_variable = {
+				which = infrastucture_ui_var 
+				value = trigger_value:num_of_times_expanded_infrastructure 
+				who = THIS
+			}
+			multiply_variable = {	#Divides infrastructure by 0.2 to prepare it to multiply with monthly dev points
+				which = infrastucture_ui_var
+				value = 20
+			}
+		}
+		if = {					#Has infrastructure ideas and an amount of dev points
+			limit = {
+				has_idea = regulation_bureau 
+				check_variable = {
+					which = precalc_monthly_dev_points
+					value = 0.5
+				}
+			}
+			change_variable = {            
+				which = provincial_dev_points_modifier
+				value = 0.2
+			}
+		}
+		multiply_variable = {	#Multiplies base dev points with multiplier and to get final monthly dev points
+			which = precalc_monthly_dev_points
+			which = provincial_dev_points_modifier
+		}	
+		if = {					#Autonomy
+			limit = {
+				local_autonomy = 0.1
+			}
+			export_to_variable = {
+				which = local_autonomy_for_dev_points
+				value = local_autonomy
+				who = THIS
+			}
+			set_variable = {
+				which = local_autonomy_ui_var
+				which = local_autonomy_for_dev_points
+			}
+			multiply_variable = {	#Divides autonomy by -100 to prepare it to multiply with monthly dev points
+				which = local_autonomy_for_dev_points
+				value = -0.01	
+			}
+			change_variable = {            
+				which = local_autonomy_for_dev_points
+				value = 1
+			}
+			multiply_variable = {
+				which = precalc_monthly_dev_points
+				which = local_autonomy_for_dev_points
+			}
+		}
+		set_variable = {
+			which = shown_precalc_monthly_dev_points
+			which = precalc_monthly_dev_points
+		}
+		two_decimals = { var = shown_precalc_monthly_dev_points }
+		calculate_development_cost = yes
+		ROOT = {				#Adds up all the dev points from provinces
+			change_variable = {
+				which = precalc_monthly_dev_points
+				which = PREV
+			}
+		}
+	}
+	set_variable = {
+		which = monthly_dev_points_from_provinces
+		which = precalc_monthly_dev_points
+	}	
+	two_decimals = { var = monthly_dev_points_from_provinces }
+	if = {						#Subjects dev points
+		limit = {
+			num_of_subjects = 1
+		}
+		every_subject_country = {
+			limit = {
+				NOT = {
+					is_subject_of_type = tributary_state
+				}
+			}
+			set_variable = {	#Saves the dev points because to transfer to overlord it must have the variable have the same name 
+				which = monthly_dev_points_from_subjects
+				which = precalc_monthly_dev_points
+			}		
+			multiply_variable = {	#Gives overlord 10% of subjects dev points
+				which = monthly_dev_points_from_subjects
+				value = 0.1
+			}
+			ROOT = {				#Adds up all the dev points from provinces
+				change_variable = {
+					which = monthly_dev_points_from_subjects
+					which = PREV
+				}
+			}
+		}
+	}
+	change_variable = {
+		which = precalc_monthly_dev_points
+		which = monthly_dev_points_from_subjects
+	}
+	two_decimals = { var = monthly_dev_points_from_subjects }
+}
+
+# Calculation to get dev points per month countrywide with all country modifiers  	(used in country scope)
+calculate_monthly_dev_points_with_country_modifiers_effect = {
+	set_variable = {
+		which = calc_monthly_dev_points
+		which = precalc_monthly_dev_points
+	}
+	export_to_variable = {
+		which = dev_points_multiplier
+		value = modifier:country_dev_points_modifier
+	}
+	change_variable = {
+		which = dev_points_multiplier
+		value = 1
+	}
+	if = {						#+90% Manpower
+		limit = {
+			manpower_percentage = 0.9
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.1
+		}
+	}
+	if = {						#Overextension
+		limit = {
+			overextension_percentage = 0.01
+		}
+		export_to_variable = {
+			which = gui_overextension_var
+			value = overextension_percentage
+			who = ROOT
+		}
+		multiply_variable = { 
+			which = gui_overextension_var
+			value = 25
+		}
+	}
+	if = {						#War Exhaustion
+		limit = {
+			war_exhaustion = 0.1
+		}
+		export_to_variable = {
+			which = gui_war_exhaustion_var
+			value = war_exhaustion
+			who = ROOT
+		}
+		multiply_variable = { 
+			which = gui_war_exhaustion_var
+			value = 2.5
+		}
+	}
+	if = {						#Corruption
+		limit = {
+			corruption = 0.1
+		}
+		export_to_variable = {
+			which = gui_corruption_var
+			value = corruption
+			who = ROOT
+		}
+	}			
+	if = {						#Is a non-independent, non-colony, non-march subject
+		limit = {
+			is_colonial_nation = no
+			NOT = {
+				is_subject_of_type = tributary_state
+			}
+			is_subject = yes
+		}
+		change_variable = {
+			which = dev_points_multiplier
+			value = -0.2
+		}
+	}
+	if = {						#Is a free colonial nation
+		limit = {
+			is_former_colonial_nation = yes 
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.2
+		}
+	}
+	multiply_variable = {		#Multiplies base dev points with multiplier and to get final monthly dev points
+		which = calc_monthly_dev_points
+		which = dev_points_multiplier
+	}
+	if = {						#Makes dev points to 0 if it is below that
+		limit = {
+			NOT = {	
+				check_variable = {
+					which = calc_monthly_dev_points
+					value = 0
+				}
+			}
+		}
+		set_variable = {            
+			which = calc_monthly_dev_points
+			value = 0
+		}
+	}
+	set_variable = {			#Sets a variable for final monthly dev points      
+		which = postcalc_monthly_dev_points
+		which = calc_monthly_dev_points
+	}
+	two_decimals = { var = calc_monthly_dev_points }
+}
+
+# Adds the monthly development points to the current amount 						(used in country scope)
+add_monthly_dev_points_effect = {
+	change_variable = {				#Applies the saved monthly dev point gain
+		which = current_dev_points
+		which = postcalc_monthly_dev_points
+	}
+	change_variable = {				#Adds to the debug total dev points
+		which = total_accumulated_dev_points 
+		which = postcalc_monthly_dev_points
+	}
+    set_variable = { 				#Creates the integer for current dev points gui
+		which = shown_current_dev_points 
+		which = current_dev_points 
+	}
+    integer = { var = shown_current_dev_points }
+    set_variable = { 				#Creates the integer for total dev points gui
+		which = shown_total_accumulated_dev_points 
+		which = total_accumulated_dev_points  
+	}
+    integer = { var = shown_total_accumulated_dev_points }
+}
+
+# Setting the max development points 												(used in country scope)
+calculate_dev_point_limit_effect = {		
+	set_variable = {			#Sets a variable maximum dev points      
+		which = maximum_dev_points
+		value = 100
+	}
+	export_to_variable = {		#Gets the current tech
+		which = admin_tech_for_dev_points
+		value = adm_tech 
+		who = ROOT
+	}
+	multiply_variable = { 		#Multiplies that by 10 to get bonus from tech
+		which = admin_tech_for_dev_points
+		value = 10
+	}
+	change_variable = {         #Adds the bonus from current tech to the max dev points
+		which = maximum_dev_points
+		which = admin_tech_for_dev_points
+	}
+	if = {						#Adds the bonus from regular ideas
+		limit = {
+			has_idea = efficient_construction_plans 
+		}
+		change_variable = {		
+			which = maximum_dev_points
+			value = 100
+		}
+	}
+	# if = {						#Adds the bonus from national ideas
+		# limit = {
+			# # OR = {
+				# # TAG =
+				# # TAG =
+				# # TAG =
+				# # TAG =
+			# # }
+			# always = no
+		# }
+		# change_variable = {		
+			# which = maximum_dev_points
+			# which = 100
+		# }
+	# }
+	if = {						#Multiplies the max dev points for kingdoms
+		limit = {
+			government_rank = 2
+			NOT = {
+				government_rank = 3
+			}
+		}
+		multiply_variable = {
+			which = maximum_dev_points
+			value = 2
+		}
+	}
+	if = {						#Multiplies the max dev points for empires
+		limit = {
+			government_rank = 3
+		}
+		multiply_variable = {
+			which = maximum_dev_points
+			value = 3
+		}
+	}
+}
+
+#################################  Spending dev points  #################################
+
+# Spending dev points on tax   														(used in province scope)
+spend_dev_points_effect = {
+	set_variable = {		#Sets variable for base development cost
+		which = base_development_cost_for_dev_points
+		value = 25
+	}
+	export_to_variable = {		#Gets the development cost modifier
+		which = local_development_cost_for_dev_points
+		value = modifier:local_development_cost
+	}
+	export_to_variable = {		#Gets the development cost modifier
+		which = development_cost_for_dev_points
+		value = modifier:development_cost
+		who = PREV
+	}
+	export_to_variable = {		#Gets the development cost modifier
+		which = all_power_cost_for_dev_points
+		value = modifier:all_power_cost 
+		who = PREV
+	}
+	change_variable = {			#Adds 1 to the modifier 
+		which = local_development_cost_for_dev_points
+		which = development_cost_for_dev_points
+	}
+	change_variable = {			#Adds 1 to the modifier 
+		which = local_development_cost_for_dev_points
+		which = all_power_cost_for_dev_points
+	}
+	change_variable = {			#Adds 1 to the modifier 
+		which = local_development_cost_for_dev_points
+		value = 1
+	}
+	if = {
+		limit = {
+			has_owner_culture = yes
+		}
+        export_to_variable = {
+            which = development_cost_in_primary_culture_for_dev_points
+            value = modifier:development_cost_in_primary_culture
+            who = PREV
+        }
+		change_variable = {			#Adds 1 to the modifier 
+			which = local_development_cost_for_dev_points
+			which = development_cost_in_primary_culture_for_dev_points
+		}
+	}
+	if = {
+		limit = {
+			is_capital = yes
+			owner = {   #This needs to scope to the owner of the province not the nation in charge
+				total_development = 1000
+			}
+		}
+		change_variable = {			#Adds 1 to the modifier 
+			which = local_development_cost_for_dev_points
+			value = -0.5
+		}
+	}
+	else_if = {
+		limit = {
+			is_capital = yes
+		}
+		export_to_variable = {		#Gets the 'development cost modifier' modifier
+			variable_name = total_development_for_dev_points
+			value = total_development 
+			who = owner		#This needs to scope to the owner of the province not the nation in charge
+		}
+		divide_variable = {		#Applies the 'development cost modifier' modifier
+			which = total_development_for_dev_points
+			value = -2000
+		}
+		change_variable = {			#Adds 1 to the modifier 
+			which = local_development_cost_for_dev_points
+			which = total_development_for_dev_points
+		}
+	}
+	export_to_variable = {		#Gets the 'development cost modifier' modifier
+		which = local_development_cost_modifier_for_dev_points
+		value = modifier:local_development_cost_modifier 
+	}
+	export_to_variable = {		#Gets the 'development cost modifier' modifier
+		which = development_cost_modifier_for_dev_points
+		value = modifier:development_cost_modifier 
+		who = PREV
+	}
+	if = {
+		limit = {
+			PREV = {
+				adm_tech = 27
+			}
+		}
+		change_variable = {			#Adds 1 to the modifier  
+			which = local_development_cost_modifier_for_dev_points
+			value = -0.3
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				adm_tech = 23
+			}
+		}
+		change_variable = {			#Adds 1 to the modifier  
+			which = local_development_cost_modifier_for_dev_points
+			value = -0.2
+		}
+	}
+	else_if = {
+		limit = {
+			PREV = {
+				adm_tech = 17
+			}
+		}
+		change_variable = {			#Adds 1 to the modifier  
+			which = local_development_cost_modifier_for_dev_points
+			value = -0.1
+		}
+	}
+	change_variable = {			#Adds 1 to the modifier  
+		which = local_development_cost_modifier_for_dev_points
+		which = development_cost_modifier_for_dev_points
+	}
+	change_variable = {			#Adds 1 to the modifier  
+		which = local_development_cost_modifier_for_dev_points
+		value = 1
+	}
+	multiply_variable = {		#Applies the development cost modifier
+		which = base_development_cost_for_dev_points
+		which = local_development_cost_for_dev_points
+	}
+	multiply_variable = {		#Applies the 'development cost modifier' modifier
+		which = base_development_cost_for_dev_points
+		which = local_development_cost_modifier_for_dev_points
+	}
+	set_variable = { 
+		which = shown_development_cost
+		which = base_development_cost_for_dev_points 
+	}
+	integer = { var = shown_development_cost }
+	set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
+		which = current_dev_points
+		which = base_development_cost_for_dev_points
+	}
+	PREV = {					#Takes away the cost of the province from the dev points	
+		subtract_variable = {
+			which = current_dev_points
+			which = PREV
+		}
+		set_variable = { 
+			which = shown_current_dev_points 
+			which = current_dev_points 
+		}
+		integer = { var = shown_current_dev_points }
+	}
+}
+
+# Spending dev points on production   												(used in province scope)
+simulate_development = {		
+	add_next_institution_embracement_scaled = 5	
+	export_to_variable = {		#
+		which = times_to_reduce_devastation
+		value = development
+	}
+	while = {
+		limit = {
+			check_variable = {
+				which = times_to_reduce_devastation
+				value = 10
+			}
+		}
+		add_devastation = -8
+		subtract_variable = {
+			which = times_to_reduce_devastation
+			value = 10
+		}
+	}	
+	while = {
+		limit = {
+			check_variable = {
+				which = times_to_reduce_devastation
+				value = 1
+			}
+		}
+		add_devastation = -0.8
+		subtract_variable = {
+			which = times_to_reduce_devastation
+			value = 1
+		}
+	}			
+	owner = {
+		change_estate_land_share = {
+			estate = all
+			share = -0.2
+		}
+	}
+}
+
+###################################  Mission rewards  ###################################
+
+#Gives the nation $dev$ amount dev points											(used in country scope)
+give_dev_points_effect = {
+
+	change_variable = {
+		which = current_dev_points
+		value = $dev$
+	}
+}
+
+
+# Calculate to check if a nation is over their dev point limit						(used in country scope)
+# Spends all of the ai's dev points but only enough to get player's under the limit
+spend_dev_points_if_over_limit_effect = {
+	while = {
+		limit = {
+			OR = {
+				AND = {			#For the ai this will spend all their points
+					#ai = yes
+					check_variable = {
+						which = current_dev_points
+						value = 25
+					}
+				}
+				#AND = {			#For players this will spend their points until they are under the max
+				#	ai = no
+				#	check_variable = {
+				#		which = current_dev_points
+				#		which = maximum_dev_points
+				#	}
+				#	NOT = {
+				#		is_variable_equal = {
+				#			which = current_dev_points
+				#			which = maximum_dev_points
+				#		}
+				#	}
+				#}
+			}
+		}
+		#Basic spending of points for now
+		random_owned_province = {
+			limit = {
+				is_state = yes
+			}
+			random_list = {
+				1 = {
+					spend_dev_points_effect = yes
+					add_base_manpower = 1
+					simulate_development = yes
+				}
+				1 = {
+					spend_dev_points_effect = yes
+					add_base_production = 1
+					simulate_development = yes
+				}
+				1 = {
+					spend_dev_points_effect = yes
+					add_base_tax = 1
+					simulate_development = yes
+				}
+			}
+		}
+	}
+}
+
+

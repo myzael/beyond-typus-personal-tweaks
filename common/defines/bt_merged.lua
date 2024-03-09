@@ -4,6 +4,7 @@
 
 -- NDefines.NGovernment.CENTRALIZE_STATE_YEARS = 0 -- For testing purposes.
 
+NDefines.NCountry.BASE_POWER_INCREASE = 2 --from 3 for dev points
 NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25 -- BT changed from 75 to 25 because more provinces making dev per province much less. //Dub
 NDefines.NAI.CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE = 1			-- from 3
 NDefines.NAI.DEVELOPMENT_CAP_BASE = 50			-- From 10. Trying to unhinge the AI's development so that they actually use their extra monarch points.
@@ -69,7 +70,7 @@ NDefines.NCountry.PS_CHANGE_CULTURE_OVERSEAS_RELIGION_MOD = -0.25			-- BTAddOn c
 NDefines.NCountry.PS_DEMAND_NON_WARGOAL_PEACE = 2			-- from 3
 NDefines.NCountry.PS_DEMAND_NON_WARGOAL_PROVINCE = 20			-- from 50
 NDefines.NCountry.PS_FORCE_MARCH = 1			-- BTAddOn changed from 2 Way more provinces in BT so cost of forced march should naturally be lower
-NDefines.NCountry.PS_IMPROVE_PROVINCE_BASE = 25			-- from 50
+NDefines.NCountry.PS_IMPROVE_PROVINCE_BASE = 0 			-- from 50 temp for dev points
 NDefines.NCountry.PS_IMPROVE_PROVINCE_CAPITAL_DISCOUNT = 0.025			-- from 0p05
 NDefines.NCountry.PS_MAKE_PROVINCE_CORE = 5			-- from 10
 NDefines.NCountry.PS_MOVE_CAPITAL = 100			-- BTAddOn changed from 200 I feel this was a tad overpriced

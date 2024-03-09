@@ -101,6 +101,97 @@ can_abandon_state = {
 }
 
 can_improve_tax = { #BT Modified
+	condition = {	#Stops ai from devloping (they use events)
+        tooltip = "dev_points_disabled"
+        potential = {
+			FROM = {	#Stops ai deving
+				ai = yes
+			}
+        }
+        allow = { always = no }
+    }
+	condition = {	#Can a player develop their own provinces
+        tooltip = "dev_points_not_enough_dev_points"
+        potential = {
+			ai = no
+        }
+        allow = {
+			owner = {
+				FROM = {	#This should be the person who is going to pay for the dev
+					has_enough_dev_points_to_dev = yes
+				}
+			}
+		}
+    }
+	condition = {	#Can a player develop their own provinces
+        tooltip = "dev_points_you_allow_overlord_to_dev"
+        potential = {
+			owned_by = FROM
+        }
+        allow = {
+			owned_by = FROM
+			OR = {
+				#Allows players to dev their own provinces if they are independent
+				FROM = {
+					ai = no
+					is_subject = no
+				}
+				#Allows players to dev their own provinces if they are a subject with an ai overlord
+				FROM = {
+					ai = no
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+				#Allows players to dev their own provinces if they are a subject with a player overlord without the flag let_player_overlord_dev
+				FROM = {
+					ai = no
+					is_subject = yes
+					NOT = {
+						has_country_flag = let_player_overlord_dev
+					}
+					overlord = {
+						ai = no
+					}
+				}
+			}
+		}
+    }
+	condition = {	#Can a player develop their subject's provinces
+        tooltip = "dev_points_your_subject_does_not_allow_overlord_to_dev"
+        potential = {
+			NOT = {
+				owned_by = FROM
+			}
+        }
+        allow = {
+			NOT = {
+				owned_by = FROM
+			}
+			OR = {
+				#Allows players to dev their subject's provinces if they are an ai
+				owner = {
+					ai = yes
+					is_subject = yes
+					overlord = {
+						ai = no
+					}
+					is_subject_of = FROM
+				}
+				#Allows players to dev their subject's provinces if they are a player with the flag let_player_overlord_dev
+				owner = {
+					ai = no
+					is_subject = yes
+					has_country_flag = let_player_overlord_dev
+					overlord = {
+						ai = no
+					}
+					is_subject_of = FROM
+				}
+			}
+		}
+    }
 	condition = { #We want to stop overdevving of coal provinces.
 		tooltip = "BT_AI_SPECIFIC_CHANGE"
 		potential = {
@@ -139,6 +230,97 @@ can_improve_tax = { #BT Modified
 }
 
 can_improve_production = { #BT Modified
+	condition = {	#Stops ai from devloping (they use events)
+        tooltip = "dev_points_disabled"
+        potential = {
+			FROM = {	#Stops ai deving
+				ai = yes
+			}
+        }
+        allow = { always = no }
+    }
+	condition = {	#Can a player develop their own provinces
+        tooltip = "dev_points_not_enough_dev_points"
+        potential = {
+			ai = no
+        }
+        allow = {
+			owner = {
+				FROM = {	#This should be the person who is going to pay for the dev
+					has_enough_dev_points_to_dev = yes
+				}
+			}
+		}
+    }
+	condition = {	#Can a player develop their own provinces
+        tooltip = "dev_points_you_allow_overlord_to_dev"
+        potential = {
+			owned_by = FROM
+        }
+        allow = {
+			owned_by = FROM
+			OR = {
+				#Allows players to dev their own provinces if they are independent
+				FROM = {
+					ai = no
+					is_subject = no
+				}
+				#Allows players to dev their own provinces if they are a subject with an ai overlord
+				FROM = {
+					ai = no
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+				#Allows players to dev their own provinces if they are a subject with a player overlord without the flag let_player_overlord_dev
+				FROM = {
+					ai = no
+					is_subject = yes
+					NOT = {
+						has_country_flag = let_player_overlord_dev
+					}
+					overlord = {
+						ai = no
+					}
+				}
+			}
+		}
+    }
+	condition = {	#Can a player develop their subject's provinces
+        tooltip = "dev_points_your_subject_does_not_allow_overlord_to_dev"
+        potential = {
+			NOT = {
+				owned_by = FROM
+			}
+        }
+        allow = {
+			NOT = {
+				owned_by = FROM
+			}
+			OR = {
+				#Allows players to dev their subject's provinces if they are an ai
+				owner = {
+					ai = yes
+					is_subject = yes
+					overlord = {
+						ai = no
+					}
+					is_subject_of = FROM
+				}
+				#Allows players to dev their subject's provinces if they are a player with the flag let_player_overlord_dev
+				owner = {
+					ai = no
+					is_subject = yes
+					has_country_flag = let_player_overlord_dev
+					overlord = {
+						ai = no
+					}
+					is_subject_of = FROM
+				}
+			}
+		}
+    }
 	condition = { #We want to stop overdevving of coal provinces.
 		tooltip = "BT_AI_SPECIFIC_CHANGE"
 		potential = {
@@ -161,6 +343,97 @@ can_improve_production = { #BT Modified
 }
 
 can_improve_manpower = { #BT Modified
+	condition = {	#Stops ai from devloping (they use events)
+        tooltip = "dev_points_disabled"
+        potential = {
+			FROM = {	#Stops ai deving
+				ai = yes
+			}
+        }
+        allow = { always = no }
+    }
+	condition = {	#Can a player develop their own provinces
+        tooltip = "dev_points_not_enough_dev_points"
+        potential = {
+			ai = no
+        }
+        allow = {
+			owner = {
+				FROM = {	#This should be the person who is going to pay for the dev
+					has_enough_dev_points_to_dev = yes
+				}
+			}
+		}
+    }
+	condition = {	#Can a player develop their own provinces
+        tooltip = "dev_points_you_allow_overlord_to_dev"
+        potential = {
+			owned_by = FROM
+        }
+        allow = {
+			owned_by = FROM
+			OR = {
+				#Allows players to dev their own provinces if they are independent
+				FROM = {
+					ai = no
+					is_subject = no
+				}
+				#Allows players to dev their own provinces if they are a subject with an ai overlord
+				FROM = {
+					ai = no
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+				#Allows players to dev their own provinces if they are a subject with a player overlord without the flag let_player_overlord_dev
+				FROM = {
+					ai = no
+					is_subject = yes
+					NOT = {
+						has_country_flag = let_player_overlord_dev
+					}
+					overlord = {
+						ai = no
+					}
+				}
+			}
+		}
+    }
+	condition = {	#Can a player develop their subject's provinces
+        tooltip = "dev_points_your_subject_does_not_allow_overlord_to_dev"
+        potential = {
+			NOT = {
+				owned_by = FROM
+			}
+        }
+        allow = {
+			NOT = {
+				owned_by = FROM
+			}
+			OR = {
+				#Allows players to dev their subject's provinces if they are an ai
+				owner = {
+					ai = yes
+					is_subject = yes
+					overlord = {
+						ai = no
+					}
+					is_subject_of = FROM
+				}
+				#Allows players to dev their subject's provinces if they are a player with the flag let_player_overlord_dev
+				owner = {
+					ai = no
+					is_subject = yes
+					has_country_flag = let_player_overlord_dev
+					overlord = {
+						ai = no
+					}
+					is_subject_of = FROM
+				}
+			}
+		}
+    }
 	condition = { #We want to stop overdevving of coal provinces.
 		tooltip = "BT_AI_SPECIFIC_CHANGE"
 		potential = {

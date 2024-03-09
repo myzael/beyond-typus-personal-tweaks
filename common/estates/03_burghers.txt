@@ -36,6 +36,7 @@ estate_burghers = {
 		trade_efficiency = 0.2
 		#development_cost = -0.1			#BTAddOn removed - estates rebalancing
 		republican_tradition = 0.5			#BTAddOn new - estates rebalancing
+		country_dev_points_modifier = 0.02
 	}
 	country_modifier_neutral = {
 		#trade_efficiency = 0.2			#BTAddOn removed - estates rebalancing
@@ -48,6 +49,7 @@ estate_burghers = {
 		republican_tradition = -0.5			#BTAddOn new - estates rebalancing
 		stability_cost_modifier = 0.33			#BTAddOn new - estates rebalancing
 		global_unrest = 2
+		country_dev_points_modifier = -0.02
 	}
 	land_ownership_modifier = {
 		burghers_loyalty_modifier = 0.2

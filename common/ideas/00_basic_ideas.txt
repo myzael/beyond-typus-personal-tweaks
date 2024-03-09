@@ -1020,6 +1020,7 @@ economic_ideas = {
 
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
+		country_dev_points_modifier = 0.1
 	}
 
 	bureaucracy = { 
@@ -2504,6 +2505,7 @@ infrastructure_ideas = { #New in 1.3X. It's just like administrative ideas in th
 
 	bonus = {
 		development_cost = -0.1
+		expand_administration_cost = -1
 	}
 
 	state_efficiency = {
@@ -2512,9 +2514,11 @@ infrastructure_ideas = { #New in 1.3X. It's just like administrative ideas in th
 	}
 	organised_construction = {
 		build_cost = -0.1 
+		build_time = -0.25
 	}
 	efficient_construction_plans = {
 		expand_infrastructure_cost_modifier = -0.25
+		max_dev_points = 100
 	}
 	expanded_infrastructure_network = {
 		#movement_speed = 0.1
@@ -2529,8 +2533,7 @@ infrastructure_ideas = { #New in 1.3X. It's just like administrative ideas in th
 		fort_maintenance_modifier = -0.25
  	}
 	regulation_bureau = {
-		expand_administration_cost = -1
-		build_time = -0.25
+		local_dev_points_modifier = 0.2
 	}
 
 	ai_will_do = {

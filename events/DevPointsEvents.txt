@@ -1,0 +1,429 @@
+# Development Point Debug Events
+namespace = dev_points
+
+
+# For players fired from 01_monthly_tick_clock in triggered province modifiers
+# Fully calculates and adds monthly dev points to nation, also spends dev points if over
+country_event = { 					
+    id = dev_points.1
+    title = "dev_points.1.title"
+    desc = "dev_points.1.disc"
+    picture = ECONOMY_eventPicture
+	  
+    is_triggered_only = yes
+	
+	hidden = yes
+	
+	immediate = {
+		calculate_monthly_dev_points_in_all_provinces_effect = yes
+		calculate_monthly_dev_points_with_country_modifiers_effect = yes
+		add_monthly_dev_points_effect = yes
+		calculate_dev_point_limit_effect = yes
+		if = {
+			limit = {
+				check_variable = { 
+					which = current_dev_points
+					which = maximum_dev_points
+				}
+				NOT = {
+					is_variable_equal = {
+						which = current_dev_points
+						which = maximum_dev_points
+					}
+				}
+			}
+			#spend_dev_points_if_over_limit_effect_player = yes
+		}
+	}
+	option = {
+		name = "dev_points.1.opta"
+		ai_chance = { factor = 1 }
+	}
+}
+
+# For Ai to calculate their dev points in provinces
+# Happens randomly on biyearly pulse - Doesn't need to be accurate for ai
+country_event = {
+    id = dev_points.2
+    title = "dev_points.2.title"
+    desc = "dev_points.2.disc"
+    picture = ECONOMY_eventPicture
+	  
+    is_triggered_only = yes
+    
+    trigger = {
+		ai = yes
+	}
+	
+	option = {
+		name = "dev_points.2.opta"
+		ai_chance = { factor = 1 }
+		calculate_monthly_dev_points_in_all_provinces_effect = yes
+		calculate_monthly_dev_points_with_country_modifiers_effect = yes
+		calculate_dev_point_limit_effect = yes
+		add_monthly_dev_points_effect = yes
+		if = {
+			limit = {
+				check_variable = {
+					which = current_dev_points
+					which = maximum_dev_points
+				}
+				NOT = {
+					is_variable_equal = {
+						which = current_dev_points
+						which = maximum_dev_points
+					}
+				}
+			}
+			spend_dev_points_if_over_limit_effect = yes
+		}
+	}
+}
+
+# # For Ai to calculate their dev points in countrywide and to calculate their max dev points
+# # Happens randomly on yearly pulse - Doesn't need to be accurate for ai
+# country_event = { 					
+    # id = dev_points.3
+    # title = "dev_points.3.title"
+    # desc = "dev_points.3.disc"
+    # picture = ECONOMY_eventPicture
+	  
+    # is_triggered_only = yes
+    
+    # trigger = {
+		# ai = yes
+	# }
+	
+	# option = {
+		# name = "dev_points.3.opta"
+		# ai_chance = { factor = 1 }
+		# calculate_monthly_dev_points_with_country_modifiers_effect = yes
+		# calculate_dev_point_limit_effect = yes
+	# }
+# }
+
+# For Ai to add their monthly dev points
+# Happens on monthly pulse - Doesn't need to be on time for the ai so we can reduce the month rollover lag
+# Will spend ai dev points if they are over their limit
+country_event = {
+    id = dev_points.4
+    title = "dev_points.4.title"
+    desc = "dev_points.4.disc"
+    picture = ECONOMY_eventPicture
+	  
+    is_triggered_only = yes
+    
+    trigger = {
+		ai = yes
+	}
+	
+	option = {
+		name = "dev_points.4.opta"
+		ai_chance = { factor = 1 }
+		add_monthly_dev_points_effect = yes
+		if = {
+			limit = {
+				check_variable = {
+					which = current_dev_points
+					which = maximum_dev_points
+				}
+				NOT = {
+					is_variable_equal = {
+						which = current_dev_points
+						which = maximum_dev_points
+					}
+				}
+			}
+			spend_dev_points_if_over_limit_effect = yes
+		}
+	}
+}
+
+# 
+# 
+# 
+province_event = { 					
+    id = dev_points.5
+    title = "dev_points.5.title"
+    desc = "dev_points.5.disc"
+    picture = ECONOMY_eventPicture
+	  
+    is_triggered_only = yes
+    
+    trigger = {
+	}
+	
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					is_subject = no
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					ai = yes
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				overlord = {
+					ROOT = {
+						spend_dev_points_effect = yes
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					NOT = {
+						has_country_flag = let_player_overlord_dev
+					}
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					has_country_flag = let_player_overlord_dev
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				overlord = {
+					ROOT = {
+					spend_dev_points_effect = yes
+					}
+				}
+			}
+		}
+	}
+		
+	option = {
+		name = "dev_points.4.opta"
+		ai_chance = { factor = 1 }
+	}
+}
+
+
+
+
+
+
+# Debug event with loads of options
+country_event = {
+    id = dev_points.99
+    title = "dev_points.99.title"
+    desc = "dev_points.99.disc"
+    picture = ECONOMY_eventPicture
+	  
+    is_triggered_only = yes
+    
+    trigger = {
+	}
+	
+	# For players calculates and give them their dev points
+	option = { 						
+		name = "dev_points.99.opta"
+		ai_chance = { factor = 1 }
+		calculate_monthly_dev_points_in_all_provinces_effect = yes
+	}
+
+	# Calculation to get dev points per month countrywide
+	# This will be calculated every month for the player but only biyearly for the ai
+	# 3 Options one for the calculation, one for adding dev points and one to do both
+	option = {
+		name = "dev_points.99.optb"
+		ai_chance = { factor = 1 }
+		calculate_monthly_dev_points_with_country_modifiers_effect = yes
+		add_monthly_dev_points_effect = yes
+	}
+	option = {
+		name = "dev_points.99.optc"
+		ai_chance = { factor = 1 }
+		calculate_monthly_dev_points_with_country_modifiers_effect = yes
+	}
+	option = {
+		name = "dev_points.99.optd"
+		ai_chance = { factor = 1 }
+		add_monthly_dev_points_effect = yes
+	}
+	
+	# Spending dev points, 3 options 1 for each dev type
+	# This currently spends it in capital
+	option = { 						
+		name = "dev_points.99.opte"
+		ai_chance = { factor = 1 }
+		capital_scope = { 
+			spend_dev_points_effect = yes
+			add_base_tax = 1
+			simulate_development = yes
+		}
+
+	}
+	option = { 						
+		name = "dev_points.99.optf"
+		ai_chance = { factor = 1 }
+		capital_scope = { 
+			spend_dev_points_effect = yes
+			add_base_production = 1
+			simulate_development = yes
+		}
+	}
+	option = { 						
+		name = "dev_points.99.optg"
+		ai_chance = { factor = 1 }
+		capital_scope = { 
+			spend_dev_points_effect = yes
+			add_base_manpower = 1
+			simulate_development = yes
+		}
+	}
+	
+	# Setting the max development points
+	# This will be done monthly 
+	option = { 						
+		name = "dev_points.99.opth"
+		ai_chance = { factor = 1 }
+		calculate_dev_point_limit_effect = yes
+	}
+	
+	#Sets dev points to 0
+	option = {						
+		name = "dev_points.99.opti"
+		ai_chance = { factor = 1 }
+		set_variable = {
+			which = current_dev_points
+			value = 0
+		}
+		set_variable = { 
+			which = shown_current_dev_points 
+			which = current_dev_points 
+		}
+		integer = { var = shown_current_dev_points }
+	}
+	option = {						
+		name = "dev_points.99.optj"
+		ai_chance = { factor = 1 }
+		give_dev_points_effect = {
+			dev = 100
+		}
+		set_variable = { 
+			which = shown_current_dev_points 
+			which = current_dev_points 
+		}
+		integer = { var = shown_current_dev_points }
+	}
+	option = {						
+		name = "dev_points.99.optk"
+		ai_chance = { factor = 1 }
+		give_dev_points_effect = {
+			dev = 500
+		}
+		set_variable = { 
+			which = shown_current_dev_points 
+			which = current_dev_points 
+		}
+		integer = { var = shown_current_dev_points }
+	}
+	option = {						
+		name = "dev_points.99.optl"
+		ai_chance = { factor = 1 }
+		give_dev_points_effect = {
+			dev = 1000
+		}
+		set_variable = { 
+			which = shown_current_dev_points 
+			which = current_dev_points 
+		}
+		integer = { var = shown_current_dev_points }
+	}
+}
+
+# # Spending development if the dev points go over the max
+# country_event = {
+    # id = dev_points.999
+    # title = "dev_points.999.title"
+    # desc = "dev_points.999.disc"
+    # picture = ECONOMY_eventPicture
+	  
+    # is_triggered_only = yes
+    
+    # trigger = {
+		# #Dev Points over max
+	# }
+
+	# mean_time_to_happen = {
+    # }
+	
+	# option = {
+		# name = "dev_points.999.opta"
+		# ai_chance = { factor = 1 }
+		# while = {
+			# limit = {
+				# OR = {
+					# AND = {			#For the ai this will spend all their points
+						# ai = yes
+						# check_variable = {
+							# which = current_dev_points
+							# value = 25
+						# }
+					# }
+					# AND = {			#For players this will spend their points until they are under the max
+						# ai = no
+						# check_variable = {
+							# which = current_dev_points
+							# which = maximum_dev_points
+						# }
+					# }
+				# }
+			# }
+			# if = {						#Goes down the if else chain going from the best province to the worst
+				# limit = {
+					
+				# }
+			# }
+		# }
+	# }
+# }
+	

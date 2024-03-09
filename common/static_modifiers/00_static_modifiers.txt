@@ -101,6 +101,7 @@ city = {
 	allowed_num_of_buildings = 2
 	local_sailors_modifier = 0.25
 	garrison_growth = 0.05
+	base_local_dev_points = 0.01
 	allowed_num_of_manufactories = 1
 }
 
@@ -119,6 +120,7 @@ in_capital_state = {
 	local_state_maintenance_modifier = -0.5
 	local_governing_cost = -1.0
 	local_has_qizilbash = yes
+	local_dev_points_modifier = 0.5
 	
 	#BT Centralize State rebalance: Capital states cannot be centralized, so capital states get buffs equal to about 4-5 levels worth of centralize state clicks.
 	local_build_cost = -0.25
@@ -475,7 +477,7 @@ occupied = {
 	local_manpower_modifier = -0.5
 	local_sailors_modifier = -0.5
 	local_institution_spread = -0.1
-
+	local_dev_points_modifier = -0.5
 	local_monthly_devastation = 0.2
 }
 
@@ -483,7 +485,7 @@ under_siege = {
 	trade_goods_size_modifier = -0.25
 	province_trade_power_modifier = -0.25
 	local_institution_spread = -0.1
-
+	local_dev_points_modifier = -0.25
 	local_monthly_devastation = 0.1
 }
 
@@ -497,12 +499,14 @@ devastation = {
 	local_sailors_modifier = -2.0 #BT Vanilla made +100% harsher
 	local_hostile_movement_speed = -0.25
 	local_friendly_movement_speed = -0.25
+	local_dev_points_modifier = -1
 }
 
 prosperity = {
 	local_development_cost = -0.1
 	trade_goods_size_modifier = 0.25
 	local_autonomy = -0.05
+	local_dev_points_modifier = 0.20
 }
 
 slaves_raided = {
@@ -548,6 +552,7 @@ local_autonomy_multiplicative = {
 	province_trade_power_modifier = -0.5
 	land_forcelimit_modifier = -1.0 # Misleading, only used to avoid errors when applying effect of Estates in code.
 	naval_forcelimit_modifier = -1.0 # Misleading, only used to avoid errors when applying effect of Estates in code.
+	local_dev_points_modifier = -1.0
 }
 
 local_autonomy = {
@@ -559,6 +564,7 @@ local_autonomy_trade_company_multiplicative = {
 	local_tax_modifier = -1.0
 	local_production_efficiency = -0.5
 	land_forcelimit_modifier = -1.0
+	local_dev_points_modifier = -1.0
 }
 
 local_autonomy_trade_company = {
@@ -687,6 +693,7 @@ positive_stability = {
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
 	monthly_ottoman_decadence = -0.05
+	country_dev_points_modifier = 0.05
 }
 
 privateering = {
@@ -703,6 +710,7 @@ negative_stability = {
 	yearly_harmony = 0.25
 	monthly_russian_modernization = 0.03
 	monthly_ottoman_decadence = -0.15
+	country_dev_points_modifier = -0.05
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
@@ -826,6 +834,7 @@ bankruptcy = {
 	imperial_mandate = -0.1
 	great_project_upgrade_cost = 0.5
 	monthly_russian_modernization = -1
+	country_dev_points_modifier = -0.5
 }
 
 
@@ -844,6 +853,7 @@ peace = {
 	monthly_militarized_society = -0.1
 	monthly_ottoman_decadence = 0.1
 	monthly_asha_vahishta = 0.25
+	country_dev_points_modifier = 0.20
 }
 
 unconditional_surrender = {
@@ -872,6 +882,7 @@ war_exhaustion = {
 	monthly_militarized_society = -0.05
 	recover_army_morale_speed = -0.005			#BTAddOn new, as a war drags on soliders recover morale more slowly. At 20 WE it should be the penalty as 100 AT gives in bonus.
 	monthly_militarized_society = -0.05
+	country_dev_points_modifier = -0.025
 }
 
 doom = {
@@ -1143,6 +1154,7 @@ corruption = {
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
+	country_dev_points_modifier = -1
 }
 
 root_out_corruption = {
@@ -1202,6 +1214,7 @@ over_extension = {
 	mr_guilds_influence = 0.5
 	yearly_corruption = 0.5
 	ottoman_decadence_gain_modifier = 0.25
+	country_dev_points_modifier = -0.25
 }
 
 prestige = {
@@ -2288,6 +2301,7 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
+	country_dev_points_modifier = -0.5
 }
 
 # At 1000% below capacity, this modifier will be fully used
@@ -2335,6 +2349,7 @@ expanded_infrastructure = {
 	local_governing_cost_increase = 10 #BT changed from 15. Makes sense given that +15 is a steep cost for more provinces.
 	#local_governing_cost = 0.1 #BT Cut due to governing capacity rebalance
 	local_great_project_upgrade_cost = -0.1 #BT changed from 0.05. Makes sense that monuments become cheaper to upgrade. A nice little bonus.
+	local_dev_points_modifier = 0.20
 }
 
 #BT16 overhauled to fit better what I think this button is meant to do.

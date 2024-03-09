@@ -45,6 +45,7 @@ estate_nobles = {
 		monthly_support_heir_gain = 0.1
 		rr_royalists_influence = 0.2
 		legitimacy = 1.0			#BTAddOn new - estates rebalancing
+		country_dev_points_modifier = 0.02
 	}
 	country_modifier_neutral = {
 		manpower_recovery_speed = 0.1			#BTAddOn changed from 0.2 - estates rebalancing
@@ -57,6 +58,7 @@ estate_nobles = {
 		stability_cost_modifier = 0.66			#BTAddOn new - estates rebalancing
 		global_unrest = 2
 		rr_royalists_influence = -0.1
+		country_dev_points_modifier = -0.02
 	}
 	land_ownership_modifier = {
 		nobles_loyalty_modifier = 0.2

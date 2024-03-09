@@ -81,6 +81,7 @@ estate_cossacks = {
 		cavalry_cost = -0.2
 		cavalry_power = 0.2
 		cav_to_inf_ratio = 0.10
+		country_dev_points_modifier = 0.02
 	}
 	country_modifier_neutral = {
 		cavalry_power = 0.2
@@ -89,6 +90,7 @@ estate_cossacks = {
 		cavalry_cost = 0.2
 		cavalry_power = -0.1
 		global_unrest = 2
+		country_dev_points_modifier = -0.02
 	}
 	land_ownership_modifier = {
 		cossacks_loyalty_modifier = 0.2

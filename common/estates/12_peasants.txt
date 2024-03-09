@@ -29,6 +29,7 @@ estate_peasants = {
 		global_tax_modifier = 0.1
 		reinforce_speed = 0.33 #I think this makes sense. A more cooperative peasantry means reinforcements are easier to amass.
 		global_unrest = -2 #Happy peasants means less revolts
+		country_dev_points_modifier = 0.02
 	}
 	country_modifier_neutral = {
 		global_tax_modifier = 0.1
@@ -37,6 +38,7 @@ estate_peasants = {
 		production_efficiency = -0.2 #Less productive peasants
 		global_tax_modifier = -0.2 #Less willing to pay taxes
 		global_unrest = 4 #Peasants cause revolts
+		country_dev_points_modifier = -0.02
 	}
 	
 	#New in 1.30. Seems to be a modifier scaled to the percentage of crown land.
