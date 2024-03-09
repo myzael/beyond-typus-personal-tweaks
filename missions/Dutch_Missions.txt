@@ -32,8 +32,12 @@ ned_reconquest_group = {
 				area = flanders_area
 				area = brabant_area
 				area = north_brabant_area
-				area = frisia_area
 				area = luxemburg_liege_area
+				area = oversticht_area
+				province_id = 100
+				province_id = 8119
+				province_id = 4382
+				
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -51,11 +55,21 @@ ned_reconquest_group = {
 				type = all
 				owned_by = ROOT
 			}
+			oversticht_area = {
+				type = all
+				owned_by = ROOT
+			}
 			north_brabant_area = {
 				type = all
 				owned_by = ROOT
 			}
 			frisia_area = {
+				NOT = {
+					province_id = 1931
+					province_id = 8401
+					province_id = 8299
+				
+				}
 				type = all
 				owned_by = ROOT
 			}
