@@ -70,20 +70,14 @@ monthly_clock = {			#Currently in rome to test
 				}
 			}
 		}
-		every_country = { 
-			limit = {
-				NOT = {
-				AND = {
-					is_month = 0
-					NOT = {
-						is_month = 1
-					}
+		else = {
+			every_country = {
+				limit = {
+					ai = yes
 				}
+				country_event = {
+					id = dev_points.4
 				}
-				ai = yes
-			}
-			country_event = {
-				id = dev_points.4
 			}
 		}
 		every_country = { 
@@ -97,7 +91,7 @@ monthly_clock = {			#Currently in rome to test
 	}
 	
 	on_deactivation = {
-		every_country = { 
+		every_country = {
 			limit = {
 				ai = yes
 			}
