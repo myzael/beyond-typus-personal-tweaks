@@ -648,6 +648,8 @@ republic = {
 				parliamentary_republic_reform
 				absolute_shogunate_reform
 				japanese_divine_empire
+				#Mamluks
+				egyptian_government_reform
 				#Added by Beyond Typus
 				puppet_kingdom_reform
 				transitional_government_reform

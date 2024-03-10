@@ -2476,7 +2476,7 @@ geo_fifth_branch = {
 			num_of_owned_provinces_with = {
 				has_tax_building_trigger = yes
 				religion = ROOT
-				value = 20
+				value = 20 #PDX changed from 20 to 15. Keeping old value for BT. //Dub
 			}
 			if = {
 				limit = {
@@ -2486,7 +2486,7 @@ geo_fifth_branch = {
 				num_of_owned_provinces_with = {
 					has_state_patriach = yes
 					religion = orthodox
-					value = 40
+					value = 40 #PDX changed from 40 to 25. Keeping old value for BT. //Dub
 				}
 			}
 		}
