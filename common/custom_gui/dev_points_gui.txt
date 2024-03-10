@@ -5,9 +5,9 @@ custom_text_box = {
 	name = current_dev_points_gui
 	potential = { 
 		OR = { 
-			owned_by = ROOT 
+			owned_by = FROM 
 			owner = {
-				is_subject_of = ROOT
+				is_subject_of = FROM
 			}
 		}
     }
@@ -28,14 +28,23 @@ custom_text_box = {
 # Shows the local dev points generated
 custom_text_box = {
 	name = local_generated_dev_points_gui 
-	potential = { always = yes } 
+	potential = {
+		OR = {
+			owned_by = FROM
+			owner = {
+				is_subject_of = FROM
+			}
+		}
+    }
 	tooltip = local_generated_dev_points_gui_tooltip
 }
 
 # Shows the local dev points generated
 custom_text_box = {
 	name = total_generated_dev_points_gui 
-	potential = { always = yes } 
+	potential = {
+		has_global_flag = debug_total_dev_points
+	}
 }
 
 #Province buttons kept just incase

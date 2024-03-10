@@ -388,6 +388,54 @@ defined_text = {
 }
 
 defined_text = {
+    name = DevPointsProvinceOccupation
+    text = {
+        localisation_key = dev_points_province_modifier_occupation #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			NOT = {
+				controlled_by = owner
+			}
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+defined_text = {
+    name = DevPointsProvinceUnderSeige
+    text = {
+        localisation_key = dev_points_province_modifier_under_siege #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			has_siege = yes
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+
+defined_text = {
+    name = DevPointsProvinceDevastation
+    text = {
+        localisation_key = dev_points_province_modifier_devastation #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			devastation = 0.1
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+defined_text = {
     name = DevPointsProvinceAutonomy
     text = {
         localisation_key = dev_points_province_has_autonomy #"\nHas Temple Building: §G+0.01§!"
@@ -1205,6 +1253,44 @@ defined_text = {
         }
     }
 }
+
+
+defined_text = {
+    name = DevPointsCountryIsBankrupt
+    text = {
+        localisation_key = dev_points_country_bankrupt #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			FROM = {
+				is_bankrupt = yes
+			}
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+
+defined_text = {
+    name = DevPointsCountryIsOverGCap
+    text = {
+        localisation_key = dev_points_country_over_gcap #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			FROM = {
+				governing_capacity_percentage = 1
+			}
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+
 
 
 ####################################################################

@@ -11,6 +11,11 @@ two_decimals = { #rounds a variable to 2 decimal points
     multiply_variable = { which = $var$ value = 0.1 }
     multiply_variable = { which = $var$ value = 10 }
 }
+one_decimal = { #rounds a variable to 2 decimal points
+    change_variable = { which = $var$ value = 0.05 }
+    multiply_variable = { which = $var$ value = 0.01 }
+    multiply_variable = { which = $var$ value = 100 }
+}
 
 #############################  Calculations for dev points  #############################
 
@@ -249,6 +254,20 @@ calculate_monthly_dev_points_in_all_provinces_effect = {
 				value = 0.2
 			}
 		}
+		if = {					#Has infrastructure ideas and an amount of dev points
+			limit = {
+				devastation = 0.1
+			}
+			export_to_variable = {
+				which = devastation_ui_var 
+				value = trigger_value:devastation
+				who = THIS
+			}
+			multiply_variable = {	#Multiplies base dev points with multiplier and to get final monthly dev points
+				which = devastation_ui_var
+				value = -1
+			}	
+		}
 		multiply_variable = {	#Multiplies base dev points with multiplier and to get final monthly dev points
 			which = precalc_monthly_dev_points
 			which = provincial_dev_points_modifier
@@ -413,6 +432,24 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {
 			value = 0.2
 		}
 	}
+	if = {						#Is a free colonial nation
+		limit = {
+			governing_capacity_percentage = 1
+		}
+		export_to_variable = {
+			which = over_gov_cap_value_ui_var
+			value = governing_capacity_percentage 
+			who = ROOT
+		}
+		change_variable = {            
+			which = over_gov_cap_value_ui_var
+			value = -1
+		}
+		multiply_variable = {
+			which = over_gov_cap_value_ui_var
+			value = -50
+		}
+	}
 	multiply_variable = {		#Multiplies base dev points with multiplier and to get final monthly dev points
 		which = calc_monthly_dev_points
 		which = dev_points_multiplier
@@ -452,7 +489,7 @@ add_monthly_dev_points_effect = {
 		which = shown_current_dev_points 
 		which = current_dev_points 
 	}
-    integer = { var = shown_current_dev_points }
+    one_decimal = { var = shown_current_dev_points }
     set_variable = { 				#Creates the integer for total dev points gui
 		which = shown_total_accumulated_dev_points 
 		which = total_accumulated_dev_points  
@@ -680,7 +717,7 @@ spend_dev_points_effect = {
 			which = shown_current_dev_points 
 			which = current_dev_points 
 		}
-		integer = { var = shown_current_dev_points }
+		one_decimal = { var = shown_current_dev_points }
 	}
 }
 
@@ -744,25 +781,25 @@ spend_dev_points_if_over_limit_effect = {
 		limit = {
 			OR = {
 				AND = {			#For the ai this will spend all their points
-					#ai = yes
+					ai = yes
 					check_variable = {
 						which = current_dev_points
 						value = 25
 					}
 				}
-				#AND = {			#For players this will spend their points until they are under the max
-				#	ai = no
-				#	check_variable = {
-				#		which = current_dev_points
-				#		which = maximum_dev_points
-				#	}
-				#	NOT = {
-				#		is_variable_equal = {
-				#			which = current_dev_points
-				#			which = maximum_dev_points
-				#		}
-				#	}
-				#}
+				AND = {			#For players this will spend their points until they are under the max
+					ai = no
+					check_variable = {
+						which = current_dev_points
+						which = maximum_dev_points
+					}
+					NOT = {
+						is_variable_equal = {
+							which = current_dev_points
+							which = maximum_dev_points
+						}
+					}
+				}
 			}
 		}
 		#Basic spending of points for now
@@ -772,17 +809,62 @@ spend_dev_points_if_over_limit_effect = {
 			}
 			random_list = {
 				1 = {
-					spend_dev_points_effect = yes
+					calculate_development_cost = yes
+					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
+						which = current_dev_points
+						which = base_development_cost_for_dev_points
+					}
+					PREV = {					#Takes away the cost of the province from the dev points	
+						subtract_variable = {
+							which = current_dev_points
+							which = PREV
+						}
+						set_variable = { 
+							which = shown_current_dev_points 
+							which = current_dev_points 
+						}
+						one_decimal = { var = shown_current_dev_points }
+					}
 					add_base_manpower = 1
 					simulate_development = yes
 				}
 				1 = {
-					spend_dev_points_effect = yes
+					calculate_development_cost = yes
+					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
+						which = current_dev_points
+						which = base_development_cost_for_dev_points
+					}
+					PREV = {					#Takes away the cost of the province from the dev points	
+						subtract_variable = {
+							which = current_dev_points
+							which = PREV
+						}
+						set_variable = { 
+							which = shown_current_dev_points 
+							which = current_dev_points 
+						}
+						one_decimal = { var = shown_current_dev_points }
+					}
 					add_base_production = 1
 					simulate_development = yes
 				}
 				1 = {
-					spend_dev_points_effect = yes
+					calculate_development_cost = yes
+					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
+						which = current_dev_points
+						which = base_development_cost_for_dev_points
+					}
+					PREV = {					#Takes away the cost of the province from the dev points	
+						subtract_variable = {
+							which = current_dev_points
+							which = PREV
+						}
+						set_variable = { 
+							which = shown_current_dev_points 
+							which = current_dev_points 
+						}
+						one_decimal = { var = shown_current_dev_points }
+					}
 					add_base_tax = 1
 					simulate_development = yes
 				}

@@ -15,6 +15,7 @@ country_event = {
 	hidden = yes
 	
 	immediate = {
+		hidden_effect = {
 		calculate_monthly_dev_points_in_all_provinces_effect = yes
 		calculate_monthly_dev_points_with_country_modifiers_effect = yes
 		add_monthly_dev_points_effect = yes
@@ -32,7 +33,8 @@ country_event = {
 					}
 				}
 			}
-			#spend_dev_points_if_over_limit_effect_player = yes
+			spend_dev_points_if_over_limit_effect = yes
+		}
 		}
 	}
 	option = {
@@ -55,13 +57,11 @@ country_event = {
 		ai = yes
 	}
 	
-	option = {
-		name = "dev_points.2.opta"
-		ai_chance = { factor = 1 }
+	immediate = {
 		calculate_monthly_dev_points_in_all_provinces_effect = yes
 		calculate_monthly_dev_points_with_country_modifiers_effect = yes
-		calculate_dev_point_limit_effect = yes
 		add_monthly_dev_points_effect = yes
+		calculate_dev_point_limit_effect = yes
 		if = {
 			limit = {
 				check_variable = {
@@ -78,30 +78,43 @@ country_event = {
 			spend_dev_points_if_over_limit_effect = yes
 		}
 	}
+	
+	option = {
+		name = "dev_points.2.opta"
+		ai_chance = { factor = 1 }
+	}
 }
 
 # # For Ai to calculate their dev points in countrywide and to calculate their max dev points
 # # Happens randomly on yearly pulse - Doesn't need to be accurate for ai
-# country_event = { 					
-    # id = dev_points.3
-    # title = "dev_points.3.title"
-    # desc = "dev_points.3.disc"
-    # picture = ECONOMY_eventPicture
+country_event = { 					
+    id = dev_points.3
+    title = "dev_points.3.title"
+    desc = "dev_points.3.disc"
+    picture = ECONOMY_eventPicture
 	  
-    # is_triggered_only = yes
-    
-    # trigger = {
-		# ai = yes
-	# }
+    is_triggered_only = yes
 	
-	# option = {
-		# name = "dev_points.3.opta"
-		# ai_chance = { factor = 1 }
-		# calculate_monthly_dev_points_with_country_modifiers_effect = yes
-		# calculate_dev_point_limit_effect = yes
-	# }
-# }
-
+	hidden = yes
+    
+    trigger = {
+		NOT = { 
+			has_country_flag = dev_points_startup
+		}
+	}
+	
+	immediate = {
+		calculate_monthly_dev_points_in_all_provinces_effect = yes
+		calculate_monthly_dev_points_with_country_modifiers_effect = yes
+		add_monthly_dev_points_effect = yes
+		set_country_flag = dev_points_startup
+	}
+	
+	option = {
+		name = "dev_points.3.opta"
+		ai_chance = { factor = 1 }
+	}
+}
 # For Ai to add their monthly dev points
 # Happens on monthly pulse - Doesn't need to be on time for the ai so we can reduce the month rollover lag
 # Will spend ai dev points if they are over their limit
@@ -117,25 +130,13 @@ country_event = {
 		ai = yes
 	}
 	
+	immediate = {
+		add_monthly_dev_points_effect = yes
+	}
+	
 	option = {
 		name = "dev_points.4.opta"
 		ai_chance = { factor = 1 }
-		add_monthly_dev_points_effect = yes
-		if = {
-			limit = {
-				check_variable = {
-					which = current_dev_points
-					which = maximum_dev_points
-				}
-				NOT = {
-					is_variable_equal = {
-						which = current_dev_points
-						which = maximum_dev_points
-					}
-				}
-			}
-			spend_dev_points_if_over_limit_effect = yes
-		}
 	}
 }
 
@@ -240,7 +241,7 @@ province_event = {
 	}
 		
 	option = {
-		name = "dev_points.4.opta"
+		name = "dev_points.5.opta"
 		ai_chance = { factor = 1 }
 	}
 }
@@ -345,6 +346,16 @@ country_event = {
 	option = {						
 		name = "dev_points.99.optj"
 		ai_chance = { factor = 1 }
+		set_global_flag = debug_total_dev_points
+	}
+	option = {						
+		name = "dev_points.99.optjj"
+		ai_chance = { factor = 1 }
+		clr_global_flag = debug_total_dev_points
+	}
+	option = {						
+		name = "dev_points.99.optk"
+		ai_chance = { factor = 1 }
 		give_dev_points_effect = {
 			dev = 100
 		}
@@ -355,7 +366,7 @@ country_event = {
 		integer = { var = shown_current_dev_points }
 	}
 	option = {						
-		name = "dev_points.99.optk"
+		name = "dev_points.99.optl"
 		ai_chance = { factor = 1 }
 		give_dev_points_effect = {
 			dev = 500
@@ -367,7 +378,7 @@ country_event = {
 		integer = { var = shown_current_dev_points }
 	}
 	option = {						
-		name = "dev_points.99.optl"
+		name = "dev_points.99.optm"
 		ai_chance = { factor = 1 }
 		give_dev_points_effect = {
 			dev = 1000

@@ -52,33 +52,30 @@ monthly_clock = {			#Currently in rome to test
 	
 	#Province scope
 	on_activation = {
-		if = {
+		every_country = {
 			limit = {
-				AND = {
-					is_month = 0
-					NOT = {
-						is_month = 1
+				ai = yes
+				NOT = {
+					AND = {
+						is_month = 0
+						NOT = {
+							is_month = 1
+						}
 					}
 				}
 			}
-			every_country = { 
-				limit = {
-					ai = yes
+			random_list = { 
+				1 = {
+					country_event = {
+						id = dev_points.2
+					}
 				}
-				country_event = {
-					id = dev_points.2
+				23 = {
+					country_event = {
+						id = dev_points.4
+					}
 				}
-			}
-		}
-		else = {
-			every_country = {
-				limit = {
-					ai = yes
-				}
-				country_event = {
-					id = dev_points.4
-				}
-			}
+			} 
 		}
 		every_country = { 
 			limit = {
@@ -95,9 +92,18 @@ monthly_clock = {			#Currently in rome to test
 			limit = {
 				ai = yes
 			}
-			country_event = {
-				id = dev_points.4
-			}
+			random_list = { 
+				1 = {
+					country_event = {
+						id = dev_points.2
+					}
+				}
+				23 = {
+					country_event = {
+						id = dev_points.4
+					}
+				}
+			} 
 		}
 		every_country = { 
 			limit = {

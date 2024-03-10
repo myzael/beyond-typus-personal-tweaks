@@ -3,7 +3,7 @@
 # country
 on_startup = {
 	events = {
-		dev_points.1
+		dev_points.3
 	}
 }
 # province
@@ -24,5 +24,12 @@ on_dip_development = {
 on_mil_development = {
 	province_event = {
 		id = dev_points.5
+	}
+}
+
+
+on_country_creation = {
+	events = {
+		dev_points.3
 	}
 }
