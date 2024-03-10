@@ -1,7 +1,7 @@
 BT16
 
 #New Additions
- - (All) Updated BT from 1.33.3 to 1.36.0
+ - (All) Updated BT from 1.33.3 to 1.36.2
  - (JP) Overhauled the South Caucases
  - (JP) Overhauled the Horn of Africa
  - (JP) New tags in Kakheti and Talysh, along with numerous releasables
@@ -89,7 +89,7 @@ BT16
  - (Dub) Tweaked Warscore impact from province autonomy to be more impactful - provinces with high autonomy should now be much cheaper to conquer.
  
 #Localised Naming
- - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
+ - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
  
 #Mission updates
  - (Dub) Fixed BT's scriptified mission system to remove all all_province checks, greatly reducing lag 
