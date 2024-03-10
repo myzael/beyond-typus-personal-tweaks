@@ -411,6 +411,7 @@ country_event = {
 						owned_by = NAP
 					}
 					add_core = ROOT
+					remove_core = NAP
 					cede_province = ROOT
 				}
 			}
@@ -467,6 +468,7 @@ country_event = {
 					owned_by = NAP
 				}
 				add_core = ARA
+				remove_core = NAP
 				cede_province = ARA
 			}
 		}
