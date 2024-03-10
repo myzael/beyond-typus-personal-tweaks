@@ -87,6 +87,7 @@ BT16
  - (Dub) Shuffled Wild Fields coal provinces into the Donets basin 
  - (Dub) Tweaked Governing Capacity - now government ranks grant 0/25/50% extra governing capacity instead of a flat bonus, and governing capacity from tech has been smudged over all admin technologies.
  - (Dub) Tweaked Warscore impact from province autonomy to be more impactful - provinces with high autonomy should now be much cheaper to conquer.
+ - (Dub) Removed Neapolitan cores from Sicily upon Naples becoming independent.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
@@ -131,6 +132,7 @@ BT16
 	- LotN Danish (Dub) - Scandinavian branches not updated
 	- BT Ayyubid (Dub)
 	- GC Andalusian (Dub)
+	- DOM Russian (Dub) - Steppes branches not updated
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders
