@@ -42,7 +42,7 @@ marketplace = {
 
 	modifier = {
 		province_trade_power_modifier = 0.25			#BTAddOn changed from .5 A 50 percent bonus available at practically day 1 was overpowered, and it snowballed for CoTs. While we still want CoTs strong, not x15 any other province this early. BT's lower avg dev but generally same dev for capitals and CoTs only made this worse, as well.
-		base_local_dev_points = 0.02
+		base_local_dev_points = 0.04
 	}
 	on_built = {
 		add_development_from_building = {
@@ -110,8 +110,8 @@ workshop = {
 	time = 12
 	modifier = {
 		local_development_cost = -0.1			#BTAddOn new. A little non-cash boost to make this building not worthless when it is too late in the game to make your ducats back from the cost to build it. Note the corresponding dev cost reduction has been removed from universities, where I felt it made less logical sense. Here, production and industry encourage development.
-		local_production_efficiency = 0.3			#BTAddOn changed from 0.5. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces).
-		base_local_dev_points = 0.02
+		local_production_efficiency = 0.5			#BTAddOn changed from 0.5. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces).
+		base_local_dev_points = 0.04
 	}
 	on_built = {
 		add_development_from_building = {
@@ -141,7 +141,7 @@ workshop = {
 		#2. Half cost of building --> Half factor.
 		#BT Base yearly return: 1*(0.01+value(+30% production efficiency)) --> 0.49 ducats gained/year --> +0.04 ducats/month
 		#We desire this to be at around +0.02 ducats/month. Mainly because you need a lot of dev or high producing trade good.
-		factor = 2 #Doubled because the AI doesn't seem to see much value with this one.
+		factor = 3 #Doubled because the AI doesn't seem to see much value with this one. (Added 1 for dev points and for dev cost)
 		modifier = { #Mainly to promote this building over others.
 			factor = 5
 			base_production = 5
@@ -162,8 +162,8 @@ temple = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.01			#BTAddOn new effect. Giving the temple the same bonus of this building's upgrade, simply weaker. Makes it more useful when it is too late in the game to make money back from building cost.
-		local_tax_modifier = 0.3			#BTAddOn changed from 0.4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
-		base_local_dev_points = 0.01
+		local_tax_modifier = 0.4			#BTAddOn changed from 0.4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		base_local_dev_points = 0.02
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -431,7 +431,7 @@ shipyard = {
 		naval_forcelimit = 1			#BTAddOn changed from 2. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
 		ship_recruit_speed = -0.25
 		local_ship_repair = 0.25
-		base_local_dev_points = 0.02
+		base_local_dev_points = 0.04
 		local_has_man_of_war = yes
 		local_has_galleass = yes
 	}
@@ -639,7 +639,6 @@ courthouse = {
 		local_state_maintenance_modifier = -0.25
 		local_autonomy = -0.1
 		local_governing_cost = -0.25
-		base_local_dev_points = 0.02
 	}
 
 	keep_trigger = {
@@ -1047,7 +1046,7 @@ naval_battery = {
 			NOT = { has_port = yes }
 		}
 		modifier = { #There should be some logic for this to exist.
-			factor = 600
+			factor = 800
 			sea_zone = { #No naval battery in sea zone
 				NOT = {
 					any_neighbor_province = {
@@ -1059,6 +1058,14 @@ naval_battery = {
 		}
 		modifier = { #If above is true, favourite islands slightly more.
 			factor = 1.5
+			sea_zone = { #No naval battery in sea zone
+				NOT = {
+					any_neighbor_province = {
+						owned_by = FROM
+						has_building = naval_battery
+					}
+				}
+			}
 			is_island = yes
 		}
 		modifier = { #Fixing the "I am special province, I give a flat +0.25 factor value."
@@ -1089,7 +1096,7 @@ cathedral = {
 	modifier = {
 		local_missionary_strength = 0.02			#BTAddOn changed from 0.03, might slow conversion slightly, but avg dev is also lower, so that might be a good thing
 		local_tax_modifier = 0.6
-		base_local_dev_points = 0.02
+		base_local_dev_points = 0.04
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -1226,7 +1233,7 @@ university = {
 		local_institution_spread = 0.5			#BTAddOn new. Fits perfectly in the new tech system =D. Currently 100 percent bonus, which may be a bit much, but on the other hand still requires normal spread, and if a province is advanced enough to have a university, it probably is somwhat cutting edge anyway. Nice counterpoint for new non western tech penalties, too, so a tech minded country in Asia or Africa can still keep up with the spread bonus offsetting tech group spread penalties.
 		local_tax_modifier = 0.15			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
 		local_production_efficiency = 0.15			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 		#local_development_cost = -0.20			#BTAddOn removed. I wouldn't say universities aid development per se, so I'm moving this bonus elsewhere. Consider many older uni city examples, Cambrige, Oxford, Siena, Padua, Murcia, Heidelberg, Toulouse. Not really tiny, but not bastions of development and industry the London, Moscow, Berlin, Paris (though Paris did have a uni) etc. ended up moving dev bonus to production buildings to better represent this reality.
 		#allowed_num_of_buildings = 1			#BTAddOn removed. Terrain Overhaul addon (balanced to be enabled alongside misc addon) makes max buildings possible at around 40 development, instead of 100 development, so this isn't neccessary, and also a tad silly, if I may say so... 'Yay, we now have uni so we can build more buildings in our city'.... mkay
 	}
@@ -1323,7 +1330,7 @@ trade_depot = {
 
 	modifier = {
 		province_trade_power_modifier = 0.75			#BTAddOn changed from 1.0, for reasons explained in market entry.
-		base_local_dev_points = 0.04
+		base_local_dev_points = 0.08
 	}
 
 	on_built = {
@@ -1389,7 +1396,7 @@ grand_shipyard = {
 		naval_forcelimit = 2			#BTAddOn changed from 4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
 		ship_recruit_speed = -0.50
 		local_ship_repair = 0.50
-		base_local_dev_points = 0.04
+		base_local_dev_points = 0.08
 		local_has_man_of_war = yes
 		local_has_galleass = yes
 	}
@@ -1705,7 +1712,7 @@ stock_exchange = {
 
 	modifier = {
 		province_trade_power_modifier = 1.5			#BTAddOn changed from 1.25. While earlier levels were weaker than vanilla, I'm increasing the final level, because by this tech level, the centres of wealth should be pulling a massive slice of the wealth in a node, and the many new provinces will have had plenty chance to build up and compete with the capitals much more than in vanilla.
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 
 	on_built = {
@@ -1788,8 +1795,8 @@ counting_house = {
 	make_obsolete = workshop
 	modifier = {
 		local_development_cost = -0.2			#BTAddOn new. A little non-cash boost to make this building not worthless when it is too late in the game to make your ducats back from the cost to build it. Note the corresponding dev cost reduction has been removed from universities, where I felt it made less logical sense. Here, production and industry encourage development.
-		local_production_efficiency = 0.6			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
-		base_local_dev_points = 0.04
+		local_production_efficiency = 1			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		base_local_dev_points = 0.08
 	}
 
 	on_built = {
@@ -1825,7 +1832,7 @@ counting_house = {
 		#BT Base yearly return: 1*(0.01+value(+60% production efficiency)) --> 1.99 ducats gained/year --> +0.1658 ducats/month
 		#BT Base yearly return from upgrade: 1*(0.01+value(+30% production efficiency)) --> 1.49 ducats gained/year --> +0.1242 ducats/month
 		#We desire this to be at around +0.04 ducats/month. Mainly because you need a lot of dev or high producing trade good.
-		factor = 3 #Tripled because this means about .04 ducats/month increase.
+		factor = 5 #Tripled because this means about .04 ducats/month increase. (Added 1 for dev cost reduction and dev points)
 		modifier = { #Mainly to promote this building over others.
 			factor = 5
 			base_production = 5
@@ -1862,7 +1869,6 @@ town_hall = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
-		base_local_dev_points = 0.04
 		}
 
 	on_built = {
@@ -2287,7 +2293,7 @@ wharf = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 1			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		naval_forcelimit = 1			#BTAddOn new - Just a fun little new bonus
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	
 	keep_trigger = {
@@ -2327,7 +2333,7 @@ wharf = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2386,7 +2392,7 @@ weapons = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 1			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		land_forcelimit = 0.5			#BTAddOn new - Just a fun little new bonus
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	onmap = yes
 	
@@ -2424,7 +2430,7 @@ weapons = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2485,7 +2491,7 @@ textile = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 1			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		local_tax_modifier = 0.25			#BTAddOn new - Just a fun little new bonus
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	onmap = yes
 	
@@ -2526,7 +2532,7 @@ textile = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2591,7 +2597,7 @@ plantations = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 1		#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		local_production_efficiency = 0.25			#BTAddOn new - Just a fun little new bonus
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	onmap = yes
 	
@@ -2634,7 +2640,7 @@ plantations = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2700,7 +2706,7 @@ tradecompany = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 1			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		province_trade_power_modifier = 0.5			#BTAddOn new - Just a fun little new bonus
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	onmap = yes
 	
@@ -2742,7 +2748,7 @@ tradecompany = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2808,7 +2814,7 @@ farm_estate = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 1			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		local_production_efficiency = 0.25			#BTAddOn new - Just a fun little new bonus
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	onmap = yes
 	
@@ -2867,7 +2873,7 @@ farm_estate = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 0
 			NOT = {
@@ -2932,7 +2938,7 @@ mills = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 1			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		local_tax_modifier = 0.25			#BTAddOn new - Just a fun little new bonus
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	onmap = yes
 	
@@ -2974,7 +2980,7 @@ mills = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 0
 			NOT = {
@@ -3039,7 +3045,7 @@ furnace = {
 		#trade_goods_size = 0.4			#BTAddon Note - Alright, alright. I'm giving in. It makes no sense, but vanilla apparently didn't bother to code in compatibility with the modifier version, so I have little choice but to give a flat bonus here.
 		trade_goods_size_modifier = 1			#BTAddOn changed from flat trade good size increase. Logic above at the top of Manufactories entries.
 		global_trade_goods_size_modifier = 0.03			#BTAddOn changed from 0.05. This was just too huge, especially with all the new provinces.
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	onmap = yes
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -3065,7 +3071,7 @@ furnace = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 0
 			NOT = {
@@ -3583,7 +3589,7 @@ state_house = {
 		statewide_governing_cost = -0.2
 		min_local_autonomy = -5
 		local_governing_cost_increase = -10
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.1
 	}
 	bonus_modifier = {
 		statewide_governing_cost = -0.2
@@ -3610,7 +3616,7 @@ state_house = {
 	}
 
 	ai_will_do = {
-		factor = 1
+		factor = 1.2 #(Added 0.2 for dev points)
 		modifier = {
 			factor = 505 #AI sees absolutely no value in this building.
 			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
