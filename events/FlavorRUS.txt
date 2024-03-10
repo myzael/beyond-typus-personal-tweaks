@@ -2493,7 +2493,6 @@ country_event = {
 				add_permanent_claim = ROOT
 			}
 		}
-		give_permaclaims_for_mission = { mission= }
 		russia_region = {
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
