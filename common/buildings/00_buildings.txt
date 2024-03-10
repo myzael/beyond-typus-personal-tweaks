@@ -1258,13 +1258,13 @@ university = {
 			factor = 5
 			development = 20
 			continent = europe
-			PREV = { has_institution = manufactories } #Making it the previous one so AI is prepared.
+			FROM = { has_institution = manufactories } #Making it the previous one so AI is prepared.
 		}
 		modifier = { #It seems you're a bit late to the party. Let's fix that.
 			factor = 5
 			development = 20
 			is_institution_enabled = enlightenment
-			PREV = { has_unembraced_institution = enlightenment }
+			FROM = { has_unembraced_institution = enlightenment }
 			continent = europe
 		}
 		
@@ -2340,13 +2340,13 @@ wharf = {
 		modifier = { #You can spread enlightenment here if this building is built!
 			factor = 5
 			development = 20
-			PREV = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
 		}
 		modifier = { #It seems you're a bit late to the party. Let's fix that.
 			factor = 5
 			development = 20
 			is_institution_enabled = manufactories
-			PREV = { has_unembraced_institution = manufactories }
+			FROM = { has_unembraced_institution = manufactories }
 		}
 		modifier = {
 			factor = 1.1
@@ -2435,13 +2435,13 @@ weapons = {
 		modifier = { #You can spread enlightenment here if this building is built!
 			factor = 5
 			development = 20
-			PREV = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
 		}
 		modifier = { #It seems you're a bit late to the party. Let's fix that.
 			factor = 5
 			development = 20
 			is_institution_enabled = manufactories
-			PREV = { has_unembraced_institution = manufactories }
+			FROM = { has_unembraced_institution = manufactories }
 		}
 		modifier = {
 			factor = 1.1
@@ -2539,13 +2539,13 @@ textile = {
 		modifier = { #You can spread enlightenment here if this building is built!
 			factor = 5
 			development = 20
-			PREV = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
 		}
 		modifier = { #It seems you're a bit late to the party. Let's fix that.
 			factor = 5
 			development = 20
 			is_institution_enabled = manufactories
-			PREV = { has_unembraced_institution = manufactories }
+			FROM = { has_unembraced_institution = manufactories }
 		}
 		modifier = {
 			factor = 1.1
@@ -2647,13 +2647,13 @@ plantations = {
 		modifier = { #You can spread enlightenment here if this building is built!
 			factor = 5
 			development = 20
-			PREV = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
 		}
 		modifier = { #It seems you're a bit late to the party. Let's fix that.
 			factor = 5
 			development = 20
 			is_institution_enabled = manufactories
-			PREV = { has_unembraced_institution = manufactories }
+			FROM = { has_unembraced_institution = manufactories }
 		}
 		modifier = {
 			factor = 1.1
@@ -2754,13 +2754,13 @@ tradecompany = {
 		modifier = { #You can spread enlightenment here if this building is built!
 			factor = 5
 			development = 20
-			PREV = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
 		}
 		modifier = { #It seems you're a bit late to the party. Let's fix that.
 			factor = 5
 			development = 20
 			is_institution_enabled = manufactories
-			PREV = { has_unembraced_institution = manufactories }
+			FROM = { has_unembraced_institution = manufactories }
 		}
 		modifier = {
 			factor = 1.1
@@ -2878,13 +2878,13 @@ farm_estate = {
 		modifier = { #You can spread enlightenment here if this building is built!
 			factor = 5
 			development = 20
-			PREV = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
 		}
 		modifier = { #It seems you're a bit late to the party. Let's fix that.
 			factor = 5
 			development = 20
 			is_institution_enabled = manufactories
-			PREV = { has_unembraced_institution = manufactories }
+			FROM = { has_unembraced_institution = manufactories }
 		}
 		modifier = {
 			factor = 1.1
@@ -2983,13 +2983,13 @@ mills = {
 		modifier = { #You can spread enlightenment here if this building is built!
 			factor = 5
 			development = 20
-			PREV = { has_institution = global_trade } #Making it the previous one so AI is prepared.
+			FROM = { has_institution = global_trade } #Making it the previous one so AI is prepared.
 		}
 		modifier = { #It seems you're a bit late to the party. Let's fix that.
 			factor = 5
 			development = 20
 			is_institution_enabled = manufactories
-			PREV = { has_unembraced_institution = manufactories }
+			FROM = { has_unembraced_institution = manufactories }
 		}
 		modifier = {
 			factor = 1.1
