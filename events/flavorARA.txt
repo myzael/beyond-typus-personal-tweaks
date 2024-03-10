@@ -522,6 +522,7 @@ country_event = {
 					owned_by = ROOT
 				}
 				add_core = ARA
+				remove_core = NAP
 				cede_province = ARA
 			}
 		}
