@@ -413,7 +413,7 @@
 #Deccan
 529 = { "Bombay" "Bombay" }
 530 = { "Dabul" "Dabul" }
-531 = { "Coondapore" "Coondapore"
+531 = { "Coondapore" "Coondapore" }
 532 = { "Raichore" "Raichore" }
 533 = { "Mysore" "Mysore" }
 534 = { "Calicut" "Calicut" }

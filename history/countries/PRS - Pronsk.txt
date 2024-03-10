@@ -20,7 +20,7 @@ historical_rival = RYA
 	}
 }
 
-1402.1.1 = {
+1410.1.1 = {
 	heir = {
 		name = "Fyodor Ivanovich"
 		monarch_name = "Fyodor I Ivanovich"
