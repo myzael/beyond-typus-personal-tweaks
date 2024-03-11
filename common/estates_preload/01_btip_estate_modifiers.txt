@@ -41,7 +41,7 @@ estate_church = {
 		key = church_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_church
-			has_government_attribute = no_clergy_loyalty_loss_from_absolutism
+			has_government_attribute = no_church_loyalty_loss_from_absolutism
 		}
 	}
 }
