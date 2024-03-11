@@ -476,11 +476,11 @@ interaction = {
 		modifier = {
 			factor = 0
 			# This is a hack for countries with enclaves that can be hard to get to, to kill the rebels
-			OR = {
-				tag = TEU
-				tag = KOL
-				# Add more as necessary
-			}
+			# OR = { #BT Modified: The AI really should not seize land when it causes disloyalty. It's *very* bad for the AI economy, I think. Technically this makes the modifiers below rather redundant, but eh. //Dub
+				# tag = TEU
+				# tag = KOL
+				# # Add more as necessary
+			# }
 			NOT = {
 				estate_loyalty = {
 					estate = all
