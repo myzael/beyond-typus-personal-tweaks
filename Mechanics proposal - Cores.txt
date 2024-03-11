@@ -1,0 +1,39 @@
+Mechanical overhaul: Cores
+The issues:
+1. Conquering provinces is too damn powerful.
+2. Once a province is cored, it immediately benefits your nation massively.
+3. Overextension never plays a part except the game-y "Gotta stay below 100% overextension to avoid bad events"
+4. Nations never bounce back from having their lands conquered - they just die: Lost lands makes them very weak, the nation that conquered the land has grown massively stronger.
+5. Admin points are massively overvalued - and frankly necessary because of this mechanic.
+6. Core creation cost is almighty because admin points are so overvalued
+
+PDX's solution to counter fast expansion: Increase AE such that coalitions are the way to take down fast expanders.
+
+Mechanical changes: 
+-Remove coring cost of territories.
+	6. This removes a major power spike in the core creation cost modifier - thus breaking a powerful meta of the modifier being massively overpowered in the game.
+	5. This also reduces the value of admin points massively.
+-Make state cores not possible to create in provinces with separatism.
+	4. This solves the issue of nations conquering land growing massively stronger - the province gives very small bonuses to the nation that conquered it, and only really gain prominence later down the line, 30 years after the fact.
+	1. This buffs vassalisation quite a bit, because you can theoretically create a core earlier by vassalising a nation. In return, you have to pay diplo points.
+	2. This means newly conquered provinces are a lot less valuable initially to a nation.
+-Up base coring time to 120 months.
+	6. This means that core creation cost reduces coring time a lot more. Which is now a lot more valuable, leaving core creation cost a powerful modifier, but less so an end all modifier.
+	3. This means that overextension's modifiers, such as yearly corruption and national unrest, cause tangible effects over a long period for nations that conquer lands quickly.
+	1. In addition, years of separatism now becomes a lot more powerful, because you will now have tangible effects from separatism and unrest, thereby weakening the conquering of provinces.
+-Remove 100+% overextension bad events.
+	3. This means that countries are not hard-stopped from expanding, but instead will feel the negative effects of fast expansion.
+-Adjust overextension modifiers to be more tailored towards rebel suppression modifiers, using your military might to establish authority.
+	-50% manpower recovery speed at 100%
+	-Add +25% subject LD at 100%
+	-Add +50% diplomatic annexation cost at 100%
+	-Keep unrest
+	-Keep corruption
+	-Keep stab cost	
+-This means we can reduce the base AE gain, thereby fixing the issues that comes with PDX's solution to fast expansion.
+
+How does this affect monarch point generation?
+-Currently, admin points are generated en masse in order to accomodate expansion by coring. Admin points are one of the least versatile monarch points.
+-This would allow the reduction of base monarch point generation by at least 1, potentially even more, because point 5 has now been solved.
+
+With the development points system in place, the following should be adjusted:

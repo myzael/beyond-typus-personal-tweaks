@@ -1,7 +1,7 @@
 BT16
 
 #New Additions
- - (All) Updated BT from 1.33.3 to 1.36.0
+ - (All) Updated BT from 1.33.3 to 1.36.2
  - (JP) Overhauled the South Caucases
  - (JP) Overhauled the Horn of Africa
  - (JP) New tags in Kakheti and Talysh, along with numerous releasables
@@ -35,8 +35,10 @@ BT16
 	- An overhaul to governing capacity & corruption modifiers
 	- The Peasants estate for Scandinavian nations and peasant republics
 	- The ability to pick between each and every estate's agenda in diets (Somewhat done by vanilla, but in a roundabout breakable way)
-- (Dub) Added a Ruthenian Mission tree.
-		
+- (Dub) Added a Ruthenian Mission tree. Features include:
+	- Conquest missions spanning Siberia, Russia, Ruthenia, Poland, Finland, Baltics, Pontic Steppes as well as Caucasia.
+	- Flavour missions expanding akin to what the Russian Domination tree does, focusing on internal matters of Ruthenia such as production, religion, development, estates, court, army (Streltsy + Cossacks) and more.
+	- The mission tree results in mechanics available to Russia becoming available to Ruthenia as well in some ways, such as the Finnish PU subject, the Serfdom chain, as well as government reforms.
 
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
@@ -49,6 +51,7 @@ BT16
  - (Dub) Fixed the in-game menu, accessed by pressing Escape.
  - (Dub) Semi-fixed the readability of the modifiers that apply for different subjects by adding spacing between different modifiers.
 	- Note that this cannot be properly fixed without writing massive amounts of custom localisation, as the game does not procure localisation when checking for government abilities.
+ - (Harbivore) Fixed error with American dynamic CoT events
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -84,9 +87,11 @@ BT16
  - (Dub) Shuffled Wild Fields coal provinces into the Donets basin 
  - (Dub) Tweaked Governing Capacity - now government ranks grant 0/25/50% extra governing capacity instead of a flat bonus, and governing capacity from tech has been smudged over all admin technologies.
  - (Dub) Tweaked Warscore impact from province autonomy to be more impactful - provinces with high autonomy should now be much cheaper to conquer.
+ - (Dub) Removed Neapolitan cores from Sicily upon Naples becoming independent.
+ - (Chrys) Fixed new vanilla monument gfx having no name plates.
  
 #Localised Naming
- - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Perisan, Kurdish, and Tatar
+ - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
  
 #Mission updates
  - (Dub) Fixed BT's scriptified mission system to remove all all_province checks, greatly reducing lag 
@@ -128,6 +133,7 @@ BT16
 	- LotN Danish (Dub) - Scandinavian branches not updated
 	- BT Ayyubid (Dub)
 	- GC Andalusian (Dub)
+	- DOM Russian (Dub) - Steppes branches not updated
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders

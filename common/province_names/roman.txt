@@ -105,7 +105,7 @@
 #Italy
 101 = { "Genua" "Genua" }
 102 = { "Nicaea" "Nicaea" }
-103 = { "Taurinum" "Taurinum"" }
+103 = { "Taurinum" "Taurinum" }
 104 = { "Mediolanum" "Mediolanum" }
 105 = { "Iulia Augusta" "Iulia Augusta" }
 106 = { "Mutina" "Mutina" }

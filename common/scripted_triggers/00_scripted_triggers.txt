@@ -4476,6 +4476,7 @@ has_any_ongoing_construction = {
 		has_construction = great_project
 		has_construction = canal
 		has_construction = missionary
+		has_construction = state_house #BT Dev note: I have no idea why this was added between 1.36.1 to 1.36.2. State houses are buildings and should already be covered. Is this a failed attempt at a bugfix? //Dub
 	}
 }
 

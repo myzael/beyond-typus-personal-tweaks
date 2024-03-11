@@ -1,4 +1,5 @@
 ##Made by Ogele 'Comrade Flan'
+#Muscovite/Russian Minors branches updated and scriptified by Dub. Novgorod is currently untouched.
 #Slot 1 and 2
 #Special to Muscovy only
 mos_rus_handle_succession = {
@@ -124,25 +125,14 @@ mos_rus_conquer_west = {
 		required_missions = { mos_rus_conquer_novgorod }
 		position = 3
 		provinces_to_highlight = {
-			OR = {
-				area = curonia_area
-				area = estonia_ingria_area
-				area = livonia_area
-			}
+			province_group = mos_rus_window_on_the_west_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			curonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			estonia_ingria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			livonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=mos_rus_window_on_the_west_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
 		effect = {
@@ -150,34 +140,7 @@ mos_rus_conquer_west = {
 				name = "baltic_ambition_new"
 				duration = 9125
 			}
-			baltic_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			finland_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			bothnia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			laponia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
+			give_permaclaims_for_mission = { mission=mos_rus_conquer_finland }
 		}
 
 		ai_weight = {
@@ -190,29 +153,17 @@ mos_rus_conquer_west = {
 		required_missions = { mos_rus_window_on_the_west }
 		position = 5
 		provinces_to_highlight = {
-			OR = {
-				area = finland_area
-				area = bothnia_area
-				area = laponia_area
-			}
+			province_group = mos_rus_conquer_finland_provinces
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			finland_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=mos_rus_conquer_finland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
 			}
-			bothnia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			laponia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT	
-			}
-			4124 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			if = {
@@ -229,13 +180,7 @@ mos_rus_conquer_west = {
 				name = "conquest_of_finland"
 				duration = 9125
 			}
-			scandinavia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
+			give_permaclaims_for_mission = { mission=mos_rus_subjugate_scandinavia }
 		}
 
 		ai_weight = {
@@ -248,13 +193,15 @@ mos_rus_conquer_west = {
 		required_missions = { mos_rus_conquer_finland }
 		position = 7
 		provinces_to_highlight = {
-			region = scandinavia_region
+			province_group = mos_rus_subjugate_scandinavia_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = scandinavia_region
-				value = 25
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=mos_rus_subjugate_scandinavia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=50 #out of 87. That's roughly all of Sweden plus half of Norway, or some of Scania.
 			}
 		}
 		effect = {
@@ -315,7 +262,7 @@ mos_rus_conquer_west = {
 				}
 				owner = {
 					NOT = { tag = ROOT }
-					total_own_and_non_tributary_subject_development = 200
+					total_own_and_non_tributary_subject_development = 400
 					NOT = {
 						has_opinion_modifier = {
 							who = ROOT
@@ -344,7 +291,7 @@ mos_rus_conquer_west = {
 					custom_trigger_tooltip = {
 						tooltip = dan_a_danish_great_power_at
 						all_known_country = {
-							total_own_and_non_tributary_subject_development = 200
+							total_own_and_non_tributary_subject_development = 400
 							has_opinion_modifier = {
 								who = ROOT
 								modifier = great_power_influence
@@ -367,7 +314,7 @@ mos_rus_conquer_west = {
 					custom_trigger_tooltip = {
 						tooltip = dan_a_danish_great_power_ct
 						all_known_country = {
-							total_own_and_non_tributary_subject_development = 200
+							total_own_and_non_tributary_subject_development = 400
 							subsidised_percent_amount = {
 								value = 0.25
 							}
@@ -414,36 +361,16 @@ mos_rus_eastern_europe = {
 		required_missions = { mos_rus_build_up_army }
 		position = 2
 		provinces_to_highlight = {
-			OR = {
-				area = novgorod_area
-				area = beloozero_area
-				area = pomor_area
-				area = north_karelia
-				area = arkhangelsk_area
-				province_id = 4148
-				province_id = 1777
-				province_id = 33
-				province_id = 34
-				province_id = 1961
-			}
+			province_group = mos_rus_conquer_novgorod_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			owns = 310
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = novgorod_area
-					area = beloozero_area
-					area = pomor_area
-					area = north_karelia
-					area = arkhangelsk_area
-					province_id = 4148
-					province_id = 1777
-					province_id = 33
-					province_id = 34
-					province_id = 1961
-				}
-				value = 15
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=mos_rus_conquer_novgorod_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=36 #out of 53. Entails all of Novgorod proper, excludes Karelian lands and Velikiye Luki
 			}
 		}
 		effect = {
@@ -461,34 +388,8 @@ mos_rus_eastern_europe = {
 					}
 				}"
 			}
-			ruthenia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			estonia_ingria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			livonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
-			curonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
-			}
+			give_permaclaims_for_mission = { mission=mos_rus_conquer_ruthenia }
+			give_permaclaims_for_mission = { mission=mos_rus_window_on_the_west }
 		}
 
 		ai_weight = {
@@ -501,14 +402,16 @@ mos_rus_eastern_europe = {
 		required_missions = { mos_rus_conquer_novgorod }
 		position = 4
 		provinces_to_highlight = {
-			region = ruthenia_region
+			province_group = mos_rus_conquer_ruthenia_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			owns_or_non_sovereign_subject_of = 280
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = ruthenia_region
-				value = 20
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=mos_rus_conquer_ruthenia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=90 #out of 146. Seems reasonable without going too far into Poland.
 			}
 		}
 		effect = {
@@ -523,13 +426,7 @@ mos_rus_eastern_europe = {
 					duration = 9125
 				}
 			}
-			poland_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_russian_claim = yes
-			}
+			give_permaclaims_for_mission = { mission=mos_rus_partition_poland }
 		}
 
 		ai_weight = {
@@ -542,46 +439,34 @@ mos_rus_eastern_europe = {
 		required_missions = { mos_rus_conquer_ruthenia }
 		position = 5
 		provinces_to_highlight = {
-			region = poland_region
+			province_group = mos_rus_partition_poland_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = poland_region
-				value = 15
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=mos_rus_partition_poland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=23 #out of 56. The exact number required to establish Congress Poland borders.
 			}
 		}
 		effect = {
-			tooltip = {
-				add_accepted_culture = czech
-				add_accepted_culture = sorbian
-				add_accepted_culture = schlesian
-				add_accepted_culture = polish
-				add_accepted_culture = slovak
-			}
-			add_country_modifier = {
-				name = rus_west_slavic_union
-				duration = -1
-				desc = mos_rus_partition_poland_at
-			}
-			hidden_effect = {
-				add_accepted_culture = czech
-				add_accepted_culture = sorbian
-				add_accepted_culture = schlesian
-				add_accepted_culture = polish
-				add_accepted_culture = slovak
-			}
+			add_accepted_culture = czech
+			add_accepted_culture = sorbian
+			add_accepted_culture = kashubian_culture #BT New Culture
+			add_accepted_culture = schlesian
+			add_accepted_culture = polish
+			add_accepted_culture = slovak
+			# add_country_modifier = { #BT Cut - accepted culture slots overhaul
+				# name = rus_west_slavic_union
+				# duration = -1
+				# desc = mos_rus_partition_poland_at
+			# }
 			add_country_modifier = {
 				name = "rus_partition_poland_modifier"
 				duration = 7300
 			}
-			carpathia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_russian_claim = yes
-			}
+			give_permaclaims_for_mission = { mission=mos_rus_carpathian_conquest }
 		}
 
 		ai_weight = {
@@ -594,42 +479,27 @@ mos_rus_eastern_europe = {
 		required_missions = { mos_rus_partition_poland }
 		position = 6
 		provinces_to_highlight = {
-			region = carpathia_region
+			province_group = mos_rus_carpathian_conquest_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = carpathia_region
-				value = 15
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=mos_rus_partition_poland_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=49 #out of 98. This is exactly the three Romanian principalities.
 			}
 		}
 		effect = {
-			tooltip = {
-				add_accepted_culture = hungarian
-				add_accepted_culture = romanian
-				add_accepted_culture = transylvanian
-			}
+			add_accepted_culture = hungarian
+			add_accepted_culture = romanian
+			add_accepted_culture = transylvanian
 			add_country_modifier = {
 				name = rus_carpathian_union
 				duration = -1
 				desc = mos_rus_carpathian_conquest_at
 			}
-			hidden_effect = {
-				add_accepted_culture = hungarian
-				add_accepted_culture = romanian
-				add_accepted_culture = transylvanian
-			}
-			custom_tooltip = mos_rus_carpathian_conquest_ct
-			hidden_effect = {
-				balkan_region = {
-					limit = {
-						culture_group = south_slavic
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_russian_claim = yes
-				}
-			}
+			give_permaclaims_for_mission = { mission=mos_rus_protect_south_slavs }
 		}
 
 		ai_weight = {
@@ -642,19 +512,15 @@ mos_rus_eastern_europe = {
 		required_missions = { mos_rus_carpathian_conquest }
 		position = 7
 		provinces_to_highlight = {
-			OR = {
-				culture_group = south_slavic
-				region = balkan_region
-			}
+			province_group = mos_rus_protect_south_slavs_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					culture_group = south_slavic
-					region = balkan_region
-				}
-				value = 25
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
+				provinces=mos_rus_protect_south_slavs_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=70 #out of 105. This is about Bulgaria+Serbia+Bosnia, roughly.
 			}
 		}
 		effect = {
@@ -664,10 +530,12 @@ mos_rus_eastern_europe = {
 				if = { limit = { accepted_culture = czech } remove_accepted_culture = czech }
 				if = { limit = { accepted_culture = polish } remove_accepted_culture = polish }
 				if = { limit = { accepted_culture = schlesian } remove_accepted_culture = schlesian }
+				if = { limit = { accepted_culture = kashubian_culture } remove_accepted_culture = kashubian_culture }
+				if = { limit = { accepted_culture = polabian_culture } remove_accepted_culture = polabian_culture }
 				if = { limit = { accepted_culture = sorbian } remove_accepted_culture = sorbian }
 				if = { limit = { accepted_culture = slovak } remove_accepted_culture = slovak }
-				if = { limit = { accepted_culture = novgorodian } remove_accepted_culture = novgorodian }
-				if = { limit = { accepted_culture = ryazanian } remove_accepted_culture = ryazanian }
+				#if = { limit = { accepted_culture = novgorodian } remove_accepted_culture = novgorodian } #BT Cut
+				#if = { limit = { accepted_culture = ryazanian } remove_accepted_culture = ryazanian } #BT Cut
 				if = { limit = { accepted_culture = byelorussian } remove_accepted_culture = byelorussian }
 				if = { limit = { accepted_culture = ruthenian } remove_accepted_culture = ruthenian }
 				if = { limit = { accepted_culture = slovene } remove_accepted_culture = slovene }
@@ -692,6 +560,8 @@ mos_rus_eastern_europe = {
 					culture14 = serbian
 					culture15 = bulgarian
 					culture16 = croatian
+					culture17 = kashubian_culture #BT added
+					culture18 = polabian_culture
 				}
 			}
 			balkan_region = {
@@ -699,14 +569,7 @@ mos_rus_eastern_europe = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_russian_claim = yes
-			}
-			aegean_archipelago_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_russian_claim = yes
+				add_permanent_claim = ROOT
 			}
 		}
 
@@ -1596,9 +1459,80 @@ mos_rus_russian_consolidation = {
 			army_size_percentage = 0.8
 		}
 		effect = {
-			country_event_with_insight = {
-				id = flavor_rus.100
-				insight_tooltip = mos_rus_build_up_army_at
+			# country_event_with_insight = { #BT Cut. It makes no sense.
+				# id = flavor_rus.100
+				# insight_tooltip = mos_rus_build_up_army_at
+			# }
+			give_permaclaims_for_mission = { mission=mos_rus_conquer_novgorod }
+			galich_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			ryazan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			kama_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			bashkiria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			volga_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			kazan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			samara_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			saratov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			lower_don_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
+			}
+			astrakhan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_claim = ROOT
 			}
 		}
 
@@ -1612,28 +1546,29 @@ mos_rus_russian_consolidation = {
 		required_missions = { mos_rus_build_up_army }
 		position = 2
 		provinces_to_highlight = {
-			OR = {
-				province_id = 294
-				province_id = 4248
-				province_id = 4249
-				province_id = 4116
-				province_id = 301
-				province_id = 300
-				province_id = 4255
-				province_id = 2408
+			owner = {
+				primary_culture = russian
+				NOT = {
+					num_of_owned_provinces_with = {
+						region = russia_region
+						value = 5
+					}
+				}
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns_or_non_sovereign_subject_of = 294
-			owns_or_non_sovereign_subject_of = 4248
-			owns_or_non_sovereign_subject_of = 4249
-			owns_or_non_sovereign_subject_of = 4116
-			owns_or_non_sovereign_subject_of = 301
-			owns_or_non_sovereign_subject_of = 300
-			owns_or_non_sovereign_subject_of = 4255
-			owns_or_non_sovereign_subject_of = 2408
-			num_of_cities = 30
+			NOT = {
+				any_country = {
+					NOT = { tag = ROOT }
+					primary_culture = russian
+					num_of_owned_provinces_with = {
+						region = russia_region
+						value = 5
+					}
+				}
+			}
+			num_of_cities = 45
 		}
 		effect = {
 			add_ruler_modifier = {

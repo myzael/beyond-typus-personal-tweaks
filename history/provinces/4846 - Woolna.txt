@@ -44,7 +44,6 @@ discovered_by = aboriginal_tech
 1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
 	owner = xxx
 	controller = xxx
-	add_core = xxx
 	remove_core = LAR
 }
 1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
