@@ -485,7 +485,7 @@ mos_rus_eastern_europe = {
 		trigger = {
 			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num
-				provinces=mos_rus_partition_poland_provinces
+				provinces=mos_rus_carpathian_conquest_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 				value=49 #out of 98. This is exactly the three Romanian principalities.
 			}
