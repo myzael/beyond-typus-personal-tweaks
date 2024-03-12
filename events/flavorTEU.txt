@@ -665,6 +665,14 @@ country_event = {
 				on_change_tag_effect = yes
 				override_country_name = RPR
 				set_country_flag = is_RPR_flag
+				add_trust = {
+					who = POL
+					value = -100
+				}
+				add_trust = {
+					who = POL
+					value = 50
+				}
 			}
 			east_prussia_area = {
 				limit = {

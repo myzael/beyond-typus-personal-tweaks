@@ -565,8 +565,17 @@ fort_15th = {
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
 		modifier = {
-			factor = 2
-			is_capital = yes			#AI would want to fortify their home province.
+			factor = 3
+			is_capital = yes
+			FROM = {
+				total_development = 100
+				OR = {
+					is_colonial_nation = yes
+					is_subject = no
+				}
+			}
+			#Need the ai to not be tiny to stop silesian wall
+			#AI would want to fortify their home province.
 		}
 		modifier = { #Kindly nudge the AI towards making defensive lines.
 			factor = 3
@@ -575,6 +584,7 @@ fort_15th = {
 		modifier = { #There's little point building a fort next to another one.
 			factor = 0.1
 			has_influencing_fort = yes
+			is_capital = no
 		}
 	}
 }
@@ -1006,8 +1016,17 @@ fort_16th = {
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
 		modifier = {
-			factor = 2
-			is_capital = yes			#AI would want to fortify their home province.
+			factor = 3
+			is_capital = yes
+			FROM = {
+				total_development = 100
+				OR = {
+					is_colonial_nation = yes
+					is_subject = no
+				}
+			}
+			#Need the ai to not be tiny to stop silesian wall
+			#AI would want to fortify their home province.
 		}
 		modifier = { #Kindly nudge the AI towards making defensive lines.
 			factor = 3
@@ -1669,8 +1688,17 @@ fort_17th = {
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
 		modifier = {
-			factor = 2
-			is_capital = yes			#AI would want to fortify their home province.
+			factor = 3
+			is_capital = yes
+			FROM = {
+				total_development = 100
+				OR = {
+					is_colonial_nation = yes
+					is_subject = no
+				}
+			}
+			#Need the ai to not be tiny to stop silesian wall
+			#AI would want to fortify their home province.
 		}
 		modifier = { #Kindly nudge the AI towards making defensive lines.
 			factor = 3
@@ -2238,8 +2266,17 @@ fort_18th = {
 	ai_will_do = {
 		factor = 1 #Lots of logic in code instead, that multiplies with this value
 		modifier = {
-			factor = 2
-			is_capital = yes			#AI would want to fortify their home province.
+			factor = 3
+			is_capital = yes
+			FROM = {
+				total_development = 100
+				OR = {
+					is_colonial_nation = yes
+					is_subject = no
+				}
+			}
+			#Need the ai to not be tiny to stop silesian wall
+			#AI would want to fortify their home province.
 		}
 		modifier = { #Kindly nudge the AI towards making defensive lines.
 			factor = 3
