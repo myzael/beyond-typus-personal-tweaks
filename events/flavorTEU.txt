@@ -509,7 +509,18 @@ country_event = {
 	option = {
 		name = "flavor_teu.3.a"
 		vassalize = DNZ
-		west_prussia_area = {	#Claims given to danzig in a potentially futile attempt to stop border gore #HARBIVORE
+		DNZ = {							#BT change to help poland actually keep their vassal
+			add_country_modifier = {
+				name = bt_teu_turned_pru
+				duration = -1
+			}
+		}
+		add_trust = {
+			who = POL
+			value = 25
+			mutual = yes
+		}
+		west_prussia_area = {	#BT Claims given to danzig in a potentially futile attempt to stop border gore #HARBIVORE
 			limit = {
 				NOT = { is_permanent_claim = ROOT }
 				NOT = { is_core = ROOT	}
@@ -567,6 +578,34 @@ country_event = {
 				on_change_tag_effect = yes
 				override_country_name = RPR
 				set_country_flag = is_RPR_flag
+				add_trust = {
+					who = POL
+					value = -100
+				}
+				add_trust = {
+					who = POL
+					value = 60
+				}
+				add_country_modifier = {
+					name = bt_teu_turned_pru
+					duration = -1
+				}
+				add_opinion = {
+					who = POL
+					modifier = bt_teu_submitted_to_keep_prussia
+				}
+				reverse_add_opinion = {
+					who = POL
+					modifier = bt_we_submitted_to_keep_prussia
+				}
+			}
+			add_trust = {
+				who = PRU
+				value = -100
+			}
+			add_trust = {
+				who = PRU
+				value = 60
 			}
 			east_prussia_area = {
 				limit = {
@@ -671,8 +710,30 @@ country_event = {
 				}
 				add_trust = {
 					who = POL
-					value = 50
+					value = 60
 				}
+				add_country_modifier = {
+					name = bt_teu_turned_pru
+					duration = -1
+				}
+				add_opinion = {
+					who = POL
+					modifier = bt_teu_submitted_to_keep_prussia
+					multiplier = 1
+				}
+				reverse_add_opinion = {
+					who = POL
+					modifier = bt_we_submitted_to_keep_prussia
+					multiplier = 1
+				}
+			}
+			add_trust = {
+				who = PRU
+				value = -100
+			}
+			add_trust = {
+				who = PRU
+				value = 60
 			}
 			east_prussia_area = {
 				limit = {
@@ -1665,6 +1726,7 @@ country_event = {
 	trigger = {
 		tag = TEU
 		current_age = age_of_discovery
+		year = 1448
 	}
 	mean_time_to_happen = {
 		months = 60
@@ -1679,8 +1741,7 @@ country_event = {
 			duration = 9125
 		}
 		add_army_tradition = 15
-		add_adm_power = -100
-		add_yearly_manpower = 0.5
+		add_mil_power = -150
 		ai_chance = {
 			factor = 1
 		}

@@ -846,7 +846,7 @@ country_event = {
 	}
 }
 
-country_event = { 
+country_event = {
 	id = flavor_lit.16 
 	title = flavor_lit.16.t 
 	desc = flavor_lit.16.d 
@@ -879,12 +879,8 @@ country_event = {
 		name = flavor_lit.16.b 
 		
 		ai_chance = { 
-			factor = 10 
-			modifier = {
-				factor = 0.5
-				alliance_with = LIT
-			}
-		} 				#BT  1/10 Chance to happen, increased chance of first event #Harbivore
+			factor = 0
+		} 				
 		set_country_flag = lit_decline_pu_flag
 		POL = {
 			define_ruler = {

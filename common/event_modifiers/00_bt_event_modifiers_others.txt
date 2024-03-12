@@ -378,3 +378,7 @@ pissed_at_the_english_bt = {
 bt_shah_rukh_deaded = {			#BT Added as a fix for timmy until there is a region overhaul Harbivore
 	reduced_liberty_desire = -20
 }
+
+bt_teu_turned_pru = {			#BT added to keep prussian vassal loyal
+	liberty_desire = -20
+}

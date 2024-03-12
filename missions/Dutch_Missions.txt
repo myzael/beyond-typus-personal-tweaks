@@ -35,7 +35,7 @@ ned_reconquest_group = {
 				area = luxemburg_liege_area
 				area = oversticht_area
 				province_id = 100
-				province_id = 8119
+				province_id = 8119		#BT changed to be more accurate
 				province_id = 4382
 				
 			}
@@ -72,7 +72,7 @@ ned_reconquest_group = {
 				}
 				type = all
 				owned_by = ROOT
-			}
+			}		#BT changed to be more accurate
 			luxemburg_liege_area = {
 				type = all
 				owned_by = ROOT

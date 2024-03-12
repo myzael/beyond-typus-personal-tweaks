@@ -55,3 +55,9 @@
  bt_danzig_revolt_wargoal:0 "Take their capital"
  bt_danzig_revolt_wargoal_disc:0 "We must take their capital"
  bt_danzig_revolt_war_name:0 "Thirteen Years' War"
+ 
+ bt_teu_submitted_to_keep_prussia: "They accepted offer to become our vassal"
+ bt_we_submitted_to_keep_prussia: "We accepted offer to become their vassal"
+ bt_teu_turned_pru: "Submitted to Polish Rule"
+ 
+ bt_cas_lost_infantes_tt: "Have the rebels enforce their demands"

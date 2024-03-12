@@ -270,9 +270,9 @@ teu_ruler_over_livonia = {
 	global_manpower_modifier = 0.1
 }
 
-teu_teutonic_persistance = {
-	defensiveness = 0.2
-	shock_damage_received = -0.1
+teu_teutonic_persistance = {#BT Changed to nerf teutons
+	reserves_organisation = 0.10
+	recover_army_morale_speed = 0.10
 }
 
 teu_rejects_imperial_protection = {
