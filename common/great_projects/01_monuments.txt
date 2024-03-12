@@ -12013,7 +12013,7 @@ duomo_milano = {
 	}
 }
 
-dutch_polders = {
+dutch_polders = {				#BT Changed to be more appropriate and cool
 	start = 97 #Amsterdam
 	date = 1100.01.01
 	time = { months = 0	}

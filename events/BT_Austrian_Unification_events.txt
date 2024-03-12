@@ -38,14 +38,14 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 	fire_only_once = yes
 	
 	trigger = {
-			is_year = 1446
+			is_year = 1450
 		NOT = { 
 			is_year = 1500
 		}
 		tag = TIR
 		OR = {
-		dynasty = HAB
-		dynasty = STY
+			dynasty = HAB
+			dynasty = STY
 		}
 		NOT = {
 			is_at_war = yes
@@ -53,14 +53,14 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
-			factor = 0.2
-			is_year = 1460
+			factor = 0.666
+			is_year = 1470
 		}
 		modifier = {
-			factor = 0.5
-			is_year = 1450
+			factor = 0.75
+			is_year = 1460
 		}
 		modifier = {
 			factor = 0.8
@@ -101,10 +101,10 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 				ai = yes
 			}
 			STY = { 
-				inherit = ROOT 
+				inherit = TIR 
 			}
 		}
-		if = { 
+		else_if = { 
 			limit = { 
 				STY = { exists = yes } 
 				ai = no
@@ -112,16 +112,16 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 			switch_tag = STY
 			inherit = TIR
 		}
-		if = {
+		else_if = {
 			limit = {
 				HAB = { exists = yes }
 				ai = yes
 			}
 			HAB = {
-				inherit = ROOT 
+				inherit = TIR 
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				HAB = { exists = yes } 
 				ai = no
@@ -421,21 +421,21 @@ country_event = {                         #Event to add development to austrian 
 		mil_power = 50
 		73 = {
 			NOT = {
-			 	base_tax = 20
-				base_production = 20
-				base_manpower = 20
+			 	base_tax = 10
+				base_production = 10
+				base_manpower = 10
 			}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 240
     }
 	
 	option = {
 		name = bt_austrian_unification.7.opt
 		add_adm_power = -50
-		add_dip_power = -50
+		add_dip_power = -100
 		add_mil_power = -50
 		73 = {
 			add_base_tax = 1

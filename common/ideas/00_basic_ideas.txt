@@ -1239,7 +1239,7 @@ exploration_ideas = {
 		#for Castile and Portugal, but several decades early for everyone else) and also give the bonuses to a few historical colonisers who didn't get modifiers in vanilla (like Scotland, Russia, and Navarra). I decided to add an administrative tech req to almost everything to try to control which idea slot is used for
 		#exploration. This may be heavy handed, we'll see, but the intent was to be able to introduce massive bonuses and penalties after or before certain dates, and adm tech seems more organic that simply is_year.
 		modifier = {
-			factor = 100
+			factor = 1000			#BT Harb - Increased from 100 they must do this otherwise there will be no colonies
 			OR = {
 				tag = POR			#Historically 1415
 				tag = CAS			#Historically 1493
@@ -1247,6 +1247,7 @@ exploration_ideas = {
 				tag = NAV			#Effectively Spain or France in game, but the Basques were right at the front of colonial efforts, and established some of the first temporary and semi-permanent settlements in North America
 				tag = IBE			#BtP tag who should colonise if it manages to form (essentially Spain and Portugal in one)
 			}
+			navy_size = 1			#BT Harb - Added as a check that they must have a coastal province (NAV is landlocked)
 			adm_tech = 5
 		}	#Bonus for historical countries at the first idea (Approximately year 1466)
 		modifier = {

@@ -7,3 +7,4 @@
 
 1291.1.1 = { remove_accepted_culture = dalmatian }
 1291.1.2 = { add_accepted_culture = friulian_culture }
+historical_rival = GEN

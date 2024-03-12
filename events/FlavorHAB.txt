@@ -2117,7 +2117,14 @@ country_event = {
 				}
 			}
 			create_union = HUN
-			STY = { inherit = HAB }			#BT Edited by Harbivore for Austrian Unification
+			if = {
+				limit = {
+					STY = {
+						exists = yes
+					}
+				}
+				STY = { inherit = HAB }			#BT Edited by Harbivore for Austrian Unification
+			}
 		}
 	}
 	option = {
@@ -2131,7 +2138,14 @@ country_event = {
 				}
 			}
 			create_union = HUN
-			STY = { inherit = HAB }			#BT Edited by Harbivore for Austrian Unification
+			if = {
+				limit = {
+					STY = {
+						exists = yes
+					}
+				}
+				STY = { inherit = HAB }			#BT Edited by Harbivore for Austrian Unification
+			}
 		}
 	}
 	after = {

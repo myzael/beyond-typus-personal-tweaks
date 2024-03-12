@@ -13050,10 +13050,10 @@ teu_expanded_resources_bran_castle = {
 	local_development_cost = -0.45
 }
 
-teu_the_last_reyse = {
-	manpower_recovery_speed = 0.15
-	land_morale = 0.1
-	army_tradition = 1
+teu_the_last_reyse = {				#BT change to nerf teutons
+	manpower_recovery_speed = 0.15 	
+	war_exhaustion = -0.10
+	army_tradition_from_battle = 0.2
 }
 
 teu_renewed_hanseatic_relations = {

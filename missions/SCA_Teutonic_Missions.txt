@@ -33,7 +33,7 @@ teu_hre_protection_mission_slot = {
 				limit = { hre_size = 1 }
 				reverse_has_opinion = {
 					who = emperor
-					value = 100
+					value = 150 #BT changed to make harder and reduce ai joining hre
 				}
 				any_neighbor_province = { 			#BT added to keep consistant with normal methods of joining the hre. #Harbivore
 					is_part_of_hre = yes

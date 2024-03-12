@@ -27,19 +27,24 @@ country_event = {
 			ai = yes
 			was_player = no
 			NOT = { num_of_subjects = 1 }
-			has_opinion = { who = BRA value = 150 }
+			has_opinion = { who = BRA value = 150 }	#BT changed to be more situational
 			NOT = { vassal_of = BRA }
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 240
+		months = 240		#BT Changed to be longer
 	}
 	
 	option = {
 		name = "flavor_brapru.EVTOPTOK"
 		BRA = {
 			create_union = PRU
+		}
+		add_trust = {
+			who = PRU		#BT added to help them be loyal
+			value = 20
+			mutual = yes
 		}
 	}
 }
