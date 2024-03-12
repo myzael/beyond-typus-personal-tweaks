@@ -7,7 +7,7 @@ namespace = dev_points
 country_event = { 					
     id = dev_points.1
     title = "dev_points.1.title"
-    desc = "dev_points.1.disc"
+    desc = "dev_points.1.desc"
     picture = ECONOMY_eventPicture
 	  
     is_triggered_only = yes
@@ -48,7 +48,7 @@ country_event = {
 country_event = {
     id = dev_points.2
     title = "dev_points.2.title"
-    desc = "dev_points.2.disc"
+    desc = "dev_points.2.desc"
     picture = ECONOMY_eventPicture
 	  
     is_triggered_only = yes
@@ -90,7 +90,7 @@ country_event = {
 country_event = { 					
     id = dev_points.3
     title = "dev_points.3.title"
-    desc = "dev_points.3.disc"
+    desc = "dev_points.3.desc"
     picture = ECONOMY_eventPicture
 	  
     is_triggered_only = yes
@@ -121,7 +121,7 @@ country_event = {
 country_event = {
     id = dev_points.4
     title = "dev_points.4.title"
-    desc = "dev_points.4.disc"
+    desc = "dev_points.4.desc"
     picture = ECONOMY_eventPicture
 	  
     is_triggered_only = yes
@@ -146,7 +146,7 @@ country_event = {
 province_event = { 					
     id = dev_points.5
     title = "dev_points.5.title"
-    desc = "dev_points.5.disc"
+    desc = "dev_points.5.desc"
     picture = ECONOMY_eventPicture
 	  
     is_triggered_only = yes
@@ -255,7 +255,7 @@ province_event = {
 country_event = {
     id = dev_points.99
     title = "dev_points.99.title"
-    desc = "dev_points.99.disc"
+    desc = "dev_points.99.desc"
     picture = ECONOMY_eventPicture
 	  
     is_triggered_only = yes
@@ -395,7 +395,7 @@ country_event = {
 # country_event = {
     # id = dev_points.999
     # title = "dev_points.999.title"
-    # desc = "dev_points.999.disc"
+    # desc = "dev_points.999.desc"
     # picture = ECONOMY_eventPicture
 	  
     # is_triggered_only = yes

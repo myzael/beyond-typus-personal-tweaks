@@ -2517,8 +2517,8 @@ infrastructure_ideas = { #New in 1.3X. It's just like administrative ideas in th
 		build_time = -0.25
 	}
 	efficient_construction_plans = {
-		expand_infrastructure_cost_modifier = -0.25
 		max_dev_points = 100
+		expand_infrastructure_cost_modifier = -0.25
 	}
 	expanded_infrastructure_network = {
 		#movement_speed = 0.1

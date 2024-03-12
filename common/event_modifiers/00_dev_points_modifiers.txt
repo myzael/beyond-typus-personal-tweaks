@@ -6,11 +6,12 @@ monarch_points_to_dev_points = {
 	country_admin_power = -1
 	country_diplomatic_power = -1
 	country_military_power = -1
+	country_dev_points_modifier = 0.2
 }
 
 adm_points_to_reform_progress = {
 	country_admin_power = -1
-	monthly_reform_progress_modifier = 0.5
+	monthly_reform_progress_modifier = 0.3
 }
 
 dip_points_to_spy_defence = { 
@@ -28,7 +29,6 @@ mil_points_to_army_tradition = {
 	country_military_power = -1
 	army_tradition = 0.25
 }
-
 
 
 

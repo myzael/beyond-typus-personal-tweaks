@@ -1698,12 +1698,11 @@ conqueror_personality = {
 	}
 	years_of_nationalism = -5
 	nation_designer_cost = 2
-	
+	wants_avoid_ugly_borders = yes
 	easy_war_chance_multiplier = 2
 	war_chance_multiplier = 1.75
-	building_budget_multiplier = 0.2
+	building_budget_multiplier = 0.8
 	gift_chance = -50
-	wants_land = yes
 	
 	chance = {
 		modifier = {
@@ -3664,7 +3663,7 @@ legendary_conqueror_personality = {
 	
 	easy_war_chance_multiplier = 2
 	war_chance_multiplier = 1.75
-	building_budget_multiplier = 0.2
+	building_budget_multiplier = 0.8
 	wants_avoid_ugly_borders = yes
 	gift_chance = -50
 	wants_land = yes
@@ -3756,7 +3755,7 @@ iron_crowned_personality = {
 	easy_war_chance_multiplier = 3
 	war_chance_multiplier = 2.5
 	wants_avoid_ugly_borders = yes
-	building_budget_multiplier = 0.2
+	building_budget_multiplier = 0.8
 	gift_chance = -50
 	wants_land = yes
 	
