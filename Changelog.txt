@@ -89,6 +89,9 @@ BT16
  - (Dub) Tweaked Warscore impact from province autonomy to be more impactful - provinces with high autonomy should now be much cheaper to conquer.
  - (Dub) Removed Neapolitan cores from Sicily upon Naples becoming independent.
  - (Chrys) Fixed new vanilla monument gfx having no name plates.
+ - (Harbivore) Changed dutch polders to be more appropriate.
+ - (Harbivore) Made Genoa and Venice Historical rivals to stop their monopoly on the seas.
+ - (Harbivore) Gave a failure condition to castilian disaster if the rebels win allowing them to escape the disaster.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
