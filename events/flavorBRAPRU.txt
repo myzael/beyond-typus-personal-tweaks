@@ -21,18 +21,19 @@ country_event = {
 	trigger = {
 		tag = BRA
 		government = monarchy
+		mission_completed = emp_brapru_conquer_pomerania
 		PRU = {
 			government = monarchy
 			ai = yes
 			was_player = no
 			NOT = { num_of_subjects = 1 }
-			has_opinion = { who = BRA value = 100 }
+			has_opinion = { who = BRA value = 150 }
 			NOT = { vassal_of = BRA }
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 240
 	}
 	
 	option = {

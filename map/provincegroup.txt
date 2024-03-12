@@ -1779,7 +1779,7 @@ mos_rus_partition_poland_provinces = {
 	2966 4238 8245 8246 8247 8248 
 }
 
-mos_rus_annex_carpathia_provinces = { #98. 49 in the three romanian duchies
+mos_rus_carpathian_conquest_provinces = { #98. 49 in the three romanian duchies
 	#Moldavia - 16
 	1756 2405 3159 7277 7278 8220 
 	3156 7274 7275 
