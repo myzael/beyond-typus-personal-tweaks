@@ -2719,10 +2719,10 @@ create_pronoia = {
 			}
 		}
 		if = {
-			limit = { from = { total_development = 100 } }
+			limit = { from = { total_development = 200 } }
 			custom_trigger_tooltip = {
-				tooltip = FROM_HAS_NOT_100_TOTAL_DEV
-				from = { not = { total_development = 100 } }
+				tooltip = FROM_HAS_NOT_200_TOTAL_DEV
+				from = { not = { total_development = 200 } }
 			}
 		}
 		if = {
