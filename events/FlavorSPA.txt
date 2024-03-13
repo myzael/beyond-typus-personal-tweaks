@@ -3051,7 +3051,7 @@ country_event = { #BT added escape clause for infantes distaster
 					stability = 2
 				}
 			}
-		add_stability = 3
+		add_stability = 4
 		}
 		else_if = {
 			limit = {
@@ -3059,10 +3059,10 @@ country_event = { #BT added escape clause for infantes distaster
 					stability = 1
 				}
 			}
-		add_stability = 2
+		add_stability = 3
 		}
 		else = {
-			add_stability = 1	
+			add_stability = 2
 		}
 		if = {
 			limit = {
