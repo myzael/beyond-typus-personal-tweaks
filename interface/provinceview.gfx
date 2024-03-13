@@ -17,6 +17,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/institutions//province_institutions_button.dds"
 	}	
 
+	spriteType = {
+		name = "current_dev_points_gui_icon"
+		texturefile = "gfx/interface/current_dev_points_gui_icon.dds"
+	}
+
+	spriteType = {
+		name = "local_generated_dev_points_gui_icon"
+		texturefile = "gfx/interface/local_generated_dev_points_gui_icon.dds"
+	}
+
 
 	
 	spriteType = {

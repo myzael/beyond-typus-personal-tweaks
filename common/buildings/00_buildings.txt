@@ -3626,7 +3626,7 @@ state_house = {
 		statewide_governing_cost = -0.2
 		min_local_autonomy = -5
 		local_governing_cost_increase = -10
-		base_local_dev_points = 0.1
+		base_local_dev_points = 0.05
 	}
 	bonus_modifier = {
 		statewide_governing_cost = -0.2

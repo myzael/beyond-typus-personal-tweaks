@@ -241,17 +241,30 @@ calculate_monthly_dev_points_in_all_provinces_effect = {
 				value = 20
 			}
 		}
-		if = {					#Has infrastructure ideas and an amount of dev points
+		if = {					#Has infrastructure ideas and 6 buildings
 			limit = {
-				has_idea = regulation_bureau 
-				check_variable = {
-					which = precalc_monthly_dev_points
-					value = 0.5
+				ROOT = {
+					has_idea = regulation_bureau 
 				}
+				num_of_buildings_in_province = 6
 			}
 			change_variable = {            
 				which = provincial_dev_points_modifier
 				value = 0.2
+			}
+		}
+		if = {					#Has horde reform
+			limit = {
+				ROOT = {
+					OR = {
+						has_reform = steppe_horde
+						has_reform = great_mongol_state_reform
+					}
+				}
+			}
+			change_variable = {            
+				which = provincial_dev_points_modifier
+				value = -0.5
 			}
 		}
 		if = {					#Has infrastructure ideas and an amount of dev points

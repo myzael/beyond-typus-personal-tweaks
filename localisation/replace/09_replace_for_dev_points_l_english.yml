@@ -13,7 +13,8 @@
  IMPR_FINAL_BASE_COST:0 ""
  IMPR_TOTAL_FURTHER_MODIFIED_BY:0 "The total cost is further modified by:"
  IMPR_FINAL_COST:0 ""
- regulation_bureau_desc:0 "A legislative body whose jurisdiction involves the maintenance and promotion of inflation-related laws as well as the local administration of our provinces.\nProvinces producing at least §G0.5§! §YDevelopment Points§! get"    
+ regulation_bureau_desc:0 "A legislative body whose jurisdiction involves the maintenance and promotion of inflation-related laws as well as the local administration of our provinces.\nProvinces with at least 6 buildings get:"    
+
 
 
  FROM_CENTER_OF_TRADE:0 "$COT$"

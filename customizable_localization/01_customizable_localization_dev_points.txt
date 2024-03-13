@@ -1,9 +1,4 @@
-#Things needed to be added 
-#Bankrupcy -50% Country
-#Devastation -100% Province
-#Over governing capacity -50% at 100
-#under_siege -25%
-#occupied -50%
+
 
 ###############################################################################
 # Province Base Increases
@@ -41,27 +36,6 @@ defined_text = {
         localisation_key = dev_points_province_has_counting_house #"\nHas Workshop Building: §G+0.01§!"
         trigger = {
             has_building = counting_house
-        }
-    }
-    text = {
-        localisation_key = dev_points_empty_string #" "
-        trigger = {
-        }
-    }
-}
-
-defined_text = {
-    name = DevPointsProvinceHasAutonomyBuilding
-    text = {
-        localisation_key = dev_points_province_has_courthouse #"\nHas Workshop Building: §G+0.01§!"
-        trigger = {
-            has_building = courthouse
-        }
-    }
-    text = {
-        localisation_key = dev_points_province_has_town_hall #"\nHas Workshop Building: §G+0.01§!"
-        trigger = {
-            has_building = town_hall
         }
     }
     text = {
@@ -242,11 +216,10 @@ defined_text = {
 				has_state_edict = edict_encourage_development 
 				num_of_times_expanded_infrastructure = 1
 				AND = {
-					has_idea = regulation_bureau 
-					check_variable = {
-						which = precalc_monthly_dev_points
-						value = 0.5
+					ROOT = {
+						has_idea = regulation_bureau
 					}
+					num_of_buildings_in_province = 6
 				}
 			}
         }
@@ -358,10 +331,11 @@ defined_text = {
     text = {
         localisation_key = dev_points_province_modifier_intrastructure_ideas_and_dev_points #"\nHas Temple Building: §G+0.01§!"
         trigger = {
-			has_idea = regulation_bureau 
-			check_variable = {
-				which = precalc_monthly_dev_points
-				value = 0.5
+			AND = {
+				ROOT = {
+					has_idea = regulation_bureau
+				}
+				num_of_buildings_in_province = 6
 			}
         }
     }
@@ -418,6 +392,40 @@ defined_text = {
         }
     }
 }
+
+
+defined_text = {
+    name = DevPointsProvinceHorde
+    text = {
+        localisation_key = dev_points_province_modifier_horde #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			has_reform = steppe_horde
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+
+
+defined_text = {
+    name = DevPointsProvinceMongolEmpire
+    text = {
+        localisation_key = dev_points_province_modifier_mongol_empire #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			has_reform = great_mongol_state_reform
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
 
 
 defined_text = {
