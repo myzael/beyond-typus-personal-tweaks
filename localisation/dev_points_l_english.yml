@@ -113,7 +113,7 @@
  dev_points_country_ghulams_loyal: "\n[From.GetGhilmanName]: §G+2%§!"
  dev_points_country_ghulams_disloyal: "\n[From.GetGhilmanName]: §R-2%§!"
  dev_points_country_bankrupt: "\nBankrupt: §R-50%§!"
- dev_points_country_over_gcap: "\nOver Governing Capacity: §R-[From.over_gov_cap_value_ui_var.GetValue]%§"
+ dev_points_country_over_gcap: "\nOver Governing Capacity: §R[From.over_gov_cap_value_ui_var.GetValue]%§!"
  
  total_generated_dev_points_gui: "[From.shown_total_accumulated_dev_points.GetValue]"
  

@@ -445,13 +445,13 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {
 			value = 0.2
 		}
 	}
-	if = {						#Is a free colonial nation
+	if = {						#Is over governing capacity
 		limit = {
 			governing_capacity_percentage = 1
 		}
 		export_to_variable = {
 			which = over_gov_cap_value_ui_var
-			value = governing_capacity_percentage 
+			value = trigger_value:governing_capacity_percentage 
 			who = ROOT
 		}
 		change_variable = {            
@@ -460,7 +460,7 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {
 		}
 		multiply_variable = {
 			which = over_gov_cap_value_ui_var
-			value = -50
+			value = 50
 		}
 	}
 	multiply_variable = {		#Multiplies base dev points with multiplier and to get final monthly dev points
