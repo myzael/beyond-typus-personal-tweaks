@@ -12090,7 +12090,7 @@ dutch_polders = {				#BT Changed to be more appropriate and cool
 		}
 		area_modifier = {
 			local_monthly_devastation = -0.02
-			development_cost = -0.05
+			local_development_cost = -0.05
 			local_state_maintenance_modifier = 0.25 	
 			trade_goods_size_modifier = 0.15
 		}
@@ -12114,7 +12114,7 @@ dutch_polders = {				#BT Changed to be more appropriate and cool
 		}
 		region_modifier = {
 			local_monthly_devastation = -0.05
-			development_cost = -0.05
+			local_development_cost = -0.05
 			local_state_maintenance_modifier = 0.25	
 			trade_goods_size_modifier = 0.15
 		}
@@ -12138,7 +12138,7 @@ dutch_polders = {				#BT Changed to be more appropriate and cool
 		}
 		region_modifier = {
 			local_monthly_devastation = -0.1
-			development_cost = -0.1
+			local_development_cost = -0.1
 			trade_goods_size_modifier = 0.3
 			local_state_maintenance_modifier = 0.5	
 		}

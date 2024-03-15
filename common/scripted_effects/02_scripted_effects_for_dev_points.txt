@@ -376,6 +376,15 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {
 		which = dev_points_multiplier
 		value = 1
 	}
+	if = {						#At Peace
+		limit = {
+			is_at_war = no
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.2
+		}
+	}
 	if = {						#+90% Manpower
 		limit = {
 			manpower_percentage = 0.9
@@ -461,6 +470,426 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {
 		multiply_variable = {
 			which = over_gov_cap_value_ui_var
 			value = 50
+		}
+	}
+	if = {						#estate_burghers
+		limit = {
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+			has_estate = estate_burghers
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_burghers
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 30
+				}
+			}
+			has_estate = estate_burghers
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_nobles
+		limit = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+			has_estate = estate_nobles
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_nobles
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 30
+				}
+			}
+			has_estate = estate_nobles
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_church
+		limit = {
+			estate_loyalty = {
+				estate = estate_church 
+				loyalty = 60
+			}
+			has_estate = estate_church
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_church
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_church 
+					loyalty = 30
+				}
+			}
+			has_estate = estate_church
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_brahmins
+		limit = {
+			estate_loyalty = {
+				estate = estate_brahmins
+				loyalty = 60
+			}
+			has_estate = estate_brahmins
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_brahmins
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_brahmins
+					loyalty = 30
+				}
+			}
+			has_estate = estate_brahmins
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_rajput
+		limit = {
+			estate_loyalty = {
+				estate = estate_rajput
+				loyalty = 60
+			}
+			has_estate = estate_rajput
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_rajput
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_rajput
+					loyalty = 30
+				}
+			}
+			has_estate = estate_rajput
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_dhimmi
+		limit = {
+			estate_loyalty = {
+				estate = estate_dhimmi
+				loyalty = 60
+			}
+			has_estate = estate_dhimmi
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_dhimmi
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_dhimmi
+					loyalty = 30
+				}
+			}
+			has_estate = estate_dhimmi
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_jains
+		limit = {
+			estate_loyalty = {
+				estate = estate_jains
+				loyalty = 60
+			}
+			has_estate = estate_jains
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_jains
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_jains
+					loyalty = 30
+				}
+			}
+			has_estate = estate_jains
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_vaisyas
+		limit = {
+			estate_loyalty = {
+				estate = estate_vaisyas
+				loyalty = 60
+			}
+			has_estate = estate_vaisyas
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_vaisyas
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_vaisyas
+					loyalty = 30
+				}
+			}
+			has_estate = estate_vaisyas
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_nomadic_tribes
+		limit = {
+			estate_loyalty = {
+				estate = estate_nomadic_tribes
+				loyalty = 60
+			}
+			has_estate = estate_nomadic_tribes
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_nomadic_tribes
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nomadic_tribes
+					loyalty = 30
+				}
+			}
+			has_estate = estate_nomadic_tribes
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_maratha
+		limit = {
+			estate_loyalty = {
+				estate = estate_maratha
+				loyalty = 60
+			}
+			has_estate = estate_maratha
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_maratha
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_maratha
+					loyalty = 30
+				}
+			}
+			has_estate = estate_maratha
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_cossacks 
+		limit = {
+			estate_loyalty = {
+				estate = estate_cossacks  
+				loyalty = 60
+			}
+			has_estate = estate_cossacks
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_cossacks 
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_cossacks 
+					loyalty = 30
+				}
+			}
+			has_estate = estate_cossacks
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_janissaries 
+		limit = {
+			estate_loyalty = {
+				estate = estate_janissaries 
+				loyalty = 60
+			}
+			has_estate = estate_janissaries
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_janissaries 
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_janissaries 
+					loyalty = 30
+				}
+			}
+			has_estate = estate_janissaries
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_eunuchs 
+		limit = {
+			estate_loyalty = {
+				estate = estate_eunuchs 
+				loyalty = 60
+			}
+			has_estate = estate_eunuchs
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_eunuchs 
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_eunuchs 
+					loyalty = 30
+				}
+			}
+			has_estate = estate_eunuchs
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_qizilbash 
+		limit = {
+			estate_loyalty = {
+				estate = estate_qizilbash 
+				loyalty = 60
+			}
+			has_estate = estate_qizilbash
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_qizilbash 
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_qizilbash 
+					loyalty = 30
+				}
+			}
+			has_estate = estate_qizilbash
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
+		}
+	}
+	if = {						#estate_ghulams 
+		limit = {
+			estate_loyalty = {
+				estate = estate_ghulams 
+				loyalty = 60
+			}
+			has_estate = estate_ghulams
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = 0.02
+		}
+	}
+	if = {						#estate_ghulams 
+		limit = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_ghulams 
+					loyalty = 30
+				}
+			}
+			has_estate = estate_ghulams
+		}
+		change_variable = {            
+			which = dev_points_multiplier
+			value = -0.02
 		}
 	}
 	multiply_variable = {		#Multiplies base dev points with multiplier and to get final monthly dev points

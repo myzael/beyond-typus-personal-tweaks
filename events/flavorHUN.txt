@@ -725,7 +725,6 @@ country_event = {
 				}
 			}
 			STY = { inherit = HAB }			#BT Edited by Harbivore for Austrian Unification
-			}
 		}
 	}
 }

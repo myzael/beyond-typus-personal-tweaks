@@ -1726,7 +1726,7 @@ country_event = {
 	trigger = {
 		tag = TEU
 		current_age = age_of_discovery
-		year = 1448
+		is_year = 1448
 	}
 	mean_time_to_happen = {
 		months = 60
