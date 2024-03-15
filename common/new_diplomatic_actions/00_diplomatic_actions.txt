@@ -2754,29 +2754,29 @@ create_pronoia = {
 		from = { grant_independence = { keep_liberty_desire = yes } }
 		hidden_effect = {
 			# country_event = { id = MEE_Byzantine_Events.56 }
-			FROM = {
-				set_saved_name = {
-					key = byzantine_general
-					type = advisor
-					scope = ROOT
-				}
-				define_ruler = {
-					name = byzantine_general
-					change_mil = 4
-					change_adm = 1
-					change_dip = 0
-					min_age = 30
-					male = yes
-					religion = ROOT
-					culture = ROOT
-				}
-				if = {
-					limit = {
-						has_heir = yes
-					}
-					kill_heir = { allow_new_heir = no }
-				}
-			}
+			# FROM = { #BT Cut: This makes no sense in BR's overhaul.
+				# set_saved_name = {
+					# key = byzantine_general
+					# type = advisor
+					# scope = ROOT
+				# }
+				# define_ruler = {
+					# name = byzantine_general
+					# change_mil = 4
+					# change_adm = 1
+					# change_dip = 0
+					# min_age = 30
+					# male = yes
+					# religion = ROOT
+					# culture = ROOT
+				# }
+				# if = {
+					# limit = {
+						# has_heir = yes
+					# }
+					# kill_heir = { allow_new_heir = no }
+				# }
+			# }
 		}
 		if = {
 			limit = {
