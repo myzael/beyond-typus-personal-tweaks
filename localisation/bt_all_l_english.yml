@@ -2346,8 +2346,8 @@
  bt_tribal_reconquest_war_name:0 "$ORDER$$FIRST$ Reconquest of $SECOND_NAME$"
  
  #BT15.0.1
- EGL_adj:0 "Egilian"
- SRN_adj:0 "Sorani"
+ EGL_ADJ:0 "Egilian"
+ SRN_ADJ:0 "Sorani"
  bt_otto_crimea_tweaks_tt:0 "§YCrimea§! becomes our §Ymarch§!, and we gain §Yclaims§! on the heathen-held land in their vicinity"           #In a perfect world I'd figure out the strupid from.root.to.for.what.why strings and make the name dynamic. For now, can't be bothered.
  bt_otto_badboy_crimea_opinion:0 "Aggressive Opportunism in Crimea"
  
