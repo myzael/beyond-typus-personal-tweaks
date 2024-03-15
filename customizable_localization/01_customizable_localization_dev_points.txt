@@ -399,7 +399,9 @@ defined_text = {
     text = {
         localisation_key = dev_points_province_modifier_horde #"\nHas Temple Building: §G+0.01§!"
         trigger = {
-			has_reform = steppe_horde
+			ROOT = {
+				has_reform = steppe_horde
+			}
         }
     }
     text = {
@@ -416,7 +418,9 @@ defined_text = {
     text = {
         localisation_key = dev_points_province_modifier_mongol_empire #"\nHas Temple Building: §G+0.01§!"
         trigger = {
-			has_reform = great_mongol_state_reform
+			ROOT = {
+				has_reform = great_mongol_state_reform
+			}
         }
     }
     text = {
