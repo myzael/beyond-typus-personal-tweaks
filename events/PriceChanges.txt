@@ -2264,13 +2264,14 @@ country_event = {
 			}
 		}
 		calc_true_if = {
-			all_province = {
+			new_world = {
 				trade_goods = gems
-				OR = {
-					continent = new_world
-					continent = north_america
-					continent = south_america
-				}
+			}
+			north_america = {
+				trade_goods = gems
+			}
+			south_america = {
+				trade_goods = gems
 			}
 			amount = 8
 		}

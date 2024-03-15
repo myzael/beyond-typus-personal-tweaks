@@ -125,13 +125,15 @@ country_decisions = {
 			#	add_accepted_culture = greek
 			#}
 			swap_non_generic_missions = yes
-			every_province = {
+			balkan_region = {
 				limit = {
-					OR = {
-						region = balkan_region
-						region = anatolia_region
-					}	#Removed the long and tedious list of various specific provinces in favour of a region and area based approach. For permanent claims, going for just the two regions for now
-					NOT = { is_core = BYZ }
+					NOT = { is_permanent_claim = BYZ }
+				}
+				add_permanent_claim = BYZ
+			}
+			anatolia_region = {
+				limit = {
+					NOT = { is_permanent_claim = BYZ }
 				}
 				add_permanent_claim = BYZ
 			}

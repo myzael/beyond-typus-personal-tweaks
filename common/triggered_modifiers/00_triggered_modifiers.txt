@@ -537,9 +537,9 @@ crusader = {
 		
 		crusade_target = {
 			war_with = ROOT
-			any_province = {
-				controlled_by = root
-			}
+			# any_province = { #BT Cut. I do not understand why this is here. I guess it means the modifier ends when ROOT is fully occupied, but I have no idea what the point is. //Dub
+				# controlled_by = root
+			# }
 		}  
 		land_maintenance = 1.0
 	}

@@ -96,14 +96,16 @@ country_decisions = {
 				duration = 7300
 			}
 			add_prestige = 25
-			every_province = {
+			low_countries_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					OR = {
-						region = low_countries_region
-						area = picardy_area
-					}
-					#NOT = { province_id = 87 }
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { province_id = 1931 }
+				}
+				add_permanent_claim = BEL
+			}
+			picardy_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
 					NOT = { province_id = 1931 }
 				}
 				add_permanent_claim = BEL
@@ -171,7 +173,7 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 3650
 			}
-			every_province = {
+			italy_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -447,13 +449,15 @@ country_decisions = {
 				limit = { NOT = { government_rank = 3 } }
 				set_government_rank = 3
 			}
-			every_province = {
+			balkan_region = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					OR = {
-						region = balkan_region
-						area = carinthia_area
-					}
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ILY
+			}
+			carinthia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ILY
 			}
@@ -586,8 +590,7 @@ country_decisions = {
 						exists = VEN
 					}
 					NOT = {
-						any_province = {
-							region = italy_region
+						italy_region = {
 							owned_by = VEN
 						}
 					}
@@ -597,8 +600,7 @@ country_decisions = {
 						exists = LOM
 					}
 					NOT = {
-						any_province = {
-							region = italy_region
+						italy_region = {
 							owned_by = LOM
 						}
 					}
@@ -613,8 +615,7 @@ country_decisions = {
 						exists = MLO
 					}
 					NOT = {
-						any_province = {
-							region = italy_region
+						italy_region = {
 							owned_by = MLO
 						}
 					}
@@ -624,8 +625,7 @@ country_decisions = {
 						exists = LOM
 					}
 					NOT = {
-						any_province = {
-							region = italy_region
+						italy_region = {
 							owned_by = LOM
 						}
 					}
@@ -640,8 +640,7 @@ country_decisions = {
 						exists = MLO
 					}
 					NOT = {
-						any_province = {
-							region = italy_region
+						italy_region = {
 							owned_by = MLO
 						}
 					}
@@ -651,8 +650,7 @@ country_decisions = {
 						exists = VEN
 					}
 					NOT = {
-						any_province = {
-							region = italy_region
+						italy_region = {
 							owned_by = VEN
 						}
 					}
@@ -880,13 +878,15 @@ country_decisions = {
 		effect = {
 			change_tag = NAJ
 			remove_non_electors_emperors_from_empire_effect = yes
-			every_province = {
+			nafud_area = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					OR = {
-						area = nafud_area
-						area = yamamah_area
-					}
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = NAJ
+			}
+			yamamah_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = NAJ
 			}
