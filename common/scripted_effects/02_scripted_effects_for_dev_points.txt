@@ -1057,7 +1057,7 @@ spend_dev_points_effect = {
 		limit = {
 			is_capital = yes
 			owner = {   #This needs to scope to the owner of the province not the nation in charge
-				total_development = 1000
+				total_development = 2000
 			}
 		}
 		change_variable = {			#Adds 1 to the modifier 
@@ -1076,7 +1076,7 @@ spend_dev_points_effect = {
 		}
 		divide_variable = {		#Applies the 'development cost modifier' modifier
 			which = total_development_for_dev_points
-			value = -2000
+			value = -4000
 		}
 		change_variable = {			#Adds 1 to the modifier 
 			which = local_development_cost_for_dev_points
@@ -1150,6 +1150,10 @@ spend_dev_points_effect = {
 		which = current_dev_points
 		which = base_development_cost_for_dev_points
 	}
+	set_variable = {			
+		which = monarch_point_refund
+		which = base_development_cost_for_dev_points
+	}
 	PREV = {					#Takes away the cost of the province from the dev points	
 		subtract_variable = {
 			which = current_dev_points
@@ -1160,8 +1164,60 @@ spend_dev_points_effect = {
 			which = current_dev_points 
 		}
 		one_decimal = { var = shown_current_dev_points }
+		set_variable = {			
+			which = monarch_point_refund
+			which = 0
+		}
+		change_variable = {			
+			which = monarch_point_refund
+			which = PREV
+		}
 	}
 }
+
+refund_monarch_points_on_dev = {
+	while = {
+		limit = {
+			check_variable = {		
+				which = monarch_point_refund
+				value = 100
+			}
+		}
+		add_$var$_power = 100
+		subtract_variable = {	
+			which = monarch_point_refund
+			value = 100
+		}
+	}
+	while = {
+		limit = {
+			check_variable = {		
+				which = monarch_point_refund
+				value = 10
+			}
+		}
+		add_$var$_power = 10
+		subtract_variable = {	
+			which = monarch_point_refund
+			value = 10
+		}
+	}
+	while = {
+		limit = {
+			check_variable = {		
+				which = monarch_point_refund
+				value = 1
+			}
+		}
+		add_$var$_power = 1
+		subtract_variable = {	
+			which = monarch_point_refund
+			value = 1
+		}
+	}
+}
+
+
 
 # Spending dev points on production   												(used in province scope)
 simulate_development = {		
@@ -1199,7 +1255,7 @@ simulate_development = {
 	owner = {
 		change_estate_land_share = {
 			estate = all
-			share = -0.2
+			share = -0.1
 		}
 	}
 }

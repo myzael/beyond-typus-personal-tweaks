@@ -37,17 +37,17 @@ is_in_any_colonial_region = {
 		# colonial_region = colonial_placeholder_21
 		
 		#These are for new bt regions for some reason this is ok in vanilla
-		# colonial_region = colonial_cascadia
-		# colonial_region = colonial_northwest_territories
-		# colonial_region = colonial_hudson_bay
-		# colonial_region = colonial_newfoundland
-		# colonial_region = colonial_acadia
-		# colonial_region = colonial_cuba
-		# colonial_region = colonial_hispaniola
-		# colonial_region = colonial_bahamas
-		# colonial_region = colonial_polynesia
-		# colonial_region = colonial_cape
-		# colonial_region = colonial_greenland
+		colonial_region = colonial_cascadia
+		colonial_region = colonial_northwest_territories
+		colonial_region = colonial_hudson_bay
+		colonial_region = colonial_newfoundland
+		colonial_region = colonial_acadia
+		colonial_region = colonial_cuba
+		colonial_region = colonial_hispaniola
+		colonial_region = colonial_bahamas
+		colonial_region = colonial_polynesia
+		colonial_region = colonial_cape
+		colonial_region = colonial_greenland
 	}
 }
 
@@ -83,7 +83,7 @@ has_enough_dev_points_to_dev = {
 				ROOT = {
 					is_capital = yes
 				}
-				total_development = 1000
+				total_development = 2000
 			}
 			variable_arithmetic_trigger = {
 				change_variable = {			#Adds max capital bonus 
@@ -106,7 +106,7 @@ has_enough_dev_points_to_dev = {
 				}
 				divide_variable = {		#Applies the 'development cost modifier' modifier
 					which = total_development_for_dev_points
-					value = -2000
+					value = -4000
 				}
 				change_variable = {			#Adds 1 to the modifier 
 					which = local_development_cost_for_dev_points

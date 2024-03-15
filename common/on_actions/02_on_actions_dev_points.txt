@@ -16,14 +16,14 @@ on_adm_development = {
 # province
 on_dip_development = {
 	province_event = {
-		id = dev_points.5
+		id = dev_points.55
 	}
 }
 
 # province
 on_mil_development = {
 	province_event = {
-		id = dev_points.5
+		id = dev_points.555
 	}
 }
 

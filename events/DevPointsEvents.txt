@@ -167,6 +167,9 @@ province_event = {
 				ROOT = {
 					spend_dev_points_effect = yes
 				}
+				refund_monarch_points_on_dev = {
+					var = adm
+				}
 			}
 		}
 		else_if = {
@@ -181,6 +184,9 @@ province_event = {
 			owner = {
 				ROOT = {
 					spend_dev_points_effect = yes
+				}
+				refund_monarch_points_on_dev = {
+					var = adm
 				}
 			}
 		}
@@ -198,6 +204,9 @@ province_event = {
 				overlord = {
 					ROOT = {
 						spend_dev_points_effect = yes
+					}
+					refund_monarch_points_on_dev = {
+						var = adm
 					}
 				}
 			}
@@ -218,6 +227,9 @@ province_event = {
 				ROOT = {
 					spend_dev_points_effect = yes
 				}
+				refund_monarch_points_on_dev = {
+					var = adm
+				}
 			}
 		}
 		else_if = {
@@ -235,6 +247,9 @@ province_event = {
 					ROOT = {
 					spend_dev_points_effect = yes
 					}
+					refund_monarch_points_on_dev = {
+						var = adm
+					}
 				}
 			}
 		}
@@ -242,6 +257,240 @@ province_event = {
 		
 	option = {
 		name = "dev_points.5.opta"
+		ai_chance = { factor = 1 }
+	}
+}
+province_event = { 					
+    id = dev_points.55
+    title = "dev_points.55.title"
+    desc = "dev_points.55.desc"
+    picture = ECONOMY_eventPicture
+	  
+    is_triggered_only = yes
+    
+    trigger = {
+	}
+	
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					is_subject = no
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+				refund_monarch_points_on_dev = {
+					var = dip
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+				refund_monarch_points_on_dev = {
+					var = dip
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					ai = yes
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				overlord = {
+					ROOT = {
+						spend_dev_points_effect = yes
+					}
+					refund_monarch_points_on_dev = {
+						var = dip
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					NOT = {
+						has_country_flag = let_player_overlord_dev
+					}
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+				refund_monarch_points_on_dev = {
+					var = dip
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					has_country_flag = let_player_overlord_dev
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				overlord = {
+					ROOT = {
+						spend_dev_points_effect = yes
+					}
+					refund_monarch_points_on_dev = {
+						var = dip
+					}
+				}
+			}
+		}
+	}
+		
+	option = {
+		name = "dev_points.55.opta"
+		ai_chance = { factor = 1 }
+	}
+}
+province_event = { 					
+    id = dev_points.555
+    title = "dev_points.555.title"
+    desc = "dev_points.555.desc"
+    picture = ECONOMY_eventPicture
+	  
+    is_triggered_only = yes
+    
+    trigger = {
+	}
+	
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					is_subject = no
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+				refund_monarch_points_on_dev = {
+					var = mil
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					overlord = {
+						ai = yes
+					}
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+				refund_monarch_points_on_dev = {
+					var = mil
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					ai = yes
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				overlord = {
+					ROOT = {
+						spend_dev_points_effect = yes
+					}
+					refund_monarch_points_on_dev = {
+						var = mil
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					NOT = {
+						has_country_flag = let_player_overlord_dev
+					}
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				ROOT = {
+					spend_dev_points_effect = yes
+				}
+				refund_monarch_points_on_dev = {
+					var = mil
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = {
+					is_subject = yes
+					has_country_flag = let_player_overlord_dev
+					overlord = {
+						ai = no
+					}
+				}
+			}
+			owner = {
+				overlord = {
+					ROOT = {
+						spend_dev_points_effect = yes
+					}
+					refund_monarch_points_on_dev = {
+						var = mil
+					}
+				}
+			}
+		}
+	}
+		
+	option = {
+		name = "dev_points.555.opta"
 		ai_chance = { factor = 1 }
 	}
 }
