@@ -35,5 +35,3 @@ Mechanical changes:
 How does this affect monarch point generation?
 -Currently, admin points are generated en masse in order to accomodate expansion by coring. Admin points are one of the least versatile monarch points.
 -This would allow the reduction of base monarch point generation by at least 1, potentially even more, because point 5 has now been solved.
-
-With the development points system in place, the following should be adjusted:
