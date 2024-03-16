@@ -33,6 +33,104 @@
 #I should say this pre-emptily that, because the AI now actually sees value in weird things, such as building additional buildings on a province with other buildings, it hasn't been the easiest to balance these. 
 #Still, I think I've made a decent attempt at making the AI be smart about what buildings it builds, and hopefully, players will enjoy a smarter AI.
 
+#BT More Buildings: For the purposes of the university, declaring college in front for reference.
+college = {
+	cost = 300			#BTAddOn changed from 150. This is late game, vital to the spread of the enlightenment, and generally very important. Furthermore the development of centres of learning and scholarship was more expensive and time consuming than one might think. Changing cost and time to be closer to/higher than the earlier manufactories. Note I'll also increase the enlightenment spread from a uni, so this becomes something to be built in key cities & let spread, not something to spam everywhere at tech 17 for tech spread and dev cost.
+	time = 24			#BTAddOn changed from 12. This is not meant to be spammed when the enlightenment hits to catch up, increased to 4y
+	
+	modifier = {
+		local_institution_spread = 0.33			#BTAddOn new. Fits perfectly in the new tech system =D. Currently 100 percent bonus, which may be a bit much, but on the other hand still requires normal spread, and if a province is advanced enough to have a university, it probably is somwhat cutting edge anyway. Nice counterpoint for new non western tech penalties, too, so a tech minded country in Asia or Africa can still keep up with the spread bonus offsetting tech group spread penalties.
+		local_tax_modifier = 0.1			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		local_production_efficiency = 0.1			#BTAddOn new. Little bonus to sweeten the deal, in case institution spread isn't that important. Make a fair bit of sense, too. Universities do encourage complex economic systems, advanced industry, and improved production methods.
+		base_local_dev_points = 0.05
+		#local_development_cost = -0.20			#BTAddOn removed. I wouldn't say universities aid development per se, so I'm moving this bonus elsewhere. Consider many older uni city examples, Cambrige, Oxford, Siena, Padua, Murcia, Heidelberg, Toulouse. Not really tiny, but not bastions of development and industry the London, Moscow, Berlin, Paris (though Paris did have a uni) etc. ended up moving dev bonus to production buildings to better represent this reality.
+		#allowed_num_of_buildings = 1			#BTAddOn removed. Terrain Overhaul addon (balanced to be enabled alongside misc addon) makes max buildings possible at around 40 development, instead of 100 development, so this isn't neccessary, and also a tad silly, if I may say so... 'Yay, we now have uni so we can build more buildings in our city'.... mkay
+	}
+
+	on_built = {
+		add_development_from_building = {
+			building = university
+			type = tax
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = university
+			type = tax
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			is_state = no
+		}
+		modifier = { #You can spawn enlightenment here if this building is built!
+			factor = 5
+			development = 32
+			is_capital = yes
+			continent = europe
+			NOT = { is_institution_enabled = enlightenment }
+		}
+		modifier = { #You can spread enlightenment here if this building is built!
+			factor = 5
+			development = 20
+			continent = europe
+			FROM = { has_institution = manufactories } #Making it the previous one so AI is prepared.
+		}
+		modifier = { #It seems you're a bit late to the party. Let's fix that.
+			factor = 5
+			development = 20
+			is_institution_enabled = enlightenment
+			FROM = { has_unembraced_institution = enlightenment }
+			continent = europe
+		}
+		
+		################################################################################
+		###############	Almost guaranteeing unis in provinces with real historical universities	###############
+		################################################################################
+		modifier = {
+			factor = 20
+			OR = { #There's a lot of universities missing like the Swedish ones and some in Italy, but who cares.
+				province_id = 4730			#Bologna, 1088
+				province_id = 237			#Oxford, 1096
+				province_id = 183			#Paris (Sorbonne), 1160 (I thought it was older...)
+				province_id = 4370 			# Brian fixed; Cambridge, 1209
+				province_id = 216			#Salamanca, 1218
+				province_id = 4729 			# Brian fixed; Padua, 1222 or older
+				province_id = 121			#Naples, 1224
+				province_id = 196			#Toulouse, 1229
+				province_id = 200			#Montpellier, 1289
+				province_id = 119			#Macerata (Ancona), 1290
+				province_id = 1851			#Coimbra (actually started in Lisbon and moved to Coimbra in 1537, but whatever), 1290
+				province_id = 217			#Alcala (Madrid), 1293
+				province_id = 118			#Rome, 1303
+				province_id = 2976			#Perugia (Umbria), 1308
+				province_id = 116			#Florence, 1321
+				province_id = 115			#Pisa, 1343
+				province_id = 266			#Prague, 1348
+				province_id = 4728			#Pavia, 1361
+				province_id = 262			#Jagiellonian (Krakow), 1364
+				province_id = 134			#Vienna, 1365
+				province_id = 77			#Ruprecht Karl University of Heidelberg, 1386
+				province_id = 113			#Ferrara, 1391
+				province_id = 103			#Turin, 1404
+				province_id = 117			#Siena, 1408
+				province_id = 62			#Leipzig, 1409
+				province_id = 250			#St. Andrews (Fife), 1413
+				province_id = 46			#Rostock, 1419
+				province_id = 168			#Caen, 1432
+				province_id = 124			#Catania (Mesina), 1434
+			}
+		}
+	}
+}
+
 ################################################
 # Tier 1, 15th Century Buildings
 ################################################

@@ -178,6 +178,7 @@ technology = { #The Flute
 	global_colonial_growth  = 	10
 	enable = flute
 	enable = war_galley
+	embassy = yes #BT More Buildings added
 }
 
 technology = { #Wharf
@@ -192,6 +193,7 @@ technology = { #Wharf
 	#range					= 	100			#BTAddOn removed - moves to tach 13
 
 	wharf = yes
+	mb_canal = yes #BT More Buildings added
 
 }
 
@@ -225,6 +227,7 @@ technology = { #Chartered Companies
 	range					= 	100			#BTAddOn new - replacing the tech 11 one
 	trade_efficiency 		= 	0.02
 	enable = brig
+	road_network = yes #BT More Buildings added
 
 }
 
@@ -241,6 +244,7 @@ technology = { #The Galleass
 	tradecompany = yes
 	#num_accepted_cultures = 1
 	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
+	post_office = yes #BT More Buildings added
 
 	
 	enable = galleass
@@ -278,6 +282,7 @@ technology = { #Development of Maritime Law
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
+	#naval_arsenal = yes #BT More Buildings added
 
 }
 
@@ -316,7 +321,7 @@ technology = { #Line of Battle
 	enable = galiot
 	naval_morale			=	0.5
 	may_sow_discontent = yes
-	
+	#admiralty = yes #BT More Buildings added
 	naval_engagement_width = 10
 
 	
@@ -358,6 +363,7 @@ technology = { #Naval Professionalization
 	trade_range				=	20
 	#num_accepted_cultures = 1
 	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
+	#naval_base = yes #BT More Buildings added
 	
 }
 
@@ -417,7 +423,7 @@ technology = { #Heavy Frigates
 	global_colonial_growth  = 	25	
 	#range					=	150			#BTAddOn removed
 	allow_client_states = yes		
-
+	spy_agency = yes #BT More Buildings added
 	
 	enable = heavy_frigate
 }
@@ -522,6 +528,7 @@ technology = { #Joint Stock Companies
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
+	customs_house = yes #BT More Buildings added
 }
 
 technology = { #Midshipmen Cadets

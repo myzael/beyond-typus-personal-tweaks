@@ -98,6 +98,7 @@ technology = {
 	}
 	
 	land_morale = 	0.5
+	earth_rampart = yes #BT More Buildings added	
 	may_drill = yes
 }
 
@@ -114,6 +115,7 @@ technology = {
 
 	land_morale = 	0.5
 	military_tactics 	= 	0.25
+	armory = yes #BT More Buildings added
 }
 
 technology = {
@@ -128,6 +130,7 @@ technology = {
 	supply_limit 		= 	0.2			#BTAddOn changed from 0.5, reducing tech supply limit bonus and increasing development bonus
 	#infantry_shock		= 	0.15			#BTAddOn removed - Part of tech shock and fire overhaul
 	cavalry_shock		= 	0.4
+	march_building = yes #BT More Buildings added
 
 	enable = western_men_at_arms	
 	enable = western_longbow	
@@ -427,6 +430,7 @@ technology = {
 	#Maurician Infantry
 	land_morale 		=	0.5			#BTAddOn changed from 1.0, increasing base morale
 	military_tactics	=	0.25
+	tenaille = yes #BT More Buildings added
 	
 
 	
@@ -501,6 +505,7 @@ technology = {
 	maneuver_value 		= 	0.25
 	cavalry_shock		= 	0.40			#BTAddOn new - Part of tech shock and fire overhaul
 	cavalry_fire		= 	0.20			#BTAddOn new - Part of tech shock and fire overhaul
+	#war_college = yes #BT More Buildings added
 
 		
 	enable = swedish_gallop	
@@ -573,6 +578,10 @@ technology = {
 	
 	#infantry_fire		= 	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
 	artillery_fire 		= 	0.70			#BTAddOn new - Part of tech shock and fire overhaul
+	
+	redoubt = yes #BT More Buildings added
+	arsenal = yes #BT More Buildings added	
+	
 	enable = swivel_cannon		
 	enable = howitzer
 

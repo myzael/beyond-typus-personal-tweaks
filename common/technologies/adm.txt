@@ -93,6 +93,7 @@ technology = { #National Ideas
 
 	allowed_idea_groups = 1
 	production_efficiency	 =	0.02
+	constable = yes #BT More Buildings added
 }
 
 technology = { #Workshop
@@ -118,6 +119,7 @@ technology = { #Renaissance Thought
 	}
 	
 	governing_capacity = 100 #BT Added
+	grain_depot = yes #BT More Buildings added
 	
 	#Noble Republic
 	allowed_idea_groups = 2	
@@ -223,6 +225,7 @@ technology = { #Scientific Experimentation
 	
 	plantations = yes
 	allowed_idea_groups	= 4
+	college = yes #BT More Buildings added
 }
 
 technology = { #Military Administration
@@ -239,6 +242,8 @@ technology = { #Military Administration
 	
 	may_force_march = yes
 	soldier_households = yes
+	treasury_office = yes #BT More Buildings added
+	
 }
 
 technology = { #Metallurgy
@@ -252,6 +257,7 @@ technology = { #Metallurgy
 	}
 	
 	mills = yes
+	mint = yes #BT More Buildings added
 	production_efficiency 	=	0.02
 
 
@@ -288,6 +294,7 @@ technology = { #National Sovereignty
 	}
 	
 	allowed_idea_groups	= 5
+	#royal_palace = yes #BT More Buildings added
 }
 
 technology = { #Cathedral
@@ -319,6 +326,7 @@ technology = { #Absolute Rulership
 	}
 	
 	republican_dictatorship = yes
+	glorious_monument = yes #BT More Buildings added
 }
 
 technology = { #Land Clearance
@@ -444,7 +452,8 @@ technology = { #Modern Bureaucracy
 	governing_capacity = 250 #BT Added
 
 	administrative_efficiency = 0.1
-	development_cost_modifier = -0.1	
+	development_cost_modifier = -0.1
+	tax_assessor = yes #BT More Buildings added	
 }
 
 technology = { #Rotherham Plough

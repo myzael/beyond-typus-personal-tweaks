@@ -2,6 +2,7 @@ Known Issues:
 	Development Points:
 		-	The monarch point costs of the decisions/clickable buttons do not display in the UI if you have +-0 monthly monarch points, achievable by taking the corresponding monarch point privilege. This is unfortunately unfixable.
 		-	You cannot click to develop a province unless you have monarch points corresponding to the given dev cost. This is the unfortunate side-effect of getting the macrobuilder to work with the new system.
+		-	Current generated development points balance is not final, and pending BTMB integration, it will likely not be.
 	Internal Politicks integration:
 		-	No known issues at the moment.
 	Caucasia:
