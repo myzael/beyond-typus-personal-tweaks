@@ -1,0 +1,52 @@
+Known Issues:
+	Development Points:
+		-	The monarch point costs of the decisions/clickable buttons do not display in the UI if you have +-0 monthly monarch points, achievable by taking the corresponding monarch point privilege. This is unfortunately unfixable.
+		-	You cannot click to develop a province unless you have monarch points corresponding to the given dev cost. This is the unfortunate side-effect of getting the macrobuilder to work with the new system.
+	Internal Politicks integration:
+		-	No known issues at the moment.
+	Caucasia:
+		-	Trade goods in the area are likely not final.
+		-	The Collapse of Georgia needs events and/or disaster tweaking. Some work has been done, but it is not final.
+	Horn of Africa:
+		-	The current nudging that has been done is not accurate.
+		-	Tags are missing in the setup, particularly in the southwest.
+		-	Origins missions in the area do not take the new setup into account.
+		-	Religion mechanics for the new Waaq religion does not exist yet.
+		-	Trade goods as well as the general trade setup has not been done.
+		-	The area is missing DPNs.
+		-	(Some) flags for new tags have not been done.
+		-	Name lists for cultures as well as tags (Ship/leader names) are not done.
+	Australia:
+		-	Script (Missions/events/decisions) concerning the Australia colonial region have not been looked at.
+		-	New Aboriginal tags cannot  be given the Aboriginal unit graphics from a DLC without causing a crash for players without the Leviathan DLC that adds them.
+		-	Australian DPNs are unfinished
+		-	There exists no flavour for these nations yet.
+	Lions of the North:
+		-	Missions obtained after forming Scandinavia as Sweden/Denmark/Norway have not been updated.
+		-	Polish/Teutonic missions are currently being balanced and tweaked, but are not scriptified nor finished.
+		-	Other missions introduced in the update have not been touched.
+	Domination:
+		-	Next to none of the Domination DLC mission trees have been updated, except parts of the Muscovite/Russian mission tree.
+	King of Kings:
+		-	KoK mission trees have barely been touched, with some exceptions with regards to the BT setup, such as Mamluks not having a Syrian vassal, QQ having an Iraqi vassal and Georgia being split up.
+		-	KoK Byzantine missions will not be touched because Byzantine Resurgence.
+	Other BT content:
+		-	The Ruthenian mission tree is currently unfinished in some parts, especially the flavour part towards the end of it.
+		-	Monuments will end up with descriptions, but this is a work in progress.
+
+Future plans:
+	-	We plan on introducing a tweak to the point cost of cores, as follows:
+		o	Territorial Coring no longer costs admin points
+		o	In order to state a province, there must be no separatism in it
+		o	Overextension modifiers are to be tweaked to better suit attempts at suppressing local rebellions impacting your nation
+		o	Increase base coring time to 10 years
+	-	A revisal of the monarch point generation is probably required. Base generation has been reduced to 2 instead of 3, but monarch points are very plentiful in the lategame yet rare in the earlygame. Alternatively, additional ways of spending monarch points to boost a variety of different parts of your nation is being looked into.
+	-	Colonisation of the Americas appears to be slower than intended. We believe a big issue is that African provinces have gotten double their dev, whereas Americas have not. This, we believe, results in the AI overvaluing Africa. While this is historical for the likes of Portugal, it is less so for other European colonisers. We have however had games where Africa is not colonised at all, so this is merely a theory. It is also possible the native mechanics introduced in Leviathan is a culprit. 
+	-	The mod “More Buildings” will be integrated into BT proper. This, as a result of the new development points system allowing for more diverse building options, and the fact that area-wide buildings are bad, and coupled with new features such as Expand Infrastructure, tweaking them to become manufactory-style buildings is preferrable.
+	-	Concentrating development should be reworked to grant dev points instead of dev in your capital.
+	-	Exploit development should be reworked as to allow the exploitation of production dev in non-coastal provinces, but what it should do instead is not figured out yet.
+	-	The decisions trading monarch points for modifiers will become clickable buttons instead of what they are now.
+	-	Monuments are pending rebalancing in general.
+	-	There are new planned monuments for Ruthenia/Russia, however until monument descriptions are done, they will not be implemented.
+	-	Swedish LoTN missions will integrate with the Peasants estate.
+	-	Eventually, the plan is to ensure all mission trees will be matched to BT’s setup.
