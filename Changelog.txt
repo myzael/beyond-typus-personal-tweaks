@@ -16,7 +16,7 @@ BT16
  - (Harbivore) Added English Marcher Lordships. Like normal marches but you can integrate them and also steal their generals
  - (Harbivore) Added mercury events giving gold to 3 provinces where historically cinnabar was mined and rose to prominence during the discovery of New World gold mines in Castile, Slovenia and Serbia.
  - (Dub) Added an Ayyubid Administration government mechanic to the Ayyubid Sultanate government reform, allowing the choice of one of three interactions once every 5 years:
-	 - Draft Mamluks: Gain 1 years worth of manpower from stated provinces of unaccepted cultures of non-state religion (Will draft Mamluks upon the release of 1.36).
+	 - Draft Mamluks: If King of Kings DLC is installed, drafts Mamluks unique units. Else, gain 1 years worth of manpower from stated provinces of unaccepted cultures of non-state religion.
 	 - Sponsor Shayk: Gain a random 50% discounted advisor of skill level 2/3 depending on if monthly income is below/above 35.
 	 - Grant Iqta: Gain a general with current army tradition + 25.
  - New idea sets for the following nations:
@@ -39,6 +39,9 @@ BT16
 	- Conquest missions spanning Siberia, Russia, Ruthenia, Poland, Finland, Baltics, Pontic Steppes as well as Caucasia.
 	- Flavour missions expanding akin to what the Russian Domination tree does, focusing on internal matters of Ruthenia such as production, religion, development, estates, court, army (Streltsy + Cossacks) and more.
 	- The mission tree results in mechanics available to Russia becoming available to Ruthenia as well in some ways, such as the Finnish PU subject, the Serfdom chain, as well as government reforms.
+- (Harbivore) Added a new mechanic: Development Points
+	- This mechanic replaces the use of monarch points to develop provinces. Instead, provinces, based on built buildings and owner ideas/modifiers/estates/warring, generate development points.
+	- Harbivore, go write the rest of this changlog //Dub
 
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
@@ -52,6 +55,7 @@ BT16
  - (Dub) Semi-fixed the readability of the modifiers that apply for different subjects by adding spacing between different modifiers.
 	- Note that this cannot be properly fixed without writing massive amounts of custom localisation, as the game does not procure localisation when checking for government abilities.
  - (Harbivore) Fixed error with American dynamic CoT events
+ - (Dub) Fixed SRN_ADJ & EGL_ADJ localisation, again (?)
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
