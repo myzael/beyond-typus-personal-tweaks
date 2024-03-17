@@ -9,9 +9,9 @@
  # building_redoubt:1 "Redoubt"
  # redoubt_short:1 "Redoubt"
  # redoubt:1 "Redoubt"
- # building_mb_canal:0 "Canal"
- # mb_canal_short:0 "Canal"
- # mb_canal:0 "Canal"
+ building_mb_canal:0 "Canal"
+ mb_canal_short:0 "Canal"
+ mb_canal:0 "Canal"
  
  # #Area modifiers
  # post_office_area_modifier:0 "Post Office in Area"
