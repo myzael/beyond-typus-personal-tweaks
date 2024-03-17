@@ -1,15 +1,15 @@
 ﻿l_english:
  #Changing every reference of customs_house to Stock Exchange & vice versa
- building_stock_exchange:1 "Customs House"
- stock_exchange_short:1 "Customs House"
- stock_exchange:1 "Customs House"
- building_customs_house:1 "Stock Exchange"
- customs_house_short:1 "Stock Exchange"
- customs_house:1 "Stock Exchange"
+ # building_stock_exchange:1 "Customs House"
+ # stock_exchange_short:1 "Customs House"
+ # stock_exchange:1 "Customs House"
+ # building_customs_house:1 "Stock Exchange"
+ # customs_house_short:1 "Stock Exchange"
+ # customs_house:1 "Stock Exchange"
  #Renaming Royal Palace to just Palace
- building_royal_palace:1 "Palace"
- royal_palace_short:1 "Palace"
- royal_palace:1 "Palace"
+ # building_royal_palace:1 "Palace"
+ # royal_palace_short:1 "Palace"
+ # royal_palace:1 "Palace"
  #Fixing Engrish
  building_constable:0 "Constablary"
  constable_short:1 "Constablary"
@@ -19,5 +19,5 @@
  grain_depot:1 "Granary"
  
  #Renaming existing building categories
- NAVY:1 "Navy & Coastal"
+ #NAVY:1 "Navy & Coastal"
  

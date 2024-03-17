@@ -912,42 +912,42 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_customs_house"
-		texturefile = "gfx//interface//buildings//latin_stock_exchange.tga"
+		texturefile = "gfx//interface//buildings//latin_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_customs_house_easterngfx"
-		texturefile = "gfx//interface//buildings//eastern_stock_exchange.tga"
+		texturefile = "gfx//interface//buildings//eastern_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_customs_house_asiangfx"
-		texturefile = "gfx//interface//buildings//chinese_stock_exchange.tga"
+		texturefile = "gfx//interface//buildings//chinese_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_customs_house_africangfx"
-		texturefile = "gfx//interface//buildings//african_stock_exchange.tga"
+		texturefile = "gfx//interface//buildings//african_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_customs_house_indiangfx"
-		texturefile = "gfx//interface//buildings//indian_stock_exchange.tga"
+		texturefile = "gfx//interface//buildings//indian_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_customs_house_muslimgfx"
-		texturefile = "gfx//interface//buildings//muslim_stock_exchange.tga"
+		texturefile = "gfx//interface//buildings//muslim_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_customs_house_southamericagfx"
-		texturefile = "gfx//interface//buildings//southamerica_stock_exchange.tga"
+		texturefile = "gfx//interface//buildings//southamerica_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_customs_house_northamericagfx"
-		texturefile = "gfx//interface//buildings//northamerica_stock_exchange.tga"
+		texturefile = "gfx//interface//buildings//northamerica_customs_house.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
@@ -1152,42 +1152,42 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_stock_exchange"
-		texturefile = "gfx//interface//buildings//latin_customs_house.tga"
+		texturefile = "gfx//interface//buildings//latin_stock_exchange.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_stock_exchange_easterngfx"
-		texturefile = "gfx//interface//buildings//eastern_customs_house.tga"
+		texturefile = "gfx//interface//buildings//eastern_stock_exchange.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_stock_exchange_asiangfx"
-		texturefile = "gfx//interface//buildings//chinese_customs_house.tga"
+		texturefile = "gfx//interface//buildings//chinese_stock_exchange.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_stock_exchange_africangfx"
-		texturefile = "gfx//interface//buildings//african_customs_house.tga"
+		texturefile = "gfx//interface//buildings//african_stock_exchange.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_stock_exchange_indiangfx"
-		texturefile = "gfx//interface//buildings//indian_customs_house.tga"
+		texturefile = "gfx//interface//buildings//indian_stock_exchange.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_stock_exchange_muslimgfx"
-		texturefile = "gfx//interface//buildings//muslim_customs_house.tga"
+		texturefile = "gfx//interface//buildings//muslim_stock_exchange.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_stock_exchange_southamericagfx"
-		texturefile = "gfx//interface//buildings//southamerica_customs_house.tga"
+		texturefile = "gfx//interface//buildings//southamerica_stock_exchange.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
 		name = "GFX_stock_exchange_northamericagfx"
-		texturefile = "gfx//interface//buildings//northamerica_customs_house.tga"
+		texturefile = "gfx//interface//buildings//northamerica_stock_exchange.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
