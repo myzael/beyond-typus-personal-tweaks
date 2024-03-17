@@ -399,23 +399,23 @@ country_event = {
 			factor = 20
 		}
 		custom_tooltip = flavor_ara7_naples_goes_free
-		tooltip = { # BT Addition
-			if = {
-				limit = {
-					sicily_area = {
-						owned_by = NAP
-					}
-				}
-				sicily_area = {
-					limit = {
-						owned_by = NAP
-					}
-					add_core = ROOT
-					remove_core = NAP
-					cede_province = ROOT
-				}
-			}
-		}
+		# tooltip = { # BT Addition				#BT removed because is ahistorical due to poorly written wikipedia article
+			# if = {
+				# limit = {
+					# sicily_area = {
+						# owned_by = NAP
+					# }
+				# }
+				# sicily_area = {
+					# limit = {
+						# owned_by = NAP
+					# }
+					# add_core = ROOT
+					# remove_core = NAP
+					# cede_province = ROOT
+				# }
+			# }
+		# }
 		hidden_effect = {
 			NAP = {
 				country_event = { id = flavor_ara.8 }
@@ -457,21 +457,23 @@ country_event = {
 		PAP = {
 			country_event = { id = flavor_ara.9 days = 1 }
 		}
-		if = { # BT
-			limit = {
-				sicily_area = {
-					owned_by = NAP
-				}
-			}
-			sicily_area = {
-				limit = {
-					owned_by = NAP
-				}
-				add_core = ARA
-				remove_core = NAP
-				cede_province = ARA
-			}
-		}
+		# tooltip = { # BT Addition				#BT removed because is ahistorical due to poorly written wikipedia article
+			# if = {
+				# limit = {
+					# sicily_area = {
+						# owned_by = NAP
+					# }
+				# }
+				# sicily_area = {
+					# limit = {
+						# owned_by = NAP
+					# }
+					# add_core = ROOT
+					# remove_core = NAP
+					# cede_province = ROOT
+				# }
+			# }
+		# }
 		break_union = ARA
 		hidden_effect = {
 			if = { 
@@ -511,21 +513,23 @@ country_event = {
 		PAP = {
 			country_event = { id = flavor_ara.10 days = 1 }
 		}
-		if = { # BT
-			limit = {
-				sicily_area = {
-					owned_by = ROOT
-				}
-			}
-			sicily_area = {
-				limit = {
-					owned_by = ROOT
-				}
-				add_core = ARA
-				remove_core = NAP
-				cede_province = ARA
-			}
-		}
+		# tooltip = { # BT Addition				#BT removed because is ahistorical due to poorly written wikipedia article
+			# if = {
+				# limit = {
+					# sicily_area = {
+						# owned_by = NAP
+					# }
+				# }
+				# sicily_area = {
+					# limit = {
+						# owned_by = NAP
+					# }
+					# add_core = ROOT
+					# remove_core = NAP
+					# cede_province = ROOT
+				# }
+			# }
+		# }
 		set_country_flag = naples_submits_to_the_pope
 	}
 }

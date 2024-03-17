@@ -5,6 +5,13 @@ union = {
 	start_date = 1442.3.3
 	end_date = 1458.6.27
 }
+# Aragon and Sicily, Alfons V/Alfonso I
+union = {			#BT Added not sure about the end date
+	first = ARA
+	second = SIC
+	start_date = 1444.11.11
+	end_date = 1500.6.27
+}
 
 # Edward and Leonor of Aragon
 royal_marriage = {

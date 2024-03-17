@@ -1,3 +1,4 @@
 
 add_accepted_culture = griko
-add_accepted_culture = sicilian
+historical_friend = SIC
+historical_friend = PAP
