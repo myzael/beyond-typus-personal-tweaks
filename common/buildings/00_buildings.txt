@@ -209,7 +209,7 @@ workshop = {
 	modifier = {
 		local_development_cost = -0.1			#BTAddOn new. A little non-cash boost to make this building not worthless when it is too late in the game to make your ducats back from the cost to build it. Note the corresponding dev cost reduction has been removed from universities, where I felt it made less logical sense. Here, production and industry encourage development.
 		local_production_efficiency = 0.5			#BTAddOn changed from 0.5. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces).
-		base_local_dev_points = 0.04
+		base_local_dev_points = 0.02
 	}
 	on_built = {
 		add_development_from_building = {
@@ -2061,7 +2061,7 @@ counting_house = {
 	modifier = {
 		local_development_cost = -0.2			#BTAddOn new. A little non-cash boost to make this building not worthless when it is too late in the game to make your ducats back from the cost to build it. Note the corresponding dev cost reduction has been removed from universities, where I felt it made less logical sense. Here, production and industry encourage development.
 		local_production_efficiency = 1			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
-		base_local_dev_points = 0.08
+		base_local_dev_points = 0.04
 	}
 
 	on_built = {
