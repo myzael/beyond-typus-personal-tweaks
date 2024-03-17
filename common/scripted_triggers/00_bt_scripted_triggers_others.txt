@@ -156,6 +156,7 @@ is_march_or_similar_subject = {
 		is_subject_of_type = hereditary_pronoia_subject_type
 		is_subject_of_type = pronoia_subject_type
 		is_subject_of_type = bt_english_march
+		is_subject_of_type = bt_cossack_host
 	}
 }
 
