@@ -603,23 +603,15 @@ march_building = {
 
 	build_trigger = {
 		owner = {
-			is_march = yes
+			is_march_or_similar_subject = yes
 		}
-		#This does NOT work. Apparently FROM in this case is not the overlord, but rather the province owner.
-		# FROM = {  #Test logic just to see whether it actually checks for province owner, or whether it checks for builder country.
-			# NOT = { is_subject = yes }
-		# }
 		is_capital = yes
 	}
 
 	keep_trigger = {
 		owner = {
-			is_march = yes
+			is_march_or_similar_subject = yes
 		}
-		#This does NOT work. Apparently FROM in this case is not the overlord, but rather the province owner.
-		# FROM = {  #Test logic just to see whether it actually checks for province owner, or whether it checks for builder country.
-			# NOT = { is_subject = yes }
-		# }
 		is_capital = yes
 	}
 	
