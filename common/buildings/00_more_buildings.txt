@@ -21,6 +21,31 @@ road_network = {
 		province_trade_power_modifier = 0.25 #Toll roads
 		allowed_num_of_buildings = 2 #Adding a bit of a reason to actually build roads.
 	}
+
+	on_built = {
+		add_development_from_building = {
+			building = road_network
+			type = tax
+			value = 1
+		}
+		add_development_from_building = {
+			building = road_network
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = road_network
+			type = tax
+			value = 1
+		}
+		remove_development_from_building = {
+			building = road_network
+			type = production
+			value = 1
+		}
+	}
 	
 	ai_will_do = {
 		factor = 10 #The AI does consider the trade power, but I did not see a single road being built, so increasing this for now.
@@ -44,6 +69,31 @@ mb_canal = {
 		local_development_cost = -0.2 #Canals allow trade, thus furthering development
 		province_trade_power_modifier = 0.25 #Promotes trade.
 		allowed_num_of_buildings = 2 #Adding a bit of a reason to actually build canals.
+	}
+
+	on_built = {
+		add_development_from_building = {
+			building = mb_canal
+			type = tax
+			value = 1
+		}
+		add_development_from_building = {
+			building = mb_canal
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = mb_canal
+			type = tax
+			value = 1
+		}
+		remove_development_from_building = {
+			building = mb_canal
+			type = production
+			value = 1
+		}
 	}
 	
 	ai_will_do = {
@@ -100,7 +150,7 @@ grain_depot = {
 	}
 }
 
-#Manufactory(-ish)
+#Manufactory
 
 mint = {
 	#manufactory = {
@@ -228,20 +278,159 @@ mint = {
 	}
 }
 
+tax_assessor = { 
+	manufactory = {
+		all
+	}
+
+	bonus_manufactory = { # Will apply an extra modifier if these goods
+		paper
+		bt_trade_good_books
+		dyes
+		slaves
+	}
+	
+	cost = 500	
+	time = 36			
+	modifier = {
+		tax_income = 15
+		local_tax_modifier = 0.5
+	}
+	bonus_modifier = {
+		tax_income = 15
+		local_tax_modifier = 0.5
+	}
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
+	on_built = {
+		add_development_from_building = {
+			building = tax_assessor
+			type = tax
+			value = 3
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = tax_assessor
+			type = tax
+			value = 3
+		}
+	}
+	on_obsolete = {
+	}
+	
+	
+	
+	ai_will_do = {
+		factor = 1 #Removed all factors.
+		modifier = {
+			factor = 40 #Apparently the AI seems to see *some* sort of value in these buildings with manpower modifiers and forcelimit modifiers.
+			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
+			OR = {
+				AND = {
+					OR = {
+						trade_goods = naval_supplies
+						trade_goods = fish
+						trade_goods = salt
+					}
+					FROM = { dip_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = copper
+						trade_goods = iron
+					}
+					FROM = { mil_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = wool
+						trade_goods = cloth
+						trade_goods = silk
+						trade_goods = dyes
+						trade_goods = bt_trade_good_books
+					}
+					FROM = { adm_tech = 11 }
+				}
+				AND = {
+					OR = {
+						trade_goods = coffee
+						trade_goods = cotton
+						trade_goods = sugar
+						trade_goods = tobacco
+						trade_goods = tea
+						trade_goods = cocoa
+					}
+					FROM = { adm_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = ivory
+						trade_goods = slaves
+						trade_goods = spices
+						trade_goods = cloves
+						trade_goods = fur
+						trade_goods = incense
+					}
+					FROM = { dip_tech = 14 }
+				}
+				AND = {
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = bt_trade_good_beer
+						trade_goods = bt_trade_good_fruit
+						trade_goods = bt_trade_good_apiculture
+					}
+					FROM = { adm_tech = 6 }
+				}
+				AND = {
+					OR = {
+						trade_goods = paper
+						trade_goods = gems
+						trade_goods = tropical_wood
+						trade_goods = glass
+						trade_goods = chinaware
+					}
+					FROM = { adm_tech = 16 }
+				}
+				AND = {
+					trade_goods = coal
+					FROM = { adm_tech = 21 }
+				}
+			}
+		}
+	}
+}
+
 #Army Recruitment
 armory = {
 	cost = 50			#Building an armoury should not cost much.
 	time = 12
 	
 	modifier = {
-		#local_regiment_cost = -0.125
-		#regiment_recruit_speed = -0.25
 		supply_limit = 1
 		supply_limit_modifier = 0.50
 	}
+
+	on_built = {
+		add_development_from_building = {
+			building = armory
+			type = manpower
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = armory
+			type = manpower
+			value = 1
+		}
+	}
 	
 	ai_will_do = {
-		factor = 40 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01. NOTE: AI seems to see some value in supply limit, so lowering.
+		factor = 20 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01. NOTE: AI seems to see some value in supply limit, so lowering.
 		modifier = {
 			factor = 0.2
 			is_state = no
@@ -260,10 +449,25 @@ arsenal = {
 	make_obsolete = armory
 	
 	modifier = {
-		local_regiment_cost = -0.25
-		regiment_recruit_speed = -0.50 			#Meant to be a bigger boost than the conscription center, but stacks with it. And before you point out this makes a total of -75%, I'm fine with that.
 		supply_limit = 2
 		supply_limit_modifier = 1.00
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = arsenal
+			obsolete_building = armory
+			type = manpower
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = arsenal
+			type = manpower
+			value = 2
+		}
 	}
 	
 	ai_will_do = {
@@ -281,8 +485,8 @@ arsenal = {
 
 #Navy Recruitment
 
-naval_arsenal = {
-	cost = 100			#Following the trend of the armoury
+naval_arsenal = { #Actually Shipyard in-game
+	cost = 50			#Following the trend of the armoury
 	time = 12
 	
 	build_trigger = {
@@ -290,16 +494,53 @@ naval_arsenal = {
 	}
 	
 	modifier = {
-		local_ship_cost = -0.25			
-		ship_recruit_speed = -0.375
+		local_ship_cost = -0.10			
+		ship_recruit_speed = -0.10
+		province_trade_power_value = 1
+		base_local_dev_points = 0.02
+	}
+	
+	on_built = {
+		add_development_from_building = {
+			building = naval_arsenal
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = naval_arsenal
+			type = production
+			value = 1
+		}
 	}
 	
 	ai_will_do = {
-		factor = 80 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		factor = 20 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to get a massive boost to this building on a fort province. Don't know why, but let's reduce it.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.01
+			NOT = { num_free_building_slots = 2 }
+		}
 	}
 }
 
-naval_base = {
+naval_base = { #Actually Grand Shipyard in-game
 	cost = 200			#Following the trend of the armoury
 	time = 24
 
@@ -310,48 +551,265 @@ naval_base = {
 	make_obsolete = naval_arsenal
 	
 	modifier = {
-		local_ship_cost = -0.50			
-		ship_recruit_speed = -0.75
+		local_ship_cost = -0.20		
+		ship_recruit_speed = -0.20
+		province_trade_power_value = 2.5
+		base_local_dev_points = 0.04
+	}
+
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = naval_base
+			obsolete_building = naval_arsenal
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = naval_base
+			type = production
+			value = 2
+		}
 	}
 	
 	ai_will_do = {
-		factor = 160 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		factor = 80 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
+		modifier = {
+			factor = 0.6
+			local_autonomy = 30			
+		}
+		modifier = {
+			factor = 0.6
+			local_autonomy = 60			
+		}
+		modifier = {
+			factor = 0.2
+			is_state = no
+		}
+		modifier = { #The AI seems to get a massive boost to this building on a fort province. Don't know why, but let's reduce it.
+			factor = 0.1
+			has_fort_building_trigger = yes
+		}
+		modifier = { #Do NOT use your last building slot on one of these buildings.
+			factor = 0.01
+			NOT = { num_free_building_slots = 2 }
+		}
 	}
 }
 
-#Level 3 Taxation
+#Taxation
 
-tax_assessor = { #Will need re-assessment
-	make_obsolete = cathedral
+constable = {
+	cost = 50
+	time = 12
 	
-	cost = 300	#Lowered a bit to compensate for the lack of missionary strength.		
-	time = 48			
+	build_trigger = {
+	}
+	
+	keep_trigger = { 
+	}
+	
 	modifier = {
-		#local_missionary_strength = 0.02			#BTAddOn changed from 0.03, might slow conversion slightly, but avg dev is also lower, so that might be a good thing
-		local_tax_modifier = 1.0 
+		local_tax_modifier = 0.40
+		base_local_dev_points = 0.01
+	}
+	
+	on_built = {
+		#on_built_tax_building_effect = yes #We do not want these as they are all religious in nature.
+		#on_province_tax_building_built_estate_privileges_effect = yes #We do not want these as they are all religious in nature.
+		add_development_from_building = {
+			building = constable
+			type = tax
+			value = 1
+		}
+	}
+	on_destroyed = {
+		#on_province_tax_building_destroyed_estate_privileges_effect = yes #We do not want these as they are all religious in nature.
+		remove_development_from_building = {
+			building = constable
+			type = tax
+			value = 1
+		}
+	}
+	on_obsolete = {
 	}
 	
 	ai_will_do = {
-		factor = 1 #Removed all factors.
+		factor = 1 #AI sees value in this building, so factor will be 1.
+		modifier = { #4 BT
+			factor = 2
+			base_tax = 4
+		}
+		modifier = { #8 BT
+			factor = 3
+			base_tax = 8
+		}
+		modifier = { #12 BT
+			factor = 4
+			base_tax = 12
+		}
 	}
 }
 
-#Level 3 Production
-
-customs_house = { #Is in reality the Stock Exchange.
-	cost = 400			
-	time = 48			
+treasury_office = {
+	cost = 200
+	time = 24
 	
-	make_obsolete = counting_house
 	modifier = {
-		local_development_cost = -0.3			#BTAddOn new. A little non-cash boost to make this building not worthless when it is too late in the game to make your ducats back from the cost to build it. Note the corresponding dev cost reduction has been removed from universities, where I felt it made less logical sense. Here, production and industry encourage development.
-		local_production_efficiency = 1			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		local_tax_modifier = 0.6
+		base_local_dev_points = 0.02
+	}
+	
+	on_built = {
+		#on_built_tax_building_effect = yes #We do not want these as they are all religious in nature.
+		#on_province_tax_building_built_estate_privileges_effect = yes #We do not want these as they are all religious in nature.
+		add_development_from_upgrading_or_building = {
+			building = treasury_office
+			obsolete_building = constable
+			type = tax
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		#on_province_tax_building_destroyed_estate_privileges_effect = yes #We do not want these as they are all religious in nature.
+		remove_development_from_building = {
+			building = treasury_office
+			type = tax
+			value = 2
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1 #AI sees value in this building, so factor will be 1.
+		modifier = { #4 BP
+			factor = 2
+			base_production = 4
+		}
+		modifier = { #8 BP
+			factor = 3
+			base_production = 8
+		}
+		modifier = { #12 BP
+			factor = 4
+			base_production = 12
+		}	
+	}
+}
+
+
+#Production
+post_office = {
+	cost = 50			#An area-wide effect seems sensible for this price.
+	time = 12
+	
+	modifier = {
+		trade_value_modifier = 0.5
+		local_institution_spread = 0.25 #Just makes sense.
+		base_local_dev_points = 0.02
 	}
 	
 	allow_in_gold_provinces = no
 	
+	on_built = {
+		add_development_from_building = {
+			building = post_office
+			type = production
+			value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = post_office
+			type = production
+			value = 1
+		}
+	}
+	on_obsolete = {
+	}
+	
+	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
+	on_built = {
+	}
+
+	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
+	on_destroyed = { #There's no actual remove province triggered modifier command, is there?
+	}
+	
 	ai_will_do = {
-		factor = 1.34 #Slightly buffed factor to account for the slightly higher cost.
+		factor = 6 #Doubled in comparison to workshop because trade value is not seen as well by the AI.
+		modifier = { #Mainly to promote this building over others.
+			factor = 5
+			base_production = 5
+		}
+		modifier = { #Mainly to promote this building over others.
+			factor = 5
+			base_production = 10
+		}
+		modifier = { #Encourage if a proper manufactory was built in the province
+			factor = 10
+			has_manufactory_no_custom_tooltip_trigger = yes
+		}
+		modifier = { #Strongly encourage if you are the strongest trade power in the node.
+			factor = 5
+			is_strongest_trade_power = FROM
+		}
+	}
+}
+
+customs_house = {
+	cost = 200			
+	time = 24			
+	
+	make_obsolete = post_office
+	modifier = {
+		trade_value_modifier = 1			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		local_institution_spread = 0.5 #Just makes sense.
+		base_local_dev_points = 0.04
+	}
+	
+	allow_in_gold_provinces = no
+	
+	on_built = {
+		add_development_from_upgrading_or_building = {
+			building = customs_house
+			obsolete_building = post_office
+			type = production
+			value = 2
+			upgrade_value = 1
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = customs_house
+			type = production
+			value = 2
+		}
+	}
+	on_obsolete = {
+	}
+	
+	ai_will_do = {
+		factor = 10 #Doubled in comparison to counting house because trade value is not seen as well by the AI.
+		modifier = { #Mainly to promote this building over others.
+			factor = 5
+			base_production = 5
+		}
+		modifier = { #Mainly to promote this building over others.
+			factor = 5
+			base_production = 10
+		}
+		modifier = { #Encourage if a proper manufactory was built in the province
+			factor = 10
+			has_manufactory_no_custom_tooltip_trigger = yes
+		}
+		modifier = { #Strongly encourage if you are the strongest trade power in the node.
+			factor = 5
+			is_strongest_trade_power = FROM
+		}
 	}
 }
 
@@ -382,91 +840,6 @@ march_building = {
 	
 	ai_will_do = {
 		factor = 500 #AI sees no value in this building, so this brings it to 1% yearly return, i.e AI will build it.
-	}
-}
-
-embassy = {
-	cost = 500			#I think this is sensible, considering you only ever build 1 per subject.
-	time = 48
-
-	build_trigger = {
-		owner = {
-			is_subject = yes
-		}
-		is_capital = yes
-	}
-
-	keep_trigger = {
-		owner = {
-			is_subject = yes
-		}
-		is_capital = yes
-	}
-	
-	modifier = {
-		liberty_desire = -15
-	}
-	
-	ai_will_do = {
-		factor = 500 #AI sees no value in this building, so this brings it to 1% yearly return, i.e AI will build it.
-	}
-}
-
-spy_agency = {
-	cost = 500			#I think this is sensible, considering you only ever build 1 per subject.
-	time = 48
-
-	build_trigger = {
-		owner = {
-			is_subject = yes
-		}
-		is_capital = yes
-	}
-
-	keep_trigger = {
-		owner = {
-			is_subject = yes
-		}
-		is_capital = yes
-	}
-	
-	modifier = {
-		fabricate_claims_cost = -0.33 
-		administrative_efficiency = 0.1 #This building is here as a way of buffing subjects a bit.
-	}
-	
-	ai_will_do = {
-		factor = 500 #AI sees no value in this building, so this brings it to 1% yearly return, i.e AI will build it.
-	}
-}
-
-#Area-wide buildings
-
-post_office = {
-	cost = 250			#An area-wide effect seems sensible for this price.
-	time = 36
-
-	build_trigger = {
-	}
-	
-	keep_trigger = { #Copying vanilla for now.
-	}
-	
-	modifier = {
-		local_institution_spread = 0.5
-		province_trade_power_modifier = 0.25
-	}
-	
-	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-	on_built = {
-	}
-
-	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-	on_destroyed = { #There's no actual remove province triggered modifier command, is there?
-	}
-	
-	ai_will_do = {
-		factor = 1.5 #AI sees value in this building, so factor will be 1.5 (accounting for the vanilla 1.5 factor)
 	}
 }
 
@@ -502,7 +875,7 @@ glorious_monument = {
 	}
 	
 	ai_will_do = {
-		factor = 200 #AI sees no value in this building, so this brings it to 0.8% yearly return
+		factor = 500 #AI sees no value in this building, so this brings it to 0.8% yearly return
 		#Dynamix
 		modifier = {
 			factor = 2
@@ -543,88 +916,33 @@ glorious_monument = {
 	}
 }
 
-treasury_office = {
-	cost = 250			#An area-wide effect seems sensible for this price.
-	time = 36
+spy_agency = {
+	cost = 500			#I think this is sensible, considering you only ever build 1 per subject.
+	time = 48
 
-	allow_in_gold_provinces = no
-	
 	build_trigger = {
+		owner = {
+			is_subject = yes
+		}
+		is_capital = yes
 	}
-	
-	keep_trigger = { #Copying vanilla for now
+
+	keep_trigger = {
+		owner = {
+			is_subject = yes
+		}
+		is_capital = yes
 	}
 	
 	modifier = {
-		#Area-wide effects:
-		trade_goods_size_modifier = 0.25
-	}
-	
-	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-	on_built = {
-	}
-
-	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-	on_destroyed = { #There's no actual remove province triggered modifier command, is there?
+		fabricate_claims_cost = -0.33 
+		administrative_efficiency = 0.1 #This building is here as a way of buffing subjects a bit.
 	}
 	
 	ai_will_do = {
-		factor = 1 #AI sees value in this building, so factor will be 1.
-		modifier = { #4 BP
-			factor = 2
-			base_production = 4
-		}
-		modifier = { #8 BP
-			factor = 3
-			base_production = 8
-		}
-		modifier = { #12 BP
-			factor = 4
-			base_production = 12
-		}	
+		factor = 500 #AI sees no value in this building, so this brings it to 1% yearly return, i.e AI will build it.
 	}
 }
-
-constable = {
-	cost = 250			#An area-wide effect seems sensible for this price.
-	time = 36
-	
-	build_trigger = {
-	}
-	
-	keep_trigger = { 
-	}
-	
-	modifier = {
-		#Area-wide effects:
-		local_tax_modifier = 0.33
-	}
-	
-	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-	on_built = {
-	}
-
-	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-	on_destroyed = {
-	}
-	
-	ai_will_do = {
-		factor = 1 #AI sees value in this building, so factor will be 1.
-		modifier = { #4 BT
-			factor = 2
-			base_tax = 4
-		}
-		modifier = { #8 BT
-			factor = 3
-			base_tax = 8
-		}
-		modifier = { #12 BT
-			factor = 4
-			base_tax = 12
-		}
-	}
-}
-
 
 
 
