@@ -7029,7 +7029,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			name = "tax_assessor_cost_cost"
+			name = "tax_assessor_cost"
 			position = { x = 373 y = 470 }
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }	
