@@ -260,8 +260,9 @@ temple = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.01			#BTAddOn new effect. Giving the temple the same bonus of this building's upgrade, simply weaker. Makes it more useful when it is too late in the game to make money back from building cost.
-		local_tax_modifier = 0.4			#BTAddOn changed from 0.4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
-		base_local_dev_points = 0.02
+		#local_tax_modifier = 0.4			#BTAddOn changed from 0.4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		local_culture_conversion_cost = -0.2
+		local_religious_conversion_resistance = 0.1
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -357,27 +358,99 @@ temple = {
 	on_obsolete = {
 	}
 	ai_will_do = {
-		#Vanilla base factor: 1. 
-		#Vanilla cost: 100. 
-		#Base yearly return: 1*(0.01+value(+40% tax modifier)) --> 0.99 ducats gained/year --> +0.0825 ducats/month and AI will click.
-		#In vanilla, this corresponds to 2.5 base tax in 0% autonomy.
-		#BT Building Changes:
-		#1. 3/4ths production --> Increase factor by +33%
-		#2. Half cost of building --> Half factor.
-		#BT Base yearly return: 1*(0.01+value(+30% tax modifier)) --> 0.49 ducats gained/year --> +0.04 ducats/month
-		#This would correspond to 3.33 base tax in 0% autonomy.
-		factor = 1
-		modifier = { #Mainly to promote this building over others.
-			factor = 5
-			base_tax = 5
+		factor = 25
+		modifier = { #AI is encouraged to build this where they need to convert the local population
+			factor = 3
+			has_owner_religion = no			
+			has_owner_harmonized_religion = no
+			has_owner_secondary_religion = no
 		}
-		modifier = { #Mainly to promote this building over others.
-			factor = 5
-			base_tax = 10
+		modifier = { #AI is encouraged to build this where they need to convert the local population
+			factor = 3
+			has_owner_accepted_culture = no			
 		}
-		modifier = {
-			factor = 2
-			has_owner_religion = no			#AI is encouraged to build this where they need to convert the local population
+		modifier = { #If AI has special privilege or whatever that buffs temples, build it.
+			factor = 3
+			OR = {
+				AND = { #Country gets dev from buildings
+					FROM = { has_country_flag = improve_development_on_buildings_built }
+					NOT = { gained_development_from_building = { building = $building$ } }
+				}
+				AND = { #Zoroastrian CoR
+					NOT = { development = 31 }
+					owner = { has_country_flag = can_place_center_of_reformation }
+					is_reformation_center = no
+					expelling_minorities = no
+					NOT = {
+						any_neighbor_province = {
+							is_reformation_center = yes
+						}
+					}
+					NOT = {
+						any_province = {
+							area = PREV
+							is_reformation_center = yes
+							religion = zoroastrian
+						}
+					}
+					OR = {
+						has_owner_religion = yes
+						NOT = { has_active_triggered_province_modifier = religious_center }
+					}
+				}
+				AND = { #Karma Temples
+					FROM = {
+						OR = {
+							religion = buddhism
+							religion = mahayana
+							religion = vajrayana
+						}
+						has_estate_privilege = estate_church_karma_temples
+					}
+				}
+				AND = { #Papal influence from temples
+					FROM = {
+						religion = catholic
+						has_estate_privilege = estate_church_influence_temples
+					}
+				}
+				AND = { #Manpower from tax buildings	
+					owner = {
+						has_country_flag = gets_manpower_from_tax_buildings
+					}
+				}
+				AND = { #Dev cost from temples
+					owner = { has_estate_privilege = estate_church_development_of_temples }
+					OR = {
+						has_owner_religion = yes
+						has_owner_harmonized_religion = yes
+						has_owner_secondary_religion = yes
+					}
+				}
+				AND = { #Dhimmi communities
+					owner = {
+						has_estate_privilege = estate_dhimmi_development_of_communities
+						NOT = { religion_group = PREV }
+					}
+				}
+				AND = { #Gets loyalty from temples
+					FROM = { has_government_attribute = on_church_built_clergy_loyalty }
+				}
+				AND = { #Has expanded temple rights
+					FROM = { has_government_attribute = temples_modifier }
+					owned_by = FROM 
+				}
+				AND = { #Local unrest redux from mosques
+					FROM = { has_country_flag = mosque_local_unrest_flag }
+				}
+				AND = { #Crown land from mosques
+					FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+				}
+			}
+		}
+		modifier = { #Adding because base increases of forts it seems.
+			factor = 0.1
+			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -519,7 +592,7 @@ barracks = {
 	}
 }
 
-shipyard = {
+shipyard = { #BT: Actually Naval Arsenal in-game
 	cost = 100			#BTAddOn notes - leaving cost here despite lowering most others. Dramtically improving naval capabilities was a bit overpowered, in my opinion. Especially compared to the regimental camp with half effect at double the price.
 	time = 12
 	build_trigger = {
@@ -527,9 +600,8 @@ shipyard = {
 	}
 	modifier = {
 		naval_forcelimit = 1			#BTAddOn changed from 2. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
-		ship_recruit_speed = -0.25
-		local_ship_repair = 0.25
-		base_local_dev_points = 0.04
+		ship_recruit_speed = -0.20
+		local_ship_repair = 0.20
 		local_has_man_of_war = yes
 		local_has_galleass = yes
 	}
@@ -1212,8 +1284,9 @@ cathedral = {
 	time = 24			#BTAddOn changed from 12. Doubling upgraded buildings' build time
 	modifier = {
 		local_missionary_strength = 0.02			#BTAddOn changed from 0.03, might slow conversion slightly, but avg dev is also lower, so that might be a good thing
-		local_tax_modifier = 0.6
-		base_local_dev_points = 0.04
+		local_culture_conversion_cost = -0.2
+		local_religious_conversion_resistance = 0.2
+		#local_tax_modifier = 0.6
 	}
 	on_built = {
 		on_built_tax_building_effect = yes
@@ -1312,32 +1385,99 @@ cathedral = {
 	}
 
 	ai_will_do = {
-		#Vanilla base factor: 1. 
-		#Vanilla cost: 300. 
-		#Base yearly return: 1*(0.01+value(+60% tax modifier)) --> 2.99 ducats gained/year --> +0.2492 ducats/month and AI will click.
-		#In vanilla, this corresponds to 5 base tax in 0% autonomy.
-		#Base yearly return from upgrade: 1*(0.01+value(+30% tax modifier)) -> 1.99 ducats gained/year --> +0.1658 ducats/month and AI will upgrade.
-		#In vanilla, this corresponds to 6.6 base tax in 0% autonomy.
-		#AI needs 1.33 times as much encouragement to upgrade compared to building from 0.
-		#BT Building Changes:
-		#1. Same tax --> Same factor
-		#2. 2/3rd cost --> -33% reduced factor.
-		#BT Base yearly return: 1*(0.01+value(+60% tax modifier)) --> 1.99 ducats gained/year --> +0.1658 ducats/month
-		#This would correspond to 3.33 base tax in 0% autonomy.
-		#BT Base yearly return from upgrade: 1*(0.01+value(+30% tax modifier)) --> 0.99 ducats gained/year --> +0.0825 ducats/month
-		#This would correspond to 3.33 base tax in 0% autonomy.
-		factor = 1
-		modifier = { #Mainly to promote this building over others.
-			factor = 5
-			base_tax = 5
+		factor = 100
+		modifier = { #AI is encouraged to build this where they need to convert the local population
+			factor = 3
+			has_owner_religion = no			
+			has_owner_harmonized_religion = no
+			has_owner_secondary_religion = no
 		}
-		modifier = { #Mainly to promote this building over others.
-			factor = 5
-			base_tax = 10
+		modifier = { #AI is encouraged to build this where they need to convert the local population
+			factor = 3
+			has_owner_accepted_culture = no			
 		}
-		modifier = {
-			factor = 2
-			has_owner_religion = no			#AI is encouraged to build this where they need to convert the local population
+		modifier = { #If AI has special privilege or whatever that buffs temples, build it.
+			factor = 3
+			OR = {
+				AND = { #Country gets dev from buildings
+					FROM = { has_country_flag = improve_development_on_buildings_built }
+					NOT = { gained_development_from_building = { building = $building$ } }
+				}
+				AND = { #Zoroastrian CoR
+					NOT = { development = 31 }
+					owner = { has_country_flag = can_place_center_of_reformation }
+					is_reformation_center = no
+					expelling_minorities = no
+					NOT = {
+						any_neighbor_province = {
+							is_reformation_center = yes
+						}
+					}
+					NOT = {
+						any_province = {
+							area = PREV
+							is_reformation_center = yes
+							religion = zoroastrian
+						}
+					}
+					OR = {
+						has_owner_religion = yes
+						NOT = { has_active_triggered_province_modifier = religious_center }
+					}
+				}
+				AND = { #Karma Temples
+					FROM = {
+						OR = {
+							religion = buddhism
+							religion = mahayana
+							religion = vajrayana
+						}
+						has_estate_privilege = estate_church_karma_temples
+					}
+				}
+				AND = { #Papal influence from temples
+					FROM = {
+						religion = catholic
+						has_estate_privilege = estate_church_influence_temples
+					}
+				}
+				AND = { #Manpower from tax buildings	
+					owner = {
+						has_country_flag = gets_manpower_from_tax_buildings
+					}
+				}
+				AND = { #Dev cost from temples
+					owner = { has_estate_privilege = estate_church_development_of_temples }
+					OR = {
+						has_owner_religion = yes
+						has_owner_harmonized_religion = yes
+						has_owner_secondary_religion = yes
+					}
+				}
+				AND = { #Dhimmi communities
+					owner = {
+						has_estate_privilege = estate_dhimmi_development_of_communities
+						NOT = { religion_group = PREV }
+					}
+				}
+				AND = { #Gets loyalty from temples
+					FROM = { has_government_attribute = on_church_built_clergy_loyalty }
+				}
+				AND = { #Has expanded temple rights
+					FROM = { has_government_attribute = temples_modifier }
+					owned_by = FROM 
+				}
+				AND = { #Local unrest redux from mosques
+					FROM = { has_country_flag = mosque_local_unrest_flag }
+				}
+				AND = { #Crown land from mosques
+					FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
+				}
+			}
+		}
+		modifier = { #Adding because base increases of forts it seems.
+			factor = 0.1
+			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -1500,7 +1640,7 @@ trade_depot = {
 	}
 }
 
-grand_shipyard = {
+grand_shipyard = { #BT: Actually Naval Base in-game
 	cost = 300			#BTAddOn notes - leaving this alone, see shipyard entry for logic
 	time = 24			#BTAddOn changed from 12. Doubling second level military buildings build time.
 	
@@ -1511,9 +1651,8 @@ grand_shipyard = {
 	}
 	modifier = {
 		naval_forcelimit = 2			#BTAddOn changed from 4. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
-		ship_recruit_speed = -0.50
-		local_ship_repair = 0.50
-		base_local_dev_points = 0.08
+		ship_recruit_speed = -0.30
+		local_ship_repair = 0.30
 		local_has_man_of_war = yes
 		local_has_galleass = yes
 	}
@@ -3687,6 +3826,7 @@ state_house = {
 		glass
 		gems
 		bt_trade_good_books
+		chinaware
 	}
 
 	build_trigger = {
