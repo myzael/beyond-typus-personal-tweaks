@@ -230,139 +230,139 @@ mint = {
 
 #Fortifications
 
-earth_rampart = {
-	cost = 50			#Addon fortifications. Should be comparatively cheap.
-	time = 12
+# earth_rampart = {
+	# cost = 50			#Addon fortifications. Should be comparatively cheap.
+	# time = 12
 	
-	build_trigger = {
-		OR = {
-			has_building = fort_15th
-			has_building = fort_16th
-			has_building = fort_17th
-			has_building = fort_18th
-		}
-    }
+	# build_trigger = {
+		# OR = {
+			# has_building = fort_15th
+			# has_building = fort_16th
+			# has_building = fort_17th
+			# has_building = fort_18th
+		# }
+    # }
 	
-	keep_trigger = {
-		OR = {
-			has_building = fort_15th
-			has_building = fort_16th
-			has_building = fort_17th
-			has_building = fort_18th
-		}
-	}
+	# keep_trigger = {
+		# OR = {
+			# has_building = fort_15th
+			# has_building = fort_16th
+			# has_building = fort_17th
+			# has_building = fort_18th
+		# }
+	# }
 	
-	modifier = {
-		local_hostile_attrition = 1
-	}
+	# modifier = {
+		# local_hostile_attrition = 1
+	# }
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 500 #To get over the 0.01% base value.
-			any_neighbor_province = { #This is intended to check if the country at hand is rivalling or is threatened by a neighbour. Whether this actually works that way, I'm not sure.
-				OR = {
-					owner = { 
-						is_threat = FROM
-					}
-					owner = {
-						is_rival = FROM
-					}
-				}
-			}
-		}
-	}
-}
+	# ai_will_do = {
+		# factor = 1
+		# modifier = {
+			# factor = 500 #To get over the 0.01% base value.
+			# any_neighbor_province = { #This is intended to check if the country at hand is rivalling or is threatened by a neighbour. Whether this actually works that way, I'm not sure.
+				# OR = {
+					# owner = { 
+						# is_threat = FROM
+					# }
+					# owner = {
+						# is_rival = FROM
+					# }
+				# }
+			# }
+		# }
+	# }
+# }
 
-tenaille = {
-	cost = 100			#Addon fortifications. Should be comparatively cheap.
-	time = 24
+# tenaille = {
+	# cost = 100			#Addon fortifications. Should be comparatively cheap.
+	# time = 24
 	
-	make_obsolete = earth_rampart
+	# make_obsolete = earth_rampart
 	
-	build_trigger = {
-		OR = {
-			has_building = fort_16th
-			has_building = fort_17th
-			has_building = fort_18th
-		}
-    }
+	# build_trigger = {
+		# OR = {
+			# has_building = fort_16th
+			# has_building = fort_17th
+			# has_building = fort_18th
+		# }
+    # }
 	
-	keep_trigger = {
-		OR = {
-			has_building = fort_16th
-			has_building = fort_17th
-			has_building = fort_18th
-		}
-	}
+	# keep_trigger = {
+		# OR = {
+			# has_building = fort_16th
+			# has_building = fort_17th
+			# has_building = fort_18th
+		# }
+	# }
 	
-	modifier = {
-		local_defensiveness = 0.1
-		max_attrition = 2
-		local_hostile_attrition = 2
-	}
+	# modifier = {
+		# local_defensiveness = 0.1
+		# max_attrition = 2
+		# local_hostile_attrition = 2
+	# }
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1000 #To get over the 0.01% base value.
-			any_neighbor_province = { #This is intended to check if the country at hand is rivalling or is threatened by a neighbour. Whether this actually works that way, I'm not sure.
-				OR = {
-					owner = { 
-						is_threat = FROM
-					}
-					owner = {
-						is_rival = FROM
-					}
-				}
-			}
-		}
-	}
-}
+	# ai_will_do = {
+		# factor = 1
+		# modifier = {
+			# factor = 1000 #To get over the 0.01% base value.
+			# any_neighbor_province = { #This is intended to check if the country at hand is rivalling or is threatened by a neighbour. Whether this actually works that way, I'm not sure.
+				# OR = {
+					# owner = { 
+						# is_threat = FROM
+					# }
+					# owner = {
+						# is_rival = FROM
+					# }
+				# }
+			# }
+		# }
+	# }
+# }
 
-redoubt = {
-	cost = 200			#Addon fortifications. Should be comparatively cheap.
-	time = 48
+# redoubt = {
+	# cost = 200			#Addon fortifications. Should be comparatively cheap.
+	# time = 48
 	
-	build_trigger = {
-		OR = {
-			has_building = fort_17th
-			has_building = fort_18th
-		}
-    }
+	# build_trigger = {
+		# OR = {
+			# has_building = fort_17th
+			# has_building = fort_18th
+		# }
+    # }
 	
-	keep_trigger = {
-		OR = {
-			has_building = fort_17th
-			has_building = fort_18th
-		}
-	}
+	# keep_trigger = {
+		# OR = {
+			# has_building = fort_17th
+			# has_building = fort_18th
+		# }
+	# }
 	
-	make_obsolete = tenaille
+	# make_obsolete = tenaille
 	
-	modifier = {
-		local_defensiveness = 0.2
-		max_attrition = 4
-		local_hostile_attrition = 4
-	}
+	# modifier = {
+		# local_defensiveness = 0.2
+		# max_attrition = 4
+		# local_hostile_attrition = 4
+	# }
 	
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2000 #To get over the 0.01% base value.
-			any_neighbor_province = { #This is intended to check if the country at hand is rivalling or is threatened by a neighbour. Whether this actually works that way, I'm not sure.
-				OR = {
-					owner = { 
-						is_threat = FROM
-					}
-					owner = {
-						is_rival = FROM
-					}
-				}
-			}
-		}
-	}
-}
+	# ai_will_do = {
+		# factor = 1
+		# modifier = {
+			# factor = 2000 #To get over the 0.01% base value.
+			# any_neighbor_province = { #This is intended to check if the country at hand is rivalling or is threatened by a neighbour. Whether this actually works that way, I'm not sure.
+				# OR = {
+					# owner = { 
+						# is_threat = FROM
+					# }
+					# owner = {
+						# is_rival = FROM
+					# }
+				# }
+			# }
+		# }
+	# }
+# }
 
 #Army Recruitment
 armory = {
@@ -417,99 +417,99 @@ arsenal = {
 
 #Navy Recruitment
 
-# naval_arsenal = {
-	# cost = 100			#Following the trend of the armoury
-	# time = 12
+naval_arsenal = {
+	cost = 100			#Following the trend of the armoury
+	time = 12
 	
-	# build_trigger = {
-		# has_port = yes
-	# }
+	build_trigger = {
+		has_port = yes
+	}
 	
-	# modifier = {
-		# local_ship_cost = -0.25			
-		# ship_recruit_speed = -0.375
-	# }
+	modifier = {
+		local_ship_cost = -0.25			
+		ship_recruit_speed = -0.375
+	}
 	
-	# ai_will_do = {
-		# factor = 80 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
-		# modifier = {
-			# NOT = { FROM = { navy_tradition = 20 } }			#Naval tradition now either encourages or discourages building docks
-			# factor = 0.5
-		# }
-		# modifier = {
-			# NOT = { FROM = { navy_tradition = 40 } }			#Naval tradition now either encourages or discourages building docks
-			# factor = 0.8
-		# }
-		# modifier = {
-			# FROM = { navy_tradition = 60 }			#Naval tradition now either encourages or discourages building docks
-			# factor = 1.2
-		# }
-		# modifier = {
-			# FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building docks
-			# factor = 1.5
-		# }
-		# modifier = {
-			# factor = 1.5
-			# FROM = {
-				# OR = {			#Heavy handed attempt to encourage historical naval powers
-					# culture_group = british			#The second empire on which the sun never sets
-					# culture_group = iberian			#The first empire on which the sun never sets
-					# primary_culture = dutch			#Punched massively above its weight on the sea during this period
-					# primary_culture = venetian			#Remnants of Mediterranean hegemonies and great naval traditions
-					# primary_culture = ligurian			#Remnants of Mediterranean hegemonies and great naval traditions
-				# }
-			# }
-		# }
-	# }
-# }
+	ai_will_do = {
+		factor = 80 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		modifier = {
+			NOT = { FROM = { navy_tradition = 20 } }			#Naval tradition now either encourages or discourages building docks
+			factor = 0.5
+		}
+		modifier = {
+			NOT = { FROM = { navy_tradition = 40 } }			#Naval tradition now either encourages or discourages building docks
+			factor = 0.8
+		}
+		modifier = {
+			FROM = { navy_tradition = 60 }			#Naval tradition now either encourages or discourages building docks
+			factor = 1.2
+		}
+		modifier = {
+			FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building docks
+			factor = 1.5
+		}
+		modifier = {
+			factor = 1.5
+			FROM = {
+				OR = {			#Heavy handed attempt to encourage historical naval powers
+					culture_group = british			#The second empire on which the sun never sets
+					culture_group = iberian			#The first empire on which the sun never sets
+					primary_culture = dutch			#Punched massively above its weight on the sea during this period
+					primary_culture = venetian			#Remnants of Mediterranean hegemonies and great naval traditions
+					primary_culture = ligurian			#Remnants of Mediterranean hegemonies and great naval traditions
+				}
+			}
+		}
+	}
+}
 
-# naval_base = {
-	# cost = 200			#Following the trend of the armoury
-	# time = 24
+naval_base = {
+	cost = 200			#Following the trend of the armoury
+	time = 24
 
-	# build_trigger = {
-		# has_port = yes
-	# }
+	build_trigger = {
+		has_port = yes
+	}
 	
-	# make_obsolete = naval_arsenal
+	make_obsolete = naval_arsenal
 	
-	# modifier = {
-		# local_ship_cost = -0.50			
-		# ship_recruit_speed = -0.75
-	# }
+	modifier = {
+		local_ship_cost = -0.50			
+		ship_recruit_speed = -0.75
+	}
 	
-	# ai_will_do = {
-		# factor = 160 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
-		# modifier = {
-			# NOT = { FROM = { navy_tradition = 20 } }			#Naval tradition now either encourages or discourages building docks
-			# factor = 0.5
-		# }
-		# modifier = {
-			# NOT = { FROM = { navy_tradition = 40 } }			#Naval tradition now either encourages or discourages building docks
-			# factor = 0.8
-		# }
-		# modifier = {
-			# FROM = { navy_tradition = 60 }			#Naval tradition now either encourages or discourages building docks
-			# factor = 1.2
-		# }
-		# modifier = {
-			# FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building docks
-			# factor = 1.5
-		# }
-		# modifier = {
-			# factor = 1.5
-			# FROM = {
-				# OR = {			#Heavy handed attempt to encourage historical naval powers
-					# culture_group = british			#The second empire on which the sun never sets
-					# culture_group = iberian			#The first empire on which the sun never sets
-					# primary_culture = dutch			#Punched massively above its weight on the sea during this period
-					# primary_culture = venetian			#Remnants of Mediterranean hegemonies and great naval traditions
-					# primary_culture = ligurian			#Remnants of Mediterranean hegemonies and great naval traditions
-				# }
-			# }
-		# }
-	# }
-# }
+	ai_will_do = {
+		factor = 160 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		modifier = {
+			NOT = { FROM = { navy_tradition = 20 } }			#Naval tradition now either encourages or discourages building docks
+			factor = 0.5
+		}
+		modifier = {
+			NOT = { FROM = { navy_tradition = 40 } }			#Naval tradition now either encourages or discourages building docks
+			factor = 0.8
+		}
+		modifier = {
+			FROM = { navy_tradition = 60 }			#Naval tradition now either encourages or discourages building docks
+			factor = 1.2
+		}
+		modifier = {
+			FROM = { navy_tradition = 80 }			#Naval tradition now either encourages or discourages building docks
+			factor = 1.5
+		}
+		modifier = {
+			factor = 1.5
+			FROM = {
+				OR = {			#Heavy handed attempt to encourage historical naval powers
+					culture_group = british			#The second empire on which the sun never sets
+					culture_group = iberian			#The first empire on which the sun never sets
+					primary_culture = dutch			#Punched massively above its weight on the sea during this period
+					primary_culture = venetian			#Remnants of Mediterranean hegemonies and great naval traditions
+					primary_culture = ligurian			#Remnants of Mediterranean hegemonies and great naval traditions
+				}
+			}
+		}
+	}
+}
 
 #Level 3 Taxation
 
