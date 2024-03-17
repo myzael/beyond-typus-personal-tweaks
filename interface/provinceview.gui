@@ -6739,65 +6739,65 @@ guiTypes = {
 		}
 		
 		
-		checkboxType = {
-			name = "build_earth_rampart"
-			position = { x = 217 y = 323 }
-			quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
-		}
+		# checkboxType = {
+			# name = "build_earth_rampart"
+			# position = { x = 217 y = 323 }
+			# quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
+		# }
 		
-		instantTextBoxType={
-			name = "earth_rampart_cost"
-			position = { x = 217 y = 373 }
-			font = "vic_18"
-			borderSize = { x = 0 y = 0 }	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}		
+		# instantTextBoxType={
+			# name = "earth_rampart_cost"
+			# position = { x = 217 y = 373 }
+			# font = "vic_18"
+			# borderSize = { x = 0 y = 0 }	
+			# maxWidth = 128
+			# maxHeight = 18
+			# text = "2000¤"	
+		# }		
 		
-		checkboxType = {
-			name = "build_tenaille"
-			position = { x = 269 y = 323 }
-			quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
-		}
+		# checkboxType = {
+			# name = "build_tenaille"
+			# position = { x = 269 y = 323 }
+			# quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
+		# }
 		
-		instantTextBoxType={
-			name = "tenaille_cost"
-			position = { x = 269 y = 373 }
-			font = "vic_18"
-			borderSize = { x = 0 y = 0 }	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}
+		# instantTextBoxType={
+			# name = "tenaille_cost"
+			# position = { x = 269 y = 373 }
+			# font = "vic_18"
+			# borderSize = { x = 0 y = 0 }	
+			# maxWidth = 128
+			# maxHeight = 18
+			# text = "2000¤"	
+		# }
 		
-		iconType = {
-			name = "earth_rampart_to_tenaille_arrow"
-			position = { x = 261 y = 332 }
-			spriteType = "GFX_building_upgrade_icon"
-		}			
+		# iconType = {
+			# name = "earth_rampart_to_tenaille_arrow"
+			# position = { x = 261 y = 332 }
+			# spriteType = "GFX_building_upgrade_icon"
+		# }			
 		
-		checkboxType = {
-			name = "build_redoubt"
-			position = { x = 321 y = 323 }
-			quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
-		}
+		# checkboxType = {
+			# name = "build_redoubt"
+			# position = { x = 321 y = 323 }
+			# quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
+		# }
 		
-		instantTextBoxType={
-			name = "redoubt_cost"
-			position = { x = 321 y = 373 }
-			font = "vic_18"
-			borderSize = { x = 0 y = 0 }	
-			maxWidth = 128
-			maxHeight = 18
-			text = "2000¤"	
-		}		
+		# instantTextBoxType={
+			# name = "redoubt_cost"
+			# position = { x = 321 y = 373 }
+			# font = "vic_18"
+			# borderSize = { x = 0 y = 0 }	
+			# maxWidth = 128
+			# maxHeight = 18
+			# text = "2000¤"	
+		# }		
 		
-		iconType = {
-			name = "tenaille_to_redoubt_arrow"
-			position = { x = 313 y = 332 }
-			spriteType = "GFX_building_upgrade_icon"
-		}
+		# iconType = {
+			# name = "tenaille_to_redoubt_arrow"
+			# position = { x = 313 y = 332 }
+			# spriteType = "GFX_building_upgrade_icon"
+		# }
 		
 		
 		iconType = {
