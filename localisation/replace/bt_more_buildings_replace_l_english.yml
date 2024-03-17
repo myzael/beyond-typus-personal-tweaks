@@ -11,9 +11,9 @@
  # royal_palace_short:1 "Palace"
  # royal_palace:1 "Palace"
  #Fixing Engrish
- building_constable:0 "Constablary"
- constable_short:1 "Constablary"
- constable:1 "Constablary"
+ building_constable:0 "Constabulary"
+ constable_short:1 "Constabulary"
+ constable:1 "Constabulary"
  building_grain_depot:1 "Granary"
  grain_depot_short:1 "Granary"
  grain_depot:1 "Granary"

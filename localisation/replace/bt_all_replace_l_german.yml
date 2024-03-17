@@ -220,7 +220,7 @@
  brm_suppress_local_leaders:0 "Lokale Machthaber verdrängen"
  brm_suppress_local_leaders_desc:0 "Die kleinen Herzöge, Prinzen und Saophas in unserer Nation sind derzeit eine Stimme der Rebellion und des Aufstands. Indem wir sie zum Schweigen bringen und ihre Privilegien aufheben, können wir problemlos alle Aufstände und Rebellionen, die in unserer Nation stattfinden können, vernichten."
  bt_super_cows:1 "Friesisches Rind"
- building_constable:0 "Polizeistation"
+ building_constable:0 "Polizeistation" #Note to Malcador from BT devs: a Constabulary in this context is less about policing, and is more about being the location of the constable of the area, i.e a marshal under the feudal system, keeper of horses.
  building_customs_house:0 "Börse"
  building_grain_depot:0 "Kornspeicher"
  building_royal_palace:1 "Palast"
