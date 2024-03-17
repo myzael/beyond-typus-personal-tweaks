@@ -373,6 +373,7 @@ core = {
 
 non_core = {
 	local_missionary_strength = -0.02
+	min_local_autonomy = 90 #BT Added: Should be treated the same as territorial cores in states (colonial_core)
 }
 
 colonial_core = {
@@ -538,6 +539,7 @@ unrest = {
 nationalism = {
 	local_unrest = 0.5					#for each year revolt risk!
 	local_governing_cost = 0.01			#Default is 30 years of separatism - +30% governing cost.
+	min_local_autonomy = 3				#Default is 30 years of separatism - +90% autonomy floor
 }
 
 harsh_treatment = {
