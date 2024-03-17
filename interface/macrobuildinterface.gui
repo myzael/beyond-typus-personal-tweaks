@@ -828,16 +828,16 @@ guiTypes = {
 			name = "shipyard_to_grand_shipyard_arrow"
 			position = { x = 157 y = 138 }
 			spriteType = "GFX_building_upgrade_icon"
-		}			
+		}	
 		
 		checkboxType = {
-			name = "build_coastal_defence"
+			name = "build_naval_arsenal"
 			position = { x = 217 y = 129 }
 			quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
 		}
 		
 		instantTextBoxType={
-			name = "coastal_defence_cost"
+			name = "naval_arsenal_cost"
 			position = { x = 217 y = 179 }
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }	
@@ -847,13 +847,13 @@ guiTypes = {
 		}
 		
 		checkboxType = {
-			name = "build_naval_battery"
+			name = "build_naval_base"
 			position = { x = 269 y = 129 }
 			quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
 		}
 		
 		instantTextBoxType={
-			name = "naval_battery_cost"
+			name = "naval_base_cost"
 			position = { x = 269 y = 179 }
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }	
@@ -863,7 +863,7 @@ guiTypes = {
 		}	
 		
 		iconType = {
-			name = "coastal_defence_to_naval_battery_arrow"
+			name = "naval_arsenal_to_naval_base_arrow"
 			position = { x = 261 y = 138 }
 			spriteType = "GFX_building_upgrade_icon"
 		}	
@@ -1290,7 +1290,45 @@ guiTypes = {
 			name = "fort_17th_to_fort_18th_arrow"
 			position = { x = 157 y = 332 }
 			spriteType = "GFX_building_upgrade_icon"
+		}		
+		
+		checkboxType = {
+			name = "build_coastal_defence"
+			position = { x = 217 y = 323 }
+			quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
 		}
+		
+		instantTextBoxType={
+			name = "coastal_defence_cost"
+			position = { x = 217 y = 373 }
+			font = "vic_18"
+			borderSize = { x = 0 y = 0 }	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}
+		
+		checkboxType = {
+			name = "build_naval_battery"
+			position = { x = 269 y = 323 }
+			quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
+		}
+		
+		instantTextBoxType={
+			name = "naval_battery_cost"
+			position = { x = 269 y = 373 }
+			font = "vic_18"
+			borderSize = { x = 0 y = 0 }	
+			maxWidth = 128
+			maxHeight = 18
+			text = "2000¤"	
+		}	
+		
+		iconType = {
+			name = "coastal_defence_to_naval_battery_arrow"
+			position = { x = 261 y = 332 }
+			spriteType = "GFX_building_upgrade_icon"
+		}	
 		
 		
 		# checkboxType = {
