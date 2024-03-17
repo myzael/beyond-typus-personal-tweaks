@@ -989,15 +989,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_resource_icon"
-		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 36 # BT; 32
+		texturefile = "gfx//interface//resources.dds"
+		noOfFrames = 38 # BT; 32
 		loadType = "INGAME"
 	}
 	
 	spriteType = {
 		name = "GFX_resource_icon_small"
 		texturefile = "gfx//interface//resources_small.dds"
-		noOfFrames = 36 # BT; 32
+		noOfFrames = 38 # BT; 32
 		loadType = "INGAME"
 	}
 
@@ -1009,8 +1009,8 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_resource_icon_transparent"
-		texturefile = "gfx//interface//resources.tga"
-		noOfFrames = 36 # BT; 32
+		texturefile = "gfx//interface//resources.dds"
+		noOfFrames = 38 # BT; 32
 		loadType = "INGAME"
 		
 		alwaystransparent = yes
