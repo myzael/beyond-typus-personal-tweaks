@@ -1567,7 +1567,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_march_building"
-		texturefile = "gfx//interface//buildings//latin_march.tga"
+		texturefile = "gfx//interface//buildings//latin_embassy.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
