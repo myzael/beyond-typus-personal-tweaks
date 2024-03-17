@@ -35,6 +35,9 @@ BT16
 	- An overhaul to governing capacity & corruption modifiers
 	- The Peasants estate for Scandinavian nations and peasant republics
 	- The ability to pick between each and every estate's agenda in diets (Somewhat done by vanilla, but in a roundabout breakable way)
+- (Dub) Integrated the More Buildings addon to BT16, with almost all its features & tweaks. Included, but not limited to:
+	- New buildings for navy, military, production, taxation, as well as new manufactories and other governance buildings such as roads and canals.
+	- Some buildings have been reworked, as area-wide buildings were cut and remade into other types of buildings such as alternate manufactories.
 - (Dub) Added a Ruthenian Mission tree. Features include:
 	- Conquest missions spanning Siberia, Russia, Ruthenia, Poland, Finland, Baltics, Pontic Steppes as well as Caucasia.
 	- Flavour missions expanding akin to what the Russian Domination tree does, focusing on internal matters of Ruthenia such as production, religion, development, estates, court, army (Streltsy + Cossacks) and more.

@@ -5,6 +5,8 @@ Known Issues:
 		-	Current generated development points balance is not final, and pending BTMB integration, it will likely not be.
 	Internal Politicks integration:
 		-	No known issues at the moment.
+	More Buildings integration:
+		-	The development points are currently a WIP.
 	Caucasia:
 		-	Trade goods in the area are likely not final.
 		-	The Collapse of Georgia needs events and/or disaster tweaking. Some work has been done, but it is not final.
@@ -43,7 +45,6 @@ Future plans:
 		o	Increase base coring time to 10 years
 	-	A revisal of the monarch point generation is probably required. Base generation has been reduced to 2 instead of 3, but monarch points are very plentiful in the lategame yet rare in the earlygame. Alternatively, additional ways of spending monarch points to boost a variety of different parts of your nation is being looked into.
 	-	Colonisation of the Americas appears to be slower than intended. We believe a big issue is that African provinces have gotten double their dev, whereas Americas have not. This, we believe, results in the AI overvaluing Africa. While this is historical for the likes of Portugal, it is less so for other European colonisers. We have however had games where Africa is not colonised at all, so this is merely a theory. It is also possible the native mechanics introduced in Leviathan is a culprit. 
-	-	The mod “More Buildings” will be integrated into BT proper. This, as a result of the new development points system allowing for more diverse building options, and the fact that area-wide buildings are bad, and coupled with new features such as Expand Infrastructure, tweaking them to become manufactory-style buildings is preferrable.
 	-	Concentrating development should be reworked to grant dev points instead of dev in your capital.
 	-	Exploit development should be reworked as to allow the exploitation of production dev in non-coastal provinces, but what it should do instead is not figured out yet.
 	-	The decisions trading monarch points for modifiers will become clickable buttons instead of what they are now.
