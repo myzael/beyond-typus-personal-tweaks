@@ -7024,13 +7024,13 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "build_tax_assessor"
-			position = { x = 375 y = 420 }
+			position = { x = 373 y = 420 }
 			quadTextureSprite = "GFX_building_default" #Placeholder, real sprite is decided by game (based on button name).
 		}
 		
 		instantTextBoxType={
 			name = "tax_assessor_cost_cost"
-			position = { x = 375 y = 470 }
+			position = { x = 373 y = 470 }
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }	
 			maxWidth = 128
