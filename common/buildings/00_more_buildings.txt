@@ -120,7 +120,7 @@ mint = {
 	modifier = {
 		trade_goods_size_modifier = 1
 		global_tax_modifier = 0.05
-		monthly_gold_inflation_modifier = 0.05
+		monthly_gold_inflation_modifier = 0.1
 		#inflation_reduction = -0.1 #Logically, this costs you 0.3 admin points/month/building. I think this is a sensible matchup.
 	}
 	#show_separate = yes # Means as a manufactory it will be shown according to the old way
