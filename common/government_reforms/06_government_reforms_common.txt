@@ -697,7 +697,11 @@ focus_of_the_patriarchy_reform = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
 		}
-		religion = coptic
+		OR = { #BT Added clause because coptic split
+			religion = coptic
+			religion = apostolic #BT Added
+			religion = nestorian #BT Added
+		}
 	}
 	modifiers = {
 		institution_spread_from_true_faith = 0.25
@@ -867,6 +871,8 @@ head_of_the_reformed_church_reform = {
 		}
 		NOT = { religion = catholic }
 		NOT = { religion = coptic }
+		NOT = { religion = apostolic } #BT Added
+		NOT = { religion = nestorian } #BT Added
 		NOT = { religion = orthodox }
 		religion_group = christian
 	}
