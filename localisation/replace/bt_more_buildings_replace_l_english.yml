@@ -17,7 +17,20 @@
  building_grain_depot:1 "Granary"
  grain_depot_short:1 "Granary"
  grain_depot:1 "Granary"
- 
+ #Changing every reference of shipyard to naval arsenal & vice versa
+ building_shipyard:1 "Naval Arsenal"
+ shipyard_short:1 "Naval Arsenal"
+ shipyard:1 "Naval Arsenal"
+ building_naval_arsenal:1 "Shipyard"
+ naval_arsenal_short:1 "Shipyard"
+ naval_arsenal:1 "Shipyard"
+ #Changing every reference of grand shipyard to naval base & vice versa
+ building_grand_shipyard:1 "Naval Base"
+ grand_shipyard_short:1 "Naval Base"
+ grand_shipyard:1 "Naval Base"
+ building_naval_base:1 "Grand Shipyard"
+ naval_base_short:1 "Grand Shipyard"
+ naval_base:1 "Grand Shipyard"
  #Renaming existing building categories
  #NAVY:1 "Navy & Coastal"
  

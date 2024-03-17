@@ -552,162 +552,162 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_shipyard"
-		texturefile = "gfx//interface//buildings//latin_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_shipyard_easterngfx"
-		texturefile = "gfx//interface//buildings//eastern_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_shipyard_asiangfx"
-		texturefile = "gfx//interface//buildings//chinese_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_shipyard_africangfx"
-		texturefile = "gfx//interface//buildings//african_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_shipyard_indiangfx"
-		texturefile = "gfx//interface//buildings//indian_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_shipyard_muslimgfx"
-		texturefile = "gfx//interface//buildings//muslim_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_shipyard_southamericagfx"
-		texturefile = "gfx//interface//buildings//southamerica_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_shipyard_northamericagfx"
-		texturefile = "gfx//interface//buildings//northamerica_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_grand_shipyard"
-		texturefile = "gfx//interface//buildings//latin_grand_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_grand_shipyard_easterngfx"
-		texturefile = "gfx//interface//buildings//eastern_grand_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_grand_shipyard_asiangfx"
-		texturefile = "gfx//interface//buildings//chinese_grand_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_grand_shipyard_africangfx"
-		texturefile = "gfx//interface//buildings//african_grand_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_grand_shipyard_indiangfx"
-		texturefile = "gfx//interface//buildings//indian_grand_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_grand_shipyard_muslimgfx"
-		texturefile = "gfx//interface//buildings//muslim_grand_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_grand_shipyard_southamericagfx"
-		texturefile = "gfx//interface//buildings//southamerica_grand_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_grand_shipyard_northamericagfx"
-		texturefile = "gfx//interface//buildings//northamerica_grand_shipyard.tga"
-		loadType = "INGAME"
-	}
-	spriteType = {
-		name = "GFX_naval_arsenal"
 		texturefile = "gfx//interface//buildings//latin_naval_arsenal.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_arsenal_easterngfx"
+		name = "GFX_shipyard_easterngfx"
 		texturefile = "gfx//interface//buildings//eastern_naval_arsenal.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_arsenal_asiangfx"
+		name = "GFX_shipyard_asiangfx"
 		texturefile = "gfx//interface//buildings//chinese_naval_arsenal.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_arsenal_africangfx"
+		name = "GFX_shipyard_africangfx"
 		texturefile = "gfx//interface//buildings//african_naval_arsenal.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_arsenal_indiangfx"
+		name = "GFX_shipyard_indiangfx"
 		texturefile = "gfx//interface//buildings//indian_naval_arsenal.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_arsenal_muslimgfx"
+		name = "GFX_shipyard_muslimgfx"
 		texturefile = "gfx//interface//buildings//muslim_naval_arsenal.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_arsenal_southamericagfx"
+		name = "GFX_shipyard_southamericagfx"
 		texturefile = "gfx//interface//buildings//southamerica_naval_arsenal.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_arsenal_northamericagfx"
+		name = "GFX_shipyard_northamericagfx"
 		texturefile = "gfx//interface//buildings//northamerica_naval_arsenal.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_base"
+		name = "GFX_grand_shipyard"
 		texturefile = "gfx//interface//buildings//latin_naval_base.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_base_easterngfx"
+		name = "GFX_grand_shipyard_easterngfx"
 		texturefile = "gfx//interface//buildings//eastern_naval_base.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_base_asiangfx"
+		name = "GFX_grand_shipyard_asiangfx"
 		texturefile = "gfx//interface//buildings//chinese_naval_base.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_base_africangfx"
+		name = "GFX_grand_shipyard_africangfx"
 		texturefile = "gfx//interface//buildings//african_naval_base.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_base_indiangfx"
+		name = "GFX_grand_shipyard_indiangfx"
 		texturefile = "gfx//interface//buildings//indian_naval_base.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_base_muslimgfx"
+		name = "GFX_grand_shipyard_muslimgfx"
 		texturefile = "gfx//interface//buildings//muslim_naval_base.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_base_southamericagfx"
+		name = "GFX_grand_shipyard_southamericagfx"
 		texturefile = "gfx//interface//buildings//southamerica_naval_base.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_naval_base_northamericagfx"
+		name = "GFX_grand_shipyard_northamericagfx"
 		texturefile = "gfx//interface//buildings//northamerica_naval_base.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal"
+		texturefile = "gfx//interface//buildings//latin_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal_easterngfx"
+		texturefile = "gfx//interface//buildings//eastern_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal_asiangfx"
+		texturefile = "gfx//interface//buildings//chinese_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal_africangfx"
+		texturefile = "gfx//interface//buildings//african_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal_indiangfx"
+		texturefile = "gfx//interface//buildings//indian_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal_southamericagfx"
+		texturefile = "gfx//interface//buildings//southamerica_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_arsenal_northamericagfx"
+		texturefile = "gfx//interface//buildings//northamerica_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base"
+		texturefile = "gfx//interface//buildings//latin_grand_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base_easterngfx"
+		texturefile = "gfx//interface//buildings//eastern_grand_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base_asiangfx"
+		texturefile = "gfx//interface//buildings//chinese_grand_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base_africangfx"
+		texturefile = "gfx//interface//buildings//african_grand_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base_indiangfx"
+		texturefile = "gfx//interface//buildings//indian_grand_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_grand_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base_southamericagfx"
+		texturefile = "gfx//interface//buildings//southamerica_grand_shipyard.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_naval_base_northamericagfx"
+		texturefile = "gfx//interface//buildings//northamerica_grand_shipyard.tga"
 		loadType = "INGAME"
 	}
 	spriteType = {
