@@ -1,18 +1,8 @@
 ﻿l_english:
- IMPPR_NOT_ENOUGH_POWER:0 "§RYou do not have the $POWER|Y$ $TYPE$ Power required to $ACTION$ in $NAME$.§!"
- IMPPR_DO:1 "Spend Development Points to $ACTION$ by §G+$AMOUNT$§! in $NAME$ giving:\n$EFFECT$\n  Crownland: $CROWNLAND|+=&1$"
- IMPROVED_COUNT_TRIGGER_LESS:1 "Has been improved less than $VAL|Y$ times.\n"
- IMPROVED_COUNT_TRIGGER_AT_LEAST:1 "Has been improved at least $VAL|Y$ times.\n"
- IMP_PROV_COST:0 "Spend Development Points to improve §Y$PROV$§!. §Y$PROV$§! has been improved $COUNT|Y$ time(s)."
- IMP_PROV_COST_INFO:0 "The cost for improving a province is a base of 50 power"
- IMP_PROV_COST_INFO_2:0 "that increases by $MUL|Y$ every time the province is improved. §Y$PROV$§! has been improved $COUNT|Y$ time(s)."
- NUM_IMP_PROV_COST_INFO:0 "§Y$PROV$§! has been improved $COUNT|Y$ time(s)."
- IMPR_FURTHER_MODIFIED_BY:0 "The base cost is modified by:"
+ IMPPR_DO:1 "Spend $COST|Y$ §YDevelopment Points§! to $ACTION$ by §G+$AMOUNT$§! in $NAME$ giving:\n$EFFECT$\n  Crownland: $CROWNLAND|+=&1$"
+ IMP_PROV_COST:0 "It will cost $VAL|Y$ §YDevelopment Points§! to improve §Y$PROV$§!. §Y$PROV$§! has been improved $COUNT|Y$ time(s)."
+
  IMPR_FURTHER_MODIFIED_BY_2:1 "Development Cost Modifier: $TECH$"
- IMPR_FURTHER_MODIFIED_BY_3:0 " Capital City: $MULT$ (Due to §Y$VAL$§! total development.)"
- IMPR_FINAL_BASE_COST:0 ""
- IMPR_TOTAL_FURTHER_MODIFIED_BY:0 "The total cost is further modified by:"
- IMPR_FINAL_COST:0 ""
  regulation_bureau_desc:0 "A legislative body whose jurisdiction involves the maintenance and promotion of inflation-related laws as well as the local administration of our provinces.\nProvinces with at least 6 buildings get:"    
 
 
