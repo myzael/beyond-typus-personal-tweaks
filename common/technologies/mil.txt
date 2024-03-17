@@ -98,7 +98,6 @@ technology = {
 	}
 	
 	land_morale = 	0.5
-	earth_rampart = yes #BT More Buildings added	
 	may_drill = yes
 }
 
@@ -430,7 +429,6 @@ technology = {
 	#Maurician Infantry
 	land_morale 		=	0.5			#BTAddOn changed from 1.0, increasing base morale
 	military_tactics	=	0.25
-	tenaille = yes #BT More Buildings added
 	
 
 	
@@ -579,7 +577,6 @@ technology = {
 	#infantry_fire		= 	0.5			#BTAddOn removed - Part of tech shock and fire overhaul
 	artillery_fire 		= 	0.70			#BTAddOn new - Part of tech shock and fire overhaul
 	
-	redoubt = yes #BT More Buildings added
 	arsenal = yes #BT More Buildings added	
 	
 	enable = swivel_cannon		

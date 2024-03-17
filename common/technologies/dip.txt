@@ -282,7 +282,7 @@ technology = { #Development of Maritime Law
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
-	#naval_arsenal = yes #BT More Buildings added
+	naval_arsenal = yes #BT More Buildings added
 
 }
 
@@ -363,7 +363,7 @@ technology = { #Naval Professionalization
 	trade_range				=	20
 	#num_accepted_cultures = 1
 	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
-	#naval_base = yes #BT More Buildings added
+	naval_base = yes #BT More Buildings added
 	
 }
 
