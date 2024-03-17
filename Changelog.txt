@@ -61,6 +61,10 @@ BT16
 	- Note that this cannot be properly fixed without writing massive amounts of custom localisation, as the game does not procure localisation when checking for government abilities.
  - (Harbivore) Fixed error with American dynamic CoT events
  - (Dub) Fixed SRN_ADJ & EGL_ADJ localisation, again (?)
+ - (Dub) Fixed duplicate Penang & Barus provinces
+ - (Dub) Fixed vanilla tooltip bug for subject bonuses (It's still buggy, but without custom-tooltipping the entire thing, there's no fix for it)
+ - (Dub) Fixed vanilla tooltip bug for coring
+ - (Dub) Fixed favour cost for returning core provinces from allies not taking dev-doubling into account
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -103,7 +107,12 @@ BT16
  - (Harbivore) Made Sicily a PU of Aragon to simultaneously fix an ahistoric issue and keep Aragonese subjects loyal
  - (Harbivore) Changed Sicilian Colours to be a nice orange
  - (Harbivore) Made Naples and the Papal states historical friends to show friendship between them and Alfonds
- 
+ - (Dub) Tweaked the coring system:
+	- Coring time has now been increase to 10 years.
+	- Separatism now increases minimum autonomy by 3% per year of separatism. I.e, a freshly conquered province has 90% autonomy floor from separatism.
+	- Territorial cores now cost 25% of the admin points instead of 50%.
+	- Overextension has now been overhauled to signify the troubles of pacifying newly conquered regions, instead of being mostly diplomatically focused.
+ - (Dub) Cut KoK Pronoiar creation making the country leader a "greek general" - it makes no sense.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
