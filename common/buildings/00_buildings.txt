@@ -2134,7 +2134,7 @@ town_hall = {
 		local_state_maintenance_modifier = -0.5
 		local_autonomy = -0.2
 		local_governing_cost = -0.5
-		}
+	}
 
 	on_built = {
 		add_development_from_upgrading_or_building = {
