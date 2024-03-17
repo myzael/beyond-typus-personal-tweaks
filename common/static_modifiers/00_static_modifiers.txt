@@ -1206,12 +1206,15 @@ luck = {
 }
 
 over_extension = {
-	global_foreign_trade_power = -1.0
+	#global_foreign_trade_power = -1.0		#BT removed as part of Coring Overhaul
 	stability_cost_modifier = 1.0				#BTAddOn changed from 0.5 - this on the other hands makes a lot of sense. Increasing this penalty to balance losing below penalty.
 	#mercenary_cost = 0.5				#BTAddOn removed - We have more land, so mercenaries of course cost more... huh?
-	diplomatic_reputation = -2
-	improve_relation_modifier = -0.5
+	#diplomatic_reputation = -2				#BT removed as part of Coring Overhaul
+	#improve_relation_modifier = -0.5		#BT removed as part of Coring Overhaul
 	global_unrest = 5
+	manpower_recovery_speed = -0.5			#BT added as part of Coring Overhaul - you're policing newly conquered territories
+	reduced_liberty_desire = -0.25			#BT added as part of Coring Overhaul - your administration is focusing on integrating new territories
+	diplomatic_annexation_cost = 0.5		#BT added as part of Coring Overhaul - your administration is focusing on integrating conquered territories - i.e it takes longer to annex subjects
 	bureaucrats_influence = 0.5
 	mr_guilds_influence = 0.5
 	yearly_corruption = 0.5
