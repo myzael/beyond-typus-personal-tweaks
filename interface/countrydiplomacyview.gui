@@ -566,7 +566,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "cultures_value"
-			position = { x = 382 y = 130 }
+			position = { x = -382 y = -130 }
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
