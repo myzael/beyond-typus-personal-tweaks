@@ -731,3 +731,4 @@
  flavor_teu.3.b:0 "Invite the the teutonic order to rule over ducal prussia."
  IF_CONDITIONS_MET:0 "\nIf the following conditions are met:"
  #THEN_THIS:0 "\n...then these effects will happen:"
+ CORE_COST_MODIFIED_BY:0 "\nThis is modified multiplicatively by:\n"
