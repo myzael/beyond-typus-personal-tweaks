@@ -756,7 +756,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "improve_value"
-				position = { x = -403 y = -68}
+				position = { x = 170 y = 68}
 				textureFile = ""
 				font = "vic_18"
 				borderSize = {x = 2 y = 2}
@@ -765,19 +765,6 @@ guiTypes = {
 				maxHeight = 20
 				format = centre
 				fixedsize = yes
-			}
-			#BTDP
-			instantTextBoxType = {
-				name = "province_development_cost_gui"
-				position = { x = 170 y = 68 }
-				textureFile = ""
-				font = "vic_18"
-				borderSize = {x = 2 y = 2}
-				text = "province_development_cost_gui"
-				maxWidth = 40
-				maxHeight = 20
-				format = centre
-				scripted = yes
 			}
 			#BTDP
 			iconType = {
