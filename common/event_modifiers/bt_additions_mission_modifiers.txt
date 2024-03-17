@@ -37,6 +37,11 @@ bt_hsn_madrasas = {
 	technology_cost = -0.1
 }
 
+bt_hsn_draft_mamluks_mod = {
+	discipline = 0.05
+	is_mamluks_modifier = yes
+}
+
 bt_ukr_mother_of_all_rus = { #Permanent, country mod
 	core_creation = -0.1 #Doubles uniting Rus' CCC from Ruthenian ideas. Fallback if you somehow did not pick up Ruthenian Ideas. //Dub
 }

@@ -10,14 +10,25 @@ ayyubid_sultanate_mechanic = {
 			trigger = {
 			}
 			effect = {
-				add_years_of_owned_provinces_manpower = {
-					years = 1
-					trigger = {
-						NOT = { has_owner_religion = yes }
-						NOT = { has_owner_accepted_culture = yes }
-						is_state = yes
+				if = {
+					limit = {
+						has_dlc = "King of Kings"
 					}
-					custom_tooltip = ayyubid_sultanate_mechanic_draft_mamluks_tt
+					add_country_modifier = {
+						name = "bt_hsn_draft_mamluks_mod"
+						duration = 1825
+					}
+				}
+				else = {
+					add_years_of_owned_provinces_manpower = {
+						years = 1
+						trigger = {
+							NOT = { has_owner_religion = yes }
+							NOT = { has_owner_accepted_culture = yes }
+							is_state = yes
+						}
+						custom_tooltip = ayyubid_sultanate_mechanic_draft_mamluks_tt
+					}
 				}
 			}
 			cooldown_years = 5

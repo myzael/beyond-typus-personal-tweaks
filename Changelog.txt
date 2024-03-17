@@ -16,7 +16,7 @@ BT16
  - (Harbivore) Added English Marcher Lordships. Like normal marches but you can integrate them and also steal their generals
  - (Harbivore) Added mercury events giving gold to 3 provinces where historically cinnabar was mined and rose to prominence during the discovery of New World gold mines in Castile, Slovenia and Serbia.
  - (Dub) Added an Ayyubid Administration government mechanic to the Ayyubid Sultanate government reform, allowing the choice of one of three interactions once every 5 years:
-	 - Draft Mamluks: If King of Kings DLC is installed, drafts Mamluks unique units. Else, gain 1 years worth of manpower from stated provinces of unaccepted cultures of non-state religion.
+	 - Draft Mamluks: If King of Kings DLC is installed, gives a modifier for Mamluk unique units. Else, gain 1 years worth of manpower from stated provinces of unaccepted cultures of non-state religion.
 	 - Sponsor Shayk: Gain a random 50% discounted advisor of skill level 2/3 depending on if monthly income is below/above 35.
 	 - Grant Iqta: Gain a general with current army tradition + 25.
  - New idea sets for the following nations:

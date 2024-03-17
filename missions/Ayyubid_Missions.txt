@@ -457,6 +457,8 @@ hsn_conquest_group = {
 				name = "bt_hsn_egypt_reclaimed" #+10% governing capacity
 				duration = -1
 			}
+			custom_tooltip = bt_hsn_can_enlist_mamluks
+			set_country_flag = enable_mamluk_privilege #For the modders
 		}
 	}
 	
