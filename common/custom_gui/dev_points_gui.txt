@@ -84,11 +84,6 @@ custom_icon = {
 	tooltip = cant_see_foreign_dev_points_tooltip
 }
 
-custom_text_box = {
-	name = province_development_cost_gui
-	potential = { always = yes } 
-}
-
 #Not yet working
 # custom_text_box = {
 	# name = statewide_monthly_dev_points_gui
