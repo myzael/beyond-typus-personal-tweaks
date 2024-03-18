@@ -233,7 +233,7 @@ bt_trade_good_apiculture = {
 }
 
 bt_trade_good_silver = {
-	color = { 0.75 0.83 0.75 }
+	color = { 0.62 0.93 0.64 }
 	modifier = {
 		
 	}
