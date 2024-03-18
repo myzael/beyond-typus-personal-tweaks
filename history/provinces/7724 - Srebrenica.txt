@@ -10,7 +10,7 @@ capital = "Srebrenica"
 base_tax = 2 
 base_production = 2 
 base_manpower = 2 
-trade_goods = gold #silver
+trade_goods = bt_trade_good_silver #BT Harb changed with new  trade good #silver
 is_city = yes
 hre = no
 

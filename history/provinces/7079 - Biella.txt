@@ -10,7 +10,7 @@ capital = "Biella"
 base_tax = 3
 base_production = 4
 base_manpower = 2
-trade_goods = gold	#Intentional. Apparently gold was and still is an industry in the region. Also note wool is a major industry, and the obviously second choice.
+trade_goods = wool	#Intentional. Apparently gold was and still is an industry in the region. Also note wool is a major industry, and the obviously second choice. #BT Harb no evidence of mining in this time period
 is_city = yes
 hre = yes
 
