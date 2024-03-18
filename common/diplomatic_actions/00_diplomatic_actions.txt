@@ -320,60 +320,29 @@ allianceaction = {
 			NOT = { FROM = { has_government_attribute = cannot_form_alliances } }
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 1/6th of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
-		tooltip = THEY_ARE_TOO_SMALL
+	condition = {								#BT AI will no longer ally nations that are 5 times weaker than them. This is a quick fix that should massively help with poor ai choices #Harbivore
+		tooltip = THEY_ARE_TOO_WEAK
 		potential = {
-			always = yes
 			ai = yes
 		}
 		allow = {
-			variable_arithmetic_trigger = {
-				export_to_variable = {
-					variable_name = their_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
-					who = FROM
-				}
-				export_to_variable = {
-					variable_name = our_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
-					who = ROOT
-				}
-				multiply_variable = {
-					which = their_development
-					value = 6
-				}
-				check_variable = {            
-					which = their_development    
-					which = our_development
-				}
+			army_strength = {
+				who = FROM
+				value = 0.2
 			}
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 1/6th of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
-		tooltip = THEY_ARE_TOO_BIG	
+	condition = {								#BT AI will no longer ally nations that are 5 times weaker than them. This is a quick fix that should massively help with poor ai choices #Harbivore
+		tooltip = THEY_ARE_TOO_STRONK
 		potential = {
 			always = yes
 			ai = yes
 		}
 		allow = {
-			variable_arithmetic_trigger = {
-				export_to_variable = {
-					variable_name = their_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
+			NOT = {
+				army_strength = {
 					who = FROM
-				}
-				export_to_variable = {
-					variable_name = our_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
-					who = ROOT
-				}
-				multiply_variable = {
-					which = our_development
-					value = 6
-				}
-				check_variable = {      
-					which = our_development 
-					which = their_development   
+					value = 5
 				}
 			}
 		}
@@ -428,60 +397,28 @@ royal_marriage = {
 			NOT = { war_with = FROM }
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 1/6th of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
-		tooltip = THEY_ARE_TOO_SMALL
+	condition = {								#BT AI will no longer ally nations that are 5 times weaker than them. This is a quick fix that should massively help with poor ai choices #Harbivore
+		tooltip = THEY_ARE_TOO_WEAK
 		potential = {
-			always = yes
 			ai = yes
 		}
 		allow = {
-			variable_arithmetic_trigger = {
-				export_to_variable = {
-					variable_name = their_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
-					who = FROM
-				}
-				export_to_variable = {
-					variable_name = our_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
-					who = ROOT
-				}
-				multiply_variable = {
-					which = their_development
-					value = 6
-				}
-				check_variable = {            
-					which = their_development    
-					which = our_development
-				}
+			army_strength = {
+				who = FROM
+				value = 0.2
 			}
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 1/6th of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
-		tooltip = THEY_ARE_TOO_BIG	
+	condition = {								#BT AI will no longer ally nations that are 5 times stronger militarily. This is a quick fix that should massively help with poor ai choices #Harbivore
+		tooltip = THEY_ARE_TOO_STRONK
 		potential = {
-			always = yes
 			ai = yes
 		}
 		allow = {
-			variable_arithmetic_trigger = {
-				export_to_variable = {
-					variable_name = their_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
+			NOT = {
+				army_strength = {
 					who = FROM
-				}
-				export_to_variable = {
-					variable_name = our_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
-					who = ROOT
-				}
-				multiply_variable = {
-					which = our_development
-					value = 6
-				}
-				check_variable = {      
-					which = our_development 
-					which = their_development   
+					value = 5
 				}
 			}
 		}
