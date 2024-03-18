@@ -52,7 +52,7 @@ is_in_any_colonial_region = {
 }
 
 has_enough_dev_points_to_dev = {
-		variable_arithmetic_trigger = {
+	variable_arithmetic_trigger = {
 		export_to_variable = {		#Sets variable for base development cost
 			variable_name = province_dev_cost
 			value = 25

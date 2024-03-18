@@ -320,23 +320,11 @@ allianceaction = {
 			NOT = { FROM = { has_government_attribute = cannot_form_alliances } }
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
+	condition = {								#BT AI will no longer ally nations that are less than 1/6th of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
 		tooltip = THEY_ARE_TOO_SMALL
 		potential = {
 			always = yes
 			ai = yes
-			NOT = {	
-				AND = {
-					OR = {
-						tag = STY
-						tag = HAB
-					}
-					ai = yes
-					NOT = {
-						total_development = 500
-					}
-				}
-			}
 		}
 		allow = {
 			variable_arithmetic_trigger = {
@@ -347,70 +335,25 @@ allianceaction = {
 				}
 				export_to_variable = {
 					variable_name = our_development
-					value = total_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
 					who = ROOT
 				}
-				divide_variable = {     
-					which = their_development       
-					which = our_development
+				multiply_variable = {
+					which = their_development
+					value = 6
 				}
 				check_variable = {            
-					which = their_development
-					value = 0.15
+					which = their_development    
+					which = our_development
 				}
 			}
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
+	condition = {								#BT AI will no longer ally nations that are less than 1/6th of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
 		tooltip = THEY_ARE_TOO_BIG	
 		potential = {
 			always = yes
 			ai = yes
-			if = {
-				limit = {
-					FROM = {
-						TAG = STY
-					}
-				}
-				total_development = 50
-			}
-		}
-		allow = {
-			variable_arithmetic_trigger = {
-				export_to_variable = {
-					variable_name = their_development
-					value = total_development
-					who = FROM
-				}
-				export_to_variable = {
-					variable_name = our_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
-					who = ROOT
-				}
-				divide_variable = {     
-					which = their_development       
-					which = our_development
-				}
-				NOT = {
-				check_variable = {            
-					which = their_development
-					value = 5
-				}
-				}
-			}
-		}
-	}
-	condition = {								#BT Special one for Styria #Harbivore
-		tooltip = THEY_ARE_TOO_SMALL_STY
-		potential = {
-			OR = {
-				tag = STY
-				tag = HAB
-			}
-			ai = yes
-			NOT = {
-				total_development = 500
-			}
 		}
 		allow = {
 			variable_arithmetic_trigger = {
@@ -421,16 +364,16 @@ allianceaction = {
 				}
 				export_to_variable = {
 					variable_name = our_development
-					value = total_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
 					who = ROOT
 				}
-				divide_variable = {     
-					which = their_development       
+				multiply_variable = {
 					which = our_development
+					value = 6
 				}
-				check_variable = {        	    
-					which = their_development
-					value = 0.5
+				check_variable = {      
+					which = our_development 
+					which = their_development   
 				}
 			}
 		}
@@ -439,8 +382,6 @@ allianceaction = {
 		change_asha_vahishta = { value = 2 }
 	}
 }
-	
-
 
 enforce_peace = {
 	#do this before the peace is enforced, or there is no war enemy country
@@ -478,7 +419,6 @@ enforce_peace = {
 	}
 }
 
-
 royal_marriage = {
 	condition = {
 		tooltip = MARWAR
@@ -488,21 +428,11 @@ royal_marriage = {
 			NOT = { war_with = FROM }
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
+	condition = {								#BT AI will no longer ally nations that are less than 1/6th of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
 		tooltip = THEY_ARE_TOO_SMALL
 		potential = {
 			always = yes
 			ai = yes
-			NOT = {	
-				OR = {
-					tag = STY
-					tag = HAB
-				}
-				ai = yes
-				NOT = {
-					total_development = 500
-				}
-			}
 		}
 		allow = {
 			variable_arithmetic_trigger = {
@@ -513,70 +443,25 @@ royal_marriage = {
 				}
 				export_to_variable = {
 					variable_name = our_development
-					value = total_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
 					who = ROOT
 				}
-				divide_variable = {     
-					which = their_development       
-					which = our_development
+				multiply_variable = {
+					which = their_development
+					value = 6
 				}
 				check_variable = {            
-					which = their_development
-					value = 0.15
+					which = their_development    
+					which = our_development
 				}
 			}
 		}
 	}
-	condition = {								#BT AI will no longer ally nations that are less than 15% of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
+	condition = {								#BT AI will no longer ally nations that are less than 1/6th of their development. This is a quick fix that should massively help with poor ai choices #Harbivore
 		tooltip = THEY_ARE_TOO_BIG	
 		potential = {
 			always = yes
 			ai = yes
-			if = {
-				limit = {
-					FROM = {
-						TAG = STY
-					}
-				}
-				total_development = 50
-			}
-		}
-		allow = {
-			variable_arithmetic_trigger = {
-				export_to_variable = {
-					variable_name = their_development
-					value = total_development
-					who = FROM
-				}
-				export_to_variable = {
-					variable_name = our_development
-					value = trigger_value:total_own_and_non_tributary_subject_development 
-					who = ROOT
-				}
-				divide_variable = {     
-					which = their_development       
-					which = our_development
-				}
-				NOT = {
-				check_variable = {            
-					which = their_development
-					value = 5
-				}
-				}
-			}
-		}
-	}
-	condition = {								#BT Special one for Styria #Harbivore
-		tooltip = THEY_ARE_TOO_SMALL_STY
-		potential = {
-			OR = {
-				tag = STY
-				tag = HAB
-			}
-			ai = yes
-			NOT = {
-				total_development = 500
-			}
 		}
 		allow = {
 			variable_arithmetic_trigger = {
@@ -587,16 +472,16 @@ royal_marriage = {
 				}
 				export_to_variable = {
 					variable_name = our_development
-					value = total_development
+					value = trigger_value:total_own_and_non_tributary_subject_development 
 					who = ROOT
 				}
-				divide_variable = {     
-					which = their_development       
+				multiply_variable = {
 					which = our_development
+					value = 6
 				}
-				check_variable = {            
-					which = their_development
-					value = 0.5
+				check_variable = {      
+					which = our_development 
+					which = their_development   
 				}
 			}
 		}
