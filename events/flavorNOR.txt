@@ -1069,7 +1069,7 @@ country_event = {
 				name = nor_kongsberg_mine
 				duration = -1
 			}
-			change_trade_goods = gold
+			change_trade_goods = bt_trade_good_silver #BT Harb changed with new trade good
 		}
 	}
 	option = {
