@@ -9,3 +9,7 @@ bt_prussian_blue = {
 bolonga_silk_mills = {
 	 trade_goods_size = 2
 }
+
+bt_mines_of_upper_hungary = {
+	trade_goods_size = 1
+}

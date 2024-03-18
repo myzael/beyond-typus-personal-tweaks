@@ -4822,7 +4822,7 @@ hab_plague_of_vienna = {
 }
 
 hab_schwaz_mine = {
-	trade_goods_size = 1.0
+	trade_goods_size = 2.0	#BT Changed because province is silver giving a -50% gp modifier
 }
 
 hab_centralization_of_austria = {

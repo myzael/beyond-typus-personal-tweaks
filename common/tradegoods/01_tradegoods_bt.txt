@@ -231,3 +231,38 @@ bt_trade_good_apiculture = {
 		}
 	}
 }
+
+bt_trade_good_silver = {
+	color = { 0.75 0.83 0.75 }
+	modifier = {
+		
+	}
+	province = {
+		trade_goods_size_modifier = -0.5
+		local_gold_depletion_chance_modifier = -0.5
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
+
+bt_trade_good_gunpowder = {
+	color = { 040 0.32 0.04 }
+	modifier = {
+		siege_ability = 0.1
+	}
+	province = {
+		local_hostile_attrition = 1
+	}
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			always = yes
+		}
+	}
+}
