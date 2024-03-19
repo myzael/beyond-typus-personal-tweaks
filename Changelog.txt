@@ -38,6 +38,7 @@ BT16
 - (Dub) Integrated the More Buildings addon to BT16, with almost all its features & tweaks. Included, but not limited to:
 	- New buildings for navy, military, production, taxation, as well as new manufactories and other governance buildings such as roads and canals.
 	- Some buildings have been reworked, as area-wide buildings were cut and remade into other types of buildings such as alternate manufactories.
+	- Vanilla's temple building is also no longer the tax building, now increasing missionary strength and decreases culture conversion cost in the province.
 - (Dub) Added a Ruthenian Mission tree. Features include:
 	- Conquest missions spanning Siberia, Russia, Ruthenia, Poland, Finland, Baltics, Pontic Steppes as well as Caucasia.
 	- Flavour missions expanding akin to what the Russian Domination tree does, focusing on internal matters of Ruthenia such as production, religion, development, estates, court, army (Streltsy + Cossacks) and more.
@@ -47,7 +48,12 @@ BT16
 	- Dev Points are only ever directly generated from buildings, they are modified by several factors on a provincial level and a national level. Examples are: -being at peace -ideas -90% manpower -prosperity -overextension
 	- They are spent in the same way monarch points were previously used
 	- There is a maximum amount that can be stored at once, changed by gov rank, ideas and adm tech. If a nation goes over their limit they are automatically spent.
-	
+- (Harbivore) Added silver as a tradegood.
+	- Existing gold provinces throughout the world were considered and looked over to see whether they produced silver or gold.
+- (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy.
+- (Dub) Created 10 additional buttons, present in the Country Court screen, that allows you to spend excess monarch points on country modifiers.
+	- Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable.
+
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
@@ -62,9 +68,15 @@ BT16
  - (Harbivore) Fixed error with American dynamic CoT events
  - (Dub) Fixed SRN_ADJ & EGL_ADJ localisation, again (?)
  - (Dub) Fixed duplicate Penang & Barus provinces
- - (Dub) Fixed vanilla tooltip bug for subject bonuses (It's still buggy, but without custom-tooltipping the entire thing, there's no fix for it)
+ - (Dub) Bandaid-fixed vanilla tooltip bug for subject bonuses (It's still buggy, but without custom-tooltipping the entire thing, there's no fix for it)
  - (Dub) Fixed vanilla tooltip bug for coring
  - (Dub) Fixed favour cost for returning core provinces from allies not taking dev-doubling into account
+ - (Dub) Delagified the endgame tag trigger such that it's about twice as fast to calculate, thereby reducing overall game lag.
+	- Note that this new system is much more prone to break, depending on setting country flags which may disappear in edge-case scenarios. Please be prudent to report these to us!
+ - (Dub) Delagified the vanilla Indian Trade Company decision such that it's about 5 times as fast to calculate, thereby reducing overall game lag.
+ - (Dub) Delagified BT's merchant republic flavour decision to increase trade power in mediterranean nodes such that it runs about 4 times as fast, thereby reducing overall game lag.
+ - (Chrys) Fixed new vanilla monument gfx having no name plates.
+ - (Dub) Fixed numerous missing quote marks and parentheses in dynamic province naming.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -100,7 +112,6 @@ BT16
  - (Dub) Shuffled Wild Fields coal provinces into the Donets basin 
  - (Dub) Tweaked Governing Capacity - now government ranks grant 0/25/50% extra governing capacity instead of a flat bonus, and governing capacity from tech has been smudged over all admin technologies.
  - (Dub) Tweaked Warscore impact from province autonomy to be more impactful - provinces with high autonomy should now be much cheaper to conquer.
- - (Chrys) Fixed new vanilla monument gfx having no name plates.
  - (Harbivore) Changed dutch polders to be more appropriate.
  - (Harbivore) Made Genoa and Venice Historical rivals to stop their monopoly on the seas.
  - (Harbivore) Gave a failure condition to castilian disaster if the rebels win allowing them to escape the disaster.
@@ -113,6 +124,9 @@ BT16
 	- Territorial cores now cost 25% of the admin points instead of 50%.
 	- Overextension has now been overhauled to signify the troubles of pacifying newly conquered regions, instead of being mostly diplomatically focused.
  - (Dub) Cut KoK Pronoiar creation making the country leader a "greek general" - it makes no sense.
+ - (Dub) Tweaked native policies such that trading with natives gives twice the production from natives, and returned other native policies to vanilla's values.
+ - (Dub) Shuffled Glass tradegood from Linköping to Nyköping to reflect history and added the Sala Silver Mine in Västerås.
+ - (Dub) Doubled MTTH on PurelyNasty event (Separatist Sentiment) to account for more provinces.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
