@@ -2713,6 +2713,7 @@ country_event = { #The Crown of Rome
 		LAE = { 
 			change_religion = catholic
 			set_dynasty = ROOT
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 			hidden_effect = { 
 				every_owned_province = { 
 					limit = {

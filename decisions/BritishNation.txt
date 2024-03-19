@@ -124,6 +124,7 @@ country_decisions = {
 				swap_ideas = yes
 			}
 			set_country_flag = formed_great_britain_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 		}
 		ai_will_do = {
 			factor = 1
@@ -267,6 +268,7 @@ country_decisions = {
 				swap_ideas = yes
 			}
 			set_country_flag = formed_great_britain_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 		}
 		ai_will_do = {
 			factor = 1
@@ -342,7 +344,7 @@ country_decisions = {
 							exists = yes
 							ai = yes
 							is_subject_of = ROOT
-							NOT = { num_of_cities = 15 }
+							NOT = { num_of_cities = 36 } #Has flippin' 27 now.
 						}
 					}
 					inherit = SCO
@@ -425,7 +427,7 @@ country_decisions = {
 							exists = yes
 							ai = yes
 							is_subject_of = ROOT
-							NOT = { num_of_cities = 40 }
+							NOT = { num_of_cities = 80 } #BT Doubled to 80 for now. Needs to be looked at properly at some point.
 						}
 					}
 					inherit = FRA

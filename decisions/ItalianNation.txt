@@ -23,7 +23,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = ITA }
-			hidden_trigger  = { NOT = { exists = ITA } }
+			#hidden_trigger  = { NOT = { exists = ITA } } #Cut, because it's just a double at the moment. Napoleonic Italy tag seems to have been cut?
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -93,6 +93,7 @@ country_decisions = {
 				swap_ideas = yes
 			}
 			set_country_flag = formed_italy_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 		}
 		ai_will_do = {
 			factor = 1

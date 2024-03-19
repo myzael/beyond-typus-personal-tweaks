@@ -129,6 +129,7 @@ country_decisions = {
 				add_base_tax = 1
 			}
 			set_country_flag = formed_plc_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 			add_prestige = 25
 			if = { 
 				limit = { 

@@ -180,6 +180,7 @@ country_decisions = {
 			}
 			add_prestige = 20
 			set_country_flag = formed_yuan_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 			if = { #Sinicize the Mongols
 				limit = {
 					NOT = { has_global_flag = sinicized_altaic_flag }

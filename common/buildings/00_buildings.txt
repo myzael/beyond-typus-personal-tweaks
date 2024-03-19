@@ -384,7 +384,7 @@ temple = {
 			has_owner_accepted_culture = no			
 		}
 		modifier = { #If AI has special privilege or whatever that buffs temples, build it.
-			factor = 3
+			factor = 2.1
 			OR = {
 				AND = { #Country gets dev from buildings
 					FROM = { has_country_flag = improve_development_on_buildings_built }
