@@ -89,6 +89,7 @@ country_decisions = {
 				swap_ideas = yes
 			}
 			set_country_flag = formed_france_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 		}
 		ai_will_do = {
 			factor = 1
