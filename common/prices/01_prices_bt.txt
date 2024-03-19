@@ -28,7 +28,3 @@ bt_trade_good_silver = {
 	base_price = 0 
 	goldtype = yes
 }
-
-bt_trade_good_gunpowder = {
-	base_price = 4.0
-}	
