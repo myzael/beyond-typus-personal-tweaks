@@ -60,13 +60,14 @@ country_decisions = {
 				add_permanent_claim = ARB
 			}
 			#Swap culture, government, government reform & ideas, plus set flag
-			if = { #Technically Arabia doesn't have unique ideas yet.
+			if = {
 				limit = {
 					NOT = { has_idea_group = ARB_ideas }
 				}
 				swap_ideas = yes
 			}
 			set_country_flag = formed_arabia_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 			country_event = {
 				id = flavor_ARB.10
 			}

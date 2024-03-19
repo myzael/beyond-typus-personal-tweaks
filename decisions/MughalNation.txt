@@ -176,6 +176,7 @@ country_decisions = {
 				}
 			}
 			set_country_flag = formed_mughal_empire_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 		}
 		ai_will_do = {
 			factor = 10

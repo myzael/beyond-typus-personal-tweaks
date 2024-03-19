@@ -23,7 +23,10 @@ country_decisions = {
 				AND = {
 					ai = yes
 					num_of_cities = 10
-					adm_tech = 20
+					OR = { #BT Added: If an AI somehow manages to unite Scandinavia and completes their mission tree, shouldn't they... form... Scandinavia?
+						adm_tech = 20
+						has_country_flag = can_form_scandinavia_earlier 
+					} 
 				}
 			}
 			is_colonial_nation = no
@@ -313,6 +316,7 @@ country_decisions = {
 			}
 			add_prestige = 10
 			set_country_flag = formed_scandinavia_flag
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 			if = {
 				limit = {
 					NOT = { has_idea_group = new_SCA_ideas }

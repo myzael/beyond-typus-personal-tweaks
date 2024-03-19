@@ -3449,6 +3449,7 @@ country_event = {
 			set_country_flag = byz_dishonoring_justinian
 		}
 		set_country_flag = BYZ_gave_in_to_papal_pressure
+		set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag. Though probably not necessary here as Byzantium should be an end-game tag.
 		set_country_flag = has_byz_missions
 		hidden_effect = {
 			save_event_target_as = byz_latin_empire

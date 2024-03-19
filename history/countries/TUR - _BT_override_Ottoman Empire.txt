@@ -26,3 +26,5 @@ change_estate_land_share = {
 	set_estate_privilege = estate_dhimmi_manpower
 	set_estate_privilege = estate_nobles_border_forts #Added to help Ottos cope with forts.
 }	#			<-- This was Dub's in BT unofficial, but actually a good idea.
+
+set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.

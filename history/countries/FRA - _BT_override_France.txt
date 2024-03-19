@@ -19,3 +19,5 @@ change_estate_land_share = {
 	set_estate_privilege = estate_nobles_french_strong_duchies #Overrides vanilla's entry.
 	set_estate_privilege = estate_nobles_very_strong_duchies
 }
+
+set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.

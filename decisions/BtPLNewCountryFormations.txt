@@ -370,6 +370,7 @@ country_decisions = {
 			#No Iberian ideas yet.
 			# swap_ideas = yes
 			set_country_flag = formed_iberia_flag_btp
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 		}
 		ai_will_do = {
 			factor = 1
@@ -469,6 +470,7 @@ country_decisions = {
 			#No Illyrian ideas yet.
 			# swap_ideas = yes
 			set_country_flag = formed_illyria_flag_btp
+			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 		}
 		ai_will_do = {
 			factor = 1
