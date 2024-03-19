@@ -159,12 +159,18 @@ mint = {
 	time = 36
 	
 	build_trigger = {
-		trade_goods = gold
+		OR = {
+			trade_goods = gold
+			trade_goods = bt_trade_good_silver
+		}
         #development = 30
     }
 	
 	keep_trigger = {
-		trade_goods = gold
+		OR = {
+			trade_goods = gold
+			trade_goods = bt_trade_good_silver
+		}
 	}
 	
 	modifier = {
@@ -176,7 +182,7 @@ mint = {
 	#show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
 	ai_will_do = {
-		factor = 6
+		factor = 1
 		#Lots of factors taken from BT manufactories
 		modifier = {
 			factor = 0.5
@@ -323,84 +329,6 @@ tax_assessor = {
 	
 	ai_will_do = {
 		factor = 1 #Removed all factors.
-		modifier = {
-			factor = 40 #Apparently the AI seems to see *some* sort of value in these buildings with manpower modifiers and forcelimit modifiers.
-			#This checks for if the province is eligible for manufactory based on owner tech. If it can, this becomes available - the AI has then decided that the manufactory is not worth it in this province.
-			OR = {
-				AND = {
-					OR = {
-						trade_goods = naval_supplies
-						trade_goods = fish
-						trade_goods = salt
-					}
-					FROM = { dip_tech = 11 }
-				}
-				AND = {
-					OR = {
-						trade_goods = copper
-						trade_goods = iron
-					}
-					FROM = { mil_tech = 11 }
-				}
-				AND = {
-					OR = {
-						trade_goods = wool
-						trade_goods = cloth
-						trade_goods = silk
-						trade_goods = dyes
-						trade_goods = bt_trade_good_books
-					}
-					FROM = { adm_tech = 11 }
-				}
-				AND = {
-					OR = {
-						trade_goods = coffee
-						trade_goods = cotton
-						trade_goods = sugar
-						trade_goods = tobacco
-						trade_goods = tea
-						trade_goods = cocoa
-					}
-					FROM = { adm_tech = 14 }
-				}
-				AND = {
-					OR = {
-						trade_goods = ivory
-						trade_goods = slaves
-						trade_goods = spices
-						trade_goods = cloves
-						trade_goods = fur
-						trade_goods = incense
-					}
-					FROM = { dip_tech = 14 }
-				}
-				AND = {
-					OR = {
-						trade_goods = grain
-						trade_goods = livestock
-						trade_goods = wine
-						trade_goods = bt_trade_good_beer
-						trade_goods = bt_trade_good_fruit
-						trade_goods = bt_trade_good_apiculture
-					}
-					FROM = { adm_tech = 6 }
-				}
-				AND = {
-					OR = {
-						trade_goods = paper
-						trade_goods = gems
-						trade_goods = tropical_wood
-						trade_goods = glass
-						trade_goods = chinaware
-					}
-					FROM = { adm_tech = 16 }
-				}
-				AND = {
-					trade_goods = coal
-					FROM = { adm_tech = 21 }
-				}
-			}
-		}
 	}
 }
 
@@ -434,10 +362,6 @@ armory = {
 		modifier = {
 			factor = 0.2
 			is_state = no
-		}
-		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
-			factor = 0.1
-			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -476,10 +400,6 @@ arsenal = {
 			factor = 0.2
 			is_state = no
 		}
-		modifier = { #The AI seems to get +0.02 value factor per manpower dev on a fort province. It's not as bad as the sailors one.
-			factor = 0.1
-			has_fort_building_trigger = yes
-		}
 	}
 }
 
@@ -494,7 +414,7 @@ naval_arsenal = { #Actually Shipyard in-game
 	}
 	
 	modifier = {
-		local_ship_cost = -0.10			
+		local_ship_repair = 0.10		
 		ship_recruit_speed = -0.10
 		province_trade_power_value = 1
 		base_local_dev_points = 0.02
@@ -516,7 +436,11 @@ naval_arsenal = { #Actually Shipyard in-game
 	}
 	
 	ai_will_do = {
-		factor = 20 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		factor = 2 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
 		modifier = {
 			factor = 0.6
 			local_autonomy = 30			
@@ -528,10 +452,6 @@ naval_arsenal = { #Actually Shipyard in-game
 		modifier = {
 			factor = 0.2
 			is_state = no
-		}
-		modifier = { #The AI seems to get a massive boost to this building on a fort province. Don't know why, but let's reduce it.
-			factor = 0.1
-			has_fort_building_trigger = yes
 		}
 		modifier = { #Do NOT use your last building slot on one of these buildings.
 			factor = 0.01
@@ -551,7 +471,7 @@ naval_base = { #Actually Grand Shipyard in-game
 	make_obsolete = naval_arsenal
 	
 	modifier = {
-		local_ship_cost = -0.20		
+		local_ship_repair = 0.20	
 		ship_recruit_speed = -0.20
 		province_trade_power_value = 2.5
 		base_local_dev_points = 0.04
@@ -575,7 +495,11 @@ naval_base = { #Actually Grand Shipyard in-game
 	}
 	
 	ai_will_do = {
-		factor = 80 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		factor = 2 #To counterbalance the non-existent economic value of this building, automatically assigning it a value of 0.01.
+		modifier = {
+			factor = 0
+			NOT = { has_port = yes }
+		}
 		#Non-economic buildings get some penalties in high autonomy regions. This is intended to prevent situations caused by the AI not understand how to prioritise non-economic buildings in high autonomy regions due to factoring being forced and not dynamic.
 		modifier = {
 			factor = 0.6
@@ -588,10 +512,6 @@ naval_base = { #Actually Grand Shipyard in-game
 		modifier = {
 			factor = 0.2
 			is_state = no
-		}
-		modifier = { #The AI seems to get a massive boost to this building on a fort province. Don't know why, but let's reduce it.
-			factor = 0.1
-			has_fort_building_trigger = yes
 		}
 		modifier = { #Do NOT use your last building slot on one of these buildings.
 			factor = 0.01
@@ -638,7 +558,7 @@ constable = {
 	}
 	
 	ai_will_do = {
-		factor = 1 #AI sees value in this building, so factor will be 1.
+		factor = 2 #AI sees value in this building, so factor will be 1.
 		modifier = { #4 BT
 			factor = 2
 			base_tax = 4
@@ -684,7 +604,7 @@ treasury_office = {
 	}
 	
 	ai_will_do = {
-		factor = 1 #AI sees value in this building, so factor will be 1.
+		factor = 3 #AI sees value in this building, so factor will be 1.
 		modifier = { #4 BP
 			factor = 2
 			base_production = 4
@@ -731,16 +651,8 @@ post_office = {
 	on_obsolete = {
 	}
 	
-	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
-	on_built = {
-	}
-
-	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
-	on_destroyed = { #There's no actual remove province triggered modifier command, is there?
-	}
-	
 	ai_will_do = {
-		factor = 6 #Doubled in comparison to workshop because trade value is not seen as well by the AI.
+		factor = 3
 		modifier = { #Mainly to promote this building over others.
 			factor = 5
 			base_production = 5
@@ -793,7 +705,7 @@ customs_house = {
 	}
 	
 	ai_will_do = {
-		factor = 10 #Doubled in comparison to counting house because trade value is not seen as well by the AI.
+		factor = 5
 		modifier = { #Mainly to promote this building over others.
 			factor = 5
 			base_production = 5
@@ -840,6 +752,15 @@ march_building = {
 	
 	ai_will_do = {
 		factor = 500 #AI sees no value in this building, so this brings it to 1% yearly return, i.e AI will build it.
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					is_march_or_similar_subject = yes
+				}
+				is_capital = yes
+			}
+		}
 	}
 }
 
@@ -876,6 +797,15 @@ glorious_monument = {
 	
 	ai_will_do = {
 		factor = 500 #AI sees no value in this building, so this brings it to 0.8% yearly return
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					is_march_or_similar_subject = yes
+				}
+				is_capital = yes
+			}
+		}
 		#Dynamix
 		modifier = {
 			factor = 2
@@ -941,6 +871,15 @@ spy_agency = {
 	
 	ai_will_do = {
 		factor = 500 #AI sees no value in this building, so this brings it to 1% yearly return, i.e AI will build it.
+		modifier = {
+			factor = 0
+			NOT = {
+				owner = {
+					is_march_or_similar_subject = yes
+				}
+				is_capital = yes
+			}
+		}
 	}
 }
 

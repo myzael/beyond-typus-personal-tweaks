@@ -365,18 +365,18 @@ temple = {
 			has_owner_harmonized_religion = no
 			has_owner_secondary_religion = no
 			NOT = {										#Stopped them building them when the province is not hurting due to religion
-				tolerance_to_this = 0
-			}
-			OR = {
-				has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
-				has_province_modifier = eth_accepted_society
-				has_province_modifier = estate_burghers_guaranteed_autonomy_mod
-				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-				has_province_modifier = estate_church_lao_animism_mod
-				has_province_modifier = judaism_abrahamic_roots
-				has_province_modifier = son_fetishism_as_secondary_religion_province
-				has_province_modifier = msi_integrated_province
-				has_province_modifier = estate_church_muslim_integration_mod
+				OR = {
+					tolerance_to_this = 0
+					has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+					has_province_modifier = eth_accepted_society
+					has_province_modifier = estate_burghers_guaranteed_autonomy_mod
+					has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+					has_province_modifier = estate_church_lao_animism_mod
+					has_province_modifier = judaism_abrahamic_roots
+					has_province_modifier = son_fetishism_as_secondary_religion_province
+					has_province_modifier = msi_integrated_province
+					has_province_modifier = estate_church_muslim_integration_mod
+				}
 			}
 		}
 		modifier = { #AI is encouraged to build this where they need to convert the local population
@@ -384,8 +384,8 @@ temple = {
 			has_owner_accepted_culture = no
 			OR = {
 				has_owner_religion = yes			
-				has_owner_harmonized_religion = no
-				has_owner_secondary_religion = no		
+				has_owner_harmonized_religion = yes
+				has_owner_secondary_religion = yes		
 			}			
 		}
 		modifier = { #If AI has special privilege or whatever that buffs temples, build it.
@@ -466,10 +466,6 @@ temple = {
 					FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
 				}
 			}
-		}
-		modifier = { #Adding because base increases of forts it seems.
-			factor = 0.1
-			has_fort_building_trigger = yes
 		}
 	}
 }
@@ -1411,18 +1407,18 @@ cathedral = {
 			has_owner_harmonized_religion = no
 			has_owner_secondary_religion = no
 			NOT = {								#BT Harb AI will not get this now if the province is not hurting them
-				tolerance_to_this = 0
-			}
-			OR = {
-				has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
-				has_province_modifier = eth_accepted_society
-				has_province_modifier = estate_burghers_guaranteed_autonomy_mod
-				has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
-				has_province_modifier = estate_church_lao_animism_mod
-				has_province_modifier = judaism_abrahamic_roots
-				has_province_modifier = son_fetishism_as_secondary_religion_province
-				has_province_modifier = msi_integrated_province
-				has_province_modifier = estate_church_muslim_integration_mod
+				OR = {
+					tolerance_to_this = 0
+					has_province_modifier = estate_dhimmi_guaranteed_autonomy_mod
+					has_province_modifier = eth_accepted_society
+					has_province_modifier = estate_burghers_guaranteed_autonomy_mod
+					has_province_modifier = estate_brahmins_guaranteed_autonomy_mod
+					has_province_modifier = estate_church_lao_animism_mod
+					has_province_modifier = judaism_abrahamic_roots
+					has_province_modifier = son_fetishism_as_secondary_religion_province
+					has_province_modifier = msi_integrated_province
+					has_province_modifier = estate_church_muslim_integration_mod
+				}
 			}
 		}
 		modifier = { #AI is encouraged to build this where they need to convert the local population
@@ -1430,8 +1426,8 @@ cathedral = {
 			has_owner_accepted_culture = no	
 			OR = {
 				has_owner_religion = yes			
-				has_owner_harmonized_religion = no
-				has_owner_secondary_religion = no		
+				has_owner_harmonized_religion = yes
+				has_owner_secondary_religion = yes		
 			}					
 		}
 		modifier = { #If AI has special privilege or whatever that buffs temples, build it.
@@ -1512,10 +1508,6 @@ cathedral = {
 					FROM = { has_country_modifier = mam_mosque_great_mosque_generates_crown_land_modifier }
 				}
 			}
-		}
-		modifier = { #Adding because base increases of forts it seems.
-			factor = 0.1
-			has_fort_building_trigger = yes
 		}
 	}
 }
