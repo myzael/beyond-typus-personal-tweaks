@@ -3464,7 +3464,7 @@ province_event = {
 	trigger = {
 		province_id = 4183 # Iwami
 		is_year = 1526
-		NOT = { trade_goods = bt_trade_good_silver #BT Harb changed because massive mining towns here }
+		NOT = { trade_goods = bt_trade_good_silver }#BT Harb changed because massive mining towns here
 	}
 	
 	mean_time_to_happen = {
