@@ -77,6 +77,7 @@ BT16
  - (Dub) Delagified BT's merchant republic flavour decision to increase trade power in mediterranean nodes such that it runs about 4 times as fast, thereby reducing overall game lag.
  - (Chrys) Fixed new vanilla monument gfx having no name plates.
  - (Dub) Fixed numerous missing quote marks and parentheses in dynamic province naming.
+ - (Dub) Fixed Brandenburg starting as High Saxon, not Markish.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
