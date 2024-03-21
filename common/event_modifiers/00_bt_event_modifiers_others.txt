@@ -269,6 +269,62 @@ bt_georgia_triarchy = {			#BT Added to fix Georgian minors starting LD.
 	reduced_liberty_desire = 20
 }
 
+extra_colonist_button_mod = {
+	colonists = 1
+	country_diplomatic_power = -1
+}
+
+extra_diplomat_button_mod = {
+	diplomats = 1
+	country_diplomatic_power = -1
+}
+
+extra_merchant_button_mod = {
+	merchants = 1
+	country_diplomatic_power = -1
+}
+
+extra_missionary_button_mod = {
+	missionaries = 1
+	country_admin_power = -1
+}
+
+institution_spread_button_mod = {
+	global_institution_spread = 0.5
+	country_admin_power = -1
+}
+
+monthly_dev_points_button_mod = {
+	country_dev_points_modifier = 0.20
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
+}
+
+reform_progress_growth_button_mod = {
+	monthly_reform_progress_modifier = 0.25
+	country_admin_power = -1
+}
+
+yearly_absolutism_button_mod = {
+	yearly_absolutism = 0.5
+	country_military_power = -1
+}
+
+yearly_army_professionalism_button_mod = {
+	yearly_army_professionalism = 0.005
+	country_military_power = -1
+}
+
+yearly_army_tradition_button_mod = {
+	army_tradition = 1
+	country_military_power = -1
+}
+
+yearly_innovativeness_button_mod = {
+	yearly_innovativeness = 0.25
+	country_military_power = -1
+}
 
 
 ##################################################################################################
