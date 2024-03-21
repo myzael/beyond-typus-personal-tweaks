@@ -178,7 +178,7 @@ technology = { #The Flute
 	global_colonial_growth  = 	10
 	enable = flute
 	enable = war_galley
-	embassy = yes #BT More Buildings added
+	#embassy = yes #BT More Buildings added
 }
 
 technology = { #Wharf
