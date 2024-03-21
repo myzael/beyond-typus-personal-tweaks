@@ -51,7 +51,7 @@ BT16
 - (Harbivore) Added silver as a tradegood.
 	- Existing gold provinces throughout the world were considered and looked over to see whether they produced silver or gold.
 - (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy.
-- (Dub) Created 10 additional buttons, present in the Country Court screen, that allows you to spend excess monarch points on country modifiers.
+- (Dub) Created 10 (11) additional buttons, present in the Country Court screen, that allows you to spend excess monarch points to gain countrywide modifiers.
 	- Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable.
 
 #Bugfixes
