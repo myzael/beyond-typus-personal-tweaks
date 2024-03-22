@@ -21,7 +21,7 @@ trade_goods = salt
 
 #Cores and Occupation (Alphabetical after current)
 add_core = OPL
-add_core = KLU
+add_core = KLZ
 
 #Other Political
 hre = yes
@@ -45,8 +45,8 @@ discovered_by = ottoman
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	remove_core = OPL
-	owner = KLU
-	controller = KLU
+	owner = KLZ
+	controller = KLZ
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	add_core = OPL

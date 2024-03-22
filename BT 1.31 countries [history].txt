@@ -541,7 +541,7 @@ KLM - Kalmyk.txt
 KLN - Keladi.txt
 KLP - Kalpi.txt
 KLT - Kolathunad.txt
-KLU - Kreuzburg.txt
+KLZ - Kreuzburg.txt
 KLY - Kalapuya.txt
 KMC - Kamchadals.txt
 KME - KhmerEmpire.txt
