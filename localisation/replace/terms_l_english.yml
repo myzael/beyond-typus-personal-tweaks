@@ -47,4 +47,4 @@
  WHITE_PEACE_INDEPENDANCE:0 "White Peace. \n §R$ATTACKER$ remains subject to $DEFENDER$.§!\n"
  MENU_BAR_GAME_RESIGN:0 "Restart to Menu"
  RESIGN_TITLE:0 "Restart to Main Menu"
- RESIGN_DESC:0 "Are you sure you want to resign and restart the game, wait for a while for the game to boot up again to, finally, return to the main menu?"
+ RESIGN_DESC:0 "Are you sure you want to resign and restart the game to return to the main menu?"
