@@ -8,7 +8,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = extra_colonist_button_mod }
 			}
-			monthly_dip = 0
+			monthly_dip = 1
 		}
 		num_of_colonists = 1
 	} 
@@ -54,7 +54,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = extra_diplomat_button_mod }
 			}
-			monthly_dip = 0
+			monthly_dip = 1
 		}
 	}
 	effect = {
@@ -99,7 +99,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = extra_merchant_button_mod }
 			}
-			monthly_dip = 0
+			monthly_dip = 1
 		}
 	}
 	effect = {
@@ -144,7 +144,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = extra_missionary_button_mod }
 			}
-			monthly_adm = 0
+			monthly_adm = 1
 		}
 	}
 	effect = {
@@ -189,7 +189,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = institution_spread_button_mod }
 			}
-			monthly_adm = 0
+			monthly_adm = 1
 		}
 	}
 	effect = {
@@ -234,9 +234,9 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = monthly_dev_points_button_mod }
 			}
-			monthly_adm = 0
-			monthly_dip = 0
-			monthly_mil = 0
+			monthly_adm = 1
+			monthly_dip = 1
+			monthly_mil = 1
 		}
 	}
 	effect = {
@@ -281,7 +281,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = reform_progress_growth_button_mod }
 			}
-			monthly_adm = 0
+			monthly_adm = 1
 		}
 	}
 	effect = {
@@ -326,7 +326,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = yearly_absolutism_button_mod }
 			}
-			monthly_mil = 0
+			monthly_mil = 1
 		}
 		is_absolutism_active = yes
 	} 
@@ -373,7 +373,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = yearly_army_professionalism_button_mod }
 			}
-			monthly_mil = 0
+			monthly_mil = 1
 		}
 	}
 	effect = {
@@ -419,7 +419,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = yearly_army_tradition_button_mod }
 			}
-			monthly_mil = 0
+			monthly_mil = 1
 		}
 	} 
 	effect = {
@@ -464,7 +464,7 @@ custom_button = {
 			limit = {
 				NOT = { has_country_modifier = yearly_innovativeness_button_mod }
 			}
-			monthly_mil = 0
+			monthly_mil = 1
 		}
 	}
 	effect = {
