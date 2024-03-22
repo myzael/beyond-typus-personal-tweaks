@@ -337,8 +337,8 @@ country_decisions = {
 					limit = {
 						has_reform = danish_archkingdom
 					}
-					override_country_name = KLZ
-					set_country_flag = is_KLZ_flag
+					override_country_name = KLU
+					set_country_flag = is_KLU_flag
 					set_country_flag = has_overriden_color_flag
 					change_country_color = { color = { 255 212 42 } }
 				}
