@@ -458,6 +458,7 @@ custom_button = {
 	name = yearly_innovativeness_button #Must match a scripted guiButtonType in a .gui file
 	potential = { 
 		always = yes
+		has_dlc = "Rule Britannia"
 	}
 	trigger = { 
 		if = {
