@@ -554,7 +554,7 @@ was_never_end_game_tag_trigger = {	#Country Scope
 		NOT = { end_game_tags_blocked = yes }
 		custom_trigger_tooltip = {
 			tooltip = was_never_end_game_tag_trigger_tt
-			has_country_flag = was_end_game_tag #BT overhauled to be way less laggy.
+			NOT = { has_country_flag = was_end_game_tag } #BT overhauled to be way less laggy.
 			# AND = {
 				# NOT = { was_tag = FRA }
 				# NOT = { was_tag = MUG }
