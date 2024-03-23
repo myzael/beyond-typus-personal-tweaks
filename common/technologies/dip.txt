@@ -109,7 +109,7 @@ technology = { #Shipyards
 		renaissance = 0.3
 	}
 	
-	naval_arsenal = yes #BT More Buildings added
+	dock = yes	
 	may_steal_maps = yes
 
 }
@@ -139,7 +139,7 @@ technology  = { #Docks
 	
 	#num_accepted_cultures = 1
 	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
-	dock = yes	
+	naval_arsenal = yes #BT More Buildings added
 
 	trade_range				=	10
 	naval_morale			=	0.2
