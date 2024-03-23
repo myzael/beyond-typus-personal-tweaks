@@ -18,7 +18,7 @@ base_manpower = 3
 is_city = yes
 add_core = TUR
 add_core = BUL
-fort_15th = yes
+#fort_15th = yes #Bt16 removing fort for Ottos.
 add_local_autonomy = 10
 
 1444.1.1 = { discovered_by = KAZ }

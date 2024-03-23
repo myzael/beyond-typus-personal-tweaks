@@ -26,7 +26,7 @@ add_core = TUR
 hre = no
 
 #Fort/Other Buildings
-fort_15th = yes #BT16 Anatolian Fort Additions - The original Ottoman capital. //Dub
+#fort_15th = yes #BT16 Anatolian Fort Additions - The original Ottoman capital. //Dub
 
 #Special Modifiers
 

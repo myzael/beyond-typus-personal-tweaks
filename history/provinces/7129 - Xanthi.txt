@@ -13,7 +13,7 @@ base_manpower = 1
 trade_goods = cloth			#For little reason, though it is known today for its carnaval, for I figured cloth as a generic urban trade good. Also note tobacco would later become a major factor in this area.
 is_city = yes
 hre = no
-fort_15th = yes
+#fort_15th = yes #BT16 cut for Ottos.
 add_local_autonomy = 10
 
 1444.1.1 = { discovered_by = KAZ }
