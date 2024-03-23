@@ -39,8 +39,8 @@ on_new_monarch = {
 }
 
 on_monarch_death = {
-	BT_AU_FrederickIII_dies_first = yes	#BT
 	BT_AU_AlbrechtVI_dies_first = yes	#BT
+	BT_AU_FrederickIII_dies_first = yes	#BT
 
 	#BT
 	#if = {
