@@ -4,6 +4,7 @@
 estate_nobles_very_strong_duchies = {
 	icon = privilege_royal_authority
 	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
 	loyalty = 0.05
 	is_valid = {
@@ -61,6 +62,7 @@ estate_nobles_very_strong_duchies = {
 estate_nobles_extremely_strong_duchies = {
 	icon = privilege_royal_authority
 	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	influence = 0.1
 	loyalty = 0.05
 	is_valid = {
@@ -114,6 +116,7 @@ estate_nobles_extremely_strong_duchies = {
 estate_nobles_british_strong_marches = {
 	icon = privilege_british_strong_marches
 	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.1
 	influence = 0.1
 	is_valid = {
@@ -170,6 +173,7 @@ estate_nobles_british_strong_marches = {
 estate_nobles_border_forts = {
 	icon = privilege_autonomous_defences
 	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	#loyalty = 0.1
 	influence = 0.05
 	is_valid = {
@@ -257,6 +261,7 @@ estate_cossacks_siberian_frontier = {
     icon = privilege_siberian_frontier
     land_share = 5 # should this cost crown land?
     max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
     loyalty = 0.05
     influence = 0.05
     
