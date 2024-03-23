@@ -120,6 +120,9 @@ BT_AU_FrederickIII_dies_first = {				#Ruler of HAB and STY
 				tag = HAB
 			}
 			has_country_flag = bt_au_albrecht_friedrich_brothers_alive 
+			HAB = {
+				NOT = { is_subject = yes }
+			}
 		}
 		if = {
 			limit = {
