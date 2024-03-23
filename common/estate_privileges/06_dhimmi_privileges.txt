@@ -262,32 +262,6 @@ estate_dhimmi_lighter_dhimmi_taxes = {
 	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
 	#	modifier = { monthly_ottoman_decadence = 0.02 }
 	#}
-	ai_will_do = {
-		factor = 0
-	}
-}
-
-estate_dhimmi_dhimmi_nobles = {
-	icon = privilege_promoto_dhimmi_nobles
-	max_absolutism = -5
-	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
-	loyalty = 0.05
-	influence = 0.05
-	penalties = {
-		church_loyalty_modifier = -0.05
-		nobles_loyalty_modifier = -0.05
-	}
-	benefits = {
-		free_leader_pool = 1
-	}
-	conditional_modifier = {
-		trigger = { has_government_mechanic = russian_modernization_mechanic }
-		modifier = { monthly_russian_modernization = -0.03 }
-	}
-	#conditional_modifier = {
-	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
-	#	modifier = { monthly_ottoman_decadence = 0.02 }
-	#}
 	ai_will_do = { #BT overhauled estate interactions for Dhimmi to make muslim AIs handle this estate a bit more intelligently.
 		factor = 1
 		modifier = { #To keep the estate privilege, mainly for Ottos (Revoke threshold is 5.1, this puts it at 6).
@@ -328,6 +302,32 @@ estate_dhimmi_dhimmi_nobles = {
 			}
 			NOT = { is_absolutism_active = yes }
 		}
+	}
+}
+
+estate_dhimmi_dhimmi_nobles = {
+	icon = privilege_promoto_dhimmi_nobles
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	penalties = {
+		church_loyalty_modifier = -0.05
+		nobles_loyalty_modifier = -0.05
+	}
+	benefits = {
+		free_leader_pool = 1
+	}
+	conditional_modifier = {
+		trigger = { has_government_mechanic = russian_modernization_mechanic }
+		modifier = { monthly_russian_modernization = -0.03 }
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
+	ai_will_do = {
+		factor = 0
 	}
 }
 
