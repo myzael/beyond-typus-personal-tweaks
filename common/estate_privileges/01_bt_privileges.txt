@@ -196,6 +196,7 @@ estate_nobles_border_forts = {
 			}
 		}
 	}
+	conditional_modifier = { trigger = { ai = yes } modifier = { fort_maintenance_modifier = -0.25 } }
 	modifier_by_land_ownership = { 
 		fort_maintenance_modifier = -0.75
 	}
