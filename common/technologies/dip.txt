@@ -228,7 +228,7 @@ technology = { #Chartered Companies
 	range					= 	100			#BTAddOn new - replacing the tech 11 one
 	trade_efficiency 		= 	0.02
 	enable = brig
-	road_network = yes #BT More Buildings added
+	post_office = yes #BT More Buildings added
 
 }
 
@@ -245,7 +245,6 @@ technology = { #The Galleass
 	tradecompany = yes
 	#num_accepted_cultures = 1
 	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
-	post_office = yes #BT More Buildings added
 
 	
 	enable = galleass
@@ -284,6 +283,7 @@ technology = { #Development of Maritime Law
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
+	road_network = yes #BT More Buildings added
 
 }
 
