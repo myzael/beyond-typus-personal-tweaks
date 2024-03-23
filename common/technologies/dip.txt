@@ -109,7 +109,7 @@ technology = { #Shipyards
 		renaissance = 0.3
 	}
 	
-	dock = yes	
+	naval_arsenal = yes #BT More Buildings added
 	may_steal_maps = yes
 
 }
@@ -139,7 +139,7 @@ technology  = { #Docks
 	
 	#num_accepted_cultures = 1
 	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
-	shipyard = yes
+	dock = yes	
 
 	trade_range				=	10
 	naval_morale			=	0.2
@@ -158,6 +158,7 @@ technology = { #Carracks & Caravel
 	naval_maintenance		= 	0.1
 	range					=	75			#BTAddOn changed from 50
 	
+	shipyard = yes
 	enable = carrack
 	enable = caravel
 	may_study_technology = yes
@@ -267,6 +268,7 @@ technology = { #The Galleon
 	enable = galleon
 	enable = early_frigate
 	may_sabotage_recruitment = yes
+	naval_base = yes #BT More Buildings added
 
 }
 
@@ -282,7 +284,6 @@ technology = { #Development of Maritime Law
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
-	naval_arsenal = yes #BT More Buildings added
 
 }
 
@@ -363,7 +364,7 @@ technology = { #Naval Professionalization
 	trade_range				=	20
 	#num_accepted_cultures = 1
 	#promote_culture_cost = -0.1 #BT Accepted Culture Slots overhaul
-	naval_base = yes #BT More Buildings added
+	grand_shipyard = yes 
 	
 }
 
@@ -441,7 +442,6 @@ technology = { #The Archipelago Frigate
 		enlightenment = 0.15
 	}
 	
-	grand_shipyard = yes 
 
 	
 	trade_efficiency 		= 	0.02
