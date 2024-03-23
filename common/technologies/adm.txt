@@ -295,6 +295,7 @@ technology = { #National Sovereignty
 	
 	allowed_idea_groups	= 5
 	#royal_palace = yes #BT More Buildings added
+	glorious_monument = yes #BT More Buildings added
 }
 
 technology = { #Cathedral
@@ -326,7 +327,6 @@ technology = { #Absolute Rulership
 	}
 	
 	republican_dictatorship = yes
-	glorious_monument = yes #BT More Buildings added
 }
 
 technology = { #Land Clearance
