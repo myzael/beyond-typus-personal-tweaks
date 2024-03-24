@@ -57,9 +57,9 @@ create_interregnum_effect = {
     }
     define_ruler = {
         name = "(Interregnum)"
-        adm = 0
-        dip = 0
-        mil = 0
+        adm = 2
+        dip = 2
+        mil = 2
         regency = yes
     }
 }

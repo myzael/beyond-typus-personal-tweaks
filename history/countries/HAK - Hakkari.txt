@@ -28,8 +28,8 @@ technology_group = muslim
     monarch = {
         name = "Interregnum"
         regent = yes
-        adm = 0
-        dip = 0
-        mil = 0
+        adm = 2
+        dip = 2
+        mil = 2
     }
 }
