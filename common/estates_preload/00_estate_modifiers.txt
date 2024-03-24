@@ -553,7 +553,7 @@ estate_special = {
 		trigger = {
 			OR = {
 				has_government_attribute = enables_pronoias
-				tag = BYZ
+				#tag = BYZ #BT Removed because it should only be visible to someone who has pronoias. Byz has this through their gov mechanic.
 			}
 		}
 	}
