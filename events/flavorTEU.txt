@@ -560,7 +560,6 @@ country_event = {
 	
 	option = {									#Invite the leadership of the teutonic order to become our vassal and rule over ducal prussia
 		name = "flavor_teu.3.b"
-		
 		trigger = {
 			PRU = { exists = no } 
 			TEU = { exists = no } 
@@ -576,6 +575,9 @@ country_event = {
 				change_government = monarchy
 				change_tag = PRU
 				on_change_tag_effect = yes
+				swap_non_generic_missions = yes
+				remove_non_electors_emperors_from_empire_effect = yes
+				country_event = { id = ideagroups.1 }
 				override_country_name = RPR
 				set_country_flag = is_RPR_flag
 				add_trust = {
@@ -651,7 +653,8 @@ country_event = {
 				limit = {
 					owned_by = ROOT 
 				}
-			set_local_autonomy = 50
+				remove_core = PRU
+				set_local_autonomy = 50
 			}
 			east_prussia_area = {
 				limit = { 
@@ -663,6 +666,7 @@ country_event = {
 						province_id = 42
 					}
 				}
+				remove_core = PRU
 				set_local_autonomy = 50
 			}
 		}
