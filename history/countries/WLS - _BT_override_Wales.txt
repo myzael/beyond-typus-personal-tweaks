@@ -6,9 +6,9 @@ capital = 242	# Gwynedd
 historical_friend = BRI
 historical_friend = CRN
 historical_friend = KOI
-add_trust = {
+add_trust = {			#BT changed this seemed too high and was causing issues was -65
     who = ENG
-    value = -65
+    value = -50
 }
 add_country_modifier = {
     name = pissed_at_the_english_bt
