@@ -526,12 +526,6 @@ constable = {
 	cost = 50
 	time = 12
 	
-	build_trigger = {
-	}
-	
-	keep_trigger = { 
-	}
-	
 	modifier = {
 		local_tax_modifier = 0.40
 		base_local_dev_points = 0.01
@@ -577,6 +571,8 @@ constable = {
 treasury_office = {
 	cost = 200
 	time = 24
+	
+	make_obsolete = constable
 	
 	modifier = {
 		local_tax_modifier = 0.6
