@@ -8659,7 +8659,7 @@ haijin_policy_modifier = {
 	burghers_loyalty_modifier = 0.05
 }
 mng_reform_haijin_policy_modifier = {
-	state_governing_cost = -0.1
+	state_maintenance_modifier = -0.5
 	global_prov_trade_power_modifier = 0.2
 }
 mng_great_market_of_china_modifier = {
@@ -9549,7 +9549,7 @@ fra_trade_hegemony_modifier = {
 }
 
 fra_proper_legal_systems_modifier = { 
-	state_governing_cost = -0.1
+	state_maintenance_modifier = -0.5
 	autonomy_change_time = -0.15
 	all_estate_loyalty_equilibrium = 0.1
 }
@@ -9894,7 +9894,7 @@ spa_valladolid_court_modifier = {
 }
 
 spa_granada_court_modifier = {
-	state_governing_cost = -0.05
+	state_maintenance_modifier = -0.25 #BT Changed because gov capacity overhaul. -5% state governing cost breaks the balance. //Dub
 }
 
 spa_spanish_dollar_modifier = {
