@@ -296,6 +296,7 @@ gc_spain_1_b = {
 			add_dip_power = 100
 			2021 = {
 				add_base_tax = 3
+				add_base_production = 3 #BT Dev Doubling
 			}
 			colonial_california = {
 				limit = {
@@ -690,7 +691,7 @@ gc_spain_2_b = {
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { fort_level = 3 }
+				NOT = { fort_level = 2 }
 			}
 			has_discovered = ROOT
 		}
@@ -721,7 +722,7 @@ gc_spain_2_b = {
 							region = southeast_america_region
 							area = west_florida_area
 						}
-						fort_level = 3
+						fort_level = 2
 					}
 					add_province_modifier = {
 						name = "fortified_florida_modifier"
@@ -734,7 +735,7 @@ gc_spain_2_b = {
 }
 
 gc_spain_3 = {
-		slot = 3
+	slot = 3
 	generic = no
 	ai = yes
 	potential_on_load = {
@@ -796,14 +797,14 @@ gc_spain_3 = {
 		completed_by = 1492.1.1
 
 		provinces_to_highlight = {
-			province_group = gra_reconquer_sevilla_provinces
+			province_group = gc_cas_spa_reconquista_one_provinces
 			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_highlighted
-				provinces=gra_reconquer_sevilla_provinces
+				provinces=gc_cas_spa_reconquista_one_provinces
 				owner_type=owned_by
 			}
 		}
@@ -914,9 +915,9 @@ gc_spain_3 = {
 		}
 
 		effect = {
-			add_country_modifier = {
-			name = "completing_the_reconquista"
-			duration = 5475
+			add_country_modifier = { #PDX plz
+				name = "completing_the_reconquista"
+				duration = 5475
 			}
 			western_morocco_area = {
 				limit = {
@@ -1464,8 +1465,6 @@ gc_spain_4 = {
 					months = 300
 					target = NAP
 				}
-			}
-			else = { #Special case.
 				if = {
 					limit = {
 						gc_cas_spa_italian_ambition_provinces = {
@@ -1486,6 +1485,9 @@ gc_spain_4 = {
 						}
 					}
 				}
+			}
+			else = { #Special case.
+				give_permaclaims_for_mission = { mission=gc_cas_spa_italian_ambition }
 			}
 		}
 	}
@@ -1815,7 +1817,7 @@ gc_spain_4_d = {
 			#^This particular area was required to be owned directly by Spain. Not sure why, but I'll leave it in in case it isn't just a vanilla bug (This file has quite a few). The highlighting doesn't regard this anyway.
 			has_fulfiled_province_requirement_for_mission_trigger = {
 				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-				provinces=gc_spa_invade_england_provinces
+				provinces=gc_cas_spa_conquer_philippines_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
 		}
@@ -1886,6 +1888,9 @@ gc_castile_spain_5 = {
 			OR = {
 				area = beieras_area
 				area = alentejo_area
+				area = minho_duoro_area
+				area = estremadura_area
+				area = algarve_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -1896,6 +1901,18 @@ gc_castile_spain_5 = {
 				owned_by = ROOT
 			}
 			alentejo_area = {
+				type = all
+				owned_by = ROOT
+			}
+			minho_duoro_area = {
+				type = all
+				owned_by = ROOT
+			}
+			estremadura_area = {
+				type = all
+				owned_by = ROOT
+			}
+			algarve_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -1953,7 +1970,21 @@ gc_spain_5_a = {
 			}
 		}
 		effect = {
-			if = {
+			if = { #BT Setup change
+				limit = {
+					exists = STY
+					valid_for_personal_unions_trigger = yes
+					STY = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = STY
+				}
+			}
+			else_if = { 
 				limit = {
 					exists = HAB
 					valid_for_personal_unions_trigger = yes
