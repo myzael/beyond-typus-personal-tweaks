@@ -35,7 +35,7 @@ dom_cas_missions_1 = {
 				duration = 5475
 			}
 			give_permaclaims_for_mission = { mission=gc_cas_spa_reconquista_one2 }
-			give_permaclaims_for_mission = { mission=gc_cas_spa_navarra }
+			give_permaclaims_for_mission = { mission=gc_cas_spa_navarra2 }
 		}
 	}
 	
