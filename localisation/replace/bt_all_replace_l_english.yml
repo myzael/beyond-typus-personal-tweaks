@@ -722,6 +722,8 @@
  dan_denmark_on_european_stage_ct:1 " §Yallies§! of §Y[Root.GetName]§! which have their capital on §Y[Root.Capital.GetContinentName]§! and have at least §Y180§! Total Development."
  dan_a_danish_great_power_at:0 "Countries with at least §Y400§! own and non-tributary subject development have been §YInfluenced§! by §Y[Root.GetName]§!"
  dan_a_danish_great_power_ct:0 "Countries with at least §Y400§! own and non-tributary subject development have §Y25%§! of their income subsidized by §Y[Root.GetName]§!"
+ spa_any_ally_tt:0 "Have an §Yally§! with:\n - Their capital in the §YFrench§! region\n - They are a §YGreat Power§! or have at least §Y1000§! total development\n - They have at least §Y180§! opinion of us"
+ 
  
  #Below two are same as vanilla, except dev number doubled from 100 to 200.
  HUSSARS_DESC:1 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
