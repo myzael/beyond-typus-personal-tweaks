@@ -173,6 +173,7 @@ BT16
 	- BT Ayyubid (Dub)
 	- GC Andalusian (Dub)
 	- DOM Russian (Dub) - Steppes branches not updated
+	- DOM Spanish (Dub) - Castilian branches. Aragonese branches not updated yet.
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders
