@@ -49,14 +49,14 @@ college = {
 
 	on_built = {
 		add_development_from_building = {
-			building = university
+			building = college
 			type = tax
 			value = 1
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
-			building = university
+			building = college
 			type = tax
 			value = 1
 		}
@@ -1528,10 +1528,12 @@ university = {
 	}
 
 	on_built = {
-		add_development_from_building = {
+		add_development_from_upgrading_or_building = {
 			building = university
+			obsolete_building = college
 			type = tax
 			value = 2
+			upgrade_value = 1
 		}
 	}
 	on_destroyed = {
