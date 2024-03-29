@@ -579,7 +579,7 @@ eng_indian_ocean_exploration = {
 	england_discovers_india = {
 		icon = mission_junk_boat
 		required_missions = { }
-		position = 6
+		position = 7
 		completed_by = 1579.1.1
 		
 		trigger = {
@@ -629,13 +629,23 @@ eng_indian_ocean_exploration = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = miss_discover_australia
-				colonial_australia = { has_discovered = ROOT }
+				OR = {
+					australia_region = { has_discovered = ROOT }
+					western_australia_region = { has_discovered = ROOT }
+					northern_australia_region = { has_discovered = ROOT }
+					northeastern_australia_region = { has_discovered = ROOT }
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = england_discovers_australia.tooltip
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
-					colonial_region = colonial_australia
+					OR = {
+						region = australia_region #BT Changed because overhaul
+						region = western_australia_region #BT Changed because overhaul
+						region = northern_australia_region #BT Changed because overhaul
+						region = northeastern_australia_region #BT Changed because overhaul
+					}
 					is_city = yes
 				}
 			}
