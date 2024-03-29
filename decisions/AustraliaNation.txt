@@ -51,12 +51,22 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			capital_scope = {
-				region = australia_region #BT Changed because overhaul
+				OR = {
+					region = australia_region #BT Changed because overhaul
+					region = western_australia_region #BT Changed because overhaul
+					region = northern_australia_region #BT Changed because overhaul
+					region = northeastern_australia_region #BT Changed because overhaul
+				}
 				is_core = ROOT
 			}
 			num_of_owned_provinces_with = {
 				value = 10
-				region = australia_region
+				OR = {
+					region = australia_region #BT Changed because overhaul
+					region = western_australia_region #BT Changed because overhaul
+					region = northern_australia_region #BT Changed because overhaul
+					region = northeastern_australia_region #BT Changed because overhaul
+				}
 				is_city = yes
 			}
 			NOT = { exists = AUS }
@@ -86,7 +96,25 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			colonial_australia = {
+			australia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AUS
+			}
+			western_australia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AUS
+			}
+			northern_australia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = AUS
+			}
+			northeastern_australia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
