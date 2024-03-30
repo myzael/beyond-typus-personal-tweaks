@@ -120,6 +120,6 @@ dependency = {
 vassal = {
 	first = QAR
 	second = IRQ
-	start_date = 1433.4.9
+	start_date = 1444.11.1#1433.4.9
 	end_date = 1445.3.8
 }
