@@ -422,6 +422,7 @@ on_dip_tech_taken = { #ROOT - Country, executed after on_tech_taken!
 	else_if = {
 		limit = {
 			dip_tech = 26
+			NOT = { has_country_modifier = bt_culture_cost_redux_5 }
 			NOT = { has_country_modifier = bt_culture_cost_redux_4 }
 		}
 		remove_country_modifier = bt_culture_cost_redux_3
@@ -433,6 +434,8 @@ on_dip_tech_taken = { #ROOT - Country, executed after on_tech_taken!
 	else_if = {
 		limit = {
 			dip_tech = 20
+			NOT = { has_country_modifier = bt_culture_cost_redux_5 }
+			NOT = { has_country_modifier = bt_culture_cost_redux_4 }
 			NOT = { has_country_modifier = bt_culture_cost_redux_3 }
 		}
 		remove_country_modifier = bt_culture_cost_redux_2
@@ -444,6 +447,9 @@ on_dip_tech_taken = { #ROOT - Country, executed after on_tech_taken!
 	else_if = {
 		limit = {
 			dip_tech = 14
+			NOT = { has_country_modifier = bt_culture_cost_redux_5 }
+			NOT = { has_country_modifier = bt_culture_cost_redux_4 }
+			NOT = { has_country_modifier = bt_culture_cost_redux_3 }
 			NOT = { has_country_modifier = bt_culture_cost_redux_2 }
 		}
 		remove_country_modifier = bt_culture_cost_redux_1
@@ -455,6 +461,10 @@ on_dip_tech_taken = { #ROOT - Country, executed after on_tech_taken!
 	else_if = {
 		limit = {
 			dip_tech = 8
+			NOT = { has_country_modifier = bt_culture_cost_redux_5 }
+			NOT = { has_country_modifier = bt_culture_cost_redux_4 }
+			NOT = { has_country_modifier = bt_culture_cost_redux_3 }
+			NOT = { has_country_modifier = bt_culture_cost_redux_2 }
 			NOT = { has_country_modifier = bt_culture_cost_redux_1 }
 		}
 		add_country_modifier = { 
