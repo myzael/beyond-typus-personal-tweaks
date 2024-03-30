@@ -182,3 +182,34 @@ has_enough_dev_points_to_dev = {
 		}
 	}
 }
+
+has_more_than_double_any_dev_type = {			# $DevA$ = Dev type being Developed  $DevB$, $DevC$ = Other 2 Dev types
+	variable_arithmetic_trigger = {
+		export_to_variable = {
+			variable_name = adm_dev
+			value = base_tax
+		}
+		export_to_variable = {
+			variable_name = dip_dev
+			value = base_production
+		}
+		export_to_variable = {
+			variable_name = mil_dev
+			value = base_manpower
+		}
+		multiply_variable = {
+			which = $DevA$
+			value = 1.25
+		}
+		change_variable = {
+			which = $DevB$
+			which = $DevC$
+		}
+		NOT = {
+			check_variable = {
+				which = $DevB$
+				which = $DevA$
+			}
+		}
+	}
+}

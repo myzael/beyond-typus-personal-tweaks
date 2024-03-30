@@ -432,7 +432,7 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {
 			who = ROOT
 		}
 	}			
-	if = {						#Is a non-independent, non-colony, non-march subject
+	if = {						#Is a non-independent, non-colony subject
 		limit = {
 			is_colonial_nation = no
 			NOT = {
@@ -1264,7 +1264,6 @@ simulate_development = {
 
 #Gives the nation $dev$ amount dev points											(used in country scope)
 give_dev_points_effect = {
-
 	change_variable = {
 		which = current_dev_points
 		value = $dev$
@@ -1306,7 +1305,15 @@ spend_dev_points_if_over_limit_effect = {
 				is_state = yes
 			}
 			random_list = {
-				1 = {
+				1 = {	
+					modifier = {
+						factor = 0
+						has_more_than_double_any_dev_type = {
+							DevA = adm_dev
+							DevB = dip_dev
+							DevC = mil_dev
+						}
+					}
 					calculate_development_cost = yes
 					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
 						which = current_dev_points
@@ -1323,10 +1330,18 @@ spend_dev_points_if_over_limit_effect = {
 						}
 						one_decimal = { var = shown_current_dev_points }
 					}
-					add_base_manpower = 1
+					add_base_tax = 1
 					simulate_development = yes
 				}
-				1 = {
+				1 = {	
+					modifier = {
+						factor = 0
+						has_more_than_double_any_dev_type = {
+							DevA = dip_dev
+							DevB = adm_dev
+							DevC = mil_dev
+						}
+					}
 					calculate_development_cost = yes
 					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
 						which = current_dev_points
@@ -1346,7 +1361,15 @@ spend_dev_points_if_over_limit_effect = {
 					add_base_production = 1
 					simulate_development = yes
 				}
-				1 = {
+				1 = {		
+					modifier = {
+						factor = 0
+						has_more_than_double_any_dev_type = {
+							DevA = mil_dev
+							DevB = dip_dev
+							DevC = adm_dev
+						}
+					}
 					calculate_development_cost = yes
 					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
 						which = current_dev_points
@@ -1363,7 +1386,7 @@ spend_dev_points_if_over_limit_effect = {
 						}
 						one_decimal = { var = shown_current_dev_points }
 					}
-					add_base_tax = 1
+					add_base_manpower = 1
 					simulate_development = yes
 				}
 			}

@@ -638,6 +638,18 @@ country_event = {
 		}
 		integer = { var = shown_current_dev_points }
 	}
+	option = {						
+		name = "dev_points.99.optm"
+		ai_chance = { factor = 1 }
+		give_dev_points_effect = {
+			dev = 10000
+		}
+		set_variable = { 
+			which = shown_current_dev_points 
+			which = current_dev_points 
+		}
+		integer = { var = shown_current_dev_points }
+	}
 }
 
 # # Spending development if the dev points go over the max
