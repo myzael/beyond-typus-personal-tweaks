@@ -508,6 +508,16 @@ country_event = {
 	
 	option = {
 		name = "flavor_teu.3.a"
+		ai_chance = {
+			factor = 10 
+			modifier = {
+				factor = 0
+				TEU = {
+					exists = yes
+					ai = no
+				}
+			}
+		}
 		vassalize = DNZ
 		DNZ = {							#BT change to help poland actually keep their vassal
 			add_country_modifier = {
@@ -560,6 +570,7 @@ country_event = {
 	
 	option = {									#Invite the leadership of the teutonic order to become our vassal and rule over ducal prussia
 		name = "flavor_teu.3.b"
+		ai_chance = { factor = 90 }
 		trigger = {
 			PRU = { exists = no } 
 			TEU = { exists = no } 
@@ -567,6 +578,32 @@ country_event = {
 		highlight = yes 
 		custom_tooltip = pol_delegate_the_formation_of_royal_prussia_tt
 		hidden_effect = {
+			DNZ = {
+				if = {
+					limit = {
+						overlord_of = WRM
+					}
+					inherit = WRM
+				}
+				if = {
+					limit = {
+						overlord_of = KUM
+					}
+					inherit = KUM
+				}
+				if = {
+					limit = {
+						overlord_of = PMS
+					}
+					inherit = PMS
+				}
+				if = {
+					limit = {
+						overlord_of = SMA
+					}
+					inherit = SMA
+				}
+			}
 			remove_historical_rival = TEU
 			inherit = DNZ
 			create_vassal = TEU
@@ -691,9 +728,20 @@ country_event = {
 	
 	option = {						#Invite teutonic order to reclaim ducal prussia as our vassal
 		name = "flavor_teu.3.c"
+		ai_chance = { factor = 90 }
 		trigger = {
 			PRU = { exists = no } 
-			TEU = { exists = yes }
+			TEU = { 
+				exists = yes 
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 9
+					}
+					any_owned_province = {
+						region = poland_region
+					}
+				}
+			}
 		}
 		highlight = yes 
 		custom_tooltip = pol_delegate_the_formation_of_royal_prussia_tt
@@ -702,6 +750,30 @@ country_event = {
 			inherit = DNZ
 			vassalize = TEU
 			TEU = {
+				if = {
+					limit = {
+						overlord_of = WRM
+					}
+					inherit = WRM
+				}
+				if = {
+					limit = {
+						overlord_of = KUM
+					}
+					inherit = KUM
+				}
+				if = {
+					limit = {
+						overlord_of = PMS
+					}
+					inherit = PMS
+				}
+				if = {
+					limit = {
+						overlord_of = SMA
+					}
+					inherit = SMA
+				}
 				remove_historical_rival = POL
 				change_government = monarchy
 				change_tag = PRU
@@ -1450,10 +1522,54 @@ country_event = {
 	
 	option = {	# Livonian Order accepts to be our vassal
 		name = flavor_teu.15.a
-		vassalize = FROM
 		ai_chance = {
 			factor = 100
 		}
+		FROM = {
+			if = {
+				limit = {
+					overlord_of = KUR
+				}
+				inherit = KUR
+			}
+			if = {
+				limit = {
+					overlord_of = OSL
+				}
+				inherit = OSL
+			}
+			if = {
+				limit = {
+					overlord_of = DRP
+				}
+				inherit = DRP
+			}
+			if = {
+				limit = {	
+					overlord_of = RIG
+				}
+				RIG = {
+					baltic_region = {
+						limit = {
+							owned_by = RIG
+							NOT = {
+								province_id = 38
+							}
+						}
+						add_core = LIV
+						remove_core = RIG
+						cede_province = LIV
+					}
+					free_vassal = RIG
+					change_government = republic
+					add_government_reform = merchant_republic
+					hidden_effect = {
+						add_republican_tradition = 100
+					}
+				}
+			}
+		}
+		vassalize = FROM
 	}
 }
 
