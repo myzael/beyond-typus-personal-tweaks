@@ -666,6 +666,9 @@ ai_nation = {
 	native_uprising_chance = -0.18			#BTAddOn added - As was pointed out to me, the AI doesn't really handle native revolts well, so we want this to be very rare. 
 	army_tradition_decay = -0.02			#BTAddOn added - AI isn't and to be fair, shouldn't be, as aggressive as player. As a result, AI will always have lower tradition, and always be easily steamrolled by an expansionist player. Trying this to offset that a bit here.
 	navy_tradition_decay = -0.02			#BTAddOn added - AI isn't and to be fair, shouldn't be, as aggressive as player. As a result, AI will always have lower tradition, and always be easily steamrolled by an expansionist player. Trying this to offset that a bit here.
+	global_tax_modifier = 0.25				#BT Added: AI economy was too shit to be fun to play with.
+	production_efficiency = 0.25			#BT Added: AI economy was too shit to be fun to play with.
+	trade_efficiency = 0.25					#BT Added: AI economy was too shit to be fun to play with.
 }
 
 
