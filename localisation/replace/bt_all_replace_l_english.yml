@@ -741,3 +741,5 @@
  
  mam_export_grain_dialog: "Would you like to receive grain exports from the Mamluks?\n\nAccepting will grant our nation the following effects until the death of §Y[Root.Monarch.GetName] [Root.Monarch.GetDynasty]§!, or until diplomatic ties are cut:\nNational Unrest: §G-1.00§\nDevelopment Cost: §G-5.0%§!\n!Supply Limit Modifier: §G+10.0%§!"
  mam_sponsor_hajj_dialog: "Would you like to perform a Grand Hajj sponsored by the Mamluks?"
+
+ INCOMEGOLD: "Precious Metals"
