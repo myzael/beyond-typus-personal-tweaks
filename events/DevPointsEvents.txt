@@ -516,7 +516,9 @@ country_event = {
 	option = { 						
 		name = "dev_points.99.opta"
 		ai_chance = { factor = 1 }
+		hidden_effect = {
 		calculate_monthly_dev_points_in_all_provinces_effect = yes
+		}
 	}
 
 	# Calculation to get dev points per month countrywide
