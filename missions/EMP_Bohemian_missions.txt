@@ -1101,7 +1101,7 @@ emp_bohemia_4 = {
 			}
 		}
 		ai_weight = {
-			factor = 75	#Not too high or else Austria will never get their vote
+			factor = 0	#BT Changed to prevent blobhemia
 		}
 	}
 	emp_boh_electorate_of_saxony = {
