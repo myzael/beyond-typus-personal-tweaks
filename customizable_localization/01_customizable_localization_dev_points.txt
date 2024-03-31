@@ -613,6 +613,42 @@ defined_text = {
 
 
 defined_text = {
+    name = DevPointsCountryEconomicIdeas
+    text = {
+        localisation_key = dev_points_country_has_economic_ideas #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			FROM = {
+				has_idea = smithian_economics
+			}
+		}
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+
+defined_text = {
+    name = DevPointsCountryMonthlyDevPointsButton
+    text = {
+        localisation_key = dev_points_country_has_monthly_dev_points_button #"\nHas Temple Building: §G+0.01§!"
+        trigger = {
+			FROM = {
+				has_country_modifier = monthly_dev_points_button_mod
+			}
+		}
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+
+defined_text = {
     name = DevPointsCountryHasCorruption
     text = {
         localisation_key = dev_points_country_corruption #"\nHas Temple Building: §G+0.01§!"
