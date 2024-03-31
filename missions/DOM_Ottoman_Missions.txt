@@ -354,9 +354,7 @@ tur_conquest_of_europe = {
 				}
 			}
 			else = {
-				OR = {
-					province_group = tur_the_bospborus_control_provinces
-				}
+				province_group = tur_the_bospborus_control_provinces
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
 		}
@@ -451,6 +449,11 @@ tur_conquest_of_europe = {
 				area = southern_transylvania_area
 				area = alfold_area
 				area = transdanubia_area
+				area = banat_area
+				area = eastern_alfold_area
+				area = upper_hungary_area
+				area = carpathian_ruthenia_area
+				
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -462,8 +465,12 @@ tur_conquest_of_europe = {
 					area = southern_transylvania_area
 					area = alfold_area
 					area = transdanubia_area
+					area = banat_area
+					area = eastern_alfold_area
+					area = upper_hungary_area
+					area = carpathian_ruthenia_area
 				}
-				value = 15
+				value = 40 #BT; 15
 			}
 		}
 		effect = {
@@ -524,6 +531,20 @@ tur_conquest_of_europe = {
 				}
 				add_permanent_claim = ROOT
 			}
+			salzburg_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_austria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 
 		ai_weight = {
@@ -541,6 +562,8 @@ tur_conquest_of_europe = {
 				area = inner_austria_area
 				area = carinthia_area
 				area = tirol_area
+				area = salzburg_area
+				area = upper_austria_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -558,8 +581,10 @@ tur_conquest_of_europe = {
 					area = inner_austria_area
 					area = carinthia_area
 					area = tirol_area
+					area = salzburg_area
+					area = upper_austria_area
 				}
-				value = 10
+				value = 30 #BT; 10
 			}
 		}
 		effect = {
@@ -1236,28 +1261,24 @@ tur_african_conquest = {
 					tooltip = tur_conquer_greece_at
 					always = no
 				}
-				tooltip = {
-					has_fulfiled_general_province_requirement_for_mission_trigger = {
-						tooltip=country_or_VEN_holds_or_non_sovereign_subject_holds_highlighted 
-						provinces=tur_conquer_greece_provinces
-						triggers="
-							OR = {
-								country_or_non_sovereign_subject_holds = PREV
-								country_or_non_sovereign_subject_holds = VEN
-							}
-						"
-					}
+				has_fulfiled_general_province_requirement_for_mission_trigger = {
+					tooltip=country_or_VEN_holds_or_non_sovereign_subject_holds_highlighted 
+					provinces=tur_conquer_greece_provinces
+					triggers="
+						OR = {
+							country_or_non_sovereign_subject_holds = PREV
+							country_or_non_sovereign_subject_holds = VEN
+						}
+					"
 				}
 				custom_trigger_tooltip = {
 					tooltip = tur_conquer_greece_bt
 					always = no
 				}
-				tooltip = {
-					has_fulfiled_province_requirement_for_mission_trigger = {
-						tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-						provinces=tur_conquer_greece_provinces
-						owner_type=country_or_non_sovereign_subject_holds
-					}
+				has_fulfiled_province_requirement_for_mission_trigger = {
+					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+					provinces=tur_conquer_greece_provinces
+					owner_type=country_or_non_sovereign_subject_holds
 				}
 			}
 			else = {	
@@ -1317,29 +1338,15 @@ tur_african_conquest = {
 		required_missions = { tur_conquer_greece }
 		position = 5
 		provinces_to_highlight = {
-			OR = {
-				area = serbia_area
-				area = rascia_area
-				area = albania_area
-				area = croatia_area
-				area = east_adriatic_coast_area
-				area = bosnia_area
-				area = slavonia_area
-			}
+			province_group = tur_push_into_the_balkans_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = serbia_area
-					area = rascia_area
-					area = albania_area
-					area = croatia_area
-					area = east_adriatic_coast_area
-					area = bosnia_area
-					area = slavonia_area
-				}
-				value = 20
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num 
+				provinces=tur_push_into_the_balkans_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=25 #out of 57. We don't want to force Ottos to attack Hungarian core lands just yet
 			}
 		}
 		effect = {
@@ -1430,7 +1437,11 @@ tur_african_conquest = {
 		provinces_to_highlight = {
 			OR = {
 				area = moldavia_area
+				area = western_moldovia_area
+				area = bukovina_area
 				area = wallachia_area
+				area = oltenia_area
+				area = upper_muntenia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1438,9 +1449,13 @@ tur_african_conquest = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
 					area = moldavia_area
+					area = western_moldovia_area
+					area = bukovina_area
 					area = wallachia_area
+					area = oltenia_area
+					area = upper_muntenia_area
 				}
-				value = 5
+				value = 25 #BT; 5
 			}
 		}
 		effect = {

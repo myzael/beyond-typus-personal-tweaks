@@ -2705,6 +2705,10 @@
  lotn_swe_expand_finland_title:0 "Expand Finland"
  swe_industrialize_sweden_trigger_tt:0 "[8.GetName], [4.GetName], [5.GetName], [1985.GetName], [3123.GetName], [7794.GetName], [7863.GetName]:\n  Base Production at least §Y5§!£icon_production£\n  Has a §YWorkshop§! or a §YCounting House§! building.\n  Have any §YManufactory§!"
  
+ tur_conquer_greece_at:0 "The conditions of this mission depend on our choice in the '§YA [Root.GetAdjective]-Venetian Trade Deal?§!' event from the previous mission.\nIf the Trade Deal is active then this mission can be completed by fulfilling the following conditions:"
+ tur_conquer_greece_bt:0 "If we however did not sign the Trade Deal or the Trade Deal has been broken then the following conditions are required:"
+ country_or_VEN_holds_or_non_sovereign_subject_holds_highlighted:0 "The highlighted provinces are owned by either §Y[VEN.GetName]§!, §Y[Root.GetName]§! or one of their non-Tributary subjects."
+ 
  ###Great Projects###
  uluru:0 "Uluru"
  
