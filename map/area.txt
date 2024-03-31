@@ -1002,7 +1002,7 @@ croatia_area = {
 	color = { 18 126 16 }
 	131 1826 3196 4752 7734 7735 7736 
 }
-slavonia_area = { # BT
+slavonia_area = {
 	152 1767 3190 4756 7738 8187 
 }
 east_adriatic_coast_area = {
