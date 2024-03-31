@@ -1535,6 +1535,16 @@ gbr_row_3 = {
 					name = gbr_recovering_prestige
 					duration = 7300
 				}
+				british_isles_region = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_province_modifier = { 				#BT Change to help england and represent historical migrations
+						name = bt_english_loyalist_immigrants
+						duration = 10950
+						desc = bt_english_loyalist_immigrants_desc
+					}
+				}
 			}
 		}
 		ai_weight = {
