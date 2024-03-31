@@ -3,13 +3,13 @@ Known Issues:
 		-	The monarch point costs of the decisions/clickable buttons do not display in the UI if you have +-0 monthly monarch points, achievable by taking the corresponding monarch point privilege. This is unfortunately unfixable.
 		-	You cannot click to develop a province unless you have monarch points corresponding to the given dev cost. This is the unfortunate side-effect of getting the macrobuilder to work with the new system.
 		-	Current generated development points balance is not final.
-		-	The 10 new buttons to spend monarch points have modifiers are pending balance changes. Them lacking an UI extension is currently intentional.
 	Internal Politicks integration:
 		-	No known issues at the moment.
 	More Buildings integration:
 		-	The generated development points of the additional buildings are not final.
 	Caucasia:
 		-	Trade goods in the area are likely not final.
+		-	The current nudging that has been done is not accurate.
 		-	The Collapse of Georgia needs events and/or disaster tweaking. Some work has been done, but it is not final.
 	Horn of Africa:
 		-	The current nudging that has been done is not accurate.
@@ -21,7 +21,6 @@ Known Issues:
 		-	(Some) flags for new tags have not been done.
 		-	Name lists for cultures as well as tags (Ship/leader names) are not done.
 	Australia:
-		-	Script (Missions/events/decisions) concerning the Australia colonial region have not been looked at.
 		-	New Aboriginal tags cannot  be given the Aboriginal unit graphics from a DLC without causing a crash for players without the Leviathan DLC that adds them.
 		-	Australian DPNs are unfinished
 		-	There exists no flavour for these nations yet.
@@ -30,7 +29,7 @@ Known Issues:
 		-	Polish/Teutonic missions are currently being balanced and tweaked, but are not scriptified nor finished.
 		-	Other missions introduced in the update have not been touched.
 	Domination:
-		-	Next to none of the Domination DLC mission trees have been updated, except parts of the Muscovite/Russian mission tree.
+		-	Few Domination DLC mission trees have been updated. The ones who have are the Muscovite/Russian mission tree and the Castilian/Spanish mission tree.
 	King of Kings:
 		-	KoK mission trees have barely been touched, with some exceptions with regards to the BT setup, such as Mamluks not having a Syrian vassal, QQ having an Iraqi vassal and Georgia being split up.
 		-	KoK Byzantine missions will not be touched because Byzantine Resurgence.
