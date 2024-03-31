@@ -117,7 +117,7 @@ country_decisions = {
 			# }
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 15000
 		}
 		do_not_core = 151 # Constantinople
 	}
