@@ -51,7 +51,7 @@
  flavor_teu.3.b:0 "Invite teutonic order to reclaim ducal prussia as our vassal"
 
  bt_danzig_revolt:0 "Thirteen Years' War"
- bt_danzig_revolt_disc:0 "They have declared themselves to be an independant state we must reincorporate them"
+ bt_danzig_revolt_disc:0 "They have declared themselves to be an independant state we must reincorporate them."
  bt_danzig_revolt_wargoal:0 "Take their capital"
  bt_danzig_revolt_wargoal_disc:0 "We must take their capital"
  bt_danzig_revolt_war_name:0 "Thirteen Years' War"
@@ -63,7 +63,9 @@
  bt_cas_lost_infantes_tt: "Have the rebels enforce their demands"
 
  bt_cultures_value_gui: "-"
- bt_cultures_value_gui_tooltip: "BT no longer has a limit to your §YPromoted Culture Slots§!. Instead accepting a culture costs 300 §YDiplomatic Power§!"
+ bt_cultures_value_gui_tooltip: "BT no longer has a limit to your §YPromoted Culture Slots§!. Instead accepting a culture costs 300 §YDiplomatic Power§!."
  
- 
- 
+ bt_mines_of_upper_hungary_copper: "The Association of the Upper Hungarian Mining Towns"
+ desc_bt_mines_of_upper_hungary_copper: "The region of Upper Hungary was very rich in Copper, Silver and Gold, producing about a third of all European Silver and Gold until 1490. There were seven major mining towns in the region which shared a common mining law and frequently cooperated."
+ bt_mines_of_upper_hungary_silver: "The Association of the Upper Hungarian Mining Towns"
+ desc_bt_mines_of_upper_hungary_silver: "The region of Upper Hungary was very rich in Copper, Silver and Gold, producing about a third of all European Silver and Gold until 1490. There were seven major mining towns in the region which shared a common mining law and frequently cooperated."
