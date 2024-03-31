@@ -330,7 +330,7 @@ country_decisions = {
 						SCO = {	junior_union_with = ROOT }
 						SCO = {	is_subject_of = ROOT }
 					}
-					SCO = { NOT = { num_of_cities = 15 } }
+					SCO = { NOT = { num_of_cities = 36 } }
 				}
 			}
 		}
@@ -413,7 +413,7 @@ country_decisions = {
 						FRA = {	junior_union_with = ROOT }
 						FRA = {	is_subject_of = ROOT }
 					}
-					FRA = { NOT = { num_of_cities = 40 } }
+					FRA = { NOT = { num_of_cities = 80 } }
 				}
 			}
 		}
