@@ -735,6 +735,8 @@
  IF_CONDITIONS_MET:0 "\nIf the following conditions are met:"
  #THEN_THIS:0 "\n...then these effects will happen:"
  CORE_COST_MODIFIED_BY:0 "\nThis is modified multiplicatively by:\n"
+ #Vanilla bugfix
+ set_center_level_3_center_of_trade_tt:0 "§Y[This.GetName]§! gets their §YCenter of Trade§! upgraded to Level §Y3§!. If no §YCenter of Trade§! is present, add a Level §G3§! §YCenter of Trade§!, if level §G2§! §YCenter of Trade§! is present, gain §G2§! Base Production in §Y[This.GetName]§! and set it to level §G3§!, and if level §G3§! §YCenter of Trade§! is present, gain §G4§! Base Production in §Y[This.GetName]§!."
  
  
  mam_export_grain_dialog: "Would you like to receive grain exports from the Mamluks?\n\nAccepting will grant our nation the following effects until the death of §Y[Root.Monarch.GetName] [Root.Monarch.GetDynasty]§!, or until diplomatic ties are cut:\nNational Unrest: §G-1.00§\nDevelopment Cost: §G-5.0%§!\n!Supply Limit Modifier: §G+10.0%§!"
