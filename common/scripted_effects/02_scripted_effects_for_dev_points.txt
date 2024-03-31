@@ -343,9 +343,22 @@ calculate_monthly_dev_points_in_all_provinces_effect = {
 				which = monthly_dev_points_from_subjects
 				which = precalc_monthly_dev_points
 			}		
-			multiply_variable = {	#Gives overlord 10% of subjects dev points
-				which = monthly_dev_points_from_subjects
-				value = 0.1
+			if = {
+				limit = {
+					ROOT = {
+						has_idea = marcher_lords
+					}
+				}
+				multiply_variable = {	#Gives overlord 20% of subjects dev points if they have influence ideas
+					which = monthly_dev_points_from_subjects
+					value = 0.4
+				}
+			}
+			else = {
+				multiply_variable = {	#Gives overlord 10% of subjects dev points
+					which = monthly_dev_points_from_subjects
+					value = 0.2
+				}
 			}
 			ROOT = {				#Adds up all the dev points from provinces
 				change_variable = {
