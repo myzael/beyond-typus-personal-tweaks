@@ -144,3 +144,49 @@ country_event = {                         #Event to change mercury provinces int
 		}
 	}
 }
+# province_event = {                         #Event to make colonial nations actually start colonies
+	# id = BT_H_Misc.4
+	# desc = BT_H_Misc.4.desc
+	# title = BT_H_Misc.4.t
+	# picture = CONQUEST_eventPicture
+	
+	# trigger = {
+		# is_capital = yes
+		# owner = {
+			# is_colonial_nation = yes
+			# num_of_colonists = 1
+			# current_income_balance = 2.5
+		# }
+		# owner = {
+			# variable_arithmetic_trigger = {
+				# export_to_variable = {
+					# variable_name = num_of_colonies
+					# value = trigger_value:num_of_colonies
+				# }
+				# export_to_variable = {
+					# variable_name = num_of_colonists
+					# value = trigger_value:num_of_colonists
+				# }
+				# check_variable = {
+					# which = num_of_colonies
+					# which = num_of_colonists
+				# }
+			# }
+			# #ai = yes 
+		# }
+		# owner = {
+			# any_owned_province = {
+				# #has_empty_adjacent_province = yes
+				# any_neighbor_province = { 
+					# colonial_region = ROOT
+					# is_empty = yes
+				# }
+			# }
+		# }
+	# }
+	
+	# option = {
+		# name = BT_H_Misc.4.opta
+		
+	# }
+# }
