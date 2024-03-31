@@ -389,15 +389,15 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {
 		which = dev_points_multiplier
 		value = 1
 	}
-	if = {						#At Peace
-		limit = {
-			is_at_war = no
-		}
-		change_variable = {            
-			which = dev_points_multiplier
-			value = 0.2
-		}
-	}
+	# if = {						#At Peace			#Keeps working then not working confused :Z
+		# limit = {
+			# is_at_war = no
+		# }
+		# change_variable = {            
+			# which = dev_points_multiplier
+			# value = 0.2
+		# }
+	# }
 	if = {						#+90% Manpower
 		limit = {
 			manpower_percentage = 0.9
