@@ -500,6 +500,7 @@ estate_nobles = {
 		estate_nobles_extremely_strong_duchies
 		estate_nobles_british_strong_marches
 		estate_nobles_border_forts
+		estate_nobles_mamluk_decadence
 		#End of BT-specific privileges
 		#BTIP
 		estate_nobles_court_titles

@@ -723,6 +723,7 @@
  dan_a_danish_great_power_at:0 "Countries with at least §Y400§! own and non-tributary subject development have been §YInfluenced§! by §Y[Root.GetName]§!"
  dan_a_danish_great_power_ct:0 "Countries with at least §Y400§! own and non-tributary subject development have §Y25%§! of their income subsidized by §Y[Root.GetName]§!"
  spa_any_ally_tt:0 "Have an §Yally§! with:\n - Their capital in the §YFrench§! region\n - They are a §YGreat Power§! or have at least §Y1000§! total development\n - They have at least §Y180§! opinion of us"
+ tur_refill_the_ortas_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YAnatolia§! owned by a country with §YTurkish§! as their primary culture."
  
  
  #Below two are same as vanilla, except dev number doubled from 100 to 200.
