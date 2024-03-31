@@ -2443,7 +2443,7 @@
  seren_taun_desc:0 "Das Fest von Seren Taun veranschaulicht die sundanesische landwirtschaftliche Lebensweise. Die Dorfbewohner, die alljährlich in den Dörfern zusammenkommen, danken für ihre reichhaltigen Reisernten und beten für eine weitere erfolgreiche Ernte im kommenden Jahr."
  seri:0 "Serisch"
  SEM:0 "Semgallen"
- SEM_adj:0 "Semgallisch"
+ SEM_ADJ:0 "Semgallisch"
  sev_alcazar:0 "Alcázar de Sevilla"
  sev_alcazar_desc:0 "Der Alcázar von Sevilla ist ein massiver, befestigter Palastkomplex, der in den 1360er Jahren für König Pedro I. de Ivrea erbaut wurde. Auch wenn Pedro einen gemischten Ruf genießt, ist der Alcázar zweifellos eine beeindruckende architektonische Meisterleistung."
  sev_colonial_monopolies:0 "Koloniale Monopole"
@@ -2857,8 +2857,8 @@
  BT_StyrianAustriaCores_Tooltip:0 "Steiermark erhält Kernprovinzen in Österreich"
  
  #BT15.0.1
- EGL_adj:0 "Egilianisch"
- SRN_adj:0 "Soranisch"
+ EGL_ADJ:0 "Egilianisch"
+ SRN_ADJ:0 "Soranisch"
  bt_otto_crimea_tweaks_tt:0 "§YKrim§! wir zu unserer §YMark§!, und wir erhalten einen §YAnspruch§! auf jede von Heiden gehaltene Provinz in ihrer Umgebung"           #In a perfect world I'd figure out the strupid from.root.to.for.what.why strings and make the name dynamic. For now, can't be bothered.
  bt_otto_badboy_crimea_opinion:0 "Aggressiver Opportunismus auf der Krim"
  
