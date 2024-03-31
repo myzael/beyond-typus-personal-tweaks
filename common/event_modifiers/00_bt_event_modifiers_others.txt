@@ -438,3 +438,7 @@ bt_shah_rukh_deaded = {			#BT Added as a fix for timmy until there is a region o
 bt_teu_turned_pru = {			#BT added to keep prussian vassal loyal
 	liberty_desire = -20
 }
+
+bt_english_loyalist_immigrants = {
+	local_dev_points = 0.1
+}

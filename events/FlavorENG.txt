@@ -232,7 +232,7 @@ country_event = {
 	
 	option = {			# We have lost our foothold in France
 		name = "flavor_eng.EVTOPTA9104"
-		ai_chance = { factor = 80 }
+		ai_chance = { factor = 100 }
 		add_stability_or_adm_power = yes
 		every_core_province = {
 			limit = {
@@ -240,6 +240,16 @@ country_event = {
 				NOT = { owned_by = ROOT }
 			}
 			remove_core = ROOT
+		}
+		british_isles_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = { 				#BT Change to help england and represent historical migrations
+				name = bt_english_loyalist_immigrants
+				duration = 10950
+				desc = bt_english_loyalist_immigrants_desc
+			}
 		}
 		FRA = {
 			add_opinion = {
@@ -250,7 +260,7 @@ country_event = {
 	}
 	option = {		# We will never give this up!
 		name = "flavor_eng.EVTOPTB9104"
-		ai_chance = { factor = 20 }
+		ai_chance = { factor = 0 }
 		add_stability = -1
 		FRA = {
 			add_opinion = {
