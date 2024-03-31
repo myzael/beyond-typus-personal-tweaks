@@ -128,6 +128,7 @@ BT16
  - (Dub) Tweaked native policies such that trading with natives gives twice the production from natives, and returned other native policies to vanilla's values.
  - (Dub) Shuffled Glass tradegood from Linköping to Nyköping to reflect history and added the Sala Silver Mine in Västerås.
  - (Dub) Doubled MTTH on PurelyNasty event (Separatist Sentiment) to account for more provinces.
+ - (Dub) Mamluks now start with a Mamluk Decadence Nobility privilege which'll hurt their mil tech advancements (Apparently their Mamluks refused to introduce gunpowder into their ranks).
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
