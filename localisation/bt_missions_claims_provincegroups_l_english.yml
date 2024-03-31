@@ -736,3 +736,8 @@
  tur_safeguard_eastern_anatolia_provinces:0 ""
  tur_the_bospborus_control_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YSecure the Bosporus§!"
  tur_the_bospborus_control_provinces:0 ""
+ tur_conquer_greece_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YReign in Greece§!"
+ tur_conquer_greece_provinces:0 ""
+ tur_push_into_the_balkans_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YPush into the North§!"
+ tur_push_into_the_balkans_provinces:0 ""
+ 
