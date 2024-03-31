@@ -219,6 +219,7 @@ viceroyalty_bt = {
 papal_subject_bt = {
 	#Note from tributary state entry - If similar subject added check if it needs to be added to these scripted triggers: is_subject_except_tributary_trigger, is_free_or_tributary_trigger . Thanks Paradox person!
 	copy_from = default
+	count = vassal
 	
 	# Graphics:
 	sprite = GFX_icon_papal_relation
@@ -287,6 +288,7 @@ papal_subject_bt = {
 
 fiefdom_bt = {
 	copy_from = default
+	count = vassal
 	
 	# Graphics:
 	sprite = GFX_icon_vassal
@@ -329,6 +331,7 @@ fiefdom_bt = {
 
 hanseatic_league_member_bt = {
 	copy_from = default
+	count = vassal
 	
 	# Graphics:
 	sprite = GFX_icon_hanseatic_relation
