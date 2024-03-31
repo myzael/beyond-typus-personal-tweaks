@@ -508,6 +508,16 @@ country_event = {
 	
 	option = {
 		name = "flavor_teu.3.a"
+		ai_chance = {
+			factor = 10 
+			modifier = {
+				factor = 0
+				TEU = {
+					exists = yes
+					ai = no
+				}
+			}
+		}
 		vassalize = DNZ
 		DNZ = {							#BT change to help poland actually keep their vassal
 			add_country_modifier = {
@@ -560,6 +570,7 @@ country_event = {
 	
 	option = {									#Invite the leadership of the teutonic order to become our vassal and rule over ducal prussia
 		name = "flavor_teu.3.b"
+		ai_chance = { factor = 90 }
 		trigger = {
 			PRU = { exists = no } 
 			TEU = { exists = no } 
@@ -691,9 +702,20 @@ country_event = {
 	
 	option = {						#Invite teutonic order to reclaim ducal prussia as our vassal
 		name = "flavor_teu.3.c"
+		ai_chance = { factor = 90 }
 		trigger = {
 			PRU = { exists = no } 
-			TEU = { exists = yes }
+			TEU = { 
+				exists = yes 
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 9
+					}
+					any_owned_province = {
+						region = poland_region
+					}
+				}
+			}
 		}
 		highlight = yes 
 		custom_tooltip = pol_delegate_the_formation_of_royal_prussia_tt
