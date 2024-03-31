@@ -16867,9 +16867,9 @@ zacatecas_mine_city = {
 		on_upgraded = {
 			if = {
 				limit = {	
-					NOT = { trade_goods = gold }
+					NOT = { trade_goods = bt_trade_good_silver } #BT Harb changed with new trade good 
 				}
-				change_trade_goods = gold 
+				change_trade_goods = bt_trade_good_silver  #BT Harb changed with new trade good 
 			}
 			else = { add_base_production = 1 }
 		}
@@ -16894,9 +16894,9 @@ zacatecas_mine_city = {
 		on_upgraded = {
 			if = {
 				limit = {	
-					NOT = { trade_goods = gold }
+					NOT = { trade_goods = bt_trade_good_silver } #BT Harb changed with new trade good 
 				}
-				change_trade_goods = gold 
+				change_trade_goods = bt_trade_good_silver  #BT Harb changed with new trade good 
 			}
 			else = { add_base_production = 1 }
 		}
@@ -16921,9 +16921,9 @@ zacatecas_mine_city = {
 		on_upgraded = {
 			if = {
 				limit = {	
-					NOT = { trade_goods = gold }
+					NOT = { trade_goods = bt_trade_good_silver } #BT Harb changed with new trade good 
 				}
-				change_trade_goods = gold 
+				change_trade_goods = bt_trade_good_silver  #BT Harb changed with new trade good 
 			}
 			else = { add_base_production = 1 }
 		}

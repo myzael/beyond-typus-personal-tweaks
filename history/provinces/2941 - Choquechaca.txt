@@ -13,7 +13,7 @@ discovered_by = andean
 
 religion = inti
 capital = "Choquechaca"
-trade_goods = gold
+trade_goods = bt_trade_good_silver #Probably silver is next to potosi
 hre = no
 base_tax = 4 
 base_production = 4

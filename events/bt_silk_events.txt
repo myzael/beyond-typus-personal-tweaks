@@ -94,7 +94,7 @@ country_event = {					#Changing Bolonga trade good to Silk
 			add_base_tax = 1
 			add_base_production = 3
 			add_base_manpower = 1
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = bolonga_silk_mills
 				duration = -1
 			}
