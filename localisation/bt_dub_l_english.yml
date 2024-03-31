@@ -375,3 +375,6 @@
  yearly_innovativeness_enable_button:0 "Click to spend §Y1§! £mil£ per month to gain the following effects:\nYearly Innovativeness: §G+0.25§!\n\nLasts until disabled"
  yearly_innovativeness_disable_button:0 "Click to stop spending §Y1§! £mil£ per month to gain the following effects:\nYearly Innovativeness: §G+0.25§!"
  yearly_innovativeness_button_mod:0 "Supported Freethinkers"
+ 
+ estate_nobles_mamluk_decadence:0 "Mamluk Decadence"
+ estate_nobles_mamluk_decadence_desc:0 "The Mamluk slave soldiers are highly traditionalist, shunning the idea of introducing firearms and gunpowder artillery pieces into their ranks. Attempts were made by Mamluk Sultans to introduce it to their ranks, but none succeeded. In an age where gunpowder warfare is becoming increasingly more important, this resistance is most alarming."

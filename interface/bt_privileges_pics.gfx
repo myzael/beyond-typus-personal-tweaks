@@ -39,4 +39,8 @@ spriteTypes = {
         name = "privilege_siberian_frontier"
         texturefile = "gfx/interface/privileges/privilege_siberian_frontier.dds"
     }
+	spriteType = {
+        name = "privilege_mamluk_decadence"
+        texturefile = "gfx/interface/privileges/privilege_mamluk_decadence.dds"
+    }
 }
