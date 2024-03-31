@@ -109,12 +109,12 @@ country_decisions = {
 			}
 			set_government_rank = 3
 			# New effect below in BT 4.0.1, Ottomans weren't really expanding like they should with all the new changes in BtPL. Depending on how it goes, might add a Balkan one, too, or perhaps just Greece.
-			anatolia_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			# anatolia_region = {
+				# limit = {
+					# NOT = { owned_by = ROOT }
+				# }
+				# add_permanent_claim = ROOT
+			# }
 		}
 		ai_will_do = {
 			factor = 1
