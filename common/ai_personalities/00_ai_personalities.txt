@@ -148,20 +148,16 @@ ai_diplomat = {
 		modifier = {
 			factor = 1.5
 			is_emperor = yes
-			total_development = 100
+			total_development = 400
 		}
 		modifier = {
 			factor = 2
 			tag = HAB
-		}		
+		}
 		modifier = {
 			factor = 2
 			tag = FRA
-		}		
-		modifier = {
-			factor = 3
-			tag = BYZ
-		}	
+		}
 		modifier = {			#Added in bt as a quick fix to stop bohemia killing everything Harbivore
 			factor = 20
 			tag = BOH
@@ -183,7 +179,7 @@ ai_diplomat = {
 		modifier = {
 			factor = 5
 			tag = PAP
-		}		
+		}
 		modifier = {
 			factor = 5
 			tag = MNG
@@ -319,9 +315,10 @@ ai_militarist = {
 			is_march = yes
 		}
 		modifier = {
-			factor = 2
+			factor = 50
 			OR = {
 				tag = TUR
+				tag = BYZ
 				tag = CSU
 			}
 		}			
