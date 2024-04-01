@@ -4466,13 +4466,15 @@ tur_persian_conquest = {
 		required_missions = { tur_refill_the_ortas }
 		position = 2
 		provinces_to_highlight = {
-			culture = turkish
+			province_group = tur_unify_anatolia_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				culture = turkish
-				value = 50 #BT; 30
+			has_fulfiled_num_of_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted_num 
+				provinces=tur_unify_anatolia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+				value=50 #out of 80. Take most of the Beyliks' lands.
 			}
 		}
 		effect = {
