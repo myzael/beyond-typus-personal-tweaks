@@ -1205,6 +1205,7 @@ luck = {
 	legitimacy = 1
 	ae_impact = -0.25
 	governing_capacity_modifier = 0.25
+	core_creation = -0.25 #BT Added: Coring overhaul caused lucky nations to take ages to declare new wars. This cuts coring time down by 25%, or 2.5 years.
 
 }
 
