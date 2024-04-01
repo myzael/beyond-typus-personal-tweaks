@@ -16,7 +16,7 @@ religion = orthodox
 base_tax = 3
 base_production = 2
 base_manpower = 2
-trade_goods = grain
+trade_goods = grain #Agricultural-based economy. Nothing of importance found. Keeping grain.
 
 #Cores and Occupation (Alphabetical after current)
 add_core = KRT

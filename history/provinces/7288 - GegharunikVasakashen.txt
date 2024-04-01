@@ -16,7 +16,7 @@ religion = apostolic
 base_tax = 2
 base_production = 1
 base_manpower = 1
-trade_goods = grain
+trade_goods = fish #Location has arable lands, cattle farming, as well as some amount of fishing around the lake.
 
 #Cores and Occupation (Alphabetical after current)
 add_core = QAR
