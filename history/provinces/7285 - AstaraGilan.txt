@@ -16,7 +16,7 @@ religion = sunni
 base_tax = 4
 base_production = 4
 base_manpower = 4
-trade_goods = grain
+trade_goods = grain #Rice, though there might be an argument for Silk given that Gilan was a major silk producer.
 
 #Cores and Occupation (Alphabetical after current)
 add_core = ISP
