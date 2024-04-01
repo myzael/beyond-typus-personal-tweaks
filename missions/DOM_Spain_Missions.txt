@@ -37,6 +37,10 @@ dom_cas_missions_1 = {
 			give_permaclaims_for_mission = { mission=gc_cas_spa_reconquista_one2 }
 			give_permaclaims_for_mission = { mission=gc_cas_spa_navarra2 }
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_reconquista_one2 = { #Duplicate
@@ -70,6 +74,10 @@ dom_cas_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -109,6 +117,10 @@ dom_cas_missions_1 = {
 				add_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_iberia_christian2 = {
@@ -142,6 +154,10 @@ dom_cas_missions_1 = {
 				}
 			}
 			add_prestige_or_monarch_power = { amount = 10 }
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -210,6 +226,10 @@ dom_cas_missions_1 = {
 				custom_tooltip = cas_armada_info_tt
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_spa_invade_england2 = {
@@ -266,6 +286,10 @@ dom_cas_missions_1 = {
 				}
 				add_papal_influence = 25
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -639,6 +663,10 @@ dom_cas_missions_1_c = {
 				upgrade_building = { trade = yes }
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	spa_merchant_fleet = {
@@ -668,6 +696,10 @@ dom_cas_missions_1_c = {
 			}
 			add_navy_tradition = 10
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_la_plata2 = {
@@ -696,6 +728,10 @@ dom_cas_missions_1_c = {
 			}
 			
 			add_mercantilism = 2 #This is new in Domination. I guess a little retouching is cool?
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -773,6 +809,10 @@ dom_cas_missions_1_c = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 }
 
@@ -841,6 +881,10 @@ dom_cas_missions_2 = {
 				}
 			}
 			else = { add_prestige_or_monarch_power = { amount = 30 } }
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -912,6 +956,10 @@ dom_cas_missions_2 = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	spa_raise_army = {
@@ -955,6 +1003,10 @@ dom_cas_missions_2 = {
 				duration = 9125 
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	spa_tercios_system = {
@@ -977,6 +1029,10 @@ dom_cas_missions_2 = {
 				add_army_professionalism = 0.05
 			}
 			else = { add_army_tradition = 10 }
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -1009,6 +1065,10 @@ dom_cas_missions_2 = {
 					amount = 2
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -1353,6 +1413,10 @@ dom_cas_missions_2_c = {
 				custom_tooltip = spa_event_insight_1003_tt
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_spanish_main2 = {
@@ -1520,6 +1584,10 @@ dom_cas_missions_2_c = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_incans2 = {
@@ -1576,6 +1644,10 @@ dom_cas_missions_2_c = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -1702,6 +1774,10 @@ dom_cas_missions_2_c = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	spa_new_world_silver = {
@@ -1740,6 +1816,10 @@ dom_cas_missions_2_c = {
 					}
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -1849,6 +1929,10 @@ dom_cas_missions_3 = {
 				give_permaclaims_for_mission = { mission=gc_cas_spa_italian_ambition2 }
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_italian_ambition2 = {
@@ -1881,6 +1965,10 @@ dom_cas_missions_3 = {
 					target = NAP
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -1918,6 +2006,10 @@ dom_cas_missions_3 = {
 				type = mil
 				amount = 1
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -1986,6 +2078,10 @@ dom_cas_missions_3 = {
 				duration = 7300
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_spa_spanish_netherlands2 = {
@@ -2010,6 +2106,10 @@ dom_cas_missions_3 = {
 				name = spa_victory_netherlands_modifier
 				duration = -1 
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -2043,6 +2143,10 @@ dom_cas_missions_3 = {
 				duration = -1 
 			}
 			add_prestige_or_monarch_power = { amount = 50 } 
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2370,6 +2474,10 @@ dom_cas_missions_3_c = {
 				duration = 5475
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_caribbean_colony2 = {
@@ -2400,6 +2508,10 @@ dom_cas_missions_3_c = {
 				duration = 5475
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_mayans2 = {
@@ -2428,6 +2540,10 @@ dom_cas_missions_3_c = {
 				name = spa_transatlantic_migrations_modifier
 				duration = 9125 
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -2482,6 +2598,10 @@ dom_cas_missions_3_c = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -2653,6 +2773,10 @@ dom_cas_missions_4 = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_reconquista_two2 = {
@@ -2698,6 +2822,10 @@ dom_cas_missions_4 = {
 			add_stability_or_adm_power = yes 
 			227 = { add_base_tax = 2 add_base_production = 2 } #BT Base Tax Dev Doubling
 			231 = { add_base_tax = 2 add_base_production = 2 } #BT Base Tax Dev Doubling
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -2762,6 +2890,10 @@ dom_cas_missions_4 = {
 				give_permaclaims_for_mission = { mission=gc_spa_austrian_union2 }
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_spa_austrian_union2 = {
@@ -2785,6 +2917,10 @@ dom_cas_missions_4 = {
 				name = "spanish_imperial_ambition"
 				duration = 7300
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -2827,6 +2963,10 @@ dom_cas_missions_4 = {
 			else = { 
 				add_prestige_or_monarch_power = { amount = 100 }
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -3089,6 +3229,10 @@ dom_cas_missions_4_c = {
 			}
 			else = { add_dip_power = 50 }
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	dom_castile_exploration_ideas = {
@@ -3131,6 +3275,10 @@ dom_cas_missions_4_c = {
 				country_event = { id = flavor_spa.199 }
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	dom_castile_circumnavigation = {
@@ -3165,6 +3313,10 @@ dom_cas_missions_4_c = {
 					duration = 9125
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -3237,6 +3389,10 @@ dom_cas_missions_4_c = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -3332,6 +3488,10 @@ dom_cas_missions_4_c = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_florida2 = {
@@ -3385,6 +3545,10 @@ dom_cas_missions_4_c = {
 					}
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -3446,6 +3610,10 @@ dom_cas_missions_5 = {
 					duration = 7300
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -3513,6 +3681,10 @@ dom_cas_missions_5 = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	spa_economic_reforms = {
@@ -3548,6 +3720,10 @@ dom_cas_missions_5 = {
 		}
 		effect = {
 			country_event = { id = flavor_spa.22 }
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -3620,6 +3796,10 @@ dom_cas_missions_5 = {
 				}
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	spa_system_councils = {
@@ -3637,6 +3817,10 @@ dom_cas_missions_5 = {
 		}
 		effect = {
 			add_government_reform = system_of_councils_reform 
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
@@ -4035,6 +4219,10 @@ dom_cas_missions_5_c = {
 				duration = 9125 
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_discover_spice_islands2 = {
@@ -4052,6 +4240,10 @@ dom_cas_missions_5_c = {
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=gc_cas_spa_conquer_philippines2 }
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -4104,6 +4296,10 @@ dom_cas_missions_5_c = {
 					add_center_of_trade_level = 1
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -4200,6 +4396,10 @@ dom_cas_missions_5_c = {
 				add_permanent_claim = ROOT
 			}
 		}
+
+		ai_weight = {
+			factor = 250
+		}
 	}
 	
 	gc_cas_spa_aztecs2 = {
@@ -4244,6 +4444,10 @@ dom_cas_missions_5_c = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 	
@@ -4329,6 +4533,10 @@ dom_cas_missions_5_c = {
 					}
 				}
 			}
+		}
+
+		ai_weight = {
+			factor = 250
 		}
 	}
 }
