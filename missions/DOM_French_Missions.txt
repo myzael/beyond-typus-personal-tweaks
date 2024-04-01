@@ -14,12 +14,22 @@ french_missions_1 = {
 		icon = the_hundred_years_war
 		required_missions = { 	} 
 		position = 1 
-		provinces_to_highlight = { 
-			area = normandy_area 
+		provinces_to_highlight = {
+			OR = {
+				area = normandy_area 
+				area = lower_normandy_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
 			normandy_area = { 
+				type = all 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					province_id = 7967 #Eu, owned by Nevers
+				}
+			}
+			lower_normandy_area = { 
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
@@ -2449,24 +2459,23 @@ french_missions_3 = {
 		required_missions = { } 
 		position = 1 
 		provinces_to_highlight = { 
-			OR = { 
-				province_id = 174
-				province_id = 173 
+			OR = {
+				area = pyrenees_area 
+				area = guyenne_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
-			174 = { 
-				OR = { 
+			pyrenees_area = { 
+				type = all 
+				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 
-					controlled_by = ROOT 
+					province_id = 7923 #Navarra part, owned by Navarra
 				}
 			}
-			173 = { 
-				OR = { 
-					country_or_non_sovereign_subject_holds = ROOT 
-					controlled_by = ROOT 
-				}
+			guyenne_area = { 
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}
 		effect = { 
@@ -2482,23 +2491,31 @@ french_missions_3 = {
 				if = { 
 					limit = {
 						is_at_war = yes 
-						174 = { 
+						pyrenees_area = { 
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
 							controlled_by = ROOT 
 						}
-						173 = { 
+						guyenne_area = { 
 							NOT = { country_or_non_sovereign_subject_holds = ROOT }
 							controlled_by = ROOT 
 						}
 					}
-					174 = { 
+					pyrenees_area = { 
+						limit = {
+							NOT = { country_or_non_sovereign_subject_holds = ROOT }
+							controlled_by = ROOT 
+						}
 						add_province_modifier = {
 							name = fra_unification_movement_modifier 
 							duration = -1 
 							desc = until_we_peace_desc
 						}
 					}
-					173 = { 
+					guyenne_area = { 
+						limit = {
+							NOT = { country_or_non_sovereign_subject_holds = ROOT }
+							controlled_by = ROOT 
+						}
 						add_province_modifier = {
 							name = fra_unification_movement_modifier 
 							duration = -1 
