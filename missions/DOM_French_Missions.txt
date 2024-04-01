@@ -33,7 +33,7 @@ french_missions_1 = {
 				type = all 
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 
-					province_id = 3110 #Channel ISlands, owned by Channel Islands
+					province_id = 3110 #Channel Islands, owned by Channel Islands
 				}
 			}
 		}
