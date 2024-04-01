@@ -1249,17 +1249,11 @@ tur_african_conquest = {
 				}
 			}
 		}
-		trigger = {
+		trigger = {	
 			if = {
 				limit = {
-					OR = {
-						has_country_flag = tur_is_in_event
-						NOT = { mission_completed = tur_venetian_relations }
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = tur_conquer_greece_at
-					always = no
+					has_country_modifier = tur_ottoman_venetian_trade_deal_modifier
+					has_saved_global_event_target = tur_ottoman_trade_partner
 				}
 				has_fulfiled_general_province_requirement_for_mission_trigger = {
 					tooltip=country_or_VEN_holds_or_non_sovereign_subject_holds_highlighted 
@@ -1271,39 +1265,12 @@ tur_african_conquest = {
 						}
 					"
 				}
-				custom_trigger_tooltip = {
-					tooltip = tur_conquer_greece_bt
-					always = no
-				}
+			}
+			else = {
 				has_fulfiled_province_requirement_for_mission_trigger = {
 					tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
 					provinces=tur_conquer_greece_provinces
 					owner_type=country_or_non_sovereign_subject_holds
-				}
-			}
-			else = {	
-				if = {
-					limit = {
-						has_country_modifier = tur_ottoman_venetian_trade_deal_modifier
-						has_saved_global_event_target = tur_ottoman_trade_partner
-					}
-					has_fulfiled_general_province_requirement_for_mission_trigger = {
-						tooltip=country_or_VEN_holds_or_non_sovereign_subject_holds_highlighted 
-						provinces=tur_conquer_greece_provinces
-						triggers="
-							OR = {
-								country_or_non_sovereign_subject_holds = PREV
-								country_or_non_sovereign_subject_holds = VEN
-							}
-						"
-					}
-				}
-				else = {
-					has_fulfiled_province_requirement_for_mission_trigger = {
-						tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-						provinces=tur_conquer_greece_provinces
-						owner_type=country_or_non_sovereign_subject_holds
-					}
 				}
 			}
 		}
