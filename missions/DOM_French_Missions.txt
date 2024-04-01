@@ -31,7 +31,10 @@ french_missions_1 = {
 			}
 			lower_normandy_area = { 
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					province_id = 3110 #Channel ISlands, owned by Channel Islands
+				}
 			}
 		}
 		effect = {
