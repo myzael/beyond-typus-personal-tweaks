@@ -4521,7 +4521,7 @@ tur_persian_conquest = {
 		}
 
 		ai_weight = { #BT AI Focus pl0x
-			factor = 1000
+			factor = 2000
 		}
 	}
 	
@@ -4568,7 +4568,7 @@ tur_persian_conquest = {
 		}
 
 		ai_weight = {
-			factor = 1000 #Ottos should do this.
+			factor = 1500 #Ottos should do this.
 		}
 	}
 	
