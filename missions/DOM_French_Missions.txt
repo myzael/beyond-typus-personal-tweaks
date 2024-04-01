@@ -54,6 +54,14 @@ french_missions_1 = {
 				}
 				add_permanent_claim = ROOT 
 			}
+			lower_brittany_area = { 
+				limit = { 	
+					NOT = { is_core = ROOT } 
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT 
+			}
 			bourgogne_area = {
 				limit = { 	
 					NOT = { is_core = ROOT } 
@@ -1516,11 +1524,19 @@ french_missions_2 = {
 		required_missions = { fra_chateux_loire_valley fra_liberate_norm }
 		position = 2 
 		provinces_to_highlight = { 
-			area = brittany_area 
+			OR = {
+				area = brittany_area 
+				area = lower_brittany_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
 			brittany_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
+				NOT = { devastation = 1 } 
+			}
+			lower_brittany_area = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 				NOT = { devastation = 1 } 
