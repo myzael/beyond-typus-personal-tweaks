@@ -440,5 +440,5 @@ bt_teu_turned_pru = {			#BT added to keep prussian vassal loyal
 }
 
 bt_english_loyalist_immigrants = {
-	local_dev_points = 0.1
+	base_local_dev_points = 0.1
 }
