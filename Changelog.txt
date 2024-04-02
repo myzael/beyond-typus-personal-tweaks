@@ -78,6 +78,7 @@ BT16
  - (Chrys) Fixed new vanilla monument gfx having no name plates.
  - (Dub) Fixed numerous missing quote marks and parentheses in dynamic province naming.
  - (Dub) Fixed Brandenburg starting as High Saxon, not Markish.
+ - (Dub) Allowed Turcoman nations to form Rum, and upon forming it, switches primary culture to Turkish to represent sedentarism.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
