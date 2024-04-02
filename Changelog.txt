@@ -66,7 +66,7 @@ BT16
  - (Dub) Semi-fixed the readability of the modifiers that apply for different subjects by adding spacing between different modifiers.
 	- Note that this cannot be properly fixed without writing massive amounts of custom localisation, as the game does not procure localisation when checking for government abilities.
  - (Harbivore) Fixed error with American dynamic CoT events
- - (Dub) Fixed SRN_ADJ & EGL_ADJ localisation, again (?)
+ - (Dub) Fixed several nations lacking a localised adjective.
  - (Dub) Fixed duplicate Penang & Barus provinces
  - (Dub) Bandaid-fixed vanilla tooltip bug for subject bonuses (It's still buggy, but without custom-tooltipping the entire thing, there's no fix for it)
  - (Dub) Fixed vanilla tooltip bug for coring
@@ -80,7 +80,6 @@ BT16
  - (Dub) Fixed Brandenburg starting as High Saxon, not Markish.
  - (Dub) Allowed Turcoman nations to form Rum, and upon forming it, switches primary culture to Turkish to represent sedentarism.
  - (Dub) Bugfixed vanilla Engrish in several places.
- - (Dub) Fixed several nations lacking a localised adjective.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
