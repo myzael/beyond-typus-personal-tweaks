@@ -50,7 +50,7 @@ BT16
 	- There is a maximum amount that can be stored at once, changed by gov rank, ideas and adm tech. If a nation goes over their limit they are automatically spent.
 - (Harbivore) Added silver as a tradegood.
 	- Existing gold provinces throughout the world were considered and looked over to see whether they produced silver or gold.
-- (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy.
+- (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy and showing how they produced 25% of Europe's silver at the time.
 - (Dub) Created 10 (11) additional buttons, present in the Country Court screen, that allows you to spend excess monarch points to gain countrywide modifiers.
 	- Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable.
 
@@ -79,6 +79,8 @@ BT16
  - (Dub) Fixed numerous missing quote marks and parentheses in dynamic province naming.
  - (Dub) Fixed Brandenburg starting as High Saxon, not Markish.
  - (Dub) Allowed Turcoman nations to form Rum, and upon forming it, switches primary culture to Turkish to represent sedentarism.
+ - (Dub) Bugfixed vanilla Engrish in several places.
+ - (Dub) Fixed several nations lacking a localised adjective.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -130,6 +132,15 @@ BT16
  - (Dub) Shuffled Glass tradegood from Linköping to Nyköping to reflect history and added the Sala Silver Mine in Västerås.
  - (Dub) Doubled MTTH on PurelyNasty event (Separatist Sentiment) to account for more provinces.
  - (Dub) Mamluks now start with a Mamluk Decadence Nobility privilege which'll hurt their mil tech advancements (Apparently their Mamluks refused to introduce gunpowder into their ranks).
+ - (Dub) Lucky nations now gain -25% Core Creation Cost, as well as -25% Land Attrition, in order to help the AI with the coring changes and the attrition in bad terrain costing them way too much manpower.
+ - (Harbivore) AI will now be more clever with parliament bribes
+ - (Dub) Ottoman mission AI has been tweaked heavily in order to try and get them to conquer properly in the earlygame.
+ - (Dub) Spanish mission AI has been given AI factors for all its missions, hopefully promoting it to actually do its missions.
+ - (Harbivore) England AI will never surrender Maine.
+ - (Dub) New England parliament issues have had their num_of_cities tweaked to match BT's density.
+ - (Dub) AI nations have received a +25% tax modifier, +25% production efficiency and +25% trade efficiency. The AI economy was just way too poor in BT and debt spirals were way too common.
+	- Certain AIs will still debtspiral, but it's nowhere near as bad as it was before.
+ - (Dub) State governing cost modifiers from missions have been replaced with state maintenance modifiers instead, because it would break the intricate balance.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
@@ -176,6 +187,7 @@ BT16
 	- GC Andalusian (Dub)
 	- DOM Russian (Dub) - Steppes branches not updated
 	- DOM Spanish (Dub) - Castilian branches. Aragonese branches not updated yet.
+	- DOM Ottoman (Dub) - Not entirely done, and it contains some tweaks all throughout the tree, plus an added vanilla mission to fill the void in lesser Armenia.
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders
