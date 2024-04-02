@@ -23,7 +23,10 @@ country_decisions = {
 			NOT = { tag = PRU }
 			NOT = { tag = ENG }
 			is_emperor_of_china = no
-			primary_culture = turkish
+			OR = {
+				primary_culture = turkish
+				primary_culture = turkoman
+			}
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -121,6 +124,10 @@ country_decisions = {
 			set_country_flag = formed_rum_flag
 			swap_non_generic_missions = yes
 			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
+			if = {
+				limit = { primary_culture = turkoman }
+				change_primary_culture = turkish
+			}
 		}
 		ai_will_do = {
 			factor = 1
