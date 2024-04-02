@@ -8222,11 +8222,13 @@ kiev_pechersk_lavra = {
 		conditional_modifier = {
 			trigger = {
 				owner = { 
-					OR = { 
-						tag = KIE 
-						was_tag = KIE 
-						tag = UKR 
-						was_tag = UKR 
+					hidden_trigger = {
+						OR = { 
+							tag = KIE 
+							was_tag = KIE 
+							tag = UKR 
+							was_tag = UKR 
+						}
 					}
 					mission_completed = ukr_reclaim_kievan_metropolitanate
 				}
