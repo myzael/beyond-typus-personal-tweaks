@@ -234,6 +234,7 @@ NDefines.NGame.MAX_RANDOM_NEW_WORLD = "1000.1.1"
 NDefines.NGame.SIZE_LIMIT_FOR_ISLANDS = 100000			-- from 25000  Changing this to represent anything smaller than about Australia as an island Different pixels in ToT projection could cause differences compared to vanilla such as Greenland
 NDefines.NGovernment.CONCENTRATE_DEVELOPMENT_CAPITAL_PROPORTION = 0.5 --BT changed from 0.8 so more dev ends up in places other than the capital too many nations had 100+ dev capitals
 NDefines.NGovernment.DEVASTATION_PER_DEV_STOLEN = 2.5 --from 5
+NDefines.NGovernment.GOVERNMENT_REFORM_COST_CENTRALIZE_STATE = 0 --BT changed from 50. This button was never used by anyone, and we need an admin point sink. //Dub
 NDefines.NGraphics.BORDER_WIDTH = 0.8			-- from 1p5
 NDefines.NGraphics.CAPITAL_INDICATOR_HEIGHT = 3.3			-- from 5p8
 NDefines.NGraphics.CAPITAL_INDICATOR_HEIGHT_SCALE = 170.0			-- from 140p0
