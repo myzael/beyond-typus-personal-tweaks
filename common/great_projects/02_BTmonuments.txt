@@ -2480,6 +2480,7 @@ mt_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			global_tax_income = 6 #BT Added: Apparently conditional modifiers *require* a country modifier to exist to show up in the tooltip. Paradox, why???
 		}
 		
 		conditional_modifier = {
@@ -2487,7 +2488,8 @@ mt_athos = {
 				owner = { religion = orthodox }
 			}
 			trigger = {
-				owner = { religion = orthodox }
+				religion = orthodox
+				has_owner_religion = yes
 			}
 			modifier = {
 				missionaries = 1
@@ -2504,10 +2506,13 @@ mt_athos = {
 				}
 			}
 			trigger = {
-				owner = { 
-					OR = {
-						tag = TUR 
-						tag = RUM
+				religion = orthodox
+				hidden_trigger = {
+					owner = { 
+						OR = {
+							tag = TUR 
+							tag = RUM
+						}
 					}
 				}
 			}
@@ -2543,6 +2548,7 @@ mt_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			global_tax_income = 6 #BT Added: Apparently conditional modifiers *require* a country modifier to exist to show up in the tooltip. Paradox, why???
 		}
 		
 		conditional_modifier = {
@@ -2550,7 +2556,8 @@ mt_athos = {
 				owner = { religion = orthodox }
 			}
 			trigger = {
-				owner = { religion = orthodox }
+				religion = orthodox
+				has_owner_religion = yes
 			}
 			modifier = {
 				global_heretic_missionary_strength = 0.01
@@ -2568,10 +2575,13 @@ mt_athos = {
 				}
 			}
 			trigger = {
-				owner = { 
-					OR = {
-						tag = TUR 
-						tag = RUM
+				religion = orthodox
+				hidden_trigger = {
+					owner = { 
+						OR = {
+							tag = TUR 
+							tag = RUM
+						}
 					}
 				}
 			}
@@ -2608,6 +2618,7 @@ mt_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			global_tax_income = 6 #BT Added: Apparently conditional modifiers *require* a country modifier to exist to show up in the tooltip. Paradox, why???
 		}
 		
 		conditional_modifier = {
@@ -2615,7 +2626,8 @@ mt_athos = {
 				owner = { religion = orthodox }
 			}
 			trigger = {
-				owner = { religion = orthodox }
+				religion = orthodox
+				has_owner_religion = yes
 			}
 			modifier = {
 				global_missionary_strength = 0.01
@@ -2634,10 +2646,13 @@ mt_athos = {
 				}
 			}
 			trigger = {
-				owner = { 
-					OR = {
-						tag = TUR 
-						tag = RUM
+				religion = orthodox
+				hidden_trigger = {
+					owner = { 
+						OR = {
+							tag = TUR 
+							tag = RUM
+						}
 					}
 				}
 			}
