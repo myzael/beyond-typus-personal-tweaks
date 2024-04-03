@@ -848,6 +848,7 @@ bankruptcy = {
 war = {
 	monthly_militarized_society = 0.1
 	rr_girondists_influence = 0.15
+	country_dev_points_modifier = -0.20
 }
 
 peace = {
@@ -860,7 +861,6 @@ peace = {
 	monthly_militarized_society = -0.1
 	monthly_ottoman_decadence = 0.1
 	monthly_asha_vahishta = 0.25
-	country_dev_points_modifier = 0.20
 }
 
 unconditional_surrender = {
