@@ -107,7 +107,7 @@ grain_depot = {
 	
 	modifier = {
 		local_monthly_devastation = -0.1
-		base_local_dev_points = 0.05
+		base_local_dev_points = 0.04
 	}
 	
 	ai_will_do = {

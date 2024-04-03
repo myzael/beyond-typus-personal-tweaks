@@ -8,13 +8,13 @@ defined_text = {
     text = {
         localisation_key = dev_points_province_has_temple #"\nHas Temple Building: §G+0.01§!"
         trigger = {
-            has_building = temple
+            has_building = constable
         }
     }
     text = {
         localisation_key = dev_points_province_has_cathedral #"\nHas Temple Building: §G+0.01§!"
         trigger = {
-            has_building = cathedral
+            has_building = treasury_office
         }
     }
     text = {
@@ -36,6 +36,27 @@ defined_text = {
         localisation_key = dev_points_province_has_counting_house #"\nHas Workshop Building: §G+0.01§!"
         trigger = {
             has_building = counting_house
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+defined_text = {
+    name = DevPointsProvinceHasPostOffice
+    text = {
+        localisation_key = dev_points_province_has_post_office #"\nHas Workshop Building: §G+0.01§!"
+        trigger = {
+            has_building = post_office
+        }
+    }
+	text = {
+        localisation_key = dev_points_province_has_customs_house #"\nHas Workshop Building: §G+0.01§!"
+        trigger = {
+            has_building = customs_house
         }
     }
     text = {
@@ -77,13 +98,13 @@ defined_text = {
     text = {
         localisation_key = dev_points_province_has_shipyard #"\nHas Workshop Building: §G+0.01§!"
         trigger = {
-            has_building = shipyard
+            has_building = naval_arsenal
         }
     }
     text = {
         localisation_key = dev_points_province_has_grand_shipyard #"\nHas Workshop Building: §G+0.01§!"
         trigger = {
-            has_building = grand_shipyard
+            has_building = naval_base
         }
     }
     text = {
@@ -96,9 +117,45 @@ defined_text = {
 defined_text = {
     name = DevPointsProvinceHasUniversity
     text = {
+        localisation_key = dev_points_province_has_college #"\nHas Workshop Building: §G+0.01§!"
+        trigger = {
+            has_building = college
+        }
+    }
+    text = {
         localisation_key = dev_points_province_has_university #"\nHas Workshop Building: §G+0.01§!"
         trigger = {
             has_building = university
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+defined_text = {
+    name = DevPointsProvinceHasGranary
+    text = {
+        localisation_key = dev_points_province_has_granary #"\nHas Workshop Building: §G+0.01§!"
+        trigger = {
+            has_building = grain_depot
+        }
+    }
+    text = {
+        localisation_key = dev_points_empty_string #" "
+        trigger = {
+        }
+    }
+}
+
+defined_text = {
+    name = DevPointsProvinceHasTaxAssessor
+    text = {
+        localisation_key = dev_points_province_has_tax_assessor #"\nHas Workshop Building: §G+0.01§!"
+        trigger = {
+            has_building = tax_assessor
         }
     }
     text = {
@@ -156,6 +213,12 @@ defined_text = {
         localisation_key = dev_points_province_has_mill#"\nHas Workshop Building: §G+0.01§!"
         trigger = {
             has_building = mills
+        }
+    }
+    text = {
+        localisation_key = dev_points_province_has_mint#"\nHas Workshop Building: §G+0.01§!"
+        trigger = {
+            has_building = mint
         }
     }
     text = {
