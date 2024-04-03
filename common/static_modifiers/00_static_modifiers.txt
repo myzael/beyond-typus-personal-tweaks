@@ -2387,7 +2387,7 @@ expanded_infrastructure = {
 	local_governing_cost_increase = 10 #BT changed from 15. Makes sense given that +15 is a steep cost for more provinces.
 	#local_governing_cost = 0.1 #BT Cut due to governing capacity rebalance
 	local_great_project_upgrade_cost = -0.1 #BT changed from 0.05. Makes sense that monuments become cheaper to upgrade. A nice little bonus.
-	local_dev_points_modifier = 0.20
+	local_dev_points_modifier = 0.1
 }
 
 #BT16 overhauled to fit better what I think this button is meant to do.
