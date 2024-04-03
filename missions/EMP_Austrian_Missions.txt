@@ -1034,8 +1034,8 @@ emp_hab_german_expansion_branch = {
 		ai_weight = {
 			factor = 1000	#Historical conquest
 			modifier = {
-				is_emperor = yes
-				factor = 1 #Unless they are the emperor #BT Changed they need to do this one to form natural austrian borders
+				TAG = STY
+				factor = 0 #Unless they are the emperor #BT Changed they need to do this one to form natural austrian borders
 			}
 		}
 	}
