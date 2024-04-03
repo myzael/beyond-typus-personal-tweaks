@@ -2371,11 +2371,9 @@ mt_athos = {
 
 	#can we build it?
 	build_trigger = {
+		religion = orthodox
 		OR = {
-			AND = {
-				religion = orthodox
-				has_owner_religion = yes
-			}
+			has_owner_religion = yes
 			owner = { 
 				OR = {
 					tag = TUR 
@@ -2395,11 +2393,9 @@ mt_athos = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		religion = orthodox
 		OR = {
-			AND = {
-				religion = orthodox
-				has_owner_religion = yes
-			}
+			has_owner_religion = yes
 			owner = { 
 				OR = {
 					tag = TUR 
