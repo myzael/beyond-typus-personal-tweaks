@@ -2371,11 +2371,18 @@ mt_athos = {
 
 	#can we build it?
 	build_trigger = {
-		AND = {
-			religion = orthodox
-			has_owner_religion = yes
+		OR = {
+			AND = {
+				religion = orthodox
+				has_owner_religion = yes
+			}
+			owner = { 
+				OR = {
+					tag = TUR 
+					tag = RUM
+				}
+			}
 		}
-		
 	}
 
 	#what to do when it's built
@@ -2388,17 +2395,33 @@ mt_athos = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		AND = {
-			religion = orthodox
-			has_owner_religion = yes
+		OR = {
+			AND = {
+				religion = orthodox
+				has_owner_religion = yes
+			}
+			owner = { 
+				OR = {
+					tag = TUR 
+					tag = RUM
+				}
+			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		AND = {
-			religion = orthodox
-			has_owner_religion = yes
+		OR = {
+			AND = {
+				religion = orthodox
+				has_owner_religion = yes
+			}
+			owner = { 
+				OR = {
+					tag = TUR 
+					tag = RUM
+				}
+			}
 		}
 	}
 
@@ -2457,7 +2480,40 @@ mt_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			missionaries = 1
+		}
+		
+		conditional_modifier = {
+			tooltip_potential = {
+				owner = { religion = orthodox }
+			}
+			trigger = {
+				owner = { religion = orthodox }
+			}
+			modifier = {
+				missionaries = 1
+			}
+		}
+		
+		conditional_modifier = {
+			tooltip_potential = {
+				owner = { 
+					OR = {
+						tag = TUR 
+						tag = RUM
+					}
+				}
+			}
+			trigger = {
+				owner = { 
+					OR = {
+						tag = TUR 
+						tag = RUM
+					}
+				}
+			}
+			modifier = {
+				tolerance_of_heathens_capacity = 0.5
+			}
 		}
 
 		#what effects happen when this tier is achieved
@@ -2487,8 +2543,42 @@ mt_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_heretic_missionary_strength = 0.01
-			missionaries = 1
+		}
+		
+		conditional_modifier = {
+			tooltip_potential = {
+				owner = { religion = orthodox }
+			}
+			trigger = {
+				owner = { religion = orthodox }
+			}
+			modifier = {
+				global_heretic_missionary_strength = 0.01
+				missionaries = 1
+			}
+		}
+		
+		conditional_modifier = {
+			tooltip_potential = {
+				owner = { 
+					OR = {
+						tag = TUR 
+						tag = RUM
+					}
+				}
+			}
+			trigger = {
+				owner = { 
+					OR = {
+						tag = TUR 
+						tag = RUM
+					}
+				}
+			}
+			modifier = {
+				tolerance_of_heathens_capacity = 1
+				dhimmi_loyalty_modifier = 0.05
+			}
 		}
 
 		#what effects happen when this tier is achieved
@@ -2518,8 +2608,44 @@ mt_athos = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_missionary_strength = 0.01
-			missionaries = 2
+		}
+		
+		conditional_modifier = {
+			tooltip_potential = {
+				owner = { religion = orthodox }
+			}
+			trigger = {
+				owner = { religion = orthodox }
+			}
+			modifier = {
+				global_missionary_strength = 0.01
+				missionaries = 2
+				church_privilege_slots = 1
+			}
+		}
+		
+		conditional_modifier = {
+			tooltip_potential = {
+				owner = { 
+					OR = {
+						tag = TUR 
+						tag = RUM
+					}
+				}
+			}
+			trigger = {
+				owner = { 
+					OR = {
+						tag = TUR 
+						tag = RUM
+					}
+				}
+			}
+			modifier = {
+				tolerance_of_heathens_capacity = 1
+				dhimmi_loyalty_modifier = 0.1
+				dhimmi_privilege_slots = 1
+			}
 		}
 
 		#what effects happen when this tier is achieved
