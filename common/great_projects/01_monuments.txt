@@ -271,7 +271,6 @@ hagia_sophia = {
 			}
 			modifier = {
 				tolerance_heathen = 0.25
-				base_local_dev_points = 0.02 #BT Added: Represents Mehmed II's resettling of families in Constantinople.
 			}
 		}
 
@@ -348,7 +347,6 @@ hagia_sophia = {
 			modifier = {
 				tolerance_heathen = 0.5
 				monthly_piety_accelerator = 0.001
-				base_local_dev_points = 0.05 #BT Added: Represents Mehmed II's resettling of families in Constantinople.
 			}
 		}
 
@@ -433,7 +431,7 @@ hagia_sophia = {
 			modifier = {
 				tolerance_heathen = 1
 				monthly_piety_accelerator = 0.002
-				base_local_dev_points = 0.1 #BT Added: Represents Mehmed II's resettling of families in Constantinople.
+				manpower_in_true_faith_provinces = 0.25 #BT Added: This represents Ghazi
 			}
 		}
 
