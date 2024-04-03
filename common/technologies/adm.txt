@@ -119,7 +119,7 @@ technology = { #Renaissance Thought
 	}
 	
 	governing_capacity = 100 #BT Added
-	grain_depot = yes #BT More Buildings added
+	college = yes #BT More Buildings added
 	
 	#Noble Republic
 	allowed_idea_groups = 2	
@@ -150,6 +150,7 @@ technology = { #The Scythe
 	
 	#The Scythe
 	production_efficiency 	=	0.02
+	grain_depot = yes #BT More Buildings added
 	
 	administrative_efficiency = 0.1 #BT Added
 }
@@ -225,7 +226,6 @@ technology = { #Scientific Experimentation
 	
 	plantations = yes
 	allowed_idea_groups	= 4
-	college = yes #BT More Buildings added
 }
 
 technology = { #Military Administration
@@ -325,8 +325,8 @@ technology = { #Absolute Rulership
 		printing_press = 0.5
 		global_trade = 0.5
 	}
-	
 	republican_dictatorship = yes
+	tax_assessor = yes #BT More Buildings added	
 }
 
 technology = { #Land Clearance
@@ -453,7 +453,6 @@ technology = { #Modern Bureaucracy
 
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
-	tax_assessor = yes #BT More Buildings added	
 }
 
 technology = { #Rotherham Plough

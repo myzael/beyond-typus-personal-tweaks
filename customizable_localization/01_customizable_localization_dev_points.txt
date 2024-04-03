@@ -536,12 +536,12 @@ defined_text = {
 
 
 defined_text = {
-    name = DevPointsCountryAtPeace
+    name = DevPointsCountryAtWar
     text = {
-        localisation_key = dev_points_country_peace #"\nHas Temple Building: §G+0.01§!"
+        localisation_key = dev_points_country_war #"\nHas Temple Building: §G+0.01§!"
         trigger = {
 			FROM = {
-			is_at_war = no
+			is_at_war = yes
 			}
         }
     }

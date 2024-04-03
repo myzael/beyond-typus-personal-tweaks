@@ -107,6 +107,7 @@ grain_depot = {
 	
 	modifier = {
 		local_monthly_devastation = -0.1
+		base_local_dev_points = 0.05
 	}
 	
 	ai_will_do = {
@@ -177,6 +178,7 @@ mint = {
 		trade_goods_size_modifier = 1
 		global_tax_modifier = 0.05
 		monthly_gold_inflation_modifier = 0.1
+		base_local_dev_points = 0.08
 		#inflation_reduction = -0.1 #Logically, this costs you 0.3 admin points/month/building. I think this is a sensible matchup.
 	}
 	#show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -301,6 +303,7 @@ tax_assessor = {
 	modifier = {
 		tax_income = 15
 		local_tax_modifier = 0.5
+		base_local_dev_points = 0.02
 	}
 	bonus_modifier = {
 		tax_income = 15
@@ -625,7 +628,7 @@ post_office = {
 	modifier = {
 		trade_value_modifier = 0.4
 		local_institution_spread = 0.25 #Just makes sense.
-		base_local_dev_points = 0.02
+		base_local_dev_points = 0.01
 	}
 	
 	allow_in_gold_provinces = no
@@ -676,7 +679,7 @@ customs_house = {
 	modifier = {
 		trade_value_modifier = 0.6
 		local_institution_spread = 0.5 #Just makes sense.
-		base_local_dev_points = 0.04
+		base_local_dev_points = 0.02
 	}
 	
 	allow_in_gold_provinces = no
