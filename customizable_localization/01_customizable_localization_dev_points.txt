@@ -6,13 +6,13 @@
 defined_text = {
     name = DevPointsProvinceHasTaxBuilding
     text = {
-        localisation_key = dev_points_province_has_temple #"\nHas Temple Building: §G+0.01§!"
+        localisation_key = dev_points_province_has_constabulary #"\nHas Temple Building: §G+0.01§!"
         trigger = {
             has_building = constable
         }
     }
     text = {
-        localisation_key = dev_points_province_has_cathedral #"\nHas Temple Building: §G+0.01§!"
+        localisation_key = dev_points_province_has_treasury_office #"\nHas Temple Building: §G+0.01§!"
         trigger = {
             has_building = treasury_office
         }
