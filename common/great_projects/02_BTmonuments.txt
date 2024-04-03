@@ -7801,7 +7801,7 @@ st_catherines = {	#St. Catherine's Monastery
 		on_upgraded = {
 			add_base_tax = 1
 			owner = {
-				add_patriarch_authority = 5
+				add_patriarch_authority = 0.05
 				add_papal_influence = 25
 			}
 		}
@@ -7837,7 +7837,7 @@ st_catherines = {	#St. Catherine's Monastery
 		on_upgraded = {
 			add_base_tax = 1
 			owner = {
-				add_patriarch_authority = 5
+				add_patriarch_authority = 0.05
 				add_papal_influence = 25
 				add_estate_loyalty = {
 					estate = estate_church
