@@ -527,7 +527,7 @@ constable = {
 	time = 12
 	
 	modifier = {
-		local_tax_modifier = 0.40
+		local_tax_modifier = 0.50
 		base_local_dev_points = 0.01
 	}
 	
@@ -575,7 +575,7 @@ treasury_office = {
 	make_obsolete = constable
 	
 	modifier = {
-		local_tax_modifier = 0.6
+		local_tax_modifier = 1.0
 		base_local_dev_points = 0.02
 	}
 	
@@ -623,7 +623,7 @@ post_office = {
 	time = 12
 	
 	modifier = {
-		trade_value_modifier = 0.5
+		trade_value_modifier = 0.4
 		local_institution_spread = 0.25 #Just makes sense.
 		base_local_dev_points = 0.02
 	}
@@ -674,7 +674,7 @@ customs_house = {
 	
 	make_obsolete = post_office
 	modifier = {
-		trade_value_modifier = 1			#BTAddOn changed from 1.0. Part of the comprehensive balance overhaul to adjust buildings to the BT map (with all its new provinces)
+		trade_value_modifier = 0.6
 		local_institution_spread = 0.5 #Just makes sense.
 		base_local_dev_points = 0.04
 	}
