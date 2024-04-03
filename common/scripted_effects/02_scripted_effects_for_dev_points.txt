@@ -238,7 +238,7 @@ calculate_monthly_dev_points_in_all_provinces_effect = {
 			}
 			multiply_variable = {	#Divides infrastructure by 0.2 to prepare it to multiply with monthly dev points
 				which = infrastucture_ui_var
-				value = 20
+				value = 10
 			}
 		}
 		if = {					#Has infrastructure ideas and 6 buildings
@@ -246,7 +246,7 @@ calculate_monthly_dev_points_in_all_provinces_effect = {
 				ROOT = {
 					has_idea = regulation_bureau 
 				}
-				num_of_buildings_in_province = 6
+				num_of_buildings_in_province = 8
 			}
 			change_variable = {            
 				which = provincial_dev_points_modifier

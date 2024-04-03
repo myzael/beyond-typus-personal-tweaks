@@ -3,7 +3,7 @@
  IMP_PROV_COST:0 "It will cost $VAL|Y$ §YDevelopment Points§! to improve §Y$PROV$§!. §Y$PROV$§! has been improved $COUNT|Y$ time(s)."
 
  IMPR_FURTHER_MODIFIED_BY_2:1 "Development Cost Modifier: $TECH$"
- regulation_bureau_desc:0 "A legislative body whose jurisdiction involves the maintenance and promotion of inflation-related laws as well as the local administration of our provinces.\nProvinces with at least 6 buildings get:"    
+ regulation_bureau_desc:0 "A legislative body whose jurisdiction involves the maintenance and promotion of inflation-related laws as well as the local administration of our provinces.\nProvinces with at least 8 buildings get:"    
 
 
 
