@@ -10508,7 +10508,7 @@ support_for_advisor = {
 }
 
 influential_power_holder = {
-	state_maintenance_modifier = -0.1
+	local_state_maintenance_modifier = -0.1 #BT Bug fixed - this was global.
 	local_manpower_modifier = 0.1
 	local_tax_modifier = 0.1
 	local_development_cost = -0.1

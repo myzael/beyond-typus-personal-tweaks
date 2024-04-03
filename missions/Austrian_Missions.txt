@@ -86,7 +86,7 @@ hab_holy_roman_ambitions = {
 			}
 		}
 		ai_weight = {
-			factor = 500	#Austria should ALWAYS want to be the Emperor
+			factor = 10000	#Austria should ALWAYS want to be the Emperor
 		}
 	}
 	subjugate_bohemia = {
