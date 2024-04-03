@@ -59,7 +59,7 @@
  dev_points_province_modifier_has_CoT3: "\nWorld Trade Centre: §G+40%§!"
  dev_points_province_modifier_has_coastal_CoT3: "\nWorld Port: §G+40%§!"
  dev_points_province_modifier_has_CoT2: "\nMarket Town: §G+20%§!"
- dev_points_province_modifier_has_coastal_CoT2: "\nEnterpot: §G+20%§!"
+ dev_points_province_modifier_has_coastal_CoT2: "\nEntrepot: §G+20%§!"
  dev_points_province_modifier_has_CoT1: "\nEmporium: §G+10%§!"
  dev_points_province_modifier_has_coastal_CoT1: "\nNatural Harbor: §G+10%§!"
  dev_points_province_modifier_has_edict_of_development: "\nEncourage Development: §G+25%§!"
