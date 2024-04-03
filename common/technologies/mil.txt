@@ -161,6 +161,7 @@ technology = {
 	enable = pacific_reformed_spearman
 	
 	combat_width = 2
+	barracks = yes
 }
 
 technology = {
@@ -177,7 +178,7 @@ technology = {
 	infantry_fire 		= 	0.30			#BTAddOn changed from 0.20 - Part of tech shock and fire overhaul
 	
 	
-	barracks = yes
+	ramparts = yes
 
 
 	enable = african_somali_cavalry
@@ -227,8 +228,6 @@ technology = {
 	#infantry_fire		= 	0.25			#BTAddOn removed - Part of tech shock and fire overhaul
 	infantry_shock		= 	0.20			#BTAddOn new - Part of tech shock and fire overhaul
 	cavalry_shock		=	0.40			#BTAddOn changed from 0.8 - Part of tech shock and fire overhaul
-
-	
 	regimental_camp = yes
 }
 
