@@ -227,9 +227,52 @@ hagia_sophia = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			tolerance_own = 0.25
-			tolerance_heretic = 0.25
 			church_loyalty_modifier = 0.05
+		}
+		conditional_modifier = { #Heretic tolerance for catholics
+			tooltip_potential = {
+				owner = { religion = catholic }
+			}
+			trigger = {
+				religion = catholic
+			}
+			modifier = {
+				tolerance_heretic = 0.25
+			}
+		}
+		conditional_modifier = { #True faith tolerance for other christians
+			tooltip_potential = {
+				OR = {
+					owner = { religion = orthodox }
+					owner = { religion = coptic }
+					owner = { religion = apostolic }
+					owner = { religion = nestorian }
+				}
+			}
+			trigger = {
+				OR = {
+					religion = orthodox
+					religion = coptic
+					religion = apostolic
+					religion = nestorian
+				}
+				
+			}
+			modifier = {
+				tolerance_own = 0.25
+			}
+		}
+		conditional_modifier = { #Heathen tolerance for muslims
+			tooltip_potential = {
+				owner = { religion_group = muslim }
+			}
+			trigger = {
+				religion_group = muslim
+			}
+			modifier = {
+				tolerance_heathen = 0.25
+				base_local_dev_points = 0.02 #BT Added: Represents Mehmed II's resettling of families in Constantinople.
+			}
 		}
 
 		#what effects happen when this tier is achieved
@@ -258,12 +301,55 @@ hagia_sophia = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			tolerance_own = 0.5
-			tolerance_heretic = 0.5
-			monthly_piety_accelerator = 0.001
-			yearly_patriarch_authority = 0.002
-			papal_influence = 0.5
 			church_loyalty_modifier = 0.1
+		}
+		conditional_modifier = { #Heretic tolerance for catholics
+			tooltip_potential = {
+				owner = { religion = catholic }
+			}
+			trigger = {
+				religion = catholic
+			}
+			modifier = {
+				tolerance_heretic = 0.5
+				papal_influence = 0.5
+			}
+		}
+		conditional_modifier = { #True faith tolerance for other christians
+			tooltip_potential = {
+				OR = {
+					owner = { religion = orthodox }
+					owner = { religion = coptic }
+					owner = { religion = apostolic }
+					owner = { religion = nestorian }
+				}
+			}
+			trigger = {
+				OR = {
+					religion = orthodox
+					religion = coptic
+					religion = apostolic
+					religion = nestorian
+				}
+				
+			}
+			modifier = {
+				tolerance_own = 0.5
+				yearly_patriarch_authority = 0.002
+			}
+		}
+		conditional_modifier = { #Heathen tolerance for muslims
+			tooltip_potential = {
+				owner = { religion_group = muslim }
+			}
+			trigger = {
+				religion_group = muslim
+			}
+			modifier = {
+				tolerance_heathen = 0.5
+				monthly_piety_accelerator = 0.001
+				base_local_dev_points = 0.05 #BT Added: Represents Mehmed II's resettling of families in Constantinople.
+			}
 		}
 
 		#what effects happen when this tier is achieved
@@ -298,12 +384,57 @@ hagia_sophia = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			tolerance_own = 1
-			tolerance_heretic = 1
-			monthly_piety_accelerator = 0.002
-			yearly_patriarch_authority = 0.005
-			papal_influence = 1
 			church_loyalty_modifier = 0.15
+		}
+		conditional_modifier = { #Heretic tolerance for catholics
+			tooltip_potential = {
+				owner = { religion = catholic }
+			}
+			trigger = {
+				religion = catholic
+			}
+			modifier = {
+				tolerance_heretic = 1
+				papal_influence = 1
+				unrest_catholic_provinces = -1 #BT Added: A little bonus to Catholics for mending the schism.
+			}
+		}
+		conditional_modifier = { #True faith tolerance for other christians
+			tooltip_potential = {
+				OR = {
+					owner = { religion = orthodox }
+					owner = { religion = coptic }
+					owner = { religion = apostolic }
+					owner = { religion = nestorian }
+				}
+			}
+			trigger = {
+				OR = {
+					religion = orthodox
+					religion = coptic
+					religion = apostolic
+					religion = nestorian
+				}
+				
+			}
+			modifier = {
+				tolerance_own = 1
+				yearly_patriarch_authority = 0.005
+				war_exhaustion = -0.03 #BT Added: Church masses, a nice little bonus.
+			}
+		}
+		conditional_modifier = { #Heathen tolerance for muslims
+			tooltip_potential = {
+				owner = { religion_group = muslim }
+			}
+			trigger = {
+				religion_group = muslim
+			}
+			modifier = {
+				tolerance_heathen = 1
+				monthly_piety_accelerator = 0.002
+				base_local_dev_points = 0.1 #BT Added: Represents Mehmed II's resettling of families in Constantinople.
+			}
 		}
 
 		#what effects happen when this tier is achieved
@@ -858,7 +989,7 @@ buddha_statues = {
 	build_cost = 0
 	
 	#can we move it?
-	can_be_moved = yes
+	can_be_moved = no #Noooooooo!
 	
 	#time to move the project one unit of distance, in days
 	move_days_per_unit_distance = 1
@@ -2828,7 +2959,7 @@ moai = {
 	build_cost = 0
 	
 	#can we move it?
-	can_be_moved = yes
+	can_be_moved = no #Noooooooo!
 	
 	#time to move the project one unit of distance, in days
 	move_days_per_unit_distance = 1
@@ -7669,7 +7800,7 @@ inukshuk = {
 	build_cost = 0
 	
 	#can we move it?
-	can_be_moved = yes
+	can_be_moved = no #BT Change: We do not want to move the stones. They're precious. And while precious things were moved throughout history, I do not believe massive stones would be transportable overseas. At least not in this era.
 	
 	#time to move the project one unit of distance, in days
 	move_days_per_unit_distance = 1
@@ -12645,7 +12776,7 @@ gomateshwara_statue = {
 	date = 983.01.01
 	time = { months = 0	}
 	build_cost = 0
-	can_be_moved = yes
+	can_be_moved = no #Noooooooooo!
 	move_days_per_unit_distance = 10
 	starting_tier = 1
 	type = monument
