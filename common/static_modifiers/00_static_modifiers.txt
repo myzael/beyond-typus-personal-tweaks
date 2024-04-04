@@ -717,7 +717,7 @@ negative_stability = {
 	yearly_harmony = 0.25
 	monthly_russian_modernization = 0.03
 	monthly_ottoman_decadence = -0.15
-	country_dev_points_modifier = -0.05
+	country_dev_points_modifier = 0.05
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
