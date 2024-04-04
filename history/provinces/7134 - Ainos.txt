@@ -52,15 +52,17 @@ discovered_by = western
 #1291 - 1444
 
 #2nd Shattering unused
-#1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
-#1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #Return to proper mod added owners and cuts vanilla core, typically.
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = GEN
+	controller = GEN
+	add_core = GEN
+	remove_core = LES
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = LES
+	controller = LES
+	add_core = LES
+	remove_core = GEN
+} #Return to proper mod added owners and cuts vanilla core, typically.
 
 #1444 on
