@@ -24,7 +24,7 @@ center_of_trade = 2
 discovered_by = north_american
 
 
-1444.11.16 = { #BT Performance Start Begin
+1444.11.15 = { #BT Performance Start Begin
 	owner = XXX
 	controller = XXX
 	tribal_owner = XXX

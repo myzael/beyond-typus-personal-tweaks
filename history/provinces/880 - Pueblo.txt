@@ -3,11 +3,11 @@
 owner = OHK
 controller = OHK
 add_core = OHK
-culture = pueblo 
+culture = pueblo
 religion = totemism
-capital = "Ohkay Owingeh" 
-trade_goods = unknown 
-hre = no 
+capital = "Ohkay Owingeh"
+trade_goods = unknown
+hre = no
 is_city = yes
 base_tax = 2
 base_production = 2 
@@ -22,7 +22,7 @@ discovered_by = north_american
 	is_city = no
 	trade_goods = unknown
 }
-1444.11.17 = { #BeyondTypus batch edit shortcut no native start date end
+1444.11.18 = { #BeyondTypus batch edit shortcut no native start date end
 	owner = ZIA
 	controller = ZIA
 	add_core = ZIA

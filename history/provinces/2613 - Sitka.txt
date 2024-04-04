@@ -20,6 +20,12 @@ discovered_by = north_american
 
 
 1444.1.1 = { tribal_owner = TGI }
+1444.11.15 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = TGI
+}
 1741.1.1 = { discovered_by = RUS } # Aleksei Chirikov under Vitus Bering
 1778.1.1 = { discovered_by = GBR } # James Cook
 1788.1.1 = { discovered_by = SPA } # Esteban José Martínez and Gonzalo López de Haro

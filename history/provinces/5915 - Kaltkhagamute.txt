@@ -18,3 +18,9 @@ discovered_by = north_american
 
 #Province History
 1444.1.1 = { tribal_owner = YPK }
+1444.11.15 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = xxx
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = YPK
+}

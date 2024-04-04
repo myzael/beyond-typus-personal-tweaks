@@ -20,7 +20,7 @@ trade_goods = livestock
 
 discovered_by = polynesian_tech # 1.31
 
-1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+1444.11.15 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = XXX
 	controller = XXX
 } #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.

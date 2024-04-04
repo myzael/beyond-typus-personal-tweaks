@@ -18,7 +18,7 @@ native_hostileness = 3
 discovered_by = north_american
 
 1444.1.1 = { tribal_owner = BLA }
-1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+1444.11.15 = { #BeyondTypus batch edit shortcut second performance start begins
 	tribal_owner = XXX
 } #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
 1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends

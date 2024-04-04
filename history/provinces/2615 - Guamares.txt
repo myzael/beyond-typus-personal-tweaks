@@ -19,7 +19,7 @@ base_manpower = 2
 discovered_by = mesoamerican
 
 
-1444.11.16 = { #BT Performance Start Begin
+1444.11.15 = { #BT Performance Start Begin
 	owner = XXX
 	controller = XXX
 }

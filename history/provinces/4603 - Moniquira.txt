@@ -15,7 +15,7 @@ base_manpower = 2
 add_core = MCA
 discovered_by = south_american
 1444.1.1 = { discovered_by = MCA }
-1444.11.16 = { #BT Performance Start Begin
+1444.11.15 = { #BT Performance Start Begin
 	owner = XXX
 	controller = XXX
 }

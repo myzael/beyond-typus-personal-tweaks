@@ -36,7 +36,7 @@ discovered_by = aboriginal_tech # 1.31
 
 #Histories  
 #1444 onwards
-1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+1444.11.15 = { #BeyondTypus batch edit shortcut no vassal start date begin
 	owner = xxx
 	controller = xxx
 	remove_core = MRR
