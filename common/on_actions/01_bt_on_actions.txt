@@ -404,6 +404,23 @@ on_centralized_state = { #BT Centralized state overhaul - now applies area-wide 
             }
         }
 	}
+	#Funky bandaid fix without actually replacing vanilla's 00_on_actions.txt to remove gov reform progress stuff since they don't cost in BT.
+	if = {
+		limit = {
+			owner = { has_government_attribute = centralize_state_no_reform_cost }
+		}
+		owner = {
+			change_government_reform_progress = -50
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { has_government_attribute = centralize_state_half_refund }
+		}
+		owner = {
+			change_government_reform_progress = -25
+		}
+	}
 }
 
 #Dev note: Can as part of 1.36 be added in dip.txt instead.
