@@ -10,7 +10,6 @@ on_startup = {
 		8809 = { change_trade_goods = cotton }
 		2779 = { change_trade_goods = salt }
 		8807 = { change_trade_goods = livestock }
-		8809 = { change_trade_goods = livestock }
 		2784 = { change_trade_goods = livestock }
 		set_global_flag = bt_tribal_land_tradegoods
 	}

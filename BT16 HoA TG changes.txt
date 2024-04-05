@@ -12,7 +12,6 @@
 8809 - Cotton on_action-added
 2779 - Salt on_action-added
 8807 - Livestock on_action-added
-8809 - Livestock on_action-added
 2784 - Livestock on_action-added
 8801 - Livestock
 2790 - Livestock
