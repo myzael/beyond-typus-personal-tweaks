@@ -117,9 +117,9 @@ kilwa_cape_missions_slot = {
 				name = zan_expansion_into_the_cape
 				duration = 18250
 			}
-			create_colony_mission_reward = {
-				province = 1177
-			}
+			#create_colony_mission_reward = {		#BT removed because Kilwa getting the Cape is silly
+			#	province = 1177
+			#}
 		}
 		ai_weight = {
 			factor = 0	#AI shouldn't really focus on that so the Europeans get the Cape instead
