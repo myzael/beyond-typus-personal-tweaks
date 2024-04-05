@@ -887,7 +887,6 @@ bt_ukr_ruthenia_russia_conquest = {
 				}
 			}
 		}
-		
 	}
 }
 
@@ -1339,7 +1338,7 @@ bt_ukr_steppe_conquests_1 = {
 		}
 		
 		effect = {
-			
+			add_yearly_manpower = 2
 		}
 		
 	}
