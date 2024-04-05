@@ -3055,16 +3055,25 @@ country_event = {
 				}
 				thrace_area = {
 					limit = {
-						country_or_non_sovereign_subject_holds = ROOT 
+						owned_by = ROOT 
+						
 					}
 					cede_province = TUR
 				}
 				northern_thrace_area = {
 					limit = {
-						country_or_non_sovereign_subject_holds = ROOT 
+						owned_by = ROOT 
 					}
 					cede_province = TUR
 				}
+			}
+			thrace_area = {
+				remove_core = MOE
+				remove_core = BYZ
+			}
+			northern_thrace_area = {
+				remove_core = MOE
+				remove_core = BYZ
 			}
 			TUR = {
 				white_peace = ROOT
