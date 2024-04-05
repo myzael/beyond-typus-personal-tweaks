@@ -1,3 +1,21 @@
+on_startup = {
+	if = { #Because tribal land gets random tradegood irregardless of what the history file declares. It comes out as about 75% slaves at game start because game.
+		limit = { NOT = { has_global_flag = bt_tribal_land_tradegoods } }
+		#HoA overhaul
+		1208 = { change_trade_goods = livestock }
+		1207 = { change_trade_goods = incense }
+		2792 = { change_trade_goods = livestock }
+		2024 = { change_trade_goods = livestock }
+		1206 = { change_trade_goods = livestock }
+		8809 = { change_trade_goods = cotton }
+		2779 = { change_trade_goods = salt }
+		8807 = { change_trade_goods = livestock }
+		8809 = { change_trade_goods = livestock }
+		2784 = { change_trade_goods = livestock }
+		set_global_flag = bt_tribal_land_tradegoods
+	}
+}
+
 on_new_monarch = {
 	#BT
 	if = {

@@ -4,7 +4,7 @@
 culture = darood
 religion = sunni
 capital = "Cerigaabo"
-trade_goods = incense
+trade_goods = livestock #JP's research in conjunction with Endreyas
 is_city = yes
 hre = no
 base_tax = 1  
