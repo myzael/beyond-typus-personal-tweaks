@@ -99,7 +99,7 @@
  
  #Ruthenian Missions:
  ukr_invite_rurikids_title:0 "Invite the Rurikids"
- ukr_invite_rurikids_desc:0 "Before the Lithuanian subjugation of Ruthenia, the lands of the Kievan Rus were ruled by a dynasty known as the Rurikids, or Rurikovich. However, since the Battle on the Irpin River, the last Rurikovich ruler of Kiev, Stanislav, was ousted and fled to the lands of the Northern Rus. Today, many small principalities in the North are still ruled by Stanislav's descendants. To ensure we are fit to continue the legacy of the Rus, it would be provident to invite one of Stanislav's descendants to rule the [Root.GetTitle] of [Root.GetName] once more!"
+ ukr_invite_rurikids_desc:0 "Before the Lithuanian subjugation of Ruthenia, the lands of the Kievan Rus were ruled by a dynasty known as the Rurikids, or Rurikovich. However, since the Battle on the Irpin River, the last Rurikovich ruler of Kiev, Stanislav, was ousted and fled to the lands of the Northern Rus. Today, many small principalities in the North are still ruled by Stanislav's descendants. To ensure we are fit to continue the legacy of the Rus, it would be provident to invite one of Stanislav's descendants to rule the [Root.GovernmentName] of [Root.GetName] once more!"
  ukr_restore_kiev_title:0 "Restore [280.GetName]"
  ukr_restore_kiev_desc:0 "The city of [280.GetName] has fallen into disrepair ever since the Mongol incursions in the 13th century. Prior, it was the pearl and capital of the state known as the Kievan Rus, and its rulers styled themselves as Grand [Root.Monarch.GetTitle] of [280.GetName]. As we move to reclaim lands united under Prince Oleg, [280.GetName] must be restored!"
  ukr_restore_kiev_tooltip:0 "[Root.GetName] will become a §YGrand Principality§!"
