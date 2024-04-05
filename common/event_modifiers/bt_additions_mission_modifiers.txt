@@ -86,6 +86,10 @@ bt_ukr_black_sea_naval_base = { #Permanent, province mod
 	naval_morale = 0.1
 }
 
+bt_ukr_navy_of_the_intermarum = { #Permanent, country mod
+	navy_tradition_decay = -0.01
+}
+
 bt_ukr_elite_streltsy = { #Permanent, streltsy mod
 	morale_damage = 0.1
 	morale_damage_received = -0.1
@@ -100,4 +104,9 @@ bt_ukr_elite_cossacks = { #Permanent, cossack mod
 bt_ukr_donets_coal = {
 	trade_goods_size = 1
 	trade_goods_size_modifier = 0.25
+}
+
+bt_ukr_tamed_the_steppes = {
+	can_recruit_cossacks = yes
+	allowed_cossack_fraction = 0.2
 }

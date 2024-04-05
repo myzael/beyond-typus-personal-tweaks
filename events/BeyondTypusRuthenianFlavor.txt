@@ -77,7 +77,6 @@ country_event = { #The Vodka Monopoly
 
 	option = { # Give it to the Boyars!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTA2"
-		set_estate_privilege = estate_nobles_vodka_monopoly
 		add_years_of_owned_provinces_production_income = {
 			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
 			trigger = {
@@ -85,10 +84,10 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
+		set_estate_privilege = estate_nobles_vodka_monopoly
 	}
 	option = { # Give it to the Clergy!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTB2"
-		set_estate_privilege = estate_church_vodka_monopoly
 		add_years_of_owned_provinces_production_income = {
 			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
 			trigger = {
@@ -96,11 +95,11 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
+		set_estate_privilege = estate_church_vodka_monopoly
 		
 	}
 	option = { # Give it to the Burghers!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTC2"
-		set_estate_privilege = estate_burghers_vodka_monopoly
 		add_years_of_owned_provinces_production_income = {
 			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
 			trigger = {
@@ -108,10 +107,10 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
+		set_estate_privilege = estate_burghers_vodka_monopoly
 	}
 	option = { # Give it to the Cossacks!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTD2"
-		set_estate_privilege = estate_cossacks_vodka_monopoly
 		add_years_of_owned_provinces_production_income = {
 			custom_tooltip = MONOPOLY_INCOME_GRAIN_DESC
 			trigger = {
@@ -119,6 +118,7 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
+		set_estate_privilege = estate_cossacks_vodka_monopoly
 	}
 	option = { # Keep it for the State!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTE2"
@@ -140,5 +140,60 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 4
 		}
+	}
+}
+
+country_event = { #A Son of Rurik
+	id = BeyondTypusRuthenianFlavour.3
+	title = "BeyondTypusRuthenianFlavour.EVTNAME3"
+	desc = "BeyondTypusRuthenianFlavour.EVTDESC3"
+	picture = COSSACK_ESTATE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		if = {
+			limit = {
+				event_target:rurik_country = {
+					ai = yes
+					NOT = { development = 200 } #Is small
+				}
+			}
+			hidden_effect = {
+				create_interregnum_effect = yes
+			}
+			create_union = event_target:rurik_country
+		}
+		else = {
+			hidden_effect = {
+				create_interregnum_effect = yes
+			}
+			define_ruler = {
+				dynasty = event_target:rurik_country
+				culture = event_target:rurik_country
+				religion = event_target:rurik_country
+				change_adm = 2
+				change_dip = 2
+				change_mil = 2
+			}
+		}
+		event_target:rurik_country = {
+			add_trust = {
+				who = ROOT
+				value = 10
+				mutual = yes
+			}
+			add_favors = {
+			   who = ROOT
+			   amount = 10
+			}
+		}
+	}
+	
+	after = {
+		clear_global_event_target = rurik_country
 	}
 }
