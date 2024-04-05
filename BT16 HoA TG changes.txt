@@ -36,3 +36,10 @@
 8810 - Cotton
 8812 - Cotton
 1212 - Apiculture
+8857 - Tobacco (Khat production in the valley)
+1210 - Slaves
+8861 - Coffee
+8862 - Coffee (Could not find anything better here)
+2761 - Slaves
+1213 - Slaves
+8863 - Livestock
