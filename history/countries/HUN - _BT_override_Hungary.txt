@@ -15,3 +15,14 @@ historical_friend = WAL
 	add_accepted_culture = serbian
 	add_accepted_culture = cuman
 }			#Note obviously too many here.... should prioritise in order as tech increases for later starts.
+
+
+
+1444.11.10 = {
+	monarch = {
+		adm = 2
+		mil = 2
+		dip = 2
+		regent = yes
+	}
+}
