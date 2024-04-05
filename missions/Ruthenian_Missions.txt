@@ -43,9 +43,39 @@ bt_ukr_dynasty = {
 		}
 		
 		effect = {
-			# country_event = { #TODO: Event to invite a Rurikid heir
-				# id = "X"
-			# }
+			if = {
+				limit = {
+					any_country = {
+						dynasty = "Rurikovich"
+						religion_group = christian
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+				random_country = {
+					limit = {
+						dynasty = "Rurikovich"
+						religion_group = christian
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					save_global_event_target_as = rurik_country
+				}
+				country_event = {
+					id = "BeyondTypusRuthenianFlavour.3"
+				}
+			}
+			else = {
+				tooltip = {
+					country_event = {
+						id = "BeyondTypusRuthenianFlavour.3"
+					}
+				}
+			}
 		}
 	}
 }
@@ -843,17 +873,17 @@ bt_ukr_ruthenia_russia_conquest = {
 		effect = {
 			if = { #Much cooler than just a regular modifier.
 				limit = {
-					has_idea_group = UKR_ideas
+					NOT = { has_idea_group = UKR_ideas }
 				}
-				custom_tooltip = ukr_mother_of_all_rus_effect_tooltip
-				hidden_effect = {
-					swap_ideas = yes
-				}
-			}
-			else = {
 				add_country_modifier = {
 					name = "bt_ukr_mother_of_all_rus"
 					duration = -1
+				}
+			}
+			else = {
+				custom_tooltip = ukr_mother_of_all_rus_effect_tooltip
+				hidden_effect = {
+					swap_ideas = yes
 				}
 			}
 		}
