@@ -3,7 +3,7 @@
 culture = darood
 religion = sunni
 capital = "El Kere"
-trade_goods = livestock
+trade_goods = salt #JP's research in conjunction with Endreyas
 hre = no
 is_city = no
 tribal_owner = OGD

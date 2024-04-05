@@ -1,0 +1,33 @@
+1127 - Gems
+1214 - Ivory
+1230 - Ivory
+1209 - Naval Supplies
+2793 - Livestock
+1208 - Livestock on_action-added 
+1207 - Incense on_action-added (JP/Endreyas had no research on it)
+2778 - Livestock
+2792 - Livestock on_action-added 
+2024 - Livestock on_action-added 
+1206 - Livestock on_action-added
+8809 - Cotton on_action-added
+2779 - Salt on_action-added
+8807 - Livestock on_action-added
+2784 - Livestock on_action-added
+8801 - Livestock
+2790 - Livestock
+2786 - Naval Supplies
+8803 - Naval Supplies
+8804 - Incense (Based on general Ajuraan trading exports)
+8803 - Naval Supplies
+8802 - Cloth (Based on general Ajuraan trading exports)
+2785 - Glass (Sepiolite, a magnesium silicate used for incense burning)
+2782 - Incense (Based on general Ajuraan trading exports)
+2775 - Cloth
+2794 - Cloth
+2774 - Grain
+8797 - Livestock
+2776 - Fruit
+2780 - Grain
+8799 - Livestock
+8800 - Livestock
+8808 - Fruit

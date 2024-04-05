@@ -4,7 +4,7 @@
 culture = darood
 religion = sunni
 capital = "Werder"
-trade_goods = slaves
+trade_goods = livestock #JP's research in conjunction with Endreyas
 is_city = yes
 owner = OGD
 controller = OGD
