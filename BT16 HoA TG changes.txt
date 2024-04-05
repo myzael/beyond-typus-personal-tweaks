@@ -28,6 +28,7 @@
 8797 - Livestock
 2776 - Fruit
 2780 - Grain
+2781 - Ivory
 8799 - Livestock
 8800 - Livestock
 8808 - Fruit
