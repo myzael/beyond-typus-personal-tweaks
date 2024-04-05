@@ -31,3 +31,7 @@
 8799 - Livestock
 8800 - Livestock
 8808 - Fruit
+8811 - Cotton
+8810 - Cotton
+8812 - Cotton
+1212 - Apiculture
