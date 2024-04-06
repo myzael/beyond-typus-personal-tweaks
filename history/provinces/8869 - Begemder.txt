@@ -16,7 +16,7 @@ religion = coptic
 base_tax = 3
 base_production = 2
 base_manpower = 2
-trade_goods = grain
+trade_goods = bt_trade_good_apiculture #Couldn't find anything other than the etymology potentially indicating "land of sheep", but it could just as well mean "dry land". Doing apiculture as a general catch-all. //Dub
 
 #Cores and Occupation (Alphabetical after current)
 add_core = ETH

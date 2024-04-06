@@ -16,7 +16,7 @@ religion = coptic
 base_tax = 2
 base_production = 2
 base_manpower = 2
-trade_goods = grain
+trade_goods = incense #Civet animal musk sold and used as perfume. //Dub
 
 #Cores and Occupation (Alphabetical after current)
 add_core = ETH
