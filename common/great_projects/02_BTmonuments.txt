@@ -9168,7 +9168,7 @@ aleppo_mosque = {		#Great Mosque of Aleppo
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			enforce_religion_cost = -0.05
-			monthly_piety = 0.0005
+			monthly_piety_accelerator = 0.0005
 			global_heretic_missionary_strength = 0.005
 		}
 
@@ -9200,7 +9200,7 @@ aleppo_mosque = {		#Great Mosque of Aleppo
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			enforce_religion_cost = -0.1
-			monthly_piety = 0.0005
+			monthly_piety_accelerator = 0.0005
 			global_heretic_missionary_strength = 0.01
 		}
 
@@ -9231,7 +9231,7 @@ aleppo_mosque = {		#Great Mosque of Aleppo
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			enforce_religion_cost = -0.2
-			monthly_piety = 0.001
+			monthly_piety_accelerator = 0.001
 			global_heretic_missionary_strength = 0.02
 		}
 
