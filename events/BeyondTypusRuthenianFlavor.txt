@@ -157,9 +157,11 @@ country_event = { #A Son of Rurik
 	option = {
 		if = {
 			limit = {
+				valid_for_personal_unions_trigger = yes
 				event_target:rurik_country = {
 					ai = yes
-					NOT = { development = 200 } #Is small
+					NOT = { total_development = 200 } #Is small
+					valid_for_personal_unions_trigger = yes
 				}
 			}
 			hidden_effect = {

@@ -24,6 +24,7 @@ bt_ukr_dynasty = {
 		}
 		
 		trigger = {
+			NOT = { is_subject = yes }
 			if = {
 				limit = {
 					any_country = {
@@ -490,7 +491,15 @@ bt_ukr_ruthenia_russia_conquest = {
 		}
 		
 		effect = {
-			add_stability = 1
+			if = { #At -3 stab because independence without 100% LD
+				limit = {
+					NOT = { stability = -2 }
+				}
+				add_stability = 3
+			}
+			else = {
+				add_stability = 1
+			}
 			give_permaclaims_for_mission = { mission=ukr_reclaim_chernigov }
 			give_permaclaims_for_mission = { mission=ukr_restore_tmutarakan }
 		}
