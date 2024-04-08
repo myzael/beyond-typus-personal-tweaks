@@ -55,6 +55,9 @@ BT16
 	 - Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable.
  - (Dub) Added Rambert II von Walsee to Rijeka, finally giving Rijeka its proper ruler
 	 - If Rambert II dies childless, Rijekan domains will be inherited by Styria/Austria, whoever is the main overlord, as happened historically with Frederick III inheriting it in 1466.
+ - (Dub) Added one of the longest reigning monarchs in history: Bernard VII von Lippe, to Lippe. Born December 1428 and inheriting his throne before his first birthday, he ruled Lippe until 1511.
+ - (Dub) Implemented ruler genetics with personality: If your ruler has a particular personality, there's a 50% greater chance your heir will get one of their personalities when they come of age.
+ 
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
