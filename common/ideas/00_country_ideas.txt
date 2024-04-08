@@ -16109,11 +16109,11 @@ EPI_ideas = {
 LAE_ideas = {
 	start = {
         discipline = 0.05
-        global_heretic_missionary_strength = 0.03
+		missionaries = 1 #BT Swapped with ambition - made no sense.
 	}
 	
 	bonus = {
-		missionaries = 1
+        global_heretic_missionary_strength = 0.03 #BT Swapped with tradition - made no sense.
 	}
 	
 	trigger = {
@@ -16149,7 +16149,8 @@ LAE_ideas = {
         unjustified_demands = -0.25
     }
     lae_frankokratia = {
-        diplomatic_reputation = 1
+        diplomatic_upkeep = 1 #BT Changed from diplorep to diplorelations slot.
+		#diplomatic_reputation = 1
         manpower_in_true_faith_provinces = 0.15
     }
 }
