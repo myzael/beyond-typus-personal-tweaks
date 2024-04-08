@@ -20,5 +20,5 @@ capital = 4752
 		birth_date = 1393.1.1 #No known birth date, but this makes him 15 years old on his ascension and 51 years old in 1444, thereby dying at a nice age of 73. //Dub
 		death_date = 1466.1.1
 	}
-	set_ruler_flag = bt_rijeka_austrian_inheritance_flag #To allow on_action to inherit Rijeka for STY/HAB.
+	set_country_flag = bt_rijeka_austrian_inheritance_flag #To allow on_action to inherit Rijeka for STY/HAB.
 }

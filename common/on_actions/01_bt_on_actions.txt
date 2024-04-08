@@ -61,8 +61,8 @@ on_monarch_death = {
 	if = { #Rijekan inheritance post-Rambert II von Walsee
 		limit = {
 			tag = RIJ
+			has_country_flag = bt_rijeka_austrian_inheritance_flag
 			ai = yes
-			has_ruler_flag = bt_rijeka_austrian_inheritance_flag
 			OR = {
 				AND = {
 					HAB = {
@@ -95,6 +95,10 @@ on_monarch_death = {
 		else = { #Styria has likely formed Austria
 			HAB = { inherit = RIJ }
 		}
+		clr_country_flag = bt_rijeka_austrian_inheritance_flag #Happened, shan't happen again.
+	}
+	else = {
+		clr_country_flag = bt_rijeka_austrian_inheritance_flag #Didn't happen, shan't happen again.
 	}
 	#BT
 	#if = {
