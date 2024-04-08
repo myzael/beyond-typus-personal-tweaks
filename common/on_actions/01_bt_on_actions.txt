@@ -58,7 +58,44 @@ on_new_monarch = {
 on_monarch_death = {
 	BT_AU_AlbrechtVI_dies_first = yes	#BT
 	BT_AU_FrederickIII_dies_first = yes	#BT
-
+	if = { #Rijekan inheritance post-Rambert II von Walsee
+		limit = {
+			tag = RIJ
+			ai = yes
+			has_ruler_flag = bt_rijeka_austrian_inheritance_flag
+			OR = {
+				AND = {
+					HAB = {
+						exists = yes
+						NOT = { is_subject = yes }
+					}
+				}
+				AND = {
+					STY = {
+						exists = yes
+						NOT = {
+							is_subject = yes
+						}
+					}
+				}
+			}
+			has_heir = no
+		}
+		if = { #Frederick III
+			limit = {
+				STY = {
+					exists = yes
+					NOT = {
+						is_subject = yes
+					}
+				}
+			}
+			STY = { inherit = RIJ }
+		}
+		else = { #Styria has likely formed Austria
+			HAB = { inherit = RIJ }
+		}
+	}
 	#BT
 	#if = {
 	#	limit = {
