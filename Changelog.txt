@@ -84,7 +84,8 @@ BT16
  - (Dub) Fixed Brandenburg starting as High Saxon, not Markish.
  - (Dub) Allowed Turcoman nations to form Rum, and upon forming it, switches primary culture to Turkish to represent sedentarism.
  - (Dub) Bugfixed vanilla Engrish in several places.
- - (Dub) Fixed JuvÃ©nal in Rheims
+ - (Dub) Fixed JuvÃ©nal in Rheims & Laon.
+ 
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
  - (Dub) Tweaked Expand Infrastructure + Centralize State 
