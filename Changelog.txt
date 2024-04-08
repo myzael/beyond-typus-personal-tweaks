@@ -84,7 +84,7 @@ BT16
  - (Dub) Fixed Brandenburg starting as High Saxon, not Markish.
  - (Dub) Allowed Turcoman nations to form Rum, and upon forming it, switches primary culture to Turkish to represent sedentarism.
  - (Dub) Bugfixed vanilla Engrish in several places.
- 
+ - (Dub) Fixed JuvÃ©nal in Rheims
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
  - (Dub) Tweaked Expand Infrastructure + Centralize State 
@@ -144,6 +144,7 @@ BT16
  - (Dub) AI nations have received a +25% tax modifier, +25% production efficiency and +25% trade efficiency. The AI economy was just way too poor in BT and debt spirals were way too common.
 	- Certain AIs will still debtspiral, but it's nowhere near as bad as it was before.
  - (Dub) State governing cost modifiers from missions have been replaced with state maintenance modifiers instead, because it would break the intricate balance.
+ - (Dub) Turkish Eyalets now use their full name as their adjectives to avoid the confusing "Eyalet Libery Desire is over 50%!".
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
