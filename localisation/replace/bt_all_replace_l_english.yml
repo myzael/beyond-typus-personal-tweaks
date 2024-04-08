@@ -726,9 +726,12 @@
  tur_refill_the_ortas_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YAnatolia§! owned by a country with §YTurkish§! as their primary culture."
  has_shipyard_building_trigger_tt:0 "Has a §YNaval Arsenal§! or a §YNaval Base§! building."
  
- #Below two are same as vanilla, except dev number doubled from 100 to 200.
+ #Below two are same as vanilla, except dev number doubled.
  HUSSARS_DESC:1 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
  custom_can_recruit_hussars_desc:0 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
+ CORE_EYALET_TT:0 "A §YCore Eyalet§! can be annexed for §Y3§! £dip£ per development instead of 6, but cannot join any kind of wars of their overlord."
+ reign_in_eyalet_desc:1 "Rein in §Y[From.GetName]§!'s and turn them into a §YCore Eyalet§!. This will allow us to integrate §Y[From.GetName]§!, but we will not be able to call §Y[From.GetName]§! into any wars.\n\n§YCore Eyalets can be annexed for 3 £dip£ per development.§!"
+ 
  ###BT Vanilla bugfixes###
  ENACT_REFORM_EFFECT_LOCK_WARNING:0 "\n(§RThis is a locked reform. You will not be able to switch to other reforms on the same Tier.§!)\n"
  flavor_teu.3.b:0 "Invite the the teutonic order to rule over ducal prussia."
