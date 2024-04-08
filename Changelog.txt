@@ -85,6 +85,7 @@ BT16
  - (Dub) Allowed Turcoman nations to form Rum, and upon forming it, switches primary culture to Turkish to represent sedentarism.
  - (Dub) Bugfixed vanilla Engrish in several places.
  - (Dub) Fixed JuvÃ©nal in Rheims & Laon.
+ - (Dub) Fixed Saxony not being able to rename itself if it lost its PUs at any point, giving it alternate completion requirements.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
