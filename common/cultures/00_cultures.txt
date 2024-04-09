@@ -7774,7 +7774,7 @@ malay = {
 		}
 	}
 	javanese = {
-		primary = MAJ
+		primary = JAV
 		dynasty_names = {
 			Banten Demak Surabaya Cirebon Samprangan
 		}
