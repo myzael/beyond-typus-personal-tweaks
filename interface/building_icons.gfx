@@ -1,5 +1,5 @@
 spriteTypes = {
-
+	
 	spriteType = {
 		name = "GFX_building_default"
 		texturefile = "gfx//interface//buildings//building_default.tga"
@@ -1699,8 +1699,6 @@ spriteTypes = {
 	
 	
 	
-	
-	
 	spriteType = {
 		name = "GFX_fort_africangfx"
 		texturefile = "gfx//interface//buildings//african_fort.tga"
@@ -1741,7 +1739,61 @@ spriteTypes = {
 		texturefile = "gfx//interface//buildings//southamerica_fort.tga"
 		loadType = "INGAME"
 	}
-
+	
+	#Muslim Native buildings
+	spriteType = {
+		name = "GFX_native_earthwork_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_earthwork.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_palisade_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_palisade.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_fortified_house_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_fortified_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_ceremonial_fire_pit_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_ceremonial_fire_pit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_irrigation_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_irrigation.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_storehouse_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_storehouse.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_longhouse_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_longhouse.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_sweat_lodge_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_sweat_lodge.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_great_trail_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_great_trail.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_three_sisters_field_muslimgfx"
+		texturefile = "gfx//interface//buildings//muslim_native_three_sisters_field.tga"
+		loadType = "INGAME"
+	}
+	
+	
+	#Old BTMB buildings. Might remove at some point.
 	#New Fortfications
 	spriteType = {
 		name = "GFX_earth_rampart_africangfx"

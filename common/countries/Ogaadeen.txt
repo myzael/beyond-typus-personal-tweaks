@@ -1,6 +1,6 @@
 #Country Name: Please seefilename.
 
-graphical_culture = africangfx
+graphical_culture = muslimgfx #BT Changed ; africangfx
 
 color = { 169 168 101 }
 revolutionary_colors = { 15 0 15 }
