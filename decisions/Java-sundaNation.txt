@@ -8,6 +8,7 @@ country_decisions = {
 			NOT = { exists = JAV }
 			NOT = { tag = MSA }
 			NOT = { tag = SVJ }
+			NOT = { tag = MAJ }
 			OR = { 
 				primary_culture = sundanese 
 				primary_culture = javanese 
