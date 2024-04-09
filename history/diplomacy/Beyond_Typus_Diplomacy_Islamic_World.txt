@@ -95,6 +95,14 @@ dependency = {
 
 dependency = {
 	subject_type = tributary_state
+	first = QAR
+	second = MLK
+	start_date = 1435.1.1
+	end_date = 1469.2.4
+}
+
+dependency = {
+	subject_type = tributary_state
 	first = AKK
 	second = EGL
 	start_date = 1435.1.1
