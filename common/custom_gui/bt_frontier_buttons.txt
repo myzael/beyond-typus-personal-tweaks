@@ -1,0 +1,32 @@
+custom_button = {
+	name = settle_tribal_land_button #Must match a scripted guiButtonType in a .gui file
+	
+	potential = { 
+		tribal_land_of = FROM
+	}
+	
+	trigger = {
+		FROM = {
+			has_government_attribute = bt_can_settle_tribal_land
+		}
+		dip_power = 20
+	} 
+	effect = {
+		add_siberian_construction = 5
+		set_province_flag = bt_is_frontier_province
+	}
+	tooltip = settle_tribal_land_loc #Can use customizable localisation
+	
+	frame = { #Not clicked
+		number = 1 
+		trigger = { 
+			NOT = { has_province_flag = bt_is_frontier_province }
+		}
+	}
+	frame = { #Clicked
+		number = 2 
+		trigger = {
+			has_province_flag = bt_is_frontier_province
+		}
+	}
+}
