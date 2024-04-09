@@ -3,7 +3,7 @@
 #Region - Horn of Africa
 
 #Core Details
-capital = "Ginir"
+capital = "Malawa"
 is_city = yes
 owner = BLE
 controller = BLE

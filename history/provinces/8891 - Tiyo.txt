@@ -16,7 +16,7 @@ religion = sunni
 base_tax = 2
 base_production = 2
 base_manpower = 1
-trade_goods = grain
+trade_goods = fish #Can't find anything other than "permeated waters and swamps" //Dub
 
 #Cores and Occupation (Alphabetical after current)
 add_core = DNK
