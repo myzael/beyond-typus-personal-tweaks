@@ -5,8 +5,8 @@
 #Core Details
 capital = "Debre Damo"
 is_city = yes
-owner = MED
-controller = MED
+owner = ETH
+controller = ETH
 
 #Demographics
 culture = saho
@@ -19,7 +19,7 @@ base_manpower = 1
 trade_goods = salt #JP and Endreyas' TG research
 
 #Cores and Occupation (Alphabetical after current)
-add_core = MED
+add_core = ETH
 
 #Other Political
 hre = no

@@ -20,6 +20,7 @@ trade_goods = incense #Endreyas' TG research and suggestion
 
 #Cores and Occupation (Alphabetical after current)
 add_core = MED
+add_core = ETH
 
 #Other Political
 hre = no
