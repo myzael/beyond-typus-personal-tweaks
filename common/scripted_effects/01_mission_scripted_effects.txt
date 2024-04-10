@@ -24,30 +24,6 @@ give_permaclaims_for_mission = {
 }
 
 #Usage:
-#give_permaclaims_for_mission = { mission=X }
-#Requires localisation of:
-#$mission$_claims: "Grants permanent claims on the provinces required for the mission §Y$mission$§!"
-give_permaclaims_for_mission_prev = {
-	if = {
-		limit = {
-			$mission$_provinces = {
-				NOT = { is_permanent_claim = PREV }
-				NOT = { is_core = PREV }
-			}
-		}
-		custom_tooltip = $mission$_claims
-		hidden_effect = {
-			$mission$_provinces = {
-				limit = {
-					NOT = { is_permanent_claim = PREV }
-					NOT = { is_core = PREV }
-				}
-				add_permanent_claim = PREV
-			}
-		}
-	}
-}
-#Usage:
 #give_cores_for_mission = { mission=X }
 #Where X is the mission name, assuming the mission has a corresponding X_provinces scripted_trigger to check for the provinces.
 #Requires localisation of:

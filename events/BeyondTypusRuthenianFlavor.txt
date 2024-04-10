@@ -52,7 +52,16 @@ country_event = {
 			subject_type = bt_cossack_host
 		}
 		ZAZ = {
-			give_permaclaims_for_mission_prev = { mission=ukr_claim_wild_fields }
+			custom_tooltip = ukr_claim_wild_fields_claims
+			hidden_effect = {
+				ukr_claim_wild_fields_provinces = {
+					#limit = {
+					#	NOT = { is_permanent_claim = ZAZ }
+					#	NOT = { is_core = ZAZ }
+					#}
+					add_permanent_claim = ZAZ
+				}
+			}
 		}
 	}
 	option = { # Refrain
