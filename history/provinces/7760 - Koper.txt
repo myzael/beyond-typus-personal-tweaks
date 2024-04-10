@@ -64,8 +64,8 @@ discovered_by = western
 	remove_core = CNL
 	add_core = FRG
 	add_core = CLI
-	owner = STY
-	controller = STY
+	owner = FRG
+	controller = FRG
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = HAB

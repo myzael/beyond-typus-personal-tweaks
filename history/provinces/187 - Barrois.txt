@@ -14,7 +14,7 @@ base_tax = 4
 base_production = 3
 trade_goods = cloth
 base_manpower = 2
-#add_core = c
+#add_core = c #???
 add_core = TRN #ternoise claim on Ligny
 
 discovered_by = western
@@ -26,14 +26,14 @@ discovered_by = eastern
 
 #2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = PRO
-	owner = BAR
-	controller = BAR
+#	remove_core = PRO
+#	owner = BAR
+#	controller = BAR
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = PRO
-	owner = PRO
-	controller = PRO
+#	add_core = PRO
+#	owner = PRO
+#	controller = PRO
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
 #1444 onwards

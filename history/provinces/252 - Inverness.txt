@@ -34,8 +34,8 @@ discovered_by = eastern
 	add_core = SCO
 	add_core = LOI
 	remove_core = HSC
-	owner = SCO
-	controller = SCO
+	owner = LOI
+	controller = LOI
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
 #1444 onwards
