@@ -21,7 +21,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					religion = orthodox
-					NOT = { culture = ruthenian }
+					#NOT = { culture = ruthenian }
 					NOT = {
 						area = crimea_area
 						area = azov_area
@@ -52,7 +52,7 @@ country_event = {
 			subject_type = bt_cossack_host
 		}
 		ZAZ = {
-			give_permaclaims_for_mission = { mission=ukr_claim_wild_fields }
+			give_permaclaims_for_mission_prev = { mission=ukr_claim_wild_fields }
 		}
 	}
 	option = { # Refrain
