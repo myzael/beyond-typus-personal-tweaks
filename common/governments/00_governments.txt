@@ -1026,13 +1026,14 @@ tribal = {
 				#1.36
 				#Turkomen
 				turkoman_ottoman_institutions
-				somali_clan
+				somali_clan_reform
 			}
 		}
 		tribal_cultural_values = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
+				somali_clan_settle_down_reform
 			}
 		}
 		tribal_religion = {

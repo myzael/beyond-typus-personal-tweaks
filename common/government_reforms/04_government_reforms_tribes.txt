@@ -1027,7 +1027,11 @@ tribe_tribal_unity = {
 
 #(JP) I hope I'm doing this right. Any issues, please go ahead and fix
 #(JP) Possibly also usable for Oromos or others in the Horn. Who knows. 
-somali_clan = {
+somali_clan_reform = { 
+	#Quick dev notes:
+	#Do the same thing for Arabic OPMs in Arabia.
+	#???
+	#PROFIT!
 	icon = "tribal_council"
 	allow_normal_conversion = no
 	potential = {
@@ -1036,13 +1040,72 @@ somali_clan = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = -10
 	#legacy_equivalent = tribal_confederacy_legacy #(JP) Using another here I think?
-	native_mechanic = no
+	native_mechanic = yes
 	allow_migration = yes
 	modifiers = {
 		cavalry_cost = -0.10
 		loot_amount = 0.10
 	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	
+	
 	ai = {
 		factor = 1
 	}
 }
+
+non_sedentary_clan_settle_down_reform = {
+	icon = "native_settle_down_reform"
+	fixed_rank = 0
+	potential = {
+		OR = {
+			has_reform = somali_clan_reform
+			#has_reform = arabic_tribe_reform #TBI
+		}
+	}
+	trigger = {
+		if = { 
+			limit = {
+				has_dlc = "Conquest of Paradise"
+			}
+			custom_trigger_tooltip = {
+				tooltip = "MUST_BE_IN_TRIBAL_LAND_TO_SETTLE"
+				capital_scope = { tribal_land_of = ROOT }
+			}
+		}
+	}
+	modifiers = {
+		global_institution_spread = 0.2
+		add_tribal_land_cost = 2.0
+		governing_capacity_modifier = -0.25
+	}
+	conditional = {
+		allow = { has_dlc = "Conquest of Paradise" }
+		allow_migration = no
+		custom_attributes = {
+			enable_settled_mechanics = yes
+			enable_tribal_grazing = no
+		}
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+
+	ai = {
+		factor = 0.5
+		
+
+		modifier = { 
+			factor = 2
+			tribal_development = 30
+		}
+
+		modifier = { 
+			factor = 2
+			tribal_development = 40
+		}
+	}

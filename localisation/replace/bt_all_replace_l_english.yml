@@ -20,7 +20,7 @@
  BRM_ideas_start:0 "Burmese Traditions"
  CALL_FAVORS_COST_2:0 "This will cost you §Y20§! favors."
  CANT_PRESS_SAILORS_TOO_FEW:0 "You can't press sailors from a subject nation, if they have less than $NEED|Y$ of their sailors. They currently have $CURR|Y$."
- CENTRALIZE_STATE_DESC:6 "§YCentralize State§!\nSpend $POWER_COST|Y$£adm£ to centralize the $STATE|Y$ in the most developed province, giving the following bonuses to the state:\nLocal Build Cost: §G-10.0%§!\nLocal Build Time: §G-10.0%§!\nRegiment Recruitment Speed: §G-10.0%§!\nLocal Shipbuilding Speed: §G-10.0%§!\nLocal Culture Conversion Time: §G-10.0%§!\nLocal Missionary Strength: §G-1.0%§!\nLocal Autonomy Change: §G-0.025§!\nState Maintenance: §G-20.0%§!\nLocal Development Efficiency: §G-2.5%§!\nLocal Prosperity Growth: §G+0.25§!\nCost to Centralize State: §R+20.0%§!\n\nIt will take $YEARS|0Y$ years."
+ CENTRALIZE_STATE_DESC:6 "§YCentralize State§!\nSpend $POWER_COST|Y$£adm£ to centralize the $STATE|Y$ Area in the most developed province, giving the following bonuses to the state:\nLocal Build Cost: §G-10.0%§!\nLocal Build Time: §G-10.0%§!\nRegiment Recruitment Speed: §G-10.0%§!\nLocal Shipbuilding Speed: §G-10.0%§!\nLocal Culture Conversion Time: §G-10.0%§!\nLocal Missionary Strength: §G-1.0%§!\nLocal Autonomy Change: §G-0.025§!\nState Maintenance: §G-20.0%§!\nLocal Development Efficiency: §G-2.5%§!\nLocal Prosperity Growth: §G+0.25§!\nCost to Centralize State: §R+20.0%§!\n\nIt will take $YEARS|0Y$ years."
  CONFIRM_CENTRALIZE_STATE_TEXT:5 "Are you sure you want to spend $POWER_COST|Y$£adm£ to centralize the $STATE|Y$ in the province of $PROVINCE|Y$?\nThe $STATE|Y$ will gain the following bonuses:\nLocal Build Cost: §G-10.0%§!\nLocal Build Time: §G-10.0%§!\nRegiment Recruitment Speed: §G-10.0%§!\nLocal Shipbuilding Speed: §G-10.0%§!\nLocal Culture Conversion Time: §G-10.0%§!\nLocal Missionary Strength: §G-1.0%§!\nLocal Autonomy Change: §G-0.025§!\nState Maintenance: §G-20.0%§!\nLocal Development Efficiency: §G-2.5%§!\nLocal Prosperity Growth: §G+0.25§!\nCost to Centralize State: §R+20.0%§!\n\nIt will take $YEARS|0Y$ years."
  CHAKKAPHAT:0 "Chakkaphat"
  CHAKKAPHATNI:0 "Chakkaphatni"
@@ -724,11 +724,14 @@
  dan_a_danish_great_power_ct:0 "Countries with at least §Y400§! own and non-tributary subject development have §Y25%§! of their income subsidized by §Y[Root.GetName]§!"
  spa_any_ally_tt:0 "Have an §Yally§! with:\n - Their capital in the §YFrench§! region\n - They are a §YGreat Power§! or have at least §Y1000§! total development\n - They have at least §Y180§! opinion of us"
  tur_refill_the_ortas_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YAnatolia§! owned by a country with §YTurkish§! as their primary culture."
+ has_shipyard_building_trigger_tt:0 "Has a §YNaval Arsenal§! or a §YNaval Base§! building."
  
- 
- #Below two are same as vanilla, except dev number doubled from 100 to 200.
+ #Below two are same as vanilla, except dev number doubled.
  HUSSARS_DESC:1 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
  custom_can_recruit_hussars_desc:0 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
+ CORE_EYALET_TT:0 "A §YCore Eyalet§! can be annexed for §Y3§! £dip£ per development instead of 6, but cannot join any kind of wars of their overlord."
+ reign_in_eyalet_desc:1 "Rein in §Y[From.GetName]§!'s and turn them into a §YCore Eyalet§!. This will allow us to integrate §Y[From.GetName]§!, but we will not be able to call §Y[From.GetName]§! into any wars.\n\n§YCore Eyalets can be annexed for 3 £dip£ per development.§!"
+ 
  ###BT Vanilla bugfixes###
  ENACT_REFORM_EFFECT_LOCK_WARNING:0 "\n(§RThis is a locked reform. You will not be able to switch to other reforms on the same Tier.§!)\n"
  flavor_teu.3.b:0 "Invite the the teutonic order to rule over ducal prussia."
@@ -739,7 +742,25 @@
  set_center_level_3_center_of_trade_tt:0 "§Y[This.GetName]§! gets their §YCenter of Trade§! upgraded to Level §Y3§!. If no §YCenter of Trade§! is present, add a Level §G3§! §YCenter of Trade§!, if level §G2§! §YCenter of Trade§! is present, gain §G2§! Base Production in §Y[This.GetName]§! and set it to level §G3§!, and if level §G3§! §YCenter of Trade§! is present, gain §G4§! Base Production in §Y[This.GetName]§!."
  mam_anatolia_desc:0 "The threat of the Ottomans and their territories in Anatolia must be quelled once and for all."
  icelanding_fisher_sea:0 "Icelandic Fishing"
- 
+ #Fixing vanilla eyalets' adjectives not being distinct
+ EY0_ADJ:0 "Eyalet-i Macaristan"
+ EY1_ADJ:0 "Eyalet-i Slovakya"
+ EY2_ADJ:0 "Eyalet-i Erdel"
+ EY3_ADJ:0 "Eyalet-i Avusturya"
+ EY4_ADJ:0 "Eyalet-i Lombardiya"
+ EY5_ADJ:0 "Eyalet-i Sicilya"
+ EY6_ADJ:0 "Eyalet-i Roma"
+ EY7_ADJ:0 "Eyalet-i Misir"
+ EY8_ADJ:0 "Eyalet-i Trâblus Gârb"
+ EY9_ADJ:0 "Eyalet-i Tunus"
+ E10_ADJ:0 "Eyalet-i Cezayir-i Gârb"
+ E11_ADJ:0 "Eyalet-i Endülüs"
+ E12_ADJ:0 "Eyalet-i Pers"
+ E13_ADJ:0 "Eyalet-i Adal"
+ E14_ADJ:0 "Eyalet-i Venedik"
+ E15_ADJ:0 "Eyalet-i Cenova"
+ E16_ADJ:0 "Eyalet-i Fas"
+ E17_ADJ:0 "Eyalet-i Yemen"
  
  mam_export_grain_dialog: "Would you like to receive grain exports from the Mamluks?\n\nAccepting will grant our nation the following effects until the death of §Y[Root.Monarch.GetName] [Root.Monarch.GetDynasty]§!, or until diplomatic ties are cut:\nNational Unrest: §G-1.00§\nDevelopment Cost: §G-5.0%§!\n!Supply Limit Modifier: §G+10.0%§!"
  mam_sponsor_hajj_dialog: "Would you like to perform a Grand Hajj sponsored by the Mamluks?"

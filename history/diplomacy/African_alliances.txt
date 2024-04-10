@@ -83,3 +83,11 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1821.1.1
 }
+#Danakil
+dependency = {
+	subject_type = tributary_state
+	first = ETH
+	second = DNK
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}

@@ -24,6 +24,7 @@ bt_ukr_dynasty = {
 		}
 		
 		trigger = {
+			NOT = { is_subject = yes }
 			if = {
 				limit = {
 					any_country = {
@@ -43,9 +44,39 @@ bt_ukr_dynasty = {
 		}
 		
 		effect = {
-			# country_event = { #TODO: Event to invite a Rurikid heir
-				# id = "X"
-			# }
+			if = {
+				limit = {
+					any_country = {
+						dynasty = "Rurikovich"
+						religion_group = christian
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+				random_country = {
+					limit = {
+						dynasty = "Rurikovich"
+						religion_group = christian
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+					save_global_event_target_as = rurik_country
+				}
+				country_event = {
+					id = "BeyondTypusRuthenianFlavour.3"
+				}
+			}
+			else = {
+				tooltip = {
+					country_event = {
+						id = "BeyondTypusRuthenianFlavour.3"
+					}
+				}
+			}
 		}
 	}
 }
@@ -460,7 +491,15 @@ bt_ukr_ruthenia_russia_conquest = {
 		}
 		
 		effect = {
-			add_stability = 1
+			if = { #At -3 stab because independence without 100% LD
+				limit = {
+					NOT = { stability = -2 }
+				}
+				add_stability = 3
+			}
+			else = {
+				add_stability = 1
+			}
 			give_permaclaims_for_mission = { mission=ukr_reclaim_chernigov }
 			give_permaclaims_for_mission = { mission=ukr_restore_tmutarakan }
 		}
@@ -843,21 +882,20 @@ bt_ukr_ruthenia_russia_conquest = {
 		effect = {
 			if = { #Much cooler than just a regular modifier.
 				limit = {
-					has_idea_group = UKR_ideas
+					NOT = { has_idea_group = UKR_ideas }
 				}
-				custom_tooltip = ukr_mother_of_all_rus_effect_tooltip
-				hidden_effect = {
-					swap_ideas = yes
-				}
-			}
-			else = {
 				add_country_modifier = {
 					name = "bt_ukr_mother_of_all_rus"
 					duration = -1
 				}
 			}
+			else = {
+				custom_tooltip = ukr_mother_of_all_rus_effect_tooltip
+				hidden_effect = {
+					swap_ideas = yes
+				}
+			}
 		}
-		
 	}
 }
 
@@ -1309,7 +1347,7 @@ bt_ukr_steppe_conquests_1 = {
 		}
 		
 		effect = {
-			
+			add_yearly_manpower = 2
 		}
 		
 	}
@@ -1531,6 +1569,7 @@ bt_ukr_steppe_conquests_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			give_permaclaims_for_mission = { mission=ukr_caucasus_border }
 		}
 		
 	}
@@ -1639,6 +1678,7 @@ bt_ukr_navy = {
 		}
 		
 		effect = {
+			add_navy_tradition = 20
 			if = {
 				limit = {
 					282 = { #Odessa, current base of Ukraine navy
@@ -1763,11 +1803,26 @@ bt_ukr_navy = {
 		}
 		
 		trigger = {
-			
+			43 = { #Danzig
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+				light_ships_in_province = 30
+			}
+			33 = { #Novgorod
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
 		}
 		
 		effect = {
-			
+			add_country_modifier = {
+				name = "bt_ukr_navy_of_the_intermarum"
+				duration = -1
+			}
 		}
 		
 	}
@@ -1835,7 +1890,17 @@ bt_ukr_production = {
 		}
 		
 		effect = {
-			
+			add_years_of_owned_provinces_production_income = {
+				years = 5
+				trigger = {
+					OR = {
+						has_building = farm_estate
+						has_building = weapons
+						has_building = textile
+					}
+				}
+				custom_tooltip = ukr_income_from_means_of_production
+			}
 		}
 		
 	}
@@ -1862,8 +1927,8 @@ bt_ukr_production = {
 		effect = {
 			#Fire event, allow to choose estate to handle vodka monopoly, or take for yourself as crown. Gives privilege methinks.
 			country_event_with_insight = {
-				id = flavor_rus.105
-				insight_tooltip = mos_rus_conquer_finland_at
+				id = BeyondTypusRuthenianFlavour.2
+				insight_tooltip = ukr_production_of_vodka_at
 			}
 		}
 		
@@ -1954,7 +2019,7 @@ bt_ukr_religion = {
 				}
 			}
 			patriarch_authority = 0.9
-			has_advisor = theologian
+			theologian = 3
 			280 = {
 				has_tax_building_trigger = yes
 			}
@@ -2045,23 +2110,25 @@ bt_ukr_boyars = {
 		}
 		
 		trigger = {
-			if = {
-				limit = {
-					has_dlc = "Cradle of Civilization"
-				}
-				has_adm_advisor_of_level = { level = 4 }
-				has_dip_advisor_of_level = { level = 4 }
-				has_mil_advisor_of_level = { level = 4 }
-			}
-			else = {
-				has_adm_advisor_of_level = { level = 3 }
-				has_dip_advisor_of_level = { level = 3 }
-				has_mil_advisor_of_level = { level = 3 }
-			}
+			has_adm_advisor_of_level = { level = 3 }
+			has_dip_advisor_of_level = { level = 3 }
+			has_mil_advisor_of_level = { level = 3 }
 		}
 		
 		effect = {
-			
+			add_prestige_or_monarch_power = { amount = 20 }
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
 		}
 		
 	}
@@ -2281,7 +2348,7 @@ bt_ukr_government_2 = {
 				}"
 				first_effect = "
 				add_country_modifier = {
-					name = rus_revolutionary_zeal
+					name = ukr_revolutionary_zeal
 					duration = -1
 				}"
 				second_custom_tooltip = rus_the_glorious_revolution_bt
@@ -2525,7 +2592,7 @@ bt_ukr_cossacks = {
 				NOT = {
 					estate_influence = {
 						estate = estate_cossacks
-						influence = 30
+						influence = 20
 					}
 				}
 			}
@@ -2545,15 +2612,19 @@ bt_ukr_cossacks = {
 		
 		effect = {
 			change_government_reform_progress = 100 #Why not.
-			if = {
-				limit = {
-					has_estate = estate_cossacks
-				}
-				add_estate_loyalty = {
-					estate = estate_cossacks
-					loyalty = 25
-				}
+			add_country_modifier = {
+				name = "bt_ukr_tamed_the_steppes"
+				duration = -1
 			}
+			# if = {
+				# limit = {
+					# has_estate = estate_cossacks
+				# }
+				# add_estate_loyalty = {
+					# estate = estate_cossacks
+					# loyalty = 25
+				# }
+			# }
 		}
 		
 	}

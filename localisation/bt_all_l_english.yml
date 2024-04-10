@@ -2723,5 +2723,15 @@
  BT_REDUCED_TAGS_BOOKMARK:0 "Reduced Tags Start Date"
  BT_REDUCED_TAGS_BOOKMARK_DESC:0 "Beyond Typus contains consolidated or otherwise removed tags on this start date, if the extra tags are too much for your machine."
  
- 
+ #Fixing Native Buildings for non-new-world-native-mechanic-tags
+ building_native_earthwork_muslim:0 "Earthworks"
+ building_native_palisade_muslim:0 "Qasr"
+ building_native_fortified_house_muslim:0 "Amsar"
+ building_native_three_sisters_field_muslim:0 "Manufacturing Shop" #Dar as-sina'a
+ building_native_irrigation_muslim:0 "Irrigation"
+ building_native_storehouse_muslim:0 "Storehouse"
+ building_native_longhouse_muslim:0 "Majlis"
+ building_native_sweat_lodge_muslim:0 "Hammam"
+ building_native_great_trail_muslim:0 "Roadworks"
+ building_native_ceremonial_fire_pit_muslim:0 "Diwan"
  

@@ -417,11 +417,11 @@ ruthenian_monarchy = { #Carbon-copy of Muscovy monarchy
 	}
 
 	trigger = {
+		tag = KIE
 		OR = {
 			has_reform = principality
 			has_reform = tsardom
 		}
-		tag = KIE
 		mission_completed = ukr_restore_kiev
 	}
 }

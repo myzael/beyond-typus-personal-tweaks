@@ -2489,12 +2489,16 @@ french_missions_3 = {
 				type = all 
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 
+					controlled_by = ROOT
 					province_id = 7923 #Navarra part, owned by Navarra
 				}
 			}
 			guyenne_area = { 
 				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
+				OR = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					controlled_by = ROOT
+				}
 			}
 		}
 		effect = { 
@@ -2547,8 +2551,8 @@ french_missions_3 = {
 						name = fra_victory_against_the_english_modifier
 						duration = 5475
 					}
-					173 = { add_devastation = -10 } 
-					174 = { add_devastation = -10 }
+					pyrenees_area = { add_devastation = -10 } 
+					guyenne_area = { add_devastation = -10 }
 				}
 			}
 		}

@@ -22,38 +22,42 @@ BT16
  - New idea sets for the following nations:
 	 - (Dub) Cascadia
 	 - (Dub) Magdeburg
-- (Hadiros) Overhauled Australia
-- (Hadiros) Massive cultural overhaul to Australia, added 32 more cultures to the Aboriginal group for a total of 39 cultures. Added New Northern Aboriginal group with 24 cultures.
-- (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
-- (Dub) Added new government mechanic/mission reward to disable absolutism loss from assigning seat to Parliament. Currently unused in BT, it finds uses in Byzantine Resurgence.
-- (Dub) Added an Island of Venice province triggered modifier for Venice, making it much harder to siege without a blockade on it to compensate for it not being an island in BT.
-- (Dub) Integrated the Internal Politicks addon to BT16, with almost all its features & tweaks. Included, but not limited to:
-	- Absolutism now reducing estate loyalty equilibrium by up to -20% at 100 absolutism
-	- Seizing land now incurs a -20%/-15% estate loyalty equilibrium malus for 5 years
-	- Being over governing capacity now increases corruption
-	- New estate privileges to help players in a bind where they cannot revoke privileges due to absolutism.
-	- An overhaul to governing capacity & corruption modifiers
-	- The Peasants estate for Scandinavian nations and peasant republics
-	- The ability to pick between each and every estate's agenda in diets (Somewhat done by vanilla, but in a roundabout breakable way)
-- (Dub) Integrated the More Buildings addon to BT16, with almost all its features & tweaks. Included, but not limited to:
-	- New buildings for navy, military, production, taxation, as well as new manufactories and other governance buildings such as roads and canals.
-	- Some buildings have been reworked, as area-wide buildings were cut and remade into other types of buildings such as alternate manufactories.
-	- Vanilla's temple building is also no longer the tax building, now increasing missionary strength and decreases culture conversion cost in the province.
-- (Dub) Added a Ruthenian Mission tree. Features include:
-	- Conquest missions spanning Siberia, Russia, Ruthenia, Poland, Finland, Baltics, Pontic Steppes as well as Caucasia.
-	- Flavour missions expanding akin to what the Russian Domination tree does, focusing on internal matters of Ruthenia such as production, religion, development, estates, court, army (Streltsy + Cossacks) and more.
-	- The mission tree results in mechanics available to Russia becoming available to Ruthenia as well in some ways, such as the Finnish PU subject, the Serfdom chain, as well as government reforms.
-- (Harbivore) Added a new mechanic: Development Points
-	- This mechanic replaces the use of monarch points to develop provinces. 
-	- Dev Points are only ever directly generated from buildings, they are modified by several factors on a provincial level and a national level. Examples are: -being at peace -ideas -90% manpower -prosperity -overextension
-	- They are spent in the same way monarch points were previously used
-	- There is a maximum amount that can be stored at once, changed by gov rank, ideas and adm tech. If a nation goes over their limit they are automatically spent.
-- (Harbivore) Added silver as a tradegood.
-	- Existing gold provinces throughout the world were considered and looked over to see whether they produced silver or gold.
-- (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy and showing how they produced 25% of Europe's silver at the time.
-- (Dub) Created 10 (11) additional buttons, present in the Country Court screen, that allows you to spend excess monarch points to gain countrywide modifiers.
-	- Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable.
-
+ - (Hadiros) Overhauled Australia
+ - (Hadiros) Massive cultural overhaul to Australia, added 32 more cultures to the Aboriginal group for a total of 39 cultures. Added New Northern Aboriginal group with 24 cultures.
+ - (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
+ - (Dub) Added new government mechanic/mission reward to disable absolutism loss from assigning seat to Parliament. Currently unused in BT, it finds uses in Byzantine Resurgence.
+ - (Dub) Added an Island of Venice province triggered modifier for Venice, making it much harder to siege without a blockade on it to compensate for it not being an island in BT.
+ - (Dub) Integrated the Internal Politicks addon to BT16, with almost all its features & tweaks. Included, but not limited to:
+	 - Absolutism now reducing estate loyalty equilibrium by up to -20% at 100 absolutism
+	 - Seizing land now incurs a -20%/-15% estate loyalty equilibrium malus for 5 years
+	 - Being over governing capacity now increases corruption
+	 - New estate privileges to help players in a bind where they cannot revoke privileges due to absolutism.
+	 - An overhaul to governing capacity & corruption modifiers
+	 - The Peasants estate for Scandinavian nations and peasant republics
+	 - The ability to pick between each and every estate's agenda in diets (Somewhat done by vanilla, but in a roundabout breakable way)
+ - (Dub) Integrated the More Buildings addon to BT16, with almost all its features & tweaks. Included, but not limited to:
+	 - New buildings for navy, military, production, taxation, as well as new manufactories and other governance buildings such as roads and canals.
+	 - Some buildings have been reworked, as area-wide buildings were cut and remade into other types of buildings such as alternate manufactories.
+	 - Vanilla's temple building is also no longer the tax building, now increasing missionary strength and decreases culture conversion cost in the province.
+ - (Dub) Added a Ruthenian Mission tree. Features include:
+	 - Conquest missions spanning Siberia, Russia, Ruthenia, Poland, Finland, Baltics, Pontic Steppes as well as Caucasia.
+	 - Flavour missions expanding akin to what the Russian Domination tree does, focusing on internal matters of Ruthenia such as production, religion, development, estates, court, army (Streltsy + Cossacks) and more.
+	 - The mission tree results in mechanics available to Russia becoming available to Ruthenia as well in some ways, such as the Finnish PU subject, the Serfdom chain, as well as government reforms.
+ - (Harbivore) Added a new mechanic: Development Points
+	 - This mechanic replaces the use of monarch points to develop provinces. 
+	 - Dev Points are only ever directly generated from buildings, they are modified by several factors on a provincial level and a national level. Examples are: -being at peace -ideas -90% manpower -prosperity -overextension
+	 - They are spent in the same way monarch points were previously used
+	 - There is a maximum amount that can be stored at once, changed by gov rank, ideas and adm tech. If a nation goes over their limit they are automatically spent.
+ - (Harbivore) Added silver as a tradegood.
+	 - Existing gold provinces throughout the world were considered and looked over to see whether they produced silver or gold.
+ - (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy and showing how they produced 25% of Europe's silver at the time.
+ - (Dub) Created 10 (11) additional buttons, present in the Country Court screen, that allows you to spend excess monarch points to gain countrywide modifiers.
+	 - Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable.
+ - (Dub) Added Rambert II von Walsee to Rijeka, finally giving Rijeka its proper ruler
+	 - If Rambert II dies childless, Rijekan domains will be inherited by Styria/Austria, whoever is the main overlord, as happened historically with Frederick III inheriting it in 1466.
+ - (Dub) Added one of the longest reigning monarchs in history: Bernard VII von Lippe, to Lippe. Born December 1428 and inheriting his throne before his first birthday, he ruled Lippe until 1511.
+ - (Dub) Implemented ruler genetics with personality: If your ruler has a particular personality, there's a 50% greater chance your heir will get one of their personalities when they come of age.
+ 
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
  - (Dub) Fixed bug with duplicate BEI_ideas 
@@ -80,6 +84,8 @@ BT16
  - (Dub) Fixed Brandenburg starting as High Saxon, not Markish.
  - (Dub) Allowed Turcoman nations to form Rum, and upon forming it, switches primary culture to Turkish to represent sedentarism.
  - (Dub) Bugfixed vanilla Engrish in several places.
+ - (Dub) Fixed JuvÃ©nal in Rheims & Laon.
+ - (Dub) Fixed Saxony not being able to rename itself if it lost its PUs at any point, giving it alternate completion requirements.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -140,6 +146,7 @@ BT16
  - (Dub) AI nations have received a +25% tax modifier, +25% production efficiency and +25% trade efficiency. The AI economy was just way too poor in BT and debt spirals were way too common.
 	- Certain AIs will still debtspiral, but it's nowhere near as bad as it was before.
  - (Dub) State governing cost modifiers from missions have been replaced with state maintenance modifiers instead, because it would break the intricate balance.
+ - (Dub) Turkish Eyalets now use their full name as their adjectives to avoid the confusing "Eyalet Libery Desire is over 50%!".
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar

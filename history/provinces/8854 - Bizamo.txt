@@ -16,7 +16,7 @@ religion = shamanism
 base_tax = 1
 base_production = 1
 base_manpower = 1
-trade_goods = grain
+trade_goods = slaves #Endreyas' suggestion. Also suggested livestock, but let's go for this.
 
 #Cores and Occupation (Alphabetical after current)
 add_core = DAM

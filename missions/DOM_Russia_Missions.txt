@@ -393,7 +393,7 @@ mos_rus_eastern_europe = {
 		}
 
 		ai_weight = {
-			factor = 1000
+			factor = 3000
 		}
 	}
 	
@@ -430,7 +430,7 @@ mos_rus_eastern_europe = {
 		}
 
 		ai_weight = {
-			factor = 250
+			factor = 750
 		}
 	}
 	

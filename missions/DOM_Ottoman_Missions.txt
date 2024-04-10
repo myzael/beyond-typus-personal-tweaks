@@ -2397,6 +2397,27 @@ tur_egyptian_conquest = {
 				}
 				add_permanent_claim = ROOT
 			}
+			tihama_al_yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yamamah_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mahra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 
 		ai_weight = {
@@ -2639,7 +2660,7 @@ tur_egyptian_conquest = {
 			OR = {
 				area = yemen_area
 				area = upper_yemen_area
-				area = tihama_al_yemen_area
+				area = asir_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -2649,7 +2670,7 @@ tur_egyptian_conquest = {
 				OR = {
 					area = yemen_area
 					area = upper_yemen_area
-					area = tihama_al_yemen_area
+					area = asir_area
 				}
 				value = 6
 			}
@@ -3501,6 +3522,9 @@ tur_arabian_conquest = {
 				area = qasim_area
 				area = medina_area
 				area = mecca_area
+				area = tihama_al_yemen_area
+				area = yamamah_area
+				area = mahra_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -3513,6 +3537,9 @@ tur_arabian_conquest = {
 					area = qasim_area
 					area = medina_area
 					area = mecca_area
+					area = tihama_al_yemen_area
+					area = yamamah_area
+					area = mahra_area
 				}
 				value = 20
 			}
@@ -4564,6 +4591,13 @@ tur_persian_conquest = {
 		}
 		effect = {
 			caucasia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mesopotamia_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

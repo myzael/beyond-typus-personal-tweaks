@@ -7,7 +7,7 @@ technology_group = western
 capital = 8025
 
 
-#History not yet done
+#History
 1399.1.1 = {
 	monarch = {
 		name = "Die Abte"

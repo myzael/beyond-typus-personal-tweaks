@@ -11,12 +11,13 @@ Known Issues:
 		-	Trade goods in the area are likely not final.
 		-	The current nudging that has been done is not accurate.
 		-	The Collapse of Georgia needs events and/or disaster tweaking. Some work has been done, but it is not final.
+		-	Name lists for cultures as well as tags (Ship/leader names) are not done.
 	Horn of Africa:
 		-	The current nudging that has been done is not accurate.
-		-	Tags are missing in the setup, particularly in the southwest.
+		-	Tags are missing in the setup, particularly in the southwest (And west, likely).
 		-	Origins missions in the area do not take the new setup into account.
 		-	Religion mechanics for the new Waaq religion does not exist yet.
-		-	Trade goods as well as the general trade setup has not been done.
+		-	The general trade setup has not been tweaked.
 		-	The area is missing DPNs.
 		-	(Some) flags for new tags have not been done.
 		-	Name lists for cultures as well as tags (Ship/leader names) are not done.

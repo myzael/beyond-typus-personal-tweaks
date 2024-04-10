@@ -1324,7 +1324,7 @@ exploration_ideas = {
 			adm_tech = 18
 		}	#Generally more likely for Great Powers once the scope and wealth of the New World became apparent (as a fifth idea, probably in the 1630s, or maybe late 1600s for an Asian tag.) Note the x2 here and x2 from ports may or may not be enough to offset the non European maluses, I'm not sure.
 		modifier = {
-			factor = 10
+			factor = 5
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -1340,7 +1340,7 @@ exploration_ideas = {
 			}
 		}	#More likely with coastlines for first idea (in the right places, unlike vanilla, which encouraged the Ottomans too much with x16.) Number of ports beyond 5 not important (Colonial ambitions rarely had to do with the number of ports, just look at the Netherlands, or even Portugal) 
 		modifier = {
-			factor = 5
+			factor = 2
 			num_of_owned_provinces_with = {
 				value = 5
 				OR = {
@@ -1397,7 +1397,7 @@ exploration_ideas = {
 		}	#For non colonial countries with 5 or more provinces with a direct land connection to the capital and uncolonised neighbours. In 1444, this is just Uzbek, but will likely include Russia and any American/African/Siberian tags who manage to conquer a good chunck of their neighbours
 		modifier = {
 			factor = 0.2
-			NOT = { total_development = 100 }
+			NOT = { total_development = 200 }
 		}	#Malus against smaller countries to discourage a few tags like Irish minors, Brittany, Grenada, Iceland, or other unexpected nations. Not enough to prevent it if other factors encourage it.
 		modifier = {
 			factor = 0.1

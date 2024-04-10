@@ -7,4 +7,64 @@ technology_group = western
 capital = 7973
 
 
-#History not yet done
+#History
+1430.1.1 = {
+	monarch = {
+		name = "Peter"
+		monarch_name = "Peter I"
+		dynasty = "de Luxembourg"
+		birth_date = 1390.1.1 #In Naples
+		death_date = 1433.8.31 #Died in Black Death. Poor sod. His wife lived longer, 'til 1469.
+		adm = 1 #Nothing of note.
+		dip = 1 #Nothing of note.
+		mil = 1 #Nothing of note.
+	}
+	heir = {
+		name = "Louis"
+		monarch_name = "Louis I"
+		dynasty = "de Luxembourg" #Ligny branch
+		birth_date = 1418.1.1 #Some time in 1418.
+		death_date = 1475.12.1 #Treaty of Picquigny August 1475, arrested in September 1475 in Bastille, and executed some time in December for conspiracies against the French King Louis XI, conspiring with Charles the Bold & Edward IV of England.
+		adm = 4 #Constable of France
+		dip = 5 #Diplomatic intrigues against the French king and diplomatic intrigues landed him the hand of Maria of Savoy upon Jeanne's death.
+		mil = 5 #Commanded an army of Charles the Bold.
+	}
+}
+
+1433.8.31 = {
+	monarch = {
+		name = "Louis"
+		monarch_name = "Louis I"
+		dynasty = "de Luxembourg" #Ligny branch
+		birth_date = 1418.1.1 #Some time in 1418.
+		death_date = 1475.12.1 #Treaty of Picquigny August 1475, arrested in September 1475 in Bastille, and executed some time in December for conspiracies against the French King Louis XI, conspiring with Charles the Bold & Edward IV of England.
+		adm = 4 #Constable of France
+		dip = 5 #Diplomatic intrigues against the French king and diplomatic intrigues landed him the hand of Maria of Savoy upon Jeanne's death.
+		mil = 5 #Commanded an army of Charles the Bold.
+	}
+}
+
+1435.1.1 = {
+	consort = {
+		name = "Jeanne"
+		dynasty = "de Barrois"
+		birth_date = 1415.1.1 #Some time in 1415
+		death_date = 1462.5.14 #Marie of Savoy was the next consort.
+		adm = 3
+		dip = 4 #Succeeded as Viscount of Meaux sou jure
+		mil = 2
+	}
+}
+
+1440.1.1 = {
+	heir = {
+		name = "Peter"
+		monarch_name = "Peter II"
+		dynasty = "de Luxembourg" #Ligny branch
+		birth_date = 1440.1.1 #Some time in 1440 in Aube, Champagne
+		death_date = 1482.10.25 #Died in Enghien, Hainaut
+		adm = 2 
+		dip = 3 #See below
+		mil = 3 #Made Knight of the Order of the Golden Fleece
+	}
+}
