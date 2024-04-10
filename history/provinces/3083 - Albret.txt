@@ -32,8 +32,8 @@ discovered_by = eastern
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	add_core = FRA
 	add_core = ENG
-	owner = FRA
-	controller = FRA
+	owner = ENG
+	controller = ENG
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
 #1444 onwards

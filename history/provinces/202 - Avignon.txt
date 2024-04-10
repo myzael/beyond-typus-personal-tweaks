@@ -33,15 +33,26 @@ fort_16th = yes # Le Palais des Papes is super strong, and built on and beneath 
 
 #2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = PRO
+	remove_core = ANJ
 	owner = AVI
 	controller = AVI
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = PRO
-	owner = PRO
-	controller = PRO
+	add_core = ANJ
+	owner = PAP
+	controller = PAP
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	#owner = PRO
+	#controller = PRO
+	#add_core = PRO
+	#remove_core = ANJ
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	#owner = ANJ
+	#controller = ANJ
+	#remove_core = PRO
+} #Return to proper mod added owners and cuts vanilla core, typically.
 
 #1444 onwards
 1670.1.1 = { add_core = FRA } # Louis XIV wants to annex the city-state (Chambres de Réunion)

@@ -49,19 +49,26 @@ discovered_by = eastern
 	owner = RIJ
 	controller = RIJ
 	add_core = RIJ
-	remove_core = HAB
 	remove_core = STY
 	remove_core = GRZ
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	owner = HAB
-	controller = HAB
+	owner = STY
+	controller = STY
 	remove_core = RIJ
-	add_core = HAB
 	add_core = STY
 	add_core = GRZ
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
-
+1444.11.16 = { #Second performance start
+	add_core = HAB
+	owner = HAB
+	controller = HAB
+} #End of second performance start
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = STY
+	controller = STY
+	remove_core = HAB
+} #Return to proper mod added owners and cuts vanilla core, typically.
 #1444 onwards
 1452.1.1 = {
 	owner = STY
