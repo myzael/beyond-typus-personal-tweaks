@@ -60,6 +60,7 @@ capital = 7973
 	heir = {
 		name = "Peter"
 		monarch_name = "Peter II"
+		dynasty = "de Luxembourg" #Ligny branch
 		birth_date = 1440.1.1 #Some time in 1440 in Aube, Champagne
 		death_date = 1482.10.25 #Died in Enghien, Hainaut
 		adm = 2 
