@@ -36,11 +36,20 @@ discovered_by = ottoman
 	controller = CNL
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = HAB
 	add_core = STY
+	owner = STY
+	controller = STY
+} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = HAB
 	controller = HAB
-} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+	add_core = HAB
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = STY
+	controller = STY
+	remove_core = HAB
+} #Return to proper mod added owners and cuts vanilla core, typically.
 
 #1444 onwards
 1452.1.1 = {

@@ -43,18 +43,24 @@ discovered_by = eastern
 
 #2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = HAB
+	remove_core = STY
 	add_core = CEN
 	owner = CEN
 	controller = CEN
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = HAB
+	add_core = STY
 	remove_core = CEN
-	owner = HAB
-	controller = HAB
+	owner = STY
+	controller = STY
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #Second performance start unused
+1444.11.16 = {
+	add_core = HAB
+	remove_core = STY
+	owner = HAB
+	controller = HAB
+} #End of second performance start
 
 1514.1.1 = { 
 	owner = VEN

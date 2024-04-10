@@ -22,14 +22,14 @@ discovered_by = nomad_group
 discovered_by = indian
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = TUR
+	remove_core = DUL
 	owner = ERE
 	controller = ERE
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = TUR
-	owner = TUR
-	controller = TUR
+	add_core = DUL
+	owner = DUL
+	controller = DUL
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
 #1444 onwards
