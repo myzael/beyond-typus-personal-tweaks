@@ -609,6 +609,7 @@ bt_ukr_ruthenia_russia_conquest = {
 				amount = 3
 			}
 			add_ruler_personality = conqueror_personality
+			give_permaclaims_for_mission = { mission=ukr_access_to_the_baltic }
 		}
 		
 	}
