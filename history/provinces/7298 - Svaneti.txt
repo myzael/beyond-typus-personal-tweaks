@@ -9,7 +9,7 @@ owner = IME
 controller = IME
 
 #Demographics
-culture = georgian
+culture = svan_culture
 religion = orthodox
 
 #Development and Trade
