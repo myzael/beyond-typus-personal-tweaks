@@ -197,6 +197,17 @@ ai_diplomat = {
 			NOT = { is_year = 1500 }
 		}
 		modifier = {
+			factor = 0
+			tag = TUR
+			NOT = {
+				has_government_power = {
+					mechanic_type = ottoman_decadence_mechanic
+					power_type = ottoman_decadence
+					value = 75
+				}
+			}
+		}
+		modifier = {
 			factor = 5
 			has_reform = free_city
 		}
