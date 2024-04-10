@@ -629,7 +629,7 @@ bt_ukr_ruthenia_russia_conquest = {
 			295 = {
 				owner = {
 					OR = {
-						is_rival = ROOT
+						ROOT = { is_rival = PREV }
 						AND = {
 							NOT = { total_development = ROOT }
 							NOT = { army_size = ROOT }
@@ -640,7 +640,7 @@ bt_ukr_ruthenia_russia_conquest = {
 			310 = {
 				owner = {
 					OR = {
-						is_rival = ROOT
+						ROOT = { is_rival = PREV }
 						AND = {
 							NOT = { total_development = ROOT }
 							NOT = { army_size = ROOT }
