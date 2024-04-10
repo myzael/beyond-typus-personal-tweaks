@@ -2722,7 +2722,8 @@
  BT_NATIVES_OCEANIA_BOOKMARK_DESC:0 "Beyond Typus contains extra tags in Oceania on this start date, in order to help mitigate lag in the default start date."
  BT_REDUCED_TAGS_BOOKMARK:0 "Reduced Tags Start Date"
  BT_REDUCED_TAGS_BOOKMARK_DESC:0 "Beyond Typus contains consolidated or otherwise removed tags on this start date, if the extra tags are too much for your machine."
- 
+ BT_NO_NATIVES_BOOKMARK:0 "No Natives Start Date"
+ BT_NO_NATIVES_BOOKMARK_DESC:0 "Beyond Typus contains removed native tags in North & South America in this start date, in order to mitigate lag and potential gameplay issues with Conquest of Paradise Natives in the New World."
  #Fixing Native Buildings for non-new-world-native-mechanic-tags
  building_native_earthwork_muslim:0 "Earthworks"
  building_native_palisade_muslim:0 "Qasr"
