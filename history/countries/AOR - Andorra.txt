@@ -11,7 +11,7 @@ fixed_capital = 7889
 historical_friend = FOI
 historical_friend = ARA
 
-#History not yet done
+#History
 1444.11.11 = {
 	monarch = {
 		name = "Consell de la Terra"

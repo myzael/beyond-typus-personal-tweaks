@@ -7,7 +7,7 @@ technology_group = western
 capital = 186
 
 
-#History not yet done
+#History
 1444.6.25 = {
 	monarch = {
 		name = "Jacques"
