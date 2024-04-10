@@ -3,7 +3,7 @@
 
 owner = IME
 controller = IME
-culture = mingrelian
+culture = georgian
 religion = orthodox
 capital = "Ozurgeti"
 trade_goods = fish
