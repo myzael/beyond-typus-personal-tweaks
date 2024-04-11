@@ -153,6 +153,7 @@ bt_grand_trunk_road_mission_trigger = { #This occurs in three mission trees: Ben
 is_march_or_similar_subject = {
 	OR = { #Add more if any more march-like subjects are added.
 		is_subject_of_type = march
+		is_subject_of_type = client_march
 		is_subject_of_type = hereditary_pronoia_subject_type
 		is_subject_of_type = pronoia_subject_type
 		is_subject_of_type = bt_english_march
