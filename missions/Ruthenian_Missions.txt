@@ -883,7 +883,7 @@ bt_ukr_ruthenia_russia_conquest = {
 		effect = {
 			if = { #Much cooler than just a regular modifier.
 				limit = {
-					NOT = { has_idea_group = UKR_ideas }
+					NOT = { tag = UKR } #You don't have UKR_ideas. I tried to check for having the idea set, but this thing just refused to accept that as a trigger.
 				}
 				add_country_modifier = {
 					name = "bt_ukr_mother_of_all_rus"
