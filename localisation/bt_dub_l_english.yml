@@ -441,3 +441,9 @@
  estate_burghers_vodka_monopolizer:0 "[Root.GetBurghersName]"
  estate_cossacks_vodka_monopolizer:0 "[Root.GetCossacksName]"
  
+ 
+ MONOPOLY_INCOME_BEER_DESC:0 "from beer production."
+ MONOPOLY_INCOME_APICULTURE_DESC:0 "from apiculture production."
+ MONOPOLY_INCOME_BOOKS_DESC:0 "from books production."
+ MONOPOLY_INCOME_FRUIT_DESC:0 "from fruit production."
+ 
