@@ -193,3 +193,35 @@ defined_text = {
 		}
 	}
 }
+
+defined_text = {
+	name = GetVodkaMonopolyName
+	
+	text = {
+		localisation_key = estate_nobles_vodka_monopolizer
+		trigger = {
+			has_estate_privilege = estate_nobles_monopoly_of_vodka
+		}
+	}
+	
+	text = {
+		localisation_key = estate_church_vodka_monopolizer
+		trigger = {
+			has_estate_privilege = estate_church_monopoly_of_vodka
+		}
+	}
+	
+	text = {
+		localisation_key = estate_burghers_vodka_monopolizer
+		trigger = {
+			has_estate_privilege = estate_burghers_monopoly_of_vodka
+		}
+	}
+	
+	text = {
+		localisation_key = estate_cossacks_vodka_monopolizer
+		trigger = {
+			has_estate_privilege = estate_cossacks_monopoly_of_vodka
+		}
+	}
+}
