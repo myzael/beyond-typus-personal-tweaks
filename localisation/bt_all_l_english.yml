@@ -2714,6 +2714,9 @@
  tur_safeguard_eastern_anatolia_title:0 "Safeguard East Anatolia"
  tur_safeguard_eastern_anatolia_desc:0 "With Anatolia unified under the House of Osmanoglu, it is time we secure it by further conquest. Let us send our armies across the Anatolian mountain ranges and have them claim the lands for the Sublime Porte."
  
+ fra_canada_louis_discovery_bt_tt:0 "§Y[Root.GetName]§! has discovered any province in §YColonial Newfoundland§!, §YColonial Acadia§!, §YColonial Canada§! or §YColonial Louisiana§! colonial regions."
+ fra_carib_colony_bt_tt:0 "§Y[Root.GetName]§! or their subjects own at least §Y5§! fully colonized provinces in the one of colonial regions: §YColonial Cuba§!, §YColonial Hispaniola§!, §YColonial Bahamas§!, §YColonial Lesser Antilles§!."
+ emp_fra_poland_polish_tt:0 "The primary culture is §YPolish§!"
  
  ###Great Projects###
  uluru:0 "Uluru"
