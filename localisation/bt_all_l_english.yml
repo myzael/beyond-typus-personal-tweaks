@@ -942,7 +942,7 @@
  bt_trade_good_fruit:0 "Fruit"
  bt_trade_good_fruitDESC:0 "Fruit, ranging from such exotic delicacies as Cupuacu to the mundane apple, forms a key part of the economy in many regions. Though generally not as productive as grains for feeding large numbers of people, fruits often provide crucial vitamins otherwise lacking in grain-based diets and provide a welcome sweetness in addition to being easily stored in the form of jams & preserves."
  bt_trade_good_silver:0 "Silver"
- bt_trade_good_silverDESC:0 "TODO WRITE A GOOD DESC"
+ bt_trade_good_silverDESC:0 "Silver is one of the two precious metals that formed the basis of all formal currencies in Europe, as well as India and China. The discovery of silver in the New World, especially in the rich mountains of Potosi, would end the Great Bullion Famine and give Europeans easier access to Asian markets. However, unwise usage of silver's great wealth could lead to inflation and ruin, especially if paired with other precious metals (like gold)."
  bt_trade_good_gunpowder:0 "Gunpowder"
  bt_trade_good_gunpowderDESC:0 "TODO WRITE A GOOD DESC"
  bt_traitorous_nation:0 "Traitorous Nation"
