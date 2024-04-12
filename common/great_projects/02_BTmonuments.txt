@@ -4659,6 +4659,7 @@ schonbrunn_palace = {
 
 	#can we build it?
 	build_trigger = {
+		is_capital = yes
 		owner = {
 			government_rank = 3
 		}
@@ -4674,6 +4675,7 @@ schonbrunn_palace = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		is_capital = yes
 		owner = {
 			government_rank = 3
 		}
@@ -4681,6 +4683,7 @@ schonbrunn_palace = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		is_capital = yes
 		owner = {
 			government_rank = 3
 		}
