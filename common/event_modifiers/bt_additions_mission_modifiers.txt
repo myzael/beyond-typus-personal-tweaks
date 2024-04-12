@@ -61,7 +61,7 @@ bt_kievan_metropolitanate_no_dlc_mod = { #T2 version of additional modifiers for
 }
 
 bt_ukr_ruthenia_restored = { #Permanent, province mod
-	tax_income = 12 #+2 base tax
+	tax_income = 1 #+2 base tax
 	trade_goods_size = 0.2 #+2 base production
 }
 
