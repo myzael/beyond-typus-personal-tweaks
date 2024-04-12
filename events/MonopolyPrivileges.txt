@@ -578,24 +578,24 @@ country_event = {
 	immediate = {
 		if = {
 			limit = {
-				has_estate_privilege = estate_nobles_vodka_monopoly
+				has_estate_privilege = estate_nobles_monopoly_of_vodka
 			}
-			remove_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_beer }
+			remove_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_vodka }
 		}
 		else_if = {
 			limit = {
-				has_estate_privilege = estate_church_vodka_monopoly
+				has_estate_privilege = estate_church_monopoly_of_vodka
 			}
-			remove_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_beer }
+			remove_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_vodka }
 		}
 		else_if = {
 			limit = {
-				has_estate_privilege = estate_burghers_vodka_monopoly
+				has_estate_privilege = estate_burghers_monopoly_of_vodka
 			}
-			remove_estate_monopoly_modifier = { privilege = estate_burghers_monopoly_of_beer }
+			remove_estate_monopoly_modifier = { privilege = estate_burghers_monopoly_of_vodka }
 		}
 		else = {
-			remove_estate_monopoly_modifier = { privilege = estate_cossacks_monopoly_of_beer }
+			remove_estate_monopoly_modifier = { privilege = estate_cossacks_monopoly_of_vodka }
 		}
 	}
 	
@@ -603,24 +603,24 @@ country_event = {
 		name = monopoly_privileges.1.a
 		if = {
 			limit = {
-				has_estate_privilege = estate_nobles_vodka_monopoly
+				has_estate_privilege = estate_nobles_monopoly_of_vodka
 			}
-			reapply_estate_privilege = { privilege = estate_nobles_monopoly_of_beer }
+			reapply_estate_privilege = { privilege = estate_nobles_monopoly_of_vodka }
 		}
 		else_if = {
 			limit = {
-				has_estate_privilege = estate_church_vodka_monopoly
+				has_estate_privilege = estate_church_monopoly_of_vodka
 			}
-			reapply_estate_privilege = { privilege = estate_church_monopoly_of_beer }
+			reapply_estate_privilege = { privilege = estate_church_monopoly_of_vodka }
 		}
 		else_if = {
 			limit = {
-				has_estate_privilege = estate_burghers_vodka_monopoly
+				has_estate_privilege = estate_burghers_monopoly_of_vodka
 			}
-			reapply_estate_privilege = { privilege = estate_burghers_monopoly_of_beer }
+			reapply_estate_privilege = { privilege = estate_burghers_monopoly_of_vodka }
 		}
 		else = {
-			reapply_estate_privilege = { privilege = estate_cossacks_monopoly_of_beer }
+			reapply_estate_privilege = { privilege = estate_cossacks_monopoly_of_vodka }
 		}
 	}
 	option = {
@@ -634,24 +634,24 @@ country_event = {
 				}
 				if = {
 					limit = {
-						has_estate_privilege = estate_nobles_vodka_monopoly
+						has_estate_privilege = estate_nobles_monopoly_of_vodka
 					}
-					apply_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_beer }
+					apply_estate_monopoly_modifier = { privilege = estate_nobles_monopoly_of_vodka }
 				}
 				else_if = {
 					limit = {
-						has_estate_privilege = estate_church_vodka_monopoly
+						has_estate_privilege = estate_church_monopoly_of_vodka
 					}
-					apply_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_beer }
+					apply_estate_monopoly_modifier = { privilege = estate_church_monopoly_of_vodka }
 				}
 				else_if = {
 					limit = {
-						has_estate_privilege = estate_burghers_vodka_monopoly
+						has_estate_privilege = estate_burghers_monopoly_of_vodka
 					}
-					apply_estate_monopoly_modifier = { privilege = estate_burghers_monopoly_of_beer }
+					apply_estate_monopoly_modifier = { privilege = estate_burghers_monopoly_of_vodka }
 				}
 				else = {
-					apply_estate_monopoly_modifier = { privilege = estate_cossacks_monopoly_of_beer }
+					apply_estate_monopoly_modifier = { privilege = estate_cossacks_monopoly_of_vodka }
 				}
 			}
 		}

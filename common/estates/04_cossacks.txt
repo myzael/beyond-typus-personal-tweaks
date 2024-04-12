@@ -141,7 +141,9 @@ estate_cossacks = {
 		estate_cossacks_exempt_from_bureaucracy
 		estate_cossacks_military_service
 		estate_cossacks_expand_cossacks_raiders
+		#BT
 		estate_cossacks_siberian_frontier
+		estate_cossacks_monopoly_of_vodka
 	}
 
 	agendas = {

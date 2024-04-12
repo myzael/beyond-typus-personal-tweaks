@@ -265,8 +265,7 @@ estate_nobles_mamluk_decadence = {
 		mil_tech_cost_modifier = 0.75
 	}
 }
-
-estate_nobles_vodka_monopoly = {
+estate_nobles_monopoly_of_vodka = {
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -307,9 +306,9 @@ estate_nobles_vodka_monopoly = {
 			trigger = {
 				trade_goods = bt_trade_good_beer
 			}
-			custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
+			custom_tooltip = MONOPOLY_INCOME_BEER_DESC
 		}
-		custom_tooltip = estate_nobles_monopoly_of_metals_effect_tooltip
+		custom_tooltip = estate_nobles_monopoly_of_vodka_effect_tooltip
 	}
 	on_granted_province = {
 		if = {
@@ -375,7 +374,218 @@ estate_nobles_vodka_monopoly = {
 }
 
 #BT Church privileges
-estate_church_vodka_monopoly = {
+estate_church_monopoly_of_books = {
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	is_valid = {
+		any_owned_province = {
+			trade_goods = bt_trade_good_books
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = unavailable_during_revolution_disaster
+			NOT = { has_disaster = revolution }
+			NOT = {
+				has_disaster_progress = {
+					disaster = revolution
+					value = 1
+				}
+			}
+			NOT = { has_disaster = french_revolution }
+			NOT = {
+				has_disaster_progress = {
+					disaster = french_revolution
+					value = 1
+				}
+			}
+		}
+	}
+	on_granted = {
+		if = {
+			limit = {
+				bt_trade_good_books = 1
+			}
+			add_mercantilism = 1
+		}
+		add_years_of_owned_provinces_production_income = {
+			years = 8
+			trigger = {
+				trade_goods = bt_trade_good_books
+			}
+			custom_tooltip = MONOPOLY_INCOME_BOOKS_DESC
+		}
+		custom_tooltip = estate_church_monopoly_of_books_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = bt_trade_good_books
+			}
+			add_province_modifier = {
+				name = estate_church_monopoly_of_books_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_monopoly_of_books_mod
+			}
+			remove_province_modifier = estate_church_monopoly_of_books_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_monopoly_of_books_revoke_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_monopoly_of_books_mod
+			}
+			remove_province_modifier = estate_church_monopoly_of_books_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_church_monopoly_of_books_revoke_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_monopoly_of_books_mod
+			}
+			remove_province_modifier = estate_church_monopoly_of_books_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+
+	cooldown_years = 10
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = buffed_monopolies
+		}
+		modifier = {
+			max_absolutism = 10
+			church_privilege_slots = 1
+		}
+	}
+	on_cooldown_expires = {
+		country_event = { id = monopoly_privileges.12 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_church_monopoly_of_apiculture = {
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	is_valid = {
+		has_country_flag = estate_church_apiculture_monopoly
+		any_owned_province = {
+			trade_goods = bt_trade_good_apiculture
+		}
+	}
+	can_select = {
+		custom_trigger_tooltip = {
+			tooltip = unavailable_during_revolution_disaster
+			NOT = { has_disaster = revolution }
+			NOT = {
+				has_disaster_progress = {
+					disaster = revolution
+					value = 1
+				}
+			}
+			NOT = { has_disaster = french_revolution }
+			NOT = {
+				has_disaster_progress = {
+					disaster = french_revolution
+					value = 1
+				}
+			}
+		}
+	}
+	on_granted = {
+		if = {
+			limit = {
+				bt_trade_good_apiculture = 1
+			}
+			add_mercantilism = 1
+		}
+		add_years_of_owned_provinces_production_income = {
+			years = 8
+			trigger = {
+				trade_goods = bt_trade_good_apiculture
+			}
+			custom_tooltip = MONOPOLY_INCOME_APICULTURE_DESC
+		}
+		custom_tooltip = estate_church_monopoly_of_apiculture_effect_tooltip
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				trade_goods = bt_trade_good_apiculture
+			}
+			add_province_modifier = {
+				name = estate_church_monopoly_of_apiculture_mod
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_monopoly_of_apiculture_mod
+			}
+			remove_province_modifier = estate_church_monopoly_of_apiculture_mod
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_monopoly_of_apiculture_revoke_tooltip
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_monopoly_of_apiculture_mod
+			}
+			remove_province_modifier = estate_church_monopoly_of_apiculture_mod
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_church_monopoly_of_apiculture_revoke_tooltip
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_monopoly_of_apiculture_mod
+			}
+			remove_province_modifier = estate_church_monopoly_of_apiculture_mod
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+
+	cooldown_years = 10
+	conditional_modifier = {
+		trigger = {
+			has_country_flag = buffed_monopolies
+		}
+		modifier = {
+			max_absolutism = 10
+			church_privilege_slots = 1
+		}
+	}
+	on_cooldown_expires = {
+		country_event = { id = monopoly_privileges.13 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+estate_church_monopoly_of_vodka = {
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -416,9 +626,9 @@ estate_church_vodka_monopoly = {
 			trigger = {
 				trade_goods = bt_trade_good_beer
 			}
-			custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
+			custom_tooltip = MONOPOLY_INCOME_BEER_DESC
 		}
-		custom_tooltip = estate_church_monopoly_of_metals_effect_tooltip
+		custom_tooltip = estate_church_monopoly_of_vodka_effect_tooltip
 	}
 	on_granted_province = {
 		if = {
@@ -484,7 +694,7 @@ estate_church_vodka_monopoly = {
 }
 
 #BT Burghers privileges
-estate_burghers_vodka_monopoly = {
+estate_burghers_monopoly_of_vodka = {
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -525,9 +735,9 @@ estate_burghers_vodka_monopoly = {
 			trigger = {
 				trade_goods = bt_trade_good_beer
 			}
-			custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
+			custom_tooltip = MONOPOLY_INCOME_BEER_DESC
 		}
-		custom_tooltip = estate_burghers_monopoly_of_metals_effect_tooltip
+		custom_tooltip = estate_burghers_monopoly_of_vodka_effect_tooltip
 	}
 	on_granted_province = {
 		if = {
@@ -664,8 +874,7 @@ estate_cossacks_siberian_frontier = {
         }
     }
 }
-
-estate_cossacks_vodka_monopoly = {
+estate_cossacks_monopoly_of_vodka = {
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -706,9 +915,9 @@ estate_cossacks_vodka_monopoly = {
 			trigger = {
 				trade_goods = bt_trade_good_beer
 			}
-			custom_tooltip = MONOPOLY_INCOME_IRON_AND_COPPER_DESC
+			custom_tooltip = MONOPOLY_INCOME_BEER_DESC
 		}
-		custom_tooltip = estate_cossacks_monopoly_of_metals_effect_tooltip
+		custom_tooltip = estate_cossacks_monopoly_of_vodka_effect_tooltip
 	}
 	on_granted_province = {
 		if = {
