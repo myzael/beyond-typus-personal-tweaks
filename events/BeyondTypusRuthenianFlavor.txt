@@ -93,7 +93,8 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
-		set_estate_privilege = estate_nobles_vodka_monopoly
+		set_country_flag = estate_nobles_vodka_monopoly
+		set_estate_privilege = estate_nobles_monopoly_of_vodka
 	}
 	option = { # Give it to the Clergy!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTB2"
@@ -104,7 +105,8 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
-		set_estate_privilege = estate_church_vodka_monopoly
+		set_country_flag = estate_church_vodka_monopoly
+		set_estate_privilege = estate_church_monopoly_of_vodka
 		
 	}
 	option = { # Give it to the Burghers!
@@ -116,7 +118,8 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
-		set_estate_privilege = estate_burghers_vodka_monopoly
+		set_country_flag = estate_burghers_vodka_monopoly
+		set_estate_privilege = estate_burghers_monopoly_of_vodka
 	}
 	option = { # Give it to the Cossacks!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTD2"
@@ -127,7 +130,8 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
-		set_estate_privilege = estate_cossacks_vodka_monopoly
+		set_country_flag = estate_cossacks_vodka_monopoly
+		set_estate_privilege = estate_cossacks_monopoly_of_vodka
 	}
 	option = { # Keep it for the State!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTE2"
