@@ -179,7 +179,7 @@ on_province_religion_changed = {
 	}
 }
 
-on_province_owner_changed = {
+on_province_owner_change = {
 	#BT Demand Unlawful Land cooldown
     if = {
         limit = {
