@@ -1280,9 +1280,11 @@ bt_ukr_challenge_ottos = {
 							value = 50
 							mutual = yes
 						}
-						add_favors = {
-						   who = ROOT
-						   amount = 50
+						ROOT = {
+							add_favors = {
+							   who = PREV
+							   amount = 50
+							}
 						}
 					}
 				}
