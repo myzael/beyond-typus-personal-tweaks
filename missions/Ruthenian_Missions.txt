@@ -634,6 +634,7 @@ bt_ukr_ruthenia_russia_conquest = {
 							NOT = { total_development = ROOT }
 							NOT = { army_size = ROOT }
 						}
+						tag = ROOT
 					}
 				}
 			}
@@ -645,6 +646,7 @@ bt_ukr_ruthenia_russia_conquest = {
 							NOT = { total_development = ROOT }
 							NOT = { army_size = ROOT }
 						}
+						tag = ROOT
 					}
 				}
 			}
