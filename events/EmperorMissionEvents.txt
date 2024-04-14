@@ -255,6 +255,20 @@ country_event = {
 			}
 			remove_core = NRM
 		}
+		lower_normandy_area = {
+			limit = {
+				owned_by = ROOT
+				is_core = NRM
+			}
+			remove_core = NRM
+		}
+		orleans_area = {
+			limit = {
+				owned_by = ROOT
+				is_core = NRM
+			}
+			remove_core = NRM
+		}
 	}
 }
 
@@ -477,14 +491,16 @@ country_event = {
 		hidden_effect = {
 			release = ALE
 		}
-		if = {
-			limit = { has_dlc = "Domination" } 
+		## BT Changed: always release as an appanage. You have access to their mechanics with or without DOM DLC, you start with several in BT and vanilla.
+		## What reason is there for this DLC lock for a mission in the whole other DLC's tree??
+		#if = {
+		#	limit = { has_dlc = "Domination" } 
 			create_subject = {
 				subject_type = appanage
 				subject = ALE 
 			}
-		}
-		else = { vassalize = ALE } 
+		#}
+		#else = { vassalize = ALE } 
 		hidden_effect = {
 			ALE = {
 				change_government = monarchy
@@ -524,6 +540,15 @@ country_event = {
 				}
 			}
 			1879 = { remove_core = FRA }
+		}
+		#BT Added
+		if = {
+			limit = {
+				7980 = {
+					is_core = FRA
+				}
+			}
+			7980 = { remove_core = FRA }
 		}
 		add_estate_influence_modifier = {
 			estate = estate_nobles

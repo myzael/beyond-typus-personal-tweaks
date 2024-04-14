@@ -254,6 +254,24 @@ bt_volodymyr_principality = {
 	defensiveness = 0.15
 }
 
+bt_halych_principality = {
+	potential = {
+		owner = {
+			has_mission = ukr_rebuild_principalities
+		}
+	}
+	trigger = {
+		owner = {
+			mission_completed = ukr_rebuild_principalities
+		}
+		development = 30
+	}
+	
+	local_development_cost = -0.2
+	legitimacy = 1
+	
+}
+
 bt_pereyaslavl_principality = {
 	potential = {
 		owner = {
