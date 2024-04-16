@@ -21,7 +21,7 @@ benedictines = {
         add_base_tax = 1
     }
     per_province_abandon_effect = { #BT16: I'm very confused about this. //Dub
-        add_base_manpower = -1
+        add_base_tax = -1
         hidden_effect = {
             if = {
                 limit = { NOT = { base_tax = 1 } }
