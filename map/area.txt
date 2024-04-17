@@ -2384,6 +2384,7 @@ ogaden_area = { #Central Somailia
 	1206 1207 1208 2024 2778 2790 2792 8806 
 }
 sennar_area = { #Blue Nile
+	color = { 26 63 145 }
 	2798 2799 5287 5289 
 }
 tigray_area = { #Tigray
@@ -2424,6 +2425,7 @@ majarteen_area = { #Majeerteenia
 	2788 8802 8803 8804
 }
 white_nile_area = { #White Nile
+	color = { 235 235 235 }
 	1217 1222 2800 5285 5290 
 }
 butana_area = { #Butana
