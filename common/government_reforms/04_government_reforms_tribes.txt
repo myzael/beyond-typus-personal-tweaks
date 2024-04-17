@@ -1027,11 +1027,7 @@ tribe_tribal_unity = {
 
 #(JP) I hope I'm doing this right. Any issues, please go ahead and fix
 #(JP) Possibly also usable for Oromos or others in the Horn. Who knows. 
-somali_clan_reform = { 
-	#Quick dev notes:
-	#Do the same thing for Arabic OPMs in Arabia.
-	#???
-	#PROFIT!
+somali_clan_reform = {
 	icon = "tribal_council"
 	allow_normal_conversion = no
 	potential = {
@@ -1057,13 +1053,39 @@ somali_clan_reform = {
 	}
 }
 
+arabic_tribe_reform = {
+	icon = "tribal_council"
+	allow_normal_conversion = no
+	potential = {
+		has_reform = arabic_tribe_reform
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = -10
+	#legacy_equivalent = tribal_confederacy_legacy #(JP) Using another here I think?
+	native_mechanic = yes
+	allow_migration = yes
+	modifiers = {
+		cavalry_cost = -0.10
+		leader_land_shock = 1
+	}
+	
+	custom_attributes = {
+		locked_government_type = yes
+	}
+	
+	
+	ai = {
+		factor = 1
+	}
+}
+
 non_sedentary_clan_settle_down_reform = {
 	icon = "native_settle_down_reform"
 	fixed_rank = 0
 	potential = {
 		OR = {
 			has_reform = somali_clan_reform
-			#has_reform = arabic_tribe_reform #TBI
+			has_reform = arabic_tribe_reform #TBI
 		}
 	}
 	trigger = {

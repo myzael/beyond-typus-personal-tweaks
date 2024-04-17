@@ -1027,6 +1027,7 @@ tribal = {
 				#Turkomen
 				turkoman_ottoman_institutions
 				somali_clan_reform
+				arabic_tribe_reform
 			}
 		}
 		tribal_cultural_values = {
