@@ -6,7 +6,7 @@ bt_prussian_blue = {
 	trade_goods_size = 2
 }
 
-bolonga_silk_mills = {
+bologna_silk_mills = {
 	 trade_goods_size = 2
 }
 

@@ -5,7 +5,7 @@ normal_or_historical_nations = yes
 country_event = {                         #Event to give wales english rivalry 
 	id = BT_H_Misc.1
 	desc = BT_H_Misc.1.desc
-	title = BT_H_Misc.1.t
+	title = BT_H_Misc.1.title
 	picture = CONQUEST_eventPicture
 	
 	hidden = yes
@@ -29,10 +29,10 @@ country_event = {                         #Event to give wales english rivalry
 	}
 }
 
-country_event = {                         #The discovery of amalgamation 
+country_event = {                         #The descovery of amalgamation 
 	id = BT_H_Misc.2
 	desc = BT_H_Misc.2.desc
-	title = BT_H_Misc.2.t
+	title = BT_H_Misc.2.title
 	picture = CONQUEST_eventPicture
 	
 	fire_only_once = yes
@@ -81,10 +81,10 @@ country_event = {                         #The discovery of amalgamation
 	}
 }
 
-country_event = {                         #Event to change mercury provinces into gold with the discovery of amalgamation 
+country_event = {                         #Event to change mercury provinces into gold with the descovery of amalgamation 
 	id = BT_H_Misc.3
 	desc = BT_H_Misc.3.desc
-	title = BT_H_Misc.3.t
+	title = BT_H_Misc.3.title
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
