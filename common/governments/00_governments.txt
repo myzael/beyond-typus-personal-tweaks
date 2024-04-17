@@ -1026,6 +1026,7 @@ tribal = {
 				#1.36
 				#Turkomen
 				turkoman_ottoman_institutions
+				#BT
 				somali_clan_reform
 				arabic_tribe_reform
 			}
@@ -1034,7 +1035,8 @@ tribal = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
-				somali_clan_settle_down_reform
+				#BT
+				non_sedentary_clan_settle_down_reform
 			}
 		}
 		tribal_religion = {
