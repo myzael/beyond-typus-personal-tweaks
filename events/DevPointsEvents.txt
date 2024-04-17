@@ -157,6 +157,7 @@ province_event = {
 	hidden = yes
 	
 	immediate = {
+		add_base_tax = -1
 		if = {
 			limit = {
 				owner = {
@@ -253,6 +254,7 @@ province_event = {
 				}
 			}
 		}
+		add_base_tax = 1
 	}
 		
 	option = {
@@ -274,6 +276,7 @@ province_event = {
 	hidden = yes
 	
 	immediate = {
+		add_base_production = -1
 		if = {
 			limit = {
 				owner = {
@@ -370,6 +373,7 @@ province_event = {
 				}
 			}
 		}
+		add_base_production = 1
 	}
 		
 	option = {
@@ -391,6 +395,7 @@ province_event = {
 	hidden = yes
 	
 	immediate = {
+		add_base_manpower = -1
 		if = {
 			limit = {
 				owner = {
@@ -487,6 +492,7 @@ province_event = {
 				}
 			}
 		}
+		add_base_manpower = 1
 	}
 		
 	option = {
