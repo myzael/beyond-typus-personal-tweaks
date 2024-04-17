@@ -49,6 +49,12 @@ road_network = {
 	
 	ai_will_do = {
 		factor = 10 #The AI does consider the trade power, but I did not see a single road being built, so increasing this for now.
+		modifier = { #AI should value this more if they have no building slots here.
+			factor = 2
+			NOT = {
+				num_free_building_slots = 1
+			}
+		}
 	}
 }
 
@@ -98,6 +104,12 @@ mb_canal = {
 	
 	ai_will_do = {
 		factor = 10 #The AI does consider the trade power, but I did not see a single canal being built, so increasing this for now.
+		modifier = { #AI should value this more if they have no building slots here.
+			factor = 2
+			NOT = {
+				num_free_building_slots = 1
+			}
+		}
 	}
 }
 
@@ -111,41 +123,73 @@ grain_depot = {
 	}
 	
 	ai_will_do = {
-		factor = 80 #AI should avoid this in provinces with no devastation.
-		modifier = {
-			factor = 1.25
+		factor = 120
+		modifier = { #AI should value this more in provinces with devastation.
+			factor = 1.2
+			is_prosperous = yes
+		}
+		modifier = { #AI should value this more in provinces with devastation.
+			factor = 1.5
+			province_has_center_of_trade_of_level = 1
+		}
+		modifier = { #AI should value this more if they have economic ideas.
+			factor = 1.2
+			owner = {
+				has_idea_group = economic_ideas
+			}
+		}num_of_times_expanded_infrastructure = 2
+		modifier = { #AI should value this more if they have infrastructure ideas.
+			factor = 1.2
+			owner = {
+				has_idea_group = infrastructure_ideas
+			}
+		}
+		modifier = { #AI should value this more if they have expanded infrastructure here.
+			factor = 1.2
+			num_of_times_expanded_infrastructure = 1
+		}
+		modifier = { #AI should value this more if they have expanded infrastructure here.
+			factor = 1.5
+			num_of_times_expanded_infrastructure = 2
+		}
+		modifier = { #AI should value this more if they have building slots here.
+			factor = 1.5
+			num_free_building_slots = 4
+		}
+		modifier = { #AI should value this more in provinces with devastation.
+			factor = 1.1
 			devastation = 10
 		}
 		modifier = {
-			factor = 1.25
+			factor = 1.1
 			devastation = 20
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.1
 			devastation = 30
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.1
 			devastation = 40
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			devastation = 50
 		}
 		modifier = {
-			factor = 1.5
+			factor = 1.2
 			devastation = 60
 		}
 		modifier = {
-			factor = 2
+			factor = 1.2
 			devastation = 70
 		}
 		modifier = {
-			factor = 2
+			factor = 1.2
 			devastation = 80
 		}
 		modifier = {
-			factor = 2.5
+			factor = 1.2
 			devastation = 90
 		}
 	}
