@@ -671,6 +671,7 @@ ai_nation = {
 	global_tax_modifier = 0.25				#BT Added: AI economy was too shit to be fun to play with.
 	production_efficiency = 0.25			#BT Added: AI economy was too shit to be fun to play with.
 	trade_efficiency = 0.25					#BT Added: AI economy was too shit to be fun to play with.
+	country_dev_points_modifier = 0.25 		#BT Added to ofset the ai not being able to expand  infrastructure. Consider removing when that is implimented.
 }
 
 
