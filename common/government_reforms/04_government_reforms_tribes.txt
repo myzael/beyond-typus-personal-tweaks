@@ -1035,7 +1035,7 @@ somali_clan_reform = {
 	icon = "tribal_council"
 	allow_normal_conversion = no
 	potential = {
-		has_reform = somali_clan
+		has_reform = somali_clan_reform
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = -10

@@ -6,7 +6,7 @@ capital = 2790
 #Government
 government_rank = 1
 government = tribal
-add_government_reform = somali_clan
+add_government_reform = somali_clan_reform
 
 #Demographics
 primary_culture = darood
