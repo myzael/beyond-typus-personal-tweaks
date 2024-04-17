@@ -2804,7 +2804,10 @@ has_mills_trade_goods = {
 
 #For special gold trade goods
 has_valuable_resource = {
-	trade_goods = gold
+	OR = {
+		trade_goods = gold
+		trade_goods = bt_trade_good_silver
+	}
 }
 
 #country scope

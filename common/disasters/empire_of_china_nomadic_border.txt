@@ -126,7 +126,8 @@ empire_of_china_nomadic_border = {
 				}
 			}
 		}
-	}	
+	}
+	
 
 	
 	can_end = {
@@ -157,7 +158,7 @@ empire_of_china_nomadic_border = {
 	
 
 	modifier = {
-		imperial_mandate = -0.3
+		imperial_mandate = -0.5
 		reduced_liberty_desire = -25
 		land_morale = -0.15
 	}	

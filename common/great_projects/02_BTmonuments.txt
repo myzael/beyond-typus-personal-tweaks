@@ -1555,7 +1555,7 @@ sdc_cathedral = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			papal_influence_from_cardinals = 0.025
+			papal_influence_from_cardinals = 0.25
 			enforce_religion_cost = -0.1
 		}
 
@@ -1592,7 +1592,7 @@ sdc_cathedral = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			papal_influence_from_cardinals = 0.05
+			papal_influence_from_cardinals = 0.50
 			enforce_religion_cost = -0.2
 			manpower_in_true_faith_provinces= 0.10
 		}
@@ -4659,6 +4659,7 @@ schonbrunn_palace = {
 
 	#can we build it?
 	build_trigger = {
+		is_capital = yes
 		owner = {
 			government_rank = 3
 		}
@@ -4674,6 +4675,7 @@ schonbrunn_palace = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
+		is_capital = yes
 		owner = {
 			government_rank = 3
 		}
@@ -4681,6 +4683,7 @@ schonbrunn_palace = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
+		is_capital = yes
 		owner = {
 			government_rank = 3
 		}

@@ -1820,8 +1820,7 @@ defensive_stance_reform = {
 				has_not_modifier_locking_military_tier = yes
 			}
 		}
-		NOT = { is_subject_of_type = march }
-		NOT = { is_subject_of_type = client_march }
+		NOT = { is_march_or_similar_subject = yes }
 	}
 	modifiers = {
 		defensiveness = 0.15

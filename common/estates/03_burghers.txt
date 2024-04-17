@@ -310,6 +310,8 @@ estate_burghers = {
 		estate_burghers_ARB_oasis_development
 		estate_burghers_YEM_coffee_monopoly
 		estate_burghers_persian_rugs
+		#BT
+		estate_burghers_monopoly_of_vodka
 		#BTIP
 		estate_burghers_court_titles
 		estate_burghers_trade_deals_freedom

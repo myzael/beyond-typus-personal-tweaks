@@ -11,4 +11,33 @@ fixed_capital = 4735
 #historical_rival = XXX
 
 
-#History, currently empty.
+#History.
+1427.1.1 = { #c.
+	monarch = {
+		name = "Antonio"
+		monarch_name = "Antonio I"
+		dynasty = "Dubello-de Serra Bas"
+		birth_date = 1395.1.1 #No known birthdate. This guy died in 1455, so let's make him 60 years old by his death
+		death_date = 1455.1.1 #c.
+		adm = 1 #No known info
+		dip = 2 #No known info
+		mil = 2 #No known info
+	}
+	consort = {
+		name = "Eleonora Folch"
+		dynasty = "de Cardona"
+		birth_date = 1405.1.1 #No known birthdate. Let's make her younger than Antonio.
+		adm = 2 #No known info
+		dip = 1 #No known info
+		mil = 2 #No known info
+	}
+	heir = {
+		name = "Salvatore"
+		monarch_name = "Salvatore I"
+		dynasty = "Dubello-de Serra Bas"
+		birth_date = 1410.1.1 #No known birthdate. This guy died in 1470, so let's make him 60 years old by his death
+		adm = 2 #No known info
+		dip = 2 #No known info
+		mil = 1 #No known info
+	}
+}

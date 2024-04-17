@@ -385,6 +385,7 @@ kilwa_internal_missions_slot = {
 		provinces_to_highlight = {
 			owned_by = ROOT
 			NOT = { trade_goods = gold }
+			NOT = { trade_goods = bt_trade_good_silver }
 			has_manufactory_trigger = no
 		}
 		trigger = {

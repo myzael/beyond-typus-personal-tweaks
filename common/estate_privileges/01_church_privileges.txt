@@ -1912,7 +1912,7 @@ estate_church_one_faith_one_culture = {
 	conditional_modifier = {
 		trigger = { has_government_attribute = free_religious_culture }
 		modifier = {
-			church_influence_modifier = -0.2
+			church_influence_modifier = -0.1
 		}
 	}
 	

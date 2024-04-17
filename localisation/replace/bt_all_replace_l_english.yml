@@ -726,6 +726,16 @@
  tur_refill_the_ortas_tt:0 "§Y[Root.GetName]§! gains a permanent claim on every province in §YAnatolia§! owned by a country with §YTurkish§! as their primary culture."
  has_shipyard_building_trigger_tt:0 "Has a §YNaval Arsenal§! or a §YNaval Base§! building."
  
+ #EMP France fixes
+ fra_auld_alliance_tt:0 "Any country in the §YBritain§! or §YIreland§! regions regions other than §YEngland§!, §YGreat Britain§!, or §YUnited Kingdom§! with at least §Y140§! total development has at least §Y100§! opinion of §Y[Root.GetName]§!"
+ fra_british_claims_tt:0 "§Y[Root.GetName]§! gets a claim on all provinces in the §YBritain§! and §YIreland§! regions that are owned by §YEngland§!, §YGreat Britain§!, or §YUnited Kingdom§!."
+ fra_defeat_england_tt:0 "§YEngland§!, England-formed §YGreat Britain§!, or England-formed §YUnited Kingdom§! have less than 20 owned provinces in the §YBritain§! and §YIreland§! regions."
+ fra_carib_discovery.tooltip:0 "§Y[Root.GetName]§! has discovered any province in §YColonial Lesser Antilles§!, §YColonial Hispaniola§!, §YColonial Cuba§! or §YColonial Bahamas§! colonial regions."
+ fra_canada_colony.tooltip:0 "§Y[Root.GetName]§! or their subjects own at least §Y5§! fully colonized provinces in the one of colonial regions: §YColonial Canada§!, §YColonial Acadia§!, §YColonial Newfoundland§!, §YColonial Louisiana§!."
+ fra_hyw_tt:0 "No province in the §YFrance§! region, except for §YCales§! and §YChannel Islands§!, is owned by §YEngland§!, §YGreat Britain§!, or §YUnited Kingdom§!"
+ fra_pro_tt:0 "At least §Y7§! Provinces in the §YProvence§! Area are owned by §Y[Root.GetName]§! or its non-sovereign subjects."
+ fra_client_states_tt:1 " subjects have §YEuropean§! capitals and at least §Y200§! total development"
+ 
  #Below two are same as vanilla, except dev number doubled.
  HUSSARS_DESC:1 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
  custom_can_recruit_hussars_desc:0 "The Hussars are a powerful yet rare unit. Delivering devastating charges, they deal tremendous amounts of damage to the morale of the enemy while also excelling at the §YShock Phase§!. \n\nThe number of §YHussar§! regiments is calculated based on the development of provinces with accepted cultures at a rate of 1 unit per 200 development."
@@ -766,3 +776,6 @@
  mam_sponsor_hajj_dialog: "Would you like to perform a Grand Hajj sponsored by the Mamluks?"
 
  INCOMEGOLD: "Precious Metals"
+ goldDESC:0 "Gold is one of the two precious metals that formed the basis of all formal currencies in Europe and was used widely outside of it for trade. The discovery of gold in the New World and trade with Africans would end the Great Bullion Famine that had gripped Europe in previous centuries. However, unwise usage of gold's great wealth could lead to inflation and ruin, especially if paired with other precious metals (like silver)."
+
+ 

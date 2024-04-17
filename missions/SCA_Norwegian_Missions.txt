@@ -1069,7 +1069,10 @@ nor_colonize_middle_america_slot = {
 				is_city = no
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
-			trade_goods = gold
+			OR = {
+				trade_goods = gold
+				trade_goods = bt_trade_good_silver
+			}
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1078,7 +1081,10 @@ nor_colonize_middle_america_slot = {
 					colonial_region = colonial_california
 				}
 				is_city = yes
-				trade_goods = gold
+				OR = {
+					trade_goods = gold
+					trade_goods = bt_trade_good_silver
+				}
 				value = 5
 			}
 		}
@@ -2822,6 +2828,7 @@ nor_sca_colonize_more_na_slot = {
 			NOT = { has_trade_building_trigger = yes }
 			OR = {
 				NOT = { trade_goods = gold }
+				NOT = { trade_goods = bt_trade_good_silver }
 				NOT = { development = 10 }
 			}
 		}
@@ -2837,7 +2844,10 @@ nor_sca_colonize_more_na_slot = {
 					has_production_building_trigger = yes
 					has_trade_building_trigger = yes
 					AND = {
-						trade_goods = gold
+						OR = {
+							trade_goods = gold
+							trade_goods = bt_trade_good_silver
+						}
 						development = 10
 					}
 				}
@@ -2851,7 +2861,10 @@ nor_sca_colonize_more_na_slot = {
 					limit = {
 						is_city = yes
 						country_or_non_sovereign_subject_holds = ROOT
-						trade_goods = gold
+						OR = {
+							trade_goods = gold
+							trade_goods = bt_trade_good_silver
+						}
 					}
 					add_province_modifier = {
 						name = sca_nor_search_for_gold
@@ -2862,7 +2875,10 @@ nor_sca_colonize_more_na_slot = {
 					limit = {
 						is_city = yes
 						country_or_non_sovereign_subject_holds = ROOT
-						trade_goods = gold
+						OR = {
+							trade_goods = gold
+							trade_goods = bt_trade_good_silver
+						}
 					}
 					add_province_modifier = {
 						name = sca_nor_search_for_gold

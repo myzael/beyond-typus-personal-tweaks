@@ -326,6 +326,30 @@ yearly_innovativeness_button_mod = {
 	country_military_power = -1
 }
 
+estate_church_monopoly_of_books_mod = {
+	local_production_efficiency = -10
+}
+
+estate_church_monopoly_of_apiculture_mod = {
+	local_production_efficiency = -10
+}
+
+estate_church_monopoly_of_vodka_mod = {
+	local_production_efficiency = -10
+}
+
+estate_nobles_monopoly_of_vodka_mod = {
+	local_production_efficiency = -10
+}
+
+estate_burghers_monopoly_of_vodka_mod = {
+	local_production_efficiency = -10
+}
+
+estate_cossacks_monopoly_of_vodka_mod = {
+	local_production_efficiency = -10
+}
+
 
 ##################################################################################################
 ##################################################################################################

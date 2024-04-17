@@ -301,12 +301,12 @@ tax_assessor = {
 	cost = 500	
 	time = 36			
 	modifier = {
-		tax_income = 15
+		tax_income = 5
 		local_tax_modifier = 0.5
 		base_local_dev_points = 0.02
 	}
 	bonus_modifier = {
-		tax_income = 15
+		tax_income = 5
 		local_tax_modifier = 0.5
 	}
 	onmap = no

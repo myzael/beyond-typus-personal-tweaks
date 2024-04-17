@@ -49,8 +49,8 @@ discovered_by = eastern
 	add_core = WMC
 	add_core = WLS
 	remove_core = CST
-	owner = ENG
-	controller = ENG
+	owner = WMC
+	controller = WMC
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
 
@@ -60,7 +60,7 @@ discovered_by = eastern
 	add_core = ENG
 	remove_core = WMC
 }
-1444.11.18 = { #BT Performance Start Begin
+1444.11.18 = { #BT Performance Start End
 	owner = WMC
 	controller = WMC
 	add_core = WMC

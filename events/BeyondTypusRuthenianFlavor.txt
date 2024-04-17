@@ -21,7 +21,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					religion = orthodox
-					NOT = { culture = ruthenian }
+					#NOT = { culture = ruthenian }
 					NOT = {
 						area = crimea_area
 						area = azov_area
@@ -52,7 +52,16 @@ country_event = {
 			subject_type = bt_cossack_host
 		}
 		ZAZ = {
-			give_permaclaims_for_mission = { mission=ukr_claim_wild_fields }
+			custom_tooltip = ukr_claim_wild_fields_claims
+			hidden_effect = {
+				ukr_claim_wild_fields_provinces = {
+					#limit = {
+					#	NOT = { is_permanent_claim = ZAZ }
+					#	NOT = { is_core = ZAZ }
+					#}
+					add_permanent_claim = ZAZ
+				}
+			}
 		}
 	}
 	option = { # Refrain
@@ -84,7 +93,8 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
-		set_estate_privilege = estate_nobles_vodka_monopoly
+		set_country_flag = estate_nobles_vodka_monopoly
+		set_estate_privilege = estate_nobles_monopoly_of_vodka
 	}
 	option = { # Give it to the Clergy!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTB2"
@@ -95,7 +105,8 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
-		set_estate_privilege = estate_church_vodka_monopoly
+		set_country_flag = estate_church_vodka_monopoly
+		set_estate_privilege = estate_church_monopoly_of_vodka
 		
 	}
 	option = { # Give it to the Burghers!
@@ -107,7 +118,8 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
-		set_estate_privilege = estate_burghers_vodka_monopoly
+		set_country_flag = estate_burghers_vodka_monopoly
+		set_estate_privilege = estate_burghers_monopoly_of_vodka
 	}
 	option = { # Give it to the Cossacks!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTD2"
@@ -118,7 +130,8 @@ country_event = { #The Vodka Monopoly
 			}
 			years = 2
 		}
-		set_estate_privilege = estate_cossacks_vodka_monopoly
+		set_country_flag = estate_cossacks_vodka_monopoly
+		set_estate_privilege = estate_cossacks_monopoly_of_vodka
 	}
 	option = { # Keep it for the State!
 		name = "BeyondTypusRuthenianFlavour.EVTOPTE2"

@@ -1704,7 +1704,7 @@ country_event = { #Construction Commences in [4316.GetName]
 		hidden_effect = {
 			add_treasury = 20000
 		}
-		4316 = {
+		363 = {
 			add_great_project_tier = {
 				type = suez_canal
 				tier = 3
@@ -1718,7 +1718,7 @@ country_event = { #Construction Commences in [4316.GetName]
 		}
 	}
 	after = {
-		4316 = {
+		363 = {
 			add_construction_progress = 1
 		}
 	}

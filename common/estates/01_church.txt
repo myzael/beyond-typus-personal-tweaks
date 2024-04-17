@@ -432,6 +432,10 @@ estate_church = {
 		estate_church_fund_madrasas
 		estate_church_sponsor_waqf_payments
 		estate_church_muslim_integration
+		#BT
+		estate_church_monopoly_of_books
+		estate_church_monopoly_of_apiculture
+		estate_church_monopoly_of_vodka
 		#BTIP
 		estate_church_court_titles
 		estate_church_tithe_collection_freedom

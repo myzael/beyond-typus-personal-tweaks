@@ -46,15 +46,15 @@ discovered_by = ottoman
 #}	#Aragon wins the battle Sanluri, and claims most of southern and western Sardinia
 #changed to represent the Marquisate of Oristano
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = ARR
-	controller = ARR
-	add_core = ARR
+	#owner = ARR
+	#controller = ARR
+	#add_core = ARR
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	remove_core = ARR
-	add_core = SAR
-	owner = SAR
-	controller = SAR
+	#remove_core = ARR
+	#add_core = SAR
+	#owner = SAR
+	#controller = SAR
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 	owner = ARA
