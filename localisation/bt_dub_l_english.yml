@@ -451,3 +451,5 @@
  MONOPOLY_INCOME_BOOKS_DESC:0 "from books production."
  MONOPOLY_INCOME_FRUIT_DESC:0 "from fruit production."
  
+ NOT_NATIVE_AMERICAN:0 "Non-natives cannot form Federations!"
+ 
