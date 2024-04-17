@@ -756,3 +756,31 @@ break_alliance = {
 		on_alliance_broken_effect = yes
 	}
 }
+
+invite_to_federation = {
+	condition = {
+		tooltip = NOT_NATIVE_AMERICAN
+		potential = {
+			#why don't we have a primitives trigger again?
+			NOT = { technology_group = north_american }
+			NOT = { technology_group = south_american }
+		}
+		allow = {
+			always = no
+		}
+	}
+}
+
+request_to_join_federation = {
+	condition = {
+		tooltip = NOT_NATIVE_AMERICAN
+		potential = {
+			#why don't we have a primitives trigger again?
+			NOT = { technology_group = north_american }
+			NOT = { technology_group = south_american }
+		}
+		allow = {
+			always = no
+		}
+	}
+}

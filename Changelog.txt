@@ -57,6 +57,7 @@ BT16
 	 - If Rambert II dies childless, Rijekan domains will be inherited by Styria/Austria, whoever is the main overlord, as happened historically with Frederick III inheriting it in 1466.
  - (Dub) Added one of the longest reigning monarchs in history: Bernard VII von Lippe, to Lippe. Born December 1428 and inheriting his throne before his first birthday, he ruled Lippe until 1511.
  - (Dub) Implemented ruler genetics with personality: If your ruler has a particular personality, there's a 50% greater chance your heir will get one of their personalities when they come of age.
+ - (Dub) Added Native mechanics to Arabian and Somali OPMs. Somali tribes with more provinces share this mechanic, but have multiple provinces.
  
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
