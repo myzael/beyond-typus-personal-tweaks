@@ -2825,7 +2825,7 @@ dom_cas_missions_4 = {
 		}
 
 		ai_weight = {
-			factor = 250
+			factor = 0 #We do not want Spain killing Portugese
 		}
 	}
 	
