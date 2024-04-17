@@ -602,8 +602,7 @@ colony = {
 	opinion_on_subject_integration = 0
 	max_government_rank = 1
 	
-	#BT Changed: smallest colonial region (Newfoundland)
-	#cities_required_for_bonuses = 5 #10
+	#cities_required_for_bonuses = 10 #BT Cut
 	
 
 	relative_power_class = 0
