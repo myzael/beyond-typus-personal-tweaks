@@ -30,3 +30,36 @@ custom_button = {
 		}
 	}
 }
+
+custom_button = {
+	name = manifest_destiny_button #Must match a scripted guiButtonType in a .gui file
+	
+	potential = { 
+		FROM = { tag = USA }
+	}
+	
+	trigger = {
+		FROM = {
+			has_government_attribute = bt_manifest_destiny_mechanic
+		}
+		dip_power = 20
+	} 
+	effect = {
+		add_siberian_construction = 5
+		set_province_flag = bt_is_frontier_province
+	}
+	tooltip = manifest_destiny_loc #Can use customizable localisation
+	
+	frame = { #Not clicked
+		number = 1 
+		trigger = { 
+			NOT = { has_province_flag = bt_is_frontier_province }
+		}
+	}
+	frame = { #Clicked
+		number = 2 
+		trigger = {
+			has_province_flag = bt_is_frontier_province
+		}
+	}
+}
