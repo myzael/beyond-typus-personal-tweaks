@@ -601,7 +601,10 @@ colony = {
 	liberty_desire_development_ratio = 0.1
 	opinion_on_subject_integration = 0
 	max_government_rank = 1
-	cities_required_for_bonuses = 10
+	
+	#BT Changed: smallest colonial region (Newfoundland)
+	cities_required_for_bonuses = 7 #10
+	
 
 	relative_power_class = 0
 	should_quit_wars_on_activation = yes
@@ -690,6 +693,9 @@ crown_colony = {
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = crown_colony_overlord
+		trigger = {
+			total_development = 80
+		}
 	}
 
 	modifier_subject = {
@@ -723,6 +729,9 @@ private_enterprise = {
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = private_enterprise_overlord
+		trigger = {
+			total_development = 80
+		}
 	}
 	
 	modifier_subject = {
@@ -757,6 +766,9 @@ self_governing_colony = {
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = self_governing_colony_overlord
+		trigger = {
+			total_development = 80
+		}
 	}
 	
 	modifier_subject = {
