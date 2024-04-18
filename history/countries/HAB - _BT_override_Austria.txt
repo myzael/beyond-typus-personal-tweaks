@@ -5,6 +5,7 @@ historical_friend = SPA			#Dub added. I mean, could be argued either way, but it
 set_country_flag = bt_au_albrecht_friedrich_brothers_alive
 set_ruler_flag = united_austria_person
 set_heir_flag = united_austria_person
+fixed_capital = 134 # Cannot move capital away from this province & no power cost to move to it
 
 
 #History			#Note the price change events are fired for later starts in this Austrian file, for whatever reason. That is what basically all this crap is below.
