@@ -43,7 +43,7 @@ russian_mechanic = {
 			scaled_modifier = {
 				trigger = { has_country_flag = bt_ukr_empowered_russian_mechanic }
 				modifier = {
-					drill_gain_modifier = 0.33
+					drill_gain_modifier = 0.5
 					drill_decay_modifier = -0.33
 					is_streltsy_modifier = yes
 				}
