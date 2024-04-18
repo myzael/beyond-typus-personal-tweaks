@@ -2443,6 +2443,13 @@ bt_ukr_government = {
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+				}
+				custom_tooltip = bt_ukr_empowered_russian_mechanic_tt
+				set_country_flag = bt_ukr_empowered_russian_mechanic
+			}
 			custom_tooltip = ukr_absolute_authority_tt
 			set_country_flag = ukr_absolute_authority_flag
 			hidden_effect = {
