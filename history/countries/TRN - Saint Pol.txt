@@ -45,7 +45,7 @@ capital = 7973
 }
 
 1435.1.1 = {
-	consort = {
+	queen = {
 		name = "Jeanne"
 		dynasty = "de Barrois"
 		birth_date = 1415.1.1 #Some time in 1415
