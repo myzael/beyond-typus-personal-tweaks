@@ -201,8 +201,8 @@ emp_gen_missions_general_2 = {
 							province_id = 1308
 						}
 						AND = {
-							NOT = { 1293 = { is_strongest_trade_power = ROOT } }
-							province_id = 1293
+							NOT = { 224 = { is_strongest_trade_power = ROOT } } # BT; 1293
+							province_id = 224 # BT; 1293
 						}
 						AND = {
 							NOT = { 1110 = { is_strongest_trade_power = ROOT } }
