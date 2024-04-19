@@ -50,7 +50,9 @@ el_dorado = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		exploration_ideas = 7	
+		owner = {
+			exploration_ideas = 7	
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
