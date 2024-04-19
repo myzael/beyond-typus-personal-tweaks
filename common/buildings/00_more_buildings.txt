@@ -137,7 +137,7 @@ grain_depot = {
 			owner = {
 				has_idea_group = economic_ideas
 			}
-		}num_of_times_expanded_infrastructure = 2
+		}
 		modifier = { #AI should value this more if they have infrastructure ideas.
 			factor = 1.2
 			owner = {
