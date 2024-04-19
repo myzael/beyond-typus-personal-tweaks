@@ -1137,3 +1137,4 @@ non_sedentary_clan_settle_down_reform = {
 			tribal_development = 40
 		}
 	}
+}
