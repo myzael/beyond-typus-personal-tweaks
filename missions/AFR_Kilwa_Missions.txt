@@ -1095,12 +1095,20 @@ kilwa_colonization_missions_slot = {
 		required_missions = { zan_dominate_moluccas }
 		position = 5
 		provinces_to_highlight = {
-			colonial_region = colonial_australia
+			OR = {
+				colonial_region = colonial_australia
+				colonial_region = colonial_western_australia
+				colonial_region = colonial_northeastern_australia
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				colonial_region = colonial_australia
+				OR = {
+					colonial_region = colonial_australia
+					colonial_region = colonial_western_australia
+					colonial_region = colonial_northeastern_australia
+				}
 				value = 10
 			}
 		}
@@ -1110,7 +1118,11 @@ kilwa_colonization_missions_slot = {
 					num_of_subjects = 1
 					any_subject_country = {
 						capital_scope = {
-							colonial_region = colonial_australia
+							OR = {
+								colonial_region = colonial_australia
+								colonial_region = colonial_western_australia
+								colonial_region = colonial_northeastern_australia		
+							}
 						}
 					}
 				}
@@ -1119,17 +1131,45 @@ kilwa_colonization_missions_slot = {
 						num_of_subjects = 1
 						any_subject_country = {
 							capital_scope = {
-								colonial_region = colonial_australia
+								OR = {
+									colonial_region = colonial_australia
+									colonial_region = colonial_western_australia
+									colonial_region = colonial_northeastern_australia		
+								}
 							}
 						}
 					}
-					colonial_australia = {
-						add_permanent_claim = PREV
+					if = {
+						limit = {
+							capital_scope = { colonial_region = colonial_australia }
+						}
+						colonial_australia = {
+							add_permanent_claim = PREV
+						}
+					}
+					else_if = {
+						limit = {
+							capital_scope = { colonial_region = colonial_western_australia }
+						}
+						colonial_western_australia = {
+							add_permanent_claim = PREV
+						}
+					}
+					else = {
+						colonial_northeastern_australia = {
+							add_permanent_claim = PREV
+						}
 					}
 				}
 			}
 			else = {
 				colonial_australia = {
+					add_permanent_claim = ROOT
+				}
+				colonial_western_australia = {
+					add_permanent_claim = ROOT
+				}
+				colonial_northeastern_australia = {
 					add_permanent_claim = ROOT
 				}
 			}
