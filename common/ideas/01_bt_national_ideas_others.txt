@@ -2868,7 +2868,11 @@ KEM_ideas = {
     }
     kem_pharonic_legacy = {
         tolerance_own = 2
-        legitimacy_equivalent = 1
+        legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+		meritocracy = 1
     }
     kem_monumentality = {
         build_cost = -0.15
