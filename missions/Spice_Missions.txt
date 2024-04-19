@@ -25,22 +25,6 @@ spice_1 = {
 			if = {
 				limit = {
 					tag = TID
-					NOT = {
-						exists = TER
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					tag = TER
-					NOT = {
-						exists = TID
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					tag = TID
 					any_province = {
 						owned_by = TER
 						is_colony = yes
@@ -60,6 +44,22 @@ spice_1 = {
 				}
 				650 = {
 					owned_by = TER
+				}
+			}
+			else_if = {
+				limit = {
+					tag = TID
+				}
+				NOT = {
+					exists = TER
+				}
+			}
+			else_if = {
+				limit = {
+					tag = TER
+				}
+				NOT = {
+					exists = TID
 				}
 			}
 			else = {
