@@ -51,7 +51,7 @@ el_dorado = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		owner = {
-			exploration_ideas = 7	
+			full_idea_group = exploration_ideas
 		}
 	}
 
