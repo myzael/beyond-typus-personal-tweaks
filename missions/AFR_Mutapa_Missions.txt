@@ -717,7 +717,7 @@ mutapa_trade_missions_slot = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					has_port = yes
 				}
-				province_id = 4346
+				province_id = 1331
 			}
 		}
 		trigger = {
@@ -738,7 +738,7 @@ mutapa_trade_missions_slot = {
 				province_has_center_of_trade_of_level = 2
 				value = 2
 			}
-			4346 = {
+			1331 = {
 				OR = {
 					is_strongest_trade_power = ROOT
 					trade_share = {
@@ -753,7 +753,7 @@ mutapa_trade_missions_slot = {
 				years = 2
 				custom_tooltip = zim_dominate_upstream_trade_ct
 			}
-			4346 = {
+			1331 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
@@ -787,7 +787,7 @@ mutapa_trade_missions_slot = {
 						is_strongest_trade_power = ROOT
 						highest_value_trade_node = yes
 					}
-					4346 = {
+					1331 = {
 						is_strongest_trade_power = ROOT
 						highest_value_trade_node = yes
 					}
@@ -845,7 +845,7 @@ mutapa_trade_missions_slot = {
 						key = ZIM_TRADE_DOMINANCE
 					}
 				}
-				4346 = {
+				1331 = {
 					add_trade_modifier = {
 						who = ROOT
 						duration = -1

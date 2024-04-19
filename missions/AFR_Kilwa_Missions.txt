@@ -557,10 +557,10 @@ kilwa_trade_conquest_missions_slot = {
 		required_missions = { zan_conquer_mogadishu }
 		position = 4
 		provinces_to_highlight = {
-			province_id = 4346
+			province_id = 1331
 		}
 		trigger = {
-			4346 = {
+			1331 = {
 				OR = {
 					is_strongest_trade_power = ROOT
 					trade_share = {
@@ -571,7 +571,7 @@ kilwa_trade_conquest_missions_slot = {
 			}
 		}
 		effect = {
-			4346 = {
+			1331 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 9125
@@ -628,7 +628,7 @@ kilwa_trade_conquest_missions_slot = {
 				AND = {
 					OR = {
 						province_id = 1191
-						province_id = 4346
+						province_id = 1331
 					}
 					NOT = {
 						trade_share = {
@@ -668,7 +668,7 @@ kilwa_trade_conquest_missions_slot = {
 				tooltip = zan_centralize_trade_bt
 				OR = {
 					1191 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 30 } } }
-					4346 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 30 } } }
+					1331 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 30 } } }
 				}
 			}
 			custom_trigger_tooltip = {

@@ -869,7 +869,7 @@ dan_trade_and_colonial_mission_slot = {
 					420 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
 					1191 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
 					1448 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
-					4346 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
+					1331 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } } #BT; 4346
 					2772 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
 					358 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }
 					1460 = { OR = { is_strongest_trade_power = ROOT trade_share = { country = ROOT share = 25 } } }

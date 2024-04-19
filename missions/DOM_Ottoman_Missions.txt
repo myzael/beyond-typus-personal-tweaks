@@ -1877,7 +1877,7 @@ tur_african_conquest = {
 		provinces_to_highlight = {
 			OR = {
 				AND = {
-					province_id = 4346
+					province_id = 1331
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -1925,7 +1925,7 @@ tur_african_conquest = {
 		}
 		trigger = {
 			OR = {
-				4346 = {
+				1331 = {
 					trade_share = {
 						country = ROOT
 						share = 50
@@ -2676,7 +2676,7 @@ tur_egyptian_conquest = {
 			}
 		}
 		effect = {
-			4346 = {
+			1331 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = 18250
