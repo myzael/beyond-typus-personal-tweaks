@@ -446,6 +446,10 @@
  estate_burghers_vodka_monopolizer:0 "[Root.GetBurghersName]"
  estate_cossacks_vodka_monopolizer:0 "[Root.GetCossacksName]"
  
+ arabic_tribe_reform:0 "Arabic Tribe"
+ arabic_tribe_reform_desc:0 "The nomadic Bedouin tribes in Arabia are known for their non-sedentary lifestyle. Heralding from the Syrian Desert, after the spread of Islam, they spread all across the Arab World, from Spain all the way to India,where they engaged in trade and formed vast Empires. Famously clan-oriented, the tribes would form dynasties, in the game represented as nomadic nations that migrate across the Arabian Peninsula."
+ somali_tribe_reform:0 "Somali Tribe"
+ somali_tribe_reform_desc:0 "TODO WRITE DESC (JP please?)"
  
  MONOPOLY_INCOME_BEER_DESC:0 "from beer production."
  MONOPOLY_INCOME_APICULTURE_DESC:0 "from apiculture production."
