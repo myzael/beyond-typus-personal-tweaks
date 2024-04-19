@@ -6,6 +6,7 @@ BT16
  - (JP) Overhauled the Horn of Africa
  - (JP) New tags in Kakheti and Talysh, along with numerous releasables
  - (JP) Split the Caucasian Culture Group into Armenian, Kartvelian, Circassian, Dagestani, and Alanian
+ - (Chrysocyon) Added Mingrelian and Svaneti cultures, splitting Georgian.
  - (JP) Added Abkhaz and Kabardian to Circassian group, Talysh to Iranian group and Ossetian to Alanian group 
  - (JP) Massive cultural overhaul in the Horn of Africa. Cushitic split into three. New Omotic, Oromo Groups and Agaw Groups. Over 25 new cultures.
  - (JP) Tonnes of new tags in the Horn of Africa, many are releasable. 
@@ -19,9 +20,11 @@ BT16
 	 - Draft Mamluks: If King of Kings DLC is installed, gives a modifier for Mamluk unique units. Else, gain 1 years worth of manpower from stated provinces of unaccepted cultures of non-state religion.
 	 - Sponsor Shayk: Gain a random 50% discounted advisor of skill level 2/3 depending on if monthly income is below/above 35.
 	 - Grant Iqta: Gain a general with current army tradition + 25.
+ - (Dub) Ayyubids can now take the Nobility estate privilege to recruit Mamluks
  - New idea sets for the following nations:
 	 - (Dub) Cascadia
 	 - (Dub) Magdeburg
+	 - (Jackkade) Khem
  - (Hadiros) Overhauled Australia
  - (Hadiros) Massive cultural overhaul to Australia, added 32 more cultures to the Aboriginal group for a total of 39 cultures. Added New Northern Aboriginal group with 24 cultures.
  - (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
@@ -87,6 +90,7 @@ BT16
  - (Dub) Bugfixed vanilla Engrish in several places.
  - (Dub) Fixed JuvÃ©nal in Rheims & Laon.
  - (Dub) Fixed Saxony not being able to rename itself if it lost its PUs at any point, giving it alternate completion requirements.
+ - (Dub) Fixed Hildesheim & Legnica's dynasties being wrong.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
