@@ -481,7 +481,7 @@
 322 = "Darem"
 4367 = "Skhid Yorkshyr" #east Yorkshire
 245 = "Zakhid Yorkshyr" #west Yorkshire
-2444 = "Lankashyr"
+244 = "Lankashyr"
 4375 = "Chestershyr"
 1861 = "Derbishyr"
 243 = "Linkolnshyr"
