@@ -725,8 +725,8 @@ sco_rb_colonial_2 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = sco_nova_scotia.tooltip
+			#custom_trigger_tooltip = {
+				#tooltip = sco_nova_scotia.tooltip
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 5
 					OR = {
@@ -736,7 +736,7 @@ sco_rb_colonial_2 = {
 						colonial_region = colonial_hudson_bay
 					}
 				}
-			}
+			#}
 		}
 		effect = {
 			add_country_modifier = {
