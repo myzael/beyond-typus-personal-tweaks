@@ -1,6 +1,11 @@
 1.37:
 Alternate Siberian Frontiers in colonyview:
 	- USA: Manifest Destiny
+	- Brazil: Bandeirantes
 	- Tribes: Settle Tribal Land
 	- Africas: Something something Africa
 	- Canada: Why not.
+	
+	These two happened after the end date and so are lower priority:
+	- Argentina + Chile: Conquest of the Desert
+	- Australia: Aghan Cameleers
