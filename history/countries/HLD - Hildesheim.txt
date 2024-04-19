@@ -19,7 +19,7 @@ technology_group = western
 #History
 1424.1.1 = {
 	monarch = {
-		name = "Magnus von Saxe-Lauenburg"
+		name = "Magnus Askanier"
 		birth_date = 1385.1.1
 		dip = 3
 		mil = 3
