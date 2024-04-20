@@ -6567,45 +6567,54 @@ el_dorado_mod = {
 	trade_goods_size_modifier = 0.5
 	local_development_cost = -0.2
 	local_unrest = -3
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_life_water = {
 	local_build_cost = -0.5
 	local_colonial_growth = 30
 	local_unrest = -3
 	local_tax_modifier = 0.25
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_cibola_silver = {
 	global_tax_income = 5
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_sierradelaplata_quartz = {
 	local_tax_modifier = 0.5
 	local_institution_spread = 1
 	local_development_cost = -0.2
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_golden_cups = {
 	local_production_efficiency = 0.25
 	local_tax_modifier = 0.25
 	local_build_cost = -0.5
 	local_development_cost = -0.2
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_norumbega_abandoned = {
 	local_development_cost = -0.2
 	province_trade_power_modifier = 0.5
 	trade_goods_size_modifier = 0.5
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_saguenay_abandoned = {
 	trade_goods_size_modifier = 0.25
 	province_trade_power_modifier = 0.25
 	local_development_cost = -0.2
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_city_of_caesars = {
 	province_trade_power_modifier = 1
 	trade_goods_size_modifier = 0.5
 	local_development_cost = -0.2
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_quivira = {
 	prestige = 0.5
 	global_tax_income = 10
+	custom_tooltip = bt_seven_cities_monument
 }
 sce_sacagawea = {
 	land_morale = 0.05
