@@ -1255,7 +1255,6 @@ province_event = {
 			name = "el_dorado_mod"
 			duration = -1
 		}
-		custom_tooltip = bt_seven_cities_monument
 		add_base_tax = 4
 		add_base_production = 4
 		add_base_manpower = 4
@@ -1463,7 +1462,6 @@ province_event = {
 			name = "sce_life_water"
 			duration = -1
 		}
-		custom_tooltip = bt_seven_cities_monument
 		add_base_tax = 4
 		add_base_production = 4
 		add_base_manpower = 4
@@ -1684,7 +1682,6 @@ province_event = {
 			name = "sce_cibola_silver"
 			duration = -1
 		}
-		custom_tooltip = bt_seven_cities_monument
 		add_base_tax = 4
 		add_base_production = 4
 		add_base_manpower = 4
@@ -1909,7 +1906,6 @@ province_event = {
 			name = "sce_city_of_caesars"
 			duration = -1
 		}
-		custom_tooltip = bt_seven_cities_monument
 		add_base_tax = 4
 		add_base_production = 4
 		add_base_manpower = 4
@@ -2146,7 +2142,6 @@ province_event = {
 			name = "sce_sierradelaplata_quartz"
 			duration = -1
 		}
-		custom_tooltip = bt_seven_cities_monument
 		add_base_tax = 4
 		add_base_production = 4
 		add_base_manpower = 4
@@ -2375,7 +2370,6 @@ province_event = {
 			name = "sce_norumbega_abandoned"
 			duration = -1
 		}
-		custom_tooltip = bt_seven_cities_monument
 		add_base_tax = 4
 		add_base_production = 4
 		add_base_manpower = 4
@@ -2605,7 +2599,6 @@ province_event = {
 			name = "sce_saguenay_abandoned"
 			duration = -1
 		}
-		custom_tooltip = bt_seven_cities_monument
 		add_base_tax = 4
 		add_base_production = 4
 		add_base_manpower = 4
@@ -2833,7 +2826,6 @@ province_event = {
 			name = "sce_golden_cups"
 			duration = -1
 		}
-		custom_tooltip = bt_seven_cities_monument
 		add_base_tax = 4
 		add_base_production = 4
 		add_base_manpower = 4
