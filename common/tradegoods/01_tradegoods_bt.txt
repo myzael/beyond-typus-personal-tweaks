@@ -70,6 +70,11 @@ bt_trade_good_fruit = {
 	}
 	chance = {
 		factor = 20
+		# BT16 Seven Cities rework addition
+		modifier = {
+			factor = 300
+			has_province_modifier = sce_quivira
+		}
 		modifier = {
 			factor = 0
 			is_random_new_world = no
@@ -243,6 +248,11 @@ bt_trade_good_silver = {
 	}
 	chance = {
 		factor = 6
+		# BT16 Seven Cities rework addition
+		modifier = {
+			factor = 150
+			has_province_modifier = sce_sierradelaplata_quartz
+		}
 		modifier = {
 			factor = 0
 			is_random_new_world = no

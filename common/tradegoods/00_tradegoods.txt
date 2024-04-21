@@ -241,6 +241,11 @@ wine = {
 	}
 	chance = {
 		factor = 15
+		# BT16 Seven Cities rework addition
+		modifier = {
+			factor = 300
+			has_province_modifier = sce_quivira
+		}
 		modifier = {
 			factor = 0
 			OR = {
@@ -1215,6 +1220,14 @@ gold = {
 	
 	chance = {
 		factor = 2
+		# BT16 Seven Cities rework addition
+		modifier = {
+			factor = 150
+			OR = {
+				has_province_modifier = sce_cibola_silver
+				has_province_modifier = el_dorado_mod
+			}
+		}
 		modifier = {
 			factor = 0
 			is_random_new_world = no
@@ -2794,6 +2807,20 @@ gems = {
 	}
 	chance = {
 		factor = 3			#reduced from 5, gems were a bit too common
+		# BT16 Seven Cities rework addition
+		modifier = {
+			factor = 150
+			OR = {
+				has_province_modifier = sce_quivira
+				has_province_modifier = sce_city_of_caesars
+				has_province_modifier = sce_saguenay_abandoned
+			}
+		}
+		# BT16 Seven Cities rework addition
+		modifier = {
+			factor = 450
+			has_province_modifier = sce_cibola_silver
+		}
 		modifier = {
 			factor = 0
 			area = newfoundland_area
