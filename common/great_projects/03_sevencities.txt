@@ -1387,13 +1387,13 @@ saguenay_kingdom = {
 	#can we build it?
 	build_trigger = {
 		#anyone
-		has_province_modifier = 
+		has_province_modifier = sce_saguenay_abandoned
 	}
 
 	#what to do when it's built
 	on_built = {
 		#no model currently
-		remove_province_modifier = 
+		remove_province_modifier = sce_saguenay_abandoned
 	}
 	
 	#what to do when it's destroyed
@@ -1463,6 +1463,9 @@ saguenay_kingdom = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			trade_goods_size_modifier = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1495,6 +1498,9 @@ saguenay_kingdom = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			trade_goods_size_modifier = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1507,6 +1513,8 @@ saguenay_kingdom = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			shock_damage = 0.05
+			shock_damage_received = -0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -1527,6 +1535,9 @@ saguenay_kingdom = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			trade_goods_size_modifier = 0.25
+			province_trade_power_modifier = 0.25
+			local_development_cost = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1539,6 +1550,9 @@ saguenay_kingdom = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			shock_damage = 0.1
+			shock_damage_received = -0.1
+			local_defender_dice_roll_bonus = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -1577,13 +1591,13 @@ quivira_city = {
 	#can we build it?
 	build_trigger = {
 		#anyone
-		has_province_modifier = 
+		has_province_modifier = sce_golden_cups
 	}
 
 	#what to do when it's built
 	on_built = {
 		#no model currently
-		remove_province_modifier = 
+		remove_province_modifier = sce_golden_cups
 	}
 	
 	#what to do when it's destroyed
@@ -1653,6 +1667,10 @@ quivira_city = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_production_efficiency = 0.25
+			local_tax_modifier = 0.25
+			local_build_cost = -0.5
+			local_development_cost = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1669,6 +1687,27 @@ quivira_city = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			if = {
+				limit = {	
+					NOT = { 
+						trade_goods = gems
+						trade_goods = wine
+						trade_goods = bt_trade_good_fruit
+					}
+				}
+				random_list = {
+					33 = {
+						change_trade_goods = gems
+					}
+					33 = {
+						change_trade_goods = wine
+					}
+					33 = {
+						change_trade_goods = bt_trade_good_fruit
+					}
+				}
+			}
+			else = { add_base_production = 1 }
 		}
 	}
 
@@ -1685,10 +1724,14 @@ quivira_city = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_production_efficiency = 0.50
+			local_tax_modifier = 0.50
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_build_cost = -0.5
+			local_development_cost = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map region when we have this project here on this tier
@@ -1701,6 +1744,27 @@ quivira_city = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			if = {
+				limit = {	
+					NOT = { 
+						trade_goods = gems
+						trade_goods = wine
+						trade_goods = bt_trade_good_fruit
+					}
+				}
+				random_list = {
+					33 = {
+						change_trade_goods = gems
+					}
+					33 = {
+						change_trade_goods = wine
+					}
+					33 = {
+						change_trade_goods = bt_trade_good_fruit
+					}
+				}
+			}
+			else = { add_base_production = 1 }
 		}
 	}
 
@@ -1717,14 +1781,20 @@ quivira_city = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_production_efficiency = 1
+			local_tax_modifier = 1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_build_cost = -0.5
+			local_development_cost = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map region when we have this project here on this tier
 		region_modifier = {
+			local_build_cost = -0.15
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
@@ -1733,6 +1803,27 @@ quivira_city = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			if = {
+				limit = {	
+					NOT = { 
+						trade_goods = gems
+						trade_goods = wine
+						trade_goods = bt_trade_good_fruit
+					}
+				}
+				random_list = {
+					33 = {
+						change_trade_goods = gems
+					}
+					33 = {
+						change_trade_goods = wine
+					}
+					33 = {
+						change_trade_goods = bt_trade_good_fruit
+					}
+				}
+			}
+			else = { add_base_production = 1 }
 		}
 	}
 }
