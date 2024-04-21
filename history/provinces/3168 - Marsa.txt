@@ -40,6 +40,7 @@ discovered_by = western
 	controller = TUR
 	add_core = TUR
 	remove_core = BYZ
+	remove_core = LVC
 	add_local_autonomy = 10
 } #falls to Turkey, but doesn't seem to have been devastated much
 1404.1.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB }
