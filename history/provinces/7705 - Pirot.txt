@@ -3,6 +3,7 @@
 
 owner = TUR
 controller = TUR
+add_core = SER
 add_core = TUR
 culture = bulgarian
 religion = orthodox
@@ -54,6 +55,7 @@ discovered_by = western
 
 #2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	remove_core = SER
 	remove_core = TUR
 	add_core = BDN
 	owner = BDN
@@ -61,6 +63,7 @@ discovered_by = western
 	add_local_autonomy = -10
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = SER
 	add_core = TUR
 	remove_core = BDN
 	owner = TUR
