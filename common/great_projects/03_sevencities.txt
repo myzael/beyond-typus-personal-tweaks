@@ -36,6 +36,13 @@ el_dorado = {
 	on_built = {
 		#no model currently
 		remove_province_modifier = el_dorado_mod
+		if = { #A little boost if you discovered the Ultimate one.
+			limit = { has_global_flag = sce_ultimate_eldorado }
+			add_great_project_tier = {
+				type = el_dorado
+				tier = 1
+			}
+		}
 	}
 	
 	#what to do when it's destroyed
@@ -291,6 +298,13 @@ fountain_of_youth = {
 	on_built = {
 		#no model currently
 		remove_province_modifier = sce_life_water
+		if = { #A little boost if you discovered the Ultimate one.
+			limit = { has_global_flag = sce_ultimate_fountainofyouth }
+			add_great_project_tier = {
+				type = fountain_of_youth
+				tier = 1
+			}
+		}
 	}
 	
 	#what to do when it's destroyed
@@ -497,6 +511,13 @@ cibola = {
 	on_built = {
 		#no model currently
 		remove_province_modifier = sce_cibola_silver
+		if = { #A little boost if you discovered the Ultimate one.
+			limit = { has_global_flag = sce_ultimate_cibola }
+			add_great_project_tier = {
+				type = cibola
+				tier = 1
+			}
+		}
 	}
 	
 	#what to do when it's destroyed
@@ -744,6 +765,13 @@ city_of_caesars = {
 	on_built = {
 		#no model currently
 		remove_province_modifier = sce_city_of_caesars
+		if = { #A little boost if you discovered the Ultimate one.
+			limit = { has_global_flag = sce_ultimate_cityofcaesars }
+			add_great_project_tier = {
+				type = city_of_caesars
+				tier = 1
+			}
+		}
 	}
 	
 	#what to do when it's destroyed
@@ -944,6 +972,13 @@ sierra_de_la_plata = {
 	on_built = {
 		#no model currently
 		remove_province_modifier = sce_sierradelaplata_quartz
+		if = { #A little boost if you discovered the Ultimate one.
+			limit = { has_global_flag = sce_ultimate_sierradelaplata }
+			add_great_project_tier = {
+				type = sierra_de_la_plata
+				tier = 1
+			}
+		}
 	}
 	
 	#what to do when it's destroyed
@@ -1169,6 +1204,13 @@ norumbega = {
 	on_built = {
 		#no model currently
 		remove_province_modifier = sce_norumbega_abandoned
+		if = { #A little boost if you discovered the Ultimate one.
+			limit = { has_global_flag = sce_ultimate_norumbega }
+			add_great_project_tier = {
+				type = norumbega
+				tier = 1
+			}
+		}
 	}
 	
 	#what to do when it's destroyed
@@ -1394,6 +1436,13 @@ saguenay_kingdom = {
 	on_built = {
 		#no model currently
 		remove_province_modifier = sce_saguenay_abandoned
+		if = { #A little boost if you discovered the Ultimate one.
+			limit = { has_global_flag = sce_ultimate_saguenay }
+			add_great_project_tier = {
+				type = saguenay_kingdom
+				tier = 1
+			}
+		}
 	}
 	
 	#what to do when it's destroyed
@@ -1598,6 +1647,13 @@ quivira_city = {
 	on_built = {
 		#no model currently
 		remove_province_modifier = sce_golden_cups
+		if = { #A little boost if you discovered the Ultimate one.
+			limit = { has_global_flag = sce_ultimate_quivira }
+			add_great_project_tier = {
+				type = quivira_city
+				tier = 1
+			}
+		}
 	}
 	
 	#what to do when it's destroyed
