@@ -42,6 +42,91 @@ bt_bul_minors_slot_1 = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
 		}
 	}
+	
+	bul_build_up_rose_valley = {
+		icon = mission_noble_council
+		position = 3
+		required_missions = { bul_a_new_capital }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 7149
+				province_id = 7150
+			}
+			NOT = { has_production_building_trigger = yes }
+			NOT = { base_tax = 5 }
+			NOT = { base_production = 5 }
+		}
+		trigger = {
+			7149 = {
+				base_tax = 5
+				base_production = 5
+				has_production_building_trigger = yes
+			}
+			7150 = {
+				base_tax = 5
+				base_production = 5
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			7149 = { add_building = trade_company }
+			7150 = { add_building = trade_company }
+			change_price = {
+				trade_goods = incense
+				key = rose_valley_oil
+				value = 0.125
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+	
+	bul_restore_bulgarian_silk = {
+		icon = mission_noble_council
+		position = 4
+		required_missions = { bul_build_up_rose_valley }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2750
+				province_id = 1765
+				province_id = 7157
+			}
+			NOT = { has_production_building_trigger = yes }
+			NOT = { has_building = textiles }
+			NOT = { base_tax = 6 }
+			NOT = { base_production = 6 }
+		}
+		trigger = {
+			2750 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+			1765 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+			7157 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+		}
+		effect = {
+			2750 = { change_trade_goods = silk }
+			1765 = { change_trade_goods = silk }
+			7157 = { change_trade_goods = silk }
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
 }
 
 bt_bul_minors_slot_2 = {
@@ -99,6 +184,78 @@ bt_bul_minors_slot_2 = {
 		}
 	}
 	
+	bul_universities = {
+		icon = mission_noble_council
+		position = 3
+		required_missions = { bul_a_new_capital }
+		provinces_to_highlight = {
+			NOT = { has_building = university }
+			owned_by = ROOT
+		}
+		trigger = {
+			capital_scope = { has_building = university }
+			university = 3
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				change_innovativeness = 3
+			}
+			else = { #Fallback
+				add_adm_power = 25
+				add_dip_power = 25
+				add_mil_power = 25
+			}
+			change_adm = 1
+			change_dip = 1
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+	
+	bul_bring_back_scholars = {
+		icon = mission_noble_council
+		position = 5
+		required_missions = { bul_universities }
+		provinces_to_highlight = {
+			NOT = { has_production_building_trigger = yes }
+			NOT = { has_building = textiles }
+			NOT = { base_tax = 6 }
+			NOT = { base_production = 6 }
+		}
+		trigger = {
+			2750 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+			1765 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+			7157 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+		}
+		effect = {
+			2750 = { change_trade_goods = silk }
+			1765 = { change_trade_goods = silk }
+			7157 = { change_trade_goods = silk }
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+
 }
 
 bt_bul_minors_slot_3 = {
@@ -158,8 +315,7 @@ bt_bul_minors_slot_3 = {
 			}
 			if = {
 				limit = {
-					calc_true_if = { #One city at 20 dev
-						amount = 1
+					OR = {
 						4704 = { development = 20 }
 						2750 = { development = 20 }
 						1765 = { development = 20 }
@@ -167,26 +323,25 @@ bt_bul_minors_slot_3 = {
 						7154 = { development = 20 }
 					}
 				}
-				NOT = { development = 10 }
+				NOT = { development = 15 }
 			}
 			else = {
 				NOT = { development = 20 }
 			}
 		}
 		trigger = {
-			calc_true_if = { #One city at 20 dev
-				amount = 1
+			OR = {
 				4704 = { development = 20 }
 				2750 = { development = 20 }
 				1765 = { development = 20 }
 				2746 = { development = 20 }
 				7154 = { development = 20 }
 			}
-			4704 = { development = 10 }
-			2750 = { development = 10 }
-			1765 = { development = 10 }
-			2746 = { development = 10 }
-			7154 = { development = 10 }
+			4704 = { development = 15 }
+			2750 = { development = 15 }
+			1765 = { development = 15 }
+			2746 = { development = 15 }
+			7154 = { development = 15 }
 			
 		}
 		effect = {
@@ -248,7 +403,7 @@ bt_bul_minors_slot_3 = {
 			else = {
 				custom_tooltip = bul_a_new_capital_tt
 				tooltip = {
-					all_owned_province = { 
+					every_owned_province = { 
 						add_base_tax = 2
 						add_base_production = 2
 						add_base_manpower = 2
