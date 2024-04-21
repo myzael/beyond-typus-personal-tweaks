@@ -1,9 +1,9 @@
  
 #2750 - Plovdiv / Upper Thrace
 
-owner = BUL
-controller = BUL
-add_core = BUL
+owner = LVC
+controller = LVC
+add_core = LVC
 culture = bulgarian
 religion = orthodox
 capital = "Plovdiv"
@@ -52,14 +52,14 @@ discovered_by = western
 #2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	remove_core = TUR
-	remove_core = BUL
+	remove_core = LVC
 	add_core = PHP
 	owner = PHP
 	controller = PHP
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	add_core = LVC
 	add_core = TUR
-	add_core = BUL
 	remove_core = PHP
 	owner = TUR
 	controller = TUR
