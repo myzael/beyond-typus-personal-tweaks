@@ -409,6 +409,12 @@ bt_bul_minors_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			if = { #Rename Lovech to Tarnovo Tsardom
+				limit = {
+					tag = LVC
+				}
+				override_country_name = TNV
+			}
 		}
 		ai_weight = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
