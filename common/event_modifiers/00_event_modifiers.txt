@@ -6575,7 +6575,7 @@ sce_life_water = {
 	local_tax_modifier = 0.25
 }
 sce_cibola_silver = {
-	global_tax_income = 5
+	global_tax_income = 6	#changed to match new monument
 }
 sce_sierradelaplata_quartz = {
 	local_tax_modifier = 0.5
