@@ -3,6 +3,7 @@
 
 owner = TUR
 controller = TUR
+add_core = BDN
 add_core = TUR
 culture = bulgarian
 religion = orthodox
