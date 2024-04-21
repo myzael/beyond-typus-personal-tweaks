@@ -1,9 +1,9 @@
  
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = SER
+controller = SER
+add_core = SER
 culture = bulgarian			#Niki notes that Shtip itself would be Serb, but the south rural region is Bulgarian
 religion = orthodox
 capital = "Shtip"
