@@ -13,6 +13,13 @@ country_decisions = {
 			NOT = { tag = ITL }
 			NOT = { tag = ITA }
 			culture_group = latin
+			if = {		#BT added - special limitations for the ai so they don't try to do this even if they meet the requirements
+				limit = {
+					ai = yes
+				}
+				is_emperor = no 	#BT added so ai emperor cannot try to forfil the requirements by killing the hre
+				num_of_cities = 50	#BT added they need to be quite large to think about becoming domineering
+			}
 		}
 		provinces_to_highlight = {
 			region = italy_region
