@@ -18,7 +18,7 @@ base_production = 4			#Ottoman records give circa 6,000 citizens in the early 16
 base_manpower = 3
 is_city = yes
 add_core = TUR
-add_core = BUL
+add_core = LVC
 #fort_15th = yes #Bt16 removing fort for Ottos.
 add_local_autonomy = 10
 

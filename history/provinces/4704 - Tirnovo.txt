@@ -12,8 +12,8 @@ base_tax = 4 #3
 base_production = 3
 base_manpower = 3
 is_city = yes
+add_core = LVC
 add_core = TUR
-add_core = BUL
 fort_15th = yes
 add_local_autonomy = 10
 

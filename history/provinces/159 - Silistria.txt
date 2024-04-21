@@ -1,8 +1,8 @@
  
 #159 - Silistria
 
-owner = BUL
-controller = BUL
+owner = LVC
+controller = LVC
 culture = bulgarian
 religion = orthodox
 capital = "Silistra"
@@ -12,7 +12,7 @@ base_tax = 4
 base_production = 4 
 base_manpower = 3 # one of the most important Bulgarian cities
 is_city = yes
-add_core = BUL
+add_core = LVC
 fort_15th = yes
 add_local_autonomy = 10
 
@@ -32,8 +32,8 @@ discovered_by = western
 #1st Performance Start Unused
 
 #Bulgarian capital from 1300 to 1322
-
-1347.1.1 = { add_core = DRJ }#unclear whether it's a part of Karvuna. Buglarians say no, Romanians yes. Just giving it a core for now.
+#Dub disabling this below because even if it was actually part of Karvuna, it was way later that it happened, sometime around 1386 if so.
+#1347.1.1 = { add_core = DRJ }#unclear whether it's a part of Karvuna. Buglarians say no, Romanians yes. Just giving it a core for now.
 1388.1.1 = {
 	owner = WAL
 	controller = WAL
@@ -62,8 +62,8 @@ discovered_by = western
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	remove_core = TUR
 	#NB: Wallachian core has expired at this point, so no need to remove.
-	owner = BUL
-	controller = BUL
+	owner = LVC
+	controller = LVC
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	add_core = TUR

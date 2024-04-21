@@ -31,9 +31,9 @@ discovered_by = western
 #1st Performance Start Unused
 
 1344.1.1 = {
-	owner = BUL
-	controller = BUL
-	add_core = BUL #Noticed there was no core here. Figured there should be one.
+	owner = LVC
+	controller = LVC
+	add_core = LVC #Noticed there was no core here. Figured there should be one.
 } #taken by Bulgaria during BYZ civil war
 1371.1.1 = {
 	owner = TUR

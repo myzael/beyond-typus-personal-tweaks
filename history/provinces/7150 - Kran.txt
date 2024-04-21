@@ -1,9 +1,9 @@
  
 #BT Balkans reoverhaul
 
-owner = TUR			#KRN when I have time to add tags
-controller = TUR
-add_core = TUR
+owner = LVC			#KRN when I have time to add tags
+controller = LVC
+add_core = LVC
 culture = bulgarian
 religion = orthodox
 capital = "Kran"
@@ -31,7 +31,7 @@ discovered_by = western
 #1st Shattering unused
 #1st Performance Start Unused
 
-1305.1.1 = { owner = BUL controller = BUL add_core = BUL }	#Aldimir dies, Kran reintegrated into Bulgaria. It is seemingly restored later, but not as an independent state
+1305.1.1 = { owner = LVC controller = LVC add_core = LVC }	#Aldimir dies, Kran reintegrated into Bulgaria. It is seemingly restored later, but not as an independent state
 1393.1.1 = {
 	base_tax = 1
 	base_production = 1
