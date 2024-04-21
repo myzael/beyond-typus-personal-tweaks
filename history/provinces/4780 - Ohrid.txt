@@ -3,8 +3,9 @@
 
 owner = TUR
 controller = TUR
-add_core = TUR
 add_core = SER
+add_core = PRL
+add_core = TUR
 culture = serbian # inhabited by Serbs and Albanians, for a long time held by the Gropa family. Not really Bulgarian or close to it for quite a while now
 religion = orthodox
 capital = "Ohrid"
