@@ -158,7 +158,7 @@ BT16
 	- (Harbivore) In addition, AI nations hace received a +25% increase to dev points because the AI is worse at optimising for it, and cannot/will not use expand infrastructure
  - (Dub) State governing cost modifiers from missions have been replaced with state maintenance modifiers instead, because it would break the intricate balance.
  - (Dub) Turkish Eyalets now use their full name as their adjectives to avoid the confusing "Eyalet Libery Desire is over 50%!".
- - (Dub) Cut Polish starting core on Spis. Not sure what it was doing there, and it caused more harm than good.
+ - (Dub) Cut Polish starting core on Spis. While it was used to represent the Szepes Towns fief of Poland, it caused more harm than good.
  - (Dub) Overhauled starting trade goods in Bulgaria. Now with less ahistorical copper and more historical apiculture and cloth. Also contains less grain. While the region was very fertile, it also produced several specialised goods and had a good chunk of blacksmithing.
  - (Dub) Bulgaria's starting cores have also been retooled during the replacement with Lovech's.
  

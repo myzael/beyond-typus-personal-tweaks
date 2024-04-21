@@ -2,7 +2,7 @@
 
 graphical_culture = easterngfx
 
-color = { 116  107  140 }
+color = { 207  181  59 } #Dub changed: Reflecting Aetas' colour choice. Also makes more sense what with it being yellow-orange
 
 revolutionary_colors = { 0 10 5 }
 
