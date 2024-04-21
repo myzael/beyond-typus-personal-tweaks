@@ -34,8 +34,9 @@ historical_units = {
 }
 
 monarch_names = {
-	"Stefan #2" = 60
-	"Lazar #1" = 20
+	"Jovan #1" = 60
+	"Stefan #0" = 40
+	"Lazar #0" = 20
 	"Djorde #0" = 20
 	"Djuradj #0" = 20
 	"Milosh #0" = 20
