@@ -1,8 +1,9 @@
  
 #BT Balkans reoverhaul
 
-owner = BUL
-controller = BUL
+owner = LVC
+controller = LVC
+add_core = LVC
 add_core = BUL
 add_core = TUR
 culture = bulgarian
