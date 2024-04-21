@@ -115,7 +115,7 @@ el_dorado = {
 			trade_goods_size_modifier = 0.5
 			local_development_cost = -0.2
 			local_unrest = -3	
-			local_colonial_growth = 25
+			#local_colonial_growth = 25
 			local_gold_depletion_chance_modifier = -0.25
 		}
 
@@ -129,11 +129,11 @@ el_dorado = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			inflation_reduction = -0.1
+			#inflation_reduction = -0.1
 			prestige = 0.25
-			overlord = {
-				treasure_fleet_income = 0.1
-			}
+			#overlord = {
+			#	treasure_fleet_income = 0.1
+			#}
 		}
 
 		#what effects happen when this tier is achieved
@@ -163,7 +163,7 @@ el_dorado = {
 		province_modifiers = {
 			trade_goods_size_modifier = 0.5
 			local_unrest = -2
-			local_colonial_growth = 25
+			#local_colonial_growth = 25
 			local_gold_depletion_chance_modifier = -0.5
 		}
 
@@ -179,11 +179,11 @@ el_dorado = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			inflation_reduction = -0.15
+			#inflation_reduction = -0.15
 			prestige = 0.5
-			overlord = {
-				treasure_fleet_income = 0.2
-			}
+			#overlord = {
+			#	treasure_fleet_income = 0.2
+			#}
 		}
 
 		#what effects happen when this tier is achieved
@@ -219,7 +219,7 @@ el_dorado = {
 		province_modifiers = {
 			trade_goods_size_modifier = 0.5
 			local_unrest = -2
-			local_colonial_growth = 25
+			#local_colonial_growth = 25
 			local_gold_depletion_chance_modifier = -0.75
 		}
 
@@ -235,11 +235,11 @@ el_dorado = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			inflation_reduction = -0.25
+			#inflation_reduction = -0.25
 			prestige = 1
-			overlord = {
-				treasure_fleet_income = 0.4
-			}
+			#overlord = {
+			#	treasure_fleet_income = 0.4
+			#}
 		}
 
 		#what effects happen when this tier is achieved
