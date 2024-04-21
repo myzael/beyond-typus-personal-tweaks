@@ -1,0 +1,374 @@
+#BT Cut vanilla Bulgarian Missions
+bt_bul_minors_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		primary_culture = bulgarian
+	}
+	has_country_shield = yes
+	
+	bul_reclaim_vidin = {
+		icon = mission_noble_council
+		required_missions = { }
+		provinces_to_highlight = {
+			area = vidin_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			vidin_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			danubian_plain_area = { #3
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bulgaria_area = { #2
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
+}
+
+bt_bul_minors_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		primary_culture = bulgarian
+	}
+	has_country_shield = yes
+	
+	bul_reclaim_sofia = {
+		icon = mission_noble_council
+		required_missions = { }
+		provinces_to_highlight = {
+			area = bulgaria_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			bulgaria_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					province_id = 3000 #Nis
+					province_id = 7711 #Vranje
+				}
+			}
+		}
+		effect = {
+			vidin_area = { #1
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_thrace_area = { #4
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_thrace_area = { #4
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
+	
+}
+
+bt_bul_minors_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		primary_culture = bulgarian
+	}
+	has_country_shield = yes
+	
+	bul_reclaim_tarnovo = {
+		icon = mission_noble_council
+		required_missions = { }
+		provinces_to_highlight = {
+			area = danubian_plain_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			danubian_plain_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			vidin_area = { #1
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			silistria_area = { #5
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
+	
+	bul_a_new_capital = {
+		icon = mission_noble_council
+		required_missions = { bul_reclaim_karvuna bul_reclaim_plovdiv bul_reclaim_tarnovo bul_reclaim_sofia bul_reclaim_vidin }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4704
+				province_id = 2750
+				province_id = 1765
+				province_id = 2746
+				province_id = 7154
+			}
+			if = {
+				limit = {
+					calc_true_if = { #One city at 20 dev
+						amount = 1
+						4704 = { development = 20 }
+						2750 = { development = 20 }
+						1765 = { development = 20 }
+						2746 = { development = 20 }
+						7154 = { development = 20 }
+					}
+				}
+				NOT = { development = 10 }
+			}
+			else = {
+				NOT = { development = 20 }
+			}
+		}
+		trigger = {
+			calc_true_if = { #One city at 20 dev
+				amount = 1
+				4704 = { development = 20 }
+				2750 = { development = 20 }
+				1765 = { development = 20 }
+				2746 = { development = 20 }
+				7154 = { development = 20 }
+			}
+			4704 = { development = 10 }
+			2750 = { development = 10 }
+			1765 = { development = 10 }
+			2746 = { development = 10 }
+			7154 = { development = 10 }
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					4704 = { development = 20 }
+				}
+				4704 = { 
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					move_capital_effect = yes 
+				}
+			}
+			else_if = {
+				limit = {
+					2750 = { development = 20 }
+				}
+				2750 = { 
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					move_capital_effect = yes 
+				}
+			}
+			else_if = {
+				limit = {
+					1765 = { development = 20 }
+				}
+				1765 = { 
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					move_capital_effect = yes 
+				}
+			}
+			else_if = {
+				limit = {
+					2746 = { development = 20 }
+				}
+				2746 = { 
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					move_capital_effect = yes 
+				}
+			}
+			else_if = {
+				limit = {
+					7154 = { development = 20 }
+				}
+				7154 = { 
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+					move_capital_effect = yes 
+				}
+			}
+			else = {
+				custom_tooltip = bul_a_new_capital_tt
+				tooltip = {
+					all_owned_province = { 
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
+						move_capital_effect = yes 
+					}
+				}
+			}
+		}
+		ai_weight = {
+			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
+
+}
+
+bt_bul_minors_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		primary_culture = bulgarian
+	}
+	has_country_shield = yes
+	
+	bul_reclaim_plovdiv = {
+		icon = mission_noble_council
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = upper_thrace_area
+				area = northern_thrace_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			upper_thrace_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					province_id = 7151
+					province_id = 3168
+				}
+			}
+			northern_thrace_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			bulgaria_area = { #2
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			silistria_area = { #5
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
+	
+}
+
+bt_bul_minors_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		primary_culture = bulgarian
+	}
+	has_country_shield = yes
+	
+	bul_reclaim_karvuna = {
+		icon = mission_noble_council
+		required_missions = { }
+		provinces_to_highlight = {
+			area = silistria_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			silistria_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			danubian_plain_area = { #3
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_thrace_area = { #4
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_thrace_area = { #4
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = {  is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
+}

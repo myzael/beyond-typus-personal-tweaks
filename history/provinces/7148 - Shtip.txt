@@ -1,16 +1,16 @@
  
 #BT Balkans reoverhaul
 
-owner = TUR
-controller = TUR
-add_core = TUR
+owner = SER
+controller = SER
+add_core = SER
 culture = bulgarian			#Niki notes that Shtip itself would be Serb, but the south rural region is Bulgarian
 religion = orthodox
 capital = "Shtip"
 base_tax = 3
 base_production = 3
 base_manpower = 2
-trade_goods = grain
+trade_goods = iron			#Dub changed (from grain): Supposedly a center of blacksmithing during 2nd Bulgarian Empire.
 is_city = yes
 hre = no
 add_local_autonomy = 10

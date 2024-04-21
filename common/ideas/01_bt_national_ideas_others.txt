@@ -500,6 +500,201 @@ UKR_ideas_2 = { #Literally, all I do is double the CCR in reuniting_rus. A bit w
 	}
 }
 
+#Lovech
+LVC_ideas = {
+	start = {
+		diplomatic_reputation = 1 #Diplomacy got them here
+		fire_damage_received = -0.10 #Something meant to help against Ottoboi
+	}
+	
+	bonus = {
+		trade_goods_size_modifier = 0.1
+	}
+ 
+	trigger = {
+		tag = LVC
+	}
+	free = yes
+	
+	lvc_last_outpost_of_bulgars = {
+		defensiveness = 0.20
+		land_morale = 0.1
+	}
+	
+	lvc_a_great_trade_center = {
+		global_trade_power = 0.25
+	}
+	
+	bul_byzantine_administration = { #In new_BUL_ideas
+		# global_tax_modifier = 0.1
+		# expand_infrastructure_cost_modifier = -0.25
+	}
+	
+	lvc_migration_of_intellectuals = {
+		idea_cost = -0.1
+	}
+	
+	
+	bul_court_titles = { #In new_BUL_ideas
+		# all_estate_loyalty_equilibrium = 0.05
+	}
+	
+	
+	lvc_drive_back_turks = {
+		manpower_in_own_culture_provinces = 0.25
+	}
+	
+	bul_restore_the_tsardom = { #In new_BUL_ideas
+		# years_of_nationalism = -5
+		# core_creation = -0.15
+	}
+}
+
+#Vidin
+BDN_ideas = {
+	start = {
+		infantry_power = 0.1 #Order of the Dragon kind of
+		stability_cost_modifier = -0.1
+	}
+	
+	bonus = {
+		manpower_in_true_faith_provinces = 0.15
+	}
+ 
+	trigger = {
+		tag = BDN
+	}
+	free = yes
+
+	bdn_order_of_dragon = {
+		leader_land_shock = 1
+	}
+	
+	bdn_signs_of_weakness = {
+		spy_offence = 0.25
+		spy_action_cost_modifier = -0.2
+	}
+	
+	bul_byzantine_administration = { #In new_BUL_ideas
+		# global_tax_modifier = 0.1
+		# expand_infrastructure_cost_modifier = -0.25
+	}
+	
+	bdn_united_resistance = {
+		rebel_support_efficiency = 0.5
+		diplomatic_reputation = 1
+	}
+	
+	bul_court_titles = { #In new_BUL_ideas
+		# all_estate_loyalty_equilibrium = 0.05
+	}
+	
+	bdn_avenge_varna = {
+		prestige_from_land = 1
+	}
+	
+	bul_restore_the_tsardom = { #In new_BUL_ideas
+		# years_of_nationalism = -5
+		# core_creation = -0.15
+	}
+}
+
+#Dobruja
+DRJ_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.15 #Bread basket
+		leader_naval_fire = 1 #Apparently a convertee from this principality engaged in the Siege of Constantinople in 1453.
+		
+	}
+	
+	bonus = {
+		privateer_efficiency = 0.25 #Dobrujan privateering
+	}
+ 
+	trigger = {
+		tag = DRJ
+	}
+	free = yes
+
+	drj_venetian_genoese_trade_relations = {
+		diplomatic_reputation = 1
+		merchants = 1
+	}
+	
+	drj_navy_of_varna = {
+		ship_durability = 0.1
+		number_of_cannons_modifier = 0.1
+	}
+	
+	bul_byzantine_administration = { #In new_BUL_ideas
+		# global_tax_modifier = 0.1
+		# expand_infrastructure_cost_modifier = -0.25
+	}
+	
+	drj_resettle_dobruja = {
+		development_cost = -0.1
+		culture_conversion_cost = -0.1
+	}
+	
+	bul_court_titles = { #In new_BUL_ideas
+		# all_estate_loyalty_equilibrium = 0.05
+	}
+	
+	drj_secure_the_danube = {
+		defensiveness = 0.2
+	}
+	
+	bul_restore_the_tsardom = { #In new_BUL_ideas
+		# years_of_nationalism = -5
+		# core_creation = -0.15
+	}
+}
+
+#Prilep
+# PRL_ideas = {
+	
+	# start = {
+		
+		
+	# }
+	
+	# bonus = {
+		
+	# }
+ 
+	# trigger = {
+		# #tag = PRL
+	# }
+	# free = yes
+
+	# prl_legacy_of_king_marko = {
+		# yearly_patriarch_authority = 0.005
+		# papal_influence = 0.5
+	# }
+# }
+
+#Velbazhd
+# VBZ_ideas = {
+	
+	# start = {
+		
+		
+	# }
+	
+	# bonus = {
+		
+	# }
+ 
+	# trigger = {
+		# #tag = VBZ
+	# }
+	# free = yes
+
+	# vbz_byzantine_ties = {
+		# diplomatic_reputation = 1
+		# heir_chance = 0.25
+	# }
+# }
 
 
 # Eris's work

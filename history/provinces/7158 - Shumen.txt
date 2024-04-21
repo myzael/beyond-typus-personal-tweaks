@@ -3,8 +3,8 @@
 
 owner = TUR
 controller = TUR
+add_core = LVC
 add_core = TUR
-add_core = BUL
 culture = bulgarian
 religion = orthodox
 capital = "Shumen"
@@ -54,8 +54,8 @@ discovered_by = western
 #1291 - 1444
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	owner = BUL
-	controller = BUL
+	owner = LVC
+	controller = LVC
 	remove_core = TUR
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends

@@ -2,7 +2,7 @@
 
 graphical_culture = easterngfx
 
-color = { 106  157  130 }
+color = { 200  75  75 }
 
 historical_idea_groups = {
 	defensive_ideas
@@ -34,9 +34,10 @@ historical_units = {
 }
 
 monarch_names = {
-	"Jovan #1" = 60
+	"Marko #1" = 60
 	"Stefan #0" = 40
 	"Lazar #0" = 20
+	"Jovan #0" = 20
 	"Djorde #0" = 20
 	"Djuradj #0" = 20
 	"Milosh #0" = 20
@@ -61,7 +62,6 @@ monarch_names = {
 	"Josif #0" = 0
 	"Konstantin #0" = 0
 	"Luka #0" = 0
-	"Marko #0" = 0
 	"Mateja #0" = 0
 	"Miroslav #0" = 0
 	"Mladen #0" = 0
