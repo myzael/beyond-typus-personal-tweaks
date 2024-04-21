@@ -6567,6 +6567,9 @@ el_dorado_mod = {
 	trade_goods_size_modifier = 0.5
 	local_development_cost = -0.2
 	local_unrest = -3
+	local_gold_depletion_chance_modifier = -0.25 #changed to match new monument
+	prestige = 0.25 #changed to match new monument
+	interest = -0.5 #changed to match new monument
 }
 sce_life_water = {
 	local_build_cost = -0.5
@@ -6581,6 +6584,7 @@ sce_sierradelaplata_quartz = {
 	local_tax_modifier = 0.5
 	local_institution_spread = 1
 	local_development_cost = -0.2
+	local_gold_depletion_chance_modifier = -0.15 #changed to match new monument
 }
 sce_golden_cups = {
 	local_production_efficiency = 0.25
