@@ -1187,10 +1187,7 @@ bulgarian_tsardom_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		OR = {
-			primary_culture = bulgarian
-			primary_culture = bulgarian_new
-		}
+		tag = BUL #BT changed: Should not be available for all Bulgarian minors.
 	}
 	trigger = {
 		religion = orthodox
