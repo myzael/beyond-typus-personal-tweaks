@@ -815,7 +815,10 @@ bt_bul_minors_slot_5_br_monument_mission = {
 		}
 		effect = {
 			add_prestige_or_monarch_power = { amount = 100 }
-			give_dev_points_effect = { dev = 200 }
+			custom_tooltip = give_200_dev_points_effect
+			hidden_effect = {
+				give_dev_points_effect = { dev = 200 }
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
