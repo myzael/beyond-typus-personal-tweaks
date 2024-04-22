@@ -1,0 +1,10 @@
+namespace = BeyondTypusCarpathiaPolandEvents
+
+#1-5: Pawning on Szepes towns
+#1: Reserved for start event for pre-1444: Hungary pawns Szepes (13 out of 24) to Poland
+#2: Hungary wants Szepes towns back. If they pay, event 3. If they war, event 4.
+#3: Hungary pays for Poland. If Poland accepts, event 5. If Poland refuses, event 6.
+#4: Hungary wars for Poland. Poland is notified through event 7
+#5: Hungary is notified that Poland accepted payment
+#6: Hungary is notified that Poland refuses. Hungary can choose to go to war, and Poland is notified through event 7.
+#7: Poland is notified that Hungary has gone to war.
