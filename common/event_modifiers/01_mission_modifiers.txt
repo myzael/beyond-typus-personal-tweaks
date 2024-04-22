@@ -5534,7 +5534,9 @@ french_client_states_mission = {
 # Albanian Missions
 skanderbeg_rebellion = {
 	infantry_power = 0.1
-	movement_speed = 0.1
+	global_attacker_dice_roll_bonus = 1	#BT changed this should better show skanderbeg's strategy than faster troops.
+	global_defender_dice_roll_bonus = 1 #BT changed this should better show skanderbeg's strategy than faster troops.
+	land_forcelimit = 5	#BT added to better represent the size of Albania's army
 }
 
 albanian_diplomacy = {

@@ -22,9 +22,16 @@ alb_1 = {
 			army_size_percentage = 1
 		}
 		effect = {
-			add_country_modifier = {
+			add_ruler_modifier = {
 				name = "skanderbeg_rebellion"
-				duration = 7300
+				duration = -1
+			} 	
+			capital_scope = { 
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
+				infantry = ALB
 			}
 		}
 		ai_weight = {
