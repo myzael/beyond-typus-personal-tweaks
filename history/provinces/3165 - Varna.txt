@@ -1,9 +1,9 @@
  
 #3165 - Varna
 
-owner = BUL
-controller = BUL
-add_core = BUL
+owner = LVC
+controller = LVC
+add_core = LVC
 culture = bulgarian
 religion = orthodox
 capital = "Varna"
@@ -38,6 +38,7 @@ center_of_trade = 1
 	owner = DRJ
 	controller = DRJ
 	add_core = DRJ
+	remove_core = LVC
 } #despotate of Dobruja
 1389.1.1 = {
 	owner = TUR

@@ -1,9 +1,9 @@
  
 #BT Balkans reoverhaul
 
-owner = BUL
-controller = BUL
-add_core = BUL
+owner = LVC
+controller = LVC
+add_core = LVC
 add_core = DRJ
 culture = bulgarian			#Niki placed turkish, noting Sari Saltak, but I'm opting for a poorer province for this representation. And that is assuming it is even true, and not just folklore
 religion = orthodox
@@ -36,6 +36,7 @@ discovered_by = western
 	owner = DRJ
 	controller = DRJ
 	add_core = DRJ
+	remove_core = LVC
 	base_tax = 4
 	base_production = 4
 	base_manpower = 3

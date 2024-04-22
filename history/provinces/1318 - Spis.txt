@@ -18,8 +18,16 @@ base_manpower = 2
 is_city = yes
 add_core = HUN
 add_core = UHU
-#add_core = POL #BT Removed: Why?
 fort_15th = yes #Spis Castle
+
+1412.8.11 = { #1412 Pawning of 13 Szepes Towns to Poland for 2 220 000 Prague Groschen. 
+	remove_core = HUN
+	add_core = POL
+	owner = POL
+	controller = POL
+	change_trade_goods = salt
+	remove_province_modifier = bt_mines_of_upper_hungary_silver
+}
 
 1444.1.1 = { discovered_by = KAZ }
 1444.1.1 = { discovered_by = CRI }
@@ -37,18 +45,16 @@ discovered_by = ottoman
 1443.1.1  = { unrest = 0 }
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = HUN
 	remove_core = UHU
-	#remove_core = POL
+	remove_core = POL
 	add_core = SLO
 	owner = SLO
 	controller = SLO
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	remove_core = SLO
-	add_core = HUN
 	add_core = UHU
-	#add_core = POL
+	add_core = POL
 	owner = HUN
 	controller = HUN
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores

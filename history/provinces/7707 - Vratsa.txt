@@ -3,9 +3,8 @@
 
 owner = TUR
 controller = TUR
-add_core = TUR
 add_core = BDN
-add_core = BUL
+add_core = TUR
 culture = bulgarian
 religion = orthodox
 capital = "Vratsa"
