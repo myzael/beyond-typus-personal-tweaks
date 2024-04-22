@@ -95,7 +95,6 @@ BT16
  - (Dub) Fixed Saxony not being able to rename itself if it lost its PUs at any point, giving it alternate completion requirements.
  - (Dub) Fixed Hildesheim & Legnica's dynasties being wrong.
  - (Dub) Fixed Velbazhd having Bulgarian names, despite being a Serbian breakaway state
- -
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -161,6 +160,9 @@ BT16
  - (Dub) Cut Polish starting core on Spis. While it was used to represent the Szepes Towns fief of Poland, it caused more harm than good.
  - (Dub) Overhauled starting trade goods in Bulgaria. Now with less ahistorical copper and more historical apiculture and cloth. Also contains less grain. While the region was very fertile, it also produced several specialised goods and had a good chunk of blacksmithing.
  - (Dub) Bulgaria's starting cores have also been retooled during the replacement with Lovech's.
+ - (Harbivore) Changed Albanian 1st mission to be give a historically accurate army size.
+ - (Harbivore) Changed 1 province Ottoman provine, Myzeqe, to Albanian control.
+ - (Harbivore) Changed Germany, Italy and Great Moravia formables so that the ai will not try to form them unless the meet roughly half way to finishing the decision. Stopping ai from killing one another.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
