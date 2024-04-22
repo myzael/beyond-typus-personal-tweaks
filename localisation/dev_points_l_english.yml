@@ -200,3 +200,5 @@
  cant_see_foreign_dev_points_tooltip: "You cannot see how many §YDevelopment Points§! this province generates."
  cant_see_foreign_current_dev_points: "-"
  cant_see_foreign_current_dev_points_tooltip: "You cannot see how many §YDevelopment Points§! this nation has."
+ 
+ current_dev_points: "Development Points"
