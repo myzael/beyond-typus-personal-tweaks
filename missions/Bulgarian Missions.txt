@@ -42,6 +42,91 @@ bt_bul_minors_slot_1 = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
 		}
 	}
+	
+	bul_build_up_rose_valley = {
+		icon = mission_noble_council
+		position = 3
+		required_missions = { bul_a_new_capital }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 7149
+				province_id = 7150
+			}
+			NOT = { has_production_building_trigger = yes }
+			NOT = { base_tax = 5 }
+			NOT = { base_production = 5 }
+		}
+		trigger = {
+			7149 = {
+				base_tax = 5
+				base_production = 5
+				has_production_building_trigger = yes
+			}
+			7150 = {
+				base_tax = 5
+				base_production = 5
+				has_production_building_trigger = yes
+			}
+		}
+		effect = {
+			7149 = { add_building = tradecompany }
+			7150 = { add_building = tradecompany }
+			change_price = {
+				trade_goods = incense
+				key = rose_valley_oil
+				value = 0.125
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+	
+	bul_restore_bulgarian_silk = {
+		icon = mission_noble_council
+		position = 4
+		required_missions = { bul_build_up_rose_valley }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2750
+				province_id = 1765
+				province_id = 7157
+			}
+			NOT = { has_production_building_trigger = yes }
+			NOT = { has_building = textiles }
+			NOT = { base_tax = 6 }
+			NOT = { base_production = 6 }
+		}
+		trigger = {
+			2750 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+			1765 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+			7157 = {
+				base_tax = 6
+				base_production = 6
+				has_production_building_trigger = yes
+				has_building = textiles
+			}
+		}
+		effect = {
+			2750 = { change_trade_goods = silk }
+			1765 = { change_trade_goods = silk }
+			7157 = { change_trade_goods = silk }
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
 }
 
 bt_bul_minors_slot_2 = {
@@ -99,6 +184,191 @@ bt_bul_minors_slot_2 = {
 		}
 	}
 	
+	bul_universities = {
+		icon = mission_noble_council
+		position = 3
+		required_missions = { bul_a_new_capital }
+		provinces_to_highlight = {
+			NOT = { has_building = university }
+			owned_by = ROOT
+		}
+		trigger = {
+			capital_scope = { has_building = university }
+			university = 3
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				change_innovativeness = 3
+			}
+			else = { #Fallback
+				add_adm_power = 25
+				add_dip_power = 25
+				add_mil_power = 25
+			}
+			change_adm = 1
+			change_dip = 1
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+	
+	bul_bring_back_scholars = {
+		icon = mission_noble_council
+		position = 5
+		required_missions = { bul_universities }
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			280 = { #Kiev
+				owner = {
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						tag = ROOT
+					}
+				}
+			}
+			295 = { #Moscow
+				owner = {
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						tag = ROOT
+					}
+				}
+			}
+			7752 = { #Arges
+				owner = {
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						tag = ROOT
+					}
+				}
+			}
+			3156 = { #Suceava
+				owner = {
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						tag = ROOT
+					}
+				}
+			}
+			4239 = { #Belgrade
+				owner = {
+					OR = {
+						has_opinion = {
+							who = ROOT
+							value = 100
+						}
+						tag = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Rule Britannia"
+				}
+				change_innovativeness = 3
+			}
+			else = { #Fallback
+				add_adm_power = 25
+				add_dip_power = 25
+				add_mil_power = 25
+			}
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+			}
+			if = { #If you're behind on institutions compared to one of the owners, get it in your capital.
+				limit = {
+					OR = {
+						280 = {
+							owner = {
+								institution_difference = {
+									who = ROOT
+									value = 1
+								}
+							}
+						}
+						295 = {
+							owner = {
+								institution_difference = {
+									who = ROOT
+									value = 1
+								}
+							}
+						}
+						7752 = {
+							owner = {
+								institution_difference = {
+									who = ROOT
+									value = 1
+								}
+							}
+						}
+						3156 = {
+							owner = {
+								institution_difference = {
+									who = ROOT
+									value = 1
+								}
+							}
+						}
+						4239 = {
+							owner = {
+								institution_difference = {
+									who = ROOT
+									value = 1
+								}
+							}
+						}
+					}
+				}
+				capital_scope = { add_next_institution_embracement = 100 }
+			}
+			define_advisor = {
+				type = philosopher
+				skill = 3
+				cost_multiplier = 0.25
+				culture = ROOT
+				religion = ROOT
+			}
+			define_advisor = {
+				type = artist
+				skill = 3
+				cost_multiplier = 0.25
+				culture = ROOT
+				religion = ROOT
+			}
+			define_advisor = {
+				type = theologian
+				skill = 3
+				cost_multiplier = 0.25
+				culture = ROOT
+				religion = ROOT
+			}
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
 }
 
 bt_bul_minors_slot_3 = {
@@ -139,6 +409,12 @@ bt_bul_minors_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			if = { #Rename Lovech to Tarnovo Tsardom
+				limit = {
+					tag = LVC
+				}
+				override_country_name = TNV
+			}
 		}
 		ai_weight = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
@@ -158,8 +434,7 @@ bt_bul_minors_slot_3 = {
 			}
 			if = {
 				limit = {
-					calc_true_if = { #One city at 20 dev
-						amount = 1
+					OR = {
 						4704 = { development = 20 }
 						2750 = { development = 20 }
 						1765 = { development = 20 }
@@ -167,26 +442,25 @@ bt_bul_minors_slot_3 = {
 						7154 = { development = 20 }
 					}
 				}
-				NOT = { development = 10 }
+				NOT = { development = 15 }
 			}
 			else = {
 				NOT = { development = 20 }
 			}
 		}
 		trigger = {
-			calc_true_if = { #One city at 20 dev
-				amount = 1
+			OR = {
 				4704 = { development = 20 }
 				2750 = { development = 20 }
 				1765 = { development = 20 }
 				2746 = { development = 20 }
 				7154 = { development = 20 }
 			}
-			4704 = { development = 10 }
-			2750 = { development = 10 }
-			1765 = { development = 10 }
-			2746 = { development = 10 }
-			7154 = { development = 10 }
+			4704 = { development = 15 }
+			2750 = { development = 15 }
+			1765 = { development = 15 }
+			2746 = { development = 15 }
+			7154 = { development = 15 }
 			
 		}
 		effect = {
@@ -248,7 +522,7 @@ bt_bul_minors_slot_3 = {
 			else = {
 				custom_tooltip = bul_a_new_capital_tt
 				tooltip = {
-					all_owned_province = { 
+					random_owned_province = { 
 						add_base_tax = 2
 						add_base_production = 2
 						add_base_manpower = 2
@@ -262,6 +536,25 @@ bt_bul_minors_slot_3 = {
 		}
 	}
 
+	bul_restore_bulgaria = {
+		icon = mission_noble_council
+		position = 4
+		required_missions = { bul_a_new_capital }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			tag = BUL
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			swap_non_generic_missions = yes
+		}
+		ai_weight = {
+			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
 }
 
 bt_bul_minors_slot_4 = {
@@ -319,6 +612,90 @@ bt_bul_minors_slot_4 = {
 		}
 	}
 	
+	bul_churches = {
+		icon = mission_noble_council
+		position = 3
+		required_missions = { bul_a_new_capital }
+		provinces_to_highlight = {
+			NOT = { has_tax_building_trigger = yes }
+			owned_by = ROOT
+		}
+		trigger = {
+			calc_true_if = {
+				amount = 10
+				all_owned_province = {
+					has_tax_building_trigger = yes
+				}
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_years_of_income = 0.2
+			if = {
+				limit = {
+					religion = orthodox
+				}
+				add_patriarch_authority = 0.1
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+	
+	bul_autocephaly = {
+		icon = mission_noble_council
+		position = 5
+		required_missions = { bul_churches }
+		provinces_to_highlight = {
+			province_id = 151
+		}
+		trigger = {
+			religion = orthodox
+			151 = { #Constantinople
+				OR = {
+					owner = {
+						has_opinion = {
+							who = ROOT
+							value = 200
+						}
+					}
+					controlled_by = ROOT
+					NOT = { religion = orthodox } #If Ottomans have taken Constantinople
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { 
+					has_dlc = "Third Rome" 
+					owner = { religion = orthodox }
+				}
+				custom_tooltip = orthodox_icon_events_bonuses_tt
+				set_country_flag = orthodox_icon_events_bonuses_flag
+			}
+			if = {
+				limit = {
+					religion = orthodox
+				}
+				add_patriarch_authority = 0.15
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+					has_global_flag = byz_resurgence_loaded #Because the monument only exists in BR. Might push to move it eventually, but that's up to Chryso
+				}
+				custom_tooltip = bul_autocephaly_tt
+			}
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
 }
 
 bt_bul_minors_slot_5 = {
@@ -369,6 +746,79 @@ bt_bul_minors_slot_5 = {
 		}
 		ai_weight = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
+		}
+	}
+
+	bul_fortresses = {
+		icon = mission_noble_council
+		position = 3
+		required_missions = { bul_a_new_capital }
+		provinces_to_highlight = {
+			NOT = { has_fort_building_trigger = yes }
+			OR = {
+				has_terrain = hills
+				has_terrain = highlands
+				has_terrain = mountains
+			}
+			owned_by = ROOT
+		}
+		trigger = {
+			calc_true_if = {
+				amount = 6
+				all_owned_province = {
+					has_fort_building_trigger = yes
+					OR = {
+						has_terrain = hills
+						has_terrain = highlands
+						has_terrain = mountains
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = bul_fortresses_tt
+			set_country_flag = enable_estate_nobles_bulgarian_hillforts_privilege #Estate privilege to nullify dev cost malus for fort provinces in hills, highlands or mountains, halve if not fort province.
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+}
+
+bt_bul_minors_slot_5_br_monument_mission = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		NOT = { map_setup = map_setup_random }
+		primary_culture = bulgarian
+		has_dlc = "Leviathan"
+		has_global_flag = byz_resurgence_loaded
+	}
+	has_country_shield = yes
+	
+	bul_tsarevets = {
+		icon = mission_noble_council
+		position = 4
+		required_missions = { bul_fortresses bul_churches }
+		provinces_to_highlight = {
+			province_id = 4704
+			owned_by = ROOT
+		}
+		trigger = {
+			4704 = {
+				has_great_project = {
+					type = tsarevets_church_of_ascension
+					tier = 2
+				}
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = { amount = 100 }
+			give_dev_points_effect = { dev = 200 }
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
 		}
 	}
 }

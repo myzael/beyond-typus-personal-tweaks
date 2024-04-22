@@ -61,6 +61,9 @@ BT16
  - (Dub) Added one of the longest reigning monarchs in history: Bernard VII von Lippe, to Lippe. Born December 1428 and inheriting his throne before his first birthday, he ruled Lippe until 1511.
  - (Dub) Implemented ruler genetics with personality: If your ruler has a particular personality, there's a 50% greater chance your heir will get one of their personalities when they come of age.
  - (Dub) Added Native mechanics to Arabian and Somali OPMs. Somali tribes with more provinces share this mechanic, but have multiple provinces.
+ - (Dub) Added two new tags in the Balkans: Lovech (LVC) replacing the Bulgaria tag that existed in Lovech prior, and Prilep (PRL), a releasable in North Macedonia.
+	- (Dub) Also retooled the starting setup to account for no Bulgaria tag at game start, letting you form Bulgaria.
+ - (Dub) Added a Bulgarian mission tree available for Bulgarian-cultured tags (Lovech, Dobruja and Vidin), which expands upon forming Bulgaria.
  
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
@@ -91,6 +94,8 @@ BT16
  - (Dub) Fixed JuvÃ©nal in Rheims & Laon.
  - (Dub) Fixed Saxony not being able to rename itself if it lost its PUs at any point, giving it alternate completion requirements.
  - (Dub) Fixed Hildesheim & Legnica's dynasties being wrong.
+ - (Dub) Fixed Velbazhd having Bulgarian names, despite being a Serbian breakaway state
+ -
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -153,6 +158,9 @@ BT16
 	- (Harbivore) In addition, AI nations hace received a +25% increase to dev points because the AI is worse at optimising for it, and cannot/will not use expand infrastructure
  - (Dub) State governing cost modifiers from missions have been replaced with state maintenance modifiers instead, because it would break the intricate balance.
  - (Dub) Turkish Eyalets now use their full name as their adjectives to avoid the confusing "Eyalet Libery Desire is over 50%!".
+ - (Dub) Cut Polish starting core on Spis. While it was used to represent the Szepes Towns fief of Poland, it caused more harm than good.
+ - (Dub) Overhauled starting trade goods in Bulgaria. Now with less ahistorical copper and more historical apiculture and cloth. Also contains less grain. While the region was very fertile, it also produced several specialised goods and had a good chunk of blacksmithing.
+ - (Dub) Bulgaria's starting cores have also been retooled during the replacement with Lovech's.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
