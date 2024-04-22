@@ -94,7 +94,7 @@ bt_bul_minors_slot_1 = {
 				province_id = 7157
 			}
 			NOT = { has_production_building_trigger = yes }
-			NOT = { has_building = textiles }
+			NOT = { has_building = textile }
 			NOT = { base_tax = 6 }
 			NOT = { base_production = 6 }
 		}
@@ -103,19 +103,19 @@ bt_bul_minors_slot_1 = {
 				base_tax = 6
 				base_production = 6
 				has_production_building_trigger = yes
-				has_building = textiles
+				has_building = textile
 			}
 			1765 = {
 				base_tax = 6
 				base_production = 6
 				has_production_building_trigger = yes
-				has_building = textiles
+				has_building = textile
 			}
 			7157 = {
 				base_tax = 6
 				base_production = 6
 				has_production_building_trigger = yes
-				has_building = textiles
+				has_building = textile
 			}
 		}
 		effect = {
