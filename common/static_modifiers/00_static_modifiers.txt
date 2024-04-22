@@ -1010,15 +1010,15 @@ emperor = {
 }
 
 states_in_hre = {							#bonuses for each non-free city with capital in HRE.. as emperor
-    land_forcelimit    = 0.2                # BT ~2.5x as many princes, bonus down by same factor
+    land_forcelimit = 0.2                # BT ~2.5x as many princes, bonus down by same factor
     global_manpower = 0.2                   # BT Look above.
-	global_tax_income = 0.5					# BT buff to make being emperor good
+	global_tax_income = 0.6					# BT buff to make being emperor good
 }
 
 free_cities_in_hre = {                            #bonuses for each free city in the HRE.. as emperor
-    global_tax_income = 1                    # BT ~2x as many free cities. Up from 0p5 past version(unnecessary nerf?)
+    global_tax_income = 1.5                    # BT ~2x as many free cities. Up from 0p5 past version(unnecessary nerf?)
     global_manpower = 0.25                    # BT, look above. Up from 0p15 past version
-    land_forcelimit    = 0.5                    # BT, look above. Up from 0p15 past version
+    land_forcelimit = 0.5                    # BT, look above. Up from 0p15 past version
 }
 
 free_city_in_hre = {
