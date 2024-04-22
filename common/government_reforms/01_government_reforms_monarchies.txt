@@ -1222,9 +1222,11 @@ tanistry_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		primary_culture = irish
+		always = no #BT Added: We did it better.
 	}
 	nation_designer_trigger = {
 		primary_culture = irish
+		always = no #BT Added: We did it better.
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 5
@@ -1257,12 +1259,14 @@ irish_highkingdom_reform = {
 			}
 			have_had_reform = irish_highkingdom_reform
 		}
+		always = no #BT Added: We did it better.
 	}
 	trigger = {
 		primary_culture = irish
 	}
 	nation_designer_trigger = {
 		primary_culture = irish
+		always = no #BT Added: We did it better.
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
