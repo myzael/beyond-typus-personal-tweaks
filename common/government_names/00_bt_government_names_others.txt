@@ -425,3 +425,41 @@ ruthenian_monarchy = { #Carbon-copy of Muscovy monarchy
 		mission_completed = ukr_restore_kiev
 	}
 }
+
+bulgarian_monarchy = {
+	rank = {
+		1 = DESPOTATE
+		2 = PRINCIPALITY
+		3 = TSARDOM
+	}
+
+	ruler_male = {
+		1 = DESPOT
+		2 = KNIAZ
+		3 = TSAR
+	}
+
+	ruler_female = {
+		1 = DESPOTITSA
+		2 = KNIAGINIA
+		3 = TSARINA
+	}
+
+	heir_male = {
+		1 = HEIR
+		2 = KNIAZHICH
+		3 = DESPOT #I have read that at times, they crowned a co-emperor in the Bulgarian Empire, but I'm going with this as it's a bit more grounded.
+	}
+
+	heir_female = {
+		1 = HEIR
+		2 = KNIAZHICH
+		3 = DESPOTITSA
+	}
+
+	trigger = {
+		government = monarchy
+		primary_culture = bulgarian
+	}
+	
+}
