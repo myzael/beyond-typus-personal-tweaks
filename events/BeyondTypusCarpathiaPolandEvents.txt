@@ -8,3 +8,38 @@ namespace = BeyondTypusCarpathiaPolandEvents
 #5: Hungary is notified that Poland accepted payment
 #6: Hungary is notified that Poland refuses. Hungary can choose to go to war, and Poland is notified through event 7.
 #7: Poland is notified that Hungary has gone to war.
+
+
+country_event = { # Hungary wants Szepes towns back
+    id = BeyondTypusCarpathiaPolandEvents.2
+    title = BeyondTypusCarpathiaPolandEvents.2.title
+    desc = BeyondTypusCarpathiaPolandEvents.2.desc
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		1318 = { #Szepes owned by Poland/PLC
+			OR = {
+				owned_by = POL
+				owned_by = PLC
+			}
+			any_neighbor_province = {
+				owned_by = HUN
+			}
+		}
+		# no negative prestige or stability
+		prestige = 0
+		stability = 0
+		always = no #Will come back to this later. I don't want this to fire just yet as it's not done.
+	}
+	
+	mean_time_to_happen = {
+		months = 300 #About 25 years
+	}
+	
+	option = {
+		
+	}
+}
