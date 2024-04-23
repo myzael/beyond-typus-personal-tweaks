@@ -552,4 +552,9 @@
  bul_tsarevets_title:0 "Tsarevets Cathedral"
  bul_tsarevets_desc:0 "The Tsarevets Church of Ascension has fallen into disrepair ever since the Ottoman conquest in 1393. It once stood tall as the seat of Bulgarian Tsars and home to the Bulgarian Patriarch. Let us restore it to its former glory once more, to solidify our legitimacy as rightful [ROOT.Monarch.GetTitle]s of the Bulgarian Empire!"
  
+ give_25_dev_points_effect:0 "Gain §G25§! Development Points"
+ give_50_dev_points_effect:0 "Gain §G50§! Development Points"
+ give_100_dev_points_effect:0 "Gain §G100§! Development Points"
  give_200_dev_points_effect:0 "Gain §G200§! Development Points"
+ give_250_dev_points_effect:0 "Gain §G250§! Development Points"
+ give_500_dev_points_effect:0 "Gain §G500§! Development Points"
