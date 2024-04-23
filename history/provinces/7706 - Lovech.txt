@@ -4,7 +4,7 @@
 owner = LVC
 controller = LVC
 add_core = LVC
-add_core = TUR
+#add_core = TUR #Dub cut: Could not find a reference this province ever getting conquered prior to 1446.
 culture = bulgarian
 religion = orthodox
 capital = "Lovech"
@@ -54,12 +54,12 @@ discovered_by = western
 #1291 - 1444
 
 #2nd Shattering
-1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = TUR
-} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = TUR
-} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+# 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+	# remove_core = TUR
+# } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+# 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+	# add_core = TUR
+# } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 #1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
 #	owner = XXX
 #	controller = XXX
@@ -72,3 +72,8 @@ discovered_by = western
 #} #Return to proper mod added owners and cuts vanilla core, typically.
 
 #1444 on
+1446.1.1 = { #Fall of the "Hisarya" fortress. c 1446.
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+}
