@@ -5165,6 +5165,9 @@ aachen_cathedral = {
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
+			owner = {
+				add_reform_desire = -0.1
+			}
 		}
 	}
 
@@ -5197,6 +5200,7 @@ aachen_cathedral = {
 		#what effects happen when this tier is achieved
 		on_upgraded = {			
 			owner = {
+				add_reform_desire = -0.25
 				add_estate_loyalty = {
 					estate = estate_church
 					loyalty = 5
@@ -5236,6 +5240,7 @@ aachen_cathedral = {
 		#what effects happen when this tier is achieved
 		on_upgraded = {
 			owner = {
+				add_reform_desire = -0.5 #huge bonus as this tier is very unlikely to be reached before reformation begins
 				add_estate_loyalty = {
 					estate = estate_church
 					loyalty = 5
