@@ -2612,20 +2612,21 @@ country_event = {
 			}
 		}
 		is_year = 1500
-		owns = 1955
-		1955 = {
+		#BT: Changed to provid to 313 in this one because it's a coastal city not an inland one
+		owns = 313
+		313 = {
 			NOT = { has_province_modifier = arkhangelsk_modifier }
 		}
 	}
 	mean_time_to_happen = {
 		months = 30
 	}
-	goto = 1955
+	goto = 313
 
 	# Ok
 	option = {
 		name = flavor_rus.102.a
-		1955 = {
+		313 = {
 			rename_capital = "Arkhangelsk"
 			change_province_name = "Arkhangelsk"
 			add_base_tax = 2
@@ -2635,6 +2636,8 @@ country_event = {
 				name = arkhangelsk_modifier
 				duration = -1
 			}
+			#BT Added: the port by itself wasn't a CoT and needs to be added
+			center_of_trade = 2
 		}
 
 		ai_chance = {

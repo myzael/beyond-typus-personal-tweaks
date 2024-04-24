@@ -4106,16 +4106,29 @@ rus_russian_navy = {
 			OR = {
 				province_id = 1652
 				province_id = 33
-				province_id = 1926
+				#BT Added: Danzig node
+				province_id = 43
+				province_id = 1
 			}
 			OR = {
-				NOT = {
-					trade_share = {
-						country = ROOT
-						share = 50
+				if = {
+					limit = { province_id = 1 }
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 30
+						}
 					}
 				}
-				highest_value_trade_node = no
+				else = {
+					NOT = {
+						trade_share = {
+							country = ROOT
+							share = 50
+						}
+					}
+					highest_value_trade_node = no
+				}
 			}
 		}
 		trigger = {
@@ -4134,12 +4147,19 @@ rus_russian_navy = {
 					}
 					highest_value_trade_node = yes
 				}
-				1926 = {
+				#BT Added: Danzig node:
+				43 = {
 					trade_share = {
 						country = ROOT
 						share = 50
 					}
 					highest_value_trade_node = yes
+				}
+				1 = {
+					trade_share = {
+						country = ROOT
+						share = 30
+					}
 				}
 			}
 		}
@@ -4156,8 +4176,15 @@ rus_russian_navy = {
 			33 = {
 				add_trade_node_income = 30
 			}
-			1926 = {
+			#1926 = {
+			#	add_trade_node_income = 30
+			#}
+			#BT Changed Baltic Sea node split:
+			43 = {
 				add_trade_node_income = 30
+			}
+			1 = {
+				add_trade_node_income = 20
 			}
 		}
 
