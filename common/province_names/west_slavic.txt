@@ -624,7 +624,7 @@
 466 = "Saraj"
 468 = "Manycz"
 475 = "Baszkortostan"
-767 = "Elk" #Lek in old Polish
+767 = "Lek" #Elk in modern Polish (change happened after game ends and is not an orthographic difference so Lek takes predominance)
 1079 = "Wiatka"
 1081 = "Symbirsk"
 1083 = "Wietluga"
