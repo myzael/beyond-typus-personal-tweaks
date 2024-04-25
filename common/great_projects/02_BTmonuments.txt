@@ -11002,6 +11002,7 @@ uluru = {		#Uluru
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_unrest = -1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -11030,6 +11031,7 @@ uluru = {		#Uluru
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_unrest = -1.5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -11038,6 +11040,7 @@ uluru = {		#Uluru
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			prestige = 0.25
 		}
 
 		#what effects happen when this tier is achieved
@@ -11057,14 +11060,17 @@ uluru = {		#Uluru
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+		
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_unrest = -2
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			prestige = 0.5
 		}
 
 		#what effects happen when this tier is achieved
