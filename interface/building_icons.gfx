@@ -1792,6 +1792,57 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	
+	#Dreamtime Native buildings
+	spriteType = {
+		name = "GFX_native_earthwork_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_earthwork.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_palisade_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_palisade.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_fortified_house_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_fortified_house.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_ceremonial_fire_pit_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_ceremonial_fire_pit.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_irrigation_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_irrigation.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_storehouse_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_storehouse.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_longhouse_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_longhouse.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_sweat_lodge_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_sweat_lodge.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_great_trail_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_great_trail.tga"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_native_three_sisters_field_aboriginalgfx"
+		texturefile = "gfx//interface//buildings//aboriginal_native_three_sisters_field.tga"
+		loadType = "INGAME"
+	}
 	
 	#Old BTMB buildings. Might remove at some point.
 	#New Fortfications

@@ -24,10 +24,11 @@ BT16
  - New idea sets for the following nations:
 	 - (Dub) Cascadia
 	 - (Dub) Magdeburg
-	 - (Jackkade) Khem
+	 - (Jackkade) Khemi
  - (Hadiros) Overhauled Australia
  - (Hadiros) Massive cultural overhaul to Australia, added 32 more cultures to the Aboriginal group for a total of 39 cultures. Added New Northern Aboriginal group with 24 cultures.
  - (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
+ - (Hadiros) Added new building artwork and names for Aboriginal native buildings (no longer using North American buildings that make no sense)
  - (Dub) Added new government mechanic/mission reward to disable absolutism loss from assigning seat to Parliament. Currently unused in BT, it finds uses in Byzantine Resurgence.
  - (Dub) Added an Island of Venice province triggered modifier for Venice, making it much harder to siege without a blockade on it to compensate for it not being an island in BT.
  - (Dub) Integrated the Internal Politicks addon to BT16, with almost all its features & tweaks. Included, but not limited to:

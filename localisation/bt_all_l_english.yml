@@ -2619,3 +2619,13 @@
  building_native_great_trail_muslim:0 "Roadworks"
  building_native_ceremonial_fire_pit_muslim:0 "Diwan"
  
+ building_native_earthwork_dreamtime:0 "Earthworks"
+ building_native_palisade_dreamtime:0 "Barrier"
+ building_native_fortified_house_dreamtime:0 "Reinforced Bush Shelter"
+ building_native_three_sisters_field_dreamtime:0 "Fire-stick Farm"
+ building_native_irrigation_dreamtime:0 "Irrigation"
+ building_native_storehouse_dreamtime:0 "Storehouse"
+ building_native_longhouse_dreamtime:0 "Bushhouse"
+ building_native_sweat_lodge_dreamtime:0 "Gathering Place"
+ building_native_great_trail_dreamtime:0 "Songline"
+ building_native_ceremonial_fire_pit_dreamtime:0 "Ceremonial Ground"
