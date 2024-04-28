@@ -1,11 +1,11 @@
-namespace = BT_H_Misc
+namespace = bt_harb_misc
 normal_or_historical_nations = yes
 
 
 country_event = {                         #Event to give wales english rivalry 
-	id = BT_H_Misc.1
-	desc = BT_H_Misc.1.desc
-	title = BT_H_Misc.1.title
+	id = bt_harb_misc.1
+	desc = bt_harb_misc.1.desc
+	title = bt_harb_misc.1.title
 	picture = CONQUEST_eventPicture
 	
 	hidden = yes
@@ -23,16 +23,16 @@ country_event = {                         #Event to give wales english rivalry
     }
 	
 	option = {
-		name = BT_H_Misc.1.opt
+		name = bt_harb_misc.1.opt
 		add_historical_rival = ENG
 		remove_country_modifier = pissed_at_the_english_bt
 	}
 }
 
 country_event = {                         #The descovery of amalgamation 
-	id = BT_H_Misc.2
-	desc = BT_H_Misc.2.desc
-	title = BT_H_Misc.2.title
+	id = bt_harb_misc.2
+	desc = bt_harb_misc.2.desc
+	title = bt_harb_misc.2.title
 	picture = CONQUEST_eventPicture
 	
 	fire_only_once = yes
@@ -57,7 +57,7 @@ country_event = {                         #The descovery of amalgamation
 	}
 	
 	option = {
-		name = BT_H_Misc.2.opta
+		name = bt_harb_misc.2.opta
 		add_treasury = 250
 		add_prestige = 10
 		random_owned_province = { 
@@ -82,9 +82,9 @@ country_event = {                         #The descovery of amalgamation
 }
 
 country_event = {                         #Event to change mercury provinces into gold with the descovery of amalgamation 
-	id = BT_H_Misc.3
-	desc = BT_H_Misc.3.desc
-	title = BT_H_Misc.3.title
+	id = bt_harb_misc.3
+	desc = bt_harb_misc.3.desc
+	title = bt_harb_misc.3.title
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
@@ -123,7 +123,7 @@ country_event = {                         #Event to change mercury provinces int
     }
 	
 	option = {
-		name = BT_H_Misc.3.opta
+		name = bt_harb_misc.3.opta
 		random_owned_province = { 
 			limit = {
 				province_id = 8121 #Spanish one
@@ -145,9 +145,9 @@ country_event = {                         #Event to change mercury provinces int
 	}
 }
 # province_event = {                         #Event to make colonial nations actually start colonies
-	# id = BT_H_Misc.4
-	# desc = BT_H_Misc.4.desc
-	# title = BT_H_Misc.4.t
+	# id = bt_harb_misc.4
+	# desc = bt_harb_misc.4.desc
+	# title = bt_harb_misc.4.t
 	# picture = CONQUEST_eventPicture
 	
 	# trigger = {
@@ -186,7 +186,7 @@ country_event = {                         #Event to change mercury provinces int
 	# }
 	
 	# option = {
-		# name = BT_H_Misc.4.opta
+		# name = bt_harb_misc.4.opta
 		
 	# }
 # }
