@@ -52,6 +52,7 @@ country_event = {
     picture = ECONOMY_eventPicture
 	  
     is_triggered_only = yes
+	hidden = yes
     
     trigger = {
 		ai = yes
@@ -125,6 +126,7 @@ country_event = {
     picture = ECONOMY_eventPicture
 	  
     is_triggered_only = yes
+	hidden = yes
     
     trigger = {
 		ai = yes
