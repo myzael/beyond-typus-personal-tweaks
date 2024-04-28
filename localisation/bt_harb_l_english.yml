@@ -87,3 +87,8 @@
 
  bt_english_loyalist_immigrants: "English Loyalist Immigrants"
  bt_english_loyalist_immigrants_desc: "Whether a result of the conclusion of the Hundred Years War or random occurrence. England was experiencing a period of tremendous immigration from continental Europe in this time. They settled all over the English countryside intermingling with the local peoples."
+ 
+ bt_interregnum_so_no_heir: "Interregnum Period"
+ bt_interregnum_so_no_heir_desc: "We are in an interregnum period and cannot get an heir through birth."
+ 
+ 

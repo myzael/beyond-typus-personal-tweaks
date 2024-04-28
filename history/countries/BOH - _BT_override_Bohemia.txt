@@ -4,6 +4,10 @@ historical_friend = POL
 
 
 set_country_flag = looking_for_a_king
+add_ruler_modifier = {
+	name = "bt_interregnum_so_no_heir"
+	duration = -1
+}
 
 #History
 

@@ -474,3 +474,7 @@ bt_albania_lezhe_subsidies = {
 bt_venice_lezhe_subsidies = {
 	global_tax_income = -18
 }
+
+bt_interregnum_so_no_heir = {
+	heir_chance = -10
+}
