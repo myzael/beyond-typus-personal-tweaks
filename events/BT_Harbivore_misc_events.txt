@@ -144,6 +144,26 @@ country_event = {                         #Event to change mercury provinces int
 		}
 	}
 }
+
+country_event = {                         #Event to remove venice's albanian subsudies
+	id = bt_harb_misc.4
+	desc = bt_harb_misc.4.desc
+	title = bt_harb_misc.4.title
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+	}
+
+	mean_time_to_happen = {
+    }
+	
+	option = {
+		name = bt_harb_misc.4.opt
+		remove_country_modifier = bt_venice_lezhe_subsidies
+	}
+}
 # province_event = {                         #Event to make colonial nations actually start colonies
 	# id = bt_harb_misc.4
 	# desc = bt_harb_misc.4.desc

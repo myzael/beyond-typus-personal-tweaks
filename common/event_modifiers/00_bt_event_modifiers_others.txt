@@ -466,3 +466,11 @@ bt_teu_turned_pru = {			#BT added to keep prussian vassal loyal
 bt_english_loyalist_immigrants = {
 	base_local_dev_points = 0.1
 }
+
+bt_albania_lezhe_subsidies = {
+	global_tax_income = 18
+}
+
+bt_venice_lezhe_subsidies = {
+	global_tax_income = -18
+}

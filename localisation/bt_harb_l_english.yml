@@ -52,6 +52,10 @@
  bt_harb_misc.3.desc: "Cinnabar was used for dyes and to create gold and silver plating. Mercury can be refined from the cinnabar and this was used in the process of amalgamation which extracted gold and silver from ore. With this descovery is now being used to extract gold and silver from their ores in the new world."
  bt_harb_misc.3.opta: "Liquid gold?"
  
+ bt_harb_misc.4.title: "Albanian Subsidies"
+ bt_harb_misc.4.desc: "We have been sending ducats to Albania as our agreement with the League of Lezhë, but with the death of Skanderbeg the nation lacks a unanimous leader. As a result of this if we were to stop paying them, they wouldn't be able to do anything about it. It also seems unlikely that without Skanderbeg they will be able to hold back the Turks."
+ bt_harb_misc.4.opta: "More money for us!"
+ 
  flavor_teu.3.b: "Invite teutonic order to reclaim ducal prussia as our vassal"
 
  bt_danzig_revolt: "Thirteen Years' War"

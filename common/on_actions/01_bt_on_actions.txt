@@ -58,6 +58,18 @@ on_new_monarch = {
 on_monarch_death = {
 	BT_AU_AlbrechtVI_dies_first = yes	#BT
 	BT_AU_FrederickIII_dies_first = yes	#BT
+	if = {
+		limit = {
+			tag = ALB
+			NOT = {
+				has_global_flag = bt_skanderbeg_died
+			}
+		}
+		set_country_flag = bt_skanderbeg_died
+		VEN = {
+			country_event = { id = bt_harb_misc.4 days = 1 }
+		}
+	}
 	if = { #Rijekan inheritance post-Rambert II von Walsee
 		limit = {
 			tag = RIJ
