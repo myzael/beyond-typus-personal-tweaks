@@ -53,8 +53,15 @@
  bt_harb_misc.3.opta: "Liquid gold?"
  
  bt_harb_misc.4.title: "Albanian Subsidies"
- bt_harb_misc.4.desc: "We have been sending ducats to Albania as our agreement with the League of Lezhë, but with the death of Skanderbeg the nation lacks a unanimous leader. As a result of this if we were to stop paying them, they wouldn't be able to do anything about it. It also seems unlikely that without Skanderbeg they will be able to hold back the Turks."
+ bt_harb_misc.4.desc: "We have been sending ducats to Albania as our agreement with the League of Lezhë, but with the death of Skanderbeg, the nation lacks a unanimous leader. As a result of this if we were to stop paying them, they wouldn't be able to do anything about it. It also seems unlikely that without Skanderbeg they will be able to hold back the Turks."
  bt_harb_misc.4.opta: "More money for us!"
+ 
+ bt_harb_misc.5.title: "Albanian Subsidies"
+ bt_harb_misc.5.desc: "We have been sending ducats to Albania as our agreement with the League of Lezhë, but with the colapse of the nation, the agreement is now void."
+ bt_harb_misc.5.opta: "More money for us!"
+ 
+ bt_venice_lezhe_subsidies: "Subsidising the League of Lezhë"
+ bt_albania_lezhe_subsidies: "Venetian Subsidies"
  
  flavor_teu.3.b: "Invite teutonic order to reclaim ducal prussia as our vassal"
 

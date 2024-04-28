@@ -151,6 +151,7 @@ country_event = {                         #Event to remove venice's albanian sub
 	title = bt_harb_misc.4.title
 	picture = CONQUEST_eventPicture
 	
+	is_triggered_only = yes
 	fire_only_once = yes
 	
 	trigger = {
@@ -161,6 +162,31 @@ country_event = {                         #Event to remove venice's albanian sub
 	
 	option = {
 		name = bt_harb_misc.4.opt
+		remove_country_modifier = bt_venice_lezhe_subsidies
+	}
+}
+
+country_event = {                         #Event to remove venice's albanian subsudies
+	id = bt_harb_misc.5
+	desc = bt_harb_misc.5.desc
+	title = bt_harb_misc.5.title
+	picture = CONQUEST_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		NOT = {
+			exists = ALB
+		}
+		tag = VEN 
+		has_country_modifier = bt_venice_lezhe_subsidies
+	}
+
+	mean_time_to_happen = {
+    }
+	
+	option = {
+		name = bt_harb_misc.5.opt
 		remove_country_modifier = bt_venice_lezhe_subsidies
 	}
 }
