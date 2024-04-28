@@ -8,7 +8,7 @@ add_country_modifier = {
 	duration = -1
 	hidden = yes
 }
-add_country_modifier = {
+add_ruler_modifier = {
 	name = bt_fredricks_diplomats
 	duration = -1
 }
