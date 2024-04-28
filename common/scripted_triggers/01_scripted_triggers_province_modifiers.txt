@@ -212,6 +212,8 @@ has_special_trade_modifier = {
 #Province with special production modifier:
 province_with_special_goods_produced_trigger = {
 	OR = {
+		trade_goods = bt_trade_good_silver
+		trade_goods = gold
 		has_province_modifier = stora_kopparberget_modifier
 		has_province_modifier = granary_of_the_mediterranean
 		has_province_modifier = ven_murano_glass_industry
