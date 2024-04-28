@@ -18,7 +18,8 @@ namespace = bt_silk_events #Made by Harbivore assume all untagged notes are me
 country_event = {					#Changing Murcian good to Silk
     id = bt_silk_events.1
     title = "bt_silk_events.1.title"
-    desc = "bt_silk_events.1.disc"
+    desc = "bt_silk_events.1.desc"
+    desc = "bt_silk_events.1.desc"
     picture = TRADEGOODS_eventPicture
 	  
     is_triggered_only = no
@@ -57,7 +58,7 @@ country_event = {					#Changing Murcian good to Silk
 country_event = {					#Changing Bolonga trade good to Silk
     id = bt_silk_events.2
     title = "bt_silk_events.2.title"
-    desc = "bt_silk_events.2.disc"
+    desc = "bt_silk_events.2.desc"
     picture = TRADEGOODS_eventPicture
 	  
     is_triggered_only = no
@@ -165,7 +166,7 @@ country_event = {					#Changing Bolonga trade good to Silk
 country_event = {					#Changing Vallagarina trade good to Silk
     id = bt_silk_events.3
     title = "bt_silk_events.3.title"
-    desc = "bt_silk_events.3.disc"
+    desc = "bt_silk_events.3.desc"
     picture = TRADEGOODS_eventPicture
 	  
     is_triggered_only = no
@@ -313,7 +314,7 @@ country_event = {					#Changing Vallagarina trade good to Silk
 country_event = {					#Hydrolic Silk mill makes it's way to Lucca
     id = bt_silk_events.4
     title = "bt_silk_events.4.title"
-    desc = "bt_silk_events.4.disc"
+    desc = "bt_silk_events.4.desc"
     picture = TRADEGOODS_eventPicture
 	  
     is_triggered_only = no
@@ -464,7 +465,7 @@ country_event = {					#Hydrolic Silk mill makes it's way to Lucca
 country_event = {					#Silk event for random italian provinces. Only one of these events can be recived. Rewarded by high dev with more Silk, aim to make roughly the same amount from game to game
     id = bt_silk_events.5
     title = "bt_silk_events.5.title"
-    desc = "bt_silk_events.5.disc"
+    desc = "bt_silk_events.5.desc"
     picture = TRADEGOODS_eventPicture
 	  
     is_triggered_only = no
@@ -631,7 +632,7 @@ country_event = {					#Silk event for random italian provinces. Only one of thes
 country_event = {						#Sicilian Silk
 id = bt_silk_events.6
     title = "bt_silk_events.6.title"
-    desc = "bt_silk_events.6.disc"
+    desc = "bt_silk_events.6.desc"
     picture = TRADEGOODS_eventPicture
 	  
     is_triggered_only = no
@@ -743,7 +744,7 @@ id = bt_silk_events.6
 country_event = {						#Neapolitan Silk
 id = bt_silk_events.7
     title = "bt_silk_events.7.title"
-    desc = "bt_silk_events.7.disc"
+    desc = "bt_silk_events.7.desc"
     picture = TRADEGOODS_eventPicture
 	  
     is_triggered_only = no
@@ -858,7 +859,7 @@ id = bt_silk_events.7
 country_event = {						#French Silk industry
 id = bt_silk_events.8
     title = "bt_silk_events.8.title"
-    desc = "bt_silk_events.8.disc"
+    desc = "bt_silk_events.8.desc"
     picture = TRADEGOODS_eventPicture
 	  
     is_triggered_only = no
