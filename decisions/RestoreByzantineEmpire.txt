@@ -27,8 +27,10 @@ country_decisions = {
 			NOT = { tag = ROM }
 			NOT = { tag = TUR }
 			OR = {
-				culture_group = byzantine
-				not = { primary_culture = goths }
+				AND = {
+					culture_group = byzantine
+					NOT = { primary_culture = goths }
+				}
 				AND = {
 					has_idea = MFA_byzantine_claimants
 					dynasty = "Palaiologos"
