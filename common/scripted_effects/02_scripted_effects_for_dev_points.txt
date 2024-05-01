@@ -160,6 +160,78 @@ calculate_development_cost = {
 	integer = { var = shown_development_cost }
 }
 
+# Calculation to show how good this province is to develop
+calculate_auto_dev_weight_effect = {
+    set_variable = {
+		which = auto_dev_weight 
+		value = 0 
+	}
+	# The way we will understand this is to consider if the province had gold how much extra development cost would I be willing to pay. 
+	# These calculations need to decide just how much development it's worth paying extra to develop.
+	# For gold I think it's reasonable to pay at least an extra 50%, because of how good gold is.
+	# So, gold should minus 0.5 to the auto dev weight.
+	# 
+	# --- Things I want to use in the calculation ---
+	#
+	# - Development cost 
+	# 	
+	# - Primary culture
+	# 	-0.05
+	# - Primary culture group (Only when accepted though)
+	# 	-0.05
+	# - Autonomy
+	# 	Multiplied at the end the same as other province modifiers
+	# - Religion (Weighted by accepance and local religious unity contribution)
+	# 	-0.2
+	# - Capital trade node (To show area around capital)
+	# 	-0.1
+	# - Capital state
+	# 	-0.05
+	# - Capital province
+	# 	-0.2
+	# - Coastal province (Can only get sailors here)
+	# 	-0.1
+	# - Trade good value (Mainly for gold, silver, and coal)
+	# 	Gold	-1
+	# 	Silver	-0.5
+	# 	Coal	-0.5	(Needs to account for provinces that would get coal if they were higher dev)
+	# - Centres of Trade
+	# 	-0.1 / -0.2 / -0.4
+	# - Estuaries
+	# 	-0.2
+	# - Buildings built (specific types) (Actually better to search for modifiers like production increase)
+	# 	
+	# - Closeness to new building slot
+	# 	-0.1 / -0.2
+	# - Closeness to CoT upgrade 
+	# 	-0.1 / -0.2
+	# - Missions to dev provinces (Have previous mission put a flag on the province. Note: what happens after the ai reaches the requirement but doesn't finish the mission)
+	# 	-1
+	# - Estate Agendas (When agenda selected put a flag on the province to increase its auto_dev_weight)
+	# 	-1
+	# - Prosperity
+	# 	-0.15
+	# - Overseas province (Not a subject)
+	# 	+0.4
+	# - Province on border with neighbour or has an empty adjacent province
+	# 	+0.2
+	
+	# --- More high concept variables ---
+	#
+	# - Subject loyalty
+	#	Increase the more disloyal the subject is
+	# - State edict encourage development (Only in player nations - to allow players to focus the auto dev system)
+	# 	-0.2
+	
+	# --- Things I don't want to use in calculation ---
+	#
+	# - Terrain - Already included in development cost
+	# - Accepted/Unaccepted culture - Already included in development cost
+	# - Territory - Already included in Autonomy
+	# - Climate - Already included in development cost
+	# - Devastation - Not needed players should be doing that themselves if they care
+}
+
 # Calculation to get dev points per month from provinces 							(used in country scope) (Very intensive)
 calculate_monthly_dev_points_in_all_provinces_effect = {
 	set_variable = {
