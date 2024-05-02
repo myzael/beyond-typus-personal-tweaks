@@ -13,30 +13,19 @@ bt_bul_minors_slot_1 = {
 		icon = mission_noble_council
 		required_missions = { }
 		provinces_to_highlight = {
-			area = vidin_area
+			province_group = bul_reclaim_vidin_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			vidin_area = {
-				type = all
-				owned_by = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted 
+				provinces=bul_reclaim_vidin_provinces
+				owner_type=owned_by
 			}
 		}
 		effect = {
-			danubian_plain_area = { #3
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			bulgaria_area = { #2
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = {  is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=bul_reclaim_sofia }
+			give_permaclaims_for_mission = { mission=bul_reclaim_tarnovo }
 		}
 		ai_weight = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
@@ -143,41 +132,19 @@ bt_bul_minors_slot_2 = {
 		icon = mission_noble_council
 		required_missions = { }
 		provinces_to_highlight = {
-			area = bulgaria_area
+			province_group = bul_reclaim_sofia_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			bulgaria_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
-					province_id = 3000 #Nis
-					province_id = 7711 #Vranje
-				}
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted 
+				provinces=bul_reclaim_sofia_provinces
+				owner_type=owned_by
 			}
 		}
 		effect = {
-			vidin_area = { #1
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			upper_thrace_area = { #4
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = {  is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			northern_thrace_area = { #4
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = {  is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=bul_reclaim_vidin }
+			give_permaclaims_for_mission = { mission=bul_reclaim_plovdiv }
 		}
 		ai_weight = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
@@ -385,30 +352,19 @@ bt_bul_minors_slot_3 = {
 		icon = mission_noble_council
 		required_missions = { }
 		provinces_to_highlight = {
-			area = danubian_plain_area
+			province_group = bul_reclaim_tarnovo_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			danubian_plain_area = {
-				type = all
-				owned_by = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted 
+				provinces=bul_reclaim_tarnovo_provinces
+				owner_type=owned_by
 			}
 		}
 		effect = {
-			vidin_area = { #1
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			silistria_area = { #5
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = {  is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=bul_reclaim_vidin }
+			give_permaclaims_for_mission = { mission=bul_reclaim_karvuna }
 			if = { #Rename Lovech to Tarnovo Tsardom
 				limit = {
 					tag = LVC
@@ -523,6 +479,7 @@ bt_bul_minors_slot_3 = {
 				custom_tooltip = bul_a_new_capital_tt
 				tooltip = {
 					random_owned_province = { 
+						limit = { NOT = { is_capital = yes } }
 						add_base_tax = 2
 						add_base_production = 2
 						add_base_manpower = 2
@@ -571,41 +528,19 @@ bt_bul_minors_slot_4 = {
 		icon = mission_noble_council
 		required_missions = { }
 		provinces_to_highlight = {
-			OR = {
-				area = upper_thrace_area
-				area = northern_thrace_area
-			}
+			province_group = bul_reclaim_plovdiv_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			upper_thrace_area = {
-				type = all
-				OR = {
-					owned_by = ROOT
-					province_id = 7151
-					province_id = 3168
-				}
-			}
-			northern_thrace_area = {
-				type = all
-				owned_by = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted 
+				provinces=bul_reclaim_plovdiv_provinces
+				owner_type=owned_by
 			}
 		}
 		effect = {
-			bulgaria_area = { #2
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			silistria_area = { #5
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = {  is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=bul_reclaim_sofia }
+			give_permaclaims_for_mission = { mission=bul_reclaim_karvuna }
 		}
 		ai_weight = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
@@ -712,37 +647,19 @@ bt_bul_minors_slot_5 = {
 		icon = mission_noble_council
 		required_missions = { }
 		provinces_to_highlight = {
-			area = silistria_area
+			province_group = bul_reclaim_karvuna_provinces
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			silistria_area = {
-				type = all
-				owned_by = ROOT
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_highlighted 
+				provinces=bul_reclaim_karvuna_provinces
+				owner_type=owned_by
 			}
 		}
 		effect = {
-			danubian_plain_area = { #3
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			upper_thrace_area = { #4
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = {  is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			northern_thrace_area = { #4
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = {  is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			give_permaclaims_for_mission = { mission=bul_reclaim_tarnovo }
+			give_permaclaims_for_mission = { mission=bul_reclaim_plovdiv }
 		}
 		ai_weight = {
 			factor = 500	#Alt-History, but if Bulgaria exists than they should want to reconquer stuff
@@ -841,11 +758,18 @@ bt_bul_slot_1 = {
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_subjugate_wallachia_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_subjugate_wallachia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
+			give_permaclaims_for_mission = { mission=bul_subjugate_west_slavs }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -857,11 +781,18 @@ bt_bul_slot_1 = {
 		position = 7
 		required_missions = { bul_subjugate_wallachia }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_subjugate_west_slavs_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_subjugate_west_slavs_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
+			give_permaclaims_for_mission = { mission=bul_conquer_pannonia }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -873,9 +804,15 @@ bt_bul_slot_1 = {
 		position = 8
 		required_missions = { bul_subjugate_west_slavs bul_subjugate_transylvania }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_conquer_pannonia_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_conquer_pannonia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
 		}
@@ -900,11 +837,18 @@ bt_bul_slot_2 = {
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_subjugate_moldavia_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_subjugate_moldavia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
+			give_permaclaims_for_mission = { mission=bul_subjugate_transylvania }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -916,9 +860,15 @@ bt_bul_slot_2 = {
 		position = 7
 		required_missions = { bul_subjugate_moldavia bul_subjugate_wallachia }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_subjugate_transylvania_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_subjugate_transylvania_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
 		}
@@ -943,9 +893,15 @@ bt_bul_slot_3 = {
 		position = 5
 		required_missions = { bul_restore_bulgaria }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_conquer_macedonia_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_conquer_macedonia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
 		}
@@ -991,9 +947,15 @@ bt_bul_slot_3 = {
 		position = 9
 		required_missions = { bul_conquer_pannonia bul_true_tsardom bul_subjugate_greece }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_take_tsargrad_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_take_tsargrad_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
 		}
@@ -1018,9 +980,15 @@ bt_bul_slot_4 = {
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_subjugate_albania_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_subjugate_albania_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
 		}
@@ -1034,9 +1002,15 @@ bt_bul_slot_4 = {
 		position = 7
 		required_missions = { bul_subjugate_albania }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_subjugate_serbia_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_subjugate_serbia_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
 		}
@@ -1077,9 +1051,15 @@ bt_bul_slot_5 = {
 		position = 7
 		required_missions = { bul_expel_turks }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_conquer_south_thrace_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_conquer_south_thrace_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
 		}
@@ -1090,12 +1070,18 @@ bt_bul_slot_5 = {
 	
 	bul_subjugate_greece = {
 		icon = mission_noble_council
-		position = 7
+		position = 8
 		required_missions = { bul_conquer_south_thrace bul_subjugate_serbia }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_subjugate_greece_provinces
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
+				provinces=bul_subjugate_greece_provinces
+				owner_type=country_or_non_sovereign_subject_holds
+			}
 		}
 		effect = {
 		}
