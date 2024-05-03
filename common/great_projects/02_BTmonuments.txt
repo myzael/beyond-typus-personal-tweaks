@@ -395,7 +395,7 @@ globe_theatre = {
 	}
 }
 
-lapa_arches = {
+lapa_arches = {	#Carioca Aqueduct
 	# province it starts in
 	start = 763		#Rio de Janeiro
 	
