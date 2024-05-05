@@ -1013,6 +1013,48 @@ bt_bul_slot_3 = {
 			}
 		}
 		effect = {
+			if = { #Wallachia
+				limit = {
+					exists = WAL
+					WAL = {
+						NOT = { total_development = 200 }
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300 #25 years. I'm not sure if you can actually make it infinite.
+					target = WAL
+				}
+			}
+			give_permaclaims_for_mission = { mission=bul_subjugate_wallachia }
+			if = { #Moldavia
+				limit = {
+					exists = MOL
+					MOL = {
+						NOT = { total_development = 200 }
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300 #25 years. I'm not sure if you can actually make it infinite.
+					target = MOL
+				}
+			}
+			give_permaclaims_for_mission = { mission=bul_subjugate_moldavia }
+			if = { #Albania
+				limit = {
+					exists = ALB
+					ALB = {
+						NOT = { total_development = 200 }
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300 #25 years. I'm not sure if you can actually make it infinite.
+					target = ALB
+				}
+			}
+			give_permaclaims_for_mission = { mission=bul_subjugate_albania }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1105,6 +1147,20 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
+			if = { #Serbia
+				limit = {
+					exists = SER
+					SER = {
+						NOT = { total_development = 200 }
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300 #25 years. I'm not sure if you can actually make it infinite.
+					target = SER
+				}
+			}
+			give_permaclaims_for_mission = { mission=bul_subjugate_serbia }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1127,6 +1183,33 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
+			if = { #Epirus
+				limit = {
+					exists = EPI
+					EPI = {
+						NOT = { total_development = 200 }
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300 #25 years. I'm not sure if you can actually make it infinite.
+					target = EPI
+				}
+			}
+			if = { #Morea, if Byz died
+				limit = {
+					exists = MOE
+					MOE = {
+						NOT = { total_development = 200 }
+					}
+				}
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					months = 300 #25 years. I'm not sure if you can actually make it infinite.
+					target = MOE
+				}
+			}
+			give_permaclaims_for_mission = { mission=bul_subjugate_greece }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.

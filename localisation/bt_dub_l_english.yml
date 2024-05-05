@@ -557,7 +557,7 @@
  bul_subjugate_west_slavs_title:0 "Subjugate Western Slavs"
  bul_subjugate_west_slavs_desc:0 "The Slavs to the West of Serbia speak a very similar language to us, yet have sworn fealty to the Pope instead of the Orthodox Patriarchs. This cannot do. They must be subjugated and turned away from the Pope, swearing fealty to the [Root.GetAdjective] Patriarch and [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]!"
  bul_conquer_pannonia_title:0 "Conquer Pannonia"
- bul_conquer_pannonia_desc:0 "With the Magyar Hungarians having been torn apart with the wrestling of Transylvania and the Western Slavs, it is time we put the rest of their people under our rule. Long live [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] - let our armies besiege [HUN.Capital.GetName] and depose [HUN.Monarch.GetName] [HUN.Monarch.Dynasty.GetName]!"
+ bul_conquer_pannonia_desc:0 "With the Magyar Hungarians having been torn apart with the wrestling of Transylvania and the Western Slavs from them, it is time we put the rest of their people under our rule. Long live [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] - let our armies besiege [HUN.Capital.GetName] and depose [HUN.Monarch.GetName] [HUN.Monarch.Dynasty.GetName]!"
  bul_bolyar_houses_title:0 "Bolyar Houses"
  bul_bolyar_houses_desc:0 "In the times of Kaloyan and the Bulgarian Empire, fortifications were constructed for the local nobility known as Bolyar Houses. With the restoration of the [Root.GetAdjective] [Root.GovernmentName], we would do well with restoring and building more of these Bolyar Houses."
  bul_subjugate_moldavia_title:0 "Subjugate Moldavia"
