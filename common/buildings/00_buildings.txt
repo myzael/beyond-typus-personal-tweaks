@@ -3573,6 +3573,16 @@ soldier_households = {
 				duration = -1
 			}
 		}
+		#BT Added: Give free training fields upon constructing soldier households (Current only Bulgarian Missions)
+		if = {
+			limit = {
+				FROM = { #Once gov reform mechanic is added, change this effect to be an OR statement.
+					has_country_flag = mechanic_soldier_households_free_training_fields_flag
+				}
+				num_free_building_slots = 1
+			}
+			add_building = training_fields
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {

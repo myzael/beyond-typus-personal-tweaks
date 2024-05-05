@@ -426,14 +426,13 @@ bul_reclaim_plovdiv_provinces = {
 	1764 7139 7152 7155 7156
 }
 
-bul_conquer_southern_thrace_provinces = {
+bul_conquer_south_thrace_provinces = {
 	149 3170 4705 4779 7130 7134 7136
 }
 
 bul_subjugate_albania_provinces = {
-	7115 3175 
-	144 4699 7132 7133 7140 7141 
 	143 3181 4174 4175 4750 7143 7144
+	3182 5094
 }
 
 bul_take_tsargrad_provinces = {
@@ -441,7 +440,24 @@ bul_take_tsargrad_provinces = {
 }
 
 bul_conquer_west_slavs_provinces = {
-	
+	136 137 4753 4754 7730 7731 7732 7733 
+	138 7708 
+	140 3002 3193 3194 4755 7722 7725 
+	7718 7739 
+	152 1767 3190 4756 7738 8187 
+	131 1826 3196 4752 7734 7735 7736 
+	139 1831 7721 7723 
+	1828 7727 7728 7729 
+	7709
+}
+
+bul_subjugate_greece_provinces = {
+	144 4699 7132 7133 7140 7141 
+	3175 7108 7112 7115 
+	147 3174 7117 7118 
+	146 3003 3177 7109 7110 7111 7113 7114 
+	145 1773 3178 3179 4701 7100 7101 7102 7163 
+	142 4698 7125 7126 
 }
 
 #Romanian missions
@@ -2026,5 +2042,3 @@ fra_subjugate_lorraine_provinces = {
 	187 8421 8422
 	189 7949 7946 8423 8424
 }
-
-bul_

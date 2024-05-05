@@ -769,6 +769,24 @@ bt_bul_slot_1 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					exists = WAL
+					silistria_area = {
+						is_core = WAL
+					}
+				}
+				silistria_area = {
+					remove_core = WAL
+				}
+			}
+			if = {
+				limit = {
+					exists = WAL
+					159 = { is_core = WAL }
+				}
+				159 = { remove_core = WAL }
+			}
 			give_permaclaims_for_mission = { mission=bul_subjugate_west_slavs }
 		}
 		ai_weight = {
@@ -815,6 +833,43 @@ bt_bul_slot_1 = {
 			}
 		}
 		effect = {
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+	
+	bul_bolyar_houses = {
+		icon = mission_noble_council
+		position = 9
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				trade_goods = grain
+				trade_goods = fish
+				trade_goods = livestock
+				trade_goods = wine
+				trade_goods = bt_trade_good_fruit
+			}
+			NOT = { has_building = soldier_households }
+			owned_by = ROOT
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				has_building = soldier_households
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = bt_trade_good_fruit
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = mechanic_soldier_households_free_training_fields_tooltip
+			set_country_flag = mechanic_soldier_households_free_training_fields_flag
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -876,6 +931,60 @@ bt_bul_slot_2 = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
 		}
 	}
+
+	bul_mercenaries = {
+		icon = mission_noble_council
+		position = 9
+		required_missions = { }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					land_forcelimit = 200
+				}
+				num_of_mercenaries = 40
+				has_global_modifier_value = {
+					which = mercenary_discipline
+					value = 0.1
+				}
+			}
+			else_if = {
+				limit = {
+					land_forcelimit = 150
+				}
+				num_of_mercenaries = 30
+				has_global_modifier_value = {
+					which = mercenary_discipline
+					value = 0.1
+				}
+			}
+			else_if = {
+				limit = {
+					land_forcelimit = 100
+				}
+				num_of_mercenaries = 20
+				has_global_modifier_value = {
+					which = mercenary_discipline
+					value = 0.05
+				}
+			}
+			else = {
+				num_of_mercenaries = 10
+				has_global_modifier_value = {
+					which = mercenary_discipline
+					value = 0.05
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = fra_hiring_mercs_free_tt
+			set_country_flag = fra_free_mercs_bargain_sale_flag
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
 }
 
 bt_bul_slot_3 = {
@@ -915,23 +1024,8 @@ bt_bul_slot_3 = {
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
-			owned_by = ROOT
-		}
-		trigger = {
-		}
-		effect = {
-		}
-		ai_weight = {
-			factor = 5	#Alt-History, not that they can do much about this I think.
-		}
-	}
-	
-	bul_true_tsardom = {
-		icon = mission_noble_council
-		position = 8
-		required_missions = { bul_subjugate_transylvania bul_bulgarian_macedonia bul_subjugate_serbia }
-		provinces_to_highlight = {
-			owned_by = ROOT
+			province_group = bul_conquer_macedonia_provinces
+			NOT = { culture = ROOT }
 		}
 		trigger = {
 		}
@@ -945,7 +1039,7 @@ bt_bul_slot_3 = {
 	bul_take_tsargrad = {
 		icon = mission_noble_council
 		position = 9
-		required_missions = { bul_conquer_pannonia bul_true_tsardom bul_subjugate_greece }
+		required_missions = { bul_conquer_pannonia bul_bulgarian_macedonia bul_subjugate_greece }
 		provinces_to_highlight = {
 			province_group = bul_take_tsargrad_provinces
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -958,6 +1052,26 @@ bt_bul_slot_3 = {
 			}
 		}
 		effect = {
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+	
+	bul_true_tsardom = {
+		icon = mission_noble_council
+		position = 9
+		required_missions = { bul_bolyar_houses bul_mercenaries bul_take_tsargrad bul_katepans bul_siege_engines }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			total_own_and_non_tributary_subject_development = 2000
+		}
+		effect = {
+			add_country_modifier = {
+				name = "bul_third_bulgarian_empire"
+				duration = -1
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1013,6 +1127,39 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
+
+	bul_katepans = {
+		icon = mission_noble_council
+		position = 9
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				has_fort_building_trigger = yes
+				has_forcelimit_building_trigger = yes
+			}
+			NOT = { 
+				AND = { #Because NOT is a NOR statement (If any of them are true, NOT evaluates false)
+					has_fort_building_trigger = yes
+					has_forcelimit_building_trigger = yes
+				}
+			}
+			owned_by = ROOT
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 8
+				has_fort_building_trigger = yes
+				has_forcelimit_building_trigger = yes
+				NOT = { is_capital = yes }
+			}
+		}
+		effect = {
+			#New gov reform
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1090,4 +1237,83 @@ bt_bul_slot_5 = {
 		}
 	}
 	
+	bul_siege_engines = {
+		icon = mission_noble_council
+		position = 9
+		required_missions = { }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			if = {
+				limit = {
+					land_forcelimit = 200
+				}
+				num_of_artillery = 80
+				OR = {
+					has_global_modifier_value = {
+						which = artillery_power
+						value = 0.1
+					}
+					has_global_modifier_value = {
+						which = siege_ability
+						value = 0.2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					land_forcelimit = 150
+				}
+				num_of_artillery = 60
+				OR = {
+					has_global_modifier_value = {
+						which = artillery_power
+						value = 0.1
+					}
+					has_global_modifier_value = {
+						which = siege_ability
+						value = 0.2
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					land_forcelimit = 100
+				}
+				num_of_artillery = 40
+				OR = {
+					has_global_modifier_value = {
+						which = artillery_power
+						value = 0.05
+					}
+					has_global_modifier_value = {
+						which = siege_ability
+						value = 0.1
+					}
+				}
+			}
+			else = {
+				num_of_artillery = 20
+				OR = {
+					has_global_modifier_value = {
+						which = artillery_power
+						value = 0.05
+					}
+					has_global_modifier_value = {
+						which = siege_ability
+						value = 0.1
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "bul_siege_engines"
+				duration = -1
+			}
+		}
+		ai_weight = {
+			factor = 5	#Alt-History, not that they can do much about this I think.
+		}
+	}
 }
