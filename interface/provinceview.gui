@@ -792,7 +792,7 @@ guiTypes = {
 			}
 			
 			# BT Dev Points
-			# This controls the text box for a provinces local generated dev points ui (It also shows in subjects)
+			# This controls the dev points icon for a provinces local generated dev points ui (It also shows in subjects)
 			iconType = {
 				name ="local_generated_dev_points_gui_icon"
 				spriteType = "local_generated_dev_points_gui_icon"
@@ -800,7 +800,7 @@ guiTypes = {
 				scripted = yes
 			}
 			# BT Dev Points
-			# This controls the dev points icon for a provinces local generated dev points ui (It also shows in subjects)
+			# This controls the text box for a provinces local generated dev points ui (It also shows in subjects)
 			instantTextBoxType = {
 				name = "local_generated_dev_points_gui"
 				position = { x = 170 y = 37}

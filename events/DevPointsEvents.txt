@@ -544,7 +544,7 @@ country_event = {
 		name = "dev_points.99.opta"
 		ai_chance = { factor = 1 }
 		hidden_effect = {
-			calculate_monthly_dev_points_in_all_provinces_effect = yes
+			calculate_monthly_dev_points_in_all_provinces_effect = yes		#In 02_scripted_effects_for_dev_points
 		}
 	}
 
@@ -553,22 +553,22 @@ country_event = {
 	option = {
 		name = "dev_points.99.optb"
 		ai_chance = { factor = 1 }
-		calculate_monthly_dev_points_with_country_modifiers_effect = yes
-		add_monthly_dev_points_effect = yes
+		calculate_monthly_dev_points_with_country_modifiers_effect = yes	#In 02_scripted_effects_for_dev_points
+		add_monthly_dev_points_effect = yes									#In 02_scripted_effects_for_dev_points
 	}
 	
 	# Recalculates the nations monthly dev points using old province calulations
 	option = {
 		name = "dev_points.99.optc"
 		ai_chance = { factor = 1 }
-		calculate_monthly_dev_points_with_country_modifiers_effect = yes
+		calculate_monthly_dev_points_with_country_modifiers_effect = yes	#In 02_scripted_effects_for_dev_points
 	}
 	
 	# Adds the previously calculated monthly dev points to the nation
 	option = {
 		name = "dev_points.99.optd"
 		ai_chance = { factor = 1 }
-		calculate_monthly_dev_points_with_country_modifiers_effect = yes
+		calculate_monthly_dev_points_with_country_modifiers_effect = yes	#In 02_scripted_effects_for_dev_points
 		add_monthly_dev_points_effect = yes
 	}
 	
@@ -578,9 +578,9 @@ country_event = {
 		name = "dev_points.99.opte"
 		ai_chance = { factor = 1 }
 		capital_scope = { 
-			spend_dev_points_effect = yes
+			spend_dev_points_effect = yes									#In 02_scripted_effects_for_dev_points
 			add_base_tax = 1
-			simulate_development = yes
+			simulate_development = yes										#In 02_scripted_effects_for_dev_points
 		}
 
 	}
@@ -590,9 +590,9 @@ country_event = {
 		name = "dev_points.99.optf"
 		ai_chance = { factor = 1 }
 		capital_scope = { 
-			spend_dev_points_effect = yes
+			spend_dev_points_effect = yes									#In 02_scripted_effects_for_dev_points
 			add_base_production = 1
-			simulate_development = yes
+			simulate_development = yes										#In 02_scripted_effects_for_dev_points
 		}
 	}
 	# Spending dev points in the capital
@@ -601,9 +601,9 @@ country_event = {
 		name = "dev_points.99.optg"
 		ai_chance = { factor = 1 }
 		capital_scope = { 
-			spend_dev_points_effect = yes
+			spend_dev_points_effect = yes									#In 02_scripted_effects_for_dev_points
 			add_base_manpower = 1
-			simulate_development = yes
+			simulate_development = yes										#In 02_scripted_effects_for_dev_points
 		}
 	}
 	
@@ -611,7 +611,7 @@ country_event = {
 	option = { 						
 		name = "dev_points.99.opth"
 		ai_chance = { factor = 1 }
-		calculate_dev_point_limit_effect = yes
+		calculate_dev_point_limit_effect = yes								#In 02_scripted_effects_for_dev_points
 	}
 	
 	#Sets dev points to 0
@@ -626,7 +626,7 @@ country_event = {
 			which = shown_current_dev_points 
 			which = current_dev_points 
 		}
-		integer = { var = shown_current_dev_points }
+		integer = { var = shown_current_dev_points }						#In 02_scripted_effects_for_dev_points
 	}
 	
 	# Turns on the total generated dev points gui 

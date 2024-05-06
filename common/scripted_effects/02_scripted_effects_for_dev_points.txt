@@ -1,28 +1,39 @@
-# Development point effects by Harbivore (with design help from Dub)
-# All the effects are here to hopefully make them easier to change
+# Dev points scripted effects by Harbivore (with design help from Dub)
+
+
+######################### Extra functions #########################
 
 # Changes a variable into an integer
+# Needs var to be defined with the number to be rounded
 integer = {
     change_variable = { which = $var$ value = 0.5 }
     multiply_variable = { which = $var$ value = 0.001 }
     multiply_variable = { which = $var$ value = 1000 }
 }
+
 # Rounds a variable to 2 decimal points
-two_decimals = {
-    change_variable = { which = $var$ value = 0.005 }
-    multiply_variable = { which = $var$ value = 0.1 }
-    multiply_variable = { which = $var$ value = 10 }
-}
-# Rounds a variable to 2 decimal points
+# Needs var to be defined with the number to be rounded
 one_decimal = { 
     change_variable = { which = $var$ value = 0.05 }
     multiply_variable = { which = $var$ value = 0.01 }
     multiply_variable = { which = $var$ value = 100 }
 }
 
-#############################  Calculations for dev points  #############################
+# Rounds a variable to 2 decimal points
+# Needs var to be defined with the number to be rounded
+two_decimals = {
+    change_variable = { which = $var$ value = 0.005 }
+    multiply_variable = { which = $var$ value = 0.1 }
+    multiply_variable = { which = $var$ value = 10 }
+}
+
+
+##################  Calculations for dev points  ##################
 
 # Calculation to get the cost of developing in a province 
+# Used only in other scripted effects. 
+# Used in calculate_monthly_dev_points_in_all_provinces_effect
+# Used in auto_dev_spending_dev_points_effect
 calculate_development_cost = {
 	set_variable = {		#Sets variable for base development cost
 		which = base_development_cost_for_dev_points
@@ -164,6 +175,8 @@ calculate_development_cost = {
 }
 
 # Calculation to show how good this province is to develop
+# Used in calculate_monthly_dev_points_in_all_provinces_effect
+# Used in auto_dev_spending_dev_points_effect 
 calculate_auto_dev_desirability_effect = {
     set_variable = {
 		which = auto_dev_desirability 
@@ -848,8 +861,12 @@ calculate_auto_dev_desirability_effect = {
 	
 }
 
-# Calculation to get dev points per month from provinces 							(used in country scope) (Very intensive)
-calculate_monthly_dev_points_in_all_provinces_effect = {
+# Calculation to get dev points per month from provinces 											
+# Used in dev_points.1
+# Used in dev_points.2
+# Used in dev_points.3
+# Used in dev_points.99
+calculate_monthly_dev_points_in_all_provinces_effect = {				#(used in country scope) (Very intensive)
 	set_variable = {
 		which = precalc_monthly_dev_points
 		value = 0
@@ -1085,8 +1102,12 @@ calculate_monthly_dev_points_in_all_provinces_effect = {
 	two_decimals = { var = monthly_dev_points_from_subjects }
 }
 
-# Calculation to get dev points per month countrywide with all country modifiers  	(used in country scope)
-calculate_monthly_dev_points_with_country_modifiers_effect = {
+# Calculation to get dev points per month countrywide with all country modifiers  					
+# Used in dev_points.1
+# Used in dev_points.2
+# Used in dev_points.3 
+# Used in dev_points.99
+calculate_monthly_dev_points_with_country_modifiers_effect = {			#(used in country scope)
 	set_variable = {
 		which = calc_monthly_dev_points
 		which = precalc_monthly_dev_points
@@ -1640,8 +1661,12 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {
 	two_decimals = { var = calc_monthly_dev_points }
 }
 
-# Adds the monthly development points to the current amount 						(used in country scope)
-add_monthly_dev_points_effect = {
+# Adds the monthly development points to the current amount 
+# Used in dev_points.1 
+# Used in dev_points.2
+# Used in dev_points.4
+# Used in dev_points.99
+add_monthly_dev_points_effect = {										#(used in country scope)
 	change_variable = {				#Applies the saved monthly dev point gain
 		which = current_dev_points
 		which = postcalc_monthly_dev_points
@@ -1662,8 +1687,11 @@ add_monthly_dev_points_effect = {
     integer = { var = shown_total_accumulated_dev_points }
 }
 
-# Setting the max development points 												(used in country scope)
-calculate_dev_point_limit_effect = {		
+# Setting the max development points 		
+# Used in dev_points.1 				
+# Used in dev_points.2
+# Used in dev_points.99
+calculate_dev_point_limit_effect = {									#(used in country scope)
 	set_variable = {			#Sets a variable maximum dev points      
 		which = maximum_dev_points
 		value = 100
@@ -1728,10 +1756,15 @@ calculate_dev_point_limit_effect = {
 	}
 }
 
-#################################  Spending dev points  #################################
 
-# Spending dev points on tax   														(used in province scope)
-spend_dev_points_effect = {
+######################  Spending dev points  ######################
+
+# Spending dev points, calculates the cost in the province as well
+# (Works for the buttons in province view)
+# Used in dev_points.5
+# Used in dev_points.55
+# Used in dev_points.555
+spend_dev_points_effect = {												#(used in province scope)
 	set_variable = {		#Sets variable for base development cost
 		which = base_development_cost_for_dev_points
 		value = 25
@@ -1898,7 +1931,12 @@ spend_dev_points_effect = {
 	}
 }
 
-refund_monarch_points_on_dev = {
+# Refunds the hardcoded vanilla monarch points for developing
+# (Works for the buttons in province view)
+# Used in dev_points.5
+# Used in dev_points.55
+# Used in dev_points.555
+refund_monarch_points_on_dev = {										#(used in province scope)
 	while = {
 		limit = {
 			check_variable = {
@@ -1940,8 +1978,8 @@ refund_monarch_points_on_dev = {
 	}
 }
 
-
-# Spending dev points on production   												(used in province scope)
+# Simulates developing a province    																				(used in province scope)
+# (Used in auto dev function to approximate vanilla development buttons)
 simulate_development = {		
 	add_next_institution_embracement_scaled = 5	
 	export_to_variable = {		#
@@ -1994,19 +2032,7 @@ simulate_development = {
 	}
 }
 
-###################################  Mission rewards  ###################################
-
-# Gives the nation $dev$ amount dev points											(used in country scope)
-give_dev_points_effect = {
-	change_variable = {
-		which = current_dev_points
-		value = $dev$
-	}
-}
-
-
-# Calculate to check if a nation is over their dev point limit						(used in country scope)
-# Spends all of the ai's dev points but only enough to get player's under the limit
+# Actually does the spending of dev points in a province
 auto_dev_spending_dev_points_effect = {
 		random_list = {
 			10 = {	
@@ -2097,6 +2123,7 @@ auto_dev_spending_dev_points_effect = {
 		calculate_auto_dev_desirability_effect = yes
 }
 
+# Will repeat until all of the ai's dev points are gone but only enough to get player's under the limit				(used in country scope)
 # Finds a province to develop and then initiates another scripted effect to develop there
 spend_dev_points_if_over_limit_effect = {
 	while = {
@@ -2360,5 +2387,15 @@ spend_dev_points_if_over_limit_effect = {
 }
 
 
+########################  Mission rewards  ########################
+
+# Gives the nation $dev$ amount dev points																			(used in country scope)
+# Used in events/missions/etc to give a reward of dev points
+give_dev_points_effect = {
+	change_variable = {
+		which = current_dev_points
+		value = $dev$
+	}
+}
 
 

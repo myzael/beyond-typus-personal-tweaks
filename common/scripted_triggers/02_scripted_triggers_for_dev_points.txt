@@ -1,4 +1,8 @@
-is_in_any_colonial_region = {	#Used in dev points to give modifiers to provinces in a colonial region
+# Dev points scripted triggers by Harbivore
+
+
+# Used in dev points to give modifiers to provinces in a colonial region
+is_in_any_colonial_region = {
 	OR = {
 		colonial_region = colonial_alaska
 		colonial_region = colonial_canada
