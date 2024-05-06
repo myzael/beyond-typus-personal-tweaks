@@ -1,17 +1,20 @@
 # Development point effects by Harbivore (with design help from Dub)
 # All the effects are here to hopefully make them easier to change
 
-integer = { #changes a variable into an integer
+# Changes a variable into an integer
+integer = {
     change_variable = { which = $var$ value = 0.5 }
     multiply_variable = { which = $var$ value = 0.001 }
     multiply_variable = { which = $var$ value = 1000 }
 }
-two_decimals = { #rounds a variable to 2 decimal points
+# Rounds a variable to 2 decimal points
+two_decimals = {
     change_variable = { which = $var$ value = 0.005 }
     multiply_variable = { which = $var$ value = 0.1 }
     multiply_variable = { which = $var$ value = 10 }
 }
-one_decimal = { #rounds a variable to 2 decimal points
+# Rounds a variable to 2 decimal points
+one_decimal = { 
     change_variable = { which = $var$ value = 0.05 }
     multiply_variable = { which = $var$ value = 0.01 }
     multiply_variable = { which = $var$ value = 100 }
@@ -39,7 +42,7 @@ calculate_development_cost = {
 		value = modifier:all_power_cost 
 		who = PREV
 	}
-	change_variable = {			#Adds 1 to the modifier 
+	change_variable = {			#Adds 1 to the modifier
 		which = local_development_cost_for_dev_points
 		which = development_cost_for_dev_points
 	}
@@ -161,11 +164,608 @@ calculate_development_cost = {
 }
 
 # Calculation to show how good this province is to develop
-calculate_auto_dev_weight_effect = {
+calculate_auto_dev_desirability_effect = {
     set_variable = {
-		which = auto_dev_weight 
-		value = 0 
+		which = auto_dev_desirability 
+		which = base_development_cost_for_dev_points	#Should be the cost to dev province
 	}
+	if = {
+		limit = {
+			has_owner_culture = yes
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -1.25
+		}
+	}
+	if = {
+		limit = {
+			has_owner_accepted_culture = yes
+			culture_group = ROOT	#I think this will work
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -1.25
+		}
+	}
+	if = {
+		limit = {
+			is_capital_of = ROOT
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -5
+		}
+	}
+	if = {
+		limit = {
+			capital_scope = { 
+				same_trade_node = PREV
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {
+		limit = {
+			has_port = yes
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {
+		limit = {
+			trade_goods = gold
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -20
+		}
+	}
+	if = {
+		limit = {
+			trade_goods = bt_trade_good_silver
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -10
+		}
+	}
+	if = {
+		limit = {
+			trade_goods = coal
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -15
+		}
+	}
+	if = {
+		limit = {
+			province_has_center_of_trade_of_level = 1
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {
+		limit = {
+			province_has_center_of_trade_of_level = 2
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {
+		limit = {
+			province_has_center_of_trade_of_level = 3
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -5
+		}
+	}
+	if = {
+		limit = {
+			has_river_estuary_trigger = yes
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -5
+		}
+	}
+	if = {
+		limit = {
+			is_prosperous = yes
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -5
+		}
+	}
+	if = {
+		limit = {
+			OR = { 	
+				has_empty_adjacent_province = yes
+				any_neighbor_province = { 
+					NOT = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = 10
+		}
+	}
+	if = {	# For 1 dev from expand infrastructure
+		limit = {
+			OR = {
+				AND = {
+					development = 14
+					NOT = {
+						development = 15
+					}
+				}
+				AND = {
+					development = 29
+					NOT = {
+						development = 30
+					}
+				}
+				AND = {
+					development = 44
+					NOT = {
+						development = 45
+					}
+				}
+				AND = {
+					development = 59
+					NOT = {
+						development = 60
+					}
+				}
+				AND = {
+					development = 74
+					NOT = {
+						development = 75
+					}
+				}
+				AND = {
+					development = 89
+					NOT = {
+						development = 90
+					}
+				}
+				AND = {
+					development = 104
+					NOT = {
+						development = 105
+					}
+				}
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {	# For 2 dev from expand infrastructure
+		limit = {
+			OR = {
+				AND = {
+					development = 13
+					NOT = {
+						development = 15
+					}
+				}
+				AND = {
+					development = 28
+					NOT = {
+						development = 30
+					}
+				}
+				AND = {
+					development = 43
+					NOT = {
+						development = 45
+					}
+				}
+				AND = {
+					development = 58
+					NOT = {
+						development = 60
+					}
+				}
+				AND = {
+					development = 73
+					NOT = {
+						development = 75
+					}
+				}
+				AND = {
+					development = 88
+					NOT = {
+						development = 90
+					}
+				}
+				AND = {
+					development = 103
+					NOT = {
+						development = 105
+					}
+				}
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {	# For 1 dev from new building slot
+		limit = {
+			OR = {
+				AND = {
+					development = 9
+					NOT = {
+						development = 10
+					}
+				}
+				AND = {
+					development = 19
+					NOT = {
+						development = 20
+					}
+				}
+				AND = {
+					development = 29
+					NOT = {
+						development = 30
+					}
+				}
+				AND = {
+					development = 39
+					NOT = {
+						development = 40
+					}
+				}
+				AND = {
+					development = 49
+					NOT = {
+						development = 50
+					}
+				}
+				AND = {
+					development = 59
+					NOT = {
+						development = 60
+					}
+				}
+				AND = {
+					development = 69
+					NOT = {
+						development = 70
+					}
+				}
+				AND = {
+					development = 79
+					NOT = {
+						development = 80
+					}
+				}
+				AND = {
+					development = 89
+					NOT = {
+						development = 90
+					}
+				}
+				AND = {
+					development = 99
+					NOT = {
+						development = 100
+					}
+				}
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -5
+		}
+	}
+	if = {	# For 2 dev from new building slot
+		limit = {
+			OR = {
+				AND = {
+					development = 8
+					NOT = {
+						development = 10
+					}
+				}
+				AND = {
+					development = 18
+					NOT = {
+						development = 20
+					}
+				}
+				AND = {
+					development = 28
+					NOT = {
+						development = 30
+					}
+				}
+				AND = {
+					development = 38
+					NOT = {
+						development = 40
+					}
+				}
+				AND = {
+					development = 48
+					NOT = {
+						development = 50
+					}
+				}
+				AND = {
+					development = 58
+					NOT = {
+						development = 60
+					}
+				}
+				AND = {
+					development = 68
+					NOT = {
+						development = 70
+					}
+				}
+				AND = {
+					development = 78
+					NOT = {
+						development = 80
+					}
+				}
+				AND = {
+					development = 88
+					NOT = {
+						development = 90
+					}
+				}
+				AND = {
+					development = 98
+					NOT = {
+						development = 100
+					}
+				}
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -5
+		}
+	}
+	if = {
+		limit = {
+			has_state_edict = encourage_development
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = 10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				has_owner_religion = yes
+				has_owner_secondary_religion = yes
+				tolerance_to_this = 3
+			}	
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -10
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					tolerance_to_this = 2
+					NOT = {
+						tolerance_to_this = 3
+					}
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = local_religious_unity_contribution_modifier
+						value = modifier:local_religious_unity_contribution
+					}
+					NOT = {
+						check_variable = {
+							which = local_religious_unity_contribution_modifier
+							value = 0.25
+						}
+					}
+					check_variable = {
+						which = local_religious_unity_contribution_modifier
+						value = 0
+					}
+				}
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -7.5
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					tolerance_to_this = 1
+					NOT = {
+						tolerance_to_this = 2
+					}
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = local_religious_unity_contribution_modifier
+						value = modifier:local_religious_unity_contribution
+					}
+					NOT = {
+						check_variable = {
+							which = local_religious_unity_contribution_modifier
+							value = 0.25
+						}
+					}
+					check_variable = {
+						which = local_religious_unity_contribution_modifier
+						value = 0.5
+					}
+				}
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -5
+		}
+	}
+	if = {
+		limit = {
+			OR = {
+				AND = {
+					tolerance_to_this = 0
+					NOT = {
+						tolerance_to_this = 1
+					}
+				}
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						variable_name = local_religious_unity_contribution_modifier
+						value = modifier:local_religious_unity_contribution
+					}
+					NOT = {
+						check_variable = {
+							which = local_religious_unity_contribution_modifier
+							value = 0.75
+						}
+					}
+					check_variable = {
+						which = local_religious_unity_contribution_modifier
+						value = 0.5
+					}
+				}
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {
+		limit = {
+			area_for_scope_province = { 
+				is_capital_of = ROOT
+			}
+		}
+		change_variable = {            
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {
+		limit = {
+			local_autonomy = 0.1
+		}
+		export_to_variable = {
+			which = local_autonomy_for_auto_dev
+			value = local_autonomy
+		}
+		multiply_variable = {
+			which = local_autonomy_for_auto_dev
+			value = 0.25
+		}
+		change_variable = {
+			which = auto_dev_desirability
+			which = local_autonomy_for_dev_points
+		}
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_times_needed_to_be_deved_for_missions_or_agendas
+				value = 1
+			}
+		}
+		change_variable = {
+			which = auto_dev_desirability
+			value = -25
+		}
+	}
+	if = {
+		limit = {
+			is_overseas = yes
+		}
+		change_variable = {
+			which = auto_dev_desirability
+			value = 10
+		}
+	}
+	# Please improve this Harbivore
+	#####################################################################################
+	if = {
+		limit = {
+			num_of_buildings_in_province = 2
+		}
+		change_variable = {
+			which = auto_dev_desirability
+			value = -1.25
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 4
+		}
+		change_variable = {
+			which = auto_dev_desirability
+			value = -1.25
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 6
+		}
+		change_variable = {
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 8
+		}
+		change_variable = {
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	if = {
+		limit = {
+			num_of_buildings_in_province = 10
+		}
+		change_variable = {
+			which = auto_dev_desirability
+			value = -2.5
+		}
+	}
+	#####################################################################################
+	
+	
 	# The way we will understand this is to consider if the province had gold how much extra development cost would I be willing to pay. 
 	# These calculations need to decide just how much development it's worth paying extra to develop.
 	# For gold I think it's reasonable to pay at least an extra 50%, because of how good gold is.
@@ -207,10 +807,10 @@ calculate_auto_dev_weight_effect = {
 	# 	-0.1 / -0.2
 	# - Missions to dev provinces (Have previous mission put a flag on the province. Note: what happens after the ai reaches the requirement but doesn't finish the mission)
 	# 	-1
-	# - Estate Agendas (When agenda selected put a flag on the province to increase its auto_dev_weight)
+	# - Estate Agendas (When agenda selected put a flag on the province to increase its auto_dev_desirability)
 	# 	-1
 	# - Prosperity
-	# 	-0.15
+	# 	-0.2
 	# - Overseas province (Not a subject)
 	# 	+0.4
 	# - Province on border with neighbour or has an empty adjacent province
@@ -230,6 +830,22 @@ calculate_auto_dev_weight_effect = {
 	# - Territory - Already included in Autonomy
 	# - Climate - Already included in development cost
 	# - Devastation - Not needed players should be doing that themselves if they care
+	
+	
+	# This will be the base for an event that will have the different bands of auto dev weight. So it will be more likely to pick the better provinces
+	# E.g:
+	# option 1
+	# auto_dev_desirability < 1
+	# ai_chance 1
+	#
+	# option 2
+	# auto_dev_desirability < 0.5
+	# ai_chance 2
+	#
+	# option 3
+	# auto_dev_desirability < 0 
+	# ai_chance 3
+	
 }
 
 # Calculation to get dev points per month from provinces 							(used in country scope) (Very intensive)
@@ -241,6 +857,19 @@ calculate_monthly_dev_points_in_all_provinces_effect = {
 	set_variable = {
 		which = monthly_dev_points_from_subjects
 		value = 0
+	}
+	random_list = {
+		#Player update all provinces once every year roughly 
+		#AI update all provinces once every 4 years roughly 
+		10 = {
+			modifier = {
+				factor = 11
+				ai = yes
+			}
+			set_country_flag = calculating_auto_dev_desirability
+		}
+		110 = {
+		}
 	}
 	every_owned_province = {
 		export_to_variable = {
@@ -395,7 +1024,16 @@ calculate_monthly_dev_points_in_all_provinces_effect = {
 				which = PREV
 			}
 		}
+		if = {
+			limit = {
+				owner = {
+					has_country_flag = calculating_auto_dev_desirability
+				}
+			}
+			calculate_auto_dev_desirability_effect = yes
+		}
 	}
+	clr_country_flag = calculating_auto_dev_desirability
 	set_variable = {
 		which = monthly_dev_points_from_provinces
 		which = precalc_monthly_dev_points
@@ -1263,7 +1901,7 @@ spend_dev_points_effect = {
 refund_monarch_points_on_dev = {
 	while = {
 		limit = {
-			check_variable = {		
+			check_variable = {
 				which = monarch_point_refund
 				value = 100
 			}
@@ -1301,7 +1939,6 @@ refund_monarch_points_on_dev = {
 		}
 	}
 }
-
 
 
 # Spending dev points on production   												(used in province scope)
@@ -1343,11 +1980,23 @@ simulate_development = {
 			share = -0.1
 		}
 	}
+	if = {
+		limit = {
+			check_variable = {
+				which = num_of_times_needed_to_be_deved_for_missions_or_agendas
+				value = 1
+			}
+		}
+		change_variable = {
+			which = num_of_times_needed_to_be_deved_for_missions_or_agendas
+			value = -1
+		}
+	}
 }
 
 ###################################  Mission rewards  ###################################
 
-#Gives the nation $dev$ amount dev points											(used in country scope)
+# Gives the nation $dev$ amount dev points											(used in country scope)
 give_dev_points_effect = {
 	change_variable = {
 		which = current_dev_points
@@ -1358,6 +2007,97 @@ give_dev_points_effect = {
 
 # Calculate to check if a nation is over their dev point limit						(used in country scope)
 # Spends all of the ai's dev points but only enough to get player's under the limit
+auto_dev_spending_dev_points_effect = {
+		random_list = {
+			10 = {	
+				modifier = {
+					factor = 0
+					has_more_than_double_any_dev_type = {
+						DevA = adm_dev
+						DevB = dip_dev
+						DevC = mil_dev
+					}
+				}
+				calculate_development_cost = yes
+				set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
+					which = current_dev_points
+					which = base_development_cost_for_dev_points
+				}
+				PREV = {					#Takes away the cost of the province from the dev points	
+					subtract_variable = {
+						which = current_dev_points
+						which = PREV
+					}
+					set_variable = { 
+						which = shown_current_dev_points 
+						which = current_dev_points 
+					}
+					one_decimal = { var = shown_current_dev_points }
+				}
+				add_base_tax = 1
+				simulate_development = yes
+			}
+			15 = {	
+				modifier = {
+					factor = 0
+					has_more_than_double_any_dev_type = {
+						DevA = dip_dev
+						DevB = adm_dev
+						DevC = mil_dev
+					}
+				}
+				calculate_development_cost = yes
+				set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
+					which = current_dev_points
+					which = base_development_cost_for_dev_points
+				}
+				PREV = {					#Takes away the cost of the province from the dev points	
+					subtract_variable = {
+						which = current_dev_points
+						which = PREV
+					}
+					set_variable = { 
+						which = shown_current_dev_points 
+						which = current_dev_points 
+					}
+					one_decimal = { var = shown_current_dev_points }
+				}
+				add_base_production = 1
+				simulate_development = yes
+			}
+			10 = {		
+				modifier = {
+					factor = 0
+					has_more_than_double_any_dev_type = {
+						DevA = mil_dev
+						DevB = dip_dev
+						DevC = adm_dev
+					}
+				}
+				calculate_development_cost = yes
+				set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
+					which = current_dev_points
+					which = base_development_cost_for_dev_points
+				}
+				PREV = {					#Takes away the cost of the province from the dev points	
+					subtract_variable = {
+						which = current_dev_points
+						which = PREV
+					}
+					set_variable = { 
+						which = shown_current_dev_points 
+						which = current_dev_points 
+					}
+					one_decimal = { var = shown_current_dev_points }
+				}
+				add_base_manpower = 1
+				simulate_development = yes
+			}
+		}
+		calculate_auto_dev_desirability_effect = yes
+}
+
+# Finds a province to develop and then initiates another scripted effect to develop there
 spend_dev_points_if_over_limit_effect = {
 	while = {
 		limit = {
@@ -1366,7 +2106,7 @@ spend_dev_points_if_over_limit_effect = {
 					ai = yes
 					check_variable = {
 						which = current_dev_points
-						value = 25
+						value = 10
 					}
 				}
 				AND = {			#For players this will spend their points until they are under the max
@@ -1384,99 +2124,241 @@ spend_dev_points_if_over_limit_effect = {
 				}
 			}
 		}
-		#Basic spending of points for now
-		random_owned_province = {
-			limit = {
-				is_state = yes
+		random_list = {	# This should prioritise provinces with low desirability
+		
+			# These weights are really abstruse because they arent bounded they are just all variables below them
+			# Please just leave them alone unless you are 100% sure about what you are doing
+			
+			10 = {	# For provinces with above 2 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						check_variable = {
+							which = auto_dev_desirability
+							value = 50
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						check_variable = {
+							which = auto_dev_desirability
+							value = 50
+						}
+					}
+					auto_dev_spending_dev_points_effect = yes
+				}
 			}
-			random_list = {
-				1 = {	
-					modifier = {
-						factor = 0
-						has_more_than_double_any_dev_type = {
-							DevA = adm_dev
-							DevB = dip_dev
-							DevC = mil_dev
+			20 = {	# For provinces with below 2 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 50
+							}
 						}
 					}
-					calculate_development_cost = yes
-					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
-						which = current_dev_points
-						which = base_development_cost_for_dev_points
-					}
-					PREV = {					#Takes away the cost of the province from the dev points	
-						subtract_variable = {
-							which = current_dev_points
-							which = PREV
-						}
-						set_variable = { 
-							which = shown_current_dev_points 
-							which = current_dev_points 
-						}
-						one_decimal = { var = shown_current_dev_points }
-					}
-					add_base_tax = 1
-					simulate_development = yes
 				}
-				1 = {	
-					modifier = {
-						factor = 0
-						has_more_than_double_any_dev_type = {
-							DevA = dip_dev
-							DevB = adm_dev
-							DevC = mil_dev
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 50
+							}
 						}
 					}
-					calculate_development_cost = yes
-					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
-						which = current_dev_points
-						which = base_development_cost_for_dev_points
-					}
-					PREV = {					#Takes away the cost of the province from the dev points	
-						subtract_variable = {
-							which = current_dev_points
-							which = PREV
-						}
-						set_variable = { 
-							which = shown_current_dev_points 
-							which = current_dev_points 
-						}
-						one_decimal = { var = shown_current_dev_points }
-					}
-					add_base_production = 1
-					simulate_development = yes
+					auto_dev_spending_dev_points_effect = yes
 				}
-				1 = {		
-					modifier = {
-						factor = 0
-						has_more_than_double_any_dev_type = {
-							DevA = mil_dev
-							DevB = dip_dev
-							DevC = adm_dev
+			}
+			30 = {	# For provinces with below 1.5 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 37.5
+							}
 						}
 					}
-					calculate_development_cost = yes
-					set_variable = {			#Sets variable current dev points which is actually the cost for the province to be developed
-						which = current_dev_points
-						which = base_development_cost_for_dev_points
-					}
-					PREV = {					#Takes away the cost of the province from the dev points	
-						subtract_variable = {
-							which = current_dev_points
-							which = PREV
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 37.5
+							}
 						}
-						set_variable = { 
-							which = shown_current_dev_points 
-							which = current_dev_points 
-						}
-						one_decimal = { var = shown_current_dev_points }
 					}
-					add_base_manpower = 1
-					simulate_development = yes
+					auto_dev_spending_dev_points_effect = yes
+				}
+			}
+			40 = {	# For provinces with below 1 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 25
+							}
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 25
+							}
+						}
+					}
+					auto_dev_spending_dev_points_effect = yes
+				}
+			}
+			50 = {	# For provinces with below 0.5 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 12.5
+							}
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 12.5
+							}
+						}
+					}
+					auto_dev_spending_dev_points_effect = yes
+				}
+			}
+			60 = {	# For provinces with below 0 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 0
+							}
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = 0
+							}
+						}
+					}
+					auto_dev_spending_dev_points_effect = yes
+				}
+			}
+			70 = {	# For provinces with below -0.5 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = -12.5
+							}
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = -12.5
+							}
+						}
+					}
+					auto_dev_spending_dev_points_effect = yes
+				}
+			}
+			80 = {	# For provinces with below -1 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = -25
+							}
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = -25
+							}
+						}
+					}
+					auto_dev_spending_dev_points_effect = yes
+				}
+			}
+			90 = {	# For provinces with below -1.5 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = -37.5
+							}
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = -37.5
+							}
+						}
+					}
+					auto_dev_spending_dev_points_effect = yes
+				}
+			}
+			100 = {	# For provinces with below -2 auto_dev_desirability
+				trigger = {
+					any_owned_province = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = -50
+							}
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = auto_dev_desirability
+								value = -50
+							}
+						}
+					}
+					auto_dev_spending_dev_points_effect = yes
 				}
 			}
 		}
 	}
 }
+
+
 
 
