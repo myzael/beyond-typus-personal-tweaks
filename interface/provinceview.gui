@@ -766,35 +766,17 @@ guiTypes = {
 				format = centre
 				fixedsize = yes
 			}
-			#BTDP
-			iconType = {
-				name ="current_dev_points_gui_icon_foreign"
-				spriteType = "current_dev_points_gui_icon"
-				position = { x = 55 y = 30 }
-				scripted = yes
-			}
-			#BTDP
+			
+			# BT Dev Points
+			# This controls the dev points icon for nations current dev points ui (It also shows in subjects)
 			iconType = {
 				name ="current_dev_points_gui_icon"
 				position = { x = 55 y = 30 }
 				spriteType = "current_dev_points_gui_icon"
 				scripted = yes
 			}
-			#BTDP
-			iconType = {
-				name ="local_generated_dev_points_gui_icon_foreign"
-				spriteType = "local_generated_dev_points_gui_icon"
-				position = { x = 145 y = 30 }
-				scripted = yes
-			}
-			#BTDP
-			iconType = {
-				name ="local_generated_dev_points_gui_icon"
-				spriteType = "local_generated_dev_points_gui_icon"
-				position = { x = 145 y = 30 }
-				scripted = yes
-			}
-			#BTDP
+			# BT Dev Points
+			# This controls the text box for nations current dev points ui (It also shows in subjects)
 			instantTextBoxType = {
 				name = "current_dev_points_gui"
 				position = { x = 75	y = 37}
@@ -808,7 +790,17 @@ guiTypes = {
 				fixedsize = yes
 				scripted = yes
 			}
-			#BTDP
+			
+			# BT Dev Points
+			# This controls the text box for a provinces local generated dev points ui (It also shows in subjects)
+			iconType = {
+				name ="local_generated_dev_points_gui_icon"
+				spriteType = "local_generated_dev_points_gui_icon"
+				position = { x = 145 y = 30 }
+				scripted = yes
+			}
+			# BT Dev Points
+			# This controls the dev points icon for a provinces local generated dev points ui (It also shows in subjects)
 			instantTextBoxType = {
 				name = "local_generated_dev_points_gui"
 				position = { x = 170 y = 37}
@@ -822,21 +814,17 @@ guiTypes = {
 				fixedsize = yes
 				scripted = yes
 			}
-			#BTDP
-			instantTextBoxType = {
-				name = "total_generated_dev_points_gui"
-				position = { x = 275 y = 37}
-				textureFile = ""
-				font = "vic_18"
-				borderSize = {x = 2 y = 2}
-				text = "total_generated_dev_points_gui"
-				maxWidth = 60
-				maxHeight = 20
-				format = centre
-				fixedsize = yes
+			
+			# BT Dev Points
+			# This controls the dev points icon that appears when looking in other nations current dev points
+			iconType = {
+				name ="current_dev_points_gui_icon_foreign"
+				spriteType = "current_dev_points_gui_icon"
+				position = { x = 55 y = 30 }
 				scripted = yes
 			}
-			#BTDP
+			# BT Dev Points
+			# This controls the text box which makes a '-'  appear when looking in other nations current dev points
 			instantTextBoxType = {
 				name = "cant_see_foreign_current_dev_points"
 				position = { x = 90 y = 37}
@@ -850,7 +838,17 @@ guiTypes = {
 				fixedsize = yes
 				scripted = yes
 			}
-			#BTDP
+			
+			# BT Dev Points
+			# This controls the dev points icon when looking in other nations local generated dev points
+			iconType = {
+				name ="local_generated_dev_points_gui_icon_foreign"
+				spriteType = "local_generated_dev_points_gui_icon"
+				position = { x = 145 y = 30 }
+				scripted = yes
+			}
+			# BT Dev Points
+			# This controls the text box which makes a '-'  appear when looking in other nations local generated dev points
 			instantTextBoxType = {
 				name = "cant_see_foreign_dev_points"
 				position = { x = 170 y = 37}
@@ -859,6 +857,22 @@ guiTypes = {
 				borderSize = {x = 2 y = 2}
 				text = "cant_see_foreign_dev_points"
 				maxWidth = 40
+				maxHeight = 20
+				format = centre
+				fixedsize = yes
+				scripted = yes
+			}
+			
+			# BT Dev Points
+			# This is for the text box for debug gui that shows the total amount of dev points a nation had generated throughout the game
+			instantTextBoxType = {
+				name = "total_generated_dev_points_gui"
+				position = { x = 275 y = 37}
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 2 y = 2}
+				text = "total_generated_dev_points_gui"
+				maxWidth = 60
 				maxHeight = 20
 				format = centre
 				fixedsize = yes

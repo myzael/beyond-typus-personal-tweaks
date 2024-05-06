@@ -1,4 +1,4 @@
-is_in_any_colonial_region = {	
+is_in_any_colonial_region = {	#Used in dev points to give modifiers to provinces in a colonial region
 	OR = {
 		colonial_region = colonial_alaska
 		colonial_region = colonial_canada
@@ -51,30 +51,37 @@ is_in_any_colonial_region = {
 	}
 }
 
+# This trigger checks if the cost to develop a province is more than the amount of current dev points a nation has
+# It is used in 00_scripted_functions.txt -> can_improve_tax/can_improve_production/can_improve_manpower
+# Only the players use the province improve dev buttons so this is only used on players
 has_enough_dev_points_to_dev = {
 	variable_arithmetic_trigger = {
-		export_to_variable = {		#Sets variable for base development cost
+		export_to_variable = {				#Sets variable for base development cost
 			variable_name = province_dev_cost
 			value = 25
 		}
-		export_to_variable = {		#Gets the local development cost modifier
+		export_to_variable = {				#Gets the local development cost modifier
 			variable_name = local_development_cost_for_dev_points
 			value = modifier:local_development_cost
 			who = ROOT
 		}
-		export_to_variable = {		#Gets the country development cost modifier
+		change_variable = {					#Adds 1 to make modifier ready for multiplication
+			which = local_development_cost_for_dev_points
+			value = 1
+		}
+		export_to_variable = {				#Gets the nationwide development cost modifier
 			variable_name = development_cost_for_dev_points
 			value = modifier:development_cost
 		}
-		export_to_variable = {		#Gets the country all power cost modifier
+		export_to_variable = {				#Gets the nationwide all power cost modifier
 			variable_name = all_power_cost_for_dev_points
 			value = modifier:all_power_cost
 		}
-		change_variable = {			#Adds country development cost to the local dev cost variable 
+		change_variable = {					#Adds nationwide development cost to the local dev cost variable 
 			which = local_development_cost_for_dev_points
 			which = development_cost_for_dev_points
 		}
-		change_variable = {			#Adds country all power cost to the local dev cost variable 
+		change_variable = {					#Adds nationwide all power cost to the local dev cost variable 
 			which = local_development_cost_for_dev_points
 			which = all_power_cost_for_dev_points
 		}
@@ -86,7 +93,7 @@ has_enough_dev_points_to_dev = {
 				total_development = 2000
 			}
 			variable_arithmetic_trigger = {
-				change_variable = {			#Adds max capital bonus 
+				change_variable = {			#Adds the dev cost reduction from capital to the province
 					which = local_development_cost_for_dev_points
 					value = -0.5
 				}
@@ -99,40 +106,44 @@ has_enough_dev_points_to_dev = {
 				}
 			}
 			variable_arithmetic_trigger = {
-				export_to_variable = {		#Gets the total development of the 
+				export_to_variable = {		#Gets the total development of the nation
 					variable_name = total_development_for_dev_points
 					value = total_development 
 					who = PREV
 				}
-				divide_variable = {		#Applies the 'development cost modifier' modifier
+				divide_variable = {			#Divides the total dev to get the development reduction for the capital
 					which = total_development_for_dev_points
 					value = -4000
 				}
-				change_variable = {			#Adds 1 to the modifier 
+				change_variable = {			#Adds the dev cost reduction from capital to the province
 					which = local_development_cost_for_dev_points
 					which = total_development_for_dev_points
 				}
 			}
 		}
-		change_variable = {			#Adds 1 to make modifier ready for multiplication
-			which = local_development_cost_for_dev_points
-			value = 1
-		}
-		export_to_variable = {		#Gets the 'local development cost modifier' modifier
+		export_to_variable = {				#Gets the 'local development cost modifier' modifier
 			variable_name = local_development_cost_modifier_for_dev_points
 			value = modifier:local_development_cost_modifier 
 			who = ROOT
 		}
-		export_to_variable = {		#Gets the 'development cost modifier' modifier
+		change_variable = {					#Adds 1 to make modifier ready for multiplication
+			which = local_development_cost_modifier_for_dev_points
+			value = 1
+		}
+		export_to_variable = {				#Gets the 'development cost modifier' modifier
 			variable_name = development_cost_modifier_for_dev_points
 			value = modifier:development_cost_modifier 
+		}
+		change_variable = {					#Adds the 'local development cost modifier' modifiers to the nationwide one
+			which = local_development_cost_modifier_for_dev_points
+			which = development_cost_modifier_for_dev_points
 		}
 		if = {
 			limit = {
 				adm_tech = 27
 			}
 			variable_arithmetic_trigger = {
-				change_variable = {			#Adds 1 to the modifier  
+				change_variable = {			#Adds the 'development cost modifier' modifier from tech 27
 					which = local_development_cost_modifier_for_dev_points
 					value = -0.3
 				}
@@ -143,7 +154,7 @@ has_enough_dev_points_to_dev = {
 				adm_tech = 23
 			}
 			variable_arithmetic_trigger = {
-				change_variable = {			#Adds 1 to the modifier  
+				change_variable = {			#Adds the 'development cost modifier' modifier from tech 23
 					which = local_development_cost_modifier_for_dev_points
 					value = -0.2
 				}
@@ -154,36 +165,28 @@ has_enough_dev_points_to_dev = {
 				adm_tech = 17
 			}
 			variable_arithmetic_trigger = {
-				change_variable = {			#Adds 1 to the modifier  
+				change_variable = {			#Adds the 'development cost modifier' modifier from tech 17
 					which = local_development_cost_modifier_for_dev_points
 					value = -0.1
 				}
 			}
 		}
-		change_variable = {			#Adds 1 to the modifier  
-			which = local_development_cost_modifier_for_dev_points
-			which = development_cost_modifier_for_dev_points
-		}
-		change_variable = {			#Adds 1 to the modifier  
-			which = local_development_cost_modifier_for_dev_points
-			value = 1
-		}
-		multiply_variable = {		#Applies the development cost modifier
+		multiply_variable = {				#Multiplies the base province dev cost with the total development cost modifier 
 			which = province_dev_cost
 			which = local_development_cost_for_dev_points
 		}
-		multiply_variable = {		#Applies the 'development cost modifier' modifier
+		multiply_variable = {				#Multiplies the total development cost modifier with the total 'development cost modifier' modifier
 			which = province_dev_cost
 			which = local_development_cost_modifier_for_dev_points
 		}
-		check_variable = {
-			which = current_dev_points
+		check_variable = {					#Checks if the cost of to dev the province is higher than the nations current dev points
+			which = current_dev_points		#Doesn't let the nation dev if it costs too much
 			which = province_dev_cost
 		}
 	}
 }
 
-has_more_than_double_any_dev_type = {			# $DevA$ = Dev type being Developed  $DevB$, $DevC$ = Other 2 Dev types
+has_more_than_double_any_dev_type = {		# $DevA$ = Dev type being Developed  $DevB$, $DevC$ = Other 2 Dev types
 	variable_arithmetic_trigger = {
 		export_to_variable = {
 			variable_name = adm_dev
