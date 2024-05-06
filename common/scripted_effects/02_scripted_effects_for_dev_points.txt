@@ -2035,7 +2035,7 @@ simulate_development = {
 # Actually does the spending of dev points in a province
 auto_dev_spending_dev_points_effect = {
 		random_list = {
-			10 = {	
+			8 = {	
 				modifier = {
 					factor = 0
 					has_more_than_double_any_dev_type = {
@@ -2070,6 +2070,14 @@ auto_dev_spending_dev_points_effect = {
 						DevA = dip_dev
 						DevB = adm_dev
 						DevC = mil_dev
+					}
+				}
+				modifier = {
+					factor = 1.5
+					OR = {
+						trade_goods = gold
+						trade_goods = coal
+						trade_goods = bt_trade_good_silver
 					}
 				}
 				calculate_development_cost = yes
