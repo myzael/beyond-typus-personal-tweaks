@@ -1,6 +1,7 @@
 ﻿l_english:
+ # Debug event localisation
  dev_points.99.title: "Dev Points Debug Event"
- dev_points.99.desc: ""
+ dev_points.99.desc: "" #No description here
  dev_points.99.opta: "Calculate Monthly Dev Points In Provinces"
  dev_points.99.optb: "Calc. Countrywide Dev Points, Give Monthly Dev Point"
  dev_points.99.optc: "Calc. Countrywide Dev Points"
@@ -17,6 +18,7 @@
  dev_points.99.optm: "Gain 1000 Dev Points"
  dev_points.99.optn: "Gain 10000 Dev Points"
  
+ # Monthly tick event (Unable to be hidden when loading an autosave)
  dev_points.1.title: "Tick Clock"
  dev_points.1.desc: "This event is normally hidden.\n\nUnfortunately due to a bug in EU4 it shows if you load an autosave. Just ignore it at click the event away."
  dev_points.1.opta: "Ok.... sure??"
@@ -27,7 +29,9 @@
  local_generated_dev_points_gui: "[Root.shown_precalc_monthly_dev_points.GetValue]"
  local_generated_dev_points_gui_tooltip: "This is the monthly §YDevelopment Points§!\ngenerated in this province\n\nThe base of this is affected by:\nBase: §G+0.02§![This.DevPointsProvinceHasTaxBuilding][This.DevPointsProvinceHasProductionBuilding][This.DevPointsProvinceHasTradeBuilding][This.DevPointsProvinceHasPostOffice][This.DevPointsProvinceHasGranary][This.DevPointsProvinceHasTaxAssessor][This.DevPointsProvinceHasShipyardBuilding][This.DevPointsProvinceHasUniversity][This.DevPointsProvinceHasProductionManufactory][This.DevPointsProvinceHasStateHouse][This.DevPointsProvinceIsInNewWorld][This.DevPointsProvinceHasModifiers][This.DevPointsProvinceHasCoT][This.DevPointsProvinceIsProsperous][This.DevPointsProvinceIsInCapitalState][This.DevPointsProvinceHasEdictOfDevelpment][This.DevPointsProvinceInfrastructureIdeasAndBigDevPoints][This.DevPointsProvinceInfrastructureLevel][This.DevPointsProvinceHorde][This.DevPointsProvinceMongolEmpire][This.DevPointsProvinceOccupation][This.DevPointsProvinceUnderSeige][This.DevPointsProvinceDevastation][This.DevPointsProvinceAutonomy]"                                                                                                                                                                                                                 
  
- dev_points_empty_string: ""
+ dev_points_empty_string: ""    # The empty string used whenever we want an empty line
+ 
+ # Localisation for the local base dev points generated
  dev_points_province_has_constabulary: "\nConstabulary: §G+0.01§!"
  dev_points_province_has_treasury_office: "\nTreasury: §G+0.02§!"
  dev_points_province_has_workshop: "\nWorkshop: §G+0.01§!"
@@ -55,6 +59,7 @@
  dev_points_province_has_state_house: "\nState House: §G+0.04§!"
  dev_points_province_is_in_the_new_world: "\nIs in the New World: §G+0.06§!"
  
+ # Localisation for the local dev points modifiers
  dev_points_province_has_modifiers: "\n\nThis is then modified by:"
  dev_points_province_modifier_part_of_capital_state: "\nCapital State: §G+50%§!"
  dev_points_province_modifier_has_CoT3: "\nWorld Trade Centre: §G+40%§!"
@@ -74,6 +79,7 @@
  dev_points_province_modifier_devastation: "\nDevastation: §R-[Root.devastation_ui_var.GetValue]%§!"
  dev_points_province_has_autonomy: "\nLocal Autonomy further modifies this by §R-[Root.local_autonomy_ui_var.GetValue]%§!"
  
+ # Localisation for the nationwide dev point modifiers
  dev_points_country_from_subjects: "\nFrom Subjects: §G+[From.monthly_dev_points_from_subjects.GetValue]§!"
  dev_points_country_has_modifiers: "\nThis is then modified by:"
  dev_points_country_war: "\nAt War: §R-20%§!"
@@ -91,6 +97,9 @@
  dev_points_country_negative_1stability: "\nNegative Stability: §R-5%§!"
  dev_points_country_negative_2stability: "\nNegative Stability: §R-10%§!"
  dev_points_country_negative_3stability: "\nNegative Stability: §R-15%§!"
+ dev_points_country_bankrupt: "\nBankrupt: §R-50%§!"
+ dev_points_country_over_gcap: "\nOver Governing Capacity: §R-[From.over_gov_cap_value_ui_var.GetValue]%§!"
+ # All the estates go below here
  dev_points_country_burghers_loyal: "\n[From.GetBurghersName]: §G+2%§!"
  dev_points_country_burghers_disloyal: "\n[From.GetBurghersName]: §R-2%§!"
  dev_points_country_nobles_loyal: "\n[From.GetNobilityName]: §G+2%§!"
@@ -121,21 +130,18 @@
  dev_points_country_qizilbash_disloyal: "\n[From.GetQizilbashName]: §R-2%§!"
  dev_points_country_ghulams_loyal: "\n[From.GetGhilmanName]: §G+2%§!"
  dev_points_country_ghulams_disloyal: "\n[From.GetGhilmanName]: §R-2%§!"
- dev_points_country_bankrupt: "\nBankrupt: §R-50%§!"
- dev_points_country_over_gcap: "\nOver Governing Capacity: §R-[From.over_gov_cap_value_ui_var.GetValue]%§!"
+ 
  
  total_generated_dev_points_gui: "[Root.Owner.shown_total_accumulated_dev_points.GetValue]"
  
+ # Localisation for all the modifiers to max dev points 
  max_dev_points_country_tech: "\n[From.gui_dev_maximum_var.GetValue]"
  max_dev_points_country_infrastructure_idea: "\nEfficient construction plans: §G+100§!"
- 
  max_dev_points_country_modifier_kingdom: "\n\nThis is modified by:\nGovernment Rank: §G+100%§!"
  max_dev_points_country_modifier_empire: "\n\nThis is modified by:\nGovernment Rank: §G+200%§!"
  
+ #statewide_monthly_dev_points_gui: "[Root.statewide_monthly_dev_points.GetValue]"  #Doesn't work right now
  
- 
- 
- #statewide_monthly_dev_points_gui: "[Root.statewide_monthly_dev_points.GetValue]"
  
  province_development_cost_gui: "[Root.shown_development_cost.GetValue]"
  
@@ -197,9 +203,11 @@
  country_dev_points_modifier: "Monthly Development Points"
  max_dev_points: "Maximum Development Points"
  
+ # Localisation for trying to see another nations dev points 
  cant_see_foreign_dev_points: "-"
  cant_see_foreign_dev_points_tooltip: "You cannot see how many §YDevelopment Points§! this province generates."
  cant_see_foreign_current_dev_points: "-"
  cant_see_foreign_current_dev_points_tooltip: "You cannot see how many §YDevelopment Points§! this nation has."
+ 
  
  current_dev_points: "Development Points"

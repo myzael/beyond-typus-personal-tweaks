@@ -190,7 +190,9 @@ has_enough_dev_points_to_dev = {
 	}
 }
 
-has_more_than_double_any_dev_type = {		# $DevA$ = Dev type being Developed  $DevB$, $DevC$ = Other 2 Dev types
+# This trigger checks that one development type isn't more than the other 2 combined
+# $DevA$ = Dev type being Developed  $DevB$, $DevC$ = Other 2 Dev types
+has_more_than_double_any_dev_type = {		
 	variable_arithmetic_trigger = {
 		export_to_variable = {
 			variable_name = adm_dev

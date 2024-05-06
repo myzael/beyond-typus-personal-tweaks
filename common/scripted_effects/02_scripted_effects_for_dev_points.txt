@@ -201,15 +201,15 @@ calculate_auto_dev_desirability_effect = {
 			value = -1.25
 		}
 	}
-	if = {
-		limit = {
-			is_capital_of = ROOT
-		}
-		change_variable = {            
-			which = auto_dev_desirability
-			value = -5
-		}
-	}
+	# if = {
+		# limit = {
+			# is_capital_of = ROOT
+		# }
+		# change_variable = {            
+			# which = auto_dev_desirability
+			# value = -5
+		# }
+	# }
 	if = {
 		limit = {
 			capital_scope = { 
@@ -227,7 +227,7 @@ calculate_auto_dev_desirability_effect = {
 		}
 		change_variable = {            
 			which = auto_dev_desirability
-			value = -2.5
+			value = -5
 		}
 	}
 	if = {
@@ -236,7 +236,7 @@ calculate_auto_dev_desirability_effect = {
 		}
 		change_variable = {            
 			which = auto_dev_desirability
-			value = -20
+			value = -30
 		}
 	}
 	if = {
@@ -245,7 +245,7 @@ calculate_auto_dev_desirability_effect = {
 		}
 		change_variable = {            
 			which = auto_dev_desirability
-			value = -10
+			value = -15
 		}
 	}
 	if = {
