@@ -111,9 +111,11 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 		ai_chance = { factor = 1 }
 		if = { 
 			limit = { 
-				STY = { exists = yes } 
+				STY = { 
+					exists = yes 
+					has_country_flag = bt_the_real_austria
+				} 
 				ai = yes
-				has_country_flag = bt_the_real_austria
 			}
 			STY = { 
 				inherit = TIR 
@@ -121,18 +123,22 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 		}
 		else_if = { 
 			limit = { 
-				STY = { exists = yes } 
+				STY = { 
+					exists = yes 
+					has_country_flag = bt_the_real_austria
+				} 
 				ai = no
-				has_country_flag = bt_the_real_austria
 			}
 			switch_tag = STY
 			inherit = TIR
 		}
 		else_if = {
 			limit = {
-				HAB = { exists = yes }
+				HAB = { 
+					exists = yes 
+					has_country_flag = bt_the_real_austria
+				} 
 				ai = yes
-				has_country_flag = bt_the_real_austria
 			}
 			HAB = {
 				inherit = TIR 
@@ -140,9 +146,11 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 		}
 		else_if = {
 			limit = {
-				HAB = { exists = yes } 
+				HAB = { 
+					exists = yes 
+					has_country_flag = bt_the_real_austria
+				} 
 				ai = no
-				has_country_flag = bt_the_real_austria
 			}
 			switch_tag = HAB
 			inherit = TIR
