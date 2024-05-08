@@ -6,6 +6,7 @@ ahead_of_time = {
 	global_unrest = -2			#BTAddOn new
 	#yearly_corruption = -0.05			#BTAddOn removed. I do like ways to reduce corruption naturally, but I'm not really clear on why pressing ahead on technology will magically lower corruption.
 	monthly_russian_modernization = 0.05
+	ahead_of_time_benefit_adm = 1
 }
 
 # Pre-era techs

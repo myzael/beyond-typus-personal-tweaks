@@ -687,6 +687,9 @@ war_taxes = {
 stability = {
 	global_trade_power = 0.01			#1% chance each step.
 	global_spy_defence = 0.05				#-15 to +15% modifier
+	monthly_cultural_unity = 0.1
+	monthly_divine_authority = 0.05
+	country_dev_points_modifier = 0.05 #BT Added
 }
 
 positive_stability = {
@@ -703,7 +706,7 @@ positive_stability = {
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
 	monthly_ottoman_decadence = -0.05
-	country_dev_points_modifier = 0.05
+	monthly_authority_power = -0.01
 }
 
 privateering = {
@@ -720,7 +723,7 @@ negative_stability = {
 	yearly_harmony = 0.25
 	monthly_russian_modernization = 0.03
 	monthly_ottoman_decadence = -0.15
-	country_dev_points_modifier = 0.05
+	monthly_authority_power = 0.05
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
@@ -844,14 +847,18 @@ bankruptcy = {
 	imperial_mandate = -0.1
 	great_project_upgrade_cost = 0.5
 	monthly_russian_modernization = -1
-	country_dev_points_modifier = -0.5
+	monthly_authority_power = 0.25
+	country_dev_points_modifier = -0.5 #BT Added
 }
 
 
 war = {
 	monthly_militarized_society = 0.1
 	rr_girondists_influence = 0.15
-	country_dev_points_modifier = -0.20
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_blood = 0.3
+	monthly_authority_power = -0.05
+	country_dev_points_modifier = -0.20 #BT Added
 }
 
 peace = {
@@ -864,6 +871,10 @@ peace = {
 	monthly_militarized_society = -0.1
 	monthly_ottoman_decadence = 0.1
 	monthly_asha_vahishta = 0.25
+	monthly_arabic_trade_influence_power = 0.1
+	monthly_cultural_unity = 0.1
+	monthly_blood = -0.05
+	monthly_authority_power = 0.1
 }
 
 unconditional_surrender = {
@@ -891,14 +902,17 @@ war_exhaustion = {
 	global_trade_goods_size_modifier = -0.02
 	monthly_militarized_society = -0.05
 	recover_army_morale_speed = -0.005			#BTAddOn new, as a war drags on soliders recover morale more slowly. At 20 WE it should be the penalty as 100 AT gives in bonus.
-	monthly_militarized_society = -0.05
-	country_dev_points_modifier = -0.025
+	monthly_arabic_trade_influence_power = -0.05
+	monthly_cultural_unity = -0.05
+	monthly_authority_power = 0.01
+	country_dev_points_modifier = -0.025 #BT Added
 }
 
 doom = {
 	technology_cost = 0.5
 	idea_cost = 0.2
 	ae_impact = -1
+	blood_gain_modifier = 1
 }
 
 authority = {
@@ -925,9 +939,9 @@ trade_refusal = {
 
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
-	embargo_efficiency = 1 #BT Vanilla doubled effects
 	burghers_loyalty_modifier = 0.1 #BT Vanilla doubled effects
 	vaisyas_loyalty_modifier = 0.1 #BT Vanilla doubled effects
+	embargo_efficiency = 1 #BT Vanilla doubled effects
 }
 
 army_tradition = {
@@ -959,6 +973,7 @@ navy_tradition = {
 	mr_traders_influence = 0.1
 	blockade_efficiency = 1
 	sailors_recovery_speed = 0.2
+	monthly_arabic_trade_influence_power = 0.2
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
 	allowed_geobukseon_fraction = 0.5
@@ -971,7 +986,7 @@ positive_piety = { #As of 1.23 Legalism
 	global_tax_modifier = 0.20
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
-	dhimmi_loyalty_modifier = -0.1
+	piety_dhimmi_loyalty_modifier = -0.1
 }
 
 #For convenience, its multiplied by negative piety in code.
@@ -980,7 +995,7 @@ negative_piety = { #As of 1.23 Mysticism
 	global_missionary_strength = 0.03
 	idea_cost = -0.1
 	brahmins_muslim_loyalty_modifier = 0.1
-	church_loyalty_modifier = -0.1
+	piety_church_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = 0.1
 }
 
@@ -1096,13 +1111,15 @@ legitimacy = {
 	monthly_militarized_society = 0.05
 	max_absolutism = 20
 	nobles_loyalty_modifier = 0.1
+	monthly_cultural_unity = 0.2
+	monthly_divine_authority = 0.3
 }
 
 #Multiplied by current Horde Unity - 50
 horde_unity = {
 	global_unrest = -4
 	discipline = 0.10
-	#nomadic_tribes_loyalty_modifier = 0.05 #BT Vanilla cut
+	#nomadic_tribes_loyalty_modifier = 0.05	#New Change
 }
 
 # Multiplied by current Devotion - 50
@@ -1113,6 +1130,7 @@ devotion = {
 	harmonization_speed = 0.5
 	monthly_piety_accelerator = 0.01
 	yearly_authority = 0.5
+	monthly_divine_authority = 0.1
 	yearly_patriarch_authority = 0.01
 	yearly_doom_reduction = 0.5
 	yearly_karma_decay = 0.1
@@ -1164,7 +1182,9 @@ corruption = {
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
-	country_dev_points_modifier = -1
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_authority_power = 0.5
+	country_dev_points_modifier = -1 #BT Added
 }
 
 root_out_corruption = {
@@ -1263,6 +1283,8 @@ prestige = {
 	# eunuchs_loyalty_modifier = 0.05
 	# qizilbash_loyalty_modifier = 0.05
 	# ghulams_loyalty_modifier = 0.05
+	monthly_divine_authority = 0.1
+	monthly_authority_power = -0.2
 }
 
 no_debate_in_parliament = {
@@ -1276,11 +1298,13 @@ republican_tradition = {
 	reform_progress_growth = 1.0
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
+	monthly_authority_power = -0.05
 }
 
 inverse_republican_tradition = {
 	stability_cost_modifier = 2.0
 	rr_jacobins_influence = -0.1
+	monthly_authority_power = 0.25
 }
 
 ########################################
@@ -1311,6 +1335,7 @@ religious_unity = {
 	church_loyalty_modifier = 0.05
 	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
+	monthly_cultural_unity = 0.1
 }
 
 inverse_religious_unity = {
@@ -1401,6 +1426,17 @@ BYZ_discipline = {
 	discipline = 0.05
 }
 
+soyurghal_base_overlord_modifiers = {
+	land_forcelimit_modifier = 0.05
+	soyurghals_amount_check_influence = 1 #used for exporting, invisible by default
+}
+
+soyurghal_base_modifiers = { #slightly weaker pronoia but without penalties
+	global_manpower = 5
+	global_manpower_modifier = 0.25
+	global_regiment_cost = -0.25
+}	
+
 tributary_state_behind_overlord_tech_adm = {
 	adm_tech_cost_modifier = -0.05
 }
@@ -1446,6 +1482,7 @@ in_golden_era = {
 	naval_morale = 0.1
 	max_absolutism = 5
 	max_revolutionary_zeal = 10
+	monthly_arabic_trade_influence_power = 0.25
 }
 
 absolutism = {
@@ -1574,6 +1611,8 @@ power_projection = {
 	devotion = 0.5
 	horde_unity = 0.5
 	republican_tradition = 0.2
+	monthly_divine_authority = 0.05
+	monthly_authority_power = -0.1
 }
 
 power_projection_25 = {
@@ -1593,6 +1632,7 @@ naval_forcelimit = {
 
 trade_company_strong = {
 	merchants = 1
+	monthly_arabic_trade_influence_power = 0.01
 }
 
 large_colonial_nation = {
@@ -1714,6 +1754,7 @@ eyalet_modifier = {
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
 	army_tradition = 1
+	nobles_loyalty_modifier_forts = 0.1 
 }
 
 gov_rank_1 = {
@@ -1789,6 +1830,7 @@ recruitment_sabotaged = {
 
 merchants_slandered = {
 	global_trade_power = -0.1
+	monthly_arabic_trade_influence_power = -0.1
 }
 
 discontent_sowed = {
@@ -1814,6 +1856,7 @@ scaled_trade_league_leader = { #scaled by number of members
 	global_sailors = 1000
 	land_forcelimit = 1
 	global_manpower = 1
+	monthly_authority_power = -0.01
 }
 
 in_trade_league = {
@@ -2342,7 +2385,8 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
-	country_dev_points_modifier = -0.5
+	monthly_authority_power = 0.5
+	country_dev_points_modifier = -0.5 #BT Added
 }
 
 # At 1000% below capacity, this modifier will be fully used
@@ -2426,10 +2470,12 @@ guru_teaching = {
 }
 
 diplomatic_reputation = {
+	num_of_soyurghals = 0.5
 	chance_to_inherit = 0.05 #BT added: Base inheritance chance is +5%/diplorep, -1% per province. Since we cannot modify this value, this is a bandaid fix. Since only Christians can form PUs and inherit, I think this is fine. //Dub
 }
 
 tolerance_own = {
+	monthly_divine_authority = 0.03
 }
 
 tolerance_heretic = {
@@ -2444,16 +2490,20 @@ num_accepted_cultures = {
 ruler_adm = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_divine_authority = 0.01
 }
 
 ruler_dip = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_arabic_trade_influence_power = 0.05
+	monthly_divine_authority = 0.01
 }
 
 ruler_mil = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_divine_authority = 0.01
 }
 
 heir_adm = {
@@ -2532,11 +2582,12 @@ average_subject_liberty_desire = { #100% LD => 100% modifier
 }
 
 reverse_average_subject_liberty_desire = { #100% LD => 0% modifier
-
+	MAY_conditional_loyalty = 0.1
 }
 
 average_global_autonomy = { #100% autonomy => 100% modifier
 	monthly_ottoman_decadence = 0.25
+	monthly_divine_authority = -0.5
 }
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier
@@ -2592,4 +2643,9 @@ sailors_percentage = {
 
 reverse_sailors_percentage = {
 
+}
+
+may_dynastic_influence_modifier = {
+	legitimacy = 0.25 
+	land_forcelimit = 3
 }

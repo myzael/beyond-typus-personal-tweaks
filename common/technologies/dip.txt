@@ -7,6 +7,7 @@ ahead_of_time = {
 	diplomatic_reputation = 1			#BTAddOn new
 	spy_offence = 0.25			#BTAddOn new
 	#yearly_corruption = -0.05			#BTAddOn removed. I do like ways to reduce corruption naturally, but I'm not really clear on why pressing ahead on technology will magically lower corruption.
+	ahead_of_time_benefit_dip = 1
 }
 
 # Pre-era techs

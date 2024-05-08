@@ -2032,7 +2032,7 @@ aristocratic_rule_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2054,7 +2054,7 @@ plutocratic_rule_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2077,7 +2077,11 @@ theocratic_rule_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
+		modifier = {
+			factor = 0
+			religious_unity = 1
+		}
 	}
 }
 
@@ -2101,7 +2105,7 @@ head_of_state_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2124,7 +2128,7 @@ zealous_court_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2147,7 +2151,7 @@ financial_miracle_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2170,7 +2174,11 @@ subject_obligations_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_subjects = 1 }
+		}
 	}
 }
 
@@ -2193,7 +2201,7 @@ big_government_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2216,7 +2224,7 @@ humanitarian_administration_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2241,7 +2249,7 @@ blessed_construction_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2264,7 +2272,7 @@ military_innovation_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2287,7 +2295,7 @@ efficient_war_taxes_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2310,7 +2318,7 @@ peace_keeping_force_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2331,7 +2339,7 @@ indigenous_development_act = {
 	global_institution_spread = 0.33
 
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -2352,6 +2360,6 @@ mercenary_registration_act = {
 	may_build_supply_depot = yes
 
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }

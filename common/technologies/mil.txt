@@ -6,6 +6,7 @@ ahead_of_time = {
 	fire_damage = 0.05			#BTAddOn new
 	shock_damage = 0.05			#BTAddOn new
 	#military_tactics 	= 	0.20			#BTAddOn new, but cut again as it didn't work.
+	ahead_of_time_benefit_mil = 1
 }
 
 # Pre-era techs
