@@ -100,17 +100,17 @@ can_make_state = { #BT Modified
 can_abandon_state = {
 }
 
-can_improve_tax = { #BT Modified
-	condition = {	#Stops ai from devloping (they use events)
+can_improve_tax = { #BT Modified for dev points
+	condition = {	#Stops ai from devloping with these buttons (they use the auto dev function)
         tooltip = "dev_points_disabled"
         potential = {
-			FROM = {	#Stops ai deving
+			FROM = {
 				ai = yes
 			}
         }
         allow = { always = no }
     }
-	condition = {	#Can a player develop their own provinces
+	condition = {	#Stops the player from developing their own provinces if they don't have enough dev points 
         tooltip = "dev_points_not_enough_dev_points"
         potential = {
 			FROM = {
@@ -194,38 +194,19 @@ can_improve_tax = { #BT Modified
 			}
 		}
     }
-	condition = { #We want to stop overdevving of coal provinces.
-		tooltip = "BT_AI_SPECIFIC_CHANGE"
-		potential = {
-			owner = {
-				ai = yes
-			}
-			has_latent_trade_goods = coal
-		}
-		allow = { #So if province has coal latent trade good, only develop up to 5 clicks, unless is capital or enlightenment is spreading.
-			OR = {
-				AND = {
-					is_capital = yes
-					NOT = { is_part_of_hre = yes }
-				}
-				enlightenment = 10
-				NOT = { num_of_times_improved_by_owner = 5 }
-			}
-		}
-	}
 }
 
-can_improve_production = { #BT Modified
-	condition = {	#Stops ai from devloping (they use events)
+can_improve_production = { #BT Modified for dev points
+	condition = {	#Stops ai from devloping with these buttons (they use the auto dev function)
         tooltip = "dev_points_disabled"
         potential = {
-			FROM = {	#Stops ai deving
+			FROM = {
 				ai = yes
 			}
         }
         allow = { always = no }
     }
-	condition = {	#Can a player develop their own provinces
+	condition = {	#Stops the player from developing their own provinces if they don't have enough dev points
         tooltip = "dev_points_not_enough_dev_points"
         potential = {
 			FROM = {
@@ -309,38 +290,19 @@ can_improve_production = { #BT Modified
 			}
 		}
     }
-	condition = { #We want to stop overdevving of coal provinces.
-		tooltip = "BT_AI_SPECIFIC_CHANGE"
-		potential = {
-			owner = {
-				ai = yes
-			}
-			has_latent_trade_goods = coal
-		}
-		allow = { #So if province has coal latent trade good, only develop up to 5 clicks, unless is capital or enlightenment is spreading.
-			OR = {
-				AND = {
-					is_capital = yes
-					NOT = { is_part_of_hre = yes }
-				}
-				enlightenment = 10
-				NOT = { num_of_times_improved_by_owner = 5 }
-			}
-		}
-	}
 }
 
-can_improve_manpower = { #BT Modified
-	condition = {	#Stops ai from devloping (they use events)
+can_improve_manpower = { #BT Modified for dev points
+	condition = {	#Stops ai from devloping with these buttons (they use the auto dev function)
         tooltip = "dev_points_disabled"
         potential = {
-			FROM = {	#Stops ai deving
+			FROM = {
 				ai = yes
 			}
         }
         allow = { always = no }
     }
-	condition = {	#Can a player develop their own provinces
+	condition = {	#Stops the player from developing their own provinces if they don't have enough dev points
         tooltip = "dev_points_not_enough_dev_points"
         potential = {
 			FROM = {
@@ -424,25 +386,26 @@ can_improve_manpower = { #BT Modified
 			}
 		}
     }
-	condition = { #We want to stop overdevving of coal provinces.
-		tooltip = "BT_AI_SPECIFIC_CHANGE"
-		potential = {
-			owner = {
-				ai = yes
-			}
-			has_latent_trade_goods = coal
-		}
-		allow = { #So if province has coal latent trade good, only develop up to 5 clicks, unless is capital or enlightenment is spreading.
-			OR = {
-				AND = {
-					is_capital = yes
-					NOT = { is_part_of_hre = yes }
-				}
-				enlightenment = 10
-				NOT = { num_of_times_improved_by_owner = 5 }
-			}
-		}
-	}
+	# Kept here for posterity, was used pre dev points. Removed from tax and production
+	# condition = { #We want to stop overdevving of coal provinces.
+		# tooltip = "BT_AI_SPECIFIC_CHANGE"
+		# potential = {
+			# owner = {
+				# ai = yes
+			# }
+			# has_latent_trade_goods = coal
+		# }
+		# allow = { #So if province has coal latent trade good, only develop up to 5 clicks, unless is capital or enlightenment is spreading.
+			# OR = {
+				# AND = {
+					# is_capital = yes
+					# NOT = { is_part_of_hre = yes }
+				# }
+				# enlightenment = 10
+				# NOT = { num_of_times_improved_by_owner = 5 }
+			# }
+		# }
+	# }
 }
 
 can_exploit_tax = {

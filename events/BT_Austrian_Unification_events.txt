@@ -65,12 +65,16 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
-			factor = 0.666
-			is_year = 1470
+			factor = 0.75
+			is_year = 1450
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.666
 			is_year = 1460
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1470
 		}
 		modifier = {
 			factor = 0.8
@@ -107,7 +111,10 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 		ai_chance = { factor = 1 }
 		if = { 
 			limit = { 
-				STY = { exists = yes } 
+				STY = { 
+					exists = yes 
+					has_country_flag = bt_the_real_austria
+				} 
 				ai = yes
 			}
 			STY = { 
@@ -116,7 +123,10 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 		}
 		else_if = { 
 			limit = { 
-				STY = { exists = yes } 
+				STY = { 
+					exists = yes 
+					has_country_flag = bt_the_real_austria
+				} 
 				ai = no
 			}
 			switch_tag = STY
@@ -124,7 +134,10 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 		}
 		else_if = {
 			limit = {
-				HAB = { exists = yes }
+				HAB = { 
+					exists = yes 
+					has_country_flag = bt_the_real_austria
+				} 
 				ai = yes
 			}
 			HAB = {
@@ -133,7 +146,10 @@ country_event = { #Nobles in Tirol force the duchy to be ruled by the styrian/au
 		}
 		else_if = {
 			limit = {
-				HAB = { exists = yes } 
+				HAB = { 
+					exists = yes 
+					has_country_flag = bt_the_real_austria
+				} 
 				ai = no
 			}
 			switch_tag = HAB
@@ -210,6 +226,10 @@ country_event = { #Maximilian is born
 			male = yes
 		}
 		custom_tooltip = BT_StyriagetsMaximilian_Tooltip
+		hidden_effect = {
+			remove_country_modifier = bt_au_cannot_get_heir_or_die
+			remove_country_modifier = bt_au_cannot_get_heir
+		}
 	}
 }
 

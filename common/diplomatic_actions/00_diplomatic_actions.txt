@@ -642,17 +642,37 @@ annexationaction = {
 		potential = {
 			has_government_attribute = has_appanages
 			NOT = {
-				check_variable = {
-					which = can_annex_appanages_points
-					value = 1
+				if = {
+					limit = {
+						OR = {
+							has_dlc = "Common Sense"
+							has_dlc = "Domination"
+						}
+					}
+					OR = {
+						NOT = { has_estate = estate_nobles }
+						crown_stronger_than_estate = { estate = estate_nobles }
+						has_reform = parliamentary_reform
+					}
+					is_not_blocked_by_estate_privilege = { estate = estate_nobles }
 				}
-			}
+			}	
 		}
 		allow = {
-			check_variable = {
-				which = can_annex_appanages_points
-				value = 1
-			}
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Common Sense"
+						has_dlc = "Domination"
+					}
+				}
+				OR = {
+					NOT = { has_estate = estate_nobles }
+					crown_stronger_than_estate = { estate = estate_nobles }
+					has_reform = parliamentary_reform
+				}
+				is_not_blocked_by_estate_privilege = { estate = estate_nobles }
+			}	
 		}
 	}
 	effect = {
