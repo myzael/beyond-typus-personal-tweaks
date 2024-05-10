@@ -2984,7 +2984,7 @@ volunteers_of_the_faith_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		culture_group = iberian
+		primary_culture = andalusi_culture #BT; culture_group = iberian
 		religion_group = muslim
 	}
 	trigger = {
