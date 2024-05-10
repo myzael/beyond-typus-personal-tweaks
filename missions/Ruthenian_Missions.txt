@@ -384,7 +384,7 @@ bt_ukr_baltic_conquest = {
 					owns = 264
 					owns = 263
 				}
-				add_accepted_culture_or_dip_power = { culture = silesian dip_reward = yes }
+				add_accepted_culture_or_dip_power = { culture = schlesian dip_reward = yes }
 			}
 			#Free Polish accepted culture.
 			#Depending on if owning Breslau/Ratibor or Königsberg/Danzig, give Silesian/Prussian as accepted culture
