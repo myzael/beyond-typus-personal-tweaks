@@ -73,6 +73,7 @@ country_decisions = {
 								NOT = { area = erzgebirge_area }
 								NOT = { area = bohemia_area }
 								NOT = { area = moravia_area }
+								NOT = { area = bohemian_forest_area } #BT adjustment
 								value = 111
 							}
 						}
@@ -206,6 +207,7 @@ country_decisions = {
 				NOT = { area = erzgebirge_area }
 				NOT = { area = bohemia_area }
 				NOT = { area = moravia_area }
+				NOT = { area = bohemian_forest_area } #BT adjustment
 				value = 111
 			}
 		}

@@ -14,7 +14,7 @@ romanian_missions_1 = {
 	has_country_shield = yes
 	
 	order_of_the_dragon = {
-		icon = mission_alliances
+		icon = reformatio_sigismundi
 		required_missions = { }
 		trigger = {
 			is_subject = no
@@ -25,8 +25,9 @@ romanian_missions_1 = {
 				any_ally = {
 					OR = {
 						is_rival = TUR
-						any_rival_country = {
-							tag = TUR
+						custom_trigger_tooltip = {
+							tooltip = TUR_is_rival_of_PREV
+							TUR = { is_rival = prev }
 						}
 					}
 				}
@@ -58,6 +59,14 @@ romanian_missions_1 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Winds of Change"
+					has_dlc = "Golden Century"
+				}
+				custom_tooltip = boh_unlock_order_of_the_dragon
+				set_country_flag = boh_unlocked_order_of_the_dragon
+			}
 			add_country_modifier = {
 				name = "order_of_the_dragon_restored"
 				duration = 7300
@@ -163,11 +172,42 @@ romanian_missions_1 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				if = {
+					limit = {
+						exists = TUR
+						TUR = {
+							capital_scope = {
+								controlled_by = ROOT
+							}
+						}
+					}
+					country_event = { id = flavor_wal.2 }
+				}
+			}
+			if = {
+				limit = {
+					exists = TUR
+					TUR = {
+						capital_scope = {
+							controlled_by = ROOT
+						}
+					}
+				}
+				custom_tooltip = occupy_ottoman_capital_yes
+				tooltip = {
+					country_event = { id = flavor_wal.2 }
+				}
+			}
+			else = {
+				custom_tooltip = occupy_ottoman_capital_no
+				tooltip = {
+					country_event = { id = flavor_wal.2 }
+				}
 			}
 		}
 	}
 	rmn_drive_out_the_turks = {
-		icon = mission_crusade_for_varna
+		icon = geo_break_the_crescent_2
 		required_missions = { rmn_impale_the_sultan }
 		provinces_to_highlight = {
 			province_group = rmn_drive_out_the_turks_provinces
@@ -184,7 +224,7 @@ romanian_missions_1 = {
 			}
 		}
 		effect = {
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_mil_power = 100
 			custom_tooltip = rmn_heir_of_rome_claims
 			hidden_effect = {
@@ -200,7 +240,7 @@ romanian_missions_1 = {
 		}
 	}
 	rmn_heir_of_rome = {
-		icon = mission_monarch_in_throne_room
+		icon = end_the_schism
 		required_missions = { rmn_drive_out_the_turks }
 		provinces_to_highlight = {
 			province_group = rmn_heir_of_rome_provinces
@@ -220,7 +260,18 @@ romanian_missions_1 = {
 			}
 		}
 		effect = {
-			add_adm_power = 100
+			change_ruler_stat = {
+				type = adm
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = dip
+				amount = 1
+			}
+			change_ruler_stat = {
+				type = mil
+				amount = 1
+			}
 			add_country_modifier = {
 				name = "roman_romania"
 				duration = 7300
@@ -245,7 +296,7 @@ romanian_missions_5 = {
 	has_country_shield = yes
 	
 	unite_the_voivodes = {
-		icon = mission_noble_council
+		icon = mission_unite_home_region
 		required_missions = { }
 		provinces_to_highlight = {
 			province_group = unite_the_voivodes_provinces
@@ -262,6 +313,24 @@ romanian_missions_5 = {
 			}
 		}
 		effect = {
+			wallachia_area = {
+				add_nationalism = -10
+			}
+			upper_muntenia_area = {
+				add_nationalism = -10
+			}
+			oltenia_area = {
+				add_nationalism = -10
+			}
+			moldavia_area = {
+				add_nationalism = -10
+			}
+			bukovina_area = {
+				add_nationalism = -10
+			}
+			western_moldovia_area = {
+				add_nationalism = -10
+			}
 			add_country_modifier = {
 				name = "united_voivodes"
 				duration = 7300
@@ -316,7 +385,7 @@ romanian_missions_5 = {
 		}
 	}
 	rmn_conquer_transylvania = {
-		icon = mission_impaled_soldies
+		icon = mission_landsknecht_soldier
 		required_missions = { found_bucharest }
 		provinces_to_highlight = {
 			province_group = rmn_conquer_transylvania_provinces
@@ -332,6 +401,12 @@ romanian_missions_5 = {
 			}
 		}
 		effect = {
+			transylvania_area = {
+				add_local_autonomy = -25
+			}
+			southern_transylvania_area = {
+				add_local_autonomy = -25
+			}
 			add_country_modifier = {
 				name = "rmn_consolidating_transylvania"
 				duration = 7300
@@ -341,6 +416,13 @@ romanian_missions_5 = {
 	rmn_fortify_romania = {
 		icon = mission_conquer_50_development
 		required_missions = { rmn_conquer_transylvania }
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_fort_building_trigger = yes
+			NOT = {
+				fort_level = 2
+			}
+		}
 		trigger = {
 			num_of_owned_provinces_with = { #Adjusted from 4/4 to 2/8. You're likely to have a lot more provinces in which to put forts, but since BT adjusted the fort levels, you cannot get level 4 easily.
 				fort_level = 2
@@ -348,6 +430,7 @@ romanian_missions_5 = {
 			}
 		}
 		effect = {
+			add_yearly_manpower = 1
 			add_country_modifier = {
 				name = "rmn_bulwark"
 				duration = 7300
@@ -358,7 +441,12 @@ romanian_missions_5 = {
 		icon = mission_noble_council
 		required_missions = { rmn_fortify_romania }
 		trigger = {
-			absolutism = 50
+			if = {
+				limit = {
+					is_revolutionary = no
+				}
+				absolutism = 50
+			}
 			NOT = { num_of_loans = 1 }
 			NOT = { corruption = 2 }
 			has_mil_advisor_2 = yes

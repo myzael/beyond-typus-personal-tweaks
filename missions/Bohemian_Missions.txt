@@ -7,6 +7,9 @@ boh_hussite_group = {
 		tag = BOH
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Emperor" }
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	has_country_shield = yes
 	
@@ -97,7 +100,7 @@ boh_hussite_group = {
 	}
 	
 	boh_prem_conquest = {
-		icon = mission_unite_home_region
+		icon = mission_noble_council
 		required_missions = { boh_integrate_silesia }
 		position = 6
 		
@@ -111,6 +114,7 @@ boh_hussite_group = {
 				type = all
 				owned_by = ROOT
 			}
+			is_subject = no
 		}
 		
 		effect = {
@@ -165,6 +169,9 @@ boh_development_group = {
 		tag = BOH
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Emperor" }
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	has_country_shield = yes
 	

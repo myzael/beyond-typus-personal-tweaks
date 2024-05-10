@@ -7,6 +7,7 @@ hsn_economic_group = {
 	potential = {
 		tag = HSN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" } 
 	}
 	has_country_shield = yes
 	
@@ -87,6 +88,7 @@ hsn_economic_group_2 = {
 	potential = {
 		tag = HSN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" } 
 	}
 	has_country_shield = yes
 	
@@ -127,6 +129,7 @@ hsn_religious_group = {
 	potential = {
 		tag = HSN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" } 
 	}
 	has_country_shield = yes
 	
@@ -202,6 +205,7 @@ hsn_revenge_on_crusaders_group = {
 	potential = {
 		tag = HSN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" } 
 	}
 	has_country_shield = yes
 	
@@ -291,10 +295,11 @@ hsn_conquest_group = {
 	potential = {
 		tag = HSN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" } 
 	}
 	has_country_shield = yes
 	
-	hsn_buildforces = {
+	hsn_buildforces2 = {
 		icon = mission_bedouins
 		required_missions = { }
 		position = 1
@@ -320,7 +325,7 @@ hsn_conquest_group = {
 	
 	hsn_white_sheep = {
 		icon = mission_white_sheep
-		required_missions = { hsn_buildforces }
+		required_missions = { hsn_buildforces2 }
 		position = 2
 		
 		provinces_to_highlight = {
@@ -541,13 +546,14 @@ hsn_conquest_group_east = {
 	potential = {
 		tag = HSN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" } 
 	}
 	has_country_shield = yes
 
 	
 	conquer_al_jazira_hsn = { #Repurposed to The Black Sheep mission.
 		icon = mission_black_sheep
-		required_missions = { hsn_buildforces }
+		required_missions = { hsn_buildforces2 }
 		position = 2
 		
 		provinces_to_highlight = {
@@ -691,6 +697,7 @@ hsn_tech_internal_group = {
 	potential = {
 		tag = HSN
 		NOT = { map_setup = map_setup_random }
+		NOT = { has_dlc = "Winds of Change" } 
 	}
 	has_country_shield = yes
 	

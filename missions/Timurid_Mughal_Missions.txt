@@ -3,9 +3,20 @@ tim_reconquest_persia = {
 	slot = 1
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = {
+			AND = {
+				has_dlc = "Winds of Change"
+				tag = TIM
+			}
+		}
+	}
 	potential = {
 		OR = {
-			tag = TIM
+			AND = {
+				NOT = { has_dlc = "Winds of Change" }
+				tag = TIM
+			}
 			tag = TRS
 			tag = AFG
 			tag = QOM
@@ -161,9 +172,20 @@ tim_reconquest_khorasan = { #Unfixed because Dharma gives their own tree. Though
 	slot = 3
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = {
+			AND = {
+				has_dlc = "Winds of Change"
+				tag = TIM
+			}
+		}
+	}
 	potential = {
 		OR = {
-			tag = TIM
+			AND = {
+				NOT = { has_dlc = "Winds of Change" }
+				tag = TIM
+			}
 			tag = TRS
 			tag = AFG
 			tag = QOM
@@ -351,9 +373,20 @@ tim_reconquest_transoxiana = {
 	slot = 5
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = {
+			AND = {
+				has_dlc = "Winds of Change"
+				tag = TIM
+			}
+		}
+	}
 	potential = {
 		OR = {
-			tag = TIM
+			AND = {
+				NOT = { has_dlc = "Winds of Change" }
+				tag = TIM
+			}
 			tag = TRS
 			tag = AFG
 			tag = QOM
@@ -442,9 +475,20 @@ tim_india = { #Unfixed because Dharma gives their own tree. Though it is literal
 	slot = 3
 	generic = no
 	ai = yes
+	potential_on_load = {
+		NOT = {
+			AND = {
+				has_dlc = "Winds of Change"
+				tag = TIM
+			}
+		}
+	}
 	potential = {
 		OR = {
-			tag = TIM
+			AND = {
+				NOT = { has_dlc = "Winds of Change" }
+				tag = TIM
+			}
 			tag = TRS
 			tag = AFG
 			tag = QOM

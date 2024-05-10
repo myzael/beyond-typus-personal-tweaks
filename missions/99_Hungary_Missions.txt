@@ -5,6 +5,9 @@ hun_north_group = {
 	ai = yes
 	potential = {
 		tag = HUN
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -97,7 +100,6 @@ hun_north_group = {
 					}
 				}
 			}
-			is_subject = no
 		}
 		
 		effect = {
@@ -150,7 +152,7 @@ hun_north_group = {
 	}
 	
 	hun_vassal_states_three = {
-		icon = mission_conquer_50_development
+		icon = mission_eastern_european_city
 		required_missions = { hun_vassal_states }
 		position = 3
 		
@@ -165,7 +167,6 @@ hun_north_group = {
 				provinces=hun_vassal_states_three_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
-			is_subject = no
 		}
 		
 		effect = {
@@ -194,7 +195,6 @@ hun_north_group = {
 			factor = 500
 		}
 	}
-	
 }
 
 hun_south_group = {
@@ -203,6 +203,9 @@ hun_south_group = {
 	ai = yes
 	potential = {
 		tag = HUN
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -276,7 +279,7 @@ hun_south_group = {
 			factor = 500
 		}
 	}
-	
+
 	hun_vassal_states_four = {
 		icon = mission_cannons_firing
 		required_missions = { hun_vassal_states_three }
@@ -380,6 +383,9 @@ hun_ottoman_group = {
 	ai = yes
 	potential = {
 		tag = HUN
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -414,7 +420,6 @@ hun_ottoman_group = {
 					}
 				}
 			}
-			is_subject = no
 		}
 		
 		effect = {
@@ -441,7 +446,6 @@ hun_ottoman_group = {
 				provinces=hun_ottoman_borders_three_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
-			is_subject = no
 		}
 		
 		effect = {
@@ -453,6 +457,7 @@ hun_ottoman_group = {
 			factor = 75	#Tapping into Alt-History, but plausible
 		}
 	}
+
 	hun_ottoman_borders_two = {
 		icon = mission_conquer_5_states
 		required_missions = { hun_ottoman_borders_three }
@@ -469,7 +474,6 @@ hun_ottoman_group = {
 				provinces=hun_ottoman_borders_two_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
-			is_subject = no
 		}
 		
 		effect = {
@@ -500,7 +504,6 @@ hun_ottoman_group = {
 				provinces=hun_ottoman_borders_four_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
-			is_subject = no
 		}
 		
 		effect = {

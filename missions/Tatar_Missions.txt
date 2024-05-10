@@ -22,6 +22,7 @@ tatar_missions_1 = {
 			tag = CHG
 			tag = KAS
 		}
+		NOT = { has_dlc = "Winds of Change" }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -38,8 +39,10 @@ tatar_missions_1 = {
 				province_id = 465
 			}
 			NOT = {
-				owned_by = ROOT
-				is_core = ROOT
+				AND = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
 			}
 		}
 		trigger = {
@@ -178,6 +181,7 @@ tatar_missions_1 = {
 			}
 		}
 	}
+
 	mission_conquer_persia_tatars = {
 		icon = mission_persian_soldiers
 		required_missions = { mission_conquer_caucausus mission_conquer_samarkand }
@@ -345,6 +349,7 @@ tatar_missions_slot_2 = {
 			tag = CHG
 			tag = KAS
 		}
+		NOT = { has_dlc = "Winds of Change" }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -536,7 +541,6 @@ tatar_missions_slot_2 = {
 		}
 		trigger = {
 			owns_core_province = 4678
-			owns_core_province = 2190
 			custom_trigger_tooltip = {
 				tooltip = mongol_china_mission_tooltip
 				mongolia_region = {
@@ -641,6 +645,7 @@ tatar_missions_2 = {
 			tag = CHG
 			tag = KAS
 		}
+		NOT = { has_dlc = "Winds of Change" }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

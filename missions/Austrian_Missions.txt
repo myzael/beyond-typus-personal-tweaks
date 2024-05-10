@@ -5,6 +5,9 @@ hab_holy_roman_ambitions = {
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 		OR = { 
 			tag = HAB
 			tag = STY
@@ -296,7 +299,10 @@ hab_protect_the_balkans = {
 	generic = no #if a mission without generic = yes wants this slot then it overrides this.
 	ai = yes
 	potential = {
-		or = { 
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
+		OR = { 
 			tag = HAB
 			tag = STY
 			tag = TIR
@@ -566,7 +572,10 @@ hab_italian_ambitions = {
 	ai = yes
 	
 	potential = {
-		or = { 
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
+		OR = { 
 			tag = HAB
 			tag = STY
 			tag = TIR

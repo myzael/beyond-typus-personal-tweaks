@@ -8,10 +8,16 @@ emp_hab_netherlands_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
-		or = { 
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
+		OR = { 
 			tag = HAB
 			tag = STY
 			tag = TIR
@@ -509,10 +515,16 @@ emp_hab_develop_hungary_bohemia_branch = {
 	
 	potential_on_load = {
 		has_dlc = "Emperor"
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
 	}
 	potential = {
 		has_dlc = "Emperor"
-		or = { 
+		NOT = {
+			has_dlc = "Winds of Change"
+		}
+		OR = { 
 			tag = HAB
 			tag = STY
 			tag = TIR
