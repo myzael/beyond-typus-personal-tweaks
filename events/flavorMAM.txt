@@ -914,10 +914,7 @@ country_event = {
 		name = flavor_mam.100.a
 
 		trigger = { 
-			OR = {
-				has_dlc = "Golden Century" 
-				has_dlc = "Rule Britannia"
-			}
+			has_dlc = "Rule Britannia"
 		}
 
 		custom_tooltip = mam_unlock_galley_doctrine_tt
@@ -934,10 +931,7 @@ country_event = {
 		name = flavor_mam.100.b
 
 		trigger = { 
-			OR = {
-				has_dlc = "Golden Century" 
-				has_dlc = "Rule Britannia"
-			}
+			has_dlc = "Rule Britannia"
 		}
 
 		custom_tooltip = mam_unlock_light_doctrine_tt
@@ -954,10 +948,7 @@ country_event = {
 		name = flavor_mam.100.c
 
 		trigger = { 
-			OR = {
-				has_dlc = "Golden Century" 
-				has_dlc = "Rule Britannia"
-			}
+			has_dlc = "Rule Britannia"
 		}
 
 		custom_tooltip = mam_unlock_warships_doctrine_tt
@@ -973,7 +964,7 @@ country_event = {
 	option = {
 		name = flavor_mam.100.e
 
-		trigger = { has_dlc = "Golden Century" }
+		trigger = { has_dlc = "Rule Britannia" }
 
 		custom_tooltip = mam_unlock_transports_doctrine_tt
 		
@@ -989,7 +980,7 @@ country_event = {
 		name = flavor_mam.100.f
 
 		trigger = { 
-			NOT = { has_dlc = "Golden Century" }
+			NOT = { has_dlc = "Rule Britannia" }
 		}
 
 		create_admiral = { tradition = 80 }
@@ -1052,7 +1043,7 @@ country_event = {
 					has_province_modifier = nile_estuary_modifier
 				}
 				remove_province_modifier = nile_estuary_modifier
-				add_province_modifier = { #TODO add in scripted trigger
+				add_province_modifier = {
 					name = expanded_nile_estuary_modifier
 					duration = -1 
 				}
@@ -1694,9 +1685,10 @@ country_event = { #Construction Commences in [4316.GetName]
 	title = flavor_mam.115.t
 	desc = flavor_mam.115.d
 	picture = BYZ_HARBOUR_eventPicture
-
-	fire_only_once = yes 
 	is_triggered_only = yes 
+	major_trigger = {
+		has_discovered = 2316
+	}
 
 	option = {
 		name = flavor_mam.115.a 
@@ -1711,6 +1703,8 @@ country_event = { #Construction Commences in [4316.GetName]
 			}
 			add_great_project = {
 				type = suez_canal
+				instant = no
+				builder = root
 			}
 		}
 		hidden_effect = {
@@ -1718,9 +1712,6 @@ country_event = { #Construction Commences in [4316.GetName]
 		}
 	}
 	after = {
-		363 = {
-			add_construction_progress = 1
-		}
 	}
 }
 

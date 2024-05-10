@@ -333,7 +333,7 @@ country_event = {
 			AND = {
 				tag = ENG
 				NOT = { exists = GBR }
-			tag = AVE
+				NOT = { exists = AVE }
 			}
 			tag = GBR
 			tag = AVE
@@ -389,6 +389,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		is_at_war = no
 	}
@@ -438,6 +439,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		is_at_war = no
 	}
@@ -561,6 +563,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -609,6 +612,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -662,6 +666,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		owns = 246		# Northumberland
 	}
@@ -809,6 +814,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		is_year = 1540
 		NOT = {
@@ -869,6 +875,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		NOT = { advisor_exists = 236 }
 		OR = {
@@ -933,6 +940,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		owns = 236		# London
 	}
@@ -1130,6 +1138,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		owns = 236		# London
 	}
@@ -1175,6 +1184,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -1513,6 +1523,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -1552,6 +1563,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		OR = {
 			religion = protestant
@@ -1609,6 +1621,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -1765,6 +1778,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		NOT = { advisor_exists = 284 }
 		OR = {
@@ -1832,6 +1846,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		exists = SPA
 		is_rival = SPA
@@ -2001,6 +2016,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		NOT = { advisor_exists = 293 }
 		owns = 236		# London
@@ -2061,6 +2077,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		NOT = { advisor_exists = 315 }
 		OR = {
@@ -2128,6 +2145,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		is_at_war = no
 		exists = POR
@@ -2211,6 +2229,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 		OR = {
 			religion = protestant
@@ -2341,6 +2360,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2381,6 +2401,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2425,6 +2446,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2469,6 +2491,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 	
@@ -2513,6 +2536,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 
@@ -2552,6 +2576,7 @@ country_event = {
 			}
 			tag = GBR
 			tag = AVE
+			has_country_flag = ned_united_crowns_flag
 		}
 	}
 

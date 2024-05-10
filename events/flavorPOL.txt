@@ -1827,10 +1827,10 @@ country_event = {
 		name = flavor_pol.18.a #We must retain the Jagiellon Dynasty
 		ai_chance = { 
 			factor = 90			#BT added modifier to have more stable region Harbivore			Roughly 87.5% if allied
-		modifier = {
-			factor = 1.15
-			is_year = 1448
-		}
+			modifier = {
+				factor = 1.15
+				is_year = 1448
+			}
 		}
 		LIT = { 
 			country_event = { id = flavor_lit.16 }
@@ -1844,6 +1844,7 @@ country_event = {
 			custom_tooltip = pol_impact_future_missions_tt 
 			set_country_flag = pol_chose_pu_flag
 		}
+		custom_tooltip = pol_potential_cb_on_hungary_tt
 	}
 	
 	option = {
@@ -1889,11 +1890,8 @@ country_event = {
 			} 
 			set_country_flag = lit_decline_pu_flag
 		}
-		if = {
-			limit = { has_dlc = "Emperor" }
-			custom_tooltip = pol_impact_future_missions_tt 
-			set_country_flag = pol_denied_pu_flag
-		}
+		custom_tooltip = pol_impact_future_missions_tt 
+		set_country_flag = pol_denied_pu_flag
 		custom_tooltip = pol_potential_cb_on_bohemia_tt
 	}
 }
