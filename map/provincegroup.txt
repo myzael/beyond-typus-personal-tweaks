@@ -439,7 +439,7 @@ bul_take_tsargrad_provinces = {
 	7138 7137 151
 }
 
-bul_conquer_west_slavs_provinces = {
+bul_subjugate_west_slavs_provinces = {
 	136 137 4753 4754 7730 7731 7732 7733 
 	138 7708 
 	140 3002 3193 3194 4755 7722 7725 
