@@ -276,7 +276,7 @@ defined_text = {	#Has any province modifers at all (This removes an empty space 
         trigger = {
 			OR = {
 				province_has_center_of_trade_of_level = 1
-				area_Has_scope_province = {
+				area_for_scope_province = {
 					is_capital_of = ROOT
 				}
 				is_prosperous = yes
@@ -351,7 +351,7 @@ defined_text = {	#Is in the capital state
     text = {
         localisation_key = dev_points_province_modifier_part_of_capital_state 
         trigger = {
-			area_Has_scope_province = {
+			area_for_scope_province = {
 				is_capital_of = ROOT
 			}
         }
@@ -383,7 +383,7 @@ defined_text = {	#Is propserous
     text = {
         localisation_key = dev_points_province_modifier_is_prosperous 
         trigger = {
-				is_prosperous = yes
+			is_prosperous = yes
         }
     }
     text = {
@@ -610,7 +610,7 @@ defined_text = {	#Is at war
         localisation_key = dev_points_country_war 
         trigger = {
 			FROM = {
-			is_at_war = yes
+				is_at_war = yes
 			}
         }
     }
@@ -628,7 +628,7 @@ defined_text = {	#Has over 90% manpower
         localisation_key = dev_points_country_manpower 
         trigger = {
 			FROM = {
-			manpower_percentage = 0.90
+				manpower_percentage = 0.90
 			}
         }
     }
@@ -646,7 +646,7 @@ defined_text = {	#Is a non colonial subject
         localisation_key = dev_points_country_is_non_colonial_full_subject 
         trigger = {
 			FROM = {
-			is_colonial_nation = no
+				is_colonial_nation = no
 			NOT = {
 				is_subject_of_type = tributary_state
 			}
@@ -668,8 +668,8 @@ defined_text = {	#Is an ex colonial nation
         localisation_key = dev_points_country_independent_colony 
         trigger = {
 			FROM = {
-			is_subject = no
-			is_Hasmer_colonial_nation = yes 
+				is_subject = no
+				is_former_colonial_nation = yes 
         }
 		}
     }
