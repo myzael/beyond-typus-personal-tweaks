@@ -9,7 +9,10 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_jerusalem }
 			NOT = { exists = KOJ }
-			religion = catholic #Technically speaking, BT removes religious checks, but I really think this one needs it. //Dub
+			OR = {
+				religion = catholic
+				has_country_flag = tre_can_release_jerusalem
+			}
 			#NOT = { government = republic } #BT removed because I think a country such as Venice should be able to release it. //Dub
 			OR = {
 				owns = 379
@@ -158,6 +161,12 @@ country_decisions = {
 				}
 				set_country_flag = formed_jerusalem
 				swap_non_generic_missions = yes
+			}
+			if = {
+				limit = {
+					has_country_flag = tre_can_release_jerusalem
+				}
+				vassalize = KOJ
 			}
 		}
 		ai_will_do = {

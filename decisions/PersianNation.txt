@@ -205,6 +205,14 @@ country_decisions = {
 					estate = estate_qizilbash
 				}
 			}
+			
+			if = {
+				limit = {
+					has_country_modifier = TIM_dev_cost_until_persia_formation
+				}
+				custom_tooltip = " "
+				remove_country_modifier = TIM_dev_cost_until_persia_formation
+			}
 			set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
 		}
 		ai_will_do = {
