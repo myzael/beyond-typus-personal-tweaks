@@ -14,4 +14,4 @@ tags={
 	"Map"
 }
 name="BeyondTypusInternal"
-supported_version="1.36.*"
+supported_version="1.37.*"
