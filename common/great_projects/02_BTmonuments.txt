@@ -1824,8 +1824,16 @@ mont_saint_michel = {
 
 	#can we build it?
 	build_trigger = {
-		religion_group = christian
-		has_owner_religion = yes
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+				owner = { has_country_flag = SUN_enable_french_monuments_flag }
+			}
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+			}
+		}
 	}
 
 	#what to do when it's built
@@ -1838,14 +1846,30 @@ mont_saint_michel = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		religion_group = christian
-		has_owner_religion = yes
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+				owner = { has_country_flag = SUN_enable_french_monuments_flag }
+			}
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+			}
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		religion_group = christian
-		has_owner_religion = yes
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+				owner = { has_country_flag = SUN_enable_french_monuments_flag }
+			}
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+			}
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -8542,8 +8566,16 @@ beaune_hospices = {		#Hospices de Beaune
 
 	#can we build it?
 	build_trigger = {		#trademark of Burgundian architecture and culture
-		culture = burgundian
-		province_is_or_accepts_culture = yes
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+				owner = { has_country_flag = SUN_enable_french_monuments_flag }
+			}
+			AND = {
+				culture = burgundian
+				province_is_or_accepts_culture = yes
+			}
+		}
 	}
 
 	#what to do when it's built
@@ -8556,14 +8588,30 @@ beaune_hospices = {		#Hospices de Beaune
 
 	#can our country use it?
 	can_use_modifiers_trigger = {		#trademark of Burgundian architecture and culture
-		culture = burgundian
-		province_is_or_accepts_culture = yes
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+				owner = { has_country_flag = SUN_enable_french_monuments_flag }
+			}
+			AND = {
+				culture = burgundian
+				province_is_or_accepts_culture = yes
+			}
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {		#trademark of Burgundian architecture and culture
-		culture = burgundian
-		province_is_or_accepts_culture = yes
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = COMPLETED_SPECIAL_MISSION_THAT_UNLOCKS_GREAT_PROJECT
+				owner = { has_country_flag = SUN_enable_french_monuments_flag }
+			}
+			AND = {
+				culture = burgundian
+				province_is_or_accepts_culture = yes
+			}
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
