@@ -213,7 +213,7 @@ calculate_auto_dev_desirability_effect = {
 	if = {
 		limit = {
 			capital_scope = { 
-				same_trade_node = PREV
+				same_trade_node_as = PREV
 			}
 		}
 		change_variable = {            
