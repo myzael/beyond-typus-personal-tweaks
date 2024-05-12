@@ -1078,7 +1078,7 @@ copper = {
 				NOT = {
 					owner = {
 						AND = {
-							technology_group = aboriginal	#Don't want unreformed aboriginals getting metals
+							technology_group = aboriginal_tech	#Don't want unreformed aboriginals getting metals
 							primitives = no
 						}	
 					}
@@ -1270,7 +1270,7 @@ gold = {
 			NOT = {
 				owner = {
 					AND = {
-						technology_group = aboriginal	#Don't want unreformed aboriginals getting metals
+						technology_group = aboriginal_tech	#Don't want unreformed aboriginals getting metals
 						primitives = no
 					}	
 				}
@@ -1504,7 +1504,7 @@ iron = {
 			NOT = {
 				owner = {
 					AND = {
-						technology_group = aboriginal	#Don't want unreformed aboriginals getting metals
+						technology_group = aboriginal_tech	#Don't want unreformed aboriginals getting metals
 						primitives = no
 					}	
 				}

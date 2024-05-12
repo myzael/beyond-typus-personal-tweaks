@@ -295,7 +295,7 @@ bt_trade_good_silver = {
 			NOT = {
 				owner = {
 					AND = {
-						technology_group = aboriginal	#Don't want unreformed aboriginals getting metals
+						technology_group = aboriginal_tech	#Don't want unreformed aboriginals getting metals
 						primitives = no
 					}	
 				}
