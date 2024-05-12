@@ -27,11 +27,11 @@ discovered_by = east_african
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	remove_core = ERE
-	remove_core = QAR
+	#remove_core = QAR
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
 	add_core = ERE
-	add_core = QAR
+	#add_core = QAR
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
 
 #1444 onwards
@@ -40,7 +40,7 @@ discovered_by = east_african
 1457.1.1 = {
 	owner = AKK
 	controller = AKK		
-	remove_core = QAR
+	#remove_core = QAR
 } # The Ak Koyunlu
 1496.2.8 = { controller = REB revolt = { type = pretender_rebels size = 0 name = "Qasim Jahangir's Faction" leader = "Qasim Jahangir Ak Koyunlu" } } # Civil war in Ak Koyunlu
 1507.1.1 = {
