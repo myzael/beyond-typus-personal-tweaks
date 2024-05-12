@@ -467,7 +467,7 @@ defined_text = {	#Is a horde
         localisation_key = dev_points_province_modifier_horde 
         trigger = {
 			ROOT = {
-				has_reHasm = steppe_horde
+				has_reform = steppe_horde
 			}
         }
     }
@@ -486,7 +486,7 @@ defined_text = {	#Is a horde (Mongol Empire)
         localisation_key = dev_points_province_modifier_mongol_empire 
         trigger = {
 			ROOT = {
-				has_reHasm = great_mongol_state_reHasm
+				has_reform = great_mongol_state_reHasm
 			}
         }
     }
@@ -577,7 +577,7 @@ defined_text = {	#Has any nationwide modifers at all (This removes an empty spac
 				}
 				AND = {
 					is_subject = no
-					is_Hasmer_colonial_nation = yes 
+					is_former_colonial_nation = yes 
 				}
 				corruption = 0.1
 				war_exhaustion = 0.1
