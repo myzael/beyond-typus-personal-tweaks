@@ -1,2 +1,2 @@
 
-add_accepted_culture = cappadocian
+add_accepted_culture = cappadocian_greek
