@@ -32,6 +32,7 @@ country_event = { # Hungary wants Szepes towns back
 		# no negative prestige or stability
 		prestige = 0
 		stability = 0
+		years_of_income = 1 #So Hungary doesn't go too crazy into debt
 		always = no #Will come back to this later. I don't want this to fire just yet as it's not done.
 	}
 	
@@ -40,6 +41,22 @@ country_event = { # Hungary wants Szepes towns back
 	}
 	
 	option = {
-		
-	}
+		add_years_of_income = -2
+		tooltip = {
+			1318 = {
+				add_core = HUN
+				if = {
+					limit = {
+						owner = POL
+					}
+					remove_core = POL
+				}
+				else = {
+					remove_core = PLC
+				}
+				cede_province = HUN
+			}
+		}
+			
+		}
 }
