@@ -47,7 +47,7 @@ country_event = { # Hungary wants Szepes towns back
 				add_core = HUN
 				if = {
 					limit = {
-						owner = POL
+						owned_by = POL
 					}
 					remove_core = POL
 				}
