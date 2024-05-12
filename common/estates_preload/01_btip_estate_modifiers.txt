@@ -41,7 +41,7 @@ estate_church = {
 		key = church_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_church
-			has_government_attribute = no_church_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_church_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -52,7 +52,7 @@ estate_nobles = {
 		key = nobles_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_nobles
-			has_government_attribute = no_nobles_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_nobles_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -63,7 +63,7 @@ estate_burghers = {
 		key = burghers_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_burghers
-			has_government_attribute = no_burghers_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_burghers_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -74,7 +74,7 @@ estate_cossacks = {
 		key = cossacks_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_cossacks
-			has_government_attribute = no_cossacks_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_cossacks_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -85,7 +85,7 @@ estate_nomadic_tribes = {
 		key = nomadic_tribes_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_nomadic_tribes
-			has_government_attribute = no_nomadic_tribes_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_nomadic_tribes_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -96,7 +96,7 @@ estate_dhimmi = {
 		key = dhimmi_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_dhimmi
-			has_government_attribute = no_dhimmi_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_dhimmi_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -108,7 +108,7 @@ estate_maratha = {
 		trigger = {
 			has_estate = estate_maratha
 			NOT = { has_estate = estate_nobles }
-			has_government_attribute = no_maratha_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_maratha_loyalty_loss_from_absolutism }
 		}
 	}
 	modifier_definition = {
@@ -117,7 +117,7 @@ estate_maratha = {
 		trigger = {
 			has_estate = estate_maratha
 			religion_group = muslim
-			has_government_attribute = no_maratha_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_maratha_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -129,7 +129,7 @@ estate_brahmins = {
 		trigger = {
 			has_estate = estate_brahmins
 			religion = hinduism
-			has_government_attribute = no_brahmins_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_brahmins_loyalty_loss_from_absolutism }
 		}
 	}
 	modifier_definition = {
@@ -138,7 +138,7 @@ estate_brahmins = {
 		trigger = {
 			has_estate = estate_brahmins
 			religion_group = muslim
-			has_government_attribute = no_brahmins_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_brahmins_loyalty_loss_from_absolutism }
 		}
 	}
 	modifier_definition = {
@@ -148,7 +148,7 @@ estate_brahmins = {
 			has_estate = estate_brahmins
 			NOT = { religion = hinduism }
 			NOT = { religion_group = muslim }
-			has_government_attribute = no_brahmins_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_brahmins_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -159,7 +159,7 @@ estate_vaisyas = {
 		key = vaisyas_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_vaisyas
-			has_government_attribute = no_vaisyas_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_vaisyas_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -170,7 +170,7 @@ estate_jains = {
 		key = jains_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_jains
-			has_government_attribute = no_jains_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_jains_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -182,7 +182,7 @@ estate_rajput = {
 		trigger = {
 			has_estate = estate_rajput
 			NOT = { has_estate = estate_nobles }
-			has_government_attribute = no_rajput_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_rajput_loyalty_loss_from_absolutism }
 		}
 	}
 	modifier_definition = {
@@ -191,7 +191,7 @@ estate_rajput = {
 		trigger = {
 			has_estate = estate_rajput
 			religion_group = muslim
-			has_government_attribute = no_rajput_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_rajput_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -202,7 +202,7 @@ estate_janissaries = {
 		key = janissaries_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_janissaries
-			has_government_attribute = no_janissaries_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_janissaries_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -213,7 +213,7 @@ estate_eunuchs = {
 		key = eunuchs_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_eunuchs
-			has_government_attribute = no_eunuchs_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_eunuchs_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -224,7 +224,7 @@ estate_ghulams = {
 		key = ghulams_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_ghulams
-			has_government_attribute = no_ghulams_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_ghulams_loyalty_loss_from_absolutism }
 		}
 	}
 }
@@ -235,7 +235,7 @@ estate_qizilbash = {
 		key = qizilbash_absolutism_loyalty_modifier
 		trigger = {
 			has_estate = estate_qizilbash
-			has_government_attribute = no_qizilbash_loyalty_loss_from_absolutism
+			NOT = { has_government_attribute = no_qizilbash_loyalty_loss_from_absolutism }
 		}
 	}
 }
