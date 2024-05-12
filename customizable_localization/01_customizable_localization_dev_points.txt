@@ -486,7 +486,7 @@ defined_text = {	#Is a horde (Mongol Empire)
         localisation_key = dev_points_province_modifier_mongol_empire 
         trigger = {
 			ROOT = {
-				has_reform = great_mongol_state_reHasm
+				has_reform = great_mongol_state_reform
 			}
         }
     }
