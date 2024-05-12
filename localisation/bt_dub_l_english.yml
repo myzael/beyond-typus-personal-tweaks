@@ -517,6 +517,9 @@
  TNV:0 "Tarnovo"
  TNV_ADJ:0 "Tarnovian"
  
+ DESPOTITSA:0 "Despotitsa"
+ TSARINA:0 "Tsarina"
+ 
  #Bulgarian missions
  bul_reclaim_vidin_title:0 "Reclaim Vidin"
  bul_reclaim_vidin_desc:0 "The Tsardom of Vidin has fallen out of our sphere of influence, and if we are to have any chance at recovering and besting our oppressors, Vidin must be retaken!"
