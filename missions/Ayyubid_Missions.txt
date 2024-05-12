@@ -509,7 +509,7 @@ hsn_conquest_group = {
 		
 	}
 	
-	hsn_ayyubid_restoration = {
+	hsn_ayyubid_restoration_bt = {
 		icon = mission_empire
 		required_missions = { hsn_new_capital }
 		position = 7
@@ -701,7 +701,7 @@ hsn_tech_internal_group = {
 	}
 	has_country_shield = yes
 	
-	hsn_madrasas = {
+	hsn_madrasas_bt = {
 		icon = mission_patronize_art_and_religion
 		required_missions = { }
 		position = 3
@@ -736,7 +736,7 @@ hsn_tech_internal_group = {
 	
 	hsn_baghdad_house_of_learning = {
 		icon = mission_persian_soldiers
-		required_missions = { hsn_take_baghdad hsn_madrasas }
+		required_missions = { hsn_take_baghdad hsn_madrasas_bt }
 		position = 4
 		
 		provinces_to_highlight = {
