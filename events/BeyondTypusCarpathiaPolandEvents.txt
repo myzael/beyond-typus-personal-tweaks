@@ -57,6 +57,4 @@ country_event = { # Hungary wants Szepes towns back
 				cede_province = HUN
 			}
 		}
-			
-		}
 }
