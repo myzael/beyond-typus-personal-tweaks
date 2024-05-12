@@ -1,7 +1,7 @@
 BT16
 
 #New Additions
- - (All) Updated BT from 1.33.3 to 1.36.2
+ - (All) Updated BT from 1.33.3 to 1.37.0
  - (JP) Overhauled the South Caucases
  - (JP) Overhauled the Horn of Africa
  - (JP) New tags in Kakheti and Talysh, along with numerous releasables
@@ -164,6 +164,7 @@ BT16
  - (Harbivore) Changed Albanian 1st mission to be give a historically accurate army size.
  - (Harbivore) Changed 1 province Ottoman provine, Myzeqe, to Albanian control.
  - (Harbivore) Changed Germany, Italy and Great Moravia formables so that the ai will not try to form them unless the meet roughly half way to finishing the decision. Stopping ai from killing one another.
+ - (Dub) Disabled Austria-Hungary formation. We might return to this to enable it in order to curb hungarian/austrian revolt in the lategame, but for now, it does not make sense the way vanilla implemented it.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
