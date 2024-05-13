@@ -560,8 +560,7 @@ guiTypes = {
 
 
 
-		iconType =
-		{
+		iconType = {
 			name ="icon_corruption"
 			spriteType = "GFX_icon_corruption_small"
 			position = { x= 458 y = 11 }
@@ -601,7 +600,7 @@ guiTypes = {
 		# This controls the dev points icon for nations current dev points ui (It also shows in subjects)
 		iconType = {
 			name ="topbar_current_dev_points_gui_icon"
-			position = { x = 427 y = 49 }
+			position = { x = 427 y = 48 }
 			spriteType = "current_dev_points_gui_icon"
 			scripted = yes
 		}
@@ -614,10 +613,9 @@ guiTypes = {
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "topbar_current_dev_points_gui"
-			maxWidth = 60
+			maxWidth = 45
 			maxHeight = 20
 			format = left
-			fixedsize = yes
 			scripted = yes
 		}
 
@@ -710,7 +708,7 @@ guiTypes = {
 			font = "vic_22"
 			borderSize = {x = 4 y = 4}
 			text = ""
-			maxWidth = 340
+			maxWidth = 270
 			maxHeight = 32
 			fixedsize = yes
 		}

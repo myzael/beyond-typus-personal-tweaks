@@ -11,9 +11,9 @@ integer = {
     multiply_variable = { which = $var$ value = 1000 }
 }
 
-# Rounds a variable to 2 decimal points
+# Rounds a variable to 1 decimal points
 # Needs var to be defined with the number to be rounded
-one_decimal = { 
+one_decimal = {
     change_variable = { which = $var$ value = 0.05 }
     multiply_variable = { which = $var$ value = 0.01 }
     multiply_variable = { which = $var$ value = 100 }
