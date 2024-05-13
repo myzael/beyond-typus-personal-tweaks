@@ -113,6 +113,7 @@ country_event = {
 		set_country_flag = calculating_auto_dev_desirability	#This will ensure the nation calculates their auto dev desireability for their provinces
 		calculate_monthly_dev_points_in_all_provinces_effect = yes			#In 02_scripted_effects_for_dev_points
 		calculate_monthly_dev_points_with_country_modifiers_effect = yes	#In 02_scripted_effects_for_dev_points
+		calculate_dev_point_limit_effect = yes	#In 02_scripted_effects_for_dev_points
 		set_variable = {							#Initialises the dev point variable for this nation
 			which = shown_current_dev_points
 			value = 0
