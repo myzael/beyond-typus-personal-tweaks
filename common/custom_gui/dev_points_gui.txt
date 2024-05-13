@@ -2,6 +2,23 @@
 
 # This controls the dev points icon for nations current dev points ui (It also shows in subjects)
 custom_icon = {
+	name = topbar_current_dev_points_gui_icon
+	potential = { 
+		always = yes
+    }
+   tooltip = current_dev_points_gui_tooltip
+}
+# This controls the text box for nations current dev points ui (It also shows in subjects)
+custom_text_box = {
+	name = topbar_current_dev_points_gui
+	potential = { 
+		always = yes
+    }
+   tooltip = current_dev_points_gui_tooltip
+}
+
+# This controls the dev points icon for nations current dev points ui (It also shows in subjects)
+custom_icon = {
 	name = current_dev_points_gui_icon
 	potential = { 
 		OR = { 
