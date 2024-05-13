@@ -601,7 +601,7 @@ guiTypes = {
 		# This controls the dev points icon for nations current dev points ui (It also shows in subjects)
 		iconType = {
 			name ="topbar_current_dev_points_gui_icon"
-			position = { x = 417 y = 49 }
+			position = { x = 427 y = 49 }
 			spriteType = "current_dev_points_gui_icon"
 			scripted = yes
 		}
@@ -609,14 +609,14 @@ guiTypes = {
 		# This controls the text box for nations current dev points ui (It also shows in subjects)
 		instantTextBoxType = {
 			name = "topbar_current_dev_points_gui"
-			position = { x = 424 y = 52}
+			position = { x = 452 y = 52}
 			textureFile = ""
 			font = "vic_18"
 			borderSize = {x = 4 y = 4}
 			text = "topbar_current_dev_points_gui"
 			maxWidth = 60
 			maxHeight = 20
-			format = centre
+			format = left
 			fixedsize = yes
 			scripted = yes
 		}
