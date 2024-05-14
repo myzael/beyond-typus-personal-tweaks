@@ -795,7 +795,7 @@ bt_bul_slot_1 = {
 	}
 	
 	bul_subjugate_west_slavs = {
-		icon = mission_fight_bosnian_heresies
+		icon = fight_bosnian_heresies
 		position = 7
 		required_missions = { bul_subjugate_wallachia }
 		provinces_to_highlight = {
