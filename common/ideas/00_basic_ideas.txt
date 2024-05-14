@@ -2258,6 +2258,7 @@ influence_ideas = {
 
 	bonus = {
 		unjustified_demands = -0.5
+		dev_points_from_subjects_modifier = 1
 	}
 
 	tribute_system = {

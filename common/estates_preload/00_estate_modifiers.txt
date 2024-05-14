@@ -683,4 +683,11 @@ estate_special = {
 			always = yes
 		}
 	}
+	modifier_definition = {
+		type = loyalty
+		key = dev_points_from_subjects_modifier
+		trigger = {
+			always = yes
+		}
+	}
 }
