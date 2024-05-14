@@ -754,7 +754,7 @@ bt_bul_slot_1 = {
 	has_country_shield = yes
 	
 	bul_subjugate_wallachia = {
-		icon = mission_impaled_soldier
+		icon = mission_impaled_soldies
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
