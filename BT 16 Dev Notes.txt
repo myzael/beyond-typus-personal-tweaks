@@ -2,11 +2,10 @@ Known Issues:
 	Development Points:
 		-	The monarch point costs of the decisions/clickable buttons do not display in the UI if you have +-0 monthly monarch points, achievable by taking the corresponding monarch point privilege. This is unfortunately unfixable.
 		-	You cannot click to develop a province unless you have monarch points corresponding to the given dev cost. This is the unfortunate side-effect of getting the macrobuilder to work with the new system.
-		-	Current generated development points balance is not final.
 	Internal Politicks integration:
 		-	No known issues at the moment.
 	More Buildings integration:
-		-	The generated development points of the additional buildings are not final.
+		-	No known issues at the moment.
 	Caucasia:
 		-	Trade goods in the area are likely not final.
 		-	The current nudging that has been done is not accurate.
@@ -44,5 +43,5 @@ Future plans:
 	-	Exploit development should be reworked as to allow the exploitation of production dev in non-coastal provinces, but what it should do instead is not figured out yet.
 	-	Monuments are pending rebalancing in general.
 	-	There are new planned monuments for Ruthenia/Russia, however until monument descriptions are done, they will not be implemented.
-	-	Swedish LoTN missions will integrate with the Peasants estate.
+	-	Swedish LoTN missions should integrate with the Peasants estate.
 	-	Eventually, the plan is to ensure all mission trees will be matched to BT’s setup.
