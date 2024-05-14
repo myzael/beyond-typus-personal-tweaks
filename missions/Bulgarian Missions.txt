@@ -667,7 +667,7 @@ bt_bul_minors_slot_5 = {
 	}
 
 	bul_fortresses = {
-		icon = mission_protect_against_the_turks
+		icon = protect_against_the_turks
 		position = 3
 		required_missions = { bul_a_new_capital }
 		provinces_to_highlight = {
