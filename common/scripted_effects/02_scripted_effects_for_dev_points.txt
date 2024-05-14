@@ -2159,6 +2159,10 @@ spend_dev_points_if_over_limit_effect = {
 				}
 			}
 		}
+		change_variable = {				#Adds to the debug total dev points
+			which = total_development_gained_from_dev_points 
+			value = 1
+		}
 		random_list = {	# This should prioritise provinces with low desirability
 		
 			# These weights are really abstruse because they arent bounded they are just all variables below them
