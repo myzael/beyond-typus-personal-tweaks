@@ -13,6 +13,14 @@ on_startup = {
 		2784 = { change_trade_goods = livestock }
 		set_global_flag = bt_tribal_land_tradegoods
 	}
+	if = {	#For unoverhauled provinces
+		limit = {
+			NOT = {
+				has_global_flag = UOP_modifiers_given
+			}
+		}
+		add_UOP_modifier = yes
+	}
 }
 
 on_new_monarch = {

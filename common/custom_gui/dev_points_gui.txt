@@ -141,6 +141,14 @@ custom_text_box = {
 	}
 }
 
+# This is for the text box for debug gui that shows the total amount of development a nation had gained from dev points throughout the game
+custom_text_box = {
+	name = total_development_gained_from_dev_points_gui 
+	potential = {
+		has_global_flag = debug_total_dev_points
+	}
+}
+
 
 #Not yet working Probably not possible
 # custom_text_box = {

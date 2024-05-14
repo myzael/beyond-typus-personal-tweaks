@@ -122,6 +122,10 @@ country_event = {
 			which = current_dev_points
 			value = 0
 		}
+		set_variable = {				#Adds to the debug total dev points
+			which = total_development_gained_from_dev_points 
+			value = 0
+		}
 		# Done 14 times to simulate the same thing that is done for monarch points
 		add_monthly_dev_points_effect = yes
 		add_monthly_dev_points_effect = yes

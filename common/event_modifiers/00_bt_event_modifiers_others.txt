@@ -478,3 +478,20 @@ bt_venice_lezhe_subsidies = {
 bt_interregnum_so_no_heir = {
 	heir_chance = -10
 }
+
+BT_UOP_province = {
+	local_build_cost = 1
+	local_dev_points_modifier = 1.5
+	local_defensiveness = 1
+	local_development_cost_modifier = -0.2
+	local_fort_maintenance_modifier = 1
+	local_garrison_size = 1
+	ship_recruit_speed = -0.2
+	regiment_recruit_speed = -0.2
+	allowed_num_of_buildings = -2
+	local_gold_depletion_chance_modifier = -0.25
+	local_institution_spread = -0.25
+	local_culture_conversion_time = -0.5
+	local_center_of_trade_upgrade_cost = 0.25
+	local_sailors_modifier = -0.2
+}

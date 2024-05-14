@@ -792,3 +792,8 @@
  goldDESC:0 "Gold is one of the two precious metals that formed the basis of all formal currencies in Europe and was used widely outside of it for trade. The discovery of gold in the New World and trade with Africans would end the Great Bullion Famine that had gripped Europe in previous centuries. However, unwise usage of gold's great wealth could lead to inflation and ruin, especially if paired with other precious metals (like silver)."
  
  
+ NEEDS_TO_HAVE_SEIZED_LAND:0 "You need to have more Crownland than the [From.GetNobilityName] Estate to start annexing this §YAppanage§!."
+ 
+ 
+ 
+ 

@@ -119,7 +119,7 @@ grain_depot = {
 	
 	modifier = {
 		local_monthly_devastation = -0.1
-		base_local_dev_points = 0.04
+		base_local_dev_points = 0.04	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	}
 	
 	ai_will_do = {
@@ -222,7 +222,7 @@ mint = {
 		trade_goods_size_modifier = 1
 		global_tax_modifier = 0.05
 		monthly_gold_inflation_modifier = 0.1
-		base_local_dev_points = 0.08
+		base_local_dev_points = 0.08	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 		#inflation_reduction = -0.1 #Logically, this costs you 0.3 admin points/month/building. I think this is a sensible matchup.
 	}
 	#show_separate = yes # Means as a manufactory it will be shown according to the old way
@@ -347,7 +347,7 @@ tax_assessor = {
 	modifier = {
 		tax_income = 1
 		local_tax_modifier = 0.5
-		base_local_dev_points = 0.02
+		base_local_dev_points = 0.02	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	}
 	bonus_modifier = {
 		tax_income = 1
@@ -464,7 +464,7 @@ naval_arsenal = { #Actually Shipyard in-game
 		local_ship_repair = 0.10		
 		ship_recruit_speed = -0.10
 		province_trade_power_value = 1
-		base_local_dev_points = 0.02
+		base_local_dev_points = 0.02	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	}
 	
 	on_built = {
@@ -521,7 +521,7 @@ naval_base = { #Actually Grand Shipyard in-game
 		local_ship_repair = 0.20	
 		ship_recruit_speed = -0.20
 		province_trade_power_value = 2.5
-		base_local_dev_points = 0.04
+		base_local_dev_points = 0.04	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	}
 
 	on_built = {
@@ -575,7 +575,7 @@ constable = {
 	
 	modifier = {
 		local_tax_modifier = 0.50
-		base_local_dev_points = 0.01
+		base_local_dev_points = 0.01	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	}
 	
 	on_built = {
@@ -623,7 +623,7 @@ treasury_office = {
 	
 	modifier = {
 		local_tax_modifier = 1.0
-		base_local_dev_points = 0.02
+		base_local_dev_points = 0.02	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	}
 	
 	on_built = {
@@ -672,7 +672,7 @@ post_office = {
 	modifier = {
 		trade_value_modifier = 0.4
 		local_institution_spread = 0.25 #Just makes sense.
-		base_local_dev_points = 0.01
+		base_local_dev_points = 0.01	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	}
 	
 	allow_in_gold_provinces = no
@@ -723,7 +723,7 @@ customs_house = {
 	modifier = {
 		trade_value_modifier = 0.6
 		local_institution_spread = 0.5 #Just makes sense.
-		base_local_dev_points = 0.02
+		base_local_dev_points = 0.02	#BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	}
 	
 	allow_in_gold_provinces = no

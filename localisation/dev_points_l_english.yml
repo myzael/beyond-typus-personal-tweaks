@@ -133,6 +133,8 @@
  dev_points_country_ghulams_disloyal: "\n[From.GetGhilmanName]: §R-2%§!"
  
  
+ total_development_gained_from_dev_points_gui: "[Root.Owner.total_development_gained_from_dev_points.GetValue]"
+ 
  total_generated_dev_points_gui: "[Root.Owner.shown_total_accumulated_dev_points.GetValue]"
  
  # Localisation for all the modifiers to max dev points 
