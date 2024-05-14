@@ -667,7 +667,7 @@ bt_bul_minors_slot_5 = {
 	}
 
 	bul_fortresses = {
-		icon = mission_protect_against_the_turks
+		icon = protect_against_the_turks
 		position = 3
 		required_missions = { bul_a_new_capital }
 		provinces_to_highlight = {
@@ -754,7 +754,7 @@ bt_bul_slot_1 = {
 	has_country_shield = yes
 	
 	bul_subjugate_wallachia = {
-		icon = mission_impaled_soldier
+		icon = mission_impaled_soldies
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
@@ -795,7 +795,7 @@ bt_bul_slot_1 = {
 	}
 	
 	bul_subjugate_west_slavs = {
-		icon = mission_fight_bosnian_heresies
+		icon = fight_bosnian_heresies
 		position = 7
 		required_missions = { bul_subjugate_wallachia }
 		provinces_to_highlight = {
@@ -933,7 +933,7 @@ bt_bul_slot_2 = {
 	}
 
 	bul_mercenaries = {
-		icon = mission_italian_condottieri
+		icon = mission_non-western_cavalry_raid
 		position = 9
 		required_missions = { }
 		provinces_to_highlight = {
