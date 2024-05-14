@@ -10,7 +10,7 @@ bt_bul_minors_slot_1 = {
 	has_country_shield = yes
 	
 	bul_reclaim_vidin = {
-		icon = mission_noble_council
+		icon = mission_vidin
 		required_missions = { }
 		provinces_to_highlight = {
 			province_group = bul_reclaim_vidin_provinces
@@ -33,7 +33,7 @@ bt_bul_minors_slot_1 = {
 	}
 	
 	bul_build_up_rose_valley = {
-		icon = mission_noble_council
+		icon = mission_rose_valley
 		position = 3
 		required_missions = { bul_a_new_capital }
 		provinces_to_highlight = {
@@ -73,7 +73,7 @@ bt_bul_minors_slot_1 = {
 	}
 	
 	bul_restore_bulgarian_silk = {
-		icon = mission_noble_council
+		icon = mission_finest_carpets
 		position = 4
 		required_missions = { bul_build_up_rose_valley }
 		provinces_to_highlight = {
@@ -129,7 +129,7 @@ bt_bul_minors_slot_2 = {
 	has_country_shield = yes
 	
 	bul_reclaim_sofia = {
-		icon = mission_noble_council
+		icon = protectors_of_christendom
 		required_missions = { }
 		provinces_to_highlight = {
 			province_group = bul_reclaim_sofia_provinces
@@ -152,7 +152,7 @@ bt_bul_minors_slot_2 = {
 	}
 	
 	bul_universities = {
-		icon = mission_noble_council
+		icon = mission_early_modern_university
 		position = 3
 		required_missions = { bul_a_new_capital }
 		provinces_to_highlight = {
@@ -184,7 +184,7 @@ bt_bul_minors_slot_2 = {
 	}
 	
 	bul_bring_back_scholars = {
-		icon = mission_noble_council
+		icon = mission_educated_people
 		position = 5
 		required_missions = { bul_universities }
 		provinces_to_highlight = {
@@ -349,7 +349,7 @@ bt_bul_minors_slot_3 = {
 	has_country_shield = yes
 	
 	bul_reclaim_tarnovo = {
-		icon = mission_noble_council
+		icon = mission_tarnovo
 		required_missions = { }
 		provinces_to_highlight = {
 			province_group = bul_reclaim_tarnovo_provinces
@@ -378,7 +378,7 @@ bt_bul_minors_slot_3 = {
 	}
 	
 	bul_a_new_capital = {
-		icon = mission_noble_council
+		icon = mission_eastern_european_city
 		required_missions = { bul_reclaim_karvuna bul_reclaim_plovdiv bul_reclaim_tarnovo bul_reclaim_sofia bul_reclaim_vidin }
 		provinces_to_highlight = {
 			OR = {
@@ -494,7 +494,7 @@ bt_bul_minors_slot_3 = {
 	}
 
 	bul_restore_bulgaria = {
-		icon = mission_noble_council
+		icon = mission_unite_home_region
 		position = 4
 		required_missions = { bul_a_new_capital }
 		provinces_to_highlight = {
@@ -525,7 +525,7 @@ bt_bul_minors_slot_4 = {
 	has_country_shield = yes
 	
 	bul_reclaim_plovdiv = {
-		icon = mission_noble_council
+		icon = mission_plovdiv
 		required_missions = { }
 		provinces_to_highlight = {
 			province_group = bul_reclaim_plovdiv_provinces
@@ -548,7 +548,7 @@ bt_bul_minors_slot_4 = {
 	}
 	
 	bul_churches = {
-		icon = mission_noble_council
+		icon = promote_the_patriarchate
 		position = 3
 		required_missions = { bul_a_new_capital }
 		provinces_to_highlight = {
@@ -583,7 +583,7 @@ bt_bul_minors_slot_4 = {
 	}
 	
 	bul_autocephaly = {
-		icon = mission_noble_council
+		icon = mission_autocephalous_archbishopric
 		position = 5
 		required_missions = { bul_churches }
 		provinces_to_highlight = {
@@ -644,7 +644,7 @@ bt_bul_minors_slot_5 = {
 	has_country_shield = yes
 	
 	bul_reclaim_karvuna = {
-		icon = mission_noble_council
+		icon = mission_kaliakra
 		required_missions = { }
 		provinces_to_highlight = {
 			province_group = bul_reclaim_karvuna_provinces
@@ -667,7 +667,7 @@ bt_bul_minors_slot_5 = {
 	}
 
 	bul_fortresses = {
-		icon = mission_noble_council
+		icon = mission_protect_against_the_turks
 		position = 3
 		required_missions = { bul_a_new_capital }
 		provinces_to_highlight = {
@@ -715,7 +715,7 @@ bt_bul_minors_slot_5_br_monument_mission = {
 	has_country_shield = yes
 	
 	bul_tsarevets = {
-		icon = mission_noble_council
+		icon = mission_tsarevets
 		position = 4
 		required_missions = { bul_fortresses bul_churches }
 		provinces_to_highlight = {
@@ -754,7 +754,7 @@ bt_bul_slot_1 = {
 	has_country_shield = yes
 	
 	bul_subjugate_wallachia = {
-		icon = mission_noble_council
+		icon = mission_impaled_soldier
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
@@ -795,7 +795,7 @@ bt_bul_slot_1 = {
 	}
 	
 	bul_subjugate_west_slavs = {
-		icon = mission_noble_council
+		icon = mission_fight_bosnian_heresies
 		position = 7
 		required_missions = { bul_subjugate_wallachia }
 		provinces_to_highlight = {
@@ -818,7 +818,7 @@ bt_bul_slot_1 = {
 	}
 	
 	bul_conquer_pannonia = {
-		icon = mission_noble_council
+		icon = mission_destroy_the_hungarians
 		position = 8
 		required_missions = { bul_subjugate_west_slavs bul_subjugate_transylvania }
 		provinces_to_highlight = {
@@ -888,7 +888,7 @@ bt_bul_slot_2 = {
 	has_country_shield = yes
 	
 	bul_subjugate_moldavia = {
-		icon = mission_noble_council
+		icon = mission_conquer_romania
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
@@ -911,7 +911,7 @@ bt_bul_slot_2 = {
 	}
 	
 	bul_subjugate_transylvania = {
-		icon = mission_noble_council
+		icon = mission_landsknecht_soldier
 		position = 7
 		required_missions = { bul_subjugate_moldavia bul_subjugate_wallachia }
 		provinces_to_highlight = {
@@ -933,7 +933,7 @@ bt_bul_slot_2 = {
 	}
 
 	bul_mercenaries = {
-		icon = mission_noble_council
+		icon = mission_italian_condottieri
 		position = 9
 		required_missions = { }
 		provinces_to_highlight = {
@@ -998,7 +998,7 @@ bt_bul_slot_3 = {
 	has_country_shield = yes
 	
 	bul_conquer_macedonia = {
-		icon = mission_noble_council
+		icon = retake_thessaly
 		position = 5
 		required_missions = { bul_restore_bulgaria }
 		provinces_to_highlight = {
@@ -1062,7 +1062,7 @@ bt_bul_slot_3 = {
 	}
 	
 	bul_bulgarian_macedonia = {
-		icon = mission_noble_council
+		icon = legacy_of_the_sclavinias
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
@@ -1079,7 +1079,7 @@ bt_bul_slot_3 = {
 	}
 	
 	bul_take_tsargrad = {
-		icon = mission_noble_council
+		icon = take_constantinople
 		position = 9
 		required_missions = { bul_conquer_pannonia bul_bulgarian_macedonia bul_subjugate_greece }
 		provinces_to_highlight = {
@@ -1101,7 +1101,7 @@ bt_bul_slot_3 = {
 	}
 	
 	bul_true_tsardom = {
-		icon = mission_noble_council
+		icon = emperor_and_autocrat
 		position = 9
 		required_missions = { bul_bolyar_houses bul_mercenaries bul_take_tsargrad bul_katepans bul_siege_engines }
 		provinces_to_highlight = {
@@ -1132,7 +1132,7 @@ bt_bul_slot_4 = {
 	has_country_shield = yes
 	
 	bul_subjugate_albania = {
-		icon = mission_noble_council
+		icon = pacify_the_albanian_lands
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
@@ -1168,7 +1168,7 @@ bt_bul_slot_4 = {
 	}
 	
 	bul_subjugate_serbia = {
-		icon = mission_noble_council
+		icon = defeat_the_serbs
 		position = 7
 		required_missions = { bul_subjugate_albania }
 		provinces_to_highlight = {
@@ -1217,7 +1217,7 @@ bt_bul_slot_4 = {
 	}
 
 	bul_katepans = {
-		icon = mission_noble_council
+		icon = moravian_arms
 		position = 9
 		required_missions = { }
 		provinces_to_highlight = {
@@ -1261,7 +1261,7 @@ bt_bul_slot_5 = {
 	has_country_shield = yes
 	
 	bul_expel_turks = {
-		icon = mission_noble_council
+		icon = geo_break_the_crescent_2
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
@@ -1277,7 +1277,7 @@ bt_bul_slot_5 = {
 	}
 	
 	bul_conquer_south_thrace = {
-		icon = mission_noble_council
+		icon = mission_ottoman_harem
 		position = 7
 		required_missions = { bul_expel_turks }
 		provinces_to_highlight = {
@@ -1299,7 +1299,7 @@ bt_bul_slot_5 = {
 	}
 	
 	bul_subjugate_greece = {
-		icon = mission_noble_council
+		icon = mission_parthenon
 		position = 8
 		required_missions = { bul_conquer_south_thrace bul_subjugate_serbia }
 		provinces_to_highlight = {
@@ -1321,7 +1321,7 @@ bt_bul_slot_5 = {
 	}
 	
 	bul_siege_engines = {
-		icon = mission_noble_council
+		icon = mission_cannons_firing
 		position = 9
 		required_missions = { }
 		provinces_to_highlight = {
