@@ -708,7 +708,10 @@ anatolian_beyliks_ideas = {
 	}
 	
 	trigger = {
-		primary_culture = turkish
+		OR = {
+			primary_culture = turkish
+			primary_culture = turkoman #BT Added Turcoman
+		}
 	}
 	free = yes
 	
