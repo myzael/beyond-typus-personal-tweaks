@@ -1072,6 +1072,7 @@ bt_bul_slot_3 = {
 		trigger = {
 		}
 		effect = {
+			give_permaclaims_for_mission = { mission=bul_take_tsargrad }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1183,33 +1184,38 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
-			if = { #Epirus
+			if = {
 				limit = {
-					exists = EPI
-					EPI = {
-						NOT = { total_development = 200 }
+					mission_completed = bul_conquer_south_thrace
+				}
+				if = { #Epirus
+					limit = {
+						exists = EPI
+						EPI = {
+							NOT = { total_development = 200 }
+						}
+					}
+					add_casus_belli = {
+						type = cb_vassalize_mission
+						months = 300 #25 years. I'm not sure if you can actually make it infinite.
+						target = EPI
 					}
 				}
-				add_casus_belli = {
-					type = cb_vassalize_mission
-					months = 300 #25 years. I'm not sure if you can actually make it infinite.
-					target = EPI
-				}
-			}
-			if = { #Morea, if Byz died
-				limit = {
-					exists = MOE
-					MOE = {
-						NOT = { total_development = 200 }
+				if = { #Morea, if Byz died
+					limit = {
+						exists = MOE
+						MOE = {
+							NOT = { total_development = 200 }
+						}
+					}
+					add_casus_belli = {
+						type = cb_vassalize_mission
+						months = 300 #25 years. I'm not sure if you can actually make it infinite.
+						target = MOE
 					}
 				}
-				add_casus_belli = {
-					type = cb_vassalize_mission
-					months = 300 #25 years. I'm not sure if you can actually make it infinite.
-					target = MOE
-				}
+				give_permaclaims_for_mission = { mission=bul_subjugate_greece }
 			}
-			give_permaclaims_for_mission = { mission=bul_subjugate_greece }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1270,6 +1276,7 @@ bt_bul_slot_5 = {
 		trigger = {
 		}
 		effect = {
+			give_permaclaims_for_mission = { mission=bul_conquer_south_thrace }
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1292,6 +1299,38 @@ bt_bul_slot_5 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					mission_completed = bul_subjugate_serbia
+				}
+				if = { #Epirus
+					limit = {
+						exists = EPI
+						EPI = {
+							NOT = { total_development = 200 }
+						}
+					}
+					add_casus_belli = {
+						type = cb_vassalize_mission
+						months = 300 #25 years. I'm not sure if you can actually make it infinite.
+						target = EPI
+					}
+				}
+				if = { #Morea, if Byz died
+					limit = {
+						exists = MOE
+						MOE = {
+							NOT = { total_development = 200 }
+						}
+					}
+					add_casus_belli = {
+						type = cb_vassalize_mission
+						months = 300 #25 years. I'm not sure if you can actually make it infinite.
+						target = MOE
+					}
+				}
+				give_permaclaims_for_mission = { mission=bul_subjugate_greece }
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
