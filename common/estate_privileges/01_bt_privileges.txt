@@ -269,6 +269,7 @@ estate_nobles_mamluk_decadence = {
 	}
 }
 estate_nobles_monopoly_of_vodka = {
+	icon = privilege_monopoly_of_goods_beer
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -378,6 +379,7 @@ estate_nobles_monopoly_of_vodka = {
 
 #BT Church privileges
 estate_church_monopoly_of_books = {
+	icon = privilege_monopoly_of_goods_books
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -483,6 +485,7 @@ estate_church_monopoly_of_books = {
 	}
 }
 estate_church_monopoly_of_apiculture = {
+	icon = privilege_monopoly_of_goods_apiculture
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -588,6 +591,7 @@ estate_church_monopoly_of_apiculture = {
 	}
 }
 estate_church_monopoly_of_vodka = {
+	icon = privilege_monopoly_of_goods_beer
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -697,6 +701,7 @@ estate_church_monopoly_of_vodka = {
 
 #BT Burghers privileges
 estate_burghers_monopoly_of_vodka = {
+	icon = privilege_monopoly_of_goods_beer
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05
@@ -877,6 +882,7 @@ estate_cossacks_siberian_frontier = {
     }
 }
 estate_cossacks_monopoly_of_vodka = {
+	icon = privilege_monopoly_of_goods_beer
 	max_absolutism = -10
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
 	loyalty = 0.05

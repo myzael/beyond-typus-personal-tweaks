@@ -43,4 +43,16 @@ spriteTypes = {
         name = "privilege_mamluk_decadence"
         texturefile = "gfx/interface/privileges/privilege_mamluk_decadence.dds"
     }
+	spriteType = {
+        name = "privilege_monopoly_of_goods_beer"
+        texturefile = "gfx/interface/privileges/privilege_monopoly_of_goods_beer.dds"
+    }
+	spriteType = {
+        name = "privilege_monopoly_of_goods_books"
+        texturefile = "gfx/interface/privileges/privilege_monopoly_of_goods_books.dds"
+    }
+	spriteType = {
+        name = "privilege_monopoly_of_goods_apiculture"
+        texturefile = "gfx/interface/privileges/privilege_monopoly_of_goods_apiculture.dds"
+    }
 }
