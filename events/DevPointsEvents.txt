@@ -68,20 +68,27 @@ country_event = {
 		calculate_monthly_dev_points_with_country_modifiers_effect = yes	#In 02_scripted_effects_for_dev_points
 		add_monthly_dev_points_effect = yes									#In 02_scripted_effects_for_dev_points
 		calculate_dev_point_limit_effect = yes								#In 02_scripted_effects_for_dev_points
-		if = {	#If over the maximum amount then spend dev points
-			limit = {
-				check_variable = {
-					which = current_dev_points
-					which = maximum_dev_points
-				}
-				NOT = {
-					is_variable_equal = {
-						which = current_dev_points
-						which = maximum_dev_points
+		random_list = {
+			90 = {
+				if = {	#If over the maximum amount then spend dev points
+					limit = {
+						check_variable = {
+							which = current_dev_points
+							which = maximum_dev_points
+						}
+						NOT = {
+							is_variable_equal = {
+								which = current_dev_points
+								which = maximum_dev_points
+							}
+						}
 					}
+					spend_dev_points_if_over_limit_effect = yes						#In 02_scripted_effects_for_dev_points
 				}
 			}
-			spend_dev_points_if_over_limit_effect = yes						#In 02_scripted_effects_for_dev_points
+			10 = {	# To help nations that don't make many points
+				spend_dev_points_if_over_limit_effect = yes						#In 02_scripted_effects_for_dev_points
+			}
 		}
 	}
 	
