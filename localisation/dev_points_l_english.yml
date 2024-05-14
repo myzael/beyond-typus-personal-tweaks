@@ -205,6 +205,7 @@
  local_dev_points_modifier: "Local Development Points"
  country_dev_points_modifier: "Monthly Development Points"
  max_dev_points: "Maximum Development Points"
+ dev_points_from_subjects_modifier: "Development Points from Subjects"
  
  # Localisation for trying to see another nations dev points 
  cant_see_foreign_dev_points: "-"
