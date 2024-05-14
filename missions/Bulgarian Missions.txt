@@ -933,7 +933,7 @@ bt_bul_slot_2 = {
 	}
 
 	bul_mercenaries = {
-		icon = mission_italian_condottiere
+		icon = mission_non-western_cavalry_raid
 		position = 9
 		required_missions = { }
 		provinces_to_highlight = {
