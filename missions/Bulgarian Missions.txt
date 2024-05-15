@@ -674,7 +674,6 @@ bt_bul_minors_slot_5 = {
 			NOT = { has_fort_building_trigger = yes }
 			OR = {
 				has_terrain = hills
-				#has_terrain = highlands
 				has_terrain = mountain
 			}
 			owned_by = ROOT
@@ -686,7 +685,6 @@ bt_bul_minors_slot_5 = {
 					has_fort_building_trigger = yes
 					OR = {
 						has_terrain = hills
-						#has_terrain = highlands
 						has_terrain = mountain
 					}
 				}

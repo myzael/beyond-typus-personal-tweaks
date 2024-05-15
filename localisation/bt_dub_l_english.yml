@@ -592,9 +592,22 @@
  bul_siege_engines_title:0 "Bulgarian Siege Engines"
  bul_siege_engines_desc:0 "Bulgaria has ever since the growth of its cities prided itself on its metalworking and siege engineers. Finding extensive use under Ivan Asen II and later [Root.Monarch.GetTitle]s, the Bulgarian siege equipment and engineering was of exceedingly high quality. Let us reassume our position as siege specialists and reforge this part of history anew!"
  
- mechanic_soldier_households_free_training_fields_tooltip:0 "Constructing §YSoldier Households§! will now grant a free §YTraining Fields§! building in the province, if there are building slots and the province does not yet have it."
+ 
+ estate_nobles_bulgarian_hill_forts:0 "Bulgarian Hill Fortifications"
+ estate_nobles_bulgarian_hill_forts_desc:0 "One of the hallmarks of Bulgarian fortifications is them being built upon hillsides, towering over our cities as grand posts of fortification. Housing all the necessities for the aristocracy and clergy, the [Root.GetNobilityName] believe they can be used as points of urbanization, allowing for easier development of the countryside."
  estate_nobles_bulgarian_hillforts_effect_tooltip:0 "Reduces the Development Cost caused by Terrain type of every owned §YMountains§! and §YHills§! province with a fort by §G50.0%§! and §G30.0%§! respectively.\nReduces the Development Cost caused by Terrain type of every owned §YMountains§! and §YHills§! province without a fort by §G25.0%§! and §G15.0%§! respectively."
  estate_nobles_bulgarian_hillforts_revoke_effect_tooltip:0 "§YMountains§! and §YHills§! provinces will return to their original Development Costs."
+ 
+ estate_nobles_bulgarian_hillforts_mountains_fort:0 "Bulgarian Hillforts"
+ desc_estate_nobles_bulgarian_hillforts_mountains_fort:0 "The major fortification in the province allows for easier development in this otherwise harsh and mountainous region." 
+ estate_nobles_bulgarian_hillforts_hills_fort:0 "Bulgarian Hillforts"
+ desc_estate_nobles_bulgarian_hillforts_hills_fort:0 "The major fortification in the province allows for easier development in this otherwise harsh and hilly region." 
+ estate_nobles_bulgarian_hillforts_mountains_no_fort:0 "Bulgarian Hillforts"
+ desc_estate_nobles_bulgarian_hillforts_mountains_no_fort:0 "While the province lacks a major fortification, local minor fortifications allow for easier development in this otherwise harsh and mountainous region." 
+ estate_nobles_bulgarian_hillforts_hills_fort:0 "Bulgarian Hillforts"
+ desc_estate_nobles_bulgarian_hillforts_hills_no_fort:0 "While the province lacks a major fortification, local minor fortifications allow for easier development in this otherwise harsh and mountainous region." 
+ 
+ mechanic_soldier_households_free_training_fields_tooltip:0 "Constructing §YSoldier Households§! will now grant a free §YTraining Fields§! building in the province, if there are building slots and the province does not yet have it."
  
  give_25_dev_points_effect:0 "Gain §G25§! Development Points"
  give_50_dev_points_effect:0 "Gain §G50§! Development Points"

@@ -539,6 +539,7 @@ estate_nobles = {
 		estate_nobles_border_forts
 		estate_nobles_mamluk_decadence
 		estate_nobles_monopoly_of_vodka
+		estate_nobles_bulgarian_hill_forts
 		#BTIP
 		estate_nobles_court_titles
 		estate_nobles_tax_collection_freedom
