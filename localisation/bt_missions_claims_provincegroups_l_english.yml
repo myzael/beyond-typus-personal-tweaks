@@ -189,7 +189,7 @@
  bul_take_tsargrad_provinces:0 ""
  bul_take_tsargrad_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YTake Tsargrad§!"
  bul_subjugate_west_slavs_provinces_provinces:0 ""
- bul_subjugate_west_slavs_provinces_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YSubjugate Western Slavs§!"
+ bul_subjugate_west_slavs_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YSubjugate Western Slavs§!"
  bul_subjugate_greece_provinces:0 ""
  bul_subjugate_greece_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YGut the Greeks§!"
  rmn_drive_out_the_turks_provinces:0 ""
