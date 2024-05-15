@@ -1171,6 +1171,12 @@ bt_bul_slot_3 = {
 				name = "bul_third_bulgarian_empire"
 				duration = -1
 			}
+			anatolia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
