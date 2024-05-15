@@ -810,6 +810,14 @@ bt_bul_slot_1 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = croatian
+				dip_reward = yes
+			}
+			add_accepted_culture_or_dip_power = {
+				culture = bosnian
+				dip_reward = yes
+			}
 			give_permaclaims_for_mission = { mission=bul_conquer_pannonia }
 		}
 		ai_weight = {
@@ -833,6 +841,10 @@ bt_bul_slot_1 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = hungarian
+				dip_reward = yes
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -903,6 +915,15 @@ bt_bul_slot_2 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					exists = MOL
+					MOL = { is_subject_of = ROOT }
+				}
+				MOL = {
+					add_liberty_desire = -50
+				}
+			}
 			give_permaclaims_for_mission = { mission=bul_subjugate_transylvania }
 		}
 		ai_weight = {
@@ -926,6 +947,18 @@ bt_bul_slot_2 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					exists = TRA
+					TRA = { is_subject_of = ROOT }
+				}
+				TRA = {
+					add_liberty_desire = -50
+				}
+			}
+			country_event = {
+				id = bt_bulgarian_mission_events.1
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1171,6 +1204,10 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = albanian
+				dip_reward = yes
+			}
 			define_general = {
 				shock = 4
 				fire = 4
@@ -1214,6 +1251,10 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = serbian
+				dip_reward = yes
+			}
 			if = {
 				limit = {
 					mission_completed = bul_conquer_south_thrace
