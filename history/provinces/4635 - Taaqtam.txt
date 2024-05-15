@@ -3,7 +3,7 @@
 
 culture = chumash
 religion = totemism 
-capital = "Taaqtam" 
+capital = "Kuyam" #Apparently it's not Taaqtam, according to Perry. 
 trade_goods = unknown
 hre = no 
 base_tax = 2 
