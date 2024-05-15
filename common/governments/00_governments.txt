@@ -1455,7 +1455,9 @@ theocracy = {
 				cuman_lancers_reform
 				#1.37 Bohemia
 				vozove_hradby_reform
-				russian_mercenary_guard_reform 
+				russian_mercenary_guard_reform
+				#BT
+				bul_katepans_reform
 			}
 		}
 		secularization = {

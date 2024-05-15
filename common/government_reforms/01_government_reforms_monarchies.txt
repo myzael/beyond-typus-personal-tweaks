@@ -7799,3 +7799,23 @@ bt_ayyubid_sultanate_reform = {
 	}
 }
 
+bul_katepans_reform = {
+	icon = bul_katepans
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			has_unlocked_government_reform = { reform = bul_katepans_reform }
+			has_reform = bul_katepans_reform
+		}
+	}
+	modifiers = {
+		leader_cost = -0.1
+		fort_maintenance_modifier = -0.25
+		discipline = 0.05
+	}
+	
+	custom_attributes = {
+		no_nobles_loyalty_loss_from_absolutism = yes
+	}
+}
+

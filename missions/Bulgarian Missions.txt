@@ -1072,6 +1072,24 @@ bt_bul_slot_3 = {
 		trigger = {
 		}
 		effect = {
+			macedonia_area = {
+				add_province_modifier = {
+					name = "bul_bulgarian_macedonia_mod"
+					duration = -1
+				}
+			}
+			northern_macedonia_area = {
+				add_province_modifier = {
+					name = "bul_bulgarian_macedonia_mod"
+					duration = -1
+				}
+			}
+			eastern_macedonia_area = {
+				add_province_modifier = {
+					name = "bul_bulgarian_macedonia_mod"
+					duration = -1
+				}
+			}
 			give_permaclaims_for_mission = { mission=bul_take_tsargrad }
 		}
 		ai_weight = {
@@ -1095,6 +1113,11 @@ bt_bul_slot_3 = {
 			}
 		}
 		effect = {
+			151 = {
+				add_base_tax = 1
+				add_base_production = 1
+				change_culture = ROOT
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1148,6 +1171,13 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
+			define_general = {
+				shock = 4
+				fire = 4
+				manuever = 5
+				siege = 2
+				name = "Gjon Kastrioti"
+			}
 			if = { #Serbia
 				limit = {
 					exists = SER
@@ -1249,6 +1279,10 @@ bt_bul_slot_4 = {
 		}
 		effect = {
 			#New gov reform
+			unlock_government_reform = {
+				government_reform = bul_katepans_reform
+				tooltip = yes
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1331,6 +1365,15 @@ bt_bul_slot_5 = {
 				}
 				give_permaclaims_for_mission = { mission=bul_subjugate_greece }
 			}
+			thrace_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_culture_construction = {
+					speed = 0.5
+					cost = 0
+				}
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1353,6 +1396,10 @@ bt_bul_slot_5 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = greek
+				dip_reward = yes
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.

@@ -350,7 +350,19 @@ estate_cossacks_monopoly_of_vodka_mod = {
 	local_production_efficiency = -10
 }
 
+#BUL_missions modifiers
+bul_bulgarian_macedonia_mod = {
+	base_local_dev_points = 0.02
+}
 
+bul_siege_engines = {
+	siege_ability = 0.15
+}
+
+
+bul_third_bulgarian_empire = {
+	administrative_efficiency = 0.05
+}
 ##################################################################################################
 ##################################################################################################
 ##################################################################################################
