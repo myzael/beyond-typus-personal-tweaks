@@ -1610,8 +1610,8 @@
  PROV_ADJ4954:0 "Newapkshian"
  PROV4955:0 "Tümpisa"
  PROV_ADJ4955:0 "Tümpisan"
- PROV4956:0 "Takelma"
- PROV_ADJ4956:0 "Takelamian"
+ PROV4956:0 "Latgawa" #Not sure what's going on here, why this was Takelma when we have two of them. //Dub
+ PROV_ADJ4956:0 "Latgawan"
  PROV4957:0 "Wadatika"
  PROV_ADJ4957:0 "Wadatikan"
  PROV4958:0 "Yulalona"

@@ -3,7 +3,7 @@
 
 culture = coast_penutian
 religion = totemism 
-capital = "Sikuptat" 			#Where did I get this?
+capital = "Latgauk" #According to Perry. #"Sikuptat" 			#Where did I get this?
 trade_goods = unknown
 hre = no 
 base_tax = 1 
