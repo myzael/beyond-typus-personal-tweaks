@@ -9,7 +9,7 @@ owner = BYZ
 controller = BYZ
 
 #Demographics
-culture = greek
+culture = pontic
 religion = orthodox
 
 #Development and Trade
