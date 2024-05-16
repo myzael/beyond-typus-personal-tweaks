@@ -132,7 +132,7 @@ country_decisions = {
 					ai = no
 				}
 			}
-                        religion_group = muslim
+			religion_group = muslim
 			OR = {
 				tag = MAJ
 				primary_culture = javanese
