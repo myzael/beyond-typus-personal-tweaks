@@ -5,6 +5,7 @@
 
 namespace = dev_points
 
+
 # Event for players fired from 01_monthly_tick_clock in triggered_province_modifiers
 # Is triggered every month
 # Fully calculates and adds monthly dev points to player nations, also spends dev points if over the maximum amount
