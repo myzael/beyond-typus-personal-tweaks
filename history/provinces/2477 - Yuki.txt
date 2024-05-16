@@ -1,9 +1,9 @@
  
 # No previous file for Yuki
 
-culture = hupa
+culture = hupa #Mattole-Bear River, a Pacific Athabaskan lang, in BT represented by Hupa, according to Perry.
 religion = totemism
-capital = "Natinook"
+capital = "Tcegiltcexbi" #Fixed duplicate with 5849, credit to Perry. Apparently a 'large indigenous village near today's Petrolia'.
 trade_goods = unknown
 hre = no
 base_tax = 1 
@@ -16,21 +16,21 @@ native_hostileness = 3
 discovered_by = north_american
 #discovered_by = bt_northwest_tech
 
-
-1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
-	owner = YYQ			#Hupa
-	controller = YYQ
-	add_core = YYQ
-	is_city = yes
-	trade_goods = naval_supplies
-}
-1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
-	owner = XXX
-	controller = XXX
-	remove_core = YYQ
-	is_city = no
-	trade_goods = unknown
-}
+#Removed: Was for 5849.
+# 1444.11.12 = { #BeyondTypus batch edit shortcut native start date begin
+	# owner = YYQ			#Hupa
+	# controller = YYQ
+	# add_core = YYQ
+	# is_city = yes
+	# trade_goods = naval_supplies
+# }
+# 1444.11.14 = { #BeyondTypus batch edit shortcut native start date end
+	# owner = XXX
+	# controller = XXX
+	# remove_core = YYQ
+	# is_city = no
+	# trade_goods = unknown
+# }
 1565.1.1 = { discovered_by = SPA }	#Andrés de Urdaneta
 1779.1.1 = { discovered_by = GBR } # James Cook
 1786.1.1 = { discovered_by = FRA } # Jean Francois la Perouse, Explored Monterrey to Yakutat

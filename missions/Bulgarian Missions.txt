@@ -674,7 +674,6 @@ bt_bul_minors_slot_5 = {
 			NOT = { has_fort_building_trigger = yes }
 			OR = {
 				has_terrain = hills
-				has_terrain = highlands
 				has_terrain = mountain
 			}
 			owned_by = ROOT
@@ -686,7 +685,6 @@ bt_bul_minors_slot_5 = {
 					has_fort_building_trigger = yes
 					OR = {
 						has_terrain = hills
-						has_terrain = highlands
 						has_terrain = mountain
 					}
 				}
@@ -810,6 +808,14 @@ bt_bul_slot_1 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = croatian
+				dip_reward = yes
+			}
+			add_accepted_culture_or_dip_power = {
+				culture = bosnian
+				dip_reward = yes
+			}
 			give_permaclaims_for_mission = { mission=bul_conquer_pannonia }
 		}
 		ai_weight = {
@@ -833,6 +839,10 @@ bt_bul_slot_1 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = hungarian
+				dip_reward = yes
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -903,6 +913,15 @@ bt_bul_slot_2 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					exists = MOL
+					MOL = { is_subject_of = ROOT }
+				}
+				MOL = {
+					add_liberty_desire = -50
+				}
+			}
 			give_permaclaims_for_mission = { mission=bul_subjugate_transylvania }
 		}
 		ai_weight = {
@@ -926,6 +945,18 @@ bt_bul_slot_2 = {
 			}
 		}
 		effect = {
+			if = {
+				limit = {
+					exists = TRA
+					TRA = { is_subject_of = ROOT }
+				}
+				TRA = {
+					add_liberty_desire = -50
+				}
+			}
+			country_event = {
+				id = bt_bulgarian_mission_events.1
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1072,6 +1103,24 @@ bt_bul_slot_3 = {
 		trigger = {
 		}
 		effect = {
+			macedonia_area = {
+				add_province_modifier = {
+					name = "bul_bulgarian_macedonia_mod"
+					duration = -1
+				}
+			}
+			northern_macedonia_area = {
+				add_province_modifier = {
+					name = "bul_bulgarian_macedonia_mod"
+					duration = -1
+				}
+			}
+			eastern_macedonia_area = {
+				add_province_modifier = {
+					name = "bul_bulgarian_macedonia_mod"
+					duration = -1
+				}
+			}
 			give_permaclaims_for_mission = { mission=bul_take_tsargrad }
 		}
 		ai_weight = {
@@ -1095,6 +1144,11 @@ bt_bul_slot_3 = {
 			}
 		}
 		effect = {
+			151 = {
+				add_base_tax = 1
+				add_base_production = 1
+				change_culture = ROOT
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1114,6 +1168,12 @@ bt_bul_slot_3 = {
 			add_country_modifier = {
 				name = "bul_third_bulgarian_empire"
 				duration = -1
+			}
+			anatolia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {
@@ -1148,6 +1208,17 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = albanian
+				dip_reward = yes
+			}
+			define_general = {
+				shock = 4
+				fire = 4
+				manuever = 5
+				siege = 2
+				name = "Gjon Kastrioti"
+			}
 			if = { #Serbia
 				limit = {
 					exists = SER
@@ -1184,6 +1255,10 @@ bt_bul_slot_4 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = serbian
+				dip_reward = yes
+			}
 			if = {
 				limit = {
 					mission_completed = bul_conquer_south_thrace
@@ -1249,6 +1324,10 @@ bt_bul_slot_4 = {
 		}
 		effect = {
 			#New gov reform
+			unlock_government_reform = {
+				government_reform = bul_katepans_reform
+				tooltip = yes
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1331,6 +1410,15 @@ bt_bul_slot_5 = {
 				}
 				give_permaclaims_for_mission = { mission=bul_subjugate_greece }
 			}
+			thrace_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_culture_construction = {
+					speed = 0.5
+					cost = 0
+				}
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.
@@ -1353,6 +1441,10 @@ bt_bul_slot_5 = {
 			}
 		}
 		effect = {
+			add_accepted_culture_or_dip_power = {
+				culture = greek
+				dip_reward = yes
+			}
 		}
 		ai_weight = {
 			factor = 5	#Alt-History, not that they can do much about this I think.

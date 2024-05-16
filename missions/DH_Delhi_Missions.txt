@@ -270,7 +270,7 @@ dlh_west_missions = {
 		trigger = {
 			has_fulfiled_province_requirement_for_mission_trigger = {
                 tooltip=country_holds_or_non_sovereign_subject_holds_highlighted 
-                provinces=dlh_conquer_orissa_provinces
+                provinces=dlh_reconquer_multan_provinces
                 owner_type=country_or_non_sovereign_subject_holds
             }
 		}

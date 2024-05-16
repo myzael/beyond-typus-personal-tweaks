@@ -376,6 +376,126 @@ estate_nobles_monopoly_of_vodka = {
 		factor = 0
 	}
 }
+estate_nobles_bulgarian_hill_forts = {
+	icon = privilege_autonomous_defences
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.1
+	influence = 0.1
+	is_valid = {
+		has_country_flag = enable_estate_nobles_bulgarian_hillforts_privilege
+	}
+	can_select = {
+		any_owned_province = {
+			OR = {
+				has_terrain = mountain
+				has_terrain = hills
+			}
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_bulgarian_hillforts_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = mountain
+						has_terrain = hills
+					}
+				}
+				if = {
+					limit = {
+						has_fort_building = yes
+					}
+					if = {
+						limit = {
+							has_terrain = mountain
+						}
+						add_province_modifier = {
+							name = estate_nobles_bulgarian_hillforts_mountains_fort
+							duration = -1
+						}
+					}
+					else = {
+						add_province_modifier = {
+							name = estate_nobles_bulgarian_hillforts_hills_fort
+							duration = -1
+						}
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_terrain = mountain
+						}
+						add_province_modifier = {
+							name = estate_nobles_bulgarian_hillforts_mountains_no_fort
+							duration = -1
+						}
+					}
+					else = {
+						add_province_modifier = {
+							name = estate_nobles_bulgarian_hillforts_hills_no_fort
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_bulgarian_hillforts_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = estate_nobles_nakharar_titles_mountains
+						has_province_modifier = estate_nobles_nakharar_titles_highlands						
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = estate_nobles_nakharar_titles_mountains
+					}
+					remove_province_modifier = estate_nobles_nakharar_titles_mountains
+				}
+				else = {
+					remove_province_modifier = estate_nobles_nakharar_titles_highlands
+				}
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_nobles_nakharar_titles_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = estate_nobles_nakharar_titles_mountains
+						has_province_modifier = estate_nobles_nakharar_titles_highlands						
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = estate_nobles_nakharar_titles_mountains
+					}
+					remove_province_modifier = estate_nobles_nakharar_titles_mountains
+				}
+				else = {
+					remove_province_modifier = estate_nobles_nakharar_titles_highlands
+				}
+			}
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 
 #BT Church privileges
 estate_church_monopoly_of_books = {

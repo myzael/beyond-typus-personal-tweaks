@@ -350,7 +350,33 @@ estate_cossacks_monopoly_of_vodka_mod = {
 	local_production_efficiency = -10
 }
 
+#BUL_missions modifiers
+bul_bulgarian_macedonia_mod = {
+	base_local_dev_points = 0.02
+}
 
+bul_siege_engines = {
+	siege_ability = 0.15
+}
+
+
+bul_third_bulgarian_empire = {
+	administrative_efficiency = 0.05
+}
+
+#BUL estate privilege modifiers - Remember to change these if terrain dev costs are ever changed.
+estate_nobles_bulgarian_hillforts_mountains_fort = {
+	local_development_cost = -0.5
+}
+estate_nobles_bulgarian_hillforts_hills_fort = {
+	local_development_cost = -0.3
+}
+estate_nobles_bulgarian_hillforts_mountains_no_fort = {
+	local_development_cost = -0.25
+}
+estate_nobles_bulgarian_hillforts_hills_no_fort = {
+	local_development_cost = -0.15
+}
 ##################################################################################################
 ##################################################################################################
 ##################################################################################################
