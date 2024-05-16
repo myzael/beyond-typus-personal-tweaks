@@ -814,7 +814,7 @@ ire_conquest_4 = {
 			}
 		}
 		trigger = {
-			3009 = {
+			8165 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			4120 = {
