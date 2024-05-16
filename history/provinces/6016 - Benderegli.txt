@@ -9,8 +9,8 @@ owner = BYZ
 controller = BYZ
 
 #Demographics
-culture = turkish
-religion = sunni
+culture = greek
+religion = orthodox
 
 #Development and Trade
 base_tax = 2
@@ -48,6 +48,8 @@ discovered_by = nomad_group
 	controller = TUR
 	add_core = TUR
 	remove_core = GZR
+	culture = turkish
+	religion = sunni
 }
 1481.6.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes
