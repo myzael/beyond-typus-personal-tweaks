@@ -5,8 +5,8 @@
 #Core Details
 capital = "Benderegli"
 is_city = yes
-owner = TUR
-controller = TUR
+owner = BYZ
+controller = BYZ
 
 #Demographics
 culture = turkish
@@ -19,7 +19,7 @@ base_manpower = 1
 trade_goods = bt_trade_good_fruit			#(JP) Ottoman Strawberry
 
 #Cores and Occupation (Alphabetical after current)
-add_core = TUR
+add_core = BYZ
 
 #Other Political
 hre = no
@@ -36,8 +36,19 @@ discovered_by = eastern
 discovered_by = nomad_group
 
 #Histories
-
+1360.1.1 = { #Byzantines sold province to Genoa (They had a colony in there since 1261)
+	owner = GZR
+	controller = GZR
+	add_core = GZR
+	remove_core = BYZ
+}
 #1444 onwards
+1453.1.1 = { #Mehmed conquered Heraclea Pontica
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+	remove_core = GZR
+}
 1481.6.1 = { revolt = { type = pretender_rebels size = 0 } controller = REB } # Civil war, Bayezid & Jem
 1482.7.26 = { revolt = {} controller = TUR } # Jem escapes to Rhodes
 1509.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Civil war
