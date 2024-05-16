@@ -29,22 +29,22 @@ country_event = { #201 Bulgarian Hillforts privilege modifiers application for n
 			OR = {
 				AND = {
 					has_terrain = mountain
-					has_fort_building = yes
+					has_fort_building_trigger = yes
 					NOT = { has_province_modifier = estate_nobles_bulgarian_hillforts_mountains_fort }
 				}
 				AND = {
 					has_terrain = hills
-					has_fort_building = yes
+					has_fort_building_trigger = yes
 					NOT = { has_province_modifier = estate_nobles_bulgarian_hillforts_hills_fort }
 				}
 				AND = {
 					has_terrain = mountain
-					NOT = { has_fort_building = yes }
+					NOT = { has_fort_building_trigger = yes }
 					NOT = { has_province_modifier = estate_nobles_bulgarian_hillforts_mountains_no_fort }
 				}
 				AND = {
 					has_terrain = hills
-					NOT = { has_fort_building = yes }
+					NOT = { has_fort_building_trigger = yes }
 					NOT = { has_province_modifier = estate_nobles_bulgarian_hillforts_hills_no_fort }
 				}
 			}
@@ -58,22 +58,22 @@ country_event = { #201 Bulgarian Hillforts privilege modifiers application for n
 				OR = {
 					AND = {
 						has_terrain = mountain
-						has_fort_building = yes
+						has_fort_building_trigger = yes
 						NOT = { has_province_modifier = estate_nobles_bulgarian_hillforts_mountains_fort }
 					}
 					AND = {
 						has_terrain = hills
-						has_fort_building = yes
+						has_fort_building_trigger = yes
 						NOT = { has_province_modifier = estate_nobles_bulgarian_hillforts_hills_fort }
 					}
 					AND = {
 						has_terrain = mountain
-						NOT = { has_fort_building = yes }
+						NOT = { has_fort_building_trigger = yes }
 						NOT = { has_province_modifier = estate_nobles_bulgarian_hillforts_mountains_no_fort }
 					}
 					AND = {
 						has_terrain = hills
-						NOT = { has_fort_building = yes }
+						NOT = { has_fort_building_trigger = yes }
 						NOT = { has_province_modifier = estate_nobles_bulgarian_hillforts_hills_no_fort }
 					}
 				}
@@ -84,7 +84,7 @@ country_event = { #201 Bulgarian Hillforts privilege modifiers application for n
 				}
 				if = {
 					limit = {
-						has_fort_building = yes
+						has_fort_building_trigger = yes
 					}
 					if = {
 						limit = {
@@ -113,7 +113,7 @@ country_event = { #201 Bulgarian Hillforts privilege modifiers application for n
 			else = {
 				if = {
 					limit = {
-						has_fort_building = yes
+						has_fort_building_trigger = yes
 					}
 					if = {
 						limit = {

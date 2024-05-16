@@ -405,7 +405,7 @@ estate_nobles_bulgarian_hill_forts = {
 				}
 				if = {
 					limit = {
-						has_fort_building = yes
+						has_fort_building_trigger = yes
 					}
 					if = {
 						limit = {
