@@ -794,6 +794,8 @@
  
  NEEDS_TO_HAVE_SEIZED_LAND:0 "You need to have more Crownland than the [From.GetNobilityName] Estate to start annexing this §YAppanage§!."
  
+ NO_GOLD_PRODUCING_PROVINCES:0 "We have no provinces that are producing precious metals."
+ GOLD_PRODUCING_PROVINCES:0 "The following provinces are producing precious metals: $LIST$"
  
  
  
