@@ -253,7 +253,10 @@ ire_conquest_main = {
 		trigger = {
 			munster_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				OR = {
+					province_id = 8164 #Me being lazy
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 			connacht_area = {
 				type = all
