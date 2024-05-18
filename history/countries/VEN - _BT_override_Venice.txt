@@ -1,5 +1,7 @@
 
 
+set_estate_privilege = estate_nobles_strong_duchies	#BT added they have the subjects and are over diplo limit
+set_estate_privilege = estate_nobles_very_strong_duchies	#BT added they have the subjects and are over diplo limit
 
 #History
 
