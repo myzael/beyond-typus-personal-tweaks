@@ -610,9 +610,19 @@
  
  mechanic_soldier_households_free_training_fields_tooltip:0 "Constructing §YSoldier Households§! will now grant a free §YTraining Fields§! building in the province, if there are building slots and the province does not yet have it."
  
- unlock_bul_katepans_reform_tt:0 "Unlocks §YKatepanates§! government reform"
+ unlock_bul_katepans_reform_tt:0 "Unlocks §YKatepans§! government reform"
  bul_katepans_reform:0 "Katepans"
  bul_katepans_reform_desc:0 "Katepans were the name of subprovincial rulers in the Second Bulgarian Empire whose lands forced the bulk of the Bulgarian army. The system itself was adapted from the Byzantine Katepans, who originally ruled over several Themes at a time, but later on became an administrative subunit under a Kephale, or provincial governor. The Bulgarian Katepans adopted this latter role and subdivision and used it to great effect in their administration, providing the backbone from which their armies of up to 100,000 men were assemblied."
+ 
+ bul_siege_engines:0 "Bulgarian Siege Engines"
+ desc_bul_siege_engines:0 "The traditions of Bulgarian Siege Engineering have been restored and we may now reap the benefits."
+ bul_third_bulgarian_empire:0 "Third Bulgarian Empire"
+ desc_third_bulgarian_empire:0 "We have reforged our path in this world as successors of the Bulgarian Empire, just like Tsar Kaloyan did, following the footsteps of Asparuh's First Bulgarian Empire. Having also bested our traditional enemies in the Byzantines, as well as the Turks, a bright future awaits our nation."
+ 
+ bt_bulgarian_mission_events.1.t:0 "United Principalities of Romania"
+ bt_bulgarian_mission_events.1.d:0 "With our subjugation of the Vlachs north of the Danube and around the Carpathian mountains, we have managed to protect our northern frontier against enemy incursions. However, in matters of administration, we have a choice in how these lands should best benefit us. Our advisors have proposed to impose more local rule over the area by assigning the lands, coined by the locals as Romania, to a general of their kin. This would allow us to focus our administrative efforts on other regions south of the Danube.\n\nShall we heed our advisors' proposal, [Root.Monarch.GetTitle] [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]?"
+ bt_bulgarian_mission_events.1.a:0 "Unite the Principalities"
+ bt_bulgarian_mission_events.1.b: "They'll serve us better under direct rule"
  
  give_25_dev_points_effect:0 "Gain §G25§! Development Points"
  give_50_dev_points_effect:0 "Gain §G50§! Development Points"
