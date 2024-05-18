@@ -56,7 +56,7 @@ pay_churchpower = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -118,7 +118,7 @@ pay_pa = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -180,7 +180,7 @@ pay_papal_influence = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -242,7 +242,7 @@ pay_fervor = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -287,7 +287,7 @@ gain_piety = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -330,7 +330,7 @@ lose_piety = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -373,7 +373,7 @@ gain_karma = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -416,7 +416,7 @@ lose_karma = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -478,7 +478,7 @@ pay_harmony = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -543,7 +543,7 @@ national_pay_churchpower = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -608,7 +608,7 @@ national_pay_pa = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -673,7 +673,7 @@ national_pay_papal_influence = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -738,7 +738,7 @@ national_pay_fervor = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -786,7 +786,7 @@ national_gain_piety = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -832,7 +832,7 @@ national_lose_piety = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -878,7 +878,7 @@ national_gain_karma = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -924,7 +924,7 @@ national_lose_karma = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }
 
@@ -989,6 +989,6 @@ national_pay_harmony = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }

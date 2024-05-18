@@ -55,7 +55,7 @@ gain_war_exhaustion = {
 	}
 	
 	ai_will_do = {
-		factor = 5
+		factor = 20
 		modifier = {
 			factor = 0.1
 			war_exhaustion = 5
@@ -123,7 +123,7 @@ national_gain_war_exhaustion = {
 	}
 	
 	ai_will_do = {
-		factor = 5
+		factor = 20
 		modifier = {
 			factor = 0.1
 			war_exhaustion = 5

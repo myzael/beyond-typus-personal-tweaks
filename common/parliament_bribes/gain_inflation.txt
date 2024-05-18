@@ -54,7 +54,7 @@ gain_inflation = {
 	}
 	
 	ai_will_do = {
-		factor = 5
+		factor = 20
 		modifier = {
 			factor = 0.1
 			inflation = 5
@@ -121,7 +121,7 @@ national_gain_inflation = {
 	}
 	
 	ai_will_do = {
-		factor = 5
+		factor = 20
 		modifier = {
 			factor = 0.1
 			inflation = 5

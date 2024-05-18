@@ -53,7 +53,7 @@ diplomatic_support = {
 	}
 	
 	ai_will_do = {
-		factor = 5
+		factor = 20
 	}
 }
 
@@ -115,7 +115,7 @@ national_diplomatic_support = {
 	}
 	
 	ai_will_do = {
-		factor = 5
+		factor = 20
 	}
 	chance = {
 		factor = 1

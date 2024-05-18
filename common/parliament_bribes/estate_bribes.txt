@@ -25,7 +25,7 @@ estate_church_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_church influence = 70 }
@@ -65,7 +65,7 @@ estate_nobles_bribe = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_nobles influence = 70 }
@@ -105,7 +105,7 @@ estate_burghers_bribe = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_burghers influence = 70 }
@@ -145,7 +145,7 @@ estate_cossacks_bribe = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_cossacks influence = 70 }
@@ -185,7 +185,7 @@ estate_brahmins_bribe = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_brahmins influence = 70 }
@@ -225,7 +225,7 @@ estate_maratha_bribe = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_maratha influence = 70 }
@@ -265,7 +265,7 @@ estate_vaisyas_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_vaisyas influence = 70 }
@@ -305,7 +305,7 @@ estate_dhimmi_bribe = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_dhimmi influence = 70 }
@@ -345,7 +345,7 @@ estate_jains_bribe = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_jains influence = 70 }
@@ -385,7 +385,7 @@ estate_rajput_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_rajput influence = 70 }
@@ -425,7 +425,7 @@ estate_janissaries_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_janissaries influence = 70 }
@@ -465,7 +465,7 @@ estate_eunuchs_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_eunuchs influence = 70 }
@@ -508,7 +508,7 @@ national_estate_church_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_church influence = 70 }
@@ -551,7 +551,7 @@ national_estate_nobles_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_nobles influence = 70 }
@@ -594,7 +594,7 @@ national_estate_burghers_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_burghers influence = 70 }
@@ -637,7 +637,7 @@ national_estate_cossacks_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_cossacks influence = 70 }
@@ -680,7 +680,7 @@ national_estate_brahmins_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_brahmins influence = 70 }
@@ -723,7 +723,7 @@ national_estate_maratha_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_maratha influence = 70 }
@@ -766,7 +766,7 @@ national_estate_vaisyas_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_vaisyas influence = 70 }
@@ -809,7 +809,7 @@ national_estate_dhimmi_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_dhimmi influence = 70 }
@@ -852,7 +852,7 @@ national_estate_jains_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_jains influence = 70 }
@@ -895,7 +895,7 @@ national_estate_rajput_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_rajput influence = 70 }
@@ -938,7 +938,7 @@ national_estate_janissaries_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_janissaries influence = 70 }
@@ -981,7 +981,7 @@ national_estate_eunuchs_bribe = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 		modifier = {
 			factor = 0.1
 			estate_influence = { estate = estate_eunuchs influence = 70 }

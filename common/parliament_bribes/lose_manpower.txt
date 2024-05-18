@@ -54,7 +54,7 @@ lose_manpower = {
 	}
 	
 	ai_will_do = {
-		factor = 5
+		factor = 20
 	}
 }
 
@@ -117,6 +117,6 @@ national_lose_manpower = {
 	}
 	
 	ai_will_do = {
-		factor = 5
+		factor = 20
 	}
 }

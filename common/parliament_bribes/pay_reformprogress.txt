@@ -64,7 +64,7 @@ pay_reform_progress = {
 	}
 	
 	ai_will_do = {
-		factor = 2
+		factor = 8
 	}
 }
 
@@ -141,6 +141,6 @@ national_pay_reform_progress = {
 	}
 
 	ai_will_do = {
-		factor = 2
+		factor = 8
 	}
 }

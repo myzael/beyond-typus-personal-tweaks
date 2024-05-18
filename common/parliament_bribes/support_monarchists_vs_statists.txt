@@ -24,7 +24,7 @@ support_monarchists = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -44,9 +44,13 @@ support_orangists = {
 			change_statists_vs_orangists = 0.02
 		}
 	}
+
+	chance = {
+		factor = 1
+	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 1000
 	}
 }
 
@@ -72,7 +76,7 @@ support_theocrats = {
 	}
 
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -102,7 +106,7 @@ support_statists = {
 	}
 
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -128,7 +132,7 @@ support_revolutionaries = {
 	}
 
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }
 
@@ -154,6 +158,6 @@ support_militarists = {
 	}
 
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}
 }

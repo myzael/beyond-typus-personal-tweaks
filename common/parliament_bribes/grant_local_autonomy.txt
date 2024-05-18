@@ -55,6 +55,6 @@ grant_local_autonomy = {
 	}
 
 	ai_will_do = {
-		factor = 100
+		factor = 1000
 	}	
 }

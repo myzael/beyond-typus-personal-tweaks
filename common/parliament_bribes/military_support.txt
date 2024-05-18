@@ -53,7 +53,7 @@ military_support = {
 	}
 	
 	ai_will_do = {
-		factor = 3
+		factor = 20
 	}
 }
 
@@ -119,6 +119,6 @@ national_military_support = {
 	}
 
 	ai_will_do = {
-		factor = 3
+		factor = 20
 	}
 }

@@ -55,7 +55,7 @@ lose_navy_tradition = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 	}
 }
 
@@ -123,6 +123,6 @@ national_lose_navy_tradition = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 	}
 }

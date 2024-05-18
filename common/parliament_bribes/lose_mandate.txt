@@ -38,11 +38,11 @@ lose_mandate = {
 	}
 	
 	chance = {
-		factor = 5
+		factor = 1
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 20
 	}
 }
 
@@ -93,6 +93,6 @@ national_lose_mandate = {
 	}
 	
 	ai_will_do = {
-		factor = 1
+		factor = 20
 	}
 }

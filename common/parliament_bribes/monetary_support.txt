@@ -53,7 +53,7 @@ monetary_support = {
 	}
 	
 	ai_will_do = {
-		factor = 3
+		factor = 12
 	}
 }
 
@@ -119,6 +119,6 @@ national_monetary_support = {
 	}
 
 	ai_will_do = {
-		factor = 3
+		factor = 12
 	}
 }

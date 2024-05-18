@@ -54,7 +54,7 @@ lose_prestige = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 	}
 }
 
@@ -120,6 +120,6 @@ national_lose_prestige = {
 	}
 
 	ai_will_do = {
-		factor = 10
+		factor = 40
 	}
 }

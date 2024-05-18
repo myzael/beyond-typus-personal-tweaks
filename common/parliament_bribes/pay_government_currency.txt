@@ -55,7 +55,7 @@ pay_legitimacy = {
 	}
 	
 	ai_will_do = {
-		factor = 100
+		factor = 40
 	}
 }
 
@@ -181,7 +181,7 @@ pay_devotion = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 	}
 }
 
@@ -303,7 +303,7 @@ pay_meritocracy = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 	}
 }
 
@@ -367,7 +367,7 @@ national_pay_legitimacy = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 	}
 }
 
@@ -499,7 +499,7 @@ national_pay_devotion = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 40
 	}
 }
 
@@ -627,7 +627,7 @@ national_pay_meritocracy = {
 	}
 	
 	chance = {
-		factor = 10
+		factor = 40
 	}
 	
 	ai_will_do = {
