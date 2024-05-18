@@ -1,7 +1,7 @@
 BT16
 
 #New Additions
- - (All) Updated BT from 1.33.3 to 1.37.0
+ - (All) Updated BT from 1.33.3 to 1.37.1
  - (JP) Overhauled the South Caucases
  - (JP) Overhauled the Horn of Africa
  - (JP) New tags in Kakheti and Talysh, along with numerous releasables
@@ -25,11 +25,15 @@ BT16
 	 - (Dub) Cascadia
 	 - (Dub) Magdeburg
 	 - (Jackkade) Khemi
+	 - (Dub) Bulgaria
+	 - (Dub) Lovech
+	 - (Dub) Vidin
+	 - (Dub) Karvuna
  - (Hadiros) Overhauled Australia
  - (Hadiros) Massive cultural overhaul to Australia, added 32 more cultures to the Aboriginal group for a total of 39 cultures. Added New Northern Aboriginal group with 24 cultures.
  - (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
  - (Hadiros) Added new building artwork and names for Aboriginal native buildings (no longer using North American buildings that make no sense)
- - (Dub) Added new government mechanic/mission reward to disable absolutism loss from assigning seat to Parliament. Currently unused in BT, it finds uses in Byzantine Resurgence.
+ - (Dub) Added new government mechanic/mission reward to disable absolutism loss from assigning seat to Parliament. Currently, it is only used in Bulgarian missions and in Byzantine Resurgence.
  - (Dub) Added an Island of Venice province triggered modifier for Venice, making it much harder to siege without a blockade on it to compensate for it not being an island in BT.
  - (Dub) Integrated the Internal Politicks addon to BT16, with almost all its features & tweaks. Included, but not limited to:
 	 - Absolutism now reducing estate loyalty equilibrium by up to -20% at 100 absolutism
@@ -54,6 +58,7 @@ BT16
 	 - There is a maximum amount that can be stored at once, changed by gov rank, ideas and adm tech. If a nation goes over their limit they are automatically spent.
  - (Harbivore) Added silver as a tradegood.
 	 - Existing gold provinces throughout the world were considered and looked over to see whether they produced silver or gold.
+	 - Tooltips and localisation concerning gold were tweaked to reference 'Precious Metals' instead, where appropriate.
  - (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy and showing how they produced 25% of Europe's silver at the time.
  - (Dub) Created 10 (11) additional buttons, present in the Country Court screen, that allows you to spend excess monarch points to gain countrywide modifiers.
 	 - Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable.
@@ -64,7 +69,7 @@ BT16
  - (Dub) Added Native mechanics to Arabian and Somali OPMs. Somali tribes with more provinces share this mechanic, but have multiple provinces.
  - (Dub) Added two new tags in the Balkans: Lovech (LVC) replacing the Bulgaria tag that existed in Lovech prior, and Prilep (PRL), a releasable in North Macedonia.
 	- (Dub) Also retooled the starting setup to account for no Bulgaria tag at game start, letting you form Bulgaria.
- - (Dub) Added a Bulgarian mission tree available for Bulgarian-cultured tags (Lovech, Dobruja and Vidin), which expands upon forming Bulgaria.
+ - (Dub) Added a Bulgarian mission tree available for Bulgarian-cultured tags (Lovech, Dobruja and Vidin), which expands upon forming Bulgaria. The mission tree rewards include 1 new flavour event, 1 new government reform, several new country/province modifiers and new custom mechanics.
  
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
@@ -95,7 +100,10 @@ BT16
  - (Dub) Fixed JuvÃ©nal in Rheims & Laon.
  - (Dub) Fixed Saxony not being able to rename itself if it lost its PUs at any point, giving it alternate completion requirements.
  - (Dub) Fixed Hildesheim & Legnica's dynasties being wrong.
- - (Dub) Fixed Velbazhd having Bulgarian names, despite being a Serbian breakaway state
+ - (Dub) Fixed Velbazhd having Bulgarian names, despite being a Serbian breakaway state.
+ - (Dub) Fixed duplicate province names and capitals in California, courtesy of Perry.
+ - (Dub) Fixed RB Irish minor missions that were contributed as fixed, but weren't.
+ - (Dub) Fixed DH Delhi mission not accounting for dev-doubling.
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
@@ -165,6 +173,8 @@ BT16
  - (Harbivore) Changed 1 province Ottoman provine, Myzeqe, to Albanian control.
  - (Harbivore) Changed Germany, Italy and Great Moravia formables so that the ai will not try to form them unless the meet roughly half way to finishing the decision. Stopping ai from killing one another.
  - (Dub) Disabled Austria-Hungary formation. We might return to this to enable it in order to curb hungarian/austrian revolt in the lategame, but for now, it does not make sense the way vanilla implemented it.
+ - (Dub) Fixed Heraclea Pontica (Benderegli) being owned by Ottomans at game start when they did not take it until 1453.
+ - (Dub) Tweaked Bulgaria's flag and colour to more closely resemble the 2nd Bulgarian Empire, with both of them being yellow.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
