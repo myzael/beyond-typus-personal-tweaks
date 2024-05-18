@@ -7804,7 +7804,7 @@ bul_katepans_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
-			has_unlocked_government_reform = { reform = bul_katepans_reform }
+			has_unlocked_government_reform = { government_reform = bul_katepans_reform }
 			has_reform = bul_katepans_reform
 		}
 	}
