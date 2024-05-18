@@ -70,6 +70,9 @@ BT16
  - (Dub) Added two new tags in the Balkans: Lovech (LVC) replacing the Bulgaria tag that existed in Lovech prior, and Prilep (PRL), a releasable in North Macedonia.
 	- (Dub) Also retooled the starting setup to account for no Bulgaria tag at game start, letting you form Bulgaria.
  - (Dub) Added a Bulgarian mission tree available for Bulgarian-cultured tags (Lovech, Dobruja and Vidin), which expands upon forming Bulgaria. The mission tree rewards include 1 new flavour event, 1 new government reform, several new country/province modifiers and new custom mechanics.
+ - (Harbivore) Occupation and sieging provinces now causes provincial autonomy to rise.
+ - (Chrysocyon) All vanilla monuments now have descriptions.
+ - (Chrysocyon) BT monuments starting with A-F now have descriptions. Eventually they'll all have one.
  
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
@@ -175,6 +178,8 @@ BT16
  - (Dub) Disabled Austria-Hungary formation. We might return to this to enable it in order to curb hungarian/austrian revolt in the lategame, but for now, it does not make sense the way vanilla implemented it.
  - (Dub) Fixed Heraclea Pontica (Benderegli) being owned by Ottomans at game start when they did not take it until 1453.
  - (Dub) Tweaked Bulgaria's flag and colour to more closely resemble the 2nd Bulgarian Empire, with both of them being yellow.
+ - (Harbivore) Vassals now need to have been your subject for 25 years before they can be annexed.
+ - (Harbivore) French Appanages now require you to have more crown land than the Nobility in order to be annexed.
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
