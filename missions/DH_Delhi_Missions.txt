@@ -366,7 +366,7 @@ dlh_west_missions = {
 		}
 		trigger = {
 			prestige = 50
-			total_development = 500
+			total_development = 1000 #BT; 500
 		}
 		effect = {
 			set_government_rank = 3
