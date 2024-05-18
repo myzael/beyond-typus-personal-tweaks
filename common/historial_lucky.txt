@@ -1,6 +1,6 @@
 # Order here is the priority for taking them, if trigger is true.
 
-CAS = {
+CAS = {	#
 	NOT = { 
 		exists = SPA 
 		is_year = 1700
@@ -14,7 +14,7 @@ SPA = {
 	}
 }
 
-TUR = {
+TUR = {	#
 	NOT = { 
 		is_year = 1700
 	}
@@ -24,7 +24,7 @@ RUS = {
 	always = yes
 }
 
-MOS = {
+MOS = {	#
 	NOT = { 
 		exists = RUS
 	}
@@ -34,24 +34,22 @@ GBR = {
 	always = yes
 }
 
-ENG = {
+ENG = {	#
 	NOT = { 
 		exists = GBR
 	}
 }
 
-FRA = {
-	always = yes
+FRA = {	#			#BT changed to try slow france's dominance and to remove the +25% gov cap they get (this also will give bra lucky nation and should help them)
+	is_year = 1500
 }
 
-STY = {				#BT Added so subject austria doesn't get lucky nation while styria sits there
-	NOT = { 
-		is_year = 1480
-	}
+STY = {	#			#BT Added so subject austria doesn't get lucky nation while styria sits there
+	has_country_flag = bt_the_real_austria
 }
 
 HAB = {
-	is_subject = no
+	has_country_flag = bt_the_real_austria
 }
 
 PRU = {
@@ -62,10 +60,14 @@ NED = {
 	always = yes
 }
 
-POR = {
+POR = {	#
 	NOT = { 
 		is_year = 1700
 	}
+}
+
+BRA = {	# BT Swapped to be above MJZ to help them as they lose everytime
+	always = yes
 }
 
 MJZ = {
@@ -87,10 +89,7 @@ QNG = {
 	always = yes
 }
 
-BRA = {
-	always = yes
-}
-SWE = {
+SWE = {	#
 	NOT = { 
 		is_year = 1700
 	}
