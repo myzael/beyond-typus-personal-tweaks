@@ -598,6 +598,33 @@ annexationaction = {
 			}
 		}
 	}
+	condition = {	#BT Added so you need under 25 liberty desire to annex a subject
+		tooltip = BT_ANNEX_TOO_HIGH_LIBERTY_DESIRE
+		potential = {
+			FROM = {
+				NOT = { #So it doesn't show up if the subject is disloyal anyways
+					liberty_desire = 50
+				}
+				OR = {
+					is_subject_of_type = core_eyalet
+					is_subject_of_type = appanage
+					vassal_of = ROOT
+					#BT New subjects
+					is_subject_of_type = fiefdom_bt
+					is_subject_of_type = hanseatic_league_member_bt
+					is_subject_of_type = bt_english_march
+					is_subject_of_type = bt_cossack_host
+				}
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = {
+					liberty_desire = 25
+				}
+			}
+		}
+	}
 	#condition = {
 	#	tooltip = ANNEXINVALID
 	#	potential = {
@@ -705,6 +732,25 @@ integrationaction = {
 				has_opinion = {
 					who = ROOT
 					value = 190
+				}
+			}
+		}
+	}
+	condition = {	#BT Added so you need under 25 liberty desire to annex a subject
+		tooltip = BTINTEGRATETOOHIGHLIBERTYDESIRE
+		potential = {
+			OR = {
+				senior_union_with = FROM
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = mongol_brother_realm
+				}
+			}
+		}
+		allow = {
+			FROM = {
+				NOT = {
+					liberty_desire = 25
 				}
 			}
 		}
