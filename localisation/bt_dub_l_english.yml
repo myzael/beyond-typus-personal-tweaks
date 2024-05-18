@@ -566,7 +566,7 @@
  bul_subjugate_moldavia_title:0 "Mash Moldavia"
  bul_subjugate_moldavia_desc:0 "To the North of the Danube and the East of the Carpathian mountains lay the Voivodeship of Moldavia. While often under Polish or Hungarian influence, it is time we step in and wrestle these lands away from them."
  bul_subjugate_transylvania_title:0 "Tame Transylvania"
- bul_subjugate_transylvania_desc:0 ""
+ bul_subjugate_transylvania_desc:0 "With the Wallachians and Moldavians subjugated, let us turn towards the lands west of the Carpathian mountains. Here resides other Vlachs, currently subjugated by the Magyars. We shall march our armies beyond the mountains and wrestle these lands from them!"
  bul_mercenaries_title:0 "Bulgarian Mercenaries"
  bul_mercenaries_desc:0 "In the times of the Second Bulgarian Empire, a great deal of mercenaries were employed to great effect combating our enemies. In particular, Cuman cavalry became particularly important as part of Bulgarian mobile warfare tactics. Whilst an overreliance later on contributed to the Empire's later decline, we shall not make the same mistake. Let us hire and establish an elite mercenary corps!"
  bul_conquer_macedonia_title:0 "Reconquer Macedonia"
@@ -585,6 +585,7 @@
  bul_katepans_desc:0 "The Second Bulgarian Empire employed the title of Katepans to local governors and generals of its provinces. This tradition hearkens back to the Byzantine Theme System and was used to great effect in the Bulgarian Empire. Let us restore these offices and construct the infrastructure to maintain it!"
  bul_expel_turks_title:0 "Expel the Turks"
  bul_expel_turks_desc:0 ""
+ highlighted_provinces_not_turkish_or_owned_by_tur:0 "The highlighted provinces are neither of §YTurkish§! culture, nor owned by §Y[TUR.GetName]§!."
  bul_conquer_south_thrace_title:0 "Encroach on Constantinople"
  bul_conquer_south_thrace_desc:0 "It is time we encroach on the City of Cities. Let's send our armies across the Rhodope mountains and take the lands surrounding Constantinople!"
  bul_subjugate_greece_title:0 "Gut the Greeks"
@@ -608,6 +609,10 @@
  desc_estate_nobles_bulgarian_hillforts_hills_no_fort:0 "While the province lacks a major fortification, local minor fortifications allow for easier development in this otherwise harsh and mountainous region." 
  
  mechanic_soldier_households_free_training_fields_tooltip:0 "Constructing §YSoldier Households§! will now grant a free §YTraining Fields§! building in the province, if there are building slots and the province does not yet have it."
+ 
+ unlock_bul_katepans_reform_tt:0 "Unlocks §YKatepanates§! government reform"
+ bul_katepans_reform:0 "Katepans"
+ bul_katepans_reform_desc:0 "Katepans were the name of subprovincial rulers in the Second Bulgarian Empire whose lands forced the bulk of the Bulgarian army. The system itself was adapted from the Byzantine Katepans, who originally ruled over several Themes at a time, but later on became an administrative subunit under a Kephale, or provincial governor. The Bulgarian Katepans adopted this latter role and subdivision and used it to great effect in their administration, providing the backbone from which their armies of up to 100,000 men were assemblied."
  
  give_25_dev_points_effect:0 "Gain §G25§! Development Points"
  give_50_dev_points_effect:0 "Gain §G50§! Development Points"

@@ -1,5 +1,6 @@
 ﻿l_english:
-
+ #Tooltip localisations:
+ highlighted_provinces_are_of_primary_culture:0 "The highlighted provinces are of §Y[Root.Culture.GetName]§! culture."
 
  #I attempted to dynamically localise the mission titles used in all _claims strings. Unfortunately I was not able to find a way to do it.
  #If anyone knows how to do so, I'd love to know. //Dub

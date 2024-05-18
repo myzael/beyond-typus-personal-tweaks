@@ -1101,6 +1101,11 @@ bt_bul_slot_3 = {
 			NOT = { culture = ROOT }
 		}
 		trigger = {
+			has_fulfiled_province_requirement_for_mission_trigger = {
+				tooltip=highlighted_provinces_are_of_primary_culture 
+				provinces=bul_conquer_macedonia_provinces
+				owner_type=primary_culture
+			}
 		}
 		effect = {
 			macedonia_area = {
@@ -1350,9 +1355,31 @@ bt_bul_slot_5 = {
 		position = 6
 		required_missions = { bul_conquer_macedonia }
 		provinces_to_highlight = {
-			owned_by = ROOT
+			OR = {
+				province_group = bul_reclaim_karvuna_provinces
+				province_group = bul_reclaim_plovdiv_provinces
+				province_group = bul_reclaim_sofia_provinces
+				province_group = bul_reclaim_tarnovo_provinces
+				province_group = bul_reclaim_vidin_provinces
+			}
+			OR = {
+				owned_by = TUR
+				culture = turkish
+			}
 		}
 		trigger = {
+			has_fulfiled_general_province_requirement_for_mission_trigger = {
+				tooltip=highlighted_provinces_not_turkish_or_owned_by_tur
+				provinces=bul_expel_turks_provinces
+				triggers="
+					NOT = {
+						OR = {
+							owned_by = TUR
+							culture = turkish
+						}
+					}
+				"
+			}
 		}
 		effect = {
 			give_permaclaims_for_mission = { mission=bul_conquer_south_thrace }

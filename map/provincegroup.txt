@@ -462,6 +462,15 @@ bul_subjugate_greece_provinces = {
 	142 4698 7125 7126 
 }
 
+bul_expel_turks_provinces = { #Combination of bul_reclaim_karvuna_provinces, bul_reclaim_plovdiv_provinces, bul_reclaim_sofia_provinces, bul_reclaim_tarnovo_provinces and bul_reclaim_vidin_provinces
+	150 159 4704 7157 7158 7159 7706 #Tarnovo
+	1765 4703 7703 7705 #Sofia
+	2746 7707 7714 7715 #Vidin
+	3164 3165 4706 7154 7759 7765 #Karvuna
+	2750 3169 7149 7150 #Plovdiv
+	1764 7139 7152 7155 7156
+}
+
 #Romanian missions
 rmn_drive_out_the_turks_provinces = { #Needs additional owned by TUR check
 	# the source trigger for this provincegroup contained triggers not representable in provincegroups, please move these triggers to the mission this provincegroup is referenced in. 
