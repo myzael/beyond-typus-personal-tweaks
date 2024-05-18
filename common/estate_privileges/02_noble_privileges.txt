@@ -585,6 +585,7 @@ estate_nobles_french_strong_duchies = {
 		NOT = { has_estate_privilege = estate_eunuchs_delegate_subject_diplomacy_privilege }
 	}
 	penalties = {
+		governing_capacity_modifier = -0.2	#BT added to balance and add another reasonable negative to taking this (The other negative is the privilege slots) Harb
 	}
 	benefits = {
 		diplomatic_upkeep = 3
@@ -1104,6 +1105,7 @@ estate_nobles_strong_duchies = {
 		}
 	}
 	penalties = {
+		governing_capacity_modifier = -0.15	#BT added to balance and add another reasonable negative to taking this (The other negative is the privilege slots) Harb
 	}
 	benefits = {
 		diplomatic_upkeep = 2
