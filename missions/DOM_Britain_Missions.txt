@@ -1546,7 +1546,7 @@ gbr_row_3 = {
 					}
 					add_province_modifier = { 				#BT Change to help england and represent historical migrations
 						name = bt_english_loyalist_immigrants
-						duration = 10950
+						duration = 14600	# 40 years
 						desc = bt_english_loyalist_immigrants_desc
 					}
 				}
