@@ -187,4 +187,5 @@ national_focus = DIP
 
 1444.10.1 = {
 	set_estate_privilege = estate_nobles_strong_duchies
+	set_estate_privilege = estate_nobles_very_strong_duchies	#BT added you can keep this if you have over 3 subjects which they do so I'm giving them the help Harb
 }
