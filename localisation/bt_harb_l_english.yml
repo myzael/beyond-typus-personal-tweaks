@@ -91,8 +91,8 @@
  bt_interregnum_so_no_heir: "Interregnum Period"
  bt_interregnum_so_no_heir_desc: "We are in an interregnum period and cannot get an heir through birth."
  
- BTINTEGRATETOOHIGHLIBERTYDESIRE: "They must have less than §Y25§! Liberty desire for annexation to start, but currently have their liberty desire is §R$AMOUNT$§!."
- BT_ANNEX_TOO_HIGH_LIBERTY_DESIRE: "They must have less than §Y25§! Liberty desire for annexation to start, but currently have their liberty desire is §R$AMOUNT$§!."
+ BTINTEGRATETOOHIGHLIBERTYDESIRE: "They must have less than §Y25§! Liberty desire to start annexation, but currently have their liberty desire above this."
+ BT_ANNEX_TOO_HIGH_LIBERTY_DESIRE: "They must have less than §Y25§! Liberty desire to start annexation, but currently have their liberty desire above this."
  
  
  
