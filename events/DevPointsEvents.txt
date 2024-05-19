@@ -132,6 +132,12 @@ country_event = {
 			which = total_development_gained_from_dev_points 
 			value = 0
 		}
+		export_to_variable = {
+			which = topbar_gui_corruption_var
+			value = corruption
+			who = ROOT
+		}
+		one_decimal = { var = gui_corruption_var }	
 		# Done 14 times to simulate the same thing that is done for monarch points
 		add_monthly_dev_points_effect = yes
 		add_monthly_dev_points_effect = yes

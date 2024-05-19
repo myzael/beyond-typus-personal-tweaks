@@ -1,5 +1,15 @@
 # Dev points custom GUI by Harbivore 
 
+# This controls the topbar text box for nations corruption ui
+custom_text_box = {
+	name = topbar_corruption_gui
+	potential = { 
+		always = yes
+    }
+}
+
+
+
 # This controls the dev points icon for nations current dev points ui (It also shows in subjects)
 custom_icon = {
 	name = topbar_current_dev_points_gui_icon
