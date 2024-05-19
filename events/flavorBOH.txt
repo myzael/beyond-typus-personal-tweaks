@@ -965,6 +965,9 @@ country_event = {
 			moravia_area = {
 				add_devastation = 20
 			}
+			bohemian_forest_area = { #BT New Area
+				add_devastation = 30
+			}
 			if = {
 				limit = {
 					has_dlc = "Winds of Change"
