@@ -22,7 +22,23 @@ po_end_hundred_years_war = {
 		always = yes
 	}
 	is_allowed = { #See above
-		always = yes
+		france_region = { #FROM = Receiver, ROOT = Sender
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							tag = FROM
+							is_subject_of = FROM
+						}
+					}
+					NOT = {
+						province_id = 87 #Exclude Calais
+						province_id = 3110 #Channel Islands excluded
+					}
+				}
+				controlled_by = ROOT
+			}
+		}
 	}
 	effect = { #French HYW victory, England cedes lands
 		france_region = { #FROM = Receiver, ROOT = Sender
