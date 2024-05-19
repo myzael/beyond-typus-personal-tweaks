@@ -5,7 +5,7 @@ owner = NEV
 controller = NEV
 add_core = NEV
 add_core = NRM
-add_core = FRA
+#add_core = FRA #BT cut because doesnt make sense
 culture = normand
 religion = catholic
 capital = "Eu"
@@ -49,13 +49,13 @@ discovered_by = eastern
 #1291 - 1444
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = FRA
+	#remove_core = FRA #BT cut because doesnt make sense
 	remove_core = NEV
 	owner = NRM
 	controller = NRM
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = FRA
+	#add_core = FRA #BT cut because doesnt make sense
 	add_core = NEV
 	owner = NEV
 	controller = NEV

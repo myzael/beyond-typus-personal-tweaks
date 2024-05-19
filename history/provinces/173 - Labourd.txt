@@ -16,7 +16,7 @@ trade_goods = fish
 base_manpower = 2 
 add_core = ENG
 add_core = GUY
-add_core = FRA
+#add_core = FRA #BT cut replaced by HYW peace deal
 
 discovered_by = western
 discovered_by = muslim
@@ -29,7 +29,7 @@ center_of_trade = 1
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
 	remove_core = ENG
 	remove_core = GUY
-	remove_core = FRA
+	#remove_core = FRA #BT cut replaced by HYW peace deal
 	add_core = NAV
 	owner = NAV
 	controller = NAV
@@ -38,7 +38,7 @@ center_of_trade = 1
 	remove_core = NAV
 	add_core = ENG
 	add_core = GUY
-	add_core = FRA
+	#add_core = FRA #BT cut replaced by HYW peace deal
 	owner = ENG
 	controller = ENG
 } #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
