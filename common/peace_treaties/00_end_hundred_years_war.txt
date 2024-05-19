@@ -43,7 +43,7 @@ po_end_hundred_years_war = {
 			set_province_flag = bt_hyw_concession
 		}
 		country_event = { #What do we do with the conquered landshare?
-			id = X
+			id = bt_harb_misc.6
 		}
 	}
 	ai_weight = { # Defaults to always evaluate to 0
