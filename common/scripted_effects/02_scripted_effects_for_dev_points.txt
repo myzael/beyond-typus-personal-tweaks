@@ -964,7 +964,7 @@ calculate_monthly_dev_points_in_all_provinces_effect = {				#(used in country sc
 			}
 			multiply_variable = {	#Divides infrastructure by 0.2 to prepare it to multiply with monthly dev points
 				which = infrastucture_ui_var
-				value = 10
+				value = 15
 			}
 		}
 		if = {					#Has infrastructure ideas and 6 buildings
