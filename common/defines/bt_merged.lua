@@ -6,12 +6,12 @@
 
 NDefines.NAI.ADVISOR_BUDGET_FRACTION_MAX = 0.2 -- BT lowered from 0.35 To help them make better decisions Harbivore
 NDefines.NAI.ADVISOR_BUDGET_FRACTION_MIN = 0.1 -- BT lowered from 0.15 To help them make better decisions Harbivore
-NDefines.NAI.AGGRESSIVENESS = 300.0 -- BT Changed from 200
-NDefines.NAI.AGGRESSIVENESS_BONUS_EASY_WAR = 500.0 -- BT Changed from 300
+NDefines.NAI.AGGRESSIVENESS = 400.0 -- BT Changed from 200
+NDefines.NAI.AGGRESSIVENESS_BONUS_EASY_WAR = 600.0 -- BT Changed from 300
 NDefines.NAI.AI_FORT_PER_DEV_RATIO = 25 -- BT changed from 75 to 25 because more provinces making dev per province much less. //Dub
 NDefines.NAI.CHARTER_COMPANY_DEVELOPMENT_RELUCTANCE = 1			-- from 3
 NDefines.NAI.CORRUPTION_BUDGET_FRACTION = 0.1 -- BT lowered from 0.25 To help them make better decisions Harbivore
-NDefines.NAI.DANGEROUS_OVEREXTENSION_PERCENTAGE = 0.9 -- BT changed bc why it is so low in vanilla (0.1)
+NDefines.NAI.DANGEROUS_OVEREXTENSION_PERCENTAGE = 1 -- BT changed bc why it is so low in vanilla (0.1)
 NDefines.NAI.DEFICIT_SPENDING_MIN_MONTHS = 18 -- BT changed so ai dont spend their loans immediately while at war Harbivore
 NDefines.NAI.DEFICIT_SPENDING_MIN_MONTHS_PEACETIME = 96 -- BT changed to have ai not debt spiral Harbivore
 NDefines.NAI.DESIRED_SURPLUS = 0.2 --BT increased to encourage ai to save money for buildings Harbivore
