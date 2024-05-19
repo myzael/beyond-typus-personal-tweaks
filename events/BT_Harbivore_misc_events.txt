@@ -199,6 +199,8 @@ country_event = {                         #Start of event chain to cede english 
 	fire_only_once = yes
 	major = yes
 	
+	is_triggered_only = yes
+	
 	trigger = {	# Is france in HYW and occupies all english provinces in france except calais
 		tag = FRA
 	}
