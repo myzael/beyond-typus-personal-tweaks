@@ -12378,8 +12378,8 @@ dutch_polders = {
 		area_modifier = { #BT Changed to be more appropriate and cool
 			local_monthly_devastation = -0.02
 			local_development_cost = -0.05
-			local_state_maintenance_modifier = 0.25 	
-			trade_goods_size_modifier = 0.15
+			local_defensiveness = 0.25
+			local_state_maintenance_modifier = 0.50
 		}
 		country_modifiers = { #BT Changed to be more appropriate and cool
 			burghers_loyalty_modifier = 0.05
@@ -12398,12 +12398,13 @@ dutch_polders = {
 		province_modifiers = {
 		}
 		area_modifier = { #BT Changed to be more appropriate and cool
+			local_development_cost = -0.05
 		}
 		region_modifier = { #BT Changed to be more appropriate and cool
 			local_monthly_devastation = -0.05
 			local_development_cost = -0.05
-			local_state_maintenance_modifier = 0.25	
-			trade_goods_size_modifier = 0.15
+			local_defensiveness = 0.25
+			local_state_maintenance_modifier = 0.50
 		}
 		country_modifiers = { #BT Changed to be more appropriate and cool
 			burghers_loyalty_modifier = 0.1
@@ -12422,12 +12423,13 @@ dutch_polders = {
 		province_modifiers = {
 		}
 		area_modifier = { #BT Changed to be more appropriate and cool
+			local_development_cost = -0.1
 		}
 		region_modifier = { #BT Changed to be more appropriate and cool
 			local_monthly_devastation = -0.1
 			local_development_cost = -0.1
-			trade_goods_size_modifier = 0.3
-			local_state_maintenance_modifier = 0.5	
+			local_defensiveness = 0.50
+			local_state_maintenance_modifier = 1
 		}
 		country_modifiers = { #BT Changed to be more appropriate and cool
 			burghers_loyalty_modifier = 0.15
@@ -12445,8 +12447,7 @@ dutch_polders = {
 				}
 			}
 			modifier = {
-				global_trade_goods_size_modifier = 0.05
-				global_prov_trade_power_modifier = 0.2
+				country_dev_points_modifier = 0.2
 			}
 		}
 	}
