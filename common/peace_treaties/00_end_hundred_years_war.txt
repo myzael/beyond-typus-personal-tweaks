@@ -22,7 +22,35 @@ po_end_hundred_years_war = {
 		always = yes
 	}
 	is_allowed = { #See above
-		always = yes
+		france_region = {
+			if = {
+				limit = {
+					AND = {
+						is_capital = no
+					}
+					NOT = { province_id = 3110 }
+					NOT = { province_id = 87 }
+					owner = {
+						OR = {
+							tag = ENG
+							is_subject_of = ENG
+						}
+					}
+				}
+				OR = {
+					controlled_by = FRA
+					controller = {
+						is_in_war = {
+							casus_belli = cb_hundred_years_war
+						}
+						NOT = {
+							tag = ENG
+							is_subject_of = ENG
+						}
+					}
+				}
+			}
+		}
 	}
 	effect = { #French HYW victory, England cedes lands
 		france_region = { #FROM = Receiver, ROOT = Sender
