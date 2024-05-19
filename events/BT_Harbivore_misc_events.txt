@@ -190,6 +190,7 @@ country_event = {                         #Event to remove venice's albanian sub
 		remove_country_modifier = bt_venice_lezhe_subsidies
 	}
 }
+
 country_event = {                         #Start of event chain to cede english provinces in normandy and gascony in the HYW
 	id = bt_harb_misc.6
 	desc = bt_harb_misc.6.desc
@@ -200,52 +201,12 @@ country_event = {                         #Start of event chain to cede english 
 	
 	trigger = {	# Is france in HYW and occupies all english provinces in france except calais
 		tag = FRA
-		is_in_war = {
-			casus_belli = cb_hundred_years_war
-		}
-		ENG = {
-			france_region = {
-				if = {
-					limit = {
-						AND = {
-							is_capital = no
-						}
-						NOT = { province_id = 3110 }
-						NOT = { province_id = 87 }
-						owner = {
-							OR = {
-								tag = ENG
-								is_subject_of = ENG
-							}
-						}
-					}
-					local_autonomy = 20
-					OR = {
-						controlled_by = FRA
-						controller = {
-							is_in_war = {
-								casus_belli = cb_hundred_years_war
-								NOT = {
-									tag = ENG
-									is_subject_of = ENG
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		war_score_against = {
-			who = ENG
-			value = 50
-		}
 	}
 	
 	# Cede all of Gascony and Normandy to France
 	option = {
 		name = bt_harb_misc.6.a
 		custom_tooltip = bt_harb_misc.6.a.tt
-		white_peace = ENG
 		ENG = {
 			country_event = {
 				id = bt_harb_misc.7
@@ -253,16 +214,9 @@ country_event = {                         #Start of event chain to cede english 
 		}
 		france_region = {
 			limit = {
-				NOT = { province_id = 3110 }
-				NOT = { province_id = 87 }
-				owner = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
+				has_province_flag = bt_hyw_concession
 			}
-			cede_province = FRA
+			add_core = FRA
 		}
 		ai_chance = {
 			factor = 4
@@ -273,41 +227,39 @@ country_event = {                         #Start of event chain to cede english 
 	option = {
 		name = bt_harb_misc.6.b
 		custom_tooltip = bt_harb_misc.6.b.tt
-		white_peace = ENG
 		ENG = {
 			country_event = {
 				id = bt_harb_misc.7
 			}
 		}
-		france_region = {
-			limit = {
-				NOT = { province_id = 3110 }
-				NOT = { province_id = 87 }
-				owner = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+		hidden_effect = {
+			france_region = {
+				limit = {
+					has_province_flag = bt_hyw_concession
 				}
-				NOT = {
-					is_core = NRM
+				if = {
+					limit = {
+						is_core = NRM
+					}
+					cede_province = NRM
+				}
+				else = {
+					add_core = FRA
 				}
 			}
-			cede_province = FRA
+			NRM = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				change_religion = ROOT
+				change_primary_culture = normand
+				set_prestige_to_zero = yes
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+			}
 		}
-		france_region = {
-			limit = {
-				NOT = { province_id = 3110 }
-				NOT = { province_id = 87 }
-				owner = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-				is_core = NRM
-			}
-			cede_province = NRM
+		tooltip = {
+			release = NRM
 		}
 		create_subject = {
 			subject_type = appanage
@@ -315,7 +267,7 @@ country_event = {                         #Start of event chain to cede english 
 		}
 		change_estate_land_share = {
 			estate = estate_nobles
-			share = -8
+			share = -10
 		}
 		ai_chance = {
 			factor = 1
@@ -326,41 +278,34 @@ country_event = {                         #Start of event chain to cede english 
 	option = {
 		name = bt_harb_misc.6.c
 		custom_tooltip = bt_harb_misc.6.c.tt
-		white_peace = ENG
 		ENG = {
 			country_event = {
 				id = bt_harb_misc.7
 			}
 		}
-		france_region = {
-			limit = {
-				NOT = { province_id = 3110 }
-				NOT = { province_id = 87 }
-				owner = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+		hidden_effect = {
+			france_region = {
+				limit = {
+					has_province_flag = bt_hyw_concession
 				}
-				NOT = {
-					is_core = GUY
+				if = {
+					limit = { is_core = GUY }
+					cede_province = GUY
+				}
+				else = {
+					add_core = FRA
 				}
 			}
-			cede_province = FRA
-		}
-		france_region = {
-			limit = {
-				NOT = { province_id = 3110 }
-				NOT = { province_id = 87 }
-				owner = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-				is_core = GUY
+			GUY = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				change_religion = ROOT
+				change_primary_culture = gascon
+				set_prestige_to_zero = yes
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
 			}
-			cede_province = GUY
 		}
 		create_subject = {
 			subject_type = appanage
@@ -368,7 +313,7 @@ country_event = {                         #Start of event chain to cede english 
 		}
 		change_estate_land_share = {
 			estate = estate_nobles
-			share = -2
+			share = -2.5
 		}
 		ai_chance = {
 			factor = 1
@@ -379,60 +324,62 @@ country_event = {                         #Start of event chain to cede english 
 	option = {
 		name = bt_harb_misc.6.d
 		custom_tooltip = bt_harb_misc.6.d.tt
-		white_peace = ENG
 		ENG = {
 			country_event = {
 				id = bt_harb_misc.7
 			}
 		}
-		france_region = {
-			limit = {
-				NOT = { province_id = 3110 }
-				NOT = { province_id = 87 }
-				owner = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
+		hidden_effect = {
+			france_region = {
+				limit = {
+					has_province_flag = bt_hyw_concession
 				}
-				NOT = {
-					is_core = GUY
-					is_core = NRM
+				if = {
+					limit = {
+						is_core = GUY
+					}
+					cede_province = GUY
+				}
+				else_if = {
+					limit = {
+						is_core = NRM
+					}
+					cede_province = NRM
+				}
+				else = {
+					add_core = FRA
 				}
 			}
-			cede_province = FRA
+			NRM = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				change_religion = ROOT
+				change_primary_culture = normand
+				set_prestige_to_zero = yes
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+			}
+			GUY = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				change_religion = ROOT
+				change_primary_culture = gascon
+				set_prestige_to_zero = yes
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+			}
 		}
-		france_region = {
-			limit = {
-				NOT = { province_id = 3110 }
-				NOT = { province_id = 87 }
-				owner = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-				is_core = GUY
-			}
-			cede_province = GUY
-		}
-		france_region = {
-			limit = {
-				NOT = { province_id = 3110 }
-				NOT = { province_id = 87 }
-				owner = {
-					OR = {
-						tag = ENG
-						is_subject_of = ENG
-					}
-				}
-				is_core = NRM
-			}
-			cede_province = NRM
+		tooltip = {
+			release = NRM
 		}
 		create_subject = {
 			subject_type = appanage
 			subject = NRM
+		}
+		tooltip = {
+			release = GUY
 		}
 		create_subject = {
 			subject_type = appanage
@@ -440,10 +387,15 @@ country_event = {                         #Start of event chain to cede english 
 		}
 		change_estate_land_share = {
 			estate = estate_nobles
-			share = -10
+			share = -12.5
 		}
 		ai_chance = {
 			factor = 2
+		}
+	}
+	after = {
+		every_owned_province = {
+			clr_province_flag = bt_hyw_concession
 		}
 	}
 }
