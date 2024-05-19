@@ -198,8 +198,10 @@ grain_depot = {
 #Manufactory
 
 mint = {
-	#manufactory = {
-	#}
+	manufactory = {
+		gold
+		bt_trade_good_silver
+	}
 	cost = 500			#This is very much like a manufactory
 	time = 36
 	
@@ -210,11 +212,27 @@ mint = {
 		}
         #development = 30
     }
+	onmap = no
+	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
 	keep_trigger = {
 		OR = {
 			trade_goods = gold
 			trade_goods = bt_trade_good_silver
+		}
+	}
+	on_built = {
+		add_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
+		}
+	}
+	on_destroyed = {
+		remove_development_from_building = {
+			building = manufactory
+			type = production
+			value = 2
 		}
 	}
 	
@@ -359,14 +377,14 @@ tax_assessor = {
 		add_development_from_building = {
 			building = tax_assessor
 			type = tax
-			value = 3
+			value = 2
 		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = tax_assessor
 			type = tax
-			value = 3
+			value = 2
 		}
 	}
 	on_obsolete = {
