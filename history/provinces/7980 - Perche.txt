@@ -4,8 +4,8 @@
 owner = ENG
 controller = ENG
 add_core = ENG
-add_core = NRM
-add_core = FRA
+#add_core = NRM #BT bc doesnt make sense
+#add_core = FRA #BT cut replaced by HYW peace deal
 add_core = ALE
 culture = angevin_culture
 religion = catholic
@@ -50,8 +50,8 @@ discovered_by = eastern
 #1291 - 1444
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = FRA
-	remove_core = NRM
+	#remove_core = FRA #BT cut replaced by HYW peace deal
+	#remove_core = NRM #BT bc doesnt make sense
 	remove_core = ENG
 	remove_core = ALE
 	add_core = ORL #Purely dev balance reasons here.
@@ -59,8 +59,8 @@ discovered_by = eastern
 	controller = ORL
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = FRA
-	add_core = NRM
+	#add_core = FRA #BT cut replaced by HYW peace deal
+	#add_core = NRM #BT bc doesnt make sense
 	add_core = ENG
 	add_core = ALE
 	remove_core = ORL

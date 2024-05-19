@@ -27,17 +27,19 @@ extra_cost = 20
 center_of_trade = 2
 
 1419.1.19 = { controller = ENG } # Incorporated into England by Henry V
-1420.5.12 = { owner = ENG add_core = ENG } # Treaty of Troyes
+1420.5.12 = { owner = ENG add_core = ENG 
+remove_core = FRA #BT cut replaced by HYW peace deal
+} # Treaty of Troyes
 
 #2nd Shattering
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = FRA
+	#remove_core = FRA #BT cut replaced by HYW peace deal
 	remove_core = ENG
 	owner = NRM
 	controller = NRM
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = FRA
+	#add_core = FRA #BT cut replaced by HYW peace deal
 	add_core = ENG
 	owner = ENG
 	controller = ENG

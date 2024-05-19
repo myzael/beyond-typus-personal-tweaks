@@ -15,7 +15,7 @@ base_production = 2
 trade_goods = naval_supplies
 base_manpower = 2
 add_core = ENG
-add_core = FRA
+#add_core = FRA #BT cut replaced by HYW peace deal
 add_core = GUY
 
 discovered_by = western
@@ -24,13 +24,13 @@ discovered_by = ottoman
 discovered_by = eastern
 
 1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-	remove_core = FRA
+	#remove_core = FRA #BT cut replaced by HYW peace deal
 	remove_core = ENG
 	owner = GUY
 	controller = GUY
 } #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
 1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-	add_core = FRA
+	#add_core = FRA #BT cut replaced by HYW peace deal
 	add_core = ENG
 	owner = ENG
 	controller = ENG
