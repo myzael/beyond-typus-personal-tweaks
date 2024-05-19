@@ -840,6 +840,8 @@ hre_dominant_hussite = {
 			religion = reformed
 			religion = hussite
 		}
+		is_part_of_hre = yes			#BT added. This prevents the bonuses for non-HRE tags. Sure, HRE taking a side religiously was significant, but not THAT significant, especially to foreigners outside HRE sphere.
+		is_religion_enabled = hussite			#BT added. Doesn't show up until there is actually reformation religions around.
 	}
 
 	trigger = {
