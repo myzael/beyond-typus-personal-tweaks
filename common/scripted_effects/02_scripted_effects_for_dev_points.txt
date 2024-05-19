@@ -19,6 +19,14 @@ one_decimal = {
     multiply_variable = { which = $var$ value = 100 }
 }
 
+# Rounds a variable to 1 decimal points
+# Needs var to be defined with the number to be rounded
+one_decimal_up = {
+    change_variable = { which = $var$ value = 0.1 }
+    multiply_variable = { which = $var$ value = 0.01 }
+    multiply_variable = { which = $var$ value = 100 }
+}
+
 # Rounds a variable to 2 decimal points
 # Needs var to be defined with the number to be rounded
 two_decimals = {
@@ -1151,6 +1159,7 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {			#(used in count
 			which = gui_overextension_var
 			value = 25
 		}
+		one_decimal = { var = gui_overextension_var }
 	}
 	if = {						#War Exhaustion
 		limit = {
@@ -1165,16 +1174,18 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {			#(used in count
 			which = gui_war_exhaustion_var
 			value = 2.5
 		}
+		one_decimal = { var = gui_war_exhaustion_var }
 	}
 	if = {						#Corruption
 		limit = {
-			corruption = 0.1
+			corruption = 0.01
 		}
 		export_to_variable = {
 			which = gui_corruption_var
 			value = corruption
 			who = ROOT
 		}
+		one_decimal = { var = gui_corruption_var }
 	}			
 	if = {						#Is a non-independent, non-colony subject
 		limit = {
@@ -1215,6 +1226,7 @@ calculate_monthly_dev_points_with_country_modifiers_effect = {			#(used in count
 			which = over_gov_cap_value_ui_var
 			value = 50
 		}
+		one_decimal = { var = over_gov_cap_value_ui_var }
 	}
 	if = {						#estate_burghers
 		limit = {
