@@ -1487,12 +1487,13 @@ gbr_row_3 = {
 			OR = {
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					region = france_region
-					value = 20
+					value = 50
 				}
 				custom_trigger_tooltip = {
 					tooltip = gbr_end_the_french_conflict_at
 					NOT = {
 						any_owned_province = {
+							NOT = { province_id = 3110 }
 							NOT = { province_id = 87 }
 							region = france_region
 						}

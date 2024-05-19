@@ -1716,7 +1716,7 @@ country_event = {
 	option = {
 		name = "flavor_fra.6.a"
 		ai_chance = {
-			factor = 25
+			factor = 0
 		}
 		tooltip = {
 			177 = {
@@ -1725,9 +1725,9 @@ country_event = {
 			add_truce_with = FRA
 		}
 		FRA = { country_event = { id = flavor_fra.8 } }
-		add_prestige = -25					#BT Changed to encourage english players to lose french lands
-		add_stability = -2
-		add_legitimacy = -20
+		add_prestige = -50					#BT Changed to encourage english players to lose french lands
+		add_stability = -3					#BT Changed to encourage english players to lose french lands
+		add_legitimacy = -50				#BT Changed to encourage english players to lose french lands
 		set_country_flag = rb_gave_up_maine
 	}
 	option = {
