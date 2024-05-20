@@ -2,6 +2,9 @@
 # All of the dev points GUI text boxes are made by hand to show all of the modifiers that are affecting dev point generation
 # This means whenever we add a new modifier that will change dev point generation (like adding dev points to a new building) we need to add it in here
 
+ # !!!!!!! YOU SHOULD NOT BE EDITING THIS FILE !!!!!!!
+ # You should probably be in the file called 01_dev_points_additional_modifiers.txt
+
 ###############################################################
 # Local generated dev point modifiers (Mostly from buildings) #
 ###############################################################

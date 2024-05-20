@@ -1,0 +1,76 @@
+﻿l_english:
+ # Here is where any additional modifiers for any of the dev points modifiers go. 
+ # It needs to be in here to keep the files neat and organised.
+ # Follow the rules of the file and it should work all fine.
+ 
+ # Remember it needs to be in 01_dev_points_additional_modifiers.txt as well to work.
+
+ #################################################################################################
+ # Province Base Dev Points - The customisable localisation [YourCustomLoc] goes here
+ dev_points_province_base_additional_modifiers: ""
+ 
+ # Province Base Dev Points - The customisable localisation actual string goes below here
+ dev_points_province_base_bt_english_loyalist_immigrants: ""
+ 
+ #################################################################################################
+ 
+ 
+ 
+ 
+ #################################################################################################
+ # Province Dev Points Modifiers - The customisable localisation [YourCustomLoc] goes here
+ dev_points_province_modifier_additional_modifiers: ""
+ 
+ # Province Dev Points Modifiers - The customisable localisation actual string goes below here
+ 
+ 
+ #################################################################################################
+ 
+ 
+ 
+ 
+ #################################################################################################
+ # Country Base Dev Points - The customisable localisation [YourCustomLoc] goes here
+ dev_points_country_base_additional_modifiers: ""
+ 
+ # Country Base Dev Points - The customisable localisation actual string goes below here
+ 
+ 
+ #################################################################################################
+
+ 
+ 
+ 
+ #################################################################################################
+ # Country Dev Points Modifiers - The customisable localisation [YourCustomLoc] goes here
+ dev_points_country_modifier_additional_modifiers: ""
+ 
+ # Country Dev Points Modifiers - The customisable localisation actual string goes below here
+ 
+ 
+ #################################################################################################
+ 
+ 
+ 
+ 
+ #################################################################################################
+ # Max Base Dev Points - The customisable localisation [YourCustomLoc] goes here
+ max_dev_points_country_base_additional_modifiers: ""
+ 
+ # Max Base Dev Points - The customisable localisation actual string goes below here
+ 
+ 
+ #################################################################################################
+ 
+ 
+ 
+ 
+ #################################################################################################
+ # Max Dev Points Modifiers - The customisable localisation [YourCustomLoc] goes here
+ max_dev_points_country_base_additional_modifiers: ""
+ 
+ # Max Dev Points Modifiers - The customisable localisation actual string goes below here
+ 
+ 
+ 
+ #################################################################################################
