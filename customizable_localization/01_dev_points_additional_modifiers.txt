@@ -38,6 +38,22 @@ defined_text = {	#Has 'Engish Loyalist Immigrants' Event Modifier
     }
 }
 
+defined_text = {	#Has/Is 'Bulgarian Macedonia' Event Modifier
+    name = DevPointsProvinceBulBulgarianMacedoniaMod
+    text = {
+        localisation_key = dev_points_province_base_bul_bulgarian_macedonia_mod
+        trigger = {
+			has_province_modifier = bul_bulgarian_macedonia_mod
+        }
+    }
+    text = {	#Leave this the same
+        localisation_key = dev_points_empty_string
+        trigger = {
+        }
+    }
+}
+
+
 ###############################################################
 #                      Province Modifiers                     #
 ###############################################################
