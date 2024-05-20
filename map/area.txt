@@ -747,7 +747,7 @@ wielkopolska_area = { #Poznan in BT
 	254 255 2963 4526 8226 8227 8228 8229 
 }
 malopolska_area = { #Krakow area in BT
-	262 2960 3220 8222 8224 
+	262 2960 3220 8222 8224 8176
 }
 mazovia_area = {
 	256 257 1938 4525 7264 8230 8231 8232 8233 
@@ -762,7 +762,7 @@ kuyavia_area = { #converting in BT Kalisz area, and cutting the old BT Kalisz
 	1939 4523 4524 4528 
 }
 silesia_area = {
-	263 3142 4723 8176 8221 8239 8240 8241 
+	263 3142 4723 8221 8239 8240 8241 
 }
 lower_silesia_area = { # BT
 	2966 4238 8245 8246 8247 8248 

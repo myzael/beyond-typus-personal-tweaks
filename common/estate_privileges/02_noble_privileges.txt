@@ -585,10 +585,10 @@ estate_nobles_french_strong_duchies = {
 		NOT = { has_estate_privilege = estate_eunuchs_delegate_subject_diplomacy_privilege }
 	}
 	penalties = {
-		governing_capacity_modifier = -0.4	#BT added to balance France - Harb
+		governing_capacity_modifier = -0.2	#BT added to balance France - Harb
 	}
 	benefits = {
-		diplomatic_upkeep = 4	#Buffed to help with France being over diplo limit
+		diplomatic_upkeep = 3	#Buffed to help with France being over diplo limit
 		reduced_liberty_desire_on_same_continent = 10
 	}
 	conditional_modifier = {
