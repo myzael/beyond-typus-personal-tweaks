@@ -66,7 +66,7 @@
  dev_points_province_base_is_in_the_new_world: "\nIs in the New World: §G+0.06§!"
  
  # Localisation for the local dev points modifiers
- dev_points_province_has_modifiers: "\n\nThis is then modified by:"
+ dev_points_province_modifier_has_modifiers: "\n\nThis is then modified by:"
  dev_points_province_modifier_part_of_capital_state: "\nCapital State: §G+50%§!"
  dev_points_province_modifier_has_CoT3: "\nWorld Trade Centre: §G+40%§!"
  dev_points_province_modifier_has_coastal_CoT3: "\nWorld Port: §G+40%§!"
@@ -89,7 +89,7 @@
  dev_points_country_from_subjects: "\nFrom Subjects: §G+[From.monthly_dev_points_from_subjects.GetValue]§!"
  
  # Localisation for the nationwide dev point modifiers
- dev_points_country_has_modifiers: "\nThis is then modified by:"
+ dev_points_country_modifier_has_modifiers: "\nThis is then modified by:"
  dev_points_country_modifier_war: "\nAt War: §R-20%§!"
  dev_points_country_modifier_manpower: "\nOver 90% Manpower: §G+10%§!"
  dev_points_country_modifier_is_non_colonial_full_subject: "\nNon-colonial Subject: §R-20%§!"

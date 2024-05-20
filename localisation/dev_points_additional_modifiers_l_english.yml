@@ -13,7 +13,7 @@
  # Province Base Dev Points - The customisable localisation actual string goes below here
  #dev_points_province_base_example_LOC_positive_modifier: "\nYour Modifier: §G+0.05%§!"
  #dev_points_province_base_example_LOC_negative_modifier: "\nYour Modifier: §R-0.05%§!"
- dev_points_province_base_bt_english_loyalist_immigrants: "\nEngish Loyalist Immigrants : §G+0.10%§!"
+ dev_points_province_base_bt_english_loyalist_immigrants: "\nEngish Loyalist Immigrants: §G+0.10§!"
  
  #################################################################################################
  

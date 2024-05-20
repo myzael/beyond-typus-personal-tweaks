@@ -569,7 +569,7 @@ defined_text = {	#Has any nationwide modifers at all (This removes an empty spac
         trigger = {
 			FROM = {
 			OR = {
-				is_at_war = no
+				is_at_war = yes
 				overextension_percentage = 0.01
 				AND = {
 					is_colonial_nation = no
@@ -600,7 +600,7 @@ defined_text = {	#Has any nationwide modifers at all (This removes an empty spac
         }
     }
     text = {
-        localisation_key = dev_points_empty_string #""
+        localisation_key = dev_points_empty_string
         trigger = {
         }
     }
