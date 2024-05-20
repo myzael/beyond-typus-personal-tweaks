@@ -11,6 +11,13 @@ integer = {
     multiply_variable = { which = $var$ value = 1000 }
 }
 
+# Changes a variable into an integer
+# Needs var to be defined with the number to be rounded
+integer_down = {
+    multiply_variable = { which = $var$ value = 0.001 }
+    multiply_variable = { which = $var$ value = 1000 }
+}
+
 # Rounds a variable to 1 decimal points
 # Needs var to be defined with the number to be rounded
 one_decimal = {
