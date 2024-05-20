@@ -1,6 +1,1 @@
 set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
-change_estate_land_share = {
-	estate = estate_eunuchs
-	share = -35
-}
-set_estate_privilege = estate_eunuchs_land_rights_privilege	#BT added part of balancing Ming

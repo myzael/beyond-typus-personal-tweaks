@@ -2,10 +2,9 @@
 historical_friend = PRO
 
 #Someone doesn't realise that vanilla's changes already applies when you transfer to the injection system. Let's fix that.
-change_estate_land_share = {	
+change_estate_land_share = {
 	estate = estate_nobles
-	share = 5 #Vanilla changes by +10%.#Changed from 10 because French king had no influence basically.     Changed by..... dunno, someone, but they do have a point. Mind it wasn't just the nobility. Church was very powerful, too.
-	# BT Change - Harb Gave france another privilage need to take away land as a result
+	share = 10 #Vanilla changes by +10%.#Changed from 10 because French king had no influence basically.     Changed by..... dunno, someone, but they do have a point. Mind it wasn't just the nobility. Church was very powerful, too.
 }
 change_estate_land_share = {
 	estate = estate_church
@@ -19,7 +18,6 @@ change_estate_land_share = {
 1444.10.1 = {
 	set_estate_privilege = estate_nobles_french_strong_duchies #Overrides vanilla's entry.
 	set_estate_privilege = estate_nobles_very_strong_duchies
-	set_estate_privilege = estate_nobles_land_rights	#BT added part of balancing France
 }
 
 set_country_flag = was_end_game_tag #BT Added: Forming an end-game tag.
