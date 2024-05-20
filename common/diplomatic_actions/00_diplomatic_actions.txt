@@ -667,6 +667,7 @@ annexationaction = {
 	condition = {
 		tooltip = NEEDS_TO_HAVE_SEIZED_LAND
 		potential = {
+			FROM = { is_subject_of_type = appanage }
 			has_government_attribute = has_appanages
 			NOT = {
 				if = {
