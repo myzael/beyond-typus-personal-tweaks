@@ -4,7 +4,7 @@ historical_friend = PRO
 #Someone doesn't realise that vanilla's changes already applies when you transfer to the injection system. Let's fix that.
 change_estate_land_share = {	
 	estate = estate_nobles
-	share = -5 #Vanilla changes by +10%.#Changed from 10 because French king had no influence basically.     Changed by..... dunno, someone, but they do have a point. Mind it wasn't just the nobility. Church was very powerful, too.
+	share = 5 #Vanilla changes by +10%.#Changed from 10 because French king had no influence basically.     Changed by..... dunno, someone, but they do have a point. Mind it wasn't just the nobility. Church was very powerful, too.
 	# BT Change - Harb Gave france another privilage need to take away land as a result
 }
 change_estate_land_share = {
