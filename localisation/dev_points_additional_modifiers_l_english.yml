@@ -7,10 +7,12 @@
 
  #################################################################################################
  # Province Base Dev Points - The customisable localisation [YourCustomLoc] goes here
- dev_points_province_base_additional_modifiers: ""
+ dev_points_province_base_additional_modifiers: "[DevPointsProvinceBtEnglishLoyalistImmigrants]"
  
  # Province Base Dev Points - The customisable localisation actual string goes below here
- dev_points_province_base_bt_english_loyalist_immigrants: ""
+ #dev_points_province_base_example_LOC_positive_modifier: "\nYour Modifier: §G+0.05%§!"
+ #dev_points_province_base_example_LOC_negative_modifier: "\nYour Modifier: §R-0.05%§!"
+ dev_points_province_base_bt_english_loyalist_immigrants: "\nEngish Loyalist Immigrants : §G+0.10%§!"
  
  #################################################################################################
  
@@ -19,10 +21,12 @@
  
  #################################################################################################
  # Province Dev Points Modifiers - The customisable localisation [YourCustomLoc] goes here
- dev_points_province_modifier_additional_modifiers: ""
+ dev_points_province_modifier_additional_modifiers: "[DevPointsProvinceDutchPolders]"
  
  # Province Dev Points Modifiers - The customisable localisation actual string goes below here
- 
+ #dev_points_province_modifier_example_LOC_positive_modifier: "\nYour Modifier: §G+20%§!"
+ #dev_points_province_modifier_example_LOC_negative_modifier: "\nYour Modifier: §R-20%§!"
+ dev_points_province_modifier_dutch_polders: "\nDutch Polders: §G+20%§!"
  
  #################################################################################################
  
@@ -34,6 +38,8 @@
  dev_points_country_base_additional_modifiers: ""
  
  # Country Base Dev Points - The customisable localisation actual string goes below here
+ #dev_points_country_base_example_LOC_positive_modifier: "\nYour Modifier: §G+2§!"
+ #dev_points_country_base_example_LOC_negative_modifier: "\nYour Modifier: §R-2§!"
  
  
  #################################################################################################
@@ -46,6 +52,8 @@
  dev_points_country_modifier_additional_modifiers: ""
  
  # Country Dev Points Modifiers - The customisable localisation actual string goes below here
+ #dev_points_country_modifier_example_LOC_positive_modifier: "\nYour Modifier: §G+20%§!"
+ #dev_points_country_modifier_example_LOC_positive_modifier: "\nYour Modifier: §R-20%§!"
  
  
  #################################################################################################
@@ -58,6 +66,8 @@
  max_dev_points_country_base_additional_modifiers: ""
  
  # Max Base Dev Points - The customisable localisation actual string goes below here
+ #max_dev_points_country_base_example_LOC_positive_modifier: "\nYour Modifier: §G+20%§!"
+ #max_dev_points_country_base_example_LOC_negative_modifier: "\nYour Modifier: §R-20%§!"
  
  
  #################################################################################################
@@ -70,6 +80,8 @@
  max_dev_points_country_base_additional_modifiers: ""
  
  # Max Dev Points Modifiers - The customisable localisation actual string goes below here
+ #max_dev_points_country_modifier_example_LOC_positive_modifier: "\nYour Modifier: §G+20%§!"
+ #max_dev_points_country_modifier_example_LOC_negative_modifier: "\nYour Modifier: §R-20%§!"
  
  
  
