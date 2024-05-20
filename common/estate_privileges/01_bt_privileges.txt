@@ -13,8 +13,11 @@ estate_nobles_very_strong_duchies = {
 			amount = 3
 			all_subject_country = {
 				OR = {
-					is_march = yes
-					is_vassal = yes
+					is_subject_of_type = vassal
+					is_subject_of_type = client_vassal
+					is_subject_of_type = march
+					is_subject_of_type = client_march
+					is_subject_of_type = personal_union
 				}
 			}
 		}
@@ -25,25 +28,20 @@ estate_nobles_very_strong_duchies = {
 		}
 	}
 	can_select = {
-		if = {
-			limit = {
-				has_dlc = "Art of War"
-			}
-			custom_trigger_tooltip = {
-				tooltip = estate_nobles_very_strong_duchies_trigger_tooltip
-				calc_true_if = {
-					amount = 4
-					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-						}
+		custom_trigger_tooltip = {
+			tooltip = estate_nobles_very_strong_duchies_trigger_tooltip
+			calc_true_if = {
+				amount = 4
+				all_subject_country = {
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = personal_union
 					}
 				}
 			}
-		}
-		else = {
-			vassal = 4
 		}
 	}
 	penalties = {
@@ -73,33 +71,31 @@ estate_nobles_extremely_strong_duchies = {
 			amount = 5
 			all_subject_country = {
 				OR = {
-					is_march = yes
-					is_vassal = yes
+					is_subject_of_type = vassal
+					is_subject_of_type = client_vassal
+					is_subject_of_type = march
+					is_subject_of_type = client_march
+					is_subject_of_type = personal_union
 				}
 			}
 		}
 		has_estate_privilege = estate_nobles_very_strong_duchies
 	}
 	can_select = {
-		if = {
-			limit = {
-				has_dlc = "Art of War"
-			}
-			custom_trigger_tooltip = {
-				tooltip = estate_nobles_extremely_strong_duchies_trigger_tooltip
-				calc_true_if = {
-					amount = 6
-					all_subject_country = {
-						OR = {
-							is_march = yes
-							is_vassal = yes
-						}
+		custom_trigger_tooltip = {
+			tooltip = estate_nobles_extremely_strong_duchies_trigger_tooltip
+			calc_true_if = {
+				amount = 6
+				all_subject_country = {
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = personal_union
 					}
 				}
 			}
-		}
-		else = {
-			vassal = 6
 		}
 	}
 	penalties = {
