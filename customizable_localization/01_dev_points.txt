@@ -12,13 +12,13 @@
 defined_text = {	#Has constabulary family buildings
     name = DevPointsProvinceHasTaxBuilding
     text = {
-        localisation_key = dev_points_province_has_constabulary 
+        localisation_key = dev_points_province_base_has_constabulary 
         trigger = {
             has_building = constable
         }
     }
     text = {
-        localisation_key = dev_points_province_has_treasury_office 
+        localisation_key = dev_points_province_base_has_treasury_office 
         trigger = {
             has_building = treasury_office
         }
@@ -33,13 +33,13 @@ defined_text = {	#Has constabulary family buildings
 defined_text = {	#Has workshop family buildings
     name = DevPointsProvinceHasProductionBuilding
     text = {
-        localisation_key = dev_points_province_has_workshop
+        localisation_key = dev_points_province_base_has_workshop
         trigger = {
             has_building = workshop
         }
     }
 	text = {
-        localisation_key = dev_points_province_has_counting_house
+        localisation_key = dev_points_province_base_has_counting_house
         trigger = {
             has_building = counting_house
         }
@@ -54,13 +54,13 @@ defined_text = {	#Has workshop family buildings
 defined_text = {	#Has post office family buildings
     name = DevPointsProvinceHasPostOffice
     text = {
-        localisation_key = dev_points_province_has_post_office
+        localisation_key = dev_points_province_base_has_post_office
         trigger = {
             has_building = post_office
         }
     }
 	text = {
-        localisation_key = dev_points_province_has_customs_house
+        localisation_key = dev_points_province_base_has_customs_house
         trigger = {
             has_building = customs_house
         }
@@ -75,19 +75,19 @@ defined_text = {	#Has post office family buildings
 defined_text = {	#Has marketplace family buildings
     name = DevPointsProvinceHasTradeBuilding
     text = {
-        localisation_key = dev_points_province_has_marketplace
+        localisation_key = dev_points_province_base_has_marketplace
         trigger = {
             has_building = marketplace
         }
     }
     text = {
-        localisation_key = dev_points_province_has_trade_depot
+        localisation_key = dev_points_province_base_has_trade_depot
         trigger = {
             has_building = trade_depot
         }
     }
     text = {
-        localisation_key = dev_points_province_has_stock_exchange
+        localisation_key = dev_points_province_base_has_stock_exchange
         trigger = {
             has_building = stock_exchange
         }
@@ -102,13 +102,13 @@ defined_text = {	#Has marketplace family buildings
 defined_text = {	#Has shipyard family buildings (In code naval_arsenal building family, BT changed the role of these but kept the code name the same)
     name = DevPointsProvinceHasShipyardBuilding
     text = {
-        localisation_key = dev_points_province_has_shipyard
+        localisation_key = dev_points_province_base_has_shipyard
         trigger = {
             has_building = naval_arsenal
         }
     }
     text = {
-        localisation_key = dev_points_province_has_grand_shipyard
+        localisation_key = dev_points_province_base_has_grand_shipyard
         trigger = {
             has_building = naval_base
         }
@@ -123,13 +123,13 @@ defined_text = {	#Has shipyard family buildings (In code naval_arsenal building 
 defined_text = {	#Has college family buildings
     name = DevPointsProvinceHasUniversity
     text = {
-        localisation_key = dev_points_province_has_college
+        localisation_key = dev_points_province_base_has_college
         trigger = {
             has_building = college
         }
     }
     text = {
-        localisation_key = dev_points_province_has_university
+        localisation_key = dev_points_province_base_has_university
         trigger = {
             has_building = university
         }
@@ -144,7 +144,7 @@ defined_text = {	#Has college family buildings
 defined_text = {	#Has granary family buildings
     name = DevPointsProvinceHasGranary
     text = {
-        localisation_key = dev_points_province_has_granary
+        localisation_key = dev_points_province_base_has_granary
         trigger = {
             has_building = grain_depot
         }
@@ -159,7 +159,7 @@ defined_text = {	#Has granary family buildings
 defined_text = {	#Has tax assessor family buildings
     name = DevPointsProvinceHasTaxAssessor
     text = {
-        localisation_key = dev_points_province_has_tax_assessor
+        localisation_key = dev_points_province_base_has_tax_assessor
         trigger = {
             has_building = tax_assessor
         }
@@ -174,55 +174,55 @@ defined_text = {	#Has tax assessor family buildings
 defined_text = {	#Has production manufactory family buildings
     name = DevPointsProvinceHasProductionManufactory
     text = {
-        localisation_key = dev_points_province_has_furnace
+        localisation_key = dev_points_province_base_has_furnace
         trigger = {
             has_building = furnace
         }
     }
     text = {
-        localisation_key = dev_points_province_has_farm_estate
+        localisation_key = dev_points_province_base_has_farm_estate
         trigger = {
             has_building = farm_estate
         }
     }
     text = {
-        localisation_key = dev_points_province_has_naval_equipment_m
+        localisation_key = dev_points_province_base_has_naval_equipment_m
         trigger = {
             has_building = wharf
         }
     }
     text = {
-        localisation_key = dev_points_province_has_textile_m
+        localisation_key = dev_points_province_base_has_textile_m
         trigger = {
             has_building = textile
         }
     }
     text = {
-        localisation_key = dev_points_province_has_weapons_m
+        localisation_key = dev_points_province_base_has_weapons_m
         trigger = {
             has_building = weapons
         }
     }
     text = {
-        localisation_key = dev_points_province_has_plantation
+        localisation_key = dev_points_province_base_has_plantation
         trigger = {
             has_building = plantations
         }
     }
     text = {
-        localisation_key = dev_points_province_has_trade_station
+        localisation_key = dev_points_province_base_has_trade_station
         trigger = {
             has_building = tradecompany
         }
     }
     text = {
-        localisation_key = dev_points_province_has_mill
+        localisation_key = dev_points_province_base_has_mill
         trigger = {
             has_building = mills
         }
     }
     text = {
-        localisation_key = dev_points_province_has_mint
+        localisation_key = dev_points_province_base_has_mint
         trigger = {
             has_building = mint
         }
@@ -237,7 +237,7 @@ defined_text = {	#Has production manufactory family buildings
 defined_text = {	#Has state house family buildings
     name = DevPointsProvinceHasStateHouse
     text = {
-        localisation_key = dev_points_province_has_state_house
+        localisation_key = dev_points_province_base_has_state_house
         trigger = {
             has_building = state_house
         }
@@ -252,7 +252,7 @@ defined_text = {	#Has state house family buildings
 defined_text = {	#Is a new world provinces
     name = DevPointsProvinceIsInNewWorld
     text = {
-        localisation_key = dev_points_province_is_in_the_new_world
+        localisation_key = dev_points_province_base_is_in_the_new_world
         trigger = {
 			is_in_any_colonial_region = yes
 			owner = { 
@@ -275,7 +275,7 @@ defined_text = {	#Is a new world provinces
 defined_text = {	#Has any province modifers at all (This removes an empty space left if there are no modifiers)
     name = DevPointsProvinceHasModifiers
     text = {
-        localisation_key = dev_points_province_has_modifiers
+        localisation_key = dev_points_province_modifier_has_modifiers
         trigger = {
 			OR = {
 				province_has_center_of_trade_of_level = 1
@@ -304,40 +304,40 @@ defined_text = {	#Has any province modifers at all (This removes an empty space 
 defined_text = {	#Has a centre of trade
     name = DevPointsProvinceHasCoT
     text = {
-        localisation_key = dev_points_province_modifier_has_coastal_CoT3
+        localisation_key = dev_points_province_modifier_modifier_has_coastal_CoT3
         trigger = {
 			province_has_center_of_trade_of_level = 3
 			has_port = yes
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_has_CoT3
+        localisation_key = dev_points_province_modifier_modifier_has_CoT3
         trigger = {
 			province_has_center_of_trade_of_level = 3
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_has_coastal_CoT2
+        localisation_key = dev_points_province_modifier_modifier_has_coastal_CoT2
         trigger = {
 			province_has_center_of_trade_of_level = 2
 			has_port = yes
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_has_CoT2
+        localisation_key = dev_points_province_modifier_modifier_has_CoT2
         trigger = {
 			province_has_center_of_trade_of_level = 2
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_has_coastal_CoT1
+        localisation_key = dev_points_province_modifier_modifier_has_coastal_CoT1
         trigger = {
 				province_has_center_of_trade_of_level = 1
 				has_port = yes
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_has_CoT1
+        localisation_key = dev_points_province_modifier_modifier_has_CoT1
         trigger = {
 				province_has_center_of_trade_of_level = 1
         }
@@ -352,7 +352,7 @@ defined_text = {	#Has a centre of trade
 defined_text = {	#Is in the capital state
     name = DevPointsProvinceIsInCapitalState
     text = {
-        localisation_key = dev_points_province_modifier_part_of_capital_state 
+        localisation_key = dev_points_province_modifier_modifier_part_of_capital_state 
         trigger = {
 			area_for_scope_province = {
 				is_capital_of = ROOT
@@ -369,7 +369,7 @@ defined_text = {	#Is in the capital state
 defined_text = {	#Has edict - encourage development 
     name = DevPointsProvinceHasEdictOfDevelpment
     text = {
-        localisation_key = dev_points_province_modifier_has_edict_of_development 
+        localisation_key = dev_points_province_modifier_modifier_has_edict_of_development 
         trigger = {
 			has_state_edict = edict_encourage_development 
         }
@@ -384,7 +384,7 @@ defined_text = {	#Has edict - encourage development
 defined_text = {	#Is propserous
     name = DevPointsProvinceIsProsperous
     text = {
-        localisation_key = dev_points_province_modifier_is_prosperous 
+        localisation_key = dev_points_province_modifier_modifier_is_prosperous 
         trigger = {
 			is_prosperous = yes
         }
@@ -399,7 +399,7 @@ defined_text = {	#Is propserous
 defined_text = {	#Has infrastructure ideas complete and 8 buildings built
     name = DevPointsProvinceInfrastructureIdeasAndBigDevPoints
     text = {
-        localisation_key = dev_points_province_modifier_intrastructure_ideas_and_dev_points 
+        localisation_key = dev_points_province_modifier_modifier_intrastructure_ideas_and_dev_points 
         trigger = {
 			AND = {
 				ROOT = {
@@ -419,7 +419,7 @@ defined_text = {	#Has infrastructure ideas complete and 8 buildings built
 defined_text = {	#Has expanded infrastructure here
     name = DevPointsProvinceInfrastructureLevel
     text = {
-        localisation_key = dev_points_province_modifier_infrastructure_level 
+        localisation_key = dev_points_province_modifier_modifier_infrastructure_level 
         trigger = {
 			num_of_times_expanded_infrastructure = 1
         }
@@ -434,7 +434,7 @@ defined_text = {	#Has expanded infrastructure here
 defined_text = {	#Is occupied
     name = DevPointsProvinceOccupation
     text = {
-        localisation_key = dev_points_province_modifier_occupation 
+        localisation_key = dev_points_province_modifier_modifier_occupation 
         trigger = {
 			NOT = {
 				controlled_by = owner
@@ -451,7 +451,7 @@ defined_text = {	#Is occupied
 defined_text = {	#Is under seige
     name = DevPointsProvinceUnderSeige
     text = {
-        localisation_key = dev_points_province_modifier_under_siege 
+        localisation_key = dev_points_province_modifier_modifier_under_siege 
         trigger = {
 			has_siege = yes
         }
@@ -467,7 +467,7 @@ defined_text = {	#Is under seige
 defined_text = {	#Is a horde
     name = DevPointsProvinceHorde
     text = {
-        localisation_key = dev_points_province_modifier_horde 
+        localisation_key = dev_points_province_modifier_modifier_horde 
         trigger = {
 			ROOT = {
 				has_reform = steppe_horde
@@ -486,7 +486,7 @@ defined_text = {	#Is a horde
 defined_text = {	#Is a horde (Mongol Empire)
     name = DevPointsProvinceMongolEmpire
     text = {
-        localisation_key = dev_points_province_modifier_mongol_empire 
+        localisation_key = dev_points_province_modifier_modifier_mongol_empire 
         trigger = {
 			ROOT = {
 				has_reform = great_mongol_state_reform
@@ -505,7 +505,7 @@ defined_text = {	#Is a horde (Mongol Empire)
 defined_text = {	#Has devastation
     name = DevPointsProvinceDevastation
     text = {
-        localisation_key = dev_points_province_modifier_devastation 
+        localisation_key = dev_points_province_modifier_modifier_devastation 
         trigger = {
 			devastation = 0.1
         }
@@ -520,7 +520,7 @@ defined_text = {	#Has devastation
 defined_text = {	#Has autonomy
     name = DevPointsProvinceAutonomy
     text = {
-        localisation_key = dev_points_province_has_autonomy 
+        localisation_key = dev_points_province_modifier_has_autonomy 
         trigger = {
 			local_autonomy = 0.1
         }
@@ -565,7 +565,7 @@ defined_text = {	#Has subjects
 defined_text = {	#Has any nationwide modifers at all (This removes an empty space left if there are no modifiers)
     name = DevPointsCountryHasModifiers
     text = {
-        localisation_key = dev_points_country_has_modifiers 
+        localisation_key = dev_points_country_modifier_has_modifiers 
         trigger = {
 			FROM = {
 			OR = {
@@ -610,7 +610,7 @@ defined_text = {	#Has any nationwide modifers at all (This removes an empty spac
 defined_text = {	#Is at war
     name = DevPointsCountryAtWar
     text = {
-        localisation_key = dev_points_country_war 
+        localisation_key = dev_points_country_modifier_war 
         trigger = {
 			FROM = {
 				is_at_war = yes
@@ -628,7 +628,7 @@ defined_text = {	#Is at war
 defined_text = {	#Has over 90% manpower
     name = DevPointsCountryHighManpower
     text = {
-        localisation_key = dev_points_country_manpower 
+        localisation_key = dev_points_country_modifier_manpower 
         trigger = {
 			FROM = {
 				manpower_percentage = 0.90
@@ -646,7 +646,7 @@ defined_text = {	#Has over 90% manpower
 defined_text = {	#Is a non colonial subject
     name = DevPointsCountryNonColonialSubject
     text = {
-        localisation_key = dev_points_country_is_non_colonial_full_subject 
+        localisation_key = dev_points_country_modifier_is_non_colonial_full_subject 
         trigger = {
 			FROM = {
 				is_colonial_nation = no
@@ -668,7 +668,7 @@ defined_text = {	#Is a non colonial subject
 defined_text = {	#Is an ex colonial nation
     name = DevPointsCountryFreeColony
     text = {
-        localisation_key = dev_points_country_independent_colony 
+        localisation_key = dev_points_country_modifier_independent_colony 
         trigger = {
 			FROM = {
 				is_subject = no
@@ -687,7 +687,7 @@ defined_text = {	#Is an ex colonial nation
 defined_text = {	#Has economic ideas completed
     name = DevPointsCountryEconomicIdeas
     text = {
-        localisation_key = dev_points_country_has_economic_ideas 
+        localisation_key = dev_points_country_modifier_has_economic_ideas 
         trigger = {
 			FROM = {
 				has_idea = smithian_economics
@@ -705,7 +705,7 @@ defined_text = {	#Has economic ideas completed
 defined_text = {	#Has monthly dev points button toggled on
     name = DevPointsCountryMonthlyDevPointsButton
     text = {
-        localisation_key = dev_points_country_has_monthly_dev_points_button 
+        localisation_key = dev_points_country_modifier_has_monthly_dev_points_button 
         trigger = {
 			FROM = {
 				has_country_modifier = monthly_dev_points_button_mod
@@ -723,7 +723,7 @@ defined_text = {	#Has monthly dev points button toggled on
 defined_text = {	#Has corruption
     name = DevPointsCountryHasCorruption
     text = {
-        localisation_key = dev_points_country_corruption 
+        localisation_key = dev_points_country_modifier_corruption 
         trigger = {
 			FROM = {
 				corruption = 0.1
@@ -741,7 +741,7 @@ defined_text = {	#Has corruption
 defined_text = {	#Has war exhaustion
     name = DevPointsCountryHasWarExhaustion
     text = {
-        localisation_key = dev_points_country_war_exhaustion 
+        localisation_key = dev_points_country_modifier_war_exhaustion 
         trigger = {
 			FROM = {
 				war_exhaustion = 0.1
@@ -759,7 +759,7 @@ defined_text = {	#Has war exhaustion
 defined_text = {	#Has overextension
     name = DevPointsCountryHasOverextension
     text = {
-        localisation_key = dev_points_country_overextension 
+        localisation_key = dev_points_country_modifier_overextension 
         trigger = {
 			FROM = {
 				overextension_percentage = 0.01
@@ -777,7 +777,7 @@ defined_text = {	#Has overextension
 defined_text = {	#Nation's stability
     name = DevPointsCountryStabilty
     text = {
-        localisation_key = dev_points_country_positive_3stability 
+        localisation_key = dev_points_country_modifier_positive_3stability 
         trigger = {
 			FROM = {
 			stability = 3
@@ -785,7 +785,7 @@ defined_text = {	#Nation's stability
         }
     }
     text = {
-        localisation_key = dev_points_country_positive_2stability 
+        localisation_key = dev_points_country_modifier_positive_2stability 
         trigger = {
 			FROM = {
 			stability = 2
@@ -793,7 +793,7 @@ defined_text = {	#Nation's stability
         }
     }
     text = {
-        localisation_key = dev_points_country_positive_1stability 
+        localisation_key = dev_points_country_modifier_positive_1stability 
         trigger = {
 			FROM = {
 			stability = 1
@@ -809,7 +809,7 @@ defined_text = {	#Nation's stability
         }
     }
     text = {
-        localisation_key = dev_points_country_negative_1stability 
+        localisation_key = dev_points_country_modifier_negative_1stability 
         trigger = {
 			FROM = {
 			stability = -1
@@ -817,7 +817,7 @@ defined_text = {	#Nation's stability
         }
     }
     text = {
-        localisation_key = dev_points_country_negative_2stability 
+        localisation_key = dev_points_country_modifier_negative_2stability 
         trigger = {
 			FROM = {
 			stability = -2
@@ -825,7 +825,7 @@ defined_text = {	#Nation's stability
         }
     }
     text = {
-        localisation_key = dev_points_country_negative_3stability 
+        localisation_key = dev_points_country_modifier_negative_3stability 
         trigger = {
 			FROM = {
 			stability = -3
@@ -838,7 +838,7 @@ defined_text = {	#Nation's stability
 defined_text = {	#Is bankrupt
     name = DevPointsCountryIsBankrupt
     text = {
-        localisation_key = dev_points_country_bankrupt 
+        localisation_key = dev_points_country_modifier_bankrupt 
         trigger = {
 			FROM = {
 				is_bankrupt = yes
@@ -856,7 +856,7 @@ defined_text = {	#Is bankrupt
 defined_text = {	#Is over governing capacity
     name = DevPointsCountryIsOverGCap
     text = {
-        localisation_key = dev_points_country_over_gcap 
+        localisation_key = dev_points_country_modifier_over_gcap 
         trigger = {
 			FROM = {
 				governing_capacity_percentage = 1
@@ -878,7 +878,7 @@ defined_text = {	#Is over governing capacity
 defined_text = {
     name = DevPointsCountryBurghers
     text = {
-		localisation_key = dev_points_country_burghers_loyal 
+		localisation_key = dev_points_country_modifier_burghers_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -890,7 +890,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_burghers_disloyal 
+        localisation_key = dev_points_country_modifier_burghers_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -912,7 +912,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryNobles
     text = {
-        localisation_key = dev_points_country_nobles_loyal 
+        localisation_key = dev_points_country_modifier_nobles_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -924,7 +924,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_nobles_disloyal 
+        localisation_key = dev_points_country_modifier_nobles_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -946,7 +946,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryChurch
     text = {
-        localisation_key = dev_points_country_church_loyal 
+        localisation_key = dev_points_country_modifier_church_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -958,7 +958,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_church_disloyal 
+        localisation_key = dev_points_country_modifier_church_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -980,7 +980,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryBrahmins
     text = {
-        localisation_key = dev_points_country_brahmins_loyal 
+        localisation_key = dev_points_country_modifier_brahmins_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -992,7 +992,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_brahmins_disloyal 
+        localisation_key = dev_points_country_modifier_brahmins_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1014,7 +1014,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryRajput
     text = {
-        localisation_key = dev_points_country_rajput_loyal 
+        localisation_key = dev_points_country_modifier_rajput_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1026,7 +1026,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_rajput_disloyal 
+        localisation_key = dev_points_country_modifier_rajput_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1048,7 +1048,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryDhimmi
     text = {
-        localisation_key = dev_points_country_dhimmi_loyal 
+        localisation_key = dev_points_country_modifier_dhimmi_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1060,7 +1060,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_dhimmi_disloyal 
+        localisation_key = dev_points_country_modifier_dhimmi_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1082,7 +1082,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryJains
     text = {
-        localisation_key = dev_points_country_jains_loyal 
+        localisation_key = dev_points_country_modifier_jains_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1094,7 +1094,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_jains_disloyal 
+        localisation_key = dev_points_country_modifier_jains_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1116,7 +1116,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryVaisyas
     text = {
-        localisation_key = dev_points_country_vaisyas_loyal 
+        localisation_key = dev_points_country_modifier_vaisyas_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1128,7 +1128,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_vaisyas_disloyal 
+        localisation_key = dev_points_country_modifier_vaisyas_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1150,7 +1150,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryTribes
     text = {
-        localisation_key = dev_points_country_nomadic_tribes_loyal 
+        localisation_key = dev_points_country_modifier_nomadic_tribes_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1162,7 +1162,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_nomadic_tribes_disloyal 
+        localisation_key = dev_points_country_modifier_nomadic_tribes_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1184,7 +1184,7 @@ defined_text = {
 defined_text = {	
     name = DevPointsCountryMaratha
     text = {
-        localisation_key = dev_points_country_maratha_loyal 
+        localisation_key = dev_points_country_modifier_maratha_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1196,7 +1196,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_maratha_disloyal 
+        localisation_key = dev_points_country_modifier_maratha_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1218,7 +1218,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryCossacks
     text = {
-        localisation_key = dev_points_country_cossacks_loyal 
+        localisation_key = dev_points_country_modifier_cossacks_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1230,7 +1230,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_cossacks_disloyal 
+        localisation_key = dev_points_country_modifier_cossacks_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1252,7 +1252,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryJanissaries
     text = {
-        localisation_key = dev_points_country_janissaries_loyal 
+        localisation_key = dev_points_country_modifier_janissaries_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1264,7 +1264,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_janissaries_disloyal 
+        localisation_key = dev_points_country_modifier_janissaries_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1286,7 +1286,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryEunuchs
     text = {
-        localisation_key = dev_points_country_eunuchs_loyal 
+        localisation_key = dev_points_country_modifier_eunuchs_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1298,7 +1298,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_eunuchs_disloyal 
+        localisation_key = dev_points_country_modifier_eunuchs_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1320,7 +1320,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryQizilbash
     text = {
-        localisation_key = dev_points_country_qizilbash_loyal 
+        localisation_key = dev_points_country_modifier_qizilbash_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1332,7 +1332,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_qizilbash_disloyal 
+        localisation_key = dev_points_country_modifier_qizilbash_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1354,7 +1354,7 @@ defined_text = {
 defined_text = {
     name = DevPointsCountryGhulams
     text = {
-        localisation_key = dev_points_country_ghulams_loyal 
+        localisation_key = dev_points_country_modifier_ghulams_loyal 
         trigger = {
 			FROM = {
 			estate_loyalty = {
@@ -1366,7 +1366,7 @@ defined_text = {
         }
     }
     text = {
-        localisation_key = dev_points_country_ghulams_disloyal 
+        localisation_key = dev_points_country_modifier_ghulams_disloyal 
         trigger = {
 			FROM = {
 			NOT = {
@@ -1429,6 +1429,70 @@ defined_text = {	#Government rank
     text = {
         localisation_key = dev_points_empty_string
         trigger = {
+        }
+    }
+}
+
+######################################################
+#           Injecting Additional Modifiers           #
+######################################################
+
+defined_text = {	#Government rank
+    name = DevPointsProvinceBaseAdditionalModifiers
+    text = {
+        localisation_key = dev_points_province_base_additional_modifiers 
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {	#Government rank
+    name = DevPointsProvinceModifierAdditionalModifiers
+    text = {
+        localisation_key = dev_points_province_modifier_additional_modifiers 
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {	#Government rank
+    name = DevPointsCountryBaseAdditionalModifiers
+    text = {
+        localisation_key = dev_points_country_base_additional_modifiers 
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {	#Government rank
+    name = DevPointsCountryModifierAdditionalModifiers
+    text = {
+        localisation_key = dev_points_country_modifier_additional_modifiers 
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {	#Government rank
+    name = MaxDevPointsBaseAdditionalModifiers
+    text = {
+        localisation_key = max_dev_points_country_base_additional_modifiers 
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {	#Government rank
+    name = MaxDevPointsModifierAdditionalModifiers
+    text = {
+        localisation_key = max_dev_points_country_modifier_additional_modifiers 
+        trigger = {
+			always = yes
         }
     }
 }
