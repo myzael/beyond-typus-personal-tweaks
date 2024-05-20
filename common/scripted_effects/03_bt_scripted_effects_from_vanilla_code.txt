@@ -11,7 +11,7 @@ estate_agenda_finding_province_to_develop_effect = {
 					area_for_scope_province = {
 						is_capital_of = root
 					}
-				}
+				} 
 				save_event_target_as = agenda_province
 			}
 		}

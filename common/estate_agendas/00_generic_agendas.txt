@@ -12130,7 +12130,7 @@ estate_qizilbash_develop_x = {
 	can_select = {
 		capital_scope = {
 			is_state_core = root
-		}
+		} 
 	}
 	pre_effect = {
 		random_list = {	# Cant use scripted trigger bc of the addition chance for persian culture stuff
