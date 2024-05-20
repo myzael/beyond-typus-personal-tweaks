@@ -170,89 +170,35 @@ estate_dhimmi_develop_x = {
 				NOT = { religion_group = root }
 			}
 			save_event_target_as = agenda_province
+		}		
+		if = {
+			limit = {
+				check_variable = {
+					which = develop_x_category
+					value = 3
+				}
+			}
+			estate_agenda_calculating_dev_required_to_develop_effect = {	# BT added to simplify code - Found in 03_bt_scripted_effects_from_vanilla_code.txt
+				dev_type_var = province_mil_var
+				dev_type = base_manpower
+			}
 		}
-		event_target:agenda_province = {
-			if = {
-				limit = {
-					root = {
-						check_variable = {
-							which = develop_x_category
-							value = 3
-						}
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							which = province_mil_var
-							value = 1
-						}
-					}
-					set_variable = {
-						which = province_mil_var
-						value = 0
-					}
-				}
-				export_to_variable = {
-					which = province_mil_var
-					value = trigger_value:base_manpower
-				}
-				change_variable = {
-					which = province_mil_var
+		else_if = {
+			limit = {
+				check_variable = {
+					which = develop_x_category
 					value = 2
 				}
 			}
-			else_if = {
-				limit = {
-					root = {
-						check_variable = {
-							which = develop_x_category
-							value = 2
-						}
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							which = province_dip_var
-							value = 1
-						}
-					}
-					set_variable = {
-						which = province_dip_var
-						value = 0
-					}
-				}
-				export_to_variable = {
-					which = province_dip_var
-					value = trigger_value:base_production
-				}
-				change_variable = {
-					which = province_dip_var
-					value = 2
-				}
+			estate_agenda_calculating_dev_required_to_develop_effect = {	# BT added to simplify code - Found in 03_bt_scripted_effects_from_vanilla_code.txt
+				dev_type_var = province_dip_var
+				dev_type = base_production
 			}
-			else = {
-				if = {
-					limit = {
-						check_variable = {
-							which = province_adm_var
-							value = 1
-						}
-					}
-					set_variable = {
-						which = province_adm_var
-						value = 0
-					}
-				}
-				export_to_variable = {
-					which = province_adm_var
-					value = trigger_value:base_tax
-				}
-				change_variable = {
-					which = province_adm_var
-					value = 2
-				}
+		}
+		else = {
+			estate_agenda_calculating_dev_required_to_develop_effect = {	# BT added to simplify code - Found in 03_bt_scripted_effects_from_vanilla_code.txt
+				dev_type_var = province_dip_var
+				dev_type = base_production
 			}
 		}
 	}
