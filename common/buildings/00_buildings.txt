@@ -642,7 +642,7 @@ barracks = {
 			has_building = soldier_households
 		}
 		modifier = { #Build if low on manpower.
-			factor = 2
+			factor = 1.5
 			owner = { NOT = { manpower_percentage = 0.2 } }
 		}
 		modifier = { #Build if low on manpower.
