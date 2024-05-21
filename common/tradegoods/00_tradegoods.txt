@@ -9,7 +9,8 @@ grain = {
 		land_forcelimit_modifier = 0.20
 	}
 	province = {
-		land_forcelimit = 0.5
+		#land_forcelimit = 0.5
+		local_manpower_modifier = 0.2 # BT Changed because 0.5 forcelimit is not good with >2x provinces and manpower 
 	}
 	chance = {
 		factor = 35
