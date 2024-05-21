@@ -5076,6 +5076,28 @@ tur_persian_conquest = {
 
 		ai_weight = {
 			factor = 250
+			modifier = { #If less than 3 of the provinces owned, do not pursue.
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						amount = 3
+						owns_or_vassal_of = 504
+						owns_or_vassal_of = 225
+						owns_or_vassal_of = 151
+						owns_or_vassal_of = 410
+						owns_or_vassal_of = 385
+						owns_or_vassal_of = 384
+						owns_or_vassal_of = 124
+						owns_or_vassal_of = 125
+						owns_or_vassal_of = 425
+						owns_or_vassal_of = 382
+						owns_or_vassal_of = 454
+						owns_or_vassal_of = 347
+						owns_or_vassal_of = 388
+						owns_or_vassal_of = 400
+					}
+				}
+			}
 		}
 	}
 }
