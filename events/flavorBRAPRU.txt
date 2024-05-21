@@ -10,8 +10,6 @@ normal_or_historical_nations = yes
 # The incorporation of Prussia into Brandenburg
 country_event = {
 	id = flavor_brapru.1
-	
-	
 	title = "flavor_brapru.EVTNAME3636"
 	desc = "flavor_brapru.EVTDESC3636"
 	picture = DIPLOMACY_eventPicture
@@ -27,13 +25,13 @@ country_event = {
 			ai = yes
 			was_player = no
 			NOT = { num_of_subjects = 1 }
-			has_opinion = { who = BRA value = 150 }	#BT changed to be more situational
+			has_opinion = { who = BRA value = 100 }	#BT changed to be more situational
 			NOT = { vassal_of = BRA }
 		}
 	}
 	
 	mean_time_to_happen = {
-		months = 240		#BT Changed to be longer
+		months = 180		#BT Changed to be longer
 	}
 	
 	option = {
