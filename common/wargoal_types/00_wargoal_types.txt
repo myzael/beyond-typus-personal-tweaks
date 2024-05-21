@@ -606,9 +606,9 @@ take_capital_hundred_years_war = {
 	}
 	
 	defender = 	{
-		badboy_factor = 1 #BT; 0.25 - encouraging the custom treaty
+		badboy_factor = 0.25
 		prestige_factor = 1
-		peace_cost_factor = 1 #BT; 0.75 - encouraging the custom treaty
+		peace_cost_factor = 0.5 #BT; 0.75 - More dev in area.
 
 		allowed_provinces = {
 			is_core = FROM
