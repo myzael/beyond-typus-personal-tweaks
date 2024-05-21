@@ -669,22 +669,6 @@ annexationaction = {
 		potential = {
 			FROM = { is_subject_of_type = appanage }
 			has_government_attribute = has_appanages
-			NOT = {
-				if = {
-					limit = {
-						OR = {
-							has_dlc = "Common Sense"
-							has_dlc = "Domination"
-						}
-					}
-					OR = {
-						NOT = { has_estate = estate_nobles }
-						crown_stronger_than_estate = { estate = estate_nobles }
-						has_reform = parliamentary_reform
-					}
-					is_not_blocked_by_estate_privilege = { estate = estate_nobles }
-				}
-			}	
 		}
 		allow = {
 			if = {
