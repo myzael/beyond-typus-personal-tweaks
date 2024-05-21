@@ -3446,6 +3446,10 @@ tur_arabian_conquest = {
 
 		ai_weight = {
 			factor = 250
+			modifier = { #Don't do this if you have not evented
+				factor = 0
+				NOT = { has_global_flag = bt_crimean_vassal_event_happened }
+			}
 		}
 	}
 	
