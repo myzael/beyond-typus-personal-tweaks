@@ -246,7 +246,7 @@ country_event = {
 	fire_only_once = yes
 	
 	immediate = {	#BT added for tur missions 
-		set_global_flag = BT_crimean_vassal_event_happened
+		set_global_flag = bt_crimean_vassal_event_happened
 	}
 	
 	option = {
