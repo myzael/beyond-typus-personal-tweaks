@@ -1,0 +1,24 @@
+The research is based off a lot of things.
+One thing of note is that Georgian coins were minted from copper. This would indicate copper mines in the area.
+Another source claims lead was used as a currency as well. Likely because of the silver famine in the middle east.
+https://iset-pi.ge/en/blog/517-david-the-economist
+A lot of grain was produced in the region apparently. This has been confirmed by a lot of sources, and one source in particular is interesting, though it is merely a blog.
+https://httpdefencegeorgia.blogspot.com/2011/03/genoese-trading-factors-in-abkhazia.html
+According to the above, Georgia was barely trading, and the economy "survived on agriculture".
+Even then, it appears Genoese traders only traded in agriculture.
+There's also a slip of interest about the Georgian Kingdom "restoring trade", but not what trade was restored.
+
+This map was found, unfortunately from 1918 Georgia:  https://www.loc.gov/resource/gdcwdl.wdl_15666/
+
+Thus, the following declarations were decided upon:
+7298: Naval supplies (Forested, lumber)
+7295: Silver (But just as easily, naval supplies for lumber).
+7293: Copper (But just as easily, livestock)
+7294: Stays grain
+7292: Stays grain
+7289: Livestock
+7290: Stays grain
+7291: Fruit
+7297: Stays grain
+7296: Stays grain
+7299: Wine (Maybe not entirely historical but it's better than another grain province.)

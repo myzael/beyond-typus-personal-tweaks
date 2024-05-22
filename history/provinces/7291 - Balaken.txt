@@ -16,7 +16,7 @@ religion = orthodox
 base_tax = 2
 base_production = 2
 base_manpower = 2
-trade_goods = grain #Agricultural economy.
+trade_goods = bt_trade_good_fruit #Based off of TG research in main mod folder. //Dub
 
 #Cores and Occupation (Alphabetical after current)
 add_core = KKE
