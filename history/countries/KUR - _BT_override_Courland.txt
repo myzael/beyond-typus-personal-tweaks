@@ -1,5 +1,6 @@
 government = theocracy
 add_government_reform = leading_clergy_reform
+primary_culture = baltic_german
 add_accepted_culture = latvian
 capital = 3227
 
