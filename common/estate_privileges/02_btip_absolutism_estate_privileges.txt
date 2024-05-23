@@ -23,18 +23,19 @@ estate_church_court_titles = {
 	}
 	ai_will_do = {
 		factor = 1
-		modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
-			factor = 10
-			is_absolutism_active = yes
-			num_of_estate_privileges = {
-				estate = estate_church
-				value = 1
-			}
-			estate_loyalty = {
-				estate = estate_church
-				higher_than_influence = no
-			}
-		}
+		#AI will never take this - they tend to be pretty good at this anyway.
+		# modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
+			# factor = 10
+			# is_absolutism_active = yes
+			# num_of_estate_privileges = {
+				# estate = estate_church
+				# value = 1
+			# }
+			# estate_loyalty = {
+				# estate = estate_church
+				# higher_than_influence = no
+			# }
+		# }
 	}
 }
 
@@ -62,18 +63,19 @@ estate_burghers_court_titles = {
 	}
 	ai_will_do = {
 		factor = 1
-		modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
-			factor = 10
-			is_absolutism_active = yes
-			num_of_estate_privileges = {
-				estate = estate_burghers
-				value = 1
-			}
-			estate_loyalty = {
-				estate = estate_burghers
-				higher_than_influence = no
-			}
-		}
+		#AI will never take this - they tend to be pretty good at this anyway.
+		# modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
+			# factor = 10
+			# is_absolutism_active = yes
+			# num_of_estate_privileges = {
+				# estate = estate_burghers
+				# value = 1
+			# }
+			# estate_loyalty = {
+				# estate = estate_burghers
+				# higher_than_influence = no
+			# }
+		# }
 	}
 }
 
@@ -101,18 +103,19 @@ estate_nobles_court_titles = {
 	}
 	ai_will_do = {
 		factor = 1
-		modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
-			factor = 10
-			is_absolutism_active = yes
-			num_of_estate_privileges = {
-				estate = estate_nobles
-				value = 1
-			}
-			estate_loyalty = {
-				estate = estate_nobles
-				higher_than_influence = no
-			}
-		}
+		#AI will never take this - they tend to be pretty good at this anyway.
+		# modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
+			# factor = 10
+			# is_absolutism_active = yes
+			# num_of_estate_privileges = {
+				# estate = estate_nobles
+				# value = 1
+			# }
+			# estate_loyalty = {
+				# estate = estate_nobles
+				# higher_than_influence = no
+			# }
+		# }
 	}
 }
 
@@ -140,19 +143,20 @@ estate_church_tithe_collection_freedom = {
 	}
 	ai_will_do = {
 		factor = 1
-		modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
-			factor = 10
-			is_absolutism_active = yes
-			num_of_estate_privileges = {
-				estate = estate_church
-				value = 1
-			}
-			estate_loyalty = {
-				estate = estate_church
-				higher_than_influence = no
-			}
-			NOT = { corruption = 5 }
-		}
+		#AI will never take this - they tend to be pretty good at this anyway.
+		# modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
+			# factor = 10
+			# is_absolutism_active = yes
+			# num_of_estate_privileges = {
+				# estate = estate_church
+				# value = 1
+			# }
+			# estate_loyalty = {
+				# estate = estate_church
+				# higher_than_influence = no
+			# }
+			# NOT = { corruption = 5 }
+		# }
 	}
 }
 
@@ -179,19 +183,20 @@ estate_burghers_trade_deals_freedom = {
 	}
 	ai_will_do = {
 		factor = 1
-		modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
-			factor = 10
-			is_absolutism_active = yes
-			num_of_estate_privileges = {
-				estate = estate_burghers
-				value = 1
-			}
-			estate_loyalty = {
-				estate = estate_burghers
-				higher_than_influence = no
-			}
-			NOT = { corruption = 5 }
-		}
+		#AI will never take this - they tend to be pretty good at this anyway.
+		# modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
+			# factor = 10
+			# is_absolutism_active = yes
+			# num_of_estate_privileges = {
+				# estate = estate_burghers
+				# value = 1
+			# }
+			# estate_loyalty = {
+				# estate = estate_burghers
+				# higher_than_influence = no
+			# }
+			# NOT = { corruption = 5 }
+		# }
 	}
 }
 
@@ -218,18 +223,19 @@ estate_nobles_tax_collection_freedom = {
 	}
 	ai_will_do = {
 		factor = 1
-		modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
-			factor = 10
-			is_absolutism_active = yes
-			num_of_estate_privileges = {
-				estate = estate_nobles
-				value = 1
-			}
-			estate_loyalty = {
-				estate = estate_nobles
-				higher_than_influence = no
-			}
-			NOT = { corruption = 5 }
-		}
+		#AI will never take this - they tend to be pretty good at this anyway.
+		# modifier = { #Do this if cannot revoke privileges and has less loyalty than influence.
+			# factor = 10
+			# is_absolutism_active = yes
+			# num_of_estate_privileges = {
+				# estate = estate_nobles
+				# value = 1
+			# }
+			# estate_loyalty = {
+				# estate = estate_nobles
+				# higher_than_influence = no
+			# }
+			# NOT = { corruption = 5 }
+		# }
 	}
 }
