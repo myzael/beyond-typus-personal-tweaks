@@ -104,6 +104,13 @@
  yazidi_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  yazidi_rebels_name:0 "$RELIGION$ Zealots"
  yazidi_religion_desc:0 "The Yazidi believe that God created the world and placed it under the protection of seven angels, foremost among them Tawûsê Melek, the Peacock Angel. The Peacock Angel at first fell from God's grace, but his tears of remorse extinguished the fires of his prison, and he was reunited with God. In the same manner, we all seek to reunite with God at the end of many long lifetimes."
+ waaq:0 "Waaqi"
+ ADDII_QAALLUU: "Addii Qaalluu"
+ waaq_rebels_demand:0 "Convert $COUNTRYNAME$"
+ waaq_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ waaq_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ waaq_rebels_name:0 "$RELIGION$ Zealots"
+ waaq_religion_desc:0 "Waaqeffannaa is the Oromo faith system based on the god Waaq. Waaq was said to be born from the water, that place being called Waallaabuu. Waaqa Tokkicha (the one God) created the world and everything else. One symbol of the Oromo and Waaq is the Odaa, or the Sycamore Tree. This tree was important to Oromo mythology and was important to the Oromo themselves during the Oromo Migrations. Another tree that was important was the Acacia Tree (or ‘Garbii’). Other symbols included cows and water, as that is where Waaq was born. What sets this apart from other African religions was monotheism, rather than polytheism. Waaq was also tied to the Gadaa system, where Waaq would play a part in the rituals and government’s decisions."
 
  #Areas (Need to be localised because otherwise they cause error log spam)
  unused_sea_area:0 "unused_sea_area"
