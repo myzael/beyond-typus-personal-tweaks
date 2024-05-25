@@ -5,6 +5,8 @@
 #Core Details
 capital = "Dilla"
 is_city = no
+owner = GDO
+controller = GDO
 
 #Demographics
 culture = gedeo
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = GDO
 
 #Other Political
 hre = no

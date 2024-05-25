@@ -5,6 +5,8 @@
 #Core Details
 capital = "Maji"
 is_city = no
+owner = MJI
+controller = MJI
 
 #Demographics
 culture = maji
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = MJI
 
 #Other Political
 hre = no

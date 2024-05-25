@@ -5,6 +5,8 @@
 #Core Details
 capital = "Magalo"
 is_city = no
+owner = KNM
+controller = KNM
 
 #Demographics
 culture = kunama
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = KNM
 
 #Other Political
 hre = no

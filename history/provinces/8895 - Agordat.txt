@@ -5,6 +5,8 @@
 #Core Details
 capital = "Agordat"
 is_city = no
+owner = AGT
+controller = AGT
 
 #Demographics
 culture = tigre
@@ -17,6 +19,7 @@ base_manpower = 2
 trade_goods = grain
 
 #Cores and Occupation (Alphabetical after current)
+add_core = AGT
 
 #Other Political
 hre = no

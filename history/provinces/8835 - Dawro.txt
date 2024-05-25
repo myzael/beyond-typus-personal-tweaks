@@ -5,6 +5,8 @@
 #Core Details
 capital = "Tarcha"
 is_city = no
+owner = DWO
+controller = DWO
 
 #Demographics
 culture = ometo
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = DWO
 
 #Other Political
 hre = no

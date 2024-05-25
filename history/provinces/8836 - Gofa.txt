@@ -5,6 +5,8 @@
 #Core Details
 capital = "Berza" #(JP) Apparently capital before 1928.
 is_city = no
+owner = GFA
+controller = GFA
 
 #Demographics
 culture = ometo
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = GFA
 
 #Other Political
 hre = no

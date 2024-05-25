@@ -5,6 +5,8 @@
 #Core Details
 capital = "Hirmata"
 is_city = no
+owner = KAF
+controller = KAF
 
 #Demographics
 culture = gonga
@@ -17,6 +19,8 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = KAF
+add_core = HIR
 
 #Other Political
 hre = no

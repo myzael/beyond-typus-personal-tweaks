@@ -5,6 +5,8 @@
 #Core Details
 capital = "Irgalem"
 is_city = no
+owner = HDY #Sultanate of Hadiya
+controller = HDY #Sultanate of Hadiya
 
 #Demographics
 culture = gedeo
@@ -17,6 +19,8 @@ base_manpower = 2
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = HDY #Sultanate of Hadiya
+add_core = HFA
 
 #Other Political
 hre = no

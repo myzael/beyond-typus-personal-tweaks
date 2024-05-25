@@ -5,6 +5,8 @@
 #Core Details
 capital = "Emdibir"
 is_city = no
+owner = GRG
+controller = GRG
 
 #Demographics
 culture = gurage
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = GRG
 add_core = IFT
 
 #Other Political

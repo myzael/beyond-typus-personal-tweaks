@@ -5,6 +5,8 @@
 #Core Details
 capital = "Dimeka"
 is_city = no
+owner = HER
+controller = HER
 
 #Demographics
 culture = ari-banna
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = HER
 
 #Other Political
 hre = no

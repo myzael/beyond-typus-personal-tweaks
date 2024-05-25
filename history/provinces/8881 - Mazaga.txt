@@ -5,6 +5,8 @@
 #Core Details
 capital = "Addi Balaw"
 is_city = no
+owner = MZG
+controller = MZG
 
 #Demographics
 culture = qwara #(JP) When doing Nubia, will likely end up being Beja
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = MZG
 
 #Other Political
 hre = no

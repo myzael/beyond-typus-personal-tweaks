@@ -5,6 +5,8 @@
 #Core Details
 capital = "Ganta Garo"
 is_city = no
+owner = GMO
+controller = GMO
 
 #Demographics
 culture = ometo
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = bt_trade_good_fruit #(JP) Known for their fruits apparently
 
 #Cores and Occupation (Alphabetical after current)
+add_core = GMO
 
 #Other Political
 hre = no
