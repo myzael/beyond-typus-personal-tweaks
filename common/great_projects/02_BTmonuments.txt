@@ -241,6 +241,7 @@ globe_theatre = {
 	build_trigger = {		#famous for Shakespeare plays, this limitation represents that
 		culture = english
 		province_is_or_accepts_culture = yes
+		owner = { has_institution = renaissance }
 	}
 
 	#what to do when it's built
@@ -255,12 +256,14 @@ globe_theatre = {
 	can_use_modifiers_trigger = {		#famous for Shakespeare plays, this limitation represents that
 		culture = english
 		province_is_or_accepts_culture = yes
+		owner = { has_institution = renaissance }
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {		#famous for Shakespeare plays, this limitation represents that
 		culture = english
 		province_is_or_accepts_culture = yes
+		owner = { has_institution = renaissance }
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
