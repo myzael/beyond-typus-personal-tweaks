@@ -1237,7 +1237,7 @@ venice_missions_slot_2 = {
 				area = emilia_romagna_area
 				area = tuscany_area
 				area = south_tuscany_area
-				area = eimlia_area
+				area = emilia_area
 				area = upper_emilia_area
 			}
 			OR = {
@@ -1270,7 +1270,7 @@ venice_missions_slot_2 = {
 					owner = { is_in_trade_league_with = ROOT }
 				}
 			}
-			eimlia_area = {
+			emilia_area = {
 				type = all
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT
