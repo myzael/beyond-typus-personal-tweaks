@@ -5,6 +5,8 @@
 #Core Details
 capital = "Dubluq"
 is_city = no
+owner = BOR
+controller = BOR
 
 #Demographics
 culture = borana
@@ -17,6 +19,7 @@ base_manpower = 2
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = BOR
 
 #Other Political
 hre = no

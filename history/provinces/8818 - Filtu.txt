@@ -5,6 +5,8 @@
 #Core Details
 capital = "Filtu"
 is_city = no
+owner = BAT
+controller = BAT
 
 #Demographics
 culture = oromo
@@ -17,6 +19,7 @@ base_manpower = 2
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = BAT
 
 #Other Political
 hre = no
