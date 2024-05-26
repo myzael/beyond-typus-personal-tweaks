@@ -304,40 +304,40 @@ defined_text = {	#Has any province modifers at all (This removes an empty space 
 defined_text = {	#Has a centre of trade
     name = DevPointsProvinceHasCoT
     text = {
-        localisation_key = dev_points_province_modifier_modifier_has_coastal_CoT3
+        localisation_key = dev_points_province_modifier_has_coastal_CoT3
         trigger = {
 			province_has_center_of_trade_of_level = 3
 			has_port = yes
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_modifier_has_CoT3
+        localisation_key = dev_points_province_modifier_has_CoT3
         trigger = {
 			province_has_center_of_trade_of_level = 3
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_modifier_has_coastal_CoT2
+        localisation_key = dev_points_province_modifier_has_coastal_CoT2
         trigger = {
 			province_has_center_of_trade_of_level = 2
 			has_port = yes
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_modifier_has_CoT2
+        localisation_key = dev_points_province_modifier_has_CoT2
         trigger = {
 			province_has_center_of_trade_of_level = 2
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_modifier_has_coastal_CoT1
+        localisation_key = dev_points_province_modifier_has_coastal_CoT1
         trigger = {
 				province_has_center_of_trade_of_level = 1
 				has_port = yes
         }
     }
     text = {
-        localisation_key = dev_points_province_modifier_modifier_has_CoT1
+        localisation_key = dev_points_province_modifier_has_CoT1
         trigger = {
 				province_has_center_of_trade_of_level = 1
         }
@@ -352,7 +352,7 @@ defined_text = {	#Has a centre of trade
 defined_text = {	#Is in the capital state
     name = DevPointsProvinceIsInCapitalState
     text = {
-        localisation_key = dev_points_province_modifier_modifier_part_of_capital_state 
+        localisation_key = dev_points_province_modifier_part_of_capital_state 
         trigger = {
 			area_for_scope_province = {
 				is_capital_of = ROOT
@@ -369,7 +369,7 @@ defined_text = {	#Is in the capital state
 defined_text = {	#Has edict - encourage development 
     name = DevPointsProvinceHasEdictOfDevelpment
     text = {
-        localisation_key = dev_points_province_modifier_modifier_has_edict_of_development 
+        localisation_key = dev_points_province_modifier_has_edict_of_development 
         trigger = {
 			has_state_edict = edict_encourage_development 
         }
@@ -384,7 +384,7 @@ defined_text = {	#Has edict - encourage development
 defined_text = {	#Is propserous
     name = DevPointsProvinceIsProsperous
     text = {
-        localisation_key = dev_points_province_modifier_modifier_is_prosperous 
+        localisation_key = dev_points_province_modifier_is_prosperous 
         trigger = {
 			is_prosperous = yes
         }
@@ -399,7 +399,7 @@ defined_text = {	#Is propserous
 defined_text = {	#Has infrastructure ideas complete and 8 buildings built
     name = DevPointsProvinceInfrastructureIdeasAndBigDevPoints
     text = {
-        localisation_key = dev_points_province_modifier_modifier_intrastructure_ideas_and_dev_points 
+        localisation_key = dev_points_province_modifier_intrastructure_ideas_and_dev_points 
         trigger = {
 			AND = {
 				ROOT = {
@@ -419,7 +419,7 @@ defined_text = {	#Has infrastructure ideas complete and 8 buildings built
 defined_text = {	#Has expanded infrastructure here
     name = DevPointsProvinceInfrastructureLevel
     text = {
-        localisation_key = dev_points_province_modifier_modifier_infrastructure_level 
+        localisation_key = dev_points_province_modifier_infrastructure_level 
         trigger = {
 			num_of_times_expanded_infrastructure = 1
         }
@@ -434,7 +434,7 @@ defined_text = {	#Has expanded infrastructure here
 defined_text = {	#Is occupied
     name = DevPointsProvinceOccupation
     text = {
-        localisation_key = dev_points_province_modifier_modifier_occupation 
+        localisation_key = dev_points_province_modifier_occupation 
         trigger = {
 			NOT = {
 				controlled_by = owner
@@ -451,7 +451,7 @@ defined_text = {	#Is occupied
 defined_text = {	#Is under seige
     name = DevPointsProvinceUnderSeige
     text = {
-        localisation_key = dev_points_province_modifier_modifier_under_siege 
+        localisation_key = dev_points_province_modifier_under_siege 
         trigger = {
 			has_siege = yes
         }
@@ -467,7 +467,7 @@ defined_text = {	#Is under seige
 defined_text = {	#Is a horde
     name = DevPointsProvinceHorde
     text = {
-        localisation_key = dev_points_province_modifier_modifier_horde 
+        localisation_key = dev_points_province_modifier_horde 
         trigger = {
 			ROOT = {
 				has_reform = steppe_horde
@@ -486,7 +486,7 @@ defined_text = {	#Is a horde
 defined_text = {	#Is a horde (Mongol Empire)
     name = DevPointsProvinceMongolEmpire
     text = {
-        localisation_key = dev_points_province_modifier_modifier_mongol_empire 
+        localisation_key = dev_points_province_modifier_mongol_empire 
         trigger = {
 			ROOT = {
 				has_reform = great_mongol_state_reform
@@ -505,7 +505,7 @@ defined_text = {	#Is a horde (Mongol Empire)
 defined_text = {	#Has devastation
     name = DevPointsProvinceDevastation
     text = {
-        localisation_key = dev_points_province_modifier_modifier_devastation 
+        localisation_key = dev_points_province_modifier_devastation 
         trigger = {
 			devastation = 0.1
         }
