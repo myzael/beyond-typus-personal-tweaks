@@ -522,6 +522,7 @@ YIR = "countries/Yirram.txt" #BT16
 WUN = "countries/Wunambal.txt" #BT16
 AAI = "countries/Aari.txt" #BT16
 AGT = "countries/Agordat.txt" #BT16
+AGW = "countries/Agaw.txt" #BT16
 AMC = "countries/Armachiho.txt" #BT16
 BAT = "countries/Barentu.txt" #BT16
 BNA = "countries/Banar.txt" #BT16

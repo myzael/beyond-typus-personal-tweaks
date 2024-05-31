@@ -1,6 +1,9 @@
  
 #2770 - Agew
 
+owner = AGW
+controller = AGW
+add_core = AGW
 culture = awngi 
 religion = shamanism
 capital = "Kosober"
