@@ -1,6 +1,9 @@
  
 #2766 - Mendefera
 
+owner = BLN
+controller = BLN
+add_core = BLN
 culture = bilen 
 religion = shamanism
 capital = "Sanhit"
