@@ -14700,6 +14700,9 @@ beja_group = {
 	
 	beja = {
 		primary = BEJ
+	}	
+	beni_amer = {
+		primary = AGT
 	}
 }
 

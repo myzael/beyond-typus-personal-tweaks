@@ -9,7 +9,7 @@ owner = AGT
 controller = AGT
 
 #Demographics
-culture = tigre
+culture = beni_amer
 religion = sunni
 
 #Development and Trade

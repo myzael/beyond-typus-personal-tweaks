@@ -5,9 +5,11 @@
 #Core Details
 capital = "Teseney"
 is_city = no
+owner = AGT
+controller = AGT
 
 #Demographics
-culture = tigre
+culture = beni_amer
 religion = sunni
 
 #Development and Trade
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = AGT
 
 #Other Political
 hre = no

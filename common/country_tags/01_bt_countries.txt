@@ -542,3 +542,4 @@ KNM = "countries/Kunama.txt" #BT16
 KSO = "countries/Konso.txt" #BT16
 MJI = "countries/Maji.txt" #BT16
 MZG = "countries/Mazaga.txt" #BT16
+NRA = "countries/Nara.txt" #BT16

@@ -1,9 +1,12 @@
  
 #New Province
 
-capital = "Barentu"
-culture = tigre
-religion = sunni
+owner = NRA
+controller = NRA
+add_core = NRA
+capital = "Bisa"
+culture = nara
+religion = shamanism
 trade_goods = grain
 hre = no
 base_tax = 2 

@@ -7,7 +7,7 @@ capital = "Karkabet"
 is_city = no
 
 #Demographics
-culture = beja
+culture = beni_amer
 religion = sunni
 
 #Development and Trade
