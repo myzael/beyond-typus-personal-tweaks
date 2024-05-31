@@ -2,7 +2,7 @@
 
 graphical_culture = muslimgfx
 
-color = { 210 134 134 }
+color = { 109 165 32 }
 
 preferred_religion = sunni
 
