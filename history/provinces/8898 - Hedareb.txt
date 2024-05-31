@@ -5,9 +5,11 @@
 #Core Details
 capital = "Karkabet"
 is_city = no
+owner = BGU
+controller = BGU
 
 #Demographics
-culture = beni_amer
+culture = tigre
 religion = sunni
 
 #Development and Trade
@@ -17,6 +19,7 @@ base_manpower = 1
 trade_goods = unknown
 
 #Cores and Occupation (Alphabetical after current)
+add_core = BGU
 
 #Other Political
 hre = no
