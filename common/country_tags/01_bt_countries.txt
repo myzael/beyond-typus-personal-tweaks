@@ -539,5 +539,6 @@ HFA = "countries/Hofa.txt" #BT16
 HIR = "countries/Hirmata.txt" #BT16
 KBT = "countries/Kambaata.txt" #BT16
 KNM = "countries/Kunama.txt" #BT16
+KSO = "countries/Konso.txt" #BT16
 MJI = "countries/Maji.txt" #BT16
 MZG = "countries/Mazaga.txt" #BT16
