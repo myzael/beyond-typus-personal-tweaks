@@ -36,7 +36,18 @@ po_end_hundred_years_war = {
 						province_id = 3110 #Channel Islands excluded
 					}
 				}
-				controlled_by = ROOT
+				OR = {
+					controlled_by = ROOT
+					controller = {
+						is_subject_of = ROOT
+					}
+					controller = {
+						is_in_war = {
+							casus_belli = cb_hundred_years_war
+						}
+						alliance_with = ROOT 
+					}
+				}
 			}
 		}
 	}
@@ -49,7 +60,18 @@ po_end_hundred_years_war = {
 						is_subject_of = FROM
 					}
 				}
-				controlled_by = ROOT
+				OR = {
+					controlled_by = ROOT
+					controller = {
+						is_subject_of = ROOT
+					}
+					controller = {
+						is_in_war = {
+							casus_belli = cb_hundred_years_war
+						}
+						alliance_with = ROOT 
+					}
+				}
 				NOT = {
 					province_id = 87 #Exclude Calais
 					province_id = 3110 #Channel Islands excluded
