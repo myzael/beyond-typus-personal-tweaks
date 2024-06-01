@@ -2250,6 +2250,15 @@ country_event = { #Securing the Milanese Lands
 		}
 		
 		create_union = MLO 
+		#BT added Vanilla bug where if Milan is a republic they still become a PU and then they just elect themselves out of it
+		if = {
+			limit = {
+				NOT = {
+					government = monarchy
+				}
+			}
+			change_government_to_monarchy = yes
+		}
 		custom_tooltip = fra_mlo_wont_cost_dip_tt
 		hidden_effect = { 
 			add_country_modifier = { 
