@@ -615,9 +615,9 @@ take_capital_hundred_years_war = {
 		}
 		
 		peace_options = {
+			po_end_hundred_years_war
 			po_demand_provinces
 			po_return_cores
-			po_end_hundred_years_war
 		}
 		
 		prov_desc = ALL_CORES	
