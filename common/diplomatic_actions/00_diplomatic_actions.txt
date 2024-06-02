@@ -931,3 +931,23 @@ request_to_join_federation = {
 		}
 	}
 }
+
+support_independence_action = {
+	condition = {
+		tooltip = TUR_dont_support_independence_wars
+		potential = {
+			OR = {
+				FROM = {
+					tag = TUR
+				}
+				ROOT = {
+					tag = TUR
+				}
+			}
+			ai = yes
+		}
+		allow = {
+			always = no
+		}
+	}
+}
