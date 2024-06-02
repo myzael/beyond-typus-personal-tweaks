@@ -5235,6 +5235,7 @@ on_dependency_lost_effect = {
 			remove_country_modifier = grain_trade_imports_modifier
 		}
 	}
+	set_country_flag = bt_became_independent	#BT added to have a way to see when a nation was last independent
 }
 
 on_monarch_death_effect = {
