@@ -220,6 +220,10 @@ province_event = {
 				refund_monarch_points_on_dev = {			#In 02_scripted_effects_for_dev_points
 					var = adm
 				}
+				change_variable = {				#Adds to the debug total dev points
+					which = total_development_gained_from_dev_points 
+					value = 1
+				}
 			}
 		}
 		else_if = {
@@ -237,6 +241,10 @@ province_event = {
 				}
 				refund_monarch_points_on_dev = {			#In 02_scripted_effects_for_dev_points
 					var = adm
+				}
+				change_variable = {				#Adds to the debug total dev points
+					which = total_development_gained_from_dev_points 
+					value = 1
 				}
 			}
 		}
@@ -257,6 +265,10 @@ province_event = {
 					}
 					refund_monarch_points_on_dev = {		#In 02_scripted_effects_for_dev_points
 						var = adm
+					}
+					change_variable = {				#Adds to the debug total dev points
+						which = total_development_gained_from_dev_points 
+						value = 1
 					}
 				}
 			}
@@ -280,6 +292,10 @@ province_event = {
 				refund_monarch_points_on_dev = {			#In 02_scripted_effects_for_dev_points
 					var = adm
 				}
+				change_variable = {				#Adds to the debug total dev points
+					which = total_development_gained_from_dev_points 
+					value = 1
+				}
 			}
 		}
 		else_if = {
@@ -299,6 +315,10 @@ province_event = {
 					}
 					refund_monarch_points_on_dev = {		#In 02_scripted_effects_for_dev_points
 						var = adm
+					}
+					change_variable = {				#Adds to the debug total dev points
+						which = total_development_gained_from_dev_points 
+						value = 1
 					}
 				}
 			}
@@ -488,6 +508,10 @@ province_event = {
 				refund_monarch_points_on_dev = {			#In 02_scripted_effects_for_dev_points
 					var = mil
 				}
+				change_variable = {				#Adds to the debug total dev points
+					which = total_development_gained_from_dev_points 
+					value = 1
+				}
 			}
 		}
 		else_if = {
@@ -505,6 +529,10 @@ province_event = {
 				}
 				refund_monarch_points_on_dev = {			#In 02_scripted_effects_for_dev_points
 					var = mil
+				}
+				change_variable = {				#Adds to the debug total dev points
+					which = total_development_gained_from_dev_points 
+					value = 1
 				}
 			}
 		}
@@ -525,6 +553,10 @@ province_event = {
 					}
 					refund_monarch_points_on_dev = {		#In 02_scripted_effects_for_dev_points
 						var = mil
+					}
+					change_variable = {				#Adds to the debug total dev points
+						which = total_development_gained_from_dev_points 
+						value = 1
 					}
 				}
 			}
@@ -548,6 +580,10 @@ province_event = {
 				refund_monarch_points_on_dev = {			#In 02_scripted_effects_for_dev_points
 					var = mil
 				}
+				change_variable = {				#Adds to the debug total dev points
+					which = total_development_gained_from_dev_points 
+					value = 1
+				}
 			}
 		}
 		else_if = {
@@ -567,6 +603,10 @@ province_event = {
 					}
 					refund_monarch_points_on_dev = {		#In 02_scripted_effects_for_dev_points
 						var = mil
+					}
+					change_variable = {				#Adds to the debug total dev points
+						which = total_development_gained_from_dev_points 
+						value = 1
 					}
 				}
 			}
