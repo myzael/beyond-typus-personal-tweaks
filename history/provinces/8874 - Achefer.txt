@@ -16,7 +16,7 @@ religion = shamanism
 base_tax = 2
 base_production = 2
 base_manpower = 2
-trade_goods = unknown
+trade_goods = livestock
 
 #Cores and Occupation (Alphabetical after current)
 add_core = AGW
