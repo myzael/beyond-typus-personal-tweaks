@@ -480,7 +480,7 @@ occupied = {
 	local_institution_spread = -0.1
 	local_dev_points_modifier = -0.5 #BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	local_monthly_devastation = 0.2
-	local_autonomy = 0.4	#BT Added to make it possible to lower war score over long wars (Combined with province war score lowered with autonomy) +24 autonomy over 10 years of being occupied
+	local_autonomy = 1	#BT Added to make it possible to lower war score over long wars (Combined with province war score lowered with autonomy) +24 autonomy over 10 years of being occupied
 }
 
 under_siege = {
@@ -489,7 +489,7 @@ under_siege = {
 	local_institution_spread = -0.1
 	local_dev_points_modifier = -0.25 #BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
 	local_monthly_devastation = 0.1
-	local_autonomy = 0.2	#BT Added to make it possible to lower war score over long wars (Combined with province war score lowered with autonomy) +12 autonomy over 10 years of being seiged
+	local_autonomy = 0.25	#BT Added to make it possible to lower war score over long wars (Combined with province war score lowered with autonomy) +12 autonomy over 10 years of being seiged
 }
 
 
