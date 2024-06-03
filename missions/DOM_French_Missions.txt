@@ -6037,7 +6037,7 @@ fra_missions_5_continuation = {
 				region = france_region 
 				OR = {
 					num_of_times_improved = 2
-					num_of_buildings_in_province = 1 
+					num_of_buildings_in_province = 2 #BT - forts counted towards this; 1 
 				}
 				value = 8 
 			}
