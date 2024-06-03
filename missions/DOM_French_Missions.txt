@@ -2570,9 +2570,6 @@ french_missions_3 = {
 			custom_tooltip = zim_amongst_the_great_powers_tt
 			add_prestige_or_monarch_power = { amount = 25 }
 		}
-		ai_will_do = {
-			
-		}
 	}
 }
 
