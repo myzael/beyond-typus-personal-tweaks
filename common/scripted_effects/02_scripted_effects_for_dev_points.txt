@@ -1027,6 +1027,10 @@ calculate_monthly_dev_points_in_all_provinces_effect = {				#(used in country sc
 				value = local_autonomy
 				who = THIS
 			}
+			multiply_variable = {	#Divides autonomy by -100 to prepare it to multiply with monthly dev points
+				which = local_autonomy_for_dev_points
+				value = 0.5
+			}
 			set_variable = {
 				which = local_autonomy_ui_var
 				which = local_autonomy_for_dev_points

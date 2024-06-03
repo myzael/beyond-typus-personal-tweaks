@@ -558,7 +558,7 @@ local_autonomy_multiplicative = {
 	province_trade_power_modifier = -0.5
 	land_forcelimit_modifier = -1.0 # Misleading, only used to avoid errors when applying effect of Estates in code.
 	naval_forcelimit_modifier = -1.0 # Misleading, only used to avoid errors when applying effect of Estates in code.
-	local_dev_points_modifier = -1.0 #BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI
+	local_dev_points_modifier = -0.5 #BT Added for Dev Points. Needs to also be changed in dev_points_l_english.yml to actually update the GUI, changed to be half seems to make more sense, with high autonomy still giving half the amount like trade
 }
 
 local_autonomy = {
