@@ -587,9 +587,11 @@ country_event = {
 								AND = {
 									is_subject = no
 									has_country_flag = bt_became_independent
-									had_country_flag = {
-										flag = bt_became_independent
-										days = 90
+									NOT = {
+										had_country_flag = {
+											flag = bt_became_independent
+											days = 90
+										}
 									}
 								}
 							}
@@ -605,9 +607,11 @@ country_event = {
 								AND = {
 									is_subject = no
 									has_country_flag = bt_became_independent
-									had_country_flag = {
-										flag = bt_became_independent
-										days = 90
+									NOT = {
+										had_country_flag = {
+											flag = bt_became_independent
+											days = 90
+										}
 									}
 								}
 							}
@@ -623,9 +627,11 @@ country_event = {
 								AND = {
 									is_subject = no
 									has_country_flag = bt_became_independent
-									had_country_flag = {
-										flag = bt_became_independent
-										days = 90
+									NOT = {
+										had_country_flag = {
+											flag = bt_became_independent
+											days = 90
+										}
 									}
 								}
 							}
@@ -641,9 +647,11 @@ country_event = {
 								AND = {
 									is_subject = no
 									has_country_flag = bt_became_independent
-									had_country_flag = {
-										flag = bt_became_independent
-										days = 90
+									NOT = {
+										had_country_flag = {
+											flag = bt_became_independent
+											days = 90
+										}
 									}
 								}
 							}
@@ -803,25 +811,81 @@ country_event = {
 			TEU = {
 				if = {
 					limit = {
-						overlord_of = WRM
+						OR = {
+							overlord_of = SMA
+							SMA = {
+								AND = {
+									is_subject = no
+									has_country_flag = bt_became_independent
+									NOT = {
+										had_country_flag = {
+											flag = bt_became_independent
+											days = 90
+										}
+									}
+								}
+							}
+						}
 					}
 					inherit = WRM
 				}
 				if = {
 					limit = {
-						overlord_of = KUM
+						OR = {
+							overlord_of = SMA
+							SMA = {
+								AND = {
+									is_subject = no
+									has_country_flag = bt_became_independent
+									NOT = {
+										had_country_flag = {
+											flag = bt_became_independent
+											days = 90
+										}
+									}
+								}
+							}
+						}
 					}
 					inherit = KUM
 				}
 				if = {
 					limit = {
-						overlord_of = PMS
+						OR = {
+							overlord_of = SMA
+							SMA = {
+								AND = {
+									is_subject = no
+									has_country_flag = bt_became_independent
+									NOT = {
+										had_country_flag = {
+											flag = bt_became_independent
+											days = 90
+										}
+									}
+								}
+							}
+						}
 					}
 					inherit = PMS
 				}
 				if = {
 					limit = {
-						overlord_of = SMA
+						OR = {
+							overlord_of = SMA
+							SMA = {
+								AND = {
+									is_subject = no
+									has_country_flag = bt_became_independent
+									NOT = {
+										had_country_flag = {
+											flag = bt_became_independent
+											days = 90
+										}
+									}
+								}
+							}
+						}
 					}
 					inherit = SMA
 				}
