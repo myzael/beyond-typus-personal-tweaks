@@ -357,7 +357,7 @@ french_missions_1 = {
 	
 	fra_border_empire = { 
 		icon = end_the_habsburgs
-		required_missions = { fra_burg_succession fra_unite_france } 
+		required_missions = { fra_unite_france } # BT changed, fra_brug_succession needed by fra_unite_france instead
 		position = 4 
 		provinces_to_highlight = { 
 			area = bourgogne_area 
@@ -2550,16 +2550,16 @@ french_missions_3 = {
 	
 	fra_unite_france = {
 		icon = king_of_france
-		required_missions = { fra_retake_aquitaine fra_armorican_peninsula }
+		required_missions = { fra_retake_aquitaine fra_armorican_peninsula fra_burg_succession fra_house_united } #BT added requirement to have burgandy and provence missions
 		position = 3
 		provinces_to_highlight = { 
 			region = france_region 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
-			num_of_provinces_owned_or_owned_by_subjects_with = { 
+			num_of_owned_provinces_with = { # BT changed to need to integrate vassals and appanages
 				region = france_region 
-				value = 50 
+				value = 170	# BT changed to be 90% of france (170/185)
 			}
 		}
 		effect = { 
@@ -2568,8 +2568,10 @@ french_missions_3 = {
 				amount = 10
 			}
 			custom_tooltip = zim_amongst_the_great_powers_tt
-			
 			add_prestige_or_monarch_power = { amount = 25 }
+		}
+		ai_will_do = {
+			
 		}
 	}
 }
