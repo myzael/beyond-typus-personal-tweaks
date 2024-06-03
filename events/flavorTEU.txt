@@ -578,87 +578,105 @@ country_event = {
 		highlight = yes 
 		custom_tooltip = pol_delegate_the_formation_of_royal_prussia_tt
 		hidden_effect = {
-			DNZ = {
-				if = {
-					limit = {
-						OR = {
+			if = {
+				limit = {
+					OR = {
+						DNZ = {
 							overlord_of = WRM
-							WRM = {	#If this nation was released in the war the player poland has 90 days to accept mission. This is so if the nation was released in a different war years go they aren't forced back into TEU
-								AND = {
-									is_subject = no
-									has_country_flag = bt_became_independent
-									NOT = {
-										had_country_flag = {
-											flag = bt_became_independent
-											days = 90
-										}
+						}
+						TEU = {
+							overlord_of = WRM
+						}
+						WRM = {	#If this nation was released in the war the player poland has 90 days to accept mission. This is so if the nation was released in a different war years go they aren't forced back into TEU
+							AND = {
+								is_subject = no
+								has_country_flag = bt_became_independent
+								NOT = {
+									had_country_flag = {
+										flag = bt_became_independent
+										days = 90
 									}
 								}
 							}
 						}
 					}
-					inherit = WRM
 				}
-				if = {
-					limit = {
-						OR = {
+				inherit = WRM
+			}
+			if = {
+				limit = {
+					OR = {
+						DNZ = {
 							overlord_of = KUM
-							KUM = {
-								AND = {
-									is_subject = no
-									has_country_flag = bt_became_independent
-									NOT = {
-										had_country_flag = {
-											flag = bt_became_independent
-											days = 90
-										}
+						}
+						TEU = {
+							overlord_of = KUM
+						}
+						KUM = {
+							AND = {
+								is_subject = no
+								has_country_flag = bt_became_independent
+								NOT = {
+									had_country_flag = {
+										flag = bt_became_independent
+										days = 90
 									}
 								}
 							}
 						}
 					}
-					inherit = KUM
 				}
-				if = {
-					limit = {
-						OR = {
+				inherit = KUM
+			}
+			if = {
+				limit = {
+					OR = {
+						DNZ = {
 							overlord_of = PMS
-							PMS = {
-								AND = {
-									is_subject = no
-									has_country_flag = bt_became_independent
-									NOT = {
-										had_country_flag = {
-											flag = bt_became_independent
-											days = 90
-										}
+						}
+						TEU = {
+							overlord_of = PMS
+						}
+						PMS = {
+							AND = {
+								is_subject = no
+								has_country_flag = bt_became_independent
+								NOT = {
+									had_country_flag = {
+										flag = bt_became_independent
+										days = 90
 									}
 								}
 							}
 						}
 					}
-					inherit = PMS
 				}
-				if = {
-					limit = {
-						OR = {
+				inherit = PMS
+			}
+			if = {
+				limit = {
+					OR = {
+						DNZ = {
 							overlord_of = SMA
-							SMA = {
-								AND = {
-									is_subject = no
-									has_country_flag = bt_became_independent
-									NOT = {
-										had_country_flag = {
-											flag = bt_became_independent
-											days = 90
-										}
+						}
+						TEU = {
+							overlord_of = SMA
+						}
+						SMA = {
+							AND = {
+								is_subject = no
+								has_country_flag = bt_became_independent
+								NOT = {
+									had_country_flag = {
+										flag = bt_became_independent
+										days = 90
 									}
 								}
 							}
 						}
 					}
-					inherit = SMA
 				}
+				inherit = SMA
 			}
 			remove_historical_rival = TEU
 			inherit = DNZ
@@ -702,6 +720,23 @@ country_event = {
 				who = PRU
 				value = 60
 			}
+			west_prussia_area = {
+				limit = {
+				}
+				add_core = ROOT 
+				cede_province = ROOT
+			}
+			east_prussia_area = {
+				limit = {
+					OR = {
+						province_id = 1859
+						province_id = 1841
+						province_id = 42
+					}
+				}
+				add_core = ROOT 
+				cede_province = ROOT
+			}
 			east_prussia_area = {
 				limit = {
 					NOT = {
@@ -711,12 +746,15 @@ country_event = {
 					}
 				}
 				add_core = PRU 
+				remove_core = ROOT
 			}
 			masuria_area = {
-				add_core = PRU 
+				add_core = PRU
+				remove_core = ROOT 
 			}
 			nadruvia_area = {
 				add_core = PRU 
+				remove_core = ROOT
 			}
 			east_prussia_area = {
 				limit = { 
@@ -789,9 +827,9 @@ country_event = {
 		name = "flavor_teu.3.c"
 		ai_chance = { factor = 90 }
 		trigger = {
-			PRU = { exists = no } 
-			TEU = { 
-				exists = yes 
+			PRU = { exists = no }
+			TEU = {
+				exists = yes
 				NOT = {
 					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 						value = 9
@@ -808,87 +846,107 @@ country_event = {
 			remove_historical_rival = TEU
 			inherit = DNZ
 			vassalize = TEU
+			if = {
+				limit = {
+					OR = {
+						DNZ = {
+							overlord_of = WRM
+						}
+						TEU = {
+							overlord_of = WRM
+						}
+						WRM = {	#If this nation was released in the war the player poland has 90 days to accept mission. This is so if the nation was released in a different war years go they aren't forced back into TEU
+							AND = {
+								is_subject = no
+								has_country_flag = bt_became_independent
+								NOT = {
+									had_country_flag = {
+										flag = bt_became_independent
+										days = 90
+									}
+								}
+							}
+						}
+					}
+				}
+				inherit = WRM
+			}
+			if = {
+				limit = {
+					OR = {
+						DNZ = {
+							overlord_of = KUM
+						}
+						TEU = {
+							overlord_of = KUM
+						}
+						KUM = {
+							AND = {
+								is_subject = no
+								has_country_flag = bt_became_independent
+								NOT = {
+									had_country_flag = {
+										flag = bt_became_independent
+										days = 90
+									}
+								}
+							}
+						}
+					}
+				}
+				inherit = KUM
+			}
+			if = {
+				limit = {
+					OR = {
+						DNZ = {
+							overlord_of = PMS
+						}
+						TEU = {
+							overlord_of = PMS
+						}
+						PMS = {
+							AND = {
+								is_subject = no
+								has_country_flag = bt_became_independent
+								NOT = {
+									had_country_flag = {
+										flag = bt_became_independent
+										days = 90
+									}
+								}
+							}
+						}
+					}
+				}
+				inherit = PMS
+			}
+			if = {
+				limit = {
+					OR = {
+						DNZ = {
+							overlord_of = SMA
+						}
+						TEU = {
+							overlord_of = SMA
+						}
+						SMA = {
+							AND = {
+								is_subject = no
+								has_country_flag = bt_became_independent
+								NOT = {
+									had_country_flag = {
+										flag = bt_became_independent
+										days = 90
+									}
+								}
+							}
+						}
+					}
+				}
+				inherit = SMA
+			}
 			TEU = {
-				if = {
-					limit = {
-						OR = {
-							overlord_of = SMA
-							SMA = {
-								AND = {
-									is_subject = no
-									has_country_flag = bt_became_independent
-									NOT = {
-										had_country_flag = {
-											flag = bt_became_independent
-											days = 90
-										}
-									}
-								}
-							}
-						}
-					}
-					inherit = WRM
-				}
-				if = {
-					limit = {
-						OR = {
-							overlord_of = SMA
-							SMA = {
-								AND = {
-									is_subject = no
-									has_country_flag = bt_became_independent
-									NOT = {
-										had_country_flag = {
-											flag = bt_became_independent
-											days = 90
-										}
-									}
-								}
-							}
-						}
-					}
-					inherit = KUM
-				}
-				if = {
-					limit = {
-						OR = {
-							overlord_of = SMA
-							SMA = {
-								AND = {
-									is_subject = no
-									has_country_flag = bt_became_independent
-									NOT = {
-										had_country_flag = {
-											flag = bt_became_independent
-											days = 90
-										}
-									}
-								}
-							}
-						}
-					}
-					inherit = PMS
-				}
-				if = {
-					limit = {
-						OR = {
-							overlord_of = SMA
-							SMA = {
-								AND = {
-									is_subject = no
-									has_country_flag = bt_became_independent
-									NOT = {
-										had_country_flag = {
-											flag = bt_became_independent
-											days = 90
-										}
-									}
-								}
-							}
-						}
-					}
-					inherit = SMA
-				}
 				remove_historical_rival = POL
 				change_government = monarchy
 				change_tag = PRU
@@ -926,6 +984,23 @@ country_event = {
 				who = PRU
 				value = 60
 			}
+			west_prussia_area = {
+				limit = {
+				}
+				add_core = ROOT 
+				cede_province = ROOT
+			}
+			east_prussia_area = {
+				limit = {
+					OR = {
+						province_id = 1859
+						province_id = 1841
+						province_id = 42
+					}
+				}
+				add_core = ROOT 
+				cede_province = ROOT
+			}
 			east_prussia_area = {
 				limit = {
 					NOT = {
@@ -935,12 +1010,15 @@ country_event = {
 					}
 				}
 				add_core = PRU 
+				remove_core = ROOT
 			}
 			masuria_area = {
 				add_core = PRU 
+				remove_core = ROOT
 			}
 			nadruvia_area = {
 				add_core = PRU 
+				remove_core = ROOT
 			}
 			east_prussia_area = {
 				limit = {
@@ -977,8 +1055,8 @@ country_event = {
 			west_prussia_area = {		#Royal Something or other. Harbivore
 				limit = {
 					OR = {
-						owned_by = ROOT  
-						owned_by = DNZ  
+						owned_by = ROOT
+						owned_by = DNZ
 					}
 				}
 				remove_core = PRU
