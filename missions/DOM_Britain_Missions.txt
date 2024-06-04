@@ -1009,7 +1009,15 @@ ave_row_slot_2 = {
 			}
 		}	
 		effect = {
-			1276 = {
+			167 = {
+				add_trade_modifier = {
+					who = root
+					duration = 5475
+					power = 25
+					key = bordeaux_ambition
+				}
+			}
+			174 = {
 				add_trade_modifier = {
 					who = root
 					duration = 5475
