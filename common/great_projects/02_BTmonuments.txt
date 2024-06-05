@@ -239,7 +239,10 @@ globe_theatre = {
 
 	#can we build it?
 	build_trigger = {		#famous for Shakespeare plays, this limitation represents that
-		culture = english
+		OR = { 
+			culture = english
+			culture = anglois
+		}
 		province_is_or_accepts_culture = yes
 		owner = { has_institution = renaissance }
 	}
@@ -254,14 +257,20 @@ globe_theatre = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {		#famous for Shakespeare plays, this limitation represents that
-		culture = english
+		OR = { 
+			culture = english
+			culture = anglois
+		}
 		province_is_or_accepts_culture = yes
 		owner = { has_institution = renaissance }
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {		#famous for Shakespeare plays, this limitation represents that
-		culture = english
+		OR = { 
+			culture = english
+			culture = anglois
+		}
 		province_is_or_accepts_culture = yes
 		owner = { has_institution = renaissance }
 	}
