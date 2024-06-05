@@ -43,6 +43,13 @@ eng_row_slot_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			ireland_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			if = {
 				limit = {
 					exists = SCO
@@ -125,7 +132,7 @@ eng_row_slot_1 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = british_isles_region
-				value = 50
+				value = 75 #BT; 50
 			}
 		}
 		effect = {
@@ -1064,7 +1071,7 @@ ave_row_slot_2 = {
 			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = iberia_region
-				value = 15
+				value = 30 #BT; 15
 			}
 		}	
 		effect = {
@@ -1099,7 +1106,7 @@ ave_row_slot_2 = {
 			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = iberia_region
-				value = 55
+				value = 110 #BT; 55
 			}
 		}	
 		effect = {
@@ -1981,6 +1988,13 @@ ave_row_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			lower_brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			picardy_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -2016,8 +2030,19 @@ ave_row_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_permanent_claim_province = {
-				province = 178
+			barrois_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orleans_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 		ai_weight = {
@@ -2042,7 +2067,7 @@ ave_row_3 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = france_region
 				NOT = { controlled_by = REB }
-				value = 20
+				value = 100 #Bt; 20
 			}
 			if = {
 				limit = {
@@ -2174,6 +2199,20 @@ ave_row_3 = {
 					}
 					add_permanent_claim = ROOT
 				}
+				north_piedmont_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				south_piedmont_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 				liguria_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -2182,6 +2221,20 @@ ave_row_3 = {
 					add_permanent_claim = ROOT
 				}
 				lombardy_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				emilia_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				upper_emilia_area = {
 					limit = {
 						NOT = { is_core = ROOT }
 						NOT = { is_permanent_claim = ROOT }
@@ -2287,10 +2340,14 @@ ave_row_3 = {
 		position = 5
 		provinces_to_highlight = {
 			OR = {
+				area = north_piedmont_area
+				area = south_piedmont_area
 				area = piedmont_area
 				area = liguria_area
 				area = lombardy_area
+				area = upper_emilia_area
 				area = emilia_romagna_area
+				area = emilia_area
 				area = po_valley_area
 				area = venetia_area
 			}
@@ -2300,14 +2357,18 @@ ave_row_3 = {
 			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				OR = {
+					area = north_piedmont_area
+					area = south_piedmont_area
 					area = piedmont_area
 					area = liguria_area
 					area = lombardy_area
+					area = upper_emilia_area
 					area = emilia_romagna_area
+					area = emilia_area
 					area = po_valley_area
 					area = venetia_area
 				}
-				value = 15
+				value = 30 #BT; 15
 			}
 		}	
 		effect = {
@@ -2339,7 +2400,7 @@ ave_row_3 = {
 			not_in_mission_preview_mode = { key = GBR }
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = italy_region
-				value = 35
+				value = 115 #BT; 35
 			}
 		}	
 		effect = {
@@ -2373,7 +2434,7 @@ ave_row_3 = {
 			not_in_mission_preview_mode = { key = GBR }
 			num_of_owned_provinces_with = {
 				continent = europe
-				value = 250
+				value = 500 #BT; 250
 			}
 		}	
 		effect = {
@@ -3365,7 +3426,7 @@ ave_row_4 = {
 			total_development = 1000
 			num_of_owned_provinces_with = {
 				NOT = { local_autonomy_above_min = 5 }
-				value = 100
+				value = 200 #BT; 100
 			}
 			has_any_disaster = no
 			stability = 3
