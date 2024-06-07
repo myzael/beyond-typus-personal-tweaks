@@ -9,14 +9,14 @@ BT16
  - (Chrysocyon) Added Mingrelian and Svaneti cultures, splitting Georgian.
  - (JP) Added Abkhaz and Kabardian to Circassian group, Talysh to Iranian group and Ossetian to Alanian group 
  - (JP) Massive cultural overhaul in the Horn of Africa. Cushitic split into three. New Omotic, Oromo Groups and Agaw Groups. Over 25 new cultures.
- - (JP) Tonnes of new tags in the Horn of Africa, many are releasable. 
+ - (JP & Velius) Tonnes of new tags in the Horn of Africa, many are releasable. 
  - (Velius) Added Waaq paganism in the Horn of Africa
  - (Harbivore) Added flavour Silk events into the game. Silk will now start in Lucca spread to Bologna and then start to spread to other Italian states after about 50 years. Then it will appear in France around 1570. 
  - (Harbivore) Reworked the Austrian Unification events (previously Chocolate). They unite 99% of the time and doesn't allow Hungary to just steal Austria forever.
  - (Harbivore) Changed the AI to no longer make alliances with nations 10% of their development or 5x their development. (AI make much better alliances yay now more opm allies with great powers)
  - (Harbivore) Added English Marcher Lordships. Like normal marches but you can integrate them and also steal their generals
  - (Harbivore) Added mercury events giving gold to 3 provinces where historically cinnabar was mined and rose to prominence during the discovery of New World gold mines in Castile, Slovenia and Serbia.
- - (Dub) Added an Ayyubid Administration government mechanic to the Ayyubid Sultanate government reform, allowing the choice of one of three interactions once every 5 years:
+ - (Dub) Added an Ayyubid Administration government mechanic to the Ayyubid Sultanate government reform, available without Winds of Change, allowing the choice of one of three interactions once every 5 years:
 	 - Draft Mamluks: If King of Kings DLC is installed, gives a modifier for Mamluk unique units. Else, gain 1 years worth of manpower from stated provinces of unaccepted cultures of non-state religion.
 	 - Sponsor Shayk: Gain a random 50% discounted advisor of skill level 2/3 depending on if monthly income is below/above 35.
 	 - Grant Iqta: Gain a general with current army tradition + 25.
@@ -29,6 +29,7 @@ BT16
 	 - (Dub) Lovech
 	 - (Dub) Vidin
 	 - (Dub) Karvuna
+	 - (Dub) Rheinland
  - (Hadiros) Overhauled Australia
  - (Hadiros) Massive cultural overhaul to Australia, added 32 more cultures to the Aboriginal group for a total of 39 cultures. Added New Northern Aboriginal group with 24 cultures.
  - (Hadiros) Added Lagau Ya (Torres Strait Islander) culture to the Pacific group
@@ -39,40 +40,41 @@ BT16
 	 - Absolutism now reducing estate loyalty equilibrium by up to -20% at 100 absolutism
 	 - Seizing land now incurs a -20%/-15% estate loyalty equilibrium malus for 5 years
 	 - Being over governing capacity now increases corruption
-	 - New estate privileges to help players in a bind where they cannot revoke privileges due to absolutism.
+	 - New estate privileges to help players in a bind where they cannot revoke privileges due to absolutism
 	 - An overhaul to governing capacity & corruption modifiers
-	 - The Peasants estate for Scandinavian nations and peasant republics
+	 - The Peasants estate for Scandinavian nations and peasant republics (Planned to integrate with Bulgaria and Ukraine eventually)
 	 - The ability to pick between each and every estate's agenda in diets (Somewhat done by vanilla, but in a roundabout breakable way)
  - (Dub) Integrated the More Buildings addon to BT16, with almost all its features & tweaks. Included, but not limited to:
-	 - New buildings for navy, military, production, taxation, as well as new manufactories and other governance buildings such as roads and canals.
-	 - Some buildings have been reworked, as area-wide buildings were cut and remade into other types of buildings such as alternate manufactories.
-	 - Vanilla's temple building is also no longer the tax building, now increasing missionary strength and decreases culture conversion cost in the province.
+	 - New buildings for navy, military, production, taxation, as well as new manufactories and other governance buildings such as roads and canals
+	 - Some buildings have been reworked, as area-wide buildings were cut and remade into other types of buildings such as alternate manufactories
+	 - Vanilla's temple building is also no longer the tax building, now increasing missionary strength and decreases culture conversion cost in the province
+	 - In addition, the AI will_do's have been massively overhauled in order to allow for a more intelligent and competent AI
  - (Dub) Added a Ruthenian Mission tree. Features include:
 	 - Conquest missions spanning Siberia, Russia, Ruthenia, Poland, Finland, Baltics, Pontic Steppes as well as Caucasia.
-	 - Flavour missions expanding akin to what the Russian Domination tree does, focusing on internal matters of Ruthenia such as production, religion, development, estates, court, army (Streltsy + Cossacks) and more.
-	 - The mission tree results in mechanics available to Russia becoming available to Ruthenia as well in some ways, such as the Finnish PU subject, the Serfdom chain, as well as government reforms.
+	 - Flavour missions expanding akin to what the Russian Domination tree does, focusing on internal matters of Ruthenia such as production, religion, development, estates, court, army (Streltsy + Cossacks) and more
+	 - The mission tree results in mechanics available to Russia becoming available to Ruthenia as well in some ways, such as the Finnish PU subject, the Serfdom chain, as well as government reforms
  - (Harbivore) Added a new mechanic: Development Points
 	 - This mechanic replaces the use of monarch points to develop provinces. 
 	 - Dev Points are only ever directly generated from buildings, they are modified by several factors on a provincial level and a national level. Examples are: -being at peace -ideas -90% manpower -prosperity -overextension
 	 - They are spent in the same way monarch points were previously used
-	 - There is a maximum amount that can be stored at once, changed by gov rank, ideas and adm tech. If a nation goes over their limit they are automatically spent.
- - (Harbivore) Added silver as a tradegood.
-	 - Existing gold provinces throughout the world were considered and looked over to see whether they produced silver or gold.
-	 - Tooltips and localisation concerning gold were tweaked to reference 'Precious Metals' instead, where appropriate.
- - (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy and showing how they produced 25% of Europe's silver at the time.
- - (Dub) Created 10 (11) additional buttons, present in the Country Court screen, that allows you to spend excess monarch points to gain countrywide modifiers.
-	 - Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable.
+	 - There is a maximum amount that can be stored at once, changed by gov rank, ideas and adm tech. If a nation goes over their limit they are automatically spent
+ - (Harbivore) Added silver as a tradegood
+	 - Existing gold provinces throughout the world were considered and looked over to see whether they produced silver or gold
+	 - Tooltips and localisation concerning gold were tweaked to reference 'Precious Metals' instead, where appropriate
+ - (Harbivore) Added a Mines of Upper Hungary goods produced modifier in the Upper Hungary Area (Modern Slovakia), improving the Hungarian economy and showing how they produced 25% of Europe's silver at the time
+ - (Dub) Created 10 (11) additional buttons, present in the Country Court screen, that allows you to spend excess monarch points to gain countrywide modifiers
+	 - Note that there is a tooltip bug whereif you have modifiers that give a net 0 on monarch point gains/losses, the UI will not indicate you have these modifiers. This is unfixable
  - (Dub) Added Rambert II von Walsee to Rijeka, finally giving Rijeka its proper ruler
-	 - If Rambert II dies childless, Rijekan domains will be inherited by Styria/Austria, whoever is the main overlord, as happened historically with Frederick III inheriting it in 1466.
- - (Dub) Added one of the longest reigning monarchs in history: Bernard VII von Lippe, to Lippe. Born December 1428 and inheriting his throne before his first birthday, he ruled Lippe until 1511.
- - (Dub) Implemented ruler genetics with personality: If your ruler has a particular personality, there's a 50% greater chance your heir will get one of their personalities when they come of age.
- - (Dub) Added Native mechanics to Arabian and Somali OPMs. Somali tribes with more provinces share this mechanic, but have multiple provinces.
- - (Dub) Added two new tags in the Balkans: Lovech (LVC) replacing the Bulgaria tag that existed in Lovech prior, and Prilep (PRL), a releasable in North Macedonia.
-	- (Dub) Also retooled the starting setup to account for no Bulgaria tag at game start, letting you form Bulgaria.
- - (Dub) Added a Bulgarian mission tree available for Bulgarian-cultured tags (Lovech, Dobruja and Vidin), which expands upon forming Bulgaria. The mission tree rewards include 1 new flavour event, 1 new government reform, several new country/province modifiers and new custom mechanics.
- - (Harbivore) Occupation and sieging provinces now causes provincial autonomy to rise.
- - (Chrysocyon) All vanilla monuments now have descriptions.
- - (Chrysocyon) BT monuments starting with A-F now have descriptions. Eventually they'll all have one.
+	 - If Rambert II dies childless, Rijekan domains will be inherited by Styria/Austria, whoever is the main overlord, as happened historically with Frederick III inheriting it in 1466
+ - (Dub) Added one of the longest reigning monarchs in history: Bernard VII von Lippe, to Lippe. Born December 1428 and inheriting his throne before his first birthday, he ruled Lippe until 1511
+ - (Dub) Implemented ruler genetics with personality: If your ruler has a particular personality, there's a 50% greater chance your heir will get one of their personalities when they come of age
+ - (Dub) Added Native mechanics to Arabian and Somali OPMs. Somali tribes with more provinces share this mechanic, but have multiple provinces
+ - (Dub) Added two new tags in the Balkans: Lovech (LVC) replacing the Bulgaria tag that existed in Lovech prior, and Prilep (PRL), a releasable in North Macedonia
+	- (Dub) Also retooled the starting setup to account for no Bulgaria tag at game start, letting you form Bulgaria
+ - (Dub) Added a Bulgarian mission tree available for Bulgarian-cultured tags (Lovech, Dobruja and Vidin), which expands upon forming Bulgaria. The mission tree rewards include 1 new flavour event, 1 new government reform, several new country/province modifiers and new custom mechanics
+ - (Harbivore) Occupation and sieging provinces now causes provincial autonomy to rise
+ - (Chrysocyon) All vanilla monuments now have descriptions
+ - (Chrysocyon) BT monuments starting with A-G now have descriptions. Eventually they'll all have one
  
 #Bugfixes
  - (Dub) Fixed bug with 5th concentrate development modifier 
@@ -110,15 +112,15 @@ BT16
  
 #Tweaks and Balance
  - (JP) Provinces removed from Anatolia, Levant, and Mesopotamia, to help with density and development balance
- - (Dub) Tweaked Expand Infrastructure + Centralize State 
+ - (Dub) Overhauled Expand Infrastructure + Centralize State buttons such that they actually provide alternatives for tall nations
  - (Dub) Removed BT's Japanese monuments with no modifiers for now. They may get re-added someday, but AI is now capable of upgrading great projects and them being there would hurt Japanese AI nations 
  - (Dub) Cut all mentions of flat institution growth in vanilla, replacing them with varying levels of institution spread modifiers 
  - (Dub) Changed Goslar's trade good from iron to copper (Vanilla issue) to reflect the mine not producing any ferrous metals 
- - (Dub) Base sailors from provinces are now doubled, from 15 to 30, to account for vanilla's change from 30 to 60 at some point.
+ - (Dub) Base sailors from provinces are now doubled, from 15 to 30, to account for vanilla's change from 30 to 60 at some point
  - (Dub) Adjusted Great Powers' crownland share at game start
  - (Dub) Added strong duchies to several nations lacking it
  - (Velius) Cut Alawite and Druze religions
- - (Dub) Lowered base vassal FL contribution from +2 to +1 due to them already giving +10% of their FL to their overlord, causing nations such as Bohemia to have 10 more FL than they ought to.
+ - (Dub) Lowered base vassal FL contribution from +2 to +1 due to them already giving +10% of their FL to their overlord, causing nations such as Bohemia to have 10 more FL than they ought to
  - (Harbivore) Changed the Teutonic disaster and added a new cb only in that war that is 50% cost and ae. Also reduced the amount of provinces that is ceded to Danzig
  - (Harbivore) Changed chances of Ai forming personal unions in events. They are more likely to take it, but if they still decline there is a big incentive to do so and the other nation will get a CB of reclaim personal union. So maybe Poland will be Lithuania's PU instead
  - (Harbivore) Added +0.5 yearly tax per state in the HRE for the Emperor so if the Emperorship goes to a small nation they should still be pretty formidable
@@ -128,64 +130,67 @@ BT16
  - (Harbivore) Reremove the Welsh-English historic rivalry, but if Wales is ever independent they get it back. They also start with 10 trust with England at game start and a +25 liberty disire for "Discontent with English Rule"
  - (Harbivore) Changed trade good in belgrade to dyes. Cinnabar production
  - (Harbivore & Dub) Added Coal in a few provinces in Italy (Sulcis) and Iberia (Carmona)
- - (Dub) Removed Cordoban gold - there was no evidence to suggest the Sierra Morenas were properly mined in Spain. All evidence pointed towards romans & arabs. In fact, the area was *very* rural during the Spaniards.
- - (Dub) Added +20% breakthrough to cav units. For anyone not aware: Breakthrough is a mechanic disabled in vanilla where when defeating a front row unit in combat, it has a chance of pulling the artillery behind it to the front row. This chance is 0% in vanilla by default. BT now changes this to 0% for infantry and 20% for cavalry in an attempt to promote cav usage later game.
- - (Dub) Rebalanced AI building code such that the AI will finally be more intelligent in their build order, making it much less willing to spend on forcelimit buildings and more focused on economic buffs.
+ - (Dub) Removed Cordoban gold - there was no evidence to suggest the Sierra Morenas were properly mined in Spain. All evidence pointed towards romans & arabs. In fact, the area was *very* rural during the Spaniards
+ - (Dub) Added +20% breakthrough to cav units. For anyone not aware: Breakthrough is a mechanic disabled in vanilla where when defeating a front row unit in combat, it has a chance of pulling the artillery behind it to the front row. This chance is 0% in vanilla by default. BT now changes this to 0% for infantry and 20% for cavalry in an attempt to promote cav usage later game
+ - (Dub) Rebalanced AI building code such that the AI will finally be more intelligent in their build order, making it much less willing to spend on forcelimit buildings and more focused on economic buffs
  - (Dub) Re-added CoT to Trondelag (PROV20)
- - (Dub) Tweaked Lusitania, Spain & Andalusia formable such that you can circumvent the clause of none of the other existing by having more provinces than them.
- - (Dub) Tweaked Defender of Faith modifiers and num of nations following the faith such that same faith nations get more modifiers, and the defender of faith being more oriented towards amassing large armies rather than more professional ones and a bunch of other things. Certain modifiers were cut, and others were introduced, attempting to hearken back to Misc changes made by Draiocht.
- - (Hadiros) Changed Lusitania to blue to match vanilla Portugal change.
- - (Hadiros) Gave Tlemcen a different shade of green to the old Portugal green.
- - (Hadiros) Added Nestorian and Apostolic to Burghers Orthodox Tolerance Privilege.
- - (Dub) Tweaked Corruption & Over Governing Capacity such that the minimum province autonomy was shuffled over to being over govcap.
- - (Dub) Shifted Wolgast CoT to Stettin - it deserved it, being a major hanseatic city and the capital of Pomerania, whereas Wolgast simply was not a trade city.
+ - (Dub) Tweaked Lusitania, Spain & Andalusia formable such that you can circumvent the clause of none of the other existing by having more provinces than them
+ - (Dub) Tweaked Defender of Faith modifiers and num of nations following the faith such that same faith nations get more modifiers, and the defender of faith being more oriented towards amassing large armies rather than more professional ones and a bunch of other things. Certain modifiers were cut, and others were introduced, attempting to hearken back to Misc changes made by Draiocht
+ - (Hadiros) Changed Lusitania to blue to match vanilla Portugal change
+ - (Hadiros) Gave Tlemcen a different shade of green to the old Portugal green
+ - (Hadiros) Added Nestorian and Apostolic to Burghers Orthodox Tolerance Privilege
+ - (Dub) Tweaked Corruption & Over Governing Capacity such that the minimum province autonomy was shuffled over to being over govcap
+ - (Dub) Shifted Wolgast CoT to Stettin - it deserved it, being a major hanseatic city and the capital of Pomerania, whereas Wolgast simply was not a trade city
  - (Dub) Shuffled Wild Fields coal provinces into the Donets basin 
- - (Dub) Tweaked Governing Capacity - now government ranks grant 0/25/50% extra governing capacity instead of a flat bonus, and governing capacity from tech has been smudged over all admin technologies.
- - (Dub) Tweaked Warscore impact from province autonomy to be more impactful - provinces with high autonomy should now be much cheaper to conquer.
- - (Harbivore) Changed dutch polders to be more appropriate.
- - (Harbivore) Made Genoa and Venice Historical rivals to stop their monopoly on the seas.
- - (Harbivore) Gave a failure condition to castilian disaster if the rebels win allowing them to escape the disaster.
+ - (Dub) Tweaked Governing Capacity - now government ranks grant 0/25/50% extra governing capacity instead of a flat bonus, and governing capacity from tech has been smudged over all admin technologies
+ - (Dub) Tweaked Warscore impact from province autonomy to be more impactful - provinces with high autonomy should now be much cheaper to conquer
+ - (Harbivore) Changed dutch polders to be more appropriate
+ - (Harbivore) Made Genoa and Venice Historical rivals to stop their monopoly on the seas
+ - (Harbivore) Gave a failure condition to castilian disaster if the rebels win allowing them to escape the disaster
  - (Harbivore) Made Sicily a PU of Aragon to simultaneously fix an ahistoric issue and keep Aragonese subjects loyal
  - (Harbivore) Changed Sicilian Colours to be a nice orange
- - (Harbivore) Made Naples and the Papal states historical friends to show friendship between them and Alfonds
+ - (Harbivore) Made Naples and the Papal states historical friends to show friendship between them and Alfonso
  - (Dub) Tweaked the coring system:
-	- Coring time has now been increase to 10 years.
-	- Separatism now increases minimum autonomy by 3% per year of separatism. I.e, a freshly conquered province has 90% autonomy floor from separatism.
-	- Territorial cores now cost 25% of the admin points instead of 50%.
-	- Overextension has now been overhauled to signify the troubles of pacifying newly conquered regions, instead of being mostly diplomatically focused.
+	- Coring time has now been increase to 10 years
+	- Separatism now increases minimum autonomy by 3% per year of separatism. I.e, a freshly conquered province has 90% autonomy floor from separatism
+	- Territorial cores now cost 25% of the admin points instead of 50%
+	- Overextension has now been overhauled to signify the troubles of pacifying newly conquered regions, instead of being mostly diplomatically focused
  - (Dub) Cut KoK Pronoiar creation making the country leader a "greek general" - it makes no sense.
- - (Dub) Tweaked native policies such that trading with natives gives twice the production from natives, and returned other native policies to vanilla's values.
- - (Dub) Shuffled Glass tradegood from Linköping to Nyköping to reflect history and added the Sala Silver Mine in Västerås.
- - (Dub) Doubled MTTH on PurelyNasty event (Separatist Sentiment) to account for more provinces.
- - (Dub) Mamluks now start with a Mamluk Decadence Nobility privilege which'll hurt their mil tech advancements (Apparently their Mamluks refused to introduce gunpowder into their ranks).
- - (Dub) Lucky nations now gain -25% Core Creation Cost, as well as -25% Land Attrition, in order to help the AI with the coring changes and the attrition in bad terrain costing them way too much manpower.
+ - (Dub) Tweaked native policies such that trading with natives gives twice the production from natives, and returned other native policies to vanilla's values
+ - (Dub) Shuffled Glass tradegood from Linköping to Nyköping to reflect history and added the Sala Silver Mine in Västerås
+ - (Dub) Doubled MTTH on PurelyNasty event (Separatist Sentiment) to account for more provinces
+ - (Dub) Mamluks now start with a Mamluk Decadence Nobility privilege which'll hurt their mil tech advancements (Apparently their Mamluks refused to introduce gunpowder into their ranks)
+ - (Dub) Lucky nations now gain -25% Core Creation Cost, as well as -25% Land Attrition, in order to help the AI with the coring changes and the attrition in bad terrain costing them way too much manpower
  - (Harbivore) AI will now be more clever with parliament bribes
- - (Dub) Ottoman mission AI has been tweaked heavily in order to try and get them to conquer properly in the earlygame.
- - (Dub) Spanish mission AI has been given AI factors for all its missions, hopefully promoting it to actually do its missions.
- - (Harbivore) England AI will never surrender Maine.
- - (Dub) New England parliament issues have had their num_of_cities tweaked to match BT's density.
- - (Dub) AI nations have received a +25% tax modifier, +25% production efficiency and +25% trade efficiency. The AI economy was just way too poor in BT and debt spirals were way too common.
-	- Certain AIs will still debtspiral, but it's nowhere near as bad as it was before.
+ - (Dub) Ottoman mission AI has been tweaked heavily in order to try and get them to conquer properly in the earlygame
+ - (Dub) Spanish mission AI has been given AI factors for all its missions, hopefully promoting it to actually do its missions
+ - (Harbivore) England AI will never surrender Maine
+ - (Dub) New England parliament issues have had their num_of_cities tweaked to match BT's density
+ - (Dub) AI nations have received a +25% tax modifier, +25% production efficiency and +25% trade efficiency. The AI economy was just way too poor in BT and debt spirals were way too common
+	- Certain AIs will still debtspiral, but it's nowhere near as bad as it was before
 	- (Harbivore) In addition, AI nations hace received a +25% increase to dev points because the AI is worse at optimising for it, and cannot/will not use expand infrastructure
- - (Dub) State governing cost modifiers from missions have been replaced with state maintenance modifiers instead, because it would break the intricate balance.
- - (Dub) Turkish Eyalets now use their full name as their adjectives to avoid the confusing "Eyalet Libery Desire is over 50%!".
- - (Dub) Cut Polish starting core on Spis. While it was used to represent the Szepes Towns fief of Poland, it caused more harm than good.
- - (Dub) Overhauled starting trade goods in Bulgaria. Now with less ahistorical copper and more historical apiculture and cloth. Also contains less grain. While the region was very fertile, it also produced several specialised goods and had a good chunk of blacksmithing.
- - (Dub) Bulgaria's starting cores have also been retooled during the replacement with Lovech's.
- - (Harbivore) Changed Albanian 1st mission to be give a historically accurate army size.
- - (Harbivore) Changed 1 province Ottoman provine, Myzeqe, to Albanian control.
- - (Harbivore) Changed Germany, Italy and Great Moravia formables so that the ai will not try to form them unless the meet roughly half way to finishing the decision. Stopping ai from killing one another.
- - (Dub) Disabled Austria-Hungary formation. We might return to this to enable it in order to curb hungarian/austrian revolt in the lategame, but for now, it does not make sense the way vanilla implemented it.
- - (Dub) Fixed Heraclea Pontica (Benderegli) being owned by Ottomans at game start when they did not take it until 1453.
- - (Dub) Tweaked Bulgaria's flag and colour to more closely resemble the 2nd Bulgarian Empire, with both of them being yellow.
- - (Harbivore) Vassals now need to have been your subject for 25 years before they can be annexed.
- - (Harbivore) French Appanages now require you to have more crown land than the Nobility in order to be annexed.
+ - (Dub) State governing cost modifiers from missions have been replaced with state maintenance modifiers instead, because it would break the intricate balance
+ - (Dub) Turkish Eyalets now use their full name as their adjectives to avoid the confusing "Eyalet Libery Desire is over 50%!"
+ - (Dub) Hungarian Spis is now owned by Poland at game start, representing the Pawning of Szepes towns where Poland lent money in exchange for salt-producing towns in Szepes
+ - (Dub) Overhauled starting trade goods in Bulgaria. Now with less ahistorical copper and more historical apiculture and cloth. Also contains less grain. While the region was very fertile, it also produced several specialised goods and had a good chunk of blacksmithing
+ - (Dub) Bulgaria's starting cores have also been retooled during the replacement with Lovech's
+ - (Harbivore) Changed Albanian 1st mission to be give a historically accurate army size
+ - (Harbivore) Changed 1 province Ottoman provine, Myzeqe, to Albanian control
+ - (Harbivore) Changed Germany, Italy and Great Moravia formables so that the ai will not try to form them unless the meet roughly half way to finishing the decision. Stopping ai from killing one another
+ - (Dub) Disabled Austria-Hungary formation. We might return to this to enable it in order to curb hungarian/austrian revolt in the lategame, but for now, it does not make sense the way vanilla implemented it
+ - (Dub) Fixed Heraclea Pontica (Benderegli) being owned by Ottomans at game start when they did not take it until 1453
+ - (Dub) Tweaked Bulgaria's flag and colour to more closely resemble the 2nd Bulgarian Empire, with both of them being yellow
+ - (Harbivore) Vassals now need to have been your subject for 25 years before they can be annexed, and need to be below 25% LD
+ - (Harbivore) French Appanages now require you to have more crown land than the Nobility in order to be annexed
+ - (Harbivore) Tweaked grain province modifier to not give flat forcelimit, resulting in massive forcelimits for nations with a lot of grain
+ - (Dub) Mt. Athos, Hagia Sophia and Mosque-Cathedral of Cordoba monuments now have conditional modifiers depending on owner religion, tweaked and conditionally hidden to allow for nicer tooltips
+ - (Chrysocyon) Globe Theatre monument now requires Renaissance to be embraced
  
 #Localised Naming
  - (JP) Full localised naming in South Caucusia for Georgian, Armenian, Turkish, Russian, and Byzantine, plus some Persian, Kurdish, and Tatar
  
 #Mission updates
- - (Dub) Fixed BT's scriptified mission system to remove all all_province checks, greatly reducing lag 
+ - (Dub) Fixed BT's scriptified mission system to remove all all_province checks, greatly reducing lag (Thanks to Schocko for the program script to convert the province designations!)
  - (Dub) Hid BT Scandinavian nations' missions from appearing with the Lions of the North DLC installed
  - (Nuq) Updating a lot of mission trees to fit BT's development and province density tweaks across all regions and DLCs. Done so far are:
 	- Aceh
@@ -220,14 +225,18 @@ BT16
 	- Mali
 	- Bavarian 
 	- LotN Norwegian (Dub) - Scandinavian branches not updated
-	- LotN Swedish (Dub) - Scandinavian branches not updated - Includes a BT Swedish mission to fill the void of Expanding Finland.
+	- LotN Swedish (Dub) - Scandinavian branches not updated - Includes a BT Swedish mission to fill the void of Expanding Finland
 	- LotN Danish (Dub) - Scandinavian branches not updated
 	- BT Ayyubid (Dub)
 	- GC Andalusian (Dub)
 	- DOM Russian (Dub) - Steppes branches not updated
-	- DOM Spanish (Dub) - Castilian branches. Aragonese branches not updated yet.
-	- DOM Ottoman (Dub) - Mostly done, and it contains some tweaks all throughout the tree, plus an added vanilla mission to fill the void in lesser Armenia.
+	- DOM Spanish (Dub) - Castilian branches. Aragonese branches not updated yet
+	- DOM Ottoman (Dub) - Mostly done, and it contains some tweaks all throughout the tree, plus an added vanilla mission to fill the void in lesser Armenia
 	- EMP France (Nuq)
+	- WoC Venetian (Jackkade)
+	- WoC German (Jackkade)
+	- WoC Italian (Jackkade)
+	- DOM British (Jackkade, some by Dub/Harbivore)
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders
@@ -235,7 +244,7 @@ BT16
 
  
 #GFX
- - (Dub) Resized new DLC units (LotN, Domination). Origins still lack resizing.
+ - (Dub) Resized new DLC units (LotN, Domination). Origins and Winds of Change still lack resizing as developers lack these DLCs
 
 
 

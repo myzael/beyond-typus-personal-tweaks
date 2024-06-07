@@ -735,7 +735,7 @@ RHI_ideas = {
 	}
 	
 	rhi_abolish_feudal_privileges = { #Referencing Napoleon's liberalisation of the area during the Confederation of the Rhine. Makes sense here as something you'd want to do later in the game.
-		all_estate_influence_modifier = -0.1
+		all_estate_influence_modifier = -0.05
 		all_estate_loyalty_equilibrium = 0.05
 	}
 	
