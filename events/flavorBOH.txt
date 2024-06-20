@@ -49,6 +49,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = first_hussite_king
+			set_country_flag = no_election_of_new_ruler_event_trigger
 			if = {
 				limit = {
 					ai = yes
@@ -58,9 +59,12 @@ country_event = {
 			}
 		}
 	}
+	after = {
+		clr_country_flag = no_election_of_new_ruler_event_trigger
+	}
 	
 	option = { # Convert to Hussite
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 50 } #BT; 10
 		name = flavor_boh.1.a
 		set_country_flag = hussite_regency_mission_flag
 		if = {
@@ -107,7 +111,7 @@ country_event = {
 	}
 	
 	option = { # Hussite King, Catholic nation - tolerance option
-		ai_chance = { factor = 35 }
+		ai_chance = { factor = 35 } #BT; 90
 		set_country_flag = hussite_regency_mission_flag
 		name = flavor_boh.1.c
 		add_papal_influence = -100
@@ -132,6 +136,11 @@ country_event = {
 			dip = 4
 			mil = 3
 			religion = hussite
+			culture = czech
+			age = 25
+		}
+		hidden_effect = {
+			set_ruler_flag = ruler_cant_trigger_this_event_flag
 		}
 		if = {
 			limit = {
@@ -151,7 +160,7 @@ country_event = {
 	
 	option = { # Fight them
 		name = flavor_boh.1.b
-		ai_chance = { factor = 15 }
+		ai_chance = { factor = 15 } #BT; kept?
 		set_country_flag = hussite_regency_mission_flag
 		266 = {
 			spawn_rebels = {
