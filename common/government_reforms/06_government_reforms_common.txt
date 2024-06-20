@@ -520,7 +520,7 @@ enforced_autocracy_reform = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		OR = {
 			have_had_reform = enforced_autocracy_reform
-			as_unlocked_government_reform = { government_reform = enforced_autocracy_reform }
+			has_unlocked_government_reform = { government_reform = enforced_autocracy_reform }
 			#has_reform = ruthenian_tsardom #BT Removed: No. Just, no.
 		}
 	}
