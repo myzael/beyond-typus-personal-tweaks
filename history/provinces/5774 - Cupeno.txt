@@ -3,7 +3,7 @@
 
 culture = takic
 religion = totemism 
-capital = "Kúpa" 			#Also Wilákalpa 
+capital = "Kï¿½pa" 			#Also Wilï¿½kalpa 
 trade_goods = unknown
 hre = no 
 base_tax = 2 			#Population estimates are consistantly under 800 for 1770, but note in the 15th century, Lake Cahuila would have made the area much, much richer. Any numbers would be pure speculation, but I'd consider this a rich area until the lake dried up.
@@ -17,7 +17,7 @@ discovered_by = north_american
 
 
 1444.1.1 = { tribal_owner = YYO }
-1444.11.16 = { #BeyondTypus batch edit shortcut no vassal start date begin
+1444.11.15 = { #BeyondTypus batch edit shortcut no vassal start date begin
 	tribal_owner = xxx
 }
 1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
