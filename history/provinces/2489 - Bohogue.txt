@@ -3,7 +3,7 @@
 
 culture = shoshone
 religion = totemism
-capital = "Koa'aga'itöka"			#Just using tribal names for Shoshone provinces... Information is sparse and I don't want to spend months trying to research capital names in the desert (well, that isn't exactly true, but I don't want to do so while I'm holding up updates)
+capital = "Koa'aga'itï¿½ka"			#Just using tribal names for Shoshone provinces... Information is sparse and I don't want to spend months trying to research capital names in the desert (well, that isn't exactly true, but I don't want to do so while I'm holding up updates)
 trade_goods = unknown
 hre = no
 base_tax = 1 
@@ -19,6 +19,12 @@ discovered_by = north_american
 
 
 1444.1.1 = { tribal_owner = SHO }
+1444.11.15 = { #BeyondTypus batch edit shortcut no vassal start date begin
+	tribal_owner = XXX
+}
+1444.11.18 = { #BeyondTypus batch edit shortcut no vassal start date end
+	tribal_owner = SHO
+}
 1806.1.1 = { discovered_by = USA } #Lewis and Clark
 1811.1.1 = { discovered_by = GBR } #David Thompson
 

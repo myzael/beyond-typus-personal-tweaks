@@ -29,12 +29,12 @@ discovered_by = north_american
 	owner = SPA
 	controller = SPA
 	add_core = SPA
-	capital = "La Purisima Concepción"
+	capital = "La Purisima Concepciï¿½n"
 	is_city = yes
 	trade_goods = fish 
 	culture = castillian
 	religion = catholic
-}	#Mission La Purisima Concepción
+}	#Mission La Purisima Concepciï¿½n
 1810.9.16 = { 
 	owner = MEX 
 	add_core = MEX 
