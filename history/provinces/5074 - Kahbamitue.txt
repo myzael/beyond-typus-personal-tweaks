@@ -3,7 +3,7 @@
 
 culture = sahtu
 religion = totemism 
-capital = "K'áhbamítúé"
+capital = "K'ï¿½hbamï¿½tï¿½ï¿½"
 trade_goods = unknown
 hre = no 
 base_tax = 1 
@@ -19,6 +19,12 @@ discovered_by = north_american
 
 
 1444.1.1 = { tribal_owner = SLV }
+1444.11.15 = { #BT Performance Start Begin
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	tribal_owner = SLV
+}
 1770.1.1 = { discovered_by = GBR } # Hearne
 1804.1.1 = {
 	owner = SLV

@@ -3,7 +3,7 @@
 
 culture = interior_salish
 religion = totemism 
-capital = "Sq'pq'pé" 			#Sandy Ground. Appears to be a native name for a area around lake Pond d'Oreille
+capital = "Sq'pq'pï¿½" 			#Sandy Ground. Appears to be a native name for a area around lake Pond d'Oreille
 trade_goods = unknown
 hre = no 
 base_tax = 1 
@@ -19,6 +19,12 @@ discovered_by = north_american
 
 
 1444.1.1 = { tribal_owner = YYI }
+1444.11.15 = { #BT Performance Start Begin
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	tribal_owner = YYI
+}
 1809.1.1 = {
 	discovered_by = GBR
 	owner = GBR

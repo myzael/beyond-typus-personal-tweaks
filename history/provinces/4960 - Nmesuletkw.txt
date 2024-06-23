@@ -18,6 +18,12 @@ discovered_by = north_american
 #discovered_by = bt_northwest_tech
 
 1444.1.1 = { tribal_owner = YYI }
+1444.11.15 = { #BT Performance Start Begin
+	tribal_owner = XXX
+}
+1444.11.18 = { #BT Performance Start End
+	tribal_owner = YYI
+}
 1805.1.1 = { discovered_by = USA } #Lewis and Clarke
 1811.1.1 = { discovered_by = GBR } #David Thompson
 #Hell's Gate village established here in 1860
