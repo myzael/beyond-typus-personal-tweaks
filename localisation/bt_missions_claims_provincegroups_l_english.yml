@@ -762,4 +762,10 @@
  tur_conquer_greece_provinces:0 ""
  tur_push_into_the_balkans_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YPush into the North§!"
  tur_push_into_the_balkans_provinces:0 ""
+ defend_the_american_colonies_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YDefend Liberty§!"
+ defend_the_american_colonies_provinces:0 ""
+ conquer_florida_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YConquer Florida§!"
+ conquer_florida_provinces:0 ""
+ reach_the_mississippi_claims:0 "§Y[Root.GetName]§! gains permanent claims on the provinces required for the mission §YOl' Man River§!"
+ reach_the_mississippi_provinces:0 ""
  
