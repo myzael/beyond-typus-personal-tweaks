@@ -167,7 +167,7 @@ bourgogne_area = { #Burgundy Proper
 	color = { 144 0 32 }
 	191 192 1877 3091 4392 7938 7951 7952 8028 
 }
-west_burgundy_area = { #Franche-Comté
+west_burgundy_area = { #Franche-Comtï¿½
 	193 3092 4764 7939 7940 7942 8029 8030 
 }
 languedoc_area = { #Moved for better colour assignment. Was identical to Provence
@@ -177,7 +177,7 @@ massif_central_area = {
 	color = { 26 26 217 }
 	190 199 3087 7914 7915 7916 7917 
 }
-savoy_dauphine_area = { #Savoy and Dauphiné, Upper Burgundy
+savoy_dauphine_area = { #Savoy and Dauphinï¿½, Upper Burgundy
 	205 3046 4719 7913 8031 
 }
 lorraine_area = {
@@ -501,7 +501,7 @@ skaneland_area = {
 gotaland_area = {
 	2 3 25 3120 3121 4166 7790 7792 7793 
 }
-vastra_gotaland_area = { #Västra Götaland
+vastra_gotaland_area = { #Vï¿½stra Gï¿½taland
 	5 7 16 4163 4164 7791 7795 
 }
 svealand_area = {
