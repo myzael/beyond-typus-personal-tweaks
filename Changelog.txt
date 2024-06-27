@@ -237,6 +237,8 @@ BT16
 	- WoC German (Jackkade)
 	- WoC Italian (Jackkade)
 	- DOM British (Jackkade, some by Dub/Harbivore)
+	- USA (Jackkade)
+	- LotN Polish (Jackkade)
  - (Harbivore) Increased difficulty of avoiding Teutonic disaster (They are larger and can survive the disaster if it fires as well)
  - (Harbivore) Changed Poland's vassalisation of danzig to be more historical and interesting
  - (Harbivore) Changed Austrian mission where you had to conquer bishoprics to instead make vanilla Austrian borders
