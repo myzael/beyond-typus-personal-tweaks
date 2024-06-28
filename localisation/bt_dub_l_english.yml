@@ -671,3 +671,22 @@
  BeyondTypusCarpathiaPolandEvents.6.title:0 "[FROM.GetName] Declares War!"
  BeyondTypusCarpathiaPolandEvents.6.desc:0 "It appears that [From.GetName] has decided to take matters into their own hands and have declared war on us! The treaty of Lubowla is no more."
  BeyondTypusCarpathiaPolandEvents.6.optA:0 "Time to teach them how to fight!"
+ 
+ #Harbivore content that they refuse to localise:
+ BT_UOP_province:0 "Province in unoverhauled area"
+ desc_BT_UOP_province:0 "This province is in an area that hasn't been overhauled by Beyond Typus, so its value is temporarily modified in an attempt at balancing overhauled areas with unoverhauled ones."
+ 
+ PEACE_po_end_hundred_years_war:0 "End 100 Years War"
+ po_end_hundred_years_war_desc:0 "England cedes §Yall occupied provinces§! in the §YFrance§! region to France\nThe event '§YThe End of the Hundred Years War§!' happens."
+ 
+ bt_harb_misc.6.title:0 "The End of the Hundred Years War"
+ bt_harb_misc.6.desc:0 "We have ousted the English pretenders, making [Root.Monarch.GetName] [Root.Dynasty.GetName] the rightful [Root.Monarch.GetTitle] of [Root.GetName]. The question is how to handle the areas once occupied by the English. Do we administrate them as appanages, or direct crown lands?"
+ bt_harb_misc.6.a:0 "Impose direct rule"
+ bt_harb_misc.6.b:0 "Create the Appanage of Normandy"
+ bt_harb_misc.6.c:0 "Create the Appanage of Gascony"
+ bt_harb_misc.6.d:0 "Create both appanages!"
+ 
+ bt_harb_misc.7.t:0 "The End of the Hundred Years War"
+ bt_harb_misc.7.desc:0 "Oh no, we lost France." #This is not my content, sue me.
+ bt_harb_misc.7.a:0 "Oh well..."
+ bt_harb_misc.7.a.tt:0 "Something good may come from this after all." #I honestly have no idea why this tooltip is here.
