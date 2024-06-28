@@ -680,7 +680,7 @@
  po_end_hundred_years_war_desc:0 "England cedes §Yall occupied provinces§! in the §YFrance§! region to France\nThe event '§YThe End of the Hundred Years War§!' happens."
  
  bt_harb_misc.6.title:0 "The End of the Hundred Years War"
- bt_harb_misc.6.desc:0 "We have ousted the English pretenders, making [Root.Monarch.GetName] [Root.Dynasty.GetName] the rightful [Root.Monarch.GetTitle] of [Root.GetName]. The question is how to handle the areas once occupied by the English. Do we administrate them as appanages, or direct crown lands?"
+ bt_harb_misc.6.desc:0 "We have ousted the English pretenders, making [Root.Monarch.GetName] [Root.Monarch.GetDynasty] the rightful [Root.Monarch.GetTitle] of [Root.GetName]. The question is how to handle the areas once occupied by the English. Do we administrate them as appanages, or direct crown lands?"
  bt_harb_misc.6.a:0 "Impose direct rule"
  bt_harb_misc.6.b:0 "Create the Appanage of Normandy"
  bt_harb_misc.6.c:0 "Create the Appanage of Gascony"
