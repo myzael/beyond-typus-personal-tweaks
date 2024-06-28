@@ -247,6 +247,7 @@ country_event = { # The Treaty of Lubowla - Aftermath - Poland Accepts!
 	}
 	
 	option = { #Great!
+		name = "BeyondTypusCarpathiaPolandEvents.4.optA"
 		tooltip = {
 			add_years_of_income = -2
 			1318 = {
