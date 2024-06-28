@@ -1,4 +1,4 @@
-version="15"
+version="16"
 tags={
 	"Balance"
 	"Expansion"
@@ -13,5 +13,6 @@ tags={
 	"Military"
 	"Map"
 }
-name="BeyondTypusInternal"
-supported_version="1.37.*"
+name="Beyond Typus"
+supported_version="v1.37.*.*"
+remote_file_id="2656711777"
