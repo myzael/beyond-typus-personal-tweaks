@@ -684,8 +684,8 @@
  bt_harb_misc.6.a:0 "Impose direct rule"
  bt_harb_misc.6.a.tt:0 "The following applies to the newly conquered provinces:"
  bt_harb_misc.6.b:0 "Create the Appanage of Normandy"
- bt_harb_misc.6.b.tt:0 "§Y[Root.GetName]§! gains §Ycores§! on the conquered provinces in Gascony."
- bt_harb_misc.6.c:0 "Create the Appanage of Gascony"
+ bt_harb_misc.6.b.tt:0 "§Y[Root.GetName]§! gains §Ycores§! on the conquered provinces in Aquitaine."
+ bt_harb_misc.6.c:0 "Create the Appanage of Aquitaine"
  bt_harb_misc.6.b.tt:0 "§Y[Root.GetName]§! gains §Ycores§! on the conquered provinces in Normandy."
  bt_harb_misc.6.d:0 "Create both appanages!"
  
