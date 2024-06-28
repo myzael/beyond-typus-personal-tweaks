@@ -624,6 +624,12 @@ emp_france_missions_2 = {
 				provinces=fra_reconquer_normandy_provinces
 				owner_type=country_or_non_sovereign_subject_holds
 			}
+			hidden_trigger = {
+				fra_reconquer_normandy_provinces = {
+					type = all
+					NOT = { has_province_flag =  bt_hyw_concession }
+				}
+			}
 		}
 		effect = {
 			if = {
