@@ -13,7 +13,7 @@ culture = turkish
 religion = sunni
 
 #Development and Trade
-base_tax = 1
+base_tax = 2
 base_production = 2
 base_manpower = 1
 trade_goods = cloth	#Velius: Carpetmaking industry, albeit developed around 19th century. No better alternatives, so sticking with cloth.

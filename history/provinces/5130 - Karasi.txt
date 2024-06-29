@@ -8,9 +8,9 @@ religion = sunni
 capital = "Karasi"			#Later known as Balikesir
 trade_goods = grain			#(JP) Known for its Agriculture
 hre = no
-base_tax = 2
+base_tax = 3
 base_production = 2
-base_manpower = 2
+base_manpower = 3
 is_city = yes
 #fort_15th = yes			#the capital of the region, known for a strong fort, as well. Also strategic, nice when it just works out.....
 
