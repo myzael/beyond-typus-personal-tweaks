@@ -3104,6 +3104,7 @@ general_war_commissariat_reform = {
 	potential = {
 		has_dlc = "Domination"
 		OR = {
+			primary_culture = markish
 			primary_culture = saxon
 			primary_culture = prussian
 			primary_culture = pommeranian
