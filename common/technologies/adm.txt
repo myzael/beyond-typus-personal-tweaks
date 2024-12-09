@@ -196,6 +196,7 @@ technology = { #Early Modern Administration
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
 	state_house = yes
+	allowed_idea_groups	= 4
 }
 
 technology = { #Improved Drainage
@@ -225,7 +226,6 @@ technology = { #Scientific Experimentation
 	}
 	
 	plantations = yes
-	allowed_idea_groups	= 4
 }
 
 technology = { #Military Administration
@@ -243,6 +243,7 @@ technology = { #Military Administration
 	may_force_march = yes
 	soldier_households = yes
 	treasury_office = yes #BT More Buildings added
+	allowed_idea_groups	= 5
 	
 }
 
@@ -293,7 +294,7 @@ technology = { #National Sovereignty
 		global_trade = 0.3
 	}
 	
-	allowed_idea_groups	= 5
+	allowed_idea_groups	= 6
 	#royal_palace = yes #BT More Buildings added
 	glorious_monument = yes #BT More Buildings added
 }
@@ -327,6 +328,7 @@ technology = { #Absolute Rulership
 	}
 	republican_dictatorship = yes
 	tax_assessor = yes #BT More Buildings added	
+	allowed_idea_groups = 7
 }
 
 technology = { #Land Clearance
@@ -360,7 +362,6 @@ technology = { #The Constitution
 		manufactories = 0.3
 	}
 	
-	allowed_idea_groups = 6
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
@@ -383,6 +384,7 @@ technology = { #Measuring the World
 	
 	administrative_efficiency = 0.1
 	development_cost_modifier = -0.1
+	allowed_idea_groups = 8
 }
 
 technology = { #Bonds and Tontines
@@ -433,7 +435,7 @@ technology = { #Separation of Powers
 		enlightenment = 0.5
 	}
 	
-	allowed_idea_groups 	= 	7
+	allowed_idea_groups = 9
 }
 
 technology = { #Modern Bureaucracy
@@ -489,7 +491,7 @@ technology = { #Rights of Man
 	
 	governing_capacity = 300 #BT Added
 
-	allowed_idea_groups = 8
+	allowed_idea_groups = 10
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }
