@@ -434,9 +434,9 @@ guiTypes = {
 
 		smoothListboxType = {
 			name = "hre_members"
-			position = { x=491 y =562 }
+			position = { x=481 y =548 }
 			backGround=""
-			size = { x=262 y=116 }
+			size = { x=272 y=126 }
 			Orientation = "UPPER_LEFT"
 			horizontal = 0
 			spacing = 0
@@ -847,9 +847,9 @@ guiTypes = {
 		gridBoxType = {
 			name = "gridbox"
 			position = { x = 0 y = 0 }
-			size = { width = 250 height = 200 }
-			slotsize = { width = 32 height = 38 }
-			max_slots_horizontal = 8
+			size = { width = 250 height = 400 }
+			slotsize = { width = 26 height = 30 }
+			max_slots_horizontal = 10
 			format = "UPPER_LEFT"
 		}
 	}
