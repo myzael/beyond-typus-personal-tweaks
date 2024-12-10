@@ -32,12 +32,54 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 180		#BT Changed to be longer
+		modifier = {
+			factor = 0.5
+			PRU = {
+				has_opinion = { who = BRA value = 150 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			PRU = {
+				has_opinion = { who = BRA value = 200 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			PRU = {
+				dynasty = BRA
+			}
+		}
 	}
 	
 	option = {
 		name = "flavor_brapru.EVTOPTOK"
+		if = {
+			limit = {
+				PRU = { is_subject = yes }
+			}
+			PRU = {
+				overlord = {
+					every_province = {
+						limit = {
+							owned_by = PRU
+							OR = {
+								is_permanent_claim = PREV
+								is_claim = PREV
+							}
+						}
+						remove_claim = PREV
+					}
+					add_historical_friend = BRA
+					BRA = { add_historical_friend = PREV }
+				}
+			}
+		}
 		BRA = {
 			create_union = PRU
+		}
+		PRU = {
+			restore_country_name = yes
 		}
 		add_trust = {
 			who = PRU		#BT added to help them be loyal
