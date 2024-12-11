@@ -497,7 +497,7 @@ emp_bra_pru_2 = {
 				tooltip = country_holds_or_non_sovereign_subject_holds_highlighted_num
 				provinces = emp_brapru_franconian_conquest_provinces
 				owner_type = country_or_non_sovereign_subject_holds
-				value = 10 #10 of 13 (6 of 8 in vanilla)
+				value = 9 #9 of 12 (6 of 8 in vanilla)
 			}
 		}
 		effect = {
