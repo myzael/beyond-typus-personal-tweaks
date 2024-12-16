@@ -1002,6 +1002,11 @@ country_event = { # Polish Response
         
         add_prestige = 10
         vassalize = ASC
+        ASC = {
+            every_owned_province = {
+                set_in_empire = no
+            }
+        }
         reverse_add_opinion = {
             who = ASC
             modifier = bt_sc_loyal_subject
@@ -1240,6 +1245,11 @@ country_event = { # Polish Response
         
         add_prestige = 25
         vassalize = ASC
+        ASC = {
+            every_owned_province = {
+                set_in_empire = no
+            }
+        }
         if = {
             limit = {
                 is_rival = BOH
